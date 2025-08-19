@@ -3,7 +3,8 @@
 ## 📚 目录
 
 - [Linux 配置轩辕镜像源](#linux-配置轩辕镜像源)
-- [K8s containerd 配置指南](./containerd-guide.md)
+- [各大镜像仓库使用轩辕镜像加速配置手册](./docker-acceleration-guide.md)
+- [K8s containerd 配置手册](./containerd-guide.md)
 
 ## Linux 配置轩辕镜像源
 
