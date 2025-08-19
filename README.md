@@ -3,6 +3,8 @@
 ## 📚 目录
 
 - [Linux 配置轩辕镜像源](#linux-配置轩辕镜像源)
+- [群晖NAS使用轩辕镜像配置Docker加速](./synology-docker-guide.md)
+- [威联通NAS使用轩辕镜像配置Docker加速](./qnap-docker-guide.md)
 - [各大镜像仓库使用轩辕镜像加速配置手册](./docker-acceleration-guide.md)
 - [K8s containerd 配置手册](./containerd-guide.md)
 
