@@ -1,6 +1,6 @@
 # 各大镜像仓库使用轩辕镜像加速教程
 
-本教程将详细介绍如何使用[轩辕镜像](https://xuanyuan.cloud/){:target="_blank"}加速Dockerhub、ghcr、gcr、quay、nvcr、k8s、mcr、elastic、oracle等各大主流镜像仓库，提升镜像拉取速度和稳定性。
+本教程将详细介绍如何使用<a href="https://xuanyuan.cloud/" target="_blank">轩辕镜像</a>加速Dockerhub、ghcr、gcr、quay、nvcr、k8s、mcr、elastic、oracle等各大主流镜像仓库，提升镜像拉取速度和稳定性。
 
 ## 📚 目录
 
@@ -21,7 +21,7 @@
 
 本教程默认您的专属加速域名为 `xxx.xuanyuan.run`（请替换为您在个人中心获取的真实地址）
 
-如果您还没有专属加速域名，请先前往 [个人中心](https://xuanyuan.cloud/){:target="_blank"} 获取您的专属加速地址。
+如果您还没有专属加速域名，请先前往 <a href="https://xuanyuan.cloud/" target="_blank">个人中心</a> 获取您的专属加速地址。
 
 ## 1. Docker Hub（docker.io）
 
@@ -177,4 +177,4 @@ docker pull xxx-oracle.xuanyuan.run/database/enterprise:21.3.0
 
 ---
 
-更多配置教程和技术支持，请访问 [轩辕镜像官网](https://xuanyuan.cloud/){:target="_blank"}
+更多配置教程和技术支持，请访问 <a href="https://xuanyuan.cloud/" target="_blank">轩辕镜像官网</a>
