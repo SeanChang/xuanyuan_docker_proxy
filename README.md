@@ -1,16 +1,16 @@
-# xuanyuan_docker_proxy
+# 最新 Docker 镜像源加速列表与使用指南（2025年8月更新）
 
 ## 轩辕镜像 Docker 加速服务
 
-[轩辕镜像](https://xuanyuan.cloud/) 提供高速稳定的 Docker 镜像加速服务，让您的 Docker 操作享受极速体验。
+<a href="https://xuanyuan.cloud/" target="_blank">轩辕镜像</a> 提供高速稳定的 Docker 镜像加速服务，让您的 Docker 操作享受极速体验。
 
 ## Linux 配置轩辕镜像源
 
-在 Linux 系统上配置[轩辕镜像](https://xuanyuan.cloud/)源，让所有 Docker 操作都享受高速加速体验。
+在 Linux 系统上配置<a href="https://xuanyuan.cloud/" target="_blank">轩辕镜像</a>源，让所有 Docker 操作都享受高速加速体验。
 
 ### 1. 获取专属免登录地址
 
-在[轩辕镜像](https://xuanyuan.cloud/)个人中心获取您的专属免登录加速地址，格式为：`xxx.xuanyuan.run`
+在<a href="https://xuanyuan.cloud/" target="_blank">轩辕镜像</a>个人中心获取您的专属免登录加速地址，格式为：`xxx.xuanyuan.run`
 
 > **注意**：`xxx.xuanyuan.run` 请替换为您的专属免登录加速地址，请登录网站后在个人中心获取。
 
@@ -52,7 +52,7 @@ systemctl restart docker
 docker info | grep -A 10 "Registry Mirrors"
 ```
 
-如果配置成功，您应该能看到您的[轩辕镜像](https://xuanyuan.cloud/)地址
+如果配置成功，您应该能看到您的<a href="https://xuanyuan.cloud/" target="_blank">轩辕镜像</a>地址
 
 ### 6. 镜像搜索步骤
 
@@ -92,7 +92,7 @@ Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting
 
 如果你使用免登录地址，但该地址没有购买流量，当 Docker 客户端请求加速器时，服务端会返回 402 Payment Required 错误，Docker 就会直接回退到官方仓库 docker.io 拉取镜像。
 
-**解决方案**: 请前往[轩辕镜像](https://xuanyuan.cloud/recharge)充值页面购买相应的流量包，确保您的免登录地址有足够的流量支持镜像加速服务。
+**解决方案**: 请前往<a href="https://xuanyuan.cloud/recharge" target="_blank">轩辕镜像</a>充值页面购买相应的流量包，确保您的免登录地址有足够的流量支持镜像加速服务。
 
 ### 如何确认免登录地址可用
 
@@ -108,8 +108,8 @@ docker pull abc123def456.xuanyuan.run/mysql
 
 如果配置后仍然不生效，建议参考下列文档拉取镜像：
 
-- [免登录配置教程](https://xuanyuan.cloud/) 或 [登录方式配置教程](https://xuanyuan.cloud/)
+- <a href="https://xuanyuan.cloud/" target="_blank">免登录配置教程</a> 或 <a href="https://xuanyuan.cloud/" target="_blank">登录方式配置教程</a>
 
 ## 更多信息
 
-访问 [轩辕镜像官网](https://xuanyuan.cloud/) 获取更多配置教程和技术支持。
+访问 <a href="https://xuanyuan.cloud/" target="_blank">轩辕镜像官网</a> 获取更多配置教程和技术支持。
