@@ -1,4 +1,4 @@
-# K8s containerd方式使用轩辕镜像
+# K8s containerd方式使用[轩辕镜像加速](https://xuanyuan.cloud/){:target="_blank"}
 
 适用于使用 containerd 的系统，如 Kubernetes（k3s / cri-o）或自建 containerd 环境，支持通过配置私有镜像加速源提升镜像拉取速度、可控性与可用性。
 
