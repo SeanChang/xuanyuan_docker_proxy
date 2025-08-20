@@ -50,3 +50,4 @@ Error response from daemon: unknown: {"errors":[{"code":"PAYMENT_REQUIRED","mess
 ```
 
 💡 **当您登录或拉取镜像时返回 402 Payment Required 错误，表示您的流量已耗尽。请立即[充值](https://xuanyuan.cloud/recharge)流量包以继续使用镜像加速服务。**
+
