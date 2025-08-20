@@ -1,4 +1,4 @@
-# 各大镜像仓库使用轩辕镜像加速教程
+# ghcr、Quay、nvcr、k8s、gcr 仓库下载加速 - 轩辕镜像配置手册
 
 本教程将详细介绍如何使用<a href="https://xuanyuan.cloud/" target="_blank">轩辕镜像</a>加速Dockerhub、ghcr、gcr、quay、nvcr、k8s、mcr、elastic、oracle等各大主流镜像仓库，提升镜像拉取速度和稳定性。
 
