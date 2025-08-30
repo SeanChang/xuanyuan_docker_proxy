@@ -737,6 +737,8 @@ if systemctl is-active --quiet docker; then
     
     echo ""
     echo "🎉 安装和配置完成！"
+    echo ""
+    echo "轩辕镜像 - 中国开发者首选的专业 Docker 镜像下载加速服务平台"
 else
     echo "❌ Docker 服务启动失败，请检查配置"
     exit 1
