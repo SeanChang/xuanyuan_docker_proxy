@@ -39,11 +39,8 @@ if [[ "$mode_choice" == "2" ]]; then
         echo ""
         echo "💡 建议：选择选项 1 进行一键安装配置"
         echo ""
-        read -p "是否仍要继续？[y/N]: " continue_choice
-        if [[ ! "$continue_choice" =~ ^[Yy]$ ]]; then
-            echo "已取消操作，建议选择选项 1 进行完整安装配置"
-            exit 0
-        fi
+        echo "已退出脚本，请重新运行并选择选项 1 进行完整安装配置"
+        exit 1
     else
         # 检查 Docker 版本
         DOCKER_VERSION=$(docker --version | grep -oE '[0-9]+\.[0-9]+' | head -1)
