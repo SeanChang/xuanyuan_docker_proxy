@@ -134,30 +134,91 @@ if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
     echo "⚠️  检测到 Debian 9 (Stretch)，使用兼容的安装方法..."
     echo "⚠️  注意：Debian 9 已到达生命周期结束，将使用特殊处理..."
     
+    # 清理损坏的软件源索引文件
+    echo "正在清理损坏的软件源索引文件..."
+    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/partial/*
+    
+    # 强制清理 apt 缓存
+    apt-get clean
+    apt-get autoclean
+    
     # 首先更新过期的 GPG 密钥
     echo "正在更新过期的 GPG 密钥..."
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 648ACFD622F3D138
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0E98404D386FA1D9
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AA8E81B4331F7F50
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A
+    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 648ACFD622F3D138 || true
+    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0E98404D386FA1D9 || true
+    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AA8E81B4331F7F50 || true
+    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A || true
     
-    # 更新软件包列表，允许未认证的包
-    apt-get update --allow-unauthenticated || true
+    # 尝试使用不同的密钥服务器
+    echo "尝试使用备用密钥服务器..."
+    apt-key adv --keyserver pgpkeys.mit.edu --recv-keys 648ACFD622F3D138 || true
+    apt-key adv --keyserver pgpkeys.mit.edu --recv-keys 0E98404D386FA1D9 || true
+    
+    # 更新软件包列表，允许未认证的包，忽略错误
+    echo "正在更新软件包列表..."
+    apt-get update --allow-unauthenticated --allow-releaseinfo-change || true
+    
+    # 如果还是失败，尝试强制更新
+    if ! apt-get update --allow-unauthenticated --allow-releaseinfo-change; then
+      echo "⚠️  软件源更新失败，尝试强制更新..."
+      apt-get update --allow-unauthenticated --allow-releaseinfo-change --fix-missing || true
+    fi
     
     # 安装必要的依赖包，允许未认证的包
-    apt-get install -y --allow-unauthenticated ca-certificates curl gnupg lsb-release apt-transport-https
+    echo "正在安装必要的依赖包..."
+    apt-get install -y --allow-unauthenticated --fix-broken ca-certificates curl gnupg lsb-release apt-transport-https || true
+    
+    # 如果某些包安装失败，尝试逐个安装
+    if ! dpkg -l | grep -q "ca-certificates"; then
+      echo "尝试单独安装 ca-certificates..."
+      apt-get install -y --allow-unauthenticated ca-certificates || true
+    fi
+    
+    if ! dpkg -l | grep -q "curl"; then
+      echo "尝试单独安装 curl..."
+      apt-get install -y --allow-unauthenticated curl || true
+    fi
+    
+    if ! dpkg -l | grep -q "gnupg"; then
+      echo "尝试单独安装 gnupg..."
+      apt-get install -y --allow-unauthenticated gnupg || true
+    fi
     
     # 添加 Docker 官方 GPG 密钥
-    curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
+    echo "正在添加 Docker 官方 GPG 密钥..."
+    curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - || true
     
     # 添加 Docker 仓库（使用 Debian 9 兼容的源）
+    echo "正在添加 Docker 仓库..."
     echo "deb [arch=$(dpkg --print-architecture)] https://download.docker.com/linux/debian stretch stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
     
     # 再次更新，这次包含 Docker 仓库
-    apt-get update --allow-unauthenticated || true
+    echo "正在更新包含 Docker 仓库的软件包列表..."
+    apt-get update --allow-unauthenticated --allow-releaseinfo-change || true
     
     echo ">>> [3/8] 安装 Docker CE 兼容版本..."
-    apt-get install -y --allow-unauthenticated docker-ce docker-ce-cli containerd.io
+    echo "正在安装 Docker CE..."
+    apt-get install -y --allow-unauthenticated --fix-broken docker-ce docker-ce-cli containerd.io || true
+    
+    # 检查 Docker 是否安装成功
+    if command -v docker &> /dev/null; then
+      echo "✅ Docker CE 安装成功"
+    else
+      echo "❌ Docker CE 安装失败，尝试备用方法..."
+      # 尝试从二进制包安装
+      echo "正在下载 Docker 二进制包..."
+      curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz
+      if [ -f /tmp/docker.tgz ]; then
+        echo "正在解压 Docker 二进制包..."
+        tar -xzf /tmp/docker.tgz -C /tmp
+        cp /tmp/docker/* /usr/bin/
+        chmod +x /usr/bin/docker*
+        echo "✅ Docker CE 二进制安装成功"
+      else
+        echo "❌ Docker 二进制下载失败"
+      fi
+    fi
     
     echo ">>> [3.5/8] 安装 Docker Compose 兼容版本..."
     # Debian 9 使用较老版本的 docker-compose
