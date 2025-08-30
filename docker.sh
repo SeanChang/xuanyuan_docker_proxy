@@ -2,7 +2,7 @@
 set -e
 
 echo ">>> [1/8] 检查系统信息..."
-OS=$(awk -F= '/^ID=/{print $2}' /etc/os-release)
+OS=$(awk -F= '/^ID=/{print $2}' /etc/os-release | tr -d '"')
 ARCH=$(uname -m)
 VERSION_ID=$(awk -F= '/^VERSION_ID=/{print $2}' /etc/os-release | tr -d '"')
 echo "系统: $OS $VERSION_ID 架构: $ARCH"
@@ -238,7 +238,7 @@ if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
     echo "建议访问: https://docs.docker.com/compose/install/ 查看手动安装方法"
   fi
 
-elif [[ "$OS" == "centos" || "$OS" == "rhel" ]]; then
+elif [[ "$OS" == "centos" || "$OS" == "rhel" || "$OS" == "rocky" || "$OS" == "ol" ]]; then
   sudo yum install -y yum-utils
   sudo yum-config-manager --add-repo https://mirrors.tencent.com/docker-ce/linux/centos/docker-ce.repo
 
