@@ -132,21 +132,32 @@ if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
   # 检查 Debian 版本，为老版本提供兼容性支持
   if [[ "$OS" == "debian" && "$VERSION_ID" == "9" ]]; then
     echo "⚠️  检测到 Debian 9 (Stretch)，使用兼容的安装方法..."
+    echo "⚠️  注意：Debian 9 已到达生命周期结束，将使用特殊处理..."
     
-    # Debian 9 使用旧版本的 Docker 源
-    sudo apt-get update
-    sudo apt-get install -y ca-certificates curl gnupg lsb-release apt-transport-https
+    # 首先更新过期的 GPG 密钥
+    echo "正在更新过期的 GPG 密钥..."
+    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 648ACFD622F3D138
+    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0E98404D386FA1D9
+    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AA8E81B4331F7F50
+    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A
+    
+    # 更新软件包列表，允许未认证的包
+    apt-get update --allow-unauthenticated || true
+    
+    # 安装必要的依赖包，允许未认证的包
+    apt-get install -y --allow-unauthenticated ca-certificates curl gnupg lsb-release apt-transport-https
     
     # 添加 Docker 官方 GPG 密钥
-    curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+    curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
     
     # 添加 Docker 仓库（使用 Debian 9 兼容的源）
-    echo "deb [arch=$(dpkg --print-architecture)] https://download.docker.com/linux/debian stretch stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    echo "deb [arch=$(dpkg --print-architecture)] https://download.docker.com/linux/debian stretch stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
     
-    sudo apt-get update
+    # 再次更新，这次包含 Docker 仓库
+    apt-get update --allow-unauthenticated || true
     
     echo ">>> [3/8] 安装 Docker CE 兼容版本..."
-    sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+    apt-get install -y --allow-unauthenticated docker-ce docker-ce-cli containerd.io
     
     echo ">>> [3.5/8] 安装 Docker Compose 兼容版本..."
     # Debian 9 使用较老版本的 docker-compose
@@ -155,12 +166,12 @@ if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
     DOCKER_COMPOSE_DOWNLOADED=false
     
     # 尝试下载兼容版本
-    if sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+    if curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
       DOCKER_COMPOSE_DOWNLOADED=true
       echo "✅ 从 GitHub 下载兼容版本成功"
     else
       echo "❌ GitHub 下载失败，尝试包管理器安装..."
-      if sudo apt-get install -y docker-compose; then
+      if apt-get install -y --allow-unauthenticated docker-compose; then
         DOCKER_COMPOSE_DOWNLOADED=true
         echo "✅ 通过包管理器安装 docker-compose 成功"
       else
@@ -169,8 +180,8 @@ if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
     fi
     
     if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "true" ]]; then
-      sudo chmod +x /usr/local/bin/docker-compose
-      sudo ln -sf /usr/local/bin/docker-compose /usr/bin/docker-compose
+      chmod +x /usr/local/bin/docker-compose
+      ln -sf /usr/local/bin/docker-compose /usr/bin/docker-compose
       echo "✅ Docker Compose 兼容版本安装完成"
     else
       echo "❌ Docker Compose 安装失败"
