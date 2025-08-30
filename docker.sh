@@ -143,41 +143,63 @@ if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
     apt-get clean
     apt-get autoclean
     
-    # 首先更新过期的 GPG 密钥
+    # 首先尝试安装基本工具
+    echo "正在安装基本工具..."
+    apt-get update --allow-unauthenticated || true
+    
+    # 尝试安装 dirmngr 和 curl
+    if apt-get install -y --allow-unauthenticated dirmngr; then
+      echo "✅ dirmngr 安装成功"
+    else
+      echo "⚠️  dirmngr 安装失败，将使用备用方法"
+    fi
+    
+    if apt-get install -y --allow-unauthenticated curl; then
+      echo "✅ curl 安装成功"
+    else
+      echo "⚠️  curl 安装失败，将使用备用方法"
+    fi
+    
+    # 如果 curl 安装失败，尝试使用 wget 作为备用
+    if ! command -v curl &> /dev/null && ! command -v wget &> /dev/null; then
+      echo "正在安装 wget 作为 curl 的备用..."
+      apt-get install -y --allow-unauthenticated wget || true
+    fi
+    
+    # 现在尝试更新过期的 GPG 密钥
     echo "正在更新过期的 GPG 密钥..."
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 648ACFD622F3D138 || true
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0E98404D386FA1D9 || true
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AA8E81B4331F7F50 || true
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A || true
+    if command -v dirmngr &> /dev/null; then
+      apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 648ACFD622F3D138 || true
+      apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0E98404D386FA1D9 || true
+      apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AA8E81B4331F7F50 || true
+      apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A || true
+      
+      # 尝试使用不同的密钥服务器
+      echo "尝试使用备用密钥服务器..."
+      apt-key adv --keyserver pgpkeys.mit.edu --recv-keys 648ACFD622F3D138 || true
+      apt-key adv --keyserver pgpkeys.mit.edu --recv-keys 0E98404D386FA1D9 || true
+    else
+      echo "⚠️  dirmngr 不可用，跳过 GPG 密钥更新"
+    fi
     
-    # 尝试使用不同的密钥服务器
-    echo "尝试使用备用密钥服务器..."
-    apt-key adv --keyserver pgpkeys.mit.edu --recv-keys 648ACFD622F3D138 || true
-    apt-key adv --keyserver pgpkeys.mit.edu --recv-keys 0E98404D386FA1D9 || true
-    
-    # 更新软件包列表，允许未认证的包，忽略错误
+    # 更新软件包列表，允许未认证的包，移除不支持的选项
     echo "正在更新软件包列表..."
-    apt-get update --allow-unauthenticated --allow-releaseinfo-change || true
+    apt-get update --allow-unauthenticated || true
     
     # 如果还是失败，尝试强制更新
-    if ! apt-get update --allow-unauthenticated --allow-releaseinfo-change; then
+    if ! apt-get update --allow-unauthenticated; then
       echo "⚠️  软件源更新失败，尝试强制更新..."
-      apt-get update --allow-unauthenticated --allow-releaseinfo-change --fix-missing || true
+      apt-get update --allow-unauthenticated --fix-missing || true
     fi
     
     # 安装必要的依赖包，允许未认证的包
     echo "正在安装必要的依赖包..."
-    apt-get install -y --allow-unauthenticated --fix-broken ca-certificates curl gnupg lsb-release apt-transport-https || true
+    apt-get install -y --allow-unauthenticated --fix-broken ca-certificates gnupg lsb-release apt-transport-https || true
     
     # 如果某些包安装失败，尝试逐个安装
     if ! dpkg -l | grep -q "ca-certificates"; then
       echo "尝试单独安装 ca-certificates..."
       apt-get install -y --allow-unauthenticated ca-certificates || true
-    fi
-    
-    if ! dpkg -l | grep -q "curl"; then
-      echo "尝试单独安装 curl..."
-      apt-get install -y --allow-unauthenticated curl || true
     fi
     
     if ! dpkg -l | grep -q "gnupg"; then
@@ -187,7 +209,13 @@ if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
     
     # 添加 Docker 官方 GPG 密钥
     echo "正在添加 Docker 官方 GPG 密钥..."
-    curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - || true
+    if command -v curl &> /dev/null; then
+      curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - || true
+    elif command -v wget &> /dev/null; then
+      wget -qO- https://download.docker.com/linux/debian/gpg | apt-key add - || true
+    else
+      echo "❌ 无法下载 Docker GPG 密钥，curl 和 wget 都不可用"
+    fi
     
     # 添加 Docker 仓库（使用 Debian 9 兼容的源）
     echo "正在添加 Docker 仓库..."
@@ -195,7 +223,7 @@ if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
     
     # 再次更新，这次包含 Docker 仓库
     echo "正在更新包含 Docker 仓库的软件包列表..."
-    apt-get update --allow-unauthenticated --allow-releaseinfo-change || true
+    apt-get update --allow-unauthenticated || true
     
     echo ">>> [3/8] 安装 Docker CE 兼容版本..."
     echo "正在安装 Docker CE..."
@@ -208,7 +236,14 @@ if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
       echo "❌ Docker CE 安装失败，尝试备用方法..."
       # 尝试从二进制包安装
       echo "正在下载 Docker 二进制包..."
-      curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz
+      if command -v curl &> /dev/null; then
+        curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz
+      elif command -v wget &> /dev/null; then
+        wget -O /tmp/docker.tgz https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz
+      else
+        echo "❌ 无法下载 Docker 二进制包，curl 和 wget 都不可用"
+      fi
+      
       if [ -f /tmp/docker.tgz ]; then
         echo "正在解压 Docker 二进制包..."
         tar -xzf /tmp/docker.tgz -C /tmp
@@ -227,10 +262,19 @@ if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
     DOCKER_COMPOSE_DOWNLOADED=false
     
     # 尝试下载兼容版本
-    if curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
-      DOCKER_COMPOSE_DOWNLOADED=true
-      echo "✅ 从 GitHub 下载兼容版本成功"
-    else
+    if command -v curl &> /dev/null; then
+      if curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+        DOCKER_COMPOSE_DOWNLOADED=true
+        echo "✅ 从 GitHub 下载兼容版本成功"
+      fi
+    elif command -v wget &> /dev/null; then
+      if wget -O /usr/local/bin/docker-compose "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" --timeout=30; then
+        DOCKER_COMPOSE_DOWNLOADED=true
+        echo "✅ 从 GitHub 下载兼容版本成功"
+      fi
+    fi
+    
+    if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
       echo "❌ GitHub 下载失败，尝试包管理器安装..."
       if apt-get install -y --allow-unauthenticated docker-compose; then
         DOCKER_COMPOSE_DOWNLOADED=true
