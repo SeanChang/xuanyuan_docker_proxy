@@ -13,6 +13,147 @@ else
     echo "✅ 检测到 sudo 命令"
 fi
 
+echo "=========================================="
+echo "🐳 Docker 一键安装配置脚本"
+echo "=========================================="
+echo ""
+echo "请选择操作模式："
+echo "1) 一键安装配置（推荐）"
+echo "2) 修改轩辕镜像专属加速地址"
+echo ""
+read -p "请输入选择 [1/2]: " mode_choice
+
+if [[ "$mode_choice" == "2" ]]; then
+    echo ""
+    echo ">>> 模式：仅修改镜像加速地址"
+    echo ""
+    
+    # 检查 Docker 是否已安装
+    if ! command -v docker &> /dev/null; then
+        echo "❌ 检测到 Docker 未安装！"
+        echo ""
+        echo "⚠️  风险提示："
+        echo "   - 无法验证镜像加速配置是否生效"
+        echo "   - 可能导致后续 Docker 操作失败"
+        echo "   - 建议先完成 Docker 安装"
+        echo ""
+        echo "💡 建议：选择选项 1 进行一键安装配置"
+        echo ""
+        read -p "是否仍要继续？[y/N]: " continue_choice
+        if [[ ! "$continue_choice" =~ ^[Yy]$ ]]; then
+            echo "已取消操作，建议选择选项 1 进行完整安装配置"
+            exit 0
+        fi
+    else
+        # 检查 Docker 版本
+        DOCKER_VERSION=$(docker --version | grep -oE '[0-9]+\.[0-9]+' | head -1)
+        MAJOR_VERSION=$(echo $DOCKER_VERSION | cut -d. -f1)
+        
+        if [[ "$MAJOR_VERSION" -lt 20 ]]; then
+            echo "⚠️  检测到 Docker 版本 $DOCKER_VERSION 低于 20.0"
+            echo ""
+            echo "⚠️  风险提示："
+            echo "   - 低版本 Docker 可能存在安全漏洞"
+            echo "   - 某些新功能可能不可用"
+            echo "   - 建议升级到 Docker 20+ 版本"
+            echo ""
+            echo "💡 建议：选择选项 1 进行一键安装配置和升级"
+            echo ""
+            read -p "是否仍要继续？[y/N]: " continue_choice
+            if [[ ! "$continue_choice" =~ ^[Yy]$ ]]; then
+                echo "已取消操作，建议选择选项 1 进行完整安装配置"
+                exit 0
+            fi
+        fi
+    fi
+    
+    echo ""
+    echo ">>> 配置轩辕镜像加速地址"
+    echo ""
+    echo "请选择版本："
+    echo "1) 轩辕镜像免费版 (默认加速地址: docker.xuanyuan.me)"
+    echo "2) 轩辕镜像专业版 (自定义专属免登录地址 + docker.xuanyuan.me)"
+    read -p "请输入选择 [1/2]: " choice
+    
+    mirror_list=""
+    
+    if [[ "$choice" == "2" ]]; then
+        read -p "请输入您的专属免登录地址 (格式如 xxx.xuanyuan.run): " custom_domain
+        mirror_list=$(cat <<EOF
+[
+  "https://$custom_domain",
+  "https://docker.xuanyuan.me"
+]
+EOF
+)
+    else
+        mirror_list=$(cat <<EOF
+[
+  "https://docker.xuanyuan.me"
+]
+EOF
+)
+    fi
+    
+    # 创建 Docker 配置目录
+    mkdir -p /etc/docker
+    
+    # 备份现有配置
+    if [ -f /etc/docker/daemon.json ]; then
+        cp /etc/docker/daemon.json /etc/docker/daemon.json.backup.$(date +%Y%m%d_%H%M%S)
+        echo "✅ 已备份现有配置到 /etc/docker/daemon.json.backup.*"
+    fi
+    
+    # 写入新配置
+    cat <<EOF | tee /etc/docker/daemon.json
+{
+  "registry-mirrors": $mirror_list
+}
+EOF
+    
+    echo "✅ 镜像加速配置已更新"
+    echo ""
+    echo "当前配置的镜像源："
+    if [[ "$choice" == "2" ]]; then
+        echo "  - https://$custom_domain (优先)"
+        echo "  - https://docker.xuanyuan.me (备用)"
+    else
+        echo "  - https://docker.xuanyuan.me"
+    fi
+    echo ""
+    
+    # 如果 Docker 服务正在运行，重启以应用配置
+    if systemctl is-active --quiet docker 2>/dev/null; then
+        echo "正在重启 Docker 服务以应用新配置..."
+        systemctl daemon-reexec || true
+        systemctl restart docker || true
+        
+        # 等待服务启动
+        sleep 3
+        
+        if systemctl is-active --quiet docker; then
+            echo "✅ Docker 服务重启成功，新配置已生效"
+        else
+            echo "❌ Docker 服务重启失败，请手动重启"
+        fi
+    else
+        echo "⚠️  Docker 服务未运行，配置将在下次启动时生效"
+    fi
+    
+    echo ""
+    echo "🎉 镜像加速配置完成！"
+    exit 0
+fi
+
+# 如果选择选项 1 或无效选择，继续执行完整安装流程
+if [[ "$mode_choice" != "1" ]]; then
+    echo "无效选择，默认执行一键安装配置..."
+    echo ""
+fi
+
+echo ">>> 模式：一键安装配置"
+echo ""
+
 echo ">>> [1/8] 检查系统信息..."
 OS=$(awk -F= '/^ID=/{print $2}' /etc/os-release | tr -d '"')
 ARCH=$(uname -m)
