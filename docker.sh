@@ -16,137 +16,177 @@ fi
 echo "=========================================="
 echo "🐳 欢迎使用轩辕镜像 Docker 一键安装配置脚本"
 echo "=========================================="
+echo "官方网站: https://xuanyuan.cloud/"
 echo ""
 echo "请选择操作模式："
 echo "1) 一键安装配置（推荐）"
 echo "2) 修改轩辕镜像专属加速地址"
 echo ""
-read -p "请输入选择 [1/2]: " mode_choice
-
-if [[ "$mode_choice" == "2" ]]; then
-    echo ""
-    echo ">>> 模式：仅修改镜像加速地址"
-    echo ""
+# 循环等待用户输入有效选择
+while true; do
+    read -p "请输入选择 [1/2]: " mode_choice
     
-    # 检查 Docker 是否已安装
-    if ! command -v docker &> /dev/null; then
-        echo "❌ 检测到 Docker 未安装！"
+    if [[ "$mode_choice" == "1" ]]; then
         echo ""
-        echo "⚠️  风险提示："
-        echo "   - 无法验证镜像加速配置是否生效"
-        echo "   - 可能导致后续 Docker 操作失败"
-        echo "   - 建议先完成 Docker 安装"
+        echo ">>> 模式：一键安装配置"
         echo ""
-        echo "💡 建议：选择选项 1 进行一键安装配置"
+        break
+    elif [[ "$mode_choice" == "2" ]]; then
         echo ""
-        echo "已退出脚本，请重新运行并选择选项 1 进行完整安装配置"
-        exit 1
-    else
-        # 检查 Docker 版本
-        DOCKER_VERSION=$(docker --version | grep -oE '[0-9]+\.[0-9]+' | head -1)
-        MAJOR_VERSION=$(echo $DOCKER_VERSION | cut -d. -f1)
+        echo ">>> 模式：仅修改镜像加速地址"
+        echo ""
         
-        if [[ "$MAJOR_VERSION" -lt 20 ]]; then
-            echo "⚠️  检测到 Docker 版本 $DOCKER_VERSION 低于 20.0"
+        # 检查 Docker 是否已安装
+        if ! command -v docker &> /dev/null; then
+            echo "❌ 检测到 Docker 未安装！"
             echo ""
             echo "⚠️  风险提示："
-            echo "   - 低版本 Docker 可能存在安全漏洞"
-            echo "   - 某些新功能可能不可用"
-            echo "   - 建议升级到 Docker 20+ 版本"
+            echo "   - 无法验证镜像加速配置是否生效"
+            echo "   - 可能导致后续 Docker 操作失败"
+            echo "   - 建议先完成 Docker 安装"
             echo ""
-            echo "💡 建议：选择选项 1 进行一键安装配置和升级"
+            echo "💡 建议：选择选项 1 进行一键安装配置"
             echo ""
-            read -p "是否仍要继续？[y/N]: " continue_choice
-            if [[ ! "$continue_choice" =~ ^[Yy]$ ]]; then
-                echo "已取消操作，建议选择选项 1 进行完整安装配置"
-                exit 0
+            echo "已退出脚本，请重新运行并选择选项 1 进行完整安装配置"
+            exit 1
+        else
+            # 检查 Docker 版本
+            DOCKER_VERSION=$(docker --version | grep -oE '[0-9]+\.[0-9]+' | head -1)
+            MAJOR_VERSION=$(echo $DOCKER_VERSION | cut -d. -f1)
+            
+            if [[ "$MAJOR_VERSION" -lt 20 ]]; then
+                echo "⚠️  检测到 Docker 版本 $DOCKER_VERSION 低于 20.0"
+                echo ""
+                echo "⚠️  风险提示："
+                echo "   - 低版本 Docker 可能存在安全漏洞"
+                echo "   - 某些新功能可能不可用"
+                echo "   - 建议升级到 Docker 20+ 版本"
+                echo ""
+                echo "💡 建议：选择选项 1 进行一键安装配置和升级"
+                echo ""
+                read -p "是否仍要继续？[y/N]: " continue_choice
+                if [[ ! "$continue_choice" =~ ^[Yy]$ ]]; then
+                    echo "已取消操作，建议选择选项 1 进行完整安装配置"
+                    exit 0
+                fi
             fi
         fi
-    fi
-    
-    echo ""
-    echo ">>> 配置轩辕镜像加速地址"
-    echo ""
-    echo "请选择版本："
-    echo "1) 轩辕镜像免费版 (默认加速地址: docker.xuanyuan.me)"
-    echo "2) 轩辕镜像专业版 (自定义专属免登录地址 + docker.xuanyuan.me)"
-    read -p "请输入选择 [1/2]: " choice
-    
-    mirror_list=""
-    
-    if [[ "$choice" == "2" ]]; then
-        read -p "请输入您的专属免登录地址 (格式如 xxx.xuanyuan.run): " custom_domain
-        mirror_list=$(cat <<EOF
+        
+        echo ""
+        echo ">>> 配置轩辕镜像加速地址"
+        echo ""
+        echo "请选择版本："
+        echo "1) 轩辕镜像免费版 (默认加速地址: docker.xuanyuan.me)"
+        echo "2) 轩辕镜像专业版 (自定义专属免登录地址 + docker.xuanyuan.me)"
+        # 循环等待用户输入有效选择
+        while true; do
+            read -p "请输入选择 [1/2]: " choice
+            if [[ "$choice" == "1" || "$choice" == "2" ]]; then
+                break
+            else
+                echo "❌ 无效选择，请输入 1 或 2"
+                echo ""
+            fi
+        done
+        
+        mirror_list=""
+        
+        if [[ "$choice" == "2" ]]; then
+            read -p "请输入您的专属免登录地址 (格式如 xxx.xuanyuan.run): " custom_domain
+            # 生成对应的 .dev 域名
+            custom_domain_dev="${custom_domain%.run}.dev"
+            mirror_list=$(cat <<EOF
 [
   "https://$custom_domain",
+  "https://$custom_domain_dev",
   "https://docker.xuanyuan.me"
 ]
 EOF
 )
-    else
-        mirror_list=$(cat <<EOF
+        else
+            mirror_list=$(cat <<EOF
 [
   "https://docker.xuanyuan.me"
 ]
 EOF
 )
-    fi
-    
-    # 创建 Docker 配置目录
-    mkdir -p /etc/docker
-    
-    # 备份现有配置
-    if [ -f /etc/docker/daemon.json ]; then
-        cp /etc/docker/daemon.json /etc/docker/daemon.json.backup.$(date +%Y%m%d_%H%M%S)
-        echo "✅ 已备份现有配置到 /etc/docker/daemon.json.backup.*"
-    fi
-    
-    # 写入新配置
-    cat <<EOF | tee /etc/docker/daemon.json
+        fi
+        
+        # 创建 Docker 配置目录
+        mkdir -p /etc/docker
+        
+        # 备份现有配置
+        if [ -f /etc/docker/daemon.json ]; then
+            sudo cp /etc/docker/daemon.json /etc/docker/daemon.json.backup.$(date +%Y%m%d_%H%M%S)
+            echo "✅ 已备份现有配置到 /etc/docker/daemon.json.backup.*"
+        fi
+        
+        # 写入新配置
+        
+        # 根据用户选择设置 insecure-registries
+        if [[ "$choice" == "2" ]]; then
+          insecure_registries=$(cat <<EOF
+[
+  "$custom_domain",
+  "$custom_domain_dev",
+  "docker.xuanyuan.me"
+]
+EOF
+)
+        else
+          insecure_registries=$(cat <<EOF
+[
+  "docker.xuanyuan.me"
+]
+EOF
+)
+        fi
+
+        cat <<EOF | tee /etc/docker/daemon.json
 {
-  "registry-mirrors": $mirror_list
+  "registry-mirrors": $mirror_list,
+  "insecure-registries": $insecure_registries
 }
 EOF
-    
-    echo "✅ 镜像加速配置已更新"
-    echo ""
-    echo "当前配置的镜像源："
-    if [[ "$choice" == "2" ]]; then
-        echo "  - https://$custom_domain (优先)"
-        echo "  - https://docker.xuanyuan.me (备用)"
-    else
-        echo "  - https://docker.xuanyuan.me"
-    fi
-    echo ""
-    
-    # 如果 Docker 服务正在运行，重启以应用配置
-    if systemctl is-active --quiet docker 2>/dev/null; then
-        echo "正在重启 Docker 服务以应用新配置..."
-        systemctl daemon-reexec || true
-        systemctl restart docker || true
         
-        # 等待服务启动
-        sleep 3
-        
-        if systemctl is-active --quiet docker; then
-            echo "✅ Docker 服务重启成功，新配置已生效"
+        echo "✅ 镜像加速配置已更新"
+        echo ""
+        echo "当前配置的镜像源："
+        if [[ "$choice" == "2" ]]; then
+            echo "  - https://$custom_domain (优先)"
+            echo "  - https://$custom_domain_dev (优先)"
+            echo "  - https://docker.xuanyuan.me (备用)"
         else
-            echo "❌ Docker 服务重启失败，请手动重启"
+            echo "  - https://docker.xuanyuan.me"
         fi
+        echo ""
+        
+        # 如果 Docker 服务正在运行，重启以应用配置
+        if systemctl is-active --quiet docker 2>/dev/null; then
+            echo "正在重启 Docker 服务以应用新配置..."
+            systemctl daemon-reexec || true
+            systemctl restart docker || true
+            
+            # 等待服务启动
+            sleep 3
+            
+            if systemctl is-active --quiet docker; then
+                echo "✅ Docker 服务重启成功，新配置已生效"
+            else
+                echo "❌ Docker 服务重启失败，请手动重启"
+            fi
+        else
+            echo "⚠️  Docker 服务未运行，配置将在下次启动时生效"
+        fi
+        
+        echo ""
+        echo "🎉 镜像加速配置完成！"
+        exit 0
     else
-        echo "⚠️  Docker 服务未运行，配置将在下次启动时生效"
+        echo "❌ 无效选择，请输入 1 或 2"
+        echo ""
     fi
-    
-    echo ""
-    echo "🎉 镜像加速配置完成！"
-    exit 0
-fi
-
-# 如果选择选项 1 或无效选择，继续执行完整安装流程
-if [[ "$mode_choice" != "1" ]]; then
-    echo "无效选择，默认执行一键安装配置..."
-    echo ""
-fi
+done
 
 echo ">>> 模式：一键安装配置"
 echo ""
@@ -175,57 +215,22 @@ if command -v docker &> /dev/null; then
             echo "用户选择升级 Docker，继续执行安装流程..."
         else
             echo "用户选择不升级，跳过 Docker 安装"
-            echo ">>> [5/8] 配置轩辕镜像加速..."
-            
+                    echo ">>> [5/8] 配置轩辕镜像加速..."
+        
+        # 循环等待用户选择镜像版本
+        while true; do
             echo "请选择版本:"
             echo "1) 免费版 (默认加速地址: docker.xuanyuan.me)"
             echo "2) 专业版 (默认加速地址: 自定义专属免登录地址 + docker.xuanyuan.me)"
             read -p "请输入选择 [1/2]: " choice
             
-            mirror_list=""
-            
-            if [[ "$choice" == "2" ]]; then
-              read -p "请输入您的专属免登录地址 (格式如 xxx.xuanyuan.run): " custom_domain
-              mirror_list=$(cat <<EOF
-[
-  "https://$custom_domain",
-  "https://docker.xuanyuan.me"
-]
-EOF
-)
+            if [[ "$choice" == "1" || "$choice" == "2" ]]; then
+                break
             else
-              mirror_list=$(cat <<EOF
-[
-  "https://docker.xuanyuan.me"
-]
-EOF
-)
+                echo "❌ 无效选择，请输入 1 或 2"
+                echo ""
             fi
-            
-            sudo mkdir -p /etc/docker
-            cat <<EOF | sudo tee /etc/docker/daemon.json
-{
-  "registry-mirrors": $mirror_list
-}
-EOF
-            
-            sudo systemctl daemon-reexec || true
-            sudo systemctl restart docker || true
-            
-            echo ">>> [6/8] 安装完成！"
-            echo "Docker 镜像加速已配置完成"
-            exit 0
-        fi
-    else
-        echo "Docker 版本 $DOCKER_VERSION 满足要求 (>= 20.0)"
-        echo "跳过 Docker 安装，直接配置镜像加速..."
-        
-        echo ">>> [5/8] 配置国内镜像加速..."
-        
-        echo "请选择版本:"
-        echo "1) 免费版 (默认加速地址: docker.xuanyuan.me)"
-        echo "2) 专业版 (默认加速地址: 自定义专属免登录地址 + docker.xuanyuan.me)"
-        read -p "请输入选择 [1/2]: " choice
+        done
         
         mirror_list=""
         
@@ -248,9 +253,30 @@ EOF
         fi
         
         sudo mkdir -p /etc/docker
+
+        # 根据用户选择设置 insecure-registries
+        if [[ "$choice" == "2" ]]; then
+          insecure_registries=$(cat <<EOF
+[
+  "$custom_domain",
+  "$custom_domain_dev",
+  "docker.xuanyuan.me"
+]
+EOF
+)
+        else
+          insecure_registries=$(cat <<EOF
+[
+  "docker.xuanyuan.me"
+]
+EOF
+)
+        fi
+
         cat <<EOF | sudo tee /etc/docker/daemon.json
 {
-  "registry-mirrors": $mirror_list
+  "registry-mirrors": $mirror_list,
+  "insecure-registries": $insecure_registries
 }
 EOF
         
@@ -258,7 +284,103 @@ EOF
         sudo systemctl restart docker || true
         
         echo ">>> [6/8] 安装完成！"
-        echo "Docker 镜像加速已配置完成"
+        echo "🎉Docker 镜像加速已配置完成"
+        echo "轩辕镜像 - 中国开发者首选的专业 Docker 镜像下载加速服务平台"
+        echo "官方网站: https://xuanyuan.cloud/"
+        
+        # 显示当前配置的镜像源
+        echo ""
+        echo "当前配置的镜像源："
+        if [[ "$choice" == "2" ]]; then
+            echo "  - https://$custom_domain (优先)"
+            echo "  - https://$custom_domain_dev (优先)"
+            echo "  - https://docker.xuanyuan.me (备用)"
+        else
+            echo "  - https://docker.xuanyuan.me"
+        fi
+        echo ""
+        
+        # 继续执行完整的流程，不在这里退出
+        fi
+    else
+        echo "Docker 版本 $DOCKER_VERSION 满足要求 (>= 20.0)"
+        echo "跳过 Docker 安装，直接配置镜像加速..."
+        
+        echo ">>> [5/8] 配置国内镜像加速..."
+        
+        # 循环等待用户选择镜像版本
+        while true; do
+            echo "请选择版本:"
+            echo "1) 免费版 (默认加速地址: docker.xuanyuan.me)"
+            echo "2) 专业版 (默认加速地址: 自定义专属免登录地址 + docker.xuanyuan.me)"
+            read -p "请输入选择 [1/2]: " choice
+            
+            if [[ "$choice" == "1" || "$choice" == "2" ]]; then
+                break
+            else
+                echo "❌ 无效选择，请输入 1 或 2"
+                echo ""
+            fi
+        done
+        
+        mirror_list=""
+        
+        if [[ "$choice" == "2" ]]; then
+          read -p "请输入您的专属免登录地址 (格式如 xxx.xuanyuan.run): " custom_domain
+          # 生成对应的 .dev 域名
+          custom_domain_dev="${custom_domain%.run}.dev"
+          mirror_list=$(cat <<EOF
+[
+  "https://$custom_domain",
+  "https://$custom_domain_dev",
+  "https://docker.xuanyuan.me"
+]
+EOF
+)
+        else
+          mirror_list=$(cat <<EOF
+[
+  "https://docker.xuanyuan.me"
+]
+EOF
+)
+        fi
+        
+        sudo mkdir -p /etc/docker
+
+        # 根据用户选择设置 insecure-registries
+        if [[ "$choice" == "2" ]]; then
+          insecure_registries=$(cat <<EOF
+[
+  "$custom_domain",
+  "$custom_domain_dev",
+  "docker.xuanyuan.me"
+]
+EOF
+)
+        else
+          insecure_registries=$(cat <<EOF
+[
+  "docker.xuanyuan.me"
+]
+EOF
+)
+        fi
+
+        cat <<EOF | sudo tee /etc/docker/daemon.json
+{
+  "registry-mirrors": $mirror_list,
+  "insecure-registries": $insecure_registries
+}
+EOF
+        
+        sudo systemctl daemon-reexec || true
+        sudo systemctl restart docker || true
+        
+        echo ">>> [6/8] 安装完成！"
+        echo "🎉Docker 镜像加速已配置完成"
+        echo "轩辕镜像 - 中国开发者首选的专业 Docker 镜像下载加速服务平台"
+        echo "官方网站: https://xuanyuan.cloud/"
         exit 0
     fi
 else
@@ -675,18 +797,31 @@ fi
 
 echo ">>> [5/8] 配置国内镜像加速..."
 
-echo "请选择版本:"
-echo "1) 轩辕镜像免费版 (默认加速地址: docker.xuanyuan.me)"
-echo "2) 轩辕镜像专业版 (默认加速地址: 自定义专属免登录地址 + docker.xuanyuan.me)"
-read -p "请输入选择 [1/2]: " choice
+# 循环等待用户选择镜像版本
+while true; do
+    echo "请选择版本:"
+    echo "1) 轩辕镜像免费版 (默认加速地址: docker.xuanyuan.me)"
+    echo "2) 轩辕镜像专业版 (默认加速地址: 自定义专属免登录地址 + docker.xuanyuan.me)"
+    read -p "请输入选择 [1/2]: " choice
+    
+    if [[ "$choice" == "1" || "$choice" == "2" ]]; then
+        break
+    else
+        echo "❌ 无效选择，请输入 1 或 2"
+        echo ""
+    fi
+done
 
 mirror_list=""
 
 if [[ "$choice" == "2" ]]; then
   read -p "请输入您的专属免登录地址 (格式如 xxx.xuanyuan.run): " custom_domain
+  # 生成对应的 .dev 域名
+  custom_domain_dev="${custom_domain%.run}.dev"
   mirror_list=$(cat <<EOF
 [
   "https://$custom_domain",
+  "https://$custom_domain_dev",
   "https://docker.xuanyuan.me"
 ]
 EOF
@@ -701,9 +836,30 @@ EOF
 fi
 
 sudo mkdir -p /etc/docker
+
+# 根据用户选择设置 insecure-registries
+if [[ "$choice" == "2" ]]; then
+  insecure_registries=$(cat <<EOF
+[
+  "$custom_domain",
+  "$custom_domain_dev",
+  "docker.xuanyuan.me"
+]
+EOF
+)
+else
+  insecure_registries=$(cat <<EOF
+[
+  "docker.xuanyuan.me"
+]
+EOF
+)
+fi
+
 cat <<EOF | sudo tee /etc/docker/daemon.json
 {
-  "registry-mirrors": $mirror_list
+  "registry-mirrors": $mirror_list,
+  "insecure-registries": $insecure_registries
 }
 EOF
 
@@ -711,7 +867,9 @@ sudo systemctl daemon-reexec || true
 sudo systemctl restart docker || true
 
 echo ">>> [6/8] 安装完成！"
-echo "Docker 镜像加速已配置完成"
+echo "🎉Docker 镜像加速已配置完成"
+echo "轩辕镜像 - 中国开发者首选的专业 Docker 镜像下载加速服务平台"
+echo "官方网站: https://xuanyuan.cloud/"
 
 echo ">>> [7/8] 重载 Docker 配置并重启服务..."
 sudo systemctl daemon-reexec || true
@@ -730,6 +888,7 @@ if systemctl is-active --quiet docker; then
     echo "当前配置的镜像源:"
     if [[ "$choice" == "2" ]]; then
         echo "  - https://$custom_domain (优先)"
+        echo "  - https://$custom_domain_dev (优先)"
         echo "  - https://docker.xuanyuan.me (备用)"
     else
         echo "  - https://docker.xuanyuan.me"
@@ -739,6 +898,7 @@ if systemctl is-active --quiet docker; then
     echo "🎉 安装和配置完成！"
     echo ""
     echo "轩辕镜像 - 中国开发者首选的专业 Docker 镜像下载加速服务平台"
+    echo "官方网站: https://xuanyuan.cloud/"
 else
     echo "❌ Docker 服务启动失败，请检查配置"
     exit 1
