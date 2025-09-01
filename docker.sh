@@ -92,13 +92,10 @@ while true; do
         mirror_list=""
         
         if [[ "$choice" == "2" ]]; then
-            read -p "请输入您的专属免登录地址 (格式如 xxx.xuanyuan.run): " custom_domain
-            # 生成对应的 .dev 域名
-            custom_domain_dev="${custom_domain%.run}.dev"
+            read -p "请输入您的轩辕镜像专属免登录地址 (访问官网获取：https://xuanyuan.cloud): " custom_domain
             mirror_list=$(cat <<EOF
 [
   "https://$custom_domain",
-  "https://$custom_domain_dev",
   "https://docker.xuanyuan.me"
 ]
 EOF
@@ -128,7 +125,6 @@ EOF
           insecure_registries=$(cat <<EOF
 [
   "$custom_domain",
-  "$custom_domain_dev",
   "docker.xuanyuan.me"
 ]
 EOF
@@ -154,7 +150,6 @@ EOF
         echo "当前配置的镜像源："
         if [[ "$choice" == "2" ]]; then
             echo "  - https://$custom_domain (优先)"
-            echo "  - https://$custom_domain_dev (优先)"
             echo "  - https://docker.xuanyuan.me (备用)"
         else
             echo "  - https://docker.xuanyuan.me"
@@ -197,6 +192,23 @@ ARCH=$(uname -m)
 VERSION_ID=$(awk -F= '/^VERSION_ID=/{print $2}' /etc/os-release | tr -d '"')
 echo "系统: $OS $VERSION_ID 架构: $ARCH"
 
+# 针对 Debian 10 显示特殊提示
+if [[ "$OS" == "debian" && "$VERSION_ID" == "10" ]]; then
+  echo ""
+  echo "⚠️  检测到 Debian 10 (Buster) 系统"
+  echo "📋 系统状态说明："
+  echo "   - Debian 10 已于 2022 年 8 月结束生命周期"
+  echo "   - 官方软件源已迁移到 archive.debian.org"
+  echo "   - 本脚本将自动配置国内镜像源以提高下载速度"
+  echo "   - 建议考虑升级到 Debian 11+ 或 Ubuntu 20.04+"
+  echo ""
+  echo "🚀 优化措施："
+  echo "   - 使用阿里云/腾讯云/华为云镜像源"
+  echo "   - 自动检测并切换可用的镜像源"
+  echo "   - 使用二进制安装方式避免包依赖问题"
+  echo ""
+fi
+
 echo ">>> [1.5/8] 检查 Docker 安装状态..."
 if command -v docker &> /dev/null; then
     echo "检测到 Docker 已安装"
@@ -235,7 +247,7 @@ if command -v docker &> /dev/null; then
         mirror_list=""
         
         if [[ "$choice" == "2" ]]; then
-          read -p "请输入您的专属免登录地址 (格式如 xxx.xuanyuan.run): " custom_domain
+          read -p "请输入您的轩辕镜像专属免登录地址 (访问官网获取：https://xuanyuan.cloud): " custom_domain
           mirror_list=$(cat <<EOF
 [
   "https://$custom_domain",
@@ -259,7 +271,6 @@ EOF
           insecure_registries=$(cat <<EOF
 [
   "$custom_domain",
-  "$custom_domain_dev",
   "docker.xuanyuan.me"
 ]
 EOF
@@ -293,7 +304,6 @@ EOF
         echo "当前配置的镜像源："
         if [[ "$choice" == "2" ]]; then
             echo "  - https://$custom_domain (优先)"
-            echo "  - https://$custom_domain_dev (优先)"
             echo "  - https://docker.xuanyuan.me (备用)"
         else
             echo "  - https://docker.xuanyuan.me"
@@ -326,13 +336,11 @@ EOF
         mirror_list=""
         
         if [[ "$choice" == "2" ]]; then
-          read -p "请输入您的专属免登录地址 (格式如 xxx.xuanyuan.run): " custom_domain
-          # 生成对应的 .dev 域名
-          custom_domain_dev="${custom_domain%.run}.dev"
+          read -p "请输入您的轩辕镜像专属免登录地址 (访问官网获取：https://xuanyuan.cloud): " custom_domain
+
           mirror_list=$(cat <<EOF
 [
   "https://$custom_domain",
-  "https://$custom_domain_dev",
   "https://docker.xuanyuan.me"
 ]
 EOF
@@ -353,7 +361,6 @@ EOF
           insecure_registries=$(cat <<EOF
 [
   "$custom_domain",
-  "$custom_domain_dev",
   "docker.xuanyuan.me"
 ]
 EOF
@@ -388,11 +395,802 @@ else
 fi
 
 echo ">>> [2/8] 配置国内 Docker 源..."
-if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
+if [[ "$OS" == "opencloudos" ]]; then
+  # OpenCloudOS 9 使用 dnf 而不是 yum
+  sudo dnf install -y dnf-utils
+  
+  # 尝试多个国内镜像源
+  echo "正在配置 Docker 源..."
+  DOCKER_REPO_ADDED=false
+  
+  # 创建Docker仓库配置文件，使用 OpenCloudOS 9 兼容的版本
+  echo "正在创建 Docker 仓库配置..."
+  
+  # 源1: 阿里云镜像
+  echo "尝试配置阿里云 Docker 源..."
+  sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.aliyun.com/docker-ce/linux/centos/9/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.aliyun.com/docker-ce/linux/centos/gpg
+EOF
+  
+  if sudo dnf makecache; then
+    DOCKER_REPO_ADDED=true
+    echo "✅ 阿里云 Docker 源配置成功"
+  else
+    echo "❌ 阿里云 Docker 源配置失败，尝试下一个源..."
+  fi
+  
+  # 源2: 腾讯云镜像
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "尝试配置腾讯云 Docker 源..."
+    sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.cloud.tencent.com/docker-ce/linux/centos/9/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.cloud.tencent.com/docker-ce/linux/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.cloud.tencent.com/docker-ce/linux/centos/gpg
+EOF
+    
+    if sudo dnf makecache; then
+      DOCKER_REPO_ADDED=true
+      echo "✅ 腾讯云 Docker 源配置成功"
+    else
+      echo "❌ 腾讯云 Docker 源配置失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源3: 华为云镜像
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "尝试配置华为云 Docker 源..."
+    sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.huaweicloud.com/docker-ce/linux/centos/9/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.huaweicloud.com/docker-ce/linux/centos/gpg
+EOF
+    
+    if sudo dnf makecache; then
+      DOCKER_REPO_ADDED=true
+      echo "✅ 华为云 Docker 源配置成功"
+    else
+      echo "❌ 华为云 Docker 源配置失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源4: 中科大镜像
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "尝试配置中科大 Docker 源..."
+    sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.ustc.edu.cn/docker-ce/linux/centos/9/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.ustc.edu.cn/docker-ce/linux/centos/gpg
+EOF
+    
+    if sudo dnf makecache; then
+      DOCKER_REPO_ADDED=true
+      echo "✅ 中科大 Docker 源配置成功"
+    else
+      echo "❌ 中科大 Docker 源配置失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源5: 清华大学镜像
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "尝试配置清华大学 Docker 源..."
+    sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/centos/9/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/centos/gpg
+EOF
+    
+    if sudo dnf makecache; then
+      DOCKER_REPO_ADDED=true
+      echo "✅ 清华大学 Docker 源配置成功"
+    else
+      echo "❌ 清华大学 Docker 源配置失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 如果所有国内源都失败，尝试官方源
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "所有国内源都失败，尝试官方源..."
+    sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://download.docker.com/linux/centos/9/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://download.docker.com/linux/centos/gpg
+EOF
+    
+    if sudo dnf makecache; then
+      DOCKER_REPO_ADDED=true
+      echo "✅ 官方 Docker 源配置成功"
+    else
+      echo "❌ 官方 Docker 源也配置失败"
+    fi
+  fi
+  
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "❌ 所有 Docker 源都配置失败，无法继续安装"
+    echo "请检查网络连接或手动配置 Docker 源"
+    exit 1
+  fi
+
+  echo ">>> [3/8] 安装 Docker CE 最新版..."
+  
+  # 尝试安装 Docker，如果失败则尝试逐个安装组件
+  if sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin; then
+    echo "✅ Docker CE 安装成功"
+  else
+    echo "❌ 批量安装失败，尝试逐个安装组件..."
+    
+    # 逐个安装组件
+    if sudo dnf install -y containerd.io; then
+      echo "✅ containerd.io 安装成功"
+    else
+      echo "❌ containerd.io 安装失败"
+    fi
+    
+    if sudo dnf install -y docker-ce-cli; then
+      echo "✅ docker-ce-cli 安装成功"
+    else
+      echo "❌ docker-ce-cli 安装失败"
+    fi
+    
+    if sudo dnf install -y docker-ce; then
+      echo "✅ docker-ce 安装成功"
+    else
+      echo "❌ docker-ce 安装失败"
+    fi
+    
+    if sudo dnf install -y docker-buildx-plugin; then
+      echo "✅ docker-buildx-plugin 安装成功"
+    else
+      echo "❌ docker-buildx-plugin 安装失败"
+    fi
+    
+    # 检查是否至少安装了核心组件
+    if ! command -v docker &> /dev/null; then
+      echo "❌ 包管理器安装完全失败，尝试二进制安装..."
+      
+      # 二进制安装备选方案
+      echo "正在下载 Docker 二进制包..."
+      
+      # 尝试多个下载源
+      DOCKER_BINARY_DOWNLOADED=false
+      
+      # 源1: 阿里云镜像
+      echo "尝试从阿里云镜像下载 Docker 二进制包..."
+      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        DOCKER_BINARY_DOWNLOADED=true
+        echo "✅ 从阿里云镜像下载成功"
+      else
+        echo "❌ 阿里云镜像下载失败，尝试下一个源..."
+      fi
+      
+      # 源2: 腾讯云镜像
+      if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
+        echo "尝试从腾讯云镜像下载..."
+        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+          DOCKER_BINARY_DOWNLOADED=true
+          echo "✅ 从腾讯云镜像下载成功"
+        else
+          echo "❌ 腾讯云镜像下载失败，尝试下一个源..."
+        fi
+      fi
+      
+      # 源3: 华为云镜像
+      if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
+        echo "尝试从华为云镜像下载..."
+        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+          DOCKER_BINARY_DOWNLOADED=true
+          echo "✅ 从华为云镜像下载成功"
+        else
+          echo "❌ 华为云镜像下载失败，尝试下一个源..."
+        fi
+      fi
+      
+      # 源4: 官方源
+      if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
+        echo "尝试从官方源下载..."
+        if curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+          DOCKER_BINARY_DOWNLOADED=true
+          echo "✅ 从官方源下载成功"
+        else
+          echo "❌ 官方源下载失败"
+        fi
+      fi
+      
+      if [[ "$DOCKER_BINARY_DOWNLOADED" == "true" ]]; then
+        echo "正在解压并安装 Docker 二进制包..."
+        sudo tar -xzf /tmp/docker.tgz -C /usr/bin --strip-components=1
+        sudo chmod +x /usr/bin/docker*
+        
+        # 创建 systemd 服务文件
+        sudo tee /etc/systemd/system/docker.service > /dev/null <<EOF
+[Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network-online.target firewalld.service time-set.target
+Wants=network-online.target
+Requires=docker.socket
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/dockerd -H fd://
+ExecReload=/bin/kill -s HUP \$MAINPID
+TimeoutStartSec=0
+RestartSec=2
+Restart=always
+StartLimitBurst=3
+StartLimitInterval=60s
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+TasksMax=infinity
+Delegate=yes
+KillMode=process
+OOMScoreAdjust=-500
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+        # 创建 docker.socket 文件
+        sudo tee /etc/systemd/system/docker.socket > /dev/null <<EOF
+[Unit]
+Description=Docker Socket for the API
+
+[Socket]
+ListenStream=/var/run/docker.sock
+SocketMode=0660
+SocketUser=root
+SocketGroup=docker
+
+[Install]
+WantedBy=sockets.target
+EOF
+
+        # 创建 docker 用户组
+        sudo groupadd docker 2>/dev/null || true
+        
+        echo "✅ Docker 二进制安装成功"
+      else
+        echo "❌ 所有下载源都失败，无法安装 Docker"
+        echo "请检查网络连接或手动安装 Docker"
+        exit 1
+      fi
+    fi
+  fi
+  
+  sudo systemctl enable docker
+  sudo systemctl start docker
+  
+  echo ">>> [3.5/8] 安装 Docker Compose..."
+  # 安装最新版本的 docker-compose，使用多个备用下载源
+  echo "正在下载 Docker Compose..."
+  
+  # 尝试多个下载源
+  DOCKER_COMPOSE_DOWNLOADED=false
+  
+  # 源1: 阿里云镜像
+  echo "尝试从阿里云镜像下载..."
+  if sudo curl -L "https://mirrors.aliyun.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+    DOCKER_COMPOSE_DOWNLOADED=true
+    echo "✅ 从阿里云镜像下载成功"
+  else
+    echo "❌ 阿里云镜像下载失败，尝试下一个源..."
+  fi
+  
+  # 源2: 腾讯云镜像
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+    echo "尝试从腾讯云镜像下载..."
+    if sudo curl -L "https://mirrors.cloud.tencent.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+      DOCKER_COMPOSE_DOWNLOADED=true
+      echo "✅ 从腾讯云镜像下载成功"
+    else
+      echo "❌ 腾讯云镜像下载失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源3: 华为云镜像
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+    echo "尝试从华为云镜像下载..."
+    if sudo curl -L "https://mirrors.huaweicloud.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+      DOCKER_COMPOSE_DOWNLOADED=true
+      echo "✅ 从华为云镜像下载成功"
+    else
+      echo "❌ 华为云镜像下载失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源4: 中科大镜像
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+    echo "尝试从中科大镜像下载..."
+    if sudo curl -L "https://mirrors.ustc.edu.cn/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+      DOCKER_COMPOSE_DOWNLOADED=true
+      echo "✅ 从中科大镜像下载成功"
+    else
+      echo "❌ 中科大镜像下载失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源5: 清华大学镜像
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+    echo "尝试从清华大学镜像下载..."
+    if sudo curl -L "https://mirrors.tuna.tsinghua.edu.cn/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+      DOCKER_COMPOSE_DOWNLOADED=true
+      echo "✅ 从清华大学镜像下载成功"
+    else
+      echo "❌ 清华大学镜像下载失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源6: 网易镜像
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+    echo "尝试从网易镜像下载..."
+    if sudo curl -L "https://mirrors.163.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+      DOCKER_COMPOSE_DOWNLOADED=true
+      echo "✅ 从网易镜像下载成功"
+    else
+      echo "❌ 网易镜像下载失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源7: 最后尝试 GitHub (如果网络允许)
+  # 源7: 最后尝试 GitHub (如果网络允许)
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+    echo "尝试从 GitHub 下载..."
+    if sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+      DOCKER_COMPOSE_DOWNLOADED=true
+      echo "✅ 从 GitHub 下载成功"
+    else
+      echo "❌ GitHub 下载失败"
+    fi
+  fi
+  
+  # 检查是否下载成功
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+    echo "❌ 所有下载源都失败了，尝试使用包管理器安装..."
+    
+    # 使用包管理器作为备选方案
+    if sudo dnf install -y docker-compose-plugin; then
+      echo "✅ 通过包管理器安装 docker-compose-plugin 成功"
+      DOCKER_COMPOSE_DOWNLOADED=true
+    else
+      echo "❌ 包管理器安装也失败了"
+    fi
+  fi
+  
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "true" ]]; then
+    # 设置执行权限
+    sudo chmod +x /usr/local/bin/docker-compose
+    
+    # 创建软链接到 PATH 目录
+    sudo ln -sf /usr/local/bin/docker-compose /usr/bin/docker-compose
+    
+    echo "✅ Docker Compose 安装完成"
+  else
+    echo "❌ Docker Compose 安装失败，请手动安装"
+    echo "建议访问: https://docs.docker.com/compose/install/ 查看手动安装方法"
+  fi
+
+elif [[ "$OS" == "rocky" ]]; then
+  # Rocky Linux 9 使用 dnf 而不是 yum
+  sudo dnf install -y dnf-utils
+  
+  # 尝试多个国内镜像源
+  echo "正在配置 Docker 源..."
+  DOCKER_REPO_ADDED=false
+  
+  # 创建Docker仓库配置文件，使用 Rocky Linux 9 兼容的版本
+  echo "正在创建 Docker 仓库配置..."
+  
+  # 源1: 阿里云镜像
+  echo "尝试配置阿里云 Docker 源..."
+  sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.aliyun.com/docker-ce/linux/centos/9/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.aliyun.com/docker-ce/linux/centos/gpg
+EOF
+  
+  if sudo dnf makecache; then
+    DOCKER_REPO_ADDED=true
+    echo "✅ 阿里云 Docker 源配置成功"
+  else
+    echo "❌ 阿里云 Docker 源配置失败，尝试下一个源..."
+  fi
+  
+  # 源2: 腾讯云镜像
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "尝试配置腾讯云 Docker 源..."
+    sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.cloud.tencent.com/docker-ce/linux/centos/9/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.cloud.tencent.com/docker-ce/linux/centos/gpg
+EOF
+    
+    if sudo dnf makecache; then
+      DOCKER_REPO_ADDED=true
+      echo "✅ 腾讯云 Docker 源配置成功"
+    else
+      echo "❌ 腾讯云 Docker 源配置失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源3: 华为云镜像
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "尝试配置华为云 Docker 源..."
+    sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.huaweicloud.com/docker-ce/linux/centos/9/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.huaweicloud.com/docker-ce/linux/centos/gpg
+EOF
+    
+    if sudo dnf makecache; then
+      DOCKER_REPO_ADDED=true
+      echo "✅ 华为云 Docker 源配置成功"
+    else
+      echo "❌ 华为云 Docker 源配置失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源4: 中科大镜像
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "尝试配置中科大 Docker 源..."
+    sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.ustc.edu.cn/docker-ce/linux/centos/9/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.ustc.edu.cn/docker-ce/linux/centos/gpg
+EOF
+    
+    if sudo dnf makecache; then
+      DOCKER_REPO_ADDED=true
+      echo "✅ 中科大 Docker 源配置成功"
+    else
+      echo "❌ 中科大 Docker 源配置失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源5: 清华大学镜像
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "尝试配置清华大学 Docker 源..."
+    sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/centos/9/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/centos/gpg
+EOF
+    
+    if sudo dnf makecache; then
+      DOCKER_REPO_ADDED=true
+      echo "✅ 清华大学 Docker 源配置成功"
+    else
+      echo "❌ 清华大学 Docker 源配置失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 如果所有国内源都失败，尝试官方源
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "所有国内源都失败，尝试官方源..."
+    sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://download.docker.com/linux/centos/9/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://download.docker.com/linux/centos/gpg
+EOF
+    
+    if sudo dnf makecache; then
+      DOCKER_REPO_ADDED=true
+      echo "✅ 官方 Docker 源配置成功"
+    else
+      echo "❌ 官方 Docker 源也配置失败"
+    fi
+  fi
+  
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "❌ 所有 Docker 源都配置失败，无法继续安装"
+    echo "请检查网络连接或手动配置 Docker 源"
+    exit 1
+  fi
+
+  echo ">>> [3/8] 安装 Docker CE 最新版..."
+  
+  # 尝试安装 Docker，如果失败则尝试逐个安装组件
+  if sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin; then
+    echo "✅ Docker CE 安装成功"
+  else
+    echo "❌ 批量安装失败，尝试逐个安装组件..."
+    
+    # 逐个安装组件
+    if sudo dnf install -y containerd.io; then
+      echo "✅ containerd.io 安装成功"
+    else
+      echo "❌ containerd.io 安装失败"
+    fi
+    
+    if sudo dnf install -y docker-ce-cli; then
+      echo "✅ docker-ce-cli 安装成功"
+    else
+      echo "❌ docker-ce-cli 安装失败"
+    fi
+    
+    if sudo dnf install -y docker-ce; then
+      echo "✅ docker-ce 安装成功"
+    else
+      echo "❌ docker-ce 安装失败"
+    fi
+    
+    if sudo dnf install -y docker-buildx-plugin; then
+      echo "✅ docker-buildx-plugin 安装成功"
+    else
+      echo "❌ docker-buildx-plugin 安装失败"
+    fi
+    
+    # 检查是否至少安装了核心组件
+    if ! command -v docker &> /dev/null; then
+      echo "❌ 包管理器安装完全失败，尝试二进制安装..."
+      
+      # 二进制安装备选方案
+      echo "正在下载 Docker 二进制包..."
+      
+      # 尝试多个下载源
+      DOCKER_BINARY_DOWNLOADED=false
+      
+      # 源1: 阿里云镜像
+      echo "尝试从阿里云镜像下载 Docker 二进制包..."
+      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        DOCKER_BINARY_DOWNLOADED=true
+        echo "✅ 从阿里云镜像下载成功"
+      else
+        echo "❌ 阿里云镜像下载失败，尝试下一个源..."
+      fi
+      
+      # 源2: 腾讯云镜像
+      if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
+        echo "尝试从腾讯云镜像下载..."
+        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+          DOCKER_BINARY_DOWNLOADED=true
+          echo "✅ 从腾讯云镜像下载成功"
+        else
+          echo "❌ 腾讯云镜像下载失败，尝试下一个源..."
+        fi
+      fi
+      
+      # 源3: 华为云镜像
+      if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
+        echo "尝试从华为云镜像下载..."
+        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+          DOCKER_BINARY_DOWNLOADED=true
+          echo "✅ 从华为云镜像下载成功"
+        else
+          echo "❌ 华为云镜像下载失败，尝试下一个源..."
+        fi
+      fi
+      
+      # 源4: 官方源
+      if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
+        echo "尝试从官方源下载..."
+        if curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+          DOCKER_BINARY_DOWNLOADED=true
+          echo "✅ 从官方源下载成功"
+        else
+          echo "❌ 官方源下载失败"
+        fi
+      fi
+      
+      if [[ "$DOCKER_BINARY_DOWNLOADED" == "true" ]]; then
+        echo "正在解压并安装 Docker 二进制包..."
+        sudo tar -xzf /tmp/docker.tgz -C /usr/bin --strip-components=1
+        sudo chmod +x /usr/bin/docker*
+        
+        # 创建 systemd 服务文件
+        sudo tee /etc/systemd/system/docker.service > /dev/null <<EOF
+[Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network-online.target firewalld.service time-set.target
+Wants=network-online.target
+Requires=docker.socket
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/dockerd -H fd://
+ExecReload=/bin/kill -s HUP \$MAINPID
+TimeoutStartSec=0
+RestartSec=2
+Restart=always
+StartLimitBurst=3
+StartLimitInterval=60s
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+TasksMax=infinity
+Delegate=yes
+KillMode=process
+OOMScoreAdjust=-500
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+        # 创建 docker.socket 文件
+        sudo tee /etc/systemd/system/docker.socket > /dev/null <<EOF
+[Unit]
+Description=Docker Socket for the API
+
+[Socket]
+ListenStream=/var/run/docker.sock
+SocketMode=0660
+SocketUser=root
+SocketGroup=docker
+
+[Install]
+WantedBy=sockets.target
+EOF
+
+        # 创建 docker 用户组
+        sudo groupadd docker 2>/dev/null || true
+        
+        echo "✅ Docker 二进制安装成功"
+      else
+        echo "❌ 所有下载源都失败，无法安装 Docker"
+        echo "请检查网络连接或手动安装 Docker"
+        exit 1
+      fi
+    fi
+  fi
+  
+  sudo systemctl enable docker
+  sudo systemctl start docker
+  
+  echo ">>> [3.5/8] 安装 Docker Compose..."
+  # 安装最新版本的 docker-compose，使用多个备用下载源
+  echo "正在下载 Docker Compose..."
+  
+  # 尝试多个下载源
+  DOCKER_COMPOSE_DOWNLOADED=false
+  
+  # 源1: 阿里云镜像
+  echo "尝试从阿里云镜像下载..."
+  if sudo curl -L "https://mirrors.aliyun.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+    DOCKER_COMPOSE_DOWNLOADED=true
+    echo "✅ 从阿里云镜像下载成功"
+  else
+    echo "❌ 阿里云镜像下载失败，尝试下一个源..."
+  fi
+  
+  # 源2: 腾讯云镜像
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+    echo "尝试从腾讯云镜像下载..."
+    if sudo curl -L "https://mirrors.cloud.tencent.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+      DOCKER_COMPOSE_DOWNLOADED=true
+      echo "✅ 从腾讯云镜像下载成功"
+    else
+      echo "❌ 腾讯云镜像下载失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源3: 华为云镜像
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+    echo "尝试从华为云镜像下载..."
+    if sudo curl -L "https://mirrors.huaweicloud.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+      DOCKER_COMPOSE_DOWNLOADED=true
+      echo "✅ 从华为云镜像下载成功"
+    else
+      echo "❌ 华为云镜像下载失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源4: 中科大镜像
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+    echo "尝试从中科大镜像下载..."
+    if sudo curl -L "https://mirrors.ustc.edu.cn/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+      DOCKER_COMPOSE_DOWNLOADED=true
+      echo "✅ 从中科大镜像下载成功"
+    else
+      echo "❌ 中科大镜像下载失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源5: 清华大学镜像
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+    echo "尝试从清华大学镜像下载..."
+    if sudo curl -L "https://mirrors.tuna.tsinghua.edu.cn/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+      DOCKER_COMPOSE_DOWNLOADED=true
+      echo "✅ 从清华大学镜像下载成功"
+    else
+      echo "❌ 清华大学镜像下载失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源6: 网易镜像
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+    echo "尝试从网易镜像下载..."
+    if sudo curl -L "https://mirrors.163.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+      DOCKER_COMPOSE_DOWNLOADED=true
+      echo "✅ 从网易镜像下载成功"
+    else
+      echo "❌ 网易镜像下载失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源7: 最后尝试 GitHub (如果网络允许)
+  # 源7: 最后尝试 GitHub (如果网络允许)
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+    echo "尝试从 GitHub 下载..."
+    if sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+      DOCKER_COMPOSE_DOWNLOADED=true
+      echo "✅ 从 GitHub 下载成功"
+    else
+      echo "❌ GitHub 下载失败"
+    fi
+  fi
+  
+  # 检查是否下载成功
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+    echo "❌ 所有下载源都失败了，尝试使用包管理器安装..."
+    
+    # 使用包管理器作为备选方案
+    if sudo dnf install -y docker-compose-plugin; then
+      echo "✅ 通过包管理器安装 docker-compose-plugin 成功"
+      DOCKER_COMPOSE_DOWNLOADED=true
+    else
+      echo "❌ 包管理器安装也失败了"
+    fi
+  fi
+  
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "true" ]]; then
+    # 设置执行权限
+    sudo chmod +x /usr/local/bin/docker-compose
+    
+    # 创建软链接到 PATH 目录
+    sudo ln -sf /usr/local/bin/docker-compose /usr/bin/docker-compose
+    
+    echo "✅ Docker Compose 安装完成"
+  else
+    echo "❌ Docker Compose 安装失败，请手动安装"
+    echo "建议访问: https://docs.docker.com/compose/install/ 查看手动安装方法"
+  fi
+
+elif [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
   # 检查 Debian 版本，为老版本提供兼容性支持
-  if [[ "$OS" == "debian" && "$VERSION_ID" == "9" ]]; then
-    echo "⚠️  检测到 Debian 9 (Stretch)，使用兼容的安装方法..."
-    echo "⚠️  注意：Debian 9 已到达生命周期结束，将使用特殊处理..."
+  if [[ "$OS" == "debian" && ("$VERSION_ID" == "9" || "$VERSION_ID" == "10") ]]; then
+    echo "⚠️  检测到 Debian $VERSION_ID (Buster)，使用兼容的安装方法..."
+    echo "⚠️  注意：Debian $VERSION_ID 已到达生命周期结束，将使用特殊处理..."
     
     # 清理损坏的软件源索引文件
     echo "正在清理损坏的软件源索引文件..."
@@ -403,9 +1201,90 @@ if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
     apt-get clean
     apt-get autoclean
     
+    # 为 Debian 10 配置更兼容的软件源
+    if [[ "$VERSION_ID" == "10" ]]; then
+      echo "正在配置 Debian 10 兼容的软件源..."
+      
+      # 备份原始源列表
+      cp /etc/apt/sources.list /etc/apt/sources.list.backup.$(date +%Y%m%d_%H%M%S)
+      
+      # 使用国内镜像源替代 archive.debian.org，提高下载速度
+      echo "正在配置国内镜像源以提高下载速度..."
+      
+      # 尝试配置阿里云镜像源
+      cat > /etc/apt/sources.list <<EOF
+# 阿里云镜像源 - 主要源
+deb http://mirrors.aliyun.com/debian/ buster main contrib non-free
+deb http://mirrors.aliyun.com/debian-security/ buster/updates main contrib non-free
+deb http://mirrors.aliyun.com/debian/ buster-updates main contrib non-free
+
+# 备用源 - 腾讯云镜像
+# deb http://mirrors.cloud.tencent.com/debian/ buster main contrib non-free
+# deb http://mirrors.cloud.tencent.com/debian-security/ buster/updates main contrib non-free
+# deb http://mirrors.cloud.tencent.com/debian/ buster-updates main contrib non-free
+
+# 备用源 - 华为云镜像
+# deb http://mirrors.huaweicloud.com/debian/ buster main contrib non-free
+# deb http://mirrors.huaweicloud.com/debian-security/ buster/updates main contrib non-free
+# deb http://mirrors.huaweicloud.com/debian/ buster-updates main contrib non-free
+
+# 最后备用 - archive.debian.org（如果国内源都不可用）
+# deb http://archive.debian.org/debian/ buster main
+# deb http://archive.debian.org/debian-security/ buster/updates main
+# deb http://archive.debian.org/debian/ buster-updates main
+EOF
+      
+      echo "✅ Debian 10 国内镜像源配置完成"
+    fi
+    
     # 首先尝试安装基本工具
     echo "正在安装基本工具..."
-    apt-get update --allow-unauthenticated || true
+    
+    # 测试软件源可用性并自动切换
+    echo "正在测试软件源可用性..."
+    if apt-get update --allow-unauthenticated 2>/dev/null; then
+      echo "✅ 当前软件源可用"
+    else
+      echo "⚠️  当前软件源不可用，尝试切换到备用源..."
+      
+      # 尝试腾讯云镜像源
+      cat > /etc/apt/sources.list <<EOF
+# 腾讯云镜像源
+deb http://mirrors.cloud.tencent.com/debian/ buster main contrib non-free
+deb http://mirrors.cloud.tencent.com/debian-security/ buster/updates main contrib non-free
+deb http://mirrors.cloud.tencent.com/debian/ buster-updates main contrib non-free
+EOF
+      
+      if apt-get update --allow-unauthenticated 2>/dev/null; then
+        echo "✅ 腾讯云镜像源可用"
+      else
+        echo "⚠️  腾讯云镜像源也不可用，尝试华为云镜像源..."
+        
+        # 尝试华为云镜像源
+        cat > /etc/apt/sources.list <<EOF
+# 华为云镜像源
+deb http://mirrors.huaweicloud.com/debian/ buster main contrib non-free
+deb http://mirrors.huaweicloud.com/debian-security/ buster/updates main contrib non-free
+deb http://mirrors.huaweicloud.com/debian/ buster-updates main contrib non-free
+EOF
+        
+        if apt-get update --allow-unauthenticated 2>/dev/null; then
+          echo "✅ 华为云镜像源可用"
+        else
+          echo "⚠️  所有国内镜像源都不可用，回退到 archive.debian.org..."
+          
+          # 最后回退到 archive.debian.org
+          cat > /etc/apt/sources.list <<EOF
+# 官方归档源（速度较慢但稳定）
+deb http://archive.debian.org/debian/ buster main
+deb http://archive.debian.org/debian-security/ buster/updates main
+deb http://archive.debian.org/debian/ buster-updates main
+EOF
+          
+          apt-get update --allow-unauthenticated || true
+        fi
+      fi
+    fi
     
     # 尝试安装 dirmngr 和 curl
     if apt-get install -y --allow-unauthenticated dirmngr; then
@@ -418,6 +1297,348 @@ if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
       echo "✅ curl 安装成功"
     else
       echo "⚠️  curl 安装失败，将使用备用方法"
+    fi
+    
+    # 为 Debian 10 跳过有问题的包安装，直接使用二进制安装
+    if [[ "$VERSION_ID" == "10" ]]; then
+      echo "⚠️  Debian 10 检测到软件源问题，跳过包管理器安装，直接使用二进制安装..."
+      echo "正在下载 Docker 二进制包..."
+      
+      # 尝试从多个源下载 Docker 二进制包
+      DOCKER_BINARY_DOWNLOADED=false
+      
+      # 源1: 阿里云镜像
+      echo "尝试从阿里云镜像下载 Docker 二进制包..."
+      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        DOCKER_BINARY_DOWNLOADED=true
+        echo "✅ 从阿里云镜像下载成功"
+      else
+        echo "❌ 阿里云镜像下载失败，尝试下一个源..."
+      fi
+      
+      # 源2: 腾讯云镜像
+      if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
+        echo "尝试从腾讯云镜像下载..."
+        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+          DOCKER_BINARY_DOWNLOADED=true
+          echo "✅ 从腾讯云镜像下载成功"
+        else
+          echo "❌ 腾讯云镜像下载失败，尝试下一个源..."
+        fi
+      fi
+      
+      # 源3: 华为云镜像
+      if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
+        echo "尝试从华为云镜像下载..."
+        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+          DOCKER_BINARY_DOWNLOADED=true
+          echo "✅ 从华为云镜像下载成功"
+        else
+          echo "❌ 华为云镜像下载失败，尝试下一个源..."
+        fi
+      fi
+      
+      # 源4: 官方源
+      if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
+        echo "尝试从官方源下载..."
+        if curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+          DOCKER_BINARY_DOWNLOADED=true
+          echo "✅ 从官方源下载成功"
+        else
+          echo "❌ 官方源下载失败"
+        fi
+      fi
+      
+      if [[ "$DOCKER_BINARY_DOWNLOADED" == "true" ]]; then
+        echo "正在解压并安装 Docker 二进制包..."
+        tar -xzf /tmp/docker.tgz -C /usr/bin --strip-components=1
+        chmod +x /usr/bin/docker*
+        
+        # 创建 systemd 服务文件
+        cat > /etc/systemd/system/docker.service <<EOF
+[Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network-online.target firewalld.service time-set.target
+Wants=network-online.target
+Requires=docker.socket
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/dockerd -H fd://
+ExecReload=/bin/kill -s HUP \$MAINPID
+TimeoutStartSec=0
+RestartSec=2
+Restart=always
+StartLimitBurst=3
+StartLimitInterval=60s
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+TasksMax=infinity
+Delegate=yes
+KillMode=process
+OOMScoreAdjust=-500
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+        # 创建 docker.socket 文件
+        cat > /etc/systemd/system/docker.socket <<EOF
+[Unit]
+Description=Docker Socket for the API
+
+[Socket]
+ListenStream=/var/run/docker.sock
+SocketMode=0660
+SocketUser=root
+SocketGroup=docker
+
+[Install]
+WantedBy=sockets.target
+EOF
+
+        # 创建 docker 用户组
+        groupadd docker 2>/dev/null || true
+        
+        echo "✅ Docker CE 二进制安装成功"
+        
+        # 启动 Docker 服务
+        echo "正在启动 Docker 服务..."
+        systemctl daemon-reload
+        systemctl enable docker
+        
+        # 尝试启动 Docker 服务
+        if systemctl start docker; then
+          echo "✅ Docker 服务启动成功"
+        else
+          echo "❌ Docker 服务启动失败，正在诊断问题..."
+          
+          # 检查服务状态
+          echo "Docker 服务状态："
+          systemctl status docker --no-pager -l
+          
+          # 检查日志
+          echo "Docker 服务日志："
+          journalctl -u docker --no-pager -l --since "5 minutes ago"
+          
+          # 尝试手动启动 dockerd 进行调试
+          echo "尝试手动启动 dockerd 进行调试..."
+          /usr/bin/dockerd --debug --log-level=debug &
+          DOCKERD_PID=$!
+          sleep 5
+          
+          # 检查 dockerd 是否成功启动
+          if kill -0 $DOCKERD_PID 2>/dev/null; then
+            echo "✅ dockerd 手动启动成功，问题可能在 systemd 配置"
+            kill $DOCKERD_PID
+          else
+            echo "❌ dockerd 手动启动也失败，请检查系统兼容性"
+          fi
+          
+          echo "故障排除建议："
+          echo "1. 检查系统是否支持 Docker"
+          echo "2. 检查是否有其他容器运行时冲突"
+          echo "3. 检查系统资源是否充足"
+          echo "4. 尝试重启系统后再次运行脚本"
+          
+          exit 1
+        fi
+        
+        # 安装 Docker Compose
+        echo ">>> [3.5/8] 安装 Docker Compose..."
+        echo "正在下载 Docker Compose..."
+        
+        # 尝试多个下载源
+        DOCKER_COMPOSE_DOWNLOADED=false
+        
+        # 源1: 阿里云镜像
+        echo "尝试从阿里云镜像下载 Docker Compose..."
+        if curl -L "https://mirrors.aliyun.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+          DOCKER_COMPOSE_DOWNLOADED=true
+          echo "✅ 从阿里云镜像下载成功"
+        else
+          echo "❌ 阿里云镜像下载失败，尝试下一个源..."
+        fi
+        
+        # 源2: 腾讯云镜像
+        if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+          echo "尝试从腾讯云镜像下载..."
+          if curl -L "https://mirrors.cloud.tencent.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+            DOCKER_COMPOSE_DOWNLOADED=true
+            echo "✅ 从腾讯云镜像下载成功"
+          else
+            echo "❌ 腾讯云镜像下载失败，尝试下一个源..."
+          fi
+        fi
+        
+        # 源3: 华为云镜像
+        if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+          echo "尝试从华为云镜像下载..."
+          if curl -L "https://mirrors.huaweicloud.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+            DOCKER_COMPOSE_DOWNLOADED=true
+            echo "✅ 从华为云镜像下载成功"
+          else
+            echo "❌ 华为云镜像下载失败，尝试下一个源..."
+          fi
+        fi
+        
+        # 源4: 中科大镜像
+        if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+          echo "尝试从中科大镜像下载..."
+          if curl -L "https://mirrors.ustc.edu.cn/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+            DOCKER_COMPOSE_DOWNLOADED=true
+            echo "✅ 从中科大镜像下载成功"
+          else
+            echo "❌ 中科大镜像下载失败，尝试下一个源..."
+          fi
+        fi
+        
+        # 源5: 清华大学镜像
+        if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+          echo "尝试从清华大学镜像下载..."
+          if curl -L "https://mirrors.tuna.tsinghua.edu.cn/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+            DOCKER_COMPOSE_DOWNLOADED=true
+            echo "✅ 从清华大学镜像下载成功"
+          else
+            echo "❌ 清华大学镜像下载失败，尝试下一个源..."
+          fi
+        fi
+        
+        # 源6: 网易镜像
+        if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+          echo "尝试从网易镜像下载..."
+          if curl -L "https://mirrors.163.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+            DOCKER_COMPOSE_DOWNLOADED=true
+            echo "✅ 从网易镜像下载成功"
+          else
+            echo "❌ 网易镜像下载失败，尝试下一个源..."
+          fi
+        fi
+        
+        # 源7: 最后尝试 GitHub (如果网络允许)
+        if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+          echo "尝试从 GitHub 下载..."
+          if curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+            DOCKER_COMPOSE_DOWNLOADED=true
+            echo "✅ 从 GitHub 下载成功"
+          else
+            echo "❌ GitHub 下载失败"
+          fi
+        fi
+        
+        if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "true" ]]; then
+          chmod +x /usr/local/bin/docker-compose
+          ln -sf /usr/local/bin/docker-compose /usr/bin/docker-compose
+          echo "✅ Docker Compose 安装完成"
+        else
+          echo "❌ 所有 Docker Compose 下载源都失败"
+          echo "💡 建议：可以稍后手动安装 Docker Compose"
+          echo "   下载地址：https://github.com/docker/compose/releases"
+        fi
+        
+        # 跳过后续的包管理器安装流程
+        echo ">>> [4/8] Docker 安装完成，跳过包管理器安装流程..."
+        echo "✅ Docker 已通过二进制方式安装成功"
+        echo "✅ Docker Compose 已安装"
+        echo "✅ Docker 服务已启动"
+        
+        # 直接进入镜像加速配置
+        echo ">>> [5/8] 配置轩辕镜像加速..."
+        
+        # 循环等待用户选择镜像版本
+        while true; do
+            echo "请选择版本:"
+            echo "1) 免费版 (默认加速地址: docker.xuanyuan.me)"
+            echo "2) 专业版 (默认加速地址: 自定义专属免登录地址 + docker.xuanyuan.me)"
+            read -p "请输入选择 [1/2]: " choice
+            
+            if [[ "$choice" == "1" || "$choice" == "2" ]]; then
+                break
+            else
+                echo "❌ 无效选择，请输入 1 或 2"
+                echo ""
+            fi
+        done
+        
+        mirror_list=""
+        
+        if [[ "$choice" == "2" ]]; then
+          read -p "请输入您的轩辕镜像专属免登录地址 (访问官网获取：https://xuanyuan.cloud): " custom_domain
+
+          mirror_list=$(cat <<EOF
+[
+  "https://$custom_domain",
+  "https://docker.xuanyuan.me"
+]
+EOF
+)
+        else
+          mirror_list=$(cat <<EOF
+[
+  "https://docker.xuanyuan.me"
+]
+EOF
+)
+        fi
+        
+        mkdir -p /etc/docker
+
+        # 根据用户选择设置 insecure-registries
+        if [[ "$choice" == "2" ]]; then
+          insecure_registries=$(cat <<EOF
+[
+  "$custom_domain",
+  "docker.xuanyuan.me"
+]
+EOF
+)
+        else
+          insecure_registries=$(cat <<EOF
+[
+  "docker.xuanyuan.me"
+]
+EOF
+)
+        fi
+
+        cat <<EOF | tee /etc/docker/daemon.json
+{
+  "registry-mirrors": $mirror_list,
+  "insecure-registries": $insecure_registries
+}
+EOF
+        
+        systemctl daemon-reexec || true
+        systemctl restart docker || true
+        
+        echo ">>> [6/8] 安装完成！"
+        echo "🎉Docker 镜像加速已配置完成"
+        echo "轩辕镜像 - 中国开发者首选的专业 Docker 镜像下载加速服务平台"
+        echo "官方网站: https://xuanyuan.cloud/"
+        
+        # 显示当前配置的镜像源
+        echo ""
+        echo "当前配置的镜像源："
+        if [[ "$choice" == "2" ]]; then
+            echo "  - https://$custom_domain (优先)"
+            echo "  - https://docker.xuanyuan.me (备用)"
+        else
+            echo "  - https://docker.xuanyuan.me"
+        fi
+        echo ""
+        
+        echo "🎉 安装和配置完成！"
+        echo ""
+        echo "轩辕镜像 - 中国开发者首选的专业 Docker 镜像下载加速服务平台"
+        echo "官方网站: https://xuanyuan.cloud/"
+        exit 0
+      else
+        echo "❌ 所有下载源都失败，无法安装 Docker"
+        echo "请检查网络连接或手动安装 Docker"
+        exit 1
+      fi
     fi
     
     # 如果 curl 安装失败，尝试使用 wget 作为备用
@@ -521,16 +1742,72 @@ if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
     
     DOCKER_COMPOSE_DOWNLOADED=false
     
-    # 尝试下载兼容版本
+    # 尝试从多个源下载兼容版本
+    echo "正在尝试从多个源下载 Docker Compose 兼容版本..."
+    
+    # 源1: 阿里云镜像
     if command -v curl &> /dev/null; then
-      if curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+      echo "尝试从阿里云镜像下载兼容版本..."
+      if curl -L "https://mirrors.aliyun.com/docker-toolbox/linux/compose/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
         DOCKER_COMPOSE_DOWNLOADED=true
-        echo "✅ 从 GitHub 下载兼容版本成功"
+        echo "✅ 从阿里云镜像下载兼容版本成功"
       fi
     elif command -v wget &> /dev/null; then
-      if wget -O /usr/local/bin/docker-compose "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" --timeout=30; then
+      echo "尝试从阿里云镜像下载兼容版本..."
+      if wget -O /usr/local/bin/docker-compose "https://mirrors.aliyun.com/docker-toolbox/linux/compose/1.25.5/docker-compose-$(uname -s)-$(uname -m)" --timeout=30; then
         DOCKER_COMPOSE_DOWNLOADED=true
-        echo "✅ 从 GitHub 下载兼容版本成功"
+        echo "✅ 从阿里云镜像下载兼容版本成功"
+      fi
+    fi
+    
+    # 源2: 腾讯云镜像
+    if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+      if command -v curl &> /dev/null; then
+        echo "尝试从腾讯云镜像下载兼容版本..."
+        if curl -L "https://mirrors.cloud.tencent.com/docker-toolbox/linux/compose/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+          DOCKER_COMPOSE_DOWNLOADED=true
+          echo "✅ 从腾讯云镜像下载兼容版本成功"
+        fi
+      elif command -v wget &> /dev/null; then
+        echo "尝试从腾讯云镜像下载兼容版本..."
+        if wget -O /usr/local/bin/docker-compose "https://mirrors.cloud.tencent.com/docker-toolbox/linux/compose/1.25.5/docker-compose-$(uname -s)-$(uname -m)" --timeout=30; then
+          DOCKER_COMPOSE_DOWNLOADED=true
+          echo "✅ 从腾讯云镜像下载兼容版本成功"
+        fi
+      fi
+    fi
+    
+    # 源3: 华为云镜像
+    if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+      if command -v curl &> /dev/null; then
+        echo "尝试从华为云镜像下载兼容版本..."
+        if curl -L "https://mirrors.huaweicloud.com/docker-toolbox/linux/compose/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+          DOCKER_COMPOSE_DOWNLOADED=true
+          echo "✅ 从华为云镜像下载兼容版本成功"
+        fi
+      elif command -v wget &> /dev/null; then
+        echo "尝试从华为云镜像下载兼容版本..."
+        if wget -O /usr/local/bin/docker-compose "https://mirrors.huaweicloud.com/docker-toolbox/linux/compose/1.25.5/docker-compose-$(uname -s)-$(uname -m)" --timeout=30; then
+          DOCKER_COMPOSE_DOWNLOADED=true
+          echo "✅ 从华为云镜像下载兼容版本成功"
+        fi
+      fi
+    fi
+    
+    # 源4: 最后尝试 GitHub
+    if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+      if command -v curl &> /dev/null; then
+        echo "尝试从 GitHub 下载兼容版本..."
+        if curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+          DOCKER_COMPOSE_DOWNLOADED=true
+          echo "✅ 从 GitHub 下载兼容版本成功"
+        fi
+      elif command -v wget &> /dev/null; then
+        echo "尝试从 GitHub 下载兼容版本..."
+        if wget -O /usr/local/bin/docker-compose "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" --timeout=30; then
+          DOCKER_COMPOSE_DOWNLOADED=true
+          echo "✅ 从 GitHub 下载兼容版本成功"
+        fi
       fi
     fi
     
@@ -629,7 +1906,19 @@ if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
       fi
     fi
     
-    # 源6: 最后尝试 GitHub (如果网络允许)
+  # 源6: 网易镜像
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+    echo "尝试从网易镜像下载..."
+    if sudo curl -L "https://mirrors.163.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+      DOCKER_COMPOSE_DOWNLOADED=true
+      echo "✅ 从网易镜像下载成功"
+    else
+      echo "❌ 网易镜像下载失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源7: 最后尝试 GitHub (如果网络允许)
+    # 源7: 最后尝试 GitHub (如果网络允许)
     if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
       echo "尝试从 GitHub 下载..."
       if sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
@@ -678,10 +1967,305 @@ if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
 
 elif [[ "$OS" == "centos" || "$OS" == "rhel" || "$OS" == "rocky" || "$OS" == "ol" ]]; then
   sudo yum install -y yum-utils
-  sudo yum-config-manager --add-repo https://mirrors.tencent.com/docker-ce/linux/centos/docker-ce.repo
+  
+  # 尝试多个国内镜像源
+  echo "正在配置 Docker 源..."
+  DOCKER_REPO_ADDED=false
+  
+  # 创建Docker仓库配置文件，直接使用国内镜像地址
+  echo "正在创建 Docker 仓库配置..."
+  
+  # 源1: 阿里云镜像
+  echo "尝试配置阿里云 Docker 源..."
+  sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.aliyun.com/docker-ce/linux/centos/7/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.aliyun.com/docker-ce/linux/centos/gpg
+EOF
+  
+  if sudo yum makecache; then
+    DOCKER_REPO_ADDED=true
+    echo "✅ 阿里云 Docker 源配置成功"
+  else
+    echo "❌ 阿里云 Docker 源配置失败，尝试下一个源..."
+  fi
+  
+  # 源2: 腾讯云镜像
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "尝试配置腾讯云 Docker 源..."
+    sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.cloud.tencent.com/docker-ce/linux/centos/7/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.cloud.tencent.com/docker-ce/linux/centos/gpg
+EOF
+    
+    if sudo yum makecache; then
+      DOCKER_REPO_ADDED=true
+      echo "✅ 腾讯云 Docker 源配置成功"
+    else
+      echo "❌ 腾讯云 Docker 源配置失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源3: 华为云镜像
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "尝试配置华为云 Docker 源..."
+    sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.huaweicloud.com/docker-ce/linux/centos/7/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.huaweicloud.com/docker-ce/linux/centos/gpg
+EOF
+    
+    if sudo yum makecache; then
+      DOCKER_REPO_ADDED=true
+      echo "✅ 华为云 Docker 源配置成功"
+    else
+      echo "❌ 华为云 Docker 源配置失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源4: 中科大镜像
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "尝试配置中科大 Docker 源..."
+    sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.ustc.edu.cn/docker-ce/linux/centos/7/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.ustc.edu.cn/docker-ce/linux/centos/gpg
+EOF
+    
+    if sudo yum makecache; then
+      DOCKER_REPO_ADDED=true
+      echo "✅ 中科大 Docker 源配置成功"
+    else
+      echo "❌ 中科大 Docker 源配置失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源5: 清华大学镜像
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "尝试配置清华大学 Docker 源..."
+    sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/centos/7/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/centos/gpg
+EOF
+    
+    if sudo yum makecache; then
+      DOCKER_REPO_ADDED=true
+      echo "✅ 清华大学 Docker 源配置成功"
+    else
+      echo "❌ 清华大学 Docker 源配置失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源6: 网易镜像
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "尝试配置网易 Docker 源..."
+    sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.163.com/docker-ce/linux/centos/7/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.163.com/docker-ce/linux/centos/gpg
+EOF
+    
+    if sudo yum makecache; then
+      DOCKER_REPO_ADDED=true
+      echo "✅ 网易 Docker 源配置成功"
+    else
+      echo "❌ 网易 Docker 源配置失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 如果所有国内源都失败，尝试官方源
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "所有国内源都失败，尝试官方源..."
+    sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://download.docker.com/linux/centos/7/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://download.docker.com/linux/centos/gpg
+EOF
+    
+    if sudo yum makecache; then
+      DOCKER_REPO_ADDED=true
+      echo "✅ 官方 Docker 源配置成功"
+    else
+      echo "❌ 官方 Docker 源也配置失败"
+    fi
+  fi
+  
+  if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
+    echo "❌ 所有 Docker 源都配置失败，无法继续安装"
+    echo "请检查网络连接或手动配置 Docker 源"
+    exit 1
+  fi
 
   echo ">>> [3/8] 安装 Docker CE 最新版..."
-  sudo yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin
+  
+  # 尝试安装 Docker，如果失败则尝试逐个安装组件
+  if sudo yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin; then
+    echo "✅ Docker CE 安装成功"
+  else
+    echo "❌ 批量安装失败，尝试逐个安装组件..."
+    
+    # 逐个安装组件
+    if sudo yum install -y containerd.io; then
+      echo "✅ containerd.io 安装成功"
+    else
+      echo "❌ containerd.io 安装失败"
+    fi
+    
+    if sudo yum install -y docker-ce-cli; then
+      echo "✅ docker-ce-cli 安装成功"
+    else
+      echo "❌ docker-ce-cli 安装失败"
+    fi
+    
+    if sudo yum install -y docker-ce; then
+      echo "✅ docker-ce 安装成功"
+    else
+      echo "❌ docker-ce 安装失败"
+    fi
+    
+    if sudo yum install -y docker-buildx-plugin; then
+      echo "✅ docker-buildx-plugin 安装成功"
+    else
+      echo "❌ docker-buildx-plugin 安装失败"
+    fi
+    
+    # 检查是否至少安装了核心组件
+    if ! command -v docker &> /dev/null; then
+      echo "❌ 包管理器安装完全失败，尝试二进制安装..."
+      
+      # 二进制安装备选方案
+      echo "正在下载 Docker 二进制包..."
+      
+      # 尝试多个下载源
+      DOCKER_BINARY_DOWNLOADED=false
+      
+      # 源1: 阿里云镜像
+      echo "尝试从阿里云镜像下载 Docker 二进制包..."
+      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        DOCKER_BINARY_DOWNLOADED=true
+        echo "✅ 从阿里云镜像下载成功"
+      else
+        echo "❌ 阿里云镜像下载失败，尝试下一个源..."
+      fi
+      
+      # 源2: 腾讯云镜像
+      if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
+        echo "尝试从腾讯云镜像下载..."
+        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+          DOCKER_BINARY_DOWNLOADED=true
+          echo "✅ 从腾讯云镜像下载成功"
+        else
+          echo "❌ 腾讯云镜像下载失败，尝试下一个源..."
+        fi
+      fi
+      
+      # 源3: 华为云镜像
+      if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
+        echo "尝试从华为云镜像下载..."
+        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+          DOCKER_BINARY_DOWNLOADED=true
+          echo "✅ 从华为云镜像下载成功"
+        else
+          echo "❌ 华为云镜像下载失败，尝试下一个源..."
+        fi
+      fi
+      
+      # 源4: 官方源
+      if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
+        echo "尝试从官方源下载..."
+        if curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+          DOCKER_BINARY_DOWNLOADED=true
+          echo "✅ 从官方源下载成功"
+        else
+          echo "❌ 官方源下载失败"
+        fi
+      fi
+      
+      if [[ "$DOCKER_BINARY_DOWNLOADED" == "true" ]]; then
+        echo "正在解压并安装 Docker 二进制包..."
+        sudo tar -xzf /tmp/docker.tgz -C /usr/bin --strip-components=1
+        sudo chmod +x /usr/bin/docker*
+        
+        # 创建 systemd 服务文件
+        sudo tee /etc/systemd/system/docker.service > /dev/null <<EOF
+[Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network-online.target firewalld.service time-set.target
+Wants=network-online.target
+Requires=docker.socket
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/dockerd -H fd://
+ExecReload=/bin/kill -s HUP \$MAINPID
+TimeoutStartSec=0
+RestartSec=2
+Restart=always
+StartLimitBurst=3
+StartLimitInterval=60s
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+TasksMax=infinity
+Delegate=yes
+KillMode=process
+OOMScoreAdjust=-500
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+        # 创建 docker.socket 文件
+        sudo tee /etc/systemd/system/docker.socket > /dev/null <<EOF
+[Unit]
+Description=Docker Socket for the API
+
+[Socket]
+ListenStream=/var/run/docker.sock
+SocketMode=0660
+SocketUser=root
+SocketGroup=docker
+
+[Install]
+WantedBy=sockets.target
+EOF
+
+        # 创建 docker 用户组
+        sudo groupadd docker 2>/dev/null || true
+        
+        echo "✅ Docker 二进制安装成功"
+      else
+        echo "❌ 所有下载源都失败，无法安装 Docker"
+        echo "请检查网络连接或手动安装 Docker"
+        exit 1
+      fi
+    fi
+  fi
+  
   sudo systemctl enable docker
   sudo systemctl start docker
   
@@ -745,7 +2329,19 @@ elif [[ "$OS" == "centos" || "$OS" == "rhel" || "$OS" == "rocky" || "$OS" == "ol
     fi
   fi
   
-  # 源6: 最后尝试 GitHub (如果网络允许)
+  # 源6: 网易镜像
+  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+    echo "尝试从网易镜像下载..."
+    if sudo curl -L "https://mirrors.163.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+      DOCKER_COMPOSE_DOWNLOADED=true
+      echo "✅ 从网易镜像下载成功"
+    else
+      echo "❌ 网易镜像下载失败，尝试下一个源..."
+    fi
+  fi
+  
+  # 源7: 最后尝试 GitHub (如果网络允许)
+  # 源7: 最后尝试 GitHub (如果网络允许)
   if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
     echo "尝试从 GitHub 下载..."
     if sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
@@ -815,13 +2411,11 @@ done
 mirror_list=""
 
 if [[ "$choice" == "2" ]]; then
-  read -p "请输入您的专属免登录地址 (格式如 xxx.xuanyuan.run): " custom_domain
-  # 生成对应的 .dev 域名
-  custom_domain_dev="${custom_domain%.run}.dev"
+  read -p "请输入您的轩辕镜像专属免登录地址 (访问官网获取：https://xuanyuan.cloud): " custom_domain
+
   mirror_list=$(cat <<EOF
 [
   "https://$custom_domain",
-  "https://$custom_domain_dev",
   "https://docker.xuanyuan.me"
 ]
 EOF
@@ -842,7 +2436,6 @@ if [[ "$choice" == "2" ]]; then
   insecure_registries=$(cat <<EOF
 [
   "$custom_domain",
-  "$custom_domain_dev",
   "docker.xuanyuan.me"
 ]
 EOF
@@ -888,7 +2481,6 @@ if systemctl is-active --quiet docker; then
     echo "当前配置的镜像源:"
     if [[ "$choice" == "2" ]]; then
         echo "  - https://$custom_domain (优先)"
-        echo "  - https://$custom_domain_dev (优先)"
         echo "  - https://docker.xuanyuan.me (备用)"
     else
         echo "  - https://docker.xuanyuan.me"
