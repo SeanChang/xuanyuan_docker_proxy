@@ -34,9 +34,6 @@
 
 ```bash
 # 下载并执行一键安装脚本
-bash <(curl -sSL https://xuanyuan.cloud/docker.sh)
-
-# 或者使用 wget
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
 # 也可以使用 GitHub 上的脚本
