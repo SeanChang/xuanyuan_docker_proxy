@@ -28,9 +28,9 @@
 
 ## Linux 一键安装 Docker + 轩辕镜像加速
 
-### 🚀 一键安装脚本
+### 🚀 推荐方案：一键安装配置脚本
 
-我们提供了一键安装脚本，可以自动完成 Docker 安装和轩辕镜像加速配置：
+该脚本支持 13 种 Linux 发行版，包括国产操作系统（openEuler、Anolis OS、OpenCloudOS、Alinux、Kylin Linux），一键安装 docker、docker-compose 并自动配置轩辕镜像加速源。
 
 ```bash
 # 下载并执行一键安装脚本
@@ -40,16 +40,45 @@ bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 bash <(curl -sSL https://raw.githubusercontent.com/SeanChang/xuanyuan_docker_proxy/refs/heads/main/docker.sh)
 ```
 
-**脚本功能特性：**
-- ✅ 自动检测系统类型（Ubuntu/Debian/CentOS/RHEL/Rocky Linux）
-- ✅ 自动安装最新版 Docker CE 和 Docker Compose
-- ✅ 自动配置轩辕镜像加速源
-- ✅ 支持免费版和专业版配置
-- ✅ 智能版本检测和升级建议
-- ✅ 自动备份现有配置
-- ✅ 完整的错误处理和回滚机制
+**脚本已开源：** [GitHub 源码](https://github.com/SeanChang/xuanyuan_docker_proxy)
 
-**使用说明：**
+### ✨ 脚本特性与优势
+
+- ✅ **支持 13 种主流发行版**：openEuler (欧拉)、OpenCloudOS、Anolis OS (龙蜥)、Alinux (阿里云)、Kylin Linux (银河麒麟)、Fedora、Rocky Linux、AlmaLinux、Ubuntu、Debian、CentOS、RHEL、Oracle Linux
+- ✅ **国产操作系统完整支持**：深度适配国产操作系统（openEuler、Anolis OS、OpenCloudOS、Alinux、Kylin Linux），支持版本自动识别和最优配置
+- ✅ **多镜像源智能切换**：内置阿里云、腾讯云、华为云、中科大、清华等 6+ 国内镜像源，自动检测并选择最快源
+- ✅ **老版本系统特殊处理**：支持 Ubuntu 16.04、Debian 9/10 等已过期系统，自动配置兼容的安装方案
+- ✅ **双重安装保障**：包管理器安装失败时自动切换到二进制安装，确保安装成功率
+- ✅ **macOS/Windows 友好提示**：自动检测 macOS 和 Windows 系统，提供适合的 Docker Desktop 安装指引
+
+### 📋 支持的操作系统
+
+我们的一键安装脚本支持 13 种主流 Linux 发行版，包括国产操作系统、CentOS 替代品和传统发行版：
+
+| 操作系统 | 版本 | 支持状态 | 说明 |
+|---------|------|---------|------|
+| **🇨🇳 国产操作系统** | | | |
+| openEuler (欧拉) | 20.03+, 22.03+, 24.03+ | ✅ | 华为开源，CentOS 兼容 |
+| OpenCloudOS | 9.x | ✅ | 腾讯开源，CentOS 9 兼容 |
+| Anolis OS (龙蜥) | 7.x, 8.x | ✅ | 阿里云支持，RHEL 兼容 |
+| Alinux (阿里云) | 2.x, 3.x | ✅ | 阿里云 ECS 默认系统 |
+| Kylin Linux (银河麒麟) | V10 | ✅ | 国产操作系统，RHEL 兼容 |
+| **🌍 CentOS 替代品（企业级）** | | | |
+| Rocky Linux | 8.x, 9.x | ✅ | 10年支持，RHEL 兼容 |
+| AlmaLinux | 8.x, 9.x | ✅ | 10年支持，RHEL 兼容 |
+| **🔄 创新发行版** | | | |
+| Fedora | 34+ | ✅ | Red Hat 上游，最新特性 |
+| **📦 传统发行版** | | | |
+| Ubuntu | 16.04+ | ✅ | 含老版本特殊处理 |
+| Debian | 9+ | ✅ | 含老版本特殊处理 |
+| CentOS | 7, 8, 9 | ✅ | 包含 Stream 版本 |
+| RHEL | 7, 8, 9 | ✅ | Red Hat Enterprise Linux |
+| Oracle Linux | 7, 8, 9 | ✅ | Oracle 企业级发行版 |
+
+> 💡 **提示**：脚本会自动检测您的操作系统类型和版本，并选择最优的安装方案。对于老版本系统（如 Ubuntu 16.04、Debian 9/10），脚本会自动使用兼容的安装方式。
+
+### 📖 使用说明
+
 1. 复制上述命令到您的 Linux 终端
 2. 按提示选择版本（免费版或专业版）
 3. 如选择专业版，输入您的专属免登录地址
