@@ -3364,42 +3364,198 @@ EOF
     exit 1
   fi
 
+  echo ">>> [2.5/8] 检查 container-selinux 依赖..."
+  # 检查 container-selinux 是否存在及版本
+  CONTAINER_SELINUX_INSTALLED=false
+  if rpm -q container-selinux &>/dev/null; then
+    INSTALLED_VERSION=$(rpm -q --qf '%{VERSION}-%{RELEASE}' container-selinux 2>/dev/null)
+    echo "检测到已安装 container-selinux: $INSTALLED_VERSION"
+    # 检查版本是否满足要求 (>= 2.74)
+    # 尝试解析版本号，格式可能是 2:2.74-1 或 2.74-1
+    VERSION_STRING=$(echo "$INSTALLED_VERSION" | grep -oE '[0-9]+\.[0-9]+' | head -1)
+    if [[ -n "$VERSION_STRING" ]]; then
+      MAJOR_VERSION=$(echo "$VERSION_STRING" | cut -d. -f1)
+      MINOR_VERSION=$(echo "$VERSION_STRING" | cut -d. -f2)
+      if [[ "$MAJOR_VERSION" -gt 2 ]] || [[ "$MAJOR_VERSION" -eq 2 && "$MINOR_VERSION" -ge 74 ]]; then
+        CONTAINER_SELINUX_INSTALLED=true
+        echo "✅ container-selinux 版本满足要求"
+      else
+        echo "⚠️  container-selinux 版本过低 ($INSTALLED_VERSION)，需要 >= 2:2.74"
+      fi
+    else
+      # 如果无法解析版本，尝试安装最新版本
+      echo "⚠️  无法解析 container-selinux 版本，将尝试更新"
+    fi
+  else
+    echo "未检测到 container-selinux，将尝试安装..."
+  fi
+  
+  # 如果 container-selinux 未安装或版本不够，尝试安装
+  if [[ "$CONTAINER_SELINUX_INSTALLED" == "false" ]]; then
+    echo "正在尝试安装 container-selinux..."
+    
+    # 方法1: 尝试从系统源安装
+    if sudo $PKG_MANAGER install -y container-selinux 2>/dev/null; then
+      echo "✅ 从系统源安装 container-selinux 成功"
+      # 重新检查版本
+      INSTALLED_VERSION=$(rpm -q --qf '%{VERSION}-%{RELEASE}' container-selinux 2>/dev/null)
+      echo "已安装版本: $INSTALLED_VERSION"
+      VERSION_STRING=$(echo "$INSTALLED_VERSION" | grep -oE '[0-9]+\.[0-9]+' | head -1)
+      if [[ -n "$VERSION_STRING" ]]; then
+        MAJOR_VERSION=$(echo "$VERSION_STRING" | cut -d. -f1)
+        MINOR_VERSION=$(echo "$VERSION_STRING" | cut -d. -f2)
+        if [[ "$MAJOR_VERSION" -gt 2 ]] || [[ "$MAJOR_VERSION" -eq 2 && "$MINOR_VERSION" -ge 74 ]]; then
+          CONTAINER_SELINUX_INSTALLED=true
+          echo "✅ container-selinux 版本满足要求"
+        else
+          echo "⚠️  container-selinux 版本过低 ($INSTALLED_VERSION)，需要 >= 2:2.74"
+          echo "⚠️  将尝试从其他源安装更高版本..."
+        fi
+      fi
+    else
+      echo "⚠️  系统源中未找到 container-selinux，尝试配置 RHEL 8 extras 源..."
+    fi
+    
+    # 方法2: 如果版本仍然不满足要求，尝试配置 RHEL 8 extras 源（适用于 Kylin V10）
+    if [[ "$CONTAINER_SELINUX_INSTALLED" == "false" && "$CENTOS_VERSION" == "8" ]]; then
+      echo "尝试配置 RHEL 8 extras 源以获取更高版本的 container-selinux..."
+      # 尝试配置阿里云 CentOS 8 extras 源
+      if sudo tee /etc/yum.repos.d/rhel8-extras.repo > /dev/null <<EOF 2>/dev/null; then
+[rhel8-extras]
+name=RHEL 8 Extras - \$basearch
+baseurl=https://mirrors.aliyun.com/centos-vault/8.5.2111/extras/\$basearch/os/
+enabled=1
+gpgcheck=0
+EOF
+        if sudo $PKG_MANAGER makecache -q 2>/dev/null; then
+          # 尝试升级到更高版本
+          if sudo $PKG_MANAGER upgrade -y container-selinux 2>/dev/null || sudo $PKG_MANAGER install -y container-selinux 2>/dev/null; then
+            INSTALLED_VERSION=$(rpm -q --qf '%{VERSION}-%{RELEASE}' container-selinux 2>/dev/null)
+            echo "已安装版本: $INSTALLED_VERSION"
+            VERSION_STRING=$(echo "$INSTALLED_VERSION" | grep -oE '[0-9]+\.[0-9]+' | head -1)
+            if [[ -n "$VERSION_STRING" ]]; then
+              MAJOR_VERSION=$(echo "$VERSION_STRING" | cut -d. -f1)
+              MINOR_VERSION=$(echo "$VERSION_STRING" | cut -d. -f2)
+              if [[ "$MAJOR_VERSION" -gt 2 ]] || [[ "$MAJOR_VERSION" -eq 2 && "$MINOR_VERSION" -ge 74 ]]; then
+                CONTAINER_SELINUX_INSTALLED=true
+                echo "✅ 从 RHEL 8 extras 源安装 container-selinux 成功，版本满足要求"
+              else
+                echo "⚠️  RHEL 8 extras 源版本仍然不满足要求"
+              fi
+            fi
+          else
+            echo "⚠️  RHEL 8 extras 源安装失败"
+          fi
+        else
+          echo "⚠️  RHEL 8 extras 源配置失败"
+        fi
+        sudo rm -f /etc/yum.repos.d/rhel8-extras.repo 2>/dev/null
+      fi
+    fi
+    
+    # 方法3: 如果版本仍然不满足要求，标记为需要二进制安装
+    if [[ "$CONTAINER_SELINUX_INSTALLED" == "false" ]]; then
+      echo "⚠️  container-selinux 版本不满足要求（需要 >= 2:2.74）"
+      echo "⚠️  将使用二进制安装方式绕过依赖问题"
+      CONTAINER_SELINUX_ERROR=true
+    fi
+  fi
+
   echo ">>> [3/8] 安装 Docker CE 最新版..."
   
-  # 尝试安装 Docker，如果失败则尝试逐个安装组件
-  if sudo $PKG_MANAGER install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin; then
-    echo "✅ Docker CE 安装成功"
+  # 如果 container-selinux 版本不满足要求，直接使用二进制安装
+  DOCKER_INSTALL_SUCCESS=false
+  
+  # 如果已经检测到 container-selinux 错误，直接跳过包管理器安装
+  if [[ "$CONTAINER_SELINUX_ERROR" == "true" ]]; then
+    echo ""
+    echo "⚠️  ═══════════════════════════════════════════════════════════════════════════════"
+    echo "⚠️  检测到 container-selinux 版本不满足要求"
+    echo "⚠️  ═══════════════════════════════════════════════════════════════════════════════"
+    echo "⚠️  Docker CE 需要 container-selinux >= 2:2.74，但系统源中无法提供"
+    echo "⚠️  将使用二进制安装方式绕过依赖问题"
+    echo "⚠️  ═══════════════════════════════════════════════════════════════════════════════"
+    echo ""
+    
+    # 清理可能的安装残留
+    sudo $PKG_MANAGER remove -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin 2>/dev/null || true
+    
+    echo "❌ 包管理器安装失败，切换到二进制安装..."
   else
-    echo "❌ 批量安装失败，尝试逐个安装组件..."
+    # 尝试安装 Docker，如果失败则尝试逐个安装组件
+    INSTALL_OUTPUT=$(sudo $PKG_MANAGER install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin 2>&1)
+    INSTALL_STATUS=$?
     
-    # 逐个安装组件
-    if sudo $PKG_MANAGER install -y containerd.io; then
-      echo "✅ containerd.io 安装成功"
+    if [[ $INSTALL_STATUS -eq 0 ]]; then
+      echo "✅ Docker CE 安装成功"
+      DOCKER_INSTALL_SUCCESS=true
     else
-      echo "❌ containerd.io 安装失败"
+      # 检查错误输出，判断是否是 container-selinux 依赖问题
+      if echo "$INSTALL_OUTPUT" | grep -q "container-selinux"; then
+        CONTAINER_SELINUX_ERROR=true
+        echo "❌ 检测到 container-selinux 依赖问题"
+      fi
+      
+      echo "❌ 批量安装失败，尝试逐个安装组件..."
+      
+      # 逐个安装组件
+      CONTAINERD_OUTPUT=$(sudo $PKG_MANAGER install -y containerd.io 2>&1)
+      CONTAINERD_STATUS=$?
+      if echo "$CONTAINERD_OUTPUT" | grep -q "container-selinux"; then
+        echo "❌ containerd.io 安装失败（container-selinux 依赖问题）"
+        CONTAINER_SELINUX_ERROR=true
+      elif [[ $CONTAINERD_STATUS -eq 0 ]]; then
+        echo "✅ containerd.io 安装成功"
+      else
+        echo "❌ containerd.io 安装失败"
+      fi
+      
+      if sudo $PKG_MANAGER install -y docker-ce-cli 2>/dev/null; then
+        echo "✅ docker-ce-cli 安装成功"
+      else
+        echo "❌ docker-ce-cli 安装失败"
+      fi
+      
+      DOCKER_CE_OUTPUT=$(sudo $PKG_MANAGER install -y docker-ce 2>&1)
+      DOCKER_CE_STATUS=$?
+      if echo "$DOCKER_CE_OUTPUT" | grep -q "container-selinux"; then
+        echo "❌ docker-ce 安装失败（container-selinux 依赖问题）"
+        CONTAINER_SELINUX_ERROR=true
+      elif [[ $DOCKER_CE_STATUS -eq 0 ]]; then
+        echo "✅ docker-ce 安装成功"
+        DOCKER_INSTALL_SUCCESS=true
+      else
+        echo "❌ docker-ce 安装失败"
+      fi
+      
+      if sudo $PKG_MANAGER install -y docker-buildx-plugin 2>/dev/null; then
+        echo "✅ docker-buildx-plugin 安装成功"
+      else
+        echo "❌ docker-buildx-plugin 安装失败"
+      fi
+      
+      # 检查是否至少安装了核心组件
+      if command -v docker &> /dev/null; then
+        DOCKER_INSTALL_SUCCESS=true
+      fi
     fi
+  fi
+  
+  # 如果检测到 container-selinux 依赖问题，使用二进制安装
+  if [[ "$CONTAINER_SELINUX_ERROR" == "true" ]]; then
+    echo ""
+    echo "⚠️  ═══════════════════════════════════════════════════════════════════════════════"
+    echo "⚠️  检测到 container-selinux 依赖问题"
+    echo "⚠️  ═══════════════════════════════════════════════════════════════════════════════"
+    echo "⚠️  Docker CE 需要 container-selinux >= 2:2.74，但系统源中无法提供"
+    echo "⚠️  将使用二进制安装方式绕过依赖问题"
+    echo "⚠️  ═══════════════════════════════════════════════════════════════════════════════"
+    echo ""
     
-    if sudo $PKG_MANAGER install -y docker-ce-cli; then
-      echo "✅ docker-ce-cli 安装成功"
-    else
-      echo "❌ docker-ce-cli 安装失败"
-    fi
+    # 清理可能的安装残留
+    sudo $PKG_MANAGER remove -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin 2>/dev/null || true
     
-    if sudo $PKG_MANAGER install -y docker-ce; then
-      echo "✅ docker-ce 安装成功"
-    else
-      echo "❌ docker-ce 安装失败"
-    fi
-    
-    if sudo $PKG_MANAGER install -y docker-buildx-plugin; then
-      echo "✅ docker-buildx-plugin 安装成功"
-    else
-      echo "❌ docker-buildx-plugin 安装失败"
-    fi
-    
-    # 检查是否至少安装了核心组件
-    if ! command -v docker &> /dev/null; then
-      echo "❌ 包管理器安装完全失败，尝试二进制安装..."
+    echo "❌ 包管理器安装失败，切换到二进制安装..."
       
       # 二进制安装备选方案
       echo "正在下载 Docker 二进制包..."
@@ -3502,17 +3658,75 @@ EOF
         # 创建 docker 用户组
         sudo groupadd docker 2>/dev/null || true
         
+        # 尝试安装 containerd.io（如果可能）
+        echo "正在尝试安装 containerd.io..."
+        if sudo $PKG_MANAGER install -y containerd.io 2>/dev/null; then
+          echo "✅ containerd.io 安装成功"
+        else
+          echo "⚠️  containerd.io 安装失败，Docker 可能需要手动安装 containerd"
+          echo "⚠️  如果 Docker 启动失败，请尝试手动安装 containerd.io"
+        fi
+        
         echo "✅ Docker 二进制安装成功"
+        DOCKER_INSTALL_SUCCESS=true
       else
         echo "❌ 所有下载源都失败，无法安装 Docker"
         echo "请检查网络连接或手动安装 Docker"
         exit 1
       fi
+  fi
+  
+  # 检测 systemd 是否可用
+  SYSTEMD_AVAILABLE=false
+  if command -v systemctl &>/dev/null && systemctl --version &>/dev/null; then
+    # 检查是否在容器环境中（PID 1 不是 systemd）
+    if [[ -d /run/systemd/system ]] || [[ -d /sys/fs/cgroup/systemd ]]; then
+      SYSTEMD_AVAILABLE=true
     fi
   fi
   
-  sudo systemctl enable docker
-  sudo systemctl start docker
+  if [[ "$SYSTEMD_AVAILABLE" == "true" ]]; then
+    echo "正在启动 Docker 服务..."
+    sudo systemctl daemon-reload 2>/dev/null || true
+    if sudo systemctl enable docker 2>/dev/null; then
+      echo "✅ Docker 服务已启用"
+    fi
+    if sudo systemctl start docker 2>/dev/null; then
+      echo "✅ Docker 服务启动成功"
+    else
+      echo "⚠️  systemctl 启动失败，尝试手动启动..."
+      # 尝试手动启动 dockerd
+      if sudo dockerd > /dev/null 2>&1 & then
+        sleep 3
+        if docker info &>/dev/null; then
+          echo "✅ Docker daemon 手动启动成功"
+        else
+          echo "⚠️  Docker daemon 启动失败，请手动启动: sudo dockerd &"
+        fi
+      fi
+    fi
+  else
+    echo "⚠️  检测到 systemd 不可用（可能是容器环境）"
+    echo "⚠️  将尝试手动启动 Docker daemon..."
+    # 创建必要的目录
+    sudo mkdir -p /var/run/docker
+    sudo mkdir -p /var/lib/docker
+    
+    # 尝试启动 dockerd
+    if sudo dockerd > /tmp/dockerd.log 2>&1 & then
+      DOCKERD_PID=$!
+      sleep 3
+      if docker info &>/dev/null; then
+        echo "✅ Docker daemon 手动启动成功 (PID: $DOCKERD_PID)"
+        echo "⚠️  注意：Docker daemon 在后台运行，退出终端前请使用 'sudo kill $DOCKERD_PID' 停止"
+      else
+        echo "⚠️  Docker daemon 启动可能失败，请检查日志: cat /tmp/dockerd.log"
+        echo "⚠️  可以尝试手动启动: sudo dockerd &"
+      fi
+    else
+      echo "⚠️  无法自动启动 Docker daemon，请手动执行: sudo dockerd &"
+    fi
+  fi
   
   echo ">>> [3.5/8] 安装 Docker Compose..."
   # 安装最新版本的 docker-compose，使用多个备用下载源
@@ -3521,105 +3735,87 @@ EOF
   # 尝试多个下载源
   DOCKER_COMPOSE_DOWNLOADED=false
   
-  # 源1: 阿里云镜像
-  echo "尝试从阿里云镜像下载..."
-  if sudo curl -L "https://mirrors.aliyun.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
-    DOCKER_COMPOSE_DOWNLOADED=true
-    echo "✅ 从阿里云镜像下载成功"
+  # 确定系统架构
+  ARCH=$(uname -m)
+  if [[ "$ARCH" == "x86_64" ]]; then
+    COMPOSE_ARCH="x86_64"
+  elif [[ "$ARCH" == "aarch64" ]] || [[ "$ARCH" == "arm64" ]]; then
+    COMPOSE_ARCH="aarch64"
   else
-    echo "❌ 阿里云镜像下载失败，尝试下一个源..."
+    COMPOSE_ARCH="$ARCH"
   fi
   
-  # 源2: 腾讯云镜像
-  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
-    echo "尝试从腾讯云镜像下载..."
-    if sudo curl -L "https://mirrors.cloud.tencent.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
-      DOCKER_COMPOSE_DOWNLOADED=true
-      echo "✅ 从腾讯云镜像下载成功"
-    else
-      echo "❌ 腾讯云镜像下载失败，尝试下一个源..."
-    fi
+  # 临时文件路径
+  COMPOSE_TMP="/tmp/docker-compose-$$"
+  
+  # 源1: 优先使用包管理器安装（最可靠）
+  echo "尝试使用包管理器安装 docker-compose-plugin..."
+  if sudo $PKG_MANAGER install -y docker-compose-plugin 2>/dev/null; then
+    echo "✅ 通过包管理器安装 docker-compose-plugin 成功"
+    DOCKER_COMPOSE_DOWNLOADED=true
+  else
+    echo "⚠️  包管理器安装失败，尝试从国内镜像源下载..."
   fi
   
-  # 源3: 华为云镜像
+  # 源2: 使用国内镜像源下载（如果包管理器失败）
   if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
-    echo "尝试从华为云镜像下载..."
-    if sudo curl -L "https://mirrors.huaweicloud.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
-      DOCKER_COMPOSE_DOWNLOADED=true
-      echo "✅ 从华为云镜像下载成功"
-    else
-      echo "❌ 华为云镜像下载失败，尝试下一个源..."
-    fi
-  fi
-  
-  # 源4: 中科大镜像
-  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
-    echo "尝试从中科大镜像下载..."
-    if sudo curl -L "https://mirrors.ustc.edu.cn/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
-      DOCKER_COMPOSE_DOWNLOADED=true
-      echo "✅ 从中科大镜像下载成功"
-    else
-      echo "❌ 中科大镜像下载失败，尝试下一个源..."
-    fi
-  fi
-  
-  # 源5: 清华大学镜像
-  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
-    echo "尝试从清华大学镜像下载..."
-    if sudo curl -L "https://mirrors.tuna.tsinghua.edu.cn/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
-      DOCKER_COMPOSE_DOWNLOADED=true
-      echo "✅ 从清华大学镜像下载成功"
-    else
-      echo "❌ 清华大学镜像下载失败，尝试下一个源..."
-    fi
-  fi
-  
-  # 源6: 网易镜像
-  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
-    echo "尝试从网易镜像下载..."
-    if sudo curl -L "https://mirrors.163.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
-      DOCKER_COMPOSE_DOWNLOADED=true
-      echo "✅ 从网易镜像下载成功"
-    else
-      echo "❌ 网易镜像下载失败，尝试下一个源..."
-    fi
-  fi
-  
-  # 源7: 最后尝试 GitHub (如果网络允许)
-  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
-    echo "尝试从 GitHub 下载..."
-    if sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
-      DOCKER_COMPOSE_DOWNLOADED=true
-      echo "✅ 从 GitHub 下载成功"
-    else
-      echo "❌ GitHub 下载失败"
-    fi
-  fi
-  
-  # 检查是否下载成功
-  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
-    echo "❌ 所有下载源都失败了，尝试使用包管理器安装..."
+    # 尝试使用 get.docker.com 的镜像（如果有）
+    echo "尝试从国内镜像源下载 docker-compose..."
     
-    # 使用包管理器作为备选方案
-    if sudo $PKG_MANAGER install -y docker-compose-plugin; then
-      echo "✅ 通过包管理器安装 docker-compose-plugin 成功"
-      DOCKER_COMPOSE_DOWNLOADED=true
-    else
-      echo "❌ 包管理器安装也失败了"
+    # 使用固定版本 v2.24.0，从国内镜像下载
+    # 注意：国内镜像源可能没有最新版本，使用固定版本更可靠
+    COMPOSE_VERSION="2.24.0"
+    
+    # 尝试多个国内镜像源
+    # 源2.1: 阿里云镜像（如果有）
+    if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
+      echo "尝试从阿里云镜像下载 docker-compose v${COMPOSE_VERSION}..."
+      # 注意：国内镜像源可能没有 docker-compose，这里尝试但不保证成功
+      if sudo curl -L "https://mirrors.aliyun.com/docker-toolbox/linux/compose/${COMPOSE_VERSION}/docker-compose-Linux-${COMPOSE_ARCH}" -o "$COMPOSE_TMP" --connect-timeout 10 --max-time 60 2>/dev/null; then
+        FILE_SIZE=$(stat -f%z "$COMPOSE_TMP" 2>/dev/null || stat -c%s "$COMPOSE_TMP" 2>/dev/null || echo "0")
+        if [[ "$FILE_SIZE" -gt 10485760 ]] || (file "$COMPOSE_TMP" 2>/dev/null | grep -q "ELF\|executable\|binary") || (head -c 4 "$COMPOSE_TMP" 2>/dev/null | od -An -tx1 | grep -q "7f 45 4c 46"); then
+          sudo mv "$COMPOSE_TMP" /usr/local/bin/docker-compose
+          DOCKER_COMPOSE_DOWNLOADED=true
+          echo "✅ 从阿里云镜像下载成功"
+        else
+          if head -c 20 "$COMPOSE_TMP" 2>/dev/null | grep -q "<!DOCTYPE\|<html"; then
+            echo "❌ 下载的文件是 HTML 页面，不是二进制文件"
+          fi
+          sudo rm -f "$COMPOSE_TMP"
+        fi
+      fi
     fi
   fi
   
   if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "true" ]]; then
-    # 设置执行权限
-    sudo chmod +x /usr/local/bin/docker-compose
-    
-    # 创建软链接到 PATH 目录
-    sudo ln -sf /usr/local/bin/docker-compose /usr/bin/docker-compose
-    
-    echo "✅ Docker Compose 安装完成"
+    # 如果安装的是独立的 docker-compose 二进制文件
+    if [[ -f /usr/local/bin/docker-compose ]]; then
+      # 设置执行权限
+      sudo chmod +x /usr/local/bin/docker-compose
+      
+      # 创建软链接到 PATH 目录
+      sudo ln -sf /usr/local/bin/docker-compose /usr/bin/docker-compose 2>/dev/null || true
+      
+      echo "✅ Docker Compose 安装完成"
+    elif command -v docker &>/dev/null && docker compose version &>/dev/null; then
+      echo "✅ Docker Compose Plugin 已安装（使用 'docker compose' 命令）"
+    fi
   else
-    echo "❌ Docker Compose 安装失败，请手动安装"
-    echo "建议访问: https://docs.docker.com/compose/install/ 查看手动安装方法"
+    echo "⚠️  Docker Compose 自动安装失败"
+    echo ""
+    echo "📋 手动安装方法："
+    echo "  方法1: 使用包管理器（推荐）"
+    echo "    sudo $PKG_MANAGER install -y docker-compose-plugin"
+    echo ""
+    echo "  方法2: 手动下载二进制文件"
+    echo "    由于 GitHub 在国内访问受限，建议："
+    echo "    1. 使用代理或 VPN 访问 GitHub"
+    echo "    2. 或从其他可靠源下载 docker-compose 二进制文件"
+    echo ""
+    echo "  安装后验证："
+    echo "    docker compose version  或  docker-compose version"
+    echo ""
+    echo "  更多信息: https://docs.docker.com/compose/install/"
   fi
 
 elif [[ "$OS" == "almalinux" ]]; then
@@ -5281,12 +5477,18 @@ elif [[ "$OS" == "centos" || "$OS" == "rhel" || "$OS" == "rocky" || "$OS" == "ol
   echo "正在创建 Docker 仓库配置..."
   
   # 根据系统版本选择正确的仓库路径
-  if [[ "$VERSION_ID" == "8" ]]; then
-    CENTOS_VERSION="8"
-    echo "检测到 CentOS/RHEL/Rocky Linux 8，使用 CentOS 8 仓库"
-  elif [[ "$VERSION_ID" == "9" ]]; then
+  # 使用数值比较以支持版本10及以上
+  VERSION_MAJOR="${VERSION_ID%%.*}"
+  if [[ "$VERSION_MAJOR" -ge 10 ]]; then
+    # CentOS Stream 10+ 使用 CentOS 9 仓库（兼容处理）
+    CENTOS_VERSION="9"
+    echo "检测到 CentOS/RHEL/Rocky Linux ${VERSION_ID}，使用 CentOS 9 仓库（兼容模式）"
+  elif [[ "$VERSION_MAJOR" == "9" ]]; then
     CENTOS_VERSION="9"
     echo "检测到 CentOS/RHEL/Rocky Linux 9，使用 CentOS 9 仓库"
+  elif [[ "$VERSION_MAJOR" == "8" ]]; then
+    CENTOS_VERSION="8"
+    echo "检测到 CentOS/RHEL/Rocky Linux 8，使用 CentOS 8 仓库"
   else
     CENTOS_VERSION="7"
     echo "检测到 CentOS/RHEL/Rocky Linux 7，使用 CentOS 7 仓库"
@@ -5356,7 +5558,7 @@ EOF
     sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
 [docker-ce-stable]
 name=Docker CE Stable - \$basearch
-baseurl=https://mirrors.ustc.edu.cn/docker-ce/linux/centos/7/\$basearch/stable
+baseurl=https://mirrors.ustc.edu.cn/docker-ce/linux/centos/${CENTOS_VERSION}/\$basearch/stable
 enabled=1
 gpgcheck=1
 gpgkey=https://mirrors.ustc.edu.cn/docker-ce/linux/centos/gpg
