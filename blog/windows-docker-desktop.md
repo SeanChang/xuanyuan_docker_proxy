@@ -1,17 +1,8 @@
----
-id: 11
-title: 手把手教你在 Windows 安装 Docker Desktop
-slug: windows-docker-desktop
-summary: 本文是一份零基础友好、步骤化的实操教程，旨在帮助初学者和高级开发者快速掌握在 Windows 系统中基于 WSL 2（适用于 Linux 的 Windows 子系统，版本 2）安装 Docker Desktop 的方法，并学会使用 VS Code 在远程容器中开发应用。
-category: Docker Desktop
-tags: Docker Desktop,docker,部署教程
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-desktop.png"
-status: published
-created_at: "2025-10-04 12:53:41"
-updated_at: "2025-10-07 02:51:29"
----
-
 # 手把手教你在 Windows 安装 Docker Desktop
+
+![手把手教你在 Windows 安装 Docker Desktop](https://img.xuanyuan.dev/docker/blog/docker-desktop.png)
+
+*分类: Docker Desktop | 标签: Docker Desktop,docker,部署教程 | 发布时间: 2025-10-04 12:53:41*
 
 > 本文是一份零基础友好、步骤化的实操教程，旨在帮助初学者和高级开发者快速掌握在 Windows 系统中基于 WSL 2（适用于 Linux 的 Windows 子系统，版本 2）安装 Docker Desktop 的方法，并学会使用 VS Code 在远程容器中开发应用。
 

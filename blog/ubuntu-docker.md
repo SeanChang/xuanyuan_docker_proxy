@@ -1,18 +1,8 @@
----
-id: 23
-title: Ubuntu Docker 容器化部署教程
-slug: ubuntu-docker
-summary: 无论是开发测试环境搭建、企业服务部署，还是容器化项目落地，Ubuntu 都能提供“快速、安全、简单”的基础环境支撑。
-category: Docker,Ubuntu
-tags: ubuntu,docker,部署教程
-image_name: library/ubuntu
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-ubuntu.png"
-status: published
-created_at: "2025-10-10 02:33:47"
-updated_at: "2025-10-11 01:55:00"
----
-
 # Ubuntu Docker 容器化部署教程
+
+![Ubuntu Docker 容器化部署教程](https://img.xuanyuan.dev/docker/blog/docker-ubuntu.png)
+
+*分类: Docker,Ubuntu | 标签: ubuntu,docker,部署教程 | 发布时间: 2025-10-10 02:33:47*
 
 > 无论是开发测试环境搭建、企业服务部署，还是容器化项目落地，Ubuntu 都能提供“快速、安全、简单”的基础环境支撑。
 

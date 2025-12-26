@@ -1,18 +1,8 @@
----
-id: 129
-title: REDIS-STACK Docker 容器化部署指南
-slug: redis-stack-docker
-summary: REDIS-STACK是一个集成了Redis核心服务器与多种高级数据库功能的容器化应用，它包含Redis Stack服务器和RedisInsight可视化工具。相比传统Redis，REDIS-STACK提供了更丰富的数据处理能力，包括搜索（RediSearch）、JSON数据存储（RedisJSON）、图数据库（RedisGraph）、时序数据（RedisTimeSeries）和布隆过滤器（RedisBloom）等扩展功能。RedisInsight的集成则为开发者提供了直观的数据可视化和管理界面，使得REDIS-STACK特别适合本地开发环境使用。
-category: Docker,REDIS-STACK
-tags: redis-stack,docker,部署教程
-image_name: redis/redis-stack
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-redis-stack.png"
-status: published
-created_at: "2025-12-10 08:33:04"
-updated_at: "2025-12-10 08:33:04"
----
-
 # REDIS-STACK Docker 容器化部署指南
+
+![REDIS-STACK Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-redis-stack.png)
+
+*分类: Docker,REDIS-STACK | 标签: redis-stack,docker,部署教程 | 发布时间: 2025-12-10 08:33:04*
 
 > REDIS-STACK是一个集成了Redis核心服务器与多种高级数据库功能的容器化应用，它包含Redis Stack服务器和RedisInsight可视化工具。相比传统Redis，REDIS-STACK提供了更丰富的数据处理能力，包括搜索（RediSearch）、JSON数据存储（RedisJSON）、图数据库（RedisGraph）、时序数据（RedisTimeSeries）和布隆过滤器（RedisBloom）等扩展功能。RedisInsight的集成则为开发者提供了直观的数据可视化和管理界面，使得REDIS-STACK特别适合本地开发环境使用。
 

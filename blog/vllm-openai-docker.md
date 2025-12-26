@@ -1,18 +1,8 @@
----
-id: 21
-title: vllm-openai Docker 部署全手册
-slug: vllm-openai-docker
-summary: 从个人开发者测试开源大模型，到企业搭建私有推理服务，vllm-openai 都是高效且低成本的选择。本教程将从核心概念讲起，逐步覆盖 Docker 环境准备、镜像拉取、多场景部署、结果验证及问题排查，无论你是初学者还是高级工程师，都能照着步骤完成部署。
-category: Docker,vllm-openai
-tags: vllm-openai,docker,部署教程
-image_name: vllm/vllm-openai
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-vllm.png"
-status: published
-created_at: "2025-10-09 03:15:24"
-updated_at: "2025-10-09 03:15:24"
----
-
 # vllm-openai Docker 部署全手册
+
+![vllm-openai Docker 部署全手册](https://img.xuanyuan.dev/docker/blog/docker-vllm.png)
+
+*分类: Docker,vllm-openai | 标签: vllm-openai,docker,部署教程 | 发布时间: 2025-10-09 03:15:24*
 
 > 从个人开发者测试开源大模型，到企业搭建私有推理服务，vllm-openai 都是高效且低成本的选择。本教程将从核心概念讲起，逐步覆盖 Docker 环境准备、镜像拉取、多场景部署、结果验证及问题排查，无论你是初学者还是高级工程师，都能照着步骤完成部署。
 

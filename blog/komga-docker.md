@@ -1,18 +1,8 @@
----
-id: 154
-title: Komga Docker 容器化部署指南
-slug: komga-docker
-summary: Komga 是一款专为漫画和 manga 设计的媒体服务器应用，能够通过API提供页面服务与流式传输功能。作为容器化应用，Komga 具备部署便捷、环境一致性高、资源隔离性好等特点，适合个人用户和小型团队搭建私有漫画库服务。本文将详细介绍如何通过Docker容器化方式部署KOMGA，包括环境准备、镜像拉取、容器配置、功能测试及生产环境优化等关键步骤，帮助用户快速实现KOMGA的稳定运行。
-category: Docker,Komga
-tags: komga,docker,部署教程
-image_name: gotson/komga
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-komga.png"
-status: published
-created_at: "2025-12-14 11:09:53"
-updated_at: "2025-12-14 11:09:53"
----
-
 # Komga Docker 容器化部署指南
+
+![Komga Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-komga.png)
+
+*分类: Docker,Komga | 标签: komga,docker,部署教程 | 发布时间: 2025-12-14 11:09:53*
 
 > Komga 是一款专为漫画和 manga 设计的媒体服务器应用，能够通过API提供页面服务与流式传输功能。作为容器化应用，Komga 具备部署便捷、环境一致性高、资源隔离性好等特点，适合个人用户和小型团队搭建私有漫画库服务。本文将详细介绍如何通过Docker容器化方式部署KOMGA，包括环境准备、镜像拉取、容器配置、功能测试及生产环境优化等关键步骤，帮助用户快速实现KOMGA的稳定运行。
 

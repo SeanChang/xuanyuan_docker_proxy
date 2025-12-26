@@ -1,18 +1,8 @@
----
-id: 174
-title: HELLO-WORLD Docker 容器化部署指南
-slug: hello-world-docker
-summary: HELLO-WORLD是一个经典的容器化应用示例，旨在展示Docker容器的基本工作流程和极简部署方式。作为Docker生态中最基础的镜像之一，HELLO-WORLD通过简洁的输出验证Docker环境的正确性，是Docker初学者入门的首选示例。该镜像由Docker社区维护，支持多种架构，包括amd64、arm32v5、arm64v8等，能够在不同硬件平台上稳定运行。
-category: Docker
-tags: hello-world,docker,部署教程
-image_name: library/hello-world
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-hello-world.png"
-status: published
-created_at: "2025-12-17 07:28:54"
-updated_at: "2025-12-17 07:28:54"
----
-
 # HELLO-WORLD Docker 容器化部署指南
+
+![HELLO-WORLD Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-hello-world.png)
+
+*分类: Docker | 标签: hello-world,docker,部署教程 | 发布时间: 2025-12-17 07:28:54*
 
 > HELLO-WORLD是一个经典的容器化应用示例，旨在展示Docker容器的基本工作流程和极简部署方式。作为Docker生态中最基础的镜像之一，HELLO-WORLD通过简洁的输出验证Docker环境的正确性，是Docker初学者入门的首选示例。该镜像由Docker社区维护，支持多种架构，包括amd64、arm32v5、arm64v8等，能够在不同硬件平台上稳定运行。
 

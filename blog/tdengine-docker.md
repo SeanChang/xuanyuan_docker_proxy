@@ -1,18 +1,8 @@
----
-id: 177
-title: TDengine Docker 容器化部署指南
-slug: tdengine-docker
-summary: TDengine 是一款开源、高性能、云原生的时序数据库，专为物联网（IoT）、车联网和工业物联网场景优化设计。它能够高效处理每天TB甚至PB级别的数据，支持数十亿传感器和数据采集点的数据 ingestion、处理与监控。
-category: Docker,TDengine
-tags: tdengine,docker,部署教程
-image_name: tdengine/tdengine
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-tdengine.png"
-status: published
-created_at: "2025-12-17 08:23:01"
-updated_at: "2025-12-17 08:23:01"
----
-
 # TDengine Docker 容器化部署指南
+
+![TDengine Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-tdengine.png)
+
+*分类: Docker,TDengine | 标签: tdengine,docker,部署教程 | 发布时间: 2025-12-17 08:23:01*
 
 > TDengine 是一款开源、高性能、云原生的时序数据库，专为物联网（IoT）、车联网和工业物联网场景优化设计。它能够高效处理每天TB甚至PB级别的数据，支持数十亿传感器和数据采集点的数据 ingestion、处理与监控。
 

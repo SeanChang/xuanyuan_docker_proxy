@@ -1,18 +1,8 @@
----
-id: 151
-title: RocketMQ Dashboard Docker 容器化部署指南
-slug: rocketmq-dashboard-docker
-summary: RocketMQ Dashboard 是 Apache RocketMQ 的官方管理控制台，提供了对RocketMQ集群的可视化监控、配置管理、消息查询等核心功能。通过Docker容器化部署 RocketMQ Dashboard，可以快速实现环境一致性、简化部署流程并提高运维效率。本文将详细介绍如何通过Docker快速部署RocketMQ Dashboard，并提供生产环境配置建议及故障排查方法。
-category: Docker,RocketMQ Dashboard
-tags: rocketmq-dashboard,docker,部署教程
-image_name: apacherocketmq/rocketmq-dashboard
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-rocketmq-dashboard.png"
-status: published
-created_at: "2025-12-14 06:31:58"
-updated_at: "2025-12-14 06:31:58"
----
-
 # RocketMQ Dashboard Docker 容器化部署指南
+
+![RocketMQ Dashboard Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-rocketmq-dashboard.png)
+
+*分类: Docker,RocketMQ Dashboard | 标签: rocketmq-dashboard,docker,部署教程 | 发布时间: 2025-12-14 06:31:58*
 
 > RocketMQ Dashboard 是 Apache RocketMQ 的官方管理控制台，提供了对RocketMQ集群的可视化监控、配置管理、消息查询等核心功能。通过Docker容器化部署 RocketMQ Dashboard，可以快速实现环境一致性、简化部署流程并提高运维效率。本文将详细介绍如何通过Docker快速部署RocketMQ Dashboard，并提供生产环境配置建议及故障排查方法。
 

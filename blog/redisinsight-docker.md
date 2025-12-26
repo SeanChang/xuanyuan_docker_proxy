@@ -1,18 +1,8 @@
----
-id: 75
-title: REDISINSIGHT Docker 容器化部署指南
-slug: redisinsight-docker
-summary: Redis Insight 是 Redis 官方推出的图形化管理工具，为开发人员和管理员提供直观的 Redis 数据可视化、性能监控和数据库管理功能。该工具支持所有 Redis 部署类型，包括 Redis Open Source、Redis Stack、Redis Enterprise Software、Redis Enterprise Cloud 以及 Amazon ElastiCache 等，能够帮助用户优化开发流程并提高 Redis 数据库的管理效率。
-category: Docker,REDISINSIGHT
-tags: redisinsight,docker,部署教程
-image_name: redis/redisinsight
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-redisinsight.png"
-status: published
-created_at: "2025-11-26 06:21:26"
-updated_at: "2025-11-26 06:21:26"
----
-
 # REDISINSIGHT Docker 容器化部署指南
+
+![REDISINSIGHT Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-redisinsight.png)
+
+*分类: Docker,REDISINSIGHT | 标签: redisinsight,docker,部署教程 | 发布时间: 2025-11-26 06:21:26*
 
 > Redis Insight 是 Redis 官方推出的图形化管理工具，为开发人员和管理员提供直观的 Redis 数据可视化、性能监控和数据库管理功能。该工具支持所有 Redis 部署类型，包括 Redis Open Source、Redis Stack、Redis Enterprise Software、Redis Enterprise Cloud 以及 Amazon ElastiCache 等，能够帮助用户优化开发流程并提高 Redis 数据库的管理效率。
 

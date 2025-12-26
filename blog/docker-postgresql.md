@@ -1,18 +1,8 @@
----
-id: 4
-title: Docker 部署 PostgreSQL 数据库教程
-slug: docker-postgresql
-summary: 本文详细介绍基于轩辕镜像的Docker部署PostgreSQL流程，涵盖镜像详情查看、登录验证/免登录/官方直连三种拉取方式、快速/挂载目录/docker-compose三种部署方式、结果验证步骤，及无法连接、配置持久化等常见问题的解决办法。
-category: "Docker,PostgreSQL "
-tags: PostgreSQL,docker,部署教程
-image_name: library/postgres
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-postgresql.png"
-status: published
-created_at: "2025-10-03 06:56:04"
-updated_at: "2025-10-08 06:46:44"
----
-
 # Docker 部署 PostgreSQL 数据库教程
+
+![Docker 部署 PostgreSQL 数据库教程](https://img.xuanyuan.dev/docker/blog/docker-postgresql.png)
+
+*分类: Docker,PostgreSQL  | 标签: PostgreSQL,docker,部署教程 | 发布时间: 2025-10-03 06:56:04*
 
 > 本文详细介绍基于轩辕镜像的Docker部署PostgreSQL流程，涵盖镜像详情查看、登录验证/免登录/官方直连三种拉取方式、快速/挂载目录/docker-compose三种部署方式、结果验证步骤，及无法连接、配置持久化等常见问题的解决办法。
 

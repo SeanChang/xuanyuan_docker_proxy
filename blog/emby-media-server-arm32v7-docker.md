@@ -1,18 +1,8 @@
----
-id: 160
-title: Emby Media Server ARM32V7 Docker 容器化部署指南
-slug: emby-media-server-arm32v7-docker
-summary: EMBYSERVER_ARM32V7是Emby Media Server针对arm32v7架构的官方Docker镜像，提供了强大的媒体服务器功能，允许用户组织、管理和流式传输媒体内容到各种设备。通过Docker容器化部署，可以简化安装流程、确保环境一致性并简化版本管理。
-category: Docker,Emby Media Server
-tags: emby-media-server,docker,部署教程
-image_name: emby/embyserver_arm32v7
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-emby-media-server.png"
-status: published
-created_at: "2025-12-14 12:55:52"
-updated_at: "2025-12-14 12:55:52"
----
-
 # Emby Media Server ARM32V7 Docker 容器化部署指南
+
+![Emby Media Server ARM32V7 Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-emby-media-server.png)
+
+*分类: Docker,Emby Media Server | 标签: emby-media-server,docker,部署教程 | 发布时间: 2025-12-14 12:55:52*
 
 > EMBYSERVER_ARM32V7是Emby Media Server针对arm32v7架构的官方Docker镜像，提供了强大的媒体服务器功能，允许用户组织、管理和流式传输媒体内容到各种设备。通过Docker容器化部署，可以简化安装流程、确保环境一致性并简化版本管理。
 

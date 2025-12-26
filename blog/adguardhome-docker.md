@@ -1,18 +1,8 @@
----
-id: 138
-title: AdguardHome Docker 容器化部署指南
-slug: adguardhome-docker
-summary: ADGUARDHOME是一款网络级广告和跟踪器拦截DNS服务器，作为一款开源的隐私保护工具，它能够在网络层面为所有设备提供广告过滤和隐私保护功能，无需在每个设备上单独安装客户端软件。通过Docker容器化部署ADGUARDHOME，可以实现快速部署、环境隔离和版本管理，适用于家庭网络、小型企业网络等多种场景。
-category: Docker,adguardhome
-tags: adguardhome,docker,部署教程
-image_name: adguard/adguardhome
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-adguardhome.png"
-status: published
-created_at: "2025-12-11 13:30:30"
-updated_at: "2025-12-12 01:52:24"
----
-
 # AdguardHome Docker 容器化部署指南
+
+![AdguardHome Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-adguardhome.png)
+
+*分类: Docker,adguardhome | 标签: adguardhome,docker,部署教程 | 发布时间: 2025-12-11 13:30:30*
 
 > ADGUARDHOME是一款网络级广告和跟踪器拦截DNS服务器，作为一款开源的隐私保护工具，它能够在网络层面为所有设备提供广告过滤和隐私保护功能，无需在每个设备上单独安装客户端软件。通过Docker容器化部署ADGUARDHOME，可以实现快速部署、环境隔离和版本管理，适用于家庭网络、小型企业网络等多种场景。
 

@@ -1,18 +1,8 @@
----
-id: 164
-title: Nextcloud Docker 容器化部署指南
-slug: nextcloud-docker
-summary: Nextcloud 是一款开源的容器化应用，为用户提供安全的数据存储与管理解决方案，支持文件访问与共享、日历、联系人、邮件等多种功能，可从任何设备访问，完全由用户自主掌控。该Docker镜像由Nextcloud社区开发维护，旨在提供轻量级、可扩展的部署方式。
-category: Docker,Nextcloud
-tags: nextcloud,docker,部署教程
-image_name: library/nextcloud
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-nextcloud.png"
-status: published
-created_at: "2025-12-15 05:48:16"
-updated_at: "2025-12-15 05:48:16"
----
-
 # Nextcloud Docker 容器化部署指南
+
+![Nextcloud Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-nextcloud.png)
+
+*分类: Docker,Nextcloud | 标签: nextcloud,docker,部署教程 | 发布时间: 2025-12-15 05:48:16*
 
 > Nextcloud 是一款开源的容器化应用，为用户提供安全的数据存储与管理解决方案，支持文件访问与共享、日历、联系人、邮件等多种功能，可从任何设备访问，完全由用户自主掌控。该Docker镜像由Nextcloud社区开发维护，旨在提供轻量级、可扩展的部署方式。
 

@@ -1,18 +1,8 @@
----
-id: 64
-title: NANO_LLM Docker 容器化部署指南
-slug: nano_llm-docker
-summary: NANO_LLM是一个轻量级、优化的大型语言模型(LLM)推理和多模态智能体库，专为边缘设备和高性能计算环境设计。该库提供了对多种深度学习框架的支持，包括PyTorch、TensorRT和ONNX Runtime，能够高效运行各类语言模型和多模态应用。
-category: Docker,NANO_LLM
-tags: nano_llm,docker,部署教程
-image_name: dustynv/nano_llm
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-nano_llm.png"
-status: published
-created_at: "2025-11-17 03:21:03"
-updated_at: "2025-11-17 03:22:15"
----
-
 # NANO_LLM Docker 容器化部署指南
+
+![NANO_LLM Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-nano_llm.png)
+
+*分类: Docker,NANO_LLM | 标签: nano_llm,docker,部署教程 | 发布时间: 2025-11-17 03:21:03*
 
 > NANO_LLM是一个轻量级、优化的大型语言模型(LLM)推理和多模态智能体库，专为边缘设备和高性能计算环境设计。该库提供了对多种深度学习框架的支持，包括PyTorch、TensorRT和ONNX Runtime，能够高效运行各类语言模型和多模态应用。
 

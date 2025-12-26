@@ -1,18 +1,8 @@
----
-id: 172
-title: TaleBook Docker 容器化部署指南
-slug: talebook-docker
-summary: TALEBOOK是一款基于Calibre的容器化图书管理系统，旨在提供美观易用的在线图书管理解决方案。该系统通过现代化的Vue界面重构了Calibre的网页端，解决了原生界面体验不佳的问题，同时扩展了多用户支持、在线阅读、邮件推送至Kindle、OPDS协议支持等实用功能。TALEBOOK支持群晖、威联通等各类X86架构设备的Docker部署，适合个人或小团队搭建私有图书库，实现书籍的集中管理、在线阅读与便捷分享。
-category: Docker,TaleBook
-tags: talebook,docker,部署教程
-image_name: talebook/talebook
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-talebook.png"
-status: published
-created_at: "2025-12-15 16:08:09"
-updated_at: "2025-12-15 16:08:09"
----
-
 # TaleBook Docker 容器化部署指南
+
+![TaleBook Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-talebook.png)
+
+*分类: Docker,TaleBook | 标签: talebook,docker,部署教程 | 发布时间: 2025-12-15 16:08:09*
 
 > TALEBOOK是一款基于Calibre的容器化图书管理系统，旨在提供美观易用的在线图书管理解决方案。该系统通过现代化的Vue界面重构了Calibre的网页端，解决了原生界面体验不佳的问题，同时扩展了多用户支持、在线阅读、邮件推送至Kindle、OPDS协议支持等实用功能。TALEBOOK支持群晖、威联通等各类X86架构设备的Docker部署，适合个人或小团队搭建私有图书库，实现书籍的集中管理、在线阅读与便捷分享。
 

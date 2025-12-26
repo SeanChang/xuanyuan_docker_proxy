@@ -1,18 +1,8 @@
----
-id: 180
-title: Apache IoTDB Docker 容器化部署指南：从入门到生产环境实践
-slug: apache-iotdb-docker
-summary: Apache IoTDB（Database for the Internet of Things）是一款专为物联网场景设计的原生时序数据库，具备高性能的数据管理与分析能力，可灵活部署于边缘设备与云端环境。其轻量级架构设计确保了在资源受限的边缘节点也能高效运行，同时通过与Apache Hadoop、Spark、Flink等大数据生态工具的深度集成，满足工业物联网领域中大规模数据存储、高速数据写入及复杂数据分析的核心需求。
-category: Docker,IoTDB
-tags: apache-iotdb,docker,部署教程
-image_name: apache/iotdb
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-apache-iotdb.png"
-status: published
-created_at: "2025-12-18 12:44:40"
-updated_at: "2025-12-18 12:44:40"
----
-
 # Apache IoTDB Docker 容器化部署指南：从入门到生产环境实践
+
+![Apache IoTDB Docker 容器化部署指南：从入门到生产环境实践](https://img.xuanyuan.dev/docker/blog/docker-apache-iotdb.png)
+
+*分类: Docker,IoTDB | 标签: apache-iotdb,docker,部署教程 | 发布时间: 2025-12-18 12:44:40*
 
 > Apache IoTDB（Database for the Internet of Things）是一款专为物联网场景设计的原生时序数据库，具备高性能的数据管理与分析能力，可灵活部署于边缘设备与云端环境。其轻量级架构设计确保了在资源受限的边缘节点也能高效运行，同时通过与Apache Hadoop、Spark、Flink等大数据生态工具的深度集成，满足工业物联网领域中大规模数据存储、高速数据写入及复杂数据分析的核心需求。
 

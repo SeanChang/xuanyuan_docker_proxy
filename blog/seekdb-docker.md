@@ -1,18 +1,8 @@
----
-id: 103
-title: SEEKDB Docker 容器化部署指南
-slug: seekdb-docker
-summary: OceanBase seekdb 是 OceanBase 打造的一款开发者友好的 AI 原生数据库产品，专注于为 AI 应用提供高效的混合搜索能力。它支持向量、文本、结构化与半结构化数据的统一存储与检索，并通过内置 AI Functions 支持数据嵌入、重排与库内实时推理。seekdb 在继承 OceanBase 核心引擎高性能优势与 MySQL 全面兼容特性的基础上，通过深度优化数据搜索架构，为开发者提供更符合 AI 应用数据处理需求的解决方案。
-category: Docker,SEEKDB
-tags: seekdb,docker,部署教程
-image_name: oceanbase/seekdb
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-seekdb.png"
-status: published
-created_at: "2025-12-03 15:10:26"
-updated_at: "2025-12-03 15:10:26"
----
-
 # SEEKDB Docker 容器化部署指南
+
+![SEEKDB Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-seekdb.png)
+
+*分类: Docker,SEEKDB | 标签: seekdb,docker,部署教程 | 发布时间: 2025-12-03 15:10:26*
 
 > OceanBase seekdb 是 OceanBase 打造的一款开发者友好的 AI 原生数据库产品，专注于为 AI 应用提供高效的混合搜索能力。它支持向量、文本、结构化与半结构化数据的统一存储与检索，并通过内置 AI Functions 支持数据嵌入、重排与库内实时推理。seekdb 在继承 OceanBase 核心引擎高性能优势与 MySQL 全面兼容特性的基础上，通过深度优化数据搜索架构，为开发者提供更符合 AI 应用数据处理需求的解决方案。
 

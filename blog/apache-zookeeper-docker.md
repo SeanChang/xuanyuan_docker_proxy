@@ -1,18 +1,8 @@
----
-id: 140
-title: Apache ZooKeeper Docker 容器化部署指南
-slug: apache-zookeeper-docker
-summary: Apache ZooKeeper是Apache软件基金会的一个开源项目，提供分布式配置服务、同步服务和命名注册功能，适用于大型分布式系统。作为曾经的Hadoop子项目，ZooKeeper现在已成为独立的顶级项目，为分布式应用提供高可靠性的协调服务。
-category: Docker,Apache ZooKeeper
-tags: apache-zookeeper,docker,部署教程
-image_name: library/zookeeper
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-apache-zookeeper.png"
-status: published
-created_at: "2025-12-13 06:08:26"
-updated_at: "2025-12-13 06:08:26"
----
-
 # Apache ZooKeeper Docker 容器化部署指南
+
+![Apache ZooKeeper Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-apache-zookeeper.png)
+
+*分类: Docker,Apache ZooKeeper | 标签: apache-zookeeper,docker,部署教程 | 发布时间: 2025-12-13 06:08:26*
 
 > Apache ZooKeeper是Apache软件基金会的一个开源项目，提供分布式配置服务、同步服务和命名注册功能，适用于大型分布式系统。作为曾经的Hadoop子项目，ZooKeeper现在已成为独立的顶级项目，为分布式应用提供高可靠性的协调服务。
 

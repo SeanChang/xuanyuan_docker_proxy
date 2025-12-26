@@ -1,18 +1,8 @@
----
-id: 168
-title: 个人财务管理工具 (Firefly III) Docker容器化部署指南
-slug: firefly-iii-docker
-summary: Firefly III 是一款开源的个人财务管理工具，支持自托管部署，旨在帮助用户跟踪收支、管理预算、分类交易，并通过财务报告提供财务洞察。作为一款专注于个人财务管理的应用，Firefly III强调用户对自身财务的掌控，支持数据导入、预算规划、标签分类等功能，适用于希望实现财务自主管理的个人用户。
-category: Docker,Firefly
-tags: firefly,docker,部署教程
-image_name: fireflyiii/core
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-firefly.png"
-status: published
-created_at: "2025-12-15 06:15:31"
-updated_at: "2025-12-23 01:47:02"
----
-
 # 个人财务管理工具 (Firefly III) Docker容器化部署指南
+
+![个人财务管理工具 (Firefly III) Docker容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-firefly.png)
+
+*分类: Docker,Firefly | 标签: firefly,docker,部署教程 | 发布时间: 2025-12-15 06:15:31*
 
 > Firefly III 是一款开源的个人财务管理工具，支持自托管部署，旨在帮助用户跟踪收支、管理预算、分类交易，并通过财务报告提供财务洞察。作为一款专注于个人财务管理的应用，Firefly III强调用户对自身财务的掌控，支持数据导入、预算规划、标签分类等功能，适用于希望实现财务自主管理的个人用户。
 

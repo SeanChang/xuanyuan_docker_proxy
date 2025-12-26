@@ -1,18 +1,8 @@
----
-id: 69
-title: Eclipse Temurin OpenJDK Docker 容器化部署指南
-slug: eclipse-temurin-docker
-summary: Eclipse Temurin是由Eclipse Adoptium项目维护的开源Java开发工具包（JDK），提供经过Java SE TCK（Technology Compatibility Kit）认证的OpenJDK二进制分发版本。其设计目标是提供高性能、企业级、跨平台且符合开源许可的Java运行环境，广泛应用于企业级应用开发、服务端部署及嵌入式系统等场景。
-category: Docker,OpenJDK,Eclipse Temurin
-tags: openjdk,eclipse-temurin,nginx,docker,部署教程
-image_name: library/eclipse-temurin
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-openjdk.png"
-status: published
-created_at: "2025-11-26 05:32:17"
-updated_at: "2025-11-27 02:12:44"
----
-
 # Eclipse Temurin OpenJDK Docker 容器化部署指南
+
+![Eclipse Temurin OpenJDK Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-openjdk.png)
+
+*分类: Docker,OpenJDK,Eclipse Temurin | 标签: openjdk,eclipse-temurin,nginx,docker,部署教程 | 发布时间: 2025-11-26 05:32:17*
 
 > Eclipse Temurin是由Eclipse Adoptium项目维护的开源Java开发工具包（JDK），提供经过Java SE TCK（Technology Compatibility Kit）认证的OpenJDK二进制分发版本。其设计目标是提供高性能、企业级、跨平台且符合开源许可的Java运行环境，广泛应用于企业级应用开发、服务端部署及嵌入式系统等场景。
 

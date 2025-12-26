@@ -1,18 +1,8 @@
----
-id: 181
-title: Caddy Docker 容器化部署指南
-slug: caddy-docker
-summary: Caddy是一款功能强大的企业级开源Web服务器，以其内置的自动HTTPS功能和简洁的配置语法而闻名。作为用Go语言编写的现代Web服务器，Caddy提供了比传统服务器更简单的配置方式和更丰富的原生功能，包括自动TLS证书管理、HTTP/2和HTTP/3支持、反向代理、负载均衡等特性。
-category: Docker,Caddy
-tags: caddy,docker,部署教程
-image_name: library/caddy
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-caddy.png"
-status: published
-created_at: "2025-12-18 12:52:31"
-updated_at: "2025-12-18 12:52:31"
----
-
 # Caddy Docker 容器化部署指南
+
+![Caddy Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-caddy.png)
+
+*分类: Docker,Caddy | 标签: caddy,docker,部署教程 | 发布时间: 2025-12-18 12:52:31*
 
 > Caddy是一款功能强大的企业级开源Web服务器，以其内置的自动HTTPS功能和简洁的配置语法而闻名。作为用Go语言编写的现代Web服务器，Caddy提供了比传统服务器更简单的配置方式和更丰富的原生功能，包括自动TLS证书管理、HTTP/2和HTTP/3支持、反向代理、负载均衡等特性。
 

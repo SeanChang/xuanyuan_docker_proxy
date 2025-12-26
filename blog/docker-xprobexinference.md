@@ -1,18 +1,8 @@
----
-id: 28
-title: 基于 Docker 部署 xprobe/xinference：从环境准备到实战操作
-slug: docker-xprobexinference
-summary: 如果你想部署一个AI模型做推理（比如用Qwen-7B做对话、用ResNet做图片分类），不用手动解决模型依赖、CUDA配置、环境冲突这些麻烦事——Xinference已经把这些工作封装好，尤其是通过Docker镜像，能让你在几分钟内搭好推理环境。
-category: Docker,xinference
-tags: xinference,docker,部署教程
-image_name: xprobe/xinference
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-xinference.png"
-status: published
-created_at: "2025-10-10 03:17:48"
-updated_at: "2025-10-10 03:26:16"
----
-
 # 基于 Docker 部署 xprobe/xinference：从环境准备到实战操作
+
+![基于 Docker 部署 xprobe/xinference：从环境准备到实战操作](https://img.xuanyuan.dev/docker/blog/docker-xinference.png)
+
+*分类: Docker,xinference | 标签: xinference,docker,部署教程 | 发布时间: 2025-10-10 03:17:48*
 
 > 如果你想部署一个AI模型做推理（比如用Qwen-7B做对话、用ResNet做图片分类），不用手动解决模型依赖、CUDA配置、环境冲突这些麻烦事——Xinference已经把这些工作封装好，尤其是通过Docker镜像，能让你在几分钟内搭好推理环境。
 

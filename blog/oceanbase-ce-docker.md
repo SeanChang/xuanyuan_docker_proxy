@@ -1,18 +1,8 @@
----
-id: 72
-title: OCEANBASE-CE Docker 容器化部署指南
-slug: oceanbase-ce-docker
-summary: OceanBase CE（Community Edition）是一款开源的分布式HTAP（Hybrid Transactional and Analytical Processing）数据库管理系统，具备高可用、高扩展、高性能的特性，适用于海量数据存储与处理场景。通过Docker容器化部署OceanBase CE，可以快速搭建测试环境，简化部署流程，降低环境配置复杂度。本文将详细介绍OceanBase CE的Docker容器化部署方案，包括环境准备、镜像拉取、容器部署、功能测试及生产环境建议等内容。
-category: Docker,OCEANBASE-CE
-tags: oceanbase-ce,docker,部署教程
-image_name: oceanbase/oceanbase-ce
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-oceanbase-oceanbase-ce.png"
-status: published
-created_at: "2025-11-26 05:55:55"
-updated_at: "2025-11-26 05:55:55"
----
-
 # OCEANBASE-CE Docker 容器化部署指南
+
+![OCEANBASE-CE Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-oceanbase-oceanbase-ce.png)
+
+*分类: Docker,OCEANBASE-CE | 标签: oceanbase-ce,docker,部署教程 | 发布时间: 2025-11-26 05:55:55*
 
 > OceanBase CE（Community Edition）是一款开源的分布式HTAP（Hybrid Transactional and Analytical Processing）数据库管理系统，具备高可用、高扩展、高性能的特性，适用于海量数据存储与处理场景。通过Docker容器化部署OceanBase CE，可以快速搭建测试环境，简化部署流程，降低环境配置复杂度。本文将详细介绍OceanBase CE的Docker容器化部署方案，包括环境准备、镜像拉取、容器部署、功能测试及生产环境建议等内容。
 

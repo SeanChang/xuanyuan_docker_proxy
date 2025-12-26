@@ -1,18 +1,8 @@
----
-id: 41
-title: Docker 部署 Rocky Linux 全流程教程
-slug: docker-rocky-linux
-summary: Rocky Linux 作为 CentOS 停更后的最优替代方案，与 RHEL 完全兼容且提供 10 年长期支持，是企业级服务器部署的首选。而通过 Docker 部署，能彻底解决传统部署中“环境不一致、迁移繁琐、版本管理混乱”等痛点，尤其适合遗留 CentOS 系统迁移、企业级服务搭建等场景。
-category: Docker,Rocky Linux
-tags: rocky-linux,docker,部署教程
-image_name: library/rockylinux
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-rocky-linux.png"
-status: published
-created_at: "2025-10-26 06:20:35"
-updated_at: "2025-10-29 01:31:38"
----
-
 # Docker 部署 Rocky Linux 全流程教程
+
+![Docker 部署 Rocky Linux 全流程教程](https://img.xuanyuan.dev/docker/blog/docker-rocky-linux.png)
+
+*分类: Docker,Rocky Linux | 标签: rocky-linux,docker,部署教程 | 发布时间: 2025-10-26 06:20:35*
 
 > Rocky Linux 作为 CentOS 停更后的最优替代方案，与 RHEL 完全兼容且提供 10 年长期支持，是企业级服务器部署的首选。而通过 Docker 部署，能彻底解决传统部署中“环境不一致、迁移繁琐、版本管理混乱”等痛点，尤其适合遗留 CentOS 系统迁移、企业级服务搭建等场景。
 

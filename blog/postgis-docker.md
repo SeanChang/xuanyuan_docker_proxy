@@ -1,18 +1,8 @@
----
-id: 173
-title: PostGIS Docker 容器化部署指南
-slug: postgis-docker
-summary: PostGIS是PostgreSQL数据库的空间数据库扩展，它为PostgreSQL提供了存储、索引和查询地理空间数据的能力。通过容器化部署PostGIS，可以快速搭建空间数据库环境，简化配置流程，并确保环境一致性。
-category: Docker-PostGIS
-tags: postgis,docker,部署教程
-image_name: postgis/postgis
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-postgis.png"
-status: published
-created_at: "2025-12-17 07:22:52"
-updated_at: "2025-12-24 01:33:06"
----
-
 # PostGIS Docker 容器化部署指南
+
+![PostGIS Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-postgis.png)
+
+*分类: Docker-PostGIS | 标签: postgis,docker,部署教程 | 发布时间: 2025-12-17 07:22:52*
 
 > PostGIS是PostgreSQL数据库的空间数据库扩展，它为PostgreSQL提供了存储、索引和查询地理空间数据的能力。通过容器化部署PostGIS，可以快速搭建空间数据库环境，简化配置流程，并确保环境一致性。
 

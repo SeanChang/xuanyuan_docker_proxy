@@ -1,18 +1,8 @@
----
-id: 32
-title: Supabase Studio 镜像拉取与 Docker 部署全指南
-slug: supabase-studio-docker
-summary: Supabase Studio是开源后端即服务平台Supabase的图形化管理界面，专为开发者设计，提供一站式数据库、身份验证、存储等核心功能的可视化操作能力。
-category: Docker,Supabase
-tags: supabase,docker,部署教程
-image_name: supabase/studio
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-supabase-studio.png"
-status: published
-created_at: "2025-10-15 08:00:52"
-updated_at: "2025-10-15 08:00:52"
----
-
 # Supabase Studio 镜像拉取与 Docker 部署全指南
+
+![Supabase Studio 镜像拉取与 Docker 部署全指南](https://img.xuanyuan.dev/docker/blog/docker-supabase-studio.png)
+
+*分类: Docker,Supabase | 标签: supabase,docker,部署教程 | 发布时间: 2025-10-15 08:00:52*
 
 > Supabase Studio是开源后端即服务平台Supabase的图形化管理界面，专为开发者设计，提供一站式数据库、身份验证、存储等核心功能的可视化操作能力。
 

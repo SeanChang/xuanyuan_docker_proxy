@@ -1,18 +1,8 @@
----
-id: 97
-title: SIYUAN（思源笔记）Docker 容器化部署指南
-slug: siyuandocker
-summary: SIYUAN（思源笔记）是一款面向个人的本地知识库应用，专注于提供高效的知识管理与笔记创作体验。其核心功能包括Markdown实时编辑、双向链接、块级引用、本地数据存储等，广泛适用于学术研究、技术文档编写、个人知识整理等场景。通过Docker容器化部署SIYUAN，可实现环境一致性、快速部署与隔离、跨平台运行等优势，简化运维流程并提升系统可靠性。
-category: Docker,SIYUAN
-tags: siyuan,docker,部署教程
-image_name: b3log/siyuan
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-siyuan.png"
-status: published
-created_at: "2025-12-03 06:17:39"
-updated_at: "2025-12-03 06:17:39"
----
-
 # SIYUAN（思源笔记）Docker 容器化部署指南
+
+![SIYUAN（思源笔记）Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-siyuan.png)
+
+*分类: Docker,SIYUAN | 标签: siyuan,docker,部署教程 | 发布时间: 2025-12-03 06:17:39*
 
 > SIYUAN（思源笔记）是一款面向个人的本地知识库应用，专注于提供高效的知识管理与笔记创作体验。其核心功能包括Markdown实时编辑、双向链接、块级引用、本地数据存储等，广泛适用于学术研究、技术文档编写、个人知识整理等场景。通过Docker容器化部署SIYUAN，可实现环境一致性、快速部署与隔离、跨平台运行等优势，简化运维流程并提升系统可靠性。
 

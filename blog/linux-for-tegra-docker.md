@@ -1,18 +1,8 @@
----
-id: 122
-title: Linux for Tegra Docker 容器化部署指南
-slug: linux-for-tegra-docker
-summary: L4T-ML（Linux for Tegra - Machine Learning）是一款针对Jetson平台优化的容器化机器学习开发环境，集成了多种主流深度学习框架和工具。该镜像预装了PyTorch 2.2、TensorFlow 2、ONNX Runtime、TensorRT等核心组件，同时包含CUDA、cuDNN、OpenCV等底层依赖，为开发者提供了开箱即用的机器学习开发环境，无需手动配置复杂的依赖关系。
-category: Docker,Linux for Tegra
-tags: linux-for-tegra,docker,部署教程
-image_name: dustynv/l4t-ml
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-linux-for-Tegra.png"
-status: published
-created_at: "2025-12-10 06:54:52"
-updated_at: "2025-12-10 06:54:52"
----
-
 # Linux for Tegra Docker 容器化部署指南
+
+![Linux for Tegra Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-linux-for-Tegra.png)
+
+*分类: Docker,Linux for Tegra | 标签: linux-for-tegra,docker,部署教程 | 发布时间: 2025-12-10 06:54:52*
 
 > L4T-ML（Linux for Tegra - Machine Learning）是一款针对Jetson平台优化的容器化机器学习开发环境，集成了多种主流深度学习框架和工具。该镜像预装了PyTorch 2.2、TensorFlow 2、ONNX Runtime、TensorRT等核心组件，同时包含CUDA、cuDNN、OpenCV等底层依赖，为开发者提供了开箱即用的机器学习开发环境，无需手动配置复杂的依赖关系。
 

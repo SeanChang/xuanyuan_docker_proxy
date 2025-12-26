@@ -1,18 +1,8 @@
----
-id: 113
-title: PAPERMERGE Docker 容器化部署指南
-slug: papermerge-docker
-summary: PAPERMERGE是一款容器化的开源文档管理系统(DMS)，专为数字化档案的归档和检索而设计。在PAPERMERGE的语境中，文档指任何适合归档的信息片段——通常是不可编辑但需要为将来参考而存储的内容，如收据、合同、扫描文档等。这些文档通常以PDF或TIFF格式存储，非常适合长期存档。
-category: Docker,PAPERMERGE
-tags: papermerge,docker,部署教程
-image_name: papermerge/papermerge
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-papermerge.png"
-status: published
-created_at: "2025-12-07 15:03:01"
-updated_at: "2025-12-07 15:03:01"
----
-
 # PAPERMERGE Docker 容器化部署指南
+
+![PAPERMERGE Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-papermerge.png)
+
+*分类: Docker,PAPERMERGE | 标签: papermerge,docker,部署教程 | 发布时间: 2025-12-07 15:03:01*
 
 > PAPERMERGE是一款容器化的开源文档管理系统(DMS)，专为数字化档案的归档和检索而设计。在PAPERMERGE的语境中，文档指任何适合归档的信息片段——通常是不可编辑但需要为将来参考而存储的内容，如收据、合同、扫描文档等。这些文档通常以PDF或TIFF格式存储，非常适合长期存档。
 

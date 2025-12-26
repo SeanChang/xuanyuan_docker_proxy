@@ -1,18 +1,8 @@
----
-id: 115
-title: COMFYUI Docker 容器化部署指南
-slug: comfyui-docker
-summary: COMFYUI是一款功能强大的AI模型可视化操作界面，主要用于 Stable Diffusion 等生成式AI模型的工作流设计与执行。通过容器化部署COMFYUI，可以有效简化环境配置流程，提高部署一致性和可移植性。本文将详细介绍如何使用Docker快速部署COMFYUI，包括环境准备、镜像拉取、容器配置及生产环境优化等关键步骤，为开发和运维人员提供可参考的部署方案。
-category: Docker,COMFYUI
-tags: comfyui,docker,部署教程
-image_name: zeroclue/comfyui
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-comfyui.png"
-status: published
-created_at: "2025-12-09 06:50:45"
-updated_at: "2025-12-09 06:50:45"
----
-
 # COMFYUI Docker 容器化部署指南
+
+![COMFYUI Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-comfyui.png)
+
+*分类: Docker,COMFYUI | 标签: comfyui,docker,部署教程 | 发布时间: 2025-12-09 06:50:45*
 
 > COMFYUI是一款功能强大的AI模型可视化操作界面，主要用于 Stable Diffusion 等生成式AI模型的工作流设计与执行。通过容器化部署COMFYUI，可以有效简化环境配置流程，提高部署一致性和可移植性。本文将详细介绍如何使用Docker快速部署COMFYUI，包括环境准备、镜像拉取、容器配置及生产环境优化等关键步骤，为开发和运维人员提供可参考的部署方案。
 

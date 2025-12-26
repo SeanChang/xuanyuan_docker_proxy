@@ -1,18 +1,8 @@
----
-id: 137
-title: CALIBRE-WEB Docker 容器化部署指南
-slug: calibre-web-docker
-summary: CALIBRE-WEB是一个基于Web的电子书管理应用，它提供了一个简洁的界面用于浏览、阅读和下载电子书，支持使用现有的Calibre数据库。
-category: Docker,CALIBRE-WEB
-tags: calibre-web,docker,部署教程
-image_name: linuxserver/calibre-web
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-calibre-web.png"
-status: published
-created_at: "2025-12-11 08:26:02"
-updated_at: "2025-12-11 08:26:02"
----
-
 # CALIBRE-WEB Docker 容器化部署指南
+
+![CALIBRE-WEB Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-calibre-web.png)
+
+*分类: Docker,CALIBRE-WEB | 标签: calibre-web,docker,部署教程 | 发布时间: 2025-12-11 08:26:02*
 
 > CALIBRE-WEB是一个基于Web的电子书管理应用，它提供了一个简洁的界面用于浏览、阅读和下载电子书，支持使用现有的Calibre数据库。
 

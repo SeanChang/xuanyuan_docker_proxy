@@ -1,18 +1,8 @@
----
-id: 169
-title: LocalAI Docker 容器化部署指南
-slug: localai-docker
-summary: LocalAI 是一款免费开源的OpenAI替代方案，作为兼容OpenAI API规范的REST API服务，它允许用户在本地或企业内部环境中运行大型语言模型（LLMs）、生成图像和音频等AI功能。该项目无需GPU支持，可在消费级硬件上运行，支持多种模型家族，为开发者和企业提供了本地化AI推理的灵活解决方案。
-category: Docker,LocalAI
-tags: localai,docker,部署教程
-image_name: localai/localai
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-localai.png"
-status: published
-created_at: "2025-12-15 06:22:14"
-updated_at: "2025-12-15 06:22:14"
----
-
 # LocalAI Docker 容器化部署指南
+
+![LocalAI Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-localai.png)
+
+*分类: Docker,LocalAI | 标签: localai,docker,部署教程 | 发布时间: 2025-12-15 06:22:14*
 
 > LocalAI 是一款免费开源的OpenAI替代方案，作为兼容OpenAI API规范的REST API服务，它允许用户在本地或企业内部环境中运行大型语言模型（LLMs）、生成图像和音频等AI功能。该项目无需GPU支持，可在消费级硬件上运行，支持多种模型家族，为开发者和企业提供了本地化AI推理的灵活解决方案。
 

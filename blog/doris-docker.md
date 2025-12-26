@@ -1,18 +1,8 @@
----
-id: 135
-title: DORIS Docker 容器化部署指南
-slug: doris-docker
-summary: Apache Doris（简称DORIS）是一款基于MPP（Massively Parallel Processing）架构的高性能实时分析型数据库，以其极速查询响应和易用性著称。在大规模数据场景下，DORIS能够提供亚秒级查询响应，同时支持高并发点查询和高吞吐复杂分析场景。本文将详细介绍如何通过Docker容器化方式快速部署DORIS，帮助用户在生产环境中高效应用这一强大的分析工具。
-category: Docker,DORIS
-tags: doris,docker,部署教程
-image_name: apache/doris
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-doris.png"
-status: published
-created_at: "2025-12-11 07:07:35"
-updated_at: "2025-12-11 07:07:35"
----
-
 # DORIS Docker 容器化部署指南
+
+![DORIS Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-doris.png)
+
+*分类: Docker,DORIS | 标签: doris,docker,部署教程 | 发布时间: 2025-12-11 07:07:35*
 
 > Apache Doris（简称DORIS）是一款基于MPP（Massively Parallel Processing）架构的高性能实时分析型数据库，以其极速查询响应和易用性著称。在大规模数据场景下，DORIS能够提供亚秒级查询响应，同时支持高并发点查询和高吞吐复杂分析场景。本文将详细介绍如何通过Docker容器化方式快速部署DORIS，帮助用户在生产环境中高效应用这一强大的分析工具。
 

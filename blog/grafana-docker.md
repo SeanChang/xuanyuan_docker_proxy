@@ -1,18 +1,8 @@
----
-id: 19
-title: Grafana Docker 部署全流程
-slug: grafana-docker
-summary: Grafana 是一款开源的数据可视化与监控分析平台。它能从多种数据源（如 Prometheus、InfluxDB、MySQL、Elasticsearch、Loki、Graphite、Redis 等）中采集数据，并通过丰富的图表与仪表盘展示系统运行状况。
-category: Docker,Grafana
-tags: grafana,docker,部署教程
-image_name: grafana/grafana
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-grafana.png"
-status: published
-created_at: "2025-10-08 06:43:54"
-updated_at: "2025-10-08 06:43:54"
----
-
 # Grafana Docker 部署全流程
+
+![Grafana Docker 部署全流程](https://img.xuanyuan.dev/docker/blog/docker-grafana.png)
+
+*分类: Docker,Grafana | 标签: grafana,docker,部署教程 | 发布时间: 2025-10-08 06:43:54*
 
 > Grafana 是一款开源的数据可视化与监控分析平台。它能从多种数据源（如 Prometheus、InfluxDB、MySQL、Elasticsearch、Loki、Graphite、Redis 等）中采集数据，并通过丰富的图表与仪表盘展示系统运行状况。
 

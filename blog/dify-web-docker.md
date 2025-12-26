@@ -1,18 +1,8 @@
----
-id: 66
-title: DIFY-WEB Docker 容器化部署指南
-slug: dify-web-docker
-summary: DIFY-WEB是Dify.AI的前端应用Docker镜像，Dify是一款LLM应用开发平台，目前已支持超过10万款应用的构建。该平台集成了Backend as a Service (BaaS)和LLMOps的核心概念，覆盖了构建生成式AI原生应用所需的核心技术栈，包括内置的RAG引擎。通过DIFY，用户可以基于任何LLM模型自助部署类似Assistants API和GPTs的能力。
-category: Docker,DIFY-WEB
-tags: dify-web,docker,部署教程
-image_name: langgenius/dify-web
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-dify-web.png"
-status: published
-created_at: "2025-11-18 02:17:54"
-updated_at: "2025-11-18 02:22:27"
----
-
 # DIFY-WEB Docker 容器化部署指南
+
+![DIFY-WEB Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-dify-web.png)
+
+*分类: Docker,DIFY-WEB | 标签: dify-web,docker,部署教程 | 发布时间: 2025-11-18 02:17:54*
 
 > DIFY-WEB是Dify.AI的前端应用Docker镜像，Dify是一款LLM应用开发平台，目前已支持超过10万款应用的构建。该平台集成了Backend as a Service (BaaS)和LLMOps的核心概念，覆盖了构建生成式AI原生应用所需的核心技术栈，包括内置的RAG引擎。通过DIFY，用户可以基于任何LLM模型自助部署类似Assistants API和GPTs的能力。
 

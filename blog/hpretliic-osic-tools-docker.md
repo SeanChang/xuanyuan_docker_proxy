@@ -1,18 +1,8 @@
----
-id: 29
-title: hpretl/iic-osic-tools  Docker 部署完整教程
-slug: hpretliic-osic-tools-docker
-summary: hpretl/iic-osic-tools 的全称是 Integrated Infrastructure for Collaborative Open Source IC Tools（协作式开源集成电路工具集成环境），是由奥地利约翰内斯·开普勒大学（JKU）集成电路系（ICD）维护的一款「all-in-one」Docker/Podman 容器——简单说，它把 IC（集成电路）设计中需要的几十种开源工具、多款工艺库（PDK）打包成了一个现成的容器，不用你一个个下载、配置环境，拉取镜像就能直接用。
-category: Docker
-tags: hpretliic-osic-tools,docker,部署教程
-image_name: hpretl/iic-osic-tools
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-iic-osic-tools.png"
-status: published
-created_at: "2025-10-10 03:33:09"
-updated_at: "2025-10-10 03:33:09"
----
-
 # hpretl/iic-osic-tools  Docker 部署完整教程
+
+![hpretl/iic-osic-tools  Docker 部署完整教程](https://img.xuanyuan.dev/docker/blog/docker-iic-osic-tools.png)
+
+*分类: Docker | 标签: hpretliic-osic-tools,docker,部署教程 | 发布时间: 2025-10-10 03:33:09*
 
 > hpretl/iic-osic-tools 的全称是 Integrated Infrastructure for Collaborative Open Source IC Tools（协作式开源集成电路工具集成环境），是由奥地利约翰内斯·开普勒大学（JKU）集成电路系（ICD）维护的一款「all-in-one」Docker/Podman 容器——简单说，它把 IC（集成电路）设计中需要的几十种开源工具、多款工艺库（PDK）打包成了一个现成的容器，不用你一个个下载、配置环境，拉取镜像就能直接用。
 

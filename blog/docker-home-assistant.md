@@ -1,18 +1,8 @@
----
-id: 7
-title: 手把手教你在 Docker 中部署 Home Assistant
-slug: docker-home-assistant
-summary: 本文详细介绍在Docker中部署Home Assistant的全流程，含从轩辕镜像查看详情、多种方式拉取镜像，提供快速部署、持久化挂载（推荐）、docker-compose部署三种方案，还包含结果验证方法与常见问题解决办法。
-category: Docker,Home Assistant
-tags: home-assistant,docker,部署教程
-image_name: homeassistant/home-assistant
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-home-assistant.png"
-status: published
-created_at: "2025-10-03 07:50:22"
-updated_at: "2025-10-08 06:46:16"
----
-
 # 手把手教你在 Docker 中部署 Home Assistant
+
+![手把手教你在 Docker 中部署 Home Assistant](https://img.xuanyuan.dev/docker/blog/docker-home-assistant.png)
+
+*分类: Docker,Home Assistant | 标签: home-assistant,docker,部署教程 | 发布时间: 2025-10-03 07:50:22*
 
 > 本文详细介绍在Docker中部署Home Assistant的全流程，含从轩辕镜像查看详情、多种方式拉取镜像，提供快速部署、持久化挂载（推荐）、docker-compose部署三种方案，还包含结果验证方法与常见问题解决办法。
 

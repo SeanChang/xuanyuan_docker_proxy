@@ -1,18 +1,8 @@
----
-id: 16
-title: Lucky Docker 部署文档
-slug: lucky-docker
-summary: Lucky最初是作为一个小工具，由开发者为自己的个人使用而开发，用于替代socat，在小米路由AX6000官方系统上实现公网IPv6转内网IPv4的功能。Lucky的设计始终致力于让更多的Linux嵌入式设备运行，以实现或集成个人用户常用功能，降低用户的硬件和软件操作学习成本，同时引导使用者注意网络安全。随着版本更新和网友反馈，Lucky不断迭代改进，拥有更多功能和更好的性能，成为用户值得信赖的工具。
-category: Docker,lucky
-tags: lucky,docker,部署教程
-image_name: gdy666/lucky
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-lucky.png"
-status: published
-created_at: "2025-10-07 14:07:06"
-updated_at: "2025-10-08 06:44:54"
----
-
 # Lucky Docker 部署文档
+
+![Lucky Docker 部署文档](https://img.xuanyuan.dev/docker/blog/docker-lucky.png)
+
+*分类: Docker,lucky | 标签: lucky,docker,部署教程 | 发布时间: 2025-10-07 14:07:06*
 
 > Lucky最初是作为一个小工具，由开发者为自己的个人使用而开发，用于替代socat，在小米路由AX6000官方系统上实现公网IPv6转内网IPv4的功能。Lucky的设计始终致力于让更多的Linux嵌入式设备运行，以实现或集成个人用户常用功能，降低用户的硬件和软件操作学习成本，同时引导使用者注意网络安全。随着版本更新和网友反馈，Lucky不断迭代改进，拥有更多功能和更好的性能，成为用户值得信赖的工具。
 
@@ -124,7 +114,7 @@ services:
     image: xxx.xuanyuan.run/gdy666/lucky
     container_name: lucky
     labels:
-      net.unraid.docker.icon: "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Lucky/icon.png"
+      net.unraid.docker.icon: "![icon](https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Lucky/icon.png)"
       net.unraid.docker.webui: "http://[IP]:[PORT:16601]"  # 替换 [IP] 为设备IP
     volumes:
       - 容器外持久化路径:/goodluck  # 替换为实际主机路径

@@ -1,18 +1,8 @@
----
-id: 108
-title: TRAEFIK Docker 容器化部署指南
-slug: traefik-docker
-summary: TRAEFIK是一款现代化的HTTP反向代理和入口控制器，旨在简化微服务的部署流程。作为一款云原生边缘路由器，TRAEFIK能够与多种基础设施组件无缝集成，包括Kubernetes、Docker、Docker Swarm、Consul、Nomad、etcd和Amazon ECS等，并实现自动动态配置。
-category: Docker,TRAEFIK
-tags: traefik,docker,部署教程
-image_name: library/traefik
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-traefik.png"
-status: published
-created_at: "2025-12-06 15:49:29"
-updated_at: "2025-12-06 15:49:29"
----
-
 # TRAEFIK Docker 容器化部署指南
+
+![TRAEFIK Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-traefik.png)
+
+*分类: Docker,TRAEFIK | 标签: traefik,docker,部署教程 | 发布时间: 2025-12-06 15:49:29*
 
 > TRAEFIK是一款现代化的HTTP反向代理和入口控制器，旨在简化微服务的部署流程。作为一款云原生边缘路由器，TRAEFIK能够与多种基础设施组件无缝集成，包括Kubernetes、Docker、Docker Swarm、Consul、Nomad、etcd和Amazon ECS等，并实现自动动态配置。
 

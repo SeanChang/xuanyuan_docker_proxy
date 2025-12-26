@@ -1,18 +1,8 @@
----
-id: 27
-title: Red Hat UBI8 镜像详解与 Docker 部署全流程
-slug: red-hat-ubi8-docker
-summary: 如果你需要一个“靠谱、安全、能长期用”的容器基础镜像，尤其是企业级场景（比如部署核心业务应用），UBI8 是首选之一。
-category: Docker,UBI8
-tags: red-hat-ubi8,docker,部署教程
-image_name: redhat/ubi8
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-ubi8.png"
-status: published
-created_at: "2025-10-10 03:10:57"
-updated_at: "2025-10-10 03:10:57"
----
-
 # Red Hat UBI8 镜像详解与 Docker 部署全流程
+
+![Red Hat UBI8 镜像详解与 Docker 部署全流程](https://img.xuanyuan.dev/docker/blog/docker-ubi8.png)
+
+*分类: Docker,UBI8 | 标签: red-hat-ubi8,docker,部署教程 | 发布时间: 2025-10-10 03:10:57*
 
 > 如果你需要一个“靠谱、安全、能长期用”的容器基础镜像，尤其是企业级场景（比如部署核心业务应用），UBI8 是首选之一。
 

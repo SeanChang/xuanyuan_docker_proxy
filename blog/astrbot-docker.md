@@ -1,18 +1,8 @@
----
-id: 176
-title: AstrBot Docker 容器化部署指南
-slug: astrbot-docker
-summary: AstrBot 是一款基于容器化架构设计的应用程序，提供高效、灵活的服务能力。通过Docker容器化部署，可以显著简化安装流程、确保环境一致性，并便于版本管理和升级。本文档详细介绍了AstrBot的Docker部署方案，包括环境准备、镜像拉取、容器配置及生产环境优化等关键步骤，旨在为技术人员提供可直接落地的部署指南。
-category: Docker,AstrBot
-tags: astrbot,docker,部署教程
-image_name: soulter/astrbot
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-astrbot.png"
-status: published
-created_at: "2025-12-17 07:40:30"
-updated_at: "2025-12-17 07:40:30"
----
-
 # AstrBot Docker 容器化部署指南
+
+![AstrBot Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-astrbot.png)
+
+*分类: Docker,AstrBot | 标签: astrbot,docker,部署教程 | 发布时间: 2025-12-17 07:40:30*
 
 > AstrBot 是一款基于容器化架构设计的应用程序，提供高效、灵活的服务能力。通过Docker容器化部署，可以显著简化安装流程、确保环境一致性，并便于版本管理和升级。本文档详细介绍了AstrBot的Docker部署方案，包括环境准备、镜像拉取、容器配置及生产环境优化等关键步骤，旨在为技术人员提供可直接落地的部署指南。
 

@@ -1,18 +1,8 @@
----
-id: 124
-title: LABEL-STUDIO Docker 容器化部署指南
-slug: label-studio-docker
-summary: LABEL-STUDIO是一款开源的数据标注工具，支持对音频、文本、图像、视频和时间序列等多种数据类型进行标注，并可导出为多种模型格式。它提供了简洁直观的用户界面，可用于准备原始数据或改进现有训练数据，以获得更准确的机器学习模型。通过Docker容器化部署LABEL-STUDIO，可以简化安装流程、确保环境一致性并提高部署效率。
-category: Docker,LABEL-STUDIO
-tags: label-studio,docker,部署教程
-image_name: heartexlabs/label-studio
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-label-studio.png"
-status: published
-created_at: "2025-12-10 07:15:54"
-updated_at: "2025-12-10 07:15:54"
----
-
 # LABEL-STUDIO Docker 容器化部署指南
+
+![LABEL-STUDIO Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-label-studio.png)
+
+*分类: Docker,LABEL-STUDIO | 标签: label-studio,docker,部署教程 | 发布时间: 2025-12-10 07:15:54*
 
 > LABEL-STUDIO是一款开源的数据标注工具，支持对音频、文本、图像、视频和时间序列等多种数据类型进行标注，并可导出为多种模型格式。它提供了简洁直观的用户界面，可用于准备原始数据或改进现有训练数据，以获得更准确的机器学习模型。通过Docker容器化部署LABEL-STUDIO，可以简化安装流程、确保环境一致性并提高部署效率。
 

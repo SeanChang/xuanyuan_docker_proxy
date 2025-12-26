@@ -1,18 +1,8 @@
----
-id: 87
-title: TRADINGAGENTS-BACKEND Docker 容器化部署指南
-slug: tradingagents-backend-docker
-summary: TRADINGAGENTS-BACKEND（中文名称：交易智能体后端服务）是基于多智能体架构的AI股票分析系统后端服务组件。该服务基于FastAPI框架构建，通过集成多种大语言模型（LLM）和金融数据源，提供智能化的股票分析与投资决策支持。其核心功能包括多维度股票分析、实时数据处理、智能体协作以及RESTful API接口服务，广泛适用于个人投资者、量化交易团队、金融研究机构及教育学习场景。
-category: Docker,TRADINGAGENTS-BACKEND
-tags: tradingagents-backend,docker,部署教程
-image_name: hsliup/tradingagents-backend
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-tradingagents-cn.png"
-status: published
-created_at: "2025-12-02 06:18:59"
-updated_at: "2025-12-02 06:18:59"
----
-
 # TRADINGAGENTS-BACKEND Docker 容器化部署指南
+
+![TRADINGAGENTS-BACKEND Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-tradingagents-cn.png)
+
+*分类: Docker,TRADINGAGENTS-BACKEND | 标签: tradingagents-backend,docker,部署教程 | 发布时间: 2025-12-02 06:18:59*
 
 > TRADINGAGENTS-BACKEND（中文名称：交易智能体后端服务）是基于多智能体架构的AI股票分析系统后端服务组件。该服务基于FastAPI框架构建，通过集成多种大语言模型（LLM）和金融数据源，提供智能化的股票分析与投资决策支持。其核心功能包括多维度股票分析、实时数据处理、智能体协作以及RESTful API接口服务，广泛适用于个人投资者、量化交易团队、金融研究机构及教育学习场景。
 

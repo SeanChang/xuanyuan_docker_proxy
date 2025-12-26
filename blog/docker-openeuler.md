@@ -1,18 +1,8 @@
----
-id: 45
-title: Docker 部署 openEuler 教程及常见问题解决
-slug: docker-openeuler
-summary: openEuler 作为华为主导的开源 Linux 发行版，以“多架构适配、云原生友好、长期稳定支持”为核心优势，在企业级服务器、边缘计算、云原生场景中应用广泛。通过 Docker 部署 openEuler，能将其系统优势与容器化的“环境一致、轻量高效、快速迁移”特性深度结合，彻底解决传统部署中“架构适配繁琐、版本管理混乱、跨环境迁移难”的痛点。
-category: Docker,openEuler
-tags: openeuler,docker,部署教程
-image_name: openeuler/openeuler
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-openeuler.png"
-status: published
-created_at: "2025-10-31 06:30:06"
-updated_at: "2025-10-31 13:01:50"
----
-
 # Docker 部署 openEuler 教程及常见问题解决
+
+![Docker 部署 openEuler 教程及常见问题解决](https://img.xuanyuan.dev/docker/blog/docker-openeuler.png)
+
+*分类: Docker,openEuler | 标签: openeuler,docker,部署教程 | 发布时间: 2025-10-31 06:30:06*
 
 > openEuler 作为华为主导的开源 Linux 发行版，以“多架构适配、云原生友好、长期稳定支持”为核心优势，在企业级服务器、边缘计算、云原生场景中应用广泛。通过 Docker 部署 openEuler，能将其系统优势与容器化的“环境一致、轻量高效、快速迁移”特性深度结合，彻底解决传统部署中“架构适配繁琐、版本管理混乱、跨环境迁移难”的痛点。
 

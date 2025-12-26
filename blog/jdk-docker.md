@@ -1,18 +1,8 @@
----
-id: 178
-title: JDK Docker 容器化部署指南
-slug: jdk-docker
-summary: JDK（Java Development Kit）是Java开发的核心工具包，包含Java编译器、运行时环境及相关工具，广泛应用于企业级应用开发与部署。随着容器化技术的普及，将JDK环境容器化已成为现代应用开发的最佳实践之一，能够有效解决开发环境与生产环境一致性问题，简化部署流程并提高系统可移植性。
-category: Docker,JDK
-tags: jdk,docker,部署教程
-image_name: ringcentral/jdk
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-jdk.png"
-status: published
-created_at: "2025-12-18 08:59:25"
-updated_at: "2025-12-18 08:59:25"
----
-
 # JDK Docker 容器化部署指南
+
+![JDK Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-jdk.png)
+
+*分类: Docker,JDK | 标签: jdk,docker,部署教程 | 发布时间: 2025-12-18 08:59:25*
 
 > JDK（Java Development Kit）是Java开发的核心工具包，包含Java编译器、运行时环境及相关工具，广泛应用于企业级应用开发与部署。随着容器化技术的普及，将JDK环境容器化已成为现代应用开发的最佳实践之一，能够有效解决开发环境与生产环境一致性问题，简化部署流程并提高系统可移植性。
 

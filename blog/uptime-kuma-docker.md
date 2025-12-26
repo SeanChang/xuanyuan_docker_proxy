@@ -1,18 +1,8 @@
----
-id: 98
-title: UPTIME-KUMA Docker 容器化部署指南
-slug: uptime-kuma-docker
-summary: UPTIME-KUMA是一款功能强大的自托管监控工具，旨在为用户提供直观、可靠的服务可用性监控解决方案。作为一款开源工具，它支持多种监控类型（如HTTP、TCP、Ping、DNS等），提供实时状态展示、历史数据统计及告警通知功能，适用于个人开发者、中小企业及各类需要自建监控系统的场景。通过Docker容器化部署，UPTIME-KUMA可以实现快速交付、环境一致性及简化维护等优势，成为现代DevOps实践中的理想监控组件。
-category: Docker,UPTIME-KUMA
-tags: uptime-kuma,docker,部署教程
-image_name: louislam/uptime-kuma
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-uptime-kuma.png"
-status: published
-created_at: "2025-12-03 06:22:58"
-updated_at: "2025-12-04 05:36:17"
----
-
 # UPTIME-KUMA Docker 容器化部署指南
+
+![UPTIME-KUMA Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-uptime-kuma.png)
+
+*分类: Docker,UPTIME-KUMA | 标签: uptime-kuma,docker,部署教程 | 发布时间: 2025-12-03 06:22:58*
 
 > UPTIME-KUMA是一款功能强大的自托管监控工具，旨在为用户提供直观、可靠的服务可用性监控解决方案。作为一款开源工具，它支持多种监控类型（如HTTP、TCP、Ping、DNS等），提供实时状态展示、历史数据统计及告警通知功能，适用于个人开发者、中小企业及各类需要自建监控系统的场景。通过Docker容器化部署，UPTIME-KUMA可以实现快速交付、环境一致性及简化维护等优势，成为现代DevOps实践中的理想监控组件。
 

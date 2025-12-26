@@ -1,18 +1,8 @@
----
-id: 143
-title: DrawIO Docker 容器化部署指南
-slug: drawio-docker
-summary: DRAWIO（jgraph/drawio）是一款功能强大的容器化图表绘制应用，基于Tomcat 9-jre11构建，提供直观的图形界面用于创建流程图、网络拓扑图、UML图、ER图等多种类型的图表。作为diagrams.net（原draw.io）的容器化版本，DRAWIO支持本地部署，确保数据隐私和安全控制，同时提供与主流云存储服务的集成能力。
-category: Docker,DrawIO
-tags: drawio,docker,部署教程
-image_name: jgraph/drawio
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-drawio.png"
-status: published
-created_at: "2025-12-13 06:52:54"
-updated_at: "2025-12-13 06:52:54"
----
-
 # DrawIO Docker 容器化部署指南
+
+![DrawIO Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-drawio.png)
+
+*分类: Docker,DrawIO | 标签: drawio,docker,部署教程 | 发布时间: 2025-12-13 06:52:54*
 
 > DRAWIO（jgraph/drawio）是一款功能强大的容器化图表绘制应用，基于Tomcat 9-jre11构建，提供直观的图形界面用于创建流程图、网络拓扑图、UML图、ER图等多种类型的图表。作为diagrams.net（原draw.io）的容器化版本，DRAWIO支持本地部署，确保数据隐私和安全控制，同时提供与主流云存储服务的集成能力。
 

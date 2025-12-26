@@ -1,18 +1,8 @@
----
-id: 15
-title: MoviePilot 配置与安装指南
-slug: moviepilot
-summary: MoviePilot是一款媒体库自动化管理工具，需要稳定访问TheMovieDb和Github的网络环境，推荐使用代理服务。软件依赖下载器（Qbittorrent/Transmission）、媒体服务器（Emby/Jellyfin/Plex）和CookieCloud同步服务。安装首选Docker方式，提供多种版本镜像和docker-compose模板，支持虚拟显示和浏览器仿真功能。同时支持Windows可执行文件、Synology套件和源代码运行。使用前需调整系统文件监控限制，并确保拥有PT站点进行用户认证。通过反向代理可实现域名访问，需配置长超时时间避免中断。
-category: Docker,MoviePilot
-tags: MoviePilot,docker,部署教程
-image_name: jxxghp/moviepilot-v2
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-movepilot.png"
-status: published
-created_at: "2025-10-07 12:54:27"
-updated_at: "2025-10-08 06:45:09"
----
-
 # MoviePilot 配置与安装指南
+
+![MoviePilot 配置与安装指南](https://img.xuanyuan.dev/docker/blog/docker-movepilot.png)
+
+*分类: Docker,MoviePilot | 标签: MoviePilot,docker,部署教程 | 发布时间: 2025-10-07 12:54:27*
 
 > MoviePilot是一款媒体库自动化管理工具，需要稳定访问TheMovieDb和Github的网络环境，推荐使用代理服务。软件依赖下载器（Qbittorrent/Transmission）、媒体服务器（Emby/Jellyfin/Plex）和CookieCloud同步服务。安装首选Docker方式，提供多种版本镜像和docker-compose模板，支持虚拟显示和浏览器仿真功能。同时支持Windows可执行文件、Synology套件和源代码运行。使用前需调整系统文件监控限制，并确保拥有PT站点进行用户认证。通过反向代理可实现域名访问，需配置长超时时间避免中断。
 

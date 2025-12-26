@@ -1,18 +1,8 @@
----
-id: 162
-title: HALO 开源建站工具 Docker 容器化部署指南
-slug: halo-docker
-summary: HALO 是一款强大易用的开源建站工具，旨在帮助用户快速搭建和管理个人博客、网站等各类在线内容平台。通过 Docker 容器化部署 HALO，可以显著简化安装流程、提高环境一致性，并降低跨平台部署的复杂度。本文将详细介绍如何使用 Docker 容器化方案部署 HALO，包括环境准备、镜像拉取、容器配置、功能测试及生产环境优化等关键步骤，为开发者和运维人员提供一套完整、可复现的部署方案。
-category: Docker,HALO
-tags: halo,docker,部署教程
-image_name: halohub/halo
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-halo.png"
-status: published
-created_at: "2025-12-14 14:09:04"
-updated_at: "2025-12-14 14:09:04"
----
-
 # HALO 开源建站工具 Docker 容器化部署指南
+
+![HALO 开源建站工具 Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-halo.png)
+
+*分类: Docker,HALO | 标签: halo,docker,部署教程 | 发布时间: 2025-12-14 14:09:04*
 
 > HALO 是一款强大易用的开源建站工具，旨在帮助用户快速搭建和管理个人博客、网站等各类在线内容平台。通过 Docker 容器化部署 HALO，可以显著简化安装流程、提高环境一致性，并降低跨平台部署的复杂度。本文将详细介绍如何使用 Docker 容器化方案部署 HALO，包括环境准备、镜像拉取、容器配置、功能测试及生产环境优化等关键步骤，为开发者和运维人员提供一套完整、可复现的部署方案。
 

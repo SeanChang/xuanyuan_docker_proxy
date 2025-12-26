@@ -1,18 +1,8 @@
----
-id: 117
-title: VALKEY Docker 容器化部署指南
-slug: valkey-docker
-summary: VALKEY是一款高性能的数据结构服务器，主要用于处理键值（key/value）工作负载。它支持多种原生数据结构，并提供可扩展的插件系统，用于添加新的数据结构和访问模式。通过Docker容器化部署VALKEY，可以实现环境一致性、快速部署和资源隔离，适用于开发、测试和生产环境。
-category: Docker,VALKEY
-tags: valkey,docker,部署教程
-image_name: valkey/valkey
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-valkey.png"
-status: published
-created_at: "2025-12-09 07:00:59"
-updated_at: "2025-12-09 07:00:59"
----
-
 # VALKEY Docker 容器化部署指南
+
+![VALKEY Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-valkey.png)
+
+*分类: Docker,VALKEY | 标签: valkey,docker,部署教程 | 发布时间: 2025-12-09 07:00:59*
 
 > VALKEY是一款高性能的数据结构服务器，主要用于处理键值（key/value）工作负载。它支持多种原生数据结构，并提供可扩展的插件系统，用于添加新的数据结构和访问模式。通过Docker容器化部署VALKEY，可以实现环境一致性、快速部署和资源隔离，适用于开发、测试和生产环境。
 

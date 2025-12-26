@@ -1,18 +1,8 @@
----
-id: 26
-title: 基于 Docker 部署 Alpine Linux：从入门到实践
-slug: docker-alpine-linux
-summary: Alpine Linux就是为“容器化”而生的系统——它砍掉了传统Linux中冗余的组件（如图形界面、无用服务），只保留核心运行环境，同时又不缺必要的软件支持，因此成为Docker生态中最受欢迎的基础镜像之一。
-category: Docker,Alpine Linux
-tags: alpine-linux,docker,部署教程
-image_name: library/alpine
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-alpine-linux.png"
-status: published
-created_at: "2025-10-10 03:04:36"
-updated_at: "2025-10-14 03:19:33"
----
-
 # 基于 Docker 部署 Alpine Linux：从入门到实践
+
+![基于 Docker 部署 Alpine Linux：从入门到实践](https://img.xuanyuan.dev/docker/blog/docker-alpine-linux.png)
+
+*分类: Docker,Alpine Linux | 标签: alpine-linux,docker,部署教程 | 发布时间: 2025-10-10 03:04:36*
 
 > Alpine Linux就是为“容器化”而生的系统——它砍掉了传统Linux中冗余的组件（如图形界面、无用服务），只保留核心运行环境，同时又不缺必要的软件支持，因此成为Docker生态中最受欢迎的基础镜像之一。
 

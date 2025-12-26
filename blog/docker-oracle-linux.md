@@ -1,18 +1,8 @@
----
-id: 43
-title: Docker 部署 Oracle Linux 实操全流程
-slug: docker-oracle-linux
-summary: Oracle Linux 不只是普通的 RHEL 兼容发行版，更是经过 Oracle 每日超 12 万小时工作负载测试的企业级系统，自带 Ksplice（零停机内核补丁）、DTrace（实时诊断）等独家功能，尤其适合搭配 Oracle 数据库、中间件等生态产品使用。而通过 Docker 部署，能把这种“稳定+专属功能”的优势进一步放大，彻底解决传统部署中“环境适配难、迁移繁琐、版本管理乱”的问题。
-category: Docker,Oracle Linux
-tags: oracle-linux,docker,部署教程
-image_name: library/oraclelinux
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-oracle-linux.png"
-status: published
-created_at: "2025-10-26 06:32:24"
-updated_at: "2025-11-07 05:14:30"
----
-
 # Docker 部署 Oracle Linux 实操全流程
+
+![Docker 部署 Oracle Linux 实操全流程](https://img.xuanyuan.dev/docker/blog/docker-oracle-linux.png)
+
+*分类: Docker,Oracle Linux | 标签: oracle-linux,docker,部署教程 | 发布时间: 2025-10-26 06:32:24*
 
 > Oracle Linux 不只是普通的 RHEL 兼容发行版，更是经过 Oracle 每日超 12 万小时工作负载测试的企业级系统，自带 Ksplice（零停机内核补丁）、DTrace（实时诊断）等独家功能，尤其适合搭配 Oracle 数据库、中间件等生态产品使用。而通过 Docker 部署，能把这种“稳定+专属功能”的优势进一步放大，彻底解决传统部署中“环境适配难、迁移繁琐、版本管理乱”的问题。
 

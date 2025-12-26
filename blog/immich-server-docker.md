@@ -1,18 +1,8 @@
----
-id: 148
-title: IMMICH-SERVER Docker容器化部署指南
-slug: immich-server-docker
-summary: IMMICH-SERVER 是一款基于Nest.js构建的容器化应用，主要定位为自托管移动资产备份与展示解决方案。通过Docker容器化部署，可简化安装流程、提升环境一致性，并便于进行版本管理和服务扩展。本文档将详细介绍IMMICH-SERVER的Docker部署流程，包括环境准备、镜像拉取、容器配置、功能测试及生产环境优化建议，旨在为用户提供可靠、可复现的部署方案。
-category: Docker,IMMICH-SERVER
-tags: immich-server,docker,部署教程
-image_name: altran1502/immich-server
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-immich-server.png"
-status: published
-created_at: "2025-12-14 03:10:37"
-updated_at: "2025-12-14 03:10:37"
----
-
 # IMMICH-SERVER Docker容器化部署指南
+
+![IMMICH-SERVER Docker容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-immich-server.png)
+
+*分类: Docker,IMMICH-SERVER | 标签: immich-server,docker,部署教程 | 发布时间: 2025-12-14 03:10:37*
 
 > IMMICH-SERVER 是一款基于Nest.js构建的容器化应用，主要定位为自托管移动资产备份与展示解决方案。通过Docker容器化部署，可简化安装流程、提升环境一致性，并便于进行版本管理和服务扩展。本文档将详细介绍IMMICH-SERVER的Docker部署流程，包括环境准备、镜像拉取、容器配置、功能测试及生产环境优化建议，旨在为用户提供可靠、可复现的部署方案。
 

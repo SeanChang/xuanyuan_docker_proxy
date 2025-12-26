@@ -1,18 +1,8 @@
----
-id: 145
-title: InfluxDB Docker 容器化部署指南
-slug: influxdb-docker
-summary: INFLUXDB是一个专为实时分析工作负载设计的开源时序数据库平台，旨在收集、存储和处理大量事件和时序数据。它特别适用于监控场景（如传感器、服务器、应用程序、网络）、金融分析和行为跟踪等领域。INFLUXDB支持高效的时序数据存储和查询，提供了灵活的数据模型和强大的查询语言，能够满足现代应用对时序数据处理的需求。
-category: Docker,Docker
-tags: influxdb,docker,部署教程
-image_name: library/influxdb
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-influxdb.png"
-status: published
-created_at: "2025-12-13 09:18:18"
-updated_at: "2025-12-13 09:18:18"
----
-
 # InfluxDB Docker 容器化部署指南
+
+![InfluxDB Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-influxdb.png)
+
+*分类: Docker,Docker | 标签: influxdb,docker,部署教程 | 发布时间: 2025-12-13 09:18:18*
 
 > INFLUXDB是一个专为实时分析工作负载设计的开源时序数据库平台，旨在收集、存储和处理大量事件和时序数据。它特别适用于监控场景（如传感器、服务器、应用程序、网络）、金融分析和行为跟踪等领域。INFLUXDB支持高效的时序数据存储和查询，提供了灵活的数据模型和强大的查询语言，能够满足现代应用对时序数据处理的需求。
 

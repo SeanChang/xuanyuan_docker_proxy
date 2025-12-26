@@ -1,18 +1,8 @@
----
-id: 61
-title: Kubernetes Dashboard Docker 容器化部署指南
-slug: kubernetes-dashboard-docker
-summary: Kubernetes Dashboard是Kubernetes集群的通用Web用户界面，提供直观的可视化管理平台，允许用户部署容器化应用、监控应用状态、排查故障以及管理集群资源。作为Kubernetes官方推荐的管理工具，Dashboard支持集群状态监控、工作负载管理、配置管理、存储管理和网络管理等核心功能，是Kubernetes生态中不可或缺的组件。
-category: Docker,kubernetes-dashboard
-tags: kubernetes-dashboard,docker,部署教程
-image_name: kubernetesui/dashboard
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-kubernetes-dashboard.png"
-status: published
-created_at: "2025-11-16 05:45:14"
-updated_at: "2025-11-16 05:45:14"
----
-
 # Kubernetes Dashboard Docker 容器化部署指南
+
+![Kubernetes Dashboard Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-kubernetes-dashboard.png)
+
+*分类: Docker,kubernetes-dashboard | 标签: kubernetes-dashboard,docker,部署教程 | 发布时间: 2025-11-16 05:45:14*
 
 > Kubernetes Dashboard是Kubernetes集群的通用Web用户界面，提供直观的可视化管理平台，允许用户部署容器化应用、监控应用状态、排查故障以及管理集群资源。作为Kubernetes官方推荐的管理工具，Dashboard支持集群状态监控、工作负载管理、配置管理、存储管理和网络管理等核心功能，是Kubernetes生态中不可或缺的组件。
 

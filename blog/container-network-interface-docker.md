@@ -1,18 +1,8 @@
----
-id: 167
-title: Container Network Interface Docker 容器化部署指南
-slug: container-network-interface-docker
-summary: CNI（Container Network Interface）是容器网络接口的标准化规范，用于在容器编排系统中配置容器网络。本文介绍的CNI镜像基于Project Calico项目，包含Calico网络插件和IPAM（IP地址管理）插件，适用于任何采用CNI网络规范的容器编排器。该插件允许用户利用Calico的网络功能，实现容器间的网络连接、策略控制和IP地址管理。
-category: Docker,Calico
-tags: container-network-interface,docker,部署教程
-image_name: calico/cni
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-container-network-interface.png"
-status: published
-created_at: "2025-12-15 06:10:34"
-updated_at: "2025-12-15 06:10:57"
----
-
 # Container Network Interface Docker 容器化部署指南
+
+![Container Network Interface Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-container-network-interface.png)
+
+*分类: Docker,Calico | 标签: container-network-interface,docker,部署教程 | 发布时间: 2025-12-15 06:10:34*
 
 > CNI（Container Network Interface）是容器网络接口的标准化规范，用于在容器编排系统中配置容器网络。本文介绍的CNI镜像基于Project Calico项目，包含Calico网络插件和IPAM（IP地址管理）插件，适用于任何采用CNI网络规范的容器编排器。该插件允许用户利用Calico的网络功能，实现容器间的网络连接、策略控制和IP地址管理。
 

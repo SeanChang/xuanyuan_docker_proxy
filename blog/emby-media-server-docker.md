@@ -1,18 +1,8 @@
----
-id: 158
-title: Emby Media Server Docker 容器化部署指南
-slug: emby-media-server-docker
-summary: Emby Media Server 是一款基于Docker容器化的媒体服务器应用，旨在提供高效的媒体管理与流媒体服务。它构建于Service Stack、jQuery、jQuery mobile和.NET Core等开源技术之上，提供RESTful API接口，便于客户端开发与集成。通过容器化部署，Emby Media Server能够实现环境隔离、快速部署和版本管理，适用于家庭媒体中心、小型企业流媒体服务等场景。
-category: Docker,Emby Media Server
-tags: emby-media-server,docker,部署教程
-image_name: emby/embyserver
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-emby-media-server.png"
-status: published
-created_at: "2025-12-14 12:44:03"
-updated_at: "2025-12-14 12:44:03"
----
-
 # Emby Media Server Docker 容器化部署指南
+
+![Emby Media Server Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-emby-media-server.png)
+
+*分类: Docker,Emby Media Server | 标签: emby-media-server,docker,部署教程 | 发布时间: 2025-12-14 12:44:03*
 
 > Emby Media Server 是一款基于Docker容器化的媒体服务器应用，旨在提供高效的媒体管理与流媒体服务。它构建于Service Stack、jQuery、jQuery mobile和.NET Core等开源技术之上，提供RESTful API接口，便于客户端开发与集成。通过容器化部署，Emby Media Server能够实现环境隔离、快速部署和版本管理，适用于家庭媒体中心、小型企业流媒体服务等场景。
 

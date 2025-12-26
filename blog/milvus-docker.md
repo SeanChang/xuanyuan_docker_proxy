@@ -1,18 +1,8 @@
----
-id: 96
-title: MILVUS Docker 容器化部署指南
-slug: milvus-docker
-summary: MILVUS（中文名称：向量数据库）是一款开源的高性能向量数据库，专为复杂的相似度搜索和分析应用设计。它能够高效存储、索引和查询数十亿级别的高维向量数据，广泛应用于推荐系统、欺诈检测、图像检索、自然语言处理等人工智能领域。作为连接机器学习模型与实际应用的关键组件，MILVUS通过优化的索引结构和查询算法，提供了毫秒级的向量相似度搜索能力，支持多种距离度量方式（如欧氏距离、余弦相似度、汉明距离等），并兼容主流的机器学习框架。
-category: Docker,MILVUS
-tags: milvus,docker,部署教程
-image_name: milvusdb/milvus
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-milvusdb.png"
-status: published
-created_at: "2025-12-03 06:03:40"
-updated_at: "2025-12-03 06:03:40"
----
-
 # MILVUS Docker 容器化部署指南
+
+![MILVUS Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-milvusdb.png)
+
+*分类: Docker,MILVUS | 标签: milvus,docker,部署教程 | 发布时间: 2025-12-03 06:03:40*
 
 > MILVUS（中文名称：向量数据库）是一款开源的高性能向量数据库，专为复杂的相似度搜索和分析应用设计。它能够高效存储、索引和查询数十亿级别的高维向量数据，广泛应用于推荐系统、欺诈检测、图像检索、自然语言处理等人工智能领域。作为连接机器学习模型与实际应用的关键组件，MILVUS通过优化的索引结构和查询算法，提供了毫秒级的向量相似度搜索能力，支持多种距离度量方式（如欧氏距离、余弦相似度、汉明距离等），并兼容主流的机器学习框架。
 

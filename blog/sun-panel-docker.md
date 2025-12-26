@@ -1,18 +1,8 @@
----
-id: 57
-title: SUN-PANEL Docker 容器化部署指南
-slug: sun-panel-docker
-summary: SUN-PANEL是一款多功能的服务器与NAS导航面板，同时也可作为Homepage和浏览器首页使用。它提供直观的界面，帮助用户集中管理服务器资源、NAS文件导航以及常用网页入口，适用于个人用户、家庭NAS用户及小型企业环境。SUN-PANEL支持多语言界面，提供丰富的自定义选项，能够整合各类服务链接与系统状态监控，为用户打造个性化的网络导航中心。
-category: SUN-PANEL,Docker
-tags: sun-panel,docker,部署教程
-image_name: hslr/sun-panel
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-sun-panel.png"
-status: published
-created_at: "2025-11-11 08:42:03"
-updated_at: "2025-11-13 01:31:51"
----
-
 # SUN-PANEL Docker 容器化部署指南
+
+![SUN-PANEL Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-sun-panel.png)
+
+*分类: SUN-PANEL,Docker | 标签: sun-panel,docker,部署教程 | 发布时间: 2025-11-11 08:42:03*
 
 > SUN-PANEL是一款多功能的服务器与NAS导航面板，同时也可作为Homepage和浏览器首页使用。它提供直观的界面，帮助用户集中管理服务器资源、NAS文件导航以及常用网页入口，适用于个人用户、家庭NAS用户及小型企业环境。SUN-PANEL支持多语言界面，提供丰富的自定义选项，能够整合各类服务链接与系统状态监控，为用户打造个性化的网络导航中心。
 

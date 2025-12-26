@@ -1,18 +1,8 @@
----
-id: 121
-title: STANDALONE-CHROME Docker 容器化部署指南
-slug: standalone-chrome-docker
-summary: STANDALONE-CHROME（镜像名称：selenium/standalone-chrome）是一个容器化的Selenium Grid独立模式解决方案，集成了Chrome浏览器环境。该镜像提供了Selenium Grid Standalone服务，使开发者能够远程运行WebDriver测试。通过Docker容器化部署，可以快速搭建稳定、一致的自动化测试环境，避免因本地环境差异导致的测试不一致问题。
-category: Docker,STANDALONE-CHROME
-tags: standalone-chrome,docker,部署教程
-image_name: selenium/standalone-chrome
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-standalone-chrome.png"
-status: published
-created_at: "2025-12-10 06:52:13"
-updated_at: "2025-12-10 06:52:13"
----
-
 # STANDALONE-CHROME Docker 容器化部署指南
+
+![STANDALONE-CHROME Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-standalone-chrome.png)
+
+*分类: Docker,STANDALONE-CHROME | 标签: standalone-chrome,docker,部署教程 | 发布时间: 2025-12-10 06:52:13*
 
 > STANDALONE-CHROME（镜像名称：selenium/standalone-chrome）是一个容器化的Selenium Grid独立模式解决方案，集成了Chrome浏览器环境。该镜像提供了Selenium Grid Standalone服务，使开发者能够远程运行WebDriver测试。通过Docker容器化部署，可以快速搭建稳定、一致的自动化测试环境，避免因本地环境差异导致的测试不一致问题。
 

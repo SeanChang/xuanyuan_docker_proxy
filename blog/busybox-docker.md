@@ -1,18 +1,8 @@
----
-id: 53
-title: BUSYBOX Docker 容器化部署指南
-slug: busybox-docker
-summary: "BusyBox是一款集成了众多UNIX工具的嵌入式Linux实用程序集合，被誉为\"嵌入式Linux的瑞士军刀\"。它将常见的UNIX命令（如ls、cp、mv、sh等）整合到单个可执行文件中，体积小巧（通常在1-5MB之间，具体取决于变体），非常适合构建空间高效的容器镜像和嵌入式系统。"
-category: Docker,BUSYBOX
-tags: busybox,docker,部署教程
-image_name: library/busybox
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-busybox.png"
-status: published
-created_at: "2025-11-10 02:48:30"
-updated_at: "2025-11-10 02:48:30"
----
-
 # BUSYBOX Docker 容器化部署指南
+
+![BUSYBOX Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-busybox.png)
+
+*分类: Docker,BUSYBOX | 标签: busybox,docker,部署教程 | 发布时间: 2025-11-10 02:48:30*
 
 > BusyBox是一款集成了众多UNIX工具的嵌入式Linux实用程序集合，被誉为"嵌入式Linux的瑞士军刀"。它将常见的UNIX命令（如ls、cp、mv、sh等）整合到单个可执行文件中，体积小巧（通常在1-5MB之间，具体取决于变体），非常适合构建空间高效的容器镜像和嵌入式系统。
 

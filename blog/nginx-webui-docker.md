@@ -1,18 +1,8 @@
----
-id: 51
-title: NGINX WEBUI Docker容器化部署指南
-slug: nginx-webui-docker
-summary: NGINXWEBUI是一款基于Web的图形化Nginx配置管理工具，旨在简化Nginx服务器的配置与管理流程。通过直观的网页界面，用户可快速配置反向代理、负载均衡、SSL证书、TCP转发等常用Nginx功能，无需手动编写复杂的配置文件。该工具集成了证书自动申请与续签、配置文件备份与回滚、远程服务器管理等实用功能，适用于需要高效管理Nginx服务器的个人用户与企业环境。
-category: Docker,NGINXWEBUI
-tags: nginx,docker,部署教程
-image_name: cym1102/nginxwebui
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-nginxwebui.png"
-status: published
-created_at: "2025-11-09 17:10:03"
-updated_at: "2025-11-11 02:05:37"
----
-
 # NGINX WEBUI Docker容器化部署指南
+
+![NGINX WEBUI Docker容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-nginxwebui.png)
+
+*分类: Docker,NGINXWEBUI | 标签: nginx,docker,部署教程 | 发布时间: 2025-11-09 17:10:03*
 
 > NGINXWEBUI是一款基于Web的图形化Nginx配置管理工具，旨在简化Nginx服务器的配置与管理流程。通过直观的网页界面，用户可快速配置反向代理、负载均衡、SSL证书、TCP转发等常用Nginx功能，无需手动编写复杂的配置文件。该工具集成了证书自动申请与续签、配置文件备份与回滚、远程服务器管理等实用功能，适用于需要高效管理Nginx服务器的个人用户与企业环境。
 

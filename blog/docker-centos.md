@@ -1,18 +1,8 @@
----
-id: 40
-title: Docker 部署 CentOS：全流程指南
-slug: docker-centos
-summary: CentOS 官方已于 2024 年 6 月 30 日停止所有版本的维护与更新（EOL），现有镜像不再提供安全补丁和功能迭代。当前 Docker 部署 CentOS 仅适用于遗留系统兼容、历史项目测试等场景，不建议用于新生产环境。下文将详细说明部署流程，并提供成熟的替代方案供你选择。
-category: Docker,CentOS
-tags: centos,docker,部署教程
-image_name: library/centos
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-centos.png"
-status: published
-created_at: "2025-10-26 06:03:00"
-updated_at: "2025-10-28 01:49:30"
----
-
 # Docker 部署 CentOS：全流程指南
+
+![Docker 部署 CentOS：全流程指南](https://img.xuanyuan.dev/docker/blog/docker-centos.png)
+
+*分类: Docker,CentOS | 标签: centos,docker,部署教程 | 发布时间: 2025-10-26 06:03:00*
 
 > CentOS 官方已于 2024 年 6 月 30 日停止所有版本的维护与更新（EOL），现有镜像不再提供安全补丁和功能迭代。当前 Docker 部署 CentOS 仅适用于遗留系统兼容、历史项目测试等场景，不建议用于新生产环境。下文将详细说明部署流程，并提供成熟的替代方案供你选择。
 

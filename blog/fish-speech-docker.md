@@ -1,18 +1,8 @@
----
-id: 141
-title: Fish Speech Docker 容器化部署指南
-slug: fish-speech-docker
-summary: FISH-SPEECH-ZIMING是基于Fish Speech 1.5构建的多语言文本到语音(TTS)Docker镜像，提供开箱即用的文本到语音转换解决方案。该镜像继承了Fish Speech 1.5的核心优势，支持中文、英语、日语等8种语言的文本到语音转换、语音克隆与LoRA微调功能。其优化的容器化设计集成了PyTorch及所有依赖组件，提供WebUI与API两种使用模式，推理场景下仅需≥4GB显存即可运行，适用于多种硬件环境。
-category: Docker,FISH-SPEECH-ZIMING,TTS
-tags: fish-speech-ziming,docker,部署教程,tts
-image_name: guiji2025/fish-speech-ziming
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-fish-speech.png"
-status: published
-created_at: "2025-12-13 06:13:46"
-updated_at: "2025-12-13 06:13:46"
----
-
 # Fish Speech Docker 容器化部署指南
+
+![Fish Speech Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-fish-speech.png)
+
+*分类: Docker,FISH-SPEECH-ZIMING,TTS | 标签: fish-speech-ziming,docker,部署教程,tts | 发布时间: 2025-12-13 06:13:46*
 
 > FISH-SPEECH-ZIMING是基于Fish Speech 1.5构建的多语言文本到语音(TTS)Docker镜像，提供开箱即用的文本到语音转换解决方案。该镜像继承了Fish Speech 1.5的核心优势，支持中文、英语、日语等8种语言的文本到语音转换、语音克隆与LoRA微调功能。其优化的容器化设计集成了PyTorch及所有依赖组件，提供WebUI与API两种使用模式，推理场景下仅需≥4GB显存即可运行，适用于多种硬件环境。
 

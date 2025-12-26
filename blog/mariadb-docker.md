@@ -1,18 +1,8 @@
----
-id: 18
-title: MariaDB 在 Docker 中的部署
-slug: mariadb-docker
-summary: 以下教程分为初学者快速上手与进阶生产级注意事项两部分，覆盖镜像拉取、容器启动、数据持久化、初始化脚本、配置定制、备份/恢复、升级与常见故障排查。开头先用官方资料介绍 MariaDB 是什么、有什么用，再进入实操步骤。本文同时给出轩辕镜像（国内加速）的拉取示例。
-category: Docker,MariaDB
-tags: MariaDB,docker,部署教程
-image_name: library/mariadb
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-mariadb.png"
-status: published
-created_at: "2025-10-08 06:36:39"
-updated_at: "2025-10-08 06:44:34"
----
-
 # MariaDB 在 Docker 中的部署
+
+![MariaDB 在 Docker 中的部署](https://img.xuanyuan.dev/docker/blog/docker-mariadb.png)
+
+*分类: Docker,MariaDB | 标签: MariaDB,docker,部署教程 | 发布时间: 2025-10-08 06:36:39*
 
 > 以下教程分为初学者快速上手与进阶生产级注意事项两部分，覆盖镜像拉取、容器启动、数据持久化、初始化脚本、配置定制、备份/恢复、升级与常见故障排查。开头先用官方资料介绍 MariaDB 是什么、有什么用，再进入实操步骤。本文同时给出轩辕镜像（国内加速）的拉取示例。
 

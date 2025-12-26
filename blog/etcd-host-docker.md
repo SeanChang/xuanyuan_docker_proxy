@@ -1,18 +1,8 @@
----
-id: 65
-title: ETCD-HOST Docker 容器化部署指南
-slug: etcd-host-docker
-summary: ETCD-HOST是一款基于ETCD的容器化部署方案，旨在简化ETCD服务的搭建与管理流程。作为分布式系统中的核心组件，ETCD提供高可用的键值存储服务，广泛应用于服务发现、配置管理、分布式锁等场景。通过Docker容器化部署ETCD-HOST，可实现环境一致性、快速部署和资源隔离，显著降低运维复杂度。本文将详细介绍ETCD-HOST的Docker部署流程，包括环境准备、镜像拉取、容器配置、功能验证及生产环境优化建议，为用户提供完整的部署参考。
-category: Docker,ETCD-HOST
-tags: etcd-host,docker,部署教程
-image_name: eipwork/etcd-host
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-etcd-host.png"
-status: published
-created_at: "2025-11-17 09:21:30"
-updated_at: "2025-11-21 01:38:53"
----
-
 # ETCD-HOST Docker 容器化部署指南
+
+![ETCD-HOST Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-etcd-host.png)
+
+*分类: Docker,ETCD-HOST | 标签: etcd-host,docker,部署教程 | 发布时间: 2025-11-17 09:21:30*
 
 > ETCD-HOST是一款基于ETCD的容器化部署方案，旨在简化ETCD服务的搭建与管理流程。作为分布式系统中的核心组件，ETCD提供高可用的键值存储服务，广泛应用于服务发现、配置管理、分布式锁等场景。通过Docker容器化部署ETCD-HOST，可实现环境一致性、快速部署和资源隔离，显著降低运维复杂度。本文将详细介绍ETCD-HOST的Docker部署流程，包括环境准备、镜像拉取、容器配置、功能验证及生产环境优化建议，为用户提供完整的部署参考。
 

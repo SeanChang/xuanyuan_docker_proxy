@@ -1,18 +1,8 @@
----
-id: 163
-title: Apache Flink Docker 容器化部署指南
-slug: apache-flink-docker
-summary: Apache Flink®是一个强大的开源分布式流处理和批处理框架，具备高效的流处理和批处理能力。作为容器化应用，FLINK通过Docker部署可以实现环境一致性、快速扩缩容和简化运维等优势。本文将详细介绍如何通过Docker容器化部署FLINK，包括环境准备、镜像拉取、容器部署、功能测试及生产环境建议等内容，为用户提供一套完整、可靠的部署方案。
-category: Docker,Apache Flink
-tags: apache-flink,docker,部署教程
-image_name: library/flink
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-apache-flink.png"
-status: published
-created_at: "2025-12-14 14:14:37"
-updated_at: "2025-12-14 14:14:37"
----
-
 # Apache Flink Docker 容器化部署指南
+
+![Apache Flink Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-apache-flink.png)
+
+*分类: Docker,Apache Flink | 标签: apache-flink,docker,部署教程 | 发布时间: 2025-12-14 14:14:37*
 
 > Apache Flink®是一个强大的开源分布式流处理和批处理框架，具备高效的流处理和批处理能力。作为容器化应用，FLINK通过Docker部署可以实现环境一致性、快速扩缩容和简化运维等优势。本文将详细介绍如何通过Docker容器化部署FLINK，包括环境准备、镜像拉取、容器部署、功能测试及生产环境建议等内容，为用户提供一套完整、可靠的部署方案。
 

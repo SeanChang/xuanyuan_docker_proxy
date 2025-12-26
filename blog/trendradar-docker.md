@@ -1,18 +1,8 @@
----
-id: 59
-title: TRENDRADAR Docker 容器化部署指南
-slug: trendradar-docker
-summary: TRENDRADAR（中文名称：趋势雷达）是一款专注于多平台热点聚合与智能推送的容器化应用。该工具以轻量部署、高效聚合为核心目标，支持从知乎、抖音、B站、微博等11个主流平台实时抓取热点内容，并通过企业微信、飞书、钉钉、Telegram、邮件、ntfy等多渠道推送。其核心特性包括智能内容筛选、热点趋势分析、个性化算法排序及AI深度分析功能，帮助用户从海量信息中精准获取关注的热点话题，减少对传统信息平台的依赖。
-category: Docker,TRENDRADAR
-tags: trendradar,docker,部署教程
-image_name: wantcat/trendradar
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-trendradar.png"
-status: published
-created_at: "2025-11-16 04:55:03"
-updated_at: "2025-11-22 03:36:59"
----
-
 # TRENDRADAR Docker 容器化部署指南
+
+![TRENDRADAR Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-trendradar.png)
+
+*分类: Docker,TRENDRADAR | 标签: trendradar,docker,部署教程 | 发布时间: 2025-11-16 04:55:03*
 
 > TRENDRADAR（中文名称：趋势雷达）是一款专注于多平台热点聚合与智能推送的容器化应用。该工具以轻量部署、高效聚合为核心目标，支持从知乎、抖音、B站、微博等11个主流平台实时抓取热点内容，并通过企业微信、飞书、钉钉、Telegram、邮件、ntfy等多渠道推送。其核心特性包括智能内容筛选、热点趋势分析、个性化算法排序及AI深度分析功能，帮助用户从海量信息中精准获取关注的热点话题，减少对传统信息平台的依赖。
 

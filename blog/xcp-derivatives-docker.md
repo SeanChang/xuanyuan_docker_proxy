@@ -1,18 +1,8 @@
----
-id: 166
-title: XCP-Derivatives Docker容器化部署指南
-slug: xcp-derivatives-docker
-summary: XCP_D（XCP-Derivatives）是一款基于BIDS（Brain Imaging Data Structure）标准的fMRI后处理应用程序，专为静息态功能连接分析的数据准备而设计。它提供了标准化的预处理流程，能够自动化完成fMRI数据的质量控制、运动校正、标准化等关键步骤，广泛应用于神经影像学研究领域。
-category: Docker,XCP-Derivatives
-tags: xcp-derivatives,docker,部署教程
-image_name: pennlinc/xcp_d
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-xcp-derivatives.png"
-status: published
-created_at: "2025-12-15 06:05:39"
-updated_at: "2025-12-15 06:05:39"
----
-
 # XCP-Derivatives Docker容器化部署指南
+
+![XCP-Derivatives Docker容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-xcp-derivatives.png)
+
+*分类: Docker,XCP-Derivatives | 标签: xcp-derivatives,docker,部署教程 | 发布时间: 2025-12-15 06:05:39*
 
 > XCP_D（XCP-Derivatives）是一款基于BIDS（Brain Imaging Data Structure）标准的fMRI后处理应用程序，专为静息态功能连接分析的数据准备而设计。它提供了标准化的预处理流程，能够自动化完成fMRI数据的质量控制、运动校正、标准化等关键步骤，广泛应用于神经影像学研究领域。
 

@@ -1,18 +1,8 @@
----
-id: 70
-title: MAVEN Docker 容器化部署指南
-slug: maven-docker
-summary: "Apache Maven（简称MAVEN）是一款由Apache软件基金会开发的项目管理和构建自动化工具。基于项目对象模型（POM）的概念，MAVEN能够从中央信息源管理项目的构建、报告和文档生成过程。其核心功能包括依赖管理、项目构建生命周期管理、插件体系扩展等，广泛应用于Java项目开发中，同时也支持C#、Ruby、Scala等多种编程语言的项目管理。"
-category: Docker,MAVEN
-tags: maven,docker,部署教程
-image_name: library/maven
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-maven.png"
-status: published
-created_at: "2025-11-26 05:40:01"
-updated_at: "2025-11-26 05:40:01"
----
-
 # MAVEN Docker 容器化部署指南
+
+![MAVEN Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-maven.png)
+
+*分类: Docker,MAVEN | 标签: maven,docker,部署教程 | 发布时间: 2025-11-26 05:40:01*
 
 > Apache Maven（简称MAVEN）是一款由Apache软件基金会开发的项目管理和构建自动化工具。基于项目对象模型（POM）的概念，MAVEN能够从中央信息源管理项目的构建、报告和文档生成过程。其核心功能包括依赖管理、项目构建生命周期管理、插件体系扩展等，广泛应用于Java项目开发中，同时也支持C#、Ruby、Scala等多种编程语言的项目管理。
 

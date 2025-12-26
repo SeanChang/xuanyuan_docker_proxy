@@ -1,18 +1,8 @@
----
-id: 165
-title: LinuxServer.io Webtop Docker容器化部署指南：基于浏览器的Linux桌面环境
-slug: linuxserverio-webtop-dockerlinux
-summary: Webtop 是一款由LinuxServer团队开发的创新型容器化应用，它将完整的Linux桌面环境封装在Docker容器中，通过现代Web浏览器即可随时随地访问。这种独特的架构消除了传统远程桌面软件的复杂配置需求，同时保持了桌面环境的功能完整性。
-category: Docker,Webtop
-tags: webtop,docker,部署教程
-image_name: linuxserver/webtop
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-webtop.png"
-status: published
-created_at: "2025-12-15 05:55:37"
-updated_at: "2025-12-15 05:55:37"
----
-
 # LinuxServer.io Webtop Docker容器化部署指南：基于浏览器的Linux桌面环境
+
+![LinuxServer.io Webtop Docker容器化部署指南：基于浏览器的Linux桌面环境](https://img.xuanyuan.dev/docker/blog/docker-webtop.png)
+
+*分类: Docker,Webtop | 标签: webtop,docker,部署教程 | 发布时间: 2025-12-15 05:55:37*
 
 > Webtop 是一款由LinuxServer团队开发的创新型容器化应用，它将完整的Linux桌面环境封装在Docker容器中，通过现代Web浏览器即可随时随地访问。这种独特的架构消除了传统远程桌面软件的复杂配置需求，同时保持了桌面环境的功能完整性。
 

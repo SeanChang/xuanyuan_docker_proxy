@@ -1,18 +1,8 @@
----
-id: 22
-title: Golang 镜像拉取与 Docker 部署全教程
-slug: golang-docker
-summary: Golang（简称 Go）是 Google 开发的静态类型编程语言，语法上借鉴了 C 语言的简洁性，但弥补了 C 语言的诸多痛点，比如自带垃圾回收（不用手动管理内存）、强类型安全（减少运行时错误）、原生支持并发（轻松处理高并发场景），还内置了变长数组、键值映射（map）等实用类型，以及一个极其丰富的标准库（从网络请求到文件处理，不用依赖太多第三方库）。
-category: Docker,Golang
-tags: Golang,docker,部署教程
-image_name: library/golang
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-golang.png"
-status: published
-created_at: "2025-10-10 02:27:25"
-updated_at: "2025-10-31 03:08:59"
----
-
 # Golang 镜像拉取与 Docker 部署全教程
+
+![Golang 镜像拉取与 Docker 部署全教程](https://img.xuanyuan.dev/docker/blog/docker-golang.png)
+
+*分类: Docker,Golang | 标签: Golang,docker,部署教程 | 发布时间: 2025-10-10 02:27:25*
 
 > Golang（简称 Go）是 Google 开发的静态类型编程语言，语法上借鉴了 C 语言的简洁性，但弥补了 C 语言的诸多痛点，比如自带垃圾回收（不用手动管理内存）、强类型安全（减少运行时错误）、原生支持并发（轻松处理高并发场景），还内置了变长数组、键值映射（map）等实用类型，以及一个极其丰富的标准库（从网络请求到文件处理，不用依赖太多第三方库）。
 

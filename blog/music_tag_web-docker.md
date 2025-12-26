@@ -1,19 +1,8 @@
----
-id: 147
-title: MUSIC_TAG_WEB Docker 容器化部署指南
-slug: music_tag_web-docker
-summary: "MUSIC_TAG_WEB（音乐标签Web版）是一款功能强大的容器化Web应用，专为音乐元数据管理设计。该应用允许用户通过Web界面编辑歌曲的标题、专辑、艺术家、歌词、封面等信息，支持FLAC、APE、WAV、AIFF、WV、TTA、MP3、MP4、M4A、OGG、MPC、OPUS、WMA、DSF、DFF等多种音频格式。
-"
-category: Docker,MUSIC_TAG_WEB
-tags: music_tag_web,docker,部署教程
-image_name: xhongc/music_tag_web
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-music-tag-web.png"
-status: published
-created_at: "2025-12-14 03:04:41"
-updated_at: "2025-12-14 03:04:50"
----
-
 # MUSIC_TAG_WEB Docker 容器化部署指南
+
+![MUSIC_TAG_WEB Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-music-tag-web.png)
+
+*分类: Docker,MUSIC_TAG_WEB | 标签: music_tag_web,docker,部署教程 | 发布时间: 2025-12-14 03:04:41*
 
 > MUSIC_TAG_WEB（音乐标签Web版）是一款功能强大的容器化Web应用，专为音乐元数据管理设计。该应用允许用户通过Web界面编辑歌曲的标题、专辑、艺术家、歌词、封面等信息，支持FLAC、APE、WAV、AIFF、WV、TTA、MP3、MP4、M4A、OGG、MPC、OPUS、WMA、DSF、DFF等多种音频格式。
 > 

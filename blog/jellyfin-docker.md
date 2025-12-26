@@ -1,18 +1,8 @@
----
-id: 133
-title: jellyfin Docker容器化部署指南
-slug: jellyfin-docker
-summary: JELLYFIN是一款开源的媒体系统（The Free Software Media System），旨在让用户完全掌控自己的媒体管理和流媒体体验。作为Emby和Plex的免费替代方案，JELLYFIN允许用户从专用服务器向各种终端设备提供媒体内容，支持跨平台部署。该项目源自Emby 3.5.2版本，后迁移至.NET Core框架以实现全面的跨平台支持。JELLYFIN坚持无附加条件、无高级许可或功能限制的理念，由社区驱动开发，欢迎所有感兴趣的开发者参与。
-category: Docker,jellyfin
-tags: jellyfin,docker,部署教程
-image_name: jellyfin/jellyfin
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-jellyfin.png"
-status: published
-created_at: "2025-12-11 04:14:39"
-updated_at: "2025-12-11 04:14:47"
----
-
 # jellyfin Docker容器化部署指南
+
+![jellyfin Docker容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-jellyfin.png)
+
+*分类: Docker,jellyfin | 标签: jellyfin,docker,部署教程 | 发布时间: 2025-12-11 04:14:39*
 
 > JELLYFIN是一款开源的媒体系统（The Free Software Media System），旨在让用户完全掌控自己的媒体管理和流媒体体验。作为Emby和Plex的免费替代方案，JELLYFIN允许用户从专用服务器向各种终端设备提供媒体内容，支持跨平台部署。该项目源自Emby 3.5.2版本，后迁移至.NET Core框架以实现全面的跨平台支持。JELLYFIN坚持无附加条件、无高级许可或功能限制的理念，由社区驱动开发，欢迎所有感兴趣的开发者参与。
 

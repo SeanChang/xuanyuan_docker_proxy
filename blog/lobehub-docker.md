@@ -1,18 +1,8 @@
----
-id: 68
-title: LobeHub Docker 容器化部署指南
-slug: lobehub-docker
-summary: LobeHub 旗下的 LobeChat 是一款功能丰富的智能 AI 对话平台，具备强大的大语言模型交互能力与多样化的扩展功能。该平台在2023年推出了多模型服务商支持、本地大语言模型运行、模型视觉识别、语音会话（TTS & STT）、文生图（Text to Image）、插件系统等核心特性，还适配了移动设备并支持渐进式网页应用（PWA）；2024年进一步升级，新增思维链（CoT）、分支对话、白板（Artifacts）、文件上传与知识库管理、本地/云端数据存储，以及身份验证系统和多用户管理等功能，能够满足个人与团队在AI交互、协作等场景下的多样化需求。为了方便用户在私有设备上部署使用，LobeHub 提供了 Docker 镜像，本文将详细介绍其 Docker 容器化部署的具体步骤。
-category: Docker,lobehub
-tags: lobehub,docker,部署教程
-image_name: lobehub/lobehub
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-lobehub.png"
-status: published
-created_at: "2025-11-23 12:54:34"
-updated_at: "2025-11-25 01:47:44"
----
-
 # LobeHub Docker 容器化部署指南
+
+![LobeHub Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-lobehub.png)
+
+*分类: Docker,lobehub | 标签: lobehub,docker,部署教程 | 发布时间: 2025-11-23 12:54:34*
 
 > LobeHub 旗下的 LobeChat 是一款功能丰富的智能 AI 对话平台，具备强大的大语言模型交互能力与多样化的扩展功能。该平台在2023年推出了多模型服务商支持、本地大语言模型运行、模型视觉识别、语音会话（TTS & STT）、文生图（Text to Image）、插件系统等核心特性，还适配了移动设备并支持渐进式网页应用（PWA）；2024年进一步升级，新增思维链（CoT）、分支对话、白板（Artifacts）、文件上传与知识库管理、本地/云端数据存储，以及身份验证系统和多用户管理等功能，能够满足个人与团队在AI交互、协作等场景下的多样化需求。为了方便用户在私有设备上部署使用，LobeHub 提供了 Docker 镜像，本文将详细介绍其 Docker 容器化部署的具体步骤。
 

@@ -1,18 +1,8 @@
----
-id: 14
-title: Docker 部署 PHP 全手册
-slug: docker-php
-summary: 这篇教程详细介绍了如何在 Docker 环境中部署 PHP，从镜像拉取、容器启动到文件挂载与端口映射，步骤清晰、示例完整，初学者照着操作即可快速搭建可运行的 PHP 开发环境。
-category: Docker,PHP
-tags: php,docker,部署教程
-image_name: library/php
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-php.png"
-status: published
-created_at: "2025-10-07 03:10:31"
-updated_at: "2025-10-14 01:57:19"
----
-
 # Docker 部署 PHP 全手册
+
+![Docker 部署 PHP 全手册](https://img.xuanyuan.dev/docker/blog/docker-php.png)
+
+*分类: Docker,PHP | 标签: php,docker,部署教程 | 发布时间: 2025-10-07 03:10:31*
 
 > 这篇教程详细介绍了如何在 Docker 环境中部署 PHP，从镜像拉取、容器启动到文件挂载与端口映射，步骤清晰、示例完整，初学者照着操作即可快速搭建可运行的 PHP 开发环境。
 

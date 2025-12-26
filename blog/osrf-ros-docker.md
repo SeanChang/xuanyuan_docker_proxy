@@ -1,18 +1,8 @@
----
-id: 132
-title: OSRF ROS Docker 容器化部署指南：高效构建机器人操作系统环境
-slug: osrf-ros-docker
-summary: 机器人操作系统（ROS，Robot Operating System）是一个开源项目，为构建机器人应用提供了丰富的库和工具集。作为一种灵活的 middleware，ROS 支持分布式计算、硬件抽象、消息传递和包管理等核心功能，广泛应用于学术研究和工业开发领域。
-category: Docker,OSRF ROS
-tags: osrf-ros,docker,部署教程
-image_name: osrf/ros
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-osrf-ros.png"
-status: published
-created_at: "2025-12-11 04:05:41"
-updated_at: "2025-12-11 04:05:41"
----
-
 # OSRF ROS Docker 容器化部署指南：高效构建机器人操作系统环境
+
+![OSRF ROS Docker 容器化部署指南：高效构建机器人操作系统环境](https://img.xuanyuan.dev/docker/blog/docker-osrf-ros.png)
+
+*分类: Docker,OSRF ROS | 标签: osrf-ros,docker,部署教程 | 发布时间: 2025-12-11 04:05:41*
 
 > 机器人操作系统（ROS，Robot Operating System）是一个开源项目，为构建机器人应用提供了丰富的库和工具集。作为一种灵活的 middleware，ROS 支持分布式计算、硬件抽象、消息传递和包管理等核心功能，广泛应用于学术研究和工业开发领域。
 

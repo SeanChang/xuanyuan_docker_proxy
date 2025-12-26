@@ -1,18 +1,8 @@
----
-id: 90
-title: OLLAMA Docker 容器化部署指南
-slug: ollama-docker
-summary: OLLAMA是一款旨在简化本地大型语言模型（LLM）部署与运行的工具，它提供了直观的命令行界面和容器化部署方案，让用户能够轻松地在本地环境中运行如Llama 3、Gemini、Mistral等主流大语言模型。
-category: Docker,OLLAMA
-tags: ollama,docker,部署教程
-image_name: ollama/ollama
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-ollama.png"
-status: published
-created_at: "2025-12-03 02:44:14"
-updated_at: "2025-12-03 02:55:33"
----
-
 # OLLAMA Docker 容器化部署指南
+
+![OLLAMA Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-ollama.png)
+
+*分类: Docker,OLLAMA | 标签: ollama,docker,部署教程 | 发布时间: 2025-12-03 02:44:14*
 
 > OLLAMA是一款旨在简化本地大型语言模型（LLM）部署与运行的工具，它提供了直观的命令行界面和容器化部署方案，让用户能够轻松地在本地环境中运行如Llama 3、Gemini、Mistral等主流大语言模型。
 

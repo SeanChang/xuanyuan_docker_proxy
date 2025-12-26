@@ -1,18 +1,8 @@
----
-id: 89
-title: gitea Docker 容器化部署指南
-slug: gitea-docker
-summary: GITEA 是一款开源、轻量级的自托管 Git 服务，提供类似于 GitHub、GitLab 的代码托管功能，支持版本控制、代码审查、issue 跟踪、Wiki 等核心特性。其设计目标是简单易用、资源占用低，适合个人开发者、小型团队或企业内部搭建私有代码仓库。
-category: Docker,GITEA
-tags: gitea,docker,部署教程
-image_name: gitea/gitea
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-gitea.png"
-status: published
-created_at: "2025-12-02 08:00:17"
-updated_at: "2025-12-02 08:00:17"
----
-
 # gitea Docker 容器化部署指南
+
+![gitea Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-gitea.png)
+
+*分类: Docker,GITEA | 标签: gitea,docker,部署教程 | 发布时间: 2025-12-02 08:00:17*
 
 > GITEA 是一款开源、轻量级的自托管 Git 服务，提供类似于 GitHub、GitLab 的代码托管功能，支持版本控制、代码审查、issue 跟踪、Wiki 等核心特性。其设计目标是简单易用、资源占用低，适合个人开发者、小型团队或企业内部搭建私有代码仓库。
 

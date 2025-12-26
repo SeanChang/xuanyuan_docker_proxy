@@ -1,18 +1,8 @@
----
-id: 125
-title: MinIO Client (MC) Docker 容器化部署指南
-slug: minio-client-mc-docker
-summary: MinIO Client (简称MC) 是MinIO提供的命令行工具，为UNIX命令（如ls、cat、cp、mirror、diff等）提供了现代化的替代方案。它支持文件系统和兼容Amazon S3的云存储服务（AWS Signature v2和v4），是管理对象存储的强大工具。
-category: Docker,MinIO Client
-tags: minio-client,docker,部署教程
-image_name: minio/mc
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-minio-client.png"
-status: published
-created_at: "2025-12-10 07:21:56"
-updated_at: "2025-12-10 07:21:56"
----
-
 # MinIO Client (MC) Docker 容器化部署指南
+
+![MinIO Client (MC) Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-minio-client.png)
+
+*分类: Docker,MinIO Client | 标签: minio-client,docker,部署教程 | 发布时间: 2025-12-10 07:21:56*
 
 > MinIO Client (简称MC) 是MinIO提供的命令行工具，为UNIX命令（如ls、cat、cp、mirror、diff等）提供了现代化的替代方案。它支持文件系统和兼容Amazon S3的云存储服务（AWS Signature v2和v4），是管理对象存储的强大工具。
 

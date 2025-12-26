@@ -1,18 +1,8 @@
----
-id: 104
-title: SQUID Docker 容器化部署指南
-slug: squid-docker
-summary: SQUID是一款功能强大的Web缓存代理服务器，支持HTTP、HTTPS、FTP等多种协议。作为由Canonical维护的长期支持版本，SQUID通过缓存和重用频繁请求的网页内容，能够有效减少网络带宽消耗并提高响应速度。其丰富的访问控制功能使其成为优秀的服务器加速器，适用于多种网络环境。
-category: Docker,SQUID
-tags: squid,docker,部署教程
-image_name: ubuntu/squid
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-ubuntu-squid.png"
-status: published
-created_at: "2025-12-05 04:05:57"
-updated_at: "2025-12-05 04:05:57"
----
-
 # SQUID Docker 容器化部署指南
+
+![SQUID Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-ubuntu-squid.png)
+
+*分类: Docker,SQUID | 标签: squid,docker,部署教程 | 发布时间: 2025-12-05 04:05:57*
 
 > SQUID是一款功能强大的Web缓存代理服务器，支持HTTP、HTTPS、FTP等多种协议。作为由Canonical维护的长期支持版本，SQUID通过缓存和重用频繁请求的网页内容，能够有效减少网络带宽消耗并提高响应速度。其丰富的访问控制功能使其成为优秀的服务器加速器，适用于多种网络环境。
 

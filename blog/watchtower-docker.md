@@ -1,18 +1,8 @@
----
-id: 82
-title: WATCHTOWER Docker 容器化部署指南
-slug: watchtower-docker
-summary: WATCHTOWER是一款用于自动化Docker容器基础镜像更新的工具。它能够监控运行中的容器，当检测到基础镜像有新版本发布时，自动拉取更新后的镜像，优雅关闭现有容器，并使用原始启动参数重新启动容器。这一过程完全自动化，无需人工干预，有效降低了容器化应用的维护成本，确保应用始终运行在最新的安全补丁和功能更新之上。
-category: Docker,WATCHTOWER
-tags: watchtower,docker,部署教程
-image_name: containrrr/watchtower
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-watchtower.png"
-status: published
-created_at: "2025-12-02 03:39:23"
-updated_at: "2025-12-02 03:39:23"
----
-
 # WATCHTOWER Docker 容器化部署指南
+
+![WATCHTOWER Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-watchtower.png)
+
+*分类: Docker,WATCHTOWER | 标签: watchtower,docker,部署教程 | 发布时间: 2025-12-02 03:39:23*
 
 > WATCHTOWER是一款用于自动化Docker容器基础镜像更新的工具。它能够监控运行中的容器，当检测到基础镜像有新版本发布时，自动拉取更新后的镜像，优雅关闭现有容器，并使用原始启动参数重新启动容器。这一过程完全自动化，无需人工干预，有效降低了容器化应用的维护成本，确保应用始终运行在最新的安全补丁和功能更新之上。
 

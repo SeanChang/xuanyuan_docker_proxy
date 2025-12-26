@@ -1,18 +1,8 @@
----
-id: 47
-title: 用Docker部署RabbitMQ的踩坑实录：从折腾2小时到10分钟搞定
-slug: docker-rabbitmq
-summary: 上周帮公司新同事搭RabbitMQ环境，他手动装Erlang、配依赖，折腾2小时还没跑起来。我当时就说“用Docker啊！”——结果自己上手也踩了3个坑，卡了快1小时才搞定。后来发现轩辕镜像的RabbitMQ文档写得巨清楚，连标签和端口都列得明明白白，早看文档不至于浪费时间。
-category: Docker,RabbitMQ
-tags: rabbitmq,docker,部署教程
-image_name: library/rabbitmq
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-RabbitMQ.png"
-status: published
-created_at: "2025-11-05 09:11:13"
-updated_at: "2025-11-05 09:11:13"
----
-
 # 用Docker部署RabbitMQ的踩坑实录：从折腾2小时到10分钟搞定
+
+![用Docker部署RabbitMQ的踩坑实录：从折腾2小时到10分钟搞定](https://img.xuanyuan.dev/docker/blog/docker-RabbitMQ.png)
+
+*分类: Docker,RabbitMQ | 标签: rabbitmq,docker,部署教程 | 发布时间: 2025-11-05 09:11:13*
 
 > 上周帮公司新同事搭RabbitMQ环境，他手动装Erlang、配依赖，折腾2小时还没跑起来。我当时就说“用Docker啊！”——结果自己上手也踩了3个坑，卡了快1小时才搞定。后来发现轩辕镜像的RabbitMQ文档写得巨清楚，连标签和端口都列得明明白白，早看文档不至于浪费时间。
 

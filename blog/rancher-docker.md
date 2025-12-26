@@ -1,18 +1,8 @@
----
-id: 146
-title: Rancher 容器化部署指南：基于 Docker 的生产环境实践
-slug: rancher-docker
-summary: Rancher 是一款专为在生产环境中部署容器的组织打造的容器管理平台，它能全面支持容器的部署、监控、扩展与运维等全生命周期管理，帮助企业有效提升生产环境中容器应用的运行效率与稳定性，优化资源配置，简化管理流程，适用于各类需要在生产场景中规模化或复杂化部署容器的机构，满足其对容器应用可靠运行与高效管理的核心需求。
-category: Docker,Rancher
-tags: rancher,docker,部署教程
-image_name: rancher/rancher
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-rancher.png"
-status: published
-created_at: "2025-12-14 02:58:07"
-updated_at: "2025-12-14 02:58:07"
----
-
 # Rancher 容器化部署指南：基于 Docker 的生产环境实践
+
+![Rancher 容器化部署指南：基于 Docker 的生产环境实践](https://img.xuanyuan.dev/docker/blog/docker-rancher.png)
+
+*分类: Docker,Rancher | 标签: rancher,docker,部署教程 | 发布时间: 2025-12-14 02:58:07*
 
 > Rancher 是一款专为在生产环境中部署容器的组织打造的容器管理平台，它能全面支持容器的部署、监控、扩展与运维等全生命周期管理，帮助企业有效提升生产环境中容器应用的运行效率与稳定性，优化资源配置，简化管理流程，适用于各类需要在生产场景中规模化或复杂化部署容器的机构，满足其对容器应用可靠运行与高效管理的核心需求。
 

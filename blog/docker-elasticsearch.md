@@ -1,18 +1,8 @@
----
-id: 36
-title: Docker 部署 Elasticsearch 全流程手册
-slug: docker-elasticsearch
-summary: Elasticsearch（简称 ES）是一款基于 Lucene 构建的分布式、高扩展、高实时的全文搜索引擎，也是 ELK（Elasticsearch + Logstash + Kibana）技术栈的核心组件，目前广泛应用于企业级数据检索与分析场景。
-category: Docker,Elasticsearch
-tags: elasticsearch,docker,部署教程
-image_name: library/elasticsearch
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-elasticserch.png"
-status: published
-created_at: "2025-10-22 06:19:02"
-updated_at: "2025-10-22 06:19:02"
----
-
 # Docker 部署 Elasticsearch 全流程手册
+
+![Docker 部署 Elasticsearch 全流程手册](https://img.xuanyuan.dev/docker/blog/docker-elasticserch.png)
+
+*分类: Docker,Elasticsearch | 标签: elasticsearch,docker,部署教程 | 发布时间: 2025-10-22 06:19:02*
 
 > Elasticsearch（简称 ES）是一款基于 Lucene 构建的分布式、高扩展、高实时的全文搜索引擎，也是 ELK（Elasticsearch + Logstash + Kibana）技术栈的核心组件，目前广泛应用于企业级数据检索与分析场景。
 

@@ -1,18 +1,8 @@
----
-id: 44
-title: Docker 部署银河麒麟（Kylin Linux）全流程教程
-slug: docker-kylin-linux
-summary: 银河麒麟高级服务器操作系统V10是国产自主可控的企业级系统，自带安全增强机制，专为关键行业（政务、金融、能源等）定制，适配国产化硬件与软件生态。通过Docker部署，能把“国产化适配+安全稳定”的优势与容器化的“环境一致、轻量高效”结合，彻底解决传统国产化部署中“环境适配繁琐、迁移难、版本管理乱”的痛点。
-category: Docker,Kylin
-tags: kylin,docker,部署教程
-image_name: macrosan/kylin
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-kylin-linux.png"
-status: published
-created_at: "2025-10-27 03:51:37"
-updated_at: "2025-10-27 06:54:25"
----
-
 # Docker 部署银河麒麟（Kylin Linux）全流程教程
+
+![Docker 部署银河麒麟（Kylin Linux）全流程教程](https://img.xuanyuan.dev/docker/blog/docker-kylin-linux.png)
+
+*分类: Docker,Kylin | 标签: kylin,docker,部署教程 | 发布时间: 2025-10-27 03:51:37*
 
 > 银河麒麟高级服务器操作系统V10是国产自主可控的企业级系统，自带安全增强机制，专为关键行业（政务、金融、能源等）定制，适配国产化硬件与软件生态。通过Docker部署，能把“国产化适配+安全稳定”的优势与容器化的“环境一致、轻量高效”结合，彻底解决传统国产化部署中“环境适配繁琐、迁移难、版本管理乱”的痛点。
 

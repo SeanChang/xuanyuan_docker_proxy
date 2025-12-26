@@ -1,18 +1,8 @@
----
-id: 83
-title: Jenkins Docker 容器化部署指南
-slug: jenkins-docker
-summary: Jenkins是一款领先的开源自动化服务器，广泛应用于持续集成（CI）和持续交付（CD）流程。通过Docker容器化部署Jenkins，可以实现环境隔离、快速部署和版本控制等优势，简化运维复杂度。本文基于轩辕镜像访问支持服务，提供Jenkins的完整Docker部署方案，包括环境准备、镜像拉取、容器配置、功能验证及生产环境优化建议，帮助用户快速搭建稳定高效的Jenkins服务。
-category: Docker,Jenkins
-tags: jenkins,docker,部署教程
-image_name: jenkins/jenkins
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-jenkins.png"
-status: published
-created_at: "2025-12-02 03:45:05"
-updated_at: "2025-12-03 02:07:08"
----
-
 # Jenkins Docker 容器化部署指南
+
+![Jenkins Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-jenkins.png)
+
+*分类: Docker,Jenkins | 标签: jenkins,docker,部署教程 | 发布时间: 2025-12-02 03:45:05*
 
 > Jenkins是一款领先的开源自动化服务器，广泛应用于持续集成（CI）和持续交付（CD）流程。通过Docker容器化部署Jenkins，可以实现环境隔离、快速部署和版本控制等优势，简化运维复杂度。本文基于轩辕镜像访问支持服务，提供Jenkins的完整Docker部署方案，包括环境准备、镜像拉取、容器配置、功能验证及生产环境优化建议，帮助用户快速搭建稳定高效的Jenkins服务。
 

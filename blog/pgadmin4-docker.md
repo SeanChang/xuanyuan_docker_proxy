@@ -1,18 +1,8 @@
----
-id: 78
-title: PGADMIN4 Docker 容器化部署指南
-slug: pgadmin4-docker
-summary: PGADMIN4是一款功能强大的开源Web管理工具，专为PostgreSQL数据库设计。它提供直观的图形界面，支持数据库建模、SQL查询、性能监控、用户权限管理等核心功能，是PostgreSQL数据库管理员和开发人员的必备工具。通过Docker容器化部署PGADMIN4，可实现环境隔离、快速部署、版本控制和跨平台一致性，有效降低运维复杂度，提升工作效率。
-category: Docker,PGADMIN4
-tags: pgadmin4,docker,部署教程
-image_name: dpage/pgadmin4
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-pgadmin4.png"
-status: published
-created_at: "2025-11-30 02:39:38"
-updated_at: "2025-12-02 02:07:08"
----
-
 # PGADMIN4 Docker 容器化部署指南
+
+![PGADMIN4 Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-pgadmin4.png)
+
+*分类: Docker,PGADMIN4 | 标签: pgadmin4,docker,部署教程 | 发布时间: 2025-11-30 02:39:38*
 
 > PGADMIN4是一款功能强大的开源Web管理工具，专为PostgreSQL数据库设计。它提供直观的图形界面，支持数据库建模、SQL查询、性能监控、用户权限管理等核心功能，是PostgreSQL数据库管理员和开发人员的必备工具。通过Docker容器化部署PGADMIN4，可实现环境隔离、快速部署、版本控制和跨平台一致性，有效降低运维复杂度，提升工作效率。
 

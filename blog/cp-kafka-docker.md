@@ -1,18 +1,8 @@
----
-id: 114
-title: CP-KAFKA Docker 容器化部署指南
-slug: cp-kafka-docker
-summary: CP-KAFKA是Confluent官方提供的Apache Kafka容器化解决方案，属于Confluent Platform的核心组件。作为一个分布式流处理平台，Kafka广泛应用于高吞吐量的消息传递、日志收集、数据流处理等场景。Confluent Community Docker Image for Apache Kafka提供了便捷的容器化部署方式，简化了Kafka的安装配置流程，同时保持了企业级消息系统的稳定性和可靠性。
-category: Docker,CP-KAFKA
-tags: cp-kafka,docker,部署教程
-image_name: confluentinc/cp-kafka
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-cp-kafka.png"
-status: published
-created_at: "2025-12-09 06:48:10"
-updated_at: "2025-12-09 06:48:10"
----
-
 # CP-KAFKA Docker 容器化部署指南
+
+![CP-KAFKA Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-cp-kafka.png)
+
+*分类: Docker,CP-KAFKA | 标签: cp-kafka,docker,部署教程 | 发布时间: 2025-12-09 06:48:10*
 
 > CP-KAFKA是Confluent官方提供的Apache Kafka容器化解决方案，属于Confluent Platform的核心组件。作为一个分布式流处理平台，Kafka广泛应用于高吞吐量的消息传递、日志收集、数据流处理等场景。Confluent Community Docker Image for Apache Kafka提供了便捷的容器化部署方式，简化了Kafka的安装配置流程，同时保持了企业级消息系统的稳定性和可靠性。
 

@@ -1,18 +1,8 @@
----
-id: 93
-title: DIFY-PLUGIN-DAEMON Docker 容器化部署指南
-slug: dify-plugin-daemon-docker
-summary: DIFY-PLUGIN-DAEMON（镜像名称：`langgenius/dify-plugin-daemon`）是Dify平台的核心组件之一，作为「插件守护进程（Plugin Daemon）」负责管理插件全生命周期、执行插件任务及封装运行环境。该组件是Dify平台插件功能的关键中间件，需与`dify-api`、`dify-web`、`dify-db`等组件协同工作，支持Linux/arm64架构，为用户提供插件注册、任务调度、依赖管理等核心能力。
-category: Docker,DIFY-PLUGIN-DAEMON
-tags: dify-plugin-daemon,docker,部署教程
-image_name: langgenius/dify-plugin-daemon
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-dify-plugin-daemon.png"
-status: published
-created_at: "2025-12-03 05:32:37"
-updated_at: "2025-12-03 05:32:37"
----
-
 # DIFY-PLUGIN-DAEMON Docker 容器化部署指南
+
+![DIFY-PLUGIN-DAEMON Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-dify-plugin-daemon.png)
+
+*分类: Docker,DIFY-PLUGIN-DAEMON | 标签: dify-plugin-daemon,docker,部署教程 | 发布时间: 2025-12-03 05:32:37*
 
 > DIFY-PLUGIN-DAEMON（镜像名称：`langgenius/dify-plugin-daemon`）是Dify平台的核心组件之一，作为「插件守护进程（Plugin Daemon）」负责管理插件全生命周期、执行插件任务及封装运行环境。该组件是Dify平台插件功能的关键中间件，需与`dify-api`、`dify-web`、`dify-db`等组件协同工作，支持Linux/arm64架构，为用户提供插件注册、任务调度、依赖管理等核心能力。
 

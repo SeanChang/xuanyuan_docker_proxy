@@ -1,18 +1,8 @@
----
-id: 92
-title: DIFY-SANDBOX Docker 容器化部署指南
-slug: dify-sandbox-docker
-summary: DIFY-SANDBOX是一款专注于提供安全、轻量级且高效的代码执行环境的容器化应用。基于Linux Seccomp安全机制和Docker容器隔离技术，DIFY-SANDBOX能够有效隔离非可信代码的执行环境，防止恶意代码对系统造成损害。
-category: Docker,DIFY-SANDBOX
-tags: dify-sandbox,docker,部署教程
-image_name: langgenius/dify-sandbox
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-dify-sandbox.png"
-status: published
-created_at: "2025-12-03 03:13:17"
-updated_at: "2025-12-03 03:13:17"
----
-
 # DIFY-SANDBOX Docker 容器化部署指南
+
+![DIFY-SANDBOX Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-dify-sandbox.png)
+
+*分类: Docker,DIFY-SANDBOX | 标签: dify-sandbox,docker,部署教程 | 发布时间: 2025-12-03 03:13:17*
 
 > DIFY-SANDBOX是一款专注于提供安全、轻量级且高效的代码执行环境的容器化应用。基于Linux Seccomp安全机制和Docker容器隔离技术，DIFY-SANDBOX能够有效隔离非可信代码的执行环境，防止恶意代码对系统造成损害。
 

@@ -1,18 +1,8 @@
----
-id: 94
-title: NGINX-PROXY-MANAGER Docker 容器化部署指南
-slug: nginx-proxy-manager-docker
-summary: NGINX-PROXY-MANAGER（简称NPM）是一款基于Docker容器的Nginx代理主机管理工具，提供直观的Web界面用于配置反向代理、SSL证书自动签发与续期、流量路由等功能。其核心优势在于将复杂的Nginx配置简化为图形化操作，无需手动编写Nginx配置文件，即可快速实现域名代理、负载均衡、HTTPS加密等高级功能。
-category: Docker,NGINX-PROXY-MANAGER
-tags: nginx-proxy-manager,docker,部署教程
-image_name: jc21/nginx-proxy-manager
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-nginx-proxy-manager.png"
-status: published
-created_at: "2025-12-03 05:41:32"
-updated_at: "2025-12-03 05:41:32"
----
-
 # NGINX-PROXY-MANAGER Docker 容器化部署指南
+
+![NGINX-PROXY-MANAGER Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-nginx-proxy-manager.png)
+
+*分类: Docker,NGINX-PROXY-MANAGER | 标签: nginx-proxy-manager,docker,部署教程 | 发布时间: 2025-12-03 05:41:32*
 
 > NGINX-PROXY-MANAGER（简称NPM）是一款基于Docker容器的Nginx代理主机管理工具，提供直观的Web界面用于配置反向代理、SSL证书自动签发与续期、流量路由等功能。其核心优势在于将复杂的Nginx配置简化为图形化操作，无需手动编写Nginx配置文件，即可快速实现域名代理、负载均衡、HTTPS加密等高级功能。
 

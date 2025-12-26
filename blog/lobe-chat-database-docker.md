@@ -1,18 +1,8 @@
----
-id: 62
-title: LOBE-CHAT-DATABASE Docker 容器化部署指南
-slug: lobe-chat-database-docker
-summary: LOBE-CHAT-DATABASE（以下简称Lobe数据库）是Lobe Chat生态的核心组件，作为开源、可扩展、高性能的聊天机器人框架的数据存储层，为Lobe Chat应用提供稳定可靠的数据持久化支持。该组件基于现代数据库技术构建，针对LLM（大语言模型）应用场景优化，支持对话历史存储、用户数据管理、模型配置持久化等关键功能。
-category: Docker,LOBE-CHAT
-tags: lobe-chat-database,docker,部署教程
-image_name: lobehub/lobe-chat-database
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-lobe-chat-database.png"
-status: published
-created_at: "2025-11-16 06:18:34"
-updated_at: "2025-11-16 06:18:34"
----
-
 # LOBE-CHAT-DATABASE Docker 容器化部署指南
+
+![LOBE-CHAT-DATABASE Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-lobe-chat-database.png)
+
+*分类: Docker,LOBE-CHAT | 标签: lobe-chat-database,docker,部署教程 | 发布时间: 2025-11-16 06:18:34*
 
 > LOBE-CHAT-DATABASE（以下简称Lobe数据库）是Lobe Chat生态的核心组件，作为开源、可扩展、高性能的聊天机器人框架的数据存储层，为Lobe Chat应用提供稳定可靠的数据持久化支持。该组件基于现代数据库技术构建，针对LLM（大语言模型）应用场景优化，支持对话历史存储、用户数据管理、模型配置持久化等关键功能。
 

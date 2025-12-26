@@ -1,18 +1,8 @@
----
-id: 116
-title: NEO4J Docker 容器化部署指南
-slug: neo4j-docker
-summary: Neo4j是世界领先的图数据库，采用原生图存储和处理技术，专为存储、查询和处理高度连接的数据而设计。作为一种高性能数据库，Neo4j能够高效处理复杂的关系数据，适用于社交网络分析、推荐系统、知识图谱、欺诈检测等多种场景。
-category: Docker,NEO4J
-tags: neo4j,docker,部署教程
-image_name: library/neo4j
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-neo4j.png"
-status: published
-created_at: "2025-12-09 06:56:18"
-updated_at: "2025-12-09 06:56:18"
----
-
 # NEO4J Docker 容器化部署指南
+
+![NEO4J Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-neo4j.png)
+
+*分类: Docker,NEO4J | 标签: neo4j,docker,部署教程 | 发布时间: 2025-12-09 06:56:18*
 
 > Neo4j是世界领先的图数据库，采用原生图存储和处理技术，专为存储、查询和处理高度连接的数据而设计。作为一种高性能数据库，Neo4j能够高效处理复杂的关系数据，适用于社交网络分析、推荐系统、知识图谱、欺诈检测等多种场景。
 

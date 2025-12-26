@@ -1,18 +1,8 @@
----
-id: 80
-title: Hitokoto API Docker 容器化部署指南
-slug: hitokoto-api-docker
-summary: Hitokoto API 是基于 Teng-koa 框架实现的开源一言接口服务，提供了丰富的功能特性和可扩展性。相较于传统部署方式，Docker 容器化部署能够显著简化环境配置、提高部署一致性，并降低版本管理复杂度。本文档将详细介绍如何通过 Docker 快速部署 Hitokoto API 服务，包括环境准备、镜像拉取、容器配置、功能测试及生产环境优化建议。
-category: Docker,Hitokoto
-tags: hitokoto,docker,部署教程
-image_name: hitokoto/api
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-hitokoto.png"
-status: published
-created_at: "2025-12-02 03:23:34"
-updated_at: "2025-12-02 03:23:34"
----
-
 # Hitokoto API Docker 容器化部署指南
+
+![Hitokoto API Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-hitokoto.png)
+
+*分类: Docker,Hitokoto | 标签: hitokoto,docker,部署教程 | 发布时间: 2025-12-02 03:23:34*
 
 > Hitokoto API 是基于 Teng-koa 框架实现的开源一言接口服务，提供了丰富的功能特性和可扩展性。相较于传统部署方式，Docker 容器化部署能够显著简化环境配置、提高部署一致性，并降低版本管理复杂度。本文档将详细介绍如何通过 Docker 快速部署 Hitokoto API 服务，包括环境准备、镜像拉取、容器配置、功能测试及生产环境优化建议。
 

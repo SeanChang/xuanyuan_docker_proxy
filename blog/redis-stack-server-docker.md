@@ -1,18 +1,8 @@
----
-id: 74
-title: REDIS-STACK-SERVER Docker 容器化部署指南
-slug: redis-stack-server-docker
-summary: REDIS-STACK-SERVER 是 Redis 官方推出的一站式数据平台，整合了 Redis 核心服务器与多个扩展模块（包括 RediSearch、RedisJSON、RedisGraph、RedisTimeSeries、RedisBloom 等），提供强大的多模型数据处理能力。通过容器化部署 REDIS-STACK-SERVER，可以快速实现环境一致性、简化部署流程并提高资源利用率，适用于开发、测试及生产环境。
-category: Docker,REDIS-STACK-SERVER
-tags: redis-stack-server,docker,部署教程
-image_name: redis/redis-stack-server
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-redis-stack-server.png"
-status: published
-created_at: "2025-11-26 06:09:51"
-updated_at: "2025-11-26 06:09:51"
----
-
 # REDIS-STACK-SERVER Docker 容器化部署指南
+
+![REDIS-STACK-SERVER Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-redis-stack-server.png)
+
+*分类: Docker,REDIS-STACK-SERVER | 标签: redis-stack-server,docker,部署教程 | 发布时间: 2025-11-26 06:09:51*
 
 > REDIS-STACK-SERVER 是 Redis 官方推出的一站式数据平台，整合了 Redis 核心服务器与多个扩展模块（包括 RediSearch、RedisJSON、RedisGraph、RedisTimeSeries、RedisBloom 等），提供强大的多模型数据处理能力。通过容器化部署 REDIS-STACK-SERVER，可以快速实现环境一致性、简化部署流程并提高资源利用率，适用于开发、测试及生产环境。
 

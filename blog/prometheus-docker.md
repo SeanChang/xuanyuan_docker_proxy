@@ -1,18 +1,8 @@
----
-id: 77
-title: Prometheus Docker 容器化部署指南
-slug: prometheus-docker
-summary: Prometheus是由Cloud Native Computing Foundation（CNCF）托管的开源系统监控和警报工具包，采用时序数据库存储监控数据，通过多维度数据模型和灵活的查询语言PromQL提供强大的指标分析能力。
-category: Docker,Prometheus
-tags: prometheus,docker,部署教程
-image_name: prom/prometheus
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-prometheus.png"
-status: published
-created_at: "2025-11-29 02:16:54"
-updated_at: "2025-12-01 03:01:14"
----
-
 # Prometheus Docker 容器化部署指南
+
+![Prometheus Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-prometheus.png)
+
+*分类: Docker,Prometheus | 标签: prometheus,docker,部署教程 | 发布时间: 2025-11-29 02:16:54*
 
 > Prometheus是由Cloud Native Computing Foundation（CNCF）托管的开源系统监控和警报工具包，采用时序数据库存储监控数据，通过多维度数据模型和灵活的查询语言PromQL提供强大的指标分析能力。
 

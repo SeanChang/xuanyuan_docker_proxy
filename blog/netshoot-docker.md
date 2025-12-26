@@ -1,18 +1,8 @@
----
-id: 149
-title: NETSHOOT Docker 容器化部署与网络故障排查指南
-slug: netshoot-docker
-summary: "NETSHOOT是一款专为Docker和Kubernetes环境设计的网络故障排查\"瑞士军刀\"容器，集成了数十种网络诊断工具，可帮助运维工程师快速定位和解决网络相关问题。作为一款轻量级但功能强大的网络调试工具集，NETSHOOT支持多种网络命名空间接入方式，能够深入容器、主机和网络本身的网络栈进行全方位诊断。"
-category: Docker,NETSHOOT
-tags: netshoot,docker,部署教程
-image_name: nicolaka/netshoot
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-netshoot.png"
-status: published
-created_at: "2025-12-14 03:15:07"
-updated_at: "2025-12-14 03:15:07"
----
-
 # NETSHOOT Docker 容器化部署与网络故障排查指南
+
+![NETSHOOT Docker 容器化部署与网络故障排查指南](https://img.xuanyuan.dev/docker/blog/docker-netshoot.png)
+
+*分类: Docker,NETSHOOT | 标签: netshoot,docker,部署教程 | 发布时间: 2025-12-14 03:15:07*
 
 > NETSHOOT是一款专为Docker和Kubernetes环境设计的网络故障排查"瑞士军刀"容器，集成了数十种网络诊断工具，可帮助运维工程师快速定位和解决网络相关问题。作为一款轻量级但功能强大的网络调试工具集，NETSHOOT支持多种网络命名空间接入方式，能够深入容器、主机和网络本身的网络栈进行全方位诊断。
 

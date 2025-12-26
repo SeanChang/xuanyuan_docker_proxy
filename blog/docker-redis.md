@@ -1,18 +1,8 @@
----
-id: 3
-title: 手把手教你用 Docker 部署 Redis
-slug: docker-redis
-summary: 本文详细介绍从轩辕镜像拉取Redis镜像的多种方式（登录验证、免登录、官方直连等），提供快速部署、持久化部署（推荐）、docker-compose部署（企业级）三种方案，还包含结果验证方法及无法远程连接、设置密码等常见问题的解决办法，助力用户掌握Redis的Docker部署全流程。
-category: Docker,Redis
-tags: redis,docker,部署教程
-image_name: library/redis
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-redis.png"
-status: published
-created_at: "2025-10-03 06:24:12"
-updated_at: "2025-10-08 06:46:53"
----
-
 # 手把手教你用 Docker 部署 Redis
+
+![手把手教你用 Docker 部署 Redis](https://img.xuanyuan.dev/docker/blog/docker-redis.png)
+
+*分类: Docker,Redis | 标签: redis,docker,部署教程 | 发布时间: 2025-10-03 06:24:12*
 
 > 本文详细介绍从轩辕镜像拉取Redis镜像的多种方式（登录验证、免登录、官方直连等），提供快速部署、持久化部署（推荐）、docker-compose部署（企业级）三种方案，还包含结果验证方法及无法远程连接、设置密码等常见问题的解决办法，助力用户掌握Redis的Docker部署全流程。
 

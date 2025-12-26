@@ -1,18 +1,8 @@
----
-id: 139
-title: KIBANA Docker 容器化部署指南
-slug: kibana-docker
-summary: Kibana是一个开源的分析与可视化平台，专为与Elasticsearch协作而设计。它允许用户搜索、查看并与存储在Elasticsearch索引中的数据进行交互，通过各种图表、表格和地图轻松执行高级数据分析和数据可视化。作为Elastic Stack（ELK Stack）的核心组件之一，Kibana广泛应用于日志分析、指标监控、安全分析等场景，为用户提供直观的数据洞察能力。
-category: Docker,KIBANA
-tags: kibana,docker,部署教程
-image_name: library/kibana
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-kibana.png"
-status: published
-created_at: "2025-12-13 06:02:47"
-updated_at: "2025-12-13 06:02:47"
----
-
 # KIBANA Docker 容器化部署指南
+
+![KIBANA Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-kibana.png)
+
+*分类: Docker,KIBANA | 标签: kibana,docker,部署教程 | 发布时间: 2025-12-13 06:02:47*
 
 > Kibana是一个开源的分析与可视化平台，专为与Elasticsearch协作而设计。它允许用户搜索、查看并与存储在Elasticsearch索引中的数据进行交互，通过各种图表、表格和地图轻松执行高级数据分析和数据可视化。作为Elastic Stack（ELK Stack）的核心组件之一，Kibana广泛应用于日志分析、指标监控、安全分析等场景，为用户提供直观的数据洞察能力。
 

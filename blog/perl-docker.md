@@ -1,18 +1,8 @@
----
-id: 49
-title: PERL Docker 容器化部署指南
-slug: perl-docker
-summary: PERL（Practical Extraction and Reporting Language）是一种高级、通用、解释型、动态编程语言，其语法借鉴了C、Shell脚本、AWK和sed等多种语言特性，广泛应用于系统管理、Web开发、网络编程等领域。通过Docker容器化部署PERL，可以实现环境一致性、快速部署和资源隔离，有效简化开发与运维流程。
-category: Docker,PERL
-tags: perl,docker,部署教程
-image_name: library/perl
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-perl.png"
-status: published
-created_at: "2025-11-08 12:26:11"
-updated_at: "2025-11-08 12:26:11"
----
-
 # PERL Docker 容器化部署指南
+
+![PERL Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-perl.png)
+
+*分类: Docker,PERL | 标签: perl,docker,部署教程 | 发布时间: 2025-11-08 12:26:11*
 
 > PERL（Practical Extraction and Reporting Language）是一种高级、通用、解释型、动态编程语言，其语法借鉴了C、Shell脚本、AWK和sed等多种语言特性，广泛应用于系统管理、Web开发、网络编程等领域。通过Docker容器化部署PERL，可以实现环境一致性、快速部署和资源隔离，有效简化开发与运维流程。
 

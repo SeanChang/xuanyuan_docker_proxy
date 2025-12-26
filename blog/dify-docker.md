@@ -1,18 +1,8 @@
----
-id: 12
-title: Dify Docker 部署详解
-slug: dify-docker
-summary: Dify 是由 LangGenius 开发的开源 LLM 应用开发平台，可帮助开发者与团队快速构建 AI 应用（如智能聊天机器人、私有知识库问答、自动化业务工作流等）。它支持可视化开发界面、多模型集成（GPT、文心一言、通义千问等），并提供完整的前后端架构；通过自托管部署，能有效保障数据隐私与安全，广泛适用于企业私有环境、定制化 AI 服务场景。
-category: Docker,Dify
-tags: defy,docker,部署教程
-image_name: langgenius/dify-api
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-dify.png"
-status: published
-created_at: "2025-10-07 02:41:29"
-updated_at: "2025-10-08 06:45:39"
----
-
 # Dify Docker 部署详解
+
+![Dify Docker 部署详解](https://img.xuanyuan.dev/docker/blog/docker-dify.png)
+
+*分类: Docker,Dify | 标签: defy,docker,部署教程 | 发布时间: 2025-10-07 02:41:29*
 
 > Dify 是由 LangGenius 开发的开源 LLM 应用开发平台，可帮助开发者与团队快速构建 AI 应用（如智能聊天机器人、私有知识库问答、自动化业务工作流等）。它支持可视化开发界面、多模型集成（GPT、文心一言、通义千问等），并提供完整的前后端架构；通过自托管部署，能有效保障数据隐私与安全，广泛适用于企业私有环境、定制化 AI 服务场景。
 

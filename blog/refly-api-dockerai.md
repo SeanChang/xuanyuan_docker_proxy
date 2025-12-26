@@ -1,18 +1,8 @@
----
-id: 128
-title: REFLY-API Docker容器化部署指南：面向非技术创作者的AI工作流平台
-slug: refly-api-dockerai
-summary: REFLY-API（镜像名称：`reflyai/refly-api`）是全球首个面向非技术创作者的Vibe工作流平台的核心服务组件，旨在通过简单的提示词和可视化画布赋能用户构建、分享和变现AI自动化工作流，全程无需编写代码。
-category: Docker,REFLY-API
-tags: refly-api,docker,部署教程
-image_name: reflyai/refly-api
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-refly-api.png"
-status: published
-created_at: "2025-12-10 08:20:30"
-updated_at: "2025-12-10 08:20:30"
----
-
 # REFLY-API Docker容器化部署指南：面向非技术创作者的AI工作流平台
+
+![REFLY-API Docker容器化部署指南：面向非技术创作者的AI工作流平台](https://img.xuanyuan.dev/docker/blog/docker-refly-api.png)
+
+*分类: Docker,REFLY-API | 标签: refly-api,docker,部署教程 | 发布时间: 2025-12-10 08:20:30*
 
 > REFLY-API（镜像名称：`reflyai/refly-api`）是全球首个面向非技术创作者的Vibe工作流平台的核心服务组件，旨在通过简单的提示词和可视化画布赋能用户构建、分享和变现AI自动化工作流，全程无需编写代码。
 

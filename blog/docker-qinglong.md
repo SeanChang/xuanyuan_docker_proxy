@@ -1,18 +1,8 @@
----
-id: 50
-title: Docker 容器化部署 QINGLONG 面板指南
-slug: docker-qinglong
-summary: QINGLONG（中文名称：青龙）是一款支持多脚本语言的定时任务管理面板，具备脚本在线管理、环境变量配置、任务日志查看、系统级通知等核心功能。该工具支持Python3、JavaScript、Shell、TypeScript等多种脚本语言，提供深色模式和移动端操作支持，适用于需要自动化任务调度的场景。
-category: QINGLONG,Docker
-tags: qinglong,docker,部署教程
-image_name: whyour/qinglong
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-qinglong.png"
-status: published
-created_at: "2025-11-09 11:02:10"
-updated_at: "2025-11-09 11:02:10"
----
-
 # Docker 容器化部署 QINGLONG 面板指南
+
+![Docker 容器化部署 QINGLONG 面板指南](https://img.xuanyuan.dev/docker/blog/docker-qinglong.png)
+
+*分类: QINGLONG,Docker | 标签: qinglong,docker,部署教程 | 发布时间: 2025-11-09 11:02:10*
 
 > QINGLONG（中文名称：青龙）是一款支持多脚本语言的定时任务管理面板，具备脚本在线管理、环境变量配置、任务日志查看、系统级通知等核心功能。该工具支持Python3、JavaScript、Shell、TypeScript等多种脚本语言，提供深色模式和移动端操作支持，适用于需要自动化任务调度的场景。
 

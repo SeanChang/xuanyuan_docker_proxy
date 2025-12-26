@@ -1,18 +1,8 @@
----
-id: 105
-title: PANDAS FINAL Docker 镜像部署指南
-slug: pandas-final-docker
-summary: PANDAS_FINAL是一款基于Python数据分析库pandas构建的容器化应用，旨在提供开箱即用的数据分析环境。该Docker镜像集成了pandas核心功能及常用依赖（如numpy、matplotlib、openpyxl等），有效简化了数据处理、清洗、转换及统计分析的环境配置流程。其设计目标是帮助数据从业者快速启动数据相关工作流，适用于个人项目开发、数据预处理任务及轻量级数据分析服务部署场景。
-category: Docker,PANDAS FINAL
-tags: pandas-final,docker,部署教程
-image_name: namanjain12/pandas_final
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-pandas_final.png"
-status: published
-created_at: "2025-12-06 06:02:58"
-updated_at: "2025-12-06 06:03:08"
----
-
 # PANDAS FINAL Docker 镜像部署指南
+
+![PANDAS FINAL Docker 镜像部署指南](https://img.xuanyuan.dev/docker/blog/docker-pandas_final.png)
+
+*分类: Docker,PANDAS FINAL | 标签: pandas-final,docker,部署教程 | 发布时间: 2025-12-06 06:02:58*
 
 > PANDAS_FINAL是一款基于Python数据分析库pandas构建的容器化应用，旨在提供开箱即用的数据分析环境。该Docker镜像集成了pandas核心功能及常用依赖（如numpy、matplotlib、openpyxl等），有效简化了数据处理、清洗、转换及统计分析的环境配置流程。其设计目标是帮助数据从业者快速启动数据相关工作流，适用于个人项目开发、数据预处理任务及轻量级数据分析服务部署场景。
 

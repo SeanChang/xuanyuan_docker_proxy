@@ -1,18 +1,8 @@
----
-id: 110
-title: SEAFILE-MC Docker 容器化部署指南
-slug: seafile-mc-docker
-summary: SEAFILE-MC是基于Docker容器化的Seafile应用部署方案。Seafile是一款专注于稳定性和高性能的本地部署文件同步与共享解决方案，其社区版开源且免费可用，适用于企业、团队及个人搭建私有文件管理系统。通过Docker容器化部署SEAFILE-MC，可简化安装流程、提高环境一致性，并便于维护和升级。
-category: Docker,SEAFILE-MC
-tags: seafile-mc,docker,部署教程
-image_name: seafileltd/seafile-mc
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-seafile-mc.png"
-status: published
-created_at: "2025-12-06 16:00:05"
-updated_at: "2025-12-06 16:00:05"
----
-
 # SEAFILE-MC Docker 容器化部署指南
+
+![SEAFILE-MC Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-seafile-mc.png)
+
+*分类: Docker,SEAFILE-MC | 标签: seafile-mc,docker,部署教程 | 发布时间: 2025-12-06 16:00:05*
 
 > SEAFILE-MC是基于Docker容器化的Seafile应用部署方案。Seafile是一款专注于稳定性和高性能的本地部署文件同步与共享解决方案，其社区版开源且免费可用，适用于企业、团队及个人搭建私有文件管理系统。通过Docker容器化部署SEAFILE-MC，可简化安装流程、提高环境一致性，并便于维护和升级。
 

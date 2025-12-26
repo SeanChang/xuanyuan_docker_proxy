@@ -1,18 +1,8 @@
----
-id: 73
-title: MINIOB Docker 容器化部署指南
-slug: miniob-docker
-summary: MINIOB是由OceanBase与华中科技大学联合开发的数据库内核入门教程实践工具，旨在帮助零数据库基础的学习者快速理解和掌握数据库内核原理。该工具通过简化数据库核心模块（如存储引擎、查询优化器、事务管理等）的实现，使学习者能够直观地了解各模块功能及相互关联，并通过实践操作设计高效SQL语句。
-category: Docker,MINIOB
-tags: miniob,docker,部署教程
-image_name: oceanbase/miniob
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-oceanbase-miniob.png"
-status: published
-created_at: "2025-11-26 06:02:13"
-updated_at: "2025-11-26 06:02:13"
----
-
 # MINIOB Docker 容器化部署指南
+
+![MINIOB Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-oceanbase-miniob.png)
+
+*分类: Docker,MINIOB | 标签: miniob,docker,部署教程 | 发布时间: 2025-11-26 06:02:13*
 
 > MINIOB是由OceanBase与华中科技大学联合开发的数据库内核入门教程实践工具，旨在帮助零数据库基础的学习者快速理解和掌握数据库内核原理。该工具通过简化数据库核心模块（如存储引擎、查询优化器、事务管理等）的实现，使学习者能够直观地了解各模块功能及相互关联，并通过实践操作设计高效SQL语句。
 

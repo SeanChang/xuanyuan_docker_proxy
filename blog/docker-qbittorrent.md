@@ -1,18 +1,8 @@
----
-id: 8
-title: Docker 中部署 qBittorrent 全指南
-slug: docker-qbittorrent
-summary: 本文详细介绍在Docker中部署linuxserver/qbittorrent的完整流程，包括查看该镜像特点、通过轩辕镜像或官方方式下载镜像，提供快速部署（测试用）、挂载目录（生产用）、docker-compose（企业级）三种部署方式，以及验证部署结果的方法和解决登录密码、下载速度等常见问题的方案。
-category: "Docker,qBittorrent "
-tags: qBittorrent,docker,部署教程
-image_name: linuxserver/qbittorrent
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-qbittorrent.png"
-status: published
-created_at: "2025-10-03 12:53:27"
-updated_at: "2025-10-08 06:46:09"
----
-
 # Docker 中部署 qBittorrent 全指南
+
+![Docker 中部署 qBittorrent 全指南](https://img.xuanyuan.dev/docker/blog/docker-qbittorrent.png)
+
+*分类: Docker,qBittorrent  | 标签: qBittorrent,docker,部署教程 | 发布时间: 2025-10-03 12:53:27*
 
 > 本文详细介绍在Docker中部署linuxserver/qbittorrent的完整流程，包括查看该镜像特点、通过轩辕镜像或官方方式下载镜像，提供快速部署（测试用）、挂载目录（生产用）、docker-compose（企业级）三种部署方式，以及验证部署结果的方法和解决登录密码、下载速度等常见问题的方案。
 

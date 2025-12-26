@@ -1,18 +1,8 @@
----
-id: 37
-title: Docker 部署 WordPress 全流程教程
-slug: docker-wordpress
-summary: WordPress 是全球最流行的开源内容管理系统（CMS），基于 PHP + MySQL 架构，截至目前，全球超过 43% 的网站使用 WordPress 构建，从个人博客到大型媒体平台（如《纽约时报》部分栏目）均有应用，是入门建站和快速迭代业务的首选工具。
-category: Docker,WordPress
-tags: wordPress,docker,部署教程
-image_name: library/wordpress
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-wordpress.png"
-status: published
-created_at: "2025-10-23 13:43:41"
-updated_at: "2025-10-23 13:43:41"
----
-
 # Docker 部署 WordPress 全流程教程
+
+![Docker 部署 WordPress 全流程教程](https://img.xuanyuan.dev/docker/blog/docker-wordpress.png)
+
+*分类: Docker,WordPress | 标签: wordPress,docker,部署教程 | 发布时间: 2025-10-23 13:43:41*
 
 > WordPress 是全球最流行的开源内容管理系统（CMS），基于 PHP + MySQL 架构，截至目前，全球超过 43% 的网站使用 WordPress 构建，从个人博客到大型媒体平台（如《纽约时报》部分栏目）均有应用，是入门建站和快速迭代业务的首选工具。
 

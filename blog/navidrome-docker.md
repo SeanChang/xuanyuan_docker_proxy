@@ -1,18 +1,8 @@
----
-id: 123
-title: NAVIDROME Docker 容器化部署指南
-slug: navidrome-docker
-summary: NAVIDROME是一款开源的基于Web的音乐收藏服务器和流媒体服务，旨在为用户提供从任何浏览器或移动设备访问个人音乐收藏的自由体验。作为一款轻量级解决方案，NAVIDROME能够高效处理大型音乐库，同时保持极低的资源占用，适合个人用户和小型组织构建私人音乐流媒体服务。
-category: Docker,NAVIDROME
-tags: navidrome,docker,部署教程
-image_name: deluan/navidrome
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-navidrome.png"
-status: published
-created_at: "2025-12-10 06:57:35"
-updated_at: "2025-12-10 06:57:35"
----
-
 # NAVIDROME Docker 容器化部署指南
+
+![NAVIDROME Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-navidrome.png)
+
+*分类: Docker,NAVIDROME | 标签: navidrome,docker,部署教程 | 发布时间: 2025-12-10 06:57:35*
 
 > NAVIDROME是一款开源的基于Web的音乐收藏服务器和流媒体服务，旨在为用户提供从任何浏览器或移动设备访问个人音乐收藏的自由体验。作为一款轻量级解决方案，NAVIDROME能够高效处理大型音乐库，同时保持极低的资源占用，适合个人用户和小型组织构建私人音乐流媒体服务。
 

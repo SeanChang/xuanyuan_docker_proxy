@@ -1,18 +1,8 @@
----
-id: 134
-title: LAMP Docker 容器化部署指南
-slug: lamp-docker
-summary: LAMP是一种成熟的开源Web应用程序架构，由Linux操作系统、Apache网页服务器、MySQL数据库和PHP编程语言组成。通过Docker容器化部署LAMP架构，可以显著简化环境配置流程，确保开发、测试和生产环境的一致性，同时提高部署效率和系统可维护性。
-category: Docker,LAMP
-tags: lamp,docker,部署教程
-image_name: mattrayner/lamp
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-lamp.png"
-status: published
-created_at: "2025-12-11 07:03:20"
-updated_at: "2025-12-11 07:03:20"
----
-
 # LAMP Docker 容器化部署指南
+
+![LAMP Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-lamp.png)
+
+*分类: Docker,LAMP | 标签: lamp,docker,部署教程 | 发布时间: 2025-12-11 07:03:20*
 
 > LAMP是一种成熟的开源Web应用程序架构，由Linux操作系统、Apache网页服务器、MySQL数据库和PHP编程语言组成。通过Docker容器化部署LAMP架构，可以显著简化环境配置流程，确保开发、测试和生产环境的一致性，同时提高部署效率和系统可维护性。
 

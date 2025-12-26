@@ -1,18 +1,8 @@
----
-id: 84
-title: SERVER (vaultwarden/server) Docker 容器化部署指南
-slug: server-vaultwardenserver-docker
-summary: SERVER（vaultwarden/server）是一个基于Rust实现的Bitwarden API替代方案，提供轻量级、自托管的密码管理解决方案。该项目前身为Bitwarden_RS，旨在为资源受限环境提供与官方Bitwarden服务器兼容的功能集，同时保持较低的系统资源占用。
-category: Docker,vaultwarden
-tags: vaultwarden,docker,部署教程
-image_name: vaultwarden/server
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-vaultwarden.png"
-status: published
-created_at: "2025-12-02 03:56:05"
-updated_at: "2025-12-02 03:56:05"
----
-
 # SERVER (vaultwarden/server) Docker 容器化部署指南
+
+![SERVER (vaultwarden/server) Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-vaultwarden.png)
+
+*分类: Docker,vaultwarden | 标签: vaultwarden,docker,部署教程 | 发布时间: 2025-12-02 03:56:05*
 
 > SERVER（vaultwarden/server）是一个基于Rust实现的Bitwarden API替代方案，提供轻量级、自托管的密码管理解决方案。该项目前身为Bitwarden_RS，旨在为资源受限环境提供与官方Bitwarden服务器兼容的功能集，同时保持较低的系统资源占用。
 

@@ -1,18 +1,8 @@
----
-id: 31
-title: HashiCorp Vault 镜像拉取与 Docker 部署全指南
-slug: hashicorp-vault-docker
-summary: Vault是HashiCorp推出的企业级秘密管理工具，专为集中保护、控制和审计敏感信息访问而设计。
-category: Docker,Vault
-tags: vault,docker,部署教程
-image_name: hashicorp/vault
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-vault.png"
-status: published
-created_at: "2025-10-15 07:53:43"
-updated_at: "2025-11-05 03:06:05"
----
-
 # HashiCorp Vault 镜像拉取与 Docker 部署全指南
+
+![HashiCorp Vault 镜像拉取与 Docker 部署全指南](https://img.xuanyuan.dev/docker/blog/docker-vault.png)
+
+*分类: Docker,Vault | 标签: vault,docker,部署教程 | 发布时间: 2025-10-15 07:53:43*
 
 > Vault是HashiCorp推出的企业级秘密管理工具，专为集中保护、控制和审计敏感信息访问而设计。
 

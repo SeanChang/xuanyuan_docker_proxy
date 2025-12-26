@@ -1,18 +1,8 @@
----
-id: 34
-title: Docker 部署微服务项目保姆级教程
-slug: docker-microservices
-summary: 这是一篇专门写给编程新手的微服务部署全流程教程，不用纠结复杂概念，不用怕踩网络或环境坑。我们从Docker环境一键搭建开始，用轩辕镜像解决国内拉取镜像慢的问题，避开OpenJDK弃用的雷区，全程手把手带你完成「本地调试→服务器部署」，哪怕是2核4G的低配服务器，也能顺利跑通包含MySQL、Redis、Nacos和4个电商场景业务服务的微服务项目。
-category: Docker,Microservices
-tags: microservices,docker,部署教程
-image_name: library/java
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-mico.png"
-status: published
-created_at: "2025-10-20 05:08:47"
-updated_at: "2025-10-20 05:10:45"
----
-
 # Docker 部署微服务项目保姆级教程
+
+![Docker 部署微服务项目保姆级教程](https://img.xuanyuan.dev/docker/blog/docker-mico.png)
+
+*分类: Docker,Microservices | 标签: microservices,docker,部署教程 | 发布时间: 2025-10-20 05:08:47*
 
 > 这是一篇专门写给编程新手的微服务部署全流程教程，不用纠结复杂概念，不用怕踩网络或环境坑。我们从Docker环境一键搭建开始，用轩辕镜像解决国内拉取镜像慢的问题，避开OpenJDK弃用的雷区，全程手把手带你完成「本地调试→服务器部署」，哪怕是2核4G的低配服务器，也能顺利跑通包含MySQL、Redis、Nacos和4个电商场景业务服务的微服务项目。
 

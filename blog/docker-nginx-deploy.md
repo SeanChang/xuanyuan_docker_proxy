@@ -1,18 +1,8 @@
----
-id: 1
-title: 手把手教你使用 Docker 部署 Nginx 教程
-slug: docker-nginx-deploy
-summary: 本文详细介绍了基于轩辕镜像的 Nginx 镜像拉取方法（含登录验证、免登录（推荐）、官方直连等方式），以及三种适合不同场景的 Docker 部署方案（快速部署用于测试、目录挂载用于实际项目、docker-compose 用于企业级场景），同时提供了服务验证步骤和常见问题解决方案（如端口访问、HTTPS 配置、日志切割、时区修正），内容循序渐进、操作指令完整，专为初学者设计，可直接对照执行完成 Nginx 部署。
-category: Docker,Nginx
-tags: nginx,docker,部署教程
-image_name: library/nginx
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-nginx.png"
-status: published
-created_at: "2025-10-02 12:22:54"
-updated_at: "2025-10-08 06:47:26"
----
-
 # 手把手教你使用 Docker 部署 Nginx 教程
+
+![手把手教你使用 Docker 部署 Nginx 教程](https://img.xuanyuan.dev/docker/blog/docker-nginx.png)
+
+*分类: Docker,Nginx | 标签: nginx,docker,部署教程 | 发布时间: 2025-10-02 12:22:54*
 
 > 本文详细介绍了基于轩辕镜像的 Nginx 镜像拉取方法（含登录验证、免登录（推荐）、官方直连等方式），以及三种适合不同场景的 Docker 部署方案（快速部署用于测试、目录挂载用于实际项目、docker-compose 用于企业级场景），同时提供了服务验证步骤和常见问题解决方案（如端口访问、HTTPS 配置、日志切割、时区修正），内容循序渐进、操作指令完整，专为初学者设计，可直接对照执行完成 Nginx 部署。
 

@@ -1,18 +1,8 @@
----
-id: 13
-title: 🚀 MinIO Docker 部署全指南
-slug: minio-docker
-summary: "MinIO 是一款**高性能对象存储系统**，完全兼容 Amazon S3 协议。你可以把它理解为「自建版的私有云存储」——可存放图片、视频、备份文件、日志等。官方镜像：`minio/minio`，国内加速镜像：[https://xuanyuan.cloud/r/minio/minio](https://xuanyuan.cloud/r/minio/minio)"
-category: Docker,MinIO
-tags: MinIO,docker,部署教程
-image_name: minio/minio
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-minio.png"
-status: published
-created_at: "2025-10-07 02:58:22"
-updated_at: "2025-10-18 01:24:48"
----
-
 # 🚀 MinIO Docker 部署全指南
+
+![🚀 MinIO Docker 部署全指南](https://img.xuanyuan.dev/docker/blog/docker-minio.png)
+
+*分类: Docker,MinIO | 标签: MinIO,docker,部署教程 | 发布时间: 2025-10-07 02:58:22*
 
 > MinIO 是一款**高性能对象存储系统**，完全兼容 Amazon S3 协议。你可以把它理解为「自建版的私有云存储」——可存放图片、视频、备份文件、日志等。官方镜像：`minio/minio`，国内加速镜像：[https://xuanyuan.cloud/r/minio/minio](https://xuanyuan.cloud/r/minio/minio)
 
@@ -253,7 +243,7 @@ mc ls local/mybucket/
 访问方式：
 
 ```
-http://localhost:9000/mybucket/test.jpg
+![test](http://localhost:9000/mybucket/test.jpg)
 ```
 
 ---

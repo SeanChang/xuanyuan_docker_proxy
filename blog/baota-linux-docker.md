@@ -1,18 +1,8 @@
----
-id: 170
-title: 宝塔 Linux 面板 Docker 容器化部署指南
-slug: baota-linux-docker
-summary: BAOTA（宝塔Linux面板）是一款提升运维效率的服务器管理软件，支持一键部署LAMP/LNMP环境、集群管理、服务器监控、网站搭建、FTP配置、数据库管理、JAVA环境等100多项服务器管理功能。其设计理念是功能全面、操作简便、稳定性高且安全性强，已获得全球百万用户的认可与安装。
-category: Docker,BAOTA
-tags: baota,docker,部署教程
-image_name: btpanel/baota
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-baota-linux.png"
-status: published
-created_at: "2025-12-15 06:33:41"
-updated_at: "2025-12-15 06:33:41"
----
-
 # 宝塔 Linux 面板 Docker 容器化部署指南
+
+![宝塔 Linux 面板 Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-baota-linux.png)
+
+*分类: Docker,BAOTA | 标签: baota,docker,部署教程 | 发布时间: 2025-12-15 06:33:41*
 
 > BAOTA（宝塔Linux面板）是一款提升运维效率的服务器管理软件，支持一键部署LAMP/LNMP环境、集群管理、服务器监控、网站搭建、FTP配置、数据库管理、JAVA环境等100多项服务器管理功能。其设计理念是功能全面、操作简便、稳定性高且安全性强，已获得全球百万用户的认可与安装。
 

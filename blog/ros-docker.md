@@ -1,18 +1,8 @@
----
-id: 136
-title: ROS Docker 容器化部署指南
-slug: ros-docker
-summary: Robot Operating System (ROS) 是一套用于构建机器人应用的开源软件库和工具集，提供了从驱动程序到最先进算法的完整解决方案，以及强大的开发工具，适用于各类机器人项目开发。作为容器化应用，ROS的Docker镜像提供了简化且一致的平台，帮助开发者快速构建、测试和部署分布式机器人应用。
-category: Docker,ROS
-tags: ros,docker,部署教程
-image_name: library/ros
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-ros.png"
-status: published
-created_at: "2025-12-11 07:14:24"
-updated_at: "2025-12-11 07:14:24"
----
-
 # ROS Docker 容器化部署指南
+
+![ROS Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-ros.png)
+
+*分类: Docker,ROS | 标签: ros,docker,部署教程 | 发布时间: 2025-12-11 07:14:24*
 
 > Robot Operating System (ROS) 是一套用于构建机器人应用的开源软件库和工具集，提供了从驱动程序到最先进算法的完整解决方案，以及强大的开发工具，适用于各类机器人项目开发。作为容器化应用，ROS的Docker镜像提供了简化且一致的平台，帮助开发者快速构建、测试和部署分布式机器人应用。
 

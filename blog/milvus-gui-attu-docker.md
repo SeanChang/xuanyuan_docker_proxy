@@ -1,18 +1,8 @@
----
-id: 111
-title: Milvus GUI ATTU Docker 容器化部署指南
-slug: milvus-gui-attu-docker
-summary: ATTU是一款全方位的Milvus管理工具（Milvus GUI），旨在简化Milvus向量数据库的管理流程，降低运维成本。通过直观的图形界面，用户可以轻松完成Milvus集群监控、数据管理、向量检索等核心操作。采用Docker容器化部署ATTU，能够显著提升部署效率、确保环境一致性，并简化版本管理流程。本文将详细介绍通过Docker部署ATTU的完整流程，包括环境准备、镜像拉取、容器配置及功能验证等关键步骤。
-category: Docker,ATTU
-tags: attu,docker,部署教程
-image_name: zilliz/attu
-cover_image: "https://img.xuanyuan.dev/docker/blog/docker-attu.png"
-status: published
-created_at: "2025-12-06 16:05:23"
-updated_at: "2025-12-06 16:05:30"
----
-
 # Milvus GUI ATTU Docker 容器化部署指南
+
+![Milvus GUI ATTU Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-attu.png)
+
+*分类: Docker,ATTU | 标签: attu,docker,部署教程 | 发布时间: 2025-12-06 16:05:23*
 
 > ATTU是一款全方位的Milvus管理工具（Milvus GUI），旨在简化Milvus向量数据库的管理流程，降低运维成本。通过直观的图形界面，用户可以轻松完成Milvus集群监控、数据管理、向量检索等核心操作。采用Docker容器化部署ATTU，能够显著提升部署效率、确保环境一致性，并简化版本管理流程。本文将详细介绍通过Docker部署ATTU的完整流程，包括环境准备、镜像拉取、容器配置及功能验证等关键步骤。
 
