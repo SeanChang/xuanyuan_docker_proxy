@@ -1,6 +1,32 @@
 #!/bin/bash
 set -e
 
+# ============================================================================
+# 免责声明 / Disclaimer
+# ============================================================================
+# 本脚本为开源代码，仅供学习和参考使用。
+# 使用本脚本前，请务必：
+#   1. 在本地测试环境充分测试，确认脚本功能符合预期
+#   2. 在生产环境使用前，备份重要数据和配置
+#   3. 了解脚本执行的操作及其可能产生的影响
+#
+# 虽然脚本经过充分测试，但由于系统环境差异、网络状况等因素，
+# 无法保证在所有环境下都能完美运行。使用本脚本所产生的任何后果，
+# 包括但不限于数据丢失、服务中断等，均由使用者自行承担。
+#
+# This script is open source code, provided for learning and reference purposes only.
+# Before using this script, please:
+#   1. Fully test in a local test environment to ensure the script functions as expected
+#   2. Backup important data and configurations before using in production environments
+#   3. Understand the operations performed by the script and their potential impacts
+#
+# Although the script has been thoroughly tested, due to differences in system
+# environments, network conditions, and other factors, we cannot guarantee
+# perfect operation in all environments. Any consequences arising from the use
+# of this script, including but not limited to data loss and service interruptions,
+# shall be borne by the user.
+# ============================================================================
+
 # 检查是否安装了 sudo，如果没有则创建一个函数来模拟 sudo
 if ! command -v sudo &> /dev/null; then
     echo "⚠️  未检测到 sudo 命令，将直接使用 root 权限执行命令"
@@ -20,7 +46,7 @@ echo "官方网站: https://xuanyuan.cloud/"
 echo ""
 echo "请选择操作模式："
 echo "1) 一键安装配置（推荐）"
-echo "2) 修改轩辕镜像专属加速地址"
+echo "2) 修改轩辕镜像专属域名"
 echo ""
 # 循环等待用户输入有效选择
 while true; do
@@ -62,7 +88,7 @@ while true; do
                     # 重新显示菜单选项
                     echo "请选择操作模式："
                     echo "1) 一键安装配置（推荐）"
-                    echo "2) 修改轩辕镜像专属加速地址"
+                    echo "2) 修改轩辕镜像专属域名"
                     echo ""
                     # 重置 mode_choice 以重新进入循环
                     mode_choice=""
@@ -83,7 +109,7 @@ while true; do
         break
     elif [[ "$mode_choice" == "2" ]]; then
         echo ""
-        echo ">>> 模式：仅修改镜像加速地址"
+        echo ">>> 模式：仅修改镜像地址"
         echo ""
         
         # 检查 Docker 是否已安装
@@ -91,7 +117,7 @@ while true; do
             echo "❌ 检测到 Docker 未安装！"
             echo ""
             echo "⚠️  风险提示："
-            echo "   - 无法验证镜像加速配置是否生效"
+            echo "   - 无法验证镜像配置是否生效"
             echo "   - 可能导致后续 Docker 操作失败"
             echo "   - 建议先完成 Docker 安装"
             echo ""
@@ -123,11 +149,11 @@ while true; do
         fi
         
         echo ""
-        echo ">>> 配置轩辕镜像加速地址"
+        echo ">>> 配置轩辕镜像地址"
         echo ""
         echo "请选择版本："
-        echo "1) 轩辕镜像免费版 (加速地址: docker.xuanyuan.me)"
-        echo "2) 轩辕镜像专业版 (加速地址: 专属域名 + docker.xuanyuan.me)"
+        echo "1) 轩辕镜像免费版 (专属域名: docker.xuanyuan.me)"
+        echo "2) 轩辕镜像专业版 (专属域名: 专属域名 + docker.xuanyuan.me)"
         # 循环等待用户输入有效选择
         while true; do
             read -p "请输入选择 [1/2]: " choice
@@ -142,7 +168,7 @@ while true; do
         mirror_list=""
         
         if [[ "$choice" == "2" ]]; then
-            read -p "请输入您的轩辕镜像专属专属域名 (访问官网获取：https://xuanyuan.cloud): " custom_domain
+            read -p "请输入您的轩辕镜像专属域名 (访问官网获取：https://xuanyuan.cloud): " custom_domain
             
             # 清理用户输入的域名，移除协议前缀
             custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
@@ -238,7 +264,7 @@ EOF
 }
 EOF
         
-        echo "✅ 镜像加速配置已更新"
+        echo "✅ 镜像配置已更新"
         echo ""
         echo "当前配置的镜像源："
         if [[ "$choice" == "2" ]]; then
@@ -272,7 +298,7 @@ EOF
         fi
         
         echo ""
-        echo "🎉 镜像加速配置完成！"
+        echo "🎉 镜像配置完成！"
         exit 0
     else
         echo "❌ 无效选择，请输入 1 或 2"
@@ -312,7 +338,7 @@ if [[ "$DETECTED_OS" == "Darwin" ]]; then
   echo "  下载 Docker Desktop for Mac (Apple Silicon 或 Intel)"
   echo ""
   echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-  echo "🚀 配置轩辕镜像加速"
+  echo "🚀 配置轩辕镜像"
   echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
   echo "  1. 启动 Docker Desktop"
   echo "  2. 点击菜单栏 Docker 图标 → Settings (设置)"
@@ -379,7 +405,7 @@ if [[ "$DETECTED_OS" == MINGW* ]] || [[ "$DETECTED_OS" == MSYS* ]] || [[ "$DETEC
   echo "     bash <(curl -fsSL https://xuanyuan.cloud/docker.sh)"
   echo ""
   echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-  echo "🚀 配置轩辕镜像加速"
+  echo "🚀 配置轩辕镜像"
   echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
   echo "  1. 启动 Docker Desktop"
   echo "  2. 点击系统托盘 Docker 图标 → Settings (设置)"
@@ -487,7 +513,7 @@ elif [[ "$OS" == "kylin" ]]; then
   echo "📋 系统信息："
   echo "   - Kylin Linux 基于 RHEL，与 CentOS/RHEL 兼容"
   echo "   - 使用 yum/dnf 包管理器"
-  echo "   - 支持国内镜像源加速"
+  echo "   - 支持国内镜像"
   echo ""
 elif [[ "$OS" == "kali" ]]; then
   echo ""
@@ -496,7 +522,7 @@ elif [[ "$OS" == "kali" ]]; then
   echo "   - Kali Linux 基于 Debian，与 Debian 完全兼容"
   echo "   - 使用 apt 包管理器"
   echo "   - 将使用 Debian 兼容的安装方法"
-  echo "   - 支持国内镜像源加速"
+  echo "   - 支持国内镜像"
   echo ""
 fi
 
@@ -518,13 +544,13 @@ if command -v docker &> /dev/null; then
             echo "用户选择升级 Docker，继续执行安装流程..."
         else
             echo "用户选择不升级，跳过 Docker 安装"
-                    echo ">>> [5/8] 配置轩辕镜像加速..."
+                    echo ">>> [5/8] 配置轩辕镜像..."
         
         # 循环等待用户选择镜像版本
         while true; do
             echo "请选择版本:"
-            echo "1) 轩辕镜像免费版 (加速地址: docker.xuanyuan.me)"
-            echo "2) 轩辕镜像专业版 (加速地址: 专属域名 + docker.xuanyuan.me)"
+            echo "1) 轩辕镜像免费版 (专属域名: docker.xuanyuan.me)"
+            echo "2) 轩辕镜像专业版 (专属域名: 专属域名 + docker.xuanyuan.me)"
             read -p "请输入选择 [1/2]: " choice
             
             if [[ "$choice" == "1" || "$choice" == "2" ]]; then
@@ -538,7 +564,7 @@ if command -v docker &> /dev/null; then
         mirror_list=""
         
         if [[ "$choice" == "2" ]]; then
-          read -p "请输入您的轩辕镜像专属专属域名 (访问官网获取：https://xuanyuan.cloud): " custom_domain
+          read -p "请输入您的轩辕镜像专属域名 (访问官网获取：https://xuanyuan.cloud): " custom_domain
           
           # 清理用户输入的域名，移除协议前缀
           custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
@@ -629,8 +655,8 @@ EOF
         sudo systemctl restart docker || true
         
         echo ">>> [6/8] 安装完成！"
-        echo "🎉Docker 镜像加速已配置完成"
-        echo "轩辕镜像 - 国内开发者首选的专业 Docker 镜像下载加速服务平台"
+        echo "🎉Docker 镜像已配置完成"
+        echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像支持与技术服务平台"
         echo "官方网站: https://xuanyuan.cloud/"
         
         # 显示当前配置的镜像源
@@ -652,15 +678,15 @@ EOF
         fi
     else
         echo "Docker 版本 $DOCKER_VERSION 满足要求 (>= 20.0)"
-        echo "跳过 Docker 安装，直接配置镜像加速..."
+        echo "跳过 Docker 安装，直接配置镜像..."
         
-        echo ">>> [5/8] 配置国内镜像加速..."
+        echo ">>> [5/8] 配置国内镜像..."
         
         # 循环等待用户选择镜像版本
         while true; do
             echo "请选择版本:"
-            echo "1) 轩辕镜像免费版 (加速地址: docker.xuanyuan.me)"
-            echo "2) 轩辕镜像专业版 (加速地址: 专属域名 + docker.xuanyuan.me)"
+            echo "1) 轩辕镜像免费版 (专属域名: docker.xuanyuan.me)"
+            echo "2) 轩辕镜像专业版 (专属域名: 专属域名 + docker.xuanyuan.me)"
             read -p "请输入选择 [1/2]: " choice
             
             if [[ "$choice" == "1" || "$choice" == "2" ]]; then
@@ -674,7 +700,7 @@ EOF
         mirror_list=""
         
         if [[ "$choice" == "2" ]]; then
-          read -p "请输入您的轩辕镜像专属专属域名 (访问官网获取：https://xuanyuan.cloud): " custom_domain
+          read -p "请输入您的轩辕镜像专属域名 (访问官网获取：https://xuanyuan.cloud): " custom_domain
 
           # 清理用户输入的域名，移除协议前缀
           custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
@@ -762,8 +788,8 @@ EOF
         sudo systemctl restart docker || true
         
         echo ">>> [6/8] 安装完成！"
-        echo "🎉Docker 镜像加速已配置完成"
-        echo "轩辕镜像 - 国内开发者首选的专业 Docker 镜像下载加速服务平台"
+        echo "🎉Docker 镜像已配置完成"
+        echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像支持与技术服务平台"
         echo "官方网站: https://xuanyuan.cloud/"
         exit 0
     fi
@@ -4656,14 +4682,14 @@ EOF
         echo "✅ Docker Compose 已安装"
         echo "✅ Docker 服务已启动"
         
-        # 直接进入镜像加速配置
-        echo ">>> [5/8] 配置轩辕镜像加速..."
+        # 直接进入镜像配置
+        echo ">>> [5/8] 配置轩辕镜像..."
         
         # 循环等待用户选择镜像版本
         while true; do
             echo "请选择版本:"
-            echo "1) 轩辕镜像免费版 (加速地址: docker.xuanyuan.me)"
-            echo "2) 轩辕镜像专业版 (加速地址: 专属域名 + docker.xuanyuan.me)"
+            echo "1) 轩辕镜像免费版 (专属域名: docker.xuanyuan.me)"
+            echo "2) 轩辕镜像专业版 (专属域名: 专属域名 + docker.xuanyuan.me)"
             read -p "请输入选择 [1/2]: " choice
             
             if [[ "$choice" == "1" || "$choice" == "2" ]]; then
@@ -4677,7 +4703,7 @@ EOF
         mirror_list=""
         
         if [[ "$choice" == "2" ]]; then
-          read -p "请输入您的轩辕镜像专属专属域名 (访问官网获取：https://xuanyuan.cloud): " custom_domain
+          read -p "请输入您的轩辕镜像专属域名 (访问官网获取：https://xuanyuan.cloud): " custom_domain
 
           # 清理用户输入的域名，移除协议前缀
           custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
@@ -4765,8 +4791,8 @@ EOF
         sudo systemctl restart docker || true
         
         echo ">>> [6/8] 安装完成！"
-        echo "🎉Docker 镜像加速已配置完成"
-        echo "轩辕镜像 - 国内开发者首选的专业 Docker 镜像下载加速服务平台"
+        echo "🎉Docker 镜像已配置完成"
+        echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像支持与技术服务平台"
         echo "官方网站: https://xuanyuan.cloud/"
         
         # 显示当前配置的镜像源
@@ -4786,7 +4812,7 @@ EOF
         
         echo "🎉 安装和配置完成！"
         echo ""
-        echo "轩辕镜像 - 国内开发者首选的专业 Docker 镜像下载加速服务平台"
+        echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像支持与技术服务平台"
         echo "官方网站: https://xuanyuan.cloud/"
         exit 0
       else
@@ -5841,13 +5867,13 @@ else
   exit 1
 fi
 
-echo ">>> [5/8] 配置国内镜像加速..."
+echo ">>> [5/8] 配置国内镜像..."
 
 # 循环等待用户选择镜像版本
 while true; do
     echo "请选择版本:"
-    echo "1) 轩辕镜像免费版 (加速地址: docker.xuanyuan.me)"
-    echo "2) 轩辕镜像专业版 (加速地址: 专属域名 + docker.xuanyuan.me)"
+    echo "1) 轩辕镜像免费版 (专属域名: docker.xuanyuan.me)"
+    echo "2) 轩辕镜像专业版 (专属域名: 专属域名 + docker.xuanyuan.me)"
     read -p "请输入选择 [1/2]: " choice
     
     if [[ "$choice" == "1" || "$choice" == "2" ]]; then
@@ -5861,7 +5887,7 @@ done
 mirror_list=""
 
 if [[ "$choice" == "2" ]]; then
-  read -p "请输入您的轩辕镜像专属专属域名 (访问官网获取：https://xuanyuan.cloud): " custom_domain
+  read -p "请输入您的轩辕镜像专属域名 (访问官网获取：https://xuanyuan.cloud): " custom_domain
 
   # 清理用户输入的域名，移除协议前缀
   custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
@@ -5943,8 +5969,8 @@ sudo systemctl daemon-reexec || true
 sudo systemctl restart docker || true
 
 echo ">>> [6/8] 安装完成！"
-echo "🎉Docker 镜像加速已配置完成"
-echo "轩辕镜像 - 国内开发者首选的专业 Docker 镜像下载加速服务平台"
+echo "🎉Docker 镜像已配置完成"
+echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像支持与技术服务平台"
 echo "官方网站: https://xuanyuan.cloud/"
 
 echo ">>> [7/8] 重载 Docker 配置并重启服务..."
@@ -5958,7 +5984,7 @@ sleep 3
 # 验证 Docker 服务状态
 if systemctl is-active --quiet docker; then
     echo "✅ Docker 服务已成功启动"
-    echo "✅ 镜像加速配置已生效"
+    echo "✅ 镜像配置已生效"
     
     # 显示当前配置的镜像源
     echo "当前配置的镜像源:"
@@ -6003,7 +6029,7 @@ if systemctl is-active --quiet docker; then
     fi
     
     echo ""
-    echo "轩辕镜像 - 国内开发者首选的专业 Docker 镜像下载加速服务平台"
+    echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像支持与技术服务平台"
     echo "官方网站: https://xuanyuan.cloud/"
 else
     echo "❌ Docker 服务启动失败，请检查配置"
