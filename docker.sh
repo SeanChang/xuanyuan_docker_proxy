@@ -1,5 +1,15 @@
 #!/bin/bash
+# 使用 set -e 但允许关键步骤有错误处理
 set -e
+# 定义错误处理函数
+handle_error() {
+  local exit_code=$?
+  if [[ $exit_code -ne 0 ]]; then
+    echo "❌ 命令执行失败，退出码: $exit_code"
+    return $exit_code
+  fi
+  return 0
+}
 
 # ============================================================================
 # 免责声明 / Disclaimer
@@ -259,10 +269,27 @@ EOF
         cat <<EOF | tee /etc/docker/daemon.json
 {
   "registry-mirrors": $mirror_list,
-  "insecure-registries": $insecure_registries,
-  "dns": ["119.29.29.29", "114.114.114.114"]
+  "insecure-registries": $insecure_registries
 }
 EOF
+
+# 如果没有禁用 DNS 配置且宿主机没有配置 DNS，则添加 DNS 配置
+if [[ "$SKIP_DNS" != "true" ]]; then
+  if grep -q "nameserver" /etc/resolv.conf; then
+    echo "ℹ️  检测到系统已配置 DNS，跳过 Docker DNS 配置以避免冲突"
+  else
+    # 使用 jq 或 python 来修改 json 文件，避免直接覆盖
+    if command -v jq &> /dev/null; then
+      tmp_json=$(mktemp)
+      sudo jq '. + {"dns": ["119.29.29.29", "114.114.114.114"]}' /etc/docker/daemon.json > "$tmp_json" && sudo mv "$tmp_json" /etc/docker/daemon.json
+      echo "✅ 已添加 Docker DNS 配置"
+    else
+      # 简单的 sed 替换作为后备方案
+      sudo sed -i 's/}/,\n  "dns": ["119.29.29.29", "114.114.114.114"]\n}/' /etc/docker/daemon.json
+      echo "✅ 已添加 Docker DNS 配置"
+    fi
+  fi
+fi
         
         echo "✅ 镜像配置已更新"
         echo ""
@@ -439,6 +466,41 @@ OS=$(awk -F= '/^ID=/{print $2}' /etc/os-release | tr -d '"')
 ARCH=$(uname -m)
 VERSION_ID=$(awk -F= '/^VERSION_ID=/{print $2}' /etc/os-release | tr -d '"')
 echo "系统: $OS $VERSION_ID 架构: $ARCH"
+
+# 映射架构标识到 Docker 官方使用的架构名称
+case "$ARCH" in
+  x86_64)
+    DOCKER_ARCH="x86_64"
+    echo "✅ 检测到 x86_64 架构（Intel/AMD 64位）"
+    ;;
+  aarch64|arm64)
+    DOCKER_ARCH="aarch64"
+    echo "✅ 检测到 ARM 64位架构（aarch64），支持鲲鹏、飞腾等处理器"
+    ;;
+  armv7l|armhf)
+    DOCKER_ARCH="armhf"
+    echo "✅ 检测到 ARM 32位硬浮点架构（armhf）"
+    ;;
+  armv6l|armel)
+    DOCKER_ARCH="armel"
+    echo "✅ 检测到 ARM 32位软浮点架构（armel）"
+    ;;
+  s390x)
+    DOCKER_ARCH="s390x"
+    echo "✅ 检测到 IBM Z 架构（s390x）"
+    ;;
+  ppc64le)
+    DOCKER_ARCH="ppc64le"
+    echo "✅ 检测到 PowerPC 64位小端架构（ppc64le）"
+    ;;
+  *)
+    echo "⚠️  检测到架构: $ARCH"
+    echo "⚠️  Docker 官方静态二进制包可能不支持此架构"
+    echo "⚠️  将尝试使用 $ARCH 作为架构标识，如果下载失败请手动安装"
+    DOCKER_ARCH="$ARCH"
+    ;;
+esac
+echo "📦 Docker 将使用架构标识: $DOCKER_ARCH"
 
 # 针对 Debian 10 和 Ubuntu 16.04 显示特殊提示
 if [[ "$OS" == "debian" && "$VERSION_ID" == "10" ]]; then
@@ -643,11 +705,21 @@ EOF
 )
         fi
 
-        cat <<EOF | sudo tee /etc/docker/daemon.json > /dev/null
+        # 准备 DNS 配置字符串
+dns_config=""
+if [[ "$SKIP_DNS" != "true" ]]; then
+  if ! grep -q "nameserver" /etc/resolv.conf; then
+     dns_config=',
+  "dns": ["119.29.29.29", "114.114.114.114"]'
+  else
+     echo "ℹ️  检测到系统已配置 DNS，跳过 Docker DNS 配置以避免冲突"
+  fi
+fi
+
+cat <<EOF | sudo tee /etc/docker/daemon.json > /dev/null
 {
   "registry-mirrors": $mirror_list,
-  "insecure-registries": $insecure_registries,
-  "dns": ["119.29.29.29", "114.114.114.114"]
+  "insecure-registries": $insecure_registries$dns_config
 }
 EOF
         
@@ -776,11 +848,21 @@ EOF
 )
         fi
 
-        cat <<EOF | sudo tee /etc/docker/daemon.json > /dev/null
+        # 准备 DNS 配置字符串
+dns_config=""
+if [[ "$SKIP_DNS" != "true" ]]; then
+  if ! grep -q "nameserver" /etc/resolv.conf; then
+     dns_config=',
+  "dns": ["119.29.29.29", "114.114.114.114"]'
+  else
+     echo "ℹ️  检测到系统已配置 DNS，跳过 Docker DNS 配置以避免冲突"
+  fi
+fi
+
+cat <<EOF | sudo tee /etc/docker/daemon.json > /dev/null
 {
   "registry-mirrors": $mirror_list,
-  "insecure-registries": $insecure_registries,
-  "dns": ["119.29.29.29", "114.114.114.114"]
+  "insecure-registries": $insecure_registries$dns_config
 }
 EOF
         
@@ -824,9 +906,92 @@ if [[ "$OS_LOWER" == "openeuler" ]]; then
   
   sudo $PKG_MANAGER install -y ${PKG_MANAGER}-utils
   
+  # 定义切换 Docker 镜像源的函数
+  switch_docker_mirror() {
+    local mirror_index=$1
+    local centos_version=${CENTOS_VERSION:-9}
+    local repo_added=false
+    
+    case $mirror_index in
+      1)
+        echo "尝试配置阿里云 Docker 源..."
+        sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.aliyun.com/docker-ce/linux/centos/${centos_version}/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.aliyun.com/docker-ce/linux/centos/gpg
+EOF
+        ;;
+      2)
+        echo "尝试配置腾讯云 Docker 源..."
+        sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.cloud.tencent.com/docker-ce/linux/centos/${centos_version}/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.cloud.tencent.com/docker-ce/linux/centos/gpg
+EOF
+        ;;
+      3)
+        echo "尝试配置中科大 Docker 源..."
+        sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.ustc.edu.cn/docker-ce/linux/centos/${centos_version}/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.ustc.edu.cn/docker-ce/linux/centos/gpg
+EOF
+        ;;
+      4)
+        echo "尝试配置清华大学 Docker 源..."
+        sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/centos/${centos_version}/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/centos/gpg
+EOF
+        ;;
+      5)
+        echo "尝试配置官方 Docker 源..."
+        sudo tee /etc/yum.repos.d/docker-ce.repo > /dev/null <<EOF
+[docker-ce-stable]
+name=Docker CE Stable - \$basearch
+baseurl=https://download.docker.com/linux/centos/${centos_version}/\$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://download.docker.com/linux/centos/gpg
+EOF
+        ;;
+      *)
+        return 1
+        ;;
+    esac
+    
+    # 清理缓存并更新
+    sudo $PKG_MANAGER clean all 2>/dev/null || true
+    sudo rm -rf /var/cache/dnf/* 2>/dev/null || true
+    sudo rm -rf /var/cache/yum/* 2>/dev/null || true
+    
+    if sudo $PKG_MANAGER makecache; then
+      repo_added=true
+      echo "✅ Docker 源切换成功"
+      return 0
+    else
+      echo "❌ Docker 源切换失败"
+      return 1
+    fi
+  }
+  
   # 尝试多个国内镜像源（优先华为云，因为 openEuler 是华为开发）
   echo "正在配置 Docker 源..."
   DOCKER_REPO_ADDED=false
+  CURRENT_MIRROR_INDEX=0  # 0=华为云, 1=阿里云, 2=腾讯云, 3=中科大, 4=清华, 5=官方
   
   # 创建Docker仓库配置文件，使用 openEuler 兼容的 CentOS 版本
   echo "正在创建 Docker 仓库配置 (使用 CentOS ${CENTOS_VERSION} 兼容源)..."
@@ -969,6 +1134,19 @@ EOF
     fi
   fi
   
+  # 在安装 docker-ce 之前，先检查并安装 libnftables 依赖
+  echo ">>> [3.1/8] 检查 libnftables 依赖..."
+  if ! rpm -q libnftables >/dev/null 2>&1; then
+    echo "⚠️  未检测到 libnftables，正在安装..."
+    if sudo $PKG_MANAGER install -y libnftables 2>&1; then
+      echo "✅ libnftables 安装成功"
+    else
+      echo "⚠️  libnftables 安装失败，将在安装 docker-ce 时重试"
+    fi
+  else
+    echo "✅ libnftables 已安装"
+  fi
+  
   # 尝试安装 Docker，使用 --allowerasing 参数处理 runc 冲突
   # containerd.io 会替代系统的 runc，需要使用 --allowerasing 允许替换
   if sudo $PKG_MANAGER install -y --allowerasing docker-ce docker-ce-cli containerd.io docker-buildx-plugin; then
@@ -976,11 +1154,52 @@ EOF
   else
     echo "❌ 批量安装失败，尝试逐个安装组件（使用 --allowerasing）..."
     
-    # 逐个安装组件，都使用 --allowerasing 处理冲突
-    if sudo $PKG_MANAGER install -y --allowerasing containerd.io; then
-      echo "✅ containerd.io 安装成功"
+    # 再次检查 libnftables（批量安装失败后）
+    echo "再次检查 libnftables 依赖..."
+    if ! rpm -q libnftables >/dev/null 2>&1; then
+      echo "⚠️  未检测到 libnftables，正在安装..."
+      if sudo $PKG_MANAGER install -y libnftables 2>&1; then
+        echo "✅ libnftables 安装成功"
+      else
+        echo "⚠️  libnftables 安装失败"
+      fi
     else
+      echo "✅ libnftables 已安装"
+    fi
+    
+    # 逐个安装组件，都使用 --allowerasing 处理冲突
+    CONTAINERD_INSTALLED=false
+    CONTAINERD_OUTPUT=""
+    if sudo $PKG_MANAGER install -y --allowerasing containerd.io 2>&1; then
+      echo "✅ containerd.io 安装成功"
+      CONTAINERD_INSTALLED=true
+    else
+      CONTAINERD_OUTPUT=$(sudo $PKG_MANAGER install -y --allowerasing containerd.io 2>&1 || true)
       echo "❌ containerd.io 安装失败"
+      
+      # 检测是否是校验和错误，如果是则尝试切换镜像源
+      if echo "$CONTAINERD_OUTPUT" | grep -qiE "(checksum doesn't match|校验和不匹配|Cannot download|all mirrors were already tried)"; then
+        echo "⚠️  检测到下载失败或校验和不匹配，尝试切换 Docker 镜像源..."
+        
+        # 尝试切换其他镜像源（从阿里云开始，因为华为云已经失败）
+        for mirror_idx in 1 2 3 4 5; do
+          if switch_docker_mirror $mirror_idx; then
+            CURRENT_MIRROR_INDEX=$mirror_idx
+            echo "  - 重新尝试安装 containerd.io..."
+            if sudo $PKG_MANAGER install -y --allowerasing containerd.io 2>&1; then
+              echo "✅ containerd.io 安装成功（切换镜像源后）"
+              CONTAINERD_INSTALLED=true
+              break
+            else
+              echo "  ❌ 切换镜像源后仍然失败，尝试下一个镜像源..."
+            fi
+          fi
+        done
+        
+        if [[ "$CONTAINERD_INSTALLED" == "false" ]]; then
+          echo "❌ 所有镜像源都尝试失败，containerd.io 无法安装"
+        fi
+      fi
     fi
     
     if sudo $PKG_MANAGER install -y --allowerasing docker-ce-cli; then
@@ -989,10 +1208,115 @@ EOF
       echo "❌ docker-ce-cli 安装失败"
     fi
     
-    if sudo $PKG_MANAGER install -y --allowerasing docker-ce; then
-      echo "✅ docker-ce 安装成功"
+    DOCKER_CE_INSTALLED=false
+    DOCKER_CE_OUTPUT=""
+    # 使用临时变量捕获退出码，因为 tee 会改变退出码
+    DOCKER_CE_INSTALL_LOG=$(sudo $PKG_MANAGER install -y --allowerasing docker-ce 2>&1 | tee /tmp/docker-ce-install.log)
+    DOCKER_CE_INSTALL_STATUS=${PIPESTATUS[0]}
+    
+    if [[ $DOCKER_CE_INSTALL_STATUS -eq 0 ]]; then
+      # 再次验证 docker-ce 是否真的安装成功
+      if rpm -q docker-ce >/dev/null 2>&1; then
+        echo "✅ docker-ce 安装成功"
+        DOCKER_CE_INSTALLED=true
+      else
+        echo "⚠️  安装命令成功但 docker-ce 包未找到，可能安装失败"
+        DOCKER_CE_OUTPUT="$DOCKER_CE_INSTALL_LOG"
+        echo "❌ docker-ce 安装失败"
+      fi
     else
+      DOCKER_CE_OUTPUT="$DOCKER_CE_INSTALL_LOG"
       echo "❌ docker-ce 安装失败"
+      
+      # 检测是否是 libnftables 依赖问题
+      if echo "$DOCKER_CE_OUTPUT" | grep -qiE "libnftables|LIBNFTABLES"; then
+        echo "⚠️  检测到 libnftables 依赖问题"
+        
+        # 先检查 libnftables 是否已安装
+        if rpm -q libnftables >/dev/null 2>&1; then
+          echo "⚠️  libnftables 已安装，但版本可能不兼容，尝试升级..."
+          sudo $PKG_MANAGER update -y libnftables 2>&1 || true
+        else
+          echo "正在尝试安装 libnftables 依赖..."
+        fi
+        
+        # 尝试安装 libnftables（显示详细信息，不要隐藏错误）
+        if sudo $PKG_MANAGER install -y libnftables 2>&1; then
+          echo "✅ libnftables 安装成功，重新尝试安装 docker-ce..."
+          if sudo $PKG_MANAGER install -y --allowerasing docker-ce 2>&1 | tee /tmp/docker-ce-install-retry.log; then
+            echo "✅ docker-ce 安装成功（安装 libnftables 后）"
+            DOCKER_CE_INSTALLED=true
+          else
+            echo "❌ docker-ce 安装仍然失败"
+            DOCKER_CE_OUTPUT=$(cat /tmp/docker-ce-install-retry.log 2>/dev/null || echo "")
+            
+            # 如果仍然失败，尝试切换镜像源（不同镜像源可能有不同版本的 docker-ce）
+            if echo "$DOCKER_CE_OUTPUT" | grep -qiE "libnftables|LIBNFTABLES"; then
+              echo "⚠️  当前镜像源的 docker-ce 版本可能不兼容，尝试切换镜像源..."
+              
+              # 尝试切换其他镜像源（从阿里云开始，因为华为云已经失败）
+              for mirror_idx in 1 2 3 4 5; do
+                if switch_docker_mirror $mirror_idx; then
+                  CURRENT_MIRROR_INDEX=$mirror_idx
+                  echo "  - 重新尝试安装 docker-ce..."
+                  
+                  # 再次检查并安装 libnftables（某些镜像源可能提供不同版本）
+                  if ! rpm -q libnftables >/dev/null 2>&1; then
+                    echo "  - 安装 libnftables..."
+                    sudo $PKG_MANAGER install -y libnftables 2>&1 || echo "  ⚠️  libnftables 安装失败，继续尝试安装 docker-ce..."
+                  else
+                    echo "  ✅ libnftables 已安装"
+                  fi
+                  
+                  if sudo $PKG_MANAGER install -y --allowerasing docker-ce 2>&1 | tee /tmp/docker-ce-install-mirror.log; then
+                    echo "✅ docker-ce 安装成功（切换镜像源后）"
+                    DOCKER_CE_INSTALLED=true
+                    break
+                  else
+                    echo "  ❌ 切换镜像源后仍然失败，尝试下一个镜像源..."
+                  fi
+                fi
+              done
+            fi
+          fi
+        else
+          echo "⚠️  libnftables 安装失败，尝试切换镜像源后重试..."
+          
+          # 尝试切换其他镜像源
+          for mirror_idx in 1 2 3 4 5; do
+            if switch_docker_mirror $mirror_idx; then
+              CURRENT_MIRROR_INDEX=$mirror_idx
+              echo "  - 检查并安装 libnftables..."
+              
+              # 先检查是否已安装
+              if rpm -q libnftables >/dev/null 2>&1; then
+                echo "  ✅ libnftables 已安装"
+              else
+                # 尝试安装 libnftables（显示详细信息）
+                if sudo $PKG_MANAGER install -y libnftables 2>&1; then
+                  echo "  ✅ libnftables 安装成功"
+                else
+                  echo "  ⚠️  libnftables 安装失败，继续尝试安装 docker-ce..."
+                fi
+              fi
+              
+              # 无论 libnftables 是否安装成功，都尝试安装 docker-ce
+              echo "  - 尝试安装 docker-ce..."
+              if sudo $PKG_MANAGER install -y --allowerasing docker-ce 2>&1 | tee /tmp/docker-ce-install-mirror.log; then
+                echo "✅ docker-ce 安装成功（切换镜像源后）"
+                DOCKER_CE_INSTALLED=true
+                break
+              else
+                echo "  ❌ docker-ce 安装仍然失败，尝试下一个镜像源..."
+              fi
+            fi
+          done
+          
+          if [[ "$DOCKER_CE_INSTALLED" == "false" ]]; then
+            echo "⚠️  所有镜像源都尝试失败，将使用二进制安装方式绕过依赖问题"
+          fi
+        fi
+      fi
     fi
     
     if sudo $PKG_MANAGER install -y --allowerasing docker-buildx-plugin; then
@@ -1001,9 +1325,24 @@ EOF
       echo "❌ docker-buildx-plugin 安装失败"
     fi
     
+    # 检查 docker.service 文件是否存在
+    DOCKER_SERVICE_EXISTS=false
+    if [ -f /etc/systemd/system/docker.service ] || [ -f /usr/lib/systemd/system/docker.service ]; then
+      DOCKER_SERVICE_EXISTS=true
+    fi
+    
     # 检查是否至少安装了核心组件
-    if ! command -v docker &> /dev/null; then
-      echo "❌ 包管理器安装完全失败，尝试二进制安装..."
+    # 不仅要检查 docker 命令是否存在，还要检查 docker.service 是否存在
+    if ! command -v docker &> /dev/null || [ "$DOCKER_CE_INSTALLED" == "false" ] || [ "$DOCKER_SERVICE_EXISTS" == "false" ]; then
+      if [ "$DOCKER_CE_INSTALLED" == "false" ] || [ "$DOCKER_SERVICE_EXISTS" == "false" ]; then
+        if command -v docker &> /dev/null; then
+          echo "⚠️  检测到 docker 命令存在，但 docker-ce 包或 docker.service 文件缺失"
+          echo "⚠️  这通常是由于依赖问题导致 docker-ce 安装不完整"
+        fi
+        echo "❌ docker-ce 安装不完整，尝试二进制安装..."
+      else
+        echo "❌ 包管理器安装完全失败，尝试二进制安装..."
+      fi
       
       # 二进制安装备选方案
       echo "正在下载 Docker 二进制包..."
@@ -1013,7 +1352,7 @@ EOF
       
       # 源1: 华为云镜像（优先）
       echo "尝试从华为云镜像下载 Docker 二进制包..."
-      if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+      if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
         DOCKER_BINARY_DOWNLOADED=true
         echo "✅ 从华为云镜像下载成功"
       else
@@ -1023,7 +1362,7 @@ EOF
       # 源2: 阿里云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从阿里云镜像下载..."
-        if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从阿里云镜像下载成功"
         else
@@ -1034,7 +1373,7 @@ EOF
       # 源3: 腾讯云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从腾讯云镜像下载..."
-        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从腾讯云镜像下载成功"
         else
@@ -1045,7 +1384,7 @@ EOF
       # 源4: 官方源
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从官方源下载..."
-        if curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://download.docker.com/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从官方源下载成功"
         else
@@ -1054,11 +1393,23 @@ EOF
       fi
       
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "true" ]]; then
-        echo "正在解压并安装 Docker 二进制包..."
-        sudo tar -xzf /tmp/docker.tgz -C /usr/bin --strip-components=1
-        sudo chmod +x /usr/bin/docker*
-        
-        # 创建 systemd 服务文件
+    echo "正在解压并安装 Docker 二进制包..."
+    sudo tar -xzf /tmp/docker.tgz -C /usr/bin --strip-components=1
+    sudo chmod +x /usr/bin/docker*
+    
+    # SELinux 友好提示
+    if command -v getenforce &> /dev/null && [ "$(getenforce)" != "Disabled" ]; then
+        echo ""
+        echo "⚠️  检测到 SELinux 处于开启状态 ($(getenforce))"
+        echo "⚠️  二进制安装方式可能会遇到 SELinux 上下文问题"
+        echo "⚠️  如果启动失败，请尝试临时关闭 SELinux (setenforce 0) 或手动配置 SELinux 策略"
+        echo "💡 推荐操作：尝试安装 container-selinux >= 2.74"
+        echo ""
+        echo "正在等待 3 秒以确认切换到二进制安装模式..."
+        sleep 3
+    fi
+
+    # 创建 systemd 服务文件
         sudo tee /etc/systemd/system/docker.service > /dev/null <<EOF
 [Unit]
 Description=Docker Application Container Engine
@@ -1115,8 +1466,33 @@ EOF
     fi
   fi
   
-  sudo systemctl enable docker
-  sudo systemctl start docker
+  # 检查 docker.service 文件是否存在
+  if [ ! -f /etc/systemd/system/docker.service ] && [ ! -f /usr/lib/systemd/system/docker.service ]; then
+    echo "❌ docker.service 文件不存在，Docker 服务无法启动"
+    echo "⚠️  这通常是由于 docker-ce 包安装失败导致的"
+    echo "💡 建议："
+    echo "   1. 检查依赖问题（如 libnftables）"
+    echo "   2. 尝试手动安装依赖：sudo $PKG_MANAGER install -y libnftables"
+    echo "   3. 重新运行安装脚本"
+    echo "   4. 或使用二进制安装方式"
+    exit 1
+  fi
+  
+  # 启动 Docker 服务
+  echo "正在启动 Docker 服务..."
+  if sudo systemctl enable docker 2>/dev/null; then
+    echo "✅ Docker 服务已设置为开机自启"
+  else
+    echo "⚠️  Docker 服务开机自启设置失败"
+  fi
+  
+  if sudo systemctl start docker 2>/dev/null; then
+    echo "✅ Docker 服务启动成功"
+  else
+    echo "⚠️  Docker 服务启动失败，尝试查看日志..."
+    sudo systemctl status docker --no-pager -l || true
+    echo "💡 可以尝试手动启动：sudo dockerd &"
+  fi
   
   echo ">>> [3.5/8] 安装 Docker Compose..."
   # 安装最新版本的 docker-compose，使用多个备用下载源
@@ -1366,39 +1742,102 @@ EOF
 
   echo ">>> [3/8] 安装 Docker CE 最新版..."
   
-  # 尝试安装 Docker，如果失败则尝试逐个安装组件
-  if sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin; then
+  # 临时禁用 set -e，允许错误处理
+  set +e
+  
+  echo "正在尝试安装 Docker CE（这可能需要几分钟，请耐心等待）..."
+  echo "如果安装过程卡住，可能是网络问题或依赖解析中，请等待..."
+  
+  # 尝试安装 Docker，使用超时机制（30分钟超时）
+  INSTALL_OUTPUT=""
+  INSTALL_STATUS=1
+  
+  # 使用 timeout 命令（如果可用）或直接执行
+  # 注意：使用 bash -c 确保 sudo 函数在子 shell 中可用
+  if command -v timeout &> /dev/null; then
+    INSTALL_OUTPUT=$(timeout 1800 bash -c "sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin" 2>&1)
+    INSTALL_STATUS=$?
+    if [[ $INSTALL_STATUS -eq 124 ]]; then
+      echo "❌ 安装超时（30分钟），可能是网络问题或依赖解析失败"
+      INSTALL_STATUS=1
+    fi
+  else
+    INSTALL_OUTPUT=$(sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin 2>&1)
+    INSTALL_STATUS=$?
+  fi
+  
+  # 重新启用 set -e
+  set -e
+  
+  if [[ $INSTALL_STATUS -eq 0 ]]; then
     echo "✅ Docker CE 安装成功"
   else
-    echo "❌ 批量安装失败，尝试逐个安装组件..."
+    # 显示详细错误信息
+    echo ""
+    echo "❌ Docker CE 批量安装失败"
+    echo "错误详情："
+    echo "$INSTALL_OUTPUT" | tail -20
+    echo ""
+    
+    # 检查错误类型
+    if echo "$INSTALL_OUTPUT" | grep -qiE "(timeout|timed out|connection|网络|network)"; then
+      echo "⚠️  检测到可能的网络问题，请检查网络连接"
+    fi
+    if echo "$INSTALL_OUTPUT" | grep -qiE "(repo|repository|仓库|not found|找不到)"; then
+      echo "⚠️  检测到可能的仓库配置问题，请检查 Docker 源配置"
+    fi
+    
+    echo "正在尝试逐个安装组件..."
+    
+    # 临时禁用 set -e
+    set +e
     
     # 逐个安装组件
-    if sudo dnf install -y containerd.io; then
-      echo "✅ containerd.io 安装成功"
+    echo "  - 正在安装 containerd.io..."
+    CONTAINERD_OUTPUT=$(sudo dnf install -y containerd.io 2>&1)
+    CONTAINERD_STATUS=$?
+    if [[ $CONTAINERD_STATUS -eq 0 ]]; then
+      echo "  ✅ containerd.io 安装成功"
     else
-      echo "❌ containerd.io 安装失败"
+      echo "  ❌ containerd.io 安装失败"
+      echo "  错误信息: $(echo "$CONTAINERD_OUTPUT" | tail -5)"
     fi
     
-    if sudo dnf install -y docker-ce-cli; then
-      echo "✅ docker-ce-cli 安装成功"
+    echo "  - 正在安装 docker-ce-cli..."
+    DOCKER_CLI_OUTPUT=$(sudo dnf install -y docker-ce-cli 2>&1)
+    DOCKER_CLI_STATUS=$?
+    if [[ $DOCKER_CLI_STATUS -eq 0 ]]; then
+      echo "  ✅ docker-ce-cli 安装成功"
     else
-      echo "❌ docker-ce-cli 安装失败"
+      echo "  ❌ docker-ce-cli 安装失败"
+      echo "  错误信息: $(echo "$DOCKER_CLI_OUTPUT" | tail -5)"
     fi
     
-    if sudo dnf install -y docker-ce; then
-      echo "✅ docker-ce 安装成功"
+    echo "  - 正在安装 docker-ce..."
+    DOCKER_CE_OUTPUT=$(sudo dnf install -y docker-ce 2>&1)
+    DOCKER_CE_STATUS=$?
+    if [[ $DOCKER_CE_STATUS -eq 0 ]]; then
+      echo "  ✅ docker-ce 安装成功"
     else
-      echo "❌ docker-ce 安装失败"
+      echo "  ❌ docker-ce 安装失败"
+      echo "  错误信息: $(echo "$DOCKER_CE_OUTPUT" | tail -5)"
     fi
     
-    if sudo dnf install -y docker-buildx-plugin; then
-      echo "✅ docker-buildx-plugin 安装成功"
+    echo "  - 正在安装 docker-buildx-plugin..."
+    BUILDX_OUTPUT=$(sudo dnf install -y docker-buildx-plugin 2>&1)
+    BUILDX_STATUS=$?
+    if [[ $BUILDX_STATUS -eq 0 ]]; then
+      echo "  ✅ docker-buildx-plugin 安装成功"
     else
-      echo "❌ docker-buildx-plugin 安装失败"
+      echo "  ⚠️  docker-buildx-plugin 安装失败（可选组件，不影响核心功能）"
     fi
+    
+    # 重新启用 set -e
+    set -e
     
     # 检查是否至少安装了核心组件
     if ! command -v docker &> /dev/null; then
+      echo ""
       echo "❌ 包管理器安装完全失败，尝试二进制安装..."
       
       # 二进制安装备选方案
@@ -1409,7 +1848,7 @@ EOF
       
       # 源1: 阿里云镜像
       echo "尝试从阿里云镜像下载 Docker 二进制包..."
-      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
         DOCKER_BINARY_DOWNLOADED=true
         echo "✅ 从阿里云镜像下载成功"
       else
@@ -1419,7 +1858,7 @@ EOF
       # 源2: 腾讯云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从腾讯云镜像下载..."
-        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从腾讯云镜像下载成功"
         else
@@ -1430,7 +1869,7 @@ EOF
       # 源3: 华为云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从华为云镜像下载..."
-        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从华为云镜像下载成功"
         else
@@ -1441,7 +1880,7 @@ EOF
       # 源4: 官方源
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从官方源下载..."
-        if curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://download.docker.com/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从官方源下载成功"
         else
@@ -1818,7 +2257,7 @@ EOF
       
       # 源1: 阿里云镜像
       echo "尝试从阿里云镜像下载 Docker 二进制包..."
-      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
         DOCKER_BINARY_DOWNLOADED=true
         echo "✅ 从阿里云镜像下载成功"
       else
@@ -1828,7 +2267,7 @@ EOF
       # 源2: 腾讯云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从腾讯云镜像下载..."
-        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从腾讯云镜像下载成功"
         else
@@ -1839,7 +2278,7 @@ EOF
       # 源3: 华为云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从华为云镜像下载..."
-        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从华为云镜像下载成功"
         else
@@ -1850,7 +2289,7 @@ EOF
       # 源4: 官方源
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从官方源下载..."
-        if curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://download.docker.com/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从官方源下载成功"
         else
@@ -2227,7 +2666,7 @@ EOF
       
       # 源1: 阿里云镜像
       echo "尝试从阿里云镜像下载 Docker 二进制包..."
-      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
         DOCKER_BINARY_DOWNLOADED=true
         echo "✅ 从阿里云镜像下载成功"
       else
@@ -2237,7 +2676,7 @@ EOF
       # 源2: 腾讯云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从腾讯云镜像下载..."
-        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从腾讯云镜像下载成功"
         else
@@ -2248,7 +2687,7 @@ EOF
       # 源3: 华为云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从华为云镜像下载..."
-        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从华为云镜像下载成功"
         else
@@ -2259,7 +2698,7 @@ EOF
       # 源4: 官方源
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从官方源下载..."
-        if curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://download.docker.com/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从官方源下载成功"
         else
@@ -2639,7 +3078,7 @@ EOF
       
       # 源1: 阿里云镜像
       echo "尝试从阿里云镜像下载 Docker 二进制包..."
-      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
         DOCKER_BINARY_DOWNLOADED=true
         echo "✅ 从阿里云镜像下载成功"
       else
@@ -2649,7 +3088,7 @@ EOF
       # 源2: 腾讯云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从腾讯云镜像下载..."
-        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从腾讯云镜像下载成功"
         else
@@ -2660,7 +3099,7 @@ EOF
       # 源3: 华为云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从华为云镜像下载..."
-        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从华为云镜像下载成功"
         else
@@ -2671,7 +3110,7 @@ EOF
       # 源4: 官方源
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从官方源下载..."
-        if curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://download.docker.com/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从官方源下载成功"
         else
@@ -2981,39 +3420,102 @@ EOF
 
   echo ">>> [3/8] 安装 Docker CE 最新版..."
   
-  # 尝试安装 Docker，如果失败则尝试逐个安装组件
-  if sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin; then
+  # 临时禁用 set -e，允许错误处理
+  set +e
+  
+  echo "正在尝试安装 Docker CE（这可能需要几分钟，请耐心等待）..."
+  echo "如果安装过程卡住，可能是网络问题或依赖解析中，请等待..."
+  
+  # 尝试安装 Docker，使用超时机制（30分钟超时）
+  INSTALL_OUTPUT=""
+  INSTALL_STATUS=1
+  
+  # 使用 timeout 命令（如果可用）或直接执行
+  # 注意：使用 bash -c 确保 sudo 函数在子 shell 中可用
+  if command -v timeout &> /dev/null; then
+    INSTALL_OUTPUT=$(timeout 1800 bash -c "sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin" 2>&1)
+    INSTALL_STATUS=$?
+    if [[ $INSTALL_STATUS -eq 124 ]]; then
+      echo "❌ 安装超时（30分钟），可能是网络问题或依赖解析失败"
+      INSTALL_STATUS=1
+    fi
+  else
+    INSTALL_OUTPUT=$(sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin 2>&1)
+    INSTALL_STATUS=$?
+  fi
+  
+  # 重新启用 set -e
+  set -e
+  
+  if [[ $INSTALL_STATUS -eq 0 ]]; then
     echo "✅ Docker CE 安装成功"
   else
-    echo "❌ 批量安装失败，尝试逐个安装组件..."
+    # 显示详细错误信息
+    echo ""
+    echo "❌ Docker CE 批量安装失败"
+    echo "错误详情："
+    echo "$INSTALL_OUTPUT" | tail -20
+    echo ""
+    
+    # 检查错误类型
+    if echo "$INSTALL_OUTPUT" | grep -qiE "(timeout|timed out|connection|网络|network)"; then
+      echo "⚠️  检测到可能的网络问题，请检查网络连接"
+    fi
+    if echo "$INSTALL_OUTPUT" | grep -qiE "(repo|repository|仓库|not found|找不到)"; then
+      echo "⚠️  检测到可能的仓库配置问题，请检查 Docker 源配置"
+    fi
+    
+    echo "正在尝试逐个安装组件..."
+    
+    # 临时禁用 set -e
+    set +e
     
     # 逐个安装组件
-    if sudo dnf install -y containerd.io; then
-      echo "✅ containerd.io 安装成功"
+    echo "  - 正在安装 containerd.io..."
+    CONTAINERD_OUTPUT=$(sudo dnf install -y containerd.io 2>&1)
+    CONTAINERD_STATUS=$?
+    if [[ $CONTAINERD_STATUS -eq 0 ]]; then
+      echo "  ✅ containerd.io 安装成功"
     else
-      echo "❌ containerd.io 安装失败"
+      echo "  ❌ containerd.io 安装失败"
+      echo "  错误信息: $(echo "$CONTAINERD_OUTPUT" | tail -5)"
     fi
     
-    if sudo dnf install -y docker-ce-cli; then
-      echo "✅ docker-ce-cli 安装成功"
+    echo "  - 正在安装 docker-ce-cli..."
+    DOCKER_CLI_OUTPUT=$(sudo dnf install -y docker-ce-cli 2>&1)
+    DOCKER_CLI_STATUS=$?
+    if [[ $DOCKER_CLI_STATUS -eq 0 ]]; then
+      echo "  ✅ docker-ce-cli 安装成功"
     else
-      echo "❌ docker-ce-cli 安装失败"
+      echo "  ❌ docker-ce-cli 安装失败"
+      echo "  错误信息: $(echo "$DOCKER_CLI_OUTPUT" | tail -5)"
     fi
     
-    if sudo dnf install -y docker-ce; then
-      echo "✅ docker-ce 安装成功"
+    echo "  - 正在安装 docker-ce..."
+    DOCKER_CE_OUTPUT=$(sudo dnf install -y docker-ce 2>&1)
+    DOCKER_CE_STATUS=$?
+    if [[ $DOCKER_CE_STATUS -eq 0 ]]; then
+      echo "  ✅ docker-ce 安装成功"
     else
-      echo "❌ docker-ce 安装失败"
+      echo "  ❌ docker-ce 安装失败"
+      echo "  错误信息: $(echo "$DOCKER_CE_OUTPUT" | tail -5)"
     fi
     
-    if sudo dnf install -y docker-buildx-plugin; then
-      echo "✅ docker-buildx-plugin 安装成功"
+    echo "  - 正在安装 docker-buildx-plugin..."
+    BUILDX_OUTPUT=$(sudo dnf install -y docker-buildx-plugin 2>&1)
+    BUILDX_STATUS=$?
+    if [[ $BUILDX_STATUS -eq 0 ]]; then
+      echo "  ✅ docker-buildx-plugin 安装成功"
     else
-      echo "❌ docker-buildx-plugin 安装失败"
+      echo "  ⚠️  docker-buildx-plugin 安装失败（可选组件，不影响核心功能）"
     fi
+    
+    # 重新启用 set -e
+    set -e
     
     # 检查是否至少安装了核心组件
     if ! command -v docker &> /dev/null; then
+      echo ""
       echo "❌ 包管理器安装完全失败，尝试二进制安装..."
       
       # 二进制安装备选方案
@@ -3024,7 +3526,7 @@ EOF
       
       # 源1: 阿里云镜像
       echo "尝试从阿里云镜像下载 Docker 二进制包..."
-      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
         DOCKER_BINARY_DOWNLOADED=true
         echo "✅ 从阿里云镜像下载成功"
       else
@@ -3034,7 +3536,7 @@ EOF
       # 源2: 腾讯云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从腾讯云镜像下载..."
-        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从腾讯云镜像下载成功"
         else
@@ -3045,7 +3547,7 @@ EOF
       # 源3: 华为云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从华为云镜像下载..."
-        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从华为云镜像下载成功"
         else
@@ -3056,7 +3558,7 @@ EOF
       # 源4: 官方源
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从官方源下载..."
-        if curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://download.docker.com/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从官方源下载成功"
         else
@@ -3508,61 +4010,227 @@ EOF
     
     echo "❌ 包管理器安装失败，切换到二进制安装..."
   else
-    # 尝试安装 Docker，如果失败则尝试逐个安装组件
-    INSTALL_OUTPUT=$(sudo $PKG_MANAGER install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin 2>&1)
-    INSTALL_STATUS=$?
+    # 临时禁用 set -e，允许错误处理
+    set +e
+    
+    echo "正在尝试安装 Docker CE（这可能需要几分钟，请耐心等待）..."
+    echo "如果安装过程卡住，可能是网络问题或依赖解析中，请等待..."
+    
+    # 尝试安装 Docker，使用超时机制（30分钟超时）
+    INSTALL_OUTPUT=""
+    INSTALL_STATUS=1
+    
+    # 使用 timeout 命令（如果可用）或直接执行
+    # 注意：使用 bash -c 确保 sudo 函数在子 shell 中可用
+    if command -v timeout &> /dev/null; then
+      INSTALL_OUTPUT=$(timeout 1800 bash -c "sudo $PKG_MANAGER install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin" 2>&1)
+      INSTALL_STATUS=$?
+      if [[ $INSTALL_STATUS -eq 124 ]]; then
+        echo "❌ 安装超时（30分钟），可能是网络问题或依赖解析失败"
+        INSTALL_STATUS=1
+      fi
+    else
+      INSTALL_OUTPUT=$(sudo $PKG_MANAGER install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin 2>&1)
+      INSTALL_STATUS=$?
+    fi
+    
+    # 重新启用 set -e
+    set -e
     
     if [[ $INSTALL_STATUS -eq 0 ]]; then
       echo "✅ Docker CE 安装成功"
       DOCKER_INSTALL_SUCCESS=true
     else
+      # 显示详细错误信息
+      echo ""
+      echo "❌ Docker CE 批量安装失败"
+      echo "错误详情："
+      echo "$INSTALL_OUTPUT" | tail -20
+      echo ""
+      
       # 检查错误输出，判断是否是 container-selinux 依赖问题
-      if echo "$INSTALL_OUTPUT" | grep -q "container-selinux"; then
+      if echo "$INSTALL_OUTPUT" | grep -qi "container-selinux"; then
         CONTAINER_SELINUX_ERROR=true
         echo "❌ 检测到 container-selinux 依赖问题"
       fi
       
-      echo "❌ 批量安装失败，尝试逐个安装组件..."
+      # 检查是否是网络问题
+      if echo "$INSTALL_OUTPUT" | grep -qiE "(timeout|timed out|connection|网络|network)"; then
+        echo "⚠️  检测到可能的网络问题，请检查网络连接"
+      fi
+      
+      # 检查是否是仓库问题
+      if echo "$INSTALL_OUTPUT" | grep -qiE "(repo|repository|仓库|not found|找不到)"; then
+        echo "⚠️  检测到可能的仓库配置问题，请检查 Docker 源配置"
+      fi
+      
+      echo "正在尝试逐个安装组件..."
+      
+      # 临时禁用 set -e
+      set +e
       
       # 逐个安装组件
+      echo "  - 正在安装 containerd.io..."
       CONTAINERD_OUTPUT=$(sudo $PKG_MANAGER install -y containerd.io 2>&1)
       CONTAINERD_STATUS=$?
-      if echo "$CONTAINERD_OUTPUT" | grep -q "container-selinux"; then
-        echo "❌ containerd.io 安装失败（container-selinux 依赖问题）"
+      if echo "$CONTAINERD_OUTPUT" | grep -qi "container-selinux"; then
+        echo "  ❌ containerd.io 安装失败（container-selinux 依赖问题）"
+        echo "  错误信息: $(echo "$CONTAINERD_OUTPUT" | grep -i "container-selinux" | head -1)"
         CONTAINER_SELINUX_ERROR=true
       elif [[ $CONTAINERD_STATUS -eq 0 ]]; then
-        echo "✅ containerd.io 安装成功"
+        echo "  ✅ containerd.io 安装成功"
       else
-        echo "❌ containerd.io 安装失败"
+        echo "  ❌ containerd.io 安装失败"
+        echo "  错误信息: $(echo "$CONTAINERD_OUTPUT" | tail -5)"
+        
+        # 检测下载失败或校验和不匹配，尝试清理缓存后重试
+        if echo "$CONTAINERD_OUTPUT" | grep -qiE "(Cannot download|all mirrors were already tried|下载失败|无法下载|checksum doesn't match|校验和不匹配)"; then
+          echo "  ⚠️  检测到下载失败或校验和不匹配，尝试清理缓存后重试..."
+          # 清理所有缓存，包括损坏的文件
+          sudo $PKG_MANAGER clean all 2>/dev/null || true
+          sudo rm -rf /var/cache/dnf/* 2>/dev/null || true
+          sudo rm -rf /var/cache/yum/* 2>/dev/null || true
+          echo "  - 重新尝试安装 containerd.io..."
+          CONTAINERD_RETRY_OUTPUT=$(sudo $PKG_MANAGER install -y containerd.io 2>&1)
+          CONTAINERD_RETRY_STATUS=$?
+          if [[ $CONTAINERD_RETRY_STATUS -eq 0 ]]; then
+            echo "  ✅ containerd.io 重试安装成功"
+            CONTAINERD_STATUS=0
+          else
+            echo "  ❌ containerd.io 重试安装仍然失败"
+            echo "  错误信息: $(echo "$CONTAINERD_RETRY_OUTPUT" | tail -5)"
+            
+            # 如果还是校验和不匹配，尝试安装其他版本
+            if echo "$CONTAINERD_RETRY_OUTPUT" | grep -qiE "(checksum doesn't match|校验和不匹配)"; then
+              echo "  ⚠️  检测到校验和不匹配，尝试安装其他版本的 containerd.io..."
+              
+              # 尝试多个可用版本（从新到旧）
+              CONTAINERD_VERSIONS=("1.6.31-3.1.el8" "1.6.28-3.2.el8" "1.6.28-3.1.el8" "1.6.27-3.1.el8" "1.6.26-3.1.el8")
+              CONTAINERD_INSTALLED=false
+              
+              for VERSION in "${CONTAINERD_VERSIONS[@]}"; do
+                echo "  - 尝试安装 containerd.io-${VERSION}..."
+                CONTAINERD_ALT_OUTPUT=$(sudo $PKG_MANAGER install -y containerd.io-${VERSION} 2>&1)
+                CONTAINERD_ALT_STATUS=$?
+                if [[ $CONTAINERD_ALT_STATUS -eq 0 ]]; then
+                  echo "  ✅ containerd.io-${VERSION} 安装成功"
+                  CONTAINERD_STATUS=0
+                  CONTAINERD_INSTALLED=true
+                  break
+                else
+                  # 检查是否是校验和不匹配，如果是则继续尝试下一个版本
+                  if echo "$CONTAINERD_ALT_OUTPUT" | grep -qiE "(checksum doesn't match|校验和不匹配)"; then
+                    echo "  ⚠️  containerd.io-${VERSION} 也存在校验和不匹配，尝试下一个版本..."
+                    continue
+                  else
+                    echo "  ❌ containerd.io-${VERSION} 安装失败"
+                    # 如果不是校验和问题，可能是其他问题，继续尝试下一个版本
+                    continue
+                  fi
+                fi
+              done
+              
+              if [[ "$CONTAINERD_INSTALLED" == "false" ]]; then
+                echo "  ❌ 所有尝试的版本都安装失败"
+                echo "  💡 建议：手动下载并安装 containerd.io"
+                echo "    下载地址：https://mirrors.aliyun.com/docker-ce/linux/centos/8/${DOCKER_ARCH}/stable/Packages/"
+                echo "    或尝试其他镜像源："
+                echo "    - 腾讯云：https://mirrors.cloud.tencent.com/docker-ce/linux/centos/8/${DOCKER_ARCH}/stable/Packages/"
+                echo "    - 华为云：https://mirrors.huaweicloud.com/docker-ce/linux/centos/8/${DOCKER_ARCH}/stable/Packages/"
+                echo "    安装命令：sudo rpm -ivh containerd.io-*.rpm"
+              fi
+            else
+              echo "  ⚠️  提示：containerd.io 是 Docker 的运行时依赖，如果无法安装，Docker daemon 可能无法启动"
+              echo "  💡 建议：检查网络连接或尝试手动安装 containerd.io"
+            fi
+          fi
+        fi
       fi
       
-      if sudo $PKG_MANAGER install -y docker-ce-cli 2>/dev/null; then
-        echo "✅ docker-ce-cli 安装成功"
+      echo "  - 正在安装 docker-ce-cli..."
+      DOCKER_CLI_OUTPUT=$(sudo $PKG_MANAGER install -y docker-ce-cli 2>&1)
+      DOCKER_CLI_STATUS=$?
+      if [[ $DOCKER_CLI_STATUS -eq 0 ]]; then
+        echo "  ✅ docker-ce-cli 安装成功"
       else
-        echo "❌ docker-ce-cli 安装失败"
+        echo "  ❌ docker-ce-cli 安装失败"
+        echo "  错误信息: $(echo "$DOCKER_CLI_OUTPUT" | tail -5)"
       fi
       
+      echo "  - 正在安装 docker-ce..."
       DOCKER_CE_OUTPUT=$(sudo $PKG_MANAGER install -y docker-ce 2>&1)
       DOCKER_CE_STATUS=$?
-      if echo "$DOCKER_CE_OUTPUT" | grep -q "container-selinux"; then
-        echo "❌ docker-ce 安装失败（container-selinux 依赖问题）"
+      if echo "$DOCKER_CE_OUTPUT" | grep -qi "container-selinux"; then
+        echo "  ❌ docker-ce 安装失败（container-selinux 依赖问题）"
+        echo "  错误信息: $(echo "$DOCKER_CE_OUTPUT" | grep -i "container-selinux" | head -1)"
         CONTAINER_SELINUX_ERROR=true
       elif [[ $DOCKER_CE_STATUS -eq 0 ]]; then
-        echo "✅ docker-ce 安装成功"
+        echo "  ✅ docker-ce 安装成功"
         DOCKER_INSTALL_SUCCESS=true
       else
-        echo "❌ docker-ce 安装失败"
+        echo "  ❌ docker-ce 安装失败"
+        echo "  错误信息: $(echo "$DOCKER_CE_OUTPUT" | tail -5)"
       fi
       
-      if sudo $PKG_MANAGER install -y docker-buildx-plugin 2>/dev/null; then
-        echo "✅ docker-buildx-plugin 安装成功"
+      echo "  - 正在安装 docker-buildx-plugin..."
+      BUILDX_OUTPUT=$(sudo $PKG_MANAGER install -y docker-buildx-plugin 2>&1)
+      BUILDX_STATUS=$?
+      if [[ $BUILDX_STATUS -eq 0 ]]; then
+        echo "  ✅ docker-buildx-plugin 安装成功"
       else
-        echo "❌ docker-buildx-plugin 安装失败"
+        echo "  ⚠️  docker-buildx-plugin 安装失败（可选组件，不影响核心功能）"
       fi
+      
+      # 重新启用 set -e
+      set -e
       
       # 检查是否至少安装了核心组件
       if command -v docker &> /dev/null; then
         DOCKER_INSTALL_SUCCESS=true
+        echo ""
+        echo "✅ Docker 核心组件已安装（docker 命令可用）"
+        
+        # 检查安装状态并给出提示
+        if [[ $CONTAINERD_STATUS -ne 0 ]] || [[ $DOCKER_CE_STATUS -ne 0 ]]; then
+          echo ""
+          echo "⚠️  ═══════════════════════════════════════════════════════════════════════════════"
+          echo "⚠️  部分组件安装失败"
+          echo "⚠️  ═══════════════════════════════════════════════════════════════════════════════"
+          if [[ $CONTAINERD_STATUS -ne 0 ]]; then
+            echo "⚠️  containerd.io 未安装 - Docker daemon 需要此组件才能运行"
+          fi
+          if [[ $DOCKER_CE_STATUS -ne 0 ]]; then
+            echo "⚠️  docker-ce 未安装 - Docker daemon 需要此组件才能运行"
+          fi
+          echo ""
+          echo "📋 当前状态："
+          echo "   ✅ docker-ce-cli 已安装（可以使用 docker 命令）"
+          echo "   ✅ docker-buildx-plugin 已安装"
+          if [[ $CONTAINERD_STATUS -ne 0 ]]; then
+            echo "   ❌ containerd.io 未安装"
+          else
+            echo "   ✅ containerd.io 已安装"
+          fi
+          if [[ $DOCKER_CE_STATUS -ne 0 ]]; then
+            echo "   ❌ docker-ce 未安装"
+          else
+            echo "   ✅ docker-ce 已安装"
+          fi
+          echo ""
+          echo "💡 建议操作："
+          if [[ $CONTAINERD_STATUS -ne 0 ]]; then
+            echo "   1. 手动安装 containerd.io："
+            echo "      sudo $PKG_MANAGER clean all"
+            echo "      sudo $PKG_MANAGER makecache"
+            echo "      sudo $PKG_MANAGER install -y containerd.io"
+          fi
+          if [[ $DOCKER_CE_STATUS -ne 0 ]]; then
+            echo "   2. 安装 containerd.io 后，再安装 docker-ce："
+            echo "      sudo $PKG_MANAGER install -y docker-ce"
+          fi
+          echo "   3. 或者检查网络连接后重新运行安装脚本"
+          echo "⚠️  ═══════════════════════════════════════════════════════════════════════════════"
+        fi
       fi
     fi
   fi
@@ -3591,7 +4259,7 @@ EOF
       
       # 源1: 阿里云镜像
       echo "尝试从阿里云镜像下载 Docker 二进制包..."
-      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
         DOCKER_BINARY_DOWNLOADED=true
         echo "✅ 从阿里云镜像下载成功"
       else
@@ -3601,7 +4269,7 @@ EOF
       # 源2: 腾讯云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从腾讯云镜像下载..."
-        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从腾讯云镜像下载成功"
         else
@@ -3612,7 +4280,7 @@ EOF
       # 源3: 华为云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从华为云镜像下载..."
-        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从华为云镜像下载成功"
         else
@@ -3623,7 +4291,7 @@ EOF
       # 源4: 官方源
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从官方源下载..."
-        if curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://download.docker.com/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从官方源下载成功"
         else
@@ -3761,14 +4429,13 @@ EOF
   # 尝试多个下载源
   DOCKER_COMPOSE_DOWNLOADED=false
   
-  # 确定系统架构
-  ARCH=$(uname -m)
+  # 确定 Docker Compose 架构标识（使用已定义的DOCKER_ARCH变量）
   if [[ "$ARCH" == "x86_64" ]]; then
     COMPOSE_ARCH="x86_64"
   elif [[ "$ARCH" == "aarch64" ]] || [[ "$ARCH" == "arm64" ]]; then
     COMPOSE_ARCH="aarch64"
   else
-    COMPOSE_ARCH="$ARCH"
+    COMPOSE_ARCH="$DOCKER_ARCH"
   fi
   
   # 临时文件路径
@@ -3985,39 +4652,102 @@ EOF
 
   echo ">>> [3/8] 安装 Docker CE 最新版..."
   
-  # 尝试安装 Docker，如果失败则尝试逐个安装组件
-  if sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin; then
+  # 临时禁用 set -e，允许错误处理
+  set +e
+  
+  echo "正在尝试安装 Docker CE（这可能需要几分钟，请耐心等待）..."
+  echo "如果安装过程卡住，可能是网络问题或依赖解析中，请等待..."
+  
+  # 尝试安装 Docker，使用超时机制（30分钟超时）
+  INSTALL_OUTPUT=""
+  INSTALL_STATUS=1
+  
+  # 使用 timeout 命令（如果可用）或直接执行
+  # 注意：使用 bash -c 确保 sudo 函数在子 shell 中可用
+  if command -v timeout &> /dev/null; then
+    INSTALL_OUTPUT=$(timeout 1800 bash -c "sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin" 2>&1)
+    INSTALL_STATUS=$?
+    if [[ $INSTALL_STATUS -eq 124 ]]; then
+      echo "❌ 安装超时（30分钟），可能是网络问题或依赖解析失败"
+      INSTALL_STATUS=1
+    fi
+  else
+    INSTALL_OUTPUT=$(sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin 2>&1)
+    INSTALL_STATUS=$?
+  fi
+  
+  # 重新启用 set -e
+  set -e
+  
+  if [[ $INSTALL_STATUS -eq 0 ]]; then
     echo "✅ Docker CE 安装成功"
   else
-    echo "❌ 批量安装失败，尝试逐个安装组件..."
+    # 显示详细错误信息
+    echo ""
+    echo "❌ Docker CE 批量安装失败"
+    echo "错误详情："
+    echo "$INSTALL_OUTPUT" | tail -20
+    echo ""
+    
+    # 检查错误类型
+    if echo "$INSTALL_OUTPUT" | grep -qiE "(timeout|timed out|connection|网络|network)"; then
+      echo "⚠️  检测到可能的网络问题，请检查网络连接"
+    fi
+    if echo "$INSTALL_OUTPUT" | grep -qiE "(repo|repository|仓库|not found|找不到)"; then
+      echo "⚠️  检测到可能的仓库配置问题，请检查 Docker 源配置"
+    fi
+    
+    echo "正在尝试逐个安装组件..."
+    
+    # 临时禁用 set -e
+    set +e
     
     # 逐个安装组件
-    if sudo dnf install -y containerd.io; then
-      echo "✅ containerd.io 安装成功"
+    echo "  - 正在安装 containerd.io..."
+    CONTAINERD_OUTPUT=$(sudo dnf install -y containerd.io 2>&1)
+    CONTAINERD_STATUS=$?
+    if [[ $CONTAINERD_STATUS -eq 0 ]]; then
+      echo "  ✅ containerd.io 安装成功"
     else
-      echo "❌ containerd.io 安装失败"
+      echo "  ❌ containerd.io 安装失败"
+      echo "  错误信息: $(echo "$CONTAINERD_OUTPUT" | tail -5)"
     fi
     
-    if sudo dnf install -y docker-ce-cli; then
-      echo "✅ docker-ce-cli 安装成功"
+    echo "  - 正在安装 docker-ce-cli..."
+    DOCKER_CLI_OUTPUT=$(sudo dnf install -y docker-ce-cli 2>&1)
+    DOCKER_CLI_STATUS=$?
+    if [[ $DOCKER_CLI_STATUS -eq 0 ]]; then
+      echo "  ✅ docker-ce-cli 安装成功"
     else
-      echo "❌ docker-ce-cli 安装失败"
+      echo "  ❌ docker-ce-cli 安装失败"
+      echo "  错误信息: $(echo "$DOCKER_CLI_OUTPUT" | tail -5)"
     fi
     
-    if sudo dnf install -y docker-ce; then
-      echo "✅ docker-ce 安装成功"
+    echo "  - 正在安装 docker-ce..."
+    DOCKER_CE_OUTPUT=$(sudo dnf install -y docker-ce 2>&1)
+    DOCKER_CE_STATUS=$?
+    if [[ $DOCKER_CE_STATUS -eq 0 ]]; then
+      echo "  ✅ docker-ce 安装成功"
     else
-      echo "❌ docker-ce 安装失败"
+      echo "  ❌ docker-ce 安装失败"
+      echo "  错误信息: $(echo "$DOCKER_CE_OUTPUT" | tail -5)"
     fi
     
-    if sudo dnf install -y docker-buildx-plugin; then
-      echo "✅ docker-buildx-plugin 安装成功"
+    echo "  - 正在安装 docker-buildx-plugin..."
+    BUILDX_OUTPUT=$(sudo dnf install -y docker-buildx-plugin 2>&1)
+    BUILDX_STATUS=$?
+    if [[ $BUILDX_STATUS -eq 0 ]]; then
+      echo "  ✅ docker-buildx-plugin 安装成功"
     else
-      echo "❌ docker-buildx-plugin 安装失败"
+      echo "  ⚠️  docker-buildx-plugin 安装失败（可选组件，不影响核心功能）"
     fi
+    
+    # 重新启用 set -e
+    set -e
     
     # 检查是否至少安装了核心组件
     if ! command -v docker &> /dev/null; then
+      echo ""
       echo "❌ 包管理器安装完全失败，尝试二进制安装..."
       
       # 二进制安装备选方案
@@ -4028,7 +4758,7 @@ EOF
       
       # 源1: 阿里云镜像
       echo "尝试从阿里云镜像下载 Docker 二进制包..."
-      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
         DOCKER_BINARY_DOWNLOADED=true
         echo "✅ 从阿里云镜像下载成功"
       else
@@ -4038,7 +4768,7 @@ EOF
       # 源2: 腾讯云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从腾讯云镜像下载..."
-        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从腾讯云镜像下载成功"
         else
@@ -4049,7 +4779,7 @@ EOF
       # 源3: 华为云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从华为云镜像下载..."
-        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从华为云镜像下载成功"
         else
@@ -4060,7 +4790,7 @@ EOF
       # 源4: 官方源
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从官方源下载..."
-        if curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://download.docker.com/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从官方源下载成功"
         else
@@ -4512,7 +5242,7 @@ EOF
       
       # 源1: 阿里云镜像
       echo "尝试从阿里云镜像下载 Docker 二进制包..."
-      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
         DOCKER_BINARY_DOWNLOADED=true
         echo "✅ 从阿里云镜像下载成功"
       else
@@ -4522,7 +5252,7 @@ EOF
       # 源2: 腾讯云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从腾讯云镜像下载..."
-        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从腾讯云镜像下载成功"
         else
@@ -4533,7 +5263,7 @@ EOF
       # 源3: 华为云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从华为云镜像下载..."
-        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从华为云镜像下载成功"
         else
@@ -4544,7 +5274,7 @@ EOF
       # 源4: 官方源
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从官方源下载..."
-        if curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://download.docker.com/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从官方源下载成功"
         else
@@ -4653,12 +5383,21 @@ EOF
         echo ">>> [3.5/8] 安装 Docker Compose..."
         echo "正在下载 Docker Compose..."
         
+        # 确定 Docker Compose 架构标识
+        if [[ "$ARCH" == "x86_64" ]]; then
+          COMPOSE_ARCH="x86_64"
+        elif [[ "$ARCH" == "aarch64" ]] || [[ "$ARCH" == "arm64" ]]; then
+          COMPOSE_ARCH="aarch64"
+        else
+          COMPOSE_ARCH="$DOCKER_ARCH"
+        fi
+        
         # 尝试多个下载源
         DOCKER_COMPOSE_DOWNLOADED=false
         
         # 直接使用 GitHub 官方源（最可靠）
         echo "正在从 GitHub 官方源下载 Docker Compose..."
-        if sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose --connect-timeout 30 --max-time 120; then
+        if sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-linux-${COMPOSE_ARCH}" -o /usr/local/bin/docker-compose --connect-timeout 30 --max-time 120; then
           DOCKER_COMPOSE_DOWNLOADED=true
           echo "✅ 从 GitHub 官方源下载成功"
         else
@@ -4779,11 +5518,21 @@ EOF
 )
         fi
 
-        cat <<EOF | sudo tee /etc/docker/daemon.json > /dev/null
+        # 准备 DNS 配置字符串
+dns_config=""
+if [[ "$SKIP_DNS" != "true" ]]; then
+  if ! grep -q "nameserver" /etc/resolv.conf; then
+     dns_config=',
+  "dns": ["119.29.29.29", "114.114.114.114"]'
+  else
+     echo "ℹ️  检测到系统已配置 DNS，跳过 Docker DNS 配置以避免冲突"
+  fi
+fi
+
+cat <<EOF | sudo tee /etc/docker/daemon.json > /dev/null
 {
   "registry-mirrors": $mirror_list,
-  "insecure-registries": $insecure_registries,
-  "dns": ["119.29.29.29", "114.114.114.114"]
+  "insecure-registries": $insecure_registries$dns_config
 }
 EOF
         
@@ -4948,7 +5697,7 @@ EOF
       if command -v curl &> /dev/null; then
         # 源1: 阿里云镜像
         echo "尝试从阿里云镜像下载 Docker 二进制包..."
-        if sudo curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if sudo curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从阿里云镜像下载成功"
         else
@@ -4958,7 +5707,7 @@ EOF
         # 源2: 腾讯云镜像
         if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
           echo "尝试从腾讯云镜像下载 Docker 二进制包..."
-          if sudo curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+          if sudo curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
             DOCKER_BINARY_DOWNLOADED=true
             echo "✅ 从腾讯云镜像下载成功"
           else
@@ -4969,7 +5718,7 @@ EOF
         # 源3: 华为云镜像
         if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
           echo "尝试从华为云镜像下载 Docker 二进制包..."
-          if sudo curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+          if sudo curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
             DOCKER_BINARY_DOWNLOADED=true
             echo "✅ 从华为云镜像下载成功"
           else
@@ -4979,7 +5728,7 @@ EOF
       elif command -v wget &> /dev/null; then
         # 源1: 阿里云镜像
         echo "尝试从阿里云镜像下载 Docker 二进制包..."
-        if sudo wget -O /tmp/docker.tgz https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz --timeout=60; then
+        if sudo wget -O /tmp/docker.tgz https://mirrors.aliyun.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz --timeout=60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从阿里云镜像下载成功"
         else
@@ -4989,7 +5738,7 @@ EOF
         # 源2: 腾讯云镜像
         if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
           echo "尝试从腾讯云镜像下载 Docker 二进制包..."
-          if sudo wget -O /tmp/docker.tgz https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz --timeout=60; then
+          if sudo wget -O /tmp/docker.tgz https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz --timeout=60; then
             DOCKER_BINARY_DOWNLOADED=true
             echo "✅ 从腾讯云镜像下载成功"
           else
@@ -5000,7 +5749,7 @@ EOF
         # 源3: 华为云镜像
         if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
           echo "尝试从华为云镜像下载 Docker 二进制包..."
-          if sudo wget -O /tmp/docker.tgz https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz --timeout=60; then
+          if sudo wget -O /tmp/docker.tgz https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz --timeout=60; then
             DOCKER_BINARY_DOWNLOADED=true
             echo "✅ 从华为云镜像下载成功"
           else
@@ -5026,6 +5775,15 @@ EOF
     # Debian 9 使用较老版本的 docker-compose
     echo "正在下载兼容的 Docker Compose..."
     
+    # 确定 Docker Compose 架构标识
+    if [[ "$ARCH" == "x86_64" ]]; then
+      COMPOSE_ARCH="x86_64"
+    elif [[ "$ARCH" == "aarch64" ]] || [[ "$ARCH" == "arm64" ]]; then
+      COMPOSE_ARCH="aarch64"
+    else
+      COMPOSE_ARCH="$DOCKER_ARCH"
+    fi
+    
     DOCKER_COMPOSE_DOWNLOADED=false
     
     # 尝试从多个源下载兼容版本
@@ -5034,13 +5792,13 @@ EOF
     # 源1: 阿里云镜像
     if command -v curl &> /dev/null; then
       echo "尝试从阿里云镜像下载兼容版本..."
-      if sudo curl -L "https://mirrors.aliyun.com/docker-toolbox/linux/compose/1.25.5/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+      if sudo curl -L "https://mirrors.aliyun.com/docker-toolbox/linux/compose/1.25.5/docker-compose-linux-${COMPOSE_ARCH}" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
         DOCKER_COMPOSE_DOWNLOADED=true
         echo "✅ 从阿里云镜像下载兼容版本成功"
       fi
     elif command -v wget &> /dev/null; then
       echo "尝试从阿里云镜像下载兼容版本..."
-      if sudo wget -O /usr/local/bin/docker-compose "https://mirrors.aliyun.com/docker-toolbox/linux/compose/1.25.5/docker-compose-linux-x86_64" --timeout=30; then
+      if sudo wget -O /usr/local/bin/docker-compose "https://mirrors.aliyun.com/docker-toolbox/linux/compose/1.25.5/docker-compose-linux-${COMPOSE_ARCH}" --timeout=30; then
         DOCKER_COMPOSE_DOWNLOADED=true
         echo "✅ 从阿里云镜像下载兼容版本成功"
       fi
@@ -5050,13 +5808,13 @@ EOF
     if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
       if command -v curl &> /dev/null; then
         echo "尝试从腾讯云镜像下载兼容版本..."
-        if sudo curl -L "https://mirrors.cloud.tencent.com/docker-toolbox/linux/compose/1.25.5/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
+        if sudo curl -L "https://mirrors.cloud.tencent.com/docker-toolbox/linux/compose/1.25.5/docker-compose-linux-${COMPOSE_ARCH}" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
           DOCKER_COMPOSE_DOWNLOADED=true
           echo "✅ 从腾讯云镜像下载兼容版本成功"
         fi
       elif command -v wget &> /dev/null; then
         echo "尝试从腾讯云镜像下载兼容版本..."
-        if sudo wget -O /usr/local/bin/docker-compose "https://mirrors.cloud.tencent.com/docker-toolbox/linux/compose/1.25.5/docker-compose-linux-x86_64" --timeout=30; then
+        if sudo wget -O /usr/local/bin/docker-compose "https://mirrors.cloud.tencent.com/docker-toolbox/linux/compose/1.25.5/docker-compose-linux-${COMPOSE_ARCH}" --timeout=30; then
           DOCKER_COMPOSE_DOWNLOADED=true
           echo "✅ 从腾讯云镜像下载兼容版本成功"
         fi
@@ -5216,11 +5974,77 @@ EOF
       esac
       echo "⚠️  Kali Linux 将使用 Debian Docker 仓库 (codename: $DEBIAN_CODENAME)"
     fi
+    
+    # 检测 Ubuntu 版本并处理
+    if [[ "$OS" == "ubuntu" ]]; then
+      VERSION_CODENAME=$(awk -F= '/^VERSION_CODENAME=/{print $2}' /etc/os-release | tr -d '"' 2>/dev/null || echo "")
+      ORIGINAL_CODENAME="$DEBIAN_CODENAME"
+      
+      # Ubuntu LTS 版本（Docker 官方支持）：bionic (18.04), focal (20.04), jammy (22.04), noble (24.04)
+      # Ubuntu 非 LTS 版本：plucky (25.04) 等，Docker 官方可能支持也可能不支持
+      case "$DEBIAN_CODENAME" in
+        bionic|focal|jammy|noble)
+          # 这些是支持的 LTS 版本，保持原样
+          ;;
+        plucky)
+          # Ubuntu 25.04 (Plucky Puffin) - 2025年4月发布的非LTS版本
+          # Docker 官方可能尚未完全支持，先尝试使用 plucky，失败后会自动回退到 noble
+          echo "ℹ️  检测到 Ubuntu 25.04 (Plucky Puffin)"
+          echo "ℹ️  将首先尝试使用 Ubuntu 25.04 仓库，如果失败将回退到 Ubuntu 24.04 LTS (noble)"
+          # 先保持 plucky，让脚本尝试，失败时会自动回退
+          ;;
+        warty|hoary|breezy|dapper|edgy|feisty|gutsy|hardy|intrepid|jaunty|karmic|lucid|maverick|natty|oneiric|precise|quantal|raring|saucy|trusty|utopic|vivid|wily|xenial|yakkety|zesty|artful|cosmic|disco|eoan|groovy|hirsute|impish|kinetic|lunar|mantic)
+          # 这些都是很旧的版本或过期的版本，直接映射到最新的 LTS 版本 noble (24.04)
+          echo "⚠️  检测到 Ubuntu 旧版本 (codename: $DEBIAN_CODENAME)"
+          echo "⚠️  Docker 官方仓库不支持此版本，将使用 Ubuntu 24.04 LTS (noble) 仓库"
+          DEBIAN_CODENAME="noble"
+          ;;
+        "")
+          # 无法检测到版本代号，使用最新的 LTS
+          echo "⚠️  无法检测 Ubuntu 版本代号，将使用 Ubuntu 24.04 LTS (noble)"
+          DEBIAN_CODENAME="noble"
+          ;;
+        *)
+          # 未知的新版本，先尝试使用自身，失败后会回退
+          echo "ℹ️  检测到 Ubuntu 新版本 (codename: $DEBIAN_CODENAME)"
+          echo "ℹ️  将首先尝试使用此版本的仓库，如果失败将回退到 Ubuntu 24.04 LTS (noble)"
+          ;;
+      esac
+    fi
 
     sudo install -m 0755 -d /etc/apt/keyrings
     
     # 清理可能存在的旧配置
     sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
+    
+    # GPG 密钥下载和验证辅助函数
+    download_and_verify_gpg_key() {
+      local gpg_url=$1
+      local key_file="/etc/apt/keyrings/docker.gpg"
+      local error_output="/tmp/docker_gpg_error.log"
+      
+      # 下载并处理 GPG 密钥
+      if curl -fsSL "$gpg_url" 2>"$error_output" | sudo gpg --dearmor -o "$key_file" 2>"$error_output"; then
+        # 验证密钥文件是否存在且大小合理（应该大于 1000 字节）
+        if [[ -f "$key_file" ]] && [[ $(stat -f%z "$key_file" 2>/dev/null || stat -c%s "$key_file" 2>/dev/null || echo 0) -gt 1000 ]]; then
+          # 设置正确的权限
+          sudo chmod 644 "$key_file" 2>/dev/null || true
+          rm -f "$error_output" 2>/dev/null
+          return 0
+        else
+          echo "⚠️  GPG 密钥文件大小异常或不存在"
+          rm -f "$key_file" "$error_output" 2>/dev/null
+          return 1
+        fi
+      else
+        if [[ -f "$error_output" ]]; then
+          echo "⚠️  GPG 密钥下载/处理失败: $(cat "$error_output" 2>/dev/null | head -1)"
+          rm -f "$error_output" 2>/dev/null
+        fi
+        rm -f "$key_file" 2>/dev/null
+        return 1
+      fi
+    }
     
     # 尝试多个国内镜像源配置 Docker 仓库
     echo "正在配置 Docker 源..."
@@ -5229,16 +6053,27 @@ EOF
     # 源1: 阿里云镜像
     echo "尝试配置阿里云 Docker 源..."
     sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-    if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/$DOCKER_OS/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg 2>/dev/null; then
+    if download_and_verify_gpg_key "https://mirrors.aliyun.com/docker-ce/linux/$DOCKER_OS/gpg"; then
       echo \
         "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.aliyun.com/docker-ce/linux/$DOCKER_OS \
         $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
       
-      if sudo apt-get update 2>/dev/null; then
+      # 捕获 apt-get update 的详细错误信息
+      update_output="/tmp/docker_apt_update.log"
+      if sudo apt-get update >"$update_output" 2>&1; then
         DOCKER_REPO_ADDED=true
         echo "✅ 阿里云 Docker 源配置成功"
+        rm -f "$update_output" 2>/dev/null
       else
-        echo "❌ 阿里云 Docker 源配置失败，尝试下一个源..."
+        echo "❌ 阿里云 Docker 源配置失败"
+        if [[ -f "$update_output" ]]; then
+          # 显示关键错误信息
+          if grep -q "NO_PUBKEY\|GPG error\|NO_PUBKEY" "$update_output" 2>/dev/null; then
+            echo "   错误详情: $(grep -i "NO_PUBKEY\|GPG error" "$update_output" | head -1)"
+          fi
+          rm -f "$update_output" 2>/dev/null
+        fi
+        echo "   尝试下一个源..."
       fi
     else
       echo "❌ 阿里云 Docker GPG 密钥下载失败，尝试下一个源..."
@@ -5248,16 +6083,25 @@ EOF
     if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
       echo "尝试配置腾讯云 Docker 源..."
       sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-      if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/$DOCKER_OS/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg 2>/dev/null; then
+      if download_and_verify_gpg_key "https://mirrors.cloud.tencent.com/docker-ce/linux/$DOCKER_OS/gpg"; then
         echo \
           "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.cloud.tencent.com/docker-ce/linux/$DOCKER_OS \
           $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
         
-        if sudo apt-get update 2>/dev/null; then
+        update_output="/tmp/docker_apt_update.log"
+        if sudo apt-get update >"$update_output" 2>&1; then
           DOCKER_REPO_ADDED=true
           echo "✅ 腾讯云 Docker 源配置成功"
+          rm -f "$update_output" 2>/dev/null
         else
-          echo "❌ 腾讯云 Docker 源配置失败，尝试下一个源..."
+          echo "❌ 腾讯云 Docker 源配置失败"
+          if [[ -f "$update_output" ]]; then
+            if grep -q "NO_PUBKEY\|GPG error" "$update_output" 2>/dev/null; then
+              echo "   错误详情: $(grep -i "NO_PUBKEY\|GPG error" "$update_output" | head -1)"
+            fi
+            rm -f "$update_output" 2>/dev/null
+          fi
+          echo "   尝试下一个源..."
         fi
       else
         echo "❌ 腾讯云 Docker GPG 密钥下载失败，尝试下一个源..."
@@ -5268,16 +6112,25 @@ EOF
     if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
       echo "尝试配置华为云 Docker 源..."
       sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-      if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/$DOCKER_OS/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg 2>/dev/null; then
+      if download_and_verify_gpg_key "https://mirrors.huaweicloud.com/docker-ce/linux/$DOCKER_OS/gpg"; then
         echo \
           "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.huaweicloud.com/docker-ce/linux/$DOCKER_OS \
           $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
         
-        if sudo apt-get update 2>/dev/null; then
+        update_output="/tmp/docker_apt_update.log"
+        if sudo apt-get update >"$update_output" 2>&1; then
           DOCKER_REPO_ADDED=true
           echo "✅ 华为云 Docker 源配置成功"
+          rm -f "$update_output" 2>/dev/null
         else
-          echo "❌ 华为云 Docker 源配置失败，尝试下一个源..."
+          echo "❌ 华为云 Docker 源配置失败"
+          if [[ -f "$update_output" ]]; then
+            if grep -q "NO_PUBKEY\|GPG error" "$update_output" 2>/dev/null; then
+              echo "   错误详情: $(grep -i "NO_PUBKEY\|GPG error" "$update_output" | head -1)"
+            fi
+            rm -f "$update_output" 2>/dev/null
+          fi
+          echo "   尝试下一个源..."
         fi
       else
         echo "❌ 华为云 Docker GPG 密钥下载失败，尝试下一个源..."
@@ -5288,16 +6141,38 @@ EOF
     if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
       echo "尝试配置中科大 Docker 源..."
       sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-      if curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/$DOCKER_OS/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg 2>/dev/null; then
+      if download_and_verify_gpg_key "https://mirrors.ustc.edu.cn/docker-ce/linux/$DOCKER_OS/gpg"; then
         echo \
           "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.ustc.edu.cn/docker-ce/linux/$DOCKER_OS \
           $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
         
-        if sudo apt-get update 2>/dev/null; then
+        update_output="/tmp/docker_apt_update.log"
+        if sudo apt-get update >"$update_output" 2>&1; then
           DOCKER_REPO_ADDED=true
           echo "✅ 中科大 Docker 源配置成功"
+          rm -f "$update_output" 2>/dev/null
         else
-          echo "❌ 中科大 Docker 源配置失败，尝试下一个源..."
+          echo "❌ 中科大 Docker 源配置失败"
+          if [[ -f "$update_output" ]]; then
+            if grep -q "NO_PUBKEY\|GPG error" "$update_output" 2>/dev/null; then
+              echo "   错误详情: $(grep -i "NO_PUBKEY\|GPG error" "$update_output" | head -1)"
+              # 如果是 NO_PUBKEY 错误，显示缺失的密钥 ID
+              if grep -q "NO_PUBKEY" "$update_output" 2>/dev/null; then
+                missing_key=$(grep -oP "NO_PUBKEY \K[0-9A-F]{16}" "$update_output" | head -1)
+                if [[ -n "$missing_key" ]]; then
+                  echo "   缺失的 GPG 密钥 ID: $missing_key"
+                  echo "   尝试手动添加密钥..."
+                  # 尝试从 keyserver 获取密钥
+                  if command -v gpg &>/dev/null && command -v apt-key &>/dev/null 2>/dev/null; then
+                    sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "$missing_key" 2>/dev/null || \
+                    sudo apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys "$missing_key" 2>/dev/null || true
+                  fi
+                fi
+              fi
+            fi
+            rm -f "$update_output" 2>/dev/null
+          fi
+          echo "   尝试下一个源..."
         fi
       else
         echo "❌ 中科大 Docker GPG 密钥下载失败，尝试下一个源..."
@@ -5308,16 +6183,25 @@ EOF
     if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
       echo "尝试配置清华大学 Docker 源..."
       sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-      if curl -fsSL https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/$DOCKER_OS/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg 2>/dev/null; then
+      if download_and_verify_gpg_key "https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/$DOCKER_OS/gpg"; then
         echo \
           "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/$DOCKER_OS \
           $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
         
-        if sudo apt-get update 2>/dev/null; then
+        update_output="/tmp/docker_apt_update.log"
+        if sudo apt-get update >"$update_output" 2>&1; then
           DOCKER_REPO_ADDED=true
           echo "✅ 清华大学 Docker 源配置成功"
+          rm -f "$update_output" 2>/dev/null
         else
-          echo "❌ 清华大学 Docker 源配置失败，尝试下一个源..."
+          echo "❌ 清华大学 Docker 源配置失败"
+          if [[ -f "$update_output" ]]; then
+            if grep -q "NO_PUBKEY\|GPG error" "$update_output" 2>/dev/null; then
+              echo "   错误详情: $(grep -i "NO_PUBKEY\|GPG error" "$update_output" | head -1)"
+            fi
+            rm -f "$update_output" 2>/dev/null
+          fi
+          echo "   尝试下一个源..."
         fi
       else
         echo "❌ 清华大学 Docker GPG 密钥下载失败，尝试下一个源..."
@@ -5328,16 +6212,25 @@ EOF
     if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
       echo "尝试配置网易 Docker 源..."
       sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-      if curl -fsSL https://mirrors.163.com/docker-ce/linux/$DOCKER_OS/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg 2>/dev/null; then
+      if download_and_verify_gpg_key "https://mirrors.163.com/docker-ce/linux/$DOCKER_OS/gpg"; then
         echo \
           "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.163.com/docker-ce/linux/$DOCKER_OS \
           $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
         
-        if sudo apt-get update 2>/dev/null; then
+        update_output="/tmp/docker_apt_update.log"
+        if sudo apt-get update >"$update_output" 2>&1; then
           DOCKER_REPO_ADDED=true
           echo "✅ 网易 Docker 源配置成功"
+          rm -f "$update_output" 2>/dev/null
         else
-          echo "❌ 网易 Docker 源配置失败，尝试下一个源..."
+          echo "❌ 网易 Docker 源配置失败"
+          if [[ -f "$update_output" ]]; then
+            if grep -q "NO_PUBKEY\|GPG error" "$update_output" 2>/dev/null; then
+              echo "   错误详情: $(grep -i "NO_PUBKEY\|GPG error" "$update_output" | head -1)"
+            fi
+            rm -f "$update_output" 2>/dev/null
+          fi
+          echo "   尝试下一个源..."
         fi
       else
         echo "❌ 网易 Docker GPG 密钥下载失败，尝试下一个源..."
@@ -5348,25 +6241,113 @@ EOF
     if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
       echo "所有国内源都失败，尝试官方源..."
       sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-      if curl -fsSL https://download.docker.com/linux/$DOCKER_OS/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg 2>/dev/null; then
+      if download_and_verify_gpg_key "https://download.docker.com/linux/$DOCKER_OS/gpg"; then
         echo \
           "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/$DOCKER_OS \
           $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
         
-        if sudo apt-get update 2>/dev/null; then
+        update_output="/tmp/docker_apt_update.log"
+        if sudo apt-get update >"$update_output" 2>&1; then
           DOCKER_REPO_ADDED=true
           echo "✅ 官方 Docker 源配置成功"
+          rm -f "$update_output" 2>/dev/null
         else
           echo "❌ 官方 Docker 源也配置失败"
+          if [[ -f "$update_output" ]]; then
+            echo "   最后尝试的错误信息:"
+            grep -i "NO_PUBKEY\|GPG error\|404\|Not Found" "$update_output" 2>/dev/null | head -3
+            rm -f "$update_output" 2>/dev/null
+          fi
         fi
       else
         echo "❌ 官方 Docker GPG 密钥下载失败"
       fi
     fi
     
+    # 如果所有源都失败，且使用的是 Ubuntu 新版本（如 plucky），尝试回退到 LTS 版本
+    if [[ "$DOCKER_REPO_ADDED" == "false" ]] && [[ "$OS" == "ubuntu" ]]; then
+      # 检查原始版本代号，判断是否需要回退
+      if [[ "$ORIGINAL_CODENAME" == "plucky" ]] || [[ "$DEBIAN_CODENAME" == "plucky" ]]; then
+        # Ubuntu 25.04 (Plucky Puffin) 配置失败，回退到 Ubuntu 24.04 LTS (noble)
+        echo "⚠️  Ubuntu 25.04 (Plucky Puffin) 源配置失败，回退到 Ubuntu 24.04 LTS (noble)..."
+        DEBIAN_CODENAME="noble"
+        sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
+        
+        # 再次尝试官方源（最可靠）
+        if download_and_verify_gpg_key "https://download.docker.com/linux/$DOCKER_OS/gpg"; then
+          echo \
+            "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/$DOCKER_OS \
+            $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+          
+          update_output="/tmp/docker_apt_update.log"
+          if sudo apt-get update >"$update_output" 2>&1; then
+            DOCKER_REPO_ADDED=true
+            echo "✅ 使用 Ubuntu 24.04 LTS (noble) 源配置成功"
+            rm -f "$update_output" 2>/dev/null
+          else
+            rm -f "$update_output" 2>/dev/null
+          fi
+        fi
+      elif [[ "$DEBIAN_CODENAME" == "noble" ]] && [[ "$ORIGINAL_CODENAME" != "noble" ]]; then
+        # 如果已经是 noble 但原始不是 noble，说明已经回退过了，再回退到 jammy
+        echo "⚠️  Ubuntu 24.04 LTS (noble) 源配置失败，尝试回退到 Ubuntu 22.04 LTS (jammy)..."
+        DEBIAN_CODENAME="jammy"
+        sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
+        
+        # 再次尝试官方源（最可靠）
+        if download_and_verify_gpg_key "https://download.docker.com/linux/$DOCKER_OS/gpg"; then
+          echo \
+            "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/$DOCKER_OS \
+            $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+          
+          update_output="/tmp/docker_apt_update.log"
+          if sudo apt-get update >"$update_output" 2>&1; then
+            DOCKER_REPO_ADDED=true
+            echo "✅ 使用 Ubuntu 22.04 LTS (jammy) 源配置成功"
+            rm -f "$update_output" 2>/dev/null
+          else
+            rm -f "$update_output" 2>/dev/null
+          fi
+        fi
+      elif [[ -n "$ORIGINAL_CODENAME" ]] && [[ "$DEBIAN_CODENAME" != "$ORIGINAL_CODENAME" ]]; then
+        # 其他新版本，尝试回退到 noble
+        echo "⚠️  Ubuntu $ORIGINAL_CODENAME 源配置失败，尝试回退到 Ubuntu 24.04 LTS (noble)..."
+        DEBIAN_CODENAME="noble"
+        sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
+        
+        if download_and_verify_gpg_key "https://download.docker.com/linux/$DOCKER_OS/gpg"; then
+          echo \
+            "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/$DOCKER_OS \
+            $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+          
+          update_output="/tmp/docker_apt_update.log"
+          if sudo apt-get update >"$update_output" 2>&1; then
+            DOCKER_REPO_ADDED=true
+            echo "✅ 使用 Ubuntu 24.04 LTS (noble) 源配置成功"
+            rm -f "$update_output" 2>/dev/null
+          else
+            rm -f "$update_output" 2>/dev/null
+          fi
+        fi
+      fi
+    fi
+    
     if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
       echo "❌ 所有 Docker 源都配置失败，无法继续安装"
-      echo "请检查网络连接或手动配置 Docker 源"
+      echo ""
+      echo "可能的原因："
+      echo "  1. 网络连接问题"
+      echo "  2. Ubuntu 版本太新，Docker 官方仓库暂不支持"
+      echo "  3. GPG 密钥验证失败"
+      echo ""
+      echo "建议解决方案："
+      echo "  1. 检查网络连接"
+      echo "  2. 手动添加 Docker GPG 密钥："
+      echo "     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg"
+      echo "  3. 手动配置 Docker 源："
+      echo "     echo \"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable\" | sudo tee /etc/apt/sources.list.d/docker.list"
+      echo "  4. 更新软件包列表："
+      echo "     sudo apt-get update"
       exit 1
     fi
 
@@ -5666,36 +6647,98 @@ EOF
 
   echo ">>> [3/8] 安装 Docker CE 最新版..."
   
-  # 尝试安装 Docker，如果失败则尝试逐个安装组件
-  if sudo yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin --nobest; then
+  # 临时禁用 set -e，允许错误处理
+  set +e
+  
+  echo "正在尝试安装 Docker CE（这可能需要几分钟，请耐心等待）..."
+  echo "如果安装过程卡住，可能是网络问题或依赖解析中，请等待..."
+  
+  # 尝试安装 Docker，使用超时机制（30分钟超时）
+  INSTALL_OUTPUT=""
+  INSTALL_STATUS=1
+  
+  # 使用 timeout 命令（如果可用）或直接执行
+  # 注意：使用 bash -c 确保 sudo 函数在子 shell 中可用
+  if command -v timeout &> /dev/null; then
+    INSTALL_OUTPUT=$(timeout 1800 bash -c "sudo yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin --nobest" 2>&1)
+    INSTALL_STATUS=$?
+    if [[ $INSTALL_STATUS -eq 124 ]]; then
+      echo "❌ 安装超时（30分钟），可能是网络问题或依赖解析失败"
+      INSTALL_STATUS=1
+    fi
+  else
+    INSTALL_OUTPUT=$(sudo yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin --nobest 2>&1)
+    INSTALL_STATUS=$?
+  fi
+  
+  # 重新启用 set -e
+  set -e
+  
+  if [[ $INSTALL_STATUS -eq 0 ]]; then
     echo "✅ Docker CE 安装成功"
   else
-    echo "❌ 批量安装失败，尝试逐个安装组件..."
+    # 显示详细错误信息
+    echo ""
+    echo "❌ Docker CE 批量安装失败"
+    echo "错误详情："
+    echo "$INSTALL_OUTPUT" | tail -20
+    echo ""
+    
+    # 检查错误类型
+    if echo "$INSTALL_OUTPUT" | grep -qiE "(timeout|timed out|connection|网络|network)"; then
+      echo "⚠️  检测到可能的网络问题，请检查网络连接"
+    fi
+    if echo "$INSTALL_OUTPUT" | grep -qiE "(repo|repository|仓库|not found|找不到)"; then
+      echo "⚠️  检测到可能的仓库配置问题，请检查 Docker 源配置"
+    fi
+    
+    echo "正在尝试逐个安装组件..."
+    
+    # 临时禁用 set -e
+    set +e
     
     # 逐个安装组件
-    if sudo yum install -y containerd.io --nobest; then
-      echo "✅ containerd.io 安装成功"
+    echo "  - 正在安装 containerd.io..."
+    CONTAINERD_OUTPUT=$(sudo yum install -y containerd.io --nobest 2>&1)
+    CONTAINERD_STATUS=$?
+    if [[ $CONTAINERD_STATUS -eq 0 ]]; then
+      echo "  ✅ containerd.io 安装成功"
     else
-      echo "❌ containerd.io 安装失败"
+      echo "  ❌ containerd.io 安装失败"
+      echo "  错误信息: $(echo "$CONTAINERD_OUTPUT" | tail -5)"
     fi
     
-    if sudo yum install -y docker-ce-cli --nobest; then
-      echo "✅ docker-ce-cli 安装成功"
+    echo "  - 正在安装 docker-ce-cli..."
+    DOCKER_CLI_OUTPUT=$(sudo yum install -y docker-ce-cli --nobest 2>&1)
+    DOCKER_CLI_STATUS=$?
+    if [[ $DOCKER_CLI_STATUS -eq 0 ]]; then
+      echo "  ✅ docker-ce-cli 安装成功"
     else
-      echo "❌ docker-ce-cli 安装失败"
+      echo "  ❌ docker-ce-cli 安装失败"
+      echo "  错误信息: $(echo "$DOCKER_CLI_OUTPUT" | tail -5)"
     fi
     
-    if sudo yum install -y docker-ce --nobest; then
-      echo "✅ docker-ce 安装成功"
+    echo "  - 正在安装 docker-ce..."
+    DOCKER_CE_OUTPUT=$(sudo yum install -y docker-ce --nobest 2>&1)
+    DOCKER_CE_STATUS=$?
+    if [[ $DOCKER_CE_STATUS -eq 0 ]]; then
+      echo "  ✅ docker-ce 安装成功"
     else
-      echo "❌ docker-ce 安装失败"
+      echo "  ❌ docker-ce 安装失败"
+      echo "  错误信息: $(echo "$DOCKER_CE_OUTPUT" | tail -5)"
     fi
     
-    if sudo yum install -y docker-buildx-plugin --nobest; then
-      echo "✅ docker-buildx-plugin 安装成功"
+    echo "  - 正在安装 docker-buildx-plugin..."
+    BUILDX_OUTPUT=$(sudo yum install -y docker-buildx-plugin --nobest 2>&1)
+    BUILDX_STATUS=$?
+    if [[ $BUILDX_STATUS -eq 0 ]]; then
+      echo "  ✅ docker-buildx-plugin 安装成功"
     else
-      echo "❌ docker-buildx-plugin 安装失败"
+      echo "  ⚠️  docker-buildx-plugin 安装失败（可选组件，不影响核心功能）"
     fi
+    
+    # 重新启用 set -e
+    set -e
     
     # 检查是否至少安装了核心组件
     if ! command -v docker &> /dev/null; then
@@ -5709,7 +6752,7 @@ EOF
       
       # 源1: 阿里云镜像
       echo "尝试从阿里云镜像下载 Docker 二进制包..."
-      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+      if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
         DOCKER_BINARY_DOWNLOADED=true
         echo "✅ 从阿里云镜像下载成功"
       else
@@ -5719,7 +6762,7 @@ EOF
       # 源2: 腾讯云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从腾讯云镜像下载..."
-        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从腾讯云镜像下载成功"
         else
@@ -5730,7 +6773,7 @@ EOF
       # 源3: 华为云镜像
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从华为云镜像下载..."
-        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从华为云镜像下载成功"
         else
@@ -5741,7 +6784,7 @@ EOF
       # 源4: 官方源
       if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
         echo "尝试从官方源下载..."
-        if curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        if curl -fsSL https://download.docker.com/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
           DOCKER_BINARY_DOWNLOADED=true
           echo "✅ 从官方源下载成功"
         else
@@ -5949,6 +6992,8 @@ EOF
 )
   fi
 else
+  # 默认不配置 insecure-registries 以提高安全性，除非用户明确需要
+  # 或者仅配置 docker.xuanyuan.me 作为必要的加速端点
   insecure_registries=$(cat <<EOF
 [
   "docker.xuanyuan.me"
@@ -5957,11 +7002,21 @@ EOF
 )
 fi
 
+# 准备 DNS 配置字符串
+dns_config=""
+if [[ "$SKIP_DNS" != "true" ]]; then
+  if ! grep -q "nameserver" /etc/resolv.conf; then
+     dns_config=',
+  "dns": ["119.29.29.29", "114.114.114.114"]'
+  else
+     echo "ℹ️  检测到系统已配置 DNS，跳过 Docker DNS 配置以避免冲突"
+  fi
+fi
+
 cat <<EOF | sudo tee /etc/docker/daemon.json > /dev/null
 {
   "registry-mirrors": $mirror_list,
-  "insecure-registries": $insecure_registries,
-  "dns": ["119.29.29.29", "114.114.114.114"]
+  "insecure-registries": $insecure_registries$dns_config
 }
 EOF
 
@@ -6005,24 +7060,34 @@ if systemctl is-active --quiet docker; then
     
     # 将执行脚本的用户添加到 docker 组
     echo ">>> [8/8] 配置用户权限..."
+    
+    # 定义函数：安全地添加用户到 docker 组
+    add_user_to_docker_group() {
+        local target_user="$1"
+        if ! groups "$target_user" | grep -q "\bdocker\b"; then
+            echo "⚠️  注意：将用户 $target_user 加入 docker 组意味着赋予该用户 root 级权限。"
+            echo "⚠️  这可能会带来安全风险。如果您不确定，请选择 'n'。"
+            read -p "是否继续将 $target_user 添加到 docker 组？[Y/n] " confirm_add_group
+            confirm_add_group=${confirm_add_group:-Y}
+            
+            if [[ "$confirm_add_group" =~ ^[Yy]$ ]]; then
+                sudo usermod -aG docker "$target_user" 2>/dev/null || true
+                echo "✅ 已将用户 $target_user 添加到 docker 组"
+                echo "⚠️  请重新登录或执行 'newgrp docker' 使权限生效"
+            else
+                echo "ℹ️  已跳过用户组配置"
+            fi
+        else
+            echo "✅ 用户 $target_user 已在 docker 组中"
+        fi
+    }
+
     if [ -n "$SUDO_USER" ]; then
-        # 如果通过 sudo 执行，将 SUDO_USER 添加到 docker 组
-        if ! groups "$SUDO_USER" | grep -q "\bdocker\b"; then
-            sudo usermod -aG docker "$SUDO_USER" 2>/dev/null || true
-            echo "✅ 已将用户 $SUDO_USER 添加到 docker 组"
-            echo "⚠️  请重新登录或执行 'newgrp docker' 使权限生效"
-        else
-            echo "✅ 用户 $SUDO_USER 已在 docker 组中"
-        fi
+        # 如果通过 sudo 执行
+        add_user_to_docker_group "$SUDO_USER"
     elif [ "$(id -u)" -ne 0 ]; then
-        # 如果直接以非 root 用户执行，将当前用户添加到 docker 组
-        if ! groups "$USER" | grep -q "\bdocker\b"; then
-            sudo usermod -aG docker "$USER" 2>/dev/null || true
-            echo "✅ 已将用户 $USER 添加到 docker 组"
-            echo "⚠️  请重新登录或执行 'newgrp docker' 使权限生效"
-        else
-            echo "✅ 用户 $USER 已在 docker 组中"
-        fi
+        # 如果直接以非 root 用户执行
+        add_user_to_docker_group "$USER"
     else
         # 如果已经是 root 用户，提示信息
         echo "ℹ️  当前以 root 用户执行，无需添加到 docker 组"
