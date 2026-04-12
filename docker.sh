@@ -49,6 +49,121 @@ else
     echo "✅ 检测到 sudo 命令"
 fi
 
+# 恢复 /etc/docker/daemon.json 中与轩辕镜像相关的配置（需交互确认）
+restore_docker_daemon_config() {
+  local DETECTED_RESTORE_OS
+  DETECTED_RESTORE_OS=$(uname -s 2>/dev/null || echo "Unknown")
+  if [[ "$DETECTED_RESTORE_OS" == "Darwin" ]]; then
+    echo ""
+    echo "❌ macOS 不适用本脚本修改 Linux 路径下的 /etc/docker/daemon.json。"
+    echo "💡 请在 Docker Desktop「设置 → Docker Engine」中编辑或重置配置。"
+    return 1
+  fi
+  if [[ "$DETECTED_RESTORE_OS" == MINGW* ]] || [[ "$DETECTED_RESTORE_OS" == MSYS* ]] || [[ "$DETECTED_RESTORE_OS" == CYGWIN* ]]; then
+    echo ""
+    echo "❌ 当前为 Windows（Git Bash / MSYS / Cygwin 等），不适用本脚本的 Linux daemon.json 路径。"
+    echo "💡 请在 Docker Desktop 中配置镜像；若在 WSL 内使用 Linux，请在 WSL 内运行本脚本。"
+    return 1
+  fi
+  if ! [[ -t 0 ]]; then
+    echo ""
+    echo "❌ 恢复配置需在交互式终端中运行（未检测到 TTY），已跳过，未修改任何文件。"
+    return 1
+  fi
+
+  echo ""
+  echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  echo " 恢复 Docker 镜像相关配置"
+  echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  echo " 将修改 /etc/docker/daemon.json：可移除轩辕镜像加速、insecure-registries，"
+  echo " 以及脚本曾写入的 dns 等。之后拉取镜像将更多依赖官方 registry（视网络而定）。"
+  echo " 若选择「重置为默认 {}」，当前文件中的其它自定义项也会一并清空，请谨慎。"
+  echo " 💡 确认时请完整输入 yes（不区分大小写，YES / Yes 均可）；其它输入视为取消。"
+  echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  echo ""
+  local _confirm
+  local _confirm_lower
+  read -r -p "确认继续恢复？输入 yes 继续，其它任意键取消: " _confirm
+  _confirm_lower=$(printf '%s' "$_confirm" | tr '[:upper:]' '[:lower:]')
+  if [[ "$_confirm_lower" != "yes" ]]; then
+    echo "ℹ️  已取消，未修改任何文件。"
+    return 0
+  fi
+
+  echo ""
+  echo "请选择恢复方式："
+  echo " 1) 从最新一份 daemon.json.backup.* 恢复（排除 before_restore 备份）"
+  echo " 2) 重置为 Docker 默认（写入空对象 {}，不依赖备份）"
+  local sub
+  while true; do
+    read -r -p "请输入 [1/2]: " sub
+    if [[ "$sub" == "1" || "$sub" == "2" ]]; then
+      break
+    fi
+    echo "❌ 无效选择，请输入 1 或 2"
+  done
+
+  sudo mkdir -p /etc/docker
+
+  if [[ "$sub" == "1" ]]; then
+    local latest=""
+    while IFS= read -r line; do
+      [[ -z "$line" ]] && continue
+      [[ "$line" == *before_restore* ]] && continue
+      latest="$line"
+      break
+    done < <(ls -1t /etc/docker/daemon.json.backup.* 2>/dev/null || true)
+    if [[ -z "$latest" ]] || [[ ! -f "$latest" ]]; then
+      echo ""
+      echo "❌ 未找到可用的 daemon.json.backup.*（不含 before_restore），无法从历史备份还原。"
+      echo "💡 请重新运行本功能并选择 2) 重置为 {}，或手动编辑 /etc/docker/daemon.json。"
+      return 1
+    fi
+    local ts
+    ts=$(date +%Y%m%d_%H%M%S)
+    if [[ -f /etc/docker/daemon.json ]]; then
+      sudo cp /etc/docker/daemon.json "/etc/docker/daemon.json.backup.before_restore.$ts"
+      echo "✅ 已备份当前配置到 /etc/docker/daemon.json.backup.before_restore.$ts"
+    fi
+    sudo cp "$latest" /etc/docker/daemon.json
+    echo "✅ 已从备份恢复: $latest"
+  else
+    local ts
+    ts=$(date +%Y%m%d_%H%M%S)
+    if [[ -f /etc/docker/daemon.json ]]; then
+      sudo cp /etc/docker/daemon.json "/etc/docker/daemon.json.backup.before_restore.$ts"
+      echo "✅ 已备份当前配置到 /etc/docker/daemon.json.backup.before_restore.$ts"
+    fi
+    local _y
+    read -r -p "确认将 /etc/docker/daemon.json 重置为 {}？[y/N]: " _y
+    if [[ ! "$_y" =~ ^[Yy]$ ]]; then
+      echo "ℹ️  已取消重置（若已生成 before_restore 备份，可自行保留或删除）。"
+      return 0
+    fi
+    echo '{}' | sudo tee /etc/docker/daemon.json > /dev/null
+    echo "✅ 已重置为 {}"
+  fi
+
+  local SCRIPT_RESTORE_SYSTEMD_OK=false
+  if command -v systemctl &>/dev/null; then
+    local PID1_COMM_RESTORE
+    PID1_COMM_RESTORE=$(tr -d '\0' < /proc/1/comm 2>/dev/null || echo "")
+    if [[ "$PID1_COMM_RESTORE" == "systemd" ]] && systemctl show-environment &>/dev/null 2>&1; then
+      SCRIPT_RESTORE_SYSTEMD_OK=true
+    fi
+  fi
+  if [[ "$SCRIPT_RESTORE_SYSTEMD_OK" == "true" ]]; then
+    sudo systemctl daemon-reexec || true
+    sudo systemctl restart docker || true
+    echo "✅ 已尝试重载 Docker 服务"
+  else
+    echo "ℹ️  未检测到可用 systemd，请手动执行: sudo systemctl restart docker（或按需启动 dockerd）"
+  fi
+  echo ""
+  echo "💡 可通过 docker info 查看 Registry Mirrors 是否已变更。"
+  return 0
+}
+
 echo "=========================================="
 echo "🐳 欢迎使用轩辕镜像 Docker 一键安装配置脚本"
 echo "=========================================="
@@ -57,10 +172,11 @@ echo ""
 echo "请选择操作模式："
 echo "1) 一键安装配置（推荐）"
 echo "2) 修改轩辕镜像专属域名"
+echo "3) 恢复 Docker 镜像相关配置"
 echo ""
 # 循环等待用户输入有效选择
 while true; do
-    read -p "请输入选择 [1/2]: " mode_choice
+    read -p "请输入选择 [1/2/3]: " mode_choice
     
     if [[ "$mode_choice" == "1" ]]; then
         echo ""
@@ -99,6 +215,7 @@ while true; do
                     echo "请选择操作模式："
                     echo "1) 一键安装配置（推荐）"
                     echo "2) 修改轩辕镜像专属域名"
+                    echo "3) 恢复 Docker 镜像相关配置"
                     echo ""
                     # 重置 mode_choice 以重新进入循环
                     mode_choice=""
@@ -162,15 +279,19 @@ while true; do
         echo ">>> 配置轩辕镜像地址"
         echo ""
         echo "请选择版本："
-        echo "1) 轩辕镜像免费版 (专属域名: docker.xuanyuan.me)"
-        echo "2) 轩辕镜像专业版 (专属域名: 专属域名 + docker.xuanyuan.me)"
+        echo "1) 轩辕镜像免费版 (域名: docker.xuanyuan.me)"
+        echo "2) 轩辕镜像专业版 (专属域名 *.xuanyuan.run / *.xuanyuan.dev ，不含免费版域名)"
+        echo "3) 恢复/重置镜像相关配置"
         # 循环等待用户输入有效选择
         while true; do
-            read -p "请输入选择 [1/2]: " choice
+            read -p "请输入选择 [1/2/3]: " choice
             if [[ "$choice" == "1" || "$choice" == "2" ]]; then
                 break
+            elif [[ "$choice" == "3" ]]; then
+                restore_docker_daemon_config
+                exit $?
             else
-                echo "❌ 无效选择，请输入 1 或 2"
+                echo "❌ 无效选择，请输入 1、2 或 3"
                 echo ""
             fi
         done
@@ -189,22 +310,29 @@ while true; do
           # 清理用户输入的域名，移除协议前缀
   custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
   
-  # 检查是否输入的是 .run 地址，如果是则自动添加 .dev 地址
+  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
             if [[ "$custom_domain" == *.xuanyuan.run ]]; then
                 custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
                 mirror_list=$(cat <<EOF
 [
   "https://$custom_domain",
-  "https://$custom_domain_dev",
-  "https://docker.xuanyuan.me"
+  "https://$custom_domain_dev"
+]
+EOF
+)
+            elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
+                custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
+                mirror_list=$(cat <<EOF
+[
+  "https://$custom_domain",
+  "https://$custom_domain_run"
 ]
 EOF
 )
             else
                 mirror_list=$(cat <<EOF
 [
-  "https://$custom_domain",
-  "https://docker.xuanyuan.me"
+  "https://$custom_domain"
 ]
 EOF
 )
@@ -237,22 +365,29 @@ EOF
           # 清理用户输入的域名，移除协议前缀
   custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
   
-  # 检查是否输入的是 .run 地址，如果是则自动添加 .dev 地址
+  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
           if [[ "$custom_domain" == *.xuanyuan.run ]]; then
             custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
             insecure_registries=$(cat <<EOF
 [
   "$custom_domain",
-  "$custom_domain_dev",
-  "docker.xuanyuan.me"
+  "$custom_domain_dev"
+]
+EOF
+)
+          elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
+            custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
+            insecure_registries=$(cat <<EOF
+[
+  "$custom_domain",
+  "$custom_domain_run"
 ]
 EOF
 )
           else
             insecure_registries=$(cat <<EOF
 [
-  "$custom_domain",
-  "docker.xuanyuan.me"
+  "$custom_domain"
 ]
 EOF
 )
@@ -295,12 +430,17 @@ fi
         echo ""
         echo "当前配置的镜像源："
         if [[ "$choice" == "2" ]]; then
-            echo "  - https://$custom_domain (优先)"
             if [[ "$custom_domain" == *.xuanyuan.run ]]; then
                 custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
+                echo "  - https://$custom_domain (优先)"
                 echo "  - https://$custom_domain_dev (备用)"
+            elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
+                custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
+                echo "  - https://$custom_domain (优先)"
+                echo "  - https://$custom_domain_run (备用)"
+            else
+                echo "  - https://$custom_domain"
             fi
-            echo "  - https://docker.xuanyuan.me (备用)"
         else
             echo "  - https://docker.xuanyuan.me"
         fi
@@ -327,8 +467,13 @@ fi
         echo ""
         echo "🎉 镜像配置完成！"
         exit 0
+    elif [[ "$mode_choice" == "3" ]]; then
+        echo ""
+        echo ">>> 模式：恢复 Docker 镜像相关配置"
+        restore_docker_daemon_config
+        exit $?
     else
-        echo "❌ 无效选择，请输入 1 或 2"
+        echo "❌ 无效选择，请输入 1、2 或 3"
         echo ""
     fi
 done
@@ -569,13 +714,27 @@ elif [[ "$OS" == "centos" && "$VERSION_ID" == "8" ]]; then
   echo "⚠️  当前将使用归档源继续安装，但强烈建议尽快升级系统"
   echo "⚠️  ═══════════════════════════════════════════════════════════════════════════════"
   echo ""
-elif [[ "$OS" == "kylin" ]]; then
+elif [[ "$OS" == "kylin" || "$OS" == "uos" || "$OS" == "uniontechos" ]]; then
   echo ""
-  echo "✅ 检测到银河麒麟操作系统 (Kylin Linux) V$VERSION_ID"
-  echo "📋 系统信息："
-  echo "   - Kylin Linux 基于 RHEL，与 CentOS/RHEL 兼容"
-  echo "   - 使用 yum/dnf 包管理器"
-  echo "   - 支持国内镜像"
+  if [[ "$OS" == "kylin" ]]; then
+    # 规范显示银河麒麟版本，避免出现 Vv10 等重复前缀
+    if [[ "$VERSION_ID" =~ ^[Vv] ]]; then
+      KYLIN_VERSION_DISPLAY="$VERSION_ID"
+    else
+      KYLIN_VERSION_DISPLAY="V$VERSION_ID"
+    fi
+    echo "✅ 检测到银河麒麟操作系统 (Kylin Linux) $KYLIN_VERSION_DISPLAY"
+    echo "📋 系统信息："
+    echo "   - Kylin Linux 基于 RHEL，与 CentOS/RHEL 兼容"
+    echo "   - 使用 yum/dnf 包管理器"
+    echo "   - 支持国内镜像"
+  else
+    echo "✅ 检测到统信操作系统 (UnionTechOS / UOS) $VERSION_ID"
+    echo "📋 系统信息："
+    echo "   - 与 RHEL/CentOS 软件生态兼容，使用 yum/dnf 包管理器"
+    echo "   - Docker CE 将按兼容映射使用国内 CentOS 系镜像源"
+    echo "   - 支持国内镜像"
+  fi
   echo ""
 elif [[ "$OS" == "kali" ]]; then
   echo ""
@@ -584,6 +743,14 @@ elif [[ "$OS" == "kali" ]]; then
   echo "   - Kali Linux 基于 Debian，与 Debian 完全兼容"
   echo "   - 使用 apt 包管理器"
   echo "   - 将使用 Debian 兼容的安装方法"
+  echo "   - 支持国内镜像"
+  echo ""
+elif [[ "$OS" == "deepin" ]]; then
+  echo ""
+  echo "✅ 检测到深度操作系统 (Deepin) $VERSION_ID"
+  echo "📋 系统信息："
+  echo "   - Deepin 基于 Debian，使用 apt 包管理器"
+  echo "   - Docker CE 使用官方 linux/debian 源（Deepin 代号将映射为 Debian suite）"
   echo "   - 支持国内镜像"
   echo ""
 fi
@@ -611,14 +778,18 @@ if command -v docker &> /dev/null; then
         # 循环等待用户选择镜像版本
         while true; do
             echo "请选择版本:"
-            echo "1) 轩辕镜像免费版 (专属域名: docker.xuanyuan.me)"
-            echo "2) 轩辕镜像专业版 (专属域名: 专属域名 + docker.xuanyuan.me)"
-            read -p "请输入选择 [1/2]: " choice
+            echo "1) 轩辕镜像免费版 (域名: docker.xuanyuan.me)"
+            echo "2) 轩辕镜像专业版 (专属域名: *.xuanyuan.run / *.xuanyuan.dev 不含免费版域名)"
+            echo "3) 恢复/重置镜像相关配置"
+            read -p "请输入选择 [1/2/3]: " choice
             
             if [[ "$choice" == "1" || "$choice" == "2" ]]; then
                 break
+            elif [[ "$choice" == "3" ]]; then
+                restore_docker_daemon_config
+                exit $?
             else
-                echo "❌ 无效选择，请输入 1 或 2"
+                echo "❌ 无效选择，请输入 1、2 或 3"
                 echo ""
             fi
         done
@@ -637,22 +808,29 @@ if command -v docker &> /dev/null; then
           # 清理用户输入的域名，移除协议前缀
   custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
   
-  # 检查是否输入的是 .run 地址，如果是则自动添加 .dev 地址
+  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
           if [[ "$custom_domain" == *.xuanyuan.run ]]; then
             custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
             mirror_list=$(cat <<EOF
 [
   "https://$custom_domain",
-  "https://$custom_domain_dev",
-  "https://docker.xuanyuan.me"
+  "https://$custom_domain_dev"
+]
+EOF
+)
+          elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
+            custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
+            mirror_list=$(cat <<EOF
+[
+  "https://$custom_domain",
+  "https://$custom_domain_run"
 ]
 EOF
 )
           else
             mirror_list=$(cat <<EOF
 [
-  "https://$custom_domain",
-  "https://docker.xuanyuan.me"
+  "https://$custom_domain"
 ]
 EOF
 )
@@ -676,22 +854,29 @@ EOF
           # 清理用户输入的域名，移除协议前缀
   custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
   
-  # 检查是否输入的是 .run 地址，如果是则自动添加 .dev 地址
+  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
           if [[ "$custom_domain" == *.xuanyuan.run ]]; then
             custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
             insecure_registries=$(cat <<EOF
 [
   "$custom_domain",
-  "$custom_domain_dev",
-  "docker.xuanyuan.me"
+  "$custom_domain_dev"
+]
+EOF
+)
+          elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
+            custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
+            insecure_registries=$(cat <<EOF
+[
+  "$custom_domain",
+  "$custom_domain_run"
 ]
 EOF
 )
           else
             insecure_registries=$(cat <<EOF
 [
-  "$custom_domain",
-  "docker.xuanyuan.me"
+  "$custom_domain"
 ]
 EOF
 )
@@ -728,19 +913,24 @@ EOF
         
         echo ">>> [6/8] 安装完成！"
         echo "🎉Docker 镜像已配置完成"
-        echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像支持与技术服务平台"
+        echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像高效稳定拉取服务"
         echo "官方网站: https://xuanyuan.cloud/"
         
         # 显示当前配置的镜像源
         echo ""
         echo "当前配置的镜像源："
         if [[ "$choice" == "2" ]]; then
-            echo "  - https://$custom_domain (优先)"
             if [[ "$custom_domain" == *.xuanyuan.run ]]; then
                 custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
+                echo "  - https://$custom_domain (优先)"
                 echo "  - https://$custom_domain_dev (备用)"
+            elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
+                custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
+                echo "  - https://$custom_domain (优先)"
+                echo "  - https://$custom_domain_run (备用)"
+            else
+                echo "  - https://$custom_domain"
             fi
-            echo "  - https://docker.xuanyuan.me (备用)"
         else
             echo "  - https://docker.xuanyuan.me"
         fi
@@ -757,14 +947,18 @@ EOF
         # 循环等待用户选择镜像版本
         while true; do
             echo "请选择版本:"
-            echo "1) 轩辕镜像免费版 (专属域名: docker.xuanyuan.me)"
-            echo "2) 轩辕镜像专业版 (专属域名: 专属域名 + docker.xuanyuan.me)"
-            read -p "请输入选择 [1/2]: " choice
+            echo "1) 轩辕镜像免费版 (域名: docker.xuanyuan.me)"
+            echo "2) 轩辕镜像专业版 (专属域名 *.xuanyuan.run / *.xuanyuan.dev 不含免费版域名)"
+            echo "3) 恢复/重置镜像相关配置"
+            read -p "请输入选择 [1/2/3]: " choice
             
             if [[ "$choice" == "1" || "$choice" == "2" ]]; then
                 break
+            elif [[ "$choice" == "3" ]]; then
+                restore_docker_daemon_config
+                exit $?
             else
-                echo "❌ 无效选择，请输入 1 或 2"
+                echo "❌ 无效选择，请输入 1、2 或 3"
                 echo ""
             fi
         done
@@ -778,24 +972,31 @@ EOF
           custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
           
           # 清理用户输入的域名，移除协议前缀
-  custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
+          custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
   
-  # 检查是否输入的是 .run 地址，如果是则自动添加 .dev 地址
+  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
           if [[ "$custom_domain" == *.xuanyuan.run ]]; then
             custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
             mirror_list=$(cat <<EOF
 [
   "https://$custom_domain",
-  "https://$custom_domain_dev",
-  "https://docker.xuanyuan.me"
+  "https://$custom_domain_dev"
+]
+EOF
+)
+          elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
+            custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
+            mirror_list=$(cat <<EOF
+[
+  "https://$custom_domain",
+  "https://$custom_domain_run"
 ]
 EOF
 )
           else
             mirror_list=$(cat <<EOF
 [
-  "https://$custom_domain",
-  "https://docker.xuanyuan.me"
+  "https://$custom_domain"
 ]
 EOF
 )
@@ -819,22 +1020,29 @@ EOF
           # 清理用户输入的域名，移除协议前缀
   custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
   
-  # 检查是否输入的是 .run 地址，如果是则自动添加 .dev 地址
+  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
           if [[ "$custom_domain" == *.xuanyuan.run ]]; then
             custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
             insecure_registries=$(cat <<EOF
 [
   "$custom_domain",
-  "$custom_domain_dev",
-  "docker.xuanyuan.me"
+  "$custom_domain_dev"
+]
+EOF
+)
+          elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
+            custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
+            insecure_registries=$(cat <<EOF
+[
+  "$custom_domain",
+  "$custom_domain_run"
 ]
 EOF
 )
           else
             insecure_registries=$(cat <<EOF
 [
-  "$custom_domain",
-  "docker.xuanyuan.me"
+  "$custom_domain"
 ]
 EOF
 )
@@ -871,7 +1079,7 @@ EOF
         
         echo ">>> [6/8] 安装完成！"
         echo "🎉Docker 镜像已配置完成"
-        echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像支持与技术服务平台"
+        echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像高效稳定拉取服务"
         echo "官方网站: https://xuanyuan.cloud/"
         exit 0
     fi
@@ -3740,23 +3948,68 @@ EOF
     echo "建议访问: https://docs.docker.com/compose/install/ 查看手动安装方法"
   fi
 
-elif [[ "$OS" == "kylin" ]]; then
-  # Kylin Linux (银河麒麟) 支持
-  echo "检测到 Kylin Linux V$VERSION_ID"
-  echo "Kylin Linux 基于 RHEL，与 CentOS/RHEL 兼容"
-  
-  # 判断使用 dnf 还是 yum，以及对应的 CentOS 版本
-  if command -v dnf &> /dev/null; then
-    # Kylin V10 通常基于 RHEL 8，但使用 dnf
-    PKG_MANAGER="dnf"
-    # 尝试 CentOS 8 源（Kylin V10 基于 RHEL 8）
-    CENTOS_VERSION="8"
-    echo "使用 dnf 包管理器 (Kylin V$VERSION_ID 基于 RHEL 8)"
+elif [[ "$OS" == "kylin" || "$OS" == "uos" || "$OS" == "uniontechos" ]]; then
+  # Kylin Linux（银河麒麟）/ 统信 UOS：RHEL 兼容系，Docker CE 使用 linux/centos/${CENTOS_VERSION} 源
+  KYLIN_MAJOR_VERSION=""
+  UOS_PRESET_CENTOS=""
+  if [[ "$OS" == "kylin" ]]; then
+    # 规范显示版本号，避免 Vv10
+    if [[ "$VERSION_ID" =~ ^[Vv] ]]; then
+      KYLIN_VERSION_DISPLAY="$VERSION_ID"
+    else
+      KYLIN_VERSION_DISPLAY="V$VERSION_ID"
+    fi
+    echo "检测到 Kylin Linux $KYLIN_VERSION_DISPLAY"
+    echo "Kylin Linux 基于 RHEL，与 CentOS/RHEL 兼容"
+    # 对银河麒麟版本做简单解析：V10 系列按 RHEL 8 处理
+    if [[ "$VERSION_ID" =~ [0-9]+ ]]; then
+      KYLIN_MAJOR_VERSION="$(echo "$VERSION_ID" | grep -oE '[0-9]+' | head -1)"
+    fi
   else
-    # Kylin V7 使用 yum
+    echo "检测到统信 UOS $VERSION_ID（/etc/os-release ID=$OS）"
+    echo "统信服务器版与 RHEL/CentOS 兼容；Docker CE 使用 CentOS 兼容仓库"
+    # UOS 20.x 等与 EL8 线兼容，不得沿用「首个数字」误判为 7（VERSION_ID=20 时首段为 20 而非 10）
+    UOS_MAJOR="${VERSION_ID%%.*}"
+    if [[ "$UOS_MAJOR" =~ ^[0-9]+$ ]] && [[ "$UOS_MAJOR" -ge 20 ]]; then
+      UOS_PRESET_CENTOS="8"
+    else
+      UOS_PRESET_CENTOS="7"
+    fi
+    echo "兼容映射：使用 CentOS ${UOS_PRESET_CENTOS} 的 Docker CE 源（若失败请反馈 VERSION_ID 以便调整）"
+  fi
+
+  # 优先使用 dnf，其次尝试 yum；都不存在则提示用户
+  if command -v dnf &> /dev/null; then
+    PKG_MANAGER="dnf"
+    if [[ -n "$UOS_PRESET_CENTOS" ]]; then
+      CENTOS_VERSION="$UOS_PRESET_CENTOS"
+    elif [[ "$KYLIN_MAJOR_VERSION" == "10" ]]; then
+      CENTOS_VERSION="8"
+    else
+      CENTOS_VERSION="7"
+    fi
+    if [[ "$OS" == "kylin" ]]; then
+      echo "使用 dnf 包管理器 (Kylin $KYLIN_VERSION_DISPLAY 基于 RHEL ${CENTOS_VERSION})"
+    else
+      echo "使用 dnf 包管理器 (UOS $VERSION_ID → CentOS ${CENTOS_VERSION} 兼容源)"
+    fi
+  elif command -v yum &> /dev/null; then
     PKG_MANAGER="yum"
-    CENTOS_VERSION="7"
-    echo "使用 yum 包管理器 (Kylin V$VERSION_ID 基于 RHEL 7)"
+    if [[ -n "$UOS_PRESET_CENTOS" ]]; then
+      CENTOS_VERSION="$UOS_PRESET_CENTOS"
+    elif [[ "$KYLIN_MAJOR_VERSION" == "10" ]]; then
+      CENTOS_VERSION="8"
+    else
+      CENTOS_VERSION="7"
+    fi
+    if [[ "$OS" == "kylin" ]]; then
+      echo "使用 yum 包管理器 (Kylin $KYLIN_VERSION_DISPLAY 基于 RHEL ${CENTOS_VERSION})"
+    else
+      echo "使用 yum 包管理器 (UOS $VERSION_ID → CentOS ${CENTOS_VERSION} 兼容源)"
+    fi
+  else
+    echo "❌ 未检测到可用的 dnf 或 yum 包管理器，请先在系统中安装 dnf 或 yum 后重试。"
+    exit 1
   fi
   
   sudo $PKG_MANAGER install -y ${PKG_MANAGER}-utils
@@ -3990,6 +4243,14 @@ EOF
   fi
 
   echo ">>> [3/8] 安装 Docker CE 最新版..."
+
+  # 统信 UOS / 银河麒麟等自带的 docker-runc 与 Docker CE 的 containerd.io（内置 runc）冲突，需先移除再装 docker-ce
+  if [[ "$OS" == "uos" || "$OS" == "uniontechos" || "$OS" == "kylin" ]]; then
+    if rpm -q docker-runc &>/dev/null; then
+      echo ">>> [2.9/8] 检测到系统包 docker-runc，与 Docker CE 依赖冲突，正在移除..."
+      sudo $PKG_MANAGER remove -y docker-runc 2>/dev/null || true
+    fi
+  fi
   
   # 如果 container-selinux 版本不满足要求，直接使用二进制安装
   DOCKER_INSTALL_SUCCESS=false
@@ -4023,14 +4284,14 @@ EOF
     # 使用 timeout 命令（如果可用）或直接执行
     # 注意：使用 bash -c 确保 sudo 函数在子 shell 中可用
     if command -v timeout &> /dev/null; then
-      INSTALL_OUTPUT=$(timeout 1800 bash -c "sudo $PKG_MANAGER install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin" 2>&1)
+      INSTALL_OUTPUT=$(timeout 1800 bash -c "sudo $PKG_MANAGER install -y --allowerasing docker-ce docker-ce-cli containerd.io docker-buildx-plugin" 2>&1)
       INSTALL_STATUS=$?
       if [[ $INSTALL_STATUS -eq 124 ]]; then
         echo "❌ 安装超时（30分钟），可能是网络问题或依赖解析失败"
         INSTALL_STATUS=1
       fi
     else
-      INSTALL_OUTPUT=$(sudo $PKG_MANAGER install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin 2>&1)
+      INSTALL_OUTPUT=$(sudo $PKG_MANAGER install -y --allowerasing docker-ce docker-ce-cli containerd.io docker-buildx-plugin 2>&1)
       INSTALL_STATUS=$?
     fi
     
@@ -4158,7 +4419,7 @@ EOF
       fi
       
       echo "  - 正在安装 docker-ce..."
-      DOCKER_CE_OUTPUT=$(sudo $PKG_MANAGER install -y docker-ce 2>&1)
+      DOCKER_CE_OUTPUT=$(sudo $PKG_MANAGER install -y --allowerasing docker-ce 2>&1)
       DOCKER_CE_STATUS=$?
       if echo "$DOCKER_CE_OUTPUT" | grep -qi "container-selinux"; then
         echo "  ❌ docker-ce 安装失败（container-selinux 依赖问题）"
@@ -4370,11 +4631,11 @@ EOF
       fi
   fi
   
-  # 检测 systemd 是否可用
+  # 检测 systemd 是否可用：PID 1 须为 systemd 且 dbus 可连通（仅有 /run/systemd 在容器/WSL 中不可靠）
   SYSTEMD_AVAILABLE=false
-  if command -v systemctl &>/dev/null && systemctl --version &>/dev/null; then
-    # 检查是否在容器环境中（PID 1 不是 systemd）
-    if [[ -d /run/systemd/system ]] || [[ -d /sys/fs/cgroup/systemd ]]; then
+  if command -v systemctl &>/dev/null; then
+    PID1_COMM_KYLIN=$(tr -d '\0' < /proc/1/comm 2>/dev/null || echo "")
+    if [[ "$PID1_COMM_KYLIN" == "systemd" ]] && systemctl show-environment &>/dev/null; then
       SYSTEMD_AVAILABLE=true
     fi
   fi
@@ -4971,8 +5232,8 @@ EOF
     echo "建议访问: https://docs.docker.com/compose/install/ 查看手动安装方法"
   fi
 
-elif [[ "$OS" == "ubuntu" || "$OS" == "debian" || "$OS" == "kali" ]]; then
-  # 检查 Debian/Ubuntu/Kali 版本，为老版本提供兼容性支持
+elif [[ "$OS" == "ubuntu" || "$OS" == "debian" || "$OS" == "kali" || "$OS" == "deepin" ]]; then
+  # 检查 Debian/Ubuntu/Kali/Deepin 版本，为老版本提供兼容性支持
   if [[ ("$OS" == "debian" && ("$VERSION_ID" == "9" || "$VERSION_ID" == "10")) || ("$OS" == "ubuntu" && "$VERSION_ID" == "16.04") ]]; then
     if [[ "$OS" == "debian" && "$VERSION_ID" == "9" ]]; then
       echo "⚠️  检测到 Debian 9 (Stretch)，使用兼容的安装方法..."
@@ -5427,14 +5688,18 @@ EOF
         # 循环等待用户选择镜像版本
         while true; do
             echo "请选择版本:"
-            echo "1) 轩辕镜像免费版 (专属域名: docker.xuanyuan.me)"
-            echo "2) 轩辕镜像专业版 (专属域名: 专属域名 + docker.xuanyuan.me)"
-            read -p "请输入选择 [1/2]: " choice
+            echo "1) 轩辕镜像免费版 (域名: docker.xuanyuan.me)"
+            echo "2) 轩辕镜像专业版 (专属域名 *.xuanyuan.run / *.xuanyuan.dev 不含免费版域名)"
+            echo "3) 恢复/重置镜像相关配置"
+            read -p "请输入选择 [1/2/3]: " choice
             
             if [[ "$choice" == "1" || "$choice" == "2" ]]; then
                 break
+            elif [[ "$choice" == "3" ]]; then
+                restore_docker_daemon_config
+                exit $?
             else
-                echo "❌ 无效选择，请输入 1 或 2"
+                echo "❌ 无效选择，请输入 1、2 或 3"
                 echo ""
             fi
         done
@@ -5450,22 +5715,29 @@ EOF
           # 清理用户输入的域名，移除协议前缀
   custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
   
-  # 检查是否输入的是 .run 地址，如果是则自动添加 .dev 地址
+  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
           if [[ "$custom_domain" == *.xuanyuan.run ]]; then
             custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
             mirror_list=$(cat <<EOF
 [
   "https://$custom_domain",
-  "https://$custom_domain_dev",
-  "https://docker.xuanyuan.me"
+  "https://$custom_domain_dev"
+]
+EOF
+)
+          elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
+            custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
+            mirror_list=$(cat <<EOF
+[
+  "https://$custom_domain",
+  "https://$custom_domain_run"
 ]
 EOF
 )
           else
             mirror_list=$(cat <<EOF
 [
-  "https://$custom_domain",
-  "https://docker.xuanyuan.me"
+  "https://$custom_domain"
 ]
 EOF
 )
@@ -5489,22 +5761,29 @@ EOF
           # 清理用户输入的域名，移除协议前缀
   custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
   
-  # 检查是否输入的是 .run 地址，如果是则自动添加 .dev 地址
+  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
           if [[ "$custom_domain" == *.xuanyuan.run ]]; then
             custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
             insecure_registries=$(cat <<EOF
 [
   "$custom_domain",
-  "$custom_domain_dev",
-  "docker.xuanyuan.me"
+  "$custom_domain_dev"
+]
+EOF
+)
+          elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
+            custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
+            insecure_registries=$(cat <<EOF
+[
+  "$custom_domain",
+  "$custom_domain_run"
 ]
 EOF
 )
           else
             insecure_registries=$(cat <<EOF
 [
-  "$custom_domain",
-  "docker.xuanyuan.me"
+  "$custom_domain"
 ]
 EOF
 )
@@ -5541,19 +5820,24 @@ EOF
         
         echo ">>> [6/8] 安装完成！"
         echo "🎉Docker 镜像已配置完成"
-        echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像支持与技术服务平台"
+        echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像高效稳定拉取服务"
         echo "官方网站: https://xuanyuan.cloud/"
         
         # 显示当前配置的镜像源
         echo ""
         echo "当前配置的镜像源："
         if [[ "$choice" == "2" ]]; then
-            echo "  - https://$custom_domain (优先)"
             if [[ "$custom_domain" == *.xuanyuan.run ]]; then
                 custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
+                echo "  - https://$custom_domain (优先)"
                 echo "  - https://$custom_domain_dev (备用)"
+            elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
+                custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
+                echo "  - https://$custom_domain (优先)"
+                echo "  - https://$custom_domain_run (备用)"
+            else
+                echo "  - https://$custom_domain"
             fi
-            echo "  - https://docker.xuanyuan.me (备用)"
         else
             echo "  - https://docker.xuanyuan.me"
         fi
@@ -5561,7 +5845,7 @@ EOF
         
         echo "🎉 安装和配置完成！"
         echo ""
-        echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像支持与技术服务平台"
+        echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像高效稳定拉取服务"
         echo "官方网站: https://xuanyuan.cloud/"
         exit 0
       else
@@ -5973,6 +6257,27 @@ EOF
           ;;
       esac
       echo "⚠️  Kali Linux 将使用 Debian Docker 仓库 (codename: $DEBIAN_CODENAME)"
+    fi
+
+    if [[ "$OS" == "deepin" ]]; then
+      DOCKER_OS="debian"
+      DEEPIN_ORIG_CODENAME="$DEBIAN_CODENAME"
+      # Docker 无 linux/deepin；Deepin 自有代号（如 crimson、beige）需映射到 Debian stable suite
+      case "$DEBIAN_CODENAME" in
+        crimson|beige|nymph|martian)
+          DEBIAN_CODENAME="bookworm"
+          ;;
+        apricot|eagle)
+          DEBIAN_CODENAME="bullseye"
+          ;;
+        *)
+          if [[ -n "$DEBIAN_CODENAME" ]]; then
+            echo "⚠️  Deepin 代号 $DEBIAN_CODENAME 未在映射表，默认使用 bookworm Docker 源（若失败请反馈）"
+          fi
+          DEBIAN_CODENAME="bookworm"
+          ;;
+      esac
+      echo "ℹ️  Deepin $VERSION_ID（${DEEPIN_ORIG_CODENAME:-unknown}）→ Docker 使用 debian/$DEBIAN_CODENAME"
     fi
     
     # 检测 Ubuntu 版本并处理
@@ -6442,14 +6747,14 @@ EOF
       echo "❌ 所有下载源都失败了，尝试使用包管理器安装..."
       
       # 使用包管理器作为备选方案
-      if [[ "$OS" == "ubuntu" || "$OS" == "debian" || "$OS" == "kali" ]]; then
+      if [[ "$OS" == "ubuntu" || "$OS" == "debian" || "$OS" == "kali" || "$OS" == "deepin" ]]; then
         if sudo apt-get install -y docker-compose-plugin; then
           echo "✅ 通过包管理器安装 docker-compose-plugin 成功"
           DOCKER_COMPOSE_DOWNLOADED=true
         else
           echo "❌ 包管理器安装也失败了"
         fi
-      elif [[ "$OS" == "centos" || "$OS" == "rhel" || "$OS" == "rocky" || "$OS" == "ol" ]]; then
+      elif [[ "$OS" == "centos" || "$OS" == "rhel" || "$OS" == "rocky" || "$OS" == "ol" || "$OS" == "kylin" || "$OS" == "uos" || "$OS" == "uniontechos" ]]; then
         if sudo yum install -y docker-compose-plugin; then
           echo "✅ 通过包管理器安装 docker-compose-plugin 成功"
           DOCKER_COMPOSE_DOWNLOADED=true
@@ -6876,14 +7181,14 @@ EOF
     echo "❌ 所有下载源都失败了，尝试使用包管理器安装..."
     
     # 使用包管理器作为备选方案
-    if [[ "$OS" == "ubuntu" || "$OS" == "debian" || "$OS" == "kali" ]]; then
+    if [[ "$OS" == "ubuntu" || "$OS" == "debian" || "$OS" == "kali" || "$OS" == "deepin" ]]; then
       if sudo apt-get install -y docker-compose-plugin; then
         echo "✅ 通过包管理器安装 docker-compose-plugin 成功"
         DOCKER_COMPOSE_DOWNLOADED=true
       else
         echo "❌ 包管理器安装也失败了"
       fi
-    elif [[ "$OS" == "centos" || "$OS" == "rhel" || "$OS" == "rocky" || "$OS" == "ol" ]]; then
+    elif [[ "$OS" == "centos" || "$OS" == "rhel" || "$OS" == "rocky" || "$OS" == "ol" || "$OS" == "kylin" || "$OS" == "uos" || "$OS" == "uniontechos" ]]; then
       if sudo yum install -y docker-compose-plugin; then
         echo "✅ 通过包管理器安装 docker-compose-plugin 成功"
         DOCKER_COMPOSE_DOWNLOADED=true
@@ -6906,7 +7211,9 @@ EOF
     echo "建议访问: https://docs.docker.com/compose/install/ 查看手动安装方法"
   fi
 else
-  echo "暂不支持该系统: $OS"
+  echo "❌ 暂不支持该系统: $OS"
+  echo "💡 若需适配本系统，请到轩辕镜像官网提交工单寻求支持："
+  echo "   https://xuanyuan.cloud/tickets"
   exit 1
 fi
 
@@ -6915,14 +7222,18 @@ echo ">>> [5/8] 配置国内镜像..."
 # 循环等待用户选择镜像版本
 while true; do
     echo "请选择版本:"
-    echo "1) 轩辕镜像免费版 (专属域名: docker.xuanyuan.me)"
-    echo "2) 轩辕镜像专业版 (专属域名: 专属域名 + docker.xuanyuan.me)"
-    read -p "请输入选择 [1/2]: " choice
+    echo "1) 轩辕镜像免费版 (域名: docker.xuanyuan.me)"
+    echo "2) 轩辕镜像专业版 (专属域名 *.xuanyuan.run / *.xuanyuan.dev 不含免费版域名)"
+    echo "3) 恢复/重置镜像相关配置"
+    read -p "请输入选择 [1/2/3]: " choice
     
     if [[ "$choice" == "1" || "$choice" == "2" ]]; then
         break
+    elif [[ "$choice" == "3" ]]; then
+        restore_docker_daemon_config
+        exit $?
     else
-        echo "❌ 无效选择，请输入 1 或 2"
+        echo "❌ 无效选择，请输入 1、2 或 3"
         echo ""
     fi
 done
@@ -6935,22 +7246,29 @@ if [[ "$choice" == "2" ]]; then
   # 清理用户输入的域名，移除协议前缀
   custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
   
-  # 检查是否输入的是 .run 地址，如果是则自动添加 .dev 地址
+  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
   if [[ "$custom_domain" == *.xuanyuan.run ]]; then
     custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
     mirror_list=$(cat <<EOF
 [
   "https://$custom_domain",
-  "https://$custom_domain_dev",
-  "https://docker.xuanyuan.me"
+  "https://$custom_domain_dev"
+]
+EOF
+)
+  elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
+    custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
+    mirror_list=$(cat <<EOF
+[
+  "https://$custom_domain",
+  "https://$custom_domain_run"
 ]
 EOF
 )
   else
     mirror_list=$(cat <<EOF
 [
-  "https://$custom_domain",
-  "https://docker.xuanyuan.me"
+  "https://$custom_domain"
 ]
 EOF
 )
@@ -6971,29 +7289,35 @@ if [[ "$choice" == "2" ]]; then
   # 清理用户输入的域名，移除协议前缀
   custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
   
-  # 检查是否输入的是 .run 地址，如果是则自动添加 .dev 地址
+  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
   if [[ "$custom_domain" == *.xuanyuan.run ]]; then
     custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
     insecure_registries=$(cat <<EOF
 [
   "$custom_domain",
-  "$custom_domain_dev",
-  "docker.xuanyuan.me"
+  "$custom_domain_dev"
+]
+EOF
+)
+  elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
+    custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
+    insecure_registries=$(cat <<EOF
+[
+  "$custom_domain",
+  "$custom_domain_run"
 ]
 EOF
 )
   else
     insecure_registries=$(cat <<EOF
 [
-  "$custom_domain",
-  "docker.xuanyuan.me"
+  "$custom_domain"
 ]
 EOF
 )
   fi
 else
-  # 默认不配置 insecure-registries 以提高安全性，除非用户明确需要
-  # 或者仅配置 docker.xuanyuan.me 作为必要的加速端点
+  # 免费版：仅配置 docker.xuanyuan.me
   insecure_registries=$(cat <<EOF
 [
   "docker.xuanyuan.me"
@@ -7020,36 +7344,65 @@ cat <<EOF | sudo tee /etc/docker/daemon.json > /dev/null
 }
 EOF
 
-sudo systemctl daemon-reexec || true
-sudo systemctl restart docker || true
+# 避免在容器/无 systemd 环境反复调用 systemctl 导致 “PID 1 / bus” 报错
+SCRIPT_SYSTEMD_OK=false
+if command -v systemctl &>/dev/null; then
+  PID1_COMM_SCRIPT=$(tr -d '\0' < /proc/1/comm 2>/dev/null || echo "")
+  if [[ "$PID1_COMM_SCRIPT" == "systemd" ]] && systemctl show-environment &>/dev/null 2>&1; then
+    SCRIPT_SYSTEMD_OK=true
+  fi
+fi
+
+if [[ "$SCRIPT_SYSTEMD_OK" == "true" ]]; then
+  sudo systemctl daemon-reexec || true
+  sudo systemctl restart docker || true
+else
+  echo "ℹ️  未检测到可用 systemd，跳过 systemctl 重载 Docker（容器或无 dbus 环境常见）"
+fi
 
 echo ">>> [6/8] 安装完成！"
 echo "🎉Docker 镜像已配置完成"
-echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像支持与技术服务平台"
+echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像高效稳定拉取服务"
 echo "官方网站: https://xuanyuan.cloud/"
 
 echo ">>> [7/8] 重载 Docker 配置并重启服务..."
-sudo systemctl daemon-reexec || true
-sudo systemctl restart docker || true
+if [[ "$SCRIPT_SYSTEMD_OK" == "true" ]]; then
+  sudo systemctl daemon-reexec || true
+  sudo systemctl restart docker || true
+else
+  echo "ℹ️  无 systemd 时请在完整系统执行: sudo systemctl restart docker，或手动: sudo dockerd &"
+fi
 
 # 等待 Docker 服务完全启动
 echo "等待 Docker 服务启动..."
 sleep 3
 
-# 验证 Docker 服务状态
-if systemctl is-active --quiet docker; then
+# 验证 Docker：优先 docker info（无 systemd 时 systemctl 不可用）
+DOCKER_VERIFIED=false
+if docker info &>/dev/null; then
+  DOCKER_VERIFIED=true
+elif [[ "$SCRIPT_SYSTEMD_OK" == "true" ]] && systemctl is-active --quiet docker 2>/dev/null; then
+  DOCKER_VERIFIED=true
+fi
+
+if [[ "$DOCKER_VERIFIED" == "true" ]]; then
     echo "✅ Docker 服务已成功启动"
     echo "✅ 镜像配置已生效"
     
     # 显示当前配置的镜像源
     echo "当前配置的镜像源:"
     if [[ "$choice" == "2" ]]; then
-        echo "  - https://$custom_domain (优先)"
         if [[ "$custom_domain" == *.xuanyuan.run ]]; then
             custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
+            echo "  - https://$custom_domain (优先)"
             echo "  - https://$custom_domain_dev (备用)"
+        elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
+            custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
+            echo "  - https://$custom_domain (优先)"
+            echo "  - https://$custom_domain_run (备用)"
+        else
+            echo "  - https://$custom_domain"
         fi
-        echo "  - https://docker.xuanyuan.me (备用)"
     else
         echo "  - https://docker.xuanyuan.me"
     fi
@@ -7094,9 +7447,11 @@ if systemctl is-active --quiet docker; then
     fi
     
     echo ""
-    echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像支持与技术服务平台"
+    echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像高效稳定拉取服务"
     echo "官方网站: https://xuanyuan.cloud/"
 else
-    echo "❌ Docker 服务启动失败，请检查配置"
+    echo "❌ 无法连接到 Docker daemon（可能未安装 docker-ce 或未启动）。/etc/docker/daemon.json 已写入。"
+    echo "💡 统信等环境可先执行: sudo dnf remove -y docker-runc && sudo dnf install -y --allowerasing docker-ce"
+    echo "💡 在物理机/虚拟机: sudo systemctl enable --now docker；无 systemd 环境可尝试: sudo dockerd &"
     exit 1
 fi
