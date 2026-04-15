@@ -2,7 +2,7 @@
 
 ![Visual Studio Code Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-vs-code-server.png)
 
-*分类: Docker,VS Code Server | 标签: vs-code-server,docker,部署教程 | 发布时间: 2025-12-15 13:08:42*
+*分类: Java,VS Code Server,code | 标签: vs-code-server,Java,部署教程,code | 发布时间: 2025-12-15 13:08:42*
 
 > Visual Studio Code 是一款允许用户在浏览器中运行Visual Studio Code的容器化应用。它实现了"在任何机器上编码，通过浏览器访问"的核心功能，为开发者提供了一致的开发环境，无论使用的是Chromebook、平板还是笔记本电脑。
 

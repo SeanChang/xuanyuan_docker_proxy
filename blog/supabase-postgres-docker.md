@@ -2,7 +2,7 @@
 
 ![Supabase Postgres Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-postgres.png)
 
-*分类: Docker,Supabase Postgres | 标签: supabase-postgres,docker,部署教程 | 发布时间: 2025-12-18 09:32:25*
+*分类: Supabase,Postgres,数据库 | 标签: supabase,postgres,数据库 | 发布时间: 2025-12-18 09:32:25*
 
 > Supabase Postgres 是一款基于PostgreSQL官方镜像构建的容器化应用，集成了多种实用插件，旨在为开发者提供便捷、可靠的数据库服务。该镜像保持了PostgreSQL的原生功能特性，同时预装了PostGIS、pg_cron、pgAudit等常用扩展，满足地理信息处理、定时任务、审计日志等多样化需求。
 

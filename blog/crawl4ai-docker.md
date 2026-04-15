@@ -2,7 +2,7 @@
 
 ![Crawl4AI Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-crawl4ai.png)
 
-*分类: Docker,Crawl4AI | 标签: crawl4ai,docker,部署教程 | 发布时间: 2025-12-17 07:35:13*
+*分类: Crawl4AI,人工智能,爬虫 | 标签: crawl4ai,部署教程 | 发布时间: 2025-12-17 07:35:13*
 
 > Crawl4AI 是一款开源的LLM友好型网络爬虫和抓取工具，专为LLMs（大型语言模型）、AI代理和数据管道设计。
 

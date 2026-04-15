@@ -4,279 +4,240 @@
 
 *分类: Docker,Apache Flink | 标签: apache-flink,docker,部署教程 | 发布时间: 2025-12-14 14:14:37*
 
-> Apache Flink®是一个强大的开源分布式流处理和批处理框架，具备高效的流处理和批处理能力。作为容器化应用，FLINK通过Docker部署可以实现环境一致性、快速扩缩容和简化运维等优势。本文将详细介绍如何通过Docker容器化部署FLINK，包括环境准备、镜像拉取、容器部署、功能测试及生产环境建议等内容，为用户提供一套完整、可靠的部署方案。
+> Apache Flink® 是一个强大的开源分布式流处理与批处理框架，具备高吞吐、低延迟和强状态一致性等特性。通过 Docker 方式部署 Flink，可实现环境一致性、快速部署与简化运维，非常适合开发测试、POC 以及中小规模生产场景。
+> 
+> 本文将详细介绍 如何使用 Docker 容器化部署 Apache Flink Session 集群，内容涵盖环境准备、镜像拉取、集群部署、功能验证、生产环境建议及常见故障排查，帮助你快速搭建一套稳定、可用的 Flink 运行环境。
 
 ## 概述
 
-Apache Flink®是一个强大的开源分布式流处理和批处理框架，具备高效的流处理和批处理能力。作为容器化应用，FLINK通过Docker部署可以实现环境一致性、快速扩缩容和简化运维等优势。本文将详细介绍如何通过Docker容器化部署FLINK，包括环境准备、镜像拉取、容器部署、功能测试及生产环境建议等内容，为用户提供一套完整、可靠的部署方案。
+Docker 部署 Flink 的典型优势包括：
+
+- 环境一致，避免「本地能跑、服务器跑不了」
+- 快速启动与销毁，适合弹性扩缩容
+- 便于结合私有镜像仓库与加速服务
+- 运维成本低，适合开发与测试场景
+
+⚠️ 说明：
+Docker 方式更适合开发测试、POC 及轻量生产环境；
+大规模生产集群（高可用、多租户）推荐使用 Kubernetes 或 YARN。
 
 ## 环境准备
 
-### Docker环境安装
+### Docker 环境安装
 
-部署FLINK容器前，需先确保服务器已安装Docker环境。推荐使用以下一键安装脚本快速部署Docker：
+在部署 Flink 容器前，请确保服务器已安装 Docker。
+可使用以下一键脚本快速完成 Docker 安装与配置：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 ```
 
-执行上述命令后，脚本将自动完成Docker的安装、配置及启动，并设置开机自启。安装完成后，可通过`docker --version`命令验证Docker是否安装成功，输出类似`Docker version 20.10.xx, build xxxxxxx`即表示安装成功。
-
-## 镜像准备
-
-### 拉取FLINK镜像
-
-使用以下命令通过轩辕镜像访问支持地址拉取最新版本的FLINK镜像：
+安装完成后，执行以下命令验证：
 
 ```bash
-docker pull xxx.xuanyuan.run/library/flink:latest
+docker --version
 ```
 
-拉取完成后，可通过`docker images`命令查看镜像信息，确认镜像是否成功下载：
+若输出类似 `Docker version 20.10.x`，则说明 Docker 安装成功。
 
-```bash
-docker images | grep flink
-```
+### 镜像准备
 
-若输出包含`xxx.xuanyuan.run/library/flink:latest`及对应镜像ID，则表示镜像拉取成功。
+#### 拉取 Flink 镜像
 
-## 容器部署
-
-FLINK集群通常由JobManager和TaskManager组成，JobManager负责作业调度和资源管理，TaskManager负责执行具体任务。以下分别介绍单节点部署和集群部署的基本方式。
-
-### 单节点模式部署
-
-单节点模式适用于开发测试环境，可快速启动一个包含JobManager和TaskManager的简化集群：
-
-```bash
-docker run -d \
-  --name flink-standalone \
-  -p 8081:8081 \
-  -e JOB_MANAGER_RPC_ADDRESS=localhost \
-  xxx.xuanyuan.run/library/flink:latest standalone-job
-```
-
-**参数说明**：
-- `-d`：后台运行容器
-- `--name flink-standalone`：指定容器名称为flink-standalone
-- `-p 8081:8081`：映射FLINK Web UI端口（默认8081）
-- `-e JOB_MANAGER_RPC_ADDRESS=localhost`：设置JobManager RPC地址为本地
-- `standalone-job`：启动单节点模式
-
-### 集群模式部署（JobManager）
-
-生产环境通常需要部署独立的JobManager和多个TaskManager。首先启动JobManager：
-
-```bash
-docker run -d \
-  --name flink-jobmanager \
-  -p 8081:8081 \
-  -e JOB_MANAGER_RPC_ADDRESS=flink-jobmanager \
-  -e JOB_MANAGER_HEAP_SIZE=1024m \
-  xxx.xuanyuan.run/library/flink:latest jobmanager
-```
-
-**参数说明**：
-- `--name flink-jobmanager`：指定JobManager容器名称
-- `-e JOB_MANAGER_RPC_ADDRESS=flink-jobmanager`：设置JobManager RPC地址（需与容器名称一致，便于后续TaskManager连接）
-- `-e JOB_MANAGER_HEAP_SIZE=1024m`：设置JobManager堆内存大小（可根据实际需求调整）
-
-### 集群模式部署（TaskManager）
-
-在JobManager启动后，启动TaskManager并连接至JobManager：
-
-```bash
-docker run -d \
-  --name flink-taskmanager-1 \
-  -e JOB_MANAGER_RPC_ADDRESS=flink-jobmanager \
-  -e TASK_MANAGER_HEAP_SIZE=2048m \
-  -e TASK_MANAGER_NUMBER_OF_TASK_SLOTS=2 \
-  --link flink-jobmanager:flink-jobmanager \
-  xxx.xuanyuan.run/library/flink:latest taskmanager
-```
-
-**参数说明**：
-- `--name flink-taskmanager-1`：指定TaskManager容器名称（多实例时需修改名称，如flink-taskmanager-2）
-- `-e JOB_MANAGER_RPC_ADDRESS=flink-jobmanager`：指定连接的JobManager地址（需与JobManager容器名称一致）
-- `-e TASK_MANAGER_HEAP_SIZE=2048m`：设置TaskManager堆内存大小
-- `-e TASK_MANAGER_NUMBER_OF_TASK_SLOTS=2`：设置TaskManager的任务槽数量（通常与CPU核心数匹配）
-- `--link flink-jobmanager:flink-jobmanager`：建立与JobManager容器的网络连接
-
-如需部署多个TaskManager，重复上述命令并修改容器名称即可。
-
-容器启动后，可通过`docker ps`命令查看运行状态，确认JobManager和TaskManager容器是否正常启动：
-
-```bash
-docker ps | grep flink
-```
-
-若输出中容器状态为`Up`，则表示部署成功。
-
-## 功能测试
-
-### 访问Web UI
-
-FLINK提供Web UI用于监控集群状态和作业执行情况。在浏览器中访问服务器IP:8081（如http://192.168.1.100:8081），若能正常显示FLINK Dashboard，则表示Web UI服务正常。
-
-### 提交测试作业
-
-可通过Web UI或命令行提交测试作业，验证集群功能。以下通过命令行提交一个内置的WordCount示例作业：
-
-1. 进入JobManager容器：
-
-```bash
-docker exec -it flink-jobmanager /bin/bash
-```
-
-2. 提交WordCount作业：
-
-```bash
-./bin/flink run ./examples/streaming/WordCount.jar
-```
-
-3. 查看作业执行状态：在Web UI的"Running Jobs"或"Completed Jobs"页面，可查看作业执行情况、任务进度及统计信息。
-
-### 查看容器日志
-
-通过查看容器日志，可确认服务运行状态和排查潜在问题：
-
-```bash
-# 查看JobManager日志
-docker logs flink-jobmanager
-
-# 查看TaskManager日志
-docker logs flink-taskmanager-1
-```
-
-若日志中无明显错误信息，且包含"JobManager started"、"TaskManager connected"等提示，则表示集群运行正常。
-
-## 生产环境建议
-
-### 数据持久化
-
-FLINK的检查点（Checkpoint）和保存点（Savepoint）数据需要持久化存储，以防止容器重启或故障导致数据丢失。可通过挂载宿主机目录或分布式存储（如HDFS、S3）实现：
-
-```bash
-# 挂载宿主机目录存储检查点数据
-docker run -d \
-  --name flink-jobmanager \
-  -p 8081:8081 \
-  -v /data/flink/checkpoints:/opt/flink/checkpoints \
-  -e JOB_MANAGER_RPC_ADDRESS=flink-jobmanager \
-  -e STATE_BACKEND=filesystem \
-  -e CHECKPOINTS_DIRECTORY=file:///opt/flink/checkpoints \
-  xxx.xuanyuan.run/library/flink:latest jobmanager
-```
-
-### 资源限制
-
-为避免FLINK容器过度占用宿主机资源，建议通过`--memory`和`--cpus`参数限制资源使用：
-
-```bash
-docker run -d \
-  --name flink-taskmanager \
-  --memory=4g \
-  --cpus=2 \
-  -e JOB_MANAGER_RPC_ADDRESS=flink-jobmanager \
-  xxx.xuanyuan.run/library/flink:latest taskmanager
-```
-
-### 网络配置
-
-生产环境建议使用Docker自定义网络，便于容器间通信和网络隔离：
-
-```bash
-# 创建自定义网络
-docker network create flink-network
-
-# 在自定义网络中启动JobManager
-docker run -d \
-  --name flink-jobmanager \
-  --network flink-network \
-  -p 8081:8081 \
-  -e JOB_MANAGER_RPC_ADDRESS=flink-jobmanager \
-  xxx.xuanyuan.run/library/flink:latest jobmanager
-
-# 在自定义网络中启动TaskManager
-docker run -d \
-  --name flink-taskmanager \
-  --network flink-network \
-  -e JOB_MANAGER_RPC_ADDRESS=flink-jobmanager \
-  xxx.xuanyuan.run/library/flink:latest taskmanager
-```
-
-### 环境变量配置
-
-FLINK支持通过环境变量配置多种参数，常见配置包括：
-
-| 环境变量                  | 说明                          | 示例值              |
-|---------------------------|-------------------------------|---------------------|
-| JOB_MANAGER_HEAP_SIZE      | JobManager堆内存大小          | 2048m               |
-| TASK_MANAGER_HEAP_SIZE     | TaskManager堆内存大小         | 4096m               |
-| TASK_MANAGER_NUMBER_OF_TASK_SLOTS | TaskManager任务槽数量 | 4                   |
-| PARALLELISM_DEFAULT        | 默认并行度                    | 4                   |
-| STATE_BACKEND              | 状态后端类型（如filesystem、rocksdb） | rocksdb          |
-
-### 版本固定与更新
-
-生产环境应固定镜像标签，避免使用`latest`标签导致版本变更风险。可从[FLINK镜像标签列表](https://xuanyuan.cloud/r/library/flink/tags)选择具体版本，如`2.1.1-scala_2.12-java17`：
+推荐明确指定版本标签，避免使用 latest 带来的不确定性风险。
 
 ```bash
 docker pull xxx.xuanyuan.run/library/flink:2.1.1-scala_2.12-java17
 ```
 
-版本更新时，建议先在测试环境验证新版本兼容性，再逐步替换生产环境容器。
-
-## 故障排查
-
-### 容器无法启动
-
-若容器启动后立即退出，可通过`docker logs`命令查看详细日志：
+验证镜像是否拉取成功：
 
 ```bash
-docker logs flink-jobmanager
+docker images | grep flink
 ```
 
-常见原因及解决方法：
-- **端口冲突**：检查宿主机端口是否被占用，使用`netstat -tuln | grep 8081`查看，若已占用，更换映射端口或停止占用进程。
-- **配置错误**：如JOB_MANAGER_RPC_ADDRESS设置不正确，确保TaskManager能正确解析JobManager地址。
-- **资源不足**：宿主机内存或CPU不足，可释放资源或调整容器资源限制。
+## 容器部署（Session 集群模式）
 
-### Web UI无法访问
+Flink 常见运行模式包括：
 
-若容器正常运行但Web UI无法访问，可从以下方面排查：
-- **端口映射**：确认`-p`参数是否正确映射8081端口，容器内端口是否与配置一致。
-- **防火墙规则**：检查宿主机防火墙是否允许8081端口访问，可临时关闭防火墙测试（生产环境需谨慎）。
-- **容器网络**：若使用自定义网络，确认端口映射配置正确，可通过`docker inspect flink-jobmanager`查看网络配置。
+| 模式 | 说明 | 是否支持提交多个作业 |
+|------|------|----------------------|
+| standalone | 本地调试 | ❌ |
+| standalone-job | 容器即作业 | ❌ |
+| session（推荐） | 常驻集群 | ✅ |
 
-### 作业提交失败
+本文采用官方推荐的 Session 模式，即：
+- 1 个 JobManager
+- N 个 TaskManager
+- 可通过 Web UI / CLI 提交多个作业
 
-作业提交失败通常与集群配置或作业本身有关：
-- **集群资源不足**：检查TaskManager资源是否满足作业并行度要求，可增加TaskManager数量或调整任务槽数量。
-- **依赖缺失**：作业依赖的jar包未正确添加，可通过`-C`参数指定依赖或使用Fat Jar打包作业。
-- **权限问题**：作业访问外部资源（如文件、数据库）时权限不足，需确保容器内用户有足够权限。
+### 创建 Docker 自定义网络（推荐）
+```bash
+docker network create flink-network
+```
 
-## 参考资源
+使用自定义网络可以避免使用已废弃的 `--link`，并提高可维护性。
 
-- [FLINK镜像文档（轩辕）](https://xuanyuan.cloud/r/library/flink)
-- [FLINK镜像标签列表](https://xuanyuan.cloud/r/library/flink/tags)
-- [Apache Flink官方网站](https://flink.apache.org/)
-- [Apache Flink Docker部署官方文档](https://ci.apache.org/projects/flink/flink-docs-master/ops/deployment/docker.html)
-- [Docker官方文档](https://docs.docker.com/)
+### 启动 JobManager
+```bash
+docker run -d \
+  --name flink-jobmanager \
+  --network flink-network \
+  -p 8081:8081 \
+  -e JOB_MANAGER_RPC_ADDRESS=flink-jobmanager \
+  -e JOB_MANAGER_HEAP_SIZE=1024m \
+  xxx.xuanyuan.run/library/flink:2.1.1-scala_2.12-java17 \
+  jobmanager
+```
+
+**参数说明**：
+- JOB_MANAGER_RPC_ADDRESS：必须为 JobManager 容器名
+- 8081：Flink Web UI 默认端口
+
+### 启动 TaskManager
+```bash
+docker run -d \
+  --name flink-taskmanager-1 \
+  --network flink-network \
+  -e JOB_MANAGER_RPC_ADDRESS=flink-jobmanager \
+  -e TASK_MANAGER_HEAP_SIZE=2048m \
+  -e TASK_MANAGER_NUMBER_OF_TASK_SLOTS=2 \
+  xxx.xuanyuan.run/library/flink:2.1.1-scala_2.12-java17 \
+  taskmanager
+```
+
+💡 建议：
+- Task Slots 通常 ≈ CPU 核心数
+- 可通过增加 TaskManager 数量实现横向扩展
+
+### 启动状态验证
+```bash
+docker ps | grep flink
+```
+
+## 功能验证
+
+### 访问 Flink Web UI
+
+在浏览器中访问：
+```
+http://<服务器IP>:8081
+```
+
+若能看到 Flink Dashboard，并显示已注册的 TaskManager，则说明集群运行正常。
+
+### 提交测试作业（WordCount）
+
+进入 JobManager 容器：
+```bash
+docker exec -it flink-jobmanager /bin/bash
+```
+
+提交示例作业：
+```bash
+./bin/flink run ./examples/streaming/WordCount.jar
+```
+
+在 Web UI 的 **Running Jobs** / **Completed Jobs** 页面中，可查看作业状态与执行详情。
+
+### 查看容器日志
+```bash
+docker logs flink-jobmanager
+docker logs flink-taskmanager-1
+```
+
+若日志中出现：
+- JobManager started
+- Registered TaskManager
+
+则说明集群通信正常。
+
+## 生产环境建议
+
+### 状态数据与检查点持久化（重要）
+
+⚠️ Flink 不会自动识别普通环境变量配置状态后端，
+推荐使用 `FLINK_PROPERTIES` 方式注入配置：
+
+```bash
+docker run -d \
+  --name flink-jobmanager \
+  --network flink-network \
+  -p 8081:8081 \
+  -v /data/flink/checkpoints:/opt/flink/checkpoints \
+  -e JOB_MANAGER_RPC_ADDRESS=flink-jobmanager \
+  -e FLINK_PROPERTIES="
+state.backend: filesystem
+state.checkpoints.dir: file:///opt/flink/checkpoints
+parallelism.default: 4
+" \
+  xxx.xuanyuan.run/library/flink:2.1.1-scala_2.12-java17 \
+  jobmanager
+```
+
+### 资源限制
+```bash
+docker run -d \
+  --name flink-taskmanager \
+  --network flink-network \
+  --memory=4g \
+  --cpus=2 \
+  -e JOB_MANAGER_RPC_ADDRESS=flink-jobmanager \
+  xxx.xuanyuan.run/library/flink:2.1.1-scala_2.12-java17 \
+  taskmanager
+```
+
+### 常用环境变量速查
+
+| 配置项 | 说明 | 示例 |
+|--------|------|------|
+| JOB_MANAGER_HEAP_SIZE | JM 内存 | 1024m |
+| TASK_MANAGER_HEAP_SIZE | TM 内存 | 4096m |
+| TASK_MANAGER_NUMBER_OF_TASK_SLOTS | Slot 数 | 4 |
+| parallelism.default | 默认并行度 | 4 |
+| state.backend | 状态后端 | filesystem / rocksdb |
+
+## 常见故障排查
+
+1. **容器启动即退出**
+   执行命令查看日志：
+   ```bash
+   docker logs flink-jobmanager
+   ```
+   常见原因：
+   - 端口冲突（8081）
+   - 内存不足
+   - RPC 地址配置错误
+
+2. **Web UI 无法访问**
+   检查项：
+   - `-p 8081:8081` 是否配置
+   - 防火墙是否放行 8081
+   - 容器是否在 Running 状态
+
+3. **作业无法运行**
+   常见原因：
+   - TaskManager 数量不足
+   - Slot 数小于作业并行度
+   - 作业 Jar 依赖未打包完整
+
+## 参考资料
+
+- Flink 镜像文档（轩辕）：[https://xuanyuan.cloud/r/library/flink](https://xuanyuan.cloud/r/library/flink)
+- 镜像标签列表：[https://xuanyuan.cloud/r/library/flink/tags](https://xuanyuan.cloud/r/library/flink/tags)
+- Apache Flink 官网：[https://flink.apache.org/](https://flink.apache.org/)
+- Flink Docker 官方文档
+- Docker 官方文档
 
 ## 总结
 
-本文详细介绍了FLINK的Docker容器化部署方案，包括环境准备、镜像拉取、单节点及集群模式部署、功能测试、生产环境建议和故障排查等内容。通过Docker部署FLINK可简化环境配置，提高部署效率，同时为开发测试和生产环境提供灵活的部署选项。
+本文介绍了 基于 Docker 的 Apache Flink Session 集群部署方案，涵盖从环境准备到生产实践的完整流程。
 
 **关键要点**：
-- 使用一键脚本可快速部署Docker环境，轩辕镜像访问支持可提升镜像下载访问表现。
-- FLINK容器部署需区分JobManager和TaskManager，单节点模式适用于开发测试，集群模式适用于生产环境。
-- 生产环境应注意数据持久化、资源限制、网络隔离和版本固定，确保服务稳定可靠。
-- 故障排查主要通过查看容器日志、检查端口映射和资源配置等方式进行。
+- 明确区分 Flink 的运行模式，避免混用
+- 使用自定义 Docker 网络替代 `--link`
+- 使用 `FLINK_PROPERTIES` 注入核心配置
+- 生产环境固定镜像版本，避免 `latest`
 
-**后续建议**：
-- 深入学习FLINK的状态管理、检查点机制等高级特性，优化作业性能。
-- 根据业务需求调整集群规模和资源配置，如增加TaskManager数量、调整并行度等。
-- 结合监控工具（如Prometheus、Grafana）实现FLINK集群和作业的实时监控，及时发现并解决问题。
-- 参考[Apache Flink官方文档](https://flink.apache.org/)和[FLINK镜像文档（轩辕）](https://xuanyuan.cloud/r/library/flink)，获取更多配置和优化细节。
+该方案适合开发测试及中小规模生产使用，若需要更高可用性与弹性能力，建议进一步迁移至 Kubernetes 环境。
 
