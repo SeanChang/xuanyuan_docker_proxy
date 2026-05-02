@@ -1,16 +1,16 @@
-# 2026 年 4 月最新 Docker 镜像源加速列表与使用指南
+# 2026 年 5 月最新 Docker 镜像源加速列表与使用指南
 
-![2026 年 4 月最新 Docker 镜像源加速列表与使用指南](https://img.xuanyuan.dev/docker/blog/docker-2026-4.png)
+![2026 年 5 月最新 Docker 镜像源加速列表与使用指南](https://img.xuanyuan.dev/docker/blog/docker-2026-5.png)
 
-*分类: Docker,镜像源,轩辕镜像 | 标签: Docker,镜像源,轩辕镜像 | 发布时间: 2026-04-04 07:31:50*
+*分类: Docker,镜像源,轩辕镜像 | 标签: Docker,镜像源,轩辕镜像 | 发布时间: 2026-05-02 02:32:44*
 
-> 本文汇总了2026 年 4 月最新可用且稳定的国内Docker镜像加速地址，覆盖Docker、K8s containerd、Podman、nerdctl等主流场景，零基础用户也能按步骤完成配置。
+> 本文汇总了2026 年 5 月最新可用且稳定的国内Docker镜像加速地址，覆盖Docker、K8s containerd、Podman、nerdctl等主流场景，零基础用户也能按步骤完成配置。
 
-本文汇总了2026 年 4 月最新可用且稳定的Docker镜像加速地址，覆盖Docker、K8s containerd、Podman、nerdctl等主流场景，零基础用户也能按步骤完成配置。
+本文汇总了2026 年 5 月最新可用且稳定的Docker镜像加速地址，覆盖Docker、K8s containerd、Podman、nerdctl等主流场景，零基础用户也能按步骤完成配置。
 
 ⚠️ 说明：本文内容仅限学习研究，请勿违规使用。建议收藏，以便获取后续更新。
 
-## 2026年 4 月可用镜像加速源
+## 2026年 5 月可用镜像加速源
 1. 腾讯云镜像  
    地址：`https://mirror.ccs.tencentyun.com`  
    仅推荐在腾讯云服务器上使用，其他环境可能无法正常访问
@@ -19,9 +19,9 @@
    地址：`https://xxx.mirror.aliyuncs.com`（不同账号专属地址不同）  
    仅推荐在阿里云ECS环境中使用，需配合自身账号配置
 
-3. 轩辕镜像（推荐优先使用）  
-   轩辕镜像专业版（适合开发者、科研人员、企业及NAS专业用户）  
-   地址：`https://xuanyuan.cloud` 
+3. 轩辕镜像（推荐）  
+   轩辕镜像专业版（适合开发者、科研人员、企业及NAS专业用户） 
+   [轩辕镜像专业版](https://xuanyuan.cloud) 地址：https://xuanyuan.cloud
    需登录，提供专属加速地址（如xxx.xuanyuan.run），速度更稳定  
    支持K8s（k3s/cri-o）、群晖/威联通/极空间NAS等特殊环境  
    🔐 企业级特性（前置展示）：  
@@ -31,9 +31,8 @@
    - 监控与售后：实时节点监控、拉取日志审计、7×24小时技术支持  
    提供企业级支持、售后服务及定制化配置方案
 
-   轩辕镜像免费版（适合普通用户）  
-   地址：`https://docker.xuanyuan.me`  
-   无需登录，免费使用  
+   轩辕镜像免费版（有限流，推荐轩辕镜像专业版）  
+   [轩辕镜像专业版](https://xuanyuan.cloud/free) 地址：https://xuanyuan.cloud/free 无需登录，免费使用，有限流机制 
    兼容Linux桌面/服务器/NAS设备，支持containerd、Podman环境  
    提供官网搜索功能，方便查找镜像
 
@@ -527,5 +526,5 @@ podman rm redis-test
 - **K8s/集群环境**：核心配置containerd+nerdctl的多仓库加速，搭配Harbor本地缓存，确保集群部署稳定不超时；  
 - **安全合规优先**：任何环境都应禁止insecure配置和明文密码，生产环境坚决避免直接执行远程脚本，所有操作需留痕审计。
 
-建议收藏本文，每月会更新镜像源可用性及配置细节；遇到问题可查看轩辕镜像官网FAQ（`https://xuanyuan.cloud/faq`），或联系官网客服获取企业级技术支持。
+建议收藏本文，每月会更新镜像源可用性及配置细节；遇到问题可查看轩辕镜像官网 FAQ（`https://xuanyuan.cloud/faq`），或联系官网客服获取企业级技术支持。
 
