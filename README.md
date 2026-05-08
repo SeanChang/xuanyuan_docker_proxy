@@ -8,6 +8,7 @@
 ### 🖥️ 操作系统平台
 - [Linux Docker 加速 - 轩辕镜像配置手册](#linux-配置轩辕镜像源)
 - [Windows/Mac Docker 加速 - 轩辕镜像配置手册](./windows-mac-docker-guide.md)
+- [超全 Docker 轩辕镜像源配置（Windows/Mac/Linux）](./blog/docker-windows-mac-linux.md)
 
 ### 🏠 NAS 设备平台
 - [群晖 NAS Docker 加速 - 轩辕镜像配置手册](./synology-docker-guide.md)
@@ -18,15 +19,20 @@
 
 ### 🛠️ 管理面板与路由
 - [宝塔面板 Docker 加速 - 轩辕镜像配置手册](./baota-docker-guide.md)
+- [1Panel Linux Docker 部署教程](./blog/1panel-docker-linux.md)
 - [爱快路由 ikuai Docker 加速 - 轩辕镜像配置手册](./ikuai-docker-guide.md)
 
 ### ☸️ 容器编排与云原生
+- [从零开始学构建 Docker 镜像](./blog/docker-build-tutorial.md)
+- [Docker Registry 部署教程](./blog/docker-registry.md)
 - [Docker Compose Docker 镜像加速 - 轩辕镜像配置手册](./docker-compose-docker-guide.md)
 - [K8s containerd 下载加速 - 轩辕镜像配置手册](./containerd-guide.md)
 - [ghcr、Quay、nvcr、k8s、gcr 仓库下载加速 - 轩辕镜像配置手册](./docker-acceleration-guide.md)
 - [Podman Docker 镜像下载加速 - 轩辕镜像配置手册](./podman-docker-guide.md)
 
 ### 📖 Docker 部署教程
+
+- [Docker 月度更新与资讯](#docker-月度更新与资讯)
 
 #### 🗄️ 数据库类
 - [MySQL Docker 容器化部署全指南](./blog/docker-mysql-deploy.md)
@@ -115,6 +121,22 @@
 - [Refly Docker 部署教程](./blog/refly-docker.md)
 - [Refly API Docker 部署教程](./blog/refly-api-dockerai.md)
 - [TradingAgents Backend Docker 部署教程](./blog/tradingagents-backend-docker.md)
+- [ComfyUI Boot Docker 部署教程](./blog/comfyui-boot-docker.md)
+- [Mineru vLLM API / WebUI Docker 部署教程](./blog/mineru-docker-vllm-api-webui.md)
+- [Qwen3 Docker 部署教程](./blog/qwen3-docker.md)
+- [PyTorch Docker 部署教程](./blog/pytorch-docker.md)
+- [verl Docker 部署教程](./blog/verl-docker.md)
+- [SWE-bench Verified Docker 部署教程](./blog/swebench-verified-docker.md)
+- [CoPaw（OpenClaw）Docker 快速部署](./blog/3-docker-copawai.md)
+- [OpenClaw Docker 部署教程](./blog/docker-openclaw.md)
+- [OpenClaw（dockeropenclaw）部署说明](./blog/dockeropenclaw.md)
+- [Clawdbot Docker 部署教程](./blog/docker-clawdbot.md)
+- [Hermes Agent Docker 部署教程](./blog/docker-hermes-agent-windows-linux.md)
+- [Hermes WebUI Docker 部署教程](./blog/hermes-agent-docker-hermes-webui-windowslinux.md)
+- [Moltbot AI Docker 部署教程](./blog/moltbot-docker-ai.md)
+- [OpenCode Docker 部署教程](./blog/opencode-docker.md)
+- [QQ OpenClaw Docker 部署教程](./blog/qq-openclaw-docker.md)
+- [OpenClaw + Qwen + DashScope 认证部署](./blog/openclaw-323qwen-dashscope-auth-40.md)
 
 #### 🎬 媒体服务器
 - [Jellyfin Docker 部署教程](./blog/jellyfin-docker.md)
@@ -129,6 +151,9 @@
 - [Jenkins Docker 部署教程](./blog/jenkins-docker.md)
 - [Gitea Docker 部署教程](./blog/gitea-docker.md)
 - [GitLab Docker 部署教程](./blog/gitlab-docker.md)
+- [SonarQube Docker 部署教程](./blog/docker-sonarqube.md)
+- [Nexus Repository Docker 部署教程](./blog/nexus-docker.md)
+- [OpenProject Docker 部署教程](./blog/openproject-docker.md)
 - [VS Code Server Docker 部署教程](./blog/vs-code-server-docker.md)
 - [Maven Docker 部署教程](./blog/maven-docker.md)
 - [Tomcat Docker 部署教程](./blog/tomcat-docker.md)
@@ -212,6 +237,7 @@
 - [Pandas Final Docker 部署教程](./blog/pandas-final-docker.md)
 - [Pillow Final Docker 部署教程](./blog/pillow_final-docker.md)
 - [Standalone Chrome Docker 部署教程](./blog/standalone-chrome-docker.md)
+- [Selenium Standalone Chromium Docker 部署教程](./blog/selenium-standalone-chromium.md)
 - [Squid Docker 部署教程](./blog/squid-docker.md)
 - [Netshoot Docker 部署教程](./blog/netshoot-docker.md)
 - [BusyBox Docker 部署教程](./blog/busybox-docker.md)
@@ -227,14 +253,28 @@
 - [QingLong Docker 部署教程](./blog/docker-qinglong.md)
 - [Windows Docker Desktop 部署教程](./blog/windows-docker-desktop.md)
 - [Linux Docker Docker Compose Ubuntu/CentOS 部署教程](./blog/linux-docker-docker-compose-ubuntucentos-11.md)
-- [2025年11月 Docker 更新](./blog/2025-11-docker.md)
+- [SearXNG Docker 部署教程](./blog/5-docker-searxng.md)
+- [Bitnami 镜像 Docker Hub 变更与替代拉取说明](./blog/bitnami-docker-hub.md)
+- [Filestash Web Docker 部署教程](./blog/docker-filestash-web.md)
+- [Docker Hardened Images（DHI）部署教程](./blog/docker-hardened-imagesdhi.md)
+- [Obsidian Docker 部署教程](./blog/obsidian-docker-windowslinux-10.md)
+- [Open WebUI + Ollama Docker 部署教程](./blog/docker-open-webui-ollama-windows-linux-openai.md)
+
+#### 📅 Docker 月度更新与资讯
+
+- [2026年5月 Docker 更新](./blog/2026-5-docker.md)
+- [2026年4月 Docker 更新](./blog/2026-4-docker.md)
+- [2026年3月 Docker 更新](./blog/2026-3-docker.md)
+- [2026年2月 Docker 更新](./blog/2026-2-docker.md)
+- [2026年1月 Docker 更新](./blog/2026-1-docker.md)
 - [2025年12月 Docker 更新](./blog/2025-12-docker.md)
+- [2025年11月 Docker 更新](./blog/2025-11-docker.md)
 
 ## Linux 一键安装 Docker + 轩辕镜像加速
 
 ### 🚀 推荐方案：一键安装配置脚本
 
-该脚本支持 13 种 Linux 发行版，包括国产操作系统（openEuler、Anolis OS、OpenCloudOS、Alinux、Kylin Linux），一键安装 docker、docker-compose 并自动配置轩辕镜像加速源。
+该脚本支持十余种 Linux 发行版家族（含国产操作系统 openEuler、Anolis OS、OpenCloudOS、Alinux、Kylin Linux 等），并对 Kali Linux、深度 Deepin、统信 UOS 等常见衍生环境做兼容识别；可一键安装 Docker、Docker Compose 并自动配置轩辕镜像加速源。
 
 ```bash
 # 下载并执行一键安装脚本
@@ -248,7 +288,7 @@ bash <(curl -sSL https://raw.githubusercontent.com/SeanChang/xuanyuan_docker_pro
 
 ### ✨ 脚本特性与优势
 
-- ✅ **支持 13 种主流发行版**：openEuler (欧拉)、OpenCloudOS、Anolis OS (龙蜥)、Alinux (阿里云)、Kylin Linux (银河麒麟)、Fedora、Rocky Linux、AlmaLinux、Ubuntu、Debian、CentOS、RHEL、Oracle Linux
+- ✅ **支持十余种主流发行版及衍生环境**：openEuler (欧拉)、OpenCloudOS、Anolis OS (龙蜥)、Alinux (阿里云)、Kylin Linux (银河麒麟)、Fedora、Rocky Linux、AlmaLinux、Ubuntu、Debian、Kali Linux、深度 Deepin、CentOS、RHEL、Oracle Linux（统信 UOS 另见下表）
 - ✅ **国产操作系统完整支持**：深度适配国产操作系统（openEuler、Anolis OS、OpenCloudOS、Alinux、Kylin Linux），支持版本自动识别和最优配置
 - ✅ **多镜像源智能切换**：内置阿里云、腾讯云、华为云、中科大、清华等 6+ 国内镜像源，自动检测并选择最快源
 - ✅ **老版本系统特殊处理**：支持 Ubuntu 16.04、Debian 9/10 等已过期系统，自动配置兼容的安装方案
@@ -257,7 +297,7 @@ bash <(curl -sSL https://raw.githubusercontent.com/SeanChang/xuanyuan_docker_pro
 
 ### 📋 支持的操作系统
 
-我们的一键安装脚本支持 13 种主流 Linux 发行版，包括国产操作系统、CentOS 替代品和传统发行版：
+我们的一键安装脚本覆盖十余种主流 Linux 发行版家族，包括国产操作系统、CentOS 替代品和传统发行版；并对部分衍生系统（见下表后说明）按兼容路径安装：
 
 | 操作系统 | 版本 | 支持状态 | 说明 |
 |---------|------|---------|------|
@@ -278,8 +318,12 @@ bash <(curl -sSL https://raw.githubusercontent.com/SeanChang/xuanyuan_docker_pro
 | CentOS | 7, 8, 9 | ✅ | 包含 Stream 版本 |
 | RHEL | 7, 8, 9 | ✅ | Red Hat Enterprise Linux |
 | Oracle Linux | 7, 8, 9 | ✅ | Oracle 企业级发行版 |
+| **🔧 常见衍生 / 兼容环境** | | | |
+| Kali Linux | 当前滚动版本 | ✅ | 按 Debian 兼容路径配置 Docker CE 源 |
+| 深度 Deepin | 20+ | ✅ | Debian 系，按 Debian 仓库安装 |
+| 统信 UOS / UnionTechOS | 20+ | ✅ | 与银河麒麟等一并按 RHEL 系兼容路径处理 |
 
-> 💡 **提示**：脚本会自动检测您的操作系统类型和版本，并选择最优的安装方案。对于老版本系统（如 Ubuntu 16.04、Debian 9/10），脚本会自动使用兼容的安装方式。
+> 💡 **提示**：脚本会自动检测您的操作系统类型和版本，并选择最优的安装方案。对于老版本系统（如 Ubuntu 16.04、Debian 9/10），脚本会自动使用兼容的安装方式。若未在上表中逐行列出，只要与 Debian / RHEL 生态兼容，通常也可由脚本识别（详见仓库内 `docker.sh` 的系统检测分支）。
 
 ### 📖 使用说明
 
