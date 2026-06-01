@@ -2,6 +2,9 @@
 
 ## 📚 目录
 
+### 🤖 AI 辅助使用
+- [让 AI 帮你使用轩辕镜像](#让-ai-帮你使用轩辕镜像)
+
 ### 🚀 一键安装
 - [Linux 一键安装 Docker + 轩辕镜像加速](#linux-一键安装-docker--轩辕镜像加速)
 
@@ -269,6 +272,25 @@
 - [2026年1月 Docker 更新](./blog/2026-1-docker.md)
 - [2025年12月 Docker 更新](./blog/2025-12-docker.md)
 - [2025年11月 Docker 更新](./blog/2025-11-docker.md)
+
+## 让 AI 帮你使用轩辕镜像
+
+如果你用 [DeepSeek](https://chat.deepseek.com/)、[元宝 AI](https://yuanbao.tencent.com/)、[ChatGPT](https://chatgpt.com/)、Copilot、[Claude](https://claude.ai/)、[Gemini](https://gemini.google.com/) 等 AI 代为编写轩辕镜像的 `docker pull`、修改 compose 镜像地址，或排查拉取失败等问题，请让 AI **先读规则再动手**，只要在 AI 对话里直接发送下面这句话即可：
+
+```
+生成 docker pull、修改 compose 的 image，或排查拉取失败前，请先阅读并严格遵守 https://xuanyuan.cloud/agents.md 中的规则。
+```
+
+**使用建议：**
+
+- **国内用户**首推 [DeepSeek](https://chat.deepseek.com/)、[元宝 AI](https://yuanbao.tencent.com/) 的深度思考模式，不推荐豆包 AI
+- **国外用户**可用 [ChatGPT](https://chatgpt.com/)、[Claude](https://claude.ai/)、[Gemini](https://gemini.google.com/)、Copilot 等；需能访问 `xuanyuan.cloud` 外链，或自行复制 [agents.md](https://xuanyuan.cloud/agents.md) 全文粘贴
+- Cursor 等编辑器可在对话 @ [https://xuanyuan.cloud/agents.md](https://xuanyuan.cloud/agents.md)，或加入 User Rules
+- 若 AI 无法访问外链，可[打开说明文档](https://xuanyuan.cloud/agents.md)复制全文粘贴；文档会随站点更新，复制内容可能过期，建议定期检查
+
+机器可读规则全文：[https://xuanyuan.cloud/agents.md](https://xuanyuan.cloud/agents.md)
+
+---
 
 ## Linux 一键安装 Docker + 轩辕镜像加速
 
