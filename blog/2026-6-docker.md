@@ -1,16 +1,16 @@
-# 2026 年 5 月最新 Docker 镜像源加速列表与使用指南
+# 2026 年 6 月最新 Docker 镜像源加速列表与使用指南
 
-![2026 年 5 月最新 Docker 镜像源加速列表与使用指南](https://img.xuanyuan.dev/docker/blog/docker-2026-5.png)
+![2026 年 6 月最新 Docker 镜像源加速列表与使用指南](https://img.xuanyuan.dev/docker/blog/docker-2026-6.png)
 
-*分类: Docker,镜像源,轩辕镜像 | 标签: Docker,镜像源,轩辕镜像 | 发布时间: 2026-05-02 02:32:44*
+*分类: Docker,镜像源,轩辕镜像 | 标签: Docker,镜像源,轩辕镜像 | 发布时间: 2026-06-01 03:08:58*
 
-> 本文汇总了2026 年 5 月最新可用且稳定的国内Docker镜像加速地址，覆盖Docker、K8s containerd、Podman、nerdctl等主流场景，零基础用户也能按步骤完成配置。
+> 本文汇总了2026 年 6 月最新可用且稳定的国内Docker镜像加速地址，覆盖Docker、K8s containerd、Podman、nerdctl等主流场景，零基础用户也能按步骤完成配置。
 
-本文汇总了2026 年 5 月最新可用且稳定的Docker镜像加速地址，覆盖Docker、K8s containerd、Podman、nerdctl等主流场景，零基础用户也能按步骤完成配置。
+本文汇总了2026 年 6 月最新可用且稳定的Docker镜像加速地址，覆盖Docker、K8s containerd、Podman、nerdctl等主流场景，零基础用户也能按步骤完成配置。
 
 ⚠️ 说明：本文内容仅限学习研究，请勿违规使用。建议收藏，以便获取后续更新。
 
-## 2026年 5 月可用镜像加速源
+## 2026年 6 月可用镜像加速源
 1. 腾讯云镜像  
    地址：`https://mirror.ccs.tencentyun.com`  
    仅推荐在腾讯云服务器上使用，其他环境可能无法正常访问

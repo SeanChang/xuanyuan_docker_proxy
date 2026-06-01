@@ -26,12 +26,12 @@ bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 你可以在轩辕镜像中找到 Redis 镜像页面：👉 https://xuanyuan.cloud/r/library/redis
 以下提供4种拉取方式，按需选择即可：
 
-### 1.1  轩辕镜像（登录验证方式）
+### 1.1  轩辕镜像（登录拉取方式）
 ```bash
 docker pull docker.xuanyuan.run/library/redis:7.2.4  # 推荐使用具体版本，避免latest版本不可控
 ```
 
-### 1.2  轩辕镜像（免登录方式，新手推荐）
+### 1.2  轩辕镜像（专属域名拉取方式）
 ```bash
 # 拉取并自动重命名为官方标准名称，节省存储空间
 docker pull xxx.xuanyuan.run/library/redis:7.2.4 \
@@ -57,7 +57,7 @@ library/redis  7.2.4     7614ae9453d1   3 weeks ago    120MB
 ### 1.5  多架构镜像说明（可选，支持ARM/x86）
 轩辕镜像默认提供多架构支持，ARM架构（如树莓派、阿里云ARM服务器）无需额外配置，直接拉取即可自动匹配架构：
 ```bash
-docker pull xxx.xuanyuan.run/library/redis:7.2.4  # 自动适配ARM/x86架构
+docker pull docker.xuanyuan.run/library/redis:7.2.4  # 自动适配ARM/x86架构
 ```
 
 ---
