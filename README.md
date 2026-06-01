@@ -140,6 +140,8 @@
 - [OpenCode Docker 部署教程](./blog/opencode-docker.md)
 - [QQ OpenClaw Docker 部署教程](./blog/qq-openclaw-docker.md)
 - [OpenClaw + Qwen + DashScope 认证部署](./blog/openclaw-323qwen-dashscope-auth-40.md)
+- [9Router AI 统一 API 网关 Docker 部署教程](./blog/9router-ai-apicursorcline.md)
+- [calciumion/new-api AI 接口网关 Docker 部署教程](./blog/ai-calciumion-new-api-windows-linux-docker.md)
 
 #### 🎬 媒体服务器
 - [Jellyfin Docker 部署教程](./blog/jellyfin-docker.md)
@@ -265,6 +267,7 @@
 
 #### 📅 Docker 月度更新与资讯
 
+- [2026年6月 Docker 更新](./blog/2026-6-docker.md)
 - [2026年5月 Docker 更新](./blog/2026-5-docker.md)
 - [2026年4月 Docker 更新](./blog/2026-4-docker.md)
 - [2026年3月 Docker 更新](./blog/2026-3-docker.md)
@@ -272,6 +275,8 @@
 - [2026年1月 Docker 更新](./blog/2026-1-docker.md)
 - [2025年12月 Docker 更新](./blog/2025-12-docker.md)
 - [2025年11月 Docker 更新](./blog/2025-11-docker.md)
+- [Linux Kernel CVE-2026-31431 安全通告](./blog/linux-kernel-copy-fail-cve-2026-31431.md)
+- [NGINX CVE-2026-42945 安全通告](./blog/nginx-http-cve-2026-42945.md)
 
 ## 让 AI 帮你使用轩辕镜像
 
