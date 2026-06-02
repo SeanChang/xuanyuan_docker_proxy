@@ -2,11 +2,15 @@
 image: docker/desktop-stats
 description: "Docker Desktop云助手镜像，用于辅助Docker Desktop与云服务的集成配置及管理，简化云环境下的容器操作流程。"
 source: https://xuanyuan.cloud/zh/r/docker/desktop-stats
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/docker/desktop-stats
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[docker/desktop-stats](https://xuanyuan.cloud/zh/r/docker/desktop-stats)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/docker/desktop-stats" title="docker/desktop-stats Docker 镜像中文简介、标签列表与拉取命令">docker/desktop-stats — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/docker/desktop-stats" title="docker/desktop-stats Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/docker/desktop-stats</a>
 
 # Docker Desktop Cloud Helper Image 文档
 

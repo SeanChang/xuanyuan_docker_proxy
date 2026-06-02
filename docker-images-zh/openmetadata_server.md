@@ -2,11 +2,15 @@
 image: openmetadata/server
 description: "一站式数据发现、协作与治理平台，通过中央元数据仓库、深度数据血缘和团队协作功能，帮助用户有效管理数据资产并确保数据质量。"
 source: https://xuanyuan.cloud/zh/r/openmetadata/server
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/openmetadata/server
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[openmetadata/server](https://xuanyuan.cloud/zh/r/openmetadata/server)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openmetadata/server" title="openmetadata/server Docker 镜像中文简介、标签列表与拉取命令">openmetadata/server — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/openmetadata/server" title="openmetadata/server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openmetadata/server</a>
 
 ## OpenMetadata 概述
 

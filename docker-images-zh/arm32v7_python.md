@@ -2,11 +2,15 @@
 image: arm32v7/python
 description: "Python是一种解释型、交互式、面向对象的开源编程语言，适用于各类软件开发。"
 source: https://xuanyuan.cloud/zh/r/arm32v7/python
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/arm32v7/python
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[arm32v7/python](https://xuanyuan.cloud/zh/r/arm32v7/python)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/arm32v7/python" title="arm32v7/python Docker 镜像中文简介、标签列表与拉取命令">arm32v7/python — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/arm32v7/python" title="arm32v7/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/arm32v7/python</a>
 
 # arm32v7/python 镜像文档
 

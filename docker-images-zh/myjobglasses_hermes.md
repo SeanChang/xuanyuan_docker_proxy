@@ -2,11 +2,15 @@
 image: myjobglasses/hermes
 description: "Hermes API的基础镜像，提供运行Hermes API所需的核心依赖和基础环境，作为构建和部署Hermes API应用的基础层。"
 source: https://xuanyuan.cloud/zh/r/myjobglasses/hermes
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/myjobglasses/hermes
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[myjobglasses/hermes](https://xuanyuan.cloud/zh/r/myjobglasses/hermes)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/myjobglasses/hermes" title="myjobglasses/hermes Docker 镜像中文简介、标签列表与拉取命令">myjobglasses/hermes — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/myjobglasses/hermes" title="myjobglasses/hermes Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/myjobglasses/hermes</a>
 
 ## 镜像概述
 Hermes API基础镜像是专为Hermes API设计的基础运行环境镜像，旨在提供运行Hermes API所需的核心依赖、基础系统环境及优化配置，作为构建和部署Hermes API应用的标准化基础层。

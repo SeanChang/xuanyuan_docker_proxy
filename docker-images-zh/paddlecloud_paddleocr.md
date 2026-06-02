@@ -2,11 +2,15 @@
 image: paddlecloud/paddleocr
 description: "PaddleOCR的图像是百度开发的开源OCR工具库相关的视觉素材，该工具库支持多语言文本识别，具备高精度、轻量化模型特性，可实现文本检测与识别一体化，广泛适配文档处理、车牌识别、身份证识别等多种实际应用场景，为开发者提供高效便捷的光学字符识别解决方案，其图像内容通常涵盖工具界面、识别效果对比、模型架构示意图等，直观展示该OCR系统的功能优势与技术特点。"
 source: https://xuanyuan.cloud/zh/r/paddlecloud/paddleocr
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/paddlecloud/paddleocr
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[paddlecloud/paddleocr](https://xuanyuan.cloud/zh/r/paddlecloud/paddleocr)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/paddlecloud/paddleocr" title="paddlecloud/paddleocr Docker 镜像中文简介、标签列表与拉取命令">paddlecloud/paddleocr — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/paddlecloud/paddleocr" title="paddlecloud/paddleocr Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/paddlecloud/paddleocr</a>
 
 # PaddleOCR
 

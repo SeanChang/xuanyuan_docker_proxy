@@ -2,11 +2,15 @@
 image: jlesage/firefox
 description: "用于Firefox的Docker容器是一种轻量级、隔离的运行环境，能够为Firefox浏览器提供一致且独立的运行空间，有效避免与宿主系统的依赖冲突，支持在不同操作系统间便捷部署，便于开发、测试及多场景使用，确保Firefox在各类环境中均能稳定、安全地运行，简化了浏览器应用的管理与维护流程。"
 source: https://xuanyuan.cloud/zh/r/jlesage/firefox
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/jlesage/firefox
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[jlesage/firefox](https://xuanyuan.cloud/zh/r/jlesage/firefox)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jlesage/firefox" title="jlesage/firefox Docker 镜像中文简介、标签列表与拉取命令">jlesage/firefox — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/jlesage/firefox" title="jlesage/firefox Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jlesage/firefox</a>
 
 # Firefox Docker容器
 

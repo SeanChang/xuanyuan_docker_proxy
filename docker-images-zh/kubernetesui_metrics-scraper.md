@@ -2,11 +2,15 @@
 image: kubernetesui/metrics-scraper
 description: "用于从Kubernetes Metrics Server抓取并存储一小段时间窗口指标的小型二进制程序。"
 source: https://xuanyuan.cloud/zh/r/kubernetesui/metrics-scraper
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/kubernetesui/metrics-scraper
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[kubernetesui/metrics-scraper](https://xuanyuan.cloud/zh/r/kubernetesui/metrics-scraper)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kubernetesui/metrics-scraper" title="kubernetesui/metrics-scraper Docker 镜像中文简介、标签列表与拉取命令">kubernetesui/metrics-scraper — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/kubernetesui/metrics-scraper" title="kubernetesui/metrics-scraper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kubernetesui/metrics-scraper</a>
 
 # Kubernetes Dashboard
 

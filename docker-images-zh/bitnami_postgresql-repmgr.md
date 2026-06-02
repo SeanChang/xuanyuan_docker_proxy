@@ -2,11 +2,15 @@
 image: bitnami/postgresql-repmgr
 description: "Bitnami postgresql-repmgr 安全镜像"
 source: https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[bitnami/postgresql-repmgr](https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr" title="bitnami/postgresql-repmgr Docker 镜像中文简介、标签列表与拉取命令">bitnami/postgresql-repmgr — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr" title="bitnami/postgresql-repmgr Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr</a>
 
 # Bitnami postgresql-repmgr 安全镜像
 

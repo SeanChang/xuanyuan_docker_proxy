@@ -2,11 +2,15 @@
 image: redhat/ubi9-init
 description: "Red Hat通用基础镜像9初始化版，支持容器初始化功能，是构建需Init进程管理的企业级应用镜像的基础。"
 source: https://xuanyuan.cloud/zh/r/redhat/ubi9-init
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/redhat/ubi9-init
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[redhat/ubi9-init](https://xuanyuan.cloud/zh/r/redhat/ubi9-init)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/redhat/ubi9-init" title="redhat/ubi9-init Docker 镜像中文简介、标签列表与拉取命令">redhat/ubi9-init — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/redhat/ubi9-init" title="redhat/ubi9-init Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/redhat/ubi9-init</a>
 
 # Red Hat Universal Base Image 9 Init
 

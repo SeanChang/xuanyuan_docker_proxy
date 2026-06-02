@@ -2,11 +2,15 @@
 image: mongodb/atlas
 description: "从命令行创建、管理和自动化MongoDB Atlas资源"
 source: https://xuanyuan.cloud/zh/r/mongodb/atlas
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/mongodb/atlas
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[mongodb/atlas](https://xuanyuan.cloud/zh/r/mongodb/atlas)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mongodb/atlas" title="mongodb/atlas Docker 镜像中文简介、标签列表与拉取命令">mongodb/atlas — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/mongodb/atlas" title="mongodb/atlas Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mongodb/atlas</a>
 
 # Atlas CLI Docker镜像
 

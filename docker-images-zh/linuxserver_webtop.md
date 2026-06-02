@@ -2,11 +2,15 @@
 image: linuxserver/webtop
 description: "LinuxServer/webtop是轻量级Docker镜像，提供基于网页的Linux桌面环境，支持XFCE、KDE等多种桌面环境，内置浏览器、LibreOffice办公套件及基础工具。可通过HTTP/HTTPS协议远程访问并支持密码保护，适合开发者远程调试、家庭服务器管理或低配置设备临时办公。由LinuxServer团队维护，确保安全更新与稳定运行。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/webtop
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/linuxserver/webtop
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[linuxserver/webtop](https://xuanyuan.cloud/zh/r/linuxserver/webtop)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/webtop" title="linuxserver/webtop Docker 镜像中文简介、标签列表与拉取命令">linuxserver/webtop — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/webtop" title="linuxserver/webtop Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/webtop</a>
 
 # LinuxServer.io Webtop 容器介绍
 

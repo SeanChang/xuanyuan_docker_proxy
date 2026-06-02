@@ -2,11 +2,15 @@
 image: kasmweb/redroid
 description: "Redroid（远程Android）是适用于Kasm Workspaces的镜像，提供远程Android系统环境，支持在Kasm平台上远程访问和运行Android应用。"
 source: https://xuanyuan.cloud/zh/r/kasmweb/redroid
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/kasmweb/redroid
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[kasmweb/redroid](https://xuanyuan.cloud/zh/r/kasmweb/redroid)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kasmweb/redroid" title="kasmweb/redroid Docker 镜像中文简介、标签列表与拉取命令">kasmweb/redroid — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/kasmweb/redroid" title="kasmweb/redroid Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/redroid</a>
 
 # Kasm Workspaces Redroid 镜像文档
 

@@ -2,11 +2,15 @@
 image: gotson/komga
 description: "这是一个专注于漫画（涵盖欧美漫画与日本漫画）的服务器，其核心功能是通过API接口提供漫画页面的服务与流式传输，用户或开发者可借助该接口便捷获取、加载并展示漫画内容，实现漫画资源的高效调用与分发，为各类漫画阅读应用、网站及相关平台提供稳定的后端支持。"
 source: https://xuanyuan.cloud/zh/r/gotson/komga
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/gotson/komga
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[gotson/komga](https://xuanyuan.cloud/zh/r/gotson/komga)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gotson/komga" title="gotson/komga Docker 镜像中文简介、标签列表与拉取命令">gotson/komga — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/gotson/komga" title="gotson/komga Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gotson/komga</a>
 
 # Komga
 

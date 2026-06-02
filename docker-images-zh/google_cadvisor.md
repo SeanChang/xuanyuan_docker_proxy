@@ -2,11 +2,15 @@
 image: google/cadvisor
 description: "【已废弃】此镜像不再推送新内容，请使用gcr.io/cadvisor/cadvisor替代。cAdvisor是容器资源监控工具，用于收集、聚合和导出容器资源使用及性能数据。"
 source: https://xuanyuan.cloud/zh/r/google/cadvisor
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/google/cadvisor
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[google/cadvisor](https://xuanyuan.cloud/zh/r/google/cadvisor)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/google/cadvisor" title="google/cadvisor Docker 镜像中文简介、标签列表与拉取命令">google/cadvisor — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/google/cadvisor" title="google/cadvisor Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/google/cadvisor</a>
 
 # cAdvisor Docker镜像文档
 

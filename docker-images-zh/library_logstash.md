@@ -2,11 +2,15 @@
 image: library/logstash
 description: "Logstash是一款开源的事件和日志管理工具，它支持从文件、数据库、消息队列、网络服务等多种数据源高效收集事件与日志数据，通过内置的过滤、转换和解析功能对数据进行处理，并能将结构化或半结构化数据输出至Elasticsearch、Kibana等目标系统，广泛应用于日志分析、系统监控、故障排查及安全审计等场景，为用户提供全面的日志数据处理解决方案。"
 source: https://xuanyuan.cloud/zh/r/library/logstash
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/library/logstash
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[library/logstash](https://xuanyuan.cloud/zh/r/library/logstash)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/logstash" title="library/logstash Docker 镜像中文简介、标签列表与拉取命令">library/logstash — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/library/logstash" title="library/logstash Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/logstash</a>
 
 # Logstash Docker镜像介绍
 

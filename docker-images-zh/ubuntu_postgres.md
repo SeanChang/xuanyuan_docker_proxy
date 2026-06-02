@@ -2,11 +2,15 @@
 image: ubuntu/postgres
 description: "PostgreSQL是一款开源的对象关系型数据库，它功能强大、稳定性高，广泛应用于各类企业级应用和数据管理场景，支持复杂查询、事务处理及高级数据类型，其长期版本由Canonical负责维护，为用户提供持续的技术支持与更新服务，确保数据库系统在长期使用中的可靠性与安全性，是全球众多开发者和企业信赖的主流数据库解决方案之一。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/postgres
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/ubuntu/postgres
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[ubuntu/postgres](https://xuanyuan.cloud/zh/r/ubuntu/postgres)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/postgres" title="ubuntu/postgres Docker 镜像中文简介、标签列表与拉取命令">ubuntu/postgres — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/ubuntu/postgres" title="ubuntu/postgres Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/postgres</a>
 
 # Postgres | Ubuntu 镜像介绍  
 

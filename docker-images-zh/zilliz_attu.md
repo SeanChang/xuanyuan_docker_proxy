@@ -2,11 +2,15 @@
 image: zilliz/attu
 description: "Attu是Milvus的一站式管理工具，提供图形化界面用于监控、管理和操作Milvus向量数据库，可显著降低Milvus的管理成本，支持Milvus 2.x版本，兼容Zilliz Cloud及自建Milvus服务。"
 source: https://xuanyuan.cloud/zh/r/zilliz/attu
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/zilliz/attu
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[zilliz/attu](https://xuanyuan.cloud/zh/r/zilliz/attu)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zilliz/attu" title="zilliz/attu Docker 镜像中文简介、标签列表与拉取命令">zilliz/attu — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/zilliz/attu" title="zilliz/attu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zilliz/attu</a>
 
 # Attu
 

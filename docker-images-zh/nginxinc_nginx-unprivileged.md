@@ -2,11 +2,15 @@
 image: nginxinc/nginx-unprivileged
 description: "非特权NGINX Docker构建文件是指用于构建以非root用户身份在Docker容器中运行NGINX的配置文件，通过预设用户权限、环境变量及安全参数，确保NGINX在低权限模式下仍能正常处理HTTP请求、反向代理及负载均衡等功能，有效降低因容器漏洞引发的权限提升风险，适用于对安全性要求较高的生产环境部署场景。"
 source: https://xuanyuan.cloud/zh/r/nginxinc/nginx-unprivileged
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/nginxinc/nginx-unprivileged
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[nginxinc/nginx-unprivileged](https://xuanyuan.cloud/zh/r/nginxinc/nginx-unprivileged)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nginxinc/nginx-unprivileged" title="nginxinc/nginx-unprivileged Docker 镜像中文简介、标签列表与拉取命令">nginxinc/nginx-unprivileged — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/nginxinc/nginx-unprivileged" title="nginxinc/nginx-unprivileged Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nginxinc/nginx-unprivileged</a>
 
 # 非特权用户运行的NGINX Docker镜像
 

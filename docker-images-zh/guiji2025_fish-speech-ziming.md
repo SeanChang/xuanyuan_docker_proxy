@@ -2,11 +2,15 @@
 image: guiji2025/fish-speech-ziming
 description: "fish-speech-ziming：基于 Fish Speech 1.5 的多语言 TTS Docker 镜像，开箱即用，支持中文/英语/日语等 8 种语言文本到语音、语音克隆与 LoRA 微调；推理≥4GB 显存可用，集成 PyTorch 与依赖，提供 WebUI 与 API 模式。"
 source: https://xuanyuan.cloud/zh/r/guiji2025/fish-speech-ziming
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/guiji2025/fish-speech-ziming
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[guiji2025/fish-speech-ziming](https://xuanyuan.cloud/zh/r/guiji2025/fish-speech-ziming)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/guiji2025/fish-speech-ziming" title="guiji2025/fish-speech-ziming Docker 镜像中文简介、标签列表与拉取命令">guiji2025/fish-speech-ziming — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/guiji2025/fish-speech-ziming" title="guiji2025/fish-speech-ziming Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/guiji2025/fish-speech-ziming</a>
 
 # fish-speech-ziming 镜像使用指南
 

@@ -2,11 +2,15 @@
 image: guiji2025/fun-asr
 description: "guiji2025/fun-asr：基于阿里达摩院 FunASR 工具包的容器镜像，集成 VAD/ASR/PUNC 全链路语音识别，支持离线批量转写、实时流式识别、高并发处理；提供 CPU/GPU/英文/实时服务等多个版本，适配 AI 数字人、会议转写、智能客服等场景。"
 source: https://xuanyuan.cloud/zh/r/guiji2025/fun-asr
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/guiji2025/fun-asr
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[guiji2025/fun-asr](https://xuanyuan.cloud/zh/r/guiji2025/fun-asr)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/guiji2025/fun-asr" title="guiji2025/fun-asr Docker 镜像中文简介、标签列表与拉取命令">guiji2025/fun-asr — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/guiji2025/fun-asr" title="guiji2025/fun-asr Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/guiji2025/fun-asr</a>
 
 # guiji2025/fun-asr 镜像使用指南
 

@@ -2,11 +2,15 @@
 image: bitnamicharts/clickhouse
 description: "Bitnami提供的Helm chart，用于在Kubernetes环境中简化ClickHouse列式数据库的部署、配置与管理，适用于OLAP场景下的数据分析需求。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[bitnamicharts/clickhouse](https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse" title="bitnamicharts/clickhouse Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/clickhouse — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse" title="bitnamicharts/clickhouse Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse</a>
 
 # Bitnami ClickHouse Helm Chart 文档
 

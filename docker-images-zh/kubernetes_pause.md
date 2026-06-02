@@ -2,11 +2,15 @@
 image: kubernetes/pause
 description: "用于从备份恢复kubernetes/pause镜像，保障Kubernetes集群中作为Pod网络命名空间基础容器的pause镜像可恢复性。"
 source: https://xuanyuan.cloud/zh/r/kubernetes/pause
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/kubernetes/pause
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[kubernetes/pause](https://xuanyuan.cloud/zh/r/kubernetes/pause)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kubernetes/pause" title="kubernetes/pause Docker 镜像中文简介、标签列表与拉取命令">kubernetes/pause — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/kubernetes/pause" title="kubernetes/pause Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kubernetes/pause</a>
 
 # k8s-pause-restore 镜像文档
 

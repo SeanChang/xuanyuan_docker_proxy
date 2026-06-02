@@ -2,11 +2,15 @@
 image: deepmi/fastsurfer
 description: "FastSurfer是一款快速准确的深度学习管道，用于人类大脑MRI分析，提供与FreeSurfer兼容的体积和基于表面的厚度分析，支持亚毫米分辨率及小脑、下丘脑等神经解剖结构的细分。"
 source: https://xuanyuan.cloud/zh/r/deepmi/fastsurfer
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/deepmi/fastsurfer
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[deepmi/fastsurfer](https://xuanyuan.cloud/zh/r/deepmi/fastsurfer)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/deepmi/fastsurfer" title="deepmi/fastsurfer Docker 镜像中文简介、标签列表与拉取命令">deepmi/fastsurfer — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/deepmi/fastsurfer" title="deepmi/fastsurfer Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/deepmi/fastsurfer</a>
 
 # FastSurfer
 

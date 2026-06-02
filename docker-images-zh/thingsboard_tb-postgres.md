@@ -2,11 +2,15 @@
 image: thingsboard/tb-postgres
 description: "单实例的ThingsBoard物联网平台搭配PostgreSQL数据库，其中ThingsBoard作为开源物联网解决方案，可实现设备连接、数据采集、实时处理与可视化监控等核心功能，而PostgreSQL作为强大的开源关系型数据库，具备高稳定性、数据完整性及复杂查询支持，二者结合为中小型物联网项目提供高效、可靠的数据管理与应用支撑环境。"
 source: https://xuanyuan.cloud/zh/r/thingsboard/tb-postgres
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/thingsboard/tb-postgres
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[thingsboard/tb-postgres](https://xuanyuan.cloud/zh/r/thingsboard/tb-postgres)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/thingsboard/tb-postgres" title="thingsboard/tb-postgres Docker 镜像中文简介、标签列表与拉取命令">thingsboard/tb-postgres — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/thingsboard/tb-postgres" title="thingsboard/tb-postgres Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/thingsboard/tb-postgres</a>
 
 # ThingsBoard 简介  
 

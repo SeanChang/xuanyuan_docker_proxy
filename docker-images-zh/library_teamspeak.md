@@ -2,11 +2,15 @@
 image: library/teamspeak
 description: "TeamSpeak 是一款通过互联网实现高质量语音通信的软件，广泛应用于团队协作、游戏联机、远程会议等场景，凭借出色的语音清晰度、稳定的连接性能以及对多人实时互动的支持，帮助用户跨越网络距离，实现高效顺畅的语音交流。"
 source: https://xuanyuan.cloud/zh/r/library/teamspeak
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/library/teamspeak
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[library/teamspeak](https://xuanyuan.cloud/zh/r/library/teamspeak)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/teamspeak" title="library/teamspeak Docker 镜像中文简介、标签列表与拉取命令">library/teamspeak — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/library/teamspeak" title="library/teamspeak Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/teamspeak</a>
 
 # TeamSpeak Docker 镜像使用指南
 

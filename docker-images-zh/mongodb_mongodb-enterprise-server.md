@@ -2,11 +2,15 @@
 image: mongodb/mongodb-enterprise-server
 description: "MongoDB官方企业高级服务器是面向企业级应用的高性能、可扩展文档数据库服务器，支持复杂查询、分布式部署与实时数据分析，提供企业级安全特性（如身份验证、数据加密）、完善的数据备份与恢复机制及专业监控工具，助力企业构建稳定高效的现代应用架构，满足大规模数据存储、处理与业务创新需求。"
 source: https://xuanyuan.cloud/zh/r/mongodb/mongodb-enterprise-server
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/mongodb/mongodb-enterprise-server
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[mongodb/mongodb-enterprise-server](https://xuanyuan.cloud/zh/r/mongodb/mongodb-enterprise-server)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mongodb/mongodb-enterprise-server" title="mongodb/mongodb-enterprise-server Docker 镜像中文简介、标签列表与拉取命令">mongodb/mongodb-enterprise-server — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/mongodb/mongodb-enterprise-server" title="mongodb/mongodb-enterprise-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mongodb/mongodb-enterprise-server</a>
 
 # MongoDB Enterprise Advanced Server
 

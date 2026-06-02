@@ -2,11 +2,15 @@
 image: bitnami/node
 description: "Bitnami 提供的 Node.js 安全镜像，基于 Photon Linux 构建，具有强化安全特性、最小漏洞、合规支持和供应链安全保障，适用于快速部署安全可靠的 Node.js 应用。"
 source: https://xuanyuan.cloud/zh/r/bitnami/node
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/bitnami/node
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[bitnami/node](https://xuanyuan.cloud/zh/r/bitnami/node)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/node" title="bitnami/node Docker 镜像中文简介、标签列表与拉取命令">bitnami/node — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/bitnami/node" title="bitnami/node Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/node</a>
 
 # Bitnami Node.js 镜像
 

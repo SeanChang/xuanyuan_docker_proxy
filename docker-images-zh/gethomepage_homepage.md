@@ -2,11 +2,15 @@
 image: gethomepage/homepage
 description: "这是一个高度可定制的主页，支持用户根据自身需求灵活配置界面布局、功能模块及数据展示方式，通过Docker容器化技术实现环境快速部署与跨平台运行，并深度整合各类服务API接口，可无缝对接第三方应用、数据服务及业务系统，为个人用户、开发团队及企业提供高效、个性化的一站式信息聚合与管理平台。"
 source: https://xuanyuan.cloud/zh/r/gethomepage/homepage
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/gethomepage/homepage
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[gethomepage/homepage](https://xuanyuan.cloud/zh/r/gethomepage/homepage)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gethomepage/homepage" title="gethomepage/homepage Docker 镜像中文简介、标签列表与拉取命令">gethomepage/homepage — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/gethomepage/homepage" title="gethomepage/homepage Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gethomepage/homepage</a>
 
 # Homepage 简介
 

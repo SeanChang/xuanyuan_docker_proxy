@@ -2,11 +2,15 @@
 image: pjf1996/rsshub
 description: "RSSHub是全球最大的RSS网络，由超过5000个全球实例组成，聚合来自各种来源的数百万内容，提供丰富的RSS订阅服务，支持自定义部署。"
 source: https://xuanyuan.cloud/zh/r/pjf1996/rsshub
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/pjf1996/rsshub
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[pjf1996/rsshub](https://xuanyuan.cloud/zh/r/pjf1996/rsshub)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/pjf1996/rsshub" title="pjf1996/rsshub Docker 镜像中文简介、标签列表与拉取命令">pjf1996/rsshub — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/pjf1996/rsshub" title="pjf1996/rsshub Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/pjf1996/rsshub</a>
 
 # RSSHub
 

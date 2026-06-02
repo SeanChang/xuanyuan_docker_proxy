@@ -2,11 +2,15 @@
 image: arm64v8/nginx
 description: "Nginx的官方构建版本是一款高性能的HTTP和反向代理服务器，同时也可作为IMAP/POP3/SMTP代理服务器，其官方版本经过严格测试，包含稳定的核心功能及多种扩展模块，广泛应用于网站部署、负载均衡、动静分离等场景，凭借高效的并发处理能力和低资源消耗，成为全球范围内主流的Web服务器解决方案之一。"
 source: https://xuanyuan.cloud/zh/r/arm64v8/nginx
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/arm64v8/nginx
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[arm64v8/nginx](https://xuanyuan.cloud/zh/r/arm64v8/nginx)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/arm64v8/nginx" title="arm64v8/nginx Docker 镜像中文简介、标签列表与拉取命令">arm64v8/nginx — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/arm64v8/nginx" title="arm64v8/nginx Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/arm64v8/nginx</a>
 
 # arm64v8 架构的 nginx 官方 Docker 镜像说明
 

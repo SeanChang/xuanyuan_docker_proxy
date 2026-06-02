@@ -2,11 +2,15 @@
 image: kong/kong-gateway
 description: "Kong网关企业版是全球最受欢迎的API网关，提供API管理核心功能。"
 source: https://xuanyuan.cloud/zh/r/kong/kong-gateway
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/kong/kong-gateway
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[kong/kong-gateway](https://xuanyuan.cloud/zh/r/kong/kong-gateway)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kong/kong-gateway" title="kong/kong-gateway Docker 镜像中文简介、标签列表与拉取命令">kong/kong-gateway — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/kong/kong-gateway" title="kong/kong-gateway Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kong/kong-gateway</a>
 
 # Kong Gateway Docker镜像文档
 

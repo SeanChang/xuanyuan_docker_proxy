@@ -2,11 +2,15 @@
 image: collabora/code
 description: "Collabora Online Development Edition（协作在线开发版）是一款出色的在线办公套件镜像，专为家庭使用打造，集成文档编辑、表格处理、演示文稿制作等核心功能，支持多人实时协作，界面直观易操作，无需复杂配置即可快速部署，能满足家庭用户日常文档处理、学习资料整理、家庭共享协作等多样化需求，为居家办公与学习提供高效便捷的一站式办公解决方案。"
 source: https://xuanyuan.cloud/zh/r/collabora/code
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/collabora/code
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[collabora/code](https://xuanyuan.cloud/zh/r/collabora/code)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/collabora/code" title="collabora/code Docker 镜像中文简介、标签列表与拉取命令">collabora/code — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/collabora/code" title="collabora/code Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/collabora/code</a>
 
 # 用CODE Docker镜像搭建家庭在线办公套件  
 

@@ -2,11 +2,15 @@
 image: library/spark
 description: "Apache Spark 是一款专为大规模数据处理打造的统一分析引擎，它集成了批处理、流处理、机器学习、图计算等多种数据处理能力，通过基于内存的计算模型显著提升数据处理速度，具备高效、易用且可扩展的特性，能为企业和开发者提供一站式的大数据分析解决方案，支持从数据提取、清洗、转换到深度分析与应用部署的全流程，满足各类复杂数据场景下的处理需求，助力实现数据驱动的高效决策与业务创新。"
 source: https://xuanyuan.cloud/zh/r/library/spark
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/library/spark
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[library/spark](https://xuanyuan.cloud/zh/r/library/spark)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/spark" title="library/spark Docker 镜像中文简介、标签列表与拉取命令">library/spark — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/library/spark" title="library/spark Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/spark</a>
 
 # Apache Spark Docker 镜像介绍
 

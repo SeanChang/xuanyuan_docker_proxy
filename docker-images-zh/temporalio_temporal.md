@@ -2,11 +2,15 @@
 image: temporalio/temporal
 description: "Temporal的命令行界面与开发服务器，用于Temporal工作流平台的命令行操作及开发环境搭建。"
 source: https://xuanyuan.cloud/zh/r/temporalio/temporal
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/temporalio/temporal
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[temporalio/temporal](https://xuanyuan.cloud/zh/r/temporalio/temporal)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/temporalio/temporal" title="temporalio/temporal Docker 镜像中文简介、标签列表与拉取命令">temporalio/temporal — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/temporalio/temporal" title="temporalio/temporal Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/temporalio/temporal</a>
 
 # Temporal CLI Docker镜像文档
 

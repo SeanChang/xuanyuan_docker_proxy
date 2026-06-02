@@ -2,11 +2,15 @@
 image: 1panel/openclaw
 description: "运行在个人设备上的跨平台AI助理，支持飞书、钉钉、企业微信等多种沟通渠道，可7x24小时本地运行。"
 source: https://xuanyuan.cloud/zh/r/1panel/openclaw
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/1panel/openclaw
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[1panel/openclaw](https://xuanyuan.cloud/zh/r/1panel/openclaw)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/1panel/openclaw" title="1panel/openclaw Docker 镜像中文简介、标签列表与拉取命令">1panel/openclaw — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/1panel/openclaw" title="1panel/openclaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/1panel/openclaw</a>
 
 ## OpenClaw Docker镜像文档
 

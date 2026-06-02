@@ -2,11 +2,15 @@
 image: openresty/openresty
 description: "OpenResty官方Docker镜像是基于NGINX和LuaJIT构建的动态Web平台，它整合了NGINX的高性能HTTP处理与反向代理能力及LuaJIT的高效即时编译脚本技术，适用于开发高并发、低延迟的动态Web应用、API网关、负载均衡系统等场景。该官方Docker镜像提供标准化部署环境，简化配置流程，确保跨平台一致性与可靠性，助力开发者快速集成并高效利用OpenResty的强大功能，实现灵活的Web服务开发与部署。"
 source: https://xuanyuan.cloud/zh/r/openresty/openresty
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/openresty/openresty
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[openresty/openresty](https://xuanyuan.cloud/zh/r/openresty/openresty)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openresty/openresty" title="openresty/openresty Docker 镜像中文简介、标签列表与拉取命令">openresty/openresty — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/openresty/openresty" title="openresty/openresty Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openresty/openresty</a>
 
 # docker-openresty：OpenResty 的 Docker 工具
 

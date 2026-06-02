@@ -2,11 +2,15 @@
 image: ai/deepseek-v3.2-vllm
 description: "DeepSeek-V3.2通过DeepSeek稀疏注意力(DSA)、可扩展强化学习框架和大规模智能体任务合成管道提升计算效率与推理能力，荣获2025年国际数学奥林匹克(IMO)和国际信息学奥林匹克(IOI)金牌。"
 source: https://xuanyuan.cloud/zh/r/ai/deepseek-v3.2-vllm
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/ai/deepseek-v3.2-vllm
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[ai/deepseek-v3.2-vllm](https://xuanyuan.cloud/zh/r/ai/deepseek-v3.2-vllm)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/deepseek-v3.2-vllm" title="ai/deepseek-v3.2-vllm Docker 镜像中文简介、标签列表与拉取命令">ai/deepseek-v3.2-vllm — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/ai/deepseek-v3.2-vllm" title="ai/deepseek-v3.2-vllm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/deepseek-v3.2-vllm</a>
 
 # DeepSeek-V3.2：高效推理与智能体AI
 

@@ -2,11 +2,15 @@
 image: pulp/pulp
 description: "包含所有兼容插件的Pulp 3内容管理系统镜像，用于管理软件包、容器镜像等各类内容。"
 source: https://xuanyuan.cloud/zh/r/pulp/pulp
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/pulp/pulp
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[pulp/pulp](https://xuanyuan.cloud/zh/r/pulp/pulp)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/pulp/pulp" title="pulp/pulp Docker 镜像中文简介、标签列表与拉取命令">pulp/pulp — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/pulp/pulp" title="pulp/pulp Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/pulp/pulp</a>
 
 # Pulp 3 全插件镜像
 

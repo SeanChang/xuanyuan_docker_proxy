@@ -2,11 +2,15 @@
 image: library/neo4j
 description: "Neo4j是一种高度可扩展、稳健的原生图数据库，它专为图数据模型设计，能够高效存储和查询由节点、关系及其属性构成的复杂网络数据，凭借原生图存储和处理引擎，可支持从中小型项目到企业级大规模数据的无缝扩展，同时具备强大的稳定性和可靠性，广泛应用于社交网络分析、知识图谱构建、推荐系统等需要深度挖掘数据关联关系的场景，为用户提供高效、精准的图数据管理与分析能力。"
 source: https://xuanyuan.cloud/zh/r/library/neo4j
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/library/neo4j
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[library/neo4j](https://xuanyuan.cloud/zh/r/library/neo4j)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/neo4j" title="library/neo4j Docker 镜像中文简介、标签列表与拉取命令">library/neo4j — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/library/neo4j" title="library/neo4j Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/neo4j</a>
 
 ## 快速参考  
 

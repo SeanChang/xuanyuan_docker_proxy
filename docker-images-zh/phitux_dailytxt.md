@@ -2,11 +2,15 @@
 image: phitux/dailytxt
 description: "使用Svelte和Go编写的加密日记Web应用，提供安全的日记记录、用户管理和数据存储功能，支持自定义配置（如会话过期、注册控制）和私密数据保护，适用于个人或小型团队的私密文本记录场景。"
 source: https://xuanyuan.cloud/zh/r/phitux/dailytxt
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/phitux/dailytxt
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[phitux/dailytxt](https://xuanyuan.cloud/zh/r/phitux/dailytxt)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/phitux/dailytxt" title="phitux/dailytxt Docker 镜像中文简介、标签列表与拉取命令">phitux/dailytxt — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/phitux/dailytxt" title="phitux/dailytxt Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/phitux/dailytxt</a>
 
 # DailyTxT Docker镜像文档
 

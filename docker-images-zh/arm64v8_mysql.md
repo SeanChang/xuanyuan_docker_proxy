@@ -2,11 +2,15 @@
 image: arm64v8/mysql
 description: "MySQL是一款被广泛使用的开源关系型数据库管理系统（RDBMS），具有跨平台兼容性强、数据处理高效稳定、部署与维护便捷等特点，广泛应用于网站开发、企业级应用系统、数据存储与管理等多种场景，为全球众多开发者、中小型企业及大型机构提供可靠的结构化数据存储与查询支持。"
 source: https://xuanyuan.cloud/zh/r/arm64v8/mysql
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/arm64v8/mysql
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[arm64v8/mysql](https://xuanyuan.cloud/zh/r/arm64v8/mysql)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/arm64v8/mysql" title="arm64v8/mysql Docker 镜像中文简介、标签列表与拉取命令">arm64v8/mysql — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/arm64v8/mysql" title="arm64v8/mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/arm64v8/mysql</a>
 
 # mysql (arm64v8 架构) 镜像说明
 

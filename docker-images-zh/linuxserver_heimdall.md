@@ -2,11 +2,15 @@
 image: linuxserver/heimdall
 description: "linuxserver/heimdall 是一款轻量高效的Docker应用仪表板镜像，专为集中管理各类Web服务、应用和工具设计。支持自定义布局、分类整理与图标显示，可将常用服务（如NAS管理、智能家居平台、媒体服务器等）整合为直观入口，实现一键快速访问。采用响应式界面，适配电脑、平板及手机设备，操作简单且资源占用低，是个人服务器、家庭实验室或多服务环境下优化访问体验的理想工具。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/heimdall
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/linuxserver/heimdall
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[linuxserver/heimdall](https://xuanyuan.cloud/zh/r/linuxserver/heimdall)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/heimdall" title="linuxserver/heimdall Docker 镜像中文简介、标签列表与拉取命令">linuxserver/heimdall — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/heimdall" title="linuxserver/heimdall Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/heimdall</a>
 
 # LinuxServer.io 容器介绍：Heimdall
 

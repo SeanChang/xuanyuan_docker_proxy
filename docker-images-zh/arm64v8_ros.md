@@ -2,11 +2,15 @@
 image: arm64v8/ros
 description: "机器人操作系统（ROS）是一个致力于简化机器人应用开发流程的开源项目，它通过提供丰富的工具、库和标准化约定，支持开发者高效构建从感知、规划到控制的各类机器人功能模块，兼容多种硬件平台并促进跨团队协作，广泛应用于科研探索、工业自动化、教育实践等领域，为全球机器人开发者社区提供了灵活且强大的技术框架。"
 source: https://xuanyuan.cloud/zh/r/arm64v8/ros
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/arm64v8/ros
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[arm64v8/ros](https://xuanyuan.cloud/zh/r/arm64v8/ros)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/arm64v8/ros" title="arm64v8/ros Docker 镜像中文简介、标签列表与拉取命令">arm64v8/ros — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/arm64v8/ros" title="arm64v8/ros Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/arm64v8/ros</a>
 
 # ROS 官方镜像 arm64v8 架构仓库说明  
 

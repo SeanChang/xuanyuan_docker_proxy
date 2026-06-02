@@ -2,11 +2,15 @@
 image: meteorcollector/b2dvl_carla
 description: "Bench2Drive-VL的官方Docker镜像，用于提供便捷的环境部署，支持相关基准测试与研究工作。GitHub地址：https://github.com/Thinklab-SJTU/Bench2Drive-VL"
 source: https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[meteorcollector/b2dvl_carla](https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla" title="meteorcollector/b2dvl_carla Docker 镜像中文简介、标签列表与拉取命令">meteorcollector/b2dvl_carla — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla" title="meteorcollector/b2dvl_carla Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla</a>
 
 # Bench2Drive-VL 官方Docker镜像文档
 

@@ -2,11 +2,15 @@
 image: portainer/portainer
 description: "本仓库现已被弃用，不再进行维护与更新，建议用户迁移至 portainer/portainer-ce 仓库以获取持续的功能支持、安全更新及技术维护，该替代仓库为官方推荐的社区版资源，能够提供更稳定的服务和及时的问题修复。"
 source: https://xuanyuan.cloud/zh/r/portainer/portainer
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/portainer/portainer
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[portainer/portainer](https://xuanyuan.cloud/zh/r/portainer/portainer)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/portainer/portainer" title="portainer/portainer Docker 镜像中文简介、标签列表与拉取命令">portainer/portainer — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/portainer/portainer" title="portainer/portainer Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/portainer/portainer</a>
 
 # Portainer 仓库说明
 

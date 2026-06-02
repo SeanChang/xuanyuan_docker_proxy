@@ -2,11 +2,15 @@
 image: library/emqx
 description: "已弃用；这是一款专为物联网（IoT）、工业物联网（IIoT）、联网车辆等场景设计的最具可扩展性的开源MQTT消息代理，具备高效处理大规模设备连接的能力，曾广泛应用于各类智能设备互联与数据传输领域，为海量终端提供稳定可靠的通信支持。"
 source: https://xuanyuan.cloud/zh/r/library/emqx
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/library/emqx
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[library/emqx](https://xuanyuan.cloud/zh/r/library/emqx)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/emqx" title="library/emqx Docker 镜像中文简介、标签列表与拉取命令">library/emqx — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/library/emqx" title="library/emqx Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/emqx</a>
 
 # EMQX Docker 镜像使用指南
 

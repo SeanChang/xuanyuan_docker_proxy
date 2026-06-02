@@ -2,11 +2,15 @@
 image: dyrnq/kube-apiserver
 description: "registry.k8s.io/kube-apiserver是Kubernetes官方容器镜像仓库中的核心组件镜像，作为Kubernetes集群的统一API入口，负责接收并处理所有客户端的RESTful API请求，执行认证、授权、数据校验等关键操作，并将集群状态信息持久化存储到etcd分布式键值数据库中，是实现集群资源管理与状态同步的核心枢纽。"
 source: https://xuanyuan.cloud/zh/r/dyrnq/kube-apiserver
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/dyrnq/kube-apiserver
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[dyrnq/kube-apiserver](https://xuanyuan.cloud/zh/r/dyrnq/kube-apiserver)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dyrnq/kube-apiserver" title="dyrnq/kube-apiserver Docker 镜像中文简介、标签列表与拉取命令">dyrnq/kube-apiserver — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/dyrnq/kube-apiserver" title="dyrnq/kube-apiserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dyrnq/kube-apiserver</a>
 
 # registry.k8s.io/kube-apiserver 镜像介绍
 

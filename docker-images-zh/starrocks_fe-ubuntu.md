@@ -2,11 +2,15 @@
 image: starrocks/fe-ubuntu
 description: "starrocks/fe-ubuntu 是 StarRocks 高性能分析型数据库的前端（FE）节点 Docker 镜像，基于 Ubuntu 系统构建。FE 作为 StarRocks 的核心组件，负责元数据管理、查询解析与优化、集群协调等关键任务，支撑数据库高效运行。依托 Ubuntu 稳定的系统环境，镜像具备良好兼容性和依赖管理能力，可快速部署于各类容器化平台。适用于企业级实时数据分析、大规模数据仓库构建等场景，助力用户简化部署流程，高效支持 OLAP 任务稳定运行。"
 source: https://xuanyuan.cloud/zh/r/starrocks/fe-ubuntu
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/starrocks/fe-ubuntu
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[starrocks/fe-ubuntu](https://xuanyuan.cloud/zh/r/starrocks/fe-ubuntu)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/starrocks/fe-ubuntu" title="starrocks/fe-ubuntu Docker 镜像中文简介、标签列表与拉取命令">starrocks/fe-ubuntu — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/starrocks/fe-ubuntu" title="starrocks/fe-ubuntu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/starrocks/fe-ubuntu</a>
 
 # StarRocks Docker 镜像使用指南
 

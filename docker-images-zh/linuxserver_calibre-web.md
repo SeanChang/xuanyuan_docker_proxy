@@ -2,11 +2,15 @@
 image: linuxserver/calibre-web
 description: "这是由LinuxServer.io为您提供的Calibre-Web容器，其中Calibre-Web是一款基于Calibre的网页版电子书管理工具，支持通过浏览器便捷管理、搜索、分类及阅读电子书库，而该容器由LinuxServer.io团队精心打造，旨在提供稳定、高效且易于部署的电子书管理解决方案，帮助用户无需复杂配置即可快速搭建个人或团队的电子书管理系统，轻松实现电子书的一站式管理与访问。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/calibre-web
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/linuxserver/calibre-web
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[linuxserver/calibre-web](https://xuanyuan.cloud/zh/r/linuxserver/calibre-web)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/calibre-web" title="linuxserver/calibre-web Docker 镜像中文简介、标签列表与拉取命令">linuxserver/calibre-web — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/calibre-web" title="linuxserver/calibre-web Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/calibre-web</a>
 
 # LinuxServer.io docker-calibre-web 容器介绍
 

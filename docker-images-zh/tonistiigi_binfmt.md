@@ -2,11 +2,15 @@
 image: tonistiigi/binfmt
 description: "这是一个通过Docker镜像进行分发的跨平台模拟器集合，它集成了多种不同平台的模拟器工具，能够支持在各类操作系统环境下便捷地运行和测试不同平台的应用程序，借助Docker容器化技术，确保了模拟器运行环境的一致性、部署的简便性以及跨系统使用的灵活性，为开发者和测试人员提供了高效、统一的模拟测试解决方案。"
 source: https://xuanyuan.cloud/zh/r/tonistiigi/binfmt
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/tonistiigi/binfmt
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[tonistiigi/binfmt](https://xuanyuan.cloud/zh/r/tonistiigi/binfmt)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/tonistiigi/binfmt" title="tonistiigi/binfmt Docker 镜像中文简介、标签列表与拉取命令">tonistiigi/binfmt — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/tonistiigi/binfmt" title="tonistiigi/binfmt Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/tonistiigi/binfmt</a>
 
 # 基于Docker镜像的跨平台模拟器集合  
 

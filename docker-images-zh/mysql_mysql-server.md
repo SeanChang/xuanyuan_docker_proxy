@@ -2,11 +2,15 @@
 image: mysql/mysql-server
 description: "这是由Oracle官方MySQL团队创建、维护并提供支持的优化MySQL服务器Docker镜像，专为高效部署与运行MySQL数据库服务而设计，确保用户能在容器环境中便捷、稳定地使用经过专业优化的MySQL服务器，同时享受来自官方团队的持续技术保障与维护支持。"
 source: https://xuanyuan.cloud/zh/r/mysql/mysql-server
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/mysql/mysql-server
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[mysql/mysql-server](https://xuanyuan.cloud/zh/r/mysql/mysql-server)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mysql/mysql-server" title="mysql/mysql-server Docker 镜像中文简介、标签列表与拉取命令">mysql/mysql-server — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/mysql/mysql-server" title="mysql/mysql-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mysql/mysql-server</a>
 
 ![logo]([])
 

@@ -2,11 +2,15 @@
 image: bellsoft/liberica-openjdk-debian
 description: "Liberica是由BellSoft开发的100%开源Java实现，它完全符合Java SE标准，支持Windows、Linux、macOS等多种操作系统及ARM、x86等架构，提供长期支持（LTS）版本以确保稳定性与安全性，广泛应用于企业级开发、云服务及嵌入式系统等场景，为开发者和企业提供可靠的Java运行环境与开发工具支持。"
 source: https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-debian
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-debian
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[bellsoft/liberica-openjdk-debian](https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-debian)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-debian" title="bellsoft/liberica-openjdk-debian Docker 镜像中文简介、标签列表与拉取命令">bellsoft/liberica-openjdk-debian — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-debian" title="bellsoft/liberica-openjdk-debian Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-debian</a>
 
 # bellsoft/liberica-openjdk-debian 镜像介绍
 

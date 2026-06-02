@@ -2,11 +2,15 @@
 image: influxdata/influxdb3-ui
 description: "用于InfluxDB时序数据库的数据探索与可视化用户界面，支持数据查询、分析及管理操作，提供直观的时序数据交互体验。"
 source: https://xuanyuan.cloud/zh/r/influxdata/influxdb3-ui
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/influxdata/influxdb3-ui
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[influxdata/influxdb3-ui](https://xuanyuan.cloud/zh/r/influxdata/influxdb3-ui)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/influxdata/influxdb3-ui" title="influxdata/influxdb3-ui Docker 镜像中文简介、标签列表与拉取命令">influxdata/influxdb3-ui — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/influxdata/influxdb3-ui" title="influxdata/influxdb3-ui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/influxdata/influxdb3-ui</a>
 
 # InfluxDB 3 Explorer 镜像文档
 

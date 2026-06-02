@@ -2,11 +2,15 @@
 image: koryking/1panel
 description: "1panel在Docker中运行的镜像，支持通过环境变量设置应用安装位置。"
 source: https://xuanyuan.cloud/zh/r/koryking/1panel
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/koryking/1panel
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[koryking/1panel](https://xuanyuan.cloud/zh/r/koryking/1panel)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/koryking/1panel" title="koryking/1panel Docker 镜像中文简介、标签列表与拉取命令">koryking/1panel — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/koryking/1panel" title="koryking/1panel Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/koryking/1panel</a>
 
 # 1Panel 自定义安装路径镜像
 

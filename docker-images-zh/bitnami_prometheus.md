@@ -2,11 +2,15 @@
 image: bitnami/prometheus
 description: "Bitnami为普罗米修斯（Prometheus）提供的安全镜像，基于严格的安全标准构建，集成了开源监控工具普罗米修斯的核心功能，包含漏洞修复、合规性检查及安全加固措施，支持快速部署与稳定运行，适用于企业级监控场景，可有效保障监控系统的安全性与可靠性，助力用户轻松构建安全合规的监控环境。"
 source: https://xuanyuan.cloud/zh/r/bitnami/prometheus
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/bitnami/prometheus
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[bitnami/prometheus](https://xuanyuan.cloud/zh/r/bitnami/prometheus)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/prometheus" title="bitnami/prometheus Docker 镜像中文简介、标签列表与拉取命令">bitnami/prometheus — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/bitnami/prometheus" title="bitnami/prometheus Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/prometheus</a>
 
 # Bitnami Secure Image for Prometheus 介绍
 

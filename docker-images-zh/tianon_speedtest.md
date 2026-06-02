@@ -2,11 +2,15 @@
 image: tianon/speedtest
 description: "SPEEDTEST.NET是全球领先的专业网络速度测试平台，提供全面的网络性能评估服务，涵盖下载速度、上传速度、网络延迟、连接稳定性等核心指标，支持电脑、手机、平板等多种设备及宽带、5G、Wi-Fi等各类网络类型的实时测试，帮助用户精准掌握网络状况、诊断网络问题、优化网络体验，是全球用户广泛信赖的网络性能检测工具。"
 source: https://xuanyuan.cloud/zh/r/tianon/speedtest
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/tianon/speedtest
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[tianon/speedtest](https://xuanyuan.cloud/zh/r/tianon/speedtest)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/tianon/speedtest" title="tianon/speedtest Docker 镜像中文简介、标签列表与拉取命令">tianon/speedtest — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/tianon/speedtest" title="tianon/speedtest Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/tianon/speedtest</a>
 
 ## 服务器测速工具：轻松访问speedtest.net
 

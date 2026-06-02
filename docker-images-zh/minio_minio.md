@@ -2,11 +2,15 @@
 image: minio/minio
 description: "多云对象存储是一种能跨多个云服务提供商（如AWS、Azure、Google Cloud等）统一管理数据的解决方案，以对象形式（含数据、元数据及唯一标识符）存储大量非结构化数据，具备灵活的数据分发、跨云容灾备份能力，可按需弹性扩展存储资源，有效避免单一云厂商锁定，提升数据管理效率与安全性。"
 source: https://xuanyuan.cloud/zh/r/minio/minio
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/minio/minio
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[minio/minio](https://xuanyuan.cloud/zh/r/minio/minio)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/minio/minio" title="minio/minio Docker 镜像中文简介、标签列表与拉取命令">minio/minio — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/minio/minio" title="minio/minio Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/minio/minio</a>
 
 # MinIO 快速入门指南
 

@@ -2,11 +2,15 @@
 image: dyrnq/kube-webhook-certgen
 description: "k8s.gcr.io/ingress-nginx/kube-webhook-certgen是位于Google Container Registry（k8s.gcr.io）的Kubernetes官方镜像，属于ingress-nginx组件，是用于为Kubernetes Webhook生成和管理TLS证书的工具，其主要功能是通过自动生成、更新和轮换证书，保障Webhook在与Kubernetes API服务器通信时的安全加密，是确保Ingress控制器能够正常处理入站流量、实现API对象配置验证及动态路由规则生效的关键组件。"
 source: https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[dyrnq/kube-webhook-certgen](https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen" title="dyrnq/kube-webhook-certgen Docker 镜像中文简介、标签列表与拉取命令">dyrnq/kube-webhook-certgen — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen" title="dyrnq/kube-webhook-certgen Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen</a>
 
 ### k8s.gcr.io/ingress-nginx/kube-webhook-certgen 工具镜像介绍
 

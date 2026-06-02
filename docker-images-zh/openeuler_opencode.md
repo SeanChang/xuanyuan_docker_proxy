@@ -2,11 +2,15 @@
 image: openeuler/opencode
 description: "opencode官方Docker镜像，由openEuler基础设施SIG维护，用于快速部署和运行opencode服务，支持通过挂载配置目录实现数据持久化。"
 source: https://xuanyuan.cloud/zh/r/openeuler/opencode
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/openeuler/opencode
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[openeuler/opencode](https://xuanyuan.cloud/zh/r/openeuler/opencode)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/opencode" title="openeuler/opencode Docker 镜像中文简介、标签列表与拉取命令">openeuler/opencode — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/openeuler/opencode" title="openeuler/opencode Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/opencode</a>
 
 # opencode Docker镜像文档
 

@@ -2,11 +2,15 @@
 image: mcp/playwright
 description: "Playwright MCP服务器是基于微软Playwright自动化测试工具的管理控制平台，主要用于跨浏览器（如Chrome、Firefox、WebKit等）的端到端测试任务调度与执行，支持用户交互模拟、多环境部署管理、测试资源分配、CI/CD流程集成及测试结果分析，能有效提升Web应用测试效率，保障应用在不同浏览器和设备上的兼容性与稳定性，助力开发团队实现高质量软件交付。"
 source: https://xuanyuan.cloud/zh/r/mcp/playwright
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/mcp/playwright
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[mcp/playwright](https://xuanyuan.cloud/zh/r/mcp/playwright)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mcp/playwright" title="mcp/playwright Docker 镜像中文简介、标签列表与拉取命令">mcp/playwright — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/mcp/playwright" title="mcp/playwright Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mcp/playwright</a>
 
 # Playwright MCP Server  
 基于Playwright的模型上下文协议（MCP）服务器。  

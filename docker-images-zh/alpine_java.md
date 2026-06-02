@@ -2,11 +2,15 @@
 image: alpine/java
 description: "此代码库包含用于生成官方Eclipse Temurin Java容器的构建脚本，是Adoptium项目生态的重要组成部分，旨在通过标准化的脚本流程确保所构建的Java容器镜像符合官方规范，支持不同Java版本与操作系统平台的适配，为开发者提供可靠、一致的Eclipse Temurin Java运行环境容器化解决方案，助力Java应用的便捷部署与跨环境运行。"
 source: https://xuanyuan.cloud/zh/r/alpine/java
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/alpine/java
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[alpine/java](https://xuanyuan.cloud/zh/r/alpine/java)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/java" title="alpine/java Docker 镜像中文简介、标签列表与拉取命令">alpine/java — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/alpine/java" title="alpine/java Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpine/java</a>
 
 # Java容器构建脚本仓库  
 

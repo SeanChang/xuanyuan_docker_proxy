@@ -2,11 +2,15 @@
 image: rocker/tidyverse
 description: "版本稳定的R、RStudio及R包构建镜像，提供可靠的数据分析和开发环境。"
 source: https://xuanyuan.cloud/zh/r/rocker/tidyverse
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/rocker/tidyverse
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[rocker/tidyverse](https://xuanyuan.cloud/zh/r/rocker/tidyverse)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rocker/tidyverse" title="rocker/tidyverse Docker 镜像中文简介、标签列表与拉取命令">rocker/tidyverse — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/rocker/tidyverse" title="rocker/tidyverse Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rocker/tidyverse</a>
 
 # RStudio版本化镜像文档
 

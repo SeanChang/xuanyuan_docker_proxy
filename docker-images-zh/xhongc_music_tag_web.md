@@ -2,11 +2,15 @@
 image: xhongc/music_tag_web
 description: "音乐标签 Web 管理工具，用于在浏览器中批量查看与编辑音乐文件元数据，支持多格式音频、批量处理、封面管理及文件名/标签互相解析，适合作为远程音乐服务器的配套整理工具。"
 source: https://xuanyuan.cloud/zh/r/xhongc/music_tag_web
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/xhongc/music_tag_web
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[xhongc/music_tag_web](https://xuanyuan.cloud/zh/r/xhongc/music_tag_web)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/xhongc/music_tag_web" title="xhongc/music_tag_web Docker 镜像中文简介、标签列表与拉取命令">xhongc/music_tag_web — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/xhongc/music_tag_web" title="xhongc/music_tag_web Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xhongc/music_tag_web</a>
 
 # 音乐标签 Web 版（Music Tag Web）
 

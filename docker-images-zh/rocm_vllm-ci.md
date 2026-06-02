@@ -2,11 +2,15 @@
 image: rocm/vllm-ci
 description: "该仓库用于托管vllm项目持续集成（CI）流程所需的镜像，旨在为vllm-ci相关的自动化构建、测试及部署环节提供稳定的镜像存储与管理支持，确保CI流程高效、可靠地运行，满足vllm项目在开发迭代过程中对集成环境的镜像需求，助力项目快速验证代码变更、保障软件质量。"
 source: https://xuanyuan.cloud/zh/r/rocm/vllm-ci
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/rocm/vllm-ci
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[rocm/vllm-ci](https://xuanyuan.cloud/zh/r/rocm/vllm-ci)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rocm/vllm-ci" title="rocm/vllm-ci Docker 镜像中文简介、标签列表与拉取命令">rocm/vllm-ci — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/rocm/vllm-ci" title="rocm/vllm-ci Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rocm/vllm-ci</a>
 
 # vllm-ci 镜像托管仓库  
 

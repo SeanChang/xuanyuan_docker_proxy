@@ -2,11 +2,15 @@
 image: bitnami/mysql
 description: "比特纳米MySQL安全镜像是一款针对MySQL数据库精心打造的预先配置、安全加固的应用镜像，集成自动安全更新机制、合规性支持（如PCI DSS、GDPR）及优化的性能配置，可简化部署流程，确保数据库在开发、测试及生产环境中稳定运行，有效防范未授权访问、数据泄露等安全风险，适用于企业级应用及各类需要高安全性数据库支持的场景。"
 source: https://xuanyuan.cloud/zh/r/bitnami/mysql
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/bitnami/mysql
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[bitnami/mysql](https://xuanyuan.cloud/zh/r/bitnami/mysql)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/mysql" title="bitnami/mysql Docker 镜像中文简介、标签列表与拉取命令">bitnami/mysql — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/bitnami/mysql" title="bitnami/mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/mysql</a>
 
 ## Bitnami Secure Image for MySQL 介绍  
 

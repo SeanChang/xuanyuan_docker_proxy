@@ -2,11 +2,15 @@
 image: amd64/drupal
 description: "Drupal是一款开源内容管理平台，支持数百万网站和应用的运行。"
 source: https://xuanyuan.cloud/zh/r/amd64/drupal
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/amd64/drupal
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[amd64/drupal](https://xuanyuan.cloud/zh/r/amd64/drupal)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/amd64/drupal" title="amd64/drupal Docker 镜像中文简介、标签列表与拉取命令">amd64/drupal — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/amd64/drupal" title="amd64/drupal Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/amd64/drupal</a>
 
 # Drupal Docker 镜像文档
 

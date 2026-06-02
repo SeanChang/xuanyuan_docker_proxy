@@ -2,11 +2,15 @@
 image: rockylinux/rockylinux
 description: "社区支持的Linux发行版，基于Red Hat提供的RHEL源代码构建，功能兼容RHEL，移除上游厂商品牌与图标，免费可再分发，每个版本提供长达10年维护。"
 source: https://xuanyuan.cloud/zh/r/rockylinux/rockylinux
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/rockylinux/rockylinux
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[rockylinux/rockylinux](https://xuanyuan.cloud/zh/r/rockylinux/rockylinux)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rockylinux/rockylinux" title="rockylinux/rockylinux Docker 镜像中文简介、标签列表与拉取命令">rockylinux/rockylinux — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/rockylinux/rockylinux" title="rockylinux/rockylinux Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rockylinux/rockylinux</a>
 
 # Rocky Linux Docker镜像文档
 

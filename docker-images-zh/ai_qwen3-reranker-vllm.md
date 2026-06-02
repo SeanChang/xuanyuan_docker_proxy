@@ -2,11 +2,15 @@
 image: ai/qwen3-reranker-vllm
 description: "多语言重排序模型，用于文本检索，可跨119种语言对文档相关性进行评分，基于Qwen3系列基础模型，具备多语言能力、长文本理解和推理技能。"
 source: https://xuanyuan.cloud/zh/r/ai/qwen3-reranker-vllm
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/ai/qwen3-reranker-vllm
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[ai/qwen3-reranker-vllm](https://xuanyuan.cloud/zh/r/ai/qwen3-reranker-vllm)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen3-reranker-vllm" title="ai/qwen3-reranker-vllm Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-reranker-vllm — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/ai/qwen3-reranker-vllm" title="ai/qwen3-reranker-vllm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-reranker-vllm</a>
 
 # Qwen3-Reranker
 

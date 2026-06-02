@@ -2,11 +2,15 @@
 image: library/gcc
 description: "GNU编译器集合（GCC）是一款功能强大的开源编译系统，它广泛支持多种编程语言，包括C、C++、Java、Fortran、Objective-C、Ada等，能够将源代码高效转换为可执行程序，在软件开发、系统编程及跨平台应用开发等领域发挥着关键作用，是许多操作系统和开发环境中的核心工具。"
 source: https://xuanyuan.cloud/zh/r/library/gcc
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/library/gcc
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[library/gcc](https://xuanyuan.cloud/zh/r/library/gcc)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/gcc" title="library/gcc Docker 镜像中文简介、标签列表与拉取命令">library/gcc — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/library/gcc" title="library/gcc Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/gcc</a>
 
 # GCC Docker镜像使用指南
 

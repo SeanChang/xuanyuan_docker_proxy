@@ -2,11 +2,15 @@
 image: jeessy/ddns-go
 description: "这是一款简单易用的动态域名解析（DDNS）服务，支持阿里云、腾讯云、Dnspod、Cloudflare、回调功能及华为云等多个主流平台，可帮助用户便捷实现动态IP地址与域名的实时绑定，适用于个人服务器、家庭网络设备等多种场景，为用户提供稳定可靠的动态域名解析解决方案。"
 source: https://xuanyuan.cloud/zh/r/jeessy/ddns-go
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/jeessy/ddns-go
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[jeessy/ddns-go](https://xuanyuan.cloud/zh/r/jeessy/ddns-go)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jeessy/ddns-go" title="jeessy/ddns-go Docker 镜像中文简介、标签列表与拉取命令">jeessy/ddns-go — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/jeessy/ddns-go" title="jeessy/ddns-go Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jeessy/ddns-go</a>
 
 # DDNS-GO
 

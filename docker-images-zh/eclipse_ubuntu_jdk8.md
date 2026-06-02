@@ -2,11 +2,15 @@
 image: eclipse/ubuntu_jdk8
 description: "基于Ubuntu的集成开发环境，包含JDK8、Maven 3等Java开发工具及git、curl、nmap、mc、cbuild等实用工具，适用于开发与构建工作。"
 source: https://xuanyuan.cloud/zh/r/eclipse/ubuntu_jdk8
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/eclipse/ubuntu_jdk8
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[eclipse/ubuntu_jdk8](https://xuanyuan.cloud/zh/r/eclipse/ubuntu_jdk8)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/eclipse/ubuntu_jdk8" title="eclipse/ubuntu_jdk8 Docker 镜像中文简介、标签列表与拉取命令">eclipse/ubuntu_jdk8 — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/eclipse/ubuntu_jdk8" title="eclipse/ubuntu_jdk8 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/eclipse/ubuntu_jdk8</a>
 
 # Eclipse Che 开发环境 Docker 镜像文档
 

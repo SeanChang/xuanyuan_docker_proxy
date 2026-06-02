@@ -2,11 +2,15 @@
 image: bitnamicharts/minio
 description: "Bitnami提供的Helm chart，用于在Kubernetes环境中部署和管理MinIO对象存储服务。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/minio
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/minio
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[bitnamicharts/minio](https://xuanyuan.cloud/zh/r/bitnamicharts/minio)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/minio" title="bitnamicharts/minio Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/minio — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/bitnamicharts/minio" title="bitnamicharts/minio Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/minio</a>
 
 # Bitnami MinIO® 对象存储
 

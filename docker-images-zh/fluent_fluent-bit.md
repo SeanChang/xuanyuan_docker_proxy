@@ -2,11 +2,15 @@
 image: fluent/fluent-bit
 description: "Fluent Bit 是一款轻量级的日志与指标收集转发工具，以高效低耗为核心优势，适用于从边缘设备到云端的各类部署环境，能够实时采集、处理并转发系统日志、应用指标等多样化数据，支持多种数据源接入与输出目标对接，凭借小巧的体积和强大的性能，广泛应用于容器化部署、微服务架构及物联网场景中，为日志监控、数据分析与运维决策提供稳定可靠的数据流支持。"
 source: https://xuanyuan.cloud/zh/r/fluent/fluent-bit
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/fluent/fluent-bit
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[fluent/fluent-bit](https://xuanyuan.cloud/zh/r/fluent/fluent-bit)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/fluent/fluent-bit" title="fluent/fluent-bit Docker 镜像中文简介、标签列表与拉取命令">fluent/fluent-bit — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/fluent/fluent-bit" title="fluent/fluent-bit Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/fluent/fluent-bit</a>
 
 # Fluent Bit
 

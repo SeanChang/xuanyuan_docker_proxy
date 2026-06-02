@@ -2,11 +2,15 @@
 image: lvxj11/erpnext
 description: "这是一款采用开源架构的企业资源规划（ERP）软件，集成财务、采购、销售、库存等核心业务模块，提供即开即用的部署镜像，无需复杂配置，用户可快速完成系统搭建并投入使用，适用于中小企业高效管理业务流程，助力提升运营效率与数据协同能力。"
 source: https://xuanyuan.cloud/zh/r/lvxj11/erpnext
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/lvxj11/erpnext
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[lvxj11/erpnext](https://xuanyuan.cloud/zh/r/lvxj11/erpnext)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/lvxj11/erpnext" title="lvxj11/erpnext Docker 镜像中文简介、标签列表与拉取命令">lvxj11/erpnext — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/lvxj11/erpnext" title="lvxj11/erpnext Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/lvxj11/erpnext</a>
 
 # ERPNext 开源ERP系统 Docker镜像介绍
 

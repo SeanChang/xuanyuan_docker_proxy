@@ -2,11 +2,15 @@
 image: linuxserver/phpmyadmin
 description: "phpMyAdmin是一款用PHP编写的免费软件工具，旨在通过Web界面管理MySQL和MariaDB，支持广泛的数据库操作。LinuxServer.io提供的此镜像包含定期更新、用户映射和安全更新等特性。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[linuxserver/phpmyadmin](https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin" title="linuxserver/phpmyadmin Docker 镜像中文简介、标签列表与拉取命令">linuxserver/phpmyadmin — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin" title="linuxserver/phpmyadmin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin</a>
 
 # linuxserver/phpmyadmin
 

@@ -2,11 +2,15 @@
 image: apache/rocketmq
 description: "Apache RocketMQ是由阿里巴巴开源并捐献给Apache基金会的分布式消息与流处理平台，具备高吞吐量、低延迟、高可用性和可靠性，支持发布订阅、事务消息、定时消息等核心功能，可高效处理金融、电商、物流等领域的海量数据，保障消息可靠传递与系统稳定运行，是企业级分布式架构中实现异步通信、流量削峰和数据解耦的关键组件。"
 source: https://xuanyuan.cloud/zh/r/apache/rocketmq
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/apache/rocketmq
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[apache/rocketmq](https://xuanyuan.cloud/zh/r/apache/rocketmq)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/rocketmq" title="apache/rocketmq Docker 镜像中文简介、标签列表与拉取命令">apache/rocketmq — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/apache/rocketmq" title="apache/rocketmq Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/rocketmq</a>
 
 # Apache RocketMQ 介绍
 

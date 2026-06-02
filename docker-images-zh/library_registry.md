@@ -2,11 +2,15 @@
 image: library/registry
 description: "一种针对容器化技术的分发实现方案，专注于容器镜像及各类相关制品的存储与分发管理，支持从制品构建、版本控制到跨环境部署的全生命周期流程，保障镜像和制品在开发、测试与生产环节中的高效传输与可靠供应，为容器化应用的持续集成和持续部署提供稳定的基础设施支持。"
 source: https://xuanyuan.cloud/zh/r/library/registry
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/library/registry
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[library/registry](https://xuanyuan.cloud/zh/r/library/registry)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/registry" title="library/registry Docker 镜像中文简介、标签列表与拉取命令">library/registry — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/library/registry" title="library/registry Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/registry</a>
 
 # Distribution Registry 镜像介绍
 

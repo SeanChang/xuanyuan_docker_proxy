@@ -2,11 +2,15 @@
 image: corentinth/it-tools
 description: "面向开发者的实用在线工具集，作为Web应用提供出色的用户体验。"
 source: https://xuanyuan.cloud/zh/r/corentinth/it-tools
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/corentinth/it-tools
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[corentinth/it-tools](https://xuanyuan.cloud/zh/r/corentinth/it-tools)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/corentinth/it-tools" title="corentinth/it-tools Docker 镜像中文简介、标签列表与拉取命令">corentinth/it-tools — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/corentinth/it-tools" title="corentinth/it-tools Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/corentinth/it-tools</a>
 
 # it-tools
 

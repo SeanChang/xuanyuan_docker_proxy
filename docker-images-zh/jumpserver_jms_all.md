@@ -2,11 +2,15 @@
 image: jumpserver/jms_all
 description: "JumpServer all-in-one Docker 镜像，提供一体化部署方案，支持快速部署和使用 JumpServer，适用于纯 B/S 架构 Web 端访问。"
 source: https://xuanyuan.cloud/zh/r/jumpserver/jms_all
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/jumpserver/jms_all
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[jumpserver/jms_all](https://xuanyuan.cloud/zh/r/jumpserver/jms_all)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jumpserver/jms_all" title="jumpserver/jms_all Docker 镜像中文简介、标签列表与拉取命令">jumpserver/jms_all — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/jumpserver/jms_all" title="jumpserver/jms_all Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jumpserver/jms_all</a>
 
 # JumpServer all-in-one Docker 镜像
 

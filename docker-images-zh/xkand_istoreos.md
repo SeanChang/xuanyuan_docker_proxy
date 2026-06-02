@@ -2,11 +2,15 @@
 image: xkand/istoreos
 description: "iStoreOS自动化构建Docker镜像，基于官方x86_64固件，支持PVE/LXC快速部署与版本追溯"
 source: https://xuanyuan.cloud/zh/r/xkand/istoreos
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/xkand/istoreos
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[xkand/istoreos](https://xuanyuan.cloud/zh/r/xkand/istoreos)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/xkand/istoreos" title="xkand/istoreos Docker 镜像中文简介、标签列表与拉取命令">xkand/istoreos — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/xkand/istoreos" title="xkand/istoreos Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xkand/istoreos</a>
 
 ## iStoreOS 自动化构建项目说明
 

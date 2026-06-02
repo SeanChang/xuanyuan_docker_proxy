@@ -2,11 +2,15 @@
 image: osmiling/xxl-job
 description: "xxl-job分布式定时任务调度中心Docker镜像，包含调度中心(admin)，需配合外部MySQL数据库使用，用于分布式环境下的定时任务管理与调度。"
 source: https://xuanyuan.cloud/zh/r/osmiling/xxl-job
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/osmiling/xxl-job
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[osmiling/xxl-job](https://xuanyuan.cloud/zh/r/osmiling/xxl-job)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/osmiling/xxl-job" title="osmiling/xxl-job Docker 镜像中文简介、标签列表与拉取命令">osmiling/xxl-job — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/osmiling/xxl-job" title="osmiling/xxl-job Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/osmiling/xxl-job</a>
 
 # xxl-job 分布式定时任务调度中心 Docker 镜像文档
 

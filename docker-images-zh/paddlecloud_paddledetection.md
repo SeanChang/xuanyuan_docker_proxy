@@ -2,11 +2,15 @@
 image: paddlecloud/paddledetection
 description: "PaddleDetection模型套件的标准Docker镜像，用于便捷的Docker化部署和云上部署，包含运行模型案例的所有依赖，支持异构硬件环境和常见CUDA版本，开箱即用且持续更新。"
 source: https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[paddlecloud/paddledetection](https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection" title="paddlecloud/paddledetection Docker 镜像中文简介、标签列表与拉取命令">paddlecloud/paddledetection — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection" title="paddlecloud/paddledetection Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection</a>
 
 # PaddleDetection
 

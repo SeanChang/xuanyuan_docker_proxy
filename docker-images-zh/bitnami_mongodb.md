@@ -2,11 +2,15 @@
 image: bitnami/mongodb
 description: "Bitnami MongoDB安全镜像是一款针对MongoDB数据库精心打造的预配置解决方案，集成全面安全加固措施、性能优化组件及跨平台兼容性，旨在帮助用户快速部署稳定可靠的MongoDB环境，其遵循企业级安全标准，包含自动更新机制、访问控制策略及数据加密功能，有效保障数据完整性与系统安全性，同时简化安装配置流程，支持一键部署至各类云平台或本地服务器，适用于从小型项目到大型企业级应用的多样化场景，为开发者和运维人员提供高效、安全、便捷的数据库运行环境。"
 source: https://xuanyuan.cloud/zh/r/bitnami/mongodb
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/bitnami/mongodb
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[bitnami/mongodb](https://xuanyuan.cloud/zh/r/bitnami/mongodb)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/mongodb" title="bitnami/mongodb Docker 镜像中文简介、标签列表与拉取命令">bitnami/mongodb — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/bitnami/mongodb" title="bitnami/mongodb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/mongodb</a>
 
 # Bitnami 封装的 MongoDB®
 

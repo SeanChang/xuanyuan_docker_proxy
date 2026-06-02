@@ -2,11 +2,15 @@
 image: bitnami/minio-client
 description: "Bitnami提供的minio-client安全镜像，用于管理MinIO对象存储，具备安全可靠的部署特性。"
 source: https://xuanyuan.cloud/zh/r/bitnami/minio-client
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/bitnami/minio-client
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[bitnami/minio-client](https://xuanyuan.cloud/zh/r/bitnami/minio-client)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/minio-client" title="bitnami/minio-client Docker 镜像中文简介、标签列表与拉取命令">bitnami/minio-client — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/bitnami/minio-client" title="bitnami/minio-client Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/minio-client</a>
 
 # 基于MinIO®的Bitnami对象存储客户端
 

@@ -2,11 +2,15 @@
 image: guacamole/guacd
 description: "Apache Guacamole Web应用使用的原生服务器端代理，是部署Guacamole或使用Guacamole核心API的应用所必需的组件。"
 source: https://xuanyuan.cloud/zh/r/guacamole/guacd
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/guacamole/guacd
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[guacamole/guacd](https://xuanyuan.cloud/zh/r/guacamole/guacd)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/guacamole/guacd" title="guacamole/guacd Docker 镜像中文简介、标签列表与拉取命令">guacamole/guacd — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/guacamole/guacd" title="guacamole/guacd Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/guacamole/guacd</a>
 
 # guacd Docker镜像文档
 

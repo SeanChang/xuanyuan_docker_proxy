@@ -2,11 +2,15 @@
 image: portainer/pause
 description: "Kubernetes官方构建的暂停容器，包含ARM32 v6和v7架构镜像，用于Kubernetes集群中Pod的基础网络命名空间管理。"
 source: https://xuanyuan.cloud/zh/r/portainer/pause
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/portainer/pause
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[portainer/pause](https://xuanyuan.cloud/zh/r/portainer/pause)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/portainer/pause" title="portainer/pause Docker 镜像中文简介、标签列表与拉取命令">portainer/pause — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/portainer/pause" title="portainer/pause Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/portainer/pause</a>
 
 # Kubernetes Pause容器
 

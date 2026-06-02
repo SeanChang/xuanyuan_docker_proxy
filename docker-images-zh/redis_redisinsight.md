@@ -2,11 +2,15 @@
 image: redis/redisinsight
 description: "Redis Insight 是 Redis 官方推出的最佳图形用户界面（GUI）工具，它集数据结构可视化浏览与编辑、实时性能监控、集群管理、问题诊断及开发调试等功能于一体，能够帮助开发者和管理员更高效地操作与维护 Redis 数据库，凭借官方出品的可靠性和专业性，成为 Redis 生态中简化日常管理、提升工作效率的不可或缺的利器。"
 source: https://xuanyuan.cloud/zh/r/redis/redisinsight
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/redis/redisinsight
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[redis/redisinsight](https://xuanyuan.cloud/zh/r/redis/redisinsight)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/redis/redisinsight" title="redis/redisinsight Docker 镜像中文简介、标签列表与拉取命令">redis/redisinsight — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/redis/redisinsight" title="redis/redisinsight Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/redis/redisinsight</a>
 
 # Redis Insight 介绍与使用指南
 

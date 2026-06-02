@@ -2,11 +2,15 @@
 image: opengauss/opengauss
 description: "openGauss官方Docker镜像是由openGauss官方提供的可移植容器打包格式，集成了openGauss数据库引擎、必要配置文件及运行依赖，旨在简化数据库部署流程，确保不同环境下的运行一致性，方便用户快速启动、配置和使用openGauss高性能关系型数据库，适用于开发测试、学习实践等多种场景，为用户提供便捷、高效的数据库使用体验。"
 source: https://xuanyuan.cloud/zh/r/opengauss/opengauss
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/opengauss/opengauss
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[opengauss/opengauss](https://xuanyuan.cloud/zh/r/opengauss/opengauss)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/opengauss/opengauss" title="opengauss/opengauss Docker 镜像中文简介、标签列表与拉取命令">opengauss/opengauss — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/opengauss/opengauss" title="opengauss/opengauss Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/opengauss/opengauss</a>
 
 # 如何使用此镜像
 

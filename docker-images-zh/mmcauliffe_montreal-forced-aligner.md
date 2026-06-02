@@ -2,11 +2,15 @@
 image: mmcauliffe/montreal-forced-aligner
 description: "蒙特利尔强制对齐器(Montreal Forced Aligner)的官方Docker镜像，用于音频与文本的强制对齐，生成音素级时间标记，支持多语言语音处理与语音数据预处理。"
 source: https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[mmcauliffe/montreal-forced-aligner](https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner" title="mmcauliffe/montreal-forced-aligner Docker 镜像中文简介、标签列表与拉取命令">mmcauliffe/montreal-forced-aligner — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner" title="mmcauliffe/montreal-forced-aligner Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner</a>
 
 # 蒙特利尔强制对齐器(Montreal Forced Aligner) Docker镜像
 

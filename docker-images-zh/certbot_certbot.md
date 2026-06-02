@@ -2,11 +2,15 @@
 image: certbot/certbot
 description: "这是电子前哨基金会（EFF）Certbot工具的官方版本，用于从非营利性证书颁发机构Let's Encrypt获取TLS/SSL证书，该工具旨在自动化证书的获取、安装及更新流程，帮助网站管理员轻松实现HTTPS加密，保障网络通信安全，是目前广泛使用的免费SSL证书管理工具之一。"
 source: https://xuanyuan.cloud/zh/r/certbot/certbot
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/certbot/certbot
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[certbot/certbot](https://xuanyuan.cloud/zh/r/certbot/certbot)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/certbot/certbot" title="certbot/certbot Docker 镜像中文简介、标签列表与拉取命令">certbot/certbot — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/certbot/certbot" title="certbot/certbot Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/certbot/certbot</a>
 
 ## Certbot 官方 Docker 仓库  
 

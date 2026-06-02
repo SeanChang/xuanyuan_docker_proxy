@@ -2,11 +2,15 @@
 image: gitlab/gitlab-runner
 description: "GitLab CI多Runner是GitLab CI/CD生态中的关键组件，主要用于通过GitLab CI系统自动获取并运行各类流水线作业，支持在多种环境中执行构建、测试、部署等软件开发流程中的关键步骤，助力团队实现自动化协作与高效交付。"
 source: https://xuanyuan.cloud/zh/r/gitlab/gitlab-runner
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/gitlab/gitlab-runner
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[gitlab/gitlab-runner](https://xuanyuan.cloud/zh/r/gitlab/gitlab-runner)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gitlab/gitlab-runner" title="gitlab/gitlab-runner Docker 镜像中文简介、标签列表与拉取命令">gitlab/gitlab-runner — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/gitlab/gitlab-runner" title="gitlab/gitlab-runner Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gitlab/gitlab-runner</a>
 
 # GitLab Runner Docker 镜像  
 

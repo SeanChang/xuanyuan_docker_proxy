@@ -2,11 +2,15 @@
 image: cym1102/nginxwebui
 description: "nginxWebUI是一款专为简化nginx配置管理设计的图形化工具，用户可通过直观的网页界面快速完成反向代理、负载均衡、SSL证书配置、虚拟主机设置等nginx核心功能的配置与管理，无需手动编辑复杂的配置文件，有效降低操作门槛，提升配置效率，适用于各类需要高效管理nginx服务器的场景。"
 source: https://xuanyuan.cloud/zh/r/cym1102/nginxwebui
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/cym1102/nginxwebui
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[cym1102/nginxwebui](https://xuanyuan.cloud/zh/r/cym1102/nginxwebui)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cym1102/nginxwebui" title="cym1102/nginxwebui Docker 镜像中文简介、标签列表与拉取命令">cym1102/nginxwebui — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/cym1102/nginxwebui" title="cym1102/nginxwebui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cym1102/nginxwebui</a>
 
 # nginxWebUI
 

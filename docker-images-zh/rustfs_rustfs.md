@@ -2,11 +2,15 @@
 image: rustfs/rustfs
 description: "这是一款高性能分布式对象存储系统，作为MinIO的替代方案，适用于大规模数据存储场景，具备高扩展性、高可靠性与高效数据处理能力，采用Apache 2.0开源许可协议，支持免费使用、商用部署及二次开发，为用户提供灵活且经济的分布式存储解决方案。"
 source: https://xuanyuan.cloud/zh/r/rustfs/rustfs
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/rustfs/rustfs
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[rustfs/rustfs](https://xuanyuan.cloud/zh/r/rustfs/rustfs)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rustfs/rustfs" title="rustfs/rustfs Docker 镜像中文简介、标签列表与拉取命令">rustfs/rustfs — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/rustfs/rustfs" title="rustfs/rustfs Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rustfs/rustfs</a>
 
 # RustFS 介绍
 

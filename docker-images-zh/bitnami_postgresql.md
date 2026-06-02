@@ -2,11 +2,15 @@
 image: bitnami/postgresql
 description: "Bitnami PostgreSQL安全镜像是一款专为PostgreSQL数据库设计的预配置、安全强化型容器镜像，集成自动更新的安全补丁、最小化攻击面架构、合规性验证工具及行业最佳安全实践，旨在简化数据库部署流程，同时保障数据存储与访问的安全性、稳定性及可靠性，适用于企业级应用场景下高效、安全的数据库环境搭建。"
 source: https://xuanyuan.cloud/zh/r/bitnami/postgresql
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/bitnami/postgresql
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[bitnami/postgresql](https://xuanyuan.cloud/zh/r/bitnami/postgresql)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql" title="bitnami/postgresql Docker 镜像中文简介、标签列表与拉取命令">bitnami/postgresql — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql" title="bitnami/postgresql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/postgresql</a>
 
 # Bitnami PostgreSQL 软件包
 

@@ -2,11 +2,15 @@
 image: amd64/openjdk
 description: "OpenJDK的预发布/非生产版本是Java平台开源实现的早期构建版本，主要供开发者进行功能验证、兼容性测试和新特性预览，不适合部署在生产环境中；这类版本通常包含最新开发阶段的功能更新，但可能存在稳定性或兼容性问题，需经过进一步测试与优化后才能作为正式生产版本发布，为Java生态系统的持续迭代和技术创新提供前期验证支持。"
 source: https://xuanyuan.cloud/zh/r/amd64/openjdk
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/amd64/openjdk
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[amd64/openjdk](https://xuanyuan.cloud/zh/r/amd64/openjdk)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/amd64/openjdk" title="amd64/openjdk Docker 镜像中文简介、标签列表与拉取命令">amd64/openjdk — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/amd64/openjdk" title="amd64/openjdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/amd64/openjdk</a>
 
 # OpenJDK (amd64) 镜像介绍
 

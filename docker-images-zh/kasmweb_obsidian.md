@@ -2,11 +2,15 @@
 image: kasmweb/obsidian
 description: "适用于Kasm Workspaces的浏览器可访问版本的Obsidian，提供基于浏览器的桌面应用访问，支持独立部署或集成Kasm Workspaces平台使用。"
 source: https://xuanyuan.cloud/zh/r/kasmweb/obsidian
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/kasmweb/obsidian
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[kasmweb/obsidian](https://xuanyuan.cloud/zh/r/kasmweb/obsidian)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kasmweb/obsidian" title="kasmweb/obsidian Docker 镜像中文简介、标签列表与拉取命令">kasmweb/obsidian — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/kasmweb/obsidian" title="kasmweb/obsidian Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/obsidian</a>
 
 # Kasm Workspaces Obsidian镜像
 

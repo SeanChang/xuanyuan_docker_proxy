@@ -2,11 +2,15 @@
 image: bitnamicharts/etcd
 description: "Bitnami为etcd提供的Helm chart，是一款用于简化分布式键值存储系统etcd在Kubernetes等容器编排平台上部署、配置与管理的打包解决方案，集成了最佳实践配置，支持高可用性集群部署、数据持久化存储及版本控制，可帮助用户快速搭建稳定可靠的etcd环境，满足容器化应用对分布式数据存储的核心需求。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/etcd
-exported_at: 2026-06-02T11:56:54.554Z
+canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/etcd
+exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-> **轩辕镜像中文简介（在线版）**：[bitnamicharts/etcd](https://xuanyuan.cloud/zh/r/bitnamicharts/etcd)
-> 含镜像标签、拉取命令、部署文档与相关推荐。
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/etcd" title="bitnamicharts/etcd Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/etcd — 轩辕镜像中文简介</a>
+
+含镜像标签、拉取命令、部署文档与相关推荐。
+
+<a href="https://xuanyuan.cloud/zh/r/bitnamicharts/etcd" title="bitnamicharts/etcd Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/etcd</a>
 
 # Bitnami Etcd 软件包
 
