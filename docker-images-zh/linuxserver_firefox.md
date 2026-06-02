@@ -3,7 +3,7 @@ image: linuxserver/firefox
 description: "LinuxServer/Firefox是一款容器化Firefox浏览器解决方案，可在Docker环境中快速部署运行，支持图形界面远程访问（如VNC/HTTP），用户配置、书签及扩展数据持久化存储，避免系统环境污染。兼容Linux、Windows、macOS等多平台，适合开发测试、远程办公或临时浏览器需求，提供隔离、轻量、安全的运行环境，依托LinuxServer优化配置与持续更新，确保稳定高效使用体验。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/firefox
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/firefox
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/firefox" title="linuxserver/firefox Docker 镜像中文简介、标签列表与拉取命令">linuxserver/firefox — 轩辕镜像中文简介</a>

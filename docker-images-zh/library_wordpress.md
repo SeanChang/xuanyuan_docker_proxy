@@ -3,7 +3,7 @@ image: library/wordpress
 description: "WordPress作为全球广泛使用的开源平台，是一款功能丰富的内容管理系统，它能够通过灵活运用各类插件、实用小工具及多样化主题，帮助用户轻松构建个性化网站、高效管理图文影音等各类内容，并根据需求自定义界面风格与功能模块，满足从个人博客到企业站点的不同场景应用需求。"
 source: https://xuanyuan.cloud/zh/r/library/wordpress
 canonical: https://xuanyuan.cloud/zh/r/library/wordpress
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/wordpress" title="library/wordpress Docker 镜像中文简介、标签列表与拉取命令">library/wordpress — 轩辕镜像中文简介</a>

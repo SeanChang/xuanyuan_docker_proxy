@@ -1,9 +1,8 @@
 # Docker 镜像中文简介库
 
-本目录收录 AB 测试镜像的中文说明文档，完整在线版（标签、拉取命令、部署教程）请访问 <a href="https://xuanyuan.cloud" title="轩辕镜像 — Docker 镜像加速与中文简介">轩辕镜像 xuanyuan.cloud</a>。
+本目录收录 dockerhub 镜像的中文说明文档，完整在线版（标签、拉取命令、部署教程）请访问 <a href="https://xuanyuan.cloud" title="轩辕镜像 — Docker 镜像加速与中文简介">轩辕镜像 xuanyuan.cloud</a>。
 
-> 本目录由 `docker_xuanyuan_cloud` 仓库脚本 `pnpm export-docker-images-zh` 自动导出，共 950 个镜像。
-> 最后导出时间：2026-06-02T12:21:11.987Z
+最后更新时间：2026-06-02 12:23:50 UTC
 
 | 镜像 ID | 简介摘要 | 轩辕中文链接 |
 | --- | --- | --- |

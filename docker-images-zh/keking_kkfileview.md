@@ -3,7 +3,7 @@ image: keking/kkfileview
 description: "kkFileView是文件文档在线预览解决方案，基本支持主流办公文档的在线预览，如doc、docx、xls、xlsx、ppt、pptx、pdf、txt、zip、rar、图片、视频、音频等。"
 source: https://xuanyuan.cloud/zh/r/keking/kkfileview
 canonical: https://xuanyuan.cloud/zh/r/keking/kkfileview
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/keking/kkfileview" title="keking/kkfileview Docker 镜像中文简介、标签列表与拉取命令">keking/kkfileview — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: langfuse/langfuse
 description: "Langfuse应用容器是开源LLM工程平台，提供追踪、评估、提示词管理等功能，用于LLM应用开发与优化。"
 source: https://xuanyuan.cloud/zh/r/langfuse/langfuse
 canonical: https://xuanyuan.cloud/zh/r/langfuse/langfuse
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/langfuse/langfuse" title="langfuse/langfuse Docker 镜像中文简介、标签列表与拉取命令">langfuse/langfuse — 轩辕镜像中文简介</a>

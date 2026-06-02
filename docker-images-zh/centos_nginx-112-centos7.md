@@ -3,7 +3,7 @@ image: centos/nginx-112-centos7
 description: "用于运行nginx 1.12或构建基于nginx的应用程序的平台"
 source: https://xuanyuan.cloud/zh/r/centos/nginx-112-centos7
 canonical: https://xuanyuan.cloud/zh/r/centos/nginx-112-centos7
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/centos/nginx-112-centos7" title="centos/nginx-112-centos7 Docker 镜像中文简介、标签列表与拉取命令">centos/nginx-112-centos7 — 轩辕镜像中文简介</a>

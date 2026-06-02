@@ -3,7 +3,7 @@ image: clickhouse/clickhouse-server
 description: "ClickHouse是一款由俄罗斯Yandex公司开发的开源面向列的数据库管理系统，专为在线分析处理（OLAP）场景设计，采用高效的列式存储结构，能够快速处理PB级大规模数据，支持实时数据查询与分析，具备高吞吐量、低延迟的性能优势，广泛应用于数据仓库、日志分析、业务监控等领域，为企业提供高效的数据处理解决方案。"
 source: https://xuanyuan.cloud/zh/r/clickhouse/clickhouse-server
 canonical: https://xuanyuan.cloud/zh/r/clickhouse/clickhouse-server
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/clickhouse/clickhouse-server" title="clickhouse/clickhouse-server Docker 镜像中文简介、标签列表与拉取命令">clickhouse/clickhouse-server — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: garethflowers/svn-server
 description: "这是一个基于Subversion版本控制系统的简单服务器，采用svnserve作为核心服务程序，旨在为小型开发团队或个人项目提供轻量级的版本控制解决方案，具有配置便捷、部署快速的特点，无需依赖复杂的Web服务器环境，可直接通过svn协议实现代码的提交、更新与管理，满足基础的版本控制需求。"
 source: https://xuanyuan.cloud/zh/r/garethflowers/svn-server
 canonical: https://xuanyuan.cloud/zh/r/garethflowers/svn-server
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/garethflowers/svn-server" title="garethflowers/svn-server Docker 镜像中文简介、标签列表与拉取命令">garethflowers/svn-server — 轩辕镜像中文简介</a>

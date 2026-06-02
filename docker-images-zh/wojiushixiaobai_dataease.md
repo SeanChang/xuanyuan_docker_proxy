@@ -3,7 +3,7 @@ image: wojiushixiaobai/dataease
 description: "DataEase 是开源数据可视化分析工具（BI工具），支持丰富数据源连接，通过拖拉拽快速制作图表并分享，帮助用户快速分析数据、洞察业务趋势，实现业务优化。"
 source: https://xuanyuan.cloud/zh/r/wojiushixiaobai/dataease
 canonical: https://xuanyuan.cloud/zh/r/wojiushixiaobai/dataease
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/wojiushixiaobai/dataease" title="wojiushixiaobai/dataease Docker 镜像中文简介、标签列表与拉取命令">wojiushixiaobai/dataease — 轩辕镜像中文简介</a>

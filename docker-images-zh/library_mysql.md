@@ -3,7 +3,7 @@ image: library/mysql
 description: "MySQL 官方 Docker 镜像，提供开箱即用的关系型数据库服务，支持通过环境变量完成库和账号初始化，并结合数据卷实现持久化存储，适合本地开发、集成测试及小到中型生产环境的数据库部署。"
 source: https://xuanyuan.cloud/zh/r/library/mysql
 canonical: https://xuanyuan.cloud/zh/r/library/mysql
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/mysql" title="library/mysql Docker 镜像中文简介、标签列表与拉取命令">library/mysql — 轩辕镜像中文简介</a>

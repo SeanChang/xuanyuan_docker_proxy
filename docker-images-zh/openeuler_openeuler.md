@@ -3,7 +3,7 @@ image: openeuler/openeuler
 description: "openEuler的Docker构建是指基于openEuler开源操作系统进行的Docker镜像构建过程，该过程充分集成了openEuler系统的稳定性、安全性与兼容性优势，支持开发者通过标准化流程快速构建、打包和部署容器化应用，适用于云原生开发、边缘计算、企业级服务部署等多种场景，为容器化环境提供了可靠的底层操作系统支持，助力用户高效实现应用的容器化转型与全生命周期管理。"
 source: https://xuanyuan.cloud/zh/r/openeuler/openeuler
 canonical: https://xuanyuan.cloud/zh/r/openeuler/openeuler
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/openeuler" title="openeuler/openeuler Docker 镜像中文简介、标签列表与拉取命令">openeuler/openeuler — 轩辕镜像中文简介</a>

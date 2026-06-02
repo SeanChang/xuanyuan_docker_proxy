@@ -3,7 +3,7 @@ image: ryshe/terraria
 description: "提供支持原版及移动设备的Terraria服务器，集成TShock工具以实现管理功能。"
 source: https://xuanyuan.cloud/zh/r/ryshe/terraria
 canonical: https://xuanyuan.cloud/zh/r/ryshe/terraria
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ryshe/terraria" title="ryshe/terraria Docker 镜像中文简介、标签列表与拉取命令">ryshe/terraria — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: canal/canal-server
 description: "canal-server是阿里巴巴开源的数据库增量同步中间件服务端组件，基于MySQL binlog日志解析技术，通过实时监听并解析数据库变更日志，将增量数据高效、可靠地同步至下游系统（如消息队列、数据仓库、缓存等），支持数据订阅、实时数据集成、跨系统数据同步等场景，为业务提供低延迟、高可用的数据变更捕获与分发能力。"
 source: https://xuanyuan.cloud/zh/r/canal/canal-server
 canonical: https://xuanyuan.cloud/zh/r/canal/canal-server
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/canal/canal-server" title="canal/canal-server Docker 镜像中文简介、标签列表与拉取命令">canal/canal-server — 轩辕镜像中文简介</a>

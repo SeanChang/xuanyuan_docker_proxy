@@ -3,7 +3,7 @@ image: linuxserver/duplicati
 description: "LinuxServer.io提供的Duplicati容器，用于数据备份与同步，支持加密和压缩功能。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/duplicati
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/duplicati
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/duplicati" title="linuxserver/duplicati Docker 镜像中文简介、标签列表与拉取命令">linuxserver/duplicati — 轩辕镜像中文简介</a>

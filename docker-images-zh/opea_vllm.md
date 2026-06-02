@@ -3,7 +3,7 @@ image: opea/vllm
 description: "基于VLLM项目的VLLM模型部署与服务镜像"
 source: https://xuanyuan.cloud/zh/r/opea/vllm
 canonical: https://xuanyuan.cloud/zh/r/opea/vllm
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/opea/vllm" title="opea/vllm Docker 镜像中文简介、标签列表与拉取命令">opea/vllm — 轩辕镜像中文简介</a>

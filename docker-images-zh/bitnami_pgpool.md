@@ -3,7 +3,7 @@ image: bitnami/pgpool
 description: "Bitnami提供的安全pgpool镜像，用于PostgreSQL数据库的连接池管理、负载均衡及高可用中间件。"
 source: https://xuanyuan.cloud/zh/r/bitnami/pgpool
 canonical: https://xuanyuan.cloud/zh/r/bitnami/pgpool
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/pgpool" title="bitnami/pgpool Docker 镜像中文简介、标签列表与拉取命令">bitnami/pgpool — 轩辕镜像中文简介</a>

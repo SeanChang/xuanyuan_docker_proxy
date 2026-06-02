@@ -3,7 +3,7 @@ image: ubuntu/airflow
 description: "基于Ubuntu的Apache Airflow Docker镜像，提供工作流管理平台，用于数据工程管道的程序化创作、调度和监控。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/airflow
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/airflow
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/airflow" title="ubuntu/airflow Docker 镜像中文简介、标签列表与拉取命令">ubuntu/airflow — 轩辕镜像中文简介</a>

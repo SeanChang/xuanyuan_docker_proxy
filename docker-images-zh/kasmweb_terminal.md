@@ -3,7 +3,7 @@ image: kasmweb/terminal
 description: "Kasm Workspaces的浏览器可访问版xfce4-terminal，用于在Docker容器流平台中提供基于浏览器的终端访问，支持通过Web界面使用xfce4-terminal终端应用。"
 source: https://xuanyuan.cloud/zh/r/kasmweb/terminal
 canonical: https://xuanyuan.cloud/zh/r/kasmweb/terminal
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kasmweb/terminal" title="kasmweb/terminal Docker 镜像中文简介、标签列表与拉取命令">kasmweb/terminal — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: jaegertracing/jaeger
 description: "（实验性）Jaeger 第二代是基于 OpenTelemetry 收集器构建的分布式追踪系统，旨在整合开源可观测性工具链，优化分布式系统的追踪数据采集、处理与分析流程，为开发与运维团队提供更高效的分布式链路追踪能力，目前处于实验阶段，持续探索基于 OpenTelemetry 生态的追踪技术创新与实践应用。"
 source: https://xuanyuan.cloud/zh/r/jaegertracing/jaeger
 canonical: https://xuanyuan.cloud/zh/r/jaegertracing/jaeger
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jaegertracing/jaeger" title="jaegertracing/jaeger Docker 镜像中文简介、标签列表与拉取命令">jaegertracing/jaeger — 轩辕镜像中文简介</a>

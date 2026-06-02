@@ -3,7 +3,7 @@ image: linuxserver/ddclient
 description: "LinuxServer.io提供的ddclient容器，是一款动态DNS客户端工具，用于自动更新域名解析记录。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/ddclient
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/ddclient
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/ddclient" title="linuxserver/ddclient Docker 镜像中文简介、标签列表与拉取命令">linuxserver/ddclient — 轩辕镜像中文简介</a>

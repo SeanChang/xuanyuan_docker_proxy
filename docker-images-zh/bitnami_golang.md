@@ -3,7 +3,7 @@ image: bitnami/golang
 description: "Bitnami安全Golang镜像，提供加固配置与安全更新，适用于构建和运行Golang应用的生产环境。"
 source: https://xuanyuan.cloud/zh/r/bitnami/golang
 canonical: https://xuanyuan.cloud/zh/r/bitnami/golang
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/golang" title="bitnami/golang Docker 镜像中文简介、标签列表与拉取命令">bitnami/golang — 轩辕镜像中文简介</a>

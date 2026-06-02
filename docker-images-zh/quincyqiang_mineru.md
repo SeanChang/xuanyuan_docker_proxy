@@ -3,7 +3,7 @@ image: quincyqiang/mineru
 description: "该PDF解析API基于MinerU开发，主要由两部分核心内容构成：一是MinerU的GPU镜像构建，用于提供高效的计算资源支持；二是基于FastAPI框架搭建的PDF解析接口，确保接口具备高性能与易用性，通过整合这两项关键技术，实现了高效、稳定的PDF解析功能，为用户提供便捷可靠的文档处理服务。"
 source: https://xuanyuan.cloud/zh/r/quincyqiang/mineru
 canonical: https://xuanyuan.cloud/zh/r/quincyqiang/mineru
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/quincyqiang/mineru" title="quincyqiang/mineru Docker 镜像中文简介、标签列表与拉取命令">quincyqiang/mineru — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: rustdesk/rustdesk-server-s6
 description: "基于s6-overlay的RustDesk Server镜像专为容器化部署打造，集成hbbs和hbbr核心服务，兼容Docker与Podman环境，具备自动重启、进程监控及服务自愈能力，配置流程简化，支持安全的P2P远程桌面连接，无需依赖第三方中转服务器，适用于企业或个人搭建私有化远程桌面服务，可有效保障数据传输隐私与连接稳定性，轻量级架构提升部署效率与资源利用率。"
 source: https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6
 canonical: https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6" title="rustdesk/rustdesk-server-s6 Docker 镜像中文简介、标签列表与拉取命令">rustdesk/rustdesk-server-s6 — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: kasmweb/ubuntu-noble-desktop
 description: "适用于Kasm Workspaces的Ubuntu生产力桌面"
 source: https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop
 canonical: https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop" title="kasmweb/ubuntu-noble-desktop Docker 镜像中文简介、标签列表与拉取命令">kasmweb/ubuntu-noble-desktop — 轩辕镜像中文简介</a>

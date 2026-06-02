@@ -3,7 +3,7 @@ image: jenkins/ssh-agent
 description: "这是一个用于通过SSH连接的Jenkins代理的Docker镜像，它预配置了SSH服务及Jenkins代理运行所需的基础依赖，旨在简化分布式构建环境中Jenkins代理节点的部署流程，支持代理节点通过SSH安全连接至Jenkins主节点并执行构建任务，帮助用户快速搭建稳定、高效的Jenkins分布式构建架构，适用于需要跨节点协作完成自动化构建、测试与部署的开发场景。"
 source: https://xuanyuan.cloud/zh/r/jenkins/ssh-agent
 canonical: https://xuanyuan.cloud/zh/r/jenkins/ssh-agent
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jenkins/ssh-agent" title="jenkins/ssh-agent Docker 镜像中文简介、标签列表与拉取命令">jenkins/ssh-agent — 轩辕镜像中文简介</a>

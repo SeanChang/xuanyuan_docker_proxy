@@ -3,7 +3,7 @@ image: library/archlinux
 description: "Arch Linux是一款简洁、轻量级的Linux发行版，以灵活性为核心目标，它采用滚动更新模式，强调极简设计与用户自主配置，允许用户从零开始构建符合个人需求的系统，凭借高效的包管理工具（如pacman）和活跃的社区支持，深受追求系统掌控权与定制化体验的技术用户青睐，在保持轻量的同时为用户提供高度自由的操作空间。"
 source: https://xuanyuan.cloud/zh/r/library/archlinux
 canonical: https://xuanyuan.cloud/zh/r/library/archlinux
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/archlinux" title="library/archlinux Docker 镜像中文简介、标签列表与拉取命令">library/archlinux — 轩辕镜像中文简介</a>

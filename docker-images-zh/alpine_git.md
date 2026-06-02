@@ -3,7 +3,7 @@ image: alpine/git
 description: "这是一个运行于Alpine Linux系统中的简易Git容器，Alpine Linux以其极致精简的特性为基础，使得该容器在保持Git核心功能的同时，具备轻量高效的运行表现，尤其适用于各类小型Linux发行版环境，能够满足资源受限场景下的版本控制需求，为嵌入式系统、边缘设备或轻量级开发环境提供便捷的Git服务支持。"
 source: https://xuanyuan.cloud/zh/r/alpine/git
 canonical: https://xuanyuan.cloud/zh/r/alpine/git
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/git" title="alpine/git Docker 镜像中文简介、标签列表与拉取命令">alpine/git — 轩辕镜像中文简介</a>

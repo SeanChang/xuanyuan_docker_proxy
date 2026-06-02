@@ -3,7 +3,7 @@ image: langgenius/qdrant
 description: "基于qdrant:v1.6.1版本，添加了中文、日文和韩文分词器支持的向量数据库镜像，用于提升东亚语言文本的向量检索效果。"
 source: https://xuanyuan.cloud/zh/r/langgenius/qdrant
 canonical: https://xuanyuan.cloud/zh/r/langgenius/qdrant
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/langgenius/qdrant" title="langgenius/qdrant Docker 镜像中文简介、标签列表与拉取命令">langgenius/qdrant — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: docker/compose
 description: "Docker Compose是Docker官方提供的工具，可帮助用户通过YAML文件便捷地定义、配置和运行由多个Docker容器组成的应用程序，实现服务、网络和卷等组件的统一管理与一键部署，详情参见官方文档[]"
 source: https://xuanyuan.cloud/zh/r/docker/compose
 canonical: https://xuanyuan.cloud/zh/r/docker/compose
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/docker/compose" title="docker/compose Docker 镜像中文简介、标签列表与拉取命令">docker/compose — 轩辕镜像中文简介</a>

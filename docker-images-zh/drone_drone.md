@@ -3,7 +3,7 @@ image: drone/drone
 description: "Drone是一款基于Docker容器技术构建的持续集成平台，它能够自动化软件开发流程中的代码构建、测试及集成验证等关键环节，借助Docker的容器化特性实现环境一致性与资源隔离，具备轻量级架构、易于配置和跨环境部署的优势，为开发团队提供高效、可靠的持续集成解决方案，助力快速交付高质量软件。"
 source: https://xuanyuan.cloud/zh/r/drone/drone
 canonical: https://xuanyuan.cloud/zh/r/drone/drone
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/drone/drone" title="drone/drone Docker 镜像中文简介、标签列表与拉取命令">drone/drone — 轩辕镜像中文简介</a>

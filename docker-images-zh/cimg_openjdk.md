@@ -3,7 +3,7 @@ image: cimg/openjdk
 description: "CircleCI OpenJDK（Java）Docker便捷镜像是由CircleCI平台提供的、基于OpenJDK（Java开发工具包）构建的Docker预配置镜像，旨在简化Java项目的持续集成与部署流程，内置必要的开发环境和工具，帮助开发者快速搭建稳定的构建环境，无需手动配置底层依赖，有效提升开发与自动化构建效率，适用于各类Java应用的自动化测试、构建及部署场景。"
 source: https://xuanyuan.cloud/zh/r/cimg/openjdk
 canonical: https://xuanyuan.cloud/zh/r/cimg/openjdk
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cimg/openjdk" title="cimg/openjdk Docker 镜像中文简介、标签列表与拉取命令">cimg/openjdk — 轩辕镜像中文简介</a>

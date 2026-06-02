@@ -3,7 +3,7 @@ image: library/centos
 description: "已弃用；CentOS的官方版本，该版本此前作为基于红帽企业Linux（RHEL）源代码构建的社区企业级Linux发行版，以稳定、可靠的特性广泛应用于服务器及企业级应用场景，目前已停止官方维护与更新支持。"
 source: https://xuanyuan.cloud/zh/r/library/centos
 canonical: https://xuanyuan.cloud/zh/r/library/centos
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/centos" title="library/centos Docker 镜像中文简介、标签列表与拉取命令">library/centos — 轩辕镜像中文简介</a>

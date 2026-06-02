@@ -3,7 +3,7 @@ image: nvidia/k8s-device-plugin
 description: "NVIDIA K8s设备插件镜像，用于在Kubernetes集群中部署设备插件，实现对NVIDIA GPU资源的管理与调度。"
 source: https://xuanyuan.cloud/zh/r/nvidia/k8s-device-plugin
 canonical: https://xuanyuan.cloud/zh/r/nvidia/k8s-device-plugin
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nvidia/k8s-device-plugin" title="nvidia/k8s-device-plugin Docker 镜像中文简介、标签列表与拉取命令">nvidia/k8s-device-plugin — 轩辕镜像中文简介</a>

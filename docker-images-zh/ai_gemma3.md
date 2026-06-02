@@ -3,7 +3,7 @@ image: ai/gemma3
 description: "Google最新推出的AI模型Gemma，虽体型小巧却性能强劲，尤其在聊天交互与内容生成领域表现突出；其轻量化设计不仅便于高效部署，还能在保证响应速度的同时，持续输出高质量内容，为用户带来便捷且智能的使用体验，是一款兼顾小巧体型与强大功能的新一代AI模型。"
 source: https://xuanyuan.cloud/zh/r/ai/gemma3
 canonical: https://xuanyuan.cloud/zh/r/ai/gemma3
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/gemma3" title="ai/gemma3 Docker 镜像中文简介、标签列表与拉取命令">ai/gemma3 — 轩辕镜像中文简介</a>

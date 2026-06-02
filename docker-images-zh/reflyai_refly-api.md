@@ -3,7 +3,7 @@ image: reflyai/refly-api
 description: "全球首个面向非技术创作者的 Vibe 工作流平台，通过简单的提示词和可视化画布构建、分享和变现 AI 自动化工作流，无需编写代码。提供可干预的智能体、极简工作流工具、工作流副驾驶和工作流市场等核心功能。"
 source: https://xuanyuan.cloud/zh/r/reflyai/refly-api
 canonical: https://xuanyuan.cloud/zh/r/reflyai/refly-api
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/reflyai/refly-api" title="reflyai/refly-api Docker 镜像中文简介、标签列表与拉取命令">reflyai/refly-api — 轩辕镜像中文简介</a>

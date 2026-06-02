@@ -3,7 +3,7 @@ image: bitnami/milvus
 description: "Bitnami Secure Image for Milvus是由Bitnami提供的Milvus向量数据库安全镜像，基于官方Milvus稳定版本构建，集成多重安全加固措施，包括自动化漏洞扫描、最小化依赖组件、合规性配置检查及安全基线优化，旨在为企业用户提供安全可靠的部署环境，支持大规模向量数据高效管理与检索，简化生产环境部署流程，有效降低安全风险，保障数据处理的机密性、完整性与可用性，适用于AI、大数据等需高安全性向量应用场景。"
 source: https://xuanyuan.cloud/zh/r/bitnami/milvus
 canonical: https://xuanyuan.cloud/zh/r/bitnami/milvus
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/milvus" title="bitnami/milvus Docker 镜像中文简介、标签列表与拉取命令">bitnami/milvus — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: unclecode/crawl4ai
 description: "Crawl4AI是开源的对大语言模型友好的网络爬虫与抓取工具。"
 source: https://xuanyuan.cloud/zh/r/unclecode/crawl4ai
 canonical: https://xuanyuan.cloud/zh/r/unclecode/crawl4ai
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/unclecode/crawl4ai" title="unclecode/crawl4ai Docker 镜像中文简介、标签列表与拉取命令">unclecode/crawl4ai — 轩辕镜像中文简介</a>

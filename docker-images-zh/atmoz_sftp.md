@@ -3,7 +3,7 @@ image: atmoz/sftp
 description: "易于使用的SFTP服务器"
 source: https://xuanyuan.cloud/zh/r/atmoz/sftp
 canonical: https://xuanyuan.cloud/zh/r/atmoz/sftp
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/atmoz/sftp" title="atmoz/sftp Docker 镜像中文简介、标签列表与拉取命令">atmoz/sftp — 轩辕镜像中文简介</a>

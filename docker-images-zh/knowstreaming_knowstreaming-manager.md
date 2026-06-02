@@ -3,7 +3,7 @@ image: knowstreaming/knowstreaming-manager
 description: "KnowStreaming管理端镜像，用于Kafka集群的可视化监控、管理与运维，支持主题管理、消费者组监控、性能指标分析等核心功能，帮助用户简化Kafka运维工作。"
 source: https://xuanyuan.cloud/zh/r/knowstreaming/knowstreaming-manager
 canonical: https://xuanyuan.cloud/zh/r/knowstreaming/knowstreaming-manager
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/knowstreaming/knowstreaming-manager" title="knowstreaming/knowstreaming-manager Docker 镜像中文简介、标签列表与拉取命令">knowstreaming/knowstreaming-manager — 轩辕镜像中文简介</a>

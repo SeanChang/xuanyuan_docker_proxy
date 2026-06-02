@@ -3,7 +3,7 @@ image: sples1/k4ryuu-cs2
 description: "CS2 Egg：VPK同步节省80%存储，支持MetaMod、CounterStrikeSharp、SwiftlyS2和ModSharp自动更新的生产级Counter-Strike 2 Pterodactyl Egg"
 source: https://xuanyuan.cloud/zh/r/sples1/k4ryuu-cs2
 canonical: https://xuanyuan.cloud/zh/r/sples1/k4ryuu-cs2
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/sples1/k4ryuu-cs2" title="sples1/k4ryuu-cs2 Docker 镜像中文简介、标签列表与拉取命令">sples1/k4ryuu-cs2 — 轩辕镜像中文简介</a>

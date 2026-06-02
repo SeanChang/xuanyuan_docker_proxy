@@ -3,7 +3,7 @@ image: bitnami/mysqld-exporter
 description: "Bitnami MySQL Server Exporter安全镜像，用于收集MySQL服务器指标供Prometheus监控，基于Photon Linux构建，提供强化安全特性、合规支持及供应链安全保障。"
 source: https://xuanyuan.cloud/zh/r/bitnami/mysqld-exporter
 canonical: https://xuanyuan.cloud/zh/r/bitnami/mysqld-exporter
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/mysqld-exporter" title="bitnami/mysqld-exporter Docker 镜像中文简介、标签列表与拉取命令">bitnami/mysqld-exporter — 轩辕镜像中文简介</a>

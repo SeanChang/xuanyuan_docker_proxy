@@ -3,7 +3,7 @@ image: mailserver/docker-mailserver
 description: "一个全栈且简单易用的邮件服务器，支持SMTP、IMAP协议，集成LDAP、反垃圾邮件及反病毒等功能。"
 source: https://xuanyuan.cloud/zh/r/mailserver/docker-mailserver
 canonical: https://xuanyuan.cloud/zh/r/mailserver/docker-mailserver
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mailserver/docker-mailserver" title="mailserver/docker-mailserver Docker 镜像中文简介、标签列表与拉取命令">mailserver/docker-mailserver — 轩辕镜像中文简介</a>

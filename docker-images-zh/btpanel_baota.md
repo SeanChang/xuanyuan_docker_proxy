@@ -3,7 +3,7 @@ image: btpanel/baota
 description: "宝塔Linux面板是一款提升运维效率的服务器管理软件，支持一键部署LAMP/LNMP、集群管理、系统监控、网站搭建、FTP服务、数据库配置及JAVA环境等100多项服务器管理功能，其功能全面、稳定少故障且安全可靠，已获全球百万用户认可并安装使用。"
 source: https://xuanyuan.cloud/zh/r/btpanel/baota
 canonical: https://xuanyuan.cloud/zh/r/btpanel/baota
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/btpanel/baota" title="btpanel/baota Docker 镜像中文简介、标签列表与拉取命令">btpanel/baota — 轩辕镜像中文简介</a>

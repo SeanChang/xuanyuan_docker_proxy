@@ -3,7 +3,7 @@ image: apache/skywalking-oap-server
 description: "Apache SkyWalking OAP Server是开源分布式可观测性平台Apache SkyWalking的核心组件，负责从代理、服务网格等数据源收集指标、追踪和日志数据，通过分析处理后存储于支持多种数据库的后端，并提供查询接口为UI展示及告警功能提供数据支持，助力用户实时监控分布式系统运行状态、诊断性能瓶颈、保障服务稳定性与可靠性。"
 source: https://xuanyuan.cloud/zh/r/apache/skywalking-oap-server
 canonical: https://xuanyuan.cloud/zh/r/apache/skywalking-oap-server
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/skywalking-oap-server" title="apache/skywalking-oap-server Docker 镜像中文简介、标签列表与拉取命令">apache/skywalking-oap-server — 轩辕镜像中文简介</a>

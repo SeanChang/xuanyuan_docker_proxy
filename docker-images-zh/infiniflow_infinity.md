@@ -3,7 +3,7 @@ image: infiniflow/infinity
 description: "AI原生数据库是一种从架构设计之初即深度融合人工智能技术的新型数据库系统，它通过内置机器学习算法实现数据管理全流程的智能化，包括自动化索引优化、实时异常检测、自适应查询加速及动态资源调配，能高效处理结构化与非结构化混合数据，支持大规模并行计算与分布式存储，显著提升数据处理效率与决策支持能力，广泛适用于智能推荐、实时风控、科学计算等需快速响应与深度数据分析的场景。"
 source: https://xuanyuan.cloud/zh/r/infiniflow/infinity
 canonical: https://xuanyuan.cloud/zh/r/infiniflow/infinity
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/infiniflow/infinity" title="infiniflow/infinity Docker 镜像中文简介、标签列表与拉取命令">infiniflow/infinity — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: enmotech/opengauss
 description: "openGauss是一款源自华为的开源关系型数据库，以高性能、高安全性和高可靠性为核心优势，广泛应用于金融、政务、电信等关键行业领域；恩墨科技（Enmotech）作为其重要生态合作伙伴，所制作的openGauss最新镜像，旨在为用户提供便捷高效的部署体验，助力企业及开发者快速搭建稳定可靠的数据库环境，有效满足数字化转型过程中的数据管理与业务支撑需求。"
 source: https://xuanyuan.cloud/zh/r/enmotech/opengauss
 canonical: https://xuanyuan.cloud/zh/r/enmotech/opengauss
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/enmotech/opengauss" title="enmotech/opengauss Docker 镜像中文简介、标签列表与拉取命令">enmotech/opengauss — 轩辕镜像中文简介</a>

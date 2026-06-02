@@ -3,7 +3,7 @@ image: factoriotools/factorio
 description: "搭建《异星工厂》私人服务器，为好友打造稳定联机空间，共同进入危机与机遇并存的异星世界：协作采集矿石、提炼材料，设计精密自动化生产线，研发科技解锁高级设备，在抵御异星生物突袭时分工配合，于建造与生存的沉浸式体验中增进默契，尽情享受多人联机的策略布局与创造乐趣。"
 source: https://xuanyuan.cloud/zh/r/factoriotools/factorio
 canonical: https://xuanyuan.cloud/zh/r/factoriotools/factorio
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/factoriotools/factorio" title="factoriotools/factorio Docker 镜像中文简介、标签列表与拉取命令">factoriotools/factorio — 轩辕镜像中文简介</a>

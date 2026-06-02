@@ -3,7 +3,7 @@ image: kubegreen/kube-green
 description: "官方kube-green控制器镜像"
 source: https://xuanyuan.cloud/zh/r/kubegreen/kube-green
 canonical: https://xuanyuan.cloud/zh/r/kubegreen/kube-green
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kubegreen/kube-green" title="kubegreen/kube-green Docker 镜像中文简介、标签列表与拉取命令">kubegreen/kube-green — 轩辕镜像中文简介</a>

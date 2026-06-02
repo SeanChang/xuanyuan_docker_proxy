@@ -3,7 +3,7 @@ image: apache/skywalking-helm
 description: "Apache Skywalking Helm镜像提供Skywalking分布式追踪与可观测性平台的Helm Chart，用于在Kubernetes集群中简化其部署、配置管理及版本控制，提升分布式系统监控平台的部署效率与运维便捷性。"
 source: https://xuanyuan.cloud/zh/r/apache/skywalking-helm
 canonical: https://xuanyuan.cloud/zh/r/apache/skywalking-helm
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/skywalking-helm" title="apache/skywalking-helm Docker 镜像中文简介、标签列表与拉取命令">apache/skywalking-helm — 轩辕镜像中文简介</a>

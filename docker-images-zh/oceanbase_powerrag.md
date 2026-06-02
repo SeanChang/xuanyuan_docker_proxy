@@ -3,7 +3,7 @@ image: oceanbase/powerrag
 description: "PowerRAG：基于RAGFlow的开源项目，支持多模态检索，扩展文档处理、结构化信息提取、效果评估及反馈机制，助力开发者构建更智能、更准确的RAG系统，为LLM应用提供综合数据服务引擎。"
 source: https://xuanyuan.cloud/zh/r/oceanbase/powerrag
 canonical: https://xuanyuan.cloud/zh/r/oceanbase/powerrag
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/oceanbase/powerrag" title="oceanbase/powerrag Docker 镜像中文简介、标签列表与拉取命令">oceanbase/powerrag — 轩辕镜像中文简介</a>

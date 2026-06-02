@@ -3,7 +3,7 @@ image: bitnami/harbor-core
 description: "Bitnami Secure Image for harbor-core（比特纳米Harbor核心安全镜像）是基于Bitnami严格安全标准构建的容器镜像，专为部署Harbor开源容器镜像仓库的核心服务设计，集成镜像管理、安全扫描、访问控制等功能，通过预配置漏洞修复、最小化攻击面、合规性检查等安全最佳实践，保障企业级容器环境的安全性与稳定性，同时简化部署流程，适用于云原生及混合云架构，助力用户高效管理容器镜像生命周期。"
 source: https://xuanyuan.cloud/zh/r/bitnami/harbor-core
 canonical: https://xuanyuan.cloud/zh/r/bitnami/harbor-core
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/harbor-core" title="bitnami/harbor-core Docker 镜像中文简介、标签列表与拉取命令">bitnami/harbor-core — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: demisto/python
 description: "基于python:2.7的Demisto基础Python镜像，包含requests、olefile、pip和stix等基本Python库，适用于构建依赖这些特定库的Python 2.7应用环境。"
 source: https://xuanyuan.cloud/zh/r/demisto/python
 canonical: https://xuanyuan.cloud/zh/r/demisto/python
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/demisto/python" title="demisto/python Docker 镜像中文简介、标签列表与拉取命令">demisto/python — 轩辕镜像中文简介</a>

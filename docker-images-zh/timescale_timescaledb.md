@@ -3,7 +3,7 @@ image: timescale/timescaledb
 description: "这是一款专为高性能实时分析场景设计的时序数据库，以PostgreSQL扩展的形式提供，能够无缝集成至PostgreSQL生态系统，高效支持时序数据的实时采集、存储与快速分析，为工业监控、物联网数据追踪、金融市场实时指标等场景提供便捷且高性能的数据管理解决方案，满足用户对大规模时序数据实时处理与深度分析的核心需求。"
 source: https://xuanyuan.cloud/zh/r/timescale/timescaledb
 canonical: https://xuanyuan.cloud/zh/r/timescale/timescaledb
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/timescale/timescaledb" title="timescale/timescaledb Docker 镜像中文简介、标签列表与拉取命令">timescale/timescaledb — 轩辕镜像中文简介</a>

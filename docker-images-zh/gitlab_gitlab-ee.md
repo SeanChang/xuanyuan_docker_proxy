@@ -3,7 +3,7 @@ image: gitlab/gitlab-ee
 description: "基于Omnibus软件包构建的GitLab企业版Docker镜像，其中Omnibus软件包集成了GitLab运行所需的各类核心组件（如Web服务器、数据库、缓存服务等），旨在通过容器化技术为企业用户提供便捷高效的部署方案，简化GitLab企业版的安装、配置与维护流程，满足企业在代码管理、CI/CD、项目协作等场景下的需求。"
 source: https://xuanyuan.cloud/zh/r/gitlab/gitlab-ee
 canonical: https://xuanyuan.cloud/zh/r/gitlab/gitlab-ee
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gitlab/gitlab-ee" title="gitlab/gitlab-ee Docker 镜像中文简介、标签列表与拉取命令">gitlab/gitlab-ee — 轩辕镜像中文简介</a>

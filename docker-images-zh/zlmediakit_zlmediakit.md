@@ -3,7 +3,7 @@ image: zlmediakit/zlmediakit
 description: "该简介涵盖网页实时通信（WebRTC）、实时流传输协议（RTSP）、实时消息传输协议（RTMP）、HTTP直播流（HLS）、HTTP-FLV流媒体协议、WebSocket-FLV流媒体协议、HTTP-TS流媒体协议、HTTP-fMP4流媒体协议、WebSocket-fMP4流媒体协议、国家标准GB/T 28181视频监控联网系统标准（GB28181）及安全可靠传输协议（SRT）等多种流媒体与实时通信相关协议。"
 source: https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit
 canonical: https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit" title="zlmediakit/zlmediakit Docker 镜像中文简介、标签列表与拉取命令">zlmediakit/zlmediakit — 轩辕镜像中文简介</a>

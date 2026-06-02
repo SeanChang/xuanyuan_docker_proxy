@@ -3,7 +3,7 @@ image: linuxserver/docker-compose
 description: "LinuxServer.io提供的docker-compose容器镜像，集成Docker Compose工具，支持通过yaml配置文件定义多容器应用架构，实现服务编排、依赖管理及生命周期控制（启动/停止/重启）。无需本地安装，环境隔离且跨平台兼容，适合开发、测试及生产环境快速部署多服务应用。简化多容器协作管理，支持版本控制与资源优化，提升容器化应用运维效率。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/docker-compose
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/docker-compose
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/docker-compose" title="linuxserver/docker-compose Docker 镜像中文简介、标签列表与拉取命令">linuxserver/docker-compose — 轩辕镜像中文简介</a>

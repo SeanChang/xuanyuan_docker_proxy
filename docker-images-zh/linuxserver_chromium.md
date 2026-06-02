@@ -3,7 +3,7 @@ image: linuxserver/chromium
 description: "linuxserver/chromium是基于开源浏览器项目Chromium的Docker镜像，支持通过Web界面访问，提供多架构支持、GPU加速、安全配置选项及定期更新，适用于在容器环境中运行浏览器的场景。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/chromium
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/chromium
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/chromium" title="linuxserver/chromium Docker 镜像中文简介、标签列表与拉取命令">linuxserver/chromium — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: alpine/helm
 description: "当Kubernetes Helm有新发布时自动触发Docker构建的镜像"
 source: https://xuanyuan.cloud/zh/r/alpine/helm
 canonical: https://xuanyuan.cloud/zh/r/alpine/helm
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/helm" title="alpine/helm Docker 镜像中文简介、标签列表与拉取命令">alpine/helm — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: filebrowser/filebrowser
 description: "这是一款既可作为中间件集成于系统，也能作为独立应用运行的工具，它能在指定目录范围内提供基于Web的文件管理功能，用户通过网页界面即可便捷地对该目录下的文件进行查看、访问、上传、下载及其他操作，适用于需要通过网络高效管理特定目录文件的各类场景，无需复杂配置即可快速部署使用。"
 source: https://xuanyuan.cloud/zh/r/filebrowser/filebrowser
 canonical: https://xuanyuan.cloud/zh/r/filebrowser/filebrowser
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/filebrowser/filebrowser" title="filebrowser/filebrowser Docker 镜像中文简介、标签列表与拉取命令">filebrowser/filebrowser — 轩辕镜像中文简介</a>

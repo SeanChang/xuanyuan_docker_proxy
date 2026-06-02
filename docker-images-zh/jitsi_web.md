@@ -3,7 +3,7 @@ image: jitsi/web
 description: "这是开源视频会议平台Jitsi Meet的网页界面图像，展示了其简洁直观的设计布局，包含会议创建与加入入口、参会者视频窗口、实时聊天面板及核心控制按钮（如麦克风、摄像头开关、屏幕共享、虚拟背景设置等），支持无需注册即可快速发起或加入高清视频会议，兼容多设备访问，界面元素清晰有序，凸显高效实时协作与用户友好的使用体验。"
 source: https://xuanyuan.cloud/zh/r/jitsi/web
 canonical: https://xuanyuan.cloud/zh/r/jitsi/web
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jitsi/web" title="jitsi/web Docker 镜像中文简介、标签列表与拉取命令">jitsi/web — 轩辕镜像中文简介</a>

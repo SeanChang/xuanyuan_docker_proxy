@@ -3,7 +3,7 @@ image: apache/hertzbeat
 description: "Apache HertzBeat是一款易用的开源实时监控系统Docker镜像，支持无代理部署、高性能集群、Prometheus兼容，提供自定义监控和状态页面构建能力，集成监控、告警、通知功能，适用于Web服务、数据库、中间件等多种场景监控。"
 source: https://xuanyuan.cloud/zh/r/apache/hertzbeat
 canonical: https://xuanyuan.cloud/zh/r/apache/hertzbeat
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/hertzbeat" title="apache/hertzbeat Docker 镜像中文简介、标签列表与拉取命令">apache/hertzbeat — 轩辕镜像中文简介</a>

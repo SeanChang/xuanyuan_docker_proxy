@@ -3,7 +3,7 @@ image: mgba/windows
 description: "用于Windows环境的自动化构建Docker镜像，集成编译工具链与CI/CD工具，支持.NET项目、桌面应用及服务端程序的源码拉取、编译、测试与打包全流程自动化。"
 source: https://xuanyuan.cloud/zh/r/mgba/windows
 canonical: https://xuanyuan.cloud/zh/r/mgba/windows
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mgba/windows" title="mgba/windows Docker 镜像中文简介、标签列表与拉取命令">mgba/windows — 轩辕镜像中文简介</a>

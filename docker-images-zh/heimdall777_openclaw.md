@@ -3,7 +3,7 @@ image: heimdall777/openclaw
 description: "openclaw Docker镜像是基于GitHub仓库https://github.com/openclaw/openclaw的Dockerfile构建的镜像，用于运行或开发openclaw相关应用。"
 source: https://xuanyuan.cloud/zh/r/heimdall777/openclaw
 canonical: https://xuanyuan.cloud/zh/r/heimdall777/openclaw
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/heimdall777/openclaw" title="heimdall777/openclaw Docker 镜像中文简介、标签列表与拉取命令">heimdall777/openclaw — 轩辕镜像中文简介</a>

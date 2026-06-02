@@ -3,7 +3,7 @@ image: selenium/standalone-chrome
 description: "Selenium Grid的独立模式（Standalone mode）是一种集成了中心节点（hub）与执行节点（node）功能的简化测试部署方式，配合Chrome浏览器使用时，可在本地或小型测试环境中通过单一进程便捷启动，支持并行执行基于Selenium的自动化测试脚本，无需额外配置独立的中心节点与执行节点，有效简化测试环境搭建流程，提升测试效率，适用于快速验证测试用例或小规模自动化测试场景。"
 source: https://xuanyuan.cloud/zh/r/selenium/standalone-chrome
 canonical: https://xuanyuan.cloud/zh/r/selenium/standalone-chrome
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/selenium/standalone-chrome" title="selenium/standalone-chrome Docker 镜像中文简介、标签列表与拉取命令">selenium/standalone-chrome — 轩辕镜像中文简介</a>

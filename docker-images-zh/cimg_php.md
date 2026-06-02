@@ -3,7 +3,7 @@ image: cimg/php
 description: "CircleCI PHP便捷镜像，专为PHP项目在CircleCI平台上的持续集成流程设计，提供预配置环境以简化集成部署。"
 source: https://xuanyuan.cloud/zh/r/cimg/php
 canonical: https://xuanyuan.cloud/zh/r/cimg/php
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cimg/php" title="cimg/php Docker 镜像中文简介、标签列表与拉取命令">cimg/php — 轩辕镜像中文简介</a>

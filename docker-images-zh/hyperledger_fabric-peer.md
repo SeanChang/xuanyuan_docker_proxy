@@ -3,7 +3,7 @@ image: hyperledger/fabric-peer
 description: "超级账本项目（Hyperledger Project）的Fabric Peer节点Docker镜像是区块链网络中核心节点的容器化部署组件，支持账本维护、智能合约执行与交易验证等关键功能，可便捷集成到基于超级账本Fabric的分布式账本系统，为区块链应用提供高效可靠的节点运行环境，助力开发者快速搭建和部署企业级区块链网络。"
 source: https://xuanyuan.cloud/zh/r/hyperledger/fabric-peer
 canonical: https://xuanyuan.cloud/zh/r/hyperledger/fabric-peer
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hyperledger/fabric-peer" title="hyperledger/fabric-peer Docker 镜像中文简介、标签列表与拉取命令">hyperledger/fabric-peer — 轩辕镜像中文简介</a>

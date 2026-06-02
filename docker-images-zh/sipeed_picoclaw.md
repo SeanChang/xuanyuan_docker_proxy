@@ -3,7 +3,7 @@ image: sipeed/picoclaw
 description: "矽速科技开源的 PicoClaw 超轻量个人 AI 助手镜像：纯 Go 实现，支持 MCP、网关与 Docker Compose（Gateway / Launcher / Agent），详见官方中文 README 与 Docker 文档。"
 source: https://xuanyuan.cloud/zh/r/sipeed/picoclaw
 canonical: https://xuanyuan.cloud/zh/r/sipeed/picoclaw
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/sipeed/picoclaw" title="sipeed/picoclaw Docker 镜像中文简介、标签列表与拉取命令">sipeed/picoclaw — 轩辕镜像中文简介</a>

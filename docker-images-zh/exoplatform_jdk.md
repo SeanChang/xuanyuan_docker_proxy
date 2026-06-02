@@ -3,7 +3,7 @@ image: exoplatform/jdk
 description: "提供多种OpenJDK版本与Ubuntu系统组合的JDK Docker镜像，支持扩展镜像、运行UberJAR应用及直接启动JVM等场景。"
 source: https://xuanyuan.cloud/zh/r/exoplatform/jdk
 canonical: https://xuanyuan.cloud/zh/r/exoplatform/jdk
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/exoplatform/jdk" title="exoplatform/jdk Docker 镜像中文简介、标签列表与拉取命令">exoplatform/jdk — 轩辕镜像中文简介</a>

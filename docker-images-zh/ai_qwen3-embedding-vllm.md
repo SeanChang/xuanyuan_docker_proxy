@@ -3,7 +3,7 @@ image: ai/qwen3-embedding-vllm
 description: "Qwen3 Embedding是Qwen系列最新专有模型，专为文本嵌入和排序任务设计，提供0.6B、4B和8B多种尺寸，具备出色的多语言能力、长文本理解和推理技能，适用于文本检索、代码检索、分类、聚类等任务。"
 source: https://xuanyuan.cloud/zh/r/ai/qwen3-embedding-vllm
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen3-embedding-vllm
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen3-embedding-vllm" title="ai/qwen3-embedding-vllm Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-embedding-vllm — 轩辕镜像中文简介</a>

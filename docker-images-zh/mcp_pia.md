@@ -3,7 +3,7 @@ image: mcp/pia
 description: "一个MCP服务器，用于帮助美国政府开放数据集实现AI友好化。"
 source: https://xuanyuan.cloud/zh/r/mcp/pia
 canonical: https://xuanyuan.cloud/zh/r/mcp/pia
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mcp/pia" title="mcp/pia Docker 镜像中文简介、标签列表与拉取命令">mcp/pia — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: ringcentral/jdk
 description: "这是一个包含glibc和JDK的阿尔卑斯Linux镜像，它融合了阿尔卑斯Linux轻量级、高效的系统特性与glibc的广泛兼容性，同时集成JDK以提供完整的Java开发及运行环境，适用于需在精简系统中部署Java应用的场景，有效解决了原生阿尔卑斯Linux使用musl libc可能导致的兼容性问题，为开发者打造了既精简又功能完善的运行载体。"
 source: https://xuanyuan.cloud/zh/r/ringcentral/jdk
 canonical: https://xuanyuan.cloud/zh/r/ringcentral/jdk
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ringcentral/jdk" title="ringcentral/jdk Docker 镜像中文简介、标签列表与拉取命令">ringcentral/jdk — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: tdengine/tdengine
 description: "Docker镜像tdengine/tdengine提供涛思数据自主研发的高性能时序数据库TDengine，专为物联网、工业互联网、车联网等时序数据密集型场景设计，具备千万级数据点写入能力、毫秒级查询响应、内置流计算与缓存机制，支持集群部署、数据自动压缩与生命周期管理，帮助用户高效存储、分析海量时序数据，简化时序数据库部署与运维流程。"
 source: https://xuanyuan.cloud/zh/r/tdengine/tdengine
 canonical: https://xuanyuan.cloud/zh/r/tdengine/tdengine
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/tdengine/tdengine" title="tdengine/tdengine Docker 镜像中文简介、标签列表与拉取命令">tdengine/tdengine — 轩辕镜像中文简介</a>

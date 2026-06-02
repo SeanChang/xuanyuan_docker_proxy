@@ -3,7 +3,7 @@ image: library/django
 description: "该镜像已官方弃用，推荐使用标准`python`镜像替代，2016年12月31日后不再更新。其原价值为预安装mysql-client、postgresql-client和sqlite3，用于Django框架，现可通过自定义Dockerfile实现类似功能。"
 source: https://xuanyuan.cloud/zh/r/library/django
 canonical: https://xuanyuan.cloud/zh/r/library/django
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/django" title="library/django Docker 镜像中文简介、标签列表与拉取命令">library/django — 轩辕镜像中文简介</a>

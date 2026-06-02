@@ -3,7 +3,7 @@ image: dockurr/samba
 description: "Docker容器化的Samba，Windows SMB网络协议的实现"
 source: https://xuanyuan.cloud/zh/r/dockurr/samba
 canonical: https://xuanyuan.cloud/zh/r/dockurr/samba
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dockurr/samba" title="dockurr/samba Docker 镜像中文简介、标签列表与拉取命令">dockurr/samba — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: ubuntu/jre
 description: "这是一种基于Ubuntu的无发行版Java运行时环境，它通过精简系统组件以减少攻击面、提升安全性，尤其适用于容器化应用场景，其长期支持版本系列由Canonical负责持续维护与更新。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/jre
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/jre
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/jre" title="ubuntu/jre Docker 镜像中文简介、标签列表与拉取命令">ubuntu/jre — 轩辕镜像中文简介</a>

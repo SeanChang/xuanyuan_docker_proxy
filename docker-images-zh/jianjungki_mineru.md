@@ -3,7 +3,7 @@ image: jianjungki/mineru
 description: "MinerU的Docker镜像，封装了PDF转机器可读格式的完整功能，支持WebUI、API及GPU加速，快速部署解决环境问题。"
 source: https://xuanyuan.cloud/zh/r/jianjungki/mineru
 canonical: https://xuanyuan.cloud/zh/r/jianjungki/mineru
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jianjungki/mineru" title="jianjungki/mineru Docker 镜像中文简介、标签列表与拉取命令">jianjungki/mineru — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: databack/mysql-backup
 description: "用于将MySQL数据库备份到任何位置的工具，支持定时备份、恢复操作及旧备份清理。"
 source: https://xuanyuan.cloud/zh/r/databack/mysql-backup
 canonical: https://xuanyuan.cloud/zh/r/databack/mysql-backup
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/databack/mysql-backup" title="databack/mysql-backup Docker 镜像中文简介、标签列表与拉取命令">databack/mysql-backup — 轩辕镜像中文简介</a>

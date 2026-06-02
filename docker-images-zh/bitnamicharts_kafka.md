@@ -3,7 +3,7 @@ image: bitnamicharts/kafka
 description: "Bitnami为Apache Kafka提供的Helm Chart是一款预配置的Kubernetes包管理工具，旨在简化分布式流处理平台Apache Kafka在Kubernetes集群中的部署、配置与全生命周期运维管理，集成了高可用性集群设置、安全认证机制、Prometheus监控指标及自动伸缩策略等核心功能，帮助用户无需手动处理复杂的集群参数配置，即可快速搭建稳定、可扩展且符合生产级标准的Kafka服务，适用于从开发测试到大规模生产环境的各类场景。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/kafka
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/kafka
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/kafka" title="bitnamicharts/kafka Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/kafka — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: ginuerzh/qwerty-learner
 description: "qwerty-learner是一个开源的Web打字练习应用，支持多语言、多种键盘布局，提供实时打字统计和进度跟踪功能，帮助用户提升打字速度和准确性。"
 source: https://xuanyuan.cloud/zh/r/ginuerzh/qwerty-learner
 canonical: https://xuanyuan.cloud/zh/r/ginuerzh/qwerty-learner
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ginuerzh/qwerty-learner" title="ginuerzh/qwerty-learner Docker 镜像中文简介、标签列表与拉取命令">ginuerzh/qwerty-learner — 轩辕镜像中文简介</a>

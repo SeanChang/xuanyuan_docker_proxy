@@ -3,7 +3,7 @@ image: mohanadkombar/cosmos-predict2.5
 description: "cosmos--predec2.5是用于运行Cosmos Predict 2.5应用的Docker镜像，基于输入JSON配置执行视频生成任务，预安装所有必要依赖以确保环境一致性。"
 source: https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5
 canonical: https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5" title="mohanadkombar/cosmos-predict2.5 Docker 镜像中文简介、标签列表与拉取命令">mohanadkombar/cosmos-predict2.5 — 轩辕镜像中文简介</a>

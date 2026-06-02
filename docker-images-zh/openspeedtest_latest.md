@@ -3,7 +3,7 @@ image: openspeedtest/latest
 description: "OpenSpeedTest™速度测试是一款免费且开源的HTML5网络性能评估工具，它基于HTML5技术开发，无需安装额外软件即可便捷使用，适用于各类设备和网络环境，能够帮助用户快速测试并获取准确的网络性能数据，为用户在不同设备和网络条件下评估网络状况提供了高效实用的解决方案。"
 source: https://xuanyuan.cloud/zh/r/openspeedtest/latest
 canonical: https://xuanyuan.cloud/zh/r/openspeedtest/latest
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openspeedtest/latest" title="openspeedtest/latest Docker 镜像中文简介、标签列表与拉取命令">openspeedtest/latest — 轩辕镜像中文简介</a>

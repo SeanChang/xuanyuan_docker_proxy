@@ -3,7 +3,7 @@ image: rocketchat/rocket.chat
 description: "官方Rocket.Chat Docker部署镜像，用于快速部署开源团队聊天与协作平台。"
 source: https://xuanyuan.cloud/zh/r/rocketchat/rocket.chat
 canonical: https://xuanyuan.cloud/zh/r/rocketchat/rocket.chat
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rocketchat/rocket.chat" title="rocketchat/rocket.chat Docker 镜像中文简介、标签列表与拉取命令">rocketchat/rocket.chat — 轩辕镜像中文简介</a>

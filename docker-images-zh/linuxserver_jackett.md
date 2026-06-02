@@ -3,7 +3,7 @@ image: linuxserver/jackett
 description: "这是由LinuxServer.io提供的Jackett容器，其中Jackett是一款实用的种子索引聚合工具，能够整合多个torrent追踪器的搜索结果，为qBittorrent、Deluge等各类P2P下载客户端提供统一的搜索接口，帮助用户更便捷地查找和获取所需资源；而LinuxServer.io团队凭借专业的容器化技术，确保该Jackett容器具备稳定的运行环境、简便的部署流程以及持续的更新支持，可满足用户在不同系统环境下高效使用Jackett的需求。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/jackett
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/jackett
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/jackett" title="linuxserver/jackett Docker 镜像中文简介、标签列表与拉取命令">linuxserver/jackett — 轩辕镜像中文简介</a>

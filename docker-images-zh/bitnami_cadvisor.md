@@ -3,7 +3,7 @@ image: bitnami/cadvisor
 description: "Bitnami Secure Image for cadvisor（比特纳米cadvisor安全镜像）是由开源软件打包服务商Bitnami推出的容器监控工具安全镜像，基于Google cadvisor核心技术开发，集成容器资源使用量、性能指标（如CPU、内存、网络I/O）及生命周期状态监控功能，通过预设安全加固配置（含漏洞扫描、最小权限策略及合规性验证）保障企业级容器环境（如Kubernetes集群）部署安全，同时简化安装流程、支持快速对接现有运维体系，可有效降低容器监控工具的部署复杂度与安全风险，提升容器化应用的运维管理效率。"
 source: https://xuanyuan.cloud/zh/r/bitnami/cadvisor
 canonical: https://xuanyuan.cloud/zh/r/bitnami/cadvisor
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/cadvisor" title="bitnami/cadvisor Docker 镜像中文简介、标签列表与拉取命令">bitnami/cadvisor — 轩辕镜像中文简介</a>

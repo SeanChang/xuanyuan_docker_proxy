@@ -3,7 +3,7 @@ image: atlassian/jira-software
 description: "Jira Software是供敏捷团队使用的软件开发工具。"
 source: https://xuanyuan.cloud/zh/r/atlassian/jira-software
 canonical: https://xuanyuan.cloud/zh/r/atlassian/jira-software
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/atlassian/jira-software" title="atlassian/jira-software Docker 镜像中文简介、标签列表与拉取命令">atlassian/jira-software — 轩辕镜像中文简介</a>

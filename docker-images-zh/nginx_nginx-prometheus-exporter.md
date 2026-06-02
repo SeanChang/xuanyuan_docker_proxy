@@ -3,7 +3,7 @@ image: nginx/nginx-prometheus-exporter
 description: "NGINX Prometheus Exporter用于收集并导出NGINX与NGINX Plus的监控指标，供Prometheus采集以实现对其运行状态的监控。"
 source: https://xuanyuan.cloud/zh/r/nginx/nginx-prometheus-exporter
 canonical: https://xuanyuan.cloud/zh/r/nginx/nginx-prometheus-exporter
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nginx/nginx-prometheus-exporter" title="nginx/nginx-prometheus-exporter Docker 镜像中文简介、标签列表与拉取命令">nginx/nginx-prometheus-exporter — 轩辕镜像中文简介</a>

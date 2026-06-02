@@ -3,7 +3,7 @@ image: leesonaa/immich
 description: "这是一条用于容器镜像操作的指令，具体是从GitHub容器仓库（ghcr.io）拉取和推送由imagegenius组织提供的immich应用最新版本镜像（标签为latest），是容器化部署流程中获取、更新或分发应用镜像时常用的基础命令，适用于需要通过容器技术管理immich应用版本的场景。"
 source: https://xuanyuan.cloud/zh/r/leesonaa/immich
 canonical: https://xuanyuan.cloud/zh/r/leesonaa/immich
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/leesonaa/immich" title="leesonaa/immich Docker 镜像中文简介、标签列表与拉取命令">leesonaa/immich — 轩辕镜像中文简介</a>

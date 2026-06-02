@@ -3,7 +3,7 @@ image: apache/seatunnel
 description: "SeaTunnel是一款下一代超高性能、分布式的海量数据集成工具，它专注于高效处理大规模数据的抽取、转换与加载（ETL）任务，支持多种异构数据源与目标系统的无缝对接，具备优异的横向扩展能力和运行稳定性，适用于各类企业级大数据平台环境，能够为数据整合、流转与分析提供快速、可靠且易维护的技术支撑。"
 source: https://xuanyuan.cloud/zh/r/apache/seatunnel
 canonical: https://xuanyuan.cloud/zh/r/apache/seatunnel
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/seatunnel" title="apache/seatunnel Docker 镜像中文简介、标签列表与拉取命令">apache/seatunnel — 轩辕镜像中文简介</a>

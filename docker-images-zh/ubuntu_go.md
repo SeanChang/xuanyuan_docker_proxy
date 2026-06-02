@@ -3,7 +3,7 @@ image: ubuntu/go
 description: "Go是一种开源编程语言，旨在开发简单、高效且可靠的软件。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/go
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/go
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/go" title="ubuntu/go Docker 镜像中文简介、标签列表与拉取命令">ubuntu/go — 轩辕镜像中文简介</a>

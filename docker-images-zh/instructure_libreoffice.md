@@ -3,7 +3,7 @@ image: instructure/libreoffice
 description: "LibreOffice是一款开源办公套件Docker镜像，集成文字处理、电子表格、演示文稿等工具，适用于文档创建、编辑及格式转换等办公任务。"
 source: https://xuanyuan.cloud/zh/r/instructure/libreoffice
 canonical: https://xuanyuan.cloud/zh/r/instructure/libreoffice
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/instructure/libreoffice" title="instructure/libreoffice Docker 镜像中文简介、标签列表与拉取命令">instructure/libreoffice — 轩辕镜像中文简介</a>

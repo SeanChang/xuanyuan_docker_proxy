@@ -3,7 +3,7 @@ image: chuckcharlie/cups-avahi-airprint
 description: "基于Alpine的AirPrint中继，为iOS设备提供打印支持，适用于网络中不支持AirPrint的打印机，支持ARM64和AMD64架构。"
 source: https://xuanyuan.cloud/zh/r/chuckcharlie/cups-avahi-airprint
 canonical: https://xuanyuan.cloud/zh/r/chuckcharlie/cups-avahi-airprint
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/chuckcharlie/cups-avahi-airprint" title="chuckcharlie/cups-avahi-airprint Docker 镜像中文简介、标签列表与拉取命令">chuckcharlie/cups-avahi-airprint — 轩辕镜像中文简介</a>

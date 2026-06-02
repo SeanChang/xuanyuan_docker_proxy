@@ -3,7 +3,7 @@ image: dustynv/ollama
 description: "GitHub仓库dusty-nv/jetson-containers中的Ollama LLM包，是为NVIDIA Jetson嵌入式平台设计的容器化解决方案，旨在简化大型语言模型（LLM）的部署与运行流程，支持多种主流LLM模型，充分利用Jetson设备的硬件加速能力，适用于边缘AI计算、智能终端开发等场景，为开发者提供便捷高效的本地化LLM部署工具。"
 source: https://xuanyuan.cloud/zh/r/dustynv/ollama
 canonical: https://xuanyuan.cloud/zh/r/dustynv/ollama
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dustynv/ollama" title="dustynv/ollama Docker 镜像中文简介、标签列表与拉取命令">dustynv/ollama — 轩辕镜像中文简介</a>

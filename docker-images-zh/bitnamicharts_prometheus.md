@@ -3,7 +3,7 @@ image: bitnamicharts/prometheus
 description: "Bitnami提供的Helm图表，用于在Kubernetes集群中简化Prometheus监控工具的部署与管理。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/prometheus
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/prometheus
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/prometheus" title="bitnamicharts/prometheus Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/prometheus — 轩辕镜像中文简介</a>

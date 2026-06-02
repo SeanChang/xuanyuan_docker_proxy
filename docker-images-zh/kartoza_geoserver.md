@@ -3,7 +3,7 @@ image: kartoza/geoserver
 description: "kartoza/geoserver 是基于开源GeoServer构建的Docker镜像，可快速部署和运行地理空间数据服务器，完整支持OGC标准（如WMS、WFS、WCS），方便用户轻松发布、管理和可视化各类地理数据，适用于GIS应用、地图服务和空间数据分析场景。容器化设计简化部署流程，确保跨平台运行一致性，内置优化配置提供稳定高效的地图服务能力，帮助开发者和系统管理员快速搭建地理数据服务平台，有效降低GIS系统搭建复杂度，加速地理空间应用开发与部署。"
 source: https://xuanyuan.cloud/zh/r/kartoza/geoserver
 canonical: https://xuanyuan.cloud/zh/r/kartoza/geoserver
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kartoza/geoserver" title="kartoza/geoserver Docker 镜像中文简介、标签列表与拉取命令">kartoza/geoserver — 轩辕镜像中文简介</a>

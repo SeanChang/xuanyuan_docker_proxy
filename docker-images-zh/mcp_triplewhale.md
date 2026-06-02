@@ -3,7 +3,7 @@ image: mcp/triplewhale
 description: "Triplewhale MCP Server是运行营销控制面板的服务器镜像，支持电商营销数据处理与分析，为用户提供营销管理功能。"
 source: https://xuanyuan.cloud/zh/r/mcp/triplewhale
 canonical: https://xuanyuan.cloud/zh/r/mcp/triplewhale
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mcp/triplewhale" title="mcp/triplewhale Docker 镜像中文简介、标签列表与拉取命令">mcp/triplewhale — 轩辕镜像中文简介</a>

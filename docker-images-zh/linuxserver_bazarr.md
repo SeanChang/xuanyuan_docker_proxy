@@ -3,7 +3,7 @@ image: linuxserver/bazarr
 description: "Bazarr Docker镜像，用于自动下载、管理媒体文件字幕，支持多语言，可与媒体服务器集成，简化字幕获取与维护流程。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/bazarr
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/bazarr
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/bazarr" title="linuxserver/bazarr Docker 镜像中文简介、标签列表与拉取命令">linuxserver/bazarr — 轩辕镜像中文简介</a>

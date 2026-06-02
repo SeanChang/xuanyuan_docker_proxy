@@ -3,7 +3,7 @@ image: requarks/wiki
 description: "Wiki.js - 一款基于NodeJS构建的现代化、轻量级且功能强大的维基应用"
 source: https://xuanyuan.cloud/zh/r/requarks/wiki
 canonical: https://xuanyuan.cloud/zh/r/requarks/wiki
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/requarks/wiki" title="requarks/wiki Docker 镜像中文简介、标签列表与拉取命令">requarks/wiki — 轩辕镜像中文简介</a>

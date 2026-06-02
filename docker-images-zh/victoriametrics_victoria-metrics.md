@@ -3,7 +3,7 @@ image: victoriametrics/victoria-metrics
 description: "VictoriaMetrics单节点版是一款快速、经济高效且可扩展的时序数据库(TSDB)和监控解决方案，将数据摄入、存储和查询所需组件集成于单一易于部署的二进制文件中，适合中小型部署或快速入门。"
 source: https://xuanyuan.cloud/zh/r/victoriametrics/victoria-metrics
 canonical: https://xuanyuan.cloud/zh/r/victoriametrics/victoria-metrics
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/victoriametrics/victoria-metrics" title="victoriametrics/victoria-metrics Docker 镜像中文简介、标签列表与拉取命令">victoriametrics/victoria-metrics — 轩辕镜像中文简介</a>

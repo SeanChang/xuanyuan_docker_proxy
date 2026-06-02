@@ -3,7 +3,7 @@ image: glpi/glpi
 description: "GLPI是一款免费的资产与IT管理软件包，它能够全面管理IT资产（包括计算机、服务器、网络设备等硬件）、软件许可、耗材库存，并提供IT服务管理功能，如工单处理、问题跟踪、变更管理等，支持企业或组织高效追踪、维护和优化IT资源，提升管理效率与资源利用率，满足日常IT运维与资产监控的需求。"
 source: https://xuanyuan.cloud/zh/r/glpi/glpi
 canonical: https://xuanyuan.cloud/zh/r/glpi/glpi
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/glpi/glpi" title="glpi/glpi Docker 镜像中文简介、标签列表与拉取命令">glpi/glpi — 轩辕镜像中文简介</a>

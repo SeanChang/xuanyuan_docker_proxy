@@ -3,7 +3,7 @@ image: localai/localai-backends
 description: "为LocalAI提供额外后端支持的Docker镜像，用于扩展其功能与兼容性。"
 source: https://xuanyuan.cloud/zh/r/localai/localai-backends
 canonical: https://xuanyuan.cloud/zh/r/localai/localai-backends
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/localai/localai-backends" title="localai/localai-backends Docker 镜像中文简介、标签列表与拉取命令">localai/localai-backends — 轩辕镜像中文简介</a>

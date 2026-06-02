@@ -3,7 +3,7 @@ image: ubuntu/kafka
 description: "Apache Kafka 是一个分布式事件流平台，它支持高吞吐量、低延迟的实时数据流处理与传输，可广泛应用于消息传递、日志聚合、实时分析、数据集成等场景，其长期维护轨道由 Canonical 负责，以确保平台在稳定性、安全性及功能迭代方面获得持续支持，为企业级用户提供可靠的事件流处理解决方案。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/kafka
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/kafka
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/kafka" title="ubuntu/kafka Docker 镜像中文简介、标签列表与拉取命令">ubuntu/kafka — 轩辕镜像中文简介</a>

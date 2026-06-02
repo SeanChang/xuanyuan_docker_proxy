@@ -3,7 +3,7 @@ image: linuxserver/bookstack
 description: "linuxserver/bookstack 是一款开源知识管理工具，帮助用户构建结构化知识库，支持 Markdown 编辑、富文本格式、多层级章节管理、全文搜索、版本历史追踪及思维导图可视化。界面简洁直观，支持团队协作与权限管理，通过 Docker 快速部署，适用于个人笔记整理、项目文档管理、企业知识库搭建等场景，帮助高效沉淀和共享信息，提升团队协作效率。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/bookstack
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/bookstack
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/bookstack" title="linuxserver/bookstack Docker 镜像中文简介、标签列表与拉取命令">linuxserver/bookstack — 轩辕镜像中文简介</a>

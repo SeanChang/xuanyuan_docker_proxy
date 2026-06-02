@@ -3,7 +3,7 @@ image: chainguard/python
 description: "Chainguard的低至零CVE漏洞容器镜像，用于构建、交付和运行安全软件。"
 source: https://xuanyuan.cloud/zh/r/chainguard/python
 canonical: https://xuanyuan.cloud/zh/r/chainguard/python
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/chainguard/python" title="chainguard/python Docker 镜像中文简介、标签列表与拉取命令">chainguard/python — 轩辕镜像中文简介</a>

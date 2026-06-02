@@ -3,7 +3,7 @@ image: outlovecn/portainer-cn
 description: "Portainer 容器管理工具中文版本，基于官方2.11.1版本开发，仅对界面及交互内容进行中文本地化处理，未改动核心功能，全面支持X86、ARM及ARM64三种硬件架构，满足不同平台用户的容器管理需求。"
 source: https://xuanyuan.cloud/zh/r/outlovecn/portainer-cn
 canonical: https://xuanyuan.cloud/zh/r/outlovecn/portainer-cn
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/outlovecn/portainer-cn" title="outlovecn/portainer-cn Docker 镜像中文简介、标签列表与拉取命令">outlovecn/portainer-cn — 轩辕镜像中文简介</a>

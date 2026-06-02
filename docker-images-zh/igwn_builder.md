@@ -3,7 +3,7 @@ image: igwn/builder
 description: "IGWN持续集成任务的典型构建环境"
 source: https://xuanyuan.cloud/zh/r/igwn/builder
 canonical: https://xuanyuan.cloud/zh/r/igwn/builder
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/igwn/builder" title="igwn/builder Docker 镜像中文简介、标签列表与拉取命令">igwn/builder — 轩辕镜像中文简介</a>

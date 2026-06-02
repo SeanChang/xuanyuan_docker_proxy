@@ -3,7 +3,7 @@ image: mccloud/subgen
 description: "通过OpenAI和Plex、Bazarr、Emby、Jellyfin或Tautulli的webhooks自动生成字幕的Docker镜像"
 source: https://xuanyuan.cloud/zh/r/mccloud/subgen
 canonical: https://xuanyuan.cloud/zh/r/mccloud/subgen
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mccloud/subgen" title="mccloud/subgen Docker 镜像中文简介、标签列表与拉取命令">mccloud/subgen — 轩辕镜像中文简介</a>

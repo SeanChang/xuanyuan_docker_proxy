@@ -3,7 +3,7 @@ image: mongodb/atlas
 description: "从命令行创建、管理和自动化MongoDB Atlas资源"
 source: https://xuanyuan.cloud/zh/r/mongodb/atlas
 canonical: https://xuanyuan.cloud/zh/r/mongodb/atlas
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mongodb/atlas" title="mongodb/atlas Docker 镜像中文简介、标签列表与拉取命令">mongodb/atlas — 轩辕镜像中文简介</a>

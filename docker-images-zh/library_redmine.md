@@ -3,7 +3,7 @@ image: library/redmine
 description: "Redmine是一款基于Ruby on Rails框架开发的灵活的项目管理Web应用程序，它集成了任务分配与跟踪、问题管理、时间记录、版本控制、文档协作等功能，支持多项目并行管理和自定义用户角色权限，适用于各类团队高效规划、执行和监控项目进度，凭借开源特性和可扩展性，成为企业和开发团队常用的项目协作工具。"
 source: https://xuanyuan.cloud/zh/r/library/redmine
 canonical: https://xuanyuan.cloud/zh/r/library/redmine
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/redmine" title="library/redmine Docker 镜像中文简介、标签列表与拉取命令">library/redmine — 轩辕镜像中文简介</a>

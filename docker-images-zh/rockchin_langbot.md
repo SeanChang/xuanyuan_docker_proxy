@@ -3,7 +3,7 @@ image: rockchin/langbot
 description: "LangBot 是一款开源的语言处理机器人应用，托管于 GitHub 平台（[]"
 source: https://xuanyuan.cloud/zh/r/rockchin/langbot
 canonical: https://xuanyuan.cloud/zh/r/rockchin/langbot
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rockchin/langbot" title="rockchin/langbot Docker 镜像中文简介、标签列表与拉取命令">rockchin/langbot — 轩辕镜像中文简介</a>

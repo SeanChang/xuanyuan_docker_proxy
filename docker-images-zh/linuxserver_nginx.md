@@ -3,7 +3,7 @@ image: linuxserver/nginx
 description: "LinuxServer.io提供的Nginx容器，用于部署Web服务器、实现反向代理及HTTP缓存等基础Web服务。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/nginx
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/nginx
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/nginx" title="linuxserver/nginx Docker 镜像中文简介、标签列表与拉取命令">linuxserver/nginx — 轩辕镜像中文简介</a>

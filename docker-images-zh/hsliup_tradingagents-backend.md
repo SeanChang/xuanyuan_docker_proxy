@@ -3,7 +3,7 @@ image: hsliup/tradingagents-backend
 description: "基于多智能体架构的 AI 股票分析系统后端服务"
 source: https://xuanyuan.cloud/zh/r/hsliup/tradingagents-backend
 canonical: https://xuanyuan.cloud/zh/r/hsliup/tradingagents-backend
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hsliup/tradingagents-backend" title="hsliup/tradingagents-backend Docker 镜像中文简介、标签列表与拉取命令">hsliup/tradingagents-backend — 轩辕镜像中文简介</a>

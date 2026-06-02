@@ -3,7 +3,7 @@ image: minio/mc
 description: "Minio Client（简称mc）是一款为UNIX系统中常用命令如ls（列出文件）、cat（查看文件内容）、cp（复制文件）、mirror（数据镜像）、diff（比较文件差异）等提供现代化替代方案的客户端工具，它在保留传统命令核心操作逻辑的基础上，融入了更适配现代云存储与对象存储场景的功能特性，为用户提供高效、直观且符合当下技术环境的文件管理与操作体验。"
 source: https://xuanyuan.cloud/zh/r/minio/mc
 canonical: https://xuanyuan.cloud/zh/r/minio/mc
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/minio/mc" title="minio/mc Docker 镜像中文简介、标签列表与拉取命令">minio/mc — 轩辕镜像中文简介</a>

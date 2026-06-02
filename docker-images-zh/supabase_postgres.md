@@ -3,7 +3,7 @@ image: supabase/postgres
 description: "这是一款未经修改的PostgreSQL开源关系型数据库，保留了其原生的功能特性、稳定性及可靠性，同时附带了一些实用插件，这些插件可用于增强数据备份、性能监控、扩展数据类型等功能，在不改变数据库核心架构的前提下，有效提升了数据库的功能性和适用场景，满足不同用户在数据管理、开发及运维等方面的多样化需求。"
 source: https://xuanyuan.cloud/zh/r/supabase/postgres
 canonical: https://xuanyuan.cloud/zh/r/supabase/postgres
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/supabase/postgres" title="supabase/postgres Docker 镜像中文简介、标签列表与拉取命令">supabase/postgres — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: kubesphere/kube-state-metrics
 description: "KubeSphere作为一款开源云原生容器平台，对Kubernetes生态中的状态指标工具kube-state-metrics进行了针对性修订，通过优化指标采集逻辑、扩展监控维度并提升数据处理效率，有效增强了对集群内Pod、Deployment、Service等核心资源状态指标的实时采集与精准分析能力，满足用户在容器化应用管理中对资源监控、故障排查及性能优化的精细化需求。"
 source: https://xuanyuan.cloud/zh/r/kubesphere/kube-state-metrics
 canonical: https://xuanyuan.cloud/zh/r/kubesphere/kube-state-metrics
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kubesphere/kube-state-metrics" title="kubesphere/kube-state-metrics Docker 镜像中文简介、标签列表与拉取命令">kubesphere/kube-state-metrics — 轩辕镜像中文简介</a>

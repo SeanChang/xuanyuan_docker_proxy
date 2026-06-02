@@ -3,7 +3,7 @@ image: snowdreamtech/dropbear
 description: "Dropbear SSH服务器的Docker镜像，支持多种架构（amd64、arm32v5/v6/v7、arm64v8、i386、mips64le等），用于快速部署轻量级SSH服务。"
 source: https://xuanyuan.cloud/zh/r/snowdreamtech/dropbear
 canonical: https://xuanyuan.cloud/zh/r/snowdreamtech/dropbear
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/snowdreamtech/dropbear" title="snowdreamtech/dropbear Docker 镜像中文简介、标签列表与拉取命令">snowdreamtech/dropbear — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: redhat/ubi8
 description: "红帽通用基础镜像8（Red Hat Universal Base Image 8）是红帽公司基于红帽企业Linux开发的标准化、安全容器基础镜像，支持构建和运行跨平台容器应用，提供优化的运行时环境、持续的安全更新与长期支持，适用于开发与生产环境，可帮助企业简化容器化流程，确保应用的稳定性和合规性。"
 source: https://xuanyuan.cloud/zh/r/redhat/ubi8
 canonical: https://xuanyuan.cloud/zh/r/redhat/ubi8
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/redhat/ubi8" title="redhat/ubi8 Docker 镜像中文简介、标签列表与拉取命令">redhat/ubi8 — 轩辕镜像中文简介</a>

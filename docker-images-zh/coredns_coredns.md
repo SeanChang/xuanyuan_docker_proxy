@@ -3,7 +3,7 @@ image: coredns/coredns
 description: "CoreDNS Docker仓库是用于存储和分发CoreDNS Docker镜像的平台，CoreDNS作为一款灵活可扩展的DNS服务器，采用Go语言编写，广泛应用于Kubernetes等容器编排系统，为容器集群提供高效域名解析服务；该仓库便于用户快速获取、部署及更新CoreDNS镜像，满足不同容器环境下的DNS配置需求，是容器化应用中实现可靠域名解析的重要资源。"
 source: https://xuanyuan.cloud/zh/r/coredns/coredns
 canonical: https://xuanyuan.cloud/zh/r/coredns/coredns
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/coredns/coredns" title="coredns/coredns Docker 镜像中文简介、标签列表与拉取命令">coredns/coredns — 轩辕镜像中文简介</a>

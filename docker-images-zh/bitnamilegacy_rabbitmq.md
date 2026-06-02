@@ -3,7 +3,7 @@ image: bitnamilegacy/rabbitmq
 description: "Bitnami旧版镜像（不再更新）"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/rabbitmq
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/rabbitmq
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/rabbitmq" title="bitnamilegacy/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/rabbitmq — 轩辕镜像中文简介</a>

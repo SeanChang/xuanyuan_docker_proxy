@@ -3,7 +3,7 @@ image: moltbot/moltbot
 description: "Clawdbot是一款可在自有设备上运行的个人AI助手，支持通过WhatsApp、Telegram、Slack等多种消息渠道交互，具备语音交互和可视化Canvas功能，提供本地优先、快速响应的智能助理体验。"
 source: https://xuanyuan.cloud/zh/r/moltbot/moltbot
 canonical: https://xuanyuan.cloud/zh/r/moltbot/moltbot
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/moltbot/moltbot" title="moltbot/moltbot Docker 镜像中文简介、标签列表与拉取命令">moltbot/moltbot — 轩辕镜像中文简介</a>

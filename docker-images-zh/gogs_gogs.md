@@ -3,7 +3,7 @@ image: gogs/gogs
 description: "Gogs是一款轻松便捷的自托管Git服务，它采用Go语言开发，具有轻量级特性，部署简单且资源占用低，适合个人开发者或小型团队搭建私有代码仓库，支持仓库管理、用户权限控制、分支管理等Git核心功能，能够帮助用户轻松实现代码的版本控制与协作管理，无需复杂配置即可快速上手使用。"
 source: https://xuanyuan.cloud/zh/r/gogs/gogs
 canonical: https://xuanyuan.cloud/zh/r/gogs/gogs
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gogs/gogs" title="gogs/gogs Docker 镜像中文简介、标签列表与拉取命令">gogs/gogs — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: onlyoffice/communityserver
 description: "这是一款集成化的一站式协作系统，可在单一平台内集中管理文档、项目、客户关系及邮件，支持团队成员实时协作，有效整合各类信息资源，避免多平台切换的繁琐，简化工作流程，助力提升团队整体办公效率与协同效果。"
 source: https://xuanyuan.cloud/zh/r/onlyoffice/communityserver
 canonical: https://xuanyuan.cloud/zh/r/onlyoffice/communityserver
-exported_at: 2026-06-02T12:21:11.987Z
+exported_at: 2026-06-02T12:23:50.672Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/onlyoffice/communityserver" title="onlyoffice/communityserver Docker 镜像中文简介、标签列表与拉取命令">onlyoffice/communityserver — 轩辕镜像中文简介</a>
