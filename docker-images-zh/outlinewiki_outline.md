@@ -3,14 +3,12 @@ image: outlinewiki/outline
 description: "一个快速、协作的团队知识库，基于React和Node.js构建，适用于成长中的团队高效管理和共享信息。"
 source: https://xuanyuan.cloud/zh/r/outlinewiki/outline
 canonical: https://xuanyuan.cloud/zh/r/outlinewiki/outline
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/outlinewiki/outline" title="outlinewiki/outline Docker 镜像中文简介、标签列表与拉取命令">outlinewiki/outline — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/outlinewiki/outline" title="outlinewiki/outline Docker 镜像中文简介、标签列表与拉取命令">outlinewiki/outline 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/outlinewiki/outline" title="outlinewiki/outline Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/outlinewiki/outline</a>
 
 # Outline 镜像文档
 

@@ -3,14 +3,12 @@ image: ultralytics/ultralytics
 description: "Ultralytics官方Docker镜像是由计算机视觉领域知名团队Ultralytics推出的标准化容器方案，预装YOLO系列模型（如YOLOv5、YOLOv8等）、PyTorch框架、CUDA加速库及全套依赖工具，为开发者、研究者和企业用户提供开箱即用的计算机视觉开发部署环境，支持模型训练、推理优化、多平台导出等全流程任务，能大幅简化环境配置流程，确保跨设备与系统的一致性运行，助力快速实现目标检测、图像分割、姿态估计等AI应用落地。"
 source: https://xuanyuan.cloud/zh/r/ultralytics/ultralytics
 canonical: https://xuanyuan.cloud/zh/r/ultralytics/ultralytics
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ultralytics/ultralytics" title="ultralytics/ultralytics Docker 镜像中文简介、标签列表与拉取命令">ultralytics/ultralytics — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ultralytics/ultralytics" title="ultralytics/ultralytics Docker 镜像中文简介、标签列表与拉取命令">ultralytics/ultralytics 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/ultralytics/ultralytics" title="ultralytics/ultralytics Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ultralytics/ultralytics</a>
 
 # YOLO11：快速、准确、易用的计算机视觉模型
 

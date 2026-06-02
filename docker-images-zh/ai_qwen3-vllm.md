@@ -3,14 +3,12 @@ image: ai/qwen3-vllm
 description: "Qwen3是最新一代Qwen大语言模型，专为顶级编码、数学、推理和语言任务设计，支持密集型和混合专家模型架构，提供动态推理模式切换，适用于多语言多领域应用。"
 source: https://xuanyuan.cloud/zh/r/ai/qwen3-vllm
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen3-vllm
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen3-vllm" title="ai/qwen3-vllm Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-vllm — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen3-vllm" title="ai/qwen3-vllm Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-vllm 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/ai/qwen3-vllm" title="ai/qwen3-vllm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-vllm</a>
 
 # Qwen3
 

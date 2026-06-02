@@ -3,14 +3,12 @@ image: dockette/debian
 description: "基于Debian的基础Docker镜像，提供Sid、Jessie、Wheezy等特殊变体，包含预定义用户和优化配置，适用于构建轻量级应用环境。"
 source: https://xuanyuan.cloud/zh/r/dockette/debian
 canonical: https://xuanyuan.cloud/zh/r/dockette/debian
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dockette/debian" title="dockette/debian Docker 镜像中文简介、标签列表与拉取命令">dockette/debian — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dockette/debian" title="dockette/debian Docker 镜像中文简介、标签列表与拉取命令">dockette/debian 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/dockette/debian" title="dockette/debian Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dockette/debian</a>
 
 # Debian
 

@@ -3,14 +3,12 @@ image: dtagdevsec/ciscoasa
 description: "T-Pot平台中的Cisco ASA蜜罐，用于模拟Cisco ASA防火墙服务，吸引并记录潜在攻击活动，助力网络安全监控与威胁分析。"
 source: https://xuanyuan.cloud/zh/r/dtagdevsec/ciscoasa
 canonical: https://xuanyuan.cloud/zh/r/dtagdevsec/ciscoasa
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dtagdevsec/ciscoasa" title="dtagdevsec/ciscoasa Docker 镜像中文简介、标签列表与拉取命令">dtagdevsec/ciscoasa — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dtagdevsec/ciscoasa" title="dtagdevsec/ciscoasa Docker 镜像中文简介、标签列表与拉取命令">dtagdevsec/ciscoasa 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/dtagdevsec/ciscoasa" title="dtagdevsec/ciscoasa Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dtagdevsec/ciscoasa</a>
 
 # T-Pot Cisco ASA Honeypot 镜像文档
 

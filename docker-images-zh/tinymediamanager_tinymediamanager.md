@@ -3,14 +3,12 @@ image: tinymediamanager/tinymediamanager
 description: "官方tinyMediaManager Docker镜像是专为媒体文件管理打造的容器化工具，可高效整理电影、电视剧等媒体资源，自动从网络获取元数据、海报、剧情简介等信息，通过Docker容器化部署简化安装与配置流程，具备跨平台兼容性，能在不同操作系统环境中稳定运行，确保媒体管理工具的运行环境一致性，适用于个人媒体库或小型服务器的媒体资源管理需求。"
 source: https://xuanyuan.cloud/zh/r/tinymediamanager/tinymediamanager
 canonical: https://xuanyuan.cloud/zh/r/tinymediamanager/tinymediamanager
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/tinymediamanager/tinymediamanager" title="tinymediamanager/tinymediamanager Docker 镜像中文简介、标签列表与拉取命令">tinymediamanager/tinymediamanager — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/tinymediamanager/tinymediamanager" title="tinymediamanager/tinymediamanager Docker 镜像中文简介、标签列表与拉取命令">tinymediamanager/tinymediamanager 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/tinymediamanager/tinymediamanager" title="tinymediamanager/tinymediamanager Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/tinymediamanager/tinymediamanager</a>
 
 # tinyMediaManager Docker 镜像使用指南
 

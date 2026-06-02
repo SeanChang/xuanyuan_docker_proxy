@@ -3,14 +3,12 @@ image: library/ibmjava
 description: "library/ibmjava 是 IBM 官方提供的 IBM SDK, Java Technology Edition Docker 镜像，基于 Eclipse OpenJ9 高性能 JVM 构建，是 OpenJDK 的企业级分发版本。该镜像核心支持 Java 8（长期支持版本），同时兼容 Java 11（详见官方文档），提供 SDK（开发工具包）、JRE（运行时环境）、SFJ（轻量版JRE）三种变体，适配 Ubuntu（兼容性强）与 Alpine（轻量）基础镜像，覆盖 amd64、ppc64le、s390x 多架构，适用于企业级 Java 应用（如 WebSphere 服务、微服务、云原生应用）的开发与部署，尤其擅长高并发、低内存占用场景。"
 source: https://xuanyuan.cloud/zh/r/library/ibmjava
 canonical: https://xuanyuan.cloud/zh/r/library/ibmjava
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/ibmjava" title="library/ibmjava Docker 镜像中文简介、标签列表与拉取命令">library/ibmjava — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/ibmjava" title="library/ibmjava Docker 镜像中文简介、标签列表与拉取命令">library/ibmjava 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/library/ibmjava" title="library/ibmjava Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/ibmjava</a>
 
 # IBM Java SDK Docker 镜像使用指南
 

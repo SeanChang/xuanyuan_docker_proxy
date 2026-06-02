@@ -3,14 +3,12 @@ image: chainguard/minio
 description: "使用Chainguard的低至零CVE容器镜像构建、交付和运行安全软件。"
 source: https://xuanyuan.cloud/zh/r/chainguard/minio
 canonical: https://xuanyuan.cloud/zh/r/chainguard/minio
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/chainguard/minio" title="chainguard/minio Docker 镜像中文简介、标签列表与拉取命令">chainguard/minio — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/chainguard/minio" title="chainguard/minio Docker 镜像中文简介、标签列表与拉取命令">chainguard/minio 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/chainguard/minio" title="chainguard/minio Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/chainguard/minio</a>
 
 # Chainguard MinIO 镜像文档
 

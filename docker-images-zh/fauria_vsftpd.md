@@ -3,14 +3,12 @@ image: fauria/vsftpd
 description: "基于CentOS 7构建的vsftpd Docker镜像，vsftpd作为一款以安全、高效和稳定为核心特性的FTP服务器，该镜像不仅支持被动模式以适应复杂网络环境下的文件传输需求，还集成了虚拟用户功能，可通过独立配置实现对FTP访问权限的精细化管控，适用于需要安全、便捷文件传输服务的容器化部署场景。"
 source: https://xuanyuan.cloud/zh/r/fauria/vsftpd
 canonical: https://xuanyuan.cloud/zh/r/fauria/vsftpd
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/fauria/vsftpd" title="fauria/vsftpd Docker 镜像中文简介、标签列表与拉取命令">fauria/vsftpd — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/fauria/vsftpd" title="fauria/vsftpd Docker 镜像中文简介、标签列表与拉取命令">fauria/vsftpd 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/fauria/vsftpd" title="fauria/vsftpd Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/fauria/vsftpd</a>
 
 # fauria/vsftpd  
 

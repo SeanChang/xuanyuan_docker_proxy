@@ -3,14 +3,12 @@ image: library/amazoncorretto
 description: "Corretto是一款免费的、可直接用于生产环境的开放Java开发工具包（OpenJDK）发行版，它经过专门优化以确保在实际生产场景中的稳定性与可靠性，为开发者及企业提供了无需额外成本即可部署的高性能Java运行环境，满足从开发测试到大规模生产应用的全流程需求。"
 source: https://xuanyuan.cloud/zh/r/library/amazoncorretto
 canonical: https://xuanyuan.cloud/zh/r/library/amazoncorretto
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/amazoncorretto" title="library/amazoncorretto Docker 镜像中文简介、标签列表与拉取命令">library/amazoncorretto — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/amazoncorretto" title="library/amazoncorretto Docker 镜像中文简介、标签列表与拉取命令">library/amazoncorretto 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/library/amazoncorretto" title="library/amazoncorretto Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/amazoncorretto</a>
 
 # Amazon Corretto Docker镜像介绍
 

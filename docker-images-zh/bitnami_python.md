@@ -3,14 +3,12 @@ image: bitnami/python
 description: "Bitnami 提供的 Python 安全镜像，基于 Photon Linux 构建，具备加固安全、漏洞管理及合规支持等特性。"
 source: https://xuanyuan.cloud/zh/r/bitnami/python
 canonical: https://xuanyuan.cloud/zh/r/bitnami/python
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/python" title="bitnami/python Docker 镜像中文简介、标签列表与拉取命令">bitnami/python — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/python" title="bitnami/python Docker 镜像中文简介、标签列表与拉取命令">bitnami/python 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/bitnami/python" title="bitnami/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/python</a>
 
 # Bitnami Python 镜像
 

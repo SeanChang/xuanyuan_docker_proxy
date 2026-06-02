@@ -3,14 +3,12 @@ image: zabbix/zabbix-agent
 description: "Zabbix代理（Zabbix agent）是部署在被监控主机上的客户端组件，在Zabbix监控架构中负责采集系统资源、应用程序性能及运行状态等关键数据，并通过支持TLS加密协议与Zabbix服务器或代理服务器进行安全通信，有效保障数据传输过程中的机密性与完整性，防止信息泄露或篡改，适用于对数据安全有严格要求的企业级监控场景，提升整体监控系统的安全性和可靠性。"
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent" title="zabbix/zabbix-agent Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-agent — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent" title="zabbix/zabbix-agent Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-agent 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent" title="zabbix/zabbix-agent Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent</a>
 
 ![logo]()
 

@@ -3,14 +3,12 @@ image: nevinee/qbittorrent
 description: "qBittorrent 5.1.2（qB 5.1.2）具备下载完成通知与文件自动分类功能，支持IYUU辅助工具，可批量删除与修改Tracker（TK），并能对出错的Tracker（TK）进行标记，同时集成了PT辅助脚本以优化PT站使用体验。"
 source: https://xuanyuan.cloud/zh/r/nevinee/qbittorrent
 canonical: https://xuanyuan.cloud/zh/r/nevinee/qbittorrent
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nevinee/qbittorrent" title="nevinee/qbittorrent Docker 镜像中文简介、标签列表与拉取命令">nevinee/qbittorrent — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nevinee/qbittorrent" title="nevinee/qbittorrent Docker 镜像中文简介、标签列表与拉取命令">nevinee/qbittorrent 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/nevinee/qbittorrent" title="nevinee/qbittorrent Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nevinee/qbittorrent</a>
 
 # qBittorrent Docker镜像使用说明
 

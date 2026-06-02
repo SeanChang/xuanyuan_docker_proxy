@@ -3,14 +3,12 @@ image: snowdreamtech/frpc
 description: "这是用于Frp的Docker镜像，Frp作为一款轻量级反向代理工具，主要用于内网穿透，支持TCP、UDP、HTTP、HTTPS等多种协议，能帮助用户将本地服务便捷地暴露至公网；该镜像预配置了Frp服务环境，可直接通过Docker快速部署，简化了传统安装配置流程，适用于开发者、运维人员等需要高效管理内网服务访问的场景，助力实现安全稳定的内外网连接。"
 source: https://xuanyuan.cloud/zh/r/snowdreamtech/frpc
 canonical: https://xuanyuan.cloud/zh/r/snowdreamtech/frpc
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/snowdreamtech/frpc" title="snowdreamtech/frpc Docker 镜像中文简介、标签列表与拉取命令">snowdreamtech/frpc — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/snowdreamtech/frpc" title="snowdreamtech/frpc Docker 镜像中文简介、标签列表与拉取命令">snowdreamtech/frpc 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/snowdreamtech/frpc" title="snowdreamtech/frpc Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/snowdreamtech/frpc</a>
 
 # frp Docker镜像介绍  
 

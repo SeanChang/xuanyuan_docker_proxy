@@ -3,14 +3,12 @@ image: library/rockylinux
 description: "Rocky Linux 的官方版本是由 CentOS 创始人之一 Gregory Kurtzer 发起的企业级 Linux 发行版，旨在作为 CentOS 停更后的替代方案，与 Red Hat Enterprise Linux（RHEL）完全兼容，提供稳定可靠的操作系统环境，支持长期维护，广泛适用于服务器部署及各类企业级应用场景，延续了 CentOS 社区对开源稳定系统的需求满足。"
 source: https://xuanyuan.cloud/zh/r/library/rockylinux
 canonical: https://xuanyuan.cloud/zh/r/library/rockylinux
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/rockylinux" title="library/rockylinux Docker 镜像中文简介、标签列表与拉取命令">library/rockylinux — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/rockylinux" title="library/rockylinux Docker 镜像中文简介、标签列表与拉取命令">library/rockylinux 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/library/rockylinux" title="library/rockylinux Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/rockylinux</a>
 
 # Rocky Linux Docker 镜像说明
 

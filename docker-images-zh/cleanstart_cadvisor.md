@@ -3,14 +3,12 @@ image: cleanstart/cadvisor
 description: "基于CleanStart最小化安全加固OS的cAdvisor容器镜像，提供容器资源使用和性能特性监控，支持实时指标收集、Prometheus集成及历史数据分析，包含企业级安全加固，适用于生产环境部署。"
 source: https://xuanyuan.cloud/zh/r/cleanstart/cadvisor
 canonical: https://xuanyuan.cloud/zh/r/cleanstart/cadvisor
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cleanstart/cadvisor" title="cleanstart/cadvisor Docker 镜像中文简介、标签列表与拉取命令">cleanstart/cadvisor — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cleanstart/cadvisor" title="cleanstart/cadvisor Docker 镜像中文简介、标签列表与拉取命令">cleanstart/cadvisor 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/cleanstart/cadvisor" title="cleanstart/cadvisor Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cleanstart/cadvisor</a>
 
 # CleanStart cAdvisor 容器镜像
 

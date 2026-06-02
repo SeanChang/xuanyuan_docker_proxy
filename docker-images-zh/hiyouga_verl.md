@@ -3,14 +3,12 @@ image: hiyouga/verl
 description: "VolcEngine/verl 是火山引擎推出的强化学习框架，旨在提供高效、易用的强化学习开发与训练工具，支持多种经典及前沿算法，具备高性能计算与灵活扩展能力，助力开发者快速构建、训练和部署强化学习模型；hiyouga/EasyR1 则是一款轻量级强化学习工具库，专注于简化强化学习流程，通过直观的接口设计、丰富的示例代码及详尽文档，降低入门门槛，适合初学者快速上手及科研人员进行快速原型开发，为强化学习学习与应用提供便捷支持。"
 source: https://xuanyuan.cloud/zh/r/hiyouga/verl
 canonical: https://xuanyuan.cloud/zh/r/hiyouga/verl
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hiyouga/verl" title="hiyouga/verl Docker 镜像中文简介、标签列表与拉取命令">hiyouga/verl — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hiyouga/verl" title="hiyouga/verl Docker 镜像中文简介、标签列表与拉取命令">hiyouga/verl 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/hiyouga/verl" title="hiyouga/verl Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hiyouga/verl</a>
 
 ## 项目一：VERL（火山引擎强化学习平台）  
 

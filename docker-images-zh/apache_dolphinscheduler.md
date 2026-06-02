@@ -3,14 +3,12 @@ image: apache/dolphinscheduler
 description: "Apache DolphinScheduler是一个分布式、可扩展的工作流调度平台，提供强大的DAG可视化界面，致力于解决数据管道中的复杂作业依赖，支持多种任务类型开箱即用。"
 source: https://xuanyuan.cloud/zh/r/apache/dolphinscheduler
 canonical: https://xuanyuan.cloud/zh/r/apache/dolphinscheduler
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/dolphinscheduler" title="apache/dolphinscheduler Docker 镜像中文简介、标签列表与拉取命令">apache/dolphinscheduler — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/dolphinscheduler" title="apache/dolphinscheduler Docker 镜像中文简介、标签列表与拉取命令">apache/dolphinscheduler 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/apache/dolphinscheduler" title="apache/dolphinscheduler Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/dolphinscheduler</a>
 
 # Apache DolphinScheduler Docker镜像文档
 

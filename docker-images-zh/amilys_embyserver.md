@@ -3,14 +3,12 @@ image: amilys/embyserver
 description: "Emby媒体服务器是用于集中管理、组织和流式传输电影、音乐、照片、剧集等各类媒体文件的版本应用程序，支持多平台设备访问，提供高清播放、自定义媒体库分类、用户权限管理及跨设备同步等功能。"
 source: https://xuanyuan.cloud/zh/r/amilys/embyserver
 canonical: https://xuanyuan.cloud/zh/r/amilys/embyserver
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/amilys/embyserver" title="amilys/embyserver Docker 镜像中文简介、标签列表与拉取命令">amilys/embyserver — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/amilys/embyserver" title="amilys/embyserver Docker 镜像中文简介、标签列表与拉取命令">amilys/embyserver 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/amilys/embyserver" title="amilys/embyserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/amilys/embyserver</a>
 
 # Emby 容器版本更新及使用指南
 

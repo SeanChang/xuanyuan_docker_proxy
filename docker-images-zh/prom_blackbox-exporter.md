@@ -3,14 +3,12 @@ image: prom/blackbox-exporter
 description: "Blackbox Exporter是Prometheus生态的黑盒探测工具，支持通过HTTP、HTTPS、DNS、TCP、ICMP和gRPC协议对目标端点进行探测，提供探测成功率等指标，用于监控端点可用性和性能。"
 source: https://xuanyuan.cloud/zh/r/prom/blackbox-exporter
 canonical: https://xuanyuan.cloud/zh/r/prom/blackbox-exporter
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/prom/blackbox-exporter" title="prom/blackbox-exporter Docker 镜像中文简介、标签列表与拉取命令">prom/blackbox-exporter — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/prom/blackbox-exporter" title="prom/blackbox-exporter Docker 镜像中文简介、标签列表与拉取命令">prom/blackbox-exporter 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/prom/blackbox-exporter" title="prom/blackbox-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/blackbox-exporter</a>
 
 # Blackbox Exporter
 

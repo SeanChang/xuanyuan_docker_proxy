@@ -3,14 +3,12 @@ image: ai/qwen3-coder
 description: "Qwen3-Coder是Qwen推出的新一代智能编码代理模型系列。"
 source: https://xuanyuan.cloud/zh/r/ai/qwen3-coder
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen3-coder
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen3-coder" title="ai/qwen3-coder Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-coder — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen3-coder" title="ai/qwen3-coder Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-coder 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/ai/qwen3-coder" title="ai/qwen3-coder Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-coder</a>
 
 # Qwen3‑Coder‑30B‑A3B‑Instruct
 *Unsloth 提供的 GGUF 版本*

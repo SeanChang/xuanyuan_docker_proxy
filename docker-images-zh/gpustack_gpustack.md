@@ -3,14 +3,12 @@ image: gpustack/gpustack
 description: "负责对用于运行大型语言模型（LLMs）的GPU集群进行全面管理，涵盖集群资源的动态调度、节点状态的实时监控、计算任务的高效分配、硬件性能的持续优化及故障的快速响应与处理，以确保LLMs在训练过程中的算力稳定供给和推理服务的高效运行，满足各类AI应用对大规模并行计算能力的需求。"
 source: https://xuanyuan.cloud/zh/r/gpustack/gpustack
 canonical: https://xuanyuan.cloud/zh/r/gpustack/gpustack
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gpustack/gpustack" title="gpustack/gpustack Docker 镜像中文简介、标签列表与拉取命令">gpustack/gpustack — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gpustack/gpustack" title="gpustack/gpustack Docker 镜像中文简介、标签列表与拉取命令">gpustack/gpustack 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/gpustack/gpustack" title="gpustack/gpustack Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gpustack/gpustack</a>
 
 ## GPU集群管理：支撑大语言模型（LLMs）运行实践  
 

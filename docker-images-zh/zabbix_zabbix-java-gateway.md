@@ -3,14 +3,12 @@ image: zabbix/zabbix-java-gateway
 description: "Zabbix Java Gateway是Zabbix监控系统的组件，用于实现Zabbix Server对Java应用程序的JMX指标监控，作为网关连接Zabbix Server与Java应用，获取并传递Java应用性能数据。"
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway" title="zabbix/zabbix-java-gateway Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-java-gateway — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway" title="zabbix/zabbix-java-gateway Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-java-gateway 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway" title="zabbix/zabbix-java-gateway Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway</a>
 
 # Zabbix Java Gateway
 

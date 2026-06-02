@@ -3,14 +3,12 @@ image: elestio/postgres
 description: "Elestio验证和打包的PostgreSQL镜像，提供高级对象关系型数据库管理系统，支持SQL标准扩展子集（事务、外键、子查询等），确保与原始源同步更新、及时获取最新修复和功能，并经过质量控制检查，适合可靠的数据库部署需求。"
 source: https://xuanyuan.cloud/zh/r/elestio/postgres
 canonical: https://xuanyuan.cloud/zh/r/elestio/postgres
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/elestio/postgres" title="elestio/postgres Docker 镜像中文简介、标签列表与拉取命令">elestio/postgres — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/elestio/postgres" title="elestio/postgres Docker 镜像中文简介、标签列表与拉取命令">elestio/postgres 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/elestio/postgres" title="elestio/postgres Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/elestio/postgres</a>
 
 # Postgres，由Elestio验证和打包
 

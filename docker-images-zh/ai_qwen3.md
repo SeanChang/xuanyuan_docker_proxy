@@ -3,14 +3,12 @@ image: ai/qwen3
 description: "Qwen3是通义千问系列最新推出的大语言模型，作为新一代人工智能技术成果，它专为顶尖级代码编写、数学计算、逻辑推理及语言处理任务打造，凭借先进的算法架构与深度优化的模型性能，能够高效应对多领域复杂场景下的专业需求，为用户提供精准、智能的解决方案，展现出在技术研发与应用落地中的卓越潜力。"
 source: https://xuanyuan.cloud/zh/r/ai/qwen3
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen3
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen3" title="ai/qwen3 Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3 — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen3" title="ai/qwen3 Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/ai/qwen3" title="ai/qwen3 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3</a>
 
 # Qwen3
 

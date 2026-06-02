@@ -3,14 +3,12 @@ image: summary/portainer-ce
 description: "Portainer-CE中文汉化版是一款轻量级容器管理平台，提供Docker、Kubernetes等容器环境的可视化管理界面，支持中文操作，便于中文用户高效管理容器资源。"
 source: https://xuanyuan.cloud/zh/r/summary/portainer-ce
 canonical: https://xuanyuan.cloud/zh/r/summary/portainer-ce
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/summary/portainer-ce" title="summary/portainer-ce Docker 镜像中文简介、标签列表与拉取命令">summary/portainer-ce — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/summary/portainer-ce" title="summary/portainer-ce Docker 镜像中文简介、标签列表与拉取命令">summary/portainer-ce 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/summary/portainer-ce" title="summary/portainer-ce Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/summary/portainer-ce</a>
 
 # Portainer-CE 中文汉化版 Docker 镜像
 

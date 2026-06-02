@@ -3,14 +3,12 @@ image: thijsvanloef/palworld-server-docker
 description: "一个用于轻松运行幻兽帕鲁专用服务器的Docker容器。"
 source: https://xuanyuan.cloud/zh/r/thijsvanloef/palworld-server-docker
 canonical: https://xuanyuan.cloud/zh/r/thijsvanloef/palworld-server-docker
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/thijsvanloef/palworld-server-docker" title="thijsvanloef/palworld-server-docker Docker 镜像中文简介、标签列表与拉取命令">thijsvanloef/palworld-server-docker — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/thijsvanloef/palworld-server-docker" title="thijsvanloef/palworld-server-docker Docker 镜像中文简介、标签列表与拉取命令">thijsvanloef/palworld-server-docker 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/thijsvanloef/palworld-server-docker" title="thijsvanloef/palworld-server-docker Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/thijsvanloef/palworld-server-docker</a>
 
 # Palworld Dedicated Server Docker
 

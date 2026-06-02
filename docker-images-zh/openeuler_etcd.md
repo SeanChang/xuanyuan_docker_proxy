@@ -3,14 +3,12 @@ image: openeuler/etcd
 description: "官方etcd Docker镜像，基于openEuler构建，提供分布式键值存储功能，适用于在集群中安全存储数据，具有可靠性、容错性和易用性。"
 source: https://xuanyuan.cloud/zh/r/openeuler/etcd
 canonical: https://xuanyuan.cloud/zh/r/openeuler/etcd
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/etcd" title="openeuler/etcd Docker 镜像中文简介、标签列表与拉取命令">openeuler/etcd — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/etcd" title="openeuler/etcd Docker 镜像中文简介、标签列表与拉取命令">openeuler/etcd 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/openeuler/etcd" title="openeuler/etcd Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/etcd</a>
 
 # etcd | openEuler Docker镜像文档
 

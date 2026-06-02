@@ -3,14 +3,12 @@ image: casbin/casdoor
 description: "这是一款以用户界面体验为优先设计理念的集中式身份验证与单点登录（SSO）平台，基于OAuth 2.0和OIDC国际标准协议构建，旨在通过统一登录入口简化多系统访问流程，提升用户操作便捷性，同时依托标准化协议保障身份验证的安全性、可靠性及跨平台兼容性，适用于企业级应用集成、多系统统一身份管理等场景。"
 source: https://xuanyuan.cloud/zh/r/casbin/casdoor
 canonical: https://xuanyuan.cloud/zh/r/casbin/casdoor
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/casbin/casdoor" title="casbin/casdoor Docker 镜像中文简介、标签列表与拉取命令">casbin/casdoor — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/casbin/casdoor" title="casbin/casdoor Docker 镜像中文简介、标签列表与拉取命令">casbin/casdoor 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/casbin/casdoor" title="casbin/casdoor Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/casbin/casdoor</a>
 
 # 基于OAuth 2.0/OIDC的UI优先集中式认证与单点登录平台  
 

@@ -3,14 +3,12 @@ image: talebook/calibre-webserver
 description: "镜像已改名为talebook/talebook，这是一个美观的图书管理系统，支持推送Kindle、在线阅读、上传下载管理书籍，兼容群晖、威联通等X86系统Docker部署。"
 source: https://xuanyuan.cloud/zh/r/talebook/calibre-webserver
 canonical: https://xuanyuan.cloud/zh/r/talebook/calibre-webserver
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/talebook/calibre-webserver" title="talebook/calibre-webserver Docker 镜像中文简介、标签列表与拉取命令">talebook/calibre-webserver — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/talebook/calibre-webserver" title="talebook/calibre-webserver Docker 镜像中文简介、标签列表与拉取命令">talebook/calibre-webserver 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/talebook/calibre-webserver" title="talebook/calibre-webserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/talebook/calibre-webserver</a>
 
 # Talebook 图书管理系统镜像说明
 

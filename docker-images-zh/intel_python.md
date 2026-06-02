@@ -3,14 +3,12 @@ image: intel/python
 description: "Intel® Distribution for Python* 是增强性能的Python发行版，集成Intel® Math Kernel Library等性能库，可提升程序速度10到100倍，支持Intel dGPU，包含最新驱动和OneAPI运行时库，加速数值计算与机器学习框架。"
 source: https://xuanyuan.cloud/zh/r/intel/python
 canonical: https://xuanyuan.cloud/zh/r/intel/python
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/intel/python" title="intel/python Docker 镜像中文简介、标签列表与拉取命令">intel/python — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/intel/python" title="intel/python Docker 镜像中文简介、标签列表与拉取命令">intel/python 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/intel/python" title="intel/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/intel/python</a>
 
 # Intel® Distribution for Python*
 

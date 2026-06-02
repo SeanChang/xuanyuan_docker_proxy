@@ -3,14 +3,12 @@ image: baserow/baserow
 description: "Baserow的一站式Docker镜像，是开源无代码数据库工具，可作为Airtable的替代品。"
 source: https://xuanyuan.cloud/zh/r/baserow/baserow
 canonical: https://xuanyuan.cloud/zh/r/baserow/baserow
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/baserow/baserow" title="baserow/baserow Docker 镜像中文简介、标签列表与拉取命令">baserow/baserow — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/baserow/baserow" title="baserow/baserow Docker 镜像中文简介、标签列表与拉取命令">baserow/baserow 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/baserow/baserow" title="baserow/baserow Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/baserow/baserow</a>
 
 # Baserow Docker 镜像文档
 

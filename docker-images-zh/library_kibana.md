@@ -3,14 +3,12 @@ image: library/kibana
 description: "Kibana作为Elastic Stack的核心组件，能够将Elasticsearch中索引的各类数据——包括结构化数据（如交易记录、系统指标、用户行为日志）和非结构化数据（如文本文档、邮件内容、社交媒体评论）——进行整合、处理、分析与可视化，它通过提供多样化的可视化组件（如折线图、柱状图、热力图、仪表盘、地理空间地图等）、灵活的查询工具和交互式探索功能，将复杂分散的数据转化为具有清晰逻辑结构和实用洞察的直观内容，帮助用户深入理解数据模式、实时监控业务动态、快速发现潜在问题，并基于数据驱动做出明智决策，从而充分释放Elasticsearch索引数据的价值。"
 source: https://xuanyuan.cloud/zh/r/library/kibana
 canonical: https://xuanyuan.cloud/zh/r/library/kibana
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/kibana" title="library/kibana Docker 镜像中文简介、标签列表与拉取命令">library/kibana — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/kibana" title="library/kibana Docker 镜像中文简介、标签列表与拉取命令">library/kibana 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/library/kibana" title="library/kibana Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/kibana</a>
 
 ## Kibana Docker镜像介绍
 

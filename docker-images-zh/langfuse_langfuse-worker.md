@@ -3,14 +3,12 @@ image: langfuse/langfuse-worker
 description: "Langfuse background-worker容器，用于v3版本开发阶段，负责处理后台任务，支持主应用的异步操作与任务队列管理。"
 source: https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker
 canonical: https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker" title="langfuse/langfuse-worker Docker 镜像中文简介、标签列表与拉取命令">langfuse/langfuse-worker — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker" title="langfuse/langfuse-worker Docker 镜像中文简介、标签列表与拉取命令">langfuse/langfuse-worker 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker" title="langfuse/langfuse-worker Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker</a>
 
 ## 概述
 Langfuse background-worker容器是Langfuse项目v3版本的开发阶段组件，专门用于处理后台任务，支持主应用的异步操作与任务队列管理，确保系统高效运行。

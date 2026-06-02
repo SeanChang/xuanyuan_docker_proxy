@@ -3,14 +3,12 @@ image: library/mongo-express
 description: "这是一款基于Web的MongoDB管理界面，专为MongoDB数据库设计，使用Node.js后端框架及Express构建，提供便捷的Web端管理功能，支持用户在浏览器中进行数据库的日常管理操作，如数据查询、文档管理、索引配置等，具备轻量高效、易于部署的特点，适用于开发人员和管理员快速管理MongoDB数据库实例。"
 source: https://xuanyuan.cloud/zh/r/library/mongo-express
 canonical: https://xuanyuan.cloud/zh/r/library/mongo-express
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/mongo-express" title="library/mongo-express Docker 镜像中文简介、标签列表与拉取命令">library/mongo-express — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/mongo-express" title="library/mongo-express Docker 镜像中文简介、标签列表与拉取命令">library/mongo-express 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/library/mongo-express" title="library/mongo-express Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/mongo-express</a>
 
 # mongo-express 镜像使用指南
 

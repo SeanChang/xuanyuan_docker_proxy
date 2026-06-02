@@ -3,14 +3,12 @@ image: quantatrisk/funasr-api
 description: "基于FunASR和Qwen3-ASR的生产级本地语音识别API服务，支持多模型、OpenAI API兼容接口、流式识别和说话人分离，提供GPU加速和批量处理能力。"
 source: https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api
 canonical: https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api" title="quantatrisk/funasr-api Docker 镜像中文简介、标签列表与拉取命令">quantatrisk/funasr-api — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api" title="quantatrisk/funasr-api Docker 镜像中文简介、标签列表与拉取命令">quantatrisk/funasr-api 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api" title="quantatrisk/funasr-api Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api</a>
 
 # FunASR-API
 

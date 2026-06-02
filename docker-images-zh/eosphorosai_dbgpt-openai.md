@@ -3,14 +3,12 @@ image: eosphorosai/dbgpt-openai
 description: "轻量级Docker镜像，仅包含DB-GPT中的代理模型，适用于CPU环境。"
 source: https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt-openai
 canonical: https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt-openai
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt-openai" title="eosphorosai/dbgpt-openai Docker 镜像中文简介、标签列表与拉取命令">eosphorosai/dbgpt-openai — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt-openai" title="eosphorosai/dbgpt-openai Docker 镜像中文简介、标签列表与拉取命令">eosphorosai/dbgpt-openai 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt-openai" title="eosphorosai/dbgpt-openai Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt-openai</a>
 
 # DB-GPT Proxy (CPU) 镜像文档
 

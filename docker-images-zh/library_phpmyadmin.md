@@ -3,14 +3,12 @@ image: library/phpmyadmin
 description: "phpMyAdmin是一款广泛应用的开源Web界面工具，专为MySQL和MariaDB关系型数据库管理系统设计，支持用户通过Web浏览器便捷执行数据库及数据表的创建、查询、修改、删除等基础操作，同时提供用户权限配置、数据导入导出、SQL语句执行与优化、数据库备份恢复等进阶功能，帮助开发者与数据库管理员无需依赖命令行环境即可高效管理数据库，有效简化数据库日常维护与操作流程。"
 source: https://xuanyuan.cloud/zh/r/library/phpmyadmin
 canonical: https://xuanyuan.cloud/zh/r/library/phpmyadmin
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/phpmyadmin" title="library/phpmyadmin Docker 镜像中文简介、标签列表与拉取命令">library/phpmyadmin — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/phpmyadmin" title="library/phpmyadmin Docker 镜像中文简介、标签列表与拉取命令">library/phpmyadmin 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/library/phpmyadmin" title="library/phpmyadmin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/phpmyadmin</a>
 
 # phpMyAdmin Docker 镜像使用指南
 

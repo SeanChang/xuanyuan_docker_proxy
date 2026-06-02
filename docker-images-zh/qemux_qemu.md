@@ -3,14 +3,12 @@ image: qemux/qemu
 description: "一个在Docker容器中运行虚拟机的QEMU镜像，提供Web界面控制，支持多种磁盘格式（如.iso、.qcow2、.vmdk等），并具备KVM加速等高性能选项，实现接近原生的运行速度。"
 source: https://xuanyuan.cloud/zh/r/qemux/qemu
 canonical: https://xuanyuan.cloud/zh/r/qemux/qemu
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/qemux/qemu" title="qemux/qemu Docker 镜像中文简介、标签列表与拉取命令">qemux/qemu — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/qemux/qemu" title="qemux/qemu Docker 镜像中文简介、标签列表与拉取命令">qemux/qemu 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/qemux/qemu" title="qemux/qemu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/qemux/qemu</a>
 
 # QEMU Docker镜像
 

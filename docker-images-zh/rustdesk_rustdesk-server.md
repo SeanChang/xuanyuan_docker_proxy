@@ -3,14 +3,12 @@ image: rustdesk/rustdesk-server
 description: "RustDesk服务器软件是搭建私有远程桌面服务的核心组件，包括hbbs（打洞服务器，负责节点发现与连接初始建立）和hbbr（中继服务器，承担数据中转任务）两个关键程序，支持用户自主部署以构建安全、稳定的远程控制环境，其核心功能通过这两个程序协同实现，满足用户对私有远程桌面服务的搭建需求。"
 source: https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server
 canonical: https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server" title="rustdesk/rustdesk-server Docker 镜像中文简介、标签列表与拉取命令">rustdesk/rustdesk-server — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server" title="rustdesk/rustdesk-server Docker 镜像中文简介、标签列表与拉取命令">rustdesk/rustdesk-server 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server" title="rustdesk/rustdesk-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server</a>
 
 ## RustDesk 服务器软件介绍  
 

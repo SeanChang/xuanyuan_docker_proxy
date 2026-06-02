@@ -3,14 +3,12 @@ image: bitnamilegacy/kafka
 description: "Bitnami旧版镜像（不再更新），包含所有现有容器镜像的备份，仅用于临时迁移目的"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/kafka
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/kafka
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/kafka" title="bitnamilegacy/kafka Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/kafka — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/kafka" title="bitnamilegacy/kafka Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/kafka 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/kafka" title="bitnamilegacy/kafka Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamilegacy/kafka</a>
 
 ## 镜像概述
 

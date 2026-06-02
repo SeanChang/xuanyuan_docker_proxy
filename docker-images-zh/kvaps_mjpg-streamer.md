@@ -3,14 +3,12 @@ image: kvaps/mjpg-streamer
 description: "MJPG-streamer 网络摄像头流媒体服务器，用于通过HTTP协议传输USB摄像头等UVC设备的视频流，支持视频参数配置与访问控制。"
 source: https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer
 canonical: https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer" title="kvaps/mjpg-streamer Docker 镜像中文简介、标签列表与拉取命令">kvaps/mjpg-streamer — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer" title="kvaps/mjpg-streamer Docker 镜像中文简介、标签列表与拉取命令">kvaps/mjpg-streamer 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer" title="kvaps/mjpg-streamer Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer</a>
 
 ## MJPG-streamer Docker镜像文档
 

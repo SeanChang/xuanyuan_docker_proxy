@@ -3,14 +3,12 @@ image: proxysql/proxysql
 description: "官方ProxySQL Docker镜像，提供高性能MySQL数据库代理功能，用于数据库连接管理、读写分离、负载均衡及高可用部署。"
 source: https://xuanyuan.cloud/zh/r/proxysql/proxysql
 canonical: https://xuanyuan.cloud/zh/r/proxysql/proxysql
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/proxysql/proxysql" title="proxysql/proxysql Docker 镜像中文简介、标签列表与拉取命令">proxysql/proxysql — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/proxysql/proxysql" title="proxysql/proxysql Docker 镜像中文简介、标签列表与拉取命令">proxysql/proxysql 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/proxysql/proxysql" title="proxysql/proxysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/proxysql/proxysql</a>
 
 # ProxySQL Docker镜像文档
 

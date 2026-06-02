@@ -3,14 +3,12 @@ image: linuxserver/emulatorjs
 description: "linuxserver/emulatorjs 是一款基于Docker的自托管网页版多平台游戏模拟器，支持NES、SNES、PS1、街机等经典主机游戏，无需复杂配置即可快速部署。通过浏览器实现跨设备（电脑、手机、平板）访问，支持自定义ROM导入与管理，还原复古游戏操作体验。轻量化设计兼顾性能与易用性，适合家庭娱乐或复古游戏收藏爱好者，让你随时随地重温童年经典游戏时光。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/emulatorjs
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/emulatorjs
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/emulatorjs" title="linuxserver/emulatorjs Docker 镜像中文简介、标签列表与拉取命令">linuxserver/emulatorjs — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/emulatorjs" title="linuxserver/emulatorjs Docker 镜像中文简介、标签列表与拉取命令">linuxserver/emulatorjs 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/linuxserver/emulatorjs" title="linuxserver/emulatorjs Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/emulatorjs</a>
 
 # LinuxServer.io 容器介绍：emulatorjs
 

@@ -3,14 +3,12 @@ image: rocm/vllm
 description: "这是为AMD图形处理器（GPU）量身打造的、基于ROCm开源平台深度优化的vLLM Docker容器，其中vLLM作为高性能大语言模型服务库，可提供高效推理与服务能力，Docker容器则保障了部署的便捷性与环境一致性，整体方案旨在为AMD GPU用户提供兼顾性能与易用性的优化大语言模型运行环境。"
 source: https://xuanyuan.cloud/zh/r/rocm/vllm
 canonical: https://xuanyuan.cloud/zh/r/rocm/vllm
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rocm/vllm" title="rocm/vllm Docker 镜像中文简介、标签列表与拉取命令">rocm/vllm — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rocm/vllm" title="rocm/vllm Docker 镜像中文简介、标签列表与拉取命令">rocm/vllm 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/rocm/vllm" title="rocm/vllm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rocm/vllm</a>
 
 ## ROCm优化的vLLM Docker容器（适用于AMD GPU）
 

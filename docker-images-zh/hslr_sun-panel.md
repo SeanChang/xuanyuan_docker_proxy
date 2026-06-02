@@ -3,14 +3,12 @@ image: hslr/sun-panel
 description: "这是一个集成了服务器、NAS导航面板、主页及浏览器主页的综合系统，其中服务器提供核心数据处理与存储支持，NAS导航面板便于用户高效管理网络附加存储设备，主页作为统一入口整合各类功能模块，浏览器主页则为用户提供便捷的网络访问起点，整体设计旨在提升数据管理与网络使用的便捷性和效率。"
 source: https://xuanyuan.cloud/zh/r/hslr/sun-panel
 canonical: https://xuanyuan.cloud/zh/r/hslr/sun-panel
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hslr/sun-panel" title="hslr/sun-panel Docker 镜像中文简介、标签列表与拉取命令">hslr/sun-panel — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hslr/sun-panel" title="hslr/sun-panel Docker 镜像中文简介、标签列表与拉取命令">hslr/sun-panel 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/hslr/sun-panel" title="hslr/sun-panel Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hslr/sun-panel</a>
 
 # Sun-Panel 介绍
 

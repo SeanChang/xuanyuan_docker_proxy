@@ -3,14 +3,12 @@ image: ascendai/cann
 description: "ascendai/cann Docker镜像是昇腾AI异构计算架构CANN的容器化部署方案，集成CANN核心组件与工具链，深度适配昇腾系列AI芯片，提供从模型训练到推理部署的全流程加速能力。通过容器化封装简化昇腾AI开发环境配置，确保跨平台部署一致性，助力开发者快速构建高效能深度学习应用，显著提升模型训练效率与推理性能，广泛适用于科研实验、智能计算及产业级AI解决方案开发场景。"
 source: https://xuanyuan.cloud/zh/r/ascendai/cann
 canonical: https://xuanyuan.cloud/zh/r/ascendai/cann
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ascendai/cann" title="ascendai/cann Docker 镜像中文简介、标签列表与拉取命令">ascendai/cann — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ascendai/cann" title="ascendai/cann Docker 镜像中文简介、标签列表与拉取命令">ascendai/cann 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/ascendai/cann" title="ascendai/cann Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ascendai/cann</a>
 
 # Ascend CANN Docker镜像使用说明
 

@@ -3,14 +3,12 @@ image: nocodb/nocodb
 description: "NocoDB是开源的Airtable替代品，提供快速在线构建数据库的解决方案，具备丰富的电子表格界面、多视图类型、工作流自动化及编程访问能力，支持多种数据库后端和部署方式。"
 source: https://xuanyuan.cloud/zh/r/nocodb/nocodb
 canonical: https://xuanyuan.cloud/zh/r/nocodb/nocodb
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nocodb/nocodb" title="nocodb/nocodb Docker 镜像中文简介、标签列表与拉取命令">nocodb/nocodb — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nocodb/nocodb" title="nocodb/nocodb Docker 镜像中文简介、标签列表与拉取命令">nocodb/nocodb 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/nocodb/nocodb" title="nocodb/nocodb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nocodb/nocodb</a>
 
 # NocoDB - 开源的Airtable替代方案
 

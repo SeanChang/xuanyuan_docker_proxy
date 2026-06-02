@@ -3,14 +3,12 @@ image: library/flink
 description: "Apache Flink® 是一款功能强大的开源分布式流处理与批处理框架，具备低延迟、高吞吐的实时数据处理能力，支持事件时间语义与状态管理，可实现 Exactly-Once 数据一致性保障，广泛应用于实时数据分析、企业级 ETL、机器学习数据流处理及复杂事件检测等领域，通过统一的计算模型高效融合流批处理需求，为分布式数据处理提供稳定可靠的解决方案。"
 source: https://xuanyuan.cloud/zh/r/library/flink
 canonical: https://xuanyuan.cloud/zh/r/library/flink
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/flink" title="library/flink Docker 镜像中文简介、标签列表与拉取命令">library/flink — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/flink" title="library/flink Docker 镜像中文简介、标签列表与拉取命令">library/flink 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/library/flink" title="library/flink Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/flink</a>
 
 # Apache Flink Docker 镜像使用说明
 

@@ -3,14 +3,12 @@ image: p3terx/aria2-pro
 description: "Aria2 Pro Docker镜像是一个功能完善的Aria2容器化解决方案，开箱即用，支持多平台，集成自动BT追踪器获取、下载文件管理等功能，提供高速下载体验，无需复杂配置即可高效进行文件下载。"
 source: https://xuanyuan.cloud/zh/r/p3terx/aria2-pro
 canonical: https://xuanyuan.cloud/zh/r/p3terx/aria2-pro
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/p3terx/aria2-pro" title="p3terx/aria2-pro Docker 镜像中文简介、标签列表与拉取命令">p3terx/aria2-pro — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/p3terx/aria2-pro" title="p3terx/aria2-pro Docker 镜像中文简介、标签列表与拉取命令">p3terx/aria2-pro 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/p3terx/aria2-pro" title="p3terx/aria2-pro Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/p3terx/aria2-pro</a>
 
 # Aria2 Pro Docker
 

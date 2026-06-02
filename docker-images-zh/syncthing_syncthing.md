@@ -3,14 +3,12 @@ image: syncthing/syncthing
 description: "这是一种开源的持续文件同步工具，能够自动检测文件变化并实时同步多设备、多平台的文件内容，确保数据在不同终端间保持一致；用户可自由访问、修改源代码，支持自定义同步规则，适用于个人日常文件管理、团队协作或企业数据备份场景，无需依赖第三方闭源服务，既保障数据安全与隐私，又能提升跨设备文件同步与管理的效率。"
 source: https://xuanyuan.cloud/zh/r/syncthing/syncthing
 canonical: https://xuanyuan.cloud/zh/r/syncthing/syncthing
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/syncthing/syncthing" title="syncthing/syncthing Docker 镜像中文简介、标签列表与拉取命令">syncthing/syncthing — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/syncthing/syncthing" title="syncthing/syncthing Docker 镜像中文简介、标签列表与拉取命令">syncthing/syncthing 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/syncthing/syncthing" title="syncthing/syncthing Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/syncthing/syncthing</a>
 
 # Syncthing 介绍
 

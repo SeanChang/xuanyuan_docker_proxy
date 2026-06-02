@@ -3,14 +3,12 @@ image: fireflyiii/core
 description: "Firefly III 是一款开源的个人财务管理工具，支持用户详细跟踪收入、支出、预算及财务目标，具备多货币与多账户管理功能，数据本地存储以保障隐私安全，界面友好且可自定义，能帮助用户全面掌控个人财务状况，适合希望自主管理财务、记录每笔交易并规划长期财务目标的用户使用。"
 source: https://xuanyuan.cloud/zh/r/fireflyiii/core
 canonical: https://xuanyuan.cloud/zh/r/fireflyiii/core
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/fireflyiii/core" title="fireflyiii/core Docker 镜像中文简介、标签列表与拉取命令">fireflyiii/core — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/fireflyiii/core" title="fireflyiii/core Docker 镜像中文简介、标签列表与拉取命令">fireflyiii/core 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/fireflyiii/core" title="fireflyiii/core Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/fireflyiii/core</a>
 
 # Firefly III：免费开源的个人财务管理工具
 

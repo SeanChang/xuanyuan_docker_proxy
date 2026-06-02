@@ -3,14 +3,12 @@ image: kindest/base
 description: "KIND（Kubernetes IN Docker）项目的基础镜像，用于提供构建和运行本地Kubernetes集群所需的底层环境，支持KIND工具创建开发、测试用Kubernetes集群。"
 source: https://xuanyuan.cloud/zh/r/kindest/base
 canonical: https://xuanyuan.cloud/zh/r/kindest/base
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kindest/base" title="kindest/base Docker 镜像中文简介、标签列表与拉取命令">kindest/base — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kindest/base" title="kindest/base Docker 镜像中文简介、标签列表与拉取命令">kindest/base 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/kindest/base" title="kindest/base Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kindest/base</a>
 
 # kind 基础镜像技术文档
 

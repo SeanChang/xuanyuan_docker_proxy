@@ -3,14 +3,12 @@ image: atlassian/bamboo-server
 description: "Atlassian Bamboo Server Docker镜像提供企业级持续集成与持续部署（CI/CD）服务，用于自动化软件构建、测试和部署流程，支持团队协作与多环境管理，助力高效交付软件项目。"
 source: https://xuanyuan.cloud/zh/r/atlassian/bamboo-server
 canonical: https://xuanyuan.cloud/zh/r/atlassian/bamboo-server
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/atlassian/bamboo-server" title="atlassian/bamboo-server Docker 镜像中文简介、标签列表与拉取命令">atlassian/bamboo-server — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/atlassian/bamboo-server" title="atlassian/bamboo-server Docker 镜像中文简介、标签列表与拉取命令">atlassian/bamboo-server 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/atlassian/bamboo-server" title="atlassian/bamboo-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/atlassian/bamboo-server</a>
 
 # Atlassian Bamboo Docker 镜像文档
 

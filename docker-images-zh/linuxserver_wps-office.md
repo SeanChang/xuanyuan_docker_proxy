@@ -3,14 +3,12 @@ image: linuxserver/wps-office
 description: "LinuxServer.io提供的WPS Office Docker镜像，用于在容器环境中便捷部署和运行WPS Office办公套件，支持文档、表格、演示文稿等功能，具备易用性和持续更新特性。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/wps-office
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/wps-office
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/wps-office" title="linuxserver/wps-office Docker 镜像中文简介、标签列表与拉取命令">linuxserver/wps-office — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/wps-office" title="linuxserver/wps-office Docker 镜像中文简介、标签列表与拉取命令">linuxserver/wps-office 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/linuxserver/wps-office" title="linuxserver/wps-office Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/wps-office</a>
 
 # linuxserver/wps-office
 

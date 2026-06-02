@@ -3,14 +3,12 @@ image: mediagis/nominatim
 description: "可直接运行的Nominatim容器，提供地理编码（地址与坐标互转）服务。"
 source: https://xuanyuan.cloud/zh/r/mediagis/nominatim
 canonical: https://xuanyuan.cloud/zh/r/mediagis/nominatim
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mediagis/nominatim" title="mediagis/nominatim Docker 镜像中文简介、标签列表与拉取命令">mediagis/nominatim — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mediagis/nominatim" title="mediagis/nominatim Docker 镜像中文简介、标签列表与拉取命令">mediagis/nominatim 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/mediagis/nominatim" title="mediagis/nominatim Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mediagis/nominatim</a>
 
 # Nominatim Docker 镜像文档
 

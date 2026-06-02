@@ -3,14 +3,12 @@ image: pulp/pulp-ci-centos
 description: "Pulp 3的基础镜像，提供运行Pulp 3所需的核心依赖和环境，用于构建和部署Pulp 3相关服务。"
 source: https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos
 canonical: https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos" title="pulp/pulp-ci-centos Docker 镜像中文简介、标签列表与拉取命令">pulp/pulp-ci-centos — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos" title="pulp/pulp-ci-centos Docker 镜像中文简介、标签列表与拉取命令">pulp/pulp-ci-centos 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos" title="pulp/pulp-ci-centos Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos</a>
 
 # Pulp 3 基础镜像
 

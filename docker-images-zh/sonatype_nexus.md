@@ -3,14 +3,12 @@ image: sonatype/nexus
 description: "Sonatype Nexus是一款企业级软件仓库管理器，支持Maven、npm、Docker等多种包格式，可集中存储、管理开发依赖组件，集成安全扫描功能实时检测漏洞，助力团队在CI/CD流程中高效管控软件资产，确保组件合规性与安全性，是实现开源治理和DevSecOps的核心工具，帮助企业提升开发效率并降低供应链风险。"
 source: https://xuanyuan.cloud/zh/r/sonatype/nexus
 canonical: https://xuanyuan.cloud/zh/r/sonatype/nexus
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/sonatype/nexus" title="sonatype/nexus Docker 镜像中文简介、标签列表与拉取命令">sonatype/nexus — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/sonatype/nexus" title="sonatype/nexus Docker 镜像中文简介、标签列表与拉取命令">sonatype/nexus 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/sonatype/nexus" title="sonatype/nexus Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/sonatype/nexus</a>
 
 # sonatype/docker-nexus  
 

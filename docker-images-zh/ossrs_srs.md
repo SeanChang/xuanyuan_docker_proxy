@@ -3,14 +3,12 @@ image: ossrs/srs
 description: "SRS（Simple Realtime Server）是一款开源实时音视频服务器，支持RTMP、HLS、WebRTC等多种音视频传输协议，广泛应用于直播、实时互动、在线教育及视频会议等场景；Docker作为轻量级容器化平台，具备快速部署、环境隔离及跨平台运行能力，在Docker中运行SRS可有效简化音视频服务配置流程，降低环境依赖问题，提升开发与运维效率，满足各类实时音视频应用的部署需求。"
 source: https://xuanyuan.cloud/zh/r/ossrs/srs
 canonical: https://xuanyuan.cloud/zh/r/ossrs/srs
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ossrs/srs" title="ossrs/srs Docker 镜像中文简介、标签列表与拉取命令">ossrs/srs — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ossrs/srs" title="ossrs/srs Docker 镜像中文简介、标签列表与拉取命令">ossrs/srs 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/ossrs/srs" title="ossrs/srs Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ossrs/srs</a>
 
 ## SRS Docker镜像介绍  
 

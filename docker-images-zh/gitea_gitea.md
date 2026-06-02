@@ -3,14 +3,12 @@ image: gitea/gitea
 description: "Gitea，寓意“一杯茶的功夫轻松玩转Git”，是一款简单易用的自托管Git服务，专为个人开发者与中小型团队打造，提供轻量高效的代码托管解决方案，无需复杂配置即可快速部署，支持版本控制、代码审查、项目管理等核心功能，让Git使用体验如品茶般惬意无忧，轻松满足自托管代码管理需求。"
 source: https://xuanyuan.cloud/zh/r/gitea/gitea
 canonical: https://xuanyuan.cloud/zh/r/gitea/gitea
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gitea/gitea" title="gitea/gitea Docker 镜像中文简介、标签列表与拉取命令">gitea/gitea — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gitea/gitea" title="gitea/gitea Docker 镜像中文简介、标签列表与拉取命令">gitea/gitea 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/gitea/gitea" title="gitea/gitea Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gitea/gitea</a>
 
 # Gitea Docker Rootless 安装指南
 

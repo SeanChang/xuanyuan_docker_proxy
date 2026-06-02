@@ -3,14 +3,12 @@ image: bitnamicharts/postgresql
 description: "Bitnami的PostgreSQL Helm chart，用于在Kubernetes环境中便捷部署和管理PostgreSQL数据库，支持灵活配置与可靠运行。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/postgresql
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/postgresql
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/postgresql" title="bitnamicharts/postgresql Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/postgresql — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/postgresql" title="bitnamicharts/postgresql Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/postgresql 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/bitnamicharts/postgresql" title="bitnamicharts/postgresql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/postgresql</a>
 
 # Bitnami PostgreSQL 镜像文档
 

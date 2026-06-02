@@ -3,14 +3,12 @@ image: linuxserver/emby
 description: "LinuxServer维护的Emby媒体服务器Docker镜像，提供专业的家庭媒体中心解决方案，可集中管理电影、剧集、音乐、照片等多媒体资源，并通过网页或客户端向多设备（如智能电视、手机、平板）流式传输内容。支持自动转码、字幕匹配、元数据搜刮，配备直观的Web管理界面，支持用户权限管理、播放历史同步及个性化推荐。容器化部署确保环境隔离与快速更新，适合家庭或小型团队搭建私有媒体服务。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/emby
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/emby
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/emby" title="linuxserver/emby Docker 镜像中文简介、标签列表与拉取命令">linuxserver/emby — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/emby" title="linuxserver/emby Docker 镜像中文简介、标签列表与拉取命令">linuxserver/emby 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/linuxserver/emby" title="linuxserver/emby Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/emby</a>
 
 # LinuxServer.io emby 容器介绍
 

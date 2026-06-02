@@ -3,14 +3,12 @@ image: jlesage/freefilesync
 description: "Docker容器化的FreeFileSync，提供便捷的跨平台文件同步功能，支持本地与网络位置间的文件备份及一致性维护。"
 source: https://xuanyuan.cloud/zh/r/jlesage/freefilesync
 canonical: https://xuanyuan.cloud/zh/r/jlesage/freefilesync
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jlesage/freefilesync" title="jlesage/freefilesync Docker 镜像中文简介、标签列表与拉取命令">jlesage/freefilesync — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jlesage/freefilesync" title="jlesage/freefilesync Docker 镜像中文简介、标签列表与拉取命令">jlesage/freefilesync 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/jlesage/freefilesync" title="jlesage/freefilesync Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jlesage/freefilesync</a>
 
 # FreeFileSync Docker 镜像
 

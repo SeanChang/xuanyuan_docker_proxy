@@ -3,14 +3,12 @@ image: dyrnq/etcd
 description: "Kubernetes官方分布式键值存储镜像，为K8s集群提供高可用、一致性的数据存储服务，用于保存集群状态和配置信息，是Kubernetes核心组件之一。"
 source: https://xuanyuan.cloud/zh/r/dyrnq/etcd
 canonical: https://xuanyuan.cloud/zh/r/dyrnq/etcd
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dyrnq/etcd" title="dyrnq/etcd Docker 镜像中文简介、标签列表与拉取命令">dyrnq/etcd — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dyrnq/etcd" title="dyrnq/etcd Docker 镜像中文简介、标签列表与拉取命令">dyrnq/etcd 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/dyrnq/etcd" title="dyrnq/etcd Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dyrnq/etcd</a>
 
 # registry.k8s.io/etcd 镜像文档
 

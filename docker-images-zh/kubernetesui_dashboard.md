@@ -3,14 +3,12 @@ image: kubernetesui/dashboard
 description: "用于Kubernetes集群的通用Web用户界面"
 source: https://xuanyuan.cloud/zh/r/kubernetesui/dashboard
 canonical: https://xuanyuan.cloud/zh/r/kubernetesui/dashboard
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kubernetesui/dashboard" title="kubernetesui/dashboard Docker 镜像中文简介、标签列表与拉取命令">kubernetesui/dashboard — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kubernetesui/dashboard" title="kubernetesui/dashboard Docker 镜像中文简介、标签列表与拉取命令">kubernetesui/dashboard 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/kubernetesui/dashboard" title="kubernetesui/dashboard Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kubernetesui/dashboard</a>
 
 # Kubernetes Dashboard 镜像文档
 

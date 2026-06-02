@@ -3,14 +3,12 @@ image: containrrr/watchtower
 description: "一种用于自动化Docker容器基础镜像更新的流程，旨在通过自动化手段减少人工干预、提升更新效率，同时确保容器环境的安全性与稳定性，适用于各类基于Docker的应用部署场景，为开发和运维团队提供高效、可靠的基础镜像管理解决方案。"
 source: https://xuanyuan.cloud/zh/r/containrrr/watchtower
 canonical: https://xuanyuan.cloud/zh/r/containrrr/watchtower
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/containrrr/watchtower" title="containrrr/watchtower Docker 镜像中文简介、标签列表与拉取命令">containrrr/watchtower — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/containrrr/watchtower" title="containrrr/watchtower Docker 镜像中文简介、标签列表与拉取命令">containrrr/watchtower 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/containrrr/watchtower" title="containrrr/watchtower Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/containrrr/watchtower</a>
 
 # Watchtower
 

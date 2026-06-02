@@ -3,14 +3,12 @@ image: onerahmet/openai-whisper-asr-webservice
 description: "whisper-asr-webservice 是一个基于 OpenAI Whisper 语音识别模型构建的 Web 服务，提供便捷的 API 接口，支持多语言语音到文本的实时或批量转录，用户可根据需求选择 tiny、base、small、medium、large 等不同大小的模型，具备易于部署、高效准确的特点，适用于将语音识别功能快速集成到各类应用、服务或系统中。"
 source: https://xuanyuan.cloud/zh/r/onerahmet/openai-whisper-asr-webservice
 canonical: https://xuanyuan.cloud/zh/r/onerahmet/openai-whisper-asr-webservice
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/onerahmet/openai-whisper-asr-webservice" title="onerahmet/openai-whisper-asr-webservice Docker 镜像中文简介、标签列表与拉取命令">onerahmet/openai-whisper-asr-webservice — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/onerahmet/openai-whisper-asr-webservice" title="onerahmet/openai-whisper-asr-webservice Docker 镜像中文简介、标签列表与拉取命令">onerahmet/openai-whisper-asr-webservice 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/onerahmet/openai-whisper-asr-webservice" title="onerahmet/openai-whisper-asr-webservice Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/onerahmet/openai-whisper-asr-webservice</a>
 
 ![Release]([])
 ![Docker Pulls]([])

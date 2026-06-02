@@ -3,14 +3,12 @@ image: library/cassandra
 description: "Apache Cassandra是一款开源的分布式存储系统。"
 source: https://xuanyuan.cloud/zh/r/library/cassandra
 canonical: https://xuanyuan.cloud/zh/r/library/cassandra
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/cassandra" title="library/cassandra Docker 镜像中文简介、标签列表与拉取命令">library/cassandra — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/cassandra" title="library/cassandra Docker 镜像中文简介、标签列表与拉取命令">library/cassandra 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/library/cassandra" title="library/cassandra Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/cassandra</a>
 
 # Cassandra Docker镜像技术文档
 

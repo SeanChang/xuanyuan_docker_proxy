@@ -3,14 +3,12 @@ image: rocker/cuda
 description: "集成NVIDIA CUDA库的Rocker镜像，提供R语言环境下的GPU加速计算支持，基于rocker-org/rocker-versioned2项目构建。"
 source: https://xuanyuan.cloud/zh/r/rocker/cuda
 canonical: https://xuanyuan.cloud/zh/r/rocker/cuda
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rocker/cuda" title="rocker/cuda Docker 镜像中文简介、标签列表与拉取命令">rocker/cuda — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rocker/cuda" title="rocker/cuda Docker 镜像中文简介、标签列表与拉取命令">rocker/cuda 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/rocker/cuda" title="rocker/cuda Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rocker/cuda</a>
 
 ## 镜像概述
 本镜像基于 [rocker-org/rocker-versioned2](https://github.com/rocker-org/rocker-versioned2) 项目构建，详细描述参见 [Rocker官方文档](https://rocker-project.org/images/versioned/cuda)。

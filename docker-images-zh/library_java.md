@@ -3,14 +3,12 @@ image: library/java
 description: "此内容已弃用，不再被推荐使用，后续可能停止维护或缺乏更新支持，建议改用“openjdk”（或其他JDK实现，如Oracle JDK等），这些替代方案通常更受社区支持、更新及时且功能完善，适合继续进行Java相关的开发与应用部署工作。"
 source: https://xuanyuan.cloud/zh/r/library/java
 canonical: https://xuanyuan.cloud/zh/r/library/java
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/java" title="library/java Docker 镜像中文简介、标签列表与拉取命令">library/java — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/java" title="library/java Docker 镜像中文简介、标签列表与拉取命令">library/java 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/library/java" title="library/java Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/java</a>
 
 # 镜像弃用通知  
 

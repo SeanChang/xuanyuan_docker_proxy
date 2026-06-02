@@ -3,14 +3,12 @@ image: kafbat/kafka-ui
 description: "Apache Kafka的Kafbat UI镜像，提供可视化用户界面，用于管理和监控Apache Kafka集群。"
 source: https://xuanyuan.cloud/zh/r/kafbat/kafka-ui
 canonical: https://xuanyuan.cloud/zh/r/kafbat/kafka-ui
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kafbat/kafka-ui" title="kafbat/kafka-ui Docker 镜像中文简介、标签列表与拉取命令">kafbat/kafka-ui — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kafbat/kafka-ui" title="kafbat/kafka-ui Docker 镜像中文简介、标签列表与拉取命令">kafbat/kafka-ui 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/kafbat/kafka-ui" title="kafbat/kafka-ui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kafbat/kafka-ui</a>
 
 # Kafbat UI Docker镜像技术文档
 

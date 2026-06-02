@@ -3,14 +3,12 @@ image: bitnami/mariadb
 description: "Bitnami Secure Image for MariaDB是一款针对MariaDB数据库开发的预配置安全镜像，它集成自动化安全补丁、合规性检查工具及加固配置，可快速在容器、虚拟机或云平台等环境中部署，提供持续更新与维护支持，有效降低部署风险，确保数据库运行的稳定性与安全性，满足企业级应用对数据保护的严格需求。"
 source: https://xuanyuan.cloud/zh/r/bitnami/mariadb
 canonical: https://xuanyuan.cloud/zh/r/bitnami/mariadb
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/mariadb" title="bitnami/mariadb Docker 镜像中文简介、标签列表与拉取命令">bitnami/mariadb — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/mariadb" title="bitnami/mariadb Docker 镜像中文简介、标签列表与拉取命令">bitnami/mariadb 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/bitnami/mariadb" title="bitnami/mariadb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/mariadb</a>
 
 # Bitnami MariaDB 软件包介绍
 

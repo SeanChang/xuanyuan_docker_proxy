@@ -3,14 +3,12 @@ image: kasmweb/ubuntu-noble-desktop
 description: "适用于Kasm Workspaces的Ubuntu生产力桌面"
 source: https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop
 canonical: https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop" title="kasmweb/ubuntu-noble-desktop Docker 镜像中文简介、标签列表与拉取命令">kasmweb/ubuntu-noble-desktop — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop" title="kasmweb/ubuntu-noble-desktop Docker 镜像中文简介、标签列表与拉取命令">kasmweb/ubuntu-noble-desktop 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop" title="kasmweb/ubuntu-noble-desktop Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop</a>
 
 **Kasm Workspaces 是一个Docker容器流平台，用于提供基于浏览器的桌面、应用程序和Web服务访问。**
 

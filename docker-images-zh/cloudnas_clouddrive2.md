@@ -3,14 +3,12 @@ image: cloudnas/clouddrive2
 description: "CloudDrive 是一款功能强大的多云存储管理工具，其核心特性在于支持将各类云盘（如百度云、阿里云、Google Drive等）本地挂载，使用户可像操作本地硬盘一样直接访问、编辑和管理云端文件，无需反复切换不同云平台，有效整合分散的云存储资源，大幅提升跨云文件管理的便捷性与效率。"
 source: https://xuanyuan.cloud/zh/r/cloudnas/clouddrive2
 canonical: https://xuanyuan.cloud/zh/r/cloudnas/clouddrive2
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cloudnas/clouddrive2" title="cloudnas/clouddrive2 Docker 镜像中文简介、标签列表与拉取命令">cloudnas/clouddrive2 — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cloudnas/clouddrive2" title="cloudnas/clouddrive2 Docker 镜像中文简介、标签列表与拉取命令">cloudnas/clouddrive2 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/cloudnas/clouddrive2" title="cloudnas/clouddrive2 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cloudnas/clouddrive2</a>
 
 ## CloudDrive2 介绍  
 

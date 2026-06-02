@@ -3,14 +3,12 @@ image: bitnami/etcd
 description: "Bitnami Secure Image for etcd是Bitnami公司推出的针对分布式键值存储系统etcd的安全优化镜像，集成预配置安全策略、漏洞防护及合规性验证功能，适用于容器化环境与Kubernetes集群，旨在帮助用户便捷部署、高效管理安全可靠的etcd实例，保障数据一致性、服务发现及配置管理过程中的信息安全，同时简化运维流程并降低潜在安全风险。"
 source: https://xuanyuan.cloud/zh/r/bitnami/etcd
 canonical: https://xuanyuan.cloud/zh/r/bitnami/etcd
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/etcd" title="bitnami/etcd Docker 镜像中文简介、标签列表与拉取命令">bitnami/etcd — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/etcd" title="bitnami/etcd Docker 镜像中文简介、标签列表与拉取命令">bitnami/etcd 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/bitnami/etcd" title="bitnami/etcd Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/etcd</a>
 
 # Bitnami Secure Image for etcd 介绍  
 

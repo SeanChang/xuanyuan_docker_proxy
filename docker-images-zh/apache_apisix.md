@@ -3,14 +3,12 @@ image: apache/apisix
 description: "Apache APISIX是一款动态、实时、高性能的云原生API网关，提供负载均衡、动态上游、金丝雀发布、熔断、认证、可观测性等丰富流量管理功能，适用于处理传统南北向流量及服务间东西向流量。"
 source: https://xuanyuan.cloud/zh/r/apache/apisix
 canonical: https://xuanyuan.cloud/zh/r/apache/apisix
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/apisix" title="apache/apisix Docker 镜像中文简介、标签列表与拉取命令">apache/apisix — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/apisix" title="apache/apisix Docker 镜像中文简介、标签列表与拉取命令">apache/apisix 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/apache/apisix" title="apache/apisix Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/apisix</a>
 
 ## Apache APISIX API网关是什么
 

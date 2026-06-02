@@ -3,14 +3,12 @@ image: uozi/nginx-ui
 description: "Nginx UI是一个基于Web的Nginx管理界面，支持配置编辑、Let's Encrypt证书自动部署与续期、服务器监控、日志查看等功能，采用Go和Vue开发，提供用户友好的操作界面，简化Nginx管理流程。"
 source: https://xuanyuan.cloud/zh/r/uozi/nginx-ui
 canonical: https://xuanyuan.cloud/zh/r/uozi/nginx-ui
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/uozi/nginx-ui" title="uozi/nginx-ui Docker 镜像中文简介、标签列表与拉取命令">uozi/nginx-ui — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/uozi/nginx-ui" title="uozi/nginx-ui Docker 镜像中文简介、标签列表与拉取命令">uozi/nginx-ui 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/uozi/nginx-ui" title="uozi/nginx-ui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/uozi/nginx-ui</a>
 
 # Nginx UI
 

@@ -3,14 +3,12 @@ image: kodcloud/kodbox
 description: "可道云（Kodbox）最新镜像，这是一款集成文件存储、在线协作、权限管理等功能的企业级云文档管理工具，支持多终端同步与高效团队协作，具备安全的数据加密与灵活的访问控制机制，助力用户轻松实现文件的集中管理与共享，官方网站为[]"
 source: https://xuanyuan.cloud/zh/r/kodcloud/kodbox
 canonical: https://xuanyuan.cloud/zh/r/kodcloud/kodbox
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kodcloud/kodbox" title="kodcloud/kodbox Docker 镜像中文简介、标签列表与拉取命令">kodcloud/kodbox — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kodcloud/kodbox" title="kodcloud/kodbox Docker 镜像中文简介、标签列表与拉取命令">kodcloud/kodbox 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/kodcloud/kodbox" title="kodcloud/kodbox Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kodcloud/kodbox</a>
 
 # 可道云 Docker 镜像部署指南
 

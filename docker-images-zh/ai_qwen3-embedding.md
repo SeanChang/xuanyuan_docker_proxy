@@ -3,14 +3,12 @@ image: ai/qwen3-embedding
 description: "Qwen3 Embedding是Qwen系列最新专有模型，专为文本嵌入和排序任务设计，支持119种语言，提供0.6B、4B、8B等多种尺寸模型，适用于文本检索、代码检索、分类、聚类、平行文本挖掘等高级任务。"
 source: https://xuanyuan.cloud/zh/r/ai/qwen3-embedding
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen3-embedding
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen3-embedding" title="ai/qwen3-embedding Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-embedding — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen3-embedding" title="ai/qwen3-embedding Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-embedding 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/ai/qwen3-embedding" title="ai/qwen3-embedding Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-embedding</a>
 
 # Qwen3-Embedding
 

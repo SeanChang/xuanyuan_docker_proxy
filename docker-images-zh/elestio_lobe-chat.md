@@ -3,14 +3,12 @@ image: elestio/lobe-chat
 description: "由Elestio验证和打包的Lobe Chat，一款开源高性能AI聊天框架，支持一键部署私人ChatGPT/Gemini/本地LLM应用。"
 source: https://xuanyuan.cloud/zh/r/elestio/lobe-chat
 canonical: https://xuanyuan.cloud/zh/r/elestio/lobe-chat
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/elestio/lobe-chat" title="elestio/lobe-chat Docker 镜像中文简介、标签列表与拉取命令">elestio/lobe-chat — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/elestio/lobe-chat" title="elestio/lobe-chat Docker 镜像中文简介、标签列表与拉取命令">elestio/lobe-chat 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/elestio/lobe-chat" title="elestio/lobe-chat Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/elestio/lobe-chat</a>
 
 # Lobe Chat，由Elestio验证和打包
 

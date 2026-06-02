@@ -3,14 +3,12 @@ image: library/perl
 description: "Perl是一种高级、通用、解释型动态编程语言，此Docker镜像用于在容器环境中运行Perl应用程序，支持多种版本和变体以适应不同需求。"
 source: https://xuanyuan.cloud/zh/r/library/perl
 canonical: https://xuanyuan.cloud/zh/r/library/perl
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/perl" title="library/perl Docker 镜像中文简介、标签列表与拉取命令">library/perl — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/perl" title="library/perl Docker 镜像中文简介、标签列表与拉取命令">library/perl 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/library/perl" title="library/perl Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/perl</a>
 
 # 快速参考
 

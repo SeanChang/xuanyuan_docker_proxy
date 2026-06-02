@@ -3,14 +3,12 @@ image: alpinelinux/gitlab
 description: "基于Alpine Linux的轻量级Gitlab容器镜像，提供Git仓库管理、代码审查、CI/CD流水线等DevOps功能，适合资源受限环境部署。"
 source: https://xuanyuan.cloud/zh/r/alpinelinux/gitlab
 canonical: https://xuanyuan.cloud/zh/r/alpinelinux/gitlab
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpinelinux/gitlab" title="alpinelinux/gitlab Docker 镜像中文简介、标签列表与拉取命令">alpinelinux/gitlab — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpinelinux/gitlab" title="alpinelinux/gitlab Docker 镜像中文简介、标签列表与拉取命令">alpinelinux/gitlab 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/alpinelinux/gitlab" title="alpinelinux/gitlab Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpinelinux/gitlab</a>
 
 # 基于Alpine Linux的Gitlab镜像文档  
 

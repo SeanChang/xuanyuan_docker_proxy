@@ -3,14 +3,12 @@ image: library/nextcloud
 description: "Nextcloud手动构建Docker镜像是一款针对开源文件同步与共享平台Nextcloud的容器化部署包，支持用户通过手动配置方式构建，可灵活适配自建服务器环境，提供安全的文件存储、同步、共享及协作功能，适用于个人或企业搭建私有云存储系统，兼具部署便捷性与自定义扩展性，助力实现数据自主管理与高效协作。"
 source: https://xuanyuan.cloud/zh/r/library/nextcloud
 canonical: https://xuanyuan.cloud/zh/r/library/nextcloud
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/nextcloud" title="library/nextcloud Docker 镜像中文简介、标签列表与拉取命令">library/nextcloud — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/nextcloud" title="library/nextcloud Docker 镜像中文简介、标签列表与拉取命令">library/nextcloud 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/library/nextcloud" title="library/nextcloud Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/nextcloud</a>
 
 # Nextcloud Docker 镜像使用介绍
 

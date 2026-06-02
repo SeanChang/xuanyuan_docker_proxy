@@ -3,14 +3,12 @@ image: nginx/nginx-ingress
 description: "NGINX和NGINX Plus入口控制器是专为Kubernetes设计的流量管理工具，主要用于管理外部HTTP/HTTPS流量进入Kubernetes集群，支持请求路由、负载均衡、SSL终止、流量控制等功能，适用于容器化应用和微服务架构，其中NGINX Plus还提供商业支持、高级监控和增强的负载均衡能力，帮助提升集群流量管理的效率与安全性。"
 source: https://xuanyuan.cloud/zh/r/nginx/nginx-ingress
 canonical: https://xuanyuan.cloud/zh/r/nginx/nginx-ingress
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nginx/nginx-ingress" title="nginx/nginx-ingress Docker 镜像中文简介、标签列表与拉取命令">nginx/nginx-ingress — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nginx/nginx-ingress" title="nginx/nginx-ingress Docker 镜像中文简介、标签列表与拉取命令">nginx/nginx-ingress 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/nginx/nginx-ingress" title="nginx/nginx-ingress Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nginx/nginx-ingress</a>
 
 # NGINX Ingress Controller
 

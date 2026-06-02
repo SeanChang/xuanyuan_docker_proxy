@@ -3,14 +3,12 @@ image: bitnami/moodle
 description: "Bitnami提供的Moodle安全镜像，用于快速部署安全、预配置的开源学习管理系统。"
 source: https://xuanyuan.cloud/zh/r/bitnami/moodle
 canonical: https://xuanyuan.cloud/zh/r/bitnami/moodle
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/moodle" title="bitnami/moodle Docker 镜像中文简介、标签列表与拉取命令">bitnami/moodle — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/moodle" title="bitnami/moodle Docker 镜像中文简介、标签列表与拉取命令">bitnami/moodle 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/bitnami/moodle" title="bitnami/moodle Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/moodle</a>
 
 # Bitnami Secure Image for moodle 技术文档
 

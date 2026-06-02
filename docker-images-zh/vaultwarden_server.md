@@ -3,14 +3,12 @@ image: vaultwarden/server
 description: "Bitwarden服务器API的Rust替代实现，包含Web Vault，兼容官方客户端，适合资源受限环境的自托管部署。"
 source: https://xuanyuan.cloud/zh/r/vaultwarden/server
 canonical: https://xuanyuan.cloud/zh/r/vaultwarden/server
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/vaultwarden/server" title="vaultwarden/server Docker 镜像中文简介、标签列表与拉取命令">vaultwarden/server — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/vaultwarden/server" title="vaultwarden/server Docker 镜像中文简介、标签列表与拉取命令">vaultwarden/server 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/vaultwarden/server" title="vaultwarden/server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/vaultwarden/server</a>
 
 ### Bitwarden服务器API的Rust替代实现，兼容官方客户端，适合自托管部署
 

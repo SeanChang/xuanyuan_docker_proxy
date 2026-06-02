@@ -3,14 +3,12 @@ image: semitechnologies/weaviate
 description: "Weaviate向量数据库是专为新一代软件应用打造的专用数据库，具备高效存储、索引与查询向量嵌入的核心能力，能深度支持语义搜索、智能推荐、自然语言处理等AI驱动场景，可快速响应现代应用对非结构化数据理解与处理的需求，为构建创新软件系统提供坚实的数据基础。"
 source: https://xuanyuan.cloud/zh/r/semitechnologies/weaviate
 canonical: https://xuanyuan.cloud/zh/r/semitechnologies/weaviate
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/semitechnologies/weaviate" title="semitechnologies/weaviate Docker 镜像中文简介、标签列表与拉取命令">semitechnologies/weaviate — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/semitechnologies/weaviate" title="semitechnologies/weaviate Docker 镜像中文简介、标签列表与拉取命令">semitechnologies/weaviate 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/semitechnologies/weaviate" title="semitechnologies/weaviate Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/semitechnologies/weaviate</a>
 
 # Weaviate：新一代软件的AI原生数据库
 

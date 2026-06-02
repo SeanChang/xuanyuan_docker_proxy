@@ -3,14 +3,12 @@ image: openeuler/vllm-cpu
 description: "官方vLLM Ascend Docker镜像，基于openEuler构建，提供快速高效的LLM推理和服务能力，支持PagedAttention内存管理、连续批处理、多种量化技术及优化内核，适用于高性能语言模型部署。"
 source: https://xuanyuan.cloud/zh/r/openeuler/vllm-cpu
 canonical: https://xuanyuan.cloud/zh/r/openeuler/vllm-cpu
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/vllm-cpu" title="openeuler/vllm-cpu Docker 镜像中文简介、标签列表与拉取命令">openeuler/vllm-cpu — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/vllm-cpu" title="openeuler/vllm-cpu Docker 镜像中文简介、标签列表与拉取命令">openeuler/vllm-cpu 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/openeuler/vllm-cpu" title="openeuler/vllm-cpu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/vllm-cpu</a>
 
 # vLLM Ascend Docker镜像文档
 

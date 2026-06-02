@@ -3,14 +3,12 @@ image: confluentinc/cp-kafka
 description: "Confluent官方提供的Kafka（社区版）Docker镜像，是专为便捷部署和运行Kafka社区版而设计的官方容器化解决方案，集成了必要的配置与依赖，支持用户通过Docker快速搭建Kafka服务，适用于开发、测试及生产环境中对Kafka社区版的轻量级、标准化部署需求，为开发者和运维人员提供了高效、可靠的Kafka运行环境。"
 source: https://xuanyuan.cloud/zh/r/confluentinc/cp-kafka
 canonical: https://xuanyuan.cloud/zh/r/confluentinc/cp-kafka
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/confluentinc/cp-kafka" title="confluentinc/cp-kafka Docker 镜像中文简介、标签列表与拉取命令">confluentinc/cp-kafka — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/confluentinc/cp-kafka" title="confluentinc/cp-kafka Docker 镜像中文简介、标签列表与拉取命令">confluentinc/cp-kafka 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/confluentinc/cp-kafka" title="confluentinc/cp-kafka Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/confluentinc/cp-kafka</a>
 
 # Apache Kafka 的 Confluent 社区版 Docker 镜像  
 

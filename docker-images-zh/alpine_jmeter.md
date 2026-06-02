@@ -3,14 +3,12 @@ image: alpine/jmeter
 description: "在Docker环境中运行JMeter性能测试工具的镜像，便于快速部署和执行性能测试任务。"
 source: https://xuanyuan.cloud/zh/r/alpine/jmeter
 canonical: https://xuanyuan.cloud/zh/r/alpine/jmeter
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/jmeter" title="alpine/jmeter Docker 镜像中文简介、标签列表与拉取命令">alpine/jmeter — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/jmeter" title="alpine/jmeter Docker 镜像中文简介、标签列表与拉取命令">alpine/jmeter 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/alpine/jmeter" title="alpine/jmeter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpine/jmeter</a>
 
 # docker-jmeter 镜像文档
 

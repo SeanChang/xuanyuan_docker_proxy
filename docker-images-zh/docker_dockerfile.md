@@ -3,14 +3,12 @@ image: docker/dockerfile
 description: "这些是官方提供的Dockerfile前端镜像，主要功能是支持通过BuildKit构建Dockerfile，作为构建流程中的关键前端工具，能够有效配合BuildKit提升Dockerfile的构建效率、安全性与灵活性，为开发者提供官方认可的标准化构建方案，适用于各类基于Docker的应用开发与部署场景，确保构建过程的稳定可靠及操作便捷性。"
 source: https://xuanyuan.cloud/zh/r/docker/dockerfile
 canonical: https://xuanyuan.cloud/zh/r/docker/dockerfile
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/docker/dockerfile" title="docker/dockerfile Docker 镜像中文简介、标签列表与拉取命令">docker/dockerfile — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/docker/dockerfile" title="docker/dockerfile Docker 镜像中文简介、标签列表与拉取命令">docker/dockerfile 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/docker/dockerfile" title="docker/dockerfile Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/docker/dockerfile</a>
 
 # BuildKit Dockerfile 前端  
 

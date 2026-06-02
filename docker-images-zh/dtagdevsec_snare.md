@@ -3,14 +3,12 @@ image: dtagdevsec/snare
 description: "T-Pot Snare是T-Pot蜜罐平台中的Web蜜罐组件，用于模拟Web应用程序诱捕攻击者，记录其攻击行为和流量数据，助力安全威胁分析与情报收集。"
 source: https://xuanyuan.cloud/zh/r/dtagdevsec/snare
 canonical: https://xuanyuan.cloud/zh/r/dtagdevsec/snare
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dtagdevsec/snare" title="dtagdevsec/snare Docker 镜像中文简介、标签列表与拉取命令">dtagdevsec/snare — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dtagdevsec/snare" title="dtagdevsec/snare Docker 镜像中文简介、标签列表与拉取命令">dtagdevsec/snare 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/dtagdevsec/snare" title="dtagdevsec/snare Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dtagdevsec/snare</a>
 
 # T-Pot Snare Docker镜像文档
 

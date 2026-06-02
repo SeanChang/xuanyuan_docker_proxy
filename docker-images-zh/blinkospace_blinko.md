@@ -3,14 +3,12 @@ image: blinkospace/blinko
 description: "这是一款以隐私保护为核心的开源自托管个人AI笔记工具，其代码完全开放透明，支持用户自行部署和管理，所有笔记数据均存储在个人设备或自有服务器中，不依赖第三方平台，同时集成AI智能功能，可辅助用户高效整理、快速检索及智能生成笔记内容，兼顾便捷性与数据安全性，为注重隐私的个人用户提供自主可控的数字笔记解决方案。"
 source: https://xuanyuan.cloud/zh/r/blinkospace/blinko
 canonical: https://xuanyuan.cloud/zh/r/blinkospace/blinko
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/blinkospace/blinko" title="blinkospace/blinko Docker 镜像中文简介、标签列表与拉取命令">blinkospace/blinko — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/blinkospace/blinko" title="blinkospace/blinko Docker 镜像中文简介、标签列表与拉取命令">blinkospace/blinko 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/blinkospace/blinko" title="blinkospace/blinko Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/blinkospace/blinko</a>
 
 # Blinko - 开源自托管灵感笔记工具
 

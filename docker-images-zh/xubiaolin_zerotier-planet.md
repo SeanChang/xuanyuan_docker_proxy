@@ -3,14 +3,12 @@ image: xubiaolin/zerotier-planet
 description: "这是一个用于部署ZeroTier Planet根服务器的Docker镜像，可帮助用户快速搭建私有虚拟网络的核心节点，无需复杂配置即可简化跨设备、跨网络的安全连接部署流程，支持自定义网络参数，适用于企业或个人构建稳定、可控的私有网络环境，项目托管于GitHub，地址为[]"
 source: https://xuanyuan.cloud/zh/r/xubiaolin/zerotier-planet
 canonical: https://xuanyuan.cloud/zh/r/xubiaolin/zerotier-planet
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/xubiaolin/zerotier-planet" title="xubiaolin/zerotier-planet Docker 镜像中文简介、标签列表与拉取命令">xubiaolin/zerotier-planet — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/xubiaolin/zerotier-planet" title="xubiaolin/zerotier-planet Docker 镜像中文简介、标签列表与拉取命令">xubiaolin/zerotier-planet 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/xubiaolin/zerotier-planet" title="xubiaolin/zerotier-planet Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xubiaolin/zerotier-planet</a>
 
 ## ZeroTier Planet Docker镜像介绍  
 

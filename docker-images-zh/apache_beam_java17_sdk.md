@@ -3,14 +3,12 @@ image: apache/beam_java17_sdk
 description: "Apache Beam Java 17 SDK镜像，用于构建和运行批处理与流处理数据管道，支持跨多种执行引擎（如Spark、Flink）运行，提供Java 17环境及Beam核心库，适合Java开发者快速开发分布式数据处理应用。"
 source: https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk
 canonical: https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk" title="apache/beam_java17_sdk Docker 镜像中文简介、标签列表与拉取命令">apache/beam_java17_sdk — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk" title="apache/beam_java17_sdk Docker 镜像中文简介、标签列表与拉取命令">apache/beam_java17_sdk 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk" title="apache/beam_java17_sdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk</a>
 
 # Apache Beam Java 17 SDK 镜像文档
 

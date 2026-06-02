@@ -3,14 +3,12 @@ image: homeassistant/home-assistant
 description: "这是一款以本地控制与隐私保护为核心设计理念的开源家庭自动化系统，它依托开源技术架构保障用户对家居设备的直接操控权，有效规避数据上传云端可能引发的隐私泄露风险，同时支持个性化功能定制与灵活扩展，让用户在畅享智能便捷生活的过程中，始终牢牢掌握数据主权与设备管理的核心权限。"
 source: https://xuanyuan.cloud/zh/r/homeassistant/home-assistant
 canonical: https://xuanyuan.cloud/zh/r/homeassistant/home-assistant
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/homeassistant/home-assistant" title="homeassistant/home-assistant Docker 镜像中文简介、标签列表与拉取命令">homeassistant/home-assistant — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/homeassistant/home-assistant" title="homeassistant/home-assistant Docker 镜像中文简介、标签列表与拉取命令">homeassistant/home-assistant 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/homeassistant/home-assistant" title="homeassistant/home-assistant Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/homeassistant/home-assistant</a>
 
 # Home Assistant  
 

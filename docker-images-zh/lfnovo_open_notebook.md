@@ -3,14 +3,12 @@ image: lfnovo/open_notebook
 description: "一款开源、注重隐私的Google Notebook LM替代方案，具备额外功能，让用户掌控自己的研究工作流，支持AI辅助笔记生成和内容交互。"
 source: https://xuanyuan.cloud/zh/r/lfnovo/open_notebook
 canonical: https://xuanyuan.cloud/zh/r/lfnovo/open_notebook
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/lfnovo/open_notebook" title="lfnovo/open_notebook Docker 镜像中文简介、标签列表与拉取命令">lfnovo/open_notebook — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/lfnovo/open_notebook" title="lfnovo/open_notebook Docker 镜像中文简介、标签列表与拉取命令">lfnovo/open_notebook 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/lfnovo/open_notebook" title="lfnovo/open_notebook Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/lfnovo/open_notebook</a>
 
 # Open Notebook 镜像文档
 

@@ -3,14 +3,12 @@ image: archlinux/archlinux
 description: "Arch Linux提供符合OCI标准的容器镜像，通过多个仓库分发，包括DockerHub官方库（每周更新）及DockerHub、quay.io的archlinux仓库（每日更新），适用于构建和运行容器化的Arch Linux环境。"
 source: https://xuanyuan.cloud/zh/r/archlinux/archlinux
 canonical: https://xuanyuan.cloud/zh/r/archlinux/archlinux
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/archlinux/archlinux" title="archlinux/archlinux Docker 镜像中文简介、标签列表与拉取命令">archlinux/archlinux — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/archlinux/archlinux" title="archlinux/archlinux Docker 镜像中文简介、标签列表与拉取命令">archlinux/archlinux 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/archlinux/archlinux" title="archlinux/archlinux Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/archlinux/archlinux</a>
 
 # Arch Linux OCI 镜像文档
 

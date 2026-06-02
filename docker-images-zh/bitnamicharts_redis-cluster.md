@@ -3,14 +3,12 @@ image: bitnamicharts/redis-cluster
 description: "Bitnami Redis® Cluster的Helm Chart，用于在Kubernetes集群部署支持分片的Redis集群。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/redis-cluster
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/redis-cluster
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/redis-cluster" title="bitnamicharts/redis-cluster Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/redis-cluster — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/redis-cluster" title="bitnamicharts/redis-cluster Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/redis-cluster 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/bitnamicharts/redis-cluster" title="bitnamicharts/redis-cluster Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/redis-cluster</a>
 
 # Bitnami Redis® Cluster 软件包
 

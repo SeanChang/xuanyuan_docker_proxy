@@ -3,14 +3,12 @@ image: library/busybox
 description: "Busybox基础镜像是一种集成了多种常用UNIX工具的精简容器基础镜像，其体积小巧、资源占用低，能够为嵌入式系统、轻量级应用开发等场景提供高效的底层运行环境，是构建各类精简容器镜像的理想起点，兼具功能全面与轻量高效的特性，广泛应用于对资源有严格限制的开发和部署环境中。"
 source: https://xuanyuan.cloud/zh/r/library/busybox
 canonical: https://xuanyuan.cloud/zh/r/library/busybox
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/busybox" title="library/busybox Docker 镜像中文简介、标签列表与拉取命令">library/busybox — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/busybox" title="library/busybox Docker 镜像中文简介、标签列表与拉取命令">library/busybox 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/library/busybox" title="library/busybox Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/busybox</a>
 
 # BusyBox 镜像介绍
 

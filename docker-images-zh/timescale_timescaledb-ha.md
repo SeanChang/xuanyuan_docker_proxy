@@ -3,14 +3,12 @@ image: timescale/timescaledb-ha
 description: "包含TimescaleDB时序数据库与Patroni高可用工具，用于构建具备高可用性的时序数据存储解决方案。"
 source: https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha
 canonical: https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha
-exported_at: 2026-06-02T12:23:50.672Z
+exported_at: 2026-06-02T12:26:10.133Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha" title="timescale/timescaledb-ha Docker 镜像中文简介、标签列表与拉取命令">timescale/timescaledb-ha — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha" title="timescale/timescaledb-ha Docker 镜像中文简介、标签列表与拉取命令">timescale/timescaledb-ha 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
-
-<a href="https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha" title="timescale/timescaledb-ha Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha</a>
 
 # TimescaleDB with Patroni 高可用镜像文档
 
