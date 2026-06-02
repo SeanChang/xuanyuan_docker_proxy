@@ -2,14 +2,14 @@
 image: zeroclue/comfyui
 source: https://xuanyuan.cloud/zh/r/zeroclue/comfyui
 canonical: https://xuanyuan.cloud/zh/r/zeroclue/comfyui
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [zeroclue/comfyui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zeroclue/comfyui "zeroclue/comfyui Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/zeroclue/comfyui
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zeroclue/comfyui" title="zeroclue/comfyui Docker 镜像中文简介、标签列表与拉取命令">zeroclue/comfyui — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/zeroclue/comfyui" title="zeroclue/comfyui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zeroclue/comfyui</a></p>
 
 # ComfyUI Docker镜像
 
@@ -139,3 +139,7 @@ docker run -p 8188:8188 \
 - GPU加速需要兼容的NVIDIA显卡和驱动
 - 首次运行可能需要下载额外资源，请确保网络连接正常
 - 生产环境使用时建议配置适当的资源限制和安全措施
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zeroclue/comfyui" title="zeroclue/comfyui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zeroclue/comfyui</a></p>

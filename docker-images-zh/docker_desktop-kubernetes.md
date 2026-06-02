@@ -2,14 +2,14 @@
 image: docker/desktop-kubernetes
 source: https://xuanyuan.cloud/zh/r/docker/desktop-kubernetes
 canonical: https://xuanyuan.cloud/zh/r/docker/desktop-kubernetes
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [docker/desktop-kubernetes — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/docker/desktop-kubernetes "docker/desktop-kubernetes Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/docker/desktop-kubernetes
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/docker/desktop-kubernetes" title="docker/desktop-kubernetes Docker 镜像中文简介、标签列表与拉取命令">docker/desktop-kubernetes — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/docker/desktop-kubernetes" title="docker/desktop-kubernetes Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/docker/desktop-kubernetes</a></p>
 
 ## 核心说明  
 这是一套面向桌面环境的Kubernetes二进制文件，基于Alpine系统从源码编译而来。  
@@ -30,3 +30,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 2. **获取文件**：从项目地址下载对应版本的二进制包（包含kube-apiserver、kube-controller-manager等核心组件）。  
 3. **校验完整性**：用提供的SHA256值核对文件（执行`sha256sum 文件名`比对校验结果）。  
 4. **启动测试**：解压后直接运行组件，例如查看版本：`./kubelet --version`，确认输出正常即可开始使用。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/docker/desktop-kubernetes" title="docker/desktop-kubernetes Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/docker/desktop-kubernetes</a></p>

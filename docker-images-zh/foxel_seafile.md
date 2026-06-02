@@ -2,14 +2,14 @@
 image: foxel/seafile
 source: https://xuanyuan.cloud/zh/r/foxel/seafile
 canonical: https://xuanyuan.cloud/zh/r/foxel/seafile
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [foxel/seafile — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/foxel/seafile "foxel/seafile Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/foxel/seafile
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/foxel/seafile" title="foxel/seafile Docker 镜像中文简介、标签列表与拉取命令">foxel/seafile — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/foxel/seafile" title="foxel/seafile Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/foxel/seafile</a></p>
 
 # seafile-docker
 
@@ -112,3 +112,7 @@ docker-compose exec seafile /scripts/upgrade.sh 6.1.0
 ### 5.1.x => 6.0.x
 ```bash
 docker-compose exec seafile /scripts/upgrade.sh 6.0.0
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/foxel/seafile" title="foxel/seafile Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/foxel/seafile</a></p>

@@ -2,14 +2,14 @@
 image: library/rust
 source: https://xuanyuan.cloud/zh/r/library/rust
 canonical: https://xuanyuan.cloud/zh/r/library/rust
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/rust — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/rust "library/rust Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/rust
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/rust" title="library/rust Docker 镜像中文简介、标签列表与拉取命令">library/rust — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/rust" title="library/rust Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/rust</a></p>
 
 # Rust Docker镜像使用指南
 
@@ -165,3 +165,7 @@ rust镜像提供多种版本，适用于不同场景：
 - 镜像中Rust软件的许可证信息：[Rust官方许可页面]([])。  
 - 镜像可能包含其他软件（如Bash等基础系统组件），其许可证需另行确认。  
 - 镜像使用者需自行确保对包含的所有软件的使用符合相关许可证要求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/rust" title="library/rust Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/rust</a></p>

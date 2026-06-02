@@ -2,14 +2,14 @@
 image: mysql/mysql-server
 source: https://xuanyuan.cloud/zh/r/mysql/mysql-server
 canonical: https://xuanyuan.cloud/zh/r/mysql/mysql-server
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [mysql/mysql-server — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mysql/mysql-server "mysql/mysql-server Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/mysql/mysql-server
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mysql/mysql-server" title="mysql/mysql-server Docker 镜像中文简介、标签列表与拉取命令">mysql/mysql-server — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/mysql/mysql-server" title="mysql/mysql-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mysql/mysql-server</a></p>
 
 ![logo]([])
 
@@ -106,3 +106,7 @@ MySQL Server Docker 镜像包含以下产品：
 
 ### 更多部署主题  
 关于 Docker 部署 MySQL Server 的更多内容（如服务配置、数据持久化、日志管理、版本升级、环境变量等），参见《MySQL Server 手册》的 [通过 Docker 部署 MySQL Server]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mysql/mysql-server" title="mysql/mysql-server Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mysql/mysql-server</a></p>

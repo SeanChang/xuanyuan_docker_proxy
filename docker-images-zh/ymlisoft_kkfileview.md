@@ -2,14 +2,14 @@
 image: ymlisoft/kkfileview
 source: https://xuanyuan.cloud/zh/r/ymlisoft/kkfileview
 canonical: https://xuanyuan.cloud/zh/r/ymlisoft/kkfileview
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ymlisoft/kkfileview — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ymlisoft/kkfileview "ymlisoft/kkfileview Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ymlisoft/kkfileview
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ymlisoft/kkfileview" title="ymlisoft/kkfileview Docker 镜像中文简介、标签列表与拉取命令">ymlisoft/kkfileview — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ymlisoft/kkfileview" title="ymlisoft/kkfileview Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ymlisoft/kkfileview</a></p>
 
 # 升级Docker镜像文档（基于4.4.0版本）
 
@@ -58,3 +58,7 @@ docker run -d --name [自定义容器名称] [镜像名称]:[升级版本标签]
 ### 注意事项
 - **资源依赖检查**：镜像已删除项目自用图片及个人信息，若原应用依赖相关资源，需确保外部资源已提前配置，避免运行异常。
 - **兼容性测试**：Spring Boot升级至3.4可能存在少量API变更，建议部署前进行兼容性测试，确保应用与新版本框架兼容。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ymlisoft/kkfileview" title="ymlisoft/kkfileview Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ymlisoft/kkfileview</a></p>

@@ -2,14 +2,14 @@
 image: slimshetty/swebench-verified
 source: https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified
 canonical: https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [slimshetty/swebench-verified — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified "slimshetty/swebench-verified Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified" title="slimshetty/swebench-verified Docker 镜像中文简介、标签列表与拉取命令">slimshetty/swebench-verified — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified" title="slimshetty/swebench-verified Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified</a></p>
 
 # slimshetty/swebench-verified 镜像使用指南
 
@@ -233,3 +233,7 @@ http://localhost:8888/api/docs
 ---
 
 **注意**：具体的使用命令与配置需参考项目的官方文档与 README 文件。建议先查看镜像的入口脚本或文档，了解实际提供的功能与接口。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified" title="slimshetty/swebench-verified Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified</a></p>

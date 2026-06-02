@@ -2,14 +2,14 @@
 image: kasmweb/redroid
 source: https://xuanyuan.cloud/zh/r/kasmweb/redroid
 canonical: https://xuanyuan.cloud/zh/r/kasmweb/redroid
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [kasmweb/redroid — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kasmweb/redroid "kasmweb/redroid Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/kasmweb/redroid
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kasmweb/redroid" title="kasmweb/redroid Docker 镜像中文简介、标签列表与拉取命令">kasmweb/redroid — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/kasmweb/redroid" title="kasmweb/redroid Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/redroid</a></p>
 
 # Kasm Workspaces Redroid 镜像文档
 
@@ -157,3 +157,7 @@ sudo docker run --rm -it --privileged --shm-size=512m \
 Kasm Workspaces 团队已开源我们的镜像库（[信息](https://www.kasmweb.com/docs/latest/guide/custom_images.html) 和 [源代码](https://github.com/kasmtech/workspaces-images)）。
 
 原生 Web 渲染由我们的开源项目 [KasmVNC](https://github.com/kasmtech/KasmVNC) 提供支持。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kasmweb/redroid" title="kasmweb/redroid Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/redroid</a></p>

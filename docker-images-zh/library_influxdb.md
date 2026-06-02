@@ -2,14 +2,14 @@
 image: library/influxdb
 source: https://xuanyuan.cloud/zh/r/library/influxdb
 canonical: https://xuanyuan.cloud/zh/r/library/influxdb
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/influxdb — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/influxdb "library/influxdb Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/influxdb
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/influxdb" title="library/influxdb Docker 镜像中文简介、标签列表与拉取命令">library/influxdb — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/influxdb" title="library/influxdb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/influxdb</a></p>
 
 # InfluxDB Docker 镜像使用指南
 
@@ -193,3 +193,7 @@ docker run -d -p 8086:8086 \  # HTTP API 端口
 - 软件许可信息：[查看源码仓库 LICENSE]([])  
 - 镜像包含的其他软件许可：[repo-info 仓库 influxdb 目录]([])  
 - 用户需自行确保使用此镜像符合所有包含软件的许可要求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/influxdb" title="library/influxdb Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/influxdb</a></p>

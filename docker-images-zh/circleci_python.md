@@ -2,14 +2,14 @@
 image: circleci/python
 source: https://xuanyuan.cloud/zh/r/circleci/python
 canonical: https://xuanyuan.cloud/zh/r/circleci/python
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [circleci/python — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/circleci/python "circleci/python Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/circleci/python
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/circleci/python" title="circleci/python Docker 镜像中文简介、标签列表与拉取命令">circleci/python — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/circleci/python" title="circleci/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/circleci/python</a></p>
 
 # CircleCI Python 镜像
 
@@ -51,3 +51,7 @@ docker run -it --rm circleci/python:3.9-browsers python -c "from selenium import
 ## 用户反馈
 ### 问题反馈
 如遇到镜像相关问题或有疑问，请通过[CircleCI Discuss Forum](https://discuss.circleci.com/c/ecosystem/circleci-images)联系我们。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/circleci/python" title="circleci/python Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/circleci/python</a></p>

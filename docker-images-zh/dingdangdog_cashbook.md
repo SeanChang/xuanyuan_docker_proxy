@@ -2,14 +2,14 @@
 image: dingdangdog/cashbook
 source: https://xuanyuan.cloud/zh/r/dingdangdog/cashbook
 canonical: https://xuanyuan.cloud/zh/r/dingdangdog/cashbook
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [dingdangdog/cashbook — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/dingdangdog/cashbook "dingdangdog/cashbook Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/dingdangdog/cashbook
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/dingdangdog/cashbook" title="dingdangdog/cashbook Docker 镜像中文简介、标签列表与拉取命令">dingdangdog/cashbook — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/dingdangdog/cashbook" title="dingdangdog/cashbook Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dingdangdog/cashbook</a></p>
 
 # Cashbook 4.0+
 
@@ -288,3 +288,7 @@ services:
 | NUXT_AUTH_SECRET         | 前台用户登录会话加密密钥                                             | 强烈建议修改，使用随机字符串提高安全性     |
 | NUXT_ADMIN_USERNAME      | 后台管理账号用户名                                                   | 建议修改默认admin，使用自定义用户名        |
 | NUXT_ADMIN_PASSWORD      | 后台管理账号加密密码，需通过 `你的url/admin/GetPassword
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/dingdangdog/cashbook" title="dingdangdog/cashbook Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/dingdangdog/cashbook</a></p>

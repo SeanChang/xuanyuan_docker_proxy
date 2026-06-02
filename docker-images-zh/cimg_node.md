@@ -2,14 +2,14 @@
 image: cimg/node
 source: https://xuanyuan.cloud/zh/r/cimg/node
 canonical: https://xuanyuan.cloud/zh/r/cimg/node
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [cimg/node — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/cimg/node "cimg/node Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/cimg/node
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/node" title="cimg/node Docker 镜像中文简介、标签列表与拉取命令">cimg/node — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/cimg/node" title="cimg/node Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cimg/node</a></p>
 
 # cimg/node Docker镜像文档
 
@@ -175,3 +175,7 @@ docker run -it test/node:12.16.3 bash  # 运行镜像验证
 ## 许可证
 
 本仓库采用MIT许可证，详见 [LICENSE](https://raw.githubusercontent.com/CircleCI-Public/cimg-node/master/LICENSE)。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/node" title="cimg/node Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/cimg/node</a></p>

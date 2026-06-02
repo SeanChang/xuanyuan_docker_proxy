@@ -2,14 +2,14 @@
 image: library/openjdk
 source: https://xuanyuan.cloud/zh/r/library/openjdk
 canonical: https://xuanyuan.cloud/zh/r/library/openjdk
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/openjdk — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/openjdk "library/openjdk Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/openjdk
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/openjdk" title="library/openjdk Docker 镜像中文简介、标签列表与拉取命令">library/openjdk — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/openjdk" title="library/openjdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/openjdk</a></p>
 
 # 弃用通知  
 
@@ -185,3 +185,7 @@ RAM限制在Windows Server容器中受支持，但JVM目前无法检测。需通
 ## `openjdk:<version>`（12及以上版本）、`openjdk:<version>-oracle` 和 `openjdk:<version>-oraclelinux8`  
 
 从`openjdk:12`开始，默认镜像及`-oracle`、`-oraclelinux8`变体基于官方[Oracle Linux 8镜像]([])，该镜像根据[Oracle Linux最终用户协议（EULA）]([]
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/openjdk" title="library/openjdk Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/openjdk</a></p>

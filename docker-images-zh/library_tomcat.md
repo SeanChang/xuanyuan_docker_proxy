@@ -2,14 +2,14 @@
 image: library/tomcat
 source: https://xuanyuan.cloud/zh/r/library/tomcat
 canonical: https://xuanyuan.cloud/zh/r/library/tomcat
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/tomcat — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/tomcat "library/tomcat Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/tomcat
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/tomcat" title="library/tomcat Docker 镜像中文简介、标签列表与拉取命令">library/tomcat — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/tomcat" title="library/tomcat Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/tomcat</a></p>
 
 # Tomcat Docker镜像介绍
 
@@ -144,3 +144,7 @@ docker run -it --rm -p 8888:8080 tomcat:9.0 sh -c "cp -r webapps.dist/* webapps 
 - 自动检测的许可证信息可参考[repo-info仓库]([])。  
 
 使用前请确保遵守所有包含软件的许可证要求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/tomcat" title="library/tomcat Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/tomcat</a></p>

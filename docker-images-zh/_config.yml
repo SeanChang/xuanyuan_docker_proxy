@@ -1,0 +1,3 @@
+# GitHub Pages：渲染 Markdown 时保留 HTML dofollow 外链
+theme: jekyll-theme-minimal
+markdown: GFM

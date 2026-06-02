@@ -2,14 +2,14 @@
 image: ai/qwen3-coder-next
 source: https://xuanyuan.cloud/zh/r/ai/qwen3-coder-next
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen3-coder-next
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ai/qwen3-coder-next — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ai/qwen3-coder-next "ai/qwen3-coder-next Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ai/qwen3-coder-next
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-coder-next" title="ai/qwen3-coder-next Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-coder-next — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-coder-next" title="ai/qwen3-coder-next Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-coder-next</a></p>
 
 # Qwen3-Coder-Next
 
@@ -83,3 +83,7 @@ Qwen3-Coder-Next在SWE-bench PRO上表现优异，展示了其处理实际软件
 - **采样参数**：为获得最佳性能，使用`temperature=1.0`，`top_p=0.95`，`top_k=40`
 - **模型更新**：截至2025年2月4日，llama.cpp已修复导致Qwen循环和输出质量差的bug。确保使用最新版本的llama.cpp和更新的GGUF以获得改进的输出
 - **推理引擎**：该模型支持多种推理引擎，包括SGLang（≥v0.5.8）和vLLM（≥0.15.0），以及Ollama、LMStudio、MLX-LM、llama.cpp和KTransformers等本地工具
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-coder-next" title="ai/qwen3-coder-next Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-coder-next</a></p>

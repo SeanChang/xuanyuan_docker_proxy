@@ -2,14 +2,14 @@
 image: paddlecloud/paddledetection
 source: https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection
 canonical: https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [paddlecloud/paddledetection — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection "paddlecloud/paddledetection Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection" title="paddlecloud/paddledetection Docker 镜像中文简介、标签列表与拉取命令">paddlecloud/paddledetection — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection" title="paddlecloud/paddledetection Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection</a></p>
 
 # PaddleDetection
 
@@ -63,3 +63,7 @@ docker run --name dev --runtime=nvidia -v $PWD:/mnt -p 8888:8888 -it paddlecloud
 | paddlecloud/paddledetection:2.4-cpu-e9a542 | 2022年05月09日 |
 | paddlecloud/paddledetection:2.4-gpu-cuda11.2-cudnn8-e9a542 | 2022年05月09日 |
 | paddlecloud/paddledetection:2.4-gpu-cuda10.2-cudnn7-e9a542 | 2022年05月09日 |
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection" title="paddlecloud/paddledetection Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection</a></p>

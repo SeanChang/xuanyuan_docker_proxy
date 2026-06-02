@@ -2,14 +2,14 @@
 image: jlesage/handbrake
 source: https://xuanyuan.cloud/zh/r/jlesage/handbrake
 canonical: https://xuanyuan.cloud/zh/r/jlesage/handbrake
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [jlesage/handbrake — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jlesage/handbrake "jlesage/handbrake Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/jlesage/handbrake
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/jlesage/handbrake" title="jlesage/handbrake Docker 镜像中文简介、标签列表与拉取命令">jlesage/handbrake — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/jlesage/handbrake" title="jlesage/handbrake Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jlesage/handbrake</a></p>
 
 # HandBrake Docker容器
 
@@ -63,3 +63,7 @@ docker run -d \
 - **完整文档**：[]  
 - **问题反馈**：若使用中遇到问题，可[提交issue]([])  
 - **更多Docker应用**：[]
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/jlesage/handbrake" title="jlesage/handbrake Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/jlesage/handbrake</a></p>

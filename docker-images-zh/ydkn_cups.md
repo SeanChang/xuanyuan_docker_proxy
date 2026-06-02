@@ -2,14 +2,14 @@
 image: ydkn/cups
 source: https://xuanyuan.cloud/zh/r/ydkn/cups
 canonical: https://xuanyuan.cloud/zh/r/ydkn/cups
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ydkn/cups — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ydkn/cups "ydkn/cups Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ydkn/cups
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ydkn/cups" title="ydkn/cups Docker 镜像中文简介、标签列表与拉取命令">ydkn/cups — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ydkn/cups" title="ydkn/cups Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ydkn/cups</a></p>
 
 # CUPS Docker 镜像
 
@@ -48,3 +48,7 @@ docker run -d --restart always -p 631:631 -v $(pwd):/etc/cups ydkn/cups:latest
 ```bash
 docker run -d --restart always -p 631:631 -v $(pwd):/etc/cups -e ADMIN_PASSWORD=mySecretPassword ydkn/cups:latest
 ```
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ydkn/cups" title="ydkn/cups Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ydkn/cups</a></p>

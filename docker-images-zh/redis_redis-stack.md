@@ -2,14 +2,14 @@
 image: redis/redis-stack
 source: https://xuanyuan.cloud/zh/r/redis/redis-stack
 canonical: https://xuanyuan.cloud/zh/r/redis/redis-stack
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [redis/redis-stack — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/redis/redis-stack "redis/redis-stack Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/redis/redis-stack
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/redis/redis-stack" title="redis/redis-stack Docker 镜像中文简介、标签列表与拉取命令">redis/redis-stack — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/redis/redis-stack" title="redis/redis-stack Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/redis/redis-stack</a></p>
 
 # 在 Docker 上运行 Redis Stack  
 ## 如何使用 Docker 安装 Redis Stack  
@@ -96,3 +96,7 @@ docker run -v `pwd`/local-redis-stack.conf:/redis-stack.conf -p 6379:6379 -p 800
   ```bash  
   docker run -e REDISTIMESERIES_ARGS="RETENTION_POLICY=20" redis/redis-stack:latest  
   ```
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/redis/redis-stack" title="redis/redis-stack Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/redis/redis-stack</a></p>

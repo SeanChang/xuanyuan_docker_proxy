@@ -2,14 +2,14 @@
 image: oceanbase/seekdb
 source: https://xuanyuan.cloud/zh/r/oceanbase/seekdb
 canonical: https://xuanyuan.cloud/zh/r/oceanbase/seekdb
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [oceanbase/seekdb — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/oceanbase/seekdb "oceanbase/seekdb Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/oceanbase/seekdb
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/oceanbase/seekdb" title="oceanbase/seekdb Docker 镜像中文简介、标签列表与拉取命令">oceanbase/seekdb — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/oceanbase/seekdb" title="oceanbase/seekdb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/oceanbase/seekdb</a></p>
 
 # 使用Docker部署SeekDB
 
@@ -92,3 +92,7 @@ mysql -h 127.0.0.1 -P 2881 -u root -p    # 使用root账户连接
 ## 访问控制台
 
 容器提供友好的Web界面，可在浏览器中访问`http://${server_ip}:2886`。登录密码与root用户密码相同。若未设置ROOT_PASSWORD，密码字段留空即可。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/oceanbase/seekdb" title="oceanbase/seekdb Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/oceanbase/seekdb</a></p>

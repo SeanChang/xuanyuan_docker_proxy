@@ -2,14 +2,14 @@
 image: library/sapmachine
 source: https://xuanyuan.cloud/zh/r/library/sapmachine
 canonical: https://xuanyuan.cloud/zh/r/library/sapmachine
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/sapmachine — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/sapmachine "library/sapmachine Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/sapmachine
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/sapmachine" title="library/sapmachine Docker 镜像中文简介、标签列表与拉取命令">library/sapmachine — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/sapmachine" title="library/sapmachine Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/sapmachine</a></p>
 
 # SapMachine Docker 镜像使用指南
 
@@ -238,3 +238,7 @@ SapMachine 镜像提供多种变体，需根据场景选择：
 - **基础镜像软件**：Ubuntu/Alpine 镜像中包含的系统组件（如 Bash、musl）遵循各自开源许可（如 MIT、Apache）
 
 使用前请确保遵守所有包含软件的许可条款，商业场景需确认 GPLv2 Classpath Exception 的适用范围（详见 SapMachine 许可页面 https://sap.github.io/SapMachine/license.html）。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/sapmachine" title="library/sapmachine Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/sapmachine</a></p>

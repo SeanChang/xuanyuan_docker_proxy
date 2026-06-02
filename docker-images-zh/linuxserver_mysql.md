@@ -2,14 +2,14 @@
 image: linuxserver/mysql
 source: https://xuanyuan.cloud/zh/r/linuxserver/mysql
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/mysql
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [linuxserver/mysql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/mysql "linuxserver/mysql Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/linuxserver/mysql
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/mysql" title="linuxserver/mysql Docker 镜像中文简介、标签列表与拉取命令">linuxserver/mysql — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/mysql" title="linuxserver/mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/mysql</a></p>
 
 # 已弃用：不再维护和/或更新
 
@@ -77,3 +77,7 @@ $ id <用户名>
 + **14.03.16:** 移除自动更新功能（某些版本更新会导致容器崩溃），改为在初始化脚本中添加配置选项，使用custom.cnf代替my.cnf
 + **26.01.16:** 将mysqld_safe脚本用户改为abc，改进重启时的异常关闭处理
 + **12.08.15:** 初始发布
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/mysql" title="linuxserver/mysql Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/mysql</a></p>

@@ -2,14 +2,14 @@
 image: newfuture/ddns
 source: https://xuanyuan.cloud/zh/r/newfuture/ddns
 canonical: https://xuanyuan.cloud/zh/r/newfuture/ddns
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [newfuture/ddns — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/newfuture/ddns "newfuture/ddns Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/newfuture/ddns
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/newfuture/ddns" title="newfuture/ddns Docker 镜像中文简介、标签列表与拉取命令">newfuture/ddns — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/newfuture/ddns" title="newfuture/ddns Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/newfuture/ddns</a></p>
 
 # [<img src="https://ddns.newfuture.cc/doc/img/ddns.svg" width="32px" height="32px"/>](https://ddns.newfuture.cc) DDNS
 
@@ -362,3 +362,7 @@ RUN chmod +x /bin/custom-script.sh
 - [环境变量配置详情](https://ddns.newfuture.cc/doc/env.html)
 - [JSON 配置文件详情](https://ddns.newfuture.cc/doc/json.html)
 - [命令行参数详情](https://ddns.newfuture.cc/doc/cli.html)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/newfuture/ddns" title="newfuture/ddns Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/newfuture/ddns</a></p>

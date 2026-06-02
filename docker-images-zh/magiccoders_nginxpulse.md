@@ -2,14 +2,14 @@
 image: magiccoders/nginxpulse
 source: https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse
 canonical: https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [magiccoders/nginxpulse — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse "magiccoders/nginxpulse Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse" title="magiccoders/nginxpulse Docker 镜像中文简介、标签列表与拉取命令">magiccoders/nginxpulse — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse" title="magiccoders/nginxpulse Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse</a></p>
 
 # NginxPulse
 
@@ -326,3 +326,7 @@ nginxpulse: initializing postgres data dir at /app/var/pgdata
 ```
 
 如需更详细的统计口径或 API 扩展，建议从 `internal/analytics/` 与 `internal/web/handler.go` 开始。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse" title="magiccoders/nginxpulse Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse</a></p>

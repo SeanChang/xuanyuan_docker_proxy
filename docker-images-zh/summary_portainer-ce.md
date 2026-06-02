@@ -2,14 +2,14 @@
 image: summary/portainer-ce
 source: https://xuanyuan.cloud/zh/r/summary/portainer-ce
 canonical: https://xuanyuan.cloud/zh/r/summary/portainer-ce
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [summary/portainer-ce — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/summary/portainer-ce "summary/portainer-ce Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/summary/portainer-ce
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/summary/portainer-ce" title="summary/portainer-ce Docker 镜像中文简介、标签列表与拉取命令">summary/portainer-ce — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/summary/portainer-ce" title="summary/portainer-ce Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/summary/portainer-ce</a></p>
 
 # Portainer-CE 中文汉化版 Docker 镜像
 
@@ -120,3 +120,7 @@ docker-compose up -d
 - **权限问题**：宿主机 `/var/run/docker.sock` 文件需确保容器内进程可访问（默认权限通常满足，若遇权限问题可临时调整 `chmod 666 /var/run/docker.sock`）。
 - **端口冲突**：若宿主机 9000 端口已被占用，可修改端口映射（如 `-p 9001:9000` 将宿主机 9001 端口映射至容器 9000 端口）。
 - **多平台适配**：ARM 设备（如树莓派）可直接拉取使用，无需指定架构标签。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/summary/portainer-ce" title="summary/portainer-ce Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/summary/portainer-ce</a></p>

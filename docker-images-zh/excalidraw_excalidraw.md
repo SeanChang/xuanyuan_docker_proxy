@@ -2,14 +2,14 @@
 image: excalidraw/excalidraw
 source: https://xuanyuan.cloud/zh/r/excalidraw/excalidraw
 canonical: https://xuanyuan.cloud/zh/r/excalidraw/excalidraw
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [excalidraw/excalidraw — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/excalidraw/excalidraw "excalidraw/excalidraw Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/excalidraw/excalidraw
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/excalidraw/excalidraw" title="excalidraw/excalidraw Docker 镜像中文简介、标签列表与拉取命令">excalidraw/excalidraw — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/excalidraw/excalidraw" title="excalidraw/excalidraw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/excalidraw/excalidraw</a></p>
 
 # Excalidraw客户端Docker镜像
 
@@ -39,3 +39,7 @@ docker run --rm -dit --name excalidraw -p 5000:80 excalidraw/excalidraw:latest
 
 ## 支持
 如有任何问题、建议或支持请求，请通过[GitHub](https://github.com/excalidraw/excalidraw/issues)提交。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/excalidraw/excalidraw" title="excalidraw/excalidraw Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/excalidraw/excalidraw</a></p>

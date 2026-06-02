@@ -2,14 +2,14 @@
 image: mattermost/mattermost-team-edition
 source: https://xuanyuan.cloud/zh/r/mattermost/mattermost-team-edition
 canonical: https://xuanyuan.cloud/zh/r/mattermost/mattermost-team-edition
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [mattermost/mattermost-team-edition — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mattermost/mattermost-team-edition "mattermost/mattermost-team-edition Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/mattermost/mattermost-team-edition
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mattermost/mattermost-team-edition" title="mattermost/mattermost-team-edition Docker 镜像中文简介、标签列表与拉取命令">mattermost/mattermost-team-edition — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/mattermost/mattermost-team-edition" title="mattermost/mattermost-team-edition Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mattermost/mattermost-team-edition</a></p>
 
 # Mattermost Team Edition Docker镜像文档
 
@@ -180,3 +180,7 @@ docker-compose up -d
 - **升级说明**：升级前需备份数据卷，建议通过`docker-compose pull`更新镜像后重启服务。
 - **安全加固**：生产环境需配置HTTPS（通过反向代理如Nginx），并修改默认管理员密码。
 - **资源调整**：根据团队规模调整容器CPU/内存限制（通过`docker run --cpus`或`docker-compose`的`deploy`配置）。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mattermost/mattermost-team-edition" title="mattermost/mattermost-team-edition Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mattermost/mattermost-team-edition</a></p>

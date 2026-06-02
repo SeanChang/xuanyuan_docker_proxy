@@ -2,14 +2,14 @@
 image: bitnami/tomcat
 source: https://xuanyuan.cloud/zh/r/bitnami/tomcat
 canonical: https://xuanyuan.cloud/zh/r/bitnami/tomcat
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnami/tomcat — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/tomcat "bitnami/tomcat Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnami/tomcat
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/tomcat" title="bitnami/tomcat Docker 镜像中文简介、标签列表与拉取命令">bitnami/tomcat — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnami/tomcat" title="bitnami/tomcat Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/tomcat</a></p>
 
 # Bitnami Apache Tomcat 软件包介绍
 
@@ -339,3 +339,7 @@ docker run --name tomcat bitnami/tomcat:latest
 Copyright &copy; 2025 Broadcom。"Broadcom"指Broadcom Inc.及其子公司。  
 
 根据Apache License 2.0许可协议授权（详见[LICENSE]([])）。使用本文件需遵守许可协议，除非法律要求或书面同意，软件按"原样"分发，不提供任何明示或暗示担保。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/tomcat" title="bitnami/tomcat Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/tomcat</a></p>

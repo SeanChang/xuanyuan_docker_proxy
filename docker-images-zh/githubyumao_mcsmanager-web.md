@@ -2,14 +2,14 @@
 image: githubyumao/mcsmanager-web
 source: https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web
 canonical: https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [githubyumao/mcsmanager-web — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web "githubyumao/mcsmanager-web Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web" title="githubyumao/mcsmanager-web Docker 镜像中文简介、标签列表与拉取命令">githubyumao/mcsmanager-web — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web" title="githubyumao/mcsmanager-web Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web</a></p>
 
 # MCSManager 面板官方Docker镜像文档
 
@@ -130,3 +130,7 @@ docker-compose up -d
 - 日志文件和自动化备份数据  
 
 **注意**：迁移服务器时，仅需复制 `/opt/mcsmanager` 目录至新服务器对应路径，重新部署容器即可恢复所有配置。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web" title="githubyumao/mcsmanager-web Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web</a></p>

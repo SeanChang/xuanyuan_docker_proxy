@@ -2,14 +2,14 @@
 image: linuxserver/homeassistant
 source: https://xuanyuan.cloud/zh/r/linuxserver/homeassistant
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/homeassistant
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [linuxserver/homeassistant — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/homeassistant "linuxserver/homeassistant Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/linuxserver/homeassistant
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/homeassistant" title="linuxserver/homeassistant Docker 镜像中文简介、标签列表与拉取命令">linuxserver/homeassistant — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/homeassistant" title="linuxserver/homeassistant Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/homeassistant</a></p>
 
 # LinuxServer.io Docker Home Assistant 容器介绍
 
@@ -276,3 +276,7 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 - **13.02.24**：基于 Alpine 3.19 重建，升级 Python 3.12，调整 Python 包结构。  
 - **05.07.23**：不再支持 armhf 架构。  
 - **30.01.21**：初始发布。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/homeassistant" title="linuxserver/homeassistant Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/homeassistant</a></p>

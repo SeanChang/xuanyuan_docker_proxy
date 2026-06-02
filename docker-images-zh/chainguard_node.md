@@ -2,14 +2,14 @@
 image: chainguard/node
 source: https://xuanyuan.cloud/zh/r/chainguard/node
 canonical: https://xuanyuan.cloud/zh/r/chainguard/node
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [chainguard/node — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/chainguard/node "chainguard/node Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/chainguard/node
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/chainguard/node" title="chainguard/node Docker 镜像中文简介、标签列表与拉取命令">chainguard/node — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/chainguard/node" title="chainguard/node Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/chainguard/node</a></p>
 
 # Chainguard Node 镜像文档
 
@@ -80,3 +80,7 @@ docker run --rm -v $(pwd):/app chainguard/node:latest node /app/app.js
 - **版本与 FIPS 支持**：查看 [版本列表](https://images.chainguard.dev/directory/image/node/versions) 获取包含 FIPS 支持的其他版本。
 - **SBOMs 与安全信息**：访问 [SBOMs](https://images.chainguard.dev/directory/image/node/sbom)、[安全公告](https://images.chainguard.dev/directory/image/node/advisories) 和 [漏洞信息](https://images.chainguard.dev/directory/image/node/vulnerabilities) 页面获取详细组件及安全数据。
 - **支持与帮助**：遇到问题可参考 [Chainguard 镜像 FAQ](https://edu.chainguard.dev/chainguard/chainguard-images/faq/) 或通过 [联系页面](https://www.chainguard.dev/contact) 获取支持。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/chainguard/node" title="chainguard/node Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/chainguard/node</a></p>

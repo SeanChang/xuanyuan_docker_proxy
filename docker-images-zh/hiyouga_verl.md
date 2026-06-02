@@ -2,14 +2,14 @@
 image: hiyouga/verl
 source: https://xuanyuan.cloud/zh/r/hiyouga/verl
 canonical: https://xuanyuan.cloud/zh/r/hiyouga/verl
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [hiyouga/verl — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/hiyouga/verl "hiyouga/verl Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/hiyouga/verl
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/hiyouga/verl" title="hiyouga/verl Docker 镜像中文简介、标签列表与拉取命令">hiyouga/verl — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/hiyouga/verl" title="hiyouga/verl Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hiyouga/verl</a></p>
 
 ## 项目一：VERL（火山引擎强化学习平台）  
 
@@ -105,3 +105,7 @@ print(f"Answer: {response}")
 
 ### 总结  
 VERL 聚焦强化学习全流程开发，适合需要高性能训练和工业级部署的场景；EasyR1 则专注于 R1 任务的轻量化落地，适合学习和小规模 RAG 应用。两者均提供开源代码和详细示例，降低了对应领域的上手门槛。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/hiyouga/verl" title="hiyouga/verl Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/hiyouga/verl</a></p>

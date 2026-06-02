@@ -2,14 +2,14 @@
 image: rocm/vllm-ci
 source: https://xuanyuan.cloud/zh/r/rocm/vllm-ci
 canonical: https://xuanyuan.cloud/zh/r/rocm/vllm-ci
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [rocm/vllm-ci — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rocm/vllm-ci "rocm/vllm-ci Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/rocm/vllm-ci
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/rocm/vllm-ci" title="rocm/vllm-ci Docker 镜像中文简介、标签列表与拉取命令">rocm/vllm-ci — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/rocm/vllm-ci" title="rocm/vllm-ci Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rocm/vllm-ci</a></p>
 
 # vllm-ci 镜像托管仓库  
 
@@ -63,3 +63,7 @@ vllm-ci-[用途]:[版本标签]
 ## 维护与贡献  
 - **维护者**：vllm 项目 CI 维护团队负责镜像更新、版本管理及问题响应。  
 - **贡献指南**：如需新增镜像或优化现有镜像，可 Fork 仓库后修改 Dockerfile 并提交 PR，PR 需附修改说明（如“新增 docs 镜像，支持自动生成 API 文档”）。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/rocm/vllm-ci" title="rocm/vllm-ci Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/rocm/vllm-ci</a></p>

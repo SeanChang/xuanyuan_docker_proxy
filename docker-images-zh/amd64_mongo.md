@@ -2,14 +2,14 @@
 image: amd64/mongo
 source: https://xuanyuan.cloud/zh/r/amd64/mongo
 canonical: https://xuanyuan.cloud/zh/r/amd64/mongo
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [amd64/mongo — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/amd64/mongo "amd64/mongo Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/amd64/mongo
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/amd64/mongo" title="amd64/mongo Docker 镜像中文简介、标签列表与拉取命令">amd64/mongo — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/amd64/mongo" title="amd64/mongo Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/amd64/mongo</a></p>
 
 # MongoDB 镜像文档
 
@@ -320,3 +320,7 @@ MongoDB 软件许可遵循 [Server Side Public License (SSPL) v1](https://www.mo
 镜像中包含的其他软件（如基础系统组件、Bash 等）可能遵循不同许可证，详细信息见 [repo-info 仓库](https://github.com/docker-library/repo-info/tree/master/repos/mongo)。
 
 使用本镜像需确保符合所有包含软件的许可证要求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/amd64/mongo" title="amd64/mongo Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/amd64/mongo</a></p>

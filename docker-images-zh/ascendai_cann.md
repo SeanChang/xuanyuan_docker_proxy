@@ -2,14 +2,14 @@
 image: ascendai/cann
 source: https://xuanyuan.cloud/zh/r/ascendai/cann
 canonical: https://xuanyuan.cloud/zh/r/ascendai/cann
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ascendai/cann — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ascendai/cann "ascendai/cann Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ascendai/cann
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ascendai/cann" title="ascendai/cann Docker 镜像中文简介、标签列表与拉取命令">ascendai/cann — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ascendai/cann" title="ascendai/cann Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ascendai/cann</a></p>
 
 # Ascend CANN Docker镜像使用说明
 
@@ -78,3 +78,7 @@ docker run \
 与所有Docker镜像相同，本镜像可能包含其他受不同许可证约束的软件（如基础发行版中的Bash，以及所包含主软件的直接或间接依赖）。  
 
 对于预构建镜像的任何使用，镜像用户需自行确保其使用行为符合镜像中所有包含软件的相关许可证要求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ascendai/cann" title="ascendai/cann Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ascendai/cann</a></p>

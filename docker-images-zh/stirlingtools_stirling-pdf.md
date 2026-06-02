@@ -2,14 +2,14 @@
 image: stirlingtools/stirling-pdf
 source: https://xuanyuan.cloud/zh/r/stirlingtools/stirling-pdf
 canonical: https://xuanyuan.cloud/zh/r/stirlingtools/stirling-pdf
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [stirlingtools/stirling-pdf — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/stirlingtools/stirling-pdf "stirlingtools/stirling-pdf Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/stirlingtools/stirling-pdf
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/stirlingtools/stirling-pdf" title="stirlingtools/stirling-pdf Docker 镜像中文简介、标签列表与拉取命令">stirlingtools/stirling-pdf — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/stirlingtools/stirling-pdf" title="stirlingtools/stirling-pdf Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/stirlingtools/stirling-pdf</a></p>
 
 # Stirling-PDF
 
@@ -146,3 +146,7 @@ Stirling-PDF目前支持39种语言！
 Stirling PDF提供企业版软件，包含与基础版相同的核心功能，并增加了额外功能、支持和便利特性。查看[企业版文档](https://docs.stirlingpdf.com/Enterprise%20Edition)了解更多。
 
 所有文档详见[https://docs.stirlingpdf.com/](https://docs.stirlingpdf.com/)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/stirlingtools/stirling-pdf" title="stirlingtools/stirling-pdf Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/stirlingtools/stirling-pdf</a></p>

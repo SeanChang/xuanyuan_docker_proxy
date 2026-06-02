@@ -2,14 +2,14 @@
 image: chigusa/bililive-go
 source: https://xuanyuan.cloud/zh/r/chigusa/bililive-go
 canonical: https://xuanyuan.cloud/zh/r/chigusa/bililive-go
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [chigusa/bililive-go — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/chigusa/bililive-go "chigusa/bililive-go Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/chigusa/bililive-go
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/chigusa/bililive-go" title="chigusa/bililive-go Docker 镜像中文简介、标签列表与拉取命令">chigusa/bililive-go — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/chigusa/bililive-go" title="chigusa/bililive-go Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/chigusa/bililive-go</a></p>
 
 # bililive-go
 
@@ -33,3 +33,7 @@ docker run --restart=always -v ~/Videos:/srv/bililive -p 8080:8080 -d
 - `-p 8080:8080`：端口映射，将容器的 8080 端口映射到主机的 8080 端口。若主机 8080 端口已被占用，可修改主机端口部分（如 `-p 8081:8080` 映射到主机 8081 端口）。  
 - `-d`：后台运行容器，不阻塞当前终端。  
 - ``：使用的 Docker 镜像名称。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/chigusa/bililive-go" title="chigusa/bililive-go Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/chigusa/bililive-go</a></p>

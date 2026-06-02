@@ -2,14 +2,14 @@
 image: bitnamicharts/rabbitmq
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/rabbitmq
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/rabbitmq
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnamicharts/rabbitmq — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamicharts/rabbitmq "bitnamicharts/rabbitmq Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnamicharts/rabbitmq
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/rabbitmq" title="bitnamicharts/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/rabbitmq — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/rabbitmq" title="bitnamicharts/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/rabbitmq</a></p>
 
 # Bitnami RabbitMQ 镜像文档
 
@@ -360,3 +360,7 @@ RabbitMQ 具有[内置支持](https://www.rabbitmq.com/docs/prometheus#default-e
 | `service.nodePort` | AMQP 服务节点端口 | `""` |
 | `service.managementPort` | 管理界面端口 | `15672` |
 | `service.managementNodePort` | 管理界面节点
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/rabbitmq" title="bitnamicharts/rabbitmq Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/rabbitmq</a></p>

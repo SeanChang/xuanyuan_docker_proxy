@@ -2,14 +2,14 @@
 image: rancher/server
 source: https://xuanyuan.cloud/zh/r/rancher/server
 canonical: https://xuanyuan.cloud/zh/r/rancher/server
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [rancher/server — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rancher/server "rancher/server Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/rancher/server
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/rancher/server" title="rancher/server Docker 镜像中文简介、标签列表与拉取命令">rancher/server — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/rancher/server" title="rancher/server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rancher/server</a></p>
 
 # Rancher 1.x 服务器容器镜像文档
 
@@ -126,3 +126,7 @@ Rancher 1.x 支持通过环境变量配置核心参数（完整列表请参考 [
 3. **RC 版本风险**：`rcX` 标签版本可能包含未修复的 bug，可能导致后续无法升级至稳定版，生产环境禁止使用。  
 4. **Beta 标签废弃**：`beta` 标签标记 Rancher 1.x 官方 Beta 阶段初始版本，已停止更新，功能和安全性无法保障，禁止使用。  
 5. **更新策略**：稳定版（`latest`）每月更新，建议定期升级以获取安全补丁和功能优化。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/rancher/server" title="rancher/server Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/rancher/server</a></p>

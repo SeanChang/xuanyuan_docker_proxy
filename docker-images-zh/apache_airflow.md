@@ -2,14 +2,14 @@
 image: apache/airflow
 source: https://xuanyuan.cloud/zh/r/apache/airflow
 canonical: https://xuanyuan.cloud/zh/r/apache/airflow
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [apache/airflow — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apache/airflow "apache/airflow Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/apache/airflow
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/airflow" title="apache/airflow Docker 镜像中文简介、标签列表与拉取命令">apache/airflow — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/apache/airflow" title="apache/airflow Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/airflow</a></p>
 
 # Apache Airflow  
 
@@ -45,3 +45,7 @@ Airflow 本身并非流处理解决方案，但常被用于实时数据处理场
 关于 Airflow 改进提案（AIPs），可访问 [Airflow Wiki]([])。  
 
 依赖项目（如提供方包、Docker 镜像、Helm Chart）的文档，可在 [文档索引]([]) 中查询。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/airflow" title="apache/airflow Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/apache/airflow</a></p>

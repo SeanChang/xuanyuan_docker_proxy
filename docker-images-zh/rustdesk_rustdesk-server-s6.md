@@ -2,14 +2,14 @@
 image: rustdesk/rustdesk-server-s6
 source: https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6
 canonical: https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [rustdesk/rustdesk-server-s6 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6 "rustdesk/rustdesk-server-s6 Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6" title="rustdesk/rustdesk-server-s6 Docker 镜像中文简介、标签列表与拉取命令">rustdesk/rustdesk-server-s6 — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6" title="rustdesk/rustdesk-server-s6 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6</a></p>
 
 ### 基于s6-overlay的RustDesk Server镜像  
 
@@ -91,3 +91,7 @@ docker run -d --name rustdesk-server \
 - **端口映射**：需确保宿主机开放容器映射的端口（如21115-21117），防火墙规则同步放行。  
 - **密钥保存**：首次启动后，`/data`目录下的`id_ed25519.pub`是客户端连接需用的公钥，建议备份。  
 - **服务状态**：容器启动后，可通过`docker logs rustdesk-server`查看`s6-overlay`和服务运行日志，排查问题。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6" title="rustdesk/rustdesk-server-s6 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6</a></p>

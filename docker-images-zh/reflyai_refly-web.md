@@ -2,14 +2,14 @@
 image: reflyai/refly-web
 source: https://xuanyuan.cloud/zh/r/reflyai/refly-web
 canonical: https://xuanyuan.cloud/zh/r/reflyai/refly-web
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [reflyai/refly-web — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/reflyai/refly-web "reflyai/refly-web Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/reflyai/refly-web
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/reflyai/refly-web" title="reflyai/refly-web Docker 镜像中文简介、标签列表与拉取命令">reflyai/refly-web — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/reflyai/refly-web" title="reflyai/refly-web Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/reflyai/refly-web</a></p>
 
 # Refly.AI Web 前端
 
@@ -111,3 +111,7 @@ Refly Web 是 Refly.AI 平台的前端界面，负责用户交互和可视化展
 ## 许可证
 
 本仓库采用 ReflyAI 开源许可证，本质上是 Apache 2.0 许可证，但有一些额外的限制。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/reflyai/refly-web" title="reflyai/refly-web Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/reflyai/refly-web</a></p>

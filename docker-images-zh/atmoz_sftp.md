@@ -2,14 +2,14 @@
 image: atmoz/sftp
 source: https://xuanyuan.cloud/zh/r/atmoz/sftp
 canonical: https://xuanyuan.cloud/zh/r/atmoz/sftp
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [atmoz/sftp — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/atmoz/sftp "atmoz/sftp Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/atmoz/sftp
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/atmoz/sftp" title="atmoz/sftp Docker 镜像中文简介、标签列表与拉取命令">atmoz/sftp — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/atmoz/sftp" title="atmoz/sftp Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/atmoz/sftp</a></p>
 
 # SFTP 镜像文档
 
@@ -252,3 +252,7 @@ OpenSSH 版本取决于基础镜像的发行版：
 - **Debian 版本**：查看 [Debian 官方包列表](https://packages.debian.org/search?keywords=openssh-server&searchon=names&exact=1&suite=all&section=main)  
 
 **注意**：镜像构建延迟可能导致 OpenSSH 版本略滞后于基础镜像官方包（通常 1-5 天），如需精确版本可手动克隆源码构建。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/atmoz/sftp" title="atmoz/sftp Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/atmoz/sftp</a></p>

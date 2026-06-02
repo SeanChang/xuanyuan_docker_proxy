@@ -2,14 +2,14 @@
 image: kvaps/mjpg-streamer
 source: https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer
 canonical: https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [kvaps/mjpg-streamer — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer "kvaps/mjpg-streamer Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer" title="kvaps/mjpg-streamer Docker 镜像中文简介、标签列表与拉取命令">kvaps/mjpg-streamer — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer" title="kvaps/mjpg-streamer Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer</a></p>
 
 ## MJPG-streamer Docker镜像文档
 
@@ -72,3 +72,7 @@ mjpg-streamer:
 - 视频流地址：`http://<主机IP>:8090/?action=stream`
 - 单帧图片：`http://<主机IP>:8090/?action=snapshot`
 （访问时需输入配置的用户名密码，如默认admin:admin）
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer" title="kvaps/mjpg-streamer Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer</a></p>

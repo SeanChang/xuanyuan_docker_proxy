@@ -2,14 +2,14 @@
 image: linuxserver/msedge
 source: https://xuanyuan.cloud/zh/r/linuxserver/msedge
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/msedge
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [linuxserver/msedge — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/msedge "linuxserver/msedge Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/linuxserver/msedge
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/msedge" title="linuxserver/msedge Docker 镜像中文简介、标签列表与拉取命令">linuxserver/msedge — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/msedge" title="linuxserver/msedge Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/msedge</a></p>
 
 # LinuxServer.io 容器：msedge
 
@@ -234,3 +234,7 @@ docker run -d ... lscr.io/linuxserver/msedge:latest
 - []()：实时社区支持。  
 - [论坛]([])：问题反馈与经验分享。  
 - [GitHub]([])：源码与贡献指南。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/msedge" title="linuxserver/msedge Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/msedge</a></p>

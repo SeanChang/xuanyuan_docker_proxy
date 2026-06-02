@@ -2,14 +2,14 @@
 image: eosphorosai/dbgpt
 source: https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt
 canonical: https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [eosphorosai/dbgpt — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt "eosphorosai/dbgpt Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt" title="eosphorosai/dbgpt Docker 镜像中文简介、标签列表与拉取命令">eosphorosai/dbgpt — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt" title="eosphorosai/dbgpt Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt</a></p>
 
 # DB-GPT：基于私有大模型的数据库交互革新方案
 
@@ -96,3 +96,7 @@ DB-GPT 核心组件包括：
 
 
 > 项目地址：[GitHub]([])，文档：[官方文档]([])
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt" title="eosphorosai/dbgpt Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt</a></p>

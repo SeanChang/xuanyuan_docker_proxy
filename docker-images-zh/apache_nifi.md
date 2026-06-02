@@ -2,14 +2,14 @@
 image: apache/nifi
 source: https://xuanyuan.cloud/zh/r/apache/nifi
 canonical: https://xuanyuan.cloud/zh/r/apache/nifi
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [apache/nifi — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apache/nifi "apache/nifi Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/apache/nifi
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/nifi" title="apache/nifi Docker 镜像中文简介、标签列表与拉取命令">apache/nifi — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/apache/nifi" title="apache/nifi Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/nifi</a></p>
 
 # Apache NiFi Docker镜像文档
 
@@ -254,3 +254,7 @@ docker run --name nifi \
   -e NIFI_JVM_HEAP_INIT=1g \
   -e NIFI_JVM_HEAP_MAX=2g \
   -d apache/nifi:latest
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/nifi" title="apache/nifi Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/apache/nifi</a></p>

@@ -2,14 +2,14 @@
 image: zabbix/zabbix-web-nginx-mysql
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [zabbix/zabbix-web-nginx-mysql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql "zabbix/zabbix-web-nginx-mysql Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql" title="zabbix/zabbix-web-nginx-mysql Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-web-nginx-mysql — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql" title="zabbix/zabbix-web-nginx-mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql</a></p>
 
 ![logo]()
 
@@ -267,3 +267,7 @@ Zabbix Web 界面镜像提供多种基础系统版本，适用于不同场景：
 - Zabbix 6.4 及以下版本：采用 GNU General Public License v2（GPLv2）  
 
 商业用户可通过购买技术支持获取额外服务。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql" title="zabbix/zabbix-web-nginx-mysql Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql</a></p>

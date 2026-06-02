@@ -2,14 +2,14 @@
 image: rocker/cuda
 source: https://xuanyuan.cloud/zh/r/rocker/cuda
 canonical: https://xuanyuan.cloud/zh/r/rocker/cuda
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [rocker/cuda — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rocker/cuda "rocker/cuda Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/rocker/cuda
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/rocker/cuda" title="rocker/cuda Docker 镜像中文简介、标签列表与拉取命令">rocker/cuda — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/rocker/cuda" title="rocker/cuda Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rocker/cuda</a></p>
 
 ## 镜像概述
 本镜像基于 [rocker-org/rocker-versioned2](https://github.com/rocker-org/rocker-versioned2) 项目构建，详细描述参见 [Rocker官方文档](https://rocker-project.org/images/versioned/cuda)。
@@ -33,3 +33,7 @@ docker pull rocker/cuda:latest
 docker run --gpus all -it --rm rocker/cuda:latest R
 ```
 > 说明：`--gpus all`参数用于启用容器对GPU的访问，确保主机已安装NVIDIA Docker运行时（nvidia-container-runtime）。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/rocker/cuda" title="rocker/cuda Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/rocker/cuda</a></p>

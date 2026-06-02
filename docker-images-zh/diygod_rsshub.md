@@ -2,14 +2,14 @@
 image: diygod/rsshub
 source: https://xuanyuan.cloud/zh/r/diygod/rsshub
 canonical: https://xuanyuan.cloud/zh/r/diygod/rsshub
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [diygod/rsshub — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/diygod/rsshub "diygod/rsshub Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/diygod/rsshub
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/diygod/rsshub" title="diygod/rsshub Docker 镜像中文简介、标签列表与拉取命令">diygod/rsshub — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/diygod/rsshub" title="diygod/rsshub Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/diygod/rsshub</a></p>
 
 # RSSHub Docker镜像文档
 
@@ -104,3 +104,7 @@ docker-compose up -d
 ## 许可证
 
 本项目采用[AGPL-3.0](https://github.com/DIYgod/RSSHub/blob/master/LICENSE)许可证。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/diygod/rsshub" title="diygod/rsshub Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/diygod/rsshub</a></p>

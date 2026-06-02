@@ -2,14 +2,14 @@
 image: suwayomi/suwayomi-vui
 source: https://xuanyuan.cloud/zh/r/suwayomi/suwayomi-vui
 canonical: https://xuanyuan.cloud/zh/r/suwayomi/suwayomi-vui
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [suwayomi/suwayomi-vui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/suwayomi/suwayomi-vui "suwayomi/suwayomi-vui Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/suwayomi/suwayomi-vui
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/suwayomi/suwayomi-vui" title="suwayomi/suwayomi-vui Docker 镜像中文简介、标签列表与拉取命令">suwayomi/suwayomi-vui — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/suwayomi/suwayomi-vui" title="suwayomi/suwayomi-vui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/suwayomi/suwayomi-vui</a></p>
 
 # Robonau's Svelte + Skeleton Suwayomi UI 镜像文档
 
@@ -102,3 +102,7 @@ volumes:
 - **版本兼容性**：建议使用 Suwayomi 后端 v1.4.0 及以上版本，以确保 API 兼容性；
 - **网络配置**：`BACKEND_URL` 需确保前端容器可访问后端服务（局域网 IP 或容器名，避免使用 `localhost` 除非前后端在同一容器内）；
 - **静态资源**：本镜像为预编译静态前端，无持久化数据需求，无需挂载数据卷（配置通过环境变量动态注入）。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/suwayomi/suwayomi-vui" title="suwayomi/suwayomi-vui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/suwayomi/suwayomi-vui</a></p>

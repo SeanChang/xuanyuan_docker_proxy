@@ -2,14 +2,14 @@
 image: confluentinc/cp-kafka
 source: https://xuanyuan.cloud/zh/r/confluentinc/cp-kafka
 canonical: https://xuanyuan.cloud/zh/r/confluentinc/cp-kafka
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [confluentinc/cp-kafka — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/confluentinc/cp-kafka "confluentinc/cp-kafka Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/confluentinc/cp-kafka
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/confluentinc/cp-kafka" title="confluentinc/cp-kafka Docker 镜像中文简介、标签列表与拉取命令">confluentinc/cp-kafka — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/confluentinc/cp-kafka" title="confluentinc/cp-kafka Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/confluentinc/cp-kafka</a></p>
 
 # Apache Kafka 的 Confluent 社区版 Docker 镜像  
 
@@ -38,3 +38,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 
 ## 许可说明  
 本镜像的使用受包含软件的许可条款约束。详情请参考 Confluent Docker 镜像文档 [参考说明]([])。用于扩展和构建自定义 Docker 镜像的软件基于 Apache 2.0 许可开放。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/confluentinc/cp-kafka" title="confluentinc/cp-kafka Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/confluentinc/cp-kafka</a></p>

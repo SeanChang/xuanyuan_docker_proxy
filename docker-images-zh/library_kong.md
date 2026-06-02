@@ -2,14 +2,14 @@
 image: library/kong
 source: https://xuanyuan.cloud/zh/r/library/kong
 canonical: https://xuanyuan.cloud/zh/r/library/kong
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/kong — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/kong "library/kong Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/kong
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/kong" title="library/kong Docker 镜像中文简介、标签列表与拉取命令">library/kong — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/kong" title="library/kong Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/kong</a></p>
 
 # Kong Docker 镜像使用参考
 
@@ -75,3 +75,7 @@ Kong 官方文档请访问 [docs.konghq.com]([])。
 自动检测的附加许可证信息可查看 [repo-info 仓库的 `kong/` 目录]([])。  
 
 使用预构建镜像时，用户需自行确保对镜像中所有软件的使用符合相关许可证要求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/kong" title="library/kong Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/kong</a></p>

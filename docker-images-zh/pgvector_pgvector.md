@@ -2,14 +2,14 @@
 image: pgvector/pgvector
 source: https://xuanyuan.cloud/zh/r/pgvector/pgvector
 canonical: https://xuanyuan.cloud/zh/r/pgvector/pgvector
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [pgvector/pgvector — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/pgvector/pgvector "pgvector/pgvector Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/pgvector/pgvector
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/pgvector/pgvector" title="pgvector/pgvector Docker 镜像中文简介、标签列表与拉取命令">pgvector/pgvector — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/pgvector/pgvector" title="pgvector/pgvector Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/pgvector/pgvector</a></p>
 
 ## pgvector 简介  
 
@@ -126,3 +126,7 @@ LIMIT 10;
 - **PostgreSQL 版本**：需 PostgreSQL 11 及以上，推荐 14+ 以支持 HNSW 索引和更好的性能。  
 - **索引维护**：IVFFlat 索引在数据频繁更新时可能性能下降，建议定期重建；HNSW 索引更新成本较高，适合静态或增量更新数据。  
 - **兼容性**：可与 Python 的 psycopg2、SQLAlchemy，Java 的 JDBC 等工具链配合，直接在应用中调用向量操作。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/pgvector/pgvector" title="pgvector/pgvector Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/pgvector/pgvector</a></p>

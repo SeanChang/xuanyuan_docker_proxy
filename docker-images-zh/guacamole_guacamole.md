@@ -2,14 +2,14 @@
 image: guacamole/guacamole
 source: https://xuanyuan.cloud/zh/r/guacamole/guacamole
 canonical: https://xuanyuan.cloud/zh/r/guacamole/guacamole
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [guacamole/guacamole — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/guacamole/guacamole "guacamole/guacamole Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/guacamole/guacamole
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/guacamole/guacamole" title="guacamole/guacamole Docker 镜像中文简介、标签列表与拉取命令">guacamole/guacamole — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/guacamole/guacamole" title="guacamole/guacamole Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/guacamole/guacamole</a></p>
 
 # 什么是 Apache Guacamole？
 
@@ -94,3 +94,7 @@ docker run --rm guacamole/guacamole /opt/guacamole/bin/initdb.sh --mysql > initd
 # 问题反馈
 
 如遇到任何bug，请通过[JIRA](https://issues.apache.org/jira/browse/GUACAMOLE/)创建新issue进行报告。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/guacamole/guacamole" title="guacamole/guacamole Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/guacamole/guacamole</a></p>

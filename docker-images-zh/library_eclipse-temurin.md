@@ -2,14 +2,14 @@
 image: library/eclipse-temurin
 source: https://xuanyuan.cloud/zh/r/library/eclipse-temurin
 canonical: https://xuanyuan.cloud/zh/r/library/eclipse-temurin
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/eclipse-temurin — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/eclipse-temurin "library/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/eclipse-temurin
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/eclipse-temurin" title="library/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">library/eclipse-temurin — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/eclipse-temurin" title="library/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/eclipse-temurin</a></p>
 
 # Eclipse Temurin Docker 镜像使用指南
 
@@ -186,3 +186,7 @@ docker run -it -v /path/on/host/system/jars:/opt/app japp
 更多许可证信息可参考 [repo-info 仓库的 `eclipse-temurin/` 目录]([])。  
 
 使用前请确保遵守所有包含软件的许可证要求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/eclipse-temurin" title="library/eclipse-temurin Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/eclipse-temurin</a></p>

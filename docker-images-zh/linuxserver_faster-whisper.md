@@ -2,14 +2,14 @@
 image: linuxserver/faster-whisper
 source: https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [linuxserver/faster-whisper — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper "linuxserver/faster-whisper Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper" title="linuxserver/faster-whisper Docker 镜像中文简介、标签列表与拉取命令">linuxserver/faster-whisper — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper" title="linuxserver/faster-whisper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper</a></p>
 
 # linuxserver/faster-whisper 镜像文档
 
@@ -331,3 +331,7 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 - **19.05.24:** - 在GPU分支上将CUDA升级到12
 - **08.01.24:** - 添加GPU分支
 - **25.11.23:** - 初始发布
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper" title="linuxserver/faster-whisper Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper</a></p>

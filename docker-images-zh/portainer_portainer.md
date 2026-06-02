@@ -2,14 +2,14 @@
 image: portainer/portainer
 source: https://xuanyuan.cloud/zh/r/portainer/portainer
 canonical: https://xuanyuan.cloud/zh/r/portainer/portainer
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [portainer/portainer — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/portainer/portainer "portainer/portainer Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/portainer/portainer
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/portainer/portainer" title="portainer/portainer Docker 镜像中文简介、标签列表与拉取命令">portainer/portainer — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/portainer/portainer" title="portainer/portainer Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/portainer/portainer</a></p>
 
 # Portainer 仓库说明
 
@@ -48,3 +48,7 @@ Portainer 是一款轻量级管理界面工具，可帮助你轻松管理 Docker
 
 ## 限制说明  
 Portainer 仅支持当前 Docker 版本及前两个历史版本。旧版本可能仍可运行，但不提供任何形式的技术支持。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/portainer/portainer" title="portainer/portainer Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/portainer/portainer</a></p>

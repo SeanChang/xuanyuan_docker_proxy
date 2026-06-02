@@ -2,14 +2,14 @@
 image: linuxserver/ddclient
 source: https://xuanyuan.cloud/zh/r/linuxserver/ddclient
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/ddclient
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [linuxserver/ddclient — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/ddclient "linuxserver/ddclient Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/linuxserver/ddclient
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/ddclient" title="linuxserver/ddclient Docker 镜像中文简介、标签列表与拉取命令">linuxserver/ddclient — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/ddclient" title="linuxserver/ddclient Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/ddclient</a></p>
 
 # linuxserver/ddclient
 
@@ -315,3 +315,7 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 * **10.02.17:** - 重新基于Alpine 3.5构建。
 * **26.11.16:** - 更新README为新标准，并添加图标和其他小细节。
 * **29.08.16:** - 初始发布。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/ddclient" title="linuxserver/ddclient Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/ddclient</a></p>

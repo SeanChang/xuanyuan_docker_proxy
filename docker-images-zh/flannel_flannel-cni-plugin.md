@@ -2,14 +2,14 @@
 image: flannel/flannel-cni-plugin
 source: https://xuanyuan.cloud/zh/r/flannel/flannel-cni-plugin
 canonical: https://xuanyuan.cloud/zh/r/flannel/flannel-cni-plugin
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [flannel/flannel-cni-plugin — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/flannel/flannel-cni-plugin "flannel/flannel-cni-plugin Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/flannel/flannel-cni-plugin
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/flannel/flannel-cni-plugin" title="flannel/flannel-cni-plugin Docker 镜像中文简介、标签列表与拉取命令">flannel/flannel-cni-plugin — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/flannel/flannel-cni-plugin" title="flannel/flannel-cni-plugin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/flannel/flannel-cni-plugin</a></p>
 
 ### Flannel CNI插件镜像介绍  
 
@@ -39,3 +39,7 @@ Flannel CNI插件镜像是容器网络接口（CNI）的工具组件，用于在
 
 ##### 2. 基本使用场景  
 作为CNI插件，主要用于容器编排平台（如Kubernetes）的网络配置。使用时需在集群的CNI配置文件中引用该镜像，具体配置方式（如CNI配置文件路径、参数设置）可参考项目仓库的 `docs` 目录或README文档，根据实际集群网络需求调整。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/flannel/flannel-cni-plugin" title="flannel/flannel-cni-plugin Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/flannel/flannel-cni-plugin</a></p>

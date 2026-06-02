@@ -2,14 +2,14 @@
 image: mcp/postman
 source: https://xuanyuan.cloud/zh/r/mcp/postman
 canonical: https://xuanyuan.cloud/zh/r/mcp/postman
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [mcp/postman — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mcp/postman "mcp/postman Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/mcp/postman
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mcp/postman" title="mcp/postman Docker 镜像中文简介、标签列表与拉取命令">mcp/postman — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/mcp/postman" title="mcp/postman Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mcp/postman</a></p>
 
 # Postman MCP Server 技术文档
 
@@ -208,3 +208,7 @@ COSIGN_REPOSITORY=mcp/signatures cosign verify mcp/postman --key https://raw.git
 
 ### 5.2 许可证
 本镜像基于Apache License 2.0开源协议，详见[LICENSE](https://github.com/postmanlabs/postman-mcp-server/blob/main/LICENSE)。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mcp/postman" title="mcp/postman Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mcp/postman</a></p>

@@ -2,14 +2,14 @@
 image: beevelop/android
 source: https://xuanyuan.cloud/zh/r/beevelop/android
 canonical: https://xuanyuan.cloud/zh/r/beevelop/android
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [beevelop/android — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/beevelop/android "beevelop/android Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/beevelop/android
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/beevelop/android" title="beevelop/android Docker 镜像中文简介、标签列表与拉取命令">beevelop/android — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/beevelop/android" title="beevelop/android Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/beevelop/android</a></p>
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/beevelop/docker-android/docker.yml?style=for-the-badge)
 ![Docker Pulls](https://img.shields.io/docker/pulls/beevelop/android.svg?style=for-the-badge)
@@ -102,3 +102,7 @@ RUN sdkmanager --sdk_root=$ANDROID_SDK_ROOT "build-tools;33.0.2" "platforms;andr
 ---
 
 ![Beevelop's Docker Image Hierarchy](https://gist.githubusercontent.com/beevelop/b0cddab7209a683c77560d06ff00bc8e/raw/15429ee1d02e2c4dc019b760ca8c7ceff5911b82/hierarchy.png)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/beevelop/android" title="beevelop/android Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/beevelop/android</a></p>

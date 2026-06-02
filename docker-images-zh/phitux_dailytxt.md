@@ -2,14 +2,14 @@
 image: phitux/dailytxt
 source: https://xuanyuan.cloud/zh/r/phitux/dailytxt
 canonical: https://xuanyuan.cloud/zh/r/phitux/dailytxt
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [phitux/dailytxt — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/phitux/dailytxt "phitux/dailytxt Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/phitux/dailytxt
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/phitux/dailytxt" title="phitux/dailytxt Docker 镜像中文简介、标签列表与拉取命令">phitux/dailytxt — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/phitux/dailytxt" title="phitux/dailytxt Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/phitux/dailytxt</a></p>
 
 # DailyTxT Docker镜像文档
 
@@ -112,3 +112,7 @@ docker-compose up -d
 
 ## 总结
 DailyTxT Docker镜像提供了一个轻量、安全的加密日记解决方案，通过简单配置即可快速部署，支持灵活的自定义和安全控制，适合个人及小型团队的私密文本记录需求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/phitux/dailytxt" title="phitux/dailytxt Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/phitux/dailytxt</a></p>

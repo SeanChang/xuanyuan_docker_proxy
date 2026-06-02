@@ -2,14 +2,14 @@
 image: nousresearch/hermes-agent
 source: https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent
 canonical: https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [nousresearch/hermes-agent — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent "nousresearch/hermes-agent Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent" title="nousresearch/hermes-agent Docker 镜像中文简介、标签列表与拉取命令">nousresearch/hermes-agent — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent" title="nousresearch/hermes-agent Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent</a></p>
 
 # Hermes Agent
 
@@ -86,3 +86,7 @@ hermes              # 开始对话
 
 **Docker 镜像**的具体运行方式、compose 与环境变量等，另见官方用户文档中的 Docker 说明：  
 https://hermes-agent.nousresearch.com/docs/user-guide/docker
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent" title="nousresearch/hermes-agent Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent</a></p>

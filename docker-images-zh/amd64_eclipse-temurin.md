@@ -2,14 +2,14 @@
 image: amd64/eclipse-temurin
 source: https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin
 canonical: https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [amd64/eclipse-temurin — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin "amd64/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin" title="amd64/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">amd64/eclipse-temurin — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin" title="amd64/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin</a></p>
 
 # Eclipse Temurin (amd64) 镜像文档
 
@@ -276,3 +276,7 @@ docker-compose up -d
 - **基础镜像许可证**：取决于基础系统（如 Ubuntu 为 [Ubuntu License](https://ubuntu.com/legal/terms-and-policies/intellectual-property)，Alpine 为 [MIT License](https://alpinelinux.org/licenses/)）
 
 > 注：使用前请确保遵守所有组件的许可证要求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin" title="amd64/eclipse-temurin Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin</a></p>

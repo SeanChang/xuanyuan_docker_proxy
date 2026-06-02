@@ -2,14 +2,14 @@
 image: library/wordpress
 source: https://xuanyuan.cloud/zh/r/library/wordpress
 canonical: https://xuanyuan.cloud/zh/r/library/wordpress
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/wordpress — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/wordpress "library/wordpress Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/wordpress
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/wordpress" title="library/wordpress Docker 镜像中文简介、标签列表与拉取命令">library/wordpress — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/wordpress" title="library/wordpress Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/wordpress</a></p>
 
 # WordPress Docker 镜像使用指南
 
@@ -184,3 +184,7 @@ volumes:
 ### 预装主题/插件  
 - **运行时挂载**：将主题/插件目录挂载到 `/var/www/html/wp-content/themes/` 或 `/var/www/html/wp-content/plugins/`。  
 - **构建时集成**：构建镜像时，将主题/插件放在 `/usr/src/wordpress/wp-content/`（容器首次启动时会复制
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/wordpress" title="library/wordpress Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/wordpress</a></p>

@@ -2,14 +2,14 @@
 image: justlikemaki/aiclient-2-api
 source: https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api
 canonical: https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [justlikemaki/aiclient-2-api — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api "justlikemaki/aiclient-2-api Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api" title="justlikemaki/aiclient-2-api Docker 镜像中文简介、标签列表与拉取命令">justlikemaki/aiclient-2-api — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api" title="justlikemaki/aiclient-2-api Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api</a></p>
 
 # AIClient-2-API
 
@@ -88,3 +88,7 @@ curl http://localhost:3000/ollama/api/chat -H "Content-Type: application/json" -
 - [Docker Hub - justlikemaki/aiclient-2-api](https://hub.docker.com/r/justlikemaki/aiclient-2-api)
 - 项目 GitHub 与完整文档见镜像仓库说明
 - 开源协议：GNU General Public License v3 (GPLv3)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api" title="justlikemaki/aiclient-2-api Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api</a></p>

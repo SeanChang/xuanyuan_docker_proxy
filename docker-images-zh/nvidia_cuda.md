@@ -2,14 +2,14 @@
 image: nvidia/cuda
 source: https://xuanyuan.cloud/zh/r/nvidia/cuda
 canonical: https://xuanyuan.cloud/zh/r/nvidia/cuda
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [nvidia/cuda — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/nvidia/cuda "nvidia/cuda Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/nvidia/cuda
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nvidia/cuda" title="nvidia/cuda Docker 镜像中文简介、标签列表与拉取命令">nvidia/cuda — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/nvidia/cuda" title="nvidia/cuda Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nvidia/cuda</a></p>
 
 ## NVIDIA CUDA  
 [CUDA](https://developer.nvidia.com/cuda-zone) 是 NVIDIA 开发的并行计算平台与编程模型，用于图形处理器（GPU）的通用计算。借助 CUDA，开发者可利用 GPU 算力显著加速计算应用。  
@@ -146,3 +146,7 @@ Error response from daemon: manifest for nvidia/cuda:latest not found: manifest 
 
 ## 描述来源  
 本文档基于 CUDA 容器镜像源码仓库的 `doc/README.md`（[历史记录](https://gitlab.com/nvidia/container-images/cuda/blob/master/dist/13.2.0/ubi8/runtime/Dockerfile)）。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nvidia/cuda" title="nvidia/cuda Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nvidia/cuda</a></p>

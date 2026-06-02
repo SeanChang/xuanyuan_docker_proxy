@@ -2,14 +2,14 @@
 image: onlyoffice/4testing-documentserver
 source: https://xuanyuan.cloud/zh/r/onlyoffice/4testing-documentserver
 canonical: https://xuanyuan.cloud/zh/r/onlyoffice/4testing-documentserver
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [onlyoffice/4testing-documentserver — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/onlyoffice/4testing-documentserver "onlyoffice/4testing-documentserver Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/onlyoffice/4testing-documentserver
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/onlyoffice/4testing-documentserver" title="onlyoffice/4testing-documentserver Docker 镜像中文简介、标签列表与拉取命令">onlyoffice/4testing-documentserver — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/onlyoffice/4testing-documentserver" title="onlyoffice/4testing-documentserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/onlyoffice/4testing-documentserver</a></p>
 
 # ONLYOFFICE 文档服务器 Docker 镜像文档
 
@@ -314,3 +314,7 @@ sudo docker exec <容器ID> documentserver-prepare4shutdown.sh
 
 - **官方论坛**：[dev.onlyoffice.org](https://dev.onlyoffice.org)
 - **Stack Overflow**：[tagged/onlyoffice](https://stackoverflow.com/questions/tagged/onlyoffice)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/onlyoffice/4testing-documentserver" title="onlyoffice/4testing-documentserver Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/onlyoffice/4testing-documentserver</a></p>

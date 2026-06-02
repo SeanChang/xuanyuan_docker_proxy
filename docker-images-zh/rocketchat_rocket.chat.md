@@ -2,14 +2,14 @@
 image: rocketchat/rocket.chat
 source: https://xuanyuan.cloud/zh/r/rocketchat/rocket.chat
 canonical: https://xuanyuan.cloud/zh/r/rocketchat/rocket.chat
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [rocketchat/rocket.chat — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rocketchat/rocket.chat "rocketchat/rocket.chat Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/rocketchat/rocket.chat
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/rocketchat/rocket.chat" title="rocketchat/rocket.chat Docker 镜像中文简介、标签列表与拉取命令">rocketchat/rocket.chat — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/rocketchat/rocket.chat" title="rocketchat/rocket.chat Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rocketchat/rocket.chat</a></p>
 
 # Rocket.Chat Docker镜像文档
 
@@ -205,3 +205,7 @@ Rocket.Chat 容器通过环境变量配置核心参数，常用配置如下：
 - **Docker 部署指南**：[Docker 安装说明](https://rocket.chat/docs/installation/docker-containers/)  
 - **社区支持**：[Rocket.Chat 社区服务器](https://open.rocket.chat/)  
 - **问题反馈**：[GitHub Issues](https://github.com/RocketChat/Rocket.Chat/issues)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/rocketchat/rocket.chat" title="rocketchat/rocket.chat Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/rocketchat/rocket.chat</a></p>

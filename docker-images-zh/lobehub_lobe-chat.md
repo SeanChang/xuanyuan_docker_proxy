@@ -2,14 +2,14 @@
 image: lobehub/lobe-chat
 source: https://xuanyuan.cloud/zh/r/lobehub/lobe-chat
 canonical: https://xuanyuan.cloud/zh/r/lobehub/lobe-chat
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [lobehub/lobe-chat — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/lobehub/lobe-chat "lobehub/lobe-chat Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/lobehub/lobe-chat
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/lobehub/lobe-chat" title="lobehub/lobe-chat Docker 镜像中文简介、标签列表与拉取命令">lobehub/lobe-chat — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/lobehub/lobe-chat" title="lobehub/lobe-chat Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/lobehub/lobe-chat</a></p>
 
 ## Lobe Chat
 
@@ -43,3 +43,7 @@ docker run -d -p 3000:3000 --name lobe-chat lobehub/lobe-chat
 - **Docker 镜像**：[lobehub/lobe-chat]([])  
 - **社区交流**：[ 群组]()  
 - **问题反馈**：[提交 Issue]([])
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/lobehub/lobe-chat" title="lobehub/lobe-chat Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/lobehub/lobe-chat</a></p>

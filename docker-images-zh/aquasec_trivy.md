@@ -2,14 +2,14 @@
 image: aquasec/trivy
 source: https://xuanyuan.cloud/zh/r/aquasec/trivy
 canonical: https://xuanyuan.cloud/zh/r/aquasec/trivy
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [aquasec/trivy — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/aquasec/trivy "aquasec/trivy Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/aquasec/trivy
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/aquasec/trivy" title="aquasec/trivy Docker 镜像中文简介、标签列表与拉取命令">aquasec/trivy — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/aquasec/trivy" title="aquasec/trivy Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/aquasec/trivy</a></p>
 
 # Trivy Docker镜像文档
 
@@ -91,3 +91,7 @@ docker run -v /var/run/docker.sock:/var/run/docker.sock -v [本地缓存目录]:
 ## 许可信息
 
 Trivy 基于 [Apache 2.0 许可](https://www.apache.org/licenses/LICENSE-2.0) 开源。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/aquasec/trivy" title="aquasec/trivy Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/aquasec/trivy</a></p>

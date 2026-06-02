@@ -2,14 +2,14 @@
 image: verlai/verl
 source: https://xuanyuan.cloud/zh/r/verlai/verl
 canonical: https://xuanyuan.cloud/zh/r/verlai/verl
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [verlai/verl — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/verlai/verl "verlai/verl Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/verlai/verl
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/verlai/verl" title="verlai/verl Docker 镜像中文简介、标签列表与拉取命令">verlai/verl — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/verlai/verl" title="verlai/verl Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/verlai/verl</a></p>
 
 # verl - 大模型强化学习训练与推理工具集
 
@@ -114,3 +114,7 @@ verl 内置了多种强化学习算法，包括：
 ## 许可证
 
 verl 采用开源许可证，详情请参阅项目仓库。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/verlai/verl" title="verlai/verl Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/verlai/verl</a></p>

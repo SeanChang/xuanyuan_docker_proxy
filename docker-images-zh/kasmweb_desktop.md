@@ -2,14 +2,14 @@
 image: kasmweb/desktop
 source: https://xuanyuan.cloud/zh/r/kasmweb/desktop
 canonical: https://xuanyuan.cloud/zh/r/kasmweb/desktop
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [kasmweb/desktop — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kasmweb/desktop "kasmweb/desktop Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/kasmweb/desktop
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kasmweb/desktop" title="kasmweb/desktop Docker 镜像中文简介、标签列表与拉取命令">kasmweb/desktop — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/kasmweb/desktop" title="kasmweb/desktop Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/desktop</a></p>
 
 # Kasm Workspaces 介绍  
 
@@ -81,3 +81,7 @@ sudo docker run --rm -it --shm-size=512m -p 6901:6901 -e VNC_PW=password kasmweb
 
 ### 问题反馈  
 - [GitHub Issue Tracker]([])：社区问题反馈平台。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kasmweb/desktop" title="kasmweb/desktop Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/desktop</a></p>

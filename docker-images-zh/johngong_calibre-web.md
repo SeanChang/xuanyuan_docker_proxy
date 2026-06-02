@@ -2,14 +2,14 @@
 image: johngong/calibre-web
 source: https://xuanyuan.cloud/zh/r/johngong/calibre-web
 canonical: https://xuanyuan.cloud/zh/r/johngong/calibre-web
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [johngong/calibre-web — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/johngong/calibre-web "johngong/calibre-web Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/johngong/calibre-web
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/johngong/calibre-web" title="johngong/calibre-web Docker 镜像中文简介、标签列表与拉取命令">johngong/calibre-web — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/johngong/calibre-web" title="johngong/calibre-web Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/johngong/calibre-web</a></p>
 
 # 群晖NAS自用calibre-web方案
 
@@ -113,3 +113,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 - **多语言支持**：  
   - calibre-web支持语言：`en`/`cs`/`de`/`es`/`fr`/`zh_Hans_CN`/`zh_Hant_TW`等（通过`CALIBRE_WEB_LANGUAGE`设置）。  
   - calibre-server支持语言：`en`/`zh_CN`/`ja`/`ko`等（通过`CALIBRE_SERVER_WEB_LANGUAGE`设置）。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/johngong/calibre-web" title="johngong/calibre-web Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/johngong/calibre-web</a></p>

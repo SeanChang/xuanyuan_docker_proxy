@@ -2,14 +2,14 @@
 image: dr34m/openclaw
 source: https://xuanyuan.cloud/zh/r/dr34m/openclaw
 canonical: https://xuanyuan.cloud/zh/r/dr34m/openclaw
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [dr34m/openclaw — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/dr34m/openclaw "dr34m/openclaw Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/dr34m/openclaw
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/dr34m/openclaw" title="dr34m/openclaw Docker 镜像中文简介、标签列表与拉取命令">dr34m/openclaw — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/dr34m/openclaw" title="dr34m/openclaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dr34m/openclaw</a></p>
 
 # OpenClaw 自动同步 Docker 镜像
 
@@ -47,3 +47,7 @@ docker pull dr34m/openclaw:main-slim
 ### 镜像使用
 
 拉取完成后，可通过常规Docker命令运行镜像，具体运行参数请参考OpenClaw官方文档。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/dr34m/openclaw" title="dr34m/openclaw Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/dr34m/openclaw</a></p>

@@ -2,14 +2,14 @@
 image: ngc7331/mcsmanager-daemon
 source: https://xuanyuan.cloud/zh/r/ngc7331/mcsmanager-daemon
 canonical: https://xuanyuan.cloud/zh/r/ngc7331/mcsmanager-daemon
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ngc7331/mcsmanager-daemon — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ngc7331/mcsmanager-daemon "ngc7331/mcsmanager-daemon Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ngc7331/mcsmanager-daemon
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ngc7331/mcsmanager-daemon" title="ngc7331/mcsmanager-daemon Docker 镜像中文简介、标签列表与拉取命令">ngc7331/mcsmanager-daemon — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ngc7331/mcsmanager-daemon" title="ngc7331/mcsmanager-daemon Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ngc7331/mcsmanager-daemon</a></p>
 
 # Docker化MCSManager快速部署方案
 
@@ -81,3 +81,7 @@ docker-compose up -d
 
 
 通过以上步骤，可快速完成MCSManager的部署与使用，适合对命令行操作不熟悉的用户，或需要快速复现环境的场景。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ngc7331/mcsmanager-daemon" title="ngc7331/mcsmanager-daemon Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ngc7331/mcsmanager-daemon</a></p>

@@ -2,14 +2,14 @@
 image: library/ibm-semeru-runtimes
 source: https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes
 canonical: https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/ibm-semeru-runtimes — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes "library/ibm-semeru-runtimes Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes" title="library/ibm-semeru-runtimes Docker 镜像中文简介、标签列表与拉取命令">library/ibm-semeru-runtimes — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes" title="library/ibm-semeru-runtimes Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes</a></p>
 
 # IBM Semeru Runtimes Docker 镜像使用指南
 
@@ -181,3 +181,7 @@ docker run -it --rm -v $(pwd):/src library/ibm-semeru-runtimes:open-11-jdk sh -c
 - **基础镜像软件**：镜像中包含的基础系统组件（如 Bash、Ubuntu 库）可能遵循其他开源许可（如 MIT、Apache 等），具体可查看 repo-info 仓库的 ibm-semeru-runtimes/ 目录
 
 使用前请确保遵守所有包含软件的许可条款，商业场景需确认 GPLv2 Classpath Exception 的适用范围。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes" title="library/ibm-semeru-runtimes Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes</a></p>

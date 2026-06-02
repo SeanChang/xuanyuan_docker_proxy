@@ -2,14 +2,14 @@
 image: proxysql/proxysql
 source: https://xuanyuan.cloud/zh/r/proxysql/proxysql
 canonical: https://xuanyuan.cloud/zh/r/proxysql/proxysql
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [proxysql/proxysql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/proxysql/proxysql "proxysql/proxysql Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/proxysql/proxysql
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/proxysql/proxysql" title="proxysql/proxysql Docker 镜像中文简介、标签列表与拉取命令">proxysql/proxysql — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/proxysql/proxysql" title="proxysql/proxysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/proxysql/proxysql</a></p>
 
 # ProxySQL Docker镜像文档
 
@@ -121,3 +121,7 @@ mysql -h127.0.0.1 -P16032 -uradmin -pradmin --prompt "ProxySQL Admin>"
 ## Dockerfile信息
 
 镜像构建细节请参考官方GitHub仓库：[ProxySQL Docker-Images](https://github.com/ProxySQL/docker-images/tree/main/proxysql-images)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/proxysql/proxysql" title="proxysql/proxysql Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/proxysql/proxysql</a></p>

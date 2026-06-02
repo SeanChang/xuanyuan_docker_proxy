@@ -2,14 +2,14 @@
 image: codercom/code-server
 source: https://xuanyuan.cloud/zh/r/codercom/code-server
 canonical: https://xuanyuan.cloud/zh/r/codercom/code-server
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [codercom/code-server — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/codercom/code-server "codercom/code-server Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/codercom/code-server
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/codercom/code-server" title="codercom/code-server Docker 镜像中文简介、标签列表与拉取命令">codercom/code-server — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/codercom/code-server" title="codercom/code-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/codercom/code-server</a></p>
 
 # code-server Docker镜像文档
 
@@ -69,3 +69,7 @@ docker run -it --name code-server -p 127.0.0.1:8080:8080 \
 
 - [Visual Studio Code](https://github.com/microsoft/vscode)（MIT许可证）
 - 更多依赖归因请参考：[https://coder.com/legal/open-source-licenses](https://coder.com/legal/open-source-licenses)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/codercom/code-server" title="codercom/code-server Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/codercom/code-server</a></p>

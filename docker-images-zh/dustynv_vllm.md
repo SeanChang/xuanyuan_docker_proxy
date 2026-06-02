@@ -2,14 +2,14 @@
 image: dustynv/vllm
 source: https://xuanyuan.cloud/zh/r/dustynv/vllm
 canonical: https://xuanyuan.cloud/zh/r/dustynv/vllm
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [dustynv/vllm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/dustynv/vllm "dustynv/vllm Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/dustynv/vllm
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/dustynv/vllm" title="dustynv/vllm Docker 镜像中文简介、标签列表与拉取命令">dustynv/vllm — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/dustynv/vllm" title="dustynv/vllm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dustynv/vllm</a></p>
 
 # vLLM (NVIDIA Jetson 优化版) 镜像文档
 
@@ -109,3 +109,7 @@ vLLM 支持丰富的命令行参数，常用配置包括：
 - 官方文档：[vLLM Documentation](https://docs.vllm.ai/)
 - Jetson 容器项目：[dustynv/jetson-containers](https://github.com/dustynv/jetson-containers)
 - PagedAttention 论文：[Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/dustynv/vllm" title="dustynv/vllm Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/dustynv/vllm</a></p>

@@ -2,14 +2,14 @@
 image: jenkins/agent
 source: https://xuanyuan.cloud/zh/r/jenkins/agent
 canonical: https://xuanyuan.cloud/zh/r/jenkins/agent
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [jenkins/agent — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jenkins/agent "jenkins/agent Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/jenkins/agent
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/jenkins/agent" title="jenkins/agent Docker 镜像中文简介、标签列表与拉取命令">jenkins/agent — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/jenkins/agent" title="jenkins/agent Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jenkins/agent</a></p>
 
 # Jenkins Agent Docker 镜像文档
 
@@ -200,3 +200,7 @@ RUN ln -snf /usr/share/zoneinfo/"${TZ}" /etc/localtime && echo "${TZ}" > /etc/ti
 
 - **镜像版本**：`3.35-1` 及以上版本的更新日志见 [GitHub Releases](https://github.com/jenkinsci/docker-agent/releases)，更早版本无单独日志，可参考提交历史。
 - **Remoting 库**：更新日志见 [Jenkins Remoting Releases](https://github.com/jenkinsci/remoting/releases)。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/jenkins/agent" title="jenkins/agent Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/jenkins/agent</a></p>

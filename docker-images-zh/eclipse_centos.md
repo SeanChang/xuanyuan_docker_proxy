@@ -2,14 +2,14 @@
 image: eclipse/centos
 source: https://xuanyuan.cloud/zh/r/eclipse/centos
 canonical: https://xuanyuan.cloud/zh/r/eclipse/centos
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [eclipse/centos — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/eclipse/centos "eclipse/centos Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/eclipse/centos
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/eclipse/centos" title="eclipse/centos Docker 镜像中文简介、标签列表与拉取命令">eclipse/centos — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/eclipse/centos" title="eclipse/centos Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/eclipse/centos</a></p>
 
 # Eclipse Che 基础栈 Docker 镜像
 
@@ -187,3 +187,7 @@ git clone https://github.com/example/project.git /workspace/project
 - [Eclipse Che 官方文档](https://eclipse.org/che/docs/)
 - [Che Stacks 定制指南](https://github.com/eclipse/che/blob/master/CUSTOMIZING.md)
 - [Eclipse Che GitHub 仓库](https://github.com/eclipse/che)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/eclipse/centos" title="eclipse/centos Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/eclipse/centos</a></p>

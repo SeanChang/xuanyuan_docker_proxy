@@ -2,14 +2,14 @@
 image: ai/qwen3-vllm
 source: https://xuanyuan.cloud/zh/r/ai/qwen3-vllm
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen3-vllm
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ai/qwen3-vllm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ai/qwen3-vllm "ai/qwen3-vllm Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ai/qwen3-vllm
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-vllm" title="ai/qwen3-vllm Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-vllm — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-vllm" title="ai/qwen3-vllm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-vllm</a></p>
 
 # Qwen3
 
@@ -94,3 +94,7 @@ docker model run ai/qwen3-vllm
 ## 🔗 链接
 
 - [Qwen3: Think Deeper, Act Faster](https://qwenlm.github.io/blog/qwen3/)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-vllm" title="ai/qwen3-vllm Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-vllm</a></p>

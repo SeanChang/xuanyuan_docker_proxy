@@ -2,14 +2,14 @@
 image: b3log/siyuan
 source: https://xuanyuan.cloud/zh/r/b3log/siyuan
 canonical: https://xuanyuan.cloud/zh/r/b3log/siyuan
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [b3log/siyuan — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/b3log/siyuan "b3log/siyuan Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/b3log/siyuan
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/b3log/siyuan" title="b3log/siyuan Docker 镜像中文简介、标签列表与拉取命令">b3log/siyuan — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/b3log/siyuan" title="b3log/siyuan Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/b3log/siyuan</a></p>
 
 ## 项目简介  
 
@@ -70,3 +70,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 ## 许可证  
 
 项目采用 AGPLv3 开源许可证，详细条款见 [LICENSE 文件]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/b3log/siyuan" title="b3log/siyuan Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/b3log/siyuan</a></p>

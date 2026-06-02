@@ -2,14 +2,14 @@
 image: apache/beam_java17_sdk
 source: https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk
 canonical: https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [apache/beam_java17_sdk — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk "apache/beam_java17_sdk Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk" title="apache/beam_java17_sdk Docker 镜像中文简介、标签列表与拉取命令">apache/beam_java17_sdk — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk" title="apache/beam_java17_sdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk</a></p>
 
 # Apache Beam Java 17 SDK 镜像文档
 
@@ -151,3 +151,7 @@ docker run -it --rm -v /path/to/project:/app apache/beam-java17-sdk:latest \
 - [Apache Beam官方文档](https://beam.apache.org/documentation/)
 - [Beam Java SDK API文档](https://beam.apache.org/releases/javadoc/current/)
 - [Beam执行引擎配置指南](https://beam.apache.org/documentation/runners/)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk" title="apache/beam_java17_sdk Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk</a></p>

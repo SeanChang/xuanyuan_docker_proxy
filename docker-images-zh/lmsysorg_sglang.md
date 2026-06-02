@@ -2,14 +2,14 @@
 image: lmsysorg/sglang
 source: https://xuanyuan.cloud/zh/r/lmsysorg/sglang
 canonical: https://xuanyuan.cloud/zh/r/lmsysorg/sglang
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [lmsysorg/sglang — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/lmsysorg/sglang "lmsysorg/sglang Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/lmsysorg/sglang
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/lmsysorg/sglang" title="lmsysorg/sglang Docker 镜像中文简介、标签列表与拉取命令">lmsysorg/sglang — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/lmsysorg/sglang" title="lmsysorg/sglang Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/lmsysorg/sglang</a></p>
 
 # sglang Docker镜像使用说明
 
@@ -75,3 +75,7 @@ docker run -d --name sglang-service \
 
 
 通过以上步骤，即可快速通过Docker容器启动sglang服务，如需更多配置细节，可参考sglang项目官方文档或镜像仓库说明。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/lmsysorg/sglang" title="lmsysorg/sglang Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/lmsysorg/sglang</a></p>

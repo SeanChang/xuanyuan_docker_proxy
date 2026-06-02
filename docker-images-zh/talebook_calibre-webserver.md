@@ -2,14 +2,14 @@
 image: talebook/calibre-webserver
 source: https://xuanyuan.cloud/zh/r/talebook/calibre-webserver
 canonical: https://xuanyuan.cloud/zh/r/talebook/calibre-webserver
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [talebook/calibre-webserver — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/talebook/calibre-webserver "talebook/calibre-webserver Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/talebook/calibre-webserver
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/talebook/calibre-webserver" title="talebook/calibre-webserver Docker 镜像中文简介、标签列表与拉取命令">talebook/calibre-webserver — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/talebook/calibre-webserver" title="talebook/calibre-webserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/talebook/calibre-webserver</a></p>
 
 # Talebook 图书管理系统镜像说明
 
@@ -36,3 +36,7 @@ docker run -d --name talebook \
   talebook/talebook
 ```
 *注：将`/path/to/books`和`/path/to/config`替换为本地实际路径，用于持久化存储书籍和配置数据。*
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/talebook/calibre-webserver" title="talebook/calibre-webserver Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/talebook/calibre-webserver</a></p>

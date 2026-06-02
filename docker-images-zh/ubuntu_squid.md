@@ -2,14 +2,14 @@
 image: ubuntu/squid
 source: https://xuanyuan.cloud/zh/r/ubuntu/squid
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/squid
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ubuntu/squid — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ubuntu/squid "ubuntu/squid Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ubuntu/squid
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/squid" title="ubuntu/squid Docker 镜像中文简介、标签列表与拉取命令">ubuntu/squid — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/squid" title="ubuntu/squid Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/squid</a></p>
 
 # Squid | Ubuntu  
 
@@ -123,3 +123,7 @@ docker run -d --name squid-container -e TZ=UTC -p 3128:3128 ubuntu/squid:5.2-22.
 | 通道   | 版本   | 终止支持日期 | 升级路径 |
 |--------|--------|--------------|----------|
 | _`track`_ |        |              |          |
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/squid" title="ubuntu/squid Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/squid</a></p>

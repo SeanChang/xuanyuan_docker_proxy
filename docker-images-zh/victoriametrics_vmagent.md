@@ -2,14 +2,14 @@
 image: victoriametrics/vmagent
 source: https://xuanyuan.cloud/zh/r/victoriametrics/vmagent
 canonical: https://xuanyuan.cloud/zh/r/victoriametrics/vmagent
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [victoriametrics/vmagent — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/victoriametrics/vmagent "victoriametrics/vmagent Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/victoriametrics/vmagent
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/victoriametrics/vmagent" title="victoriametrics/vmagent Docker 镜像中文简介、标签列表与拉取命令">victoriametrics/vmagent — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/victoriametrics/vmagent" title="victoriametrics/vmagent Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/victoriametrics/vmagent</a></p>
 
 <p align="center">
   <img src="https://victoriametrics.com/icons/apple-touch-icon.webp" width="150" alt="VictoriaMetrics标志"/>
@@ -48,3 +48,7 @@ docker run -d --name vmagent \
 - `-remoteWrite.url`指定VictoriaMetrics的写入地址
 
 有关与VictoriaMetrics集成进行指标收集的完整示例，请参见[Docker Compose环境配置](https://github.com/VictoriaMetrics/VictoriaMetrics/tree/master/deployment/docker#docker-compose-environment-for-victoriametrics)。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/victoriametrics/vmagent" title="victoriametrics/vmagent Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/victoriametrics/vmagent</a></p>

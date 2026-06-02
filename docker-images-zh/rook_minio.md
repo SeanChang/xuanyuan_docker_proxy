@@ -2,14 +2,14 @@
 image: rook/minio
 source: https://xuanyuan.cloud/zh/r/rook/minio
 canonical: https://xuanyuan.cloud/zh/r/rook/minio
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [rook/minio — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rook/minio "rook/minio Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/rook/minio
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/rook/minio" title="rook/minio Docker 镜像中文简介、标签列表与拉取命令">rook/minio — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/rook/minio" title="rook/minio Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rook/minio</a></p>
 
 # Minio Docker镜像文档
 
@@ -215,3 +215,7 @@ docker run -d \
 2. **性能优化**：存储目录建议使用SSD或高性能文件系统（如XFS），分布式部署时确保节点间网络带宽充足（推荐10Gbps）。
 3. **备份策略**：定期备份Minio数据目录，或通过Minio的复制功能（Replication）实现跨区域数据备份。
 4. **版本兼容性**：升级镜像时需注意版本间兼容性，参考[Minio官方升级文档](https://min.io/docs/minio/linux/operations/upgrades.html)。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/rook/minio" title="rook/minio Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/rook/minio</a></p>

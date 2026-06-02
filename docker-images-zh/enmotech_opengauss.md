@@ -2,14 +2,14 @@
 image: enmotech/opengauss
 source: https://xuanyuan.cloud/zh/r/enmotech/opengauss
 canonical: https://xuanyuan.cloud/zh/r/enmotech/opengauss
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [enmotech/opengauss — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/enmotech/opengauss "enmotech/opengauss Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/enmotech/opengauss
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/enmotech/opengauss" title="enmotech/opengauss Docker 镜像中文简介、标签列表与拉取命令">enmotech/opengauss — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/enmotech/opengauss" title="enmotech/opengauss Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/enmotech/opengauss</a></p>
 
 # openGauss Docker镜像使用指南
 
@@ -199,3 +199,7 @@ $ gs_ctl query -D /var/lib/opengauss/data/
 EnmoTech（北京安恒信科技）成立于2011年，是智能数据技术提供商，总部位于北京，全球35个地区设有分支机构（含香港、新加坡、悉尼等）。专注于数据与数据库解决方案创新，提供HTAP数据库、软件定义分布式存储、数据库部署与性能管理、智能数据分析等服务。已服务超3000家企业客户，管理超50000个业务系统。  
 
 了解更多：[www.enmotech.com]([])，或联系：[邮箱已删除]
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/enmotech/opengauss" title="enmotech/opengauss Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/enmotech/opengauss</a></p>

@@ -2,14 +2,14 @@
 image: ginuerzh/qwerty-learner
 source: https://xuanyuan.cloud/zh/r/ginuerzh/qwerty-learner
 canonical: https://xuanyuan.cloud/zh/r/ginuerzh/qwerty-learner
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ginuerzh/qwerty-learner — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ginuerzh/qwerty-learner "ginuerzh/qwerty-learner Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ginuerzh/qwerty-learner
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ginuerzh/qwerty-learner" title="ginuerzh/qwerty-learner Docker 镜像中文简介、标签列表与拉取命令">ginuerzh/qwerty-learner — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ginuerzh/qwerty-learner" title="ginuerzh/qwerty-learner Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ginuerzh/qwerty-learner</a></p>
 
 # qwerty-learner Docker镜像文档
 
@@ -92,3 +92,7 @@ docker-compose up -d
 - **端口冲突**：若主机8080端口被占用，修改 `-p` 参数中的主机端口（如 `-p 8888:80`）
 - **自定义内容不显示**：检查文件命名格式是否正确，确保挂载路径与 `CUSTOM_CONTENT_PATH` 一致
 - **中文显示乱码**：确保自定义文本文件编码为 UTF-8
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ginuerzh/qwerty-learner" title="ginuerzh/qwerty-learner Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ginuerzh/qwerty-learner</a></p>

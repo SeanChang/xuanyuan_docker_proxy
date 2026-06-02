@@ -2,14 +2,14 @@
 image: sonatype/nexus3
 source: https://xuanyuan.cloud/zh/r/sonatype/nexus3
 canonical: https://xuanyuan.cloud/zh/r/sonatype/nexus3
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [sonatype/nexus3 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/sonatype/nexus3 "sonatype/nexus3 Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/sonatype/nexus3
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/sonatype/nexus3" title="sonatype/nexus3 Docker 镜像中文简介、标签列表与拉取命令">sonatype/nexus3 — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/sonatype/nexus3" title="sonatype/nexus3 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/sonatype/nexus3</a></p>
 
 # Sonatype Nexus Repository 介绍
 
@@ -117,3 +117,7 @@ docker run -d -p 8081:8081 --name nexus -v /some/dir/nexus-data:/nexus-data sona
 - Sonatype Nexus Repository Core 包含 Sencha Ext JS，遵循 FLOSS 例外条款，Sencha Ext JS 基于 GPL v3 许可，不可用于闭源软件分发。  
 - 社区版使用受 [最终用户许可协议]([]) 约束。  
 - 版权所有 © 2008-present Sonatype, Inc.
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/sonatype/nexus3" title="sonatype/nexus3 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/sonatype/nexus3</a></p>

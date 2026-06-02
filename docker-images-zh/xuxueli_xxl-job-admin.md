@@ -2,14 +2,14 @@
 image: xuxueli/xxl-job-admin
 source: https://xuanyuan.cloud/zh/r/xuxueli/xxl-job-admin
 canonical: https://xuanyuan.cloud/zh/r/xuxueli/xxl-job-admin
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [xuxueli/xxl-job-admin — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/xuxueli/xxl-job-admin "xuxueli/xxl-job-admin Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/xuxueli/xxl-job-admin
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/xuxueli/xxl-job-admin" title="xuxueli/xxl-job-admin Docker 镜像中文简介、标签列表与拉取命令">xuxueli/xxl-job-admin — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/xuxueli/xxl-job-admin" title="xuxueli/xxl-job-admin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xuxueli/xxl-job-admin</a></p>
 
 # XXL-JOB 分布式任务调度框架
 
@@ -71,3 +71,7 @@ XXL-JOB 凭借以下特性成为企业级任务调度的优选方案：
 
 
 XXL-JOB 始终以“解决实际业务问题”为导向，致力于成为简单、可靠、高效的分布式任务调度工具。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/xuxueli/xxl-job-admin" title="xuxueli/xxl-job-admin Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/xuxueli/xxl-job-admin</a></p>

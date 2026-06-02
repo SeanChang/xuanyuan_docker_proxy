@@ -2,14 +2,14 @@
 image: mohanadkombar/cosmos-predict2.5
 source: https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5
 canonical: https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [mohanadkombar/cosmos-predict2.5 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5 "mohanadkombar/cosmos-predict2.5 Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5" title="mohanadkombar/cosmos-predict2.5 Docker 镜像中文简介、标签列表与拉取命令">mohanadkombar/cosmos-predict2.5 — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5" title="mohanadkombar/cosmos-predict2.5 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5</a></p>
 
 # cosmos--predec2.5 Docker镜像文档
 
@@ -49,3 +49,7 @@ docker run -v /本地路径/config.json:/app/config.json cosmos--predec2.5
 
 ### 环境一致性保障
 由于镜像已固化所有依赖组件，无需在宿主环境中安装额外库或工具，直接运行即可确保应用按预期执行。如需调整配置，仅需修改外部JSON文件并重新挂载，无需重建镜像。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5" title="mohanadkombar/cosmos-predict2.5 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5</a></p>

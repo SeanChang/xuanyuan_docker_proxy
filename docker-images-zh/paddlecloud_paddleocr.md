@@ -2,14 +2,14 @@
 image: paddlecloud/paddleocr
 source: https://xuanyuan.cloud/zh/r/paddlecloud/paddleocr
 canonical: https://xuanyuan.cloud/zh/r/paddlecloud/paddleocr
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [paddlecloud/paddleocr — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/paddlecloud/paddleocr "paddlecloud/paddleocr Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/paddlecloud/paddleocr
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/paddlecloud/paddleocr" title="paddlecloud/paddleocr Docker 镜像中文简介、标签列表与拉取命令">paddlecloud/paddleocr — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/paddlecloud/paddleocr" title="paddlecloud/paddleocr Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/paddlecloud/paddleocr</a></p>
 
 # PaddleOCR
 
@@ -91,3 +91,7 @@ docker run --name ppocr --runtime=nvidia -v $PWD:/mnt -p 8888:8888 -it --shm-siz
 
 
 若有建议或问题，可在[paddlecloud issue]([])反馈。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/paddlecloud/paddleocr" title="paddlecloud/paddleocr Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/paddlecloud/paddleocr</a></p>

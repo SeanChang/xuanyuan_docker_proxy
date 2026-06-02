@@ -2,14 +2,14 @@
 image: talebook/talebook
 source: https://xuanyuan.cloud/zh/r/talebook/talebook
 canonical: https://xuanyuan.cloud/zh/r/talebook/talebook
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [talebook/talebook — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/talebook/talebook "talebook/talebook Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/talebook/talebook
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/talebook/talebook" title="talebook/talebook Docker 镜像中文简介、标签列表与拉取命令">talebook/talebook — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/talebook/talebook" title="talebook/talebook Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/talebook/talebook</a></p>
 
 # 基于Calibre + Vue的在线图书管理系统  
 
@@ -68,3 +68,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 
 
 （项目曾用名：calibre-webserver）
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/talebook/talebook" title="talebook/talebook Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/talebook/talebook</a></p>

@@ -2,14 +2,14 @@
 image: library/phpmyadmin
 source: https://xuanyuan.cloud/zh/r/library/phpmyadmin
 canonical: https://xuanyuan.cloud/zh/r/library/phpmyadmin
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/phpmyadmin — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/phpmyadmin "library/phpmyadmin Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/phpmyadmin
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/phpmyadmin" title="library/phpmyadmin Docker 镜像中文简介、标签列表与拉取命令">library/phpmyadmin — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/phpmyadmin" title="library/phpmyadmin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/phpmyadmin</a></p>
 
 # phpMyAdmin Docker 镜像使用指南
 
@@ -194,3 +194,7 @@ docker run --name phpmyadmin -d -e PMA_HOSTS='sslhost,nosslhost' -e PMA_SSLS='1,
 镜像中软件的许可信息见 [phpmyadmin/docker 仓库 LICENSE]([])。  
 Docker 镜像可能包含其他软件（如基础系统的 Bash 等），其许可证需用户自行确认合规性。  
 自动检测的许可信息可参考 [repo-info 仓库的 `phpmyadmin/` 目录]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/phpmyadmin" title="library/phpmyadmin Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/phpmyadmin</a></p>

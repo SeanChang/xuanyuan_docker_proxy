@@ -2,14 +2,14 @@
 image: jxxghp/moviepilot
 source: https://xuanyuan.cloud/zh/r/jxxghp/moviepilot
 canonical: https://xuanyuan.cloud/zh/r/jxxghp/moviepilot
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [jxxghp/moviepilot — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jxxghp/moviepilot "jxxghp/moviepilot Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/jxxghp/moviepilot
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/jxxghp/moviepilot" title="jxxghp/moviepilot Docker 镜像中文简介、标签列表与拉取命令">jxxghp/moviepilot — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/jxxghp/moviepilot" title="jxxghp/moviepilot Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jxxghp/moviepilot</a></p>
 
 # MoviePilot：NAS媒体库自动化管理工具
 
@@ -28,3 +28,7 @@ MoviePilot 是一款 NAS 媒体库自动化管理工具。
 
 ## 安装指引  
 详细安装说明可参考：[[]]([])
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/jxxghp/moviepilot" title="jxxghp/moviepilot Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/jxxghp/moviepilot</a></p>

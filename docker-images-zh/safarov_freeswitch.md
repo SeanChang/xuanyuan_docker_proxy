@@ -2,14 +2,14 @@
 image: safarov/freeswitch
 source: https://xuanyuan.cloud/zh/r/safarov/freeswitch
 canonical: https://xuanyuan.cloud/zh/r/safarov/freeswitch
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [safarov/freeswitch — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/safarov/freeswitch "safarov/freeswitch Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/safarov/freeswitch
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/safarov/freeswitch" title="safarov/freeswitch Docker 镜像中文简介、标签列表与拉取命令">safarov/freeswitch — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/safarov/freeswitch" title="safarov/freeswitch Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/safarov/freeswitch</a></p>
 
 # FreeSwitch 最小化 Docker 容器介绍
 
@@ -181,3 +181,7 @@ docker build -t freeswitch_custom .  # "freeswitch_custom" 为自定义镜像名
 
 ## 参考链接  
 [官方 FreeSwitch 容器 Dockerfile]([])
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/safarov/freeswitch" title="safarov/freeswitch Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/safarov/freeswitch</a></p>

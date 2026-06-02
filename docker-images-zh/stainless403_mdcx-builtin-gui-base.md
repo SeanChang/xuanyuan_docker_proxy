@@ -2,14 +2,14 @@
 image: stainless403/mdcx-builtin-gui-base
 source: https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base
 canonical: https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [stainless403/mdcx-builtin-gui-base — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base "stainless403/mdcx-builtin-gui-base Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base" title="stainless403/mdcx-builtin-gui-base Docker 镜像中文简介、标签列表与拉取命令">stainless403/mdcx-builtin-gui-base — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base" title="stainless403/mdcx-builtin-gui-base Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base</a></p>
 
 # mdcx-builtin-gui-base 镜像文档
 
@@ -226,3 +226,7 @@ docker rm -f watchtower-mdcx
 - **数据备份**：定期备份 `mdcx-config` 和 `data` 目录，防止配置丢失。
 - **镜像选择**：如需使用本地 MDCx 源码，应选择 `stainless403/mdcx-src-gui-base` 镜像（详见 [官方文档](https://github.com/northsea4/mdcx-docker/blob/main/gui-base/mdcx-src.md)）。
 - **版本更新**：通过 `docker-compose pull` 或 `watchtower` 更新镜像时，建议先查看官方更新日志，确认兼容性。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base" title="stainless403/mdcx-builtin-gui-base Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base</a></p>

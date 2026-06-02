@@ -2,14 +2,14 @@
 image: meteorcollector/b2dvl_carla
 source: https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla
 canonical: https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [meteorcollector/b2dvl_carla — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla "meteorcollector/b2dvl_carla Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla" title="meteorcollector/b2dvl_carla Docker 镜像中文简介、标签列表与拉取命令">meteorcollector/b2dvl_carla — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla" title="meteorcollector/b2dvl_carla Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla</a></p>
 
 # Bench2Drive-VL 官方Docker镜像文档
 
@@ -82,3 +82,7 @@ docker run -it \
 ### 注意事项
 - 详细的配置参数、功能说明及更新日志，请查阅项目官方GitHub仓库：https://github.com/Thinklab-SJTU/Bench2Drive-VL
 - 运行过程中如遇依赖缺失或功能异常，建议优先参考GitHub文档中的"故障排除"章节，或提交Issue反馈。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla" title="meteorcollector/b2dvl_carla Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla</a></p>

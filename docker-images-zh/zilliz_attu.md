@@ -2,14 +2,14 @@
 image: zilliz/attu
 source: https://xuanyuan.cloud/zh/r/zilliz/attu
 canonical: https://xuanyuan.cloud/zh/r/zilliz/attu
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [zilliz/attu — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zilliz/attu "zilliz/attu Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/zilliz/attu
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zilliz/attu" title="zilliz/attu Docker 镜像中文简介、标签列表与拉取命令">zilliz/attu — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/zilliz/attu" title="zilliz/attu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zilliz/attu</a></p>
 
 # Attu
 
@@ -169,3 +169,7 @@ kubectl apply -f https://raw.githubusercontent.com/zilliztech/attu/main/attu-k8s
 💬 加入Milvus Discord社区，分享知识、提问和参与讨论。不仅是代码交流，更是与志同道合者连接的平台！点击下方链接加入：
 
 <a href="https://discord.com/invite/8uyFbECzPX"><img style="display:block; margin: '8px';" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b5061df29d55a92d945_full_logo_blurple_RGB.svg" alt="Discord社区"/></a>
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zilliz/attu" title="zilliz/attu Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zilliz/attu</a></p>

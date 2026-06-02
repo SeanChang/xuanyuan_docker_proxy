@@ -2,14 +2,14 @@
 image: dustynv/ollama
 source: https://xuanyuan.cloud/zh/r/dustynv/ollama
 canonical: https://xuanyuan.cloud/zh/r/dustynv/ollama
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [dustynv/ollama — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/dustynv/ollama "dustynv/ollama Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/dustynv/ollama
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/dustynv/ollama" title="dustynv/ollama Docker 镜像中文简介、标签列表与拉取命令">dustynv/ollama — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/dustynv/ollama" title="dustynv/ollama Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dustynv/ollama</a></p>
 
 # Ollama 使用指南
 
@@ -164,3 +164,7 @@ jetson-containers build ollama
 
 构建过程中会自动集成依赖项并进行测试。可添加 `--help` 参数查看构建选项：`jetson-containers build ollama --help`。
 </details>
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/dustynv/ollama" title="dustynv/ollama Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/dustynv/ollama</a></p>

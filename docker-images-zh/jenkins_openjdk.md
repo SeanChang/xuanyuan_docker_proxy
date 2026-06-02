@@ -2,14 +2,14 @@
 image: jenkins/openjdk
 source: https://xuanyuan.cloud/zh/r/jenkins/openjdk
 canonical: https://xuanyuan.cloud/zh/r/jenkins/openjdk
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [jenkins/openjdk — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jenkins/openjdk "jenkins/openjdk Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/jenkins/openjdk
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/jenkins/openjdk" title="jenkins/openjdk Docker 镜像中文简介、标签列表与拉取命令">jenkins/openjdk — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/jenkins/openjdk" title="jenkins/openjdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jenkins/openjdk</a></p>
 
 # 基于AdoptOpenJDK二进制文件的Docker镜像
 
@@ -58,3 +58,7 @@ OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.18+10, mixed mode)
 - **版本选择**：根据项目依赖的Java版本选对应标签（如项目需JDK 8则用 `8-*` 标签）；  
 - **架构选择**：根据部署环境的硬件架构选x86_64或aarch64；  
 - **JVM类型选择**：常规场景用HotSpot（兼容性优先），资源紧张场景（如低内存服务器）用OpenJ9（轻量优先）。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/jenkins/openjdk" title="jenkins/openjdk Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/jenkins/openjdk</a></p>

@@ -2,14 +2,14 @@
 image: bitnami/git
 source: https://xuanyuan.cloud/zh/r/bitnami/git
 canonical: https://xuanyuan.cloud/zh/r/bitnami/git
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnami/git — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/git "bitnami/git Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnami/git
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/git" title="bitnami/git Docker 镜像中文简介、标签列表与拉取命令">bitnami/git — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnami/git" title="bitnami/git Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/git</a></p>
 
 # Bitnami Git 镜像文档
 
@@ -143,3 +143,7 @@ Bitnami Git 镜像（来自 [Bitnami Secure Images 目录](https://www.arrow.com
 **安全元数据**：每个镜像均附带有价值的安全元数据，可在 [我们的公共目录](https://app-catalog.vmware.com/bitnami/apps) 中查看。注意：部分数据仅对 [BSI 商业订阅用户](https://bitnami.com/) 开放。
 
 **旧版镜像**：如需基于 Debian Linux 的旧版镜像，请参见 Bitnami Legacy registry。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/git" title="bitnami/git Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/git</a></p>

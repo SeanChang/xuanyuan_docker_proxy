@@ -2,14 +2,14 @@
 image: sples1/k4ryuu-cs2
 source: https://xuanyuan.cloud/zh/r/sples1/k4ryuu-cs2
 canonical: https://xuanyuan.cloud/zh/r/sples1/k4ryuu-cs2
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [sples1/k4ryuu-cs2 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/sples1/k4ryuu-cs2 "sples1/k4ryuu-cs2 Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/sples1/k4ryuu-cs2
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/sples1/k4ryuu-cs2" title="sples1/k4ryuu-cs2 Docker 镜像中文简介、标签列表与拉取命令">sples1/k4ryuu-cs2 — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/sples1/k4ryuu-cs2" title="sples1/k4ryuu-cs2 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/sples1/k4ryuu-cs2</a></p>
 
 # CS2 Pterodactyl Egg 镜像文档
 
@@ -56,3 +56,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 ## 完整文档
 
 更多详细配置与使用说明，请参考：[CS2 Egg 完整文档](https://github.com/K4ryuu/CS2-Egg/blob/dev/docs/README.md)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/sples1/k4ryuu-cs2" title="sples1/k4ryuu-cs2 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/sples1/k4ryuu-cs2</a></p>

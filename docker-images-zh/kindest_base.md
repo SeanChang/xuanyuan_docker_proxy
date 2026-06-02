@@ -2,14 +2,14 @@
 image: kindest/base
 source: https://xuanyuan.cloud/zh/r/kindest/base
 canonical: https://xuanyuan.cloud/zh/r/kindest/base
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [kindest/base — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kindest/base "kindest/base Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/kindest/base
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kindest/base" title="kindest/base Docker 镜像中文简介、标签列表与拉取命令">kindest/base — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/kindest/base" title="kindest/base Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kindest/base</a></p>
 
 # kind 基础镜像技术文档
 
@@ -87,3 +87,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 - **自建基础镜像指南**：[kind 快速入门 - 构建基础镜像](https://kind.sigs.k8s.io/docs/user/quick-start/#building-the-base-image)
 - **源代码**：[github.com/kubernetes-sigs/kind/tree/main/images/base](https://github.com/kubernetes-sigs/kind/tree/main/images/base)
 - **贡献指南**：[kind 贡献者入门](https://kind.sigs.k8s.io/docs/contributing/getting-started/)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kindest/base" title="kindest/base Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kindest/base</a></p>

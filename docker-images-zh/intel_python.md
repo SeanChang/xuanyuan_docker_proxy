@@ -2,14 +2,14 @@
 image: intel/python
 source: https://xuanyuan.cloud/zh/r/intel/python
 canonical: https://xuanyuan.cloud/zh/r/intel/python
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [intel/python — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/intel/python "intel/python Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/intel/python
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/intel/python" title="intel/python Docker 镜像中文简介、标签列表与拉取命令">intel/python — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/intel/python" title="intel/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/intel/python</a></p>
 
 # Intel® Distribution for Python*
 
@@ -109,3 +109,7 @@ docker compose run xpu
 [Intel® DPC++ Compiler Library]: https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler-download.html
 [Intel® Collective Communications Library]: https://www.intel.com/content/www/us/en/developer/tools/oneapi/oneccl.html
 [Intel® dGPU drivers]: https://dgpu-docs.intel.com/releases/releases.html
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/intel/python" title="intel/python Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/intel/python</a></p>

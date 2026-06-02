@@ -2,14 +2,14 @@
 image: hslr/sun-panel
 source: https://xuanyuan.cloud/zh/r/hslr/sun-panel
 canonical: https://xuanyuan.cloud/zh/r/hslr/sun-panel
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [hslr/sun-panel — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/hslr/sun-panel "hslr/sun-panel Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/hslr/sun-panel
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/hslr/sun-panel" title="hslr/sun-panel Docker 镜像中文简介、标签列表与拉取命令">hslr/sun-panel — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/hslr/sun-panel" title="hslr/sun-panel Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hslr/sun-panel</a></p>
 
 # Sun-Panel 介绍
 
@@ -47,3 +47,7 @@ Sun-Panel 是一个服务器、NAS导航面板，也可用作 Homepage 或浏览
 
 
 如果需要搭建简洁实用的服务器导航页、NAS入口面板，或自定义浏览器首页，Sun-Panel 提供了现成的解决方案，可通过上述链接获取代码、镜像或查看演示。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/hslr/sun-panel" title="hslr/sun-panel Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/hslr/sun-panel</a></p>

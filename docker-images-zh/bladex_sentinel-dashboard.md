@@ -2,14 +2,14 @@
 image: bladex/sentinel-dashboard
 source: https://xuanyuan.cloud/zh/r/bladex/sentinel-dashboard
 canonical: https://xuanyuan.cloud/zh/r/bladex/sentinel-dashboard
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bladex/sentinel-dashboard — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bladex/sentinel-dashboard "bladex/sentinel-dashboard Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bladex/sentinel-dashboard
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bladex/sentinel-dashboard" title="bladex/sentinel-dashboard Docker 镜像中文简介、标签列表与拉取命令">bladex/sentinel-dashboard — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bladex/sentinel-dashboard" title="bladex/sentinel-dashboard Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bladex/sentinel-dashboard</a></p>
 
 # 使用 Docker 部署 Sentinel Dashboard
 
@@ -38,3 +38,7 @@ docker run --name sentinel -d -p 8858:8858 bladex/sentinel-dashboard
 ## 4. 相关资源
 - GitHub 仓库：`[]  
 - 官方网站：`[]
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bladex/sentinel-dashboard" title="bladex/sentinel-dashboard Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bladex/sentinel-dashboard</a></p>

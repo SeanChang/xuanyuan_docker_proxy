@@ -2,14 +2,14 @@
 image: library/maven
 source: https://xuanyuan.cloud/zh/r/library/maven
 canonical: https://xuanyuan.cloud/zh/r/library/maven
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/maven — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/maven "library/maven Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/maven
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/maven" title="library/maven Docker 镜像中文简介、标签列表与拉取命令">library/maven — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/maven" title="library/maven Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/maven</a></p>
 
 # Maven Docker镜像使用指南
 
@@ -164,3 +164,7 @@ $ docker run -it -v maven-repo:/root/.m2 maven mvn archetype:generate
 ```console
 # 挂载当前目录、本地.m2缓存和target目录，执行打包
 $ docker run -it --rm -v "$PWD":/usr/src/mymaven -v "$HOME/.m2":/root/.m2 -
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/maven" title="library/maven Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/maven</a></p>

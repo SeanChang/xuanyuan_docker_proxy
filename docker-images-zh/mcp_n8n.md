@@ -2,14 +2,14 @@
 image: mcp/n8n
 source: https://xuanyuan.cloud/zh/r/mcp/n8n
 canonical: https://xuanyuan.cloud/zh/r/mcp/n8n
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [mcp/n8n — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mcp/n8n "mcp/n8n Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/mcp/n8n
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mcp/n8n" title="mcp/n8n Docker 镜像中文简介、标签列表与拉取命令">mcp/n8n — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/mcp/n8n" title="mcp/n8n Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mcp/n8n</a></p>
 
 # n8n MCP Server
 
@@ -112,3 +112,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 
 ---
 ### 工具：此字段是由工具自动生成的内容，我无法为你提供相关帮助。你可以尝试询问其他话题，我会努力理解你的需求并尽力提供帮助。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mcp/n8n" title="mcp/n8n Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mcp/n8n</a></p>

@@ -2,14 +2,14 @@
 image: qwenllm/qwenvl
 source: https://xuanyuan.cloud/zh/r/qwenllm/qwenvl
 canonical: https://xuanyuan.cloud/zh/r/qwenllm/qwenvl
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [qwenllm/qwenvl — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/qwenllm/qwenvl "qwenllm/qwenvl Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/qwenllm/qwenvl
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/qwenllm/qwenvl" title="qwenllm/qwenvl Docker 镜像中文简介、标签列表与拉取命令">qwenllm/qwenvl — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/qwenllm/qwenvl" title="qwenllm/qwenvl Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/qwenllm/qwenvl</a></p>
 
 # Qwen2-VL Docker镜像文档
 
@@ -154,3 +154,7 @@ curl -X POST http://localhost:8000/v1/visual-question \
 
 
 **注**：本文档基于Qwen2-VL官方镜像通用配置编写，具体参数及功能以阿里云官方发布为准。使用中若有疑问，可参考[Qwen2-VL官方文档](https://github.com/QwenLM/Qwen2-VL)或联系阿里云技术支持。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/qwenllm/qwenvl" title="qwenllm/qwenvl Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/qwenllm/qwenvl</a></p>

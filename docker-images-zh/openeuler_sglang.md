@@ -2,14 +2,14 @@
 image: openeuler/sglang
 source: https://xuanyuan.cloud/zh/r/openeuler/sglang
 canonical: https://xuanyuan.cloud/zh/r/openeuler/sglang
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [openeuler/sglang — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/openeuler/sglang "openeuler/sglang Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/openeuler/sglang
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/sglang" title="openeuler/sglang Docker 镜像中文简介、标签列表与拉取命令">openeuler/sglang — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/openeuler/sglang" title="openeuler/sglang Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/sglang</a></p>
 
 # SGLang | openEuler Docker镜像文档
 
@@ -82,3 +82,7 @@ docker run --rm --name sglang -p 8000:8000 --gpus all openeuler/sglang:{TAG} pyt
 
 - [openEuler CloudNative SIG](https://gitee.com/openeuler/cloudnative)
 - [openEuler社区](https://gitee.com/openeuler/community)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/sglang" title="openeuler/sglang Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/sglang</a></p>

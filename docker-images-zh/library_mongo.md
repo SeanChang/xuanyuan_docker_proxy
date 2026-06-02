@@ -2,14 +2,14 @@
 image: library/mongo
 source: https://xuanyuan.cloud/zh/r/library/mongo
 canonical: https://xuanyuan.cloud/zh/r/library/mongo
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/mongo — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/mongo "library/mongo Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/mongo
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/mongo" title="library/mongo Docker 镜像中文简介、标签列表与拉取命令">library/mongo — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/mongo" title="library/mongo Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/mongo</a></p>
 
 # MongoDB Docker 镜像使用指南
 
@@ -272,3 +272,7 @@ $ docker exec some-mongo sh -c 'exec mongodump -d <database_name> --archive' > /
 ```  
 - `<database_name>`：需备份的数据库名  
 - `/host/path/backup.archive`：主机
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/mongo" title="library/mongo Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/mongo</a></p>

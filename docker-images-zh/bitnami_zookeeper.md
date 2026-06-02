@@ -2,14 +2,14 @@
 image: bitnami/zookeeper
 source: https://xuanyuan.cloud/zh/r/bitnami/zookeeper
 canonical: https://xuanyuan.cloud/zh/r/bitnami/zookeeper
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnami/zookeeper — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/zookeeper "bitnami/zookeeper Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnami/zookeeper
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/zookeeper" title="bitnami/zookeeper Docker 镜像中文简介、标签列表与拉取命令">bitnami/zookeeper — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnami/zookeeper" title="bitnami/zookeeper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/zookeeper</a></p>
 
 ## Bitnami Zookeeper 安全镜像说明  
 
@@ -30,3 +30,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 
 
 了解更多关于商业版 Bitnami 安全镜像的信息，可访问 [官方网站]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/zookeeper" title="bitnami/zookeeper Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/zookeeper</a></p>

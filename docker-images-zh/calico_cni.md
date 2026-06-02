@@ -2,14 +2,14 @@
 image: calico/cni
 source: https://xuanyuan.cloud/zh/r/calico/cni
 canonical: https://xuanyuan.cloud/zh/r/calico/cni
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [calico/cni — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/calico/cni "calico/cni Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/calico/cni
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/calico/cni" title="calico/cni Docker 镜像中文简介、标签列表与拉取命令">calico/cni — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/calico/cni" title="calico/cni Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/calico/cni</a></p>
 
 # Calico CNI网络插件  
 
@@ -49,3 +49,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 
 
 [![Analytics]([])]([])
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/calico/cni" title="calico/cni Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/calico/cni</a></p>

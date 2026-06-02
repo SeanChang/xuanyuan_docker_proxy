@@ -2,14 +2,14 @@
 image: openresty/openresty
 source: https://xuanyuan.cloud/zh/r/openresty/openresty
 canonical: https://xuanyuan.cloud/zh/r/openresty/openresty
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [openresty/openresty — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/openresty/openresty "openresty/openresty Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/openresty/openresty
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/openresty/openresty" title="openresty/openresty Docker 镜像中文简介、标签列表与拉取命令">openresty/openresty — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/openresty/openresty" title="openresty/openresty Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openresty/openresty</a></p>
 
 # docker-openresty：OpenResty 的 Docker 工具
 
@@ -153,3 +153,7 @@ docker build -t 自定义镜像名 -f bionic/Dockerfile .
 
 ## 反馈与贡献  
 使用中遇到问题可提交 [GitHub Issue]([])，或通过 [Travis CI]([])、[Appveyor]([]) 查看构建状态。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/openresty/openresty" title="openresty/openresty Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/openresty/openresty</a></p>

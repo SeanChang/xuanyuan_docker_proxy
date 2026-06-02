@@ -2,14 +2,14 @@
 image: hxsoong/kylin
 source: https://xuanyuan.cloud/zh/r/hxsoong/kylin
 canonical: https://xuanyuan.cloud/zh/r/hxsoong/kylin
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [hxsoong/kylin — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/hxsoong/kylin "hxsoong/kylin Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/hxsoong/kylin
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/hxsoong/kylin" title="hxsoong/kylin Docker 镜像中文简介、标签列表与拉取命令">hxsoong/kylin — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/hxsoong/kylin" title="hxsoong/kylin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hxsoong/kylin</a></p>
 
 # 银河麒麟高级服务器操作系统V10 Docker镜像
 
@@ -85,3 +85,7 @@ kylin-release-10-24.6.p37.ky10.x86_64
 
 ## 维护者信息
 - 维护者：[haixinsong/kylin-sys-docker-image](https://github.com/haixinsong/kylin-sys-docker-image)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/hxsoong/kylin" title="hxsoong/kylin Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/hxsoong/kylin</a></p>

@@ -2,14 +2,14 @@
 image: library/eclipse-mosquitto
 source: https://xuanyuan.cloud/zh/r/library/eclipse-mosquitto
 canonical: https://xuanyuan.cloud/zh/r/library/eclipse-mosquitto
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/eclipse-mosquitto — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/eclipse-mosquitto "library/eclipse-mosquitto Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/eclipse-mosquitto
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/eclipse-mosquitto" title="library/eclipse-mosquitto Docker 镜像中文简介、标签列表与拉取命令">library/eclipse-mosquitto — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/eclipse-mosquitto" title="library/eclipse-mosquitto Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/eclipse-mosquitto</a></p>
 
 # Eclipse Mosquitto Docker 镜像使用说明
 
@@ -125,3 +125,7 @@ Eclipse Mosquitto 基于 [EPL]([])/[EDL]([]) 许可证发布。
 与所有 Docker 镜像类似，本镜像可能包含其他软件（如基础系统的 Bash 等），其许可证需另行遵守。更多许可证信息可参考 [repo-info 仓库的 `eclipse-mosquitto/` 目录]([])。  
 
 使用前请确保遵守镜像中所有软件的相关许可证。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/eclipse-mosquitto" title="library/eclipse-mosquitto Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/eclipse-mosquitto</a></p>

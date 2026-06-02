@@ -2,14 +2,14 @@
 image: ai/llama3.3
 source: https://xuanyuan.cloud/zh/r/ai/llama3.3
 canonical: https://xuanyuan.cloud/zh/r/ai/llama3.3
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ai/llama3.3 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ai/llama3.3 "ai/llama3.3 Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ai/llama3.3
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/llama3.3" title="ai/llama3.3 Docker 镜像中文简介、标签列表与拉取命令">ai/llama3.3 — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ai/llama3.3" title="ai/llama3.3 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/llama3.3</a></p>
 
 # Llama 3.3
 
@@ -101,3 +101,7 @@ docker model run ai/llama3.3
 ## 链接
 - [Meta Llama 3 发布：迄今为止能力最强的开源LLM](https://ai.meta.com/blog/meta-llama-3/)
 - [Llama 3 模型集群](https://arxiv.org/pdf/2407.21783)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/llama3.3" title="ai/llama3.3 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ai/llama3.3</a></p>

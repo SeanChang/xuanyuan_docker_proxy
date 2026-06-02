@@ -2,14 +2,14 @@
 image: jlesage/firefox
 source: https://xuanyuan.cloud/zh/r/jlesage/firefox
 canonical: https://xuanyuan.cloud/zh/r/jlesage/firefox
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [jlesage/firefox — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jlesage/firefox "jlesage/firefox Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/jlesage/firefox
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/jlesage/firefox" title="jlesage/firefox Docker 镜像中文简介、标签列表与拉取命令">jlesage/firefox — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/jlesage/firefox" title="jlesage/firefox Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jlesage/firefox</a></p>
 
 # Firefox Docker容器
 
@@ -56,3 +56,7 @@ docker run -d \
 如使用容器时遇到问题或有疑问，请[创建新issue]([])。  
 
 其他Docker化应用可访问：[]
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/jlesage/firefox" title="jlesage/firefox Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/jlesage/firefox</a></p>

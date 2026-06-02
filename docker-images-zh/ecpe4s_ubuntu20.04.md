@@ -2,14 +2,14 @@
 image: ecpe4s/ubuntu20.04
 source: https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04
 canonical: https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ecpe4s/ubuntu20.04 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04 "ecpe4s/ubuntu20.04 Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04" title="ecpe4s/ubuntu20.04 Docker 镜像中文简介、标签列表与拉取命令">ecpe4s/ubuntu20.04 — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04" title="ecpe4s/ubuntu20.04 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04</a></p>
 
 ## 概述
 本镜像为E4S（Extreme-scale Scientific Software Stack）的基础Ubuntu镜像，集成Spack包管理器，旨在为科学计算领域提供标准化的软件环境构建工具。E4S专注于极端规模科学计算软件的集成与优化，Ubuntu系统则提供了广泛兼容的基础运行环境。
@@ -43,3 +43,7 @@ exported_at: 2026-06-02T12:13:30.631Z
    # 安装指定版本软件
    spack install openmpi@4.1.5
    ```
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04" title="ecpe4s/ubuntu20.04 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04</a></p>

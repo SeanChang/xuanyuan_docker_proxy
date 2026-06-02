@@ -2,14 +2,14 @@
 image: qemux/qemu-arm
 source: https://xuanyuan.cloud/zh/r/qemux/qemu-arm
 canonical: https://xuanyuan.cloud/zh/r/qemux/qemu-arm
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [qemux/qemu-arm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/qemux/qemu-arm "qemux/qemu-arm Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/qemux/qemu-arm
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/qemux/qemu-arm" title="qemux/qemu-arm Docker 镜像中文简介、标签列表与拉取命令">qemux/qemu-arm — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/qemux/qemu-arm" title="qemux/qemu-arm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/qemux/qemu-arm</a></p>
 
 # QEMU ARM64 Docker镜像文档
 
@@ -295,3 +295,7 @@ Windows ARM版需专用驱动支持，建议使用专用镜像：[dockur/windows
 - 若使用`VGA: "virtio-gpu"`，黑屏可能是因为guest未加载驱动，需等待系统启动完成
 - 换回默认帧缓冲模式（删除`VGA`变量）可解决兼容性问题
 - 检查宿主机是否分配足够内存（建议至少2GB）
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/qemux/qemu-arm" title="qemux/qemu-arm Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/qemux/qemu-arm</a></p>

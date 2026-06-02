@@ -2,14 +2,14 @@
 image: heartexlabs/label-studio
 source: https://xuanyuan.cloud/zh/r/heartexlabs/label-studio
 canonical: https://xuanyuan.cloud/zh/r/heartexlabs/label-studio
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [heartexlabs/label-studio — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/heartexlabs/label-studio "heartexlabs/label-studio Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/heartexlabs/label-studio
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/heartexlabs/label-studio" title="heartexlabs/label-studio Docker 镜像中文简介、标签列表与拉取命令">heartexlabs/label-studio — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/heartexlabs/label-studio" title="heartexlabs/label-studio Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/heartexlabs/label-studio</a></p>
 
 # Label Studio 中文文档
 
@@ -135,3 +135,7 @@ docker compose -f docker-compose.yml -f docker-compose.minio.yml up -d
 ## 许可证
 
 本软件根据[Apache 2.0 LICENSE](/LICENSE)许可 © [Heartex](https://www.heartex.com/)。 2020-2025
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/heartexlabs/label-studio" title="heartexlabs/label-studio Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/heartexlabs/label-studio</a></p>

@@ -2,14 +2,14 @@
 image: guergeiro/pnpm
 source: https://xuanyuan.cloud/zh/r/guergeiro/pnpm
 canonical: https://xuanyuan.cloud/zh/r/guergeiro/pnpm
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [guergeiro/pnpm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/guergeiro/pnpm "guergeiro/pnpm Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/guergeiro/pnpm
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/guergeiro/pnpm" title="guergeiro/pnpm Docker 镜像中文简介、标签列表与拉取命令">guergeiro/pnpm — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/guergeiro/pnpm" title="guergeiro/pnpm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/guergeiro/pnpm</a></p>
 
 # guergeiro/pnpm 镜像文档
 
@@ -136,3 +136,7 @@ $ docker-compose up -d
 
 - **版本兼容性**：镜像支持基于 [Node.js 发布计划](https://github.com/nodejs/release#release-schedule) 和 [pnpm 兼容性列表](https://pnpm.io/installation#compatibility)
 - **特殊版本标签**：`lts-latest`、`latest-latest`、`current-latest` 等标签仅对应最新版本的 pnpm，不支持历史 pnpm 版本
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/guergeiro/pnpm" title="guergeiro/pnpm Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/guergeiro/pnpm</a></p>

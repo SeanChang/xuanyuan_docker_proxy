@@ -2,14 +2,14 @@
 image: justlikemaki/openclaw-docker-cn-im
 source: https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im
 canonical: https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [justlikemaki/openclaw-docker-cn-im — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im "justlikemaki/openclaw-docker-cn-im Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im" title="justlikemaki/openclaw-docker-cn-im Docker 镜像中文简介、标签列表与拉取命令">justlikemaki/openclaw-docker-cn-im — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im" title="justlikemaki/openclaw-docker-cn-im Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im</a></p>
 
 # justlikemaki/openclaw-docker-cn-im 镜像说明
 
@@ -163,3 +163,7 @@ docker run -d \
 ## 许可协议
 
 项目基于 OpenClaw 构建，遵循 GPL-3.0（GNU General Public License v3.0）协议，具体条款请参考上游仓库与镜像页面中的 LICENSE 说明。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im" title="justlikemaki/openclaw-docker-cn-im Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im</a></p>

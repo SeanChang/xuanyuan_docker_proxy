@@ -2,14 +2,14 @@
 image: linuxserver/phpmyadmin
 source: https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [linuxserver/phpmyadmin — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin "linuxserver/phpmyadmin Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin" title="linuxserver/phpmyadmin Docker 镜像中文简介、标签列表与拉取命令">linuxserver/phpmyadmin — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin" title="linuxserver/phpmyadmin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin</a></p>
 
 # linuxserver/phpmyadmin
 
@@ -280,3 +280,7 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 * **20.08.22:** - 基于Alpine 3.15和php8重建。重构nginx配置（[查看变更公告](https://info.linuxserver.io/issues/2022-08-20-nginx-base)）。
 * **23.01.22:** - 版本固定为5.x.x。
 * **14.06.21:** - 初始发布。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin" title="linuxserver/phpmyadmin Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin</a></p>

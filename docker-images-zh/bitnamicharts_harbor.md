@@ -2,14 +2,14 @@
 image: bitnamicharts/harbor
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/harbor
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/harbor
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnamicharts/harbor — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamicharts/harbor "bitnamicharts/harbor Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnamicharts/harbor
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/harbor" title="bitnamicharts/harbor Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/harbor — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/harbor" title="bitnamicharts/harbor Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/harbor</a></p>
 
 # Harbor 镜像文档
 
@@ -277,3 +277,7 @@ core:
 - 生产环境建议使用 Bitnami Secure Images，包含强化容器、更小攻击面、CVE 透明度（VEX/KEV）、SBOM 和企业支持
 
 这些变更旨在提升软件供应链安全性，推广最佳实践。详情参见 [Bitnami Secure Images 公告](https://github.com/bitnami/containers/issues/83267)。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/harbor" title="bitnamicharts/harbor Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/harbor</a></p>

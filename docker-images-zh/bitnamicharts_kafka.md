@@ -2,14 +2,14 @@
 image: bitnamicharts/kafka
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/kafka
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/kafka
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnamicharts/kafka — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamicharts/kafka "bitnamicharts/kafka Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnamicharts/kafka
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/kafka" title="bitnamicharts/kafka Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/kafka — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/kafka" title="bitnamicharts/kafka Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/kafka</a></p>
 
 # Bitnami Apache Kafka 软件包介绍
 
@@ -232,3 +232,7 @@ Bitnami Kafka 镜像将数据存储在容器内 `/bitnami/kafka` 路径，通过
 
 
 > **注意**：完整参数列表超出本文长度限制，详见 [GitHub 完整文档]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/kafka" title="bitnamicharts/kafka Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/kafka</a></p>

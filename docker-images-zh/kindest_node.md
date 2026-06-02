@@ -2,14 +2,14 @@
 image: kindest/node
 source: https://xuanyuan.cloud/zh/r/kindest/node
 canonical: https://xuanyuan.cloud/zh/r/kindest/node
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [kindest/node — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kindest/node "kindest/node Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/kindest/node
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kindest/node" title="kindest/node Docker 镜像中文简介、标签列表与拉取命令">kindest/node — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/kindest/node" title="kindest/node Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kindest/node</a></p>
 
 ### kind 预构建节点镜像说明  
 
@@ -34,3 +34,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 #### 源代码与贡献  
 - 项目源代码：[kubernetes-sigs/kind]([])（节点镜像构建模块位于 [`pkg/build/nodeimage`]([]) 目录）。  
 - 参与贡献：参考 [贡献指南]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kindest/node" title="kindest/node Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kindest/node</a></p>

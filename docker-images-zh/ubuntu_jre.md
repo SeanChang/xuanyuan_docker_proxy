@@ -2,14 +2,14 @@
 image: ubuntu/jre
 source: https://xuanyuan.cloud/zh/r/ubuntu/jre
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/jre
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ubuntu/jre — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ubuntu/jre "ubuntu/jre Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ubuntu/jre
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/jre" title="ubuntu/jre Docker 镜像中文简介、标签列表与拉取命令">ubuntu/jre — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/jre" title="ubuntu/jre Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/jre</a></p>
 
 # Chiselled Ubuntu JRE Docker 镜像
 
@@ -162,3 +162,7 @@ docker images --no-trunc --quiet ubuntu/jre:<标签>  # 替换为实际标签
 | 渠道（Track） | 版本（Version） | 停止维护（EOL） | 升级路径（Upgrade Path） |
 |--------------|----------------|-----------------|--------------------------|
 | _`track`_    |                |                 |                          |
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/jre" title="ubuntu/jre Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/jre</a></p>

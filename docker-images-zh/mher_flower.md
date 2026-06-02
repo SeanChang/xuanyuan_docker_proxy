@@ -2,14 +2,14 @@
 image: mher/flower
 source: https://xuanyuan.cloud/zh/r/mher/flower
 canonical: https://xuanyuan.cloud/zh/r/mher/flower
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [mher/flower — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mher/flower "mher/flower Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/mher/flower
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mher/flower" title="mher/flower Docker 镜像中文简介、标签列表与拉取命令">mher/flower — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/mher/flower" title="mher/flower Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mher/flower</a></p>
 
 # Flower
 
@@ -210,3 +210,7 @@ ws.onmessage = function (event) {
 
 ## 许可证
 Flower 采用 BSD 3-Clause License 许可协议。详细内容参见 [LICENSE](https://github.com/mher/flower/blob/master/LICENSE) 文件。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mher/flower" title="mher/flower Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mher/flower</a></p>

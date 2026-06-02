@@ -2,14 +2,14 @@
 image: timescale/timescaledb-ha
 source: https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha
 canonical: https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [timescale/timescaledb-ha — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha "timescale/timescaledb-ha Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha" title="timescale/timescaledb-ha Docker 镜像中文简介、标签列表与拉取命令">timescale/timescaledb-ha — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha" title="timescale/timescaledb-ha Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha</a></p>
 
 # TimescaleDB with Patroni 高可用镜像文档
 
@@ -226,3 +226,7 @@ docker-compose up -d
 3. **etcd 高可用**：生产环境 etcd 集群需部署 3/5 节点（奇数），防止配置存储单点故障。
 4. **资源配置**：根据数据量调整 `shared_buffers`、`work_mem` 等参数，建议参考 PostgreSQL 性能调优最佳实践。
 5. **网络隔离**：集群节点间需保证网络互通（5432 端口用于复制，2379 端口用于 etcd 通信），生产环境建议配置防火墙规则限制访问。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha" title="timescale/timescaledb-ha Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha</a></p>

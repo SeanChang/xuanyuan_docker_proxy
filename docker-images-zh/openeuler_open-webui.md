@@ -2,14 +2,14 @@
 image: openeuler/open-webui
 source: https://xuanyuan.cloud/zh/r/openeuler/open-webui
 canonical: https://xuanyuan.cloud/zh/r/openeuler/open-webui
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [openeuler/open-webui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/openeuler/open-webui "openeuler/open-webui Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/openeuler/open-webui
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/open-webui" title="openeuler/open-webui Docker 镜像中文简介、标签列表与拉取命令">openeuler/open-webui — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/openeuler/open-webui" title="openeuler/open-webui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/open-webui</a></p>
 
 # 快速参考
 
@@ -70,3 +70,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 
 # 问题与反馈
 如有任何问题或需要使用某些特殊功能，请在[openeuler-docker-images](https://gitee.com/openeuler/openeuler-docker-images)提交issue或pull request。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/open-webui" title="openeuler/open-webui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/open-webui</a></p>

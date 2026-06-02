@@ -2,14 +2,14 @@
 image: langfuse/langfuse-worker
 source: https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker
 canonical: https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [langfuse/langfuse-worker — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker "langfuse/langfuse-worker Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker" title="langfuse/langfuse-worker Docker 镜像中文简介、标签列表与拉取命令">langfuse/langfuse-worker — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker" title="langfuse/langfuse-worker Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker</a></p>
 
 ## 概述
 Langfuse background-worker容器是Langfuse项目v3版本的开发阶段组件，专门用于处理后台任务，支持主应用的异步操作与任务队列管理，确保系统高效运行。
@@ -39,3 +39,7 @@ docker run -d \
   langfuse/background-worker:v3-dev
 ```
 > 注：环境变量需根据实际部署环境调整，确保与Langfuse主服务配置一致。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker" title="langfuse/langfuse-worker Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker</a></p>

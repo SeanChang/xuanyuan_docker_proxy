@@ -2,14 +2,14 @@
 image: mgba/windows
 source: https://xuanyuan.cloud/zh/r/mgba/windows
 canonical: https://xuanyuan.cloud/zh/r/mgba/windows
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [mgba/windows — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mgba/windows "mgba/windows Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/mgba/windows
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mgba/windows" title="mgba/windows Docker 镜像中文简介、标签列表与拉取命令">mgba/windows — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/mgba/windows" title="mgba/windows Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mgba/windows</a></p>
 
 ## Windows autobuilds 镜像文档
 
@@ -61,3 +61,7 @@ docker logs -f win-build-agent
 ### 版本标签
 - `ltsc2022`：基于Windows Server 2022 LTSC，支持长期稳定构建需求。
 - `ltsc2019`：基于Windows Server 2019 LTSC，兼容旧版本环境。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mgba/windows" title="mgba/windows Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mgba/windows</a></p>

@@ -2,14 +2,14 @@
 image: rustfs/rustfs
 source: https://xuanyuan.cloud/zh/r/rustfs/rustfs
 canonical: https://xuanyuan.cloud/zh/r/rustfs/rustfs
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [rustfs/rustfs — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rustfs/rustfs "rustfs/rustfs Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/rustfs/rustfs
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/rustfs/rustfs" title="rustfs/rustfs Docker 镜像中文简介、标签列表与拉取命令">rustfs/rustfs — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/rustfs/rustfs" title="rustfs/rustfs Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rustfs/rustfs</a></p>
 
 # RustFS 介绍
 
@@ -102,3 +102,7 @@ make help-docker            # 查看所有 Docker 相关命令
 RustFS 基于 **Apache 2.0 许可证** 开源，欢迎社区贡献代码或反馈。项目开发状态可通过 GitHub 提交记录、CI/CD 构建状态等指标查看。  
 
 （*注：项目仍在快速迭代，生产环境使用前请评估稳定性。*）
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/rustfs/rustfs" title="rustfs/rustfs Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/rustfs/rustfs</a></p>

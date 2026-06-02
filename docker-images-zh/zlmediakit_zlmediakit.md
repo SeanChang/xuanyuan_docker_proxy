@@ -2,14 +2,14 @@
 image: zlmediakit/zlmediakit
 source: https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit
 canonical: https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [zlmediakit/zlmediakit — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit "zlmediakit/zlmediakit Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit" title="zlmediakit/zlmediakit Docker 镜像中文简介、标签列表与拉取命令">zlmediakit/zlmediakit — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit" title="zlmediakit/zlmediakit Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit</a></p>
 
 # ZLMediaKit：基于C++11的高性能运营级流媒体服务框架
 
@@ -203,3 +203,7 @@ bash build_docker_images.sh
 
 感谢以下贡献者（排名不分先后）对项目的代码贡献、问题反馈与资金支持：  
 [老陈]([])、[Gemfield]([])、[南冠彤]([])、[凹凸慢]([])、[chenxiaolei]([])、[史前小虫]([])、[清涩绿茶]([])、[3503207480]([])、[DroidChow]([])、[阿塞]([])、[火宣]([])、[γ瑞γミ]([])、[linkingvision]([])、[茄子]([])、[好心情](mailto:[邮箱已删除])、[浮沉]([])、[Xiaofeng Wang]([])、[doodoocoder]([])、[qingci]([])、[swwheihei]([])、[KKKKK5G]([])、[Zhou Weimin](mailto:[邮箱已删除])、[Jim Jin]([])、[西瓜丶](mailto:[邮箱已删除])、[MingZhuLiu]([])、[chengxiaosheng]([])、[big panda](mailto:[邮箱已删除])、[tanningzhong]([])、[hctym1995]([])、[hewenyuan]([])、[sunhui](mailto:[邮箱已删除])、[mirs](mailto:[邮箱已删除])、[Kevin Cheng](mailto:[邮箱已删除])、[Liu Jiang](mailto:[邮箱已删除])、[along]([])、[qingci](mailto:[邮箱已删除])、[lyg1949](mailto:[邮箱已删除])、[zhlong](mailto:[邮箱已删除])、[大裤衩](mailto:[邮箱已删除])、[droid.chow](mailto:[邮箱已删除])、[陈晓林]([]
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit" title="zlmediakit/zlmediakit Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit</a></p>

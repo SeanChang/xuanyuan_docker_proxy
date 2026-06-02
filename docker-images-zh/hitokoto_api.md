@@ -2,14 +2,14 @@
 image: hitokoto/api
 source: https://xuanyuan.cloud/zh/r/hitokoto/api
 canonical: https://xuanyuan.cloud/zh/r/hitokoto/api
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [hitokoto/api — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/hitokoto/api "hitokoto/api Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/hitokoto/api
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/hitokoto/api" title="hitokoto/api Docker 镜像中文简介、标签列表与拉取命令">hitokoto/api — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/hitokoto/api" title="hitokoto/api Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hitokoto/api</a></p>
 
 # Hitokoto API
 
@@ -100,3 +100,7 @@ Transfer/sec:     12.51MB
 
 ## 关于贡献
 可参考开发者文档了解框架基本运作机理，便于开发扩展功能（如新增音乐接口等）。项目团队持续基于Alinode、DeepScan、CodeClimate分析结果优化框架，计划通过多版本重构解决历史问题。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/hitokoto/api" title="hitokoto/api Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/hitokoto/api</a></p>

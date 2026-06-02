@@ -2,14 +2,14 @@
 image: infiniflow/infinity
 source: https://xuanyuan.cloud/zh/r/infiniflow/infinity
 canonical: https://xuanyuan.cloud/zh/r/infiniflow/infinity
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [infiniflow/infinity — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/infiniflow/infinity "infiniflow/infinity Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/infiniflow/infinity
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/infiniflow/infinity" title="infiniflow/infinity Docker 镜像中文简介、标签列表与拉取命令">infiniflow/infinity — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/infiniflow/infinity" title="infiniflow/infinity Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/infiniflow/infinity</a></p>
 
 ## AI原生数据库（AI Native Database）
 
@@ -67,3 +67,7 @@ AI原生数据库指从架构设计之初即深度融合人工智能技术的数
 
 ### 总结  
 AI原生数据库通过将AI能力嵌入底层架构，解决了传统数据库“性能依赖人工调优”“数据与AI任务割裂”的痛点，尤其适用于实时分析、AI驱动决策等场景。落地时需结合业务需求明确选型标准，通过数据治理与分阶段验证，最大化其在效率提升、成本优化上的价值。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/infiniflow/infinity" title="infiniflow/infinity Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/infiniflow/infinity</a></p>

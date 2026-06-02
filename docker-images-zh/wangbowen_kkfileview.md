@@ -2,14 +2,14 @@
 image: wangbowen/kkfileview
 source: https://xuanyuan.cloud/zh/r/wangbowen/kkfileview
 canonical: https://xuanyuan.cloud/zh/r/wangbowen/kkfileview
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [wangbowen/kkfileview — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/wangbowen/kkfileview "wangbowen/kkfileview Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/wangbowen/kkfileview
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/wangbowen/kkfileview" title="wangbowen/kkfileview Docker 镜像中文简介、标签列表与拉取命令">wangbowen/kkfileview — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/wangbowen/kkfileview" title="wangbowen/kkfileview Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/wangbowen/kkfileview</a></p>
 
 # kkFileView 非官方镜像文档
 
@@ -49,3 +49,7 @@ docker run -d -p 8012:8012 --name kkfileview iwangbowen/kkfileview:latest
 ### 反馈与建议
 
 如在使用过程中遇到问题或有功能建议，欢迎通过 [GitHub Issues](https://github.com/iwangbowen/kkFileView/issues) 提交反馈。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/wangbowen/kkfileview" title="wangbowen/kkfileview Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/wangbowen/kkfileview</a></p>

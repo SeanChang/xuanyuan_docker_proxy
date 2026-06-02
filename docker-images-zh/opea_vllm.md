@@ -2,14 +2,14 @@
 image: opea/vllm
 source: https://xuanyuan.cloud/zh/r/opea/vllm
 canonical: https://xuanyuan.cloud/zh/r/opea/vllm
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [opea/vllm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/opea/vllm "opea/vllm Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/opea/vllm
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/opea/vllm" title="opea/vllm Docker 镜像中文简介、标签列表与拉取命令">opea/vllm — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/opea/vllm" title="opea/vllm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/opea/vllm</a></p>
 
 # vLLM Docker镜像文档
 
@@ -207,3 +207,7 @@ curl http://localhost:8000/v1/completions \
 
 ### 4. 流式输出无响应
 - **解决**：确保启动时添加`--streaming`参数，且客户端支持SSE（如使用`curl -N`或浏览器EventSource API）。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/opea/vllm" title="opea/vllm Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/opea/vllm</a></p>

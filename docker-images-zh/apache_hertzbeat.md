@@ -2,14 +2,14 @@
 image: apache/hertzbeat
 source: https://xuanyuan.cloud/zh/r/apache/hertzbeat
 canonical: https://xuanyuan.cloud/zh/r/apache/hertzbeat
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [apache/hertzbeat — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apache/hertzbeat "apache/hertzbeat Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/apache/hertzbeat
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/hertzbeat" title="apache/hertzbeat Docker 镜像中文简介、标签列表与拉取命令">apache/hertzbeat — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/apache/hertzbeat" title="apache/hertzbeat Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/hertzbeat</a></p>
 
 ## Apache HertzBeat Docker镜像
 
@@ -152,3 +152,7 @@ resourceRole:
 - 首次登录后建议修改默认密码（路径：系统设置 > 用户管理）。
 - 如使用邮件、钉钉等告警渠道，需确保容器网络可访问对应服务接口。
 - 大规模监控场景下，建议使用TDengine或IoTDB替代默认JPA存储，提升性能。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/hertzbeat" title="apache/hertzbeat Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/apache/hertzbeat</a></p>

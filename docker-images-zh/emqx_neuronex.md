@@ -2,14 +2,14 @@
 image: emqx/neuronex
 source: https://xuanyuan.cloud/zh/r/emqx/neuronex
 canonical: https://xuanyuan.cloud/zh/r/emqx/neuronex
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [emqx/neuronex — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/emqx/neuronex "emqx/neuronex Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/emqx/neuronex
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/emqx/neuronex" title="emqx/neuronex Docker 镜像中文简介、标签列表与拉取命令">emqx/neuronex — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/emqx/neuronex" title="emqx/neuronex Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/emqx/neuronex</a></p>
 
 # NeuronEX Docker镜像文档
 
@@ -122,3 +122,7 @@ services:
 - **端口映射**：默认Web管理端口为8085，若主机8085端口被占用，可修改映射（如`-p 8086:8085`将主机8086端口映射至容器8085端口）。  
 - **安全配置**：生产环境中需修改默认登录密码（admin/0000），并根据需求配置网络访问控制。  
 - **架构支持**：镜像支持amd64与arm64架构，拉取时Docker会自动匹配主机架构。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/emqx/neuronex" title="emqx/neuronex Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/emqx/neuronex</a></p>

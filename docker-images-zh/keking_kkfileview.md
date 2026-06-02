@@ -2,14 +2,14 @@
 image: keking/kkfileview
 source: https://xuanyuan.cloud/zh/r/keking/kkfileview
 canonical: https://xuanyuan.cloud/zh/r/keking/kkfileview
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [keking/kkfileview — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/keking/kkfileview "keking/kkfileview Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/keking/kkfileview
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/keking/kkfileview" title="keking/kkfileview Docker 镜像中文简介、标签列表与拉取命令">keking/kkfileview — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/keking/kkfileview" title="keking/kkfileview Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/keking/kkfileview</a></p>
 
 # kkFileView 镜像文档
 
@@ -89,3 +89,7 @@ docker-compose up -d
 - 官网：[https://kkfileview.keking.cn](https://kkfileview.keking.cn)
 - 码云开源地址：[https://gitee.com/kekingcn/file-online-preview](https://gitee.com/kekingcn/file-online-preview)
 - GitHub开源地址：[https://github.com/kekingcn/file-online-preview](https://github.com/kekingcn/file-online-preview)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/keking/kkfileview" title="keking/kkfileview Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/keking/kkfileview</a></p>

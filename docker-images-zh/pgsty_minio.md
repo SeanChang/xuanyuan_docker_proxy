@@ -2,14 +2,14 @@
 image: pgsty/minio
 source: https://xuanyuan.cloud/zh/r/pgsty/minio
 canonical: https://xuanyuan.cloud/zh/r/pgsty/minio
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [pgsty/minio — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/pgsty/minio "pgsty/minio Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/pgsty/minio
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/pgsty/minio" title="pgsty/minio Docker 镜像中文简介、标签列表与拉取命令">pgsty/minio — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/pgsty/minio" title="pgsty/minio Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/pgsty/minio</a></p>
 
 # 重要声明
 
@@ -124,3 +124,7 @@ mc ls data/
 - MinIO源码基于[GNU AGPLv3](LICENSE)许可。
 - MinIO [文档](docs/)基于[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)许可。
 - [许可证合规性](COMPLIANCE.md)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/pgsty/minio" title="pgsty/minio Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/pgsty/minio</a></p>

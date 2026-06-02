@@ -2,14 +2,14 @@
 image: library/nextcloud
 source: https://xuanyuan.cloud/zh/r/library/nextcloud
 canonical: https://xuanyuan.cloud/zh/r/library/nextcloud
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/nextcloud — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/nextcloud "library/nextcloud Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/nextcloud
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/nextcloud" title="library/nextcloud Docker 镜像中文简介、标签列表与拉取命令">library/nextcloud — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/nextcloud" title="library/nextcloud Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/nextcloud</a></p>
 
 # Nextcloud Docker 镜像使用介绍
 
@@ -241,3 +241,7 @@ services:
 - **性能优化**：大文件上传需调整 `PHP_UPLOAD_LIMIT` 及 Web 服务器请求体限制（如 `APACHE_BODY_LIMIT`）。  
 
 更多高级配置（如 Redis 缓存、S3 存储、钩子脚本等），请参考 [完整文档]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/nextcloud" title="library/nextcloud Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/nextcloud</a></p>

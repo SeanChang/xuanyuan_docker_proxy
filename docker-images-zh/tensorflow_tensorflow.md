@@ -2,14 +2,14 @@
 image: tensorflow/tensorflow
 source: https://xuanyuan.cloud/zh/r/tensorflow/tensorflow
 canonical: https://xuanyuan.cloud/zh/r/tensorflow/tensorflow
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [tensorflow/tensorflow — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/tensorflow/tensorflow "tensorflow/tensorflow Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/tensorflow/tensorflow
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/tensorflow/tensorflow" title="tensorflow/tensorflow Docker 镜像中文简介、标签列表与拉取命令">tensorflow/tensorflow — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/tensorflow/tensorflow" title="tensorflow/tensorflow Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/tensorflow/tensorflow</a></p>
 
 # TensorFlow Runtime Docker 镜像
 
@@ -60,3 +60,7 @@ $ docker run -it --rm --runtime=nvidia tensorflow/tensorflow:latest-gpu python
 $ docker run -it --rm -v $(realpath ~/notebooks):/tf/notebooks -p 8888:8888 tensorflow/tensorflow:latest-jupyter
 ```
 > 说明：假设本地笔记本目录为 `~/notebooks`，通过 `-v` 挂载到容器内 `/tf/notebooks`，`-p` 映射端口 8888。启动后在浏览器访问 `localhost:8888` 即可使用。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/tensorflow/tensorflow" title="tensorflow/tensorflow Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/tensorflow/tensorflow</a></p>

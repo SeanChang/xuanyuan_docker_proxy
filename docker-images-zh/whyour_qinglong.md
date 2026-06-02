@@ -2,14 +2,14 @@
 image: whyour/qinglong
 source: https://xuanyuan.cloud/zh/r/whyour/qinglong
 canonical: https://xuanyuan.cloud/zh/r/whyour/qinglong
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [whyour/qinglong — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/whyour/qinglong "whyour/qinglong Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/whyour/qinglong
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/whyour/qinglong" title="whyour/qinglong Docker 镜像中文简介、标签列表与拉取命令">whyour/qinglong — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/whyour/qinglong" title="whyour/qinglong Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/whyour/qinglong</a></p>
 
 # 青龙：定时任务管理平台
 
@@ -203,3 +203,7 @@ pnpm start
 青龙，又名苍龙，是中国传统文化中“天之四灵”之一，与白虎、朱雀、玄武并称四象。按五行学说，青龙代表东方，属木，象征春季，对应八卦中的震卦。《后汉书·律历志下》记载：“日周于天，一寒一暑，四时备成，万物毕改，摄提迁次，青龙移辰，谓之岁。”  
 
 在二十八宿中，青龙是东方七宿（角、亢、氐、房、心、尾、箕）的总称，道教中称“孟章”，与白虎同为守护神。平台以此命名，寓意如青龙般精准调度、生生不息。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/whyour/qinglong" title="whyour/qinglong Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/whyour/qinglong</a></p>

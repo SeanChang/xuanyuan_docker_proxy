@@ -2,14 +2,14 @@
 image: nginx/nginx-ingress
 source: https://xuanyuan.cloud/zh/r/nginx/nginx-ingress
 canonical: https://xuanyuan.cloud/zh/r/nginx/nginx-ingress
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [nginx/nginx-ingress — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/nginx/nginx-ingress "nginx/nginx-ingress Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/nginx/nginx-ingress
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nginx/nginx-ingress" title="nginx/nginx-ingress Docker 镜像中文简介、标签列表与拉取命令">nginx/nginx-ingress — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/nginx/nginx-ingress" title="nginx/nginx-ingress Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nginx/nginx-ingress</a></p>
 
 # NGINX Ingress Controller
 
@@ -213,3 +213,7 @@ NGINX Plus 客户使用 NGINX Ingress Controller（配合 NGINX Plus）时，可
 ### 扩展资源
 - **VirtualServer/VirtualServerRoute**：实现流量拆分、高级路由（Ingress 不支持场景），详见 [文档]()。  
 - **TransportServer**：支持 TCP、UDP 和 TLS 透传负载均衡，详见 [
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nginx/nginx-ingress" title="nginx/nginx-ingress Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nginx/nginx-ingress</a></p>

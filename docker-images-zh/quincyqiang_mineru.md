@@ -2,14 +2,14 @@
 image: quincyqiang/mineru
 source: https://xuanyuan.cloud/zh/r/quincyqiang/mineru
 canonical: https://xuanyuan.cloud/zh/r/quincyqiang/mineru
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [quincyqiang/mineru — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/quincyqiang/mineru "quincyqiang/mineru Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/quincyqiang/mineru
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/quincyqiang/mineru" title="quincyqiang/mineru Docker 镜像中文简介、标签列表与拉取命令">quincyqiang/mineru — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/quincyqiang/mineru" title="quincyqiang/mineru Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/quincyqiang/mineru</a></p>
 
 # MinerU PDF解析API介绍
 
@@ -57,3 +57,7 @@ docker run -itd --name=mineru_server --gpus=all -p 8888:8000 quincyqiang/mineru:
     ```bash
     docker pull quincyqiang/mineru:0.1-models
     ```
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/quincyqiang/mineru" title="quincyqiang/mineru Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/quincyqiang/mineru</a></p>

@@ -2,14 +2,14 @@
 image: ai/qwen3-vl
 source: https://xuanyuan.cloud/zh/r/ai/qwen3-vl
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen3-vl
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ai/qwen3-vl — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ai/qwen3-vl "ai/qwen3-vl Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ai/qwen3-vl
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-vl" title="ai/qwen3-vl Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-vl — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-vl" title="ai/qwen3-vl Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-vl</a></p>
 
 # Qwen3 VL
 *Unsloth提供的GGUF版本*
@@ -79,3 +79,7 @@ docker model run ai/qwen3-vl
 - [Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)
 - [Unsloth Dynamic 2.0 GGUF](https://docs.unsloth.ai/basics/unsloth-dynamic-2.0-ggufs)
 - [如何微调](https://docs.unsloth.ai/models/qwen3-vl-run-and-fine-tune)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-vl" title="ai/qwen3-vl Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-vl</a></p>

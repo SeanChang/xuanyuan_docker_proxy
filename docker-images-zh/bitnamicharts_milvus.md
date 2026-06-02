@@ -2,14 +2,14 @@
 image: bitnamicharts/milvus
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/milvus
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/milvus
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnamicharts/milvus — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamicharts/milvus "bitnamicharts/milvus Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnamicharts/milvus
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/milvus" title="bitnamicharts/milvus Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/milvus — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/milvus" title="bitnamicharts/milvus Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/milvus</a></p>
 
 # Bitnami Milvus 软件包介绍  
 
@@ -220,3 +220,7 @@ Ingress 支持多种 TLS 配置方式：
 
 
 > **注意**：完整参数列表参见 [Bitnami Milvus 图表 GitHub 仓库]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/milvus" title="bitnamicharts/milvus Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/milvus</a></p>

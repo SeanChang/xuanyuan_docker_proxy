@@ -2,14 +2,14 @@
 image: linuxserver/smokeping
 source: https://xuanyuan.cloud/zh/r/linuxserver/smokeping
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/smokeping
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [linuxserver/smokeping — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/smokeping "linuxserver/smokeping Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/linuxserver/smokeping
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/smokeping" title="linuxserver/smokeping Docker 镜像中文简介、标签列表与拉取命令">linuxserver/smokeping — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/smokeping" title="linuxserver/smokeping Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/smokeping</a></p>
 
 # LinuxServer.io Smokeping 容器介绍  
 
@@ -191,3 +191,7 @@ id your_user
 - **代码**：[GitHub 仓库]([])  
 
 如需支持或贡献，可通过上述渠道联系团队。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/smokeping" title="linuxserver/smokeping Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/smokeping</a></p>

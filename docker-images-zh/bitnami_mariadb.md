@@ -2,14 +2,14 @@
 image: bitnami/mariadb
 source: https://xuanyuan.cloud/zh/r/bitnami/mariadb
 canonical: https://xuanyuan.cloud/zh/r/bitnami/mariadb
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnami/mariadb — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/mariadb "bitnami/mariadb Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnami/mariadb
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/mariadb" title="bitnami/mariadb Docker 镜像中文简介、标签列表与拉取命令">bitnami/mariadb — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnami/mariadb" title="bitnami/mariadb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/mariadb</a></p>
 
 # Bitnami MariaDB 软件包介绍
 
@@ -285,3 +285,7 @@ docker run --name mariadb \
     -e MARIADB_COLLATE=utf8mb4_unicode_ci \
     bitnami/mariadb:latest
 ```
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/mariadb" title="bitnami/mariadb Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/mariadb</a></p>

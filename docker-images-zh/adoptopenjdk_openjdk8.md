@@ -2,14 +2,14 @@
 image: adoptopenjdk/openjdk8
 source: https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk8
 canonical: https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk8
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [adoptopenjdk/openjdk8 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk8 "adoptopenjdk/openjdk8 Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk8
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk8" title="adoptopenjdk/openjdk8 Docker 镜像中文简介、标签列表与拉取命令">adoptopenjdk/openjdk8 — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk8" title="adoptopenjdk/openjdk8 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk8</a></p>
 
 # AdoptOpenJDK Docker镜像使用指南
 
@@ -117,3 +117,7 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.282-b08, mixed mode)
 - **OpenJDK**：[GNU GPL v2许可证（含Classpath例外条款）]([])  
 
 > 注：镜像中可能包含其他软件（如基础系统的Bash等），使用前请确保符合其各自许可证要求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk8" title="adoptopenjdk/openjdk8 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk8</a></p>

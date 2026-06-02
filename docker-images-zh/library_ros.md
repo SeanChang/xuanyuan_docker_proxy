@@ -2,14 +2,14 @@
 image: library/ros
 source: https://xuanyuan.cloud/zh/r/library/ros
 canonical: https://xuanyuan.cloud/zh/r/library/ros
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/ros — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/ros "library/ros Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/ros
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/ros" title="library/ros Docker 镜像中文简介、标签列表与拉取命令">library/ros — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/ros" title="library/ros Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/ros</a></p>
 
 # ROS Docker 镜像使用指南
 
@@ -284,3 +284,7 @@ $ docker compose down  # 清理网络（如需）
 ## 许可证说明
 
 镜像中软件的许可证信息可通过 [ROS 包索引]([]) 查询。使用本镜像时，需确保遵守其中所有软件的许可条款。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/ros" title="library/ros Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/ros</a></p>

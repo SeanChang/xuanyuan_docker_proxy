@@ -2,14 +2,14 @@
 image: library/django
 source: https://xuanyuan.cloud/zh/r/library/django
 canonical: https://xuanyuan.cloud/zh/r/library/django
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/django — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/django "library/django Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/django
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/django" title="library/django Docker 镜像中文简介、标签列表与拉取命令">library/django — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/django" title="library/django Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/django</a></p>
 
 # **已弃用**
 
@@ -138,3 +138,7 @@ $ docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/
 # 许可证
 
 查看此镜像中包含软件的[许可证信息](https://github.com/django/django/blob/master/LICENSE)。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/django" title="library/django Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/django</a></p>

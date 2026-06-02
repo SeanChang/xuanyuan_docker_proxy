@@ -2,14 +2,14 @@
 image: nevinee/qbittorrent
 source: https://xuanyuan.cloud/zh/r/nevinee/qbittorrent
 canonical: https://xuanyuan.cloud/zh/r/nevinee/qbittorrent
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [nevinee/qbittorrent — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/nevinee/qbittorrent "nevinee/qbittorrent Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/nevinee/qbittorrent
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nevinee/qbittorrent" title="nevinee/qbittorrent Docker 镜像中文简介、标签列表与拉取命令">nevinee/qbittorrent — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/nevinee/qbittorrent" title="nevinee/qbittorrent Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nevinee/qbittorrent</a></p>
 
 # qBittorrent Docker镜像使用说明
 
@@ -71,3 +71,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 
 
 > 详细教程及全部说明见 [博客原文]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nevinee/qbittorrent" title="nevinee/qbittorrent Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nevinee/qbittorrent</a></p>

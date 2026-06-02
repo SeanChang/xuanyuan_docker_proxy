@@ -2,14 +2,14 @@
 image: chromedp/headless-shell
 source: https://xuanyuan.cloud/zh/r/chromedp/headless-shell
 canonical: https://xuanyuan.cloud/zh/r/chromedp/headless-shell
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [chromedp/headless-shell — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/chromedp/headless-shell "chromedp/headless-shell Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/chromedp/headless-shell
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/chromedp/headless-shell" title="chromedp/headless-shell Docker 镜像中文简介、标签列表与拉取命令">chromedp/headless-shell — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/chromedp/headless-shell" title="chromedp/headless-shell Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/chromedp/headless-shell</a></p>
 
 # chromedp/headless-shell Docker镜像文档
 
@@ -132,3 +132,7 @@ services:
 [chromedp]: https://github.com/chromedp/chromedp
 [building-linux]: https://chromium.googlesource.com/chromium/src/+/master/docs/linux_build_instructions.md
 [building-headless]: https://chromium.googlesource.com/chromium/src/+/master/headless/README.md
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/chromedp/headless-shell" title="chromedp/headless-shell Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/chromedp/headless-shell</a></p>

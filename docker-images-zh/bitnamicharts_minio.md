@@ -2,14 +2,14 @@
 image: bitnamicharts/minio
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/minio
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/minio
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnamicharts/minio — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamicharts/minio "bitnamicharts/minio Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnamicharts/minio
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/minio" title="bitnamicharts/minio Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/minio — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/minio" title="bitnamicharts/minio Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/minio</a></p>
 
 # Bitnami MinIO® 对象存储
 
@@ -251,3 +251,7 @@ podAnnotations:
 ## 免责声明
 
 所有软件产品、项目和公司名称均为其各自持有者的商标™或注册商标®，使用这些名称并不意味着任何关联或背书。本软件根据一个或多个开源许可证授权给您，VMware 按"原样"提供软件。MinIO® 是 MinIO Inc. 在美国和其他国家的注册商标。Bitnami 与 MinIO Inc. 无任何关联、关联、授权、背书或以任何方式正式连接。MinIO® 根据 GNU AGPL v3.0 许可。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/minio" title="bitnamicharts/minio Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/minio</a></p>

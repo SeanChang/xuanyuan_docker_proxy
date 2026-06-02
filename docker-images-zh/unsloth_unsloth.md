@@ -2,14 +2,14 @@
 image: unsloth/unsloth
 source: https://xuanyuan.cloud/zh/r/unsloth/unsloth
 canonical: https://xuanyuan.cloud/zh/r/unsloth/unsloth
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [unsloth/unsloth — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/unsloth/unsloth "unsloth/unsloth Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/unsloth/unsloth
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/unsloth/unsloth" title="unsloth/unsloth Docker 镜像中文简介、标签列表与拉取命令">unsloth/unsloth — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/unsloth/unsloth" title="unsloth/unsloth Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/unsloth/unsloth</a></p>
 
 # Unsloth Docker镜像
 
@@ -118,3 +118,7 @@ ssh -i ~/.ssh/container_key -p 2222 unsloth@localhost
 - 查阅[Unsloth文档](https://docs.unsloth.ai/)
 - 在Reddit社区提问：[r/unsloth](https://reddit.com/unsloth)
 - 查看`unsloth-notebooks/`目录中的示例笔记本
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/unsloth/unsloth" title="unsloth/unsloth Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/unsloth/unsloth</a></p>

@@ -2,14 +2,14 @@
 image: cimg/openjdk
 source: https://xuanyuan.cloud/zh/r/cimg/openjdk
 canonical: https://xuanyuan.cloud/zh/r/cimg/openjdk
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [cimg/openjdk — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/cimg/openjdk "cimg/openjdk Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/cimg/openjdk
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/openjdk" title="cimg/openjdk Docker 镜像中文简介、标签列表与拉取命令">cimg/openjdk — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/cimg/openjdk" title="cimg/openjdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cimg/openjdk</a></p>
 
 # CircleCI 便捷镜像：OpenJDK  
 
@@ -203,3 +203,7 @@ docker run -it test/openjdk:11.0.5 bash  # 运行容器测试
 ## 许可证  
 
 本仓库采用 MIT 许可证，详见 [LICENSE](./LICENSE)。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/openjdk" title="cimg/openjdk Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/cimg/openjdk</a></p>

@@ -2,14 +2,14 @@
 image: zhangp365/comfyui
 source: https://xuanyuan.cloud/zh/r/zhangp365/comfyui
 canonical: https://xuanyuan.cloud/zh/r/zhangp365/comfyui
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [zhangp365/comfyui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zhangp365/comfyui "zhangp365/comfyui Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/zhangp365/comfyui
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zhangp365/comfyui" title="zhangp365/comfyui Docker 镜像中文简介、标签列表与拉取命令">zhangp365/comfyui — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/zhangp365/comfyui" title="zhangp365/comfyui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zhangp365/comfyui</a></p>
 
 ## ComfyUI Docker部署工具
 
@@ -54,3 +54,7 @@ docker-compose up -d  # 后台启动容器
 ### 更多细节  
 具体怎么配GPU加速、加插件、更新镜像，都在GitHub仓库里写着，去看看：  
 []()
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zhangp365/comfyui" title="zhangp365/comfyui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zhangp365/comfyui</a></p>

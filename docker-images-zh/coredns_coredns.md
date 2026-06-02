@@ -2,14 +2,14 @@
 image: coredns/coredns
 source: https://xuanyuan.cloud/zh/r/coredns/coredns
 canonical: https://xuanyuan.cloud/zh/r/coredns/coredns
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [coredns/coredns — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/coredns/coredns "coredns/coredns Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/coredns/coredns
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/coredns/coredns" title="coredns/coredns Docker 镜像中文简介、标签列表与拉取命令">coredns/coredns — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/coredns/coredns" title="coredns/coredns Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/coredns/coredns</a></p>
 
 ## CoreDNS 官方 Docker 容器介绍  
 
@@ -74,3 +74,7 @@ docker run -d \
 - **镜像标签**：生产环境建议使用具体版本号（如 `1.11.1`），避免 `latest` 标签自动更新导致版本不可控。  
 - **持久化配置**：通过 `-v` 参数挂载本地目录（如 `/path/to/coredns-config:/etc/coredns`）保存 Corefile，避免容器删除后配置丢失。  
 - **资源限制**：若需限制容器资源（如 CPU/内存），可在 `docker run` 时添加 `--cpus` `--memory` 等参数。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/coredns/coredns" title="coredns/coredns Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/coredns/coredns</a></p>

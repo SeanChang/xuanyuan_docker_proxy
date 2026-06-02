@@ -2,14 +2,14 @@
 image: 2000cubits/php-cli-developer
 source: https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer
 canonical: https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [2000cubits/php-cli-developer — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer "2000cubits/php-cli-developer Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer" title="2000cubits/php-cli-developer Docker 镜像中文简介、标签列表与拉取命令">2000cubits/php-cli-developer — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer" title="2000cubits/php-cli-developer Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer</a></p>
 
 # PHP CLI 开发工具镜像
 
@@ -121,3 +121,7 @@ RUN docker-php-ext-install redis  # 安装Redis扩展
 - 生产环境建议使用官方PHP CLI镜像，本镜像包含开发工具，不适合生产部署
 - 本地开发时，确保文件权限正确（可通过`-u $(id -u):$(id -g)`指定用户ID避免权限问题）
 - 不同PHP版本对应的扩展支持可能存在差异，使用前请查阅对应版本的PHP官方文档
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer" title="2000cubits/php-cli-developer Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer</a></p>

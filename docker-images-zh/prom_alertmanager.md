@@ -2,14 +2,14 @@
 image: prom/alertmanager
 source: https://xuanyuan.cloud/zh/r/prom/alertmanager
 canonical: https://xuanyuan.cloud/zh/r/prom/alertmanager
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [prom/alertmanager — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/prom/alertmanager "prom/alertmanager Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/prom/alertmanager
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/alertmanager" title="prom/alertmanager Docker 镜像中文简介、标签列表与拉取命令">prom/alertmanager — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/prom/alertmanager" title="prom/alertmanager Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/alertmanager</a></p>
 
 # Alertmanager 镜像文档
 
@@ -254,3 +254,7 @@ alerting:
 ## 许可证
 
 Apache License 2.0，详见 [LICENSE](https://github.com/prometheus/alertmanager/blob/main/LICENSE)。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/alertmanager" title="prom/alertmanager Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/prom/alertmanager</a></p>

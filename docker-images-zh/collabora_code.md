@@ -2,14 +2,14 @@
 image: collabora/code
 source: https://xuanyuan.cloud/zh/r/collabora/code
 canonical: https://xuanyuan.cloud/zh/r/collabora/code
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [collabora/code — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/collabora/code "collabora/code Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/collabora/code
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/collabora/code" title="collabora/code Docker 镜像中文简介、标签列表与拉取命令">collabora/code — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/collabora/code" title="collabora/code Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/collabora/code</a></p>
 
 # 用CODE Docker镜像搭建家庭在线办公套件  
 
@@ -32,3 +32,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 * **代码仓库** - 欢迎Star并参与贡献：[]  
 * **社区中心**：[]  
 * **社区论坛** - 提问、找答案，与其他用户交流经验：[]
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/collabora/code" title="collabora/code Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/collabora/code</a></p>

@@ -2,14 +2,14 @@
 image: docker/buildkit-syft-scanner
 source: https://xuanyuan.cloud/zh/r/docker/buildkit-syft-scanner
 canonical: https://xuanyuan.cloud/zh/r/docker/buildkit-syft-scanner
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [docker/buildkit-syft-scanner — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/docker/buildkit-syft-scanner "docker/buildkit-syft-scanner Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/docker/buildkit-syft-scanner
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/docker/buildkit-syft-scanner" title="docker/buildkit-syft-scanner Docker 镜像中文简介、标签列表与拉取命令">docker/buildkit-syft-scanner — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/docker/buildkit-syft-scanner" title="docker/buildkit-syft-scanner Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/docker/buildkit-syft-scanner</a></p>
 
 # BuildKit Syft Scanner 镜像文档
 
@@ -135,3 +135,7 @@ buildctl build \
 ## 6. 贡献指南
 
 `buildkit-syft-scanner` 主要作为 [BuildKit](https://github.com/moby/buildkit) 与 [Syft](https://github.com/anchore/syft) 之间的适配层，旨在保持代码精简。贡献通常更适合提交至上游项目（BuildKit 或 Syft）。若需为本项目贡献，请优先关注协议兼容性修复或文档改进。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/docker/buildkit-syft-scanner" title="docker/buildkit-syft-scanner Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/docker/buildkit-syft-scanner</a></p>

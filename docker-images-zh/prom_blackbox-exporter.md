@@ -2,14 +2,14 @@
 image: prom/blackbox-exporter
 source: https://xuanyuan.cloud/zh/r/prom/blackbox-exporter
 canonical: https://xuanyuan.cloud/zh/r/prom/blackbox-exporter
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [prom/blackbox-exporter — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/prom/blackbox-exporter "prom/blackbox-exporter Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/prom/blackbox-exporter
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/blackbox-exporter" title="prom/blackbox-exporter Docker 镜像中文简介、标签列表与拉取命令">prom/blackbox-exporter — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/prom/blackbox-exporter" title="prom/blackbox-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/blackbox-exporter</a></p>
 
 # Blackbox Exporter
 
@@ -185,3 +185,7 @@ ICMP探针（ping）需要特殊权限：
 - **Docker环境**：使用ICMP探针时需添加`--cap-add=NET_RAW`参数
   ```bash
   docker run --rm --cap-add=NET_RAW -p 9115:9115 quay.io/prometheus/blackbox-exporter:latest
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/blackbox-exporter" title="prom/blackbox-exporter Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/prom/blackbox-exporter</a></p>

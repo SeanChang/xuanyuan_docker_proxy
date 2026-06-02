@@ -2,14 +2,14 @@
 image: nodejs/devcontainer
 source: https://xuanyuan.cloud/zh/r/nodejs/devcontainer
 canonical: https://xuanyuan.cloud/zh/r/nodejs/devcontainer
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [nodejs/devcontainer — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/nodejs/devcontainer "nodejs/devcontainer Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/nodejs/devcontainer
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nodejs/devcontainer" title="nodejs/devcontainer Docker 镜像中文简介、标签列表与拉取命令">nodejs/devcontainer — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/nodejs/devcontainer" title="nodejs/devcontainer Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nodejs/devcontainer</a></p>
 
 # Node.js Dev Container 镜像文档
 
@@ -238,3 +238,7 @@ CMD ["npm", "run", "dev"]
 2. **权限问题**：默认使用非 root 用户 `node`，若需修改文件权限，可通过 `sudo` 命令（容器内已预配置密码less sudo）。
 3. **镜像更新**：基础镜像会定期更新，建议通过 `devcontainer.json` 锁定 Node.js 版本（如 `18` 而非 `lts`）以避免意外升级。
 4. **性能优化**：本地开发时，通过 `mounts` 配置挂载本地 npm/yarn 缓存目录，可大幅加速依赖安装。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nodejs/devcontainer" title="nodejs/devcontainer Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nodejs/devcontainer</a></p>

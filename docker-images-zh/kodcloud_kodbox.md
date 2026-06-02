@@ -2,14 +2,14 @@
 image: kodcloud/kodbox
 source: https://xuanyuan.cloud/zh/r/kodcloud/kodbox
 canonical: https://xuanyuan.cloud/zh/r/kodcloud/kodbox
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [kodcloud/kodbox — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kodcloud/kodbox "kodcloud/kodbox Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/kodcloud/kodbox
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kodcloud/kodbox" title="kodcloud/kodbox Docker 镜像中文简介、标签列表与拉取命令">kodcloud/kodbox — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/kodcloud/kodbox" title="kodcloud/kodbox Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kodcloud/kodbox</a></p>
 
 # 可道云 Docker 镜像部署指南
 
@@ -132,3 +132,7 @@ services:
 - [自定义容器 IP]([])  
 - [挂载 NFS 卷]([])  
 - [挂载 SMB 卷]([])
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kodcloud/kodbox" title="kodcloud/kodbox Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kodcloud/kodbox</a></p>

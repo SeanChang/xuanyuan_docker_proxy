@@ -2,14 +2,14 @@
 image: bitnamicharts/mysql
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/mysql
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/mysql
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnamicharts/mysql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamicharts/mysql "bitnamicharts/mysql Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnamicharts/mysql
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/mysql" title="bitnamicharts/mysql Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/mysql — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/mysql" title="bitnamicharts/mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/mysql</a></p>
 
 # Bitnami MySQL Helm Chart 文档
 
@@ -291,3 +291,7 @@ velero restore create --from-backup mysql-backup
 - **生产环境镜像**：2025年8月28日后，非加固镜像将迁移至 `bitnamilegacy` 仓库且不再更新，生产环境需迁移至 Bitnami Secure Images  
 - **不可变标签**：推荐使用具体版本标签（如 `8.0.36`）而非 `latest`，避免自动更新导致不一致  
 - **持久化问题**：若 PV 挂载失败，参考 [Bitnami PV 故障排查指南](https://docs.bitnami.com/kubernetes/faq/troubleshooting/troubleshooting-persistence-volumes/)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/mysql" title="bitnamicharts/mysql Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/mysql</a></p>

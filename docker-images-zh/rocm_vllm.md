@@ -2,14 +2,14 @@
 image: rocm/vllm
 source: https://xuanyuan.cloud/zh/r/rocm/vllm
 canonical: https://xuanyuan.cloud/zh/r/rocm/vllm
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [rocm/vllm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rocm/vllm "rocm/vllm Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/rocm/vllm
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/rocm/vllm" title="rocm/vllm Docker 镜像中文简介、标签列表与拉取命令">rocm/vllm — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/rocm/vllm" title="rocm/vllm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rocm/vllm</a></p>
 
 ## ROCm优化的vLLM Docker容器（适用于AMD GPU）
 
@@ -78,3 +78,7 @@ curl [] \
 - 模型文件需提前下载至本地（推荐Hugging Face格式），容器内默认不包含模型数据。  
 - 高并发场景下，建议根据GPU显存大小调整`--max-num-batched-tokens`（如MI250 64GB显存可设为8192）。  
 - 如需使用量化模型（如GPTQ），启动命令需追加`--quantization gptq`，并确保模型文件包含量化参数。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/rocm/vllm" title="rocm/vllm Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/rocm/vllm</a></p>

@@ -2,14 +2,14 @@
 image: bitnamilegacy/minio
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/minio
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/minio
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnamilegacy/minio — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamilegacy/minio "bitnamilegacy/minio Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnamilegacy/minio
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/minio" title="bitnamilegacy/minio Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/minio — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/minio" title="bitnamilegacy/minio Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamilegacy/minio</a></p>
 
 ## 概述
 本仓库为Bitnami旧版仓库，包含所有现有容器镜像的备份。这些镜像不再接收更新或支持，仅应用于临时迁移目的。请注意，该仓库未来可能被移除。
@@ -38,3 +38,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 - CVE透明度（通过VEX/KEV报告）
 - 软件物料清单（SBOMs）
 - 企业级技术支持
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/minio" title="bitnamilegacy/minio Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamilegacy/minio</a></p>

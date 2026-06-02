@@ -2,14 +2,14 @@
 image: bitnami/postgresql-repmgr
 source: https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr
 canonical: https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnami/postgresql-repmgr — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr "bitnami/postgresql-repmgr Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr" title="bitnami/postgresql-repmgr Docker 镜像中文简介、标签列表与拉取命令">bitnami/postgresql-repmgr — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr" title="bitnami/postgresql-repmgr Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr</a></p>
 
 # Bitnami postgresql-repmgr 安全镜像
 
@@ -23,3 +23,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 - 对互联网最受欢迎的Helm图表提供一流支持
 
 通过[访问我们的网站](https://bitnami.com/)了解更多关于商业Bitnami安全镜像产品的信息。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr" title="bitnami/postgresql-repmgr Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr</a></p>

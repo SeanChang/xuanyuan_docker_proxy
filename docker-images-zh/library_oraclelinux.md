@@ -2,14 +2,14 @@
 image: library/oraclelinux
 source: https://xuanyuan.cloud/zh/r/library/oraclelinux
 canonical: https://xuanyuan.cloud/zh/r/library/oraclelinux
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/oraclelinux — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/oraclelinux "library/oraclelinux Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/oraclelinux
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/oraclelinux" title="library/oraclelinux Docker 镜像中文简介、标签列表与拉取命令">library/oraclelinux — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/oraclelinux" title="library/oraclelinux Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/oraclelinux</a></p>
 
 # Oracle Linux 镜像介绍
 
@@ -101,3 +101,7 @@ Oracle Linux 订阅客户可通过 [My Oracle Support]([]) 门户获取支持。
 与所有 Docker 镜像类似，本镜像可能包含其他软件（如基础发行版的 Bash 等，及主要软件的直接/间接依赖），这些软件可能适用其他许可证。  
 部分自动检测到的附加许可证信息可在 [repo-info 仓库的 `oraclelinux/` 目录]([]) 中查看。  
 使用预构建镜像时，用户需自行确保其使用行为符合镜像中所有软件的相关许可证要求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/oraclelinux" title="library/oraclelinux Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/oraclelinux</a></p>

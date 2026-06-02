@@ -2,14 +2,14 @@
 image: library/python
 source: https://xuanyuan.cloud/zh/r/library/python
 canonical: https://xuanyuan.cloud/zh/r/library/python
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/python — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/python "library/python Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/python
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/python" title="library/python Docker 镜像中文简介、标签列表与拉取命令">library/python — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/python" title="library/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/python</a></p>
 
 # Python Docker 镜像使用指南
 
@@ -174,3 +174,7 @@ Python 镜像提供多种变体，适用于不同场景：
 
 Python 2 和 Python 3 的许可证信息可分别参考 [Python 2 许可证]([]) 和 [Python 3 许可证]([])。  
 镜像中可能包含其他软件，使用前需确保符合所有组件的许可证要求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/python" title="library/python Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/python</a></p>

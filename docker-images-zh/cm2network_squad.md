@@ -2,14 +2,14 @@
 image: cm2network/squad
 source: https://xuanyuan.cloud/zh/r/cm2network/squad
 canonical: https://xuanyuan.cloud/zh/r/cm2network/squad
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [cm2network/squad — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/cm2network/squad "cm2network/squad Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/cm2network/squad
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/cm2network/squad" title="cm2network/squad Docker 镜像中文简介、标签列表与拉取命令">cm2network/squad — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/cm2network/squad" title="cm2network/squad Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cm2network/squad</a></p>
 
 # Squad 专用服务器 Docker 镜像文档
 
@@ -143,3 +143,7 @@ $ docker run -d --net=host -v $(pwd)/squad-data:/home/steam/squad-dedicated/ \
 
 ## 贡献者
 [![Contributors Display](https://badges.pufler.dev/contributors/CM2Walki/Squad?size=50&padding=5&bots=false)](https://github.com/CM2Walki/Squad/graphs/contributors)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/cm2network/squad" title="cm2network/squad Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/cm2network/squad</a></p>

@@ -2,14 +2,14 @@
 image: getmeili/meilisearch
 source: https://xuanyuan.cloud/zh/r/getmeili/meilisearch
 canonical: https://xuanyuan.cloud/zh/r/getmeili/meilisearch
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [getmeili/meilisearch — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/getmeili/meilisearch "getmeili/meilisearch Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/getmeili/meilisearch
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/getmeili/meilisearch" title="getmeili/meilisearch Docker 镜像中文简介、标签列表与拉取命令">getmeili/meilisearch — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/getmeili/meilisearch" title="getmeili/meilisearch Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/getmeili/meilisearch</a></p>
 
 ## 轻量好用的开源搜索引擎：轻松嵌入你的项目  
 
@@ -18,3 +18,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 它的核心优势很直接：**够快**——不管是索引数据还是响应搜索请求，都能跟上项目的实时需求；**够准**——通过优化的相关性算法，能精准定位用户需要的内容，避免无效结果；最重要的是**够省心**——作为开源工具，你可以自由调整代码适配项目场景，而且接入流程简单，不用复杂配置，直接嵌入现有系统就能用。  
 
 无论是做内部文档检索、产品数据查询，还是给用户提供内容搜索功能，它都能成为项目里不显眼但高效的“搜索引擎”。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/getmeili/meilisearch" title="getmeili/meilisearch Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/getmeili/meilisearch</a></p>

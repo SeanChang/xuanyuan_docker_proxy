@@ -2,14 +2,14 @@
 image: kalilinux/kali-rolling
 source: https://xuanyuan.cloud/zh/r/kalilinux/kali-rolling
 canonical: https://xuanyuan.cloud/zh/r/kalilinux/kali-rolling
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [kalilinux/kali-rolling — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kalilinux/kali-rolling "kalilinux/kali-rolling Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/kalilinux/kali-rolling
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kalilinux/kali-rolling" title="kalilinux/kali-rolling Docker 镜像中文简介、标签列表与拉取命令">kalilinux/kali-rolling — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/kalilinux/kali-rolling" title="kalilinux/kali-rolling Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kalilinux/kali-rolling</a></p>
 
 ## Kali Linux Docker 镜像（Rolling 版）
 
@@ -32,3 +32,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 - [Kali 分支说明]([])  
 - [Kali 元数据包详解]([])  
 - [生成 Kali Docker 镜像的构建脚本]([])
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kalilinux/kali-rolling" title="kalilinux/kali-rolling Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kalilinux/kali-rolling</a></p>

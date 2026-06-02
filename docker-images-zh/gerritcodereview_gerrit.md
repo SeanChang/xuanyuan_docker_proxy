@@ -2,14 +2,14 @@
 image: gerritcodereview/gerrit
 source: https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit
 canonical: https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [gerritcodereview/gerrit — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit "gerritcodereview/gerrit Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit" title="gerritcodereview/gerrit Docker 镜像中文简介、标签列表与拉取命令">gerritcodereview/gerrit — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit" title="gerritcodereview/gerrit Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit</a></p>
 
 # Gerrit Code Review Docker 镜像
 
@@ -225,3 +225,7 @@ PhpLdapAdmin 可通过 `[] 访问，用于管理 LDAP 用户。首次登录 Gerr
 ## 更多信息  
 - 查看 Gerrit 文档：`[]  
 - Gerrit 官方主页：[[]]([])
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit" title="gerritcodereview/gerrit Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit</a></p>

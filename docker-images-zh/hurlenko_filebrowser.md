@@ -2,14 +2,14 @@
 image: hurlenko/filebrowser
 source: https://xuanyuan.cloud/zh/r/hurlenko/filebrowser
 canonical: https://xuanyuan.cloud/zh/r/hurlenko/filebrowser
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [hurlenko/filebrowser — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/hurlenko/filebrowser "hurlenko/filebrowser Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/hurlenko/filebrowser
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/hurlenko/filebrowser" title="hurlenko/filebrowser Docker 镜像中文简介、标签列表与拉取命令">hurlenko/filebrowser — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/hurlenko/filebrowser" title="hurlenko/filebrowser Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hurlenko/filebrowser</a></p>
 
 # [filebrowser](https://github.com/filebrowser/filebrowser) Docker容器镜像
 
@@ -155,3 +155,7 @@ git clone https://github.com/hurlenko/filebrowser-docker
 cd filebrowser-docker
 docker build -t hurlenko/filebrowser .
 ```
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/hurlenko/filebrowser" title="hurlenko/filebrowser Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/hurlenko/filebrowser</a></p>

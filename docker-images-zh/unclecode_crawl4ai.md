@@ -2,14 +2,14 @@
 image: unclecode/crawl4ai
 source: https://xuanyuan.cloud/zh/r/unclecode/crawl4ai
 canonical: https://xuanyuan.cloud/zh/r/unclecode/crawl4ai
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [unclecode/crawl4ai — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/unclecode/crawl4ai "unclecode/crawl4ai Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/unclecode/crawl4ai
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/unclecode/crawl4ai" title="unclecode/crawl4ai Docker 镜像中文简介、标签列表与拉取命令">unclecode/crawl4ai — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/unclecode/crawl4ai" title="unclecode/crawl4ai Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/unclecode/crawl4ai</a></p>
 
 # Crawl4AI: 开源LLM友好型网络爬虫与抓取工具
 
@@ -172,3 +172,7 @@ GROQ_API_KEY=your_groq_api_key
 - 内存: 至少4GB
 - 磁盘空间: 至少1GB
 - 网络: 能够访问互联网以拉取镜像和爬取网页
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/unclecode/crawl4ai" title="unclecode/crawl4ai Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/unclecode/crawl4ai</a></p>

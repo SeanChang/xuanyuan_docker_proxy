@@ -2,14 +2,14 @@
 image: bitnami/mongodb
 source: https://xuanyuan.cloud/zh/r/bitnami/mongodb
 canonical: https://xuanyuan.cloud/zh/r/bitnami/mongodb
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnami/mongodb — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/mongodb "bitnami/mongodb Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnami/mongodb
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/mongodb" title="bitnami/mongodb Docker 镜像中文简介、标签列表与拉取命令">bitnami/mongodb — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnami/mongodb" title="bitnami/mongodb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/mongodb</a></p>
 
 # Bitnami 封装的 MongoDB®
 
@@ -254,3 +254,7 @@ docker run --name mongodb -e ALLOW_EMPTY_PASSWORD=yes -e MONGODB_ENABLE_IPV6=yes
 ```console
 docker run --name mongodb -e ALLOW_EMPTY_PASSWORD=yes -e MONGODB_ENABLE_DIRECTORY_PER_DB=yes bitnami/mongodb:latest
 ```
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/mongodb" title="bitnami/mongodb Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/mongodb</a></p>

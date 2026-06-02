@@ -2,14 +2,14 @@
 image: infiniflow/ragflow
 source: https://xuanyuan.cloud/zh/r/infiniflow/ragflow
 canonical: https://xuanyuan.cloud/zh/r/infiniflow/ragflow
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [infiniflow/ragflow — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/infiniflow/ragflow "infiniflow/ragflow Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/infiniflow/ragflow
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/infiniflow/ragflow" title="infiniflow/ragflow Docker 镜像中文简介、标签列表与拉取命令">infiniflow/ragflow — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/infiniflow/ragflow" title="infiniflow/ragflow Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/infiniflow/ragflow</a></p>
 
 # RAGFlow 部署与使用指南
 
@@ -138,3 +138,7 @@ RAGFlow 默认使用 Elasticsearch 存储全文与向量数据，可切换为 [I
 
 
 > 更多配置细节可参考 `docker/README.md`，其中详细说明环境变量及服务配置项（可作为 `${ENV_VARS}` 在 `service_conf.yaml.template` 中引用）。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/infiniflow/ragflow" title="infiniflow/ragflow Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/infiniflow/ragflow</a></p>

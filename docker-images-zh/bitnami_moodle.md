@@ -2,14 +2,14 @@
 image: bitnami/moodle
 source: https://xuanyuan.cloud/zh/r/bitnami/moodle
 canonical: https://xuanyuan.cloud/zh/r/bitnami/moodle
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnami/moodle — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/moodle "bitnami/moodle Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnami/moodle
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/moodle" title="bitnami/moodle Docker 镜像中文简介、标签列表与拉取命令">bitnami/moodle — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnami/moodle" title="bitnami/moodle Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/moodle</a></p>
 
 # Bitnami Secure Image for moodle 技术文档
 
@@ -54,3 +54,7 @@ Bitnami Secure Image for moodle 需通过商业订阅获取，详情可访问 [B
 
 ### 4.3 进一步信息
 如需了解更多关于 Bitnami Secure Images 商业方案的技术细节、订阅流程或支持服务，可访问 [Bitnami 官方网站](https://bitnami.com/) 获取详细资料。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/moodle" title="bitnami/moodle Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/moodle</a></p>

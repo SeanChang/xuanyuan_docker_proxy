@@ -2,14 +2,14 @@
 image: xhongc/music_tag_web
 source: https://xuanyuan.cloud/zh/r/xhongc/music_tag_web
 canonical: https://xuanyuan.cloud/zh/r/xhongc/music_tag_web
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [xhongc/music_tag_web — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/xhongc/music_tag_web "xhongc/music_tag_web Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/xhongc/music_tag_web
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/xhongc/music_tag_web" title="xhongc/music_tag_web Docker 镜像中文简介、标签列表与拉取命令">xhongc/music_tag_web — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/xhongc/music_tag_web" title="xhongc/music_tag_web Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xhongc/music_tag_web</a></p>
 
 # 音乐标签 Web 版（Music Tag Web）
 
@@ -51,3 +51,7 @@ docker run -d \
 
 - 对于大规模音乐库，建议在配置中开启增量扫描或分批处理，避免一次性全盘扫描造成开销过大。
 - 建议定期备份配置目录和音乐库目录，以防误操作或磁盘故障导致数据丢失。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/xhongc/music_tag_web" title="xhongc/music_tag_web Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/xhongc/music_tag_web</a></p>

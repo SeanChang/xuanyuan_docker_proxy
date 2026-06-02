@@ -2,14 +2,14 @@
 image: myjobglasses/hermes
 source: https://xuanyuan.cloud/zh/r/myjobglasses/hermes
 canonical: https://xuanyuan.cloud/zh/r/myjobglasses/hermes
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [myjobglasses/hermes — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/myjobglasses/hermes "myjobglasses/hermes Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/myjobglasses/hermes
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/myjobglasses/hermes" title="myjobglasses/hermes Docker 镜像中文简介、标签列表与拉取命令">myjobglasses/hermes — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/myjobglasses/hermes" title="myjobglasses/hermes Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/myjobglasses/hermes</a></p>
 
 ## 镜像概述
 Hermes API基础镜像是专为Hermes API设计的基础运行环境镜像，旨在提供运行Hermes API所需的核心依赖、基础系统环境及优化配置，作为构建和部署Hermes API应用的标准化基础层。
@@ -51,3 +51,7 @@ docker run --rm hermes-api-base-image:latest /bin/sh -c "echo 'Hermes API base e
 
 ### 配置说明
 作为基础镜像，主要通过构建时的`FROM`引用和应用层配置实现功能扩展，具体环境变量和配置参数需结合上层应用需求进行设置。建议参考Hermes API官方文档获取详细的应用配置指南。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/myjobglasses/hermes" title="myjobglasses/hermes Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/myjobglasses/hermes</a></p>

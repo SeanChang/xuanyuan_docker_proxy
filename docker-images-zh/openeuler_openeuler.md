@@ -2,14 +2,14 @@
 image: openeuler/openeuler
 source: https://xuanyuan.cloud/zh/r/openeuler/openeuler
 canonical: https://xuanyuan.cloud/zh/r/openeuler/openeuler
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [openeuler/openeuler — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/openeuler/openeuler "openeuler/openeuler Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/openeuler/openeuler
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/openeuler" title="openeuler/openeuler Docker 镜像中文简介、标签列表与拉取命令">openeuler/openeuler — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/openeuler/openeuler" title="openeuler/openeuler Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/openeuler</a></p>
 
 # openEuler 简介
 
@@ -82,3 +82,7 @@ openEuler 基于 Mulan PSL v2 协议发布，详情可查看仓库中的 `LICENS
 
 ### 贡献者与维护者指南
 若您有兴趣为 openEuler 社区贡献力量，可参考 [开发者指南]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/openeuler" title="openeuler/openeuler Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/openeuler</a></p>

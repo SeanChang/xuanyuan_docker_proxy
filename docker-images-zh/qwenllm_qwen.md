@@ -2,14 +2,14 @@
 image: qwenllm/qwen
 source: https://xuanyuan.cloud/zh/r/qwenllm/qwen
 canonical: https://xuanyuan.cloud/zh/r/qwenllm/qwen
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [qwenllm/qwen — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/qwenllm/qwen "qwenllm/qwen Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/qwenllm/qwen
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/qwenllm/qwen" title="qwenllm/qwen Docker 镜像中文简介、标签列表与拉取命令">qwenllm/qwen — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/qwenllm/qwen" title="qwenllm/qwen Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/qwenllm/qwen</a></p>
 
 # Qwen Docker镜像技术文档
 
@@ -153,3 +153,7 @@ services:
 - Qwen官方代码库：[https://github.com/QwenLM/Qwen](https://github.com/QwenLM/Qwen)
 - 阿里云ModelScope模型下载：[https://modelscope.cn/models/qwen](https://modelscope.cn/models/qwen)
 - Docker官方文档：[https://docs.docker.com/](https://docs.docker.com/)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/qwenllm/qwen" title="qwenllm/qwen Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/qwenllm/qwen</a></p>

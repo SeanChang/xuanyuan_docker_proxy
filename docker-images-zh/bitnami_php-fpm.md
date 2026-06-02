@@ -2,14 +2,14 @@
 image: bitnami/php-fpm
 source: https://xuanyuan.cloud/zh/r/bitnami/php-fpm
 canonical: https://xuanyuan.cloud/zh/r/bitnami/php-fpm
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnami/php-fpm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/php-fpm "bitnami/php-fpm Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnami/php-fpm
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/php-fpm" title="bitnami/php-fpm Docker 镜像中文简介、标签列表与拉取命令">bitnami/php-fpm — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnami/php-fpm" title="bitnami/php-fpm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/php-fpm</a></p>
 
 # Bitnami PHP-FPM 软件包介绍
 
@@ -255,3 +255,7 @@ docker run --name phpfpm -v /path/to/app:/app bitnami/php-fpm:latest
 ## 许可协议
 
 本软件包基于 Apache License 2.0 许可，详见 [Apache 许可协议]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/php-fpm" title="bitnami/php-fpm Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/php-fpm</a></p>

@@ -2,14 +2,14 @@
 image: lvxj11/erpnext
 source: https://xuanyuan.cloud/zh/r/lvxj11/erpnext
 canonical: https://xuanyuan.cloud/zh/r/lvxj11/erpnext
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [lvxj11/erpnext — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/lvxj11/erpnext "lvxj11/erpnext Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/lvxj11/erpnext
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/lvxj11/erpnext" title="lvxj11/erpnext Docker 镜像中文简介、标签列表与拉取命令">lvxj11/erpnext — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/lvxj11/erpnext" title="lvxj11/erpnext Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/lvxj11/erpnext</a></p>
 
 # ERPNext 开源ERP系统 Docker镜像介绍
 
@@ -55,3 +55,7 @@ docker run -itd -p 80:80 \
 *   **适用场景**：建议用于测试、演示或临时使用。生产环境使用前，请务必自行充分测试。
 *   **构建文件**：构建文件可参考：`[]   **数据卷说明**：示例中，`/var/lib/mysql` 是容器内 MySQL 数据库数据的存储目录，`/home/frappe/frappe-bench/sites` 是 Frappe 站点的存储目录。将这两个目录挂载到数据卷是为了实现数据持久化。
 *   **升级建议**：完成数据持久化设置后，如需升级，删除现有容器及镜像，重新拉取最新镜像并运行即可，理论上无需手动恢复数据。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/lvxj11/erpnext" title="lvxj11/erpnext Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/lvxj11/erpnext</a></p>

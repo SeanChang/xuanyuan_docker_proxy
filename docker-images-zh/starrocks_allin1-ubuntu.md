@@ -2,14 +2,14 @@
 image: starrocks/allin1-ubuntu
 source: https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu
 canonical: https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [starrocks/allin1-ubuntu — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu "starrocks/allin1-ubuntu Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu" title="starrocks/allin1-ubuntu Docker 镜像中文简介、标签列表与拉取命令">starrocks/allin1-ubuntu — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu" title="starrocks/allin1-ubuntu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu</a></p>
 
 # StarRocks Docker 镜像使用说明
 
@@ -114,3 +114,7 @@ docker exec -ti starrocks-fe mysql -P9030 -h127.0.0.1 -uroot --prompt="StarRocks
 
 ### 其他客户端连接
 支持 MySQL 协议的客户端（如 DBeaver）均可连接，只需将默认 MySQL 端口替换为 9030 即可。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu" title="starrocks/allin1-ubuntu Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu</a></p>

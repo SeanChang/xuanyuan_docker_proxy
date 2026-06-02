@@ -2,14 +2,14 @@
 image: apacherocketmq/rocketmq-dashboard
 source: https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard
 canonical: https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [apacherocketmq/rocketmq-dashboard — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard "apacherocketmq/rocketmq-dashboard Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard" title="apacherocketmq/rocketmq-dashboard Docker 镜像中文简介、标签列表与拉取命令">apacherocketmq/rocketmq-dashboard — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard" title="apacherocketmq/rocketmq-dashboard Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard</a></p>
 
 # Apache RocketMQ Dashboard Docker 镜像使用介绍
 
@@ -82,3 +82,7 @@ docker run -d -p 8080:8080 -e "ROCKETMQ_CONFIG_NAMESRVADDR=192.168.1.100:9876" -
 *   Apache RocketMQ 官网：[[]]([])
 *   RocketMQ Dashboard GitHub 仓库：通常在 RocketMQ 主仓库的子模块或者相关链接里能找到。
 *   Docker Hub 镜像页面：搜索 `rocketmq-dashboard` 可以找到官方或社区维护的镜像，上面会有更详细的说明。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard" title="apacherocketmq/rocketmq-dashboard Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard</a></p>

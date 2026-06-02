@@ -2,14 +2,14 @@
 image: rocker/tidyverse
 source: https://xuanyuan.cloud/zh/r/rocker/tidyverse
 canonical: https://xuanyuan.cloud/zh/r/rocker/tidyverse
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [rocker/tidyverse — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rocker/tidyverse "rocker/tidyverse Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/rocker/tidyverse
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/rocker/tidyverse" title="rocker/tidyverse Docker 镜像中文简介、标签列表与拉取命令">rocker/tidyverse — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/rocker/tidyverse" title="rocker/tidyverse Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rocker/tidyverse</a></p>
 
 # RStudio版本化镜像文档
 
@@ -89,3 +89,7 @@ docker run -d -p 8787:8787 -e PASSWORD=yourpassword rocker/rstudio:4.3.0
 ```
 
 具体版本标签可参考 [rocker-org/rocker-versioned2](https://github.com/rocker-org/rocker-versioned2) 项目的发布页面。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/rocker/tidyverse" title="rocker/tidyverse Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/rocker/tidyverse</a></p>

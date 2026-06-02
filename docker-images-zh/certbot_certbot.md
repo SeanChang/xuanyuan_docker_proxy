@@ -2,14 +2,14 @@
 image: certbot/certbot
 source: https://xuanyuan.cloud/zh/r/certbot/certbot
 canonical: https://xuanyuan.cloud/zh/r/certbot/certbot
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [certbot/certbot — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/certbot/certbot "certbot/certbot Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/certbot/certbot
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/certbot/certbot" title="certbot/certbot Docker 镜像中文简介、标签列表与拉取命令">certbot/certbot — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/certbot/certbot" title="certbot/certbot Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/certbot/certbot</a></p>
 
 ## Certbot 官方 Docker 仓库  
 
@@ -41,3 +41,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 - [dns-gehirn]([])  
 - [dns-linode]([])  
 - [dns-sakuracloud]([])
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/certbot/certbot" title="certbot/certbot Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/certbot/certbot</a></p>

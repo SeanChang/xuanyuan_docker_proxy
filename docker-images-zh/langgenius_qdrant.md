@@ -2,14 +2,14 @@
 image: langgenius/qdrant
 source: https://xuanyuan.cloud/zh/r/langgenius/qdrant
 canonical: https://xuanyuan.cloud/zh/r/langgenius/qdrant
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [langgenius/qdrant — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/langgenius/qdrant "langgenius/qdrant Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/langgenius/qdrant
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/langgenius/qdrant" title="langgenius/qdrant Docker 镜像中文简介、标签列表与拉取命令">langgenius/qdrant — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/langgenius/qdrant" title="langgenius/qdrant Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/langgenius/qdrant</a></p>
 
 ## 镜像概述
 
@@ -99,3 +99,7 @@ volumes:
 - 本镜像与qdrant:v1.6.1的API和数据格式完全兼容，可直接替换使用
 - 分词器默认对所有CJK语言文本自动生效，无需额外配置
 - 如需进一步优化分词效果，可通过修改镜像内置的分词器配置文件（路径：`/qdrant/config/cjk_tokenizers.yaml`）实现自定义分词规则
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/langgenius/qdrant" title="langgenius/qdrant Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/langgenius/qdrant</a></p>

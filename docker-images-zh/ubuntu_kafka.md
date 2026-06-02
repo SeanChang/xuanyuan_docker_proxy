@@ -2,14 +2,14 @@
 image: ubuntu/kafka
 source: https://xuanyuan.cloud/zh/r/ubuntu/kafka
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/kafka
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ubuntu/kafka — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ubuntu/kafka "ubuntu/kafka Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ubuntu/kafka
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/kafka" title="ubuntu/kafka Docker 镜像中文简介、标签列表与拉取命令">ubuntu/kafka — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/kafka" title="ubuntu/kafka Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/kafka</a></p>
 
 # Kafka Docker 镜像（基于 Ubuntu）
 
@@ -119,3 +119,7 @@ docker images --no-trunc --quiet ubuntu/kafka:<tag>
 | 通道   | 版本   | 停止维护日期 | 升级路径 |  
 |--------|--------|--------------|----------|  
 | `track`|        |              |          |
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/kafka" title="ubuntu/kafka Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/kafka</a></p>

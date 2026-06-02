@@ -2,14 +2,14 @@
 image: langgenius/dify-plugin-daemon
 source: https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon
 canonical: https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [langgenius/dify-plugin-daemon — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon "langgenius/dify-plugin-daemon Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon" title="langgenius/dify-plugin-daemon Docker 镜像中文简介、标签列表与拉取命令">langgenius/dify-plugin-daemon — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon" title="langgenius/dify-plugin-daemon Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon</a></p>
 
 # langgenius/dify-plugin-daemon 镜像使用指南
 
@@ -268,3 +268,7 @@ healthcheck:
 ---
 
 **注意**：`langgenius/dify-plugin-daemon` 是 Dify 平台的专用组件，通常不独立使用，建议通过官方 docker-compose 方式进行部署。如需单独调试该组件，请确保相关依赖组件（API、数据库、Redis）已正确配置并运行。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon" title="langgenius/dify-plugin-daemon Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon</a></p>

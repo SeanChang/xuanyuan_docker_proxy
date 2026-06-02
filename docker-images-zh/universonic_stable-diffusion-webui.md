@@ -2,14 +2,14 @@
 image: universonic/stable-diffusion-webui
 source: https://xuanyuan.cloud/zh/r/universonic/stable-diffusion-webui
 canonical: https://xuanyuan.cloud/zh/r/universonic/stable-diffusion-webui
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [universonic/stable-diffusion-webui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/universonic/stable-diffusion-webui "universonic/stable-diffusion-webui Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/universonic/stable-diffusion-webui
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/universonic/stable-diffusion-webui" title="universonic/stable-diffusion-webui Docker 镜像中文简介、标签列表与拉取命令">universonic/stable-diffusion-webui — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/universonic/stable-diffusion-webui" title="universonic/stable-diffusion-webui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/universonic/stable-diffusion-webui</a></p>
 
 # Stable Diffusion web UI Docker 使用指南
 
@@ -108,3 +108,7 @@ services:
 ## 重要注意事项  
 - **模型文件必须存在**：若宿主机模型目录（如 `/my/own/datadir/models/Stable-diffusion`）未放置 Stable Diffusion 模型文件（checkpoint、vae 等），容器会启动失败并不断重启。需手动将模型文件放入该目录，等待服务启动后即可正常使用。  
 - **进一步问题参考**：更多配置细节可查阅 [官方文档]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/universonic/stable-diffusion-webui" title="universonic/stable-diffusion-webui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/universonic/stable-diffusion-webui</a></p>

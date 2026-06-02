@@ -2,14 +2,14 @@
 image: dtagdevsec/ciscoasa
 source: https://xuanyuan.cloud/zh/r/dtagdevsec/ciscoasa
 canonical: https://xuanyuan.cloud/zh/r/dtagdevsec/ciscoasa
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [dtagdevsec/ciscoasa — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/dtagdevsec/ciscoasa "dtagdevsec/ciscoasa Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/dtagdevsec/ciscoasa
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/dtagdevsec/ciscoasa" title="dtagdevsec/ciscoasa Docker 镜像中文简介、标签列表与拉取命令">dtagdevsec/ciscoasa — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/dtagdevsec/ciscoasa" title="dtagdevsec/ciscoasa Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dtagdevsec/ciscoasa</a></p>
 
 # T-Pot Cisco ASA Honeypot 镜像文档
 
@@ -68,3 +68,7 @@ docker run -d \
 - **资源规划**：根据预期攻击流量调整宿主机资源，建议最低配置：1 CPU核心、2GB内存、20GB存储空间
 - **更新维护**：定期通过T-Pot平台更新机制升级镜像，以获取最新的服务模拟规则和安全修复
 - **日志管理**：攻击日志需定期归档，避免存储空间耗尽，建议配置日志轮转策略（如logrotate）
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/dtagdevsec/ciscoasa" title="dtagdevsec/ciscoasa Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/dtagdevsec/ciscoasa</a></p>

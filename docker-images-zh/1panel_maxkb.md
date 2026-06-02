@@ -2,14 +2,14 @@
 image: 1panel/maxkb
 source: https://xuanyuan.cloud/zh/r/1panel/maxkb
 canonical: https://xuanyuan.cloud/zh/r/1panel/maxkb
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [1panel/maxkb — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/1panel/maxkb "1panel/maxkb Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/1panel/maxkb
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/1panel/maxkb" title="1panel/maxkb Docker 镜像中文简介、标签列表与拉取命令">1panel/maxkb — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/1panel/maxkb" title="1panel/maxkb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/1panel/maxkb</a></p>
 
 # MaxKB：企业级智能体构建开源平台
 
@@ -58,3 +58,7 @@ MaxKB基于GNU通用公共许可证第3版（GPLv3）授权。用户需遵守许
 
 
 项目地址：[GitHub Repo]([])
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/1panel/maxkb" title="1panel/maxkb Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/1panel/maxkb</a></p>

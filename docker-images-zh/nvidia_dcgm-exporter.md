@@ -2,14 +2,14 @@
 image: nvidia/dcgm-exporter
 source: https://xuanyuan.cloud/zh/r/nvidia/dcgm-exporter
 canonical: https://xuanyuan.cloud/zh/r/nvidia/dcgm-exporter
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [nvidia/dcgm-exporter — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/nvidia/dcgm-exporter "nvidia/dcgm-exporter Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/nvidia/dcgm-exporter
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nvidia/dcgm-exporter" title="nvidia/dcgm-exporter Docker 镜像中文简介、标签列表与拉取命令">nvidia/dcgm-exporter — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/nvidia/dcgm-exporter" title="nvidia/dcgm-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nvidia/dcgm-exporter</a></p>
 
 # NVIDIA DCGM Exporter Docker镜像文档
 
@@ -159,3 +159,7 @@ dcgm_memory_used{gpu="0",uuid="GPU-xxx"} 4294967296
 - [DCGM Exporter GitHub仓库](https://github.com/NVIDIA/dcgm-exporter)
 - [NVIDIA DCGM官方文档](https://docs.nvidia.com/datacenter/dcgm/latest/)
 - [Prometheus监控配置指南](https://prometheus.io/docs/introduction/overview/)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nvidia/dcgm-exporter" title="nvidia/dcgm-exporter Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nvidia/dcgm-exporter</a></p>

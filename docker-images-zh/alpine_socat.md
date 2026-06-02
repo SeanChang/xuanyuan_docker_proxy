@@ -2,14 +2,14 @@
 image: alpine/socat
 source: https://xuanyuan.cloud/zh/r/alpine/socat
 canonical: https://xuanyuan.cloud/zh/r/alpine/socat
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [alpine/socat — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alpine/socat "alpine/socat Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/alpine/socat
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/socat" title="alpine/socat Docker 镜像中文简介、标签列表与拉取命令">alpine/socat — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/alpine/socat" title="alpine/socat Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpine/socat</a></p>
 
 # socat Docker镜像文档
 
@@ -119,3 +119,7 @@ networks:
 ## 镜像标签
 
 所有可用的镜像标签可在Docker Hub上查看：[https://hub.docker.com/r/alpine/socat/tags/](https://hub.docker.com/r/alpine/socat/tags/)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/socat" title="alpine/socat Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/alpine/socat</a></p>

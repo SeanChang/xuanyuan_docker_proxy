@@ -2,14 +2,14 @@
 image: arm64v8/redis
 source: https://xuanyuan.cloud/zh/r/arm64v8/redis
 canonical: https://xuanyuan.cloud/zh/r/arm64v8/redis
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [arm64v8/redis — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/arm64v8/redis "arm64v8/redis Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/arm64v8/redis
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/arm64v8/redis" title="arm64v8/redis Docker 镜像中文简介、标签列表与拉取命令">arm64v8/redis — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/arm64v8/redis" title="arm64v8/redis Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/arm64v8/redis</a></p>
 
 # Redis 官方镜像（arm64v8 架构）介绍
 
@@ -148,3 +148,7 @@ $ docker run -v /myredis/conf:/usr/local/etc/redis --name myredis arm64v8/redis 
 与所有 Docker 镜像一样，本镜像可能包含其他软件（如基础系统的 Bash 等），其许可协议需另行确认。自动检测到的许可信息可参考 [repo-info 仓库的 `redis/` 目录]([])。  
 
 使用前请确保遵守所有包含软件的许可协议。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/arm64v8/redis" title="arm64v8/redis Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/arm64v8/redis</a></p>

@@ -2,14 +2,14 @@
 image: nacos/nacos-server
 source: https://xuanyuan.cloud/zh/r/nacos/nacos-server
 canonical: https://xuanyuan.cloud/zh/r/nacos/nacos-server
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [nacos/nacos-server — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/nacos/nacos-server "nacos/nacos-server Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/nacos/nacos-server
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nacos/nacos-server" title="nacos/nacos-server Docker 镜像中文简介、标签列表与拉取命令">nacos/nacos-server — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/nacos/nacos-server" title="nacos/nacos-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nacos/nacos-server</a></p>
 
 # Nacos Docker 镜像文档
 
@@ -196,3 +196,7 @@ curl -X GET "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=nacos.cfg.dataId&g
 监控配置参考：[Nacos监控指南](https://nacos.io/zh-cn/docs/monitor-guide.html)
 
 **注意**：Grafana添加数据源时，数据源地址必须为**http://prometheus:9090**
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nacos/nacos-server" title="nacos/nacos-server Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nacos/nacos-server</a></p>

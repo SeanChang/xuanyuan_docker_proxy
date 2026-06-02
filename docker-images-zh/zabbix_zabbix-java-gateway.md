@@ -2,14 +2,14 @@
 image: zabbix/zabbix-java-gateway
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [zabbix/zabbix-java-gateway — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway "zabbix/zabbix-java-gateway Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway" title="zabbix/zabbix-java-gateway Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-java-gateway — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway" title="zabbix/zabbix-java-gateway Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway</a></p>
 
 # Zabbix Java Gateway
 
@@ -194,3 +194,7 @@ Zabbix Java Gateway提供多种版本标签，基于不同基础操作系统和Z
 - Zabbix 7.0及后续版本采用GNU Affero General Public License v3（AGPLv3）许可。
 - Zabbix 6.4及之前版本采用GNU General Public License v2（GPLv2）许可。
 详细条款参见[Free Software Foundation](http://www.fsf.org/licenses/)。商业使用时，建议通过购买技术支持支持Zabbix开发。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway" title="zabbix/zabbix-java-gateway Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway</a></p>

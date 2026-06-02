@@ -2,14 +2,14 @@
 image: keycloak/keycloak
 source: https://xuanyuan.cloud/zh/r/keycloak/keycloak
 canonical: https://xuanyuan.cloud/zh/r/keycloak/keycloak
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [keycloak/keycloak — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/keycloak/keycloak "keycloak/keycloak Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/keycloak/keycloak
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/keycloak/keycloak" title="keycloak/keycloak Docker 镜像中文简介、标签列表与拉取命令">keycloak/keycloak — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/keycloak/keycloak" title="keycloak/keycloak Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/keycloak/keycloak</a></p>
 
 # Keycloak 镜像文档
 
@@ -67,3 +67,7 @@ docker run -p 8080:8080 \
 ## 核心能力扩展
 
 Keycloak支持通过插件扩展功能，包括自定义认证流程、身份提供商集成、主题定制等，满足复杂业务场景需求。其活跃的社区生态提供丰富的文档和第三方扩展资源。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/keycloak/keycloak" title="keycloak/keycloak Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/keycloak/keycloak</a></p>

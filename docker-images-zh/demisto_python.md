@@ -2,14 +2,14 @@
 image: demisto/python
 source: https://xuanyuan.cloud/zh/r/demisto/python
 canonical: https://xuanyuan.cloud/zh/r/demisto/python
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [demisto/python — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/demisto/python "demisto/python Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/demisto/python
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/demisto/python" title="demisto/python Docker 镜像中文简介、标签列表与拉取命令">demisto/python — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/demisto/python" title="demisto/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/demisto/python</a></p>
 
 # Demisto基础Python镜像文档
 
@@ -71,3 +71,7 @@ CMD ["python", "app.py"]
 - 本镜像基于Python 2.7，该版本已停止官方维护，建议仅在有明确兼容性需求时使用
 - 预安装库版本取决于基础构建时的版本，如需特定版本，可在基于本镜像构建时通过`pip install --upgrade`命令调整
 - 镜像用途主要面向Demisto生态相关应用，也可用于其他需要相同依赖组合的Python 2.7环境构建
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/demisto/python" title="demisto/python Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/demisto/python</a></p>

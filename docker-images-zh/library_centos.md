@@ -2,14 +2,14 @@
 image: library/centos
 source: https://xuanyuan.cloud/zh/r/library/centos
 canonical: https://xuanyuan.cloud/zh/r/library/centos
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/centos — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/centos "library/centos Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/centos
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/centos" title="library/centos Docker 镜像中文简介、标签列表与拉取命令">library/centos — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/centos" title="library/centos Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/centos</a></p>
 
 # CentOS Docker镜像说明
 
@@ -152,3 +152,7 @@ grep vsyscall /proc/self/maps
 - 镜像可能包含其他软件（如Bash等），其许可信息可参考[repo-info仓库`centos/`目录]([])。  
 
 使用前请确保遵守所有包含软件的许可协议。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/centos" title="library/centos Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/centos</a></p>

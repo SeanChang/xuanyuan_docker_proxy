@@ -2,14 +2,14 @@
 image: koryking/1panel
 source: https://xuanyuan.cloud/zh/r/koryking/1panel
 canonical: https://xuanyuan.cloud/zh/r/koryking/1panel
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [koryking/1panel — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/koryking/1panel "koryking/1panel Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/koryking/1panel
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/koryking/1panel" title="koryking/1panel Docker 镜像中文简介、标签列表与拉取命令">koryking/1panel — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/koryking/1panel" title="koryking/1panel Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/koryking/1panel</a></p>
 
 # 1Panel 自定义安装路径镜像
 
@@ -116,3 +116,7 @@ docker run -d \
 3. **端口冲突**：使用 `host` 网络模式时，需确保 `PANEL_PORT` 未被其他服务占用，冲突时可通过修改 `PANEL_PORT` 解决。  
 4. **数据持久化**：`./volumes` 和自定义安装目录建议使用绝对路径映射（如 `~/1panel/volumes:/var/lib/docker/volumes`），避免因相对路径导致数据丢失。  
 5. **可选映射**：`./root:/root` 为可选配置，用于持久化 root 用户配置，根据实际需求启用或禁用。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/koryking/1panel" title="koryking/1panel Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/koryking/1panel</a></p>

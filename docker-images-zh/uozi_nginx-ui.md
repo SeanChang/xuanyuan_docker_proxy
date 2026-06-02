@@ -2,14 +2,14 @@
 image: uozi/nginx-ui
 source: https://xuanyuan.cloud/zh/r/uozi/nginx-ui
 canonical: https://xuanyuan.cloud/zh/r/uozi/nginx-ui
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [uozi/nginx-ui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/uozi/nginx-ui "uozi/nginx-ui Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/uozi/nginx-ui
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/uozi/nginx-ui" title="uozi/nginx-ui Docker 镜像中文简介、标签列表与拉取命令">uozi/nginx-ui — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/uozi/nginx-ui" title="uozi/nginx-ui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/uozi/nginx-ui</a></p>
 
 # Nginx UI
 
@@ -167,3 +167,7 @@ server {
 ## 许可
 
 本项目采用GNU Affero General Public License v3.0许可，详见[LICENSE](LICENSE)文件。使用、分发或贡献本项目即表示您同意此许可的条款和条件。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/uozi/nginx-ui" title="uozi/nginx-ui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/uozi/nginx-ui</a></p>

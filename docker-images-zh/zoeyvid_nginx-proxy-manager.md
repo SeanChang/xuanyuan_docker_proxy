@@ -2,14 +2,14 @@
 image: zoeyvid/nginx-proxy-manager
 source: https://xuanyuan.cloud/zh/r/zoeyvid/nginx-proxy-manager
 canonical: https://xuanyuan.cloud/zh/r/zoeyvid/nginx-proxy-manager
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [zoeyvid/nginx-proxy-manager — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zoeyvid/nginx-proxy-manager "zoeyvid/nginx-proxy-manager Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/zoeyvid/nginx-proxy-manager
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zoeyvid/nginx-proxy-manager" title="zoeyvid/nginx-proxy-manager Docker 镜像中文简介、标签列表与拉取命令">zoeyvid/nginx-proxy-manager — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/zoeyvid/nginx-proxy-manager" title="zoeyvid/nginx-proxy-manager Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zoeyvid/nginx-proxy-manager</a></p>
 
 ## zoeyvid/npmplus 介绍  
 
@@ -74,3 +74,7 @@ npmplus list
 
 ### 总结  
 如果你日常开发中觉得 npm 操作繁琐、下载慢，或经常需要处理依赖冲突，zoeyvid/npmplus 可以作为轻量替代工具，帮你提升依赖管理效率。直接按上述步骤安装后，用熟悉的 npm 操作逻辑即可快速上手。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zoeyvid/nginx-proxy-manager" title="zoeyvid/nginx-proxy-manager Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zoeyvid/nginx-proxy-manager</a></p>

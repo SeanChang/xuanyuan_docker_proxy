@@ -2,14 +2,14 @@
 image: guiji2025/fish-speech-ziming
 source: https://xuanyuan.cloud/zh/r/guiji2025/fish-speech-ziming
 canonical: https://xuanyuan.cloud/zh/r/guiji2025/fish-speech-ziming
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [guiji2025/fish-speech-ziming — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/guiji2025/fish-speech-ziming "guiji2025/fish-speech-ziming Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/guiji2025/fish-speech-ziming
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/guiji2025/fish-speech-ziming" title="guiji2025/fish-speech-ziming Docker 镜像中文简介、标签列表与拉取命令">guiji2025/fish-speech-ziming — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/guiji2025/fish-speech-ziming" title="guiji2025/fish-speech-ziming Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/guiji2025/fish-speech-ziming</a></p>
 
 # fish-speech-ziming 镜像使用指南
 
@@ -228,3 +228,7 @@ python /app/data/batch_synthesis.py
 - Fish Speech 官方文档：<https://speech.fish.audio/zh/>
 - 预训练模型下载：<https://huggingface.co/fishaudio/fish-speech-1.5>
 - GUI 客户端源码：<https://github.com/AnyaCoder/fish-speech-gui>
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/guiji2025/fish-speech-ziming" title="guiji2025/fish-speech-ziming Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/guiji2025/fish-speech-ziming</a></p>

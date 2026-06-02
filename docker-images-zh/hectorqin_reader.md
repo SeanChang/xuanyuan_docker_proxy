@@ -2,14 +2,14 @@
 image: hectorqin/reader
 source: https://xuanyuan.cloud/zh/r/hectorqin/reader
 canonical: https://xuanyuan.cloud/zh/r/hectorqin/reader
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [hectorqin/reader — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/hectorqin/reader "hectorqin/reader Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/hectorqin/reader
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/hectorqin/reader" title="hectorqin/reader Docker 镜像中文简介、标签列表与拉取命令">hectorqin/reader — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/hectorqin/reader" title="hectorqin/reader Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hectorqin/reader</a></p>
 
 # 阅读3网页版工具介绍
 
@@ -132,3 +132,7 @@ docker run -d --restart=always --name=reader ... reader:latest
 **访问地址**：  
 - Web端：`[]  
 - 接口地址：`[]
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/hectorqin/reader" title="hectorqin/reader Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/hectorqin/reader</a></p>

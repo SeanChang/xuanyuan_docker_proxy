@@ -2,14 +2,14 @@
 image: arm32v7/python
 source: https://xuanyuan.cloud/zh/r/arm32v7/python
 canonical: https://xuanyuan.cloud/zh/r/arm32v7/python
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [arm32v7/python — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/arm32v7/python "arm32v7/python Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/arm32v7/python
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/arm32v7/python" title="arm32v7/python Docker 镜像中文简介、标签列表与拉取命令">arm32v7/python — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/arm32v7/python" title="arm32v7/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/arm32v7/python</a></p>
 
 # arm32v7/python 镜像文档
 
@@ -148,3 +148,7 @@ $ docker run -it --rm --name my-running-script \
 Python 许可信息：[Python 2](https://docs.python.org/2/license.html)、[Python 3](https://docs.python.org/3/license.html)。
 
 本镜像包含的其他软件（如 Debian 组件、Bash 等）的许可信息需参考各自官方文档。部分许可信息可在 [repo-info 仓库](https://github.com/docker-library/repo-info/tree/master/repos/python) 中找到。使用本镜像需遵守所有包含软件的许可协议。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/arm32v7/python" title="arm32v7/python Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/arm32v7/python</a></p>

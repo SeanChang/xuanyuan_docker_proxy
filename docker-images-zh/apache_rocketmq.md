@@ -2,14 +2,14 @@
 image: apache/rocketmq
 source: https://xuanyuan.cloud/zh/r/apache/rocketmq
 canonical: https://xuanyuan.cloud/zh/r/apache/rocketmq
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [apache/rocketmq — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apache/rocketmq "apache/rocketmq Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/apache/rocketmq
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/rocketmq" title="apache/rocketmq Docker 镜像中文简介、标签列表与拉取命令">apache/rocketmq — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/apache/rocketmq" title="apache/rocketmq Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/rocketmq</a></p>
 
 # Apache RocketMQ 介绍
 
@@ -161,3 +161,7 @@ sh bin/mqshutdown namesrv
 
 
 通过以上步骤，即可快速搭建 RocketMQ 环境并体验消息发送/消费流程。更多高级功能（如事务消息、顺序消息）可参考 [官方文档]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/rocketmq" title="apache/rocketmq Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/apache/rocketmq</a></p>

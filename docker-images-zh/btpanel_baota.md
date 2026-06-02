@@ -2,14 +2,14 @@
 image: btpanel/baota
 source: https://xuanyuan.cloud/zh/r/btpanel/baota
 canonical: https://xuanyuan.cloud/zh/r/btpanel/baota
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [btpanel/baota — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/btpanel/baota "btpanel/baota Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/btpanel/baota
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/btpanel/baota" title="btpanel/baota Docker 镜像中文简介、标签列表与拉取命令">btpanel/baota — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/btpanel/baota" title="btpanel/baota Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/btpanel/baota</a></p>
 
 # 宝塔面板 Docker 部署指南
 
@@ -135,3 +135,7 @@ docker run -d --restart unless-stopped --name baota \
 ## 相关资源  
 - Dockerfile 仓库：[btpanel]([])（欢迎 PR/Issue）  
 - 官方支持：[堡塔安全官方团队]([])（问题反馈与建议）
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/btpanel/baota" title="btpanel/baota Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/btpanel/baota</a></p>

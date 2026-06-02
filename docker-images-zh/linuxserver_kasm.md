@@ -2,14 +2,14 @@
 image: linuxserver/kasm
 source: https://xuanyuan.cloud/zh/r/linuxserver/kasm
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/kasm
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [linuxserver/kasm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/kasm "linuxserver/kasm Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/linuxserver/kasm
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/kasm" title="linuxserver/kasm Docker 镜像中文简介、标签列表与拉取命令">linuxserver/kasm — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/kasm" title="linuxserver/kasm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/kasm</a></p>
 
 # linuxserver/kasm
 
@@ -294,3 +294,7 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 * **05.11.22:** - 基于 Jammy 重新构建，添加 GPU 支持和游戏手柄支持。
 * **23.09.22:** - 迁移到 s6v3。
 * **02.07.22:** - 初始发布。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/kasm" title="linuxserver/kasm Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/kasm</a></p>

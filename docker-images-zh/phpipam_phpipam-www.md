@@ -2,14 +2,14 @@
 image: phpipam/phpipam-www
 source: https://xuanyuan.cloud/zh/r/phpipam/phpipam-www
 canonical: https://xuanyuan.cloud/zh/r/phpipam/phpipam-www
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [phpipam/phpipam-www — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/phpipam/phpipam-www "phpipam/phpipam-www Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/phpipam/phpipam-www
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/phpipam/phpipam-www" title="phpipam/phpipam-www Docker 镜像中文简介、标签列表与拉取命令">phpipam/phpipam-www — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/phpipam/phpipam-www" title="phpipam/phpipam-www Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/phpipam/phpipam-www</a></p>
 
 # phpIPAM Apache2 容器部署说明
 
@@ -255,3 +255,7 @@ GNU General Public License v3.0
 
 ## 维护者  
 Gary Allan（邮箱：[邮箱已删除]）
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/phpipam/phpipam-www" title="phpipam/phpipam-www Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/phpipam/phpipam-www</a></p>

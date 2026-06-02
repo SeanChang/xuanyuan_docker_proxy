@@ -2,14 +2,14 @@
 image: bitnami/node-exporter
 source: https://xuanyuan.cloud/zh/r/bitnami/node-exporter
 canonical: https://xuanyuan.cloud/zh/r/bitnami/node-exporter
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnami/node-exporter — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/node-exporter "bitnami/node-exporter Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnami/node-exporter
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/node-exporter" title="bitnami/node-exporter Docker 镜像中文简介、标签列表与拉取命令">bitnami/node-exporter — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnami/node-exporter" title="bitnami/node-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/node-exporter</a></p>
 
 # Bitnami Node Exporter 镜像文档
 
@@ -200,3 +200,7 @@ docker run --name node-exporter bitnami/node-exporter:latest
 本镜像基于 Apache License 2.0 许可协议发布。详细条款请参见 [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)。
 
 > 注：Node Exporter 本身及第三方组件可能使用不同许可协议，详见各组件官方文档。Bitnami 商标归 Broadcom 所有。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/node-exporter" title="bitnami/node-exporter Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/node-exporter</a></p>

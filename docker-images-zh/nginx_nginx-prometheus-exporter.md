@@ -2,14 +2,14 @@
 image: nginx/nginx-prometheus-exporter
 source: https://xuanyuan.cloud/zh/r/nginx/nginx-prometheus-exporter
 canonical: https://xuanyuan.cloud/zh/r/nginx/nginx-prometheus-exporter
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [nginx/nginx-prometheus-exporter — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/nginx/nginx-prometheus-exporter "nginx/nginx-prometheus-exporter Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/nginx/nginx-prometheus-exporter
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nginx/nginx-prometheus-exporter" title="nginx/nginx-prometheus-exporter Docker 镜像中文简介、标签列表与拉取命令">nginx/nginx-prometheus-exporter — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/nginx/nginx-prometheus-exporter" title="nginx/nginx-prometheus-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nginx/nginx-prometheus-exporter</a></p>
 
 # NGINX Prometheus Exporter
 
@@ -264,3 +264,7 @@ scrape_configs:
 ## 许可证
 
 本项目采用Apache License 2.0许可证。详情请参见[LICENSE](https://github.com/nginx/nginx-prometheus-exporter/blob/main/LICENSE)文件。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nginx/nginx-prometheus-exporter" title="nginx/nginx-prometheus-exporter Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nginx/nginx-prometheus-exporter</a></p>

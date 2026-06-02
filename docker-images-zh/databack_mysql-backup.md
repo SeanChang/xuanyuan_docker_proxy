@@ -2,14 +2,14 @@
 image: databack/mysql-backup
 source: https://xuanyuan.cloud/zh/r/databack/mysql-backup
 canonical: https://xuanyuan.cloud/zh/r/databack/mysql-backup
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [databack/mysql-backup — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/databack/mysql-backup "databack/mysql-backup Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/databack/mysql-backup
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/databack/mysql-backup" title="databack/mysql-backup Docker 镜像中文简介、标签列表与拉取命令">databack/mysql-backup — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/databack/mysql-backup" title="databack/mysql-backup Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/databack/mysql-backup</a></p>
 
 # mysql-backup
 
@@ -149,3 +149,7 @@ docker run -e DB_SERVER=gotodb.example.com -e DB_USER=user123 -e DB_PASS=pass123
 ## 许可证
 
 MIT许可证。版权所有Avi Deitcher https://github.com/deitch
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/databack/mysql-backup" title="databack/mysql-backup Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/databack/mysql-backup</a></p>

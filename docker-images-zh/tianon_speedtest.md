@@ -2,14 +2,14 @@
 image: tianon/speedtest
 source: https://xuanyuan.cloud/zh/r/tianon/speedtest
 canonical: https://xuanyuan.cloud/zh/r/tianon/speedtest
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [tianon/speedtest — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/tianon/speedtest "tianon/speedtest Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/tianon/speedtest
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/tianon/speedtest" title="tianon/speedtest Docker 镜像中文简介、标签列表与拉取命令">tianon/speedtest — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/tianon/speedtest" title="tianon/speedtest Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/tianon/speedtest</a></p>
 
 ## 服务器测速工具：轻松访问speedtest.net
 
@@ -30,3 +30,7 @@ docker run -it --rm --net=host tianon/speedtest
 - 你需要测试服务器的原生网络性能（避免Docker网络模式带来的额外开销）；  
 - 你需要指定特定的主机IP（例如使用`--ip 目标IP`参数）或特定网络接口（例如使用`--interface 接口名`参数）。  
 添加后，工具会直接使用主机的网络连接，确保测试结果更贴近实际，同时支持直接调用主机的网络接口和IP。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/tianon/speedtest" title="tianon/speedtest Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/tianon/speedtest</a></p>

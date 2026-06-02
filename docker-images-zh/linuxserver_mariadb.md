@@ -2,14 +2,14 @@
 image: linuxserver/mariadb
 source: https://xuanyuan.cloud/zh/r/linuxserver/mariadb
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/mariadb
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [linuxserver/mariadb — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/mariadb "linuxserver/mariadb Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/linuxserver/mariadb
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/mariadb" title="linuxserver/mariadb Docker 镜像中文简介、标签列表与拉取命令">linuxserver/mariadb — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/mariadb" title="linuxserver/mariadb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/mariadb</a></p>
 
 # linuxserver/mariadb
 
@@ -394,3 +394,7 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 * **26.01.**16:** - 将mysqld_safe脚本的用户更改为abc，更好地处理重启时不干净的关闭
 * **23.12.15:** - 移除自动更新功能，某些版本更新之间容器可能会中断
 * **12.08.15:** - 初始发布
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/mariadb" title="linuxserver/mariadb Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/mariadb</a></p>

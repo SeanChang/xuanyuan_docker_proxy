@@ -2,14 +2,14 @@
 image: umamisoftware/umami
 source: https://xuanyuan.cloud/zh/r/umamisoftware/umami
 canonical: https://xuanyuan.cloud/zh/r/umamisoftware/umami
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [umamisoftware/umami — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/umamisoftware/umami "umamisoftware/umami Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/umamisoftware/umami
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/umamisoftware/umami" title="umamisoftware/umami Docker 镜像中文简介、标签列表与拉取命令">umamisoftware/umami — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/umamisoftware/umami" title="umamisoftware/umami Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/umamisoftware/umami</a></p>
 
 # Umami：轻量隐私友好的网站统计工具
 
@@ -36,3 +36,7 @@ Umami 是一款面向网站管理者的轻量级数据统计工具，定位为 G
 - 追求网站性能优化，避免第三方工具拖慢页面加载速度。  
 
 无论是快速部署监控流量，还是日常查看用户行为数据，Umami 都能提供轻量化、无负担的解决方案。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/umamisoftware/umami" title="umamisoftware/umami Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/umamisoftware/umami</a></p>

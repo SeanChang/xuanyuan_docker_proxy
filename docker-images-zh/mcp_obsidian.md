@@ -2,14 +2,14 @@
 image: mcp/obsidian
 source: https://xuanyuan.cloud/zh/r/mcp/obsidian
 canonical: https://xuanyuan.cloud/zh/r/mcp/obsidian
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [mcp/obsidian — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mcp/obsidian "mcp/obsidian Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/mcp/obsidian
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mcp/obsidian" title="mcp/obsidian Docker 镜像中文简介、标签列表与拉取命令">mcp/obsidian — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/mcp/obsidian" title="mcp/obsidian Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mcp/obsidian</a></p>
 
 # Obsidian MCP Server
 
@@ -168,3 +168,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 ```
 
 [为什么使用Docker运行MCP服务器更安全？](https://www.docker.com/blog/the-model-context-protocol-simplifying-building-ai-apps-with-anthropic-claude-desktop-and-docker/)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mcp/obsidian" title="mcp/obsidian Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mcp/obsidian</a></p>

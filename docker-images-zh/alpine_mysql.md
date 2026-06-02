@@ -2,14 +2,14 @@
 image: alpine/mysql
 source: https://xuanyuan.cloud/zh/r/alpine/mysql
 canonical: https://xuanyuan.cloud/zh/r/alpine/mysql
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [alpine/mysql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alpine/mysql "alpine/mysql Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/alpine/mysql
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/mysql" title="alpine/mysql Docker 镜像中文简介、标签列表与拉取命令">alpine/mysql — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/alpine/mysql" title="alpine/mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpine/mysql</a></p>
 
 ### 概述
 mysql Docker镜像是基于Alpine Linux的MySQL命令行客户端容器化版本，提供轻量级的MySQL命令行交互环境，适用于临时执行MySQL命令或容器化环境中的数据库管理。
@@ -39,3 +39,7 @@ mysql -h localhost -u username -p
 
 ### 使用场景
 适用于需要临时执行SQL命令、在无本地MySQL客户端的环境中管理数据库，或在容器化部署中通过命令行工具操作MySQL/MariaDB的场景。轻量级设计使其适合资源受限的环境。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/mysql" title="alpine/mysql Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/alpine/mysql</a></p>

@@ -2,14 +2,14 @@
 image: minio/mc
 source: https://xuanyuan.cloud/zh/r/minio/mc
 canonical: https://xuanyuan.cloud/zh/r/minio/mc
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [minio/mc — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/minio/mc "minio/mc Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/minio/mc
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/minio/mc" title="minio/mc Docker 镜像中文简介、标签列表与拉取命令">minio/mc — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/minio/mc" title="minio/mc Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/minio/mc</a></p>
 
 # MinIO客户端快速入门指南
 
@@ -249,3 +249,7 @@ mc <TAB>  # 按Tab键显示可选命令
 
 ## 许可协议
 `mc`的使用受GNU AGPLv3许可协议约束，详见[LICENSE]([])文件。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/minio/mc" title="minio/mc Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/minio/mc</a></p>

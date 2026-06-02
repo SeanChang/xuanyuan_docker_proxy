@@ -2,14 +2,14 @@
 image: nodered/node-red
 source: https://xuanyuan.cloud/zh/r/nodered/node-red
 canonical: https://xuanyuan.cloud/zh/r/nodered/node-red
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [nodered/node-red — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/nodered/node-red "nodered/node-red Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/nodered/node-red
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nodered/node-red" title="nodered/node-red Docker 镜像中文简介、标签列表与拉取命令">nodered/node-red — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/nodered/node-red" title="nodered/node-red Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nodered/node-red</a></p>
 
 # Node-RED  
 
@@ -45,3 +45,7 @@ docker run -it -p 1880:1880 -v myNodeREDdata:/data --name mynodered nodered/node
 - 问题咨询：[Node-RED公共论坛]([])  
 - 项目官网：[Node-RED官网]([])  
 - 代码仓库：[GitHub项目地址]([])
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nodered/node-red" title="nodered/node-red Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nodered/node-red</a></p>

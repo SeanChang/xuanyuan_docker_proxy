@@ -2,14 +2,14 @@
 image: frangoteam/fuxa
 source: https://xuanyuan.cloud/zh/r/frangoteam/fuxa
 canonical: https://xuanyuan.cloud/zh/r/frangoteam/fuxa
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [frangoteam/fuxa — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/frangoteam/fuxa "frangoteam/fuxa Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/frangoteam/fuxa
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/frangoteam/fuxa" title="frangoteam/fuxa Docker 镜像中文简介、标签列表与拉取命令">frangoteam/fuxa — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/frangoteam/fuxa" title="frangoteam/fuxa Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/frangoteam/fuxa</a></p>
 
 # FUXA Docker镜像文档
 
@@ -45,3 +45,7 @@ docker run -d -p 1881:1881 \
   -v fuxa_logs:/usr/src/app/FUXA/server/_logs \      # 日志文件
   -v fuxa_images:/usr/src/app/FUXA/server/_images \  # 图片资源
   frangoteam/fuxa:latest
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/frangoteam/fuxa" title="frangoteam/fuxa Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/frangoteam/fuxa</a></p>

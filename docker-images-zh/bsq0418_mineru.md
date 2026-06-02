@@ -2,14 +2,14 @@
 image: bsq0418/mineru
 source: https://xuanyuan.cloud/zh/r/bsq0418/mineru
 canonical: https://xuanyuan.cloud/zh/r/bsq0418/mineru
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bsq0418/mineru — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bsq0418/mineru "bsq0418/mineru Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bsq0418/mineru
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bsq0418/mineru" title="bsq0418/mineru Docker 镜像中文简介、标签列表与拉取命令">bsq0418/mineru — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bsq0418/mineru" title="bsq0418/mineru Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bsq0418/mineru</a></p>
 
 # MinerU Docker镜像指南
 
@@ -80,3 +80,7 @@ magic-pdf run \
 
 ## 致谢
 本镜像基于OpenDataLab社区的MinerU解决方案构建。感谢项目维护者和贡献者提供的提取管道和预训练资源。高级场景（如区域提取、批处理管道、生产部署）请参考MinerU官方文档。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bsq0418/mineru" title="bsq0418/mineru Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bsq0418/mineru</a></p>

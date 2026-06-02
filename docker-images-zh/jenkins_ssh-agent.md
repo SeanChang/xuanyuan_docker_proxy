@@ -2,14 +2,14 @@
 image: jenkins/ssh-agent
 source: https://xuanyuan.cloud/zh/r/jenkins/ssh-agent
 canonical: https://xuanyuan.cloud/zh/r/jenkins/ssh-agent
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [jenkins/ssh-agent — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jenkins/ssh-agent "jenkins/ssh-agent Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/jenkins/ssh-agent
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/jenkins/ssh-agent" title="jenkins/ssh-agent Docker 镜像中文简介、标签列表与拉取命令">jenkins/ssh-agent — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/jenkins/ssh-agent" title="jenkins/ssh-agent Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jenkins/ssh-agent</a></p>
 
 # Jenkins SSH 代理 Docker 镜像
 
@@ -135,3 +135,7 @@ make test-alpine_jdk11
 
 ## 变更日志  
 详见 [GitHub Releases]([])（2019 年 12 月起开始维护变更日志，更早版本需参考提交历史）。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/jenkins/ssh-agent" title="jenkins/ssh-agent Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/jenkins/ssh-agent</a></p>

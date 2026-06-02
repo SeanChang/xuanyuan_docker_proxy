@@ -2,14 +2,14 @@
 image: tdengine/tdengine
 source: https://xuanyuan.cloud/zh/r/tdengine/tdengine
 canonical: https://xuanyuan.cloud/zh/r/tdengine/tdengine
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [tdengine/tdengine — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/tdengine/tdengine "tdengine/tdengine Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/tdengine/tdengine
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/tdengine/tdengine" title="tdengine/tdengine Docker 镜像中文简介、标签列表与拉取命令">tdengine/tdengine — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/tdengine/tdengine" title="tdengine/tdengine Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/tdengine/tdengine</a></p>
 
 # TDengine 简介及 Docker 部署指南
 
@@ -214,3 +214,7 @@ docker stop tdengine  # tdengine 为容器名称
 
 
 通过以上步骤，可快速部署 TDengine 并体验其数据写入、查询能力。更多功能可参考 [TDengine 官方文档]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/tdengine/tdengine" title="tdengine/tdengine Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/tdengine/tdengine</a></p>

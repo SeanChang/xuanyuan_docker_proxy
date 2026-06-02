@@ -2,14 +2,14 @@
 image: library/celery
 source: https://xuanyuan.cloud/zh/r/library/celery
 canonical: https://xuanyuan.cloud/zh/r/library/celery
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/celery — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/celery "library/celery Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/celery
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/celery" title="library/celery Docker 镜像中文简介、标签列表与拉取命令">library/celery — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/celery" title="library/celery Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/celery</a></p>
 
 # Celery Docker 镜像文档
 
@@ -97,3 +97,7 @@ docker run -d --name sentry-worker-1 ... sentry run worker
 
 ### 环境要求
 - **支持的 Docker 版本**：[最新稳定版](https://github.com/docker/docker/releases/latest)（最低支持 1.6，尽力兼容）
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/celery" title="library/celery Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/celery</a></p>

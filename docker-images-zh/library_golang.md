@@ -2,14 +2,14 @@
 image: library/golang
 source: https://xuanyuan.cloud/zh/r/library/golang
 canonical: https://xuanyuan.cloud/zh/r/library/golang
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/golang — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/golang "library/golang Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/golang
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/golang" title="library/golang Docker 镜像中文简介、标签列表与拉取命令">library/golang — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/golang" title="library/golang Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/golang</a></p>
 
 # Go Docker 镜像使用指南
 
@@ -148,3 +148,7 @@ $ for GOOS in darwin linux; do
 镜像中软件的许可证信息见 [Go 官方声明]([])。  
 镜像可能包含其他软件（如 Bash 等），用户需自行确保使用符合相关许可证要求。  
 更多自动检测的许可证信息可查看 [repo-info 仓库的 `golang/` 目录]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/golang" title="library/golang Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/golang</a></p>

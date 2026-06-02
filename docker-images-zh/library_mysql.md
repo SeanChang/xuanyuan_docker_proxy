@@ -2,14 +2,14 @@
 image: library/mysql
 source: https://xuanyuan.cloud/zh/r/library/mysql
 canonical: https://xuanyuan.cloud/zh/r/library/mysql
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/mysql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/mysql "library/mysql Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/mysql
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/mysql" title="library/mysql Docker 镜像中文简介、标签列表与拉取命令">library/mysql — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/mysql" title="library/mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/mysql</a></p>
 
 # MySQL 官方 Docker 镜像中文说明
 
@@ -146,3 +146,7 @@ docker exec -i mysql sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD"' < /backu
 - 希望快速搭建 LAMP / LNMP / Spring Boot / Node.js 等常见技术栈的开发者与运维；
 - 需要在 CI/CD 流水线中自动拉起/销毁 MySQL 实例的团队；
 - 需要在单机或小规模集群中部署稳定可靠关系型数据库的用户。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/mysql" title="library/mysql Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/mysql</a></p>

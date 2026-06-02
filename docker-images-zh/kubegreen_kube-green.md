@@ -2,14 +2,14 @@
 image: kubegreen/kube-green
 source: https://xuanyuan.cloud/zh/r/kubegreen/kube-green
 canonical: https://xuanyuan.cloud/zh/r/kubegreen/kube-green
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [kubegreen/kube-green — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kubegreen/kube-green "kubegreen/kube-green Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/kubegreen/kube-green
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kubegreen/kube-green" title="kubegreen/kube-green Docker 镜像中文简介、标签列表与拉取命令">kubegreen/kube-green — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/kubegreen/kube-green" title="kubegreen/kube-green Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kubegreen/kube-green</a></p>
 
 # kube-green
 
@@ -138,3 +138,7 @@ spec:
 查看[采用者列表](https://kube-green.dev/docs/adopters/)，如使用kube-green，欢迎[添加您的组织][add-adopters]！
 
 [add-adopters]: https://github.com/kube-green/kube-green.github.io/blob/main/CONTRIBUTING.md#add-your-organization-to-adopters
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kubegreen/kube-green" title="kubegreen/kube-green Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kubegreen/kube-green</a></p>

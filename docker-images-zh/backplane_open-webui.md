@@ -2,14 +2,14 @@
 image: backplane/open-webui
 source: https://xuanyuan.cloud/zh/r/backplane/open-webui
 canonical: https://xuanyuan.cloud/zh/r/backplane/open-webui
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [backplane/open-webui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/backplane/open-webui "backplane/open-webui Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/backplane/open-webui
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/backplane/open-webui" title="backplane/open-webui Docker 镜像中文简介、标签列表与拉取命令">backplane/open-webui — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/backplane/open-webui" title="backplane/open-webui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/backplane/open-webui</a></p>
 
 # open-webui Docker镜像（非官方镜像）文档
 
@@ -97,3 +97,7 @@ docker pull backplane/open-webui:0.1.123-ollama
 - 本镜像为非官方镜像，与open-webui项目无关联，使用时需自行承担风险。  
 - 镜像标签列表可在Docker Hub仓库查看：<https://hub.docker.com/r/backplane/open-webui/tags>。  
 - 自动同步逻辑依赖上游open-webui项目的语义化版本标签，若上游标签格式变更可能影响同步结果。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/backplane/open-webui" title="backplane/open-webui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/backplane/open-webui</a></p>

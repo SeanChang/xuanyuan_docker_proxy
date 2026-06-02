@@ -2,14 +2,14 @@
 image: bitnami/redis-exporter
 source: https://xuanyuan.cloud/zh/r/bitnami/redis-exporter
 canonical: https://xuanyuan.cloud/zh/r/bitnami/redis-exporter
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnami/redis-exporter — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/redis-exporter "bitnami/redis-exporter Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnami/redis-exporter
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/redis-exporter" title="bitnami/redis-exporter Docker 镜像中文简介、标签列表与拉取命令">bitnami/redis-exporter — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnami/redis-exporter" title="bitnami/redis-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/redis-exporter</a></p>
 
 # Bitnami Redis Exporter 镜像文档
 
@@ -182,3 +182,7 @@ Copyright © 2025 Broadcom. "Broadcom" 指 Broadcom Inc. 及其子公司。
 <http://www.apache.org/licenses/LICENSE-2.0>
 
 除非法律要求或书面同意，软件按“原样”分发，不提供任何明示或暗示的担保或条件。详情请参阅许可协议。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/redis-exporter" title="bitnami/redis-exporter Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/redis-exporter</a></p>

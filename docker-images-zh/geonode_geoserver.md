@@ -2,14 +2,14 @@
 image: geonode/geoserver
 source: https://xuanyuan.cloud/zh/r/geonode/geoserver
 canonical: https://xuanyuan.cloud/zh/r/geonode/geoserver
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [geonode/geoserver — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/geonode/geoserver "geonode/geoserver Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/geonode/geoserver
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/geonode/geoserver" title="geonode/geoserver Docker 镜像中文简介、标签列表与拉取命令">geonode/geoserver — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/geonode/geoserver" title="geonode/geoserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/geonode/geoserver</a></p>
 
 # geoserver-docker
 
@@ -209,3 +209,7 @@ volumes:
 启动服务：
 ```bash
 docker-compose up -d
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/geonode/geoserver" title="geonode/geoserver Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/geonode/geoserver</a></p>

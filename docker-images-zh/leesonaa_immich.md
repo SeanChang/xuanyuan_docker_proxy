@@ -2,14 +2,14 @@
 image: leesonaa/immich
 source: https://xuanyuan.cloud/zh/r/leesonaa/immich
 canonical: https://xuanyuan.cloud/zh/r/leesonaa/immich
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [leesonaa/immich — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/leesonaa/immich "leesonaa/immich Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/leesonaa/immich
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/leesonaa/immich" title="leesonaa/immich Docker 镜像中文简介、标签列表与拉取命令">leesonaa/immich — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/leesonaa/immich" title="leesonaa/immich Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/leesonaa/immich</a></p>
 
 ### ghcr.io/imagegenius/immich:latest 镜像拉取与推送操作说明  
 
@@ -84,3 +84,7 @@ docker push ghcr.io/imagegenius/immich:latest
 - **拉取无需权限**：任何用户均可拉取该镜像，无需登录 ghcr.io；  
 - **推送需权限**：仅有权限用户可推送，未授权用户执行推送会提示权限错误；  
 - **镜像标签**：`latest` 为动态标签，指向最新版。若需操作特定版本，可将标签替换为具体版本号（如 `v1.91.0`，需仓库存在对应标签）。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/leesonaa/immich" title="leesonaa/immich Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/leesonaa/immich</a></p>

@@ -2,14 +2,14 @@
 image: qdrant/qdrant
 source: https://xuanyuan.cloud/zh/r/qdrant/qdrant
 canonical: https://xuanyuan.cloud/zh/r/qdrant/qdrant
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [qdrant/qdrant — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/qdrant/qdrant "qdrant/qdrant Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/qdrant/qdrant
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/qdrant/qdrant" title="qdrant/qdrant Docker 镜像中文简介、标签列表与拉取命令">qdrant/qdrant — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/qdrant/qdrant" title="qdrant/qdrant Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/qdrant/qdrant</a></p>
 
 # Qdrant 向量搜索引擎 Docker 镜像文档
 
@@ -154,3 +154,7 @@ Qdrant基于Apache License 2.0许可协议开源，详情参见[许可证文件]
 - [快速入门指南](https://github.com/qdrant/qdrant/blob/master/docs/QUICK_START.md)
 - [Discord社区](https://qdrant.to/discord)
 - [Qdrant Cloud](https://cloud.qdrant.io/)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/qdrant/qdrant" title="qdrant/qdrant Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/qdrant/qdrant</a></p>

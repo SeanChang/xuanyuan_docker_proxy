@@ -2,14 +2,14 @@
 image: amd64/ubuntu
 source: https://xuanyuan.cloud/zh/r/amd64/ubuntu
 canonical: https://xuanyuan.cloud/zh/r/amd64/ubuntu
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [amd64/ubuntu — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/amd64/ubuntu "amd64/ubuntu Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/amd64/ubuntu
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/amd64/ubuntu" title="amd64/ubuntu Docker 镜像中文简介、标签列表与拉取命令">amd64/ubuntu — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/amd64/ubuntu" title="amd64/ubuntu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/amd64/ubuntu</a></p>
 
 # Ubuntu Docker 镜像文档
 
@@ -161,3 +161,7 @@ services:
 **维护者**：[Canonical](https://launchpad.net/cloud-images)  
 **镜像元数据**：[repo-info 仓库](https://github.com/docker-library/repo-info/blob/master/repos/ubuntu)  
 **文档源**：[docker-library/docs 仓库](https://github.com/docker-library/docs/tree/master/ubuntu)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/amd64/ubuntu" title="amd64/ubuntu Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/amd64/ubuntu</a></p>

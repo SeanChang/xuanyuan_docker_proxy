@@ -2,14 +2,14 @@
 image: linuxserver/firefox
 source: https://xuanyuan.cloud/zh/r/linuxserver/firefox
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/firefox
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [linuxserver/firefox — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/firefox "linuxserver/firefox Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/linuxserver/firefox
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/firefox" title="linuxserver/firefox Docker 镜像中文简介、标签列表与拉取命令">linuxserver/firefox — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/firefox" title="linuxserver/firefox Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/firefox</a></p>
 
 # LinuxServer.io Firefox 容器介绍
 
@@ -308,3 +308,7 @@ docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/firefox:arm64v8-latest
 - [容器源码]([])  
 - [Docker Mods（扩展功能）]([])  
 - [LinuxServer.io 官网]([])
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/firefox" title="linuxserver/firefox Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/firefox</a></p>

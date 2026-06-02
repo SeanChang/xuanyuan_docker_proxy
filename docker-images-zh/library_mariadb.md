@@ -2,14 +2,14 @@
 image: library/mariadb
 source: https://xuanyuan.cloud/zh/r/library/mariadb
 canonical: https://xuanyuan.cloud/zh/r/library/mariadb
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/mariadb — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/mariadb "library/mariadb Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/mariadb
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/mariadb" title="library/mariadb Docker 镜像中文简介、标签列表与拉取命令">library/mariadb — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/mariadb" title="library/mariadb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/mariadb</a></p>
 
 # MariaDB Docker 镜像使用指南
 
@@ -338,3 +338,7 @@ $ docker run --name some-mariadb -v mariadb-data:/var/lib/mysql -d mariadb:lates
 
 ## 许可证  
 镜像中软件的许可信息见 [MariaDB 许可 FAQ]([])。镜像可能包含其他软件（如 Bash），其许可需用户自行确认合规性。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/mariadb" title="library/mariadb Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/mariadb</a></p>

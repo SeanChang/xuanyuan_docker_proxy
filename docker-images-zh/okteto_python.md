@@ -2,14 +2,14 @@
 image: okteto/python
 source: https://xuanyuan.cloud/zh/r/okteto/python
 canonical: https://xuanyuan.cloud/zh/r/okteto/python
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [okteto/python — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/okteto/python "okteto/python Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/okteto/python
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/okteto/python" title="okteto/python Docker 镜像中文简介、标签列表与拉取命令">okteto/python — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/okteto/python" title="okteto/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/okteto/python</a></p>
 
 # Python-Okteto 开发环境镜像文档
 
@@ -174,3 +174,7 @@ command: |
 - 本地代码目录挂载时，避免覆盖容器内预装依赖（建议挂载到独立工作目录如 `/app`）
 - Okteto 同步功能依赖集群网络，请确保本地与 Kubernetes 集群网络通畅
 - 生产环境请勿直接使用本镜像，建议仅作为开发阶段环境，生产环境使用精简的 Python 运行时镜像（如 `python:3.10-slim`）
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/okteto/python" title="okteto/python Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/okteto/python</a></p>

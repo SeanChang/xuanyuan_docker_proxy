@@ -2,14 +2,14 @@
 image: bitnamicharts/node-exporter
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/node-exporter
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/node-exporter
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnamicharts/node-exporter — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamicharts/node-exporter "bitnamicharts/node-exporter Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnamicharts/node-exporter
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/node-exporter" title="bitnamicharts/node-exporter Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/node-exporter — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/node-exporter" title="bitnamicharts/node-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/node-exporter</a></p>
 
 # Bitnami Node Exporter 镜像文档
 
@@ -176,3 +176,7 @@ docker run --name node-exporter -d \
 - **主机网络依赖**：Node Exporter 需访问主机网络和系统文件，生产环境建议通过 DaemonSet 部署在 Kubernetes 中，或直接在主机上以容器运行（使用 `--net=host`）。
 - **镜像迁移**：2025 年 8 月 28 日后，旧版本镜像需从 `bitnamilegacy` 仓库拉取（如 `docker pull bitnamilegacy/node-exporter:2.50.0`）。
 - **生产环境**：长期支持和安全保障需采用 Bitnami Secure Images，具体参见 [VMware Tanzu Application Catalog](https://bitnami.com/enterprise)。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/node-exporter" title="bitnamicharts/node-exporter Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/node-exporter</a></p>

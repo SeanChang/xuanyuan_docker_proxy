@@ -2,14 +2,14 @@
 image: library/ibmjava
 source: https://xuanyuan.cloud/zh/r/library/ibmjava
 canonical: https://xuanyuan.cloud/zh/r/library/ibmjava
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/ibmjava — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/ibmjava "library/ibmjava Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/ibmjava
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/ibmjava" title="library/ibmjava Docker 镜像中文简介、标签列表与拉取命令">library/ibmjava — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/ibmjava" title="library/ibmjava Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/ibmjava</a></p>
 
 # IBM Java SDK Docker 镜像使用指南
 
@@ -215,3 +215,7 @@ docker run -d -v ibmjava-cds-volume:/opt/shareclasses -p 8082:8080 ibmjava-cds-a
 - **基础镜像软件**：Ubuntu/Alpine 镜像中包含的组件（如 Bash、musl）遵循各自开源许可（如 MIT、Apache）
 
 使用前请确保遵守所有包含软件的许可条款，商业场景需联系 IBM 确认许可细节。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/ibmjava" title="library/ibmjava Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/ibmjava</a></p>

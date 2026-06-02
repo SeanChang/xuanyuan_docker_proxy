@@ -2,14 +2,14 @@
 image: baserow/baserow
 source: https://xuanyuan.cloud/zh/r/baserow/baserow
 canonical: https://xuanyuan.cloud/zh/r/baserow/baserow
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [baserow/baserow — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/baserow/baserow "baserow/baserow Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/baserow/baserow
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/baserow/baserow" title="baserow/baserow Docker 镜像中文简介、标签列表与拉取命令">baserow/baserow — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/baserow/baserow" title="baserow/baserow Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/baserow/baserow</a></p>
 
 # Baserow Docker 镜像文档
 
@@ -332,3 +332,7 @@ docker run \
   -v $PWD/.your_redis_password:/baserow/.your_redis_password \
   -v $PWD/.your_secret_key:/baserow/.your_secret_key \
   -v $PWD/.your_pg_password:/baserow/.your_pg_password \
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/baserow/baserow" title="baserow/baserow Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/baserow/baserow</a></p>

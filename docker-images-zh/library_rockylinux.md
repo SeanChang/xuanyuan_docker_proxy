@@ -2,14 +2,14 @@
 image: library/rockylinux
 source: https://xuanyuan.cloud/zh/r/library/rockylinux
 canonical: https://xuanyuan.cloud/zh/r/library/rockylinux
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/rockylinux — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/rockylinux "library/rockylinux Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/rockylinux
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/rockylinux" title="library/rockylinux Docker 镜像中文简介、标签列表与拉取命令">library/rockylinux — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/rockylinux" title="library/rockylinux Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/rockylinux</a></p>
 
 # Rocky Linux Docker 镜像说明
 
@@ -117,3 +117,7 @@ RUN yum -y update && yum clean all
 - 自动检测的额外许可证信息：[repo-info 仓库的 `rockylinux/` 目录]([])  
 
 使用预构建镜像时，用户需自行确保对镜像中所有软件的使用符合相关许可证要求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/rockylinux" title="library/rockylinux Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/rockylinux</a></p>

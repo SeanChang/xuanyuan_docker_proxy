@@ -2,14 +2,14 @@
 image: lsiodev/radarr
 source: https://xuanyuan.cloud/zh/r/lsiodev/radarr
 canonical: https://xuanyuan.cloud/zh/r/lsiodev/radarr
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [lsiodev/radarr — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/lsiodev/radarr "lsiodev/radarr Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/lsiodev/radarr
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/lsiodev/radarr" title="lsiodev/radarr Docker 镜像中文简介、标签列表与拉取命令">lsiodev/radarr — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/lsiodev/radarr" title="lsiodev/radarr Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/lsiodev/radarr</a></p>
 
 # linuxserver/radarr 镜像文档
 
@@ -246,3 +246,7 @@ docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/radarr:arm64v8-latest 
 - **17.04.17**：切换到内部 mono 基础镜像，添加 python 依赖
 - **13.04.17**：切换到官方 mono 仓库
 - **10.01.17**：初始发布
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/lsiodev/radarr" title="lsiodev/radarr Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/lsiodev/radarr</a></p>

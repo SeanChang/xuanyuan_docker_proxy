@@ -2,14 +2,14 @@
 image: apache/skywalking-helm
 source: https://xuanyuan.cloud/zh/r/apache/skywalking-helm
 canonical: https://xuanyuan.cloud/zh/r/apache/skywalking-helm
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [apache/skywalking-helm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apache/skywalking-helm "apache/skywalking-helm Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/apache/skywalking-helm
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/skywalking-helm" title="apache/skywalking-helm Docker 镜像中文简介、标签列表与拉取命令">apache/skywalking-helm — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/apache/skywalking-helm" title="apache/skywalking-helm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/skywalking-helm</a></p>
 
 # Apache SkyWalking Kubernetes Helm Chart 文档
 
@@ -302,3 +302,7 @@ kubectl -n "${SKYWALKING_RELEASE_NAMESPACE}" apply -f oap-init.job.trimmed.yaml
 
 ### 8.2 许可协议
 本项目采用 [Apache 2.0 许可协议](https://www.apache.org/licenses/LICENSE-2.0)。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/skywalking-helm" title="apache/skywalking-helm Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/apache/skywalking-helm</a></p>

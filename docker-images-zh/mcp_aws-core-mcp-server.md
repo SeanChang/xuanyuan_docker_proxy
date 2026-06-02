@@ -2,14 +2,14 @@
 image: mcp/aws-core-mcp-server
 source: https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server
 canonical: https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [mcp/aws-core-mcp-server — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server "mcp/aws-core-mcp-server Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server" title="mcp/aws-core-mcp-server Docker 镜像中文简介、标签列表与拉取命令">mcp/aws-core-mcp-server — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server" title="mcp/aws-core-mcp-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server</a></p>
 
 # AWS Core MCP Server 镜像文档
 
@@ -100,3 +100,7 @@ COSIGN_REPOSITORY=mcp/signatures cosign verify mcp/aws-core-mcp-server --key htt
 使用Docker运行MCP服务器可提供隔离的运行环境，有效降低应用与主机系统的直接交互风险，确保模型上下文处理的安全性和环境一致性。
 
 了解更多：[为什么使用Docker运行MCP服务器更安全？](https://www.docker.com/blog/the-model-context-protocol-simplifying-building-ai-apps-with-anthropic-claude-desktop-and-docker/)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server" title="mcp/aws-core-mcp-server Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server</a></p>

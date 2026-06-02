@@ -2,14 +2,14 @@
 image: library/emqx
 source: https://xuanyuan.cloud/zh/r/library/emqx
 canonical: https://xuanyuan.cloud/zh/r/library/emqx
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/emqx — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/emqx "library/emqx Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/emqx
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/emqx" title="library/emqx Docker 镜像中文简介、标签列表与拉取命令">library/emqx — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/emqx" title="library/emqx Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/emqx</a></p>
 
 # EMQX Docker 镜像使用指南
 
@@ -184,3 +184,7 @@ docker run -d --name emqx -p 18083:18083 -p 1883:1883 \
 - 自动检测的许可信息可在 [repo-info 仓库 `emqx` 目录]([]) 查看。  
 
 使用前请确保遵守所有包含软件的许可证要求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/emqx" title="library/emqx Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/emqx</a></p>

@@ -2,14 +2,14 @@
 image: linuxserver/docker-compose
 source: https://xuanyuan.cloud/zh/r/linuxserver/docker-compose
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/docker-compose
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [linuxserver/docker-compose — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/docker-compose "linuxserver/docker-compose Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/linuxserver/docker-compose
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/docker-compose" title="linuxserver/docker-compose Docker 镜像中文简介、标签列表与拉取命令">linuxserver/docker-compose — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/docker-compose" title="linuxserver/docker-compose Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/docker-compose</a></p>
 
 # 弃用通知
 
@@ -140,3 +140,7 @@ docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/docker-compose:arm64v8
 
 
 > 注：如需获取 LinuxServer.io 团队更多支持，可访问其 [博客]([])、[]() 或 [GitHub]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/docker-compose" title="linuxserver/docker-compose Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/docker-compose</a></p>

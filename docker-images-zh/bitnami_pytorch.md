@@ -2,14 +2,14 @@
 image: bitnami/pytorch
 source: https://xuanyuan.cloud/zh/r/bitnami/pytorch
 canonical: https://xuanyuan.cloud/zh/r/bitnami/pytorch
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnami/pytorch — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/pytorch "bitnami/pytorch Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnami/pytorch
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/pytorch" title="bitnami/pytorch Docker 镜像中文简介、标签列表与拉取命令">bitnami/pytorch — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnami/pytorch" title="bitnami/pytorch Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/pytorch</a></p>
 
 # Bitnami PyTorch 包介绍
 
@@ -172,3 +172,7 @@ docker run --name pytorch bitnami/pytorch:latest
 <[]>  
 
 除非适用法律要求或书面同意，否则按“原样”分发软件，不提供任何明示或暗示的担保或条件。详见许可证以了解具体权限和限制。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/pytorch" title="bitnami/pytorch Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/pytorch</a></p>

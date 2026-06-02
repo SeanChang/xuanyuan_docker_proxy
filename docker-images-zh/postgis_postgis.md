@@ -2,14 +2,14 @@
 image: postgis/postgis
 source: https://xuanyuan.cloud/zh/r/postgis/postgis
 canonical: https://xuanyuan.cloud/zh/r/postgis/postgis
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [postgis/postgis — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/postgis/postgis "postgis/postgis Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/postgis/postgis
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/postgis/postgis" title="postgis/postgis Docker 镜像中文简介、标签列表与拉取命令">postgis/postgis — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/postgis/postgis" title="postgis/postgis Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/postgis/postgis</a></p>
 
 # postgis/postgis 镜像介绍
 
@@ -212,3 +212,7 @@ NOTICE:  version "X.X.X" of extension "postgis" is already installed
 ## 行为准则
 
 参见：[]
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/postgis/postgis" title="postgis/postgis Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/postgis/postgis</a></p>

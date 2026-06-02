@@ -2,14 +2,14 @@
 image: library/kibana
 source: https://xuanyuan.cloud/zh/r/library/kibana
 canonical: https://xuanyuan.cloud/zh/r/library/kibana
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/kibana — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/kibana "library/kibana Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/kibana
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/kibana" title="library/kibana Docker 镜像中文简介、标签列表与拉取命令">library/kibana — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/kibana" title="library/kibana Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/kibana</a></p>
 
 ## Kibana Docker镜像介绍
 
@@ -80,3 +80,7 @@ $ docker run -d --name kibana --net somenetwork -p 5601:5601 kibana:tag
 - 本镜像包含的软件许可证信息可查看 [ELASTIC-LICENSE-2.0.txt]([])。  
 - 镜像可能包含基础系统或依赖软件，其许可证信息可参考 [repo-info仓库的`kibana`目录]([]) 中的自动检测结果。  
 - 使用本镜像时，用户需自行确保符合所有包含软件的许可证要求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/kibana" title="library/kibana Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/kibana</a></p>

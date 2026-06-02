@@ -2,14 +2,14 @@
 image: networkstatic/iperf3
 source: https://xuanyuan.cloud/zh/r/networkstatic/iperf3
 canonical: https://xuanyuan.cloud/zh/r/networkstatic/iperf3
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [networkstatic/iperf3 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/networkstatic/iperf3 "networkstatic/iperf3 Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/networkstatic/iperf3
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/networkstatic/iperf3" title="networkstatic/iperf3 Docker 镜像中文简介、标签列表与拉取命令">networkstatic/iperf3 — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/networkstatic/iperf3" title="networkstatic/iperf3 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/networkstatic/iperf3</a></p>
 
 # iperf3 Docker镜像：网络性能与带宽测试工具
 
@@ -99,3 +99,7 @@ docker run -it --rm networkstatic/iperf3 -c $(docker inspect --format "{{ .Netwo
 ## 致谢与相关工具  
 - 感谢ESNET团队重新开发iperf3，提供了优秀的网络测试工具。  
 - 如需将测试结果图形化展示，可参考工具：[nerdalert/cloud-bandwidth]([])
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/networkstatic/iperf3" title="networkstatic/iperf3 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/networkstatic/iperf3</a></p>

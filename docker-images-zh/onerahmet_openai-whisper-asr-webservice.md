@@ -2,14 +2,14 @@
 image: onerahmet/openai-whisper-asr-webservice
 source: https://xuanyuan.cloud/zh/r/onerahmet/openai-whisper-asr-webservice
 canonical: https://xuanyuan.cloud/zh/r/onerahmet/openai-whisper-asr-webservice
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [onerahmet/openai-whisper-asr-webservice — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/onerahmet/openai-whisper-asr-webservice "onerahmet/openai-whisper-asr-webservice Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/onerahmet/openai-whisper-asr-webservice
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/onerahmet/openai-whisper-asr-webservice" title="onerahmet/openai-whisper-asr-webservice Docker 镜像中文简介、标签列表与拉取命令">onerahmet/openai-whisper-asr-webservice — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/onerahmet/openai-whisper-asr-webservice" title="onerahmet/openai-whisper-asr-webservice Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/onerahmet/openai-whisper-asr-webservice</a></p>
 
 ![Release]([])
 ![Docker Pulls]([])
@@ -107,3 +107,7 @@ poetry run whisper-asr-webservice --host 0.0.0.0 --port 9000
 
 ## 第三方依赖声明
 本软件使用 [FFmpeg]([]) 项目的库，遵循 [LGPLv2.1]([]) 许可证。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/onerahmet/openai-whisper-asr-webservice" title="onerahmet/openai-whisper-asr-webservice Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/onerahmet/openai-whisper-asr-webservice</a></p>

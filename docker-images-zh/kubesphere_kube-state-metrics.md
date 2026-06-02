@@ -2,14 +2,14 @@
 image: kubesphere/kube-state-metrics
 source: https://xuanyuan.cloud/zh/r/kubesphere/kube-state-metrics
 canonical: https://xuanyuan.cloud/zh/r/kubesphere/kube-state-metrics
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [kubesphere/kube-state-metrics — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kubesphere/kube-state-metrics "kubesphere/kube-state-metrics Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/kubesphere/kube-state-metrics
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kubesphere/kube-state-metrics" title="kubesphere/kube-state-metrics Docker 镜像中文简介、标签列表与拉取命令">kubesphere/kube-state-metrics — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/kubesphere/kube-state-metrics" title="kubesphere/kube-state-metrics Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kubesphere/kube-state-metrics</a></p>
 
 ## KubeSphere优化版kube-state-metrics介绍
 
@@ -121,3 +121,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 
 
 通过上述优化，KubeSphere版kube-state-metrics在保留原生工具核心能力的基础上，更贴合企业实际监控需求，降低了自定义指标门槛，同时保障了大规模集群下的性能稳定。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kubesphere/kube-state-metrics" title="kubesphere/kube-state-metrics Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kubesphere/kube-state-metrics</a></p>

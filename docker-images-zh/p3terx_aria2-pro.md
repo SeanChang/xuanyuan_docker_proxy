@@ -2,14 +2,14 @@
 image: p3terx/aria2-pro
 source: https://xuanyuan.cloud/zh/r/p3terx/aria2-pro
 canonical: https://xuanyuan.cloud/zh/r/p3terx/aria2-pro
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [p3terx/aria2-pro — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/p3terx/aria2-pro "p3terx/aria2-pro Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/p3terx/aria2-pro
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/p3terx/aria2-pro" title="p3terx/aria2-pro Docker 镜像中文简介、标签列表与拉取命令">p3terx/aria2-pro — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/p3terx/aria2-pro" title="p3terx/aria2-pro Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/p3terx/aria2-pro</a></p>
 
 # Aria2 Pro Docker
 
@@ -134,3 +134,7 @@ docker-compose -f aria2-pro.yml up -d
 ## 许可协议
 
 [MIT](https://github.com/P3TERX/Aria2-Pro-Docker/blob/master/LICENSE) © P3TERX
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/p3terx/aria2-pro" title="p3terx/aria2-pro Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/p3terx/aria2-pro</a></p>

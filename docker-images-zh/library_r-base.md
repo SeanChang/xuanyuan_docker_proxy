@@ -2,14 +2,14 @@
 image: library/r-base
 source: https://xuanyuan.cloud/zh/r/library/r-base
 canonical: https://xuanyuan.cloud/zh/r/library/r-base
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/r-base — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/r-base "library/r-base Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/r-base
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/r-base" title="library/r-base Docker 镜像中文简介、标签列表与拉取命令">library/r-base — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/r-base" title="library/r-base Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/r-base</a></p>
 
 # R 镜像使用指南
 
@@ -120,3 +120,7 @@ $ docker build -t myscript /path/to/Dockerfile
 自动检测到的额外许可信息可在 [repo-info 仓库的 `r-base/` 目录]([]) 中找到。  
 
 使用预构建镜像时，用户需自行确保对镜像中所有软件的使用符合相关许可证要求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/r-base" title="library/r-base Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/r-base</a></p>

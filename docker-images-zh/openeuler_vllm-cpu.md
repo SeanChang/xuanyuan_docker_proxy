@@ -2,14 +2,14 @@
 image: openeuler/vllm-cpu
 source: https://xuanyuan.cloud/zh/r/openeuler/vllm-cpu
 canonical: https://xuanyuan.cloud/zh/r/openeuler/vllm-cpu
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [openeuler/vllm-cpu — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/openeuler/vllm-cpu "openeuler/vllm-cpu Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/openeuler/vllm-cpu
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/vllm-cpu" title="openeuler/vllm-cpu Docker 镜像中文简介、标签列表与拉取命令">openeuler/vllm-cpu — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/openeuler/vllm-cpu" title="openeuler/vllm-cpu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/vllm-cpu</a></p>
 
 # vLLM Ascend Docker镜像文档
 
@@ -110,3 +110,7 @@ for output in outputs:
 ## 问题与反馈
 
 如有疑问或需使用特殊功能，请通过[openeuler-docker-images](https://gitee.com/openeuler/openeuler-docker-images)仓库提交issue或Pull Request。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/vllm-cpu" title="openeuler/vllm-cpu Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/vllm-cpu</a></p>

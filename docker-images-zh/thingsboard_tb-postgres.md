@@ -2,14 +2,14 @@
 image: thingsboard/tb-postgres
 source: https://xuanyuan.cloud/zh/r/thingsboard/tb-postgres
 canonical: https://xuanyuan.cloud/zh/r/thingsboard/tb-postgres
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [thingsboard/tb-postgres — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/thingsboard/tb-postgres "thingsboard/tb-postgres Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/thingsboard/tb-postgres
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/thingsboard/tb-postgres" title="thingsboard/tb-postgres Docker 镜像中文简介、标签列表与拉取命令">thingsboard/tb-postgres — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/thingsboard/tb-postgres" title="thingsboard/tb-postgres Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/thingsboard/tb-postgres</a></p>
 
 # ThingsBoard 简介  
 
@@ -88,3 +88,7 @@ $ docker run -it -p 9090:9090 -p 1883:1883 -p 7070:7070 -p 5683-5688:5683-5688/u
 ```  
 
 **注意**：请将命令中的 `~/.mytb-data` 替换为容器创建时实际使用的主机目录。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/thingsboard/tb-postgres" title="thingsboard/tb-postgres Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/thingsboard/tb-postgres</a></p>

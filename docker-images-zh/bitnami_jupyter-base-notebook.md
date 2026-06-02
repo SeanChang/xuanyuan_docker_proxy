@@ -2,14 +2,14 @@
 image: bitnami/jupyter-base-notebook
 source: https://xuanyuan.cloud/zh/r/bitnami/jupyter-base-notebook
 canonical: https://xuanyuan.cloud/zh/r/bitnami/jupyter-base-notebook
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnami/jupyter-base-notebook — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/jupyter-base-notebook "bitnami/jupyter-base-notebook Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnami/jupyter-base-notebook
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/jupyter-base-notebook" title="bitnami/jupyter-base-notebook Docker 镜像中文简介、标签列表与拉取命令">bitnami/jupyter-base-notebook — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnami/jupyter-base-notebook" title="bitnami/jupyter-base-notebook Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/jupyter-base-notebook</a></p>
 
 # Bitnami Secure Image for jupyter-base-notebook 说明  
 
@@ -32,3 +32,7 @@ Docker Hub 上仍有其他 Bitnami Secure Images 提供开发者版。如需获�
 
 
 了解更多 Bitnami Secure Images 商业版信息，可[访问官网]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/jupyter-base-notebook" title="bitnami/jupyter-base-notebook Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/jupyter-base-notebook</a></p>

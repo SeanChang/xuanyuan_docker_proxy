@@ -2,14 +2,14 @@
 image: library/nginx
 source: https://xuanyuan.cloud/zh/r/library/nginx
 canonical: https://xuanyuan.cloud/zh/r/library/nginx
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/nginx — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/nginx "library/nginx Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/nginx
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/nginx" title="library/nginx Docker 镜像中文简介、标签列表与拉取命令">library/nginx — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/nginx" title="library/nginx Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/nginx</a></p>
 
 # Nginx 官方 Docker 镜像中文说明
 
@@ -152,3 +152,7 @@ server {
 - 需要快速搭建静态站点或文档服务的开发者；
 - 希望为后端应用提供统一入口、反向代理与负载均衡的运维工程师；
 - 需要在容器化环境中构建标准化 Web 前端和 API 网关层的团队。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/nginx" title="library/nginx Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/nginx</a></p>

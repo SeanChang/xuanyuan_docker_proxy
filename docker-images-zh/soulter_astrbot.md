@@ -2,14 +2,14 @@
 image: soulter/astrbot
 source: https://xuanyuan.cloud/zh/r/soulter/astrbot
 canonical: https://xuanyuan.cloud/zh/r/soulter/astrbot
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [soulter/astrbot — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/soulter/astrbot "soulter/astrbot Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/soulter/astrbot
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/soulter/astrbot" title="soulter/astrbot Docker 镜像中文简介、标签列表与拉取命令">soulter/astrbot — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/soulter/astrbot" title="soulter/astrbot Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/soulter/astrbot</a></p>
 
 # AstrBot 介绍
 
@@ -104,3 +104,7 @@ python main.py
 
 ## 总结  
 AstrBot 以轻量、可扩展为核心优势，适合需要快速搭建跨平台机器人的用户。通过简单配置即可实现基础消息处理，结合插件与 AI 集成可进一步扩展功能。详细文档与示例可参考项目 GitHub 仓库的 `docs/` 目录。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/soulter/astrbot" title="soulter/astrbot Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/soulter/astrbot</a></p>

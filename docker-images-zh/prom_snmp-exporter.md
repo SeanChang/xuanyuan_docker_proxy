@@ -2,14 +2,14 @@
 image: prom/snmp-exporter
 source: https://xuanyuan.cloud/zh/r/prom/snmp-exporter
 canonical: https://xuanyuan.cloud/zh/r/prom/snmp-exporter
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [prom/snmp-exporter — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/prom/snmp-exporter "prom/snmp-exporter Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/prom/snmp-exporter
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/snmp-exporter" title="prom/snmp-exporter Docker 镜像中文简介、标签列表与拉取命令">prom/snmp-exporter — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/prom/snmp-exporter" title="prom/snmp-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/snmp-exporter</a></p>
 
 # Prometheus SNMP Exporter 镜像文档
 
@@ -242,3 +242,7 @@ docker run -d -p 9116:9116 --name snmp-exporter prom/snmp-exporter --no-snmp.wra
 
 - **配置贡献**：自定义 `snmp.yml` 及 generator 配置可贡献至 [官方仓库](https://github.com/prometheus/snmp_exporter)。
 - **监控规则与仪表盘**：可提交至 [snmp-mixin](https://github.com/prometheus/snmp_exporter/tree/main/snmp-mixin) 项目，共享仪表盘、告警规则等。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/snmp-exporter" title="prom/snmp-exporter Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/prom/snmp-exporter</a></p>

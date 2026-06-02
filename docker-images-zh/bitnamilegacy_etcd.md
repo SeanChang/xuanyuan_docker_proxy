@@ -2,14 +2,14 @@
 image: bitnamilegacy/etcd
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/etcd
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/etcd
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnamilegacy/etcd — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamilegacy/etcd "bitnamilegacy/etcd Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnamilegacy/etcd
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/etcd" title="bitnamilegacy/etcd Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/etcd — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/etcd" title="bitnamilegacy/etcd Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamilegacy/etcd</a></p>
 
 # Bitnami Legacy 镜像文档
 
@@ -89,3 +89,7 @@ docker run -d --name legacy-container bitnami/<image-name>:<tag>
 2. **临时使用限制**：仅用于短期迁移，使用后需尽快切换至受支持的镜像。  
 3. **仓库存续风险**：该仓库未来可能被永久移除，务必及时将所需镜像迁移至私有仓库。  
 4. **生产环境替代方案**：生产工作负载请迁移至 [Bitnami Secure Images](https://bitnami.com/)，其提供强化容器、更小攻击面、CVE 透明度（通过 VEX/KEV）、SBOM 及企业支持。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/etcd" title="bitnamilegacy/etcd Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamilegacy/etcd</a></p>

@@ -2,14 +2,14 @@
 image: bitnami/python
 source: https://xuanyuan.cloud/zh/r/bitnami/python
 canonical: https://xuanyuan.cloud/zh/r/bitnami/python
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnami/python — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/python "bitnami/python Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnami/python
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/python" title="bitnami/python Docker 镜像中文简介、标签列表与拉取命令">bitnami/python — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnami/python" title="bitnami/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/python</a></p>
 
 # Bitnami Python 镜像
 
@@ -184,3 +184,7 @@ docker-compose up python
 <http://www.apache.org/licenses/LICENSE-2.0>
 
 除非适用法律要求或书面同意，否则根据许可证分发的软件按"原样"分发，不附带任何明示或暗示的担保或条件。有关许可证下权限和限制的具体语言，请参阅许可证。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/python" title="bitnami/python Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/python</a></p>

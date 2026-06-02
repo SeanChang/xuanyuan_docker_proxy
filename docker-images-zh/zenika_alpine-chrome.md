@@ -2,14 +2,14 @@
 image: zenika/alpine-chrome
 source: https://xuanyuan.cloud/zh/r/zenika/alpine-chrome
 canonical: https://xuanyuan.cloud/zh/r/zenika/alpine-chrome
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [zenika/alpine-chrome — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zenika/alpine-chrome "zenika/alpine-chrome Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/zenika/alpine-chrome
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zenika/alpine-chrome" title="zenika/alpine-chrome Docker 镜像中文简介、标签列表与拉取命令">zenika/alpine-chrome — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/zenika/alpine-chrome" title="zenika/alpine-chrome Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zenika/alpine-chrome</a></p>
 
 [![GitHub Stars](https://img.shields.io/github/stars/zenika/alpine-chrome)](https://github.com/Zenika/alpine-chrome/) [![Docker Build Status](https://img.shields.io/github/workflow/status/zenika/alpine-chrome/build.svg)](https://hub.docker.com/r/zenika/alpine-chrome/) [![Docker Pulls](https://img.shields.io/docker/pulls/zenika/alpine-chrome.svg)](https://hub.docker.com/r/zenika/alpine-chrome/) [![Docker Stars](https://img.shields.io/docker/stars/zenika/alpine-chrome.svg)](https://hub.docker.com/r/zenika/alpine-chrome/)
 
@@ -260,3 +260,7 @@ docker container run --rm -it --entrypoint "" --user root zenika/alpine-chrome s
 
 - 🐳 [docker-compose](https://github.com/Zenika/alpine-chrome/blob/master/examples/docker-compose)：启动Chrome并调用同一docker-compose中的nginx服务器
 - ☸️ [kubernetes](https://github.com/Zenika/alpine-chrome/tree/master/examples/k8s)：在K8s中部署无头
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zenika/alpine-chrome" title="zenika/alpine-chrome Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zenika/alpine-chrome</a></p>

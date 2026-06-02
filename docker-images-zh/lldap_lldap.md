@@ -2,14 +2,14 @@
 image: lldap/lldap
 source: https://xuanyuan.cloud/zh/r/lldap/lldap
 canonical: https://xuanyuan.cloud/zh/r/lldap/lldap
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [lldap/lldap — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/lldap/lldap "lldap/lldap Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/lldap/lldap
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/lldap/lldap" title="lldap/lldap Docker 镜像中文简介、标签列表与拉取命令">lldap/lldap — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/lldap/lldap" title="lldap/lldap Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/lldap/lldap</a></p>
 
 # lldap - 轻量级LDAP认证实现
 
@@ -271,3 +271,7 @@ server {
 - 保持友好和尊重的沟通态度
 
 项目地址：[https://github.com/lldap/lldap](https://github.com/lldap/lldap)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/lldap/lldap" title="lldap/lldap Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/lldap/lldap</a></p>

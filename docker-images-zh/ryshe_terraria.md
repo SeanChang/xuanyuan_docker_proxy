@@ -2,14 +2,14 @@
 image: ryshe/terraria
 source: https://xuanyuan.cloud/zh/r/ryshe/terraria
 canonical: https://xuanyuan.cloud/zh/r/ryshe/terraria
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ryshe/terraria — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ryshe/terraria "ryshe/terraria Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ryshe/terraria
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ryshe/terraria" title="ryshe/terraria Docker 镜像中文简介、标签列表与拉取命令">ryshe/terraria — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ryshe/terraria" title="ryshe/terraria Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ryshe/terraria</a></p>
 
 # Terraria Docker镜像文档  
 
@@ -246,3 +246,7 @@ docker run -d --rm --name="terraria-server" \
 
 [TShock]: https://github.com/Pryaxis/TShock/releases  
 [Docker]: https://docs.docker.com/get-docker/
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ryshe/terraria" title="ryshe/terraria Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ryshe/terraria</a></p>

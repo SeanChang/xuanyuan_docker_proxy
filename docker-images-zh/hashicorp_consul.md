@@ -2,14 +2,14 @@
 image: hashicorp/consul
 source: https://xuanyuan.cloud/zh/r/hashicorp/consul
 canonical: https://xuanyuan.cloud/zh/r/hashicorp/consul
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [hashicorp/consul — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/hashicorp/consul "hashicorp/consul Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/hashicorp/consul
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/hashicorp/consul" title="hashicorp/consul Docker 镜像中文简介、标签列表与拉取命令">hashicorp/consul — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/hashicorp/consul" title="hashicorp/consul Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hashicorp/consul</a></p>
 
 # Consul 官方镜像构建说明
 
@@ -49,3 +49,7 @@ docker run -d --name consul -p 8500:8500 hashicorp/consul agent -server -bootstr
 docker cp service.json consul:/consul/config/
 docker restart consul
 ```
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/hashicorp/consul" title="hashicorp/consul Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/hashicorp/consul</a></p>

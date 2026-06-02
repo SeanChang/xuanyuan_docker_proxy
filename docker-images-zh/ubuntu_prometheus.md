@@ -2,14 +2,14 @@
 image: ubuntu/prometheus
 source: https://xuanyuan.cloud/zh/r/ubuntu/prometheus
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/prometheus
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ubuntu/prometheus — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ubuntu/prometheus "ubuntu/prometheus Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ubuntu/prometheus
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/prometheus" title="ubuntu/prometheus Docker 镜像中文简介、标签列表与拉取命令">ubuntu/prometheus — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/prometheus" title="ubuntu/prometheus Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/prometheus</a></p>
 
 # Prometheus | Ubuntu Docker镜像介绍
 
@@ -114,3 +114,7 @@ docker images --no-trunc --quiet ubuntu/prometheus:<tag>
 | _`track`_ | | | |  
 
 *注：标记“持续支持”的已弃用标签虽未停止维护，但建议优先使用带`_stable`后缀的稳定通道。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/prometheus" title="ubuntu/prometheus Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/prometheus</a></p>

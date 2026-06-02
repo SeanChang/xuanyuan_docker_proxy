@@ -2,14 +2,14 @@
 image: grafana/grafana-enterprise
 source: https://xuanyuan.cloud/zh/r/grafana/grafana-enterprise
 canonical: https://xuanyuan.cloud/zh/r/grafana/grafana-enterprise
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [grafana/grafana-enterprise — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/grafana/grafana-enterprise "grafana/grafana-enterprise Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/grafana/grafana-enterprise
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/grafana/grafana-enterprise" title="grafana/grafana-enterprise Docker 镜像中文简介、标签列表与拉取命令">grafana/grafana-enterprise — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/grafana/grafana-enterprise" title="grafana/grafana-enterprise Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/grafana/grafana-enterprise</a></p>
 
 # Grafana Enterprise Docker镜像  
 
@@ -28,3 +28,7 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana-enterprise
 ## 更新日志  
 
 你可以在[文档]([])中了解Grafana相关信息，或通过[此处]([])查看最新版本的更新内容！
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/grafana/grafana-enterprise" title="grafana/grafana-enterprise Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/grafana/grafana-enterprise</a></p>

@@ -2,14 +2,14 @@
 image: zabbix/zabbix-agent2
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent2
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent2
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [zabbix/zabbix-agent2 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent2 "zabbix/zabbix-agent2 Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent2
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent2" title="zabbix/zabbix-agent2 Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-agent2 — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent2" title="zabbix/zabbix-agent2 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent2</a></p>
 
 ![logo]()
 
@@ -225,3 +225,7 @@ ZBX_ALLOWKEY=                      # 允许的键（5.0.0+支持）
 
 ## 许可证  
 Zabbix 7.0 及以上版本基于 GNU Affero General Public License v3 (AGPLv3) 发布，6.4 及以下版本基于 GPLv2。具体条款见 [FSF 文档]([])。商业用户可通过购买技术支持支持开发。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent2" title="zabbix/zabbix-agent2 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent2</a></p>

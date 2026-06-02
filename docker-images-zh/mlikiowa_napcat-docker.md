@@ -2,14 +2,14 @@
 image: mlikiowa/napcat-docker
 source: https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker
 canonical: https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [mlikiowa/napcat-docker — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker "mlikiowa/napcat-docker Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker" title="mlikiowa/napcat-docker Docker 镜像中文简介、标签列表与拉取命令">mlikiowa/napcat-docker — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker" title="mlikiowa/napcat-docker Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker</a></p>
 
 # NapCatQQ 介绍
 
@@ -116,3 +116,7 @@ NapCatQQ 是基于 OneBot 标准开发的 QQ 机器人框架，支持 Windows、
 
 
 更多细节可参考 [项目 GitHub 仓库]([]) 的 README 和文档。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker" title="mlikiowa/napcat-docker Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker</a></p>

@@ -2,14 +2,14 @@
 image: if010/dameng
 source: https://xuanyuan.cloud/zh/r/if010/dameng
 canonical: https://xuanyuan.cloud/zh/r/if010/dameng
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [if010/dameng — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/if010/dameng "if010/dameng Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/if010/dameng
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/if010/dameng" title="if010/dameng Docker 镜像中文简介、标签列表与拉取命令">if010/dameng — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/if010/dameng" title="if010/dameng Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/if010/dameng</a></p>
 
 ## 达梦数据库V8 Docker镜像文档
 
@@ -86,3 +86,7 @@ if010/dameng
 ]
 ```
 4. **参数修改限制**：页大小、簇大小、字符集、LENGTH_IN_CHAR、BLANK_PAD_MODE等参数一旦初始化设置无法修改，需在部署前确认需求。更多参数可参考《DM8_dminit 使用手册》。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/if010/dameng" title="if010/dameng Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/if010/dameng</a></p>

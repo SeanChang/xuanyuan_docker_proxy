@@ -2,14 +2,14 @@
 image: arm64v8/ros
 source: https://xuanyuan.cloud/zh/r/arm64v8/ros
 canonical: https://xuanyuan.cloud/zh/r/arm64v8/ros
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [arm64v8/ros — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/arm64v8/ros "arm64v8/ros Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/arm64v8/ros
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/arm64v8/ros" title="arm64v8/ros Docker 镜像中文简介、标签列表与拉取命令">arm64v8/ros — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/arm64v8/ros" title="arm64v8/ros Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/arm64v8/ros</a></p>
 
 # ROS 官方镜像 arm64v8 架构仓库说明  
 
@@ -305,3 +305,7 @@ $ docker compose down
 # 许可证  
 镜像中软件的许可证信息可在 [包索引]([]) 中查询。  
 Docker 镜像可能包含基础系统（如 Bash）及依赖软件，其许可证需
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/arm64v8/ros" title="arm64v8/ros Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/arm64v8/ros</a></p>

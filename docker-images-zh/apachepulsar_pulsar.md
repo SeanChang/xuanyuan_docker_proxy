@@ -2,14 +2,14 @@
 image: apachepulsar/pulsar
 source: https://xuanyuan.cloud/zh/r/apachepulsar/pulsar
 canonical: https://xuanyuan.cloud/zh/r/apachepulsar/pulsar
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [apachepulsar/pulsar — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apachepulsar/pulsar "apachepulsar/pulsar Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/apachepulsar/pulsar
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/apachepulsar/pulsar" title="apachepulsar/pulsar Docker 镜像中文简介、标签列表与拉取命令">apachepulsar/pulsar — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/apachepulsar/pulsar" title="apachepulsar/pulsar Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apachepulsar/pulsar</a></p>
 
 # Apache Pulsar 简介
 
@@ -64,3 +64,7 @@ Pulsar 可便捷部署在 Kubernetes 集群中，支持多种场景：
 Pulsar 基于 Apache License 2.0 许可：[[]]([])  
 
 注：与所有 Docker 镜像类似，其可能包含其他软件（如基础发行版中的 Bash 等），这些软件可能采用其他许可证。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/apachepulsar/pulsar" title="apachepulsar/pulsar Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/apachepulsar/pulsar</a></p>

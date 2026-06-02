@@ -2,14 +2,14 @@
 image: pulp/pulp-ci-centos
 source: https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos
 canonical: https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [pulp/pulp-ci-centos — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos "pulp/pulp-ci-centos Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos" title="pulp/pulp-ci-centos Docker 镜像中文简介、标签列表与拉取命令">pulp/pulp-ci-centos — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos" title="pulp/pulp-ci-centos Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos</a></p>
 
 # Pulp 3 基础镜像
 
@@ -79,3 +79,7 @@ docker run -d -p 24817:24817 --name my-pulp-service my-custom-pulp:latest
 - 该镜像仅包含基础运行环境，生产环境部署需额外配置数据库（如PostgreSQL）、缓存（如Redis）等依赖服务。
 - 请根据Pulp 3的具体版本选择对应标签的基础镜像，避免版本兼容性问题。
 - 详细配置说明及高级用法，请参考[Pulp官方文档](https://docs.pulpproject.org/)。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos" title="pulp/pulp-ci-centos Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos</a></p>

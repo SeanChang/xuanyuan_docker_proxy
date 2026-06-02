@@ -2,14 +2,14 @@
 image: sonatype/nexus
 source: https://xuanyuan.cloud/zh/r/sonatype/nexus
 canonical: https://xuanyuan.cloud/zh/r/sonatype/nexus
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [sonatype/nexus — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/sonatype/nexus "sonatype/nexus Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/sonatype/nexus
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/sonatype/nexus" title="sonatype/nexus Docker 镜像中文简介、标签列表与拉取命令">sonatype/nexus — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/sonatype/nexus" title="sonatype/nexus Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/sonatype/nexus</a></p>
 
 # sonatype/docker-nexus  
 
@@ -132,3 +132,7 @@ docker run -d -p 8081:8081 --name nexus -v /some/dir/nexus-data:/sonatype-work s
 - [Stack Overflow]([])（`nexus` 标签）  
 - [HipChat 公开房间]([])（实时交流）  
 - [Nexus 用户邮件列表]([])
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/sonatype/nexus" title="sonatype/nexus Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/sonatype/nexus</a></p>

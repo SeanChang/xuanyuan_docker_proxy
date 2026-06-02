@@ -2,14 +2,14 @@
 image: cimg/mysql
 source: https://xuanyuan.cloud/zh/r/cimg/mysql
 canonical: https://xuanyuan.cloud/zh/r/cimg/mysql
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [cimg/mysql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/cimg/mysql "cimg/mysql Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/cimg/mysql
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/mysql" title="cimg/mysql Docker 镜像中文简介、标签列表与拉取命令">cimg/mysql — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/cimg/mysql" title="cimg/mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cimg/mysql</a></p>
 
 # CircleCI 便利镜像：MySQL  
 
@@ -182,3 +182,7 @@ git commit -m "更新子模块以支持 xxx 功能"
 
 ## 许可证  
 本仓库采用 MIT 许可证，详情见 [LICENSE 文件](./LICENSE)。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/mysql" title="cimg/mysql Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/cimg/mysql</a></p>

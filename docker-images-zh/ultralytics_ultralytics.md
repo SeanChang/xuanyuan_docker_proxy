@@ -2,14 +2,14 @@
 image: ultralytics/ultralytics
 source: https://xuanyuan.cloud/zh/r/ultralytics/ultralytics
 canonical: https://xuanyuan.cloud/zh/r/ultralytics/ultralytics
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ultralytics/ultralytics — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ultralytics/ultralytics "ultralytics/ultralytics Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ultralytics/ultralytics
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ultralytics/ultralytics" title="ultralytics/ultralytics Docker 镜像中文简介、标签列表与拉取命令">ultralytics/ultralytics — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ultralytics/ultralytics" title="ultralytics/ultralytics Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ultralytics/ultralytics</a></p>
 
 # YOLO11：快速、准确、易用的计算机视觉模型
 
@@ -127,3 +127,7 @@ YOLO11的发展离不开社区支持，欢迎通过以下方式参与：
 - **文档**：[中文文档]([])  
 
 也可通过GitHub Issues提交bug报告或功能建议。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ultralytics/ultralytics" title="ultralytics/ultralytics Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ultralytics/ultralytics</a></p>

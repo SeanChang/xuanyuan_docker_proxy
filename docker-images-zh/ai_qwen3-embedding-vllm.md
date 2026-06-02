@@ -2,14 +2,14 @@
 image: ai/qwen3-embedding-vllm
 source: https://xuanyuan.cloud/zh/r/ai/qwen3-embedding-vllm
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen3-embedding-vllm
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ai/qwen3-embedding-vllm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ai/qwen3-embedding-vllm "ai/qwen3-embedding-vllm Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ai/qwen3-embedding-vllm
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-embedding-vllm" title="ai/qwen3-embedding-vllm Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-embedding-vllm — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-embedding-vllm" title="ai/qwen3-embedding-vllm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-embedding-vllm</a></p>
 
 # Qwen3-Embedding
 
@@ -82,3 +82,7 @@ curl --location 'http://localhost:12434/engines/vllm/v1/embeddings' \
 - [Qwen3-Embedding 0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B)
 - [Qwen3-Embedding 4B](https://huggingface.co/Qwen/Qwen3-Embedding-4B)
 - [Qwen3-Embedding 8B](https://huggingface.co/Qwen/Qwen3-Embedding-8B)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-embedding-vllm" title="ai/qwen3-embedding-vllm Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-embedding-vllm</a></p>

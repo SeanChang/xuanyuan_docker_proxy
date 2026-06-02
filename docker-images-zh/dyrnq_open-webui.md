@@ -2,14 +2,14 @@
 image: dyrnq/open-webui
 source: https://xuanyuan.cloud/zh/r/dyrnq/open-webui
 canonical: https://xuanyuan.cloud/zh/r/dyrnq/open-webui
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [dyrnq/open-webui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/dyrnq/open-webui "dyrnq/open-webui Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/dyrnq/open-webui
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/dyrnq/open-webui" title="dyrnq/open-webui Docker 镜像中文简介、标签列表与拉取命令">dyrnq/open-webui — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/dyrnq/open-webui" title="dyrnq/open-webui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dyrnq/open-webui</a></p>
 
 ## Open WebUI 容器镜像使用指南
 
@@ -62,3 +62,7 @@ docker run -d \
 
 
 通过以上步骤，你就能快速用容器镜像跑起 Open WebUI，开始和 AI 模型交互了。如果需要更复杂的部署（如用 Docker Compose 配数据库、HTTPS 等），可参考 [Open WebUI 官方文档]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/dyrnq/open-webui" title="dyrnq/open-webui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/dyrnq/open-webui</a></p>

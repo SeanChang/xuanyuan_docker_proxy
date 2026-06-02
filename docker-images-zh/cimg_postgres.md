@@ -2,14 +2,14 @@
 image: cimg/postgres
 source: https://xuanyuan.cloud/zh/r/cimg/postgres
 canonical: https://xuanyuan.cloud/zh/r/cimg/postgres
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [cimg/postgres — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/cimg/postgres "cimg/postgres Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/cimg/postgres
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/postgres" title="cimg/postgres Docker 镜像中文简介、标签列表与拉取命令">cimg/postgres — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/cimg/postgres" title="cimg/postgres Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cimg/postgres</a></p>
 
 # cimg/postgres - CircleCI PostgreSQL 镜像
 
@@ -226,3 +226,7 @@ docker run -it test/postgres:13.2 bash  # 启动容器并进入交互终端
 
 ## 致谢
 本镜像使用了 [docker-library/postgres](https://github.com/docker-library/postgres) 项目的 `docker-entrypoint.sh` 脚本。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/postgres" title="cimg/postgres Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/cimg/postgres</a></p>

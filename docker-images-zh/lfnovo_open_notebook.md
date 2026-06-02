@@ -2,14 +2,14 @@
 image: lfnovo/open_notebook
 source: https://xuanyuan.cloud/zh/r/lfnovo/open_notebook
 canonical: https://xuanyuan.cloud/zh/r/lfnovo/open_notebook
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [lfnovo/open_notebook — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/lfnovo/open_notebook "lfnovo/open_notebook Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/lfnovo/open_notebook
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/lfnovo/open_notebook" title="lfnovo/open_notebook Docker 镜像中文简介、标签列表与拉取命令">lfnovo/open_notebook — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/lfnovo/open_notebook" title="lfnovo/open_notebook Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/lfnovo/open_notebook</a></p>
 
 # Open Notebook 镜像文档
 
@@ -49,3 +49,7 @@ docker run -d -p 8080:8080 --name open-notebook opennotebook/open-notebook:lates
 ### 配置说明
 目前官方尚未提供详细配置参数说明，建议通过项目官网获取最新配置指南：  
 [https://www.open-notebook.ai](https://www.open-notebook.ai)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/lfnovo/open_notebook" title="lfnovo/open_notebook Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/lfnovo/open_notebook</a></p>

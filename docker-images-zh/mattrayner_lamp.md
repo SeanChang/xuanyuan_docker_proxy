@@ -2,14 +2,14 @@
 image: mattrayner/lamp
 source: https://xuanyuan.cloud/zh/r/mattrayner/lamp
 canonical: https://xuanyuan.cloud/zh/r/mattrayner/lamp
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [mattrayner/lamp — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mattrayner/lamp "mattrayner/lamp Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/mattrayner/lamp
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mattrayner/lamp" title="mattrayner/lamp Docker 镜像中文简介、标签列表与拉取命令">mattrayner/lamp — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/mattrayner/lamp" title="mattrayner/lamp Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mattrayner/lamp</a></p>
 
 # Docker-LAMP
 
@@ -265,3 +265,7 @@ Docker-LAMP采用[Apache 2.0许可证][info-license]授权。
 [shield-license]: https://img.shields.io/badge/license-Apache%202.0-blue.svg
 
 [dgraziotin-lamp]: https://github.com/dgraziotin/osx-docker-lamp
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mattrayner/lamp" title="mattrayner/lamp Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mattrayner/lamp</a></p>

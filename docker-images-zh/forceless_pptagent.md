@@ -2,14 +2,14 @@
 image: forceless/pptagent
 source: https://xuanyuan.cloud/zh/r/forceless/pptagent
 canonical: https://xuanyuan.cloud/zh/r/forceless/pptagent
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [forceless/pptagent — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/forceless/pptagent "forceless/pptagent Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/forceless/pptagent
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/forceless/pptagent" title="forceless/pptagent Docker 镜像中文简介、标签列表与拉取命令">forceless/pptagent — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/forceless/pptagent" title="forceless/pptagent Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/forceless/pptagent</a></p>
 
 # ICIP-CAS/PPTAgent 直接运行镜像介绍
 
@@ -43,3 +43,7 @@ docker run [镜像参数] icip-cas/pptagent:[版本标签]
 - **版本选择**：如果需要稳定版本，建议在启动命令中指定具体版本标签（如 `v1.0`），避免直接用 `latest` 导致版本变动。  
 
 具体细节可参考项目 GitHub 页面的完整说明。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/forceless/pptagent" title="forceless/pptagent Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/forceless/pptagent</a></p>

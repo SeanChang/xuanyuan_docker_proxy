@@ -2,14 +2,14 @@
 image: ai/gpt-oss
 source: https://xuanyuan.cloud/zh/r/ai/gpt-oss
 canonical: https://xuanyuan.cloud/zh/r/ai/gpt-oss
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ai/gpt-oss — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ai/gpt-oss "ai/gpt-oss Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ai/gpt-oss
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/gpt-oss" title="ai/gpt-oss Docker 镜像中文简介、标签列表与拉取命令">ai/gpt-oss — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ai/gpt-oss" title="ai/gpt-oss Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/gpt-oss</a></p>
 
 # GPT‑OSS
 *Unsloth的GGUF版本*
@@ -49,3 +49,7 @@ docker model run ai/gpt-oss
 - [Hugging Face模型](https://huggingface.co/openai/gpt-oss-20b)
 - [OpenAI公告](https://openai.com/index/introducing-gpt-oss/)
 - [Unsloth Dynamic 2.0 GGUF](https://docs.unsloth.ai/basics/unsloth-dynamic-2.0-ggufs)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/gpt-oss" title="ai/gpt-oss Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ai/gpt-oss</a></p>

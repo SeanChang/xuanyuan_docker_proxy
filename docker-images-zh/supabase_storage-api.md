@@ -2,14 +2,14 @@
 image: supabase/storage-api
 source: https://xuanyuan.cloud/zh/r/supabase/storage-api
 canonical: https://xuanyuan.cloud/zh/r/supabase/storage-api
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [supabase/storage-api — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/supabase/storage-api "supabase/storage-api Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/supabase/storage-api
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/supabase/storage-api" title="supabase/storage-api Docker 镜像中文简介、标签列表与拉取命令">supabase/storage-api — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/supabase/storage-api" title="supabase/storage-api Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/supabase/storage-api</a></p>
 
 # Supabase Storage Backend API 镜像文档
 
@@ -104,3 +104,7 @@ volumes:
 2. **存储后端选择**：生产环境推荐使用S3兼容存储以提高可靠性和可扩展性
 3. **数据持久化**：本地存储模式需挂载宿主机卷以防止容器重启后数据丢失
 4. **性能调优**：高并发场景下建议调整容器CPU/内存限制，并配置适当的缓存策略
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/supabase/storage-api" title="supabase/storage-api Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/supabase/storage-api</a></p>

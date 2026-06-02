@@ -2,14 +2,14 @@
 image: library/xwiki
 source: https://xuanyuan.cloud/zh/r/library/xwiki
 canonical: https://xuanyuan.cloud/zh/r/library/xwiki
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/xwiki — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/xwiki "library/xwiki Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/xwiki
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/xwiki" title="library/xwiki Docker 镜像中文简介、标签列表与拉取命令">library/xwiki — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/xwiki" title="library/xwiki Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/xwiki</a></p>
 
 # XWiki Docker 镜像介绍
 
@@ -90,3 +90,7 @@ Dockerfile 仓库同样采用 [LGPL 2.1]([]) 许可证。
 部分自动检测到的额外许可证信息可在 [repo-info 仓库的 `xwiki/` 目录]([]) 中查看。  
 
 对于预构建镜像的使用，用户需自行确保其使用行为符合镜像中所有软件的相关许可证要求。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/xwiki" title="library/xwiki Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/xwiki</a></p>

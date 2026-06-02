@@ -2,14 +2,14 @@
 image: prom/pushgateway
 source: https://xuanyuan.cloud/zh/r/prom/pushgateway
 canonical: https://xuanyuan.cloud/zh/r/prom/pushgateway
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [prom/pushgateway — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/prom/pushgateway "prom/pushgateway Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/prom/pushgateway
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/pushgateway" title="prom/pushgateway Docker 镜像中文简介、标签列表与拉取命令">prom/pushgateway — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/prom/pushgateway" title="prom/pushgateway Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/pushgateway</a></p>
 
 # Prometheus Pushgateway 镜像文档
 
@@ -112,3 +112,7 @@ services:
     - job_name: 'pushgateway'
       static_configs:
         - targets: ['pushgateway:9091']  # Pushgateway 地址（容器名或 IP）
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/pushgateway" title="prom/pushgateway Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/prom/pushgateway</a></p>

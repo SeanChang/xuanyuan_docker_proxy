@@ -2,14 +2,14 @@
 image: mbentley/open-webui
 source: https://xuanyuan.cloud/zh/r/mbentley/open-webui
 canonical: https://xuanyuan.cloud/zh/r/mbentley/open-webui
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [mbentley/open-webui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mbentley/open-webui "mbentley/open-webui Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/mbentley/open-webui
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mbentley/open-webui" title="mbentley/open-webui Docker 镜像中文简介、标签列表与拉取命令">mbentley/open-webui — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/mbentley/open-webui" title="mbentley/open-webui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mbentley/open-webui</a></p>
 
 # mbentley/open-webui
 
@@ -58,3 +58,7 @@ docker run -d --name open-webui -p 8080:8080 mbentley/open-webui:0.8
 - 仅支持`linux/amd64`架构
 - 每日更新标签（如`0.8`、`0`）会自动指向对应系列的最新bugfix版本
 - 历史标签不再更新，如需使用旧版本需指定具体历史标签
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mbentley/open-webui" title="mbentley/open-webui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mbentley/open-webui</a></p>

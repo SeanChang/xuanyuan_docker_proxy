@@ -2,14 +2,14 @@
 image: gtstef/filebrowser
 source: https://xuanyuan.cloud/zh/r/gtstef/filebrowser
 canonical: https://xuanyuan.cloud/zh/r/gtstef/filebrowser
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [gtstef/filebrowser — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/gtstef/filebrowser "gtstef/filebrowser Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/gtstef/filebrowser
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/gtstef/filebrowser" title="gtstef/filebrowser Docker 镜像中文简介、标签列表与拉取命令">gtstef/filebrowser — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/gtstef/filebrowser" title="gtstef/filebrowser Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gtstef/filebrowser</a></p>
 
 <div align="center">
 
@@ -36,3 +36,7 @@ FileBrowser Quantum 是一款轻量化的网页版文件管理工具，通过浏
 
 ### 访问与使用  
 如需了解详细功能、部署教程或参与开发，可访问 [GitHub 项目主页]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/gtstef/filebrowser" title="gtstef/filebrowser Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/gtstef/filebrowser</a></p>

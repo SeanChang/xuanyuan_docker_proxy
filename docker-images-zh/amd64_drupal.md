@@ -2,14 +2,14 @@
 image: amd64/drupal
 source: https://xuanyuan.cloud/zh/r/amd64/drupal
 canonical: https://xuanyuan.cloud/zh/r/amd64/drupal
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [amd64/drupal — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/amd64/drupal "amd64/drupal Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/amd64/drupal
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/amd64/drupal" title="amd64/drupal Docker 镜像中文简介、标签列表与拉取命令">amd64/drupal — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/amd64/drupal" title="amd64/drupal Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/amd64/drupal</a></p>
 
 # Drupal Docker 镜像文档
 
@@ -232,3 +232,7 @@ RUN apt-get update && apt-get install -y \
 **维护者**：[Docker 社区](https://github.com/docker-library/drupal)（非 Drupal 社区或 Drupal 安全团队）  
 **获取帮助**：[Docker 社区 Slack](https://dockr.ly/comm-slack)、[Server Fault](https://serverfault.com/help/on-topic)、[Unix & Linux](https://unix.stackexchange.com/help/on-topic) 或 [Stack Overflow](https://stackoverflow.com/help/on-topic)  
 **提交问题**：[https://github.com/docker-library/drupal/issues](https://github.com/docker-library/drupal/issues?q=)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/amd64/drupal" title="amd64/drupal Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/amd64/drupal</a></p>

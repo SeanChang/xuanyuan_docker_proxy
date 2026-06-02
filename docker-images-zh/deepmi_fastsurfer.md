@@ -2,14 +2,14 @@
 image: deepmi/fastsurfer
 source: https://xuanyuan.cloud/zh/r/deepmi/fastsurfer
 canonical: https://xuanyuan.cloud/zh/r/deepmi/fastsurfer
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [deepmi/fastsurfer — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/deepmi/fastsurfer "deepmi/fastsurfer Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/deepmi/fastsurfer
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/deepmi/fastsurfer" title="deepmi/fastsurfer Docker 镜像中文简介、标签列表与拉取命令">deepmi/fastsurfer — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/deepmi/fastsurfer" title="deepmi/fastsurfer Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/deepmi/fastsurfer</a></p>
 
 # FastSurfer
 
@@ -131,3 +131,7 @@ Apache License v2
 - Henschel L, Kügler D, Reuter M. FastSurferVINN: Building resolution-independence into deep learning segmentation methods - A solution for HighRes brain MRI. NeuroImage 251 (2022), 118933. https://doi.org/10.1016/j.neuroimage.2022.118933
 - Faber J*, Kuegler D*, Bahrami E*, et al. CerebNet: A fast and reliable deep-learning pipeline for detailed cerebellum sub-segmentation. NeuroImage 264 (2022), 119703. https://doi.org/10.1016/j.neuroimage.2022.119703
 - Estrada S, Kügler D, Bahrami E, et al. FastSurfer-HypVINN: Automated sub-segmentation of the hypothalamus and adjacent structures on high-resolutional brain MRI. Imaging Neuroscience (2023), 1:1-32. https://doi.org/10.1162/imag_a_00034
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/deepmi/fastsurfer" title="deepmi/fastsurfer Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/deepmi/fastsurfer</a></p>

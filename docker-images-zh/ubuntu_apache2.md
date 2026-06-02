@@ -2,14 +2,14 @@
 image: ubuntu/apache2
 source: https://xuanyuan.cloud/zh/r/ubuntu/apache2
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/apache2
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ubuntu/apache2 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ubuntu/apache2 "ubuntu/apache2 Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ubuntu/apache2
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/apache2" title="ubuntu/apache2 Docker 镜像中文简介、标签列表与拉取命令">ubuntu/apache2 — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/apache2" title="ubuntu/apache2 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/apache2</a></p>
 
 # Apache2 | Ubuntu Docker镜像文档
 
@@ -147,3 +147,7 @@ docker exec -it apache2-container /bin/bash
 | ~~2.4-21.10~~ | Ubuntu 21.10上的Apache2 2.4.48 | 2022年7月 | 2.4-22.04_beta |
 | ~~2.4-21.04~~ | Ubuntu 21.04上的Apache2 2.4.46 | 2022年1月 | ~~2.4-21.10~~ |
 | _`track`_ | | | |
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/apache2" title="ubuntu/apache2 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/apache2</a></p>

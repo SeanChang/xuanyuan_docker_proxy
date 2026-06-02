@@ -2,14 +2,14 @@
 image: zabbix/zabbix-build-base
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-build-base
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-build-base
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [zabbix/zabbix-build-base — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zabbix/zabbix-build-base "zabbix/zabbix-build-base Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/zabbix/zabbix-build-base
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-build-base" title="zabbix/zabbix-build-base Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-build-base — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-build-base" title="zabbix/zabbix-build-base Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-build-base</a></p>
 
 ![logo](https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png)
 
@@ -88,3 +88,7 @@ Oracle Linux是基于GNU通用公共许可证（GPLv2）发布的开源操作系
 从Zabbix 7.0版本开始，所有后续Zabbix版本均采用GNU Affero通用公共许可证第3版（AGPLv3）发布。您可以修改相关版本并根据自由软件基金会发布的AGPLv3条款传播此类修改版本。有关更多详细信息，包括关于AGPLv3的常见问题解答，请参阅自由软件基金会的[通用FAQ](http://www.fsf.org/licenses/gpl-faq.html)。
 
 Zabbix是开源软件，但如果您在商业环境中使用Zabbix，我们恳请您通过购买某种级别的技术支持来支持Zabbix的开发。所有之前的Zabbix软件版本（直至6.4）均采用GNU通用公共许可证第2版（GPLv2）发布。GPLv2和AGPLv3的正式条款可在http://www.fsf.org/licenses/查阅。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-build-base" title="zabbix/zabbix-build-base Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-build-base</a></p>

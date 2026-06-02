@@ -2,14 +2,14 @@
 image: zabbix/zabbix-proxy-sqlite3
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [zabbix/zabbix-proxy-sqlite3 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3 "zabbix/zabbix-proxy-sqlite3 Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3" title="zabbix/zabbix-proxy-sqlite3 Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-proxy-sqlite3 — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3" title="zabbix/zabbix-proxy-sqlite3 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3</a></p>
 
 ![logo]()
 
@@ -280,3 +280,7 @@ ZBX_STARTSNMPPOLLERS=1（7.0.0+ 支持）
 - Zabbix 7.0 及以上版本采用 GNU Affero 通用公共许可证第 3 版（AGPLv3）；  
 - 6.4 及以下版本采用 GNU 通用公共许可证第 2 版（GPLv2）。  
 具体条款可参考 [自由软件基金会文档]([])。商业环境中使用 Zabbix 建议购买技术支持以支持项目开发。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3" title="zabbix/zabbix-proxy-sqlite3 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3</a></p>

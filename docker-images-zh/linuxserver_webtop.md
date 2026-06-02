@@ -2,14 +2,14 @@
 image: linuxserver/webtop
 source: https://xuanyuan.cloud/zh/r/linuxserver/webtop
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/webtop
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [linuxserver/webtop — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/webtop "linuxserver/webtop Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/linuxserver/webtop
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/webtop" title="linuxserver/webtop Docker 镜像中文简介、标签列表与拉取命令">linuxserver/webtop — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/webtop" title="linuxserver/webtop Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/webtop</a></p>
 
 # LinuxServer.io Webtop 容器介绍
 
@@ -278,3 +278,7 @@ docker rm webtop
 
 
 通过以上步骤，您可以快速部署一个功能完整的 Web 桌面环境，根据需求选择不同的系统基础和桌面环境，并通过浏览器随时随地访问。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/webtop" title="linuxserver/webtop Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/webtop</a></p>

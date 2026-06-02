@@ -2,14 +2,14 @@
 image: linuxserver/heimdall
 source: https://xuanyuan.cloud/zh/r/linuxserver/heimdall
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/heimdall
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [linuxserver/heimdall — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/heimdall "linuxserver/heimdall Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/linuxserver/heimdall
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/heimdall" title="linuxserver/heimdall Docker 镜像中文简介、标签列表与拉取命令">linuxserver/heimdall — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/heimdall" title="linuxserver/heimdall Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/heimdall</a></p>
 
 # LinuxServer.io 容器介绍：Heimdall
 
@@ -249,3 +249,7 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 - **2023.05.25**：基于 Alpine 3.18 重构，移除 armhf 支持。  
 - **2022.11.14**：基于 Alpine 3.15 重构，使用 PHP 8，调整 nginx 配置结构。  
 - **2018.02.12**：初始版本发布。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/heimdall" title="linuxserver/heimdall Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/heimdall</a></p>

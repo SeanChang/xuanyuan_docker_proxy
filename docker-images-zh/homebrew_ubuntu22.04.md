@@ -2,14 +2,14 @@
 image: homebrew/ubuntu22.04
 source: https://xuanyuan.cloud/zh/r/homebrew/ubuntu22.04
 canonical: https://xuanyuan.cloud/zh/r/homebrew/ubuntu22.04
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [homebrew/ubuntu22.04 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/homebrew/ubuntu22.04 "homebrew/ubuntu22.04 Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/homebrew/ubuntu22.04
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/homebrew/ubuntu22.04" title="homebrew/ubuntu22.04 Docker 镜像中文简介、标签列表与拉取命令">homebrew/ubuntu22.04 — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/homebrew/ubuntu22.04" title="homebrew/ubuntu22.04 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/homebrew/ubuntu22.04</a></p>
 
 ## Homebrew/ubuntu22.04 镜像介绍
 
@@ -35,3 +35,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 
 ### 许可证  
 Homebrew 基于 [BSD 2 条款“简化”许可证]([]) 授权。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/homebrew/ubuntu22.04" title="homebrew/ubuntu22.04 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/homebrew/ubuntu22.04</a></p>

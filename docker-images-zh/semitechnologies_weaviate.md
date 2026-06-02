@@ -2,14 +2,14 @@
 image: semitechnologies/weaviate
 source: https://xuanyuan.cloud/zh/r/semitechnologies/weaviate
 canonical: https://xuanyuan.cloud/zh/r/semitechnologies/weaviate
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [semitechnologies/weaviate — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/semitechnologies/weaviate "semitechnologies/weaviate Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/semitechnologies/weaviate
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/semitechnologies/weaviate" title="semitechnologies/weaviate Docker 镜像中文简介、标签列表与拉取命令">semitechnologies/weaviate — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/semitechnologies/weaviate" title="semitechnologies/weaviate Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/semitechnologies/weaviate</a></p>
 
 # Weaviate：新一代软件的AI原生数据库
 
@@ -116,3 +116,7 @@ Weaviate重视社区交流，欢迎通过以下渠道连接：
 - [X（）]()  
 
 订阅[新闻通讯]([])，获取版本更新、线上活动等信息。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/semitechnologies/weaviate" title="semitechnologies/weaviate Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/semitechnologies/weaviate</a></p>

@@ -2,14 +2,14 @@
 image: dyrnq/etcd
 source: https://xuanyuan.cloud/zh/r/dyrnq/etcd
 canonical: https://xuanyuan.cloud/zh/r/dyrnq/etcd
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [dyrnq/etcd — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/dyrnq/etcd "dyrnq/etcd Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/dyrnq/etcd
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/dyrnq/etcd" title="dyrnq/etcd Docker 镜像中文简介、标签列表与拉取命令">dyrnq/etcd — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/dyrnq/etcd" title="dyrnq/etcd Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dyrnq/etcd</a></p>
 
 # registry.k8s.io/etcd 镜像文档
 
@@ -276,3 +276,7 @@ services:
       - ETCD_NAME=etcd-node-2
       - ETCD_DATA_DIR=/var/lib/etcd
       - ETCD_LISTEN_CLIENT_URLS=http://0.0.0.0:237
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/dyrnq/etcd" title="dyrnq/etcd Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/dyrnq/etcd</a></p>

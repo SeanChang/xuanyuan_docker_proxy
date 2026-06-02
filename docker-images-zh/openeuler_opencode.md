@@ -2,14 +2,14 @@
 image: openeuler/opencode
 source: https://xuanyuan.cloud/zh/r/openeuler/opencode
 canonical: https://xuanyuan.cloud/zh/r/openeuler/opencode
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [openeuler/opencode — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/openeuler/opencode "openeuler/opencode Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/openeuler/opencode
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/opencode" title="openeuler/opencode Docker 镜像中文简介、标签列表与拉取命令">openeuler/opencode — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/openeuler/opencode" title="openeuler/opencode Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/opencode</a></p>
 
 # opencode Docker镜像文档
 
@@ -49,3 +49,7 @@ docker run \
 ### 获取帮助
 
 如在使用过程中遇到问题，可通过[openEuler infrastructure SIG](https://gitcode.com/openeuler/infrastructure)获取支持。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/opencode" title="openeuler/opencode Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/opencode</a></p>

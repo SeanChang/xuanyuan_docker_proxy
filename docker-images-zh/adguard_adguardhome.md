@@ -2,14 +2,14 @@
 image: adguard/adguardhome
 source: https://xuanyuan.cloud/zh/r/adguard/adguardhome
 canonical: https://xuanyuan.cloud/zh/r/adguard/adguardhome
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [adguard/adguardhome — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/adguard/adguardhome "adguard/adguardhome Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/adguard/adguardhome
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/adguard/adguardhome" title="adguard/adguardhome Docker 镜像中文简介、标签列表与拉取命令">adguard/adguardhome — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/adguard/adguardhome" title="adguard/adguardhome Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/adguard/adguardhome</a></p>
 
 # AdGuard Home - Docker部署指南
 
@@ -125,3 +125,7 @@ docker run --name adguardhome --network host ...（其他参数不变）
    ```sh
    systemctl reload-or-restart systemd-resolved
    ```
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/adguard/adguardhome" title="adguard/adguardhome Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/adguard/adguardhome</a></p>

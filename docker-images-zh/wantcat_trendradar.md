@@ -2,14 +2,14 @@
 image: wantcat/trendradar
 source: https://xuanyuan.cloud/zh/r/wantcat/trendradar
 canonical: https://xuanyuan.cloud/zh/r/wantcat/trendradar
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [wantcat/trendradar — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/wantcat/trendradar "wantcat/trendradar Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/wantcat/trendradar
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/wantcat/trendradar" title="wantcat/trendradar Docker 镜像中文简介、标签列表与拉取命令">wantcat/trendradar — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/wantcat/trendradar" title="wantcat/trendradar Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/wantcat/trendradar</a></p>
 
 # TrendRadar 多平台热点聚合助手
 
@@ -123,3 +123,7 @@ docker run -d \
 ```
 
 更多高级配置（推送通道、关键词、平台列表、MCP 接入等）请参考项目源码与文档，在 `config/config.yaml`、`frequency_words.txt` 等文件中按需调整。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/wantcat/trendradar" title="wantcat/trendradar Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/wantcat/trendradar</a></p>

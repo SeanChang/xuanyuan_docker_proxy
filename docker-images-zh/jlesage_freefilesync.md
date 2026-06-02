@@ -2,14 +2,14 @@
 image: jlesage/freefilesync
 source: https://xuanyuan.cloud/zh/r/jlesage/freefilesync
 canonical: https://xuanyuan.cloud/zh/r/jlesage/freefilesync
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [jlesage/freefilesync — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jlesage/freefilesync "jlesage/freefilesync Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/jlesage/freefilesync
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/jlesage/freefilesync" title="jlesage/freefilesync Docker 镜像中文简介、标签列表与拉取命令">jlesage/freefilesync — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/jlesage/freefilesync" title="jlesage/freefilesync Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jlesage/freefilesync</a></p>
 
 # FreeFileSync Docker 镜像
 
@@ -143,3 +143,7 @@ docker run -d \
 遇到容器问题或有疑问？请 [创建新issue](https://github.com/jlesage/docker-freefilesync/issues)。
 
 其他 Docker 化应用，请访问 https://jlesage.github.io/docker-apps。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/jlesage/freefilesync" title="jlesage/freefilesync Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/jlesage/freefilesync</a></p>

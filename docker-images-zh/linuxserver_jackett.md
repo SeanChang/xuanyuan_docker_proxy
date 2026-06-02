@@ -2,14 +2,14 @@
 image: linuxserver/jackett
 source: https://xuanyuan.cloud/zh/r/linuxserver/jackett
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/jackett
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [linuxserver/jackett — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/jackett "linuxserver/jackett Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/linuxserver/jackett
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/jackett" title="linuxserver/jackett Docker 镜像中文简介、标签列表与拉取命令">linuxserver/jackett — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/jackett" title="linuxserver/jackett Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/jackett</a></p>
 
 # LinuxServer.io Jackett 容器介绍
 
@@ -236,3 +236,7 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 - [论坛]([])：社区讨论与问题反馈。  
 - [GitHub]([])：源码仓库。  
 - [赞助支持]([])：欢迎通过捐赠或贡献支持开发。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/jackett" title="linuxserver/jackett Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/jackett</a></p>

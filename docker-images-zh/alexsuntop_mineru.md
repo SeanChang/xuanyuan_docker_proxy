@@ -2,14 +2,14 @@
 image: alexsuntop/mineru
 source: https://xuanyuan.cloud/zh/r/alexsuntop/mineru
 canonical: https://xuanyuan.cloud/zh/r/alexsuntop/mineru
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [alexsuntop/mineru — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alexsuntop/mineru "alexsuntop/mineru Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/alexsuntop/mineru
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/alexsuntop/mineru" title="alexsuntop/mineru Docker 镜像中文简介、标签列表与拉取命令">alexsuntop/mineru — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/alexsuntop/mineru" title="alexsuntop/mineru Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alexsuntop/mineru</a></p>
 
 # MinerU 镜像文档
 
@@ -132,3 +132,7 @@ mineru -p demo.pdf -o ./output -b vlm-http-client -u http://localhost:30000
 | vLLM后端服务器     | 30000    | 30000          | vLLM服务通信端口    |
 | 文档解析API服务    | 8000     | 8000           | API接口访问端口     |
 | Gradio WebUI       | 7860     | 7860           | Web界面访问端口     |
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/alexsuntop/mineru" title="alexsuntop/mineru Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/alexsuntop/mineru</a></p>

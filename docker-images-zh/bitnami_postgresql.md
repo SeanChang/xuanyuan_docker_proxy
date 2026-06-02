@@ -2,14 +2,14 @@
 image: bitnami/postgresql
 source: https://xuanyuan.cloud/zh/r/bitnami/postgresql
 canonical: https://xuanyuan.cloud/zh/r/bitnami/postgresql
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnami/postgresql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/postgresql "bitnami/postgresql Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnami/postgresql
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql" title="bitnami/postgresql Docker 镜像中文简介、标签列表与拉取命令">bitnami/postgresql — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql" title="bitnami/postgresql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/postgresql</a></p>
 
 # Bitnami PostgreSQL 软件包
 
@@ -164,3 +164,7 @@ docker run --name postgresql bitnami/postgresql:latest
 | `POSTGRESQL_PGBACKREST_CONF_FILE`            | pgbackrest 配置文件                                                | `${POSTGRESQL_DATA_DIR}/pgbackrest.conf`      |
 | `POSTGRESQL_FIRST_BOOT`                      | 首次启动标记（repmgr 需用）                                        | `yes`                                         |
 | `NSS_WRAPPER_LIB`                            | NSS 包装库路径（repmgr 需用）                                      | `/opt/bitnami/common/lib/libnss_wrapper.so`   |
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql" title="bitnami/postgresql Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/postgresql</a></p>

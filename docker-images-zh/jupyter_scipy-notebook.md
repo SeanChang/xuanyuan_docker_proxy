@@ -2,14 +2,14 @@
 image: jupyter/scipy-notebook
 source: https://xuanyuan.cloud/zh/r/jupyter/scipy-notebook
 canonical: https://xuanyuan.cloud/zh/r/jupyter/scipy-notebook
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [jupyter/scipy-notebook — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jupyter/scipy-notebook "jupyter/scipy-notebook Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/jupyter/scipy-notebook
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/jupyter/scipy-notebook" title="jupyter/scipy-notebook Docker 镜像中文简介、标签列表与拉取命令">jupyter/scipy-notebook — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/jupyter/scipy-notebook" title="jupyter/scipy-notebook Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jupyter/scipy-notebook</a></p>
 
 # Jupyter Notebook科学Python栈
 
@@ -25,3 +25,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 
 - [ReadTheDocs上的Jupyter Docker Stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html)
 - [选择镜像 :: 核心栈 :: jupyter/scipy-notebook](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-scipy-notebook)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/jupyter/scipy-notebook" title="jupyter/scipy-notebook Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/jupyter/scipy-notebook</a></p>

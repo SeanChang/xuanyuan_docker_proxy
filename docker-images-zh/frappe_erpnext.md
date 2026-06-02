@@ -2,14 +2,14 @@
 image: frappe/erpnext
 source: https://xuanyuan.cloud/zh/r/frappe/erpnext
 canonical: https://xuanyuan.cloud/zh/r/frappe/erpnext
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [frappe/erpnext — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/frappe/erpnext "frappe/erpnext Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/frappe/erpnext
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/frappe/erpnext" title="frappe/erpnext Docker 镜像中文简介、标签列表与拉取命令">frappe/erpnext — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/frappe/erpnext" title="frappe/erpnext Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/frappe/erpnext</a></p>
 
 # ERPNext 介绍
 
@@ -39,3 +39,7 @@ ERPNext 覆盖了企业运营的多个关键环节，主要功能模块包括：
 ## 总结
 
 对于希望优化业务流程、提升管理效率，同时控制软件投入成本的企业而言，ERPNext 是一个值得考虑的选择。你可以直接下载使用，或根据业务需求进行二次开发。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/frappe/erpnext" title="frappe/erpnext Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/frappe/erpnext</a></p>

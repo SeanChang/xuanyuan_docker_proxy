@@ -2,14 +2,14 @@
 image: okteto/maven
 source: https://xuanyuan.cloud/zh/r/okteto/maven
 canonical: https://xuanyuan.cloud/zh/r/okteto/maven
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [okteto/maven — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/okteto/maven "okteto/maven Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/okteto/maven
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/okteto/maven" title="okteto/maven Docker 镜像中文简介、标签列表与拉取命令">okteto/maven — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/okteto/maven" title="okteto/maven Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/okteto/maven</a></p>
 
 # Java Maven开发环境镜像（适用于Okteto CLI）
 
@@ -62,3 +62,7 @@ mvn spring-boot:run
 ### 注意事项
 - 实际使用时需将配置文件中的`[镜像名称]`替换为该镜像的完整仓库路径（如`okteto/java-maven:latest`，具体以镜像发布地址为准）
 - 可根据项目需求调整`okteto.yml`中的同步规则、环境变量等配置（参考[Okteto配置文档](https://www.okteto.com/docs/reference/okteto-yml/)）
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/okteto/maven" title="okteto/maven Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/okteto/maven</a></p>

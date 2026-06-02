@@ -2,14 +2,14 @@
 image: gogs/gogs
 source: https://xuanyuan.cloud/zh/r/gogs/gogs
 canonical: https://xuanyuan.cloud/zh/r/gogs/gogs
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [gogs/gogs — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/gogs/gogs "gogs/gogs Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/gogs/gogs
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/gogs/gogs" title="gogs/gogs Docker 镜像中文简介、标签列表与拉取命令">gogs/gogs — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/gogs/gogs" title="gogs/gogs Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gogs/gogs</a></p>
 
 # Docker 部署 Gogs
 
@@ -131,3 +131,7 @@ $ docker run --name=gogs -p 10022:22 -p 10880:3000 -v gogs-data:/data gogs/gogs
 
 ## 参考链接
 - [在 Docker 内的 Gogs 与本地系统共享 22 端口的方法]([])
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/gogs/gogs" title="gogs/gogs Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/gogs/gogs</a></p>

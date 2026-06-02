@@ -2,14 +2,14 @@
 image: onlyoffice/documentserver
 source: https://xuanyuan.cloud/zh/r/onlyoffice/documentserver
 canonical: https://xuanyuan.cloud/zh/r/onlyoffice/documentserver
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [onlyoffice/documentserver — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/onlyoffice/documentserver "onlyoffice/documentserver Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/onlyoffice/documentserver
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/onlyoffice/documentserver" title="onlyoffice/documentserver Docker 镜像中文简介、标签列表与拉取命令">onlyoffice/documentserver — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/onlyoffice/documentserver" title="onlyoffice/documentserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/onlyoffice/documentserver</a></p>
 
 # ONLYOFFICE Document Server Docker 镜像文档
 
@@ -250,3 +250,7 @@ ONLYOFFICE 依赖 Mono（推荐版本 3.12.1 或更早），部分 Linux 内核�
 ## 用户反馈与支持
 
 如遇问题或有疑问，请通过 [dev.onlyoffice.org](http://dev.onlyoffice.org) 联系我们。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/onlyoffice/documentserver" title="onlyoffice/documentserver Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/onlyoffice/documentserver</a></p>

@@ -2,14 +2,14 @@
 image: instructure/libreoffice
 source: https://xuanyuan.cloud/zh/r/instructure/libreoffice
 canonical: https://xuanyuan.cloud/zh/r/instructure/libreoffice
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [instructure/libreoffice — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/instructure/libreoffice "instructure/libreoffice Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/instructure/libreoffice
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/instructure/libreoffice" title="instructure/libreoffice Docker 镜像中文简介、标签列表与拉取命令">instructure/libreoffice — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/instructure/libreoffice" title="instructure/libreoffice Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/instructure/libreoffice</a></p>
 
 # Instructure 开源基础 Docker 镜像
 
@@ -167,3 +167,7 @@ services:
 执行批量构建：
 ```bash
 docker-compose build
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/instructure/libreoffice" title="instructure/libreoffice Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/instructure/libreoffice</a></p>

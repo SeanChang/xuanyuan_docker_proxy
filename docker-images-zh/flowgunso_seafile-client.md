@@ -2,14 +2,14 @@
 image: flowgunso/seafile-client
 source: https://xuanyuan.cloud/zh/r/flowgunso/seafile-client
 canonical: https://xuanyuan.cloud/zh/r/flowgunso/seafile-client
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [flowgunso/seafile-client — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/flowgunso/seafile-client "flowgunso/seafile-client Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/flowgunso/seafile-client
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/flowgunso/seafile-client" title="flowgunso/seafile-client Docker 镜像中文简介、标签列表与拉取命令">flowgunso/seafile-client — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/flowgunso/seafile-client" title="flowgunso/seafile-client Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/flowgunso/seafile-client</a></p>
 
 # Seafile Client Docker 镜像文档
 
@@ -201,3 +201,7 @@ volumes:
 ![Pipeline status](https://gitlab.com/flrnnc-oss/docker-seafile-client/badges/3.7.0/pipeline.svg)
 ![Docker image size](https://user-content.gitlab-static.net/c92776ecf4007e8ac10063419254991f8217f433/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f696d6167652d73697a652f666c726e6e632f73656166696c652d636c69656e742f6c61746573743f6c6f676f3d646f636b6572266c6162656c3d496d61676525323073697a6526636f6c6f723d253233303737386238)
 ![Docker pulls](https://user-content.gitlab-static.net/1b649e78c3fa4ee4cfad1ade55f56a13a6106938/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f70756c6c732f666c726e6e632f73656166696c652d636c69656e743
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/flowgunso/seafile-client" title="flowgunso/seafile-client Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/flowgunso/seafile-client</a></p>

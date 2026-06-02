@@ -2,14 +2,14 @@
 image: alpine/k8s
 source: https://xuanyuan.cloud/zh/r/alpine/k8s
 canonical: https://xuanyuan.cloud/zh/r/alpine/k8s
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [alpine/k8s — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alpine/k8s "alpine/k8s Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/alpine/k8s
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/k8s" title="alpine/k8s Docker 镜像中文简介、标签列表与拉取命令">alpine/k8s — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/alpine/k8s" title="alpine/k8s Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpine/k8s</a></p>
 
 # 多合一Kubernetes工具镜像
 
@@ -151,3 +151,7 @@ bash ./build.sh
 - **GitHub仓库**：https://github.com/alpine-docker/k8s
 - **Docker Hub镜像**：https://hub.docker.com/r/alpine/k8s
 - **构建日志**：https://app.circleci.com/pipelines/github/alpine-docker/k8s
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/k8s" title="alpine/k8s Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/alpine/k8s</a></p>

@@ -2,14 +2,14 @@
 image: victoriametrics/operator
 source: https://xuanyuan.cloud/zh/r/victoriametrics/operator
 canonical: https://xuanyuan.cloud/zh/r/victoriametrics/operator
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [victoriametrics/operator — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/victoriametrics/operator "victoriametrics/operator Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/victoriametrics/operator
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/victoriametrics/operator" title="victoriametrics/operator Docker 镜像中文简介、标签列表与拉取命令">victoriametrics/operator — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/victoriametrics/operator" title="victoriametrics/operator Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/victoriametrics/operator</a></p>
 
 # VictoriaMetrics Operator 中文技术文档
 
@@ -205,3 +205,7 @@ spec:
 - [VictoriaMetrics Operator GitHub](https://github.com/VictoriaMetrics/VictoriaMetrics/tree/master/app/vmoperator)
 - [Helm Charts 仓库](https://victoriametrics.github.io/helm-charts/)
 - [CRD API 文档](https://docs.victoriametrics.com/operator/api.html)
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/victoriametrics/operator" title="victoriametrics/operator Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/victoriametrics/operator</a></p>

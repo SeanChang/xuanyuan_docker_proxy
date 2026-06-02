@@ -2,14 +2,14 @@
 image: portainer/pause
 source: https://xuanyuan.cloud/zh/r/portainer/pause
 canonical: https://xuanyuan.cloud/zh/r/portainer/pause
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [portainer/pause — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/portainer/pause "portainer/pause Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/portainer/pause
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/portainer/pause" title="portainer/pause Docker 镜像中文简介、标签列表与拉取命令">portainer/pause — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/portainer/pause" title="portainer/pause Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/portainer/pause</a></p>
 
 # Kubernetes Pause容器
 
@@ -107,3 +107,7 @@ podInfraContainerImage: "registry.k8s.io/pause:3.9-arm32v7"
 - **ARM32 v7**：适用于ARMv7架构设备（如树莓派2/3、主流ARM嵌入式处理器）。  
 
 > 注：完整架构列表及最新版本可参考[Kubernetes官方镜像仓库](https://console.cloud.google.com/gcr/images/k8s-artifacts-prod/us/pause)。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/portainer/pause" title="portainer/pause Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/portainer/pause</a></p>

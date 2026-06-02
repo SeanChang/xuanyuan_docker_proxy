@@ -2,14 +2,14 @@
 image: ddev/mysql
 source: https://xuanyuan.cloud/zh/r/ddev/mysql
 canonical: https://xuanyuan.cloud/zh/r/ddev/mysql
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ddev/mysql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ddev/mysql "ddev/mysql Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ddev/mysql
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ddev/mysql" title="ddev/mysql Docker 镜像中文简介、标签列表与拉取命令">ddev/mysql — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ddev/mysql" title="ddev/mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ddev/mysql</a></p>
 
 # ddev/mysql-arm64-images Docker镜像 (ddev/ddev-mysql)
 
@@ -60,3 +60,7 @@ https://github.com/ddev/ddev/issues
 与所有Docker镜像一样，这些镜像可能还包含其他软件，这些软件可能采用其他许可（例如基础发行版中的Bash等，以及包含的主要软件的任何直接或间接依赖项）。
 
 对于任何预构建镜像的使用，镜像用户有责任确保对本镜像的任何使用均符合其中包含的所有软件的相关许可。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ddev/mysql" title="ddev/mysql Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ddev/mysql</a></p>

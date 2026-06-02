@@ -2,14 +2,14 @@
 image: library/php
 source: https://xuanyuan.cloud/zh/r/library/php
 canonical: https://xuanyuan.cloud/zh/r/library/php
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/php — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/php "library/php Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/php
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/php" title="library/php Docker 镜像中文简介、标签列表与拉取命令">library/php — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/php" title="library/php Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/php</a></p>
 
 # PHP Docker 镜像使用指南
 
@@ -175,3 +175,7 @@ COPY src/ /var/www/html/
 
 ## 许可证
 PHP 软件许可证见 [官方说明]([])。镜像可能包含其他软件（如 Bash），其许可证信息可参考 [repo-info 仓库]([])。使用前请确保合规。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/php" title="library/php Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/php</a></p>

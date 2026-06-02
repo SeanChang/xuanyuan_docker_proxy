@@ -2,14 +2,14 @@
 image: ubuntu/bind9
 source: https://xuanyuan.cloud/zh/r/ubuntu/bind9
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/bind9
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ubuntu/bind9 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ubuntu/bind9 "ubuntu/bind9 Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ubuntu/bind9
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/bind9" title="ubuntu/bind9 Docker 镜像中文简介、标签列表与拉取命令">ubuntu/bind9 — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/bind9" title="ubuntu/bind9 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/bind9</a></p>
 
 # Bind9 Docker镜像（基于Ubuntu）
 
@@ -133,3 +133,7 @@ docker images --no-trunc --quiet ubuntu/bind9:<tag>
 |---------------------|---------------------------------------|--------------|-------------------|
 | ~~9.16-21.10~~      | Bind9 9.16.1 on Ubuntu 21.10          | 2022-07      | 9.18-22.04_beta   |
 | _`track`_           | -                                     | -            | -                 |
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/bind9" title="ubuntu/bind9 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/bind9</a></p>

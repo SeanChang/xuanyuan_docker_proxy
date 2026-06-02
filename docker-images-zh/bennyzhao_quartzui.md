@@ -2,14 +2,14 @@
 image: bennyzhao/quartzui
 source: https://xuanyuan.cloud/zh/r/bennyzhao/quartzui
 canonical: https://xuanyuan.cloud/zh/r/bennyzhao/quartzui
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bennyzhao/quartzui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bennyzhao/quartzui "bennyzhao/quartzui Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bennyzhao/quartzui
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bennyzhao/quartzui" title="bennyzhao/quartzui Docker 镜像中文简介、标签列表与拉取命令">bennyzhao/quartzui — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bennyzhao/quartzui" title="bennyzhao/quartzui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bennyzhao/quartzui</a></p>
 
 ## quartzui 使用介绍
 
@@ -36,3 +36,7 @@ docker run -v /fileData/quartzuifile:/app/File --restart=unless-stopped --privil
 1. **浏览器访问**：在浏览器中输入 `[] 即可打开 quartzui 界面。  
 2. **本地测试**：若需验证服务是否正常启动，可在主机执行命令 `curl 127.0.0.1:5088`，返回响应即表示启动成功。  
 3. **防火墙检查**：确保主机防火墙已开放 5088 端口，避免因端口限制导致无法访问。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bennyzhao/quartzui" title="bennyzhao/quartzui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bennyzhao/quartzui</a></p>

@@ -2,14 +2,14 @@
 image: igwn/builder
 source: https://xuanyuan.cloud/zh/r/igwn/builder
 canonical: https://xuanyuan.cloud/zh/r/igwn/builder
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [igwn/builder — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/igwn/builder "igwn/builder Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/igwn/builder
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/igwn/builder" title="igwn/builder Docker 镜像中文简介、标签列表与拉取命令">igwn/builder — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/igwn/builder" title="igwn/builder Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/igwn/builder</a></p>
 
 # IGWN 持续集成作业构建环境镜像文档
 
@@ -155,3 +155,7 @@ docker run --rm \
 - **权限管理**：容器默认以非root用户（`igwn-ci`，UID=1000）运行，挂载宿主机目录时需确保权限匹配（可通过`-u $(id -u):$(id -g)`指定用户ID）。
 - **镜像更新**：定期拉取最新镜像以获取依赖更新和安全补丁（推荐在CI配置中启用`latest`标签或定期更新版本号）。
 - **资源限制**：CI作业可能消耗大量CPU/内存，建议通过`--cpus`、`--memory`参数限制容器资源（如`--cpus 4 --memory 8g`）。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/igwn/builder" title="igwn/builder Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/igwn/builder</a></p>

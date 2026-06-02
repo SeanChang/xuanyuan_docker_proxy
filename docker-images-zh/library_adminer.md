@@ -2,14 +2,14 @@
 image: library/adminer
 source: https://xuanyuan.cloud/zh/r/library/adminer
 canonical: https://xuanyuan.cloud/zh/r/library/adminer
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/adminer — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/adminer "library/adminer Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/adminer
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/adminer" title="library/adminer Docker 镜像中文简介、标签列表与拉取命令">library/adminer — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/adminer" title="library/adminer Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/adminer</a></p>
 
 # Adminer Docker镜像使用指南
 
@@ -183,3 +183,7 @@ docker run -p 8080:8080 -e ADMINER_DEFAULT_SERVER=mysql adminer
 与所有Docker镜像一样，可能包含其他软件（如Bash等基础系统组件），其许可协议需另行确认。部分自动检测的许可信息可在 [repo-info 仓库的 `adminer/` 目录]([]) 查看。  
 
 使用前，用户需确保遵守所有包含软件的相关许可协议。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/adminer" title="library/adminer Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/adminer</a></p>

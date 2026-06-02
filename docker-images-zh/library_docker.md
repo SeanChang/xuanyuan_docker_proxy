@@ -2,14 +2,14 @@
 image: library/docker
 source: https://xuanyuan.cloud/zh/r/library/docker
 canonical: https://xuanyuan.cloud/zh/r/library/docker
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/docker — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/docker "library/docker Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/docker
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/docker" title="library/docker Docker 镜像中文简介、标签列表与拉取命令">library/docker — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/docker" title="library/docker Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/docker</a></p>
 
 # Docker 镜像使用指南
 
@@ -213,3 +213,7 @@ Windows 不支持嵌套容器，此变体仅包含客户端（需连接现有 Do
 自动检测的附加许可信息可参见 [repo-info 仓库的 `docker/` 目录]([])。  
 
 使用前，请确保遵守所有包含软件的许可协议。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/docker" title="library/docker Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/docker</a></p>

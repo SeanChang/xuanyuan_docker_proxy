@@ -2,14 +2,14 @@
 image: library/gcc
 source: https://xuanyuan.cloud/zh/r/library/gcc
 canonical: https://xuanyuan.cloud/zh/r/library/gcc
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [library/gcc — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/gcc "library/gcc Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/library/gcc
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/gcc" title="library/gcc Docker 镜像中文简介、标签列表与拉取命令">library/gcc — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/library/gcc" title="library/gcc Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/gcc</a></p>
 
 # GCC Docker镜像使用指南
 
@@ -147,3 +147,7 @@ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gcc:4.9 make
 Docker镜像可能包含基础系统（如Bash等）及依赖软件，这些软件可能使用其他许可证。部分自动检测到的许可证信息可参考：[repo-info仓库`gcc/`目录]([])。  
 
 使用前请确保遵守镜像中所有软件的相关许可证要求，用户需自行承担合规责任。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/gcc" title="library/gcc Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/gcc</a></p>

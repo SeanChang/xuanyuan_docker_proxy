@@ -2,14 +2,14 @@
 image: kubesphere/ks-apiserver
 source: https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver
 canonical: https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [kubesphere/ks-apiserver — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver "kubesphere/ks-apiserver Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver" title="kubesphere/ks-apiserver Docker 镜像中文简介、标签列表与拉取命令">kubesphere/ks-apiserver — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver" title="kubesphere/ks-apiserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver</a></p>
 
 # KubeSphere API Server 介绍
 
@@ -92,3 +92,7 @@ curl -X POST "https://<kubeSphere-api-server-ip>:<port>/apis/apps/v1/namespaces/
 
 ## 总结  
 KubeSphere API Server 是连接用户与平台功能的“桥梁”，通过标准化的 API 接口简化了集群管理、应用部署与运维操作。无论是手动调用还是集成自动化工具，它都能提供稳定、安全的交互能力，是 KubeSphere 平台易用性与扩展性的核心保障。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver" title="kubesphere/ks-apiserver Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver</a></p>

@@ -2,14 +2,14 @@
 image: cimg/python
 source: https://xuanyuan.cloud/zh/r/cimg/python
 canonical: https://xuanyuan.cloud/zh/r/cimg/python
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [cimg/python — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/cimg/python "cimg/python Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/cimg/python
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/python" title="cimg/python Docker 镜像中文简介、标签列表与拉取命令">cimg/python — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/cimg/python" title="cimg/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cimg/python</a></p>
 
 # CircleCI 便捷镜像 => Python
 
@@ -216,3 +216,7 @@ git commit -m "更新子模块以修复foo。"
 ## 许可证
 
 此仓库根据MIT许可证授权。许可证可以在[此处](./LICENSE)找到。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/python" title="cimg/python Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/cimg/python</a></p>

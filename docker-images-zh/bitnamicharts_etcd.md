@@ -2,14 +2,14 @@
 image: bitnamicharts/etcd
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/etcd
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/etcd
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnamicharts/etcd — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamicharts/etcd "bitnamicharts/etcd Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnamicharts/etcd
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/etcd" title="bitnamicharts/etcd Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/etcd — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/etcd" title="bitnamicharts/etcd Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/etcd</a></p>
 
 # Bitnami Etcd 软件包
 
@@ -346,3 +346,7 @@ initContainers:
 Bitnami Etcd 镜像将数据存储在容器的 `/bitnami/etcd` 路径，通过 Persistent Volume Claim（PVC）实现持久化。
 
 > 注意：本文档因 DockerHub 长度限制已精简，完整内容见 [GitHub]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/etcd" title="bitnamicharts/etcd Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/etcd</a></p>

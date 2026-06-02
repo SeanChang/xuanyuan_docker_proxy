@@ -2,14 +2,14 @@
 image: google/cadvisor
 source: https://xuanyuan.cloud/zh/r/google/cadvisor
 canonical: https://xuanyuan.cloud/zh/r/google/cadvisor
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [google/cadvisor — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/google/cadvisor "google/cadvisor Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/google/cadvisor
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/google/cadvisor" title="google/cadvisor Docker 镜像中文简介、标签列表与拉取命令">google/cadvisor — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/google/cadvisor" title="google/cadvisor Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/google/cadvisor</a></p>
 
 # cAdvisor Docker镜像文档
 
@@ -45,3 +45,7 @@ cAdvisor镜像提供以下标签：
 
 - 此镜像已废弃，不再推送新内容，建议迁移至`gcr.io/cadvisor/cadvisor`
 - canary标签和`google/cadvisor-canary`镜像仅供测试使用，生产环境应使用稳定版本
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/google/cadvisor" title="google/cadvisor Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/google/cadvisor</a></p>

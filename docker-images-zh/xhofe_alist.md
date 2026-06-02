@@ -2,14 +2,14 @@
 image: xhofe/alist
 source: https://xuanyuan.cloud/zh/r/xhofe/alist
 canonical: https://xuanyuan.cloud/zh/r/xhofe/alist
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [xhofe/alist — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/xhofe/alist "xhofe/alist Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/xhofe/alist
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/xhofe/alist" title="xhofe/alist Docker 镜像中文简介、标签列表与拉取命令">xhofe/alist — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/xhofe/alist" title="xhofe/alist Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xhofe/alist</a></p>
 
 ##  简介  
 
@@ -55,3 +55,7 @@ docker run -d --restart=always -v /etc/:/opt//data -p 5244:5244 -e PUID=0 -e PGI
 - **在线演示**：可访问 [演示站点]([]) 体验功能。  
 - **赞助支持**：项目发展依赖社区支持，详情见 [赞助页面]()。  
 - **开源协议**： 基于 AGPL-3.0 协议开源。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/xhofe/alist" title="xhofe/alist Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/xhofe/alist</a></p>

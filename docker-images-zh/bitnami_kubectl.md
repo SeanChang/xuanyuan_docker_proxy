@@ -2,14 +2,14 @@
 image: bitnami/kubectl
 source: https://xuanyuan.cloud/zh/r/bitnami/kubectl
 canonical: https://xuanyuan.cloud/zh/r/bitnami/kubectl
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnami/kubectl — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/kubectl "bitnami/kubectl Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnami/kubectl
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/kubectl" title="bitnami/kubectl Docker 镜像中文简介、标签列表与拉取命令">bitnami/kubectl — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnami/kubectl" title="bitnami/kubectl Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/kubectl</a></p>
 
 # Bitnami Kubectl 软件包
 
@@ -114,3 +114,7 @@ docker run --rm --name kubectl -v /path/to/your/kube/config:/.kube/config bitnam
 本软件基于 Apache 许可证 2.0 版授权。您需遵守该许可证方可使用。许可证副本可从 <[]> 获取。  
 
 除非法律要求或书面约定，软件按 "现状" 提供，不附带任何明示或暗示的担保或条件。具体权限与限制详见许可证条款。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/kubectl" title="bitnami/kubectl Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/kubectl</a></p>

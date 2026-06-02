@@ -2,14 +2,14 @@
 image: sapse/abap-cloud-developer-trial
 source: https://xuanyuan.cloud/zh/r/sapse/abap-cloud-developer-trial
 canonical: https://xuanyuan.cloud/zh/r/sapse/abap-cloud-developer-trial
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [sapse/abap-cloud-developer-trial — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/sapse/abap-cloud-developer-trial "sapse/abap-cloud-developer-trial Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/sapse/abap-cloud-developer-trial
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/sapse/abap-cloud-developer-trial" title="sapse/abap-cloud-developer-trial Docker 镜像中文简介、标签列表与拉取命令">sapse/abap-cloud-developer-trial — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/sapse/abap-cloud-developer-trial" title="sapse/abap-cloud-developer-trial Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/sapse/abap-cloud-developer-trial</a></p>
 
 # ABAP Cloud Developer Trial Docker镜像文档
 
@@ -264,3 +264,7 @@ HANA 许可证更新方式与 ABAP 类似，区别在于：
 
 ## 12. 开源法律声明
 详见 [SAP 开源法律声明](https://support.sap.com/content/dam/launchpad/en_us/osln/osln/73554900100900008093_20240117061308.pdf)。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/sapse/abap-cloud-developer-trial" title="sapse/abap-cloud-developer-trial Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/sapse/abap-cloud-developer-trial</a></p>

@@ -2,14 +2,14 @@
 image: alpine/git
 source: https://xuanyuan.cloud/zh/r/alpine/git
 canonical: https://xuanyuan.cloud/zh/r/alpine/git
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [alpine/git — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alpine/git "alpine/git Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/alpine/git
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/git" title="alpine/git Docker 镜像中文简介、标签列表与拉取命令">alpine/git — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/alpine/git" title="alpine/git Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpine/git</a></p>
 
 ### docker-git-alpine：基于Alpine Linux的轻量Git容器  
 
@@ -108,3 +108,7 @@ git push -u origin master
 - 每周自动构建，生成支持多架构的最新Alpine镜像；  
 - 从镜像中提取Git版本号，以`v${GIT_VERSION}`格式打标签；  
 - 同步更新`latest`标签。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/git" title="alpine/git Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/alpine/git</a></p>

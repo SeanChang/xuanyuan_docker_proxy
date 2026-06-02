@@ -2,14 +2,14 @@
 image: agentscope/copaw
 source: https://xuanyuan.cloud/zh/r/agentscope/copaw
 canonical: https://xuanyuan.cloud/zh/r/agentscope/copaw
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [agentscope/copaw — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/agentscope/copaw "agentscope/copaw Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/agentscope/copaw
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/agentscope/copaw" title="agentscope/copaw Docker 镜像中文简介、标签列表与拉取命令">agentscope/copaw — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/agentscope/copaw" title="agentscope/copaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/agentscope/copaw</a></p>
 
 # CoPaw
 
@@ -89,3 +89,7 @@ volumes:
 ## 许可证
 
 CoPaw 为开源项目，许可证见 [GitHub 仓库](https://github.com/agentscope-ai/CoPaw)。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/agentscope/copaw" title="agentscope/copaw Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/agentscope/copaw</a></p>

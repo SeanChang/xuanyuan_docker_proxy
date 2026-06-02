@@ -2,14 +2,14 @@
 image: yanwk/comfyui-boot
 source: https://xuanyuan.cloud/zh/r/yanwk/comfyui-boot
 canonical: https://xuanyuan.cloud/zh/r/yanwk/comfyui-boot
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [yanwk/comfyui-boot — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/yanwk/comfyui-boot "yanwk/comfyui-boot Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/yanwk/comfyui-boot
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/yanwk/comfyui-boot" title="yanwk/comfyui-boot Docker 镜像中文简介、标签列表与拉取命令">yanwk/comfyui-boot — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/yanwk/comfyui-boot" title="yanwk/comfyui-boot Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/yanwk/comfyui-boot</a></p>
 
 # ComfyUI Docker镜像
 
@@ -94,3 +94,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 
 ## 详细文档  
 更多使用细节可参考 [GitHub仓库文档]([])。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/yanwk/comfyui-boot" title="yanwk/comfyui-boot Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/yanwk/comfyui-boot</a></p>

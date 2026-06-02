@@ -2,14 +2,14 @@
 image: fluent/fluent-bit
 source: https://xuanyuan.cloud/zh/r/fluent/fluent-bit
 canonical: https://xuanyuan.cloud/zh/r/fluent/fluent-bit
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [fluent/fluent-bit — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/fluent/fluent-bit "fluent/fluent-bit Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/fluent/fluent-bit
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/fluent/fluent-bit" title="fluent/fluent-bit Docker 镜像中文简介、标签列表与拉取命令">fluent/fluent-bit — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/fluent/fluent-bit" title="fluent/fluent-bit Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/fluent/fluent-bit</a></p>
 
 # Fluent Bit
 
@@ -81,3 +81,7 @@ Fluent Bit v1.9.8
 ## 作者  
 
 [Fluent Bit]([]) 是 CNCF 旗下 Fluentd 项目的子项目，由 [众多贡献者]([]) 倾心打造。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/fluent/fluent-bit" title="fluent/fluent-bit Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/fluent/fluent-bit</a></p>

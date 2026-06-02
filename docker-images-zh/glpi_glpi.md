@@ -2,14 +2,14 @@
 image: glpi/glpi
 source: https://xuanyuan.cloud/zh/r/glpi/glpi
 canonical: https://xuanyuan.cloud/zh/r/glpi/glpi
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [glpi/glpi — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/glpi/glpi "glpi/glpi Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/glpi/glpi
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/glpi/glpi" title="glpi/glpi Docker 镜像中文简介、标签列表与拉取命令">glpi/glpi — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/glpi/glpi" title="glpi/glpi Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/glpi/glpi</a></p>
 
 # GLPI Docker镜像
 
@@ -115,3 +115,7 @@ docker compose up -d
 ## 卷
 `glpi/glpi`镜像默认提供卷，包含`config`、`marketplace`和`files`目录。  
 **注意**：GLPI 10.0.x版本的`marketplace`目录路径不同，未包含在默认卷中。如果需要使用市场功能，建议手动创建卷，映射路径`/var/www/glpi/marketplace`。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/glpi/glpi" title="glpi/glpi Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/glpi/glpi</a></p>

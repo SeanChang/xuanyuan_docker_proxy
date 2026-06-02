@@ -2,14 +2,14 @@
 image: ubuntu/node
 source: https://xuanyuan.cloud/zh/r/ubuntu/node
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/node
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [ubuntu/node — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ubuntu/node "ubuntu/node Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/ubuntu/node
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/node" title="ubuntu/node Docker 镜像中文简介、标签列表与拉取命令">ubuntu/node — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/node" title="ubuntu/node Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/node</a></p>
 
 # Chiselled Ubuntu for Nodejs
 
@@ -80,3 +80,7 @@ docker images --no-trunc --quiet ubuntu/node:<tag>
 | 轨道   | 版本   | 停止维护日期 | 升级路径   |
 |--------|--------|--------------|------------|
 | _`track`_ |        |              |            |
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/node" title="ubuntu/node Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/node</a></p>

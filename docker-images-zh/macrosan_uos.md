@@ -2,14 +2,14 @@
 image: macrosan/uos
 source: https://xuanyuan.cloud/zh/r/macrosan/uos
 canonical: https://xuanyuan.cloud/zh/r/macrosan/uos
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [macrosan/uos — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/macrosan/uos "macrosan/uos Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/macrosan/uos
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/macrosan/uos" title="macrosan/uos Docker 镜像中文简介、标签列表与拉取命令">macrosan/uos — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/macrosan/uos" title="macrosan/uos Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/macrosan/uos</a></p>
 
 # 统信UOS服务器操作系统Docker镜像文档
 
@@ -146,3 +146,7 @@ UnionTech-release-1060-1.6.uel20.x86_64
 |----------------|----------------|--------------------------------------------------------------------------------|
 | `v20-1050`     | V20（E版）1050 | [uos_v20.sys.Dockerfile](https://github.com/MacroSAN-Tech/sys-docker-image/blob/main/uos_v20.sys.Dockerfile) |
 | `v20-1060`     | V20（E版）1060 | [uos_v20.sys.Dockerfile](https://github.com/MacroSAN-Tech/sys-docker-image/blob/main/uos_v20.sys.Dockerfile) |
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/macrosan/uos" title="macrosan/uos Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/macrosan/uos</a></p>

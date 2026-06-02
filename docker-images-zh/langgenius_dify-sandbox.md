@@ -2,14 +2,14 @@
 image: langgenius/dify-sandbox
 source: https://xuanyuan.cloud/zh/r/langgenius/dify-sandbox
 canonical: https://xuanyuan.cloud/zh/r/langgenius/dify-sandbox
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [langgenius/dify-sandbox — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/langgenius/dify-sandbox "langgenius/dify-sandbox Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/langgenius/dify-sandbox
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/langgenius/dify-sandbox" title="langgenius/dify-sandbox Docker 镜像中文简介、标签列表与拉取命令">langgenius/dify-sandbox — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/langgenius/dify-sandbox" title="langgenius/dify-sandbox Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/langgenius/dify-sandbox</a></p>
 
 # Dify Sandbox  
 
@@ -20,3 +20,7 @@ exported_at: 2026-06-02T12:13:30.631Z
 
 - **Linux**：基于 Linux Seccomp 机制实现基础安全控制。  
 - **Docker**：为提升隔离效果，所有不可信代码需运行在独立容器中，并禁用网络访问。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/langgenius/dify-sandbox" title="langgenius/dify-sandbox Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/langgenius/dify-sandbox</a></p>

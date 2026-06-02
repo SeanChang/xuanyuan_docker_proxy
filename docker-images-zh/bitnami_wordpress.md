@@ -2,14 +2,14 @@
 image: bitnami/wordpress
 source: https://xuanyuan.cloud/zh/r/bitnami/wordpress
 canonical: https://xuanyuan.cloud/zh/r/bitnami/wordpress
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [bitnami/wordpress — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/wordpress "bitnami/wordpress Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/bitnami/wordpress
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/wordpress" title="bitnami/wordpress Docker 镜像中文简介、标签列表与拉取命令">bitnami/wordpress — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/bitnami/wordpress" title="bitnami/wordpress Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/wordpress</a></p>
 
 # Bitnami WordPress 软件包
 
@@ -117,3 +117,7 @@ docker run --name wordpress bitnami/wordpress:latest
 | `WP_CLI_CONF_FILE`                | WP-CLI 配置文件               | `${WP_CLI_CONF_DIR}/wp-cli.yml`   |
 | `WORDPRESS_VOLUME_DIR`            | WordPress 挂载配置文件目录    | `${BITNAMI_VOLUME_DIR}/wordpress` |
 | `WORDPRESS_DEFAULT_DATABASE_HOST` | 默认数据库服务器主机          | `mariadb`                         |
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/wordpress" title="bitnami/wordpress Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/wordpress</a></p>

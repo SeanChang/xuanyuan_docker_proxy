@@ -2,14 +2,14 @@
 image: sharelatex/sharelatex
 source: https://xuanyuan.cloud/zh/r/sharelatex/sharelatex
 canonical: https://xuanyuan.cloud/zh/r/sharelatex/sharelatex
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [sharelatex/sharelatex — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/sharelatex/sharelatex "sharelatex/sharelatex Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/sharelatex/sharelatex
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/sharelatex/sharelatex" title="sharelatex/sharelatex Docker 镜像中文简介、标签列表与拉取命令">sharelatex/sharelatex — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/sharelatex/sharelatex" title="sharelatex/sharelatex Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/sharelatex/sharelatex</a></p>
 
 ## ShareLaTeX社区版官方Docker镜像介绍
 
@@ -91,3 +91,7 @@ docker run -d --name my-sharelatex -p 80:80 -v /本地路径/数据存储:/var/l
 - 更多高级配置（比如改默认编辑器主题、装额外LaTeX包），可以看[官方GitHub文档]([])（有英文说明）。  
 
 按上面的步骤操作，基本能满足日常使用需求了。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/sharelatex/sharelatex" title="sharelatex/sharelatex Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/sharelatex/sharelatex</a></p>

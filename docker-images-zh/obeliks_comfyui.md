@@ -2,14 +2,14 @@
 image: obeliks/comfyui
 source: https://xuanyuan.cloud/zh/r/obeliks/comfyui
 canonical: https://xuanyuan.cloud/zh/r/obeliks/comfyui
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [obeliks/comfyui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/obeliks/comfyui "obeliks/comfyui Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/obeliks/comfyui
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/obeliks/comfyui" title="obeliks/comfyui Docker 镜像中文简介、标签列表与拉取命令">obeliks/comfyui — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/obeliks/comfyui" title="obeliks/comfyui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/obeliks/comfyui</a></p>
 
 # ComfyUI 介绍
 
@@ -28,3 +28,7 @@ ComfyUI 的工作流程基于模块化的“节点”。每个节点代表一个
 
 ## 总结
 总的来说，ComfyUI 为 Stable Diffusion 用户提供了一个既强大又灵活的操作平台，通过模块化的方式让复杂的图像生成流程变得可控和可调整。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/obeliks/comfyui" title="obeliks/comfyui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/obeliks/comfyui</a></p>

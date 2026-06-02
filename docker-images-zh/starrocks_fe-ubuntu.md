@@ -2,14 +2,14 @@
 image: starrocks/fe-ubuntu
 source: https://xuanyuan.cloud/zh/r/starrocks/fe-ubuntu
 canonical: https://xuanyuan.cloud/zh/r/starrocks/fe-ubuntu
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [starrocks/fe-ubuntu — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/starrocks/fe-ubuntu "starrocks/fe-ubuntu Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/starrocks/fe-ubuntu
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/starrocks/fe-ubuntu" title="starrocks/fe-ubuntu Docker 镜像中文简介、标签列表与拉取命令">starrocks/fe-ubuntu — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/starrocks/fe-ubuntu" title="starrocks/fe-ubuntu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/starrocks/fe-ubuntu</a></p>
 
 # StarRocks Docker 镜像使用指南
 
@@ -120,3 +120,7 @@ docker exec -ti starrocks-fe mysql -P9030 -h127.0.0.1 -uroot --prompt="StarRocks
 ### DBeaver 等其他客户端
 
 其他支持 MySQL 协议的客户端（如 DBeaver）也可连接，只需将默认 MySQL 端口替换为 9030 即可。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/starrocks/fe-ubuntu" title="starrocks/fe-ubuntu Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/starrocks/fe-ubuntu</a></p>

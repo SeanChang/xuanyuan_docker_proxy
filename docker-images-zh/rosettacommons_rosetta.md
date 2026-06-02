@@ -2,14 +2,14 @@
 image: rosettacommons/rosetta
 source: https://xuanyuan.cloud/zh/r/rosettacommons/rosetta
 canonical: https://xuanyuan.cloud/zh/r/rosettacommons/rosetta
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [rosettacommons/rosetta — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rosettacommons/rosetta "rosettacommons/rosetta Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/rosettacommons/rosetta
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/rosettacommons/rosetta" title="rosettacommons/rosetta Docker 镜像中文简介、标签列表与拉取命令">rosettacommons/rosetta — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/rosettacommons/rosetta" title="rosettacommons/rosetta Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rosettacommons/rosetta</a></p>
 
 ## Rosetta/PyRosetta 官方镜像
 
@@ -35,3 +35,7 @@ exported_at: 2026-06-02T12:13:30.631Z
   - Rosetta：启用`mpi`、`cxx11thread`、`serialization`、`torch`、`tensorflow`扩展。  
   - PyRosetta：启用`cxx11thread`、`serialization`、`torch`、`tensorflow`扩展。
 - **`<TAG>-NNN`**：对应每周NNN版本的镜像。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/rosettacommons/rosetta" title="rosettacommons/rosetta Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/rosettacommons/rosetta</a></p>

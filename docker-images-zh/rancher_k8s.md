@@ -2,14 +2,14 @@
 image: rancher/k8s
 source: https://xuanyuan.cloud/zh/r/rancher/k8s
 canonical: https://xuanyuan.cloud/zh/r/rancher/k8s
-exported_at: 2026-06-02T12:13:30.631Z
+exported_at: 2026-06-02T12:15:43.568Z
 -->
 
-> **轩辕镜像中文简介（在线版）：** [rancher/k8s — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rancher/k8s "rancher/k8s Docker 镜像中文简介、标签列表与拉取命令")
->
-> 含镜像标签、拉取命令、部署文档与相关推荐。
->
-> https://xuanyuan.cloud/zh/r/rancher/k8s
+<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/rancher/k8s" title="rancher/k8s Docker 镜像中文简介、标签列表与拉取命令">rancher/k8s — 轩辕镜像中文简介</a></p>
+
+<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+
+<p><a href="https://xuanyuan.cloud/zh/r/rancher/k8s" title="rancher/k8s Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rancher/k8s</a></p>
 
 # Rancher Kubernetes Images 技术文档
 
@@ -100,3 +100,7 @@ docker-compose up -d
 - 镜像需运行在支持Kubernetes的Linux系统（如Ubuntu 20.04+、CentOS 7+），并确保宿主机已安装Docker或containerd。  
 - 生产环境中，建议通过Rancher官方文档验证`K8S_VERSION`与Rancher Server版本的兼容性。  
 - 敏感配置（如Rancher API密钥）建议通过环境变量注入或加密挂载，避免明文暴露。
+
+---
+
+<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/rancher/k8s" title="rancher/k8s Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/rancher/k8s</a></p>
