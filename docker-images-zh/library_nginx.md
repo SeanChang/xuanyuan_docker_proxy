@@ -1,4 +1,4 @@
----
+﻿---
 image: library/nginx
 description: "Nginx 官方 Docker 镜像，提供高性能 Web 服务器和反向代理能力，适合部署静态站点、反向代理和负载均衡入口，可通过挂载配置和静态目录快速搭建统一的 Web 与 API 网关层。"
 source: https://xuanyuan.cloud/zh/r/library/nginx
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/library/nginx
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/nginx" title="library/nginx Docker 镜像中文简介、标签列表与拉取命令">library/nginx — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [library/nginx — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/nginx)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/library/nginx" title="library/nginx Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/nginx</a>
+[library/nginx Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/nginx)
 
 # Nginx 官方 Docker 镜像中文说明
 

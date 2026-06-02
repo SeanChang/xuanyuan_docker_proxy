@@ -1,4 +1,4 @@
----
+﻿---
 image: redislabs/redisinsight
 description: "RedisInsight是Redis的官方图形用户界面（GUI）工具，支持可视化浏览和管理Redis数据库中的键值数据，提供直观的命令执行界面、实时性能监控图表、集群节点状态查看、数据导入导出及配置管理等功能，帮助开发者和运维人员更高效地操作和维护Redis实例，简化复杂数据结构的管理流程，提升工作效率。"
 source: https://xuanyuan.cloud/zh/r/redislabs/redisinsight
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/redislabs/redisinsight
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/redislabs/redisinsight" title="redislabs/redisinsight Docker 镜像中文简介、标签列表与拉取命令">redislabs/redisinsight — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [redislabs/redisinsight — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/redislabs/redisinsight)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/redislabs/redisinsight" title="redislabs/redisinsight Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/redislabs/redisinsight</a>
+[redislabs/redisinsight Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/redislabs/redisinsight)
 
 # RedisInsight：Redis图形化管理工具
 

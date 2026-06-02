@@ -1,4 +1,4 @@
----
+﻿---
 image: n8nio/runners
 description: "n8nio/runners 是 n8nio 官方推出的任务运行器 Docker 镜像，专为开源工作流自动化平台 n8n 的代码执行场景设计，核心功能是承接 n8n 中 Code Node 发送的用户自定义 JavaScript 或 Python 代码任务，通过独立容器实现代码执行的隔离与资源管控。该镜像需作为 sidecar 容器与 n8n 主实例协同部署，目前（截至 2025 年 9 月）处于 Beta 测试阶段。"
 source: https://xuanyuan.cloud/zh/r/n8nio/runners
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/n8nio/runners
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/n8nio/runners" title="n8nio/runners Docker 镜像中文简介、标签列表与拉取命令">n8nio/runners — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [n8nio/runners — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/n8nio/runners)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/n8nio/runners" title="n8nio/runners Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/n8nio/runners</a>
+[n8nio/runners Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/n8nio/runners)
 
 # n8n 任务运行器 Docker 镜像使用指南
 

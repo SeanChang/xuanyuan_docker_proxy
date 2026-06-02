@@ -1,4 +1,4 @@
----
+﻿---
 image: mcp/redis
 description: "提供Redis数据库操作访问能力，支持44种工具，包括键管理、数据结构操作、向量索引创建及相似度搜索等，基于Model Context Protocol (MCP) 实现安全高效的Redis交互。"
 source: https://xuanyuan.cloud/zh/r/mcp/redis
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/mcp/redis
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mcp/redis" title="mcp/redis Docker 镜像中文简介、标签列表与拉取命令">mcp/redis — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [mcp/redis — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mcp/redis)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/mcp/redis" title="mcp/redis Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mcp/redis</a>
+[mcp/redis Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/mcp/redis)
 
 # Redis MCP Server
 

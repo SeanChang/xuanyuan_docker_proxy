@@ -1,4 +1,4 @@
----
+﻿---
 image: nginx/nginx-quic-qns
 description: "用于 NGINX QUIC 协议互操作性测试的 Docker 镜像，集成 QUIC 支持，简化 QUIC 实现的兼容性验证与功能测试流程。"
 source: https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns" title="nginx/nginx-quic-qns Docker 镜像中文简介、标签列表与拉取命令">nginx/nginx-quic-qns — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [nginx/nginx-quic-qns — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns" title="nginx/nginx-quic-qns Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns</a>
+[nginx/nginx-quic-qns Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns)
 
 # NGINX QUIC Interop 镜像文档
 

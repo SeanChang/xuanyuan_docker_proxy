@@ -1,4 +1,4 @@
----
+﻿---
 image: hxsoong/kylin
 description: "银河麒麟高级服务器操作系统V10的Docker镜像，基于kylin软件源构建，支持v10-sp1、v10-sp2、v10-sp3版本，适用于构建和运行基于麒麟系统的应用环境。"
 source: https://xuanyuan.cloud/zh/r/hxsoong/kylin
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/hxsoong/kylin
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hxsoong/kylin" title="hxsoong/kylin Docker 镜像中文简介、标签列表与拉取命令">hxsoong/kylin — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [hxsoong/kylin — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/hxsoong/kylin)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/hxsoong/kylin" title="hxsoong/kylin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hxsoong/kylin</a>
+[hxsoong/kylin Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/hxsoong/kylin)
 
 # 银河麒麟高级服务器操作系统V10 Docker镜像
 

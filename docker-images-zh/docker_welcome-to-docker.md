@@ -1,4 +1,4 @@
----
+﻿---
 image: docker/welcome-to-docker
 description: "供Docker新手入门使用的Docker镜像。"
 source: https://xuanyuan.cloud/zh/r/docker/welcome-to-docker
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/docker/welcome-to-docker
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/docker/welcome-to-docker" title="docker/welcome-to-docker Docker 镜像中文简介、标签列表与拉取命令">docker/welcome-to-docker — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [docker/welcome-to-docker — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/docker/welcome-to-docker)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/docker/welcome-to-docker" title="docker/welcome-to-docker Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/docker/welcome-to-docker</a>
+[docker/welcome-to-docker Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/docker/welcome-to-docker)
 
 # docker/welcome-to-docker 镜像文档
 

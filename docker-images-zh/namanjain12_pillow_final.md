@@ -1,4 +1,4 @@
----
+﻿---
 image: namanjain12/pillow_final
 description: "pillow_final 是基于 Python 图像处理库 Pillow 构建的自定义 Docker 镜像，集成了 Pillow 及底层图像依赖（如 libjpeg、libpng 等），提供开箱即用的图像处理环境，支持图像格式转换、裁剪、滤镜应用等操作，适用于批量图像处理、图像预处理服务及轻量级图像编辑工具部署，简化跨平台图像处理环境的配置流程。"
 source: https://xuanyuan.cloud/zh/r/namanjain12/pillow_final
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/namanjain12/pillow_final
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/namanjain12/pillow_final" title="namanjain12/pillow_final Docker 镜像中文简介、标签列表与拉取命令">namanjain12/pillow_final — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [namanjain12/pillow_final — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/namanjain12/pillow_final)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/namanjain12/pillow_final" title="namanjain12/pillow_final Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/namanjain12/pillow_final</a>
+[namanjain12/pillow_final Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/namanjain12/pillow_final)
 
 # pillow_final Docker 镜像使用指南
 

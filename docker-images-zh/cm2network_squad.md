@@ -1,4 +1,4 @@
----
+﻿---
 image: cm2network/squad
 description: "提供Squad游戏专用服务器，集成SteamCMD以支持服务器的安装与更新，用于部署和运行Squad多人游戏服务器。"
 source: https://xuanyuan.cloud/zh/r/cm2network/squad
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/cm2network/squad
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cm2network/squad" title="cm2network/squad Docker 镜像中文简介、标签列表与拉取命令">cm2network/squad — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [cm2network/squad — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/cm2network/squad)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/cm2network/squad" title="cm2network/squad Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cm2network/squad</a>
+[cm2network/squad Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/cm2network/squad)
 
 # Squad 专用服务器 Docker 镜像文档
 

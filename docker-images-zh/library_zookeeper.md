@@ -1,4 +1,4 @@
----
+﻿---
 image: library/zookeeper
 description: "Apache ZooKeeper 是一款开源服务器，专为分布式系统设计，致力于提供高可靠的协调服务，它通过简洁高效的接口支持配置管理、命名服务、分布式锁、集群节点同步等关键功能，帮助分布式应用实现数据一致性维护、节点状态监控及故障自动恢复，是构建稳定、可靠分布式架构不可或缺的基础设施，广泛应用于分布式计算、大数据处理等领域，为各类分布式系统的协调与协作提供坚实保障。"
 source: https://xuanyuan.cloud/zh/r/library/zookeeper
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/library/zookeeper
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/zookeeper" title="library/zookeeper Docker 镜像中文简介、标签列表与拉取命令">library/zookeeper — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [library/zookeeper — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/zookeeper)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/library/zookeeper" title="library/zookeeper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/zookeeper</a>
+[library/zookeeper Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/zookeeper)
 
 # Apache ZooKeeper Docker镜像使用指南
 

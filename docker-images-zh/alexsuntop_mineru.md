@@ -1,4 +1,4 @@
----
+﻿---
 image: alexsuntop/mineru
 description: "MinerU镜像基于官方Dockerfile构建，支持部署vLLM后端服务器、文档解析API服务及Gradio WebUI界面，支持本地模型加载与GPU资源配置，适用于AI文档解析与交互场景。"
 source: https://xuanyuan.cloud/zh/r/alexsuntop/mineru
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/alexsuntop/mineru
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alexsuntop/mineru" title="alexsuntop/mineru Docker 镜像中文简介、标签列表与拉取命令">alexsuntop/mineru — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [alexsuntop/mineru — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alexsuntop/mineru)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/alexsuntop/mineru" title="alexsuntop/mineru Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alexsuntop/mineru</a>
+[alexsuntop/mineru Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/alexsuntop/mineru)
 
 # MinerU 镜像文档
 

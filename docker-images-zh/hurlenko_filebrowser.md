@@ -1,4 +1,4 @@
----
+﻿---
 image: hurlenko/filebrowser
 description: "基于Web的文件管理器。镜像体积小。支持arm、arm64和amd64架构。"
 source: https://xuanyuan.cloud/zh/r/hurlenko/filebrowser
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/hurlenko/filebrowser
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hurlenko/filebrowser" title="hurlenko/filebrowser Docker 镜像中文简介、标签列表与拉取命令">hurlenko/filebrowser — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [hurlenko/filebrowser — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/hurlenko/filebrowser)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/hurlenko/filebrowser" title="hurlenko/filebrowser Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hurlenko/filebrowser</a>
+[hurlenko/filebrowser Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/hurlenko/filebrowser)
 
 # [filebrowser](https://github.com/filebrowser/filebrowser) Docker容器镜像
 

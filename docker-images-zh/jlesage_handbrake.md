@@ -1,4 +1,4 @@
----
+﻿---
 image: jlesage/handbrake
 description: "这是一个用于HandBrake的Docker容器，其中HandBrake是一款开源视频转码工具，支持将DVD、蓝光及各类视频文件转换为MP4、MKV等主流格式，而Docker容器通过环境隔离特性确保转码环境稳定一致，无需复杂配置即可快速部署运行，适用于个人媒体处理、家庭服务器及企业级视频转码场景，帮助用户高效完成视频格式转换与压缩任务。"
 source: https://xuanyuan.cloud/zh/r/jlesage/handbrake
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/jlesage/handbrake
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jlesage/handbrake" title="jlesage/handbrake Docker 镜像中文简介、标签列表与拉取命令">jlesage/handbrake — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [jlesage/handbrake — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jlesage/handbrake)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/jlesage/handbrake" title="jlesage/handbrake Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jlesage/handbrake</a>
+[jlesage/handbrake Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/jlesage/handbrake)
 
 # HandBrake Docker容器
 

@@ -1,4 +1,4 @@
----
+﻿---
 image: magiccoders/nginxpulse
 description: "轻量级Nginx访问日志分析与可视化面板，提供实时统计、PV过滤、IP归属地及客户端解析功能。"
 source: https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse" title="magiccoders/nginxpulse Docker 镜像中文简介、标签列表与拉取命令">magiccoders/nginxpulse — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [magiccoders/nginxpulse — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse" title="magiccoders/nginxpulse Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse</a>
+[magiccoders/nginxpulse Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse)
 
 # NginxPulse
 

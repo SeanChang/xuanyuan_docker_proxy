@@ -1,4 +1,4 @@
----
+﻿---
 image: atlassian/maven
 description: "在预创建的非root用户下运行的Apache Maven"
 source: https://xuanyuan.cloud/zh/r/atlassian/maven
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/atlassian/maven
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/atlassian/maven" title="atlassian/maven Docker 镜像中文简介、标签列表与拉取命令">atlassian/maven — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [atlassian/maven — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/atlassian/maven)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/atlassian/maven" title="atlassian/maven Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/atlassian/maven</a>
+[atlassian/maven Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/atlassian/maven)
 
 # Maven Docker镜像文档
 

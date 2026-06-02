@@ -1,4 +1,4 @@
----
+﻿---
 image: bitnamilegacy/postgresql
 description: "Bitnami Legacy镜像（不再更新），包含所有现有容器镜像的备份，仅用于临时迁移目的，不提供进一步更新或支持。"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/postgresql
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/postgresql
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/postgresql" title="bitnamilegacy/postgresql Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/postgresql — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [bitnamilegacy/postgresql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamilegacy/postgresql)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/postgresql" title="bitnamilegacy/postgresql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamilegacy/postgresql</a>
+[bitnamilegacy/postgresql Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnamilegacy/postgresql)
 
 # Bitnami Legacy镜像文档
 

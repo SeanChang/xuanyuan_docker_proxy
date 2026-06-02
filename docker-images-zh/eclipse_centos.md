@@ -1,4 +1,4 @@
----
+﻿---
 image: eclipse/centos
 description: "基于CentOS的最小化环境，仅集成git和openssh，适用于需要轻量版本控制系统和SSH服务的场景。"
 source: https://xuanyuan.cloud/zh/r/eclipse/centos
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/eclipse/centos
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/eclipse/centos" title="eclipse/centos Docker 镜像中文简介、标签列表与拉取命令">eclipse/centos — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [eclipse/centos — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/eclipse/centos)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/eclipse/centos" title="eclipse/centos Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/eclipse/centos</a>
+[eclipse/centos Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/eclipse/centos)
 
 # Eclipse Che 基础栈 Docker 镜像
 

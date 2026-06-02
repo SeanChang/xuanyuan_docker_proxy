@@ -1,4 +1,4 @@
----
+﻿---
 image: bitnamicharts/zookeeper
 description: "Bitnami提供的Apache ZooKeeper Helm图表，用于在Kubernetes环境中简化分布式协调服务的部署与管理。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper" title="bitnamicharts/zookeeper Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/zookeeper — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [bitnamicharts/zookeeper — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper" title="bitnamicharts/zookeeper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper</a>
+[bitnamicharts/zookeeper Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper)
 
 # Bitnami Apache ZooKeeper 镜像文档
 

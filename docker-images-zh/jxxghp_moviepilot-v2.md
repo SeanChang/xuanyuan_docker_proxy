@@ -1,4 +1,4 @@
----
+﻿---
 image: jxxghp/moviepilot-v2
 description: "MoviePilot是一款面向影视爱好者的智能媒体管理系统，可自动监控、搜索、下载、整理和管理媒体资源，集成多种流媒体服务与播放器，支持多平台部署，并提供用户友好的界面，为用户打造无缝的媒体体验。"
 source: https://xuanyuan.cloud/zh/r/jxxghp/moviepilot-v2
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/jxxghp/moviepilot-v2
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jxxghp/moviepilot-v2" title="jxxghp/moviepilot-v2 Docker 镜像中文简介、标签列表与拉取命令">jxxghp/moviepilot-v2 — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [jxxghp/moviepilot-v2 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jxxghp/moviepilot-v2)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/jxxghp/moviepilot-v2" title="jxxghp/moviepilot-v2 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jxxghp/moviepilot-v2</a>
+[jxxghp/moviepilot-v2 Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/jxxghp/moviepilot-v2)
 
 # NAS媒体库自动化管理工具 V2版本介绍
 

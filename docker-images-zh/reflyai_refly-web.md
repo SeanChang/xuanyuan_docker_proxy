@@ -1,4 +1,4 @@
----
+﻿---
 image: reflyai/refly-web
 description: "Refly.AI 平台的前端 Web 界面组件，提供直观的可视化画布、拖拽式工作流构建、实时执行监控和干预控制等功能，让用户通过零代码方式创建和管理 AI 自动化工作流。"
 source: https://xuanyuan.cloud/zh/r/reflyai/refly-web
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/reflyai/refly-web
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/reflyai/refly-web" title="reflyai/refly-web Docker 镜像中文简介、标签列表与拉取命令">reflyai/refly-web — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [reflyai/refly-web — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/reflyai/refly-web)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/reflyai/refly-web" title="reflyai/refly-web Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/reflyai/refly-web</a>
+[reflyai/refly-web Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/reflyai/refly-web)
 
 # Refly.AI Web 前端
 

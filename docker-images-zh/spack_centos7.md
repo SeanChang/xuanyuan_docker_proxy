@@ -1,4 +1,4 @@
----
+﻿---
 image: spack/centos7
 description: "预装Spack的CentOS 7系统镜像，提供多平台软件包管理功能，支持多版本、多配置软件的非破坏性安装与管理。"
 source: https://xuanyuan.cloud/zh/r/spack/centos7
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/spack/centos7
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/spack/centos7" title="spack/centos7 Docker 镜像中文简介、标签列表与拉取命令">spack/centos7 — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [spack/centos7 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/spack/centos7)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/spack/centos7" title="spack/centos7 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/spack/centos7</a>
+[spack/centos7 Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/spack/centos7)
 
 # Spack Docker镜像 (CentOS 7)
 

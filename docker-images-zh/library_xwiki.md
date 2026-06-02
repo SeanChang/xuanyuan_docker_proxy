@@ -1,4 +1,4 @@
----
+﻿---
 image: library/xwiki
 description: "XWiki是一款高级开源企业级维基平台，它基于开源技术构建，专为企业场景设计，具备强大的知识协作、文档管理与团队共享能力，支持自定义扩展、多语言环境及多终端访问，可有效整合企业内部信息资源，促进团队高效沟通与知识沉淀，是助力企业实现数字化知识管理的理想工具。"
 source: https://xuanyuan.cloud/zh/r/library/xwiki
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/library/xwiki
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/xwiki" title="library/xwiki Docker 镜像中文简介、标签列表与拉取命令">library/xwiki — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [library/xwiki — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/xwiki)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/library/xwiki" title="library/xwiki Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/xwiki</a>
+[library/xwiki Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/xwiki)
 
 # XWiki Docker 镜像介绍
 

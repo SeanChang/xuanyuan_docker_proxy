@@ -1,4 +1,4 @@
----
+﻿---
 image: bitnami/redis
 description: "Bitnami Redis安全镜像是基于开源Redis内存数据存储的预配置安全解决方案，集成了自动漏洞修复、合规性检查及加固配置，支持快速部署且易于维护，适用于作为数据库、缓存或消息代理的场景，为用户提供安全可靠的Redis运行环境。"
 source: https://xuanyuan.cloud/zh/r/bitnami/redis
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/bitnami/redis
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/redis" title="bitnami/redis Docker 镜像中文简介、标签列表与拉取命令">bitnami/redis — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [bitnami/redis — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/redis)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/bitnami/redis" title="bitnami/redis Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/redis</a>
+[bitnami/redis Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnami/redis)
 
 # Bitnami Redis® 软件包介绍
 

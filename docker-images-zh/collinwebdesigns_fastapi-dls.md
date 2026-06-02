@@ -1,4 +1,4 @@
----
+﻿---
 image: collinwebdesigns/fastapi-dls
 description: "最小化的委托许可服务（DLS），提供委托许可服务功能。"
 source: https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls" title="collinwebdesigns/fastapi-dls Docker 镜像中文简介、标签列表与拉取命令">collinwebdesigns/fastapi-dls — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [collinwebdesigns/fastapi-dls — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls" title="collinwebdesigns/fastapi-dls Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls</a>
+[collinwebdesigns/fastapi-dls Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls)
 
 # FastAPI-DLS 技术文档
 

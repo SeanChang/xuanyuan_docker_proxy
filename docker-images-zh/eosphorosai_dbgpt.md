@@ -1,4 +1,4 @@
----
+﻿---
 image: eosphorosai/dbgpt
 description: "DBGPT Docker镜像仓库是一个集中存储和分发DBGPT相关Docker镜像的资源库，旨在为用户提供便捷、高效的部署体验。该仓库包含多种类型的镜像，如基础运行环境镜像、完整应用镜像及特定功能模块镜像，支持不同版本的DBGPT快速部署，适用于开发、测试及生产等多种场景。通过使用仓库中的镜像，用户可大幅简化环境配置流程，减少部署复杂度，同时确保获取到经过验证的稳定版本，助力DBGPT相关应用的快速落地与高效运维。"
 source: https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt" title="eosphorosai/dbgpt Docker 镜像中文简介、标签列表与拉取命令">eosphorosai/dbgpt — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [eosphorosai/dbgpt — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt" title="eosphorosai/dbgpt Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt</a>
+[eosphorosai/dbgpt Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt)
 
 # DB-GPT：基于私有大模型的数据库交互革新方案
 

@@ -1,4 +1,4 @@
----
+﻿---
 image: valkey/valkey
 description: "Valkey 是一款高性能的数据结构服务器，主要专注于为键值（key/value）类型的工作负载提供服务，它凭借优化的数据处理机制和高效的存储结构，能够快速响应各类键值对操作请求，适用于高吞吐量、低延迟的应用场景，通过稳定可靠的运行机制为用户提供高效的数据服务支持。"
 source: https://xuanyuan.cloud/zh/r/valkey/valkey
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/valkey/valkey
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/valkey/valkey" title="valkey/valkey Docker 镜像中文简介、标签列表与拉取命令">valkey/valkey — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [valkey/valkey — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/valkey/valkey)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/valkey/valkey" title="valkey/valkey Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/valkey/valkey</a>
+[valkey/valkey Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/valkey/valkey)
 
 # Valkey Docker 镜像使用指南  
 

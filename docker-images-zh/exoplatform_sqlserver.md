@@ -1,4 +1,4 @@
----
+﻿---
 image: exoplatform/sqlserver
 description: "用于测试目的的SQL Server镜像，基于官方Microsoft SQL Server Linux镜像构建，可轻松创建包含专用数据库和用户的SQL Server环境。"
 source: https://xuanyuan.cloud/zh/r/exoplatform/sqlserver
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/exoplatform/sqlserver
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/exoplatform/sqlserver" title="exoplatform/sqlserver Docker 镜像中文简介、标签列表与拉取命令">exoplatform/sqlserver — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [exoplatform/sqlserver — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/exoplatform/sqlserver)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/exoplatform/sqlserver" title="exoplatform/sqlserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/exoplatform/sqlserver</a>
+[exoplatform/sqlserver Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/exoplatform/sqlserver)
 
 # eXo Platform SQL Server Docker镜像
 

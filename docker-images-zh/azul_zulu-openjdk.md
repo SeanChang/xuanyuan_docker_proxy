@@ -1,4 +1,4 @@
----
+﻿---
 image: azul/zulu-openjdk
 description: "Azul Zulu是由Azul Systems推出的开源OpenJDK发行版，针对Ubuntu Linux操作系统进行了深度优化，遵循Java SE标准，具备高性能、长期支持及跨平台兼容性，集成安全更新与性能增强功能，支持Java应用程序的开发、部署和稳定运行，适用于企业级开发场景和个人开发者，确保在Ubuntu环境中提供可靠、高效的Java运行体验。"
 source: https://xuanyuan.cloud/zh/r/azul/zulu-openjdk
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/azul/zulu-openjdk
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/azul/zulu-openjdk" title="azul/zulu-openjdk Docker 镜像中文简介、标签列表与拉取命令">azul/zulu-openjdk — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [azul/zulu-openjdk — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/azul/zulu-openjdk)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/azul/zulu-openjdk" title="azul/zulu-openjdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/azul/zulu-openjdk</a>
+[azul/zulu-openjdk Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/azul/zulu-openjdk)
 
 # Azul Zulu Ubuntu Docker镜像介绍
 

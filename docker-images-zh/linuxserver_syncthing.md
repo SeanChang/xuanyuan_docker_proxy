@@ -1,4 +1,4 @@
----
+﻿---
 image: linuxserver/syncthing
 description: "LinuxServer.io提供的Syncthing容器，用于跨设备文件同步。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/syncthing
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/linuxserver/syncthing
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/syncthing" title="linuxserver/syncthing Docker 镜像中文简介、标签列表与拉取命令">linuxserver/syncthing — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [linuxserver/syncthing — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/syncthing)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/linuxserver/syncthing" title="linuxserver/syncthing Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/syncthing</a>
+[linuxserver/syncthing Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/linuxserver/syncthing)
 
 # linuxserver/syncthing 镜像文档
 

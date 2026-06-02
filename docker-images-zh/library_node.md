@@ -1,4 +1,4 @@
----
+﻿---
 image: library/node
 description: "Node.js是一个基于JavaScript的跨平台运行时环境，主要用于构建高效的服务器端和网络应用程序，它采用单线程、非阻塞I/O及事件驱动模型，依托Chrome V8引擎实现快速代码执行，能够高效处理大量并发请求，广泛适用于实时通信系统、API服务、微服务架构等场景，让开发者可使用JavaScript同时进行前后端开发，显著提升开发效率与系统性能。"
 source: https://xuanyuan.cloud/zh/r/library/node
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/library/node
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/node" title="library/node Docker 镜像中文简介、标签列表与拉取命令">library/node — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [library/node — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/node)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/library/node" title="library/node Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/node</a>
+[library/node Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/node)
 
 # Node.js Docker 镜像介绍
 

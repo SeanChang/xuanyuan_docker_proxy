@@ -1,4 +1,4 @@
----
+﻿---
 image: bellsoft/liberica-openjdk-alpine
 description: "Liberica是BellSoft提供的100%开源Java实现，用于支持Java应用的运行与开发环境。"
 source: https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-alpine
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-alpine
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-alpine" title="bellsoft/liberica-openjdk-alpine Docker 镜像中文简介、标签列表与拉取命令">bellsoft/liberica-openjdk-alpine — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [bellsoft/liberica-openjdk-alpine — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-alpine)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-alpine" title="bellsoft/liberica-openjdk-alpine Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-alpine</a>
+[bellsoft/liberica-openjdk-alpine Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-alpine)
 
 # bellsoft/liberica-openjdk-alpine 镜像文档
 

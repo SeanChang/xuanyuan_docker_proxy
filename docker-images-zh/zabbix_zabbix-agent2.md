@@ -1,4 +1,4 @@
----
+﻿---
 image: zabbix/zabbix-agent2
 description: "Zabbix agent 2是一款用于系统与网络监控的数据采集代理程序，其支持TLS加密功能，能够在数据从监控目标设备传输至Zabbix服务器的过程中提供安全防护，有效防止数据在传输环节被非法窃听、篡改或泄露，从而提升监控系统整体的数据传输安全性与可靠性，适用于对数据安全有较高要求的企业级监控场景。"
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent2
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent2
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent2" title="zabbix/zabbix-agent2 Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-agent2 — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [zabbix/zabbix-agent2 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent2)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent2" title="zabbix/zabbix-agent2 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent2</a>
+[zabbix/zabbix-agent2 Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/zabbix/zabbix-agent2)
 
 ![logo]()
 

@@ -1,4 +1,4 @@
----
+﻿---
 image: rootpublic/eclipse-temurin
 description: "Root精选eclipse-temurin镜像是基于官方eclipse-temurin的安全、轻量且便捷的容器化应用起点，具有减小镜像大小、最小化攻击面和提升初始安全态势的特点。"
 source: https://xuanyuan.cloud/zh/r/rootpublic/eclipse-temurin
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/rootpublic/eclipse-temurin
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rootpublic/eclipse-temurin" title="rootpublic/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">rootpublic/eclipse-temurin — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [rootpublic/eclipse-temurin — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rootpublic/eclipse-temurin)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/rootpublic/eclipse-temurin" title="rootpublic/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rootpublic/eclipse-temurin</a>
+[rootpublic/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/rootpublic/eclipse-temurin)
 
 # Root精选eclipse-temurin镜像
 

@@ -1,4 +1,4 @@
----
+﻿---
 image: bitnamilegacy/redis
 description: "Bitnami Legacy镜像（不再更新），包含所有现有容器镜像的备份，仅用于临时迁移目的，不提供进一步更新或支持。"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/redis
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/redis
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/redis" title="bitnamilegacy/redis Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/redis — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [bitnamilegacy/redis — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamilegacy/redis)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/redis" title="bitnamilegacy/redis Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamilegacy/redis</a>
+[bitnamilegacy/redis Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnamilegacy/redis)
 
 # Bitnami Legacy镜像文档
 

@@ -1,4 +1,4 @@
----
+﻿---
 image: qdtoday/qd
 description: "QD [v20250129] 是一款基于HAR Editor和Tornado Server开发的HTTP请求定时任务自动执行框架，能够帮助用户便捷高效地设定并自动执行各类HTTP请求定时任务，为自动化测试、数据采集、接口监控等场景提供稳定可靠的技术支持，通过直观的HAR编辑功能与高性能的Tornado服务架构，实现定时任务的灵活配置与高效运行。"
 source: https://xuanyuan.cloud/zh/r/qdtoday/qd
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/qdtoday/qd
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/qdtoday/qd" title="qdtoday/qd Docker 镜像中文简介、标签列表与拉取命令">qdtoday/qd — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [qdtoday/qd — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/qdtoday/qd)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/qdtoday/qd" title="qdtoday/qd Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/qdtoday/qd</a>
+[qdtoday/qd Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/qdtoday/qd)
 
 # QD：HTTP请求定时任务自动执行框架
 

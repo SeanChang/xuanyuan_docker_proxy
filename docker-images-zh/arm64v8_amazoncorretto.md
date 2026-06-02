@@ -1,4 +1,4 @@
----
+﻿---
 image: arm64v8/amazoncorretto
 description: "Corretto是免费的生产就绪型Open Java Development Kit（OpenJDK）发行版。"
 source: https://xuanyuan.cloud/zh/r/arm64v8/amazoncorretto
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/arm64v8/amazoncorretto
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/arm64v8/amazoncorretto" title="arm64v8/amazoncorretto Docker 镜像中文简介、标签列表与拉取命令">arm64v8/amazoncorretto — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [arm64v8/amazoncorretto — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/arm64v8/amazoncorretto)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/arm64v8/amazoncorretto" title="arm64v8/amazoncorretto Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/arm64v8/amazoncorretto</a>
+[arm64v8/amazoncorretto Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/arm64v8/amazoncorretto)
 
 # Amazon Corretto Docker 镜像 (arm64v8 架构)
 

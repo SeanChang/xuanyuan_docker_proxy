@@ -1,4 +1,4 @@
----
+﻿---
 image: library/hello-world
 description: "“Hello World!”是一个经典的入门示例，具体而言是最小化Docker化的范例，它通过简单的应用展示了如何利用Docker将程序打包为容器，涵盖基础的镜像构建与容器运行流程，适合初学者快速理解Docker的核心概念及基本操作，直观体现了Docker化的简洁性与入门友好性。"
 source: https://xuanyuan.cloud/zh/r/library/hello-world
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/library/hello-world
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/hello-world" title="library/hello-world Docker 镜像中文简介、标签列表与拉取命令">library/hello-world — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [library/hello-world — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/hello-world)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/library/hello-world" title="library/hello-world Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/hello-world</a>
+[library/hello-world Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/hello-world)
 
 # hello-world 镜像介绍
 

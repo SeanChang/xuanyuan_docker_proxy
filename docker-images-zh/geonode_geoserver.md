@@ -1,4 +1,4 @@
----
+﻿---
 image: geonode/geoserver
 description: "用于GeoNode的GeoServer镜像，提供地理空间数据发布与管理服务，支持在GeoNode环境中集成地图服务功能。"
 source: https://xuanyuan.cloud/zh/r/geonode/geoserver
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/geonode/geoserver
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/geonode/geoserver" title="geonode/geoserver Docker 镜像中文简介、标签列表与拉取命令">geonode/geoserver — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [geonode/geoserver — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/geonode/geoserver)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/geonode/geoserver" title="geonode/geoserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/geonode/geoserver</a>
+[geonode/geoserver Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/geonode/geoserver)
 
 # geoserver-docker
 

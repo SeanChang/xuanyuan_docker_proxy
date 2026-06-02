@@ -1,4 +1,4 @@
----
+﻿---
 image: library/tomcat
 description: "Apache Tomcat是一款开源的Web服务器与Servlet容器，它实现了Java Servlet和JavaServer Pages（JSP）技术规范，主要用于支持Java Web应用程序的开发、部署与运行，为开发者提供轻量级且高效的运行环境，广泛应用于各类基于Java技术的Web项目中。"
 source: https://xuanyuan.cloud/zh/r/library/tomcat
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/library/tomcat
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/tomcat" title="library/tomcat Docker 镜像中文简介、标签列表与拉取命令">library/tomcat — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [library/tomcat — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/tomcat)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/library/tomcat" title="library/tomcat Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/tomcat</a>
+[library/tomcat Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/tomcat)
 
 # Tomcat Docker镜像介绍
 

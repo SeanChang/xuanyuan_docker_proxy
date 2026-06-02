@@ -1,4 +1,4 @@
----
+﻿---
 image: zenika/alpine-chrome
 description: "在极小的Alpine镜像中以无头模式运行的Chrome浏览器，适用于网页测试、自动化和内容生成等场景，体积小巧且功能丰富。"
 source: https://xuanyuan.cloud/zh/r/zenika/alpine-chrome
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/zenika/alpine-chrome
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zenika/alpine-chrome" title="zenika/alpine-chrome Docker 镜像中文简介、标签列表与拉取命令">zenika/alpine-chrome — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [zenika/alpine-chrome — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zenika/alpine-chrome)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/zenika/alpine-chrome" title="zenika/alpine-chrome Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zenika/alpine-chrome</a>
+[zenika/alpine-chrome Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/zenika/alpine-chrome)
 
 [![GitHub Stars](https://img.shields.io/github/stars/zenika/alpine-chrome)](https://github.com/Zenika/alpine-chrome/) [![Docker Build Status](https://img.shields.io/github/workflow/status/zenika/alpine-chrome/build.svg)](https://hub.docker.com/r/zenika/alpine-chrome/) [![Docker Pulls](https://img.shields.io/docker/pulls/zenika/alpine-chrome.svg)](https://hub.docker.com/r/zenika/alpine-chrome/) [![Docker Stars](https://img.shields.io/docker/stars/zenika/alpine-chrome.svg)](https://hub.docker.com/r/zenika/alpine-chrome/)
 

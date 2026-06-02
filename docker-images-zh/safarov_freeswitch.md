@@ -1,4 +1,4 @@
----
+﻿---
 image: safarov/freeswitch
 description: "这是官方推出的最小化FreeSwitch Docker容器，其中FreeSwitch作为一款开源的实时通信软交换平台，具备强大的语音、视频、消息等多媒体处理能力，该容器通过精简设计实现资源占用最小化，同时保持官方认证的稳定性与兼容性，可快速部署于各类环境，为开发者和企业提供高效、便捷的实时通信服务运行载体。"
 source: https://xuanyuan.cloud/zh/r/safarov/freeswitch
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/safarov/freeswitch
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/safarov/freeswitch" title="safarov/freeswitch Docker 镜像中文简介、标签列表与拉取命令">safarov/freeswitch — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [safarov/freeswitch — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/safarov/freeswitch)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/safarov/freeswitch" title="safarov/freeswitch Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/safarov/freeswitch</a>
+[safarov/freeswitch Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/safarov/freeswitch)
 
 # FreeSwitch 最小化 Docker 容器介绍
 

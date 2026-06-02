@@ -1,4 +1,4 @@
----
+﻿---
 image: library/kong
 description: "这是一款专为API和微服务打造的云原生API网关，具备基于云原生架构的弹性扩展、动态路由、流量管理、安全防护及监控分析等核心能力，能够有效连接、管理和保护分布式微服务与各类API接口，助力企业构建高效、可靠、可扩展的现代应用架构，满足数字化转型中对服务治理和API生命周期管理的需求。"
 source: https://xuanyuan.cloud/zh/r/library/kong
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/library/kong
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/kong" title="library/kong Docker 镜像中文简介、标签列表与拉取命令">library/kong — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [library/kong — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/kong)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/library/kong" title="library/kong Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/kong</a>
+[library/kong Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/kong)
 
 # Kong Docker 镜像使用参考
 

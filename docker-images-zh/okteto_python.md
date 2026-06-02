@@ -1,4 +1,4 @@
----
+﻿---
 image: okteto/python
 description: "该镜像包含用于与Okteto CLI配合使用的Python开发环境，Okteto是面向开发者的Kubernetes工具。"
 source: https://xuanyuan.cloud/zh/r/okteto/python
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/okteto/python
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/okteto/python" title="okteto/python Docker 镜像中文简介、标签列表与拉取命令">okteto/python — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [okteto/python — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/okteto/python)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/okteto/python" title="okteto/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/okteto/python</a>
+[okteto/python Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/okteto/python)
 
 # Python-Okteto 开发环境镜像文档
 

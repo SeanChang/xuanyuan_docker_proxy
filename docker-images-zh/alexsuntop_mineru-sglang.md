@@ -1,4 +1,4 @@
----
+﻿---
 image: alexsuntop/mineru-sglang
 description: "请使用alexsuntop/mineru，因为MinerU已切换至vLLM框架，以实现更高效的模型推理、更快的响应速度及更高的吞吐量，为用户提供更优质的使用体验，确保在处理各类任务时能够保持稳定性能与卓越效率，满足不同场景下的应用需求。"
 source: https://xuanyuan.cloud/zh/r/alexsuntop/mineru-sglang
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/alexsuntop/mineru-sglang
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alexsuntop/mineru-sglang" title="alexsuntop/mineru-sglang Docker 镜像中文简介、标签列表与拉取命令">alexsuntop/mineru-sglang — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [alexsuntop/mineru-sglang — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alexsuntop/mineru-sglang)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/alexsuntop/mineru-sglang" title="alexsuntop/mineru-sglang Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alexsuntop/mineru-sglang</a>
+[alexsuntop/mineru-sglang Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/alexsuntop/mineru-sglang)
 
 ### MinerU SGLang 后端部署指南
 

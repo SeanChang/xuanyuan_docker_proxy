@@ -1,4 +1,4 @@
----
+﻿---
 image: ai/gemma4
 description: "Gemma 4是Google DeepMind开发的多模态开源AI模型系列，支持文本、图像、音频处理，优化了推理、编码能力和长上下文处理，提供E2B、E4B、26B A4B、31B四种尺寸，适用于从移动设备到服务器的多样化部署场景。"
 source: https://xuanyuan.cloud/zh/r/ai/gemma4
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/ai/gemma4
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/gemma4" title="ai/gemma4 Docker 镜像中文简介、标签列表与拉取命令">ai/gemma4 — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [ai/gemma4 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ai/gemma4)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/ai/gemma4" title="ai/gemma4 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/gemma4</a>
+[ai/gemma4 Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/ai/gemma4)
 
 # Gemma 4 镜像文档
 

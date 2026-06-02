@@ -1,4 +1,4 @@
----
+﻿---
 image: prom/alertmanager
 description: "prom/alertmanager是Prometheus生态的告警管理组件，用于处理来自Prometheus服务器等客户端的告警，提供去重、分组、路由至邮件/PagerDuty等接收器的功能，并支持告警静默和抑制，确保告警高效分发与管理。"
 source: https://xuanyuan.cloud/zh/r/prom/alertmanager
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/prom/alertmanager
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/prom/alertmanager" title="prom/alertmanager Docker 镜像中文简介、标签列表与拉取命令">prom/alertmanager — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [prom/alertmanager — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/prom/alertmanager)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/prom/alertmanager" title="prom/alertmanager Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/alertmanager</a>
+[prom/alertmanager Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/prom/alertmanager)
 
 # Alertmanager 镜像文档
 

@@ -1,4 +1,4 @@
----
+﻿---
 image: rancher/rancher
 description: "这是一款专为在生产环境中部署容器的组织打造的容器管理平台，它能全面支持容器的部署、监控、扩展与运维等全生命周期管理，帮助企业有效提升生产环境中容器应用的运行效率与稳定性，优化资源配置，简化管理流程，适用于各类需要在生产场景中规模化或复杂化部署容器的机构，满足其对容器应用可靠运行与高效管理的核心需求。"
 source: https://xuanyuan.cloud/zh/r/rancher/rancher
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/rancher/rancher
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rancher/rancher" title="rancher/rancher Docker 镜像中文简介、标签列表与拉取命令">rancher/rancher — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [rancher/rancher — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rancher/rancher)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/rancher/rancher" title="rancher/rancher Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rancher/rancher</a>
+[rancher/rancher Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/rancher/rancher)
 
 ### 镜像说明  
 

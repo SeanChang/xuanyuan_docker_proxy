@@ -1,4 +1,4 @@
----
+﻿---
 image: bililive/recorder
 description: "B站录播姬(BililiveRecorder)的Docker镜像，用于便捷录制B站直播内容，支持直播自动录制与管理，提供稳定可靠的录播解决方案。"
 source: https://xuanyuan.cloud/zh/r/bililive/recorder
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/bililive/recorder
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bililive/recorder" title="bililive/recorder Docker 镜像中文简介、标签列表与拉取命令">bililive/recorder — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [bililive/recorder — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bililive/recorder)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/bililive/recorder" title="bililive/recorder Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bililive/recorder</a>
+[bililive/recorder Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bililive/recorder)
 
 ## 镜像概述
 B站录播姬(BililiveRecorder)的Docker镜像，旨在提供便捷、稳定的B站直播录制功能。该镜像基于官方录播工具封装，可帮助用户轻松实现B站直播的自动录制、管理与存档，无需复杂环境配置。

@@ -1,4 +1,4 @@
----
+﻿---
 image: gtstef/filebrowser
 description: "这是一款现代化的基于网络的文件浏览器，支持通过网页端随时随地访问和管理各类文件，具备跨平台兼容性，界面简洁直观，操作便捷高效，可轻松实现文件上传、下载、预览、分享及分类整理等功能，适用于个人用户日常文件管理及团队协作场景，有效提升文件处理效率，满足现代用户对灵活、高效文件访问与管理的需求。"
 source: https://xuanyuan.cloud/zh/r/gtstef/filebrowser
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/gtstef/filebrowser
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gtstef/filebrowser" title="gtstef/filebrowser Docker 镜像中文简介、标签列表与拉取命令">gtstef/filebrowser — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [gtstef/filebrowser — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/gtstef/filebrowser)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/gtstef/filebrowser" title="gtstef/filebrowser Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gtstef/filebrowser</a>
+[gtstef/filebrowser Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/gtstef/filebrowser)
 
 <div align="center">
 

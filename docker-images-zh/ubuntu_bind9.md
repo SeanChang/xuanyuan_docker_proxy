@@ -1,4 +1,4 @@
----
+﻿---
 image: ubuntu/bind9
 description: "BIND 9是灵活且功能全面的DNS系统，提供由Canonical维护的长期版本。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/bind9
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/ubuntu/bind9
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/bind9" title="ubuntu/bind9 Docker 镜像中文简介、标签列表与拉取命令">ubuntu/bind9 — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [ubuntu/bind9 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ubuntu/bind9)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/ubuntu/bind9" title="ubuntu/bind9 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/bind9</a>
+[ubuntu/bind9 Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/ubuntu/bind9)
 
 # Bind9 Docker镜像（基于Ubuntu）
 

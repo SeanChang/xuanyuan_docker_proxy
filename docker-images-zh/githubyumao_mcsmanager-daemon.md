@@ -1,4 +1,4 @@
----
+﻿---
 image: githubyumao/mcsmanager-daemon
 description: "MCSManager官方守护进程镜像，自动从GitHub仓库构建。"
 source: https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon" title="githubyumao/mcsmanager-daemon Docker 镜像中文简介、标签列表与拉取命令">githubyumao/mcsmanager-daemon — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [githubyumao/mcsmanager-daemon — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon" title="githubyumao/mcsmanager-daemon Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon</a>
+[githubyumao/mcsmanager-daemon Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon)
 
 # MCSManager 官方Docker镜像文档
 

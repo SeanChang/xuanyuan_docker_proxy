@@ -1,4 +1,4 @@
----
+﻿---
 image: bitnami/kube-state-metrics
 description: "Bitnami Secure Image for kube-state-metrics是比特纳米公司提供的经过安全加固的容器镜像，旨在简化Kubernetes集群中kube-state-metrics组件的部署与运维，该组件主要用于收集并暴露Kubernetes资源对象（如Pod、Deployment、Service等）的状态指标，帮助用户实时监控集群运行状态，保障容器化应用的稳定与安全。"
 source: https://xuanyuan.cloud/zh/r/bitnami/kube-state-metrics
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/bitnami/kube-state-metrics
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/kube-state-metrics" title="bitnami/kube-state-metrics Docker 镜像中文简介、标签列表与拉取命令">bitnami/kube-state-metrics — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [bitnami/kube-state-metrics — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/kube-state-metrics)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/bitnami/kube-state-metrics" title="bitnami/kube-state-metrics Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/kube-state-metrics</a>
+[bitnami/kube-state-metrics Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnami/kube-state-metrics)
 
 # Bitnami kube-state-metrics 安全镜像  
 

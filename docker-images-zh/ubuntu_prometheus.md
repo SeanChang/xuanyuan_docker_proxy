@@ -1,4 +1,4 @@
----
+﻿---
 image: ubuntu/prometheus
 description: "普罗米修斯是一款广泛应用于IT领域的系统与服务监控系统，它通过部署在目标环境中的组件对计算机系统、网络服务、应用程序等各类系统及服务的运行状态、资源使用情况、性能表现、故障信息等进行全天候实时监测、数据采集、指标分析与告警通知，为系统运维和管理提供可靠的数据支持，其中长期支持版本由Canonical公司负责持续维护与更新。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/prometheus
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/ubuntu/prometheus
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/prometheus" title="ubuntu/prometheus Docker 镜像中文简介、标签列表与拉取命令">ubuntu/prometheus — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [ubuntu/prometheus — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ubuntu/prometheus)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/ubuntu/prometheus" title="ubuntu/prometheus Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/prometheus</a>
+[ubuntu/prometheus Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/ubuntu/prometheus)
 
 # Prometheus | Ubuntu Docker镜像介绍
 

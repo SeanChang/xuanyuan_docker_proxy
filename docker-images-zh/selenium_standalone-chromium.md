@@ -1,4 +1,4 @@
----
+﻿---
 image: selenium/standalone-chromium
 description: "Selenium Grid独立模式镜像，集成Chromium浏览器，用于运行基于Chrome的自动化测试。"
 source: https://xuanyuan.cloud/zh/r/selenium/standalone-chromium
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/selenium/standalone-chromium
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/selenium/standalone-chromium" title="selenium/standalone-chromium Docker 镜像中文简介、标签列表与拉取命令">selenium/standalone-chromium — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [selenium/standalone-chromium — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/selenium/standalone-chromium)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/selenium/standalone-chromium" title="selenium/standalone-chromium Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/selenium/standalone-chromium</a>
+[selenium/standalone-chromium Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/selenium/standalone-chromium)
 
 # Selenium Grid Standalone with Chromium 镜像文档
 

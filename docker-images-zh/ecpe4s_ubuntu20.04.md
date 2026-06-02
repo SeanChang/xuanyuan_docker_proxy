@@ -1,4 +1,4 @@
----
+﻿---
 image: ecpe4s/ubuntu20.04
 description: "E4S（Extreme-scale Scientific Software Stack）基础Ubuntu镜像，集成Spack包管理器，用于科学计算软件的安装、版本管理及依赖解析，适用于构建稳定的科学计算环境。"
 source: https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04" title="ecpe4s/ubuntu20.04 Docker 镜像中文简介、标签列表与拉取命令">ecpe4s/ubuntu20.04 — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [ecpe4s/ubuntu20.04 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04" title="ecpe4s/ubuntu20.04 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04</a>
+[ecpe4s/ubuntu20.04 Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04)
 
 ## 概述
 本镜像为E4S（Extreme-scale Scientific Software Stack）的基础Ubuntu镜像，集成Spack包管理器，旨在为科学计算领域提供标准化的软件环境构建工具。E4S专注于极端规模科学计算软件的集成与优化，Ubuntu系统则提供了广泛兼容的基础运行环境。

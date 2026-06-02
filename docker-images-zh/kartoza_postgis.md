@@ -1,4 +1,4 @@
----
+﻿---
 image: kartoza/postgis
 description: "即开即用的PostGIS地理空间数据库是基于PostgreSQL的高效空间扩展解决方案，可快速存储、查询和分析各类地理空间数据，涵盖矢量数据（如点、线、面要素）与栅格数据处理，支持空间索引优化、地理编码转换、拓扑关系验证及空间分析函数等核心功能，适用于GIS应用开发、城市规划、环境监测、位置服务等多场景，无需复杂配置即可直接部署使用。"
 source: https://xuanyuan.cloud/zh/r/kartoza/postgis
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/kartoza/postgis
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kartoza/postgis" title="kartoza/postgis Docker 镜像中文简介、标签列表与拉取命令">kartoza/postgis — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [kartoza/postgis — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kartoza/postgis)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/kartoza/postgis" title="kartoza/postgis Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kartoza/postgis</a>
+[kartoza/postgis Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/kartoza/postgis)
 
 # docker-postgis：运行 PostGIS 的 Docker 容器
 

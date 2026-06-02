@@ -1,4 +1,4 @@
----
+﻿---
 image: library/r-base
 description: "R是一款开源的统计计算与图形绘制系统，具备强大的数据处理、分析、建模及可视化功能，拥有丰富的扩展包生态与活跃的全球社区支持，广泛应用于学术研究、数据分析、机器学习等领域，为用户提供从数据清洗到结果呈现的全流程解决方案。"
 source: https://xuanyuan.cloud/zh/r/library/r-base
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/library/r-base
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/r-base" title="library/r-base Docker 镜像中文简介、标签列表与拉取命令">library/r-base — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [library/r-base — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/r-base)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/library/r-base" title="library/r-base Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/r-base</a>
+[library/r-base Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/r-base)
 
 # R 镜像使用指南
 

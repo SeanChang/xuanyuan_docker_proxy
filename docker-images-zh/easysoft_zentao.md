@@ -1,4 +1,4 @@
----
+﻿---
 image: easysoft/zentao
 description: "禅道官方（ZenTao Official）是为企业及团队提供专业项目管理软件与服务的官方平台，专注于产品管理、项目协作、任务跟踪、缺陷管理等一体化解决方案，助力团队高效规划研发流程、统筹资源分配、把控项目进度，实现从需求提出到产品交付的全流程可视化管理，提升协作效率与项目成功率。"
 source: https://xuanyuan.cloud/zh/r/easysoft/zentao
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/easysoft/zentao
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/easysoft/zentao" title="easysoft/zentao Docker 镜像中文简介、标签列表与拉取命令">easysoft/zentao — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [easysoft/zentao — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/easysoft/zentao)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/easysoft/zentao" title="easysoft/zentao Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/easysoft/zentao</a>
+[easysoft/zentao Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/easysoft/zentao)
 
 # 禅道官方镜像（ZenTaoPMS）
 

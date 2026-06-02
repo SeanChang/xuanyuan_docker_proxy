@@ -1,4 +1,4 @@
----
+﻿---
 image: mcp/line
 description: "集成LINE Messaging API的MCP服务器，用于将AI Agent连接到LINE官方账号，支持消息广播、用户资料获取、菜单管理等多种LINE功能。"
 source: https://xuanyuan.cloud/zh/r/mcp/line
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/mcp/line
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mcp/line" title="mcp/line Docker 镜像中文简介、标签列表与拉取命令">mcp/line — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [mcp/line — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mcp/line)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/mcp/line" title="mcp/line Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mcp/line</a>
+[mcp/line Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/mcp/line)
 
 # LINE MCP Server
 

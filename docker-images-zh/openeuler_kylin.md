@@ -1,4 +1,4 @@
----
+﻿---
 image: openeuler/kylin
 description: "官方Kylin Docker镜像，基于openEuler构建，提供高并发、高性能的智能OLAP引擎，支持低成本、高效的数据分析体验，适用于各类数据查询与分析场景。"
 source: https://xuanyuan.cloud/zh/r/openeuler/kylin
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/openeuler/kylin
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/kylin" title="openeuler/kylin Docker 镜像中文简介、标签列表与拉取命令">openeuler/kylin — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [openeuler/kylin — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/openeuler/kylin)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/openeuler/kylin" title="openeuler/kylin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/kylin</a>
+[openeuler/kylin Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/openeuler/kylin)
 
 # 镜像概述
 

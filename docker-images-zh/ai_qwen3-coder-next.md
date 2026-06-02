@@ -1,4 +1,4 @@
----
+﻿---
 image: ai/qwen3-coder-next
 description: "Qwen3-Coder-Next是专为编码代理和本地开发设计的开源语言模型，采用混合专家（MoE）架构，80B总参数中仅激活3B参数实现高效运行，具备256K上下文长度和强大的代理能力，适用于动态编码任务。"
 source: https://xuanyuan.cloud/zh/r/ai/qwen3-coder-next
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/ai/qwen3-coder-next
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen3-coder-next" title="ai/qwen3-coder-next Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-coder-next — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [ai/qwen3-coder-next — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ai/qwen3-coder-next)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/ai/qwen3-coder-next" title="ai/qwen3-coder-next Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-coder-next</a>
+[ai/qwen3-coder-next Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/ai/qwen3-coder-next)
 
 # Qwen3-Coder-Next
 

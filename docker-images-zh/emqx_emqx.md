@@ -1,4 +1,4 @@
----
+﻿---
 image: emqx/emqx
 description: "这是一款专为人工智能（AI）、物联网（IoT）、工业物联网（IIoT）及联网车辆打造的最具可扩展性与可靠性的MQTT消息代理，能高效支持各类智能设备与系统间的实时数据传输与通信，为复杂互联场景下的稳定运行提供强大技术支撑，满足大规模设备接入与高并发消息处理需求。"
 source: https://xuanyuan.cloud/zh/r/emqx/emqx
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/emqx/emqx
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/emqx/emqx" title="emqx/emqx Docker 镜像中文简介、标签列表与拉取命令">emqx/emqx — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [emqx/emqx — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/emqx/emqx)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/emqx/emqx" title="emqx/emqx Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/emqx/emqx</a>
+[emqx/emqx Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/emqx/emqx)
 
 # EMQX 概述
 

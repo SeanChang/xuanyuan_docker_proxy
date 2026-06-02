@@ -1,4 +1,4 @@
----
+﻿---
 image: 1panel/maxkb
 description: "这是一款即开即用、灵活高效的RAG聊天机器人，基于检索增强生成技术，无需复杂配置即可直接部署使用，具备高度灵活性以适配多样化的应用场景与数据需求，通过高效检索外部知识库信息并结合生成式AI能力，能够精准理解用户需求、提供准确且上下文相关的智能响应。"
 source: https://xuanyuan.cloud/zh/r/1panel/maxkb
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/1panel/maxkb
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/1panel/maxkb" title="1panel/maxkb Docker 镜像中文简介、标签列表与拉取命令">1panel/maxkb — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [1panel/maxkb — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/1panel/maxkb)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/1panel/maxkb" title="1panel/maxkb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/1panel/maxkb</a>
+[1panel/maxkb Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/1panel/maxkb)
 
 # MaxKB：企业级智能体构建开源平台
 

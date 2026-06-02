@@ -1,4 +1,4 @@
----
+﻿---
 image: teableio/teable
 description: "Teable 是一个超快速、实时、专业、开发者友好的无代码数据库，基于Postgres构建，采用类电子表格界面，可创建复杂的企业级数据库应用，无需担心数据安全和可扩展性问题。"
 source: https://xuanyuan.cloud/zh/r/teableio/teable
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/teableio/teable
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/teableio/teable" title="teableio/teable Docker 镜像中文简介、标签列表与拉取命令">teableio/teable — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [teableio/teable — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/teableio/teable)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/teableio/teable" title="teableio/teable Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/teableio/teable</a>
+[teableio/teable Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/teableio/teable)
 
 # Teable 镜像文档
 

@@ -1,4 +1,4 @@
----
+﻿---
 image: rabobankcdc/dettect
 description: "DeTT&CT是协助蓝队使用ATT&CK框架评估数据源质量、可见性、检测覆盖和威胁行为的工具，旨在提升组织抵御攻击能力，包含Python CLI工具、YAML管理文件、编辑器及评分表，支持企业、ICS和移动ATT&CK域。"
 source: https://xuanyuan.cloud/zh/r/rabobankcdc/dettect
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/rabobankcdc/dettect
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rabobankcdc/dettect" title="rabobankcdc/dettect Docker 镜像中文简介、标签列表与拉取命令">rabobankcdc/dettect — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [rabobankcdc/dettect — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rabobankcdc/dettect)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/rabobankcdc/dettect" title="rabobankcdc/dettect Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rabobankcdc/dettect</a>
+[rabobankcdc/dettect Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/rabobankcdc/dettect)
 
 # DeTT&CT 镜像文档
 

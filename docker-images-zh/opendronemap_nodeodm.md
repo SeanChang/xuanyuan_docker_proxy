@@ -1,4 +1,4 @@
----
+﻿---
 image: opendronemap/nodeodm
 description: "NodeODM的自动化构建镜像，用于简化NodeODM的部署与使用"
 source: https://xuanyuan.cloud/zh/r/opendronemap/nodeodm
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/opendronemap/nodeodm
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/opendronemap/nodeodm" title="opendronemap/nodeodm Docker 镜像中文简介、标签列表与拉取命令">opendronemap/nodeodm — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [opendronemap/nodeodm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/opendronemap/nodeodm)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/opendronemap/nodeodm" title="opendronemap/nodeodm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/opendronemap/nodeodm</a>
+[opendronemap/nodeodm Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/opendronemap/nodeodm)
 
 # NodeODM 中文技术文档
 

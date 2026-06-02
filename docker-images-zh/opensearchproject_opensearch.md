@@ -1,4 +1,4 @@
----
+﻿---
 image: opensearchproject/opensearch
 description: "OpenSearch官方Docker镜像，提供可扩展、灵活的开源搜索、分析和可观测性套件，包含OpenSearch搜索引擎和OpenSearch Dashboards管理可视化界面。"
 source: https://xuanyuan.cloud/zh/r/opensearchproject/opensearch
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/opensearchproject/opensearch
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/opensearchproject/opensearch" title="opensearchproject/opensearch Docker 镜像中文简介、标签列表与拉取命令">opensearchproject/opensearch — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [opensearchproject/opensearch — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/opensearchproject/opensearch)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/opensearchproject/opensearch" title="opensearchproject/opensearch Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/opensearchproject/opensearch</a>
+[opensearchproject/opensearch Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/opensearchproject/opensearch)
 
 # OpenSearch Docker镜像文档
 

@@ -1,4 +1,4 @@
----
+﻿---
 image: prom/snmp-exporter
 description: "Prometheus SNMP导出器，用于从SNMP设备收集数据并转换为Prometheus可抓取的格式，支持网络设备监控与指标采集。"
 source: https://xuanyuan.cloud/zh/r/prom/snmp-exporter
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/prom/snmp-exporter
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/prom/snmp-exporter" title="prom/snmp-exporter Docker 镜像中文简介、标签列表与拉取命令">prom/snmp-exporter — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [prom/snmp-exporter — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/prom/snmp-exporter)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/prom/snmp-exporter" title="prom/snmp-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/snmp-exporter</a>
+[prom/snmp-exporter Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/prom/snmp-exporter)
 
 # Prometheus SNMP Exporter 镜像文档
 

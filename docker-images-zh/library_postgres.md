@@ -1,4 +1,4 @@
----
+﻿---
 image: library/postgres
 description: "PostgreSQL作为一款功能强大的对象关系型数据库系统，凭借其先进的架构设计与完善的技术机制，不仅能高效融合关系型数据的结构化管理与对象型数据的灵活扩展，更通过严格的ACID事务支持、多版本并发控制及全面的数据校验机制，为各类应用场景提供卓越的系统可靠性与极致的数据完整性保障，是全球广泛应用的开源数据库优选方案。"
 source: https://xuanyuan.cloud/zh/r/library/postgres
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/library/postgres
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/postgres" title="library/postgres Docker 镜像中文简介、标签列表与拉取命令">library/postgres — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [library/postgres — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/postgres)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/library/postgres" title="library/postgres Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/postgres</a>
+[library/postgres Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/postgres)
 
 # PostgreSQL Docker 镜像使用指南
 

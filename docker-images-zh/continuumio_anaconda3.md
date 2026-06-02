@@ -1,4 +1,4 @@
----
+﻿---
 image: continuumio/anaconda3
 description: "最值得信赖的数据科学工具发行版，整合了数据处理、分析、建模及可视化等全流程所需的核心工具与库，凭借稳定可靠的性能、广泛的兼容性及持续的更新支持，成为全球数据科学家、研究人员及开发者日常工作中首选的一站式解决方案，赢得了行业内外的高度认可与信赖。"
 source: https://xuanyuan.cloud/zh/r/continuumio/anaconda3
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/continuumio/anaconda3
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/continuumio/anaconda3" title="continuumio/anaconda3 Docker 镜像中文简介、标签列表与拉取命令">continuumio/anaconda3 — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [continuumio/anaconda3 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/continuumio/anaconda3)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/continuumio/anaconda3" title="continuumio/anaconda3 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/continuumio/anaconda3</a>
+[continuumio/anaconda3 Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/continuumio/anaconda3)
 
 # Anaconda3 Docker镜像
 

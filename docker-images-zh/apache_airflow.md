@@ -1,4 +1,4 @@
----
+﻿---
 image: apache/airflow
 description: "Apache Airflow是一个开源的工作流编排平台，旨在通过编程方式（主要使用Python）定义、调度和监控复杂工作流，它以有向无环图（DAG）形式管理任务依赖关系，支持灵活的调度策略（如基于时间、事件或依赖），提供直观的Web界面用于任务状态监控与管理，具备高度可扩展性，可集成多种数据处理工具、云服务及外部系统，广泛应用于数据管道构建、ETL流程自动化、机器学习工作流编排等场景，帮助用户高效管理和执行复杂的任务流程。"
 source: https://xuanyuan.cloud/zh/r/apache/airflow
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/apache/airflow
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/airflow" title="apache/airflow Docker 镜像中文简介、标签列表与拉取命令">apache/airflow — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [apache/airflow — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apache/airflow)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/apache/airflow" title="apache/airflow Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/airflow</a>
+[apache/airflow Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/apache/airflow)
 
 # Apache Airflow  
 

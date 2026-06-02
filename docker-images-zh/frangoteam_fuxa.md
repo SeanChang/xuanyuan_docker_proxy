@@ -1,4 +1,4 @@
----
+﻿---
 image: frangoteam/fuxa
 description: "FUXA是一款开源的基于Web的过程可视化（SCADA/HMI/仪表盘）软件。https://github.com/frangoteam/FUXA"
 source: https://xuanyuan.cloud/zh/r/frangoteam/fuxa
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/frangoteam/fuxa
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/frangoteam/fuxa" title="frangoteam/fuxa Docker 镜像中文简介、标签列表与拉取命令">frangoteam/fuxa — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [frangoteam/fuxa — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/frangoteam/fuxa)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/frangoteam/fuxa" title="frangoteam/fuxa Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/frangoteam/fuxa</a>
+[frangoteam/fuxa Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/frangoteam/fuxa)
 
 # FUXA Docker镜像文档
 

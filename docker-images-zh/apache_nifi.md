@@ -1,4 +1,4 @@
----
+﻿---
 image: apache/nifi
 description: "提供Apache NiFi的非官方二进制构建，用于数据集成、数据流自动化与管理。"
 source: https://xuanyuan.cloud/zh/r/apache/nifi
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/apache/nifi
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/nifi" title="apache/nifi Docker 镜像中文简介、标签列表与拉取命令">apache/nifi — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [apache/nifi — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apache/nifi)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/apache/nifi" title="apache/nifi Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/nifi</a>
+[apache/nifi Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/apache/nifi)
 
 # Apache NiFi Docker镜像文档
 

@@ -1,4 +1,4 @@
----
+﻿---
 image: altran1502/immich-server
 description: "基于Nest.js框架构建的Immich服务器，是一款专为自托管场景设计的工具，主要用于移动设备中照片、视频等数字资产的备份与展示，帮助用户通过自行搭建服务器的方式，安全、便捷地管理和呈现手机等移动设备中的各类资产，实现个人数据的自主掌控与灵活访问，满足用户对移动资产备份存储及展示查看的自托管需求。"
 source: https://xuanyuan.cloud/zh/r/altran1502/immich-server
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/altran1502/immich-server
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/altran1502/immich-server" title="altran1502/immich-server Docker 镜像中文简介、标签列表与拉取命令">altran1502/immich-server — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [altran1502/immich-server — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/altran1502/immich-server)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/altran1502/immich-server" title="altran1502/immich-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/altran1502/immich-server</a>
+[altran1502/immich-server Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/altran1502/immich-server)
 
 # Nest.js Immich服务器：自托管移动资产备份与展示方案
 

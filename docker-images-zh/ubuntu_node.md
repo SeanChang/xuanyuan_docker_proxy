@@ -1,4 +1,4 @@
----
+﻿---
 image: ubuntu/node
 description: "基于Ubuntu的Node.js镜像，适用于服务器端和网络应用程序。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/node
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/ubuntu/node
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/node" title="ubuntu/node Docker 镜像中文简介、标签列表与拉取命令">ubuntu/node — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [ubuntu/node — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ubuntu/node)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/ubuntu/node" title="ubuntu/node Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/node</a>
+[ubuntu/node Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/ubuntu/node)
 
 # Chiselled Ubuntu for Nodejs
 

@@ -1,4 +1,4 @@
----
+﻿---
 image: osrf/ros
 description: "OSRF 提供的 ROS（机器人操作系统）Docker 镜像，支持 ROS 1 和 ROS 2，基于官方镜像构建并包含桌面安装元包，适用于开发环境和 GUI 应用程序。必须使用显式标签拉取，不支持 latest 标签。"
 source: https://xuanyuan.cloud/zh/r/osrf/ros
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/osrf/ros
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/osrf/ros" title="osrf/ros Docker 镜像中文简介、标签列表与拉取命令">osrf/ros — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [osrf/ros — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/osrf/ros)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/osrf/ros" title="osrf/ros Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/osrf/ros</a>
+[osrf/ros Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/osrf/ros)
 
 # OSRF ROS Docker 镜像
 

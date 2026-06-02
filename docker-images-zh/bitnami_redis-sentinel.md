@@ -1,4 +1,4 @@
----
+﻿---
 image: bitnami/redis-sentinel
 description: "Bitnami提供的Redis哨兵安全镜像，用于实现Redis集群的高可用，支持监控和自动故障转移。"
 source: https://xuanyuan.cloud/zh/r/bitnami/redis-sentinel
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/bitnami/redis-sentinel
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/redis-sentinel" title="bitnami/redis-sentinel Docker 镜像中文简介、标签列表与拉取命令">bitnami/redis-sentinel — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [bitnami/redis-sentinel — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/redis-sentinel)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/bitnami/redis-sentinel" title="bitnami/redis-sentinel Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/redis-sentinel</a>
+[bitnami/redis-sentinel Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnami/redis-sentinel)
 
 # Bitnami Redis® Sentinel 镜像文档
 

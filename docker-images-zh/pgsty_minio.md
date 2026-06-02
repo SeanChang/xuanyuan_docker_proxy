@@ -1,4 +1,4 @@
----
+﻿---
 image: pgsty/minio
 description: "社区维护的minio/minio分支，提供S3兼容的高性能对象存储解决方案，适用于AI/ML、数据分析等数据密集型工作负载，恢复了嵌入式管理控制台GUI版本引用并更新了文档链接。"
 source: https://xuanyuan.cloud/zh/r/pgsty/minio
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/pgsty/minio
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/pgsty/minio" title="pgsty/minio Docker 镜像中文简介、标签列表与拉取命令">pgsty/minio — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [pgsty/minio — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/pgsty/minio)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/pgsty/minio" title="pgsty/minio Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/pgsty/minio</a>
+[pgsty/minio Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/pgsty/minio)
 
 # 重要声明
 

@@ -1,4 +1,4 @@
----
+﻿---
 image: linuxserver/chrome
 description: "LinuxServer提供的Chrome浏览器容器镜像，用于在隔离环境中运行Chrome，支持网页测试、自动化操作及服务器端网页渲染等场景。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/chrome
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/linuxserver/chrome
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/chrome" title="linuxserver/chrome Docker 镜像中文简介、标签列表与拉取命令">linuxserver/chrome — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [linuxserver/chrome — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/chrome)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/linuxserver/chrome" title="linuxserver/chrome Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/chrome</a>
+[linuxserver/chrome Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/linuxserver/chrome)
 
 # linuxserver/chrome 镜像文档
 

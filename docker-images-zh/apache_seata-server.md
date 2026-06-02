@@ -1,4 +1,4 @@
----
+﻿---
 image: apache/seata-server
 description: "Apache Seata是一款开源的分布式事务解决方案，致力于为微服务架构提供高性能、简单易用的分布式事务服务，支持AT、TCC、SAGA和XA四种事务模式，能够帮助开发者快速解决分布式系统中的数据一致性问题，具备良好的兼容性与可扩展性，适用于各类微服务场景，由Apache软件基金会孵化并维护，拥有活跃的社区支持。"
 source: https://xuanyuan.cloud/zh/r/apache/seata-server
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/apache/seata-server
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/seata-server" title="apache/seata-server Docker 镜像中文简介、标签列表与拉取命令">apache/seata-server — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [apache/seata-server — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apache/seata-server)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/apache/seata-server" title="apache/seata-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/seata-server</a>
+[apache/seata-server Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/apache/seata-server)
 
 # Seata Server
 

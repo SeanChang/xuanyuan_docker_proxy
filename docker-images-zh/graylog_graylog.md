@@ -1,4 +1,4 @@
----
+﻿---
 image: graylog/graylog
 description: "这是官方Graylog Docker镜像（自动构建版），Graylog作为一款开源日志管理与分析平台，该镜像支持通过容器化方式快速部署，可集中收集、存储并分析各类系统与应用日志，提供实时搜索、可视化仪表盘及告警功能，其自动构建流程确保镜像版本更新及时且可靠，有效减少手动操作错误，为用户搭建高效、稳定的日志处理系统提供便捷支持。"
 source: https://xuanyuan.cloud/zh/r/graylog/graylog
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/graylog/graylog
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/graylog/graylog" title="graylog/graylog Docker 镜像中文简介、标签列表与拉取命令">graylog/graylog — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [graylog/graylog — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/graylog/graylog)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/graylog/graylog" title="graylog/graylog Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/graylog/graylog</a>
+[graylog/graylog Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/graylog/graylog)
 
 # Graylog Docker 镜像
 

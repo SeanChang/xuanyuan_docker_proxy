@@ -1,4 +1,4 @@
----
+﻿---
 image: library/fedora
 description: "Fedora官方Docker镜像是由红帽公司主导开发的Linux发行版Fedora提供的官方容器化构建成果，旨在为开发者与系统管理员提供基于Fedora操作系统的标准化、轻量级Docker镜像资源，支持快速搭建、测试及部署容器化应用，有效保障开发与运行环境的一致性和可靠性，是Fedora生态系统中推动容器技术应用的重要基础组件。"
 source: https://xuanyuan.cloud/zh/r/library/fedora
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/library/fedora
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/fedora" title="library/fedora Docker 镜像中文简介、标签列表与拉取命令">library/fedora — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [library/fedora — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/fedora)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/library/fedora" title="library/fedora Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/fedora</a>
+[library/fedora Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/fedora)
 
 # Fedora Docker 镜像介绍
 

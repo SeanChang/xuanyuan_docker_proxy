@@ -1,4 +1,4 @@
----
+﻿---
 image: kindest/node
 description: "[] node image 是 Kubernetes 特殊兴趣小组（SIGs）旗下 kind（Kubernetes IN Docker）项目的节点镜像，其以 Docker 容器形式运行 Kubernetes 节点，支持用户在本地快速部署和运行 Kubernetes 集群，适用于 Kubernetes 相关功能的开发、测试与学习场景。"
 source: https://xuanyuan.cloud/zh/r/kindest/node
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/kindest/node
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kindest/node" title="kindest/node Docker 镜像中文简介、标签列表与拉取命令">kindest/node — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [kindest/node — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kindest/node)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/kindest/node" title="kindest/node Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kindest/node</a>
+[kindest/node Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/kindest/node)
 
 ### kind 预构建节点镜像说明  
 

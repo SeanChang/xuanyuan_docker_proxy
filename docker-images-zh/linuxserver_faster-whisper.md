@@ -1,4 +1,4 @@
----
+﻿---
 image: linuxserver/faster-whisper
 description: "LinuxServer.io提供的Faster Whisper语音识别模型Docker镜像，用于高效部署和运行语音转文本服务。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper" title="linuxserver/faster-whisper Docker 镜像中文简介、标签列表与拉取命令">linuxserver/faster-whisper — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [linuxserver/faster-whisper — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper" title="linuxserver/faster-whisper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper</a>
+[linuxserver/faster-whisper Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper)
 
 # linuxserver/faster-whisper 镜像文档
 

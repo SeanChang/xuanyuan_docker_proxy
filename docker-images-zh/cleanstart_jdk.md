@@ -1,4 +1,4 @@
----
+﻿---
 image: cleanstart/jdk
 description: "企业级Java开发工具包(JDK)容器镜像，基于OpenJDK构建，提供完整的Java开发和运行环境，包含必要的开发工具、调试能力和安全特性，专为云原生应用优化，具有轻量级和增强的安全控制。"
 source: https://xuanyuan.cloud/zh/r/cleanstart/jdk
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/cleanstart/jdk
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cleanstart/jdk" title="cleanstart/jdk Docker 镜像中文简介、标签列表与拉取命令">cleanstart/jdk — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [cleanstart/jdk — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/cleanstart/jdk)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/cleanstart/jdk" title="cleanstart/jdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cleanstart/jdk</a>
+[cleanstart/jdk Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/cleanstart/jdk)
 
 # CleanStart JDK容器镜像
 

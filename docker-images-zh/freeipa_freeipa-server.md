@@ -1,4 +1,4 @@
----
+﻿---
 image: freeipa/freeipa-server
 description: "FreeIPA服务器容器，提供集中式身份认证、授权和账户管理服务，支持在容器中部署主服务器或副本，通过systemd管理服务，适用于开发测试与生产环境，支持数据持久化、版本升级及多标签选择（稳定版/开发版）。"
 source: https://xuanyuan.cloud/zh/r/freeipa/freeipa-server
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/freeipa/freeipa-server
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/freeipa/freeipa-server" title="freeipa/freeipa-server Docker 镜像中文简介、标签列表与拉取命令">freeipa/freeipa-server — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [freeipa/freeipa-server — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/freeipa/freeipa-server)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/freeipa/freeipa-server" title="freeipa/freeipa-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/freeipa/freeipa-server</a>
+[freeipa/freeipa-server Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/freeipa/freeipa-server)
 
 # FreeIPA服务器容器
 

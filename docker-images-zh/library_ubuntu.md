@@ -1,4 +1,4 @@
----
+﻿---
 image: library/ubuntu
 description: "Ubuntu是一款基于Debian的Linux操作系统，以自由软件为核心构建，由Canonical公司主导开发并提供支持。它注重用户友好性与开源精神，兼容多种硬件架构，广泛适用于个人电脑、服务器及嵌入式设备，提供长期支持版本（LTS）以保障系统稳定性，拥有全球活跃的开发者与用户社区，致力于为各类用户提供安全、高效且免费的开源计算体验。"
 source: https://xuanyuan.cloud/zh/r/library/ubuntu
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/library/ubuntu
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/ubuntu" title="library/ubuntu Docker 镜像中文简介、标签列表与拉取命令">library/ubuntu — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [library/ubuntu — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/ubuntu)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/library/ubuntu" title="library/ubuntu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/ubuntu</a>
+[library/ubuntu Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/ubuntu)
 
 # Ubuntu Docker镜像介绍
 

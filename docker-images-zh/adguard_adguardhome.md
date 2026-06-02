@@ -1,4 +1,4 @@
----
+﻿---
 image: adguard/adguardhome
 description: "这是一款全网络广告与追踪器拦截DNS服务器，通过在DNS解析环节过滤广告内容、恶意追踪代码及侵扰性弹窗，实现对家庭或企业网络内所有设备（如手机、电脑、智能电视、智能家居产品等）的广告屏蔽与隐私保护，无需在各终端单独安装软件，仅需简单配置即可让整个网络环境免受广告干扰、视频贴片及用户行为追踪，有效提升网页加载速度、减少数据流量消耗，为用户营造更纯净、安全的网络使用体验。"
 source: https://xuanyuan.cloud/zh/r/adguard/adguardhome
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/adguard/adguardhome
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/adguard/adguardhome" title="adguard/adguardhome Docker 镜像中文简介、标签列表与拉取命令">adguard/adguardhome — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [adguard/adguardhome — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/adguard/adguardhome)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/adguard/adguardhome" title="adguard/adguardhome Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/adguard/adguardhome</a>
+[adguard/adguardhome Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/adguard/adguardhome)
 
 # AdGuard Home - Docker部署指南
 

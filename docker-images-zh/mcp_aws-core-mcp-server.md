@@ -1,4 +1,4 @@
----
+﻿---
 image: mcp/aws-core-mcp-server
 description: "用于使用awslabs MCP服务器的基础镜像"
 source: https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server" title="mcp/aws-core-mcp-server Docker 镜像中文简介、标签列表与拉取命令">mcp/aws-core-mcp-server — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [mcp/aws-core-mcp-server — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server" title="mcp/aws-core-mcp-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server</a>
+[mcp/aws-core-mcp-server Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server)
 
 # AWS Core MCP Server 镜像文档
 

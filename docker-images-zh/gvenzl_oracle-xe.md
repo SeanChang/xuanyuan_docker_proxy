@@ -1,4 +1,4 @@
----
+﻿---
 image: gvenzl/oracle-xe
 description: "Oracle数据库XE版（包括21c、18c、11g版本）面向所有用户开放使用！若需了解Oracle数据库23c免费版的相关信息，可通过gvenzl/oracle-free获取详细内容，该资源提供了23c免费版的功能介绍及使用指南。"
 source: https://xuanyuan.cloud/zh/r/gvenzl/oracle-xe
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/gvenzl/oracle-xe
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gvenzl/oracle-xe" title="gvenzl/oracle-xe Docker 镜像中文简介、标签列表与拉取命令">gvenzl/oracle-xe — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [gvenzl/oracle-xe — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/gvenzl/oracle-xe)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/gvenzl/oracle-xe" title="gvenzl/oracle-xe Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gvenzl/oracle-xe</a>
+[gvenzl/oracle-xe Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/gvenzl/oracle-xe)
 
 # oci-oracle-xe：Oracle Database Express Edition 容器镜像  
 

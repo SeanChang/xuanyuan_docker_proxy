@@ -1,4 +1,4 @@
----
+﻿---
 image: pingcap/tidb
 description: "TiDB Docker 是 PingCAP 官方提供的 TiDB 分布式 SQL 数据库容器化部署方案，该数据库具备与 MySQL 高度兼容、支持水平扩展、强一致性和高可用等核心优势，通过 Docker 容器化技术，可实现快速环境搭建、简化部署流程、确保开发与生产环境一致性，有效降低运维复杂度，为用户提供便捷、高效的 TiDB 数据库部署与管理方式，适用于各类分布式数据存储与处理场景。"
 source: https://xuanyuan.cloud/zh/r/pingcap/tidb
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/pingcap/tidb
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/pingcap/tidb" title="pingcap/tidb Docker 镜像中文简介、标签列表与拉取命令">pingcap/tidb — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [pingcap/tidb — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/pingcap/tidb)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/pingcap/tidb" title="pingcap/tidb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/pingcap/tidb</a>
+[pingcap/tidb Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/pingcap/tidb)
 
 ### TiDB 介绍
 

@@ -1,4 +1,4 @@
----
+﻿---
 image: bitnami/node-exporter
 description: "Bitnami安全版node-exporter镜像，用于节点监控，收集主机系统及硬件指标。"
 source: https://xuanyuan.cloud/zh/r/bitnami/node-exporter
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/bitnami/node-exporter
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/node-exporter" title="bitnami/node-exporter Docker 镜像中文简介、标签列表与拉取命令">bitnami/node-exporter — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [bitnami/node-exporter — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/node-exporter)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/bitnami/node-exporter" title="bitnami/node-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/node-exporter</a>
+[bitnami/node-exporter Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnami/node-exporter)
 
 # Bitnami Node Exporter 镜像文档
 

@@ -1,4 +1,4 @@
----
+﻿---
 image: openeuler/milvus
 description: "官方Milvus Docker镜像，基于openEuler构建，是高性能向量数据库，专为大规模非结构化数据（文本、图像等）的高效组织与搜索设计，支持AI应用开发，免费使用且无用户速率限制。"
 source: https://xuanyuan.cloud/zh/r/openeuler/milvus
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/openeuler/milvus
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/milvus" title="openeuler/milvus Docker 镜像中文简介、标签列表与拉取命令">openeuler/milvus — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [openeuler/milvus — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/openeuler/milvus)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/openeuler/milvus" title="openeuler/milvus Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/milvus</a>
+[openeuler/milvus Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/openeuler/milvus)
 
 # Milvus | openEuler Docker镜像文档
 

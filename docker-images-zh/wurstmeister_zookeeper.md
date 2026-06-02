@@ -1,4 +1,4 @@
----
+﻿---
 image: wurstmeister/zookeeper
 description: "提供Apache ZooKeeper分布式协调服务的Docker镜像，用于分布式系统中的配置管理、命名服务、同步控制及集群协调，支持容器化快速部署与集成。"
 source: https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper" title="wurstmeister/zookeeper Docker 镜像中文简介、标签列表与拉取命令">wurstmeister/zookeeper — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [wurstmeister/zookeeper — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper" title="wurstmeister/zookeeper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper</a>
+[wurstmeister/zookeeper Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper)
 
 # Zookeeper Docker 镜像文档
 

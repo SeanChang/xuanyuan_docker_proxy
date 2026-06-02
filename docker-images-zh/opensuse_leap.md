@@ -1,4 +1,4 @@
----
+﻿---
 image: opensuse/leap
 description: "官方openSUSE Leap镜像"
 source: https://xuanyuan.cloud/zh/r/opensuse/leap
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/opensuse/leap
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/opensuse/leap" title="opensuse/leap Docker 镜像中文简介、标签列表与拉取命令">opensuse/leap — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [opensuse/leap — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/opensuse/leap)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/opensuse/leap" title="opensuse/leap Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/opensuse/leap</a>
+[opensuse/leap Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/opensuse/leap)
 
 # openSUSE Leap
 

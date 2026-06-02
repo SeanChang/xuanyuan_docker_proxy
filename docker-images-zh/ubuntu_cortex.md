@@ -1,4 +1,4 @@
----
+﻿---
 image: ubuntu/cortex
 description: "Cortex是基于Ubuntu的Prometheus长期存储解决方案，由Canonical维护，提供水平扩展、高可用、多租户支持及多种长期存储选项。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/cortex
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/ubuntu/cortex
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/cortex" title="ubuntu/cortex Docker 镜像中文简介、标签列表与拉取命令">ubuntu/cortex — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [ubuntu/cortex — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ubuntu/cortex)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/ubuntu/cortex" title="ubuntu/cortex Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/cortex</a>
+[ubuntu/cortex Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/ubuntu/cortex)
 
 ## **弃用通知**
 

@@ -1,4 +1,4 @@
----
+﻿---
 image: bitnami/jaeger
 description: "Bitnami提供的安全镜像，用于部署Jaeger分布式追踪系统，支持微服务架构下的请求追踪与性能分析，具备安全加固特性。"
 source: https://xuanyuan.cloud/zh/r/bitnami/jaeger
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/bitnami/jaeger
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/jaeger" title="bitnami/jaeger Docker 镜像中文简介、标签列表与拉取命令">bitnami/jaeger — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [bitnami/jaeger — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/jaeger)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/bitnami/jaeger" title="bitnami/jaeger Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/jaeger</a>
+[bitnami/jaeger Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnami/jaeger)
 
 # Bitnami Jaeger 镜像文档
 

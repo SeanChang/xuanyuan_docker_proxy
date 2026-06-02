@@ -1,4 +1,4 @@
----
+﻿---
 image: soulter/astrbot
 description: "AstrBot 是一个开源的多功能聊天机器人框架，支持与 、、微信等主流消息平台无缝集成，具备自然语言处理、插件化扩展以添加自定义功能、多轮对话及 API 对接能力，帮助用户高效自动化任务、提升交互体验并构建个性化聊天机器人解决方案。"
 source: https://xuanyuan.cloud/zh/r/soulter/astrbot
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/soulter/astrbot
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/soulter/astrbot" title="soulter/astrbot Docker 镜像中文简介、标签列表与拉取命令">soulter/astrbot — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [soulter/astrbot — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/soulter/astrbot)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/soulter/astrbot" title="soulter/astrbot Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/soulter/astrbot</a>
+[soulter/astrbot Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/soulter/astrbot)
 
 # AstrBot 介绍
 

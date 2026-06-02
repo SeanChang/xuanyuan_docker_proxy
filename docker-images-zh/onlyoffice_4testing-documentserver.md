@@ -1,4 +1,4 @@
----
+﻿---
 image: onlyoffice/4testing-documentserver
 description: "ONLYOFFICE Document Server Docker镜像提供在线文档编辑与协作功能，支持端口配置、HTTPS部署及数据存储，便于快速部署和集成到各类系统中。"
 source: https://xuanyuan.cloud/zh/r/onlyoffice/4testing-documentserver
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/onlyoffice/4testing-documentserver
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/onlyoffice/4testing-documentserver" title="onlyoffice/4testing-documentserver Docker 镜像中文简介、标签列表与拉取命令">onlyoffice/4testing-documentserver — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [onlyoffice/4testing-documentserver — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/onlyoffice/4testing-documentserver)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/onlyoffice/4testing-documentserver" title="onlyoffice/4testing-documentserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/onlyoffice/4testing-documentserver</a>
+[onlyoffice/4testing-documentserver Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/onlyoffice/4testing-documentserver)
 
 # ONLYOFFICE 文档服务器 Docker 镜像文档
 

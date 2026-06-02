@@ -1,4 +1,4 @@
----
+﻿---
 image: whyour/qinglong
 description: "一款支持TypeScript、JavaScript、Python3及Shell多种编程语言的定时任务管理面板，可帮助用户高效创建、配置和监控各类定时任务，满足不同开发场景下的自动化需求，提升任务执行的稳定性与管理效率。"
 source: https://xuanyuan.cloud/zh/r/whyour/qinglong
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/whyour/qinglong
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/whyour/qinglong" title="whyour/qinglong Docker 镜像中文简介、标签列表与拉取命令">whyour/qinglong — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [whyour/qinglong — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/whyour/qinglong)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/whyour/qinglong" title="whyour/qinglong Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/whyour/qinglong</a>
+[whyour/qinglong Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/whyour/qinglong)
 
 # 青龙：定时任务管理平台
 

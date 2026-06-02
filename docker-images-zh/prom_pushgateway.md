@@ -1,4 +1,4 @@
----
+﻿---
 image: prom/pushgateway
 description: "Prometheus Pushgateway是用于接收临时性或批处理作业指标数据并将其暴露给Prometheus服务器抓取的中间件，解决非持续运行作业的指标收集问题。"
 source: https://xuanyuan.cloud/zh/r/prom/pushgateway
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/prom/pushgateway
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/prom/pushgateway" title="prom/pushgateway Docker 镜像中文简介、标签列表与拉取命令">prom/pushgateway — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [prom/pushgateway — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/prom/pushgateway)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/prom/pushgateway" title="prom/pushgateway Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/pushgateway</a>
+[prom/pushgateway Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/prom/pushgateway)
 
 # Prometheus Pushgateway 镜像文档
 

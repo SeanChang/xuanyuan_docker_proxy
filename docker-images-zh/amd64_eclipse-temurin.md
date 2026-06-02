@@ -1,4 +1,4 @@
----
+﻿---
 image: amd64/eclipse-temurin
 description: "Eclipse Temurin构建的OpenJDK二进制文件官方镜像"
 source: https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin" title="amd64/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">amd64/eclipse-temurin — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [amd64/eclipse-temurin — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin" title="amd64/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin</a>
+[amd64/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin)
 
 # Eclipse Temurin (amd64) 镜像文档
 

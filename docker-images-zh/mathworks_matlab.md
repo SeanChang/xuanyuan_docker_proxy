@@ -1,4 +1,4 @@
----
+﻿---
 image: mathworks/matlab
 description: "MATLAB Docker容器，用于在云和服务器环境中访问MATLAB，支持通过浏览器和VNC进行交互，提供基于Ubuntu的预构建镜像，适用于工程师和科学家的编程平台，集成矩阵数学编程语言与桌面环境。"
 source: https://xuanyuan.cloud/zh/r/mathworks/matlab
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/mathworks/matlab
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mathworks/matlab" title="mathworks/matlab Docker 镜像中文简介、标签列表与拉取命令">mathworks/matlab — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [mathworks/matlab — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mathworks/matlab)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/mathworks/matlab" title="mathworks/matlab Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mathworks/matlab</a>
+[mathworks/matlab Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/mathworks/matlab)
 
 # MATLAB Docker容器
 

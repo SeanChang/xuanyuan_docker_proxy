@@ -1,4 +1,4 @@
----
+﻿---
 image: library/openjdk
 description: "OpenJDK的预发布/非生产环境构建版本，通常包含最新开发的功能、性能优化及安全修复，主要供开发者和测试人员在非生产环境中进行早期验证、兼容性测试与功能评估，旨在帮助发现潜在问题并反馈改进，为后续正式版本的发布奠定基础，但因未经过充分的稳定性验证，不建议用于生产系统，以避免可能的运行风险。"
 source: https://xuanyuan.cloud/zh/r/library/openjdk
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/library/openjdk
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/openjdk" title="library/openjdk Docker 镜像中文简介、标签列表与拉取命令">library/openjdk — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [library/openjdk — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/openjdk)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/library/openjdk" title="library/openjdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/openjdk</a>
+[library/openjdk Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/openjdk)
 
 # 弃用通知  
 

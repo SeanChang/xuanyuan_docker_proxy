@@ -1,4 +1,4 @@
----
+﻿---
 image: xuxueli/xxl-job-admin
 description: "XXL-JOB是一款轻量级分布式任务调度框架，具备部署简单、资源占用低的特性，支持分布式环境下的任务分发、定时执行与动态管理，可灵活适配多种任务类型（如定时任务、异步任务、脚本任务等），并提供完善的任务监控、失败重试及日志追踪功能，能有效提升系统任务调度的可靠性与效率，广泛适用于微服务架构、大数据处理及各类业务系统的任务调度场景。"
 source: https://xuanyuan.cloud/zh/r/xuxueli/xxl-job-admin
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/xuxueli/xxl-job-admin
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/xuxueli/xxl-job-admin" title="xuxueli/xxl-job-admin Docker 镜像中文简介、标签列表与拉取命令">xuxueli/xxl-job-admin — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [xuxueli/xxl-job-admin — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/xuxueli/xxl-job-admin)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/xuxueli/xxl-job-admin" title="xuxueli/xxl-job-admin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xuxueli/xxl-job-admin</a>
+[xuxueli/xxl-job-admin Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/xuxueli/xxl-job-admin)
 
 # XXL-JOB 分布式任务调度框架
 

@@ -1,4 +1,4 @@
----
+﻿---
 image: eipwork/kuboard
 description: "Kuboard是一款用于管理Kubernetes集群的实用仪表盘。"
 source: https://xuanyuan.cloud/zh/r/eipwork/kuboard
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/eipwork/kuboard
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/eipwork/kuboard" title="eipwork/kuboard Docker 镜像中文简介、标签列表与拉取命令">eipwork/kuboard — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [eipwork/kuboard — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/eipwork/kuboard)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/eipwork/kuboard" title="eipwork/kuboard Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/eipwork/kuboard</a>
+[eipwork/kuboard Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/eipwork/kuboard)
 
 # Kuboard Docker镜像文档
 

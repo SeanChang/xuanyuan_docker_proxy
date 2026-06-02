@@ -1,4 +1,4 @@
----
+﻿---
 image: jacobalberty/unifi
 description: "UniFi无线接入点控制器是一款用于集中管理多台无线接入点的网络管理工具，可实现AP部署配置、用户接入控制、网络状态实时监控、流量数据分析、安全策略制定实施及固件统一更新等功能，支持远程管理与无缝漫游，能有效优化网络性能，助力构建稳定、高效、安全的企业级无线网络环境。"
 source: https://xuanyuan.cloud/zh/r/jacobalberty/unifi
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/jacobalberty/unifi
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jacobalberty/unifi" title="jacobalberty/unifi Docker 镜像中文简介、标签列表与拉取命令">jacobalberty/unifi — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [jacobalberty/unifi — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jacobalberty/unifi)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/jacobalberty/unifi" title="jacobalberty/unifi Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jacobalberty/unifi</a>
+[jacobalberty/unifi Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/jacobalberty/unifi)
 
 # Unifi-in-Docker (unifi-docker)  
 这是Ubiquiti Networks Unifi Controller的Docker化版本。  

@@ -1,4 +1,4 @@
----
+﻿---
 image: wangbowen/kkfileview
 description: "非官方 kkFileView 镜像，基于原项目进行了bug修复和功能优化，提供文件预览功能。"
 source: https://xuanyuan.cloud/zh/r/wangbowen/kkfileview
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/wangbowen/kkfileview
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/wangbowen/kkfileview" title="wangbowen/kkfileview Docker 镜像中文简介、标签列表与拉取命令">wangbowen/kkfileview — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [wangbowen/kkfileview — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/wangbowen/kkfileview)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/wangbowen/kkfileview" title="wangbowen/kkfileview Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/wangbowen/kkfileview</a>
+[wangbowen/kkfileview Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/wangbowen/kkfileview)
 
 # kkFileView 非官方镜像文档
 

@@ -1,4 +1,4 @@
----
+﻿---
 image: dataease/sqlbot
 description: "基于大型语言模型（大模型）与检索增强生成（RAG）技术构建的智能问数系统，通过深度融合大模型的自然语言理解与推理能力，以及RAG对结构化和非结构化数据的精准检索能力，实现用户以自然语言提问即可快速获取准确数据结论的功能，广泛应用于企业数据分析、业务决策支持等场景，有效提升数据查询效率与决策响应速度，为用户提供智能化、便捷化的数据问答体验。"
 source: https://xuanyuan.cloud/zh/r/dataease/sqlbot
@@ -6,11 +6,11 @@ canonical: https://xuanyuan.cloud/zh/r/dataease/sqlbot
 exported_at: 2026-06-02T12:04:49.546Z
 ---
 
-**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dataease/sqlbot" title="dataease/sqlbot Docker 镜像中文简介、标签列表与拉取命令">dataease/sqlbot — 轩辕镜像中文简介</a>
+**轩辕镜像中文简介（在线版）：** [dataease/sqlbot — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/dataease/sqlbot)
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-<a href="https://xuanyuan.cloud/zh/r/dataease/sqlbot" title="dataease/sqlbot Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dataease/sqlbot</a>
+[dataease/sqlbot Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/dataease/sqlbot)
 
 # SQLBot 介绍
 
