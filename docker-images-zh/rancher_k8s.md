@@ -3,7 +3,7 @@ image: rancher/k8s
 description: "Rancher Kubernetes镜像提供Kubernetes集群所需的基础组件与运行环境，用于Rancher管理的Kubernetes集群的部署、运维及管理，确保集群稳定运行。"
 source: https://xuanyuan.cloud/zh/r/rancher/k8s
 canonical: https://xuanyuan.cloud/zh/r/rancher/k8s
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rancher/k8s" title="rancher/k8s Docker 镜像中文简介、标签列表与拉取命令">rancher/k8s — 轩辕镜像中文简介</a>

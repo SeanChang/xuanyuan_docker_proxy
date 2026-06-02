@@ -3,7 +3,7 @@ image: arm64v8/python
 description: "Python是一种解释型、交互式、面向对象的开源编程语言，它以简洁易读的语法为核心设计理念，支持函数式、命令式等多种编程范式，广泛应用于数据科学、人工智能、Web开发、自动化脚本编写等众多领域，既适合编程初学者快速掌握基础编程逻辑，也能满足专业开发者构建大型复杂系统的需求，凭借丰富的第三方库和活跃的全球社区支持，已成为当前最受欢迎的通用编程语言之一。"
 source: https://xuanyuan.cloud/zh/r/arm64v8/python
 canonical: https://xuanyuan.cloud/zh/r/arm64v8/python
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/arm64v8/python" title="arm64v8/python Docker 镜像中文简介、标签列表与拉取命令">arm64v8/python — 轩辕镜像中文简介</a>

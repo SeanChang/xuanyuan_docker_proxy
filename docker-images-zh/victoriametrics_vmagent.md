@@ -3,7 +3,7 @@ image: victoriametrics/vmagent
 description: "用于从各种来源收集指标、过滤并发送到VictoriaMetrics的代理"
 source: https://xuanyuan.cloud/zh/r/victoriametrics/vmagent
 canonical: https://xuanyuan.cloud/zh/r/victoriametrics/vmagent
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/victoriametrics/vmagent" title="victoriametrics/vmagent Docker 镜像中文简介、标签列表与拉取命令">victoriametrics/vmagent — 轩辕镜像中文简介</a>

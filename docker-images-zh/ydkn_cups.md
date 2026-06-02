@@ -3,7 +3,7 @@ image: ydkn/cups
 description: "CUPS打印服务器，即通用UNIX打印系统（Common UNIX Printing System），是一款开源的打印管理中间件，广泛应用于Linux、macOS等类UNIX系统及Windows平台，支持IPP、LPD、SMB等多种打印协议，可管理打印机队列、处理打印作业，提供Web管理界面，并能转换PostScript、PDF等文件格式以实现高效打印，是连接客户端与物理打印机的核心组件，确保打印任务稳定分发与处理。"
 source: https://xuanyuan.cloud/zh/r/ydkn/cups
 canonical: https://xuanyuan.cloud/zh/r/ydkn/cups
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ydkn/cups" title="ydkn/cups Docker 镜像中文简介、标签列表与拉取命令">ydkn/cups — 轩辕镜像中文简介</a>

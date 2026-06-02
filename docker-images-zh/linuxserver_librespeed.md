@@ -3,7 +3,7 @@ image: linuxserver/librespeed
 description: "LinuxServer.io提供的Librespeed镜像，用于部署开源自托管网络速度测试工具，支持上传与下载速度测试。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/librespeed
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/librespeed
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/librespeed" title="linuxserver/librespeed Docker 镜像中文简介、标签列表与拉取命令">linuxserver/librespeed — 轩辕镜像中文简介</a>

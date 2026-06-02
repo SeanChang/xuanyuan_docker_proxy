@@ -3,7 +3,7 @@ image: sonatype/nexus3
 description: "Sonatype Nexus Repository 3是一款企业级仓库管理器，用于集中存储、管理和分发各类软件组件，支持Maven、npm、Docker、Helm等多种格式，可无缝整合CI/CD工具链，助力开发团队实现DevOps流程自动化，提升构建效率与组件交付速度，同时提供组件安全扫描与治理能力，是现代化软件开发中制品管理的核心解决方案。"
 source: https://xuanyuan.cloud/zh/r/sonatype/nexus3
 canonical: https://xuanyuan.cloud/zh/r/sonatype/nexus3
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/sonatype/nexus3" title="sonatype/nexus3 Docker 镜像中文简介、标签列表与拉取命令">sonatype/nexus3 — 轩辕镜像中文简介</a>

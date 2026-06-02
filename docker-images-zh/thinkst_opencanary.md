@@ -3,7 +3,7 @@ image: thinkst/opencanary
 description: "OpenCanary的官方Docker容器，用于部署蜜罐服务，模拟多种网络服务以检测和记录未授权访问尝试，帮助增强网络安全监控能力。"
 source: https://xuanyuan.cloud/zh/r/thinkst/opencanary
 canonical: https://xuanyuan.cloud/zh/r/thinkst/opencanary
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/thinkst/opencanary" title="thinkst/opencanary Docker 镜像中文简介、标签列表与拉取命令">thinkst/opencanary — 轩辕镜像中文简介</a>

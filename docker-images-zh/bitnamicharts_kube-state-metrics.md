@@ -3,7 +3,7 @@ image: bitnamicharts/kube-state-metrics
 description: "Bitnami提供的Helm图表，用于部署Kube State Metrics以收集Kubernetes集群状态指标"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/kube-state-metrics
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/kube-state-metrics
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/kube-state-metrics" title="bitnamicharts/kube-state-metrics Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/kube-state-metrics — 轩辕镜像中文简介</a>

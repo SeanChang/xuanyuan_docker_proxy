@@ -3,7 +3,7 @@ image: excalidraw/excalidraw
 description: "用于自托管的Excalidraw客户端Docker镜像，提供手绘风格图表绘制功能的虚拟白板工具"
 source: https://xuanyuan.cloud/zh/r/excalidraw/excalidraw
 canonical: https://xuanyuan.cloud/zh/r/excalidraw/excalidraw
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/excalidraw/excalidraw" title="excalidraw/excalidraw Docker 镜像中文简介、标签列表与拉取命令">excalidraw/excalidraw — 轩辕镜像中文简介</a>

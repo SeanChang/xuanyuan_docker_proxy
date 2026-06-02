@@ -3,7 +3,7 @@ image: arm64v8/redis
 description: "Redis是全球速度最快的数据平台，它整合了缓存、向量搜索与NoSQL数据库功能，可高效实现数据缓存以提升访问速度、支持向量搜索满足AI驱动的相似性查询需求，并作为NoSQL数据库提供灵活的数据存储与处理能力，广泛适用于各类高性能数据应用场景。"
 source: https://xuanyuan.cloud/zh/r/arm64v8/redis
 canonical: https://xuanyuan.cloud/zh/r/arm64v8/redis
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/arm64v8/redis" title="arm64v8/redis Docker 镜像中文简介、标签列表与拉取命令">arm64v8/redis — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: library/debian
 description: "Debian是一款完全由自由及开源软件构成的Linux发行版，由全球志愿者社区协作开发与维护，始终坚守软件自由与开源的核心原则，提供丰富且经过严格测试的软件包，支持多种硬件架构，以卓越的稳定性、安全性及长期支持特性著称，同时作为众多主流Linux发行版（如Ubuntu）的基础，在开源生态系统中占据重要地位，持续为全球用户及开发者提供可靠的开源计算平台。"
 source: https://xuanyuan.cloud/zh/r/library/debian
 canonical: https://xuanyuan.cloud/zh/r/library/debian
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/debian" title="library/debian Docker 镜像中文简介、标签列表与拉取命令">library/debian — 轩辕镜像中文简介</a>

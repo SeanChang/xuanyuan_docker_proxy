@@ -3,7 +3,7 @@ image: iyuucn/iyuuplus
 description: "IYUU自动辅种工具是一款专为PT下载用户设计的辅助软件，它能自动监控本地下载目录，通过分析已有种子文件的哈希值、文件名等信息，在用户配置的PT站点中智能搜索并下载缺失种子，实现自动辅种，有效帮助用户提升分享率，减少手动查找添加种子的操作，提高PT资源管理效率，是PT爱好者优化下载体验的实用工具。"
 source: https://xuanyuan.cloud/zh/r/iyuucn/iyuuplus
 canonical: https://xuanyuan.cloud/zh/r/iyuucn/iyuuplus
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/iyuucn/iyuuplus" title="iyuucn/iyuuplus Docker 镜像中文简介、标签列表与拉取命令">iyuucn/iyuuplus — 轩辕镜像中文简介</a>

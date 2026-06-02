@@ -3,7 +3,7 @@ image: bladex/sentinel-dashboard
 description: "阿里巴巴流量卫兵镜像（Alibaba Cloud Sentinel Dashboard）是阿里云推出的面向分布式系统与微服务架构的流量管理监控控制台，具备实时流量观测、精准流量控制、智能熔断降级及系统稳定性保障等核心功能，可帮助用户实时掌握系统流量状态、动态调整流量策略，有效防止流量过载引发的系统故障，提升分布式应用的可靠性与稳定性，是保障微服务架构高效稳定运行的重要工具。"
 source: https://xuanyuan.cloud/zh/r/bladex/sentinel-dashboard
 canonical: https://xuanyuan.cloud/zh/r/bladex/sentinel-dashboard
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bladex/sentinel-dashboard" title="bladex/sentinel-dashboard Docker 镜像中文简介、标签列表与拉取命令">bladex/sentinel-dashboard — 轩辕镜像中文简介</a>

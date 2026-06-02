@@ -3,7 +3,7 @@ image: b3log/siyuan
 description: "思源笔记（SiYuan）是一款以本地优先为核心的个人知识管理工具，支持双链笔记、块级编辑与Markdown格式，其Docker镜像提供便捷部署方案，可实现环境隔离、版本控制与跨平台运行，帮助用户快速搭建稳定的笔记系统，满足高效知识整理与管理需求。"
 source: https://xuanyuan.cloud/zh/r/b3log/siyuan
 canonical: https://xuanyuan.cloud/zh/r/b3log/siyuan
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/b3log/siyuan" title="b3log/siyuan Docker 镜像中文简介、标签列表与拉取命令">b3log/siyuan — 轩辕镜像中文简介</a>

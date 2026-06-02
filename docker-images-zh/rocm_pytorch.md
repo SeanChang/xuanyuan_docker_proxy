@@ -3,7 +3,7 @@ image: rocm/pytorch
 description: "基于ROCm的PyTorch Docker镜像为开发者提供了预配置的深度学习环境，集成了PyTorch框架与AMD ROCm开源计算平台，支持AMD GPU硬件加速，无需手动配置驱动及库依赖，可直接用于深度学习模型的开发、训练与部署，有效简化环境搭建流程，确保跨平台一致性，适用于科研机构、工业界等多种场景，助力高效利用AMD硬件资源开展AI相关任务。"
 source: https://xuanyuan.cloud/zh/r/rocm/pytorch
 canonical: https://xuanyuan.cloud/zh/r/rocm/pytorch
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rocm/pytorch" title="rocm/pytorch Docker 镜像中文简介、标签列表与拉取命令">rocm/pytorch — 轩辕镜像中文简介</a>

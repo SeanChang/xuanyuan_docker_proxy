@@ -3,7 +3,7 @@ image: zhangp365/comfyui
 description: "最新的Comfyui Docker镜像每日更新，集成了Manager管理节点、ControlNet控制网络节点及IPAdapter图像提示适配节点，为AI绘图工作流提供便捷部署与高效运行环境，支持用户通过容器化方式快速搭建功能完备的Comfyui平台，满足多样化的图像生成控制需求，助力开发者与创作者轻松实现复杂绘图任务的流程管理与效果调控。"
 source: https://xuanyuan.cloud/zh/r/zhangp365/comfyui
 canonical: https://xuanyuan.cloud/zh/r/zhangp365/comfyui
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zhangp365/comfyui" title="zhangp365/comfyui Docker 镜像中文简介、标签列表与拉取命令">zhangp365/comfyui — 轩辕镜像中文简介</a>

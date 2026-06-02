@@ -3,7 +3,7 @@ image: library/adoptopenjdk
 description: "该Docker镜像已弃用，建议使用官方eclipse-temurin镜像。"
 source: https://xuanyuan.cloud/zh/r/library/adoptopenjdk
 canonical: https://xuanyuan.cloud/zh/r/library/adoptopenjdk
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/adoptopenjdk" title="library/adoptopenjdk Docker 镜像中文简介、标签列表与拉取命令">library/adoptopenjdk — 轩辕镜像中文简介</a>

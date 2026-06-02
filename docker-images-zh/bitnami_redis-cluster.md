@@ -3,7 +3,7 @@ image: bitnami/redis-cluster
 description: "Bitnami安全Redis集群镜像，提供预配置安全特性，用于部署和运行Redis集群环境。"
 source: https://xuanyuan.cloud/zh/r/bitnami/redis-cluster
 canonical: https://xuanyuan.cloud/zh/r/bitnami/redis-cluster
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/redis-cluster" title="bitnami/redis-cluster Docker 镜像中文简介、标签列表与拉取命令">bitnami/redis-cluster — 轩辕镜像中文简介</a>

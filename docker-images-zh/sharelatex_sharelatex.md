@@ -3,7 +3,7 @@ image: sharelatex/sharelatex
 description: "官方的ShareLaTeX社区版Docker镜像是一款基于Docker容器化技术构建的开源在线LaTeX协作编辑工具，支持多人实时协作编写、编译和预览LaTeX文档，适用于学术论文、技术报告、书籍等各类文档的高效排版，为用户提供便捷的本地化部署方案，无需复杂配置即可快速搭建功能完备的LaTeX编辑环境，满足科研人员、学生及技术文档撰写者的协作编辑需求。"
 source: https://xuanyuan.cloud/zh/r/sharelatex/sharelatex
 canonical: https://xuanyuan.cloud/zh/r/sharelatex/sharelatex
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/sharelatex/sharelatex" title="sharelatex/sharelatex Docker 镜像中文简介、标签列表与拉取命令">sharelatex/sharelatex — 轩辕镜像中文简介</a>

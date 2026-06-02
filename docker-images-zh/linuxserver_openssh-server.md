@@ -3,7 +3,7 @@ image: linuxserver/openssh-server
 description: "提供OpenSSH服务器服务，支持远程登录与服务器管理，具备易于部署、配置灵活的特点，适用于各类需要安全远程访问的场景。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/openssh-server
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/openssh-server
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/openssh-server" title="linuxserver/openssh-server Docker 镜像中文简介、标签列表与拉取命令">linuxserver/openssh-server — 轩辕镜像中文简介</a>

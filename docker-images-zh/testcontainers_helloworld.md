@@ -3,7 +3,7 @@ image: testcontainers/helloworld
 description: "Testcontainers是一款帮助开发者在测试环境中便捷集成并使用真实依赖服务（如数据库、消息队列、缓存等）的工具，而此Docker镜像专门用于支持Testcontainers自身的自测套件运行，可确保其核心功能（包括容器生命周期管理、跨平台兼容性、服务模拟准确性等）在不同测试场景下均能得到稳定验证，为Testcontainers的持续迭代优化和整体质量保障提供关键技术支撑。"
 source: https://xuanyuan.cloud/zh/r/testcontainers/helloworld
 canonical: https://xuanyuan.cloud/zh/r/testcontainers/helloworld
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/testcontainers/helloworld" title="testcontainers/helloworld Docker 镜像中文简介、标签列表与拉取命令">testcontainers/helloworld — 轩辕镜像中文简介</a>

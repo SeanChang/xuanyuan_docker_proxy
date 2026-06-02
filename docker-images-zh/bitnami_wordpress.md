@@ -3,7 +3,7 @@ image: bitnami/wordpress
 description: "Bitnami Secure Image for WordPress是由Bitnami提供的适用于WordPress的安全优化镜像，其集成预配置的安全防护设置、自动漏洞更新机制、SSL证书支持及基础防火墙功能，可有效降低恶意攻击与数据泄露风险，同时优化服务器资源分配与运行性能，确保WordPress网站快速稳定部署，且兼容主流云平台与本地服务器环境，为用户提供开箱即用的安全可靠建站解决方案。"
 source: https://xuanyuan.cloud/zh/r/bitnami/wordpress
 canonical: https://xuanyuan.cloud/zh/r/bitnami/wordpress
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/wordpress" title="bitnami/wordpress Docker 镜像中文简介、标签列表与拉取命令">bitnami/wordpress — 轩辕镜像中文简介</a>

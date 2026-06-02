@@ -3,7 +3,7 @@ image: library/golang
 description: "Go（又称golang）是由Google开发并于2009年正式发布的一种通用、高级、命令式编程语言，其设计初衷是解决大规模软件开发中的效率、可读性与并发性问题，具有语法简洁、编译高效、标准库强大及原生支持并发等特点，广泛应用于后端开发、云服务、分布式系统等领域。"
 source: https://xuanyuan.cloud/zh/r/library/golang
 canonical: https://xuanyuan.cloud/zh/r/library/golang
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/golang" title="library/golang Docker 镜像中文简介、标签列表与拉取命令">library/golang — 轩辕镜像中文简介</a>

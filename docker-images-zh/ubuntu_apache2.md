@@ -3,7 +3,7 @@ image: ubuntu/apache2
 description: "Apache是一款安全且可扩展的开源HTTP服务器，提供由Canonical维护的长期支持版本。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/apache2
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/apache2
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/apache2" title="ubuntu/apache2 Docker 镜像中文简介、标签列表与拉取命令">ubuntu/apache2 — 轩辕镜像中文简介</a>

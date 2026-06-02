@@ -3,7 +3,7 @@ image: johngong/baidunetdisk
 description: "需要提醒的是，百度网盘官方并未推出过“VNC版”客户端，此类非官方版本可能存在安全风险，如信息泄露、恶意程序植入等，且使用非官方软件可能违反相关服务协议。建议您通过百度网盘官方渠道下载和使用正版客户端，以保障账号和数据安全。"
 source: https://xuanyuan.cloud/zh/r/johngong/baidunetdisk
 canonical: https://xuanyuan.cloud/zh/r/johngong/baidunetdisk
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/johngong/baidunetdisk" title="johngong/baidunetdisk Docker 镜像中文简介、标签列表与拉取命令">johngong/baidunetdisk — 轩辕镜像中文简介</a>

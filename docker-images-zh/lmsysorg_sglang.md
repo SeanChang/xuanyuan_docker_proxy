@@ -3,7 +3,7 @@ image: lmsysorg/sglang
 description: "这是用于开源项目sglang（GitHub地址：[https://github.com/sgl-project/sglang]"
 source: https://xuanyuan.cloud/zh/r/lmsysorg/sglang
 canonical: https://xuanyuan.cloud/zh/r/lmsysorg/sglang
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/lmsysorg/sglang" title="lmsysorg/sglang Docker 镜像中文简介、标签列表与拉取命令">lmsysorg/sglang — 轩辕镜像中文简介</a>

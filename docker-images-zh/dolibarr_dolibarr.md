@@ -3,7 +3,7 @@ image: dolibarr/dolibarr
 description: "这是一个用于Dolibarr ERP CRM的Docker镜像，Dolibarr是一款集成企业资源规划（ERP）与客户关系管理（CRM）功能的开源Web套件，专为中小企业打造，涵盖销售管理、库存跟踪、财务管理、客户互动等核心业务模块，支持自定义配置与功能扩展，而Docker镜像则提供了快速部署、环境隔离及跨平台运行的便利，助力用户高效搭建和管理企业级业务系统。"
 source: https://xuanyuan.cloud/zh/r/dolibarr/dolibarr
 canonical: https://xuanyuan.cloud/zh/r/dolibarr/dolibarr
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dolibarr/dolibarr" title="dolibarr/dolibarr Docker 镜像中文简介、标签列表与拉取命令">dolibarr/dolibarr — 轩辕镜像中文简介</a>

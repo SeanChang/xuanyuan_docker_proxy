@@ -3,7 +3,7 @@ image: circleci/openjdk
 description: "CircleCI针对OpenJDK的扩展镜像，用于在CircleCI环境中优化Java项目的构建和运行，简化Docker与CircleCI的采用流程。"
 source: https://xuanyuan.cloud/zh/r/circleci/openjdk
 canonical: https://xuanyuan.cloud/zh/r/circleci/openjdk
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/circleci/openjdk" title="circleci/openjdk Docker 镜像中文简介、标签列表与拉取命令">circleci/openjdk — 轩辕镜像中文简介</a>

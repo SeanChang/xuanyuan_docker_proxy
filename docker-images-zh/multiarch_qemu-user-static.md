@@ -3,7 +3,7 @@ image: multiarch/qemu-user-static
 description: "提供多架构的QEMU静态二进制文件，用于支持在不同架构系统上进行跨架构模拟和应用运行。"
 source: https://xuanyuan.cloud/zh/r/multiarch/qemu-user-static
 canonical: https://xuanyuan.cloud/zh/r/multiarch/qemu-user-static
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/multiarch/qemu-user-static" title="multiarch/qemu-user-static Docker 镜像中文简介、标签列表与拉取命令">multiarch/qemu-user-static — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: dyrnq/openclaw
 description: "OpenClaw是一款可在自有设备运行的个人AI助手，支持通过WhatsApp、Telegram等多种通讯渠道交互，提供跨平台语音功能及实时Canvas控制，网关作为控制平面，核心为智能助手功能。"
 source: https://xuanyuan.cloud/zh/r/dyrnq/openclaw
 canonical: https://xuanyuan.cloud/zh/r/dyrnq/openclaw
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dyrnq/openclaw" title="dyrnq/openclaw Docker 镜像中文简介、标签列表与拉取命令">dyrnq/openclaw — 轩辕镜像中文简介</a>

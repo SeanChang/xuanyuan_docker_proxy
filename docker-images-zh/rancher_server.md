@@ -3,7 +3,7 @@ image: rancher/server
 description: "Rancher 1.x Server容器是用于管理Docker容器集群的服务器组件，提供容器环境的部署、管理与监控功能。"
 source: https://xuanyuan.cloud/zh/r/rancher/server
 canonical: https://xuanyuan.cloud/zh/r/rancher/server
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rancher/server" title="rancher/server Docker 镜像中文简介、标签列表与拉取命令">rancher/server — 轩辕镜像中文简介</a>

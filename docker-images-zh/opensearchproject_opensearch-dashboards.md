@@ -3,7 +3,7 @@ image: opensearchproject/opensearch-dashboards
 description: "OpenSearch Dashboards（官网：[]"
 source: https://xuanyuan.cloud/zh/r/opensearchproject/opensearch-dashboards
 canonical: https://xuanyuan.cloud/zh/r/opensearchproject/opensearch-dashboards
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/opensearchproject/opensearch-dashboards" title="opensearchproject/opensearch-dashboards Docker 镜像中文简介、标签列表与拉取命令">opensearchproject/opensearch-dashboards — 轩辕镜像中文简介</a>

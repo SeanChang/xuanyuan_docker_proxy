@@ -3,7 +3,7 @@ image: lldap/lldap
 description: "轻量级LDAP实现，用于身份认证，简化LDAP使用流程。"
 source: https://xuanyuan.cloud/zh/r/lldap/lldap
 canonical: https://xuanyuan.cloud/zh/r/lldap/lldap
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/lldap/lldap" title="lldap/lldap Docker 镜像中文简介、标签列表与拉取命令">lldap/lldap — 轩辕镜像中文简介</a>

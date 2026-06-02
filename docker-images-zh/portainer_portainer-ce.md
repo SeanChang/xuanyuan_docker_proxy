@@ -3,7 +3,7 @@ image: portainer/portainer-ce
 description: "Portainer CE 是一款轻量级容器化应用服务交付平台，旨在简化容器应用全生命周期管理，涵盖部署、监控、运维等核心环节，支持多环境统一管理，提供直观可视化界面，帮助用户高效配置、管理和扩展容器集群，降低容器技术使用门槛，适用于开发、测试及生产环境，为企业提供灵活、高效的容器应用交付解决方案。"
 source: https://xuanyuan.cloud/zh/r/portainer/portainer-ce
 canonical: https://xuanyuan.cloud/zh/r/portainer/portainer-ce
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/portainer/portainer-ce" title="portainer/portainer-ce Docker 镜像中文简介、标签列表与拉取命令">portainer/portainer-ce — 轩辕镜像中文简介</a>

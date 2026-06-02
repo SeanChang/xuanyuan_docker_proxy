@@ -3,7 +3,7 @@ image: alpinelinux/gitlab-runner
 description: "基于Alpine Linux的GitLab Runner，支持比官方版本更多的架构。"
 source: https://xuanyuan.cloud/zh/r/alpinelinux/gitlab-runner
 canonical: https://xuanyuan.cloud/zh/r/alpinelinux/gitlab-runner
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpinelinux/gitlab-runner" title="alpinelinux/gitlab-runner Docker 镜像中文简介、标签列表与拉取命令">alpinelinux/gitlab-runner — 轩辕镜像中文简介</a>

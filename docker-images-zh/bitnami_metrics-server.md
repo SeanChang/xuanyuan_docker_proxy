@@ -3,7 +3,7 @@ image: bitnami/metrics-server
 description: "Bitnami Secure Image for metrics-server是由Bitnami提供的针对Kubernetes指标服务器（metrics-server）的安全优化镜像，该镜像集成预配置的安全加固措施、定期漏洞扫描与更新机制，确保指标服务器在收集和聚合集群节点及Pod资源指标（如CPU、内存使用率）时的稳定性与安全性，同时符合行业合规标准，简化用户在Kubernetes环境中部署和管理安全可靠的指标收集组件的流程。"
 source: https://xuanyuan.cloud/zh/r/bitnami/metrics-server
 canonical: https://xuanyuan.cloud/zh/r/bitnami/metrics-server
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/metrics-server" title="bitnami/metrics-server Docker 镜像中文简介、标签列表与拉取命令">bitnami/metrics-server — 轩辕镜像中文简介</a>

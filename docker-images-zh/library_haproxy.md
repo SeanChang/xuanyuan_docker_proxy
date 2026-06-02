@@ -3,7 +3,7 @@ image: library/haproxy
 description: "HAProxy是一款可靠的高性能负载均衡器，主要用于TCP和HTTP协议的流量分发，能够有效均衡服务器负载、提高系统可用性与响应速度，广泛应用于Web服务、数据库集群等场景，通过智能流量调度确保服务稳定运行，是构建高可用、高性能网络架构的关键工具。"
 source: https://xuanyuan.cloud/zh/r/library/haproxy
 canonical: https://xuanyuan.cloud/zh/r/library/haproxy
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/haproxy" title="library/haproxy Docker 镜像中文简介、标签列表与拉取命令">library/haproxy — 轩辕镜像中文简介</a>

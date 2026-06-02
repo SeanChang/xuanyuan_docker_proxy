@@ -3,7 +3,7 @@ image: bitnami/kafka
 description: "比特纳米Kafka安全镜像是一款针对分布式流处理平台Kafka的预配置、安全加固容器镜像，集成行业最佳安全实践，涵盖漏洞扫描、最小权限原则、加密通信支持及合规性检查，旨在简化Kafka部署流程，确保数据传输与存储安全性，适用于企业级流数据处理场景，帮助用户快速搭建安全可靠的Kafka集群。"
 source: https://xuanyuan.cloud/zh/r/bitnami/kafka
 canonical: https://xuanyuan.cloud/zh/r/bitnami/kafka
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/kafka" title="bitnami/kafka Docker 镜像中文简介、标签列表与拉取命令">bitnami/kafka — 轩辕镜像中文简介</a>

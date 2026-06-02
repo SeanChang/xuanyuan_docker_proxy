@@ -3,7 +3,7 @@ image: qemux/qemu-arm
 description: "Docker容器化的ARM架构QEMU模拟器，用于在非ARM环境中模拟ARM硬件并运行ARM架构程序。"
 source: https://xuanyuan.cloud/zh/r/qemux/qemu-arm
 canonical: https://xuanyuan.cloud/zh/r/qemux/qemu-arm
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/qemux/qemu-arm" title="qemux/qemu-arm Docker 镜像中文简介、标签列表与拉取命令">qemux/qemu-arm — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: apache/apisix-dashboard
 description: "Apache APISIX Dashboard是Apache APISIX的官方Web UI，旨在为用户提供友好、直观的界面以管理和运维APISIX集群，支持可视化配置路由、服务、上游、插件等核心资源，实时监控集群运行状态与流量指标，有效简化APISIX的运维复杂度，帮助用户更高效地部署、管理和维护API网关。"
 source: https://xuanyuan.cloud/zh/r/apache/apisix-dashboard
 canonical: https://xuanyuan.cloud/zh/r/apache/apisix-dashboard
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/apisix-dashboard" title="apache/apisix-dashboard Docker 镜像中文简介、标签列表与拉取命令">apache/apisix-dashboard — 轩辕镜像中文简介</a>

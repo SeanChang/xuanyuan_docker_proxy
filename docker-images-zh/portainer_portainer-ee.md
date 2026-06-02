@@ -3,7 +3,7 @@ image: portainer/portainer-ee
 description: "Portainer BE是用于容器化应用的功能全面的服务交付平台"
 source: https://xuanyuan.cloud/zh/r/portainer/portainer-ee
 canonical: https://xuanyuan.cloud/zh/r/portainer/portainer-ee
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/portainer/portainer-ee" title="portainer/portainer-ee Docker 镜像中文简介、标签列表与拉取命令">portainer/portainer-ee — 轩辕镜像中文简介</a>

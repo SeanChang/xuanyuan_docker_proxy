@@ -3,7 +3,7 @@ image: btgoose/jdk17
 description: "基于CentOS系统的最新JDK 17环境镜像，提供稳定的Java开发与运行平台，适用于需要JDK 17环境的应用部署。"
 source: https://xuanyuan.cloud/zh/r/btgoose/jdk17
 canonical: https://xuanyuan.cloud/zh/r/btgoose/jdk17
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/btgoose/jdk17" title="btgoose/jdk17 Docker 镜像中文简介、标签列表与拉取命令">btgoose/jdk17 — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: heartexlabs/label-studio
 description: "Label Studio是一款开源数据标注工具，支持音频、文本、图像、视频和时间序列等多种数据类型标注，提供直观UI界面和多种模型格式导出功能，用于准备机器学习训练数据。"
 source: https://xuanyuan.cloud/zh/r/heartexlabs/label-studio
 canonical: https://xuanyuan.cloud/zh/r/heartexlabs/label-studio
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/heartexlabs/label-studio" title="heartexlabs/label-studio Docker 镜像中文简介、标签列表与拉取命令">heartexlabs/label-studio — 轩辕镜像中文简介</a>

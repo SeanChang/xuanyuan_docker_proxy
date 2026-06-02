@@ -3,7 +3,7 @@ image: jenkins/openjdk
 description: "这些Docker镜像是基于多种AdoptOpenJDK二进制文件构建的，旨在为Java应用提供便捷、高效的容器化部署方案，支持不同Java版本与平台，确保应用在各类环境中稳定运行，满足开发者对开源Java运行时的多样化需求，具备轻量级、可移植性强等特点，便于快速集成到开发与生产流程中。"
 source: https://xuanyuan.cloud/zh/r/jenkins/openjdk
 canonical: https://xuanyuan.cloud/zh/r/jenkins/openjdk
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jenkins/openjdk" title="jenkins/openjdk Docker 镜像中文简介、标签列表与拉取命令">jenkins/openjdk — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: dohun0310/cups
 description: "支持CUPS和AirPrint，并集成systemd，用于网络打印机管理的Docker镜像。"
 source: https://xuanyuan.cloud/zh/r/dohun0310/cups
 canonical: https://xuanyuan.cloud/zh/r/dohun0310/cups
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dohun0310/cups" title="dohun0310/cups Docker 镜像中文简介、标签列表与拉取命令">dohun0310/cups — 轩辕镜像中文简介</a>

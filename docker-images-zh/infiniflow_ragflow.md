@@ -3,7 +3,7 @@ image: infiniflow/ragflow
 description: "RAGFlow是一款开源检索增强生成（RAG）引擎，它集成高效信息检索与智能内容生成能力，支持文本、文档等多模态数据处理，可灵活对接企业私有知识库，帮助用户快速构建精准问答、智能创作等AI应用，具备轻量化部署特性与友好的开发者接口，为企业及个人提供低成本、高可定制的知识增强解决方案。"
 source: https://xuanyuan.cloud/zh/r/infiniflow/ragflow
 canonical: https://xuanyuan.cloud/zh/r/infiniflow/ragflow
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/infiniflow/ragflow" title="infiniflow/ragflow Docker 镜像中文简介、标签列表与拉取命令">infiniflow/ragflow — 轩辕镜像中文简介</a>

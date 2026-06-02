@@ -3,7 +3,7 @@ image: library/elasticsearch
 description: "Elasticsearch是一款功能强大的开源搜索与分析引擎，它基于Lucene构建，具备分布式、高扩展、实时处理的特性，能够高效存储、检索和分析各类结构化与非结构化数据，广泛应用于日志分析、全文搜索、业务智能等场景，通过简化数据探索流程，帮助用户快速从海量数据中获取有价值的洞察，让复杂数据的分析与利用变得简单高效。"
 source: https://xuanyuan.cloud/zh/r/library/elasticsearch
 canonical: https://xuanyuan.cloud/zh/r/library/elasticsearch
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/elasticsearch" title="library/elasticsearch Docker 镜像中文简介、标签列表与拉取命令">library/elasticsearch — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: library/odoo
 description: "Odoo（前身为OpenERP）是一套开源商业应用套件，集成了企业资源规划（ERP）、客户关系管理（CRM）、电子商务、人力资源管理、项目管理、会计、库存管理等多种功能模块，旨在为各类企业提供一体化的业务管理解决方案，支持用户根据需求灵活定制和扩展，凭借开源特性降低企业信息化成本，助力提升运营效率。"
 source: https://xuanyuan.cloud/zh/r/library/odoo
 canonical: https://xuanyuan.cloud/zh/r/library/odoo
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/odoo" title="library/odoo Docker 镜像中文简介、标签列表与拉取命令">library/odoo — 轩辕镜像中文简介</a>

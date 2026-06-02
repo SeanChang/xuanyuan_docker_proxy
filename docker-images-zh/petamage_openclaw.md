@@ -3,7 +3,7 @@ image: petamage/openclaw
 description: "提供即用型OpenClaw环境的Docker镜像，无需繁琐的单独配置，由Petapod社区维护，可快速部署和使用。"
 source: https://xuanyuan.cloud/zh/r/petamage/openclaw
 canonical: https://xuanyuan.cloud/zh/r/petamage/openclaw
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/petamage/openclaw" title="petamage/openclaw Docker 镜像中文简介、标签列表与拉取命令">petamage/openclaw — 轩辕镜像中文简介</a>

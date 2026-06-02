@@ -3,7 +3,7 @@ image: library/eclipse-mosquitto
 description: "Eclipse Mosquitto是一款开源的消息代理软件，它全面实现了MQTT协议的5.0版、3.1.1版及3.1版标准，作为轻量级发布/订阅消息传输协议的关键组件，该消息代理能够高效接收、存储并转发来自各类客户端的消息，广泛适用于物联网设备通信、移动应用数据交互及分布式系统集成等场景，凭借其开源特性、轻量化设计与良好的协议兼容性，成为开发者构建可靠消息传递系统的优选工具。"
 source: https://xuanyuan.cloud/zh/r/library/eclipse-mosquitto
 canonical: https://xuanyuan.cloud/zh/r/library/eclipse-mosquitto
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/eclipse-mosquitto" title="library/eclipse-mosquitto Docker 镜像中文简介、标签列表与拉取命令">library/eclipse-mosquitto — 轩辕镜像中文简介</a>

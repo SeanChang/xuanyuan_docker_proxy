@@ -3,7 +3,7 @@ image: ubuntu/node
 description: "基于Ubuntu的Node.js镜像，适用于服务器端和网络应用程序。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/node
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/node
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/node" title="ubuntu/node Docker 镜像中文简介、标签列表与拉取命令">ubuntu/node — 轩辕镜像中文简介</a>

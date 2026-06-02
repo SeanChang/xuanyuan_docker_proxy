@@ -3,7 +3,7 @@ image: moelin/1panel
 description: "1Panel是一款开源的Linux服务器运维管理面板，支持通过Docker方式便捷部署运行，为开发者和运维人员提供直观的可视化操作界面，可实现服务器状态实时监控、应用程序一键部署、Docker容器全生命周期管理、文件传输与编辑等核心功能，帮助用户高效管理服务器资源，简化复杂的运维流程，提升日常运维工作效率。"
 source: https://xuanyuan.cloud/zh/r/moelin/1panel
 canonical: https://xuanyuan.cloud/zh/r/moelin/1panel
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/moelin/1panel" title="moelin/1panel Docker 镜像中文简介、标签列表与拉取命令">moelin/1panel — 轩辕镜像中文简介</a>

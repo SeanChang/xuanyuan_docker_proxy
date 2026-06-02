@@ -3,7 +3,7 @@ image: boredazfcuk/icloudpd
 description: "这是一个基于Alpine Linux 3.21.2系统的容器，专为运行iCloud照片下载器（iCloud Photos Downloader）命令行工具设计，提供轻量级、高效的运行环境，方便用户通过命令行操作快速下载iCloud中的照片资源。"
 source: https://xuanyuan.cloud/zh/r/boredazfcuk/icloudpd
 canonical: https://xuanyuan.cloud/zh/r/boredazfcuk/icloudpd
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/boredazfcuk/icloudpd" title="boredazfcuk/icloudpd Docker 镜像中文简介、标签列表与拉取命令">boredazfcuk/icloudpd — 轩辕镜像中文简介</a>

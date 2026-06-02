@@ -3,7 +3,7 @@ image: openeuler/hadoop
 description: "官方Hadoop Docker镜像，基于openEuler构建，支持分布式处理大型数据集，提供Web UI访问，适用于大数据处理场景。"
 source: https://xuanyuan.cloud/zh/r/openeuler/hadoop
 canonical: https://xuanyuan.cloud/zh/r/openeuler/hadoop
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/hadoop" title="openeuler/hadoop Docker 镜像中文简介、标签列表与拉取命令">openeuler/hadoop — 轩辕镜像中文简介</a>

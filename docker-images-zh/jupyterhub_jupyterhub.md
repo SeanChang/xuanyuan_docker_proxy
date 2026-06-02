@@ -3,7 +3,7 @@ image: jupyterhub/jupyterhub
 description: "JupyterHub是一款支持多用户的Jupyter笔记本服务器，它能为多个用户提供独立的交互式计算环境，允许用户通过网页浏览器访问并运行Jupyter笔记本，广泛应用于教学、科研团队协作及企业数据科学项目，方便管理员集中管理用户账户、分配资源和维护计算环境，确保不同用户在共享服务器资源时既能高效协作又能保持各自工作的独立性与安全性。"
 source: https://xuanyuan.cloud/zh/r/jupyterhub/jupyterhub
 canonical: https://xuanyuan.cloud/zh/r/jupyterhub/jupyterhub
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jupyterhub/jupyterhub" title="jupyterhub/jupyterhub Docker 镜像中文简介、标签列表与拉取命令">jupyterhub/jupyterhub — 轩辕镜像中文简介</a>

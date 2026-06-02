@@ -3,7 +3,7 @@ image: teslamate/teslamate
 description: "特斯拉的自托管数据记录器，可帮助用户本地存储和管理车辆数据，实现数据隐私保护与自主控制。"
 source: https://xuanyuan.cloud/zh/r/teslamate/teslamate
 canonical: https://xuanyuan.cloud/zh/r/teslamate/teslamate
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/teslamate/teslamate" title="teslamate/teslamate Docker 镜像中文简介、标签列表与拉取命令">teslamate/teslamate — 轩辕镜像中文简介</a>

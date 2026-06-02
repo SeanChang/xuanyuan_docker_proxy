@@ -3,7 +3,7 @@ image: nacos/nacos-server
 description: "用于简化Nacos服务部署的Docker镜像，支持单机和集群模式，提供便捷的环境变量配置、快速启动及自定义数据库集成，适用于服务发现与配置管理场景。"
 source: https://xuanyuan.cloud/zh/r/nacos/nacos-server
 canonical: https://xuanyuan.cloud/zh/r/nacos/nacos-server
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nacos/nacos-server" title="nacos/nacos-server Docker 镜像中文简介、标签列表与拉取命令">nacos/nacos-server — 轩辕镜像中文简介</a>

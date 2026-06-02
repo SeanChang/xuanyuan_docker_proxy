@@ -3,7 +3,7 @@ image: langflowai/langflow
 description: "Langflow是用于RAG和多智能体AI应用的低代码应用构建器。"
 source: https://xuanyuan.cloud/zh/r/langflowai/langflow
 canonical: https://xuanyuan.cloud/zh/r/langflowai/langflow
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/langflowai/langflow" title="langflowai/langflow Docker 镜像中文简介、标签列表与拉取命令">langflowai/langflow — 轩辕镜像中文简介</a>

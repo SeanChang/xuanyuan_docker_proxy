@@ -3,7 +3,7 @@ image: apache/skywalking-ui
 description: "Apache SkyWalking Web用户界面是开源可观测性平台Apache SkyWalking的可视化交互入口，用于集中呈现分布式系统的监控数据，支持服务拓扑图展示、性能指标（如响应时间、吞吐量、错误率）实时监控、分布式追踪链路查询及告警状态可视化等核心功能，帮助运维与开发人员直观掌握系统运行状态，快速定位性能瓶颈与故障点，有效提升分布式架构下的系统可观测性与问题排查效率。"
 source: https://xuanyuan.cloud/zh/r/apache/skywalking-ui
 canonical: https://xuanyuan.cloud/zh/r/apache/skywalking-ui
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/skywalking-ui" title="apache/skywalking-ui Docker 镜像中文简介、标签列表与拉取命令">apache/skywalking-ui — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: jellyfin/jellyfin
 description: "自由软件媒体浏览器是一款开源、免费的媒体管理与播放工具，支持播放多种音视频格式、图片及流媒体内容，可通过插件扩展功能，具备媒体库管理、自定义界面等特性，适用于多种操作系统，旨在为用户提供自由、灵活的媒体浏览与娱乐体验。"
 source: https://xuanyuan.cloud/zh/r/jellyfin/jellyfin
 canonical: https://xuanyuan.cloud/zh/r/jellyfin/jellyfin
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jellyfin/jellyfin" title="jellyfin/jellyfin Docker 镜像中文简介、标签列表与拉取命令">jellyfin/jellyfin — 轩辕镜像中文简介</a>

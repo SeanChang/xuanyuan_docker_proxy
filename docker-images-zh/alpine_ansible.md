@@ -3,7 +3,7 @@ image: alpine/ansible
 description: "在Docker中运行ansible和ansible-playbook"
 source: https://xuanyuan.cloud/zh/r/alpine/ansible
 canonical: https://xuanyuan.cloud/zh/r/alpine/ansible
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/ansible" title="alpine/ansible Docker 镜像中文简介、标签列表与拉取命令">alpine/ansible — 轩辕镜像中文简介</a>

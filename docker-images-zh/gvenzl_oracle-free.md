@@ -3,7 +3,7 @@ image: gvenzl/oracle-free
 description: "甲骨文数据库（Oracle Database）免费向所有人开放啦！作为全球领先的企业级关系型数据库管理系统，它凭借高性能、高可靠性与强大的安全性广泛应用于各类关键业务场景，此次免费版本旨在降低开发者、学习者及小型组织的使用门槛，让更多用户能够轻松体验其卓越的数据管理能力，助力创新与技术探索。"
 source: https://xuanyuan.cloud/zh/r/gvenzl/oracle-free
 canonical: https://xuanyuan.cloud/zh/r/gvenzl/oracle-free
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gvenzl/oracle-free" title="gvenzl/oracle-free Docker 镜像中文简介、标签列表与拉取命令">gvenzl/oracle-free — 轩辕镜像中文简介</a>

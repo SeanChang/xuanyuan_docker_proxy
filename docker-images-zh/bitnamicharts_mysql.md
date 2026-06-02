@@ -3,7 +3,7 @@ image: bitnamicharts/mysql
 description: "Bitnami提供的MySQL Helm chart，用于在Kubernetes环境中简化MySQL数据库的部署、配置与管理，遵循开源最佳实践。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/mysql
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/mysql
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/mysql" title="bitnamicharts/mysql Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/mysql — 轩辕镜像中文简介</a>

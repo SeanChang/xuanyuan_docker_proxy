@@ -3,7 +3,7 @@ image: mintplexlabs/anythingllm
 description: "这是一款集多用户协作与数据私有化为一体的RAG与AI智能体应用程序及用户界面，支持适配任何大型语言模型，整合检索增强生成与智能体交互功能，提供便捷高效的一站式AI服务体验，满足用户在不同场景下的智能检索、对话交互等需求。"
 source: https://xuanyuan.cloud/zh/r/mintplexlabs/anythingllm
 canonical: https://xuanyuan.cloud/zh/r/mintplexlabs/anythingllm
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mintplexlabs/anythingllm" title="mintplexlabs/anythingllm Docker 镜像中文简介、标签列表与拉取命令">mintplexlabs/anythingllm — 轩辕镜像中文简介</a>

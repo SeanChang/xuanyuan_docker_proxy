@@ -3,7 +3,7 @@ image: harryliu888/funasr-online-server
 description: "FunASR模型的整理与集成Docker镜像，支持一键启动，实现高准确度的语音实时识别"
 source: https://xuanyuan.cloud/zh/r/harryliu888/funasr-online-server
 canonical: https://xuanyuan.cloud/zh/r/harryliu888/funasr-online-server
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/harryliu888/funasr-online-server" title="harryliu888/funasr-online-server Docker 镜像中文简介、标签列表与拉取命令">harryliu888/funasr-online-server — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: alpine/curl
 description: "基于Alpine Linux的轻量级Docker镜像，集成了curl命令行工具，专为网络数据传输设计。支持HTTP、HTTPS、FTP等多种协议，可用于API测试、文件下载、服务监控等场景。得益于Alpine的精简特性，镜像体积小巧，启动快速，非常适合在容器化环境中执行临时网络请求或自动化任务，是开发调试、CI/CD流程及微服务健康检查的理想工具。"
 source: https://xuanyuan.cloud/zh/r/alpine/curl
 canonical: https://xuanyuan.cloud/zh/r/alpine/curl
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/curl" title="alpine/curl Docker 镜像中文简介、标签列表与拉取命令">alpine/curl — 轩辕镜像中文简介</a>

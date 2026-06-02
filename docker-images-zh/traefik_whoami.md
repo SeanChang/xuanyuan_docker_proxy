@@ -3,7 +3,7 @@ image: traefik/whoami
 description: "轻量级Go语言Web服务器，可将操作系统信息和HTTP请求打印到输出。"
 source: https://xuanyuan.cloud/zh/r/traefik/whoami
 canonical: https://xuanyuan.cloud/zh/r/traefik/whoami
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/traefik/whoami" title="traefik/whoami Docker 镜像中文简介、标签列表与拉取命令">traefik/whoami — 轩辕镜像中文简介</a>

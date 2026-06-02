@@ -3,7 +3,7 @@ image: bitnamilegacy/zookeeper
 description: "Bitnami旧版镜像（不再更新）"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/zookeeper
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/zookeeper
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/zookeeper" title="bitnamilegacy/zookeeper Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/zookeeper — 轩辕镜像中文简介</a>

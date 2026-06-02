@@ -3,7 +3,7 @@ image: linuxserver/kasm
 description: "Kasm Workspaces 是一个容器流式传输平台，通过基于浏览器的方式提供对桌面、应用程序和 Web 服务的访问，采用容器化桌面基础设施 (CDI) 创建按需、一次性的 Docker 容器，适用于远程浏览器隔离、数据防泄漏、桌面即服务等场景。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/kasm
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/kasm
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/kasm" title="linuxserver/kasm Docker 镜像中文简介、标签列表与拉取命令">linuxserver/kasm — 轩辕镜像中文简介</a>

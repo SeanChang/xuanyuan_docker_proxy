@@ -3,7 +3,7 @@ image: universonic/stable-diffusion-webui
 description: "这是一个适用于NVIDIA显卡的Stable Diffusion WebUI Docker镜像，集成了Stable Diffusion的网页用户界面，专为NVIDIA GPU优化以实现高效AI图像生成，包含必要依赖组件，可简化部署流程，方便开发者及用户快速搭建和使用Stable Diffusion进行文本到图像生成、图像编辑等任务，无需复杂配置即可利用GPU加速性能，是基于Docker容器技术的便捷工具。"
 source: https://xuanyuan.cloud/zh/r/universonic/stable-diffusion-webui
 canonical: https://xuanyuan.cloud/zh/r/universonic/stable-diffusion-webui
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/universonic/stable-diffusion-webui" title="universonic/stable-diffusion-webui Docker 镜像中文简介、标签列表与拉取命令">universonic/stable-diffusion-webui — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: zabbix/zabbix-server-mysql
 description: "Zabbix Server是一款广泛应用的开源监控解决方案，主要用于对网络设备、服务器、虚拟机及各类应用程序进行实时性能监控与状态管理，而支持MySQL数据库则使其能够高效存储、查询和管理海量监控数据，包括性能指标、事件日志及告警信息等，通过与MySQL的深度整合，进一步提升了监控系统的数据处理能力、稳定性和可扩展性，满足企业级监控场景下对数据可靠性与高效分析的需求。"
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-mysql
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-mysql
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-mysql" title="zabbix/zabbix-server-mysql Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-server-mysql — 轩辕镜像中文简介</a>

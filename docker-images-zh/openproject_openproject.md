@@ -3,7 +3,7 @@ image: openproject/openproject
 description: "这是用于OpenProject社区版和企业版的Docker镜像，它集成了运行这两个版本所需的完整环境配置，为用户提供便捷的部署解决方案，能够帮助不同规模的团队或组织快速搭建和管理OpenProject项目管理平台，无论是社区用户还是企业用户，都可通过该镜像轻松部署对应的版本，有效简化安装流程并节省环境配置时间，实现高效的项目管理系统搭建。"
 source: https://xuanyuan.cloud/zh/r/openproject/openproject
 canonical: https://xuanyuan.cloud/zh/r/openproject/openproject
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openproject/openproject" title="openproject/openproject Docker 镜像中文简介、标签列表与拉取命令">openproject/openproject — 轩辕镜像中文简介</a>

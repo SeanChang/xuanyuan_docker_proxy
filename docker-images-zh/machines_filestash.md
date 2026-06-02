@@ -3,7 +3,7 @@ image: machines/filestash
 description: "Filestash 官方 Docker 镜像，用于通过 Web 界面管理 FTP、SFTP、S3、Dropbox 等多种协议与云服务的文件数据。"
 source: https://xuanyuan.cloud/zh/r/machines/filestash
 canonical: https://xuanyuan.cloud/zh/r/machines/filestash
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/machines/filestash" title="machines/filestash Docker 镜像中文简介、标签列表与拉取命令">machines/filestash — 轩辕镜像中文简介</a>

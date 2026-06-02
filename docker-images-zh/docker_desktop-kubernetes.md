@@ -3,7 +3,7 @@ image: docker/desktop-kubernetes
 description: "为桌面环境设计的Kubernetes二进制文件，基于Alpine系统从源代码编译而成，旨在为开发者和用户提供适用于桌面平台的轻量级、高效Kubernetes运行组件，便于在本地环境中快速部署和使用Kubernetes相关功能，满足开发、测试及学习等场景下对桌面级Kubernetes环境的需求。"
 source: https://xuanyuan.cloud/zh/r/docker/desktop-kubernetes
 canonical: https://xuanyuan.cloud/zh/r/docker/desktop-kubernetes
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/docker/desktop-kubernetes" title="docker/desktop-kubernetes Docker 镜像中文简介、标签列表与拉取命令">docker/desktop-kubernetes — 轩辕镜像中文简介</a>

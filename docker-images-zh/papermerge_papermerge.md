@@ -3,7 +3,7 @@ image: papermerge/papermerge
 description: "Papermerge是一个开源文档管理系统(DMS)，用于数字档案的归档和检索，适用于管理扫描文档（如PDF、TIFF格式）等不可编辑信息。"
 source: https://xuanyuan.cloud/zh/r/papermerge/papermerge
 canonical: https://xuanyuan.cloud/zh/r/papermerge/papermerge
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/papermerge/papermerge" title="papermerge/papermerge Docker 镜像中文简介、标签列表与拉取命令">papermerge/papermerge — 轩辕镜像中文简介</a>

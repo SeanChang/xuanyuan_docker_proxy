@@ -3,7 +3,7 @@ image: arm64v8/eclipse-temurin
 description: "由Eclipse Temurin构建的OpenJDK二进制文件官方镜像，用于运行Java应用程序。"
 source: https://xuanyuan.cloud/zh/r/arm64v8/eclipse-temurin
 canonical: https://xuanyuan.cloud/zh/r/arm64v8/eclipse-temurin
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/arm64v8/eclipse-temurin" title="arm64v8/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">arm64v8/eclipse-temurin — 轩辕镜像中文简介</a>

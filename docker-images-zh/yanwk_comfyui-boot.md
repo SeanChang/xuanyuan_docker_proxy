@@ -3,7 +3,7 @@ image: yanwk/comfyui-boot
 description: "这是一个用于启动加载ComfyUI的Docker镜像，其中ComfyUI是一款在AI绘画领域广泛应用的强大工具，具备灵活的工作流定制与丰富的插件扩展功能；该Docker镜像通过预先配置必要的运行环境、集成关键依赖组件，旨在简化ComfyUI的部署流程，帮助用户无需手动进行复杂的环境搭建，即可快速启动并高效使用ComfyUI开展绘画创作、模型测试等相关工作，为AI绘画爱好者和开发者提供便捷、稳定的启动加载解决方案。"
 source: https://xuanyuan.cloud/zh/r/yanwk/comfyui-boot
 canonical: https://xuanyuan.cloud/zh/r/yanwk/comfyui-boot
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/yanwk/comfyui-boot" title="yanwk/comfyui-boot Docker 镜像中文简介、标签列表与拉取命令">yanwk/comfyui-boot — 轩辕镜像中文简介</a>

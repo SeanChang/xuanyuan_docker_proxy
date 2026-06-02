@@ -3,7 +3,7 @@ image: library/sonarqube
 description: "SonarQube的官方镜像是一款专注于代码质量与安全的代码分析工具，其核心功能包括对代码进行全面扫描、精准检测潜在缺陷、有效识别安全漏洞及科学评估代码质量指标，能帮助开发团队在软件开发流程中及时发现并修复问题，从而显著提升软件产品的可靠性与安全性，是开发过程中保障代码质量和安全的重要工具。"
 source: https://xuanyuan.cloud/zh/r/library/sonarqube
 canonical: https://xuanyuan.cloud/zh/r/library/sonarqube
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/sonarqube" title="library/sonarqube Docker 镜像中文简介、标签列表与拉取命令">library/sonarqube — 轩辕镜像中文简介</a>

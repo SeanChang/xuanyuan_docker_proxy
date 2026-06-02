@@ -3,7 +3,7 @@ image: elastic/filebeat
 description: "由Elastic官方维护的Filebeat Docker镜像是轻量级日志采集工具Filebeat的容器化版本，作为Elastic Stack（ELK Stack）的核心组件之一，它专为在Docker等容器环境中高效收集、传输服务器、应用程序或容器生成的日志数据而设计，支持多种日志输入源（如文件、标准输出等）和输出目标（如Elasticsearch、Logstash等），能够简化日志采集流程，助力用户实现日志的集中管理、实时分析与可视化监控。"
 source: https://xuanyuan.cloud/zh/r/elastic/filebeat
 canonical: https://xuanyuan.cloud/zh/r/elastic/filebeat
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/elastic/filebeat" title="elastic/filebeat Docker 镜像中文简介、标签列表与拉取命令">elastic/filebeat — 轩辕镜像中文简介</a>

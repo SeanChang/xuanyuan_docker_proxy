@@ -3,7 +3,7 @@ image: photoprism/photoprism
 description: "这是一款为去中心化网络打造的人工智能驱动照片应用，集成智能编辑、精准分类与视觉优化功能，依托去中心化技术筑牢用户数据主权与隐私安全防线，以AI赋能影像创作与管理，让照片处理更高效、体验更流畅，为用户在开放网络中带来兼具科技感与人文关怀的数字影像服务，彰显去中心化时代下的创新价值与多彩体验。"
 source: https://xuanyuan.cloud/zh/r/photoprism/photoprism
 canonical: https://xuanyuan.cloud/zh/r/photoprism/photoprism
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/photoprism/photoprism" title="photoprism/photoprism Docker 镜像中文简介、标签列表与拉取命令">photoprism/photoprism — 轩辕镜像中文简介</a>

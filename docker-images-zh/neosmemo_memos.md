@@ -3,7 +3,7 @@ image: neosmemo/memos
 description: "这是一款以隐私安全为首要原则的轻量级笔记服务，无需复杂操作即可轻松捕捉你的精彩想法，随时随地记录灵感瞬间，并支持便捷分享，在保障信息安全的同时有效提升记录效率，让每一个创意都能被及时留存与传递。"
 source: https://xuanyuan.cloud/zh/r/neosmemo/memos
 canonical: https://xuanyuan.cloud/zh/r/neosmemo/memos
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/neosmemo/memos" title="neosmemo/memos Docker 镜像中文简介、标签列表与拉取命令">neosmemo/memos — 轩辕镜像中文简介</a>

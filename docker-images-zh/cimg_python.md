@@ -3,7 +3,7 @@ image: cimg/python
 description: "CircleCI提供的`cimg/python`是专为持续集成构建设计的Docker镜像，包含完整Python版本（通过pyenv），预装pip、pipenv和poetry，适用于CircleCI环境，旨在取代旧版`circleci/python`镜像。"
 source: https://xuanyuan.cloud/zh/r/cimg/python
 canonical: https://xuanyuan.cloud/zh/r/cimg/python
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cimg/python" title="cimg/python Docker 镜像中文简介、标签列表与拉取命令">cimg/python — 轩辕镜像中文简介</a>

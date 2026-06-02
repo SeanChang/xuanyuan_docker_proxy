@@ -3,7 +3,7 @@ image: postgis/postgis
 description: "PostGIS是PostgreSQL对象关系型数据库的空间数据库扩展器，它为PostgreSQL增添了对空间数据类型（如点、线、面、几何体集合等）的支持，提供空间索引功能以提升空间数据查询效率，并集成了丰富的空间分析函数（包括距离计算、缓冲区分析、叠加操作等），使PostgreSQL能够高效存储、管理与分析空间数据，广泛应用于地理信息系统（GIS）、位置服务、地图绘制等领域。"
 source: https://xuanyuan.cloud/zh/r/postgis/postgis
 canonical: https://xuanyuan.cloud/zh/r/postgis/postgis
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/postgis/postgis" title="postgis/postgis Docker 镜像中文简介、标签列表与拉取命令">postgis/postgis — 轩辕镜像中文简介</a>

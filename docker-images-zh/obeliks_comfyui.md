@@ -3,7 +3,7 @@ image: obeliks/comfyui
 description: "ComfyUI是一款功能强大且模块化的稳定扩散图形用户界面与后端工具，它支持用户通过灵活的模块化节点系统构建、定制和运行复杂的AI图像生成流程，兼具直观的前端交互体验与高效的后端处理能力，为稳定扩散模型的应用提供了高度可扩展和自定义的操作平台。"
 source: https://xuanyuan.cloud/zh/r/obeliks/comfyui
 canonical: https://xuanyuan.cloud/zh/r/obeliks/comfyui
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/obeliks/comfyui" title="obeliks/comfyui Docker 镜像中文简介、标签列表与拉取命令">obeliks/comfyui — 轩辕镜像中文简介</a>

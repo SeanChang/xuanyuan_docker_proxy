@@ -3,7 +3,7 @@ image: docker/ucp-auth
 description: "docker/ucp镜像是Docker企业版核心组件，用于构建和管理容器集群，提供集中化控制、多租户管理及安全集成功能，支持企业级容器编排与运维。"
 source: https://xuanyuan.cloud/zh/r/docker/ucp-auth
 canonical: https://xuanyuan.cloud/zh/r/docker/ucp-auth
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/docker/ucp-auth" title="docker/ucp-auth Docker 镜像中文简介、标签列表与拉取命令">docker/ucp-auth — 轩辕镜像中文简介</a>

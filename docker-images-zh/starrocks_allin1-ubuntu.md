@@ -3,7 +3,7 @@ image: starrocks/allin1-ubuntu
 description: "starrocks/allin1-ubuntu 是基于 Ubuntu 系统构建的 StarRocks 集成版 Docker 镜像，整合了 StarRocks 所有核心组件（FE、BE、Broker 等），支持一键启动完整集群环境。该镜像专为开发测试、快速体验及学习研究设计，无需复杂配置即可运行高性能分析型数据库，帮助用户便捷探索 StarRocks 的实时分析、高并发查询等核心能力，是轻量化部署和功能验证的理想选择。"
 source: https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu
 canonical: https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu" title="starrocks/allin1-ubuntu Docker 镜像中文简介、标签列表与拉取命令">starrocks/allin1-ubuntu — 轩辕镜像中文简介</a>

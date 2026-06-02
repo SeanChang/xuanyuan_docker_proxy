@@ -3,7 +3,7 @@ image: getmeili/meilisearch
 description: "这是一款基于开源技术打造的搜索引擎，不仅具备快速高效的响应性能，还能实现超相关的搜索结果精准匹配，同时能够轻松融入各类开发项目，无需繁琐配置即可快速集成，有效简化开发流程，为用户的项目开发提供便捷且强大的搜索功能支持。"
 source: https://xuanyuan.cloud/zh/r/getmeili/meilisearch
 canonical: https://xuanyuan.cloud/zh/r/getmeili/meilisearch
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/getmeili/meilisearch" title="getmeili/meilisearch Docker 镜像中文简介、标签列表与拉取命令">getmeili/meilisearch — 轩辕镜像中文简介</a>

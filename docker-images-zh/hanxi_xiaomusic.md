@@ -3,7 +3,7 @@ image: hanxi/xiaomusic
 description: "Xiaomusic 是一款基于命令行的网易云音乐第三方客户端，采用 Python 开发，支持跨平台运行，提供音乐播放、歌曲搜索、歌单管理、收藏同步及实时歌词显示等功能，界面简洁轻量，无需图形界面即可便捷使用，开源免费且持续更新，旨在为用户提供高效纯粹的音乐聆听体验。"
 source: https://xuanyuan.cloud/zh/r/hanxi/xiaomusic
 canonical: https://xuanyuan.cloud/zh/r/hanxi/xiaomusic
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hanxi/xiaomusic" title="hanxi/xiaomusic Docker 镜像中文简介、标签列表与拉取命令">hanxi/xiaomusic — 轩辕镜像中文简介</a>

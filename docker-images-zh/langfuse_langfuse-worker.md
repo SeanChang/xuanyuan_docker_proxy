@@ -3,7 +3,7 @@ image: langfuse/langfuse-worker
 description: "Langfuse background-worker容器，用于v3版本开发阶段，负责处理后台任务，支持主应用的异步操作与任务队列管理。"
 source: https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker
 canonical: https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/langfuse/langfuse-worker" title="langfuse/langfuse-worker Docker 镜像中文简介、标签列表与拉取命令">langfuse/langfuse-worker — 轩辕镜像中文简介</a>

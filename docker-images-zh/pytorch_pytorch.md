@@ -3,7 +3,7 @@ image: pytorch/pytorch
 description: "PyTorch是一款以Python为首要设计理念的深度学习框架，凭借简洁易用的Python接口、动态计算图机制及强大的灵活性，广泛应用于学术研究与工业开发，支持从快速原型设计到大规模部署的全流程，深度融合Python数据科学生态，为开发者提供高效且直观的深度学习解决方案。"
 source: https://xuanyuan.cloud/zh/r/pytorch/pytorch
 canonical: https://xuanyuan.cloud/zh/r/pytorch/pytorch
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/pytorch/pytorch" title="pytorch/pytorch Docker 镜像中文简介、标签列表与拉取命令">pytorch/pytorch — 轩辕镜像中文简介</a>

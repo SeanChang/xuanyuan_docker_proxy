@@ -3,7 +3,7 @@ image: mattermost/mattermost-team-edition
 description: "Mattermost Team Edition的官方Docker镜像，用于便捷部署和运行团队协作平台。"
 source: https://xuanyuan.cloud/zh/r/mattermost/mattermost-team-edition
 canonical: https://xuanyuan.cloud/zh/r/mattermost/mattermost-team-edition
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mattermost/mattermost-team-edition" title="mattermost/mattermost-team-edition Docker 镜像中文简介、标签列表与拉取命令">mattermost/mattermost-team-edition — 轩辕镜像中文简介</a>

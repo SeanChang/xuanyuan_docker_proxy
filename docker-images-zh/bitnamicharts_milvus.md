@@ -3,7 +3,7 @@ image: bitnamicharts/milvus
 description: "Bitnami为Milvus提供的Helm chart是一款用于在Kubernetes环境中简化开源向量数据库Milvus部署、配置与管理的工具，它集成预配置资源参数、依赖组件及最佳实践，支持快速搭建高可用Milvus服务，满足AI应用中向量搜索、相似度匹配等场景需求，助力用户轻松实现Milvus在容器化环境中的高效运维与扩展。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/milvus
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/milvus
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/milvus" title="bitnamicharts/milvus Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/milvus — 轩辕镜像中文简介</a>

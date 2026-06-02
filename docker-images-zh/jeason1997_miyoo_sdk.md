@@ -3,7 +3,7 @@ image: jeason1997/miyoo_sdk
 description: "MiyooSDK Docker镜像为Miyoo掌机应用开发者提供预配置的开发环境，集成交叉编译工具链、依赖库和构建脚本，简化跨平台应用开发与测试流程。"
 source: https://xuanyuan.cloud/zh/r/jeason1997/miyoo_sdk
 canonical: https://xuanyuan.cloud/zh/r/jeason1997/miyoo_sdk
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jeason1997/miyoo_sdk" title="jeason1997/miyoo_sdk Docker 镜像中文简介、标签列表与拉取命令">jeason1997/miyoo_sdk — 轩辕镜像中文简介</a>

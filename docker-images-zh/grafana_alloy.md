@@ -3,7 +3,7 @@ image: grafana/alloy
 description: "Grafana Alloy是厂商无关的OpenTelemetry Collector发行版，具备可编程管道能力，用于构建、运行和调试强大的可观测性管道，支持多遥测生态系统集成。"
 source: https://xuanyuan.cloud/zh/r/grafana/alloy
 canonical: https://xuanyuan.cloud/zh/r/grafana/alloy
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/grafana/alloy" title="grafana/alloy Docker 镜像中文简介、标签列表与拉取命令">grafana/alloy — 轩辕镜像中文简介</a>

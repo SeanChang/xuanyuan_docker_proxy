@@ -3,7 +3,7 @@ image: crazymax/qbittorrent
 description: "基于Alpine Linux的qBittorrent Docker镜像，提供轻量级、高效的开源BitTorrent客户端服务，适用于BT下载与管理。"
 source: https://xuanyuan.cloud/zh/r/crazymax/qbittorrent
 canonical: https://xuanyuan.cloud/zh/r/crazymax/qbittorrent
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/crazymax/qbittorrent" title="crazymax/qbittorrent Docker 镜像中文简介、标签列表与拉取命令">crazymax/qbittorrent — 轩辕镜像中文简介</a>

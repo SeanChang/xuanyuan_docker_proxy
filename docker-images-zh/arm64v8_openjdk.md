@@ -3,7 +3,7 @@ image: arm64v8/openjdk
 description: "OpenJDK的预发布/非生产版本是指尚未正式发布、不建议用于生产环境的构建版本，主要供开发者进行早期测试、体验新特性、验证兼容性或参与开源项目的开发调试，这类版本通常包含最新的功能迭代但可能存在稳定性或性能方面的潜在问题。"
 source: https://xuanyuan.cloud/zh/r/arm64v8/openjdk
 canonical: https://xuanyuan.cloud/zh/r/arm64v8/openjdk
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/arm64v8/openjdk" title="arm64v8/openjdk Docker 镜像中文简介、标签列表与拉取命令">arm64v8/openjdk — 轩辕镜像中文简介</a>

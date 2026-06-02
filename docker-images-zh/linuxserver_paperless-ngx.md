@@ -3,7 +3,7 @@ image: linuxserver/paperless-ngx
 description: "LinuxServer.io提供的paperless-ngx镜像，用于纸质文档的数字化管理，支持扫描、索引、存储与检索，帮助用户高效管理电子文档。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/paperless-ngx
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/paperless-ngx
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/paperless-ngx" title="linuxserver/paperless-ngx Docker 镜像中文简介、标签列表与拉取命令">linuxserver/paperless-ngx — 轩辕镜像中文简介</a>

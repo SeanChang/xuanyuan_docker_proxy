@@ -3,7 +3,7 @@ image: bitnami/prometheus-operator
 description: "Bitnami安全镜像，用于部署和管理Prometheus监控系统的prometheus-operator，提供安全加固特性。"
 source: https://xuanyuan.cloud/zh/r/bitnami/prometheus-operator
 canonical: https://xuanyuan.cloud/zh/r/bitnami/prometheus-operator
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/prometheus-operator" title="bitnami/prometheus-operator Docker 镜像中文简介、标签列表与拉取命令">bitnami/prometheus-operator — 轩辕镜像中文简介</a>

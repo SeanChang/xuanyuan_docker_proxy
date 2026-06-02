@@ -3,7 +3,7 @@ image: linuxserver/transmission
 description: "这是由LinuxServer.io提供的Transmission容器，其中Transmission是一款轻量级开源BitTorrent客户端，支持高效文件传输，兼容BitTorrent、DHT等多种协议；该容器采用Docker技术构建，便于快速部署、轻松管理和灵活扩展，适用于个人用户或服务器环境，LinuxServer.io作为专注于开源容器开发的团队，确保其具备良好的安全性与稳定性。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/transmission
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/transmission
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/transmission" title="linuxserver/transmission Docker 镜像中文简介、标签列表与拉取命令">linuxserver/transmission — 轩辕镜像中文简介</a>

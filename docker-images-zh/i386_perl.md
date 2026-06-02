@@ -3,7 +3,7 @@ image: i386/perl
 description: "Perl是一种高级、通用、解释型、动态编程语言。"
 source: https://xuanyuan.cloud/zh/r/i386/perl
 canonical: https://xuanyuan.cloud/zh/r/i386/perl
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/i386/perl" title="i386/perl Docker 镜像中文简介、标签列表与拉取命令">i386/perl — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: apache/tika
 description: "Apache Tika Server的容器镜像，提供内容检测、元数据及文本提取的HTTP服务，便于便捷部署和集成到应用系统中。"
 source: https://xuanyuan.cloud/zh/r/apache/tika
 canonical: https://xuanyuan.cloud/zh/r/apache/tika
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/tika" title="apache/tika Docker 镜像中文简介、标签列表与拉取命令">apache/tika — 轩辕镜像中文简介</a>

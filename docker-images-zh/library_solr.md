@@ -3,7 +3,7 @@ image: library/solr
 description: "Solr是一款基于Apache Lucene构建的极速、开源多模态搜索平台，它凭借Lucene强大的底层索引与检索技术，实现了超快速的信息响应能力，作为开源项目具备高度灵活性与可扩展性，支持文本、图像等多种模态数据的搜索需求，广泛应用于企业级信息检索、内容管理等场景，为用户提供高效、精准且可定制的搜索体验。"
 source: https://xuanyuan.cloud/zh/r/library/solr
 canonical: https://xuanyuan.cloud/zh/r/library/solr
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/solr" title="library/solr Docker 镜像中文简介、标签列表与拉取命令">library/solr — 轩辕镜像中文简介</a>

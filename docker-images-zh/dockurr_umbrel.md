@@ -3,7 +3,7 @@ image: dockurr/umbrel
 description: "Docker容器化的umbrelOS，用于便捷运行比特币节点等去中心化应用。"
 source: https://xuanyuan.cloud/zh/r/dockurr/umbrel
 canonical: https://xuanyuan.cloud/zh/r/dockurr/umbrel
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dockurr/umbrel" title="dockurr/umbrel Docker 镜像中文简介、标签列表与拉取命令">dockurr/umbrel — 轩辕镜像中文简介</a>

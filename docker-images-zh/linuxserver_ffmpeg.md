@@ -3,7 +3,7 @@ image: linuxserver/ffmpeg
 description: "linuxserver/ffmpeg是LinuxServer团队优化的轻量级Docker镜像，集成FFmpeg全功能多媒体处理工具，支持音视频编解码、格式转换、滤镜特效及流媒体推流/拉流。镜像采用高效打包技术，体积小巧且兼容多架构平台，持续同步官方更新确保功能前沿。适用于开发者批量处理音视频文件、搭建媒体服务器实时转码或家庭影院系统自动化格式转换，为多媒体处理提供高效稳定的容器化解决方案。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/ffmpeg
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/ffmpeg
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/ffmpeg" title="linuxserver/ffmpeg Docker 镜像中文简介、标签列表与拉取命令">linuxserver/ffmpeg — 轩辕镜像中文简介</a>

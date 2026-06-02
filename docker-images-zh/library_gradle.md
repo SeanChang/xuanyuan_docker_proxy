@@ -3,7 +3,7 @@ image: library/gradle
 description: "Gradle是一款快速高效、稳定可靠且灵活易用的开源构建工具，它凭借优雅简洁且高度可扩展的领域特定语言（DSL），广泛应用于各类软件项目的构建流程中，能够自动化处理编译、测试、打包等复杂任务，有效简化构建配置，提升开发效率，同时支持多语言开发环境，满足不同项目的个性化构建需求，为开发者提供了强大而便捷的构建解决方案。"
 source: https://xuanyuan.cloud/zh/r/library/gradle
 canonical: https://xuanyuan.cloud/zh/r/library/gradle
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/gradle" title="library/gradle Docker 镜像中文简介、标签列表与拉取命令">library/gradle — 轩辕镜像中文简介</a>

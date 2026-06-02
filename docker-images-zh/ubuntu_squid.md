@@ -3,7 +3,7 @@ image: ubuntu/squid
 description: "Squid是一款广泛应用的Web缓存代理服务器，主要功能是缓存网页内容，通过存储用户频繁访问的资源来加快后续访问速度并有效减轻源服务器的负载，其长期支持版本由Canonical公司负责持续维护与更新。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/squid
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/squid
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/squid" title="ubuntu/squid Docker 镜像中文简介、标签列表与拉取命令">ubuntu/squid — 轩辕镜像中文简介</a>

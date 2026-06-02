@@ -3,7 +3,7 @@ image: getsentry/sentry
 description: "此镜像已弃用，自托管Sentry镜像已从DockerHub迁移至GitHub容器 registry，新地址为https://github.com/getsentry/sentry/pkgs/container/sentry，原提供GitHub master分支的Sentry最新构建。"
 source: https://xuanyuan.cloud/zh/r/getsentry/sentry
 canonical: https://xuanyuan.cloud/zh/r/getsentry/sentry
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/getsentry/sentry" title="getsentry/sentry Docker 镜像中文简介、标签列表与拉取命令">getsentry/sentry — 轩辕镜像中文简介</a>

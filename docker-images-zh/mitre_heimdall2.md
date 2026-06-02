@@ -3,7 +3,7 @@ image: mitre/heimdall2
 description: "Heimdall用于查看、存储和比较各类自动化安全控制扫描结果。"
 source: https://xuanyuan.cloud/zh/r/mitre/heimdall2
 canonical: https://xuanyuan.cloud/zh/r/mitre/heimdall2
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mitre/heimdall2" title="mitre/heimdall2 Docker 镜像中文简介、标签列表与拉取命令">mitre/heimdall2 — 轩辕镜像中文简介</a>

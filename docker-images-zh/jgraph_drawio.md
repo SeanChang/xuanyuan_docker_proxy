@@ -3,7 +3,7 @@ image: jgraph/drawio
 description: "draw.io的Docker镜像是将免费开源的多功能图形绘制工具draw.io打包而成的容器化应用，该工具支持流程图、思维导图、UML图、网络拓扑图等多种图表绘制，具备本地存储与云端同步功能，可导出PNG、PDF、SVG等多种格式；通过Docker镜像，用户无需复杂配置即可快速部署和运行draw.io，适用于开发团队协作、教学设计、项目管理等场景，助力高效完成图表绘制工作，提升整体效率。"
 source: https://xuanyuan.cloud/zh/r/jgraph/drawio
 canonical: https://xuanyuan.cloud/zh/r/jgraph/drawio
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jgraph/drawio" title="jgraph/drawio Docker 镜像中文简介、标签列表与拉取命令">jgraph/drawio — 轩辕镜像中文简介</a>

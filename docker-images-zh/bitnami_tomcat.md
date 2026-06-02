@@ -3,7 +3,7 @@ image: bitnami/tomcat
 description: "Bitnami Tomcat安全镜像是为Apache Tomcat提供的预配置、安全增强型部署解决方案，集成了安全最佳实践，包括漏洞修复、最小化攻击面、合规性配置及安全更新机制，可简化Java Web应用的部署流程，支持快速搭建安全可靠的Tomcat运行环境，适用于开发、测试及生产环境，有效降低部署复杂度与潜在安全风险，助力用户高效管理Tomcat服务。"
 source: https://xuanyuan.cloud/zh/r/bitnami/tomcat
 canonical: https://xuanyuan.cloud/zh/r/bitnami/tomcat
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/tomcat" title="bitnami/tomcat Docker 镜像中文简介、标签列表与拉取命令">bitnami/tomcat — 轩辕镜像中文简介</a>

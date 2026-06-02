@@ -3,7 +3,7 @@ image: talebook/talebook
 description: "这是一款美观的图书管理系统，具备推送至Kindle、在线阅读、书籍上传、下载及管理等功能，同时支持群晖、威联通等所有X86架构系统的Docker部署。"
 source: https://xuanyuan.cloud/zh/r/talebook/talebook
 canonical: https://xuanyuan.cloud/zh/r/talebook/talebook
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/talebook/talebook" title="talebook/talebook Docker 镜像中文简介、标签列表与拉取命令">talebook/talebook — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: fishaudio/fish-speech
 description: "Fish Speech官方容器镜像，用于部署和运行Fish Speech语音处理相关应用，提供官方支持的标准化运行环境。"
 source: https://xuanyuan.cloud/zh/r/fishaudio/fish-speech
 canonical: https://xuanyuan.cloud/zh/r/fishaudio/fish-speech
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/fishaudio/fish-speech" title="fishaudio/fish-speech Docker 镜像中文简介、标签列表与拉取命令">fishaudio/fish-speech — 轩辕镜像中文简介</a>

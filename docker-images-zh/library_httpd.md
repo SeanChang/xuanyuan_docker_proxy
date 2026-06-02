@@ -3,7 +3,7 @@ image: library/httpd
 description: "Apache HTTP服务器项目是由Apache软件基金会主导开发的开源HTTP服务器，作为全球使用最广泛的Web服务器之一，它支持跨平台运行（包括Linux、Windows等多种操作系统），采用模块化设计以灵活扩展功能，具备高性能、高可靠性及强大的安全性，通过活跃的全球开发者社区持续更新维护，广泛应用于从小型个人网站到大型企业级网络服务的各类场景，为互联网基础设施提供稳定高效的Web服务支持。"
 source: https://xuanyuan.cloud/zh/r/library/httpd
 canonical: https://xuanyuan.cloud/zh/r/library/httpd
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/httpd" title="library/httpd Docker 镜像中文简介、标签列表与拉取命令">library/httpd — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: kicbase/stable
 description: "minikube备用镜像是用于在本地运行Kubernetes的轻量级工具minikube的备用镜像资源，当主镜像无法访问或出现故障时，这些备用镜像可确保minikube能够正常启动和运行，保障本地Kubernetes环境的稳定性与可用性，该备用镜像资源由GitHub上的kubernetes/minikube项目（仓库地址：github.com/kubernetes/minikube）进行统一管理和维护。"
 source: https://xuanyuan.cloud/zh/r/kicbase/stable
 canonical: https://xuanyuan.cloud/zh/r/kicbase/stable
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kicbase/stable" title="kicbase/stable Docker 镜像中文简介、标签列表与拉取命令">kicbase/stable — 轩辕镜像中文简介</a>

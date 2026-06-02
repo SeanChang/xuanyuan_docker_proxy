@@ -3,7 +3,7 @@ image: grafana/loki
 description: "Loki 是由 Grafana 开发的云原生日志聚合系统，专为云原生环境设计，具备轻量级架构与高效存储能力，深度集成 Prometheus 和 Grafana 生态，支持分布式系统及 Kubernetes 等容器化环境的日志收集、存储与查询；其采用标签索引而非全文索引的设计，有效降低资源占用，适合大规模日志数据管理，帮助用户高效提取、分析关键日志信息，是云原生应用日志监控的理想工具。"
 source: https://xuanyuan.cloud/zh/r/grafana/loki
 canonical: https://xuanyuan.cloud/zh/r/grafana/loki
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/grafana/loki" title="grafana/loki Docker 镜像中文简介、标签列表与拉取命令">grafana/loki — 轩辕镜像中文简介</a>

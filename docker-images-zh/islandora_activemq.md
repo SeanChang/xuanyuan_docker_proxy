@@ -3,7 +3,7 @@ image: islandora/activemq
 description: "消息代理镜像，用于在分布式系统中传递、路由、存储和转发消息，实现应用间异步通信与解耦。"
 source: https://xuanyuan.cloud/zh/r/islandora/activemq
 canonical: https://xuanyuan.cloud/zh/r/islandora/activemq
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/islandora/activemq" title="islandora/activemq Docker 镜像中文简介、标签列表与拉取命令">islandora/activemq — 轩辕镜像中文简介</a>

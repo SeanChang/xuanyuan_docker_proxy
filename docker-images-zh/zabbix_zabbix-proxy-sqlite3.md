@@ -3,7 +3,7 @@ image: zabbix/zabbix-proxy-sqlite3
 description: "Zabbix代理是Zabbix监控系统的关键组件，用于分布式监控架构中，承担数据采集、转发及本地缓存任务，能有效减轻中心服务器负载并提升监控响应效率；而支持SQLite3数据库的Zabbix代理，采用轻量级嵌入式数据库技术，无需独立数据库服务，配置简便且资源占用低，适用于中小型监控场景或资源受限环境，为用户提供灵活高效的本地数据存储与管理解决方案。"
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3" title="zabbix/zabbix-proxy-sqlite3 Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-proxy-sqlite3 — 轩辕镜像中文简介</a>

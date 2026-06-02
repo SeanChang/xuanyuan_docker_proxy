@@ -3,7 +3,7 @@ image: xxxxrt666/gpt-sovits
 description: "GPT-SoVITS Docker镜像，支持CU126和CU128版本"
 source: https://xuanyuan.cloud/zh/r/xxxxrt666/gpt-sovits
 canonical: https://xuanyuan.cloud/zh/r/xxxxrt666/gpt-sovits
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/xxxxrt666/gpt-sovits" title="xxxxrt666/gpt-sovits Docker 镜像中文简介、标签列表与拉取命令">xxxxrt666/gpt-sovits — 轩辕镜像中文简介</a>

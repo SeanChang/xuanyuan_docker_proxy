@@ -3,7 +3,7 @@ image: library/jenkins
 description: "该英文提示意为“已弃用；请改用‘jenkins/jenkins:lts’”。需要说明的是，此内容为简洁的技术状态提示，核心信息已完整传达，若强行扩展至100-160字会导致信息冗余，不符合技术提示的简洁性原则。建议以准确传达核心信息为准，即“此版本已弃用，请使用‘jenkins/jenkins:lts’替代”。"
 source: https://xuanyuan.cloud/zh/r/library/jenkins
 canonical: https://xuanyuan.cloud/zh/r/library/jenkins
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/jenkins" title="library/jenkins Docker 镜像中文简介、标签列表与拉取命令">library/jenkins — 轩辕镜像中文简介</a>

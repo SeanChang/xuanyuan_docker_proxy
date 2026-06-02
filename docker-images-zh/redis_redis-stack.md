@@ -3,7 +3,7 @@ image: redis/redis-stack
 description: "Redis Stack是一个集成方案，它安装Redis服务器并赋予其额外的数据库功能，如搜索、JSON数据处理、时间序列管理等，同时包含RedisInsight这一可视化管理工具，帮助用户便捷部署、监控和管理Redis数据库，有效提升开发与运维效率。"
 source: https://xuanyuan.cloud/zh/r/redis/redis-stack
 canonical: https://xuanyuan.cloud/zh/r/redis/redis-stack
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/redis/redis-stack" title="redis/redis-stack Docker 镜像中文简介、标签列表与拉取命令">redis/redis-stack — 轩辕镜像中文简介</a>

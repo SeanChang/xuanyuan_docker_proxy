@@ -3,7 +3,7 @@ image: linuxserver/mysql
 description: "由LinuxServer.io提供的MySQL容器，MySQL是世界上最流行的开源数据库，适用于各种Web应用程序。请注意：该镜像已弃用，不再维护和/或更新。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/mysql
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/mysql
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/mysql" title="linuxserver/mysql Docker 镜像中文简介、标签列表与拉取命令">linuxserver/mysql — 轩辕镜像中文简介</a>

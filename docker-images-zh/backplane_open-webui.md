@@ -3,7 +3,7 @@ image: backplane/open-webui
 description: "非官方的自动化Docker Hub镜像，用于镜像open-webui的GHCR仓库中的带标签镜像。"
 source: https://xuanyuan.cloud/zh/r/backplane/open-webui
 canonical: https://xuanyuan.cloud/zh/r/backplane/open-webui
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/backplane/open-webui" title="backplane/open-webui Docker 镜像中文简介、标签列表与拉取命令">backplane/open-webui — 轩辕镜像中文简介</a>

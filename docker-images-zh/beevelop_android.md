@@ -3,7 +3,7 @@ image: beevelop/android
 description: "提供Android运行环境的Docker镜像，适用于Android应用开发、测试及相关任务的容器化部署。"
 source: https://xuanyuan.cloud/zh/r/beevelop/android
 canonical: https://xuanyuan.cloud/zh/r/beevelop/android
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/beevelop/android" title="beevelop/android Docker 镜像中文简介、标签列表与拉取命令">beevelop/android — 轩辕镜像中文简介</a>

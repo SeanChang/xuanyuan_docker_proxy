@@ -3,7 +3,7 @@ image: library/ros
 description: "机器人操作系统（ROS）是一个开源项目，旨在为构建机器人应用提供全面支持，它集成了丰富的工具、库和通信协议，能够实现硬件抽象、设备驱动管理、节点间消息传递及软件包分发等关键功能，通过模块化架构和跨平台兼容性，有效简化了从简单移动机器人到复杂人机交互系统的开发流程，广泛应用于科研实验、工业自动化、服务机器人及智能家居等领域，极大促进了机器人技术的协作创新与快速迭代发展。"
 source: https://xuanyuan.cloud/zh/r/library/ros
 canonical: https://xuanyuan.cloud/zh/r/library/ros
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/ros" title="library/ros Docker 镜像中文简介、标签列表与拉取命令">library/ros — 轩辕镜像中文简介</a>

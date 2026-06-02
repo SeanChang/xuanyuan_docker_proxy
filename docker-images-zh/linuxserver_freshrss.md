@@ -3,7 +3,7 @@ image: linuxserver/freshrss
 description: "LinuxServer.io提供的Freshrss容器，用于RSS订阅与内容聚合阅读。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/freshrss
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/freshrss
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/freshrss" title="linuxserver/freshrss Docker 镜像中文简介、标签列表与拉取命令">linuxserver/freshrss — 轩辕镜像中文简介</a>

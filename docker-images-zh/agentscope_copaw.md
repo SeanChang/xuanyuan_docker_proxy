@@ -3,7 +3,7 @@ image: agentscope/copaw
 description: "基于 AgentScope 的开源个人 AI 助理 CoPaw 的 Docker 镜像，支持多渠道接入与本地/云端部署，可通过 Web 控制台或钉钉、飞书、QQ 等频道使用。"
 source: https://xuanyuan.cloud/zh/r/agentscope/copaw
 canonical: https://xuanyuan.cloud/zh/r/agentscope/copaw
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/agentscope/copaw" title="agentscope/copaw Docker 镜像中文简介、标签列表与拉取命令">agentscope/copaw — 轩辕镜像中文简介</a>

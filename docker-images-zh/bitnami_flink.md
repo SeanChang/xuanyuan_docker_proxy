@@ -3,7 +3,7 @@ image: bitnami/flink
 description: "Bitnami安全镜像为Apache Flink提供预配置、安全强化的运行环境，适用于部署流处理与批处理应用。"
 source: https://xuanyuan.cloud/zh/r/bitnami/flink
 canonical: https://xuanyuan.cloud/zh/r/bitnami/flink
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/flink" title="bitnami/flink Docker 镜像中文简介、标签列表与拉取命令">bitnami/flink — 轩辕镜像中文简介</a>

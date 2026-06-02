@@ -3,7 +3,7 @@ image: dinkydocker/dinky-standalone-server
 description: "Dinky是一款基于Apache Flink构建的实时数据开发平台，致力于为用户提供集数据采集、处理、分析与应用于一体的全流程开发工具，支持可视化任务编排、实时数据监控及高效运维管理，能够显著降低实时数据开发门槛，助力企业快速响应业务需求，构建稳定、高效的实时数据应用系统。"
 source: https://xuanyuan.cloud/zh/r/dinkydocker/dinky-standalone-server
 canonical: https://xuanyuan.cloud/zh/r/dinkydocker/dinky-standalone-server
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dinkydocker/dinky-standalone-server" title="dinkydocker/dinky-standalone-server Docker 镜像中文简介、标签列表与拉取命令">dinkydocker/dinky-standalone-server — 轩辕镜像中文简介</a>

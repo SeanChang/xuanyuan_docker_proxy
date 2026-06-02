@@ -3,7 +3,7 @@ image: rayproject/ray
 description: "这是分布式计算API Ray的官方Docker镜像，旨在为用户提供便捷可靠的容器化部署方案，助力快速搭建和运行基于Ray的分布式计算环境，支持高效开发与部署分布式应用，满足大规模数据处理及并行计算需求，确保开发与生产环境的一致性和稳定性。"
 source: https://xuanyuan.cloud/zh/r/rayproject/ray
 canonical: https://xuanyuan.cloud/zh/r/rayproject/ray
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rayproject/ray" title="rayproject/ray Docker 镜像中文简介、标签列表与拉取命令">rayproject/ray — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: flowgunso/seafile-client
 description: "用于同步一个或多个Seafile库，支持双因素认证、密码保护、上传限制及每周更新的Docker镜像。"
 source: https://xuanyuan.cloud/zh/r/flowgunso/seafile-client
 canonical: https://xuanyuan.cloud/zh/r/flowgunso/seafile-client
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/flowgunso/seafile-client" title="flowgunso/seafile-client Docker 镜像中文简介、标签列表与拉取命令">flowgunso/seafile-client — 轩辕镜像中文简介</a>

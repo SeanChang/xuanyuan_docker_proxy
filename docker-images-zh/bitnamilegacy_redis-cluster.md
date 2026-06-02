@@ -3,7 +3,7 @@ image: bitnamilegacy/redis-cluster
 description: "旧版Bitnami镜像，已不再更新"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/redis-cluster
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/redis-cluster
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/redis-cluster" title="bitnamilegacy/redis-cluster Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/redis-cluster — 轩辕镜像中文简介</a>

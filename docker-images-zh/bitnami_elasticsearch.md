@@ -3,7 +3,7 @@ image: bitnami/elasticsearch
 description: "Bitnami为Elasticsearch提供的安全镜像，是预先配置且经过安全加固的解决方案，集成开源搜索引擎Elasticsearch的核心功能，可支持日志分析、全文搜索、实时数据处理等多种应用场景，通过优化性能、简化部署流程并遵循安全最佳实践，助力用户快速构建安全可靠的Elasticsearch运行环境，适用于开发、测试及生产环境，有效降低配置复杂度与潜在安全风险。"
 source: https://xuanyuan.cloud/zh/r/bitnami/elasticsearch
 canonical: https://xuanyuan.cloud/zh/r/bitnami/elasticsearch
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/elasticsearch" title="bitnami/elasticsearch Docker 镜像中文简介、标签列表与拉取命令">bitnami/elasticsearch — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: vllm/vllm-openai
 description: "vllm/vllm-openai：vLLM 高性能大模型推理框架的官方 Docker 镜像，封装 OpenAI API 兼容的推理服务；支持 PagedAttention 与连续批处理，吞吐量可达传统引擎 10-24 倍；支持 50+ 开源模型与量化方案，适用开源模型部署、OpenAI 应用本地化与高并发生产场景。"
 source: https://xuanyuan.cloud/zh/r/vllm/vllm-openai
 canonical: https://xuanyuan.cloud/zh/r/vllm/vllm-openai
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/vllm/vllm-openai" title="vllm/vllm-openai Docker 镜像中文简介、标签列表与拉取命令">vllm/vllm-openai — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: iotechsys/opc-ua-sim
 description: "OPC-UA Simulator是一个用于模拟OPC-UA服务器的Docker镜像，可生成和提供工业数据，适用于开发、测试和演示OPC-UA客户端应用，无需真实工业设备即可进行协议交互和数据处理验证。"
 source: https://xuanyuan.cloud/zh/r/iotechsys/opc-ua-sim
 canonical: https://xuanyuan.cloud/zh/r/iotechsys/opc-ua-sim
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/iotechsys/opc-ua-sim" title="iotechsys/opc-ua-sim Docker 镜像中文简介、标签列表与拉取命令">iotechsys/opc-ua-sim — 轩辕镜像中文简介</a>

@@ -3,7 +3,7 @@ image: kong/kong
 description: "Kong官方构建的Kong OSS（开源API网关）Docker镜像，由Kong官方维护，官方Docker Hub仓库地址：https://hub.docker.com/_/kong。"
 source: https://xuanyuan.cloud/zh/r/kong/kong
 canonical: https://xuanyuan.cloud/zh/r/kong/kong
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kong/kong" title="kong/kong Docker 镜像中文简介、标签列表与拉取命令">kong/kong — 轩辕镜像中文简介</a>

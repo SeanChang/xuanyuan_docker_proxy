@@ -3,7 +3,7 @@ image: kasmweb/firefox
 description: "适用于Kasm Workspaces的浏览器可访问版本的Mozilla Firefox，支持通过Web界面访问Firefox浏览器，可集成于Kasm Workspaces平台或独立部署。"
 source: https://xuanyuan.cloud/zh/r/kasmweb/firefox
 canonical: https://xuanyuan.cloud/zh/r/kasmweb/firefox
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kasmweb/firefox" title="kasmweb/firefox Docker 镜像中文简介、标签列表与拉取命令">kasmweb/firefox — 轩辕镜像中文简介</a>

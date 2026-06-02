@@ -3,7 +3,7 @@ image: bitnamicharts/cadvisor
 description: "Bitnami高级cAdvisor镜像，用于收集和聚合容器资源使用及性能数据，提供预配置、易于部署的容器监控功能。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/cadvisor
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/cadvisor
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/cadvisor" title="bitnamicharts/cadvisor Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/cadvisor — 轩辕镜像中文简介</a>

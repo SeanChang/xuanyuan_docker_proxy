@@ -3,7 +3,7 @@ image: nvidia/cuda
 description: "英伟达在GitLab仓库（gitlab.com/nvidia/cuda）提供的CUDA（并行计算平台）和cuDNN（深度神经网络加速库）镜像，为开发者提供了预配置的开发环境，支持高效进行并行计算应用开发、深度学习模型训练及推理任务，确保了环境的一致性和部署的便捷性，是构建基于英伟达GPU加速应用的重要资源。"
 source: https://xuanyuan.cloud/zh/r/nvidia/cuda
 canonical: https://xuanyuan.cloud/zh/r/nvidia/cuda
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nvidia/cuda" title="nvidia/cuda Docker 镜像中文简介、标签列表与拉取命令">nvidia/cuda — 轩辕镜像中文简介</a>

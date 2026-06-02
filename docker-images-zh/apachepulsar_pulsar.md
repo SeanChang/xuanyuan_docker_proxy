@@ -3,7 +3,7 @@ image: apachepulsar/pulsar
 description: "Apache Pulsar是一款分布式发布/订阅消息系统，具备多租户支持、持久化存储与低延迟高吞吐量特性，支持跨地域数据复制、多协议接入及分层存储架构，适用于大规模实时数据流转、事件驱动架构及云原生环境下的消息传递需求。"
 source: https://xuanyuan.cloud/zh/r/apachepulsar/pulsar
 canonical: https://xuanyuan.cloud/zh/r/apachepulsar/pulsar
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apachepulsar/pulsar" title="apachepulsar/pulsar Docker 镜像中文简介、标签列表与拉取命令">apachepulsar/pulsar — 轩辕镜像中文简介</a>

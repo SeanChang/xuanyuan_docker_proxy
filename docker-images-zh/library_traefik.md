@@ -3,7 +3,7 @@ image: library/traefik
 description: "Traefik 是一款专为云原生环境打造的边缘路由器，作为现代 HTTP 反向代理与负载均衡器，它能自动发现服务、动态配置路由规则，无缝集成 Kubernetes、Docker 等容器编排平台，简化微服务架构下的流量管理，支持 HTTPS、TLS 加密及多种协议，为云原生应用提供高效、安全、灵活的边缘流量处理能力。"
 source: https://xuanyuan.cloud/zh/r/library/traefik
 canonical: https://xuanyuan.cloud/zh/r/library/traefik
-exported_at: 2026-06-02T12:18:45.496Z
+exported_at: 2026-06-02T12:21:11.987Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/traefik" title="library/traefik Docker 镜像中文简介、标签列表与拉取命令">library/traefik — 轩辕镜像中文简介</a>
