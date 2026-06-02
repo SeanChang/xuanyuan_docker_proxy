@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: zenika/alpine-chrome
+description: "在极小的Alpine镜像中以无头模式运行的Chrome浏览器，适用于网页测试、自动化和内容生成等场景，体积小巧且功能丰富。"
 source: https://xuanyuan.cloud/zh/r/zenika/alpine-chrome
 canonical: https://xuanyuan.cloud/zh/r/zenika/alpine-chrome
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zenika/alpine-chrome" title="zenika/alpine-chrome Docker 镜像中文简介、标签列表与拉取命令">zenika/alpine-chrome — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zenika/alpine-chrome" title="zenika/alpine-chrome Docker 镜像中文简介、标签列表与拉取命令">zenika/alpine-chrome — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/zenika/alpine-chrome" title="zenika/alpine-chrome Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zenika/alpine-chrome</a></p>
+<a href="https://xuanyuan.cloud/zh/r/zenika/alpine-chrome" title="zenika/alpine-chrome Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zenika/alpine-chrome</a>
 
 [![GitHub Stars](https://img.shields.io/github/stars/zenika/alpine-chrome)](https://github.com/Zenika/alpine-chrome/) [![Docker Build Status](https://img.shields.io/github/workflow/status/zenika/alpine-chrome/build.svg)](https://hub.docker.com/r/zenika/alpine-chrome/) [![Docker Pulls](https://img.shields.io/docker/pulls/zenika/alpine-chrome.svg)](https://hub.docker.com/r/zenika/alpine-chrome/) [![Docker Stars](https://img.shields.io/docker/stars/zenika/alpine-chrome.svg)](https://hub.docker.com/r/zenika/alpine-chrome/)
 
@@ -260,7 +261,3 @@ docker container run --rm -it --entrypoint "" --user root zenika/alpine-chrome s
 
 - 🐳 [docker-compose](https://github.com/Zenika/alpine-chrome/blob/master/examples/docker-compose)：启动Chrome并调用同一docker-compose中的nginx服务器
 - ☸️ [kubernetes](https://github.com/Zenika/alpine-chrome/tree/master/examples/k8s)：在K8s中部署无头
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zenika/alpine-chrome" title="zenika/alpine-chrome Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zenika/alpine-chrome</a></p>

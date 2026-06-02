@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ai/qwen3
+description: "Qwen3是通义千问系列最新推出的大语言模型，作为新一代人工智能技术成果，它专为顶尖级代码编写、数学计算、逻辑推理及语言处理任务打造，凭借先进的算法架构与深度优化的模型性能，能够高效应对多领域复杂场景下的专业需求，为用户提供精准、智能的解决方案，展现出在技术研发与应用落地中的卓越潜力。"
 source: https://xuanyuan.cloud/zh/r/ai/qwen3
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen3
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/qwen3" title="ai/qwen3 Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3 — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen3" title="ai/qwen3 Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3 — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ai/qwen3" title="ai/qwen3 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ai/qwen3" title="ai/qwen3 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3</a>
 
 # Qwen3
 
@@ -114,7 +115,3 @@ docker model run ai/qwen3
 ## 相关链接
 
 - [Qwen3：深入思考，快速响应]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/qwen3" title="ai/qwen3 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3</a></p>

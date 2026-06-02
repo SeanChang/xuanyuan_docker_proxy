@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: kong/kong-gateway
+description: "Kong网关企业版是全球最受欢迎的API网关，提供API管理核心功能。"
 source: https://xuanyuan.cloud/zh/r/kong/kong-gateway
 canonical: https://xuanyuan.cloud/zh/r/kong/kong-gateway
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kong/kong-gateway" title="kong/kong-gateway Docker 镜像中文简介、标签列表与拉取命令">kong/kong-gateway — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kong/kong-gateway" title="kong/kong-gateway Docker 镜像中文简介、标签列表与拉取命令">kong/kong-gateway — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/kong/kong-gateway" title="kong/kong-gateway Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kong/kong-gateway</a></p>
+<a href="https://xuanyuan.cloud/zh/r/kong/kong-gateway" title="kong/kong-gateway Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kong/kong-gateway</a>
 
 # Kong Gateway Docker镜像文档
 
@@ -219,7 +220,3 @@ $ docker exec -it kong kong reload  # 在运行中的容器内执行重载
 镜像包含软件的许可信息详见 [Kong 软件许可](https://konghq.com/kongsoftwarelicense/)。
 
 与所有 Docker 镜像一样，本镜像可能包含基础系统及依赖软件的其他许可。用户需自行确保使用本镜像符合所有包含软件的许可要求。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kong/kong-gateway" title="kong/kong-gateway Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kong/kong-gateway</a></p>

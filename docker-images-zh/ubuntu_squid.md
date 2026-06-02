@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ubuntu/squid
+description: "Squid是一款广泛应用的Web缓存代理服务器，主要功能是缓存网页内容，通过存储用户频繁访问的资源来加快后续访问速度并有效减轻源服务器的负载，其长期支持版本由Canonical公司负责持续维护与更新。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/squid
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/squid
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/squid" title="ubuntu/squid Docker 镜像中文简介、标签列表与拉取命令">ubuntu/squid — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/squid" title="ubuntu/squid Docker 镜像中文简介、标签列表与拉取命令">ubuntu/squid — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/squid" title="ubuntu/squid Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/squid</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ubuntu/squid" title="ubuntu/squid Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/squid</a>
 
 # Squid | Ubuntu  
 
@@ -123,7 +124,3 @@ docker run -d --name squid-container -e TZ=UTC -p 3128:3128 ubuntu/squid:5.2-22.
 | 通道   | 版本   | 终止支持日期 | 升级路径 |
 |--------|--------|--------------|----------|
 | _`track`_ |        |              |          |
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/squid" title="ubuntu/squid Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/squid</a></p>

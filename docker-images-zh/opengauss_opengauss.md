@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: opengauss/opengauss
+description: "openGauss官方Docker镜像是由openGauss官方提供的可移植容器打包格式，集成了openGauss数据库引擎、必要配置文件及运行依赖，旨在简化数据库部署流程，确保不同环境下的运行一致性，方便用户快速启动、配置和使用openGauss高性能关系型数据库，适用于开发测试、学习实践等多种场景，为用户提供便捷、高效的数据库使用体验。"
 source: https://xuanyuan.cloud/zh/r/opengauss/opengauss
 canonical: https://xuanyuan.cloud/zh/r/opengauss/opengauss
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/opengauss/opengauss" title="opengauss/opengauss Docker 镜像中文简介、标签列表与拉取命令">opengauss/opengauss — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/opengauss/opengauss" title="opengauss/opengauss Docker 镜像中文简介、标签列表与拉取命令">opengauss/opengauss — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/opengauss/opengauss" title="opengauss/opengauss Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/opengauss/opengauss</a></p>
+<a href="https://xuanyuan.cloud/zh/r/opengauss/opengauss" title="opengauss/opengauss Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/opengauss/opengauss</a>
 
 # 如何使用此镜像
 
@@ -82,7 +83,3 @@ docker run --name opengauss --privileged=true -d -e GS_PASSWORD=openGauss@123 -v
   - `容器内数据目录`：固定为`/var/lib/opengauss/data`，是openGauss数据存储的默认路径。  
 
 挂载后，数据库数据会直接保存在本地目录，即使容器被删除或重建，数据也不会丢失。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/opengauss/opengauss" title="opengauss/opengauss Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/opengauss/opengauss</a></p>

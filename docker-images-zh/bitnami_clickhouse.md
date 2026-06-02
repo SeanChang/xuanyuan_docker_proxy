@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnami/clickhouse
+description: "Bitnami Secure Image for ClickHouse是由比特纳米提供的适用于ClickHouse列式数据库的安全镜像，该镜像经过预先配置与全面安全加固，集成最新安全补丁、合规性检查及行业最佳实践，可显著简化部署流程，确保在生产环境中稳定高效运行，有效降低潜在安全风险，为用户提供开箱即用、安全可靠的ClickHouse数据库运行环境，助力快速搭建符合安全标准的数据管理系统。"
 source: https://xuanyuan.cloud/zh/r/bitnami/clickhouse
 canonical: https://xuanyuan.cloud/zh/r/bitnami/clickhouse
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/clickhouse" title="bitnami/clickhouse Docker 镜像中文简介、标签列表与拉取命令">bitnami/clickhouse — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/clickhouse" title="bitnami/clickhouse Docker 镜像中文简介、标签列表与拉取命令">bitnami/clickhouse — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnami/clickhouse" title="bitnami/clickhouse Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/clickhouse</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnami/clickhouse" title="bitnami/clickhouse Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/clickhouse</a>
 
 # Bitnami ClickHouse 安全镜像说明  
 
@@ -31,7 +32,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 
 
 了解更多 Bitnami 安全镜像商业订阅详情，可访问 [官方网站]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/clickhouse" title="bitnami/clickhouse Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/clickhouse</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: apache/tika
+description: "Apache Tika Server的容器镜像，提供内容检测、元数据及文本提取的HTTP服务，便于便捷部署和集成到应用系统中。"
 source: https://xuanyuan.cloud/zh/r/apache/tika
 canonical: https://xuanyuan.cloud/zh/r/apache/tika
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/tika" title="apache/tika Docker 镜像中文简介、标签列表与拉取命令">apache/tika — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/tika" title="apache/tika Docker 镜像中文简介、标签列表与拉取命令">apache/tika — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/apache/tika" title="apache/tika Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/tika</a></p>
+<a href="https://xuanyuan.cloud/zh/r/apache/tika" title="apache/tika Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/tika</a>
 
 # Apache Tika Server Docker 镜像文档
 
@@ -132,7 +133,3 @@ GitHub 贡献者列表：[tika-docker 贡献者](https://github.com/apache/tika-
 ## 免责声明  
 
 本 Docker 镜像下载并使用 Apache Tika 团队在 Apache 软件基金会分发站点发布的二进制 JAR，但根据 Apache 发布政策，仅源代码发布为官方正式 artefact。详情参见 [Apache 发布分发政策](https://www.apache.org/dev/release-distribution.html)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/tika" title="apache/tika Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/apache/tika</a></p>

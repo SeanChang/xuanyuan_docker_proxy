@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: mysql/mysql-server
+description: "这是由Oracle官方MySQL团队创建、维护并提供支持的优化MySQL服务器Docker镜像，专为高效部署与运行MySQL数据库服务而设计，确保用户能在容器环境中便捷、稳定地使用经过专业优化的MySQL服务器，同时享受来自官方团队的持续技术保障与维护支持。"
 source: https://xuanyuan.cloud/zh/r/mysql/mysql-server
 canonical: https://xuanyuan.cloud/zh/r/mysql/mysql-server
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mysql/mysql-server" title="mysql/mysql-server Docker 镜像中文简介、标签列表与拉取命令">mysql/mysql-server — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mysql/mysql-server" title="mysql/mysql-server Docker 镜像中文简介、标签列表与拉取命令">mysql/mysql-server — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/mysql/mysql-server" title="mysql/mysql-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mysql/mysql-server</a></p>
+<a href="https://xuanyuan.cloud/zh/r/mysql/mysql-server" title="mysql/mysql-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mysql/mysql-server</a>
 
 ![logo]([])
 
@@ -106,7 +107,3 @@ MySQL Server Docker 镜像包含以下产品：
 
 ### 更多部署主题  
 关于 Docker 部署 MySQL Server 的更多内容（如服务配置、数据持久化、日志管理、版本升级、环境变量等），参见《MySQL Server 手册》的 [通过 Docker 部署 MySQL Server]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mysql/mysql-server" title="mysql/mysql-server Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mysql/mysql-server</a></p>

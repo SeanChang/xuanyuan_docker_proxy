@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: openeuler/hadoop
+description: "官方Hadoop Docker镜像，基于openEuler构建，支持分布式处理大型数据集，提供Web UI访问，适用于大数据处理场景。"
 source: https://xuanyuan.cloud/zh/r/openeuler/hadoop
 canonical: https://xuanyuan.cloud/zh/r/openeuler/hadoop
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/hadoop" title="openeuler/hadoop Docker 镜像中文简介、标签列表与拉取命令">openeuler/hadoop — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/hadoop" title="openeuler/hadoop Docker 镜像中文简介、标签列表与拉取命令">openeuler/hadoop — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/openeuler/hadoop" title="openeuler/hadoop Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/hadoop</a></p>
+<a href="https://xuanyuan.cloud/zh/r/openeuler/hadoop" title="openeuler/hadoop Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/hadoop</a>
 
 # Hadoop Docker镜像（openEuler）
 
@@ -77,7 +78,3 @@ docker rm hadoop
 
 ## 问题与反馈
 如有任何问题或需要使用特殊功能，请在[openeuler-docker-images](https://gitee.com/openeuler/openeuler-docker-images)提交issue或pull request。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/hadoop" title="openeuler/hadoop Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/hadoop</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: traefik/whoami
+description: "轻量级Go语言Web服务器，可将操作系统信息和HTTP请求打印到输出。"
 source: https://xuanyuan.cloud/zh/r/traefik/whoami
 canonical: https://xuanyuan.cloud/zh/r/traefik/whoami
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/traefik/whoami" title="traefik/whoami Docker 镜像中文简介、标签列表与拉取命令">traefik/whoami — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/traefik/whoami" title="traefik/whoami Docker 镜像中文简介、标签列表与拉取命令">traefik/whoami — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/traefik/whoami" title="traefik/whoami Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/traefik/whoami</a></p>
+<a href="https://xuanyuan.cloud/zh/r/traefik/whoami" title="traefik/whoami Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/traefik/whoami</a>
 
 # traefik/whoami 镜像文档
 
@@ -207,7 +208,3 @@ wscat -c ws://localhost:8080/echo
 # 输入任意消息，服务端会原样返回
 > Hello whoami!
 < Hello whoami!
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/traefik/whoami" title="traefik/whoami Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/traefik/whoami</a></p>

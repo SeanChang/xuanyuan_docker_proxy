@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: kasmweb/ubuntu-noble-desktop
+description: "适用于Kasm Workspaces的Ubuntu生产力桌面"
 source: https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop
 canonical: https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop" title="kasmweb/ubuntu-noble-desktop Docker 镜像中文简介、标签列表与拉取命令">kasmweb/ubuntu-noble-desktop — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop" title="kasmweb/ubuntu-noble-desktop Docker 镜像中文简介、标签列表与拉取命令">kasmweb/ubuntu-noble-desktop — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop" title="kasmweb/ubuntu-noble-desktop Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop</a></p>
+<a href="https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop" title="kasmweb/ubuntu-noble-desktop Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop</a>
 
 **Kasm Workspaces 是一个Docker容器流平台，用于提供基于浏览器的桌面、应用程序和Web服务访问。**
 
@@ -102,7 +103,3 @@ sudo docker run --rm -it --shm-size=512m -p 6901:6901 -e VNC_PW=password kasmweb
 [installation]: https://www.kasmweb.com/docs/latest/install.html "Installation"
 [custom_images]: https://www.kasmweb.com/docs/latest/how_to/building_images.html "Custom Images"
 [github_support]: https://github.com/kasmtech/workspaces-issues/issues "GitHub Support"
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop" title="kasmweb/ubuntu-noble-desktop Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/ubuntu-noble-desktop</a></p>

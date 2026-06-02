@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: gz1903/roonserver
+description: "用于运行RoonServer的Docker镜像，首次运行时会自动下载RoonServer，支持在任何设备上以最高音质播放音频，集成Qobuz、Tidal等多种音频服务，支持外部存储卷和网络共享，适用于构建家庭高品质音频系统。"
 source: https://xuanyuan.cloud/zh/r/gz1903/roonserver
 canonical: https://xuanyuan.cloud/zh/r/gz1903/roonserver
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/gz1903/roonserver" title="gz1903/roonserver Docker 镜像中文简介、标签列表与拉取命令">gz1903/roonserver — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gz1903/roonserver" title="gz1903/roonserver Docker 镜像中文简介、标签列表与拉取命令">gz1903/roonserver — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/gz1903/roonserver" title="gz1903/roonserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gz1903/roonserver</a></p>
+<a href="https://xuanyuan.cloud/zh/r/gz1903/roonserver" title="gz1903/roonserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gz1903/roonserver</a>
 
 # RoonServer Docker镜像
 
@@ -209,7 +210,3 @@ docker run --network roon-lan --name roonserver ...
 享受音乐吧！🎧  
 
 > 若您热爱音乐，您会希望它听起来尽可能宏大、逼真。Roon的音频引擎专为高保真标准设计，在保持易用性的同时提供最佳性能。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/gz1903/roonserver" title="gz1903/roonserver Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/gz1903/roonserver</a></p>

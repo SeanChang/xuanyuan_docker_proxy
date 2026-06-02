@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: islandora/activemq
+description: "消息代理镜像，用于在分布式系统中传递、路由、存储和转发消息，实现应用间异步通信与解耦。"
 source: https://xuanyuan.cloud/zh/r/islandora/activemq
 canonical: https://xuanyuan.cloud/zh/r/islandora/activemq
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/islandora/activemq" title="islandora/activemq Docker 镜像中文简介、标签列表与拉取命令">islandora/activemq — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/islandora/activemq" title="islandora/activemq Docker 镜像中文简介、标签列表与拉取命令">islandora/activemq — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/islandora/activemq" title="islandora/activemq Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/islandora/activemq</a></p>
+<a href="https://xuanyuan.cloud/zh/r/islandora/activemq" title="islandora/activemq Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/islandora/activemq</a>
 
 # ActiveMQ Docker镜像文档
 
@@ -175,7 +176,3 @@ volumes:
 - [ActiveMQ安全配置](https://activemq.apache.org/security)
 - [Web控制台使用指南](https://activemq.apache.org/web-console)
 - [消息存储机制](https://activemq.apache.org/amq-message-store)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/islandora/activemq" title="islandora/activemq Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/islandora/activemq</a></p>

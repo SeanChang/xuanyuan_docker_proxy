@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: exoplatform/jdk
+description: "提供多种OpenJDK版本与Ubuntu系统组合的JDK Docker镜像，支持扩展镜像、运行UberJAR应用及直接启动JVM等场景。"
 source: https://xuanyuan.cloud/zh/r/exoplatform/jdk
 canonical: https://xuanyuan.cloud/zh/r/exoplatform/jdk
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/exoplatform/jdk" title="exoplatform/jdk Docker 镜像中文简介、标签列表与拉取命令">exoplatform/jdk — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/exoplatform/jdk" title="exoplatform/jdk Docker 镜像中文简介、标签列表与拉取命令">exoplatform/jdk — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/exoplatform/jdk" title="exoplatform/jdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/exoplatform/jdk</a></p>
+<a href="https://xuanyuan.cloud/zh/r/exoplatform/jdk" title="exoplatform/jdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/exoplatform/jdk</a>
 
 # exoplatform/jdk Docker镜像
 
@@ -95,7 +96,3 @@ java version "1.8.0_171"
 Java(TM) SE Runtime Environment (build 1.8.0_171-b11)
 Java HotSpot(TM) 64-Bit Server VM (build 25.171-b11, mixed mode)
 ```
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/exoplatform/jdk" title="exoplatform/jdk Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/exoplatform/jdk</a></p>

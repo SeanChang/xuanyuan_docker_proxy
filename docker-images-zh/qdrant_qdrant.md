@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: qdrant/qdrant
+description: "Qdrant是一个向量相似性搜索引擎和向量数据库，提供生产级服务，支持存储、搜索和管理带有附加负载的向量点，具备强大的扩展过滤能力，适用于神经网络或语义匹配、分面搜索等AI应用，使用Rust编写，确保高性能和可靠性。"
 source: https://xuanyuan.cloud/zh/r/qdrant/qdrant
 canonical: https://xuanyuan.cloud/zh/r/qdrant/qdrant
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/qdrant/qdrant" title="qdrant/qdrant Docker 镜像中文简介、标签列表与拉取命令">qdrant/qdrant — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/qdrant/qdrant" title="qdrant/qdrant Docker 镜像中文简介、标签列表与拉取命令">qdrant/qdrant — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/qdrant/qdrant" title="qdrant/qdrant Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/qdrant/qdrant</a></p>
+<a href="https://xuanyuan.cloud/zh/r/qdrant/qdrant" title="qdrant/qdrant Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/qdrant/qdrant</a>
 
 # Qdrant 向量搜索引擎 Docker 镜像文档
 
@@ -154,7 +155,3 @@ Qdrant基于Apache License 2.0许可协议开源，详情参见[许可证文件]
 - [快速入门指南](https://github.com/qdrant/qdrant/blob/master/docs/QUICK_START.md)
 - [Discord社区](https://qdrant.to/discord)
 - [Qdrant Cloud](https://cloud.qdrant.io/)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/qdrant/qdrant" title="qdrant/qdrant Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/qdrant/qdrant</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/ibm-semeru-runtimes
+description: "library/ibm-semeru-runtimes 是 IBM 官方提供的 OpenJDK 运行时 Docker 镜像，基于 Eclipse OpenJ9 虚拟机（JVM）构建，集成了 OpenJDK 类库，提供免费、生产级别的 Java 运行环境。该镜像以轻量、高性能、低内存占用为核心优势，支持 Java 8 至 Java 25 等多个长期支持（LTS）及最新版本，适配 amd64、arm64v8 等多架构，广泛用于企业级 Java 应用（如 Spring Boot、微服务）的容器化部署。"
 source: https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes
 canonical: https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes" title="library/ibm-semeru-runtimes Docker 镜像中文简介、标签列表与拉取命令">library/ibm-semeru-runtimes — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes" title="library/ibm-semeru-runtimes Docker 镜像中文简介、标签列表与拉取命令">library/ibm-semeru-runtimes — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes" title="library/ibm-semeru-runtimes Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes" title="library/ibm-semeru-runtimes Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes</a>
 
 # IBM Semeru Runtimes Docker 镜像使用指南
 
@@ -181,7 +182,3 @@ docker run -it --rm -v $(pwd):/src library/ibm-semeru-runtimes:open-11-jdk sh -c
 - **基础镜像软件**：镜像中包含的基础系统组件（如 Bash、Ubuntu 库）可能遵循其他开源许可（如 MIT、Apache 等），具体可查看 repo-info 仓库的 ibm-semeru-runtimes/ 目录
 
 使用前请确保遵守所有包含软件的许可条款，商业场景需确认 GPLv2 Classpath Exception 的适用范围。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes" title="library/ibm-semeru-runtimes Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/ibm-semeru-runtimes</a></p>

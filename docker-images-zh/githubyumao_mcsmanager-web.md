@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: githubyumao/mcsmanager-web
+description: "MCSManager官方Web镜像，用于通过Web界面管理Minecraft服务器，从GitHub仓库自动构建。"
 source: https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web
 canonical: https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web" title="githubyumao/mcsmanager-web Docker 镜像中文简介、标签列表与拉取命令">githubyumao/mcsmanager-web — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web" title="githubyumao/mcsmanager-web Docker 镜像中文简介、标签列表与拉取命令">githubyumao/mcsmanager-web — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web" title="githubyumao/mcsmanager-web Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web</a></p>
+<a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web" title="githubyumao/mcsmanager-web Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web</a>
 
 # MCSManager 面板官方Docker镜像文档
 
@@ -130,7 +131,3 @@ docker-compose up -d
 - 日志文件和自动化备份数据  
 
 **注意**：迁移服务器时，仅需复制 `/opt/mcsmanager` 目录至新服务器对应路径，重新部署容器即可恢复所有配置。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web" title="githubyumao/mcsmanager-web Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web</a></p>

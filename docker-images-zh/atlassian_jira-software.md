@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: atlassian/jira-software
+description: "Jira Software是供敏捷团队使用的软件开发工具。"
 source: https://xuanyuan.cloud/zh/r/atlassian/jira-software
 canonical: https://xuanyuan.cloud/zh/r/atlassian/jira-software
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/atlassian/jira-software" title="atlassian/jira-software Docker 镜像中文简介、标签列表与拉取命令">atlassian/jira-software — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/atlassian/jira-software" title="atlassian/jira-software Docker 镜像中文简介、标签列表与拉取命令">atlassian/jira-software — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/atlassian/jira-software" title="atlassian/jira-software Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/atlassian/jira-software</a></p>
+<a href="https://xuanyuan.cloud/zh/r/atlassian/jira-software" title="atlassian/jira-software Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/atlassian/jira-software</a>
 
 # Jira Docker 镜像文档
 
@@ -150,7 +151,3 @@ volumes:
 - Jira Software：[Docker Hub](http://hub.docker.com/r/atlassian/jira-software/)
 - Jira Service Management：[Docker Hub](http://hub.docker.com/r/atlassian/jira-servicemanagement/)
 - Jira Core：[Docker Hub](http://hub.docker.com/r/atlassian/jira-core/)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/atlassian/jira-software" title="atlassian/jira-software Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/atlassian/jira-software</a></p>

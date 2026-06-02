@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ubuntu/python
+description: "这是一个基于Ubuntu系统精雕细琢而成的运行基石，集成了Python运行时环境，通过精简优化的系统底层确保了高效稳定的性能，为Python应用程序提供了可靠的运行载体，无论是开发调试、测试验证还是生产部署场景，都能满足轻量、安全且高效的运行需求，是构建Python应用生态的理想基础组件。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/python
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/python
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/python" title="ubuntu/python Docker 镜像中文简介、标签列表与拉取命令">ubuntu/python — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/python" title="ubuntu/python Docker 镜像中文简介、标签列表与拉取命令">ubuntu/python — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/python" title="ubuntu/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/python</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ubuntu/python" title="ubuntu/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/python</a>
 
 # 精简化Ubuntu Python镜像  
 
@@ -84,7 +85,3 @@ docker images --no-trunc --quiet ubuntu/python:<tag>
 |---------------|-------------------------------|--------------|----------|
 | ~~3.8-20.04~~ | Python 3.8 基于 Ubuntu 20.04 LTS | 2025-05      | -        |
 | _`track`_     |                               |              |          |
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/python" title="ubuntu/python Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/python</a></p>

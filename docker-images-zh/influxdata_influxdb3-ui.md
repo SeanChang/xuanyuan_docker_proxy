@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: influxdata/influxdb3-ui
+description: "用于InfluxDB时序数据库的数据探索与可视化用户界面，支持数据查询、分析及管理操作，提供直观的时序数据交互体验。"
 source: https://xuanyuan.cloud/zh/r/influxdata/influxdb3-ui
 canonical: https://xuanyuan.cloud/zh/r/influxdata/influxdb3-ui
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/influxdata/influxdb3-ui" title="influxdata/influxdb3-ui Docker 镜像中文简介、标签列表与拉取命令">influxdata/influxdb3-ui — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/influxdata/influxdb3-ui" title="influxdata/influxdb3-ui Docker 镜像中文简介、标签列表与拉取命令">influxdata/influxdb3-ui — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/influxdata/influxdb3-ui" title="influxdata/influxdb3-ui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/influxdata/influxdb3-ui</a></p>
+<a href="https://xuanyuan.cloud/zh/r/influxdata/influxdb3-ui" title="influxdata/influxdb3-ui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/influxdata/influxdb3-ui</a>
 
 # InfluxDB 3 Explorer 镜像文档
 
@@ -201,7 +202,3 @@ docker run --detach \
 
 - [InfluxDB 3 Explorer 官方文档](https://docs.influxdata.com/influxdb3/explorer/install/)  
 - [InfluxDB Docker 镜像](https://hub.docker.com/_/influxdb)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/influxdata/influxdb3-ui" title="influxdata/influxdb3-ui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/influxdata/influxdb3-ui</a></p>

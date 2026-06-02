@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnami/neo4j
+description: "Bitnami提供的安全镜像，用于运行Neo4j图数据库，具备安全加固特性，支持高效部署与使用。"
 source: https://xuanyuan.cloud/zh/r/bitnami/neo4j
 canonical: https://xuanyuan.cloud/zh/r/bitnami/neo4j
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/neo4j" title="bitnami/neo4j Docker 镜像中文简介、标签列表与拉取命令">bitnami/neo4j — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/neo4j" title="bitnami/neo4j Docker 镜像中文简介、标签列表与拉取命令">bitnami/neo4j — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnami/neo4j" title="bitnami/neo4j Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/neo4j</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnami/neo4j" title="bitnami/neo4j Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/neo4j</a>
 
 # Bitnami Neo4j 镜像文档
 
@@ -425,7 +426,3 @@ docker-compose up neo4j
 
 - 首次向社区用户授予对流行容器镜像的安全优化版本的访问权限。
 - Bitnami 将开始在其免费层中弃用对非强化、基于 Debian 的软件镜像的支持，并将逐步从公共目录中删除非最新标签。因此，社区用户将只能
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/neo4j" title="bitnami/neo4j Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/neo4j</a></p>

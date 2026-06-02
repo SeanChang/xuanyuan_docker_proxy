@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/jellyfin
+description: "LinuxServer.io 提供的 Jellyfin 容器，是一款自由软件媒体系统，支持媒体管理与流式传输，具备跨平台特性、定期更新和用户权限映射功能。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/jellyfin
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/jellyfin
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/jellyfin" title="linuxserver/jellyfin Docker 镜像中文简介、标签列表与拉取命令">linuxserver/jellyfin — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/jellyfin" title="linuxserver/jellyfin Docker 镜像中文简介、标签列表与拉取命令">linuxserver/jellyfin — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/jellyfin" title="linuxserver/jellyfin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/jellyfin</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/jellyfin" title="linuxserver/jellyfin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/jellyfin</a>
 
 # LinuxServer.io Jellyfin 容器
 
@@ -153,7 +154,3 @@ docker inspect -f '{{ index .Config.Labels "build_version" }}' jellyfin
 * **13.08.24:** 基于 Ubuntu Noble 重建
 * **04.07.23:** 弃用 armhf 架构
 * **07.12.22:** 迁移到 s6v3 基础镜像
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/jellyfin" title="linuxserver/jellyfin Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/jellyfin</a></p>

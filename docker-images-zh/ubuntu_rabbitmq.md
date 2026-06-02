@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ubuntu/rabbitmq
+description: "基于Ubuntu的RabbitMQ镜像 - 一个开源的多协议消息代理。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/rabbitmq
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/rabbitmq
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/rabbitmq" title="ubuntu/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">ubuntu/rabbitmq — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/rabbitmq" title="ubuntu/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">ubuntu/rabbitmq — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/rabbitmq" title="ubuntu/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/rabbitmq</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ubuntu/rabbitmq" title="ubuntu/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/rabbitmq</a>
 
 # rabbitmq | Ubuntu
 
@@ -110,7 +111,3 @@ docker images --no-trunc --quiet ubuntu/rabbitmq:<tag>
 | 追踪 | 版本 | 生命周期结束 | 升级路径 |
 |---|---|---|---|
 | _`track`_ |
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/rabbitmq" title="ubuntu/rabbitmq Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/rabbitmq</a></p>

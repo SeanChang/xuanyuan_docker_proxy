@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/haproxy
+description: "HAProxy是一款可靠的高性能负载均衡器，主要用于TCP和HTTP协议的流量分发，能够有效均衡服务器负载、提高系统可用性与响应速度，广泛应用于Web服务、数据库集群等场景，通过智能流量调度确保服务稳定运行，是构建高可用、高性能网络架构的关键工具。"
 source: https://xuanyuan.cloud/zh/r/library/haproxy
 canonical: https://xuanyuan.cloud/zh/r/library/haproxy
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/haproxy" title="library/haproxy Docker 镜像中文简介、标签列表与拉取命令">library/haproxy — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/haproxy" title="library/haproxy Docker 镜像中文简介、标签列表与拉取命令">library/haproxy — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/haproxy" title="library/haproxy Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/haproxy</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/haproxy" title="library/haproxy Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/haproxy</a>
 
 # HAProxy Docker 镜像介绍
 
@@ -176,7 +177,3 @@ $ docker kill -s HUP my-running-haproxy
 - [`3.2.6-alpine`、`3.2-alpine`、`alpine`、`lts-alpine`、`3.2.6-alpine3.22`、`3.2-alpine3.22`、`alpine3.22`、`lts-alpine3.22`]([])  
 - [`3.1.9`、`3.1`、`3.1.9-trixie`、`3.1-trixie`]([])  
 - [`3.1.9-alpine`、`3.1-alpine`、`3.1.9-alpine3.22`、`3.1-alpine3.22`]([]
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/haproxy" title="library/haproxy Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/haproxy</a></p>

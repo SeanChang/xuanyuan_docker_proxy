@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ubuntu/airflow
+description: "基于Ubuntu的Apache Airflow Docker镜像，提供工作流管理平台，用于数据工程管道的程序化创作、调度和监控。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/airflow
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/airflow
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/airflow" title="ubuntu/airflow Docker 镜像中文简介、标签列表与拉取命令">ubuntu/airflow — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/airflow" title="ubuntu/airflow Docker 镜像中文简介、标签列表与拉取命令">ubuntu/airflow — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/airflow" title="ubuntu/airflow Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/airflow</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ubuntu/airflow" title="ubuntu/airflow Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/airflow</a>
 
 # airflow | Ubuntu
 
@@ -118,7 +119,3 @@ docker images --no-trunc --quiet ubuntu/airflow:<tag>
 | 通道 | 版本 | 生命周期结束（EOL） | 升级路径 |
 |------|------|---------------------|----------|
 | _`track`_ |      |                     |          |
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/airflow" title="ubuntu/airflow Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/airflow</a></p>

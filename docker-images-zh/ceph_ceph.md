@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ceph/ceph
+description: "Ceph基础镜像"
 source: https://xuanyuan.cloud/zh/r/ceph/ceph
 canonical: https://xuanyuan.cloud/zh/r/ceph/ceph
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ceph/ceph" title="ceph/ceph Docker 镜像中文简介、标签列表与拉取命令">ceph/ceph — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ceph/ceph" title="ceph/ceph Docker 镜像中文简介、标签列表与拉取命令">ceph/ceph — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ceph/ceph" title="ceph/ceph Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ceph/ceph</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ceph/ceph" title="ceph/ceph Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ceph/ceph</a>
 
 # ceph/ceph 镜像说明
 
@@ -46,7 +47,3 @@ docker run -d --name ceph-mon \
 
 ## 镜像来源
 镜像基于GitHub上的[ceph/ceph-container](https://github.com/ceph/ceph-container)项目构建，是专门构建的`daemon-base`镜像，使用特定的Ceph版本而非最新版本。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ceph/ceph" title="ceph/ceph Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ceph/ceph</a></p>

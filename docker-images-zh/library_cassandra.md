@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/cassandra
+description: "Apache Cassandra是一款开源的分布式存储系统。"
 source: https://xuanyuan.cloud/zh/r/library/cassandra
 canonical: https://xuanyuan.cloud/zh/r/library/cassandra
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/cassandra" title="library/cassandra Docker 镜像中文简介、标签列表与拉取命令">library/cassandra — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/cassandra" title="library/cassandra Docker 镜像中文简介、标签列表与拉取命令">library/cassandra — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/cassandra" title="library/cassandra Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/cassandra</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/cassandra" title="library/cassandra Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/cassandra</a>
 
 # Cassandra Docker镜像技术文档
 
@@ -264,7 +265,3 @@ docker run --name some-cassandra -v /host/datadir:/var/lib/cassandra -d cassandr
 Cassandra 软件使用 [Apache 许可证](https://git-wip-us.apache.org/repos/asf?p=cassandra.git;a=blob;f=LICENSE.txt;hb=cassandra-3.11.1)。  
 镜像可能包含其他软件（如 Bash、基础系统组件等），其许可证可能不同。更多信息可参考 [repo-info 仓库的 `cassandra/` 目录](https://github.com/docker-library/repo-info/tree/master/repos/cassandra)。  
 使用本镜像需确保遵守所有包含软件的相关许可证。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/cassandra" title="library/cassandra Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/cassandra</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: supabase/storage-api
+description: "Supabase的存储后端API服务，提供文件存储、检索和管理功能，支持与Supabase生态系统集成的对象存储解决方案，处理文件上传、下载及访问控制等操作。"
 source: https://xuanyuan.cloud/zh/r/supabase/storage-api
 canonical: https://xuanyuan.cloud/zh/r/supabase/storage-api
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/supabase/storage-api" title="supabase/storage-api Docker 镜像中文简介、标签列表与拉取命令">supabase/storage-api — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/supabase/storage-api" title="supabase/storage-api Docker 镜像中文简介、标签列表与拉取命令">supabase/storage-api — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/supabase/storage-api" title="supabase/storage-api Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/supabase/storage-api</a></p>
+<a href="https://xuanyuan.cloud/zh/r/supabase/storage-api" title="supabase/storage-api Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/supabase/storage-api</a>
 
 # Supabase Storage Backend API 镜像文档
 
@@ -104,7 +105,3 @@ volumes:
 2. **存储后端选择**：生产环境推荐使用S3兼容存储以提高可靠性和可扩展性
 3. **数据持久化**：本地存储模式需挂载宿主机卷以防止容器重启后数据丢失
 4. **性能调优**：高并发场景下建议调整容器CPU/内存限制，并配置适当的缓存策略
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/supabase/storage-api" title="supabase/storage-api Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/supabase/storage-api</a></p>

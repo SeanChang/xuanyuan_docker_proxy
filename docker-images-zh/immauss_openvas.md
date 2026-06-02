@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: immauss/openvas
+description: "集成PostgreSQL 13数据库的OpenVAS/GVMD 23.1镜像，提供漏洞扫描、任务管理及扫描结果存储功能的漏洞管理工具。"
 source: https://xuanyuan.cloud/zh/r/immauss/openvas
 canonical: https://xuanyuan.cloud/zh/r/immauss/openvas
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/immauss/openvas" title="immauss/openvas Docker 镜像中文简介、标签列表与拉取命令">immauss/openvas — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/immauss/openvas" title="immauss/openvas Docker 镜像中文简介、标签列表与拉取命令">immauss/openvas — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/immauss/openvas" title="immauss/openvas Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/immauss/openvas</a></p>
+<a href="https://xuanyuan.cloud/zh/r/immauss/openvas" title="immauss/openvas Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/immauss/openvas</a>
 
 # immauss/openvas Docker镜像文档
 
@@ -154,7 +155,3 @@ docker-compose up -d
 如需赞助，可通过：  
 - [GitHub Sponsors](https://github.com/sponsors/immauss)  
 - [PayPal](https://www.immauss.com/container_subscriptions)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/immauss/openvas" title="immauss/openvas Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/immauss/openvas</a></p>

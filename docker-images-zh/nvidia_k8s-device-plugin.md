@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: nvidia/k8s-device-plugin
+description: "NVIDIA K8s设备插件镜像，用于在Kubernetes集群中部署设备插件，实现对NVIDIA GPU资源的管理与调度。"
 source: https://xuanyuan.cloud/zh/r/nvidia/k8s-device-plugin
 canonical: https://xuanyuan.cloud/zh/r/nvidia/k8s-device-plugin
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nvidia/k8s-device-plugin" title="nvidia/k8s-device-plugin Docker 镜像中文简介、标签列表与拉取命令">nvidia/k8s-device-plugin — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nvidia/k8s-device-plugin" title="nvidia/k8s-device-plugin Docker 镜像中文简介、标签列表与拉取命令">nvidia/k8s-device-plugin — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/nvidia/k8s-device-plugin" title="nvidia/k8s-device-plugin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nvidia/k8s-device-plugin</a></p>
+<a href="https://xuanyuan.cloud/zh/r/nvidia/k8s-device-plugin" title="nvidia/k8s-device-plugin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nvidia/k8s-device-plugin</a>
 
 # NVIDIA Kubernetes设备插件（k8s-device-plugin）镜像文档
 
@@ -148,7 +149,3 @@ kubectl apply -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/v0.1
 - [NGC镜像地址](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/k8s-device-plugin)
 - [GitHub项目主页](https://github.com/NVIDIA/k8s-device-plugin)
 - [NVIDIA Kubernetes设备插件文档](https://docs.nvidia.com/datacenter/cloud-native/kubernetes/device-plugin.html)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nvidia/k8s-device-plugin" title="nvidia/k8s-device-plugin Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nvidia/k8s-device-plugin</a></p>

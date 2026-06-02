@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ubuntu/mysql
+description: "MySQL是一款广泛应用于各类Web应用、企业级系统及数据存储场景的开源SQL数据库，它以快速的数据处理能力、稳定的运行性能和高效的多线程架构为核心优势，其长期版本的维护工作由Canonical负责，为用户提供持续的技术支持、安全更新及功能优化服务，是全球众多开发者和企业信赖的数据库解决方案。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/mysql
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/mysql
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/mysql" title="ubuntu/mysql Docker 镜像中文简介、标签列表与拉取命令">ubuntu/mysql — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/mysql" title="ubuntu/mysql Docker 镜像中文简介、标签列表与拉取命令">ubuntu/mysql — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/mysql" title="ubuntu/mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/mysql</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ubuntu/mysql" title="ubuntu/mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/mysql</a>
 
 # MySQL Docker镜像（基于Ubuntu）
 
@@ -103,7 +104,3 @@ docker images --no-trunc --quiet ubuntu/mysql:<tag>
 
 
 > **商业使用与ESM渠道**：若需商业分发或使用ESM渠道/未列出的版本，请[联系Canonical团队]([])（或发送邮件至[邮箱已删除]）。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/mysql" title="ubuntu/mysql Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/mysql</a></p>

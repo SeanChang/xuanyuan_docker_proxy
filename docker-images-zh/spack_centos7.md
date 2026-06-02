@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: spack/centos7
+description: "预装Spack的CentOS 7系统镜像，提供多平台软件包管理功能，支持多版本、多配置软件的非破坏性安装与管理。"
 source: https://xuanyuan.cloud/zh/r/spack/centos7
 canonical: https://xuanyuan.cloud/zh/r/spack/centos7
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/spack/centos7" title="spack/centos7 Docker 镜像中文简介、标签列表与拉取命令">spack/centos7 — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/spack/centos7" title="spack/centos7 Docker 镜像中文简介、标签列表与拉取命令">spack/centos7 — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/spack/centos7" title="spack/centos7 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/spack/centos7</a></p>
+<a href="https://xuanyuan.cloud/zh/r/spack/centos7" title="spack/centos7 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/spack/centos7</a>
 
 # Spack Docker镜像 (CentOS 7)
 
@@ -134,7 +135,3 @@ Spack采用MIT许可证和Apache许可证（版本2.0）双重许可，用户可
 - [LICENSE-APACHE](https://github.com/spack/spack/blob/develop/LICENSE-APACHE)
 
 SPDX-License-Identifier: (Apache-2.0 OR MIT)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/spack/centos7" title="spack/centos7 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/spack/centos7</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: owncloud/server
+description: "ownCloud是一个安全的协作平台，提供文件存储、共享及团队协作功能。"
 source: https://xuanyuan.cloud/zh/r/owncloud/server
 canonical: https://xuanyuan.cloud/zh/r/owncloud/server
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/owncloud/server" title="owncloud/server Docker 镜像中文简介、标签列表与拉取命令">owncloud/server — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/owncloud/server" title="owncloud/server Docker 镜像中文简介、标签列表与拉取命令">owncloud/server — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/owncloud/server" title="owncloud/server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/owncloud/server</a></p>
+<a href="https://xuanyuan.cloud/zh/r/owncloud/server" title="owncloud/server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/owncloud/server</a>
 
 # ownCloud 服务器 Docker 镜像
 
@@ -188,7 +189,3 @@ docker-compose up -d
 
 ```text
 Copyright (c) 2022 ownCloud GmbH
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/owncloud/server" title="owncloud/server Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/owncloud/server</a></p>

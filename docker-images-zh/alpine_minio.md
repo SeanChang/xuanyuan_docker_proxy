@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: alpine/minio
+description: "社区维护的Minio Docker镜像，在官方停止提供后自动构建最新版本，支持多架构（amd64/arm等），适用于对象存储服务部署，生产环境建议使用具体版本标签。"
 source: https://xuanyuan.cloud/zh/r/alpine/minio
 canonical: https://xuanyuan.cloud/zh/r/alpine/minio
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/minio" title="alpine/minio Docker 镜像中文简介、标签列表与拉取命令">alpine/minio — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/minio" title="alpine/minio Docker 镜像中文简介、标签列表与拉取命令">alpine/minio — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/alpine/minio" title="alpine/minio Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpine/minio</a></p>
+<a href="https://xuanyuan.cloud/zh/r/alpine/minio" title="alpine/minio Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpine/minio</a>
 
 # Minio Docker镜像
 
@@ -52,7 +53,3 @@ http://localhost:9001
 
 #### 默认凭证
 初始管理员凭证（用户名:密码）为：`minioadmin:minioadmin`
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/minio" title="alpine/minio Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/alpine/minio</a></p>

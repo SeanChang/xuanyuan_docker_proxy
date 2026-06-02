@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: xkand/istoreos
+description: "iStoreOS自动化构建Docker镜像，基于官方x86_64固件，支持PVE/LXC快速部署与版本追溯"
 source: https://xuanyuan.cloud/zh/r/xkand/istoreos
 canonical: https://xuanyuan.cloud/zh/r/xkand/istoreos
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/xkand/istoreos" title="xkand/istoreos Docker 镜像中文简介、标签列表与拉取命令">xkand/istoreos — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/xkand/istoreos" title="xkand/istoreos Docker 镜像中文简介、标签列表与拉取命令">xkand/istoreos — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/xkand/istoreos" title="xkand/istoreos Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xkand/istoreos</a></p>
+<a href="https://xuanyuan.cloud/zh/r/xkand/istoreos" title="xkand/istoreos Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xkand/istoreos</a>
 
 ## iStoreOS 自动化构建项目说明
 
@@ -57,7 +58,3 @@ docker run -d --name istoreos --restart always tonc/istoreos:latest
 1. 访问 GitHub 仓库 Releases 页面（https://github.com/tonc/istoreos/releases）下载 LXC 容器模板。
 2. 在 PVE 管理界面中创建 LXC 容器，选择下载的模板进行部署。
 3. 启动容器并完成初始化配置。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/xkand/istoreos" title="xkand/istoreos Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/xkand/istoreos</a></p>

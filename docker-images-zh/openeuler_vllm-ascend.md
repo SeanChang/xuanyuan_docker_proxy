@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: openeuler/vllm-ascend
+description: "官方vLLM Ascend Docker镜像，基于openEuler构建，是社区维护的硬件插件，用于在Ascend NPU上无缝运行vLLM，支持Transformer、MoE、Embedding、多模态等多种开源模型，遵循硬件可插拔接口规范。"
 source: https://xuanyuan.cloud/zh/r/openeuler/vllm-ascend
 canonical: https://xuanyuan.cloud/zh/r/openeuler/vllm-ascend
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/vllm-ascend" title="openeuler/vllm-ascend Docker 镜像中文简介、标签列表与拉取命令">openeuler/vllm-ascend — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/vllm-ascend" title="openeuler/vllm-ascend Docker 镜像中文简介、标签列表与拉取命令">openeuler/vllm-ascend — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/openeuler/vllm-ascend" title="openeuler/vllm-ascend Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/vllm-ascend</a></p>
+<a href="https://xuanyuan.cloud/zh/r/openeuler/vllm-ascend" title="openeuler/vllm-ascend Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/vllm-ascend</a>
 
 # vLLM Ascend Docker镜像文档
 
@@ -117,7 +118,3 @@ for output in outputs:
 - [openEuler CloudNative SIG](https://gitee.com/openeuler/cloudnative)
 - [openEuler社区](https://gitee.com/openeuler/community)
 - [vLLM Ascend技术文档](https://vllm-ascend.readthedocs.io/en/latest/)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/vllm-ascend" title="openeuler/vllm-ascend Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/vllm-ascend</a></p>

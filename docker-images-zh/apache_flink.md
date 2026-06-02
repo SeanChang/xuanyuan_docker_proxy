@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: apache/flink
+description: "Apache Flink Docker镜像用于容器化部署Flink，可通过Docker Hub官方镜像获取（可能存在发布延迟或版本缺失），此处镜像由Flink PMC管理，完整使用文档参见官方指南。"
 source: https://xuanyuan.cloud/zh/r/apache/flink
 canonical: https://xuanyuan.cloud/zh/r/apache/flink
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/flink" title="apache/flink Docker 镜像中文简介、标签列表与拉取命令">apache/flink — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/flink" title="apache/flink Docker 镜像中文简介、标签列表与拉取命令">apache/flink — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/apache/flink" title="apache/flink Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/flink</a></p>
+<a href="https://xuanyuan.cloud/zh/r/apache/flink" title="apache/flink Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/flink</a>
 
 # Apache Flink Docker镜像
 
@@ -42,7 +43,3 @@ docker run --name flink-taskmanager -d --link flink-jobmanager:jobmanager flink:
 ```bash
 docker exec -it flink-jobmanager ./bin/flink run ./examples/streaming/WordCount.jar
 ```
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/flink" title="apache/flink Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/apache/flink</a></p>

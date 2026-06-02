@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: uozi/nginx-ui
+description: "Nginx UI是一个基于Web的Nginx管理界面，支持配置编辑、Let's Encrypt证书自动部署与续期、服务器监控、日志查看等功能，采用Go和Vue开发，提供用户友好的操作界面，简化Nginx管理流程。"
 source: https://xuanyuan.cloud/zh/r/uozi/nginx-ui
 canonical: https://xuanyuan.cloud/zh/r/uozi/nginx-ui
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/uozi/nginx-ui" title="uozi/nginx-ui Docker 镜像中文简介、标签列表与拉取命令">uozi/nginx-ui — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/uozi/nginx-ui" title="uozi/nginx-ui Docker 镜像中文简介、标签列表与拉取命令">uozi/nginx-ui — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/uozi/nginx-ui" title="uozi/nginx-ui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/uozi/nginx-ui</a></p>
+<a href="https://xuanyuan.cloud/zh/r/uozi/nginx-ui" title="uozi/nginx-ui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/uozi/nginx-ui</a>
 
 # Nginx UI
 
@@ -167,7 +168,3 @@ server {
 ## 许可
 
 本项目采用GNU Affero General Public License v3.0许可，详见[LICENSE](LICENSE)文件。使用、分发或贡献本项目即表示您同意此许可的条款和条件。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/uozi/nginx-ui" title="uozi/nginx-ui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/uozi/nginx-ui</a></p>

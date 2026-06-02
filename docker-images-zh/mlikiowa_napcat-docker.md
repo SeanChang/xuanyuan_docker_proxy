@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: mlikiowa/napcat-docker
+description: "NapCat的Docker镜像，提供容器化环境以快速搭建基于NapCat的应用（如QQ机器人），支持环境隔离、配置持久化与便捷扩展，适用于开发和生产环境中NapCat服务的快速部署。"
 source: https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker
 canonical: https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker" title="mlikiowa/napcat-docker Docker 镜像中文简介、标签列表与拉取命令">mlikiowa/napcat-docker — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker" title="mlikiowa/napcat-docker Docker 镜像中文简介、标签列表与拉取命令">mlikiowa/napcat-docker — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker" title="mlikiowa/napcat-docker Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker</a></p>
+<a href="https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker" title="mlikiowa/napcat-docker Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker</a>
 
 # NapCatQQ 介绍
 
@@ -116,7 +117,3 @@ NapCatQQ 是基于 OneBot 标准开发的 QQ 机器人框架，支持 Windows、
 
 
 更多细节可参考 [项目 GitHub 仓库]([]) 的 README 和文档。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker" title="mlikiowa/napcat-docker Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker</a></p>

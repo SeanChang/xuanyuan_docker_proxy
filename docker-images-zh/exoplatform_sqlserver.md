@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: exoplatform/sqlserver
+description: "用于测试目的的SQL Server镜像，基于官方Microsoft SQL Server Linux镜像构建，可轻松创建包含专用数据库和用户的SQL Server环境。"
 source: https://xuanyuan.cloud/zh/r/exoplatform/sqlserver
 canonical: https://xuanyuan.cloud/zh/r/exoplatform/sqlserver
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/exoplatform/sqlserver" title="exoplatform/sqlserver Docker 镜像中文简介、标签列表与拉取命令">exoplatform/sqlserver — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/exoplatform/sqlserver" title="exoplatform/sqlserver Docker 镜像中文简介、标签列表与拉取命令">exoplatform/sqlserver — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/exoplatform/sqlserver" title="exoplatform/sqlserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/exoplatform/sqlserver</a></p>
+<a href="https://xuanyuan.cloud/zh/r/exoplatform/sqlserver" title="exoplatform/sqlserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/exoplatform/sqlserver</a>
 
 # eXo Platform SQL Server Docker镜像
 
@@ -77,7 +78,3 @@ docker run -d -e SA_PASSWORD=YourStrong!Passw0rd -e SQLSERVER_DATABASE=testdb -e
 - 自动化测试环境搭建
 - 临时SQL Server环境需求
 - 学习和演示用途
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/exoplatform/sqlserver" title="exoplatform/sqlserver Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/exoplatform/sqlserver</a></p>

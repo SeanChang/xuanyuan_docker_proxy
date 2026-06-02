@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/qbittorrent
+description: "这是由LinuxServer.io提供的Qbittorrent容器，Qbittorrent作为一款开源、轻量且功能全面的BitTorrent客户端，支持跨平台运行，具备强大的种子管理、下载调度及远程控制功能；该容器化部署方案便于用户快速搭建、高效管理，适用于家庭服务器、NAS设备或企业级存储环境，为文件共享与下载任务提供稳定可靠的运行环境。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/qbittorrent
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/qbittorrent
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/qbittorrent" title="linuxserver/qbittorrent Docker 镜像中文简介、标签列表与拉取命令">linuxserver/qbittorrent — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/qbittorrent" title="linuxserver/qbittorrent Docker 镜像中文简介、标签列表与拉取命令">linuxserver/qbittorrent — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/qbittorrent" title="linuxserver/qbittorrent Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/qbittorrent</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/qbittorrent" title="linuxserver/qbittorrent Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/qbittorrent</a>
 
 # LinuxServer.io qBittorrent Docker容器介绍
 
@@ -261,7 +262,3 @@ docker build -f Dockerfile.aarch64 --no-cache --pull -t lscr.io/linuxserver/qbit
 - **12.08.22**：更新unrar至6.2.10。  
 - **16.06.23**：停止支持armhf架构。  
 - **01.08.17**：初始发布。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/qbittorrent" title="linuxserver/qbittorrent Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/qbittorrent</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: lobehub/lobe-chat
+description: "这是一个可扩展、高性能的聊天机器人框架，支持私有及其他大语言模型（LLM）网络应用的部署，能够满足用户在私有环境下快速构建和运行智能化聊天应用的需求，兼具灵活性与高效性，为开发者提供便捷的部署解决方案。"
 source: https://xuanyuan.cloud/zh/r/lobehub/lobe-chat
 canonical: https://xuanyuan.cloud/zh/r/lobehub/lobe-chat
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/lobehub/lobe-chat" title="lobehub/lobe-chat Docker 镜像中文简介、标签列表与拉取命令">lobehub/lobe-chat — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/lobehub/lobe-chat" title="lobehub/lobe-chat Docker 镜像中文简介、标签列表与拉取命令">lobehub/lobe-chat — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/lobehub/lobe-chat" title="lobehub/lobe-chat Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/lobehub/lobe-chat</a></p>
+<a href="https://xuanyuan.cloud/zh/r/lobehub/lobe-chat" title="lobehub/lobe-chat Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/lobehub/lobe-chat</a>
 
 ## Lobe Chat
 
@@ -43,7 +44,3 @@ docker run -d -p 3000:3000 --name lobe-chat lobehub/lobe-chat
 - **Docker 镜像**：[lobehub/lobe-chat]([])  
 - **社区交流**：[ 群组]()  
 - **问题反馈**：[提交 Issue]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/lobehub/lobe-chat" title="lobehub/lobe-chat Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/lobehub/lobe-chat</a></p>

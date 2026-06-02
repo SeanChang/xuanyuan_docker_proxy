@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: snipe/snipe-it
+description: "这是由Snipe-IT维护者提供的唯一官方Docker Hub仓库，Snipe-IT作为一款开源IT资产管理系统，主要用于帮助组织高效管理硬件设备、软件许可、配件等各类IT资产，该仓库为用户提供便捷的容器化部署方案，确保所获取的是经过官方验证、安全可靠的Snipe-IT应用镜像，是用户部署和使用Snipe-IT时获取官方标准容器镜像的唯一可信渠道。"
 source: https://xuanyuan.cloud/zh/r/snipe/snipe-it
 canonical: https://xuanyuan.cloud/zh/r/snipe/snipe-it
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/snipe/snipe-it" title="snipe/snipe-it Docker 镜像中文简介、标签列表与拉取命令">snipe/snipe-it — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/snipe/snipe-it" title="snipe/snipe-it Docker 镜像中文简介、标签列表与拉取命令">snipe/snipe-it — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/snipe/snipe-it" title="snipe/snipe-it Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/snipe/snipe-it</a></p>
+<a href="https://xuanyuan.cloud/zh/r/snipe/snipe-it" title="snipe/snipe-it Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/snipe/snipe-it</a>
 
 # Snipe-IT - 开源资产管理系统
 
@@ -107,7 +108,3 @@ Snipe-IT 提供 JSON REST API，第三方开发者基于此开发了多种扩展
 
 ## 公告订阅  
 如需接收重要通知（如新版本发布、安全公告等），可 [订阅邮件列表]([])。我们承诺不会泄露或出售你的信息，仅在必要时发送邮件。日常小更新可通过社区账号、 或博客获取。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/snipe/snipe-it" title="snipe/snipe-it Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/snipe/snipe-it</a></p>

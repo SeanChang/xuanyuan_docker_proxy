@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: docker/welcome-to-docker
+description: "供Docker新手入门使用的Docker镜像。"
 source: https://xuanyuan.cloud/zh/r/docker/welcome-to-docker
 canonical: https://xuanyuan.cloud/zh/r/docker/welcome-to-docker
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/docker/welcome-to-docker" title="docker/welcome-to-docker Docker 镜像中文简介、标签列表与拉取命令">docker/welcome-to-docker — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/docker/welcome-to-docker" title="docker/welcome-to-docker Docker 镜像中文简介、标签列表与拉取命令">docker/welcome-to-docker — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/docker/welcome-to-docker" title="docker/welcome-to-docker Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/docker/welcome-to-docker</a></p>
+<a href="https://xuanyuan.cloud/zh/r/docker/welcome-to-docker" title="docker/welcome-to-docker Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/docker/welcome-to-docker</a>
 
 # docker/welcome-to-docker 镜像文档
 
@@ -139,7 +140,3 @@ docker-compose down
 ## 相关资源
 - GitHub 源码仓库：[https://github.com/docker/welcome-to-docker](https://github.com/docker/welcome-to-docker)
 - Docker Hub 镜像主页：[https://hub.docker.com/r/docker/welcome-to-docker](https://hub.docker.com/r/docker/welcome-to-docker)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/docker/welcome-to-docker" title="docker/welcome-to-docker Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/docker/welcome-to-docker</a></p>

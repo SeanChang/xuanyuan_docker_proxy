@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: jenkins/inbound-agent
+description: "这是一个用于Jenkins代理的镜像，该镜像支持通过TCP或WebSocket协议建立入站连接至Jenkins控制器，旨在实现代理与控制器之间的稳定通信，确保Jenkins任务能够在代理节点上顺利执行，适用于需要灵活配置网络连接方式的Jenkins环境，为分布式构建和部署提供可靠的基础设施支持。"
 source: https://xuanyuan.cloud/zh/r/jenkins/inbound-agent
 canonical: https://xuanyuan.cloud/zh/r/jenkins/inbound-agent
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/jenkins/inbound-agent" title="jenkins/inbound-agent Docker 镜像中文简介、标签列表与拉取命令">jenkins/inbound-agent — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jenkins/inbound-agent" title="jenkins/inbound-agent Docker 镜像中文简介、标签列表与拉取命令">jenkins/inbound-agent — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/jenkins/inbound-agent" title="jenkins/inbound-agent Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jenkins/inbound-agent</a></p>
+<a href="https://xuanyuan.cloud/zh/r/jenkins/inbound-agent" title="jenkins/inbound-agent Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jenkins/inbound-agent</a>
 
 # Jenkins入站代理Docker镜像
 
@@ -104,7 +105,3 @@ Windows环境下，`JENKINS_JAVA_OPTS` 环境变量或 `-JenkinsJavaOpts` 命令
 
 ### Amazon ECS使用说明
 运行前需确保ECS容器代理已 [更新]([])，旧版本可能无法正确处理 `entryPoint` 参数。详见 [entryPoint定义]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/jenkins/inbound-agent" title="jenkins/inbound-agent Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/jenkins/inbound-agent</a></p>

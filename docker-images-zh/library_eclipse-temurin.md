@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/eclipse-temurin
+description: "Eclipse Temurin构建的OpenJDK二进制文件官方镜像，隶属于Eclipse Adoptium项目，提供高质量、免费且合规的OpenJDK发行版，适用于开发、测试及生产环境，确保良好的兼容性与稳定性，是企业级应用开发的可靠选择。"
 source: https://xuanyuan.cloud/zh/r/library/eclipse-temurin
 canonical: https://xuanyuan.cloud/zh/r/library/eclipse-temurin
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/eclipse-temurin" title="library/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">library/eclipse-temurin — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/eclipse-temurin" title="library/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">library/eclipse-temurin — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/eclipse-temurin" title="library/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/eclipse-temurin</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/eclipse-temurin" title="library/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/eclipse-temurin</a>
 
 # Eclipse Temurin Docker 镜像使用指南
 
@@ -186,7 +187,3 @@ docker run -it -v /path/on/host/system/jars:/opt/app japp
 更多许可证信息可参考 [repo-info 仓库的 `eclipse-temurin/` 目录]([])。  
 
 使用前请确保遵守所有包含软件的许可证要求。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/eclipse-temurin" title="library/eclipse-temurin Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/eclipse-temurin</a></p>

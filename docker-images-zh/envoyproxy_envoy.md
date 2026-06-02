@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: envoyproxy/envoy
+description: "云原生高性能边缘/中间层/服务代理"
 source: https://xuanyuan.cloud/zh/r/envoyproxy/envoy
 canonical: https://xuanyuan.cloud/zh/r/envoyproxy/envoy
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/envoyproxy/envoy" title="envoyproxy/envoy Docker 镜像中文简介、标签列表与拉取命令">envoyproxy/envoy — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/envoyproxy/envoy" title="envoyproxy/envoy Docker 镜像中文简介、标签列表与拉取命令">envoyproxy/envoy — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/envoyproxy/envoy" title="envoyproxy/envoy Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/envoyproxy/envoy</a></p>
+<a href="https://xuanyuan.cloud/zh/r/envoyproxy/envoy" title="envoyproxy/envoy Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/envoyproxy/envoy</a>
 
 # ![Envoy proxy server](https://github.com/envoyproxy/envoy/raw/main/distribution/dockerhub/envoy-icon.png) Envoy 代理服务器
 
@@ -91,7 +92,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 ### `envoyproxy/envoy:google-vrp-<version>`
 
 这些镜像包含作为 [Google 漏洞奖励计划 (VRP)](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/security/google_vrp.html) 一部分用于测试和研究漏洞的工具。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/envoyproxy/envoy" title="envoyproxy/envoy Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/envoyproxy/envoy</a></p>

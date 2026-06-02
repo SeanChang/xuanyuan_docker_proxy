@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: emby/embyserver
+description: "官方的Emby媒体服务器（64位amd64架构）是用于集中管理、组织和流式传输电影、音乐、照片、剧集等各类媒体文件的官方版本应用程序，支持多平台设备访问，提供高清播放、自定义媒体库分类、用户权限管理及跨设备同步等功能，适用于64位系统，为用户打造便捷高效的家庭媒体中心解决方案。"
 source: https://xuanyuan.cloud/zh/r/emby/embyserver
 canonical: https://xuanyuan.cloud/zh/r/emby/embyserver
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/emby/embyserver" title="emby/embyserver Docker 镜像中文简介、标签列表与拉取命令">emby/embyserver — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/emby/embyserver" title="emby/embyserver Docker 镜像中文简介、标签列表与拉取命令">emby/embyserver — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/emby/embyserver" title="emby/embyserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/emby/embyserver</a></p>
+<a href="https://xuanyuan.cloud/zh/r/emby/embyserver" title="emby/embyserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/emby/embyserver</a>
 
 # Emby Media Server
 
@@ -161,7 +162,3 @@ getent group render | cut -d: -f3
 在 unRAID Web 界面的 Docker 设置中，添加以下仓库链接：  
 ```
 [] unRAID 模板添加的更多信息，可参考 [unRAID 论坛]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/emby/embyserver" title="emby/embyserver Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/emby/embyserver</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnami/gitlab-runner-helper
+description: "Bitnami gitlab-runner-helper 安全镜像"
 source: https://xuanyuan.cloud/zh/r/bitnami/gitlab-runner-helper
 canonical: https://xuanyuan.cloud/zh/r/bitnami/gitlab-runner-helper
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/gitlab-runner-helper" title="bitnami/gitlab-runner-helper Docker 镜像中文简介、标签列表与拉取命令">bitnami/gitlab-runner-helper — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/gitlab-runner-helper" title="bitnami/gitlab-runner-helper Docker 镜像中文简介、标签列表与拉取命令">bitnami/gitlab-runner-helper — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnami/gitlab-runner-helper" title="bitnami/gitlab-runner-helper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/gitlab-runner-helper</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnami/gitlab-runner-helper" title="bitnami/gitlab-runner-helper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/gitlab-runner-helper</a>
 
 # Bitnami gitlab-runner-helper 安全镜像
 
@@ -23,7 +24,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 - 对主流 Helm 图表的一流支持
 
 通过[访问我们的网站](https://bitnami.com/)了解更多关于商业版 Bitnami 安全镜像的信息。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/gitlab-runner-helper" title="bitnami/gitlab-runner-helper Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/gitlab-runner-helper</a></p>

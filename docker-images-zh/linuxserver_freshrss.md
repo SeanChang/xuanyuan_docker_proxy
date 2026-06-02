@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/freshrss
+description: "LinuxServer.io提供的Freshrss容器，用于RSS订阅与内容聚合阅读。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/freshrss
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/freshrss
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/freshrss" title="linuxserver/freshrss Docker 镜像中文简介、标签列表与拉取命令">linuxserver/freshrss — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/freshrss" title="linuxserver/freshrss Docker 镜像中文简介、标签列表与拉取命令">linuxserver/freshrss — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/freshrss" title="linuxserver/freshrss Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/freshrss</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/freshrss" title="linuxserver/freshrss Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/freshrss</a>
 
 # linuxserver/freshrss 镜像文档
 
@@ -294,7 +295,3 @@ docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/freshrss:arm64v8-lates
 - **2016年9月11日**：添加层标签至 README
 - **2015年11月23日**：更新依赖至最新版本
 - **2015年8月21日**：初始版本发布
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/freshrss" title="linuxserver/freshrss Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/freshrss</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: pgvector/pgvector
+description: "这是一款适用于PostgreSQL的开源向量相似性搜索工具，可无缝集成至PostgreSQL数据库，支持对文本嵌入、图像特征、音频向量等各类向量数据进行高效相似性查询。它借助优化的索引结构与搜索算法实现快速检索相似向量结果，助力用户在人工智能、机器学习、推荐系统等场景下，利用PostgreSQL便捷处理向量数据，提升查询效率与开发灵活性，且作为开源项目具备代码透明、社区支持完善、易于扩展等优势。"
 source: https://xuanyuan.cloud/zh/r/pgvector/pgvector
 canonical: https://xuanyuan.cloud/zh/r/pgvector/pgvector
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/pgvector/pgvector" title="pgvector/pgvector Docker 镜像中文简介、标签列表与拉取命令">pgvector/pgvector — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/pgvector/pgvector" title="pgvector/pgvector Docker 镜像中文简介、标签列表与拉取命令">pgvector/pgvector — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/pgvector/pgvector" title="pgvector/pgvector Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/pgvector/pgvector</a></p>
+<a href="https://xuanyuan.cloud/zh/r/pgvector/pgvector" title="pgvector/pgvector Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/pgvector/pgvector</a>
 
 ## pgvector 简介  
 
@@ -126,7 +127,3 @@ LIMIT 10;
 - **PostgreSQL 版本**：需 PostgreSQL 11 及以上，推荐 14+ 以支持 HNSW 索引和更好的性能。  
 - **索引维护**：IVFFlat 索引在数据频繁更新时可能性能下降，建议定期重建；HNSW 索引更新成本较高，适合静态或增量更新数据。  
 - **兼容性**：可与 Python 的 psycopg2、SQLAlchemy，Java 的 JDBC 等工具链配合，直接在应用中调用向量操作。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/pgvector/pgvector" title="pgvector/pgvector Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/pgvector/pgvector</a></p>

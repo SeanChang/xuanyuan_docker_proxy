@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: langgenius/qdrant
+description: "基于qdrant:v1.6.1版本，添加了中文、日文和韩文分词器支持的向量数据库镜像，用于提升东亚语言文本的向量检索效果。"
 source: https://xuanyuan.cloud/zh/r/langgenius/qdrant
 canonical: https://xuanyuan.cloud/zh/r/langgenius/qdrant
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/langgenius/qdrant" title="langgenius/qdrant Docker 镜像中文简介、标签列表与拉取命令">langgenius/qdrant — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/langgenius/qdrant" title="langgenius/qdrant Docker 镜像中文简介、标签列表与拉取命令">langgenius/qdrant — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/langgenius/qdrant" title="langgenius/qdrant Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/langgenius/qdrant</a></p>
+<a href="https://xuanyuan.cloud/zh/r/langgenius/qdrant" title="langgenius/qdrant Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/langgenius/qdrant</a>
 
 ## 镜像概述
 
@@ -99,7 +100,3 @@ volumes:
 - 本镜像与qdrant:v1.6.1的API和数据格式完全兼容，可直接替换使用
 - 分词器默认对所有CJK语言文本自动生效，无需额外配置
 - 如需进一步优化分词效果，可通过修改镜像内置的分词器配置文件（路径：`/qdrant/config/cjk_tokenizers.yaml`）实现自定义分词规则
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/langgenius/qdrant" title="langgenius/qdrant Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/langgenius/qdrant</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: quantatrisk/funasr-api
+description: "基于FunASR和Qwen3-ASR的生产级本地语音识别API服务，支持多模型、OpenAI API兼容接口、流式识别和说话人分离，提供GPU加速和批量处理能力。"
 source: https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api
 canonical: https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api" title="quantatrisk/funasr-api Docker 镜像中文简介、标签列表与拉取命令">quantatrisk/funasr-api — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api" title="quantatrisk/funasr-api Docker 镜像中文简介、标签列表与拉取命令">quantatrisk/funasr-api — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api" title="quantatrisk/funasr-api Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api</a></p>
+<a href="https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api" title="quantatrisk/funasr-api Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api</a>
 
 # FunASR-API
 
@@ -155,7 +156,3 @@ docker run --rm \
 ## 许可证
 
 MIT许可证
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api" title="quantatrisk/funasr-api Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api</a></p>

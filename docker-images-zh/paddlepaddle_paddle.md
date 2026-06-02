@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: paddlepaddle/paddle
+description: "并行分布式深度学习是一种通过将深度学习任务按数据并行、模型并行或混合并行等方式分解，并分配到多台计算机或计算节点（如CPU、GPU集群）上协同执行的技术，旨在加速大规模数据集和复杂模型的训练过程，通过并行计算提升效率、缩短训练时间，广泛应用于图像识别、自然语言处理、推荐系统、自动驾驶等领域，是应对海量数据和高复杂度模型训练挑战、推动人工智能技术规模化落地的关键支撑技术之一。"
 source: https://xuanyuan.cloud/zh/r/paddlepaddle/paddle
 canonical: https://xuanyuan.cloud/zh/r/paddlepaddle/paddle
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/paddlepaddle/paddle" title="paddlepaddle/paddle Docker 镜像中文简介、标签列表与拉取命令">paddlepaddle/paddle — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/paddlepaddle/paddle" title="paddlepaddle/paddle Docker 镜像中文简介、标签列表与拉取命令">paddlepaddle/paddle — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/paddlepaddle/paddle" title="paddlepaddle/paddle Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/paddlepaddle/paddle</a></p>
+<a href="https://xuanyuan.cloud/zh/r/paddlepaddle/paddle" title="paddlepaddle/paddle Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/paddlepaddle/paddle</a>
 
 # PaddlePaddle
 
@@ -69,7 +70,3 @@ PaddlePaddle提供中英文文档，主要资源包括：
 
 ## 版权与许可  
 PaddlePaddle基于[Apache-2.0许可证](LICENSE)开源。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/paddlepaddle/paddle" title="paddlepaddle/paddle Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/paddlepaddle/paddle</a></p>

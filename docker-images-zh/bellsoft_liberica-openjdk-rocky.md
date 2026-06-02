@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bellsoft/liberica-openjdk-rocky
+description: "Liberica JDK是由BellSoft开发的100%开源Java运行时，适用于现代Java部署，支持x86_64和aarch64架构，提供安全、高效的Java运行环境，适用于桌面、服务器、云和嵌入式场景。"
 source: https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-rocky
 canonical: https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-rocky
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-rocky" title="bellsoft/liberica-openjdk-rocky Docker 镜像中文简介、标签列表与拉取命令">bellsoft/liberica-openjdk-rocky — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-rocky" title="bellsoft/liberica-openjdk-rocky Docker 镜像中文简介、标签列表与拉取命令">bellsoft/liberica-openjdk-rocky — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-rocky" title="bellsoft/liberica-openjdk-rocky Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-rocky</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-rocky" title="bellsoft/liberica-openjdk-rocky Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-rocky</a>
 
 # bellsoft/liberica-openjdk-rocky
 
@@ -117,7 +118,3 @@ WORKDIR /app
 COPY --from=builder /app/target/app.jar .
 CMD ["java", "-jar", "app.jar"]
 ```
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-rocky" title="bellsoft/liberica-openjdk-rocky Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-rocky</a></p>

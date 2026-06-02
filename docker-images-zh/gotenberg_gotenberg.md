@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: gotenberg/gotenberg
+description: "提供无缝PDF转换功能的容器化API Docker镜像。"
 source: https://xuanyuan.cloud/zh/r/gotenberg/gotenberg
 canonical: https://xuanyuan.cloud/zh/r/gotenberg/gotenberg
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/gotenberg/gotenberg" title="gotenberg/gotenberg Docker 镜像中文简介、标签列表与拉取命令">gotenberg/gotenberg — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gotenberg/gotenberg" title="gotenberg/gotenberg Docker 镜像中文简介、标签列表与拉取命令">gotenberg/gotenberg — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/gotenberg/gotenberg" title="gotenberg/gotenberg Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gotenberg/gotenberg</a></p>
+<a href="https://xuanyuan.cloud/zh/r/gotenberg/gotenberg" title="gotenberg/gotenberg Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gotenberg/gotenberg</a>
 
 # Gotenberg Docker镜像文档
 
@@ -145,7 +146,3 @@ docker run --rm -p 3000:3000 \
 - **发布说明**：[https://github.com/gotenberg/gotenberg/releases](https://github.com/gotenberg/gotenberg/releases)  
 - **官方文档**：[https://gotenberg.dev/docs/getting-started/introduction](https://gotenberg.dev/docs/getting-started/introduction)  
 - **快照镜像仓库**：[https://hub.docker.com/r/gotenberg/snapshot](https://hub.docker.com/r/gotenberg/snapshot)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/gotenberg/gotenberg" title="gotenberg/gotenberg Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/gotenberg/gotenberg</a></p>

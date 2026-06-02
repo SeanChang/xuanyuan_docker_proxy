@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: amd64/ubuntu
+description: "Ubuntu是基于Debian的Linux操作系统，以自由软件为基础，适用于构建和运行各类应用的基础环境。"
 source: https://xuanyuan.cloud/zh/r/amd64/ubuntu
 canonical: https://xuanyuan.cloud/zh/r/amd64/ubuntu
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/amd64/ubuntu" title="amd64/ubuntu Docker 镜像中文简介、标签列表与拉取命令">amd64/ubuntu — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/amd64/ubuntu" title="amd64/ubuntu Docker 镜像中文简介、标签列表与拉取命令">amd64/ubuntu — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/amd64/ubuntu" title="amd64/ubuntu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/amd64/ubuntu</a></p>
+<a href="https://xuanyuan.cloud/zh/r/amd64/ubuntu" title="amd64/ubuntu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/amd64/ubuntu</a>
 
 # Ubuntu Docker 镜像文档
 
@@ -161,7 +162,3 @@ services:
 **维护者**：[Canonical](https://launchpad.net/cloud-images)  
 **镜像元数据**：[repo-info 仓库](https://github.com/docker-library/repo-info/blob/master/repos/ubuntu)  
 **文档源**：[docker-library/docs 仓库](https://github.com/docker-library/docs/tree/master/ubuntu)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/amd64/ubuntu" title="amd64/ubuntu Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/amd64/ubuntu</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: alexxit/go2rtc
+description: "全能的摄像头流媒体应用，支持RTSP、WebRTC、MJPEG、HomeKit、FFmpeg等协议与工具。"
 source: https://xuanyuan.cloud/zh/r/alexxit/go2rtc
 canonical: https://xuanyuan.cloud/zh/r/alexxit/go2rtc
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/alexxit/go2rtc" title="alexxit/go2rtc Docker 镜像中文简介、标签列表与拉取命令">alexxit/go2rtc — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alexxit/go2rtc" title="alexxit/go2rtc Docker 镜像中文简介、标签列表与拉取命令">alexxit/go2rtc — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/alexxit/go2rtc" title="alexxit/go2rtc Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alexxit/go2rtc</a></p>
+<a href="https://xuanyuan.cloud/zh/r/alexxit/go2rtc" title="alexxit/go2rtc Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alexxit/go2rtc</a>
 
 # go2rtc Docker镜像技术文档
 
@@ -117,7 +118,3 @@ docker run -d \
 
 
 > 硬件转码详细说明参见：[官方硬件加速文档](https://github.com/AlexxIT/go2rtc/wiki/Hardware-acceleration)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/alexxit/go2rtc" title="alexxit/go2rtc Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/alexxit/go2rtc</a></p>

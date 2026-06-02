@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: internetsystemsconsortium/bind9
+description: "这是ISC官方正式推出的专为BIND 9服务打造的Docker容器镜像，该镜像基于轻量级的Alpine镜像构建而成，旨在提供高效的运行环境，并由ISC.org秉持尽力而为的原则进行日常的维护与更新工作，以确保其在实际应用中的稳定性与可用性。"
 source: https://xuanyuan.cloud/zh/r/internetsystemsconsortium/bind9
 canonical: https://xuanyuan.cloud/zh/r/internetsystemsconsortium/bind9
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/internetsystemsconsortium/bind9" title="internetsystemsconsortium/bind9 Docker 镜像中文简介、标签列表与拉取命令">internetsystemsconsortium/bind9 — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/internetsystemsconsortium/bind9" title="internetsystemsconsortium/bind9 Docker 镜像中文简介、标签列表与拉取命令">internetsystemsconsortium/bind9 — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/internetsystemsconsortium/bind9" title="internetsystemsconsortium/bind9 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/internetsystemsconsortium/bind9</a></p>
+<a href="https://xuanyuan.cloud/zh/r/internetsystemsconsortium/bind9" title="internetsystemsconsortium/bind9 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/internetsystemsconsortium/bind9</a>
 
 ![BIND9 logo]([])
 
@@ -136,7 +137,3 @@ zone "example.com." {               // 定义example.com区域
 
 ## 许可证  
 BIND9基于[MPL2.0许可证]([])开源。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/internetsystemsconsortium/bind9" title="internetsystemsconsortium/bind9 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/internetsystemsconsortium/bind9</a></p>

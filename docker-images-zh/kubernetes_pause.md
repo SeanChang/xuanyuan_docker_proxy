@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: kubernetes/pause
+description: "用于从备份恢复kubernetes/pause镜像，保障Kubernetes集群中作为Pod网络命名空间基础容器的pause镜像可恢复性。"
 source: https://xuanyuan.cloud/zh/r/kubernetes/pause
 canonical: https://xuanyuan.cloud/zh/r/kubernetes/pause
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kubernetes/pause" title="kubernetes/pause Docker 镜像中文简介、标签列表与拉取命令">kubernetes/pause — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kubernetes/pause" title="kubernetes/pause Docker 镜像中文简介、标签列表与拉取命令">kubernetes/pause — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/kubernetes/pause" title="kubernetes/pause Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kubernetes/pause</a></p>
+<a href="https://xuanyuan.cloud/zh/r/kubernetes/pause" title="kubernetes/pause Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kubernetes/pause</a>
 
 # k8s-pause-restore 镜像文档
 
@@ -161,7 +162,3 @@ services:
 - **网络影响**：恢复过程会导致目标 Pod 网络中断约 10-30 秒，建议在维护窗口执行
 - **备份校验**：使用前通过 `tar -tf [BACKUP_FILE]` 验证备份文件完整性
 - **集群版本**：Kubernetes 集群版本需 ≥1.18，低版本集群可能存在命名空间兼容性问题
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kubernetes/pause" title="kubernetes/pause Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kubernetes/pause</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: gvenzl/oracle-free
+description: "甲骨文数据库（Oracle Database）免费向所有人开放啦！作为全球领先的企业级关系型数据库管理系统，它凭借高性能、高可靠性与强大的安全性广泛应用于各类关键业务场景，此次免费版本旨在降低开发者、学习者及小型组织的使用门槛，让更多用户能够轻松体验其卓越的数据管理能力，助力创新与技术探索。"
 source: https://xuanyuan.cloud/zh/r/gvenzl/oracle-free
 canonical: https://xuanyuan.cloud/zh/r/gvenzl/oracle-free
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/gvenzl/oracle-free" title="gvenzl/oracle-free Docker 镜像中文简介、标签列表与拉取命令">gvenzl/oracle-free — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gvenzl/oracle-free" title="gvenzl/oracle-free Docker 镜像中文简介、标签列表与拉取命令">gvenzl/oracle-free — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/gvenzl/oracle-free" title="gvenzl/oracle-free Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gvenzl/oracle-free</a></p>
+<a href="https://xuanyuan.cloud/zh/r/gvenzl/oracle-free" title="gvenzl/oracle-free Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gvenzl/oracle-free</a>
 
 # oci-oracle-free：Oracle Database Free 容器镜像
 
@@ -278,7 +279,3 @@ docker run -d --name oracle-db -e ORACLE_PASSWORD_FILE=/run/secrets/oracle-passw
 ## 反馈与建议
 
 如有问题或建议，可通过 [GitHub Issues]([]) 提交。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/gvenzl/oracle-free" title="gvenzl/oracle-free Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/gvenzl/oracle-free</a></p>

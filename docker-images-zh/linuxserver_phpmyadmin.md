@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/phpmyadmin
+description: "phpMyAdmin是一款用PHP编写的免费软件工具，旨在通过Web界面管理MySQL和MariaDB，支持广泛的数据库操作。LinuxServer.io提供的此镜像包含定期更新、用户映射和安全更新等特性。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin" title="linuxserver/phpmyadmin Docker 镜像中文简介、标签列表与拉取命令">linuxserver/phpmyadmin — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin" title="linuxserver/phpmyadmin Docker 镜像中文简介、标签列表与拉取命令">linuxserver/phpmyadmin — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin" title="linuxserver/phpmyadmin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin" title="linuxserver/phpmyadmin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin</a>
 
 # linuxserver/phpmyadmin
 
@@ -280,7 +281,3 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 * **20.08.22:** - 基于Alpine 3.15和php8重建。重构nginx配置（[查看变更公告](https://info.linuxserver.io/issues/2022-08-20-nginx-base)）。
 * **23.01.22:** - 版本固定为5.x.x。
 * **14.06.21:** - 初始发布。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin" title="linuxserver/phpmyadmin Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin</a></p>

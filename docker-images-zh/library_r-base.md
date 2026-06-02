@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/r-base
+description: "R是一款开源的统计计算与图形绘制系统，具备强大的数据处理、分析、建模及可视化功能，拥有丰富的扩展包生态与活跃的全球社区支持，广泛应用于学术研究、数据分析、机器学习等领域，为用户提供从数据清洗到结果呈现的全流程解决方案。"
 source: https://xuanyuan.cloud/zh/r/library/r-base
 canonical: https://xuanyuan.cloud/zh/r/library/r-base
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/r-base" title="library/r-base Docker 镜像中文简介、标签列表与拉取命令">library/r-base — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/r-base" title="library/r-base Docker 镜像中文简介、标签列表与拉取命令">library/r-base — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/r-base" title="library/r-base Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/r-base</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/r-base" title="library/r-base Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/r-base</a>
 
 # R 镜像使用指南
 
@@ -120,7 +121,3 @@ $ docker build -t myscript /path/to/Dockerfile
 自动检测到的额外许可信息可在 [repo-info 仓库的 `r-base/` 目录]([]) 中找到。  
 
 使用预构建镜像时，用户需自行确保对镜像中所有软件的使用符合相关许可证要求。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/r-base" title="library/r-base Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/r-base</a></p>

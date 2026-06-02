@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: elswork/samba
+description: "用于构建多架构Samba镜像的Dockerfile，支持Linux与Windows文件共享，适配amd64、arm64等多种平台，是个人定制的Docker配置方案。"
 source: https://xuanyuan.cloud/zh/r/elswork/samba
 canonical: https://xuanyuan.cloud/zh/r/elswork/samba
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/elswork/samba" title="elswork/samba Docker 镜像中文简介、标签列表与拉取命令">elswork/samba — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/elswork/samba" title="elswork/samba Docker 镜像中文简介、标签列表与拉取命令">elswork/samba — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/elswork/samba" title="elswork/samba Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/elswork/samba</a></p>
+<a href="https://xuanyuan.cloud/zh/r/elswork/samba" title="elswork/samba Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/elswork/samba</a>
 
 # Samba
 
@@ -106,7 +107,3 @@ docker run -d -p 139:139 -p 445:445 --hostname $HOSTNAME -e TZ=Europe/Madrid \
 其他支持方式：
 
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/elswork)](https://github.com/sponsors/elswork) [![通过PayPal捐赠](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?business=LFKA5YRJAFYR6&no_recurring=0&item_name=Open+Source+Donation&currency_code=EUR) [![通过比特币捐赠](https://en.cryptobadges.io/badge/micro/18yfsHW2ma4SiY685wh4h7a1aTCqkq2AEc)](https://en.cryptobadges.io/donate/18yfsHW2ma4SiY685wh4h7a1aTCqkq2AEc) [![通过以太坊捐赠](https://en.cryptobadges.io/badge/micro/0x186b91982CbB6450Af5Ab6F32edf074dFCE8771c)](https://en.cryptobadges.io/donate/0x186b91982CbB6450Af5Ab6F32edf074dFCE8771c)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/elswork/samba" title="elswork/samba Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/elswork/samba</a></p>

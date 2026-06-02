@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: langflowai/langflow
+description: "Langflow是用于RAG和多智能体AI应用的低代码应用构建器。"
 source: https://xuanyuan.cloud/zh/r/langflowai/langflow
 canonical: https://xuanyuan.cloud/zh/r/langflowai/langflow
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/langflowai/langflow" title="langflowai/langflow Docker 镜像中文简介、标签列表与拉取命令">langflowai/langflow — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/langflowai/langflow" title="langflowai/langflow Docker 镜像中文简介、标签列表与拉取命令">langflowai/langflow — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/langflowai/langflow" title="langflowai/langflow Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/langflowai/langflow</a></p>
+<a href="https://xuanyuan.cloud/zh/r/langflowai/langflow" title="langflowai/langflow Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/langflowai/langflow</a>
 
 # Langflow Docker镜像文档
 
@@ -110,7 +111,3 @@ services:
 ### 5.2 社区资源
 - Discord 社区：[加入 Discord](https://discord.com/invite/EqksyE2EX9)（获取技术支持与交流）
 - GitHub 仓库：[Langflow GitHub](https://github.com/langflow-ai/langflow)（提交 issue 或贡献代码）
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/langflowai/langflow" title="langflowai/langflow Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/langflowai/langflow</a></p>

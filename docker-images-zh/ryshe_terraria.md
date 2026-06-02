@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ryshe/terraria
+description: "提供支持原版及移动设备的Terraria服务器，集成TShock工具以实现管理功能。"
 source: https://xuanyuan.cloud/zh/r/ryshe/terraria
 canonical: https://xuanyuan.cloud/zh/r/ryshe/terraria
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ryshe/terraria" title="ryshe/terraria Docker 镜像中文简介、标签列表与拉取命令">ryshe/terraria — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ryshe/terraria" title="ryshe/terraria Docker 镜像中文简介、标签列表与拉取命令">ryshe/terraria — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ryshe/terraria" title="ryshe/terraria Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ryshe/terraria</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ryshe/terraria" title="ryshe/terraria Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ryshe/terraria</a>
 
 # Terraria Docker镜像文档  
 
@@ -246,7 +247,3 @@ docker run -d --rm --name="terraria-server" \
 
 [TShock]: https://github.com/Pryaxis/TShock/releases  
 [Docker]: https://docs.docker.com/get-docker/
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ryshe/terraria" title="ryshe/terraria Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ryshe/terraria</a></p>

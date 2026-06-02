@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/registry
+description: "一种针对容器化技术的分发实现方案，专注于容器镜像及各类相关制品的存储与分发管理，支持从制品构建、版本控制到跨环境部署的全生命周期流程，保障镜像和制品在开发、测试与生产环节中的高效传输与可靠供应，为容器化应用的持续集成和持续部署提供稳定的基础设施支持。"
 source: https://xuanyuan.cloud/zh/r/library/registry
 canonical: https://xuanyuan.cloud/zh/r/library/registry
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/registry" title="library/registry Docker 镜像中文简介、标签列表与拉取命令">library/registry — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/registry" title="library/registry Docker 镜像中文简介、标签列表与拉取命令">library/registry — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/registry" title="library/registry Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/registry</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/registry" title="library/registry Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/registry</a>
 
 # Distribution Registry 镜像介绍
 
@@ -84,7 +85,3 @@ $ docker push localhost:5000/ubuntu
 - 镜像中软件的许可证信息可查看 [源码仓库的 LICENSE 文件]([])。  
 - 与所有 Docker 镜像类似，该镜像可能包含其他软件（如基础系统的 Bash 等），这些软件可能采用不同许可证。部分自动检测到的许可证信息可在 [repo-info 仓库的 `registry/` 目录]([]) 中找到。  
 - 使用预构建镜像时，用户需自行确保对镜像中所有软件的使用符合相关许可证要求。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/registry" title="library/registry Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/registry</a></p>

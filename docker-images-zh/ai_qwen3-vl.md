@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ai/qwen3-vl
+description: "Qwen系列迄今最强大的视觉语言模型，全面升级文本理解生成、视觉感知推理、上下文长度、空间和视频动态理解能力，具备视觉代理、视觉编码增强、高级空间感知等核心特性。"
 source: https://xuanyuan.cloud/zh/r/ai/qwen3-vl
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen3-vl
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-vl" title="ai/qwen3-vl Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-vl — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen3-vl" title="ai/qwen3-vl Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-vl — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-vl" title="ai/qwen3-vl Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-vl</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ai/qwen3-vl" title="ai/qwen3-vl Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-vl</a>
 
 # Qwen3 VL
 *Unsloth提供的GGUF版本*
@@ -79,7 +80,3 @@ docker model run ai/qwen3-vl
 - [Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)
 - [Unsloth Dynamic 2.0 GGUF](https://docs.unsloth.ai/basics/unsloth-dynamic-2.0-ggufs)
 - [如何微调](https://docs.unsloth.ai/models/qwen3-vl-run-and-fine-tune)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-vl" title="ai/qwen3-vl Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-vl</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: grafana/alloy
+description: "Grafana Alloy是厂商无关的OpenTelemetry Collector发行版，具备可编程管道能力，用于构建、运行和调试强大的可观测性管道，支持多遥测生态系统集成。"
 source: https://xuanyuan.cloud/zh/r/grafana/alloy
 canonical: https://xuanyuan.cloud/zh/r/grafana/alloy
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/grafana/alloy" title="grafana/alloy Docker 镜像中文简介、标签列表与拉取命令">grafana/alloy — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/grafana/alloy" title="grafana/alloy Docker 镜像中文简介、标签列表与拉取命令">grafana/alloy — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/grafana/alloy" title="grafana/alloy Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/grafana/alloy</a></p>
+<a href="https://xuanyuan.cloud/zh/r/grafana/alloy" title="grafana/alloy Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/grafana/alloy</a>
 
 **警告**：v1.0版本意外推送了名为`latest-nanoserver-1809`的标签。此标签将不再更新，并将在未来版本中移除。对于最新的Windows镜像，请改用`nanoserver-1809`。
 
@@ -149,7 +150,3 @@ otelcol.exporter.otlp "default" {
 [community-call]: https://docs.google.com/document/d/1TqaZD1JPfNadZ4V81OCBPCG_TksDYGlNlGdMnTWUSpo
 
 [contributors guide]: https://github.com/grafana/alloy/blob/main/docs/developer/contributing.md
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/grafana/alloy" title="grafana/alloy Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/grafana/alloy</a></p>

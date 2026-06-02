@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/memcached
+description: "这是一款免费且开源的高性能分布式内存对象缓存系统，主要通过将频繁访问的数据存储在内存中以实现快速数据检索，有效减轻数据库等后端存储的访问压力，提升应用系统的响应速度和整体性能，广泛适用于各类分布式架构环境及高并发业务场景，为开发者提供可靠、高效的数据缓存解决方案。"
 source: https://xuanyuan.cloud/zh/r/library/memcached
 canonical: https://xuanyuan.cloud/zh/r/library/memcached
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/memcached" title="library/memcached Docker 镜像中文简介、标签列表与拉取命令">library/memcached — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/memcached" title="library/memcached Docker 镜像中文简介、标签列表与拉取命令">library/memcached — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/memcached" title="library/memcached Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/memcached</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/memcached" title="library/memcached Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/memcached</a>
 
 # Memcached Docker 镜像使用说明
 
@@ -144,7 +145,3 @@ services:
 与所有 Docker 镜像一样，本镜像可能包含其他软件（如 Debian 基础系统中的 Bash 等），这些软件可能具有独立许可证。自动检测到的额外许可证信息，可参考 [repo-info 仓库的 memcached 目录]([])。  
 
 使用前请确保遵守镜像中所有软件的相关许可证要求。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/memcached" title="library/memcached Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/memcached</a></p>

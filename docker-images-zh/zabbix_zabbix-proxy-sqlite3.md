@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: zabbix/zabbix-proxy-sqlite3
+description: "Zabbix代理是Zabbix监控系统的关键组件，用于分布式监控架构中，承担数据采集、转发及本地缓存任务，能有效减轻中心服务器负载并提升监控响应效率；而支持SQLite3数据库的Zabbix代理，采用轻量级嵌入式数据库技术，无需独立数据库服务，配置简便且资源占用低，适用于中小型监控场景或资源受限环境，为用户提供灵活高效的本地数据存储与管理解决方案。"
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3" title="zabbix/zabbix-proxy-sqlite3 Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-proxy-sqlite3 — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3" title="zabbix/zabbix-proxy-sqlite3 Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-proxy-sqlite3 — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3" title="zabbix/zabbix-proxy-sqlite3 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3</a></p>
+<a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3" title="zabbix/zabbix-proxy-sqlite3 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3</a>
 
 ![logo]()
 
@@ -280,7 +281,3 @@ ZBX_STARTSNMPPOLLERS=1（7.0.0+ 支持）
 - Zabbix 7.0 及以上版本采用 GNU Affero 通用公共许可证第 3 版（AGPLv3）；  
 - 6.4 及以下版本采用 GNU 通用公共许可证第 2 版（GPLv2）。  
 具体条款可参考 [自由软件基金会文档]([])。商业环境中使用 Zabbix 建议购买技术支持以支持项目开发。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3" title="zabbix/zabbix-proxy-sqlite3 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-proxy-sqlite3</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: kubesphere/ks-apiserver
+description: "KubeSphere API服务器是KubeSphere容器平台的核心组件，负责接收、验证和处理来自用户、集群组件及外部系统的API请求，实现对Kubernetes集群资源（如Pod、Deployment、Service等）的统一管理与调度，支持权限控制、请求路由和数据校验，确保集群操作的安全与高效，是连接用户操作与底层资源的关键桥梁。"
 source: https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver
 canonical: https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver" title="kubesphere/ks-apiserver Docker 镜像中文简介、标签列表与拉取命令">kubesphere/ks-apiserver — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver" title="kubesphere/ks-apiserver Docker 镜像中文简介、标签列表与拉取命令">kubesphere/ks-apiserver — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver" title="kubesphere/ks-apiserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver</a></p>
+<a href="https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver" title="kubesphere/ks-apiserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver</a>
 
 # KubeSphere API Server 介绍
 
@@ -92,7 +93,3 @@ curl -X POST "https://<kubeSphere-api-server-ip>:<port>/apis/apps/v1/namespaces/
 
 ## 总结  
 KubeSphere API Server 是连接用户与平台功能的“桥梁”，通过标准化的 API 接口简化了集群管理、应用部署与运维操作。无论是手动调用还是集成自动化工具，它都能提供稳定、安全的交互能力，是 KubeSphere 平台易用性与扩展性的核心保障。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver" title="kubesphere/ks-apiserver Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kubesphere/ks-apiserver</a></p>

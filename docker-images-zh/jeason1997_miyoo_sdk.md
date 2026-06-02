@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: jeason1997/miyoo_sdk
+description: "MiyooSDK Docker镜像为Miyoo掌机应用开发者提供预配置的开发环境，集成交叉编译工具链、依赖库和构建脚本，简化跨平台应用开发与测试流程。"
 source: https://xuanyuan.cloud/zh/r/jeason1997/miyoo_sdk
 canonical: https://xuanyuan.cloud/zh/r/jeason1997/miyoo_sdk
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/jeason1997/miyoo_sdk" title="jeason1997/miyoo_sdk Docker 镜像中文简介、标签列表与拉取命令">jeason1997/miyoo_sdk — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jeason1997/miyoo_sdk" title="jeason1997/miyoo_sdk Docker 镜像中文简介、标签列表与拉取命令">jeason1997/miyoo_sdk — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/jeason1997/miyoo_sdk" title="jeason1997/miyoo_sdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jeason1997/miyoo_sdk</a></p>
+<a href="https://xuanyuan.cloud/zh/r/jeason1997/miyoo_sdk" title="jeason1997/miyoo_sdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jeason1997/miyoo_sdk</a>
 
 # MiyooSDK Docker镜像文档
 
@@ -125,7 +126,3 @@ docker-compose exec miyoo-dev bash  # 进入容器环境
 - 挂载目录权限问题：Linux/macOS用户可通过`-u $(id -u):$(id -g)`参数解决权限映射
 - 详细SDK使用文档请参考[官方仓库](https://github.com/jeason1997/MiyooSDK)
 - 编译产物位于项目`build/`目录，可通过`miyoo-tools`工具传输至掌机测试
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/jeason1997/miyoo_sdk" title="jeason1997/miyoo_sdk Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/jeason1997/miyoo_sdk</a></p>

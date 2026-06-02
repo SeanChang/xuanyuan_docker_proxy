@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/consul
+description: "Consul是一种数据中心运行时工具，主要提供服务发现、配置管理和服务编排功能，能够助力分布式系统中的服务实现自动注册与发现、动态配置更新及服务生命周期协调管理，确保数据中心内各类服务高效、可靠地通信与协作，是构建现代化微服务架构和云原生应用的重要基础设施组件。"
 source: https://xuanyuan.cloud/zh/r/library/consul
 canonical: https://xuanyuan.cloud/zh/r/library/consul
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/consul" title="library/consul Docker 镜像中文简介、标签列表与拉取命令">library/consul — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/consul" title="library/consul Docker 镜像中文简介、标签列表与拉取命令">library/consul — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/consul" title="library/consul Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/consul</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/consul" title="library/consul Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/consul</a>
 
 # Consul Docker 镜像使用指南
 
@@ -157,7 +158,3 @@ Consul 可在容器内执行健康检查，需暴露Docker守护进程并设置`
 - 镜像中软件的许可信息：[Consul 许可证]([])。  
 - 镜像可能包含其他软件（如Bash等），其许可证需用户自行确认合规性。  
 - 自动检测的许可信息：[repo-info仓库的`consul/`目录]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/consul" title="library/consul Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/consul</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: crazymax/qbittorrent
+description: "基于Alpine Linux的qBittorrent Docker镜像，提供轻量级、高效的开源BitTorrent客户端服务，适用于BT下载与管理。"
 source: https://xuanyuan.cloud/zh/r/crazymax/qbittorrent
 canonical: https://xuanyuan.cloud/zh/r/crazymax/qbittorrent
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/crazymax/qbittorrent" title="crazymax/qbittorrent Docker 镜像中文简介、标签列表与拉取命令">crazymax/qbittorrent — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/crazymax/qbittorrent" title="crazymax/qbittorrent Docker 镜像中文简介、标签列表与拉取命令">crazymax/qbittorrent — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/crazymax/qbittorrent" title="crazymax/qbittorrent Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/crazymax/qbittorrent</a></p>
+<a href="https://xuanyuan.cloud/zh/r/crazymax/qbittorrent" title="crazymax/qbittorrent Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/crazymax/qbittorrent</a>
 
 # qBittorrent Docker镜像（基于Alpine Linux）
 
@@ -102,7 +103,3 @@ services:
 - `/downloads`：存储下载完成的文件
 
 建议使用宿主机绝对路径挂载，例如`-v /home/user/qbittorrent/config:/config`。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/crazymax/qbittorrent" title="crazymax/qbittorrent Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/crazymax/qbittorrent</a></p>

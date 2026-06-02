@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: slimshetty/swebench-verified
+description: "slimshetty/swebench-verified：专为 SWE-Bench Verified 基准提供的预配置 Docker 环境，由 R2E-Gym 项目核心贡献者发布；封装基准数据集与测试工具，支持 AI 编程助手性能验证、基准工具开发与实验复现，避免手动搭建依赖，确保可复现性。"
 source: https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified
 canonical: https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified" title="slimshetty/swebench-verified Docker 镜像中文简介、标签列表与拉取命令">slimshetty/swebench-verified — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified" title="slimshetty/swebench-verified Docker 镜像中文简介、标签列表与拉取命令">slimshetty/swebench-verified — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified" title="slimshetty/swebench-verified Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified</a></p>
+<a href="https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified" title="slimshetty/swebench-verified Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified</a>
 
 # slimshetty/swebench-verified 镜像使用指南
 
@@ -233,7 +234,3 @@ http://localhost:8888/api/docs
 ---
 
 **注意**：具体的使用命令与配置需参考项目的官方文档与 README 文件。建议先查看镜像的入口脚本或文档，了解实际提供的功能与接口。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified" title="slimshetty/swebench-verified Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified</a></p>

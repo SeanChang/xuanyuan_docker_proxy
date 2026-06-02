@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: cimg/openjdk
+description: "CircleCI OpenJDK（Java）Docker便捷镜像是由CircleCI平台提供的、基于OpenJDK（Java开发工具包）构建的Docker预配置镜像，旨在简化Java项目的持续集成与部署流程，内置必要的开发环境和工具，帮助开发者快速搭建稳定的构建环境，无需手动配置底层依赖，有效提升开发与自动化构建效率，适用于各类Java应用的自动化测试、构建及部署场景。"
 source: https://xuanyuan.cloud/zh/r/cimg/openjdk
 canonical: https://xuanyuan.cloud/zh/r/cimg/openjdk
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/openjdk" title="cimg/openjdk Docker 镜像中文简介、标签列表与拉取命令">cimg/openjdk — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cimg/openjdk" title="cimg/openjdk Docker 镜像中文简介、标签列表与拉取命令">cimg/openjdk — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/cimg/openjdk" title="cimg/openjdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cimg/openjdk</a></p>
+<a href="https://xuanyuan.cloud/zh/r/cimg/openjdk" title="cimg/openjdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cimg/openjdk</a>
 
 # CircleCI 便捷镜像：OpenJDK  
 
@@ -203,7 +204,3 @@ docker run -it test/openjdk:11.0.5 bash  # 运行容器测试
 ## 许可证  
 
 本仓库采用 MIT 许可证，详见 [LICENSE](./LICENSE)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/openjdk" title="cimg/openjdk Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/cimg/openjdk</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: vllm/vllm-openai
+description: "vllm/vllm-openai：vLLM 高性能大模型推理框架的官方 Docker 镜像，封装 OpenAI API 兼容的推理服务；支持 PagedAttention 与连续批处理，吞吐量可达传统引擎 10-24 倍；支持 50+ 开源模型与量化方案，适用开源模型部署、OpenAI 应用本地化与高并发生产场景。"
 source: https://xuanyuan.cloud/zh/r/vllm/vllm-openai
 canonical: https://xuanyuan.cloud/zh/r/vllm/vllm-openai
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/vllm/vllm-openai" title="vllm/vllm-openai Docker 镜像中文简介、标签列表与拉取命令">vllm/vllm-openai — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/vllm/vllm-openai" title="vllm/vllm-openai Docker 镜像中文简介、标签列表与拉取命令">vllm/vllm-openai — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/vllm/vllm-openai" title="vllm/vllm-openai Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/vllm/vllm-openai</a></p>
+<a href="https://xuanyuan.cloud/zh/r/vllm/vllm-openai" title="vllm/vllm-openai Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/vllm/vllm-openai</a>
 
 # vllm/vllm-openai 镜像使用指南
 
@@ -395,7 +396,3 @@ docker run -d \
 ---
 
 **注意**：本镜像基于 vLLM 框架构建，需确保硬件环境满足要求（推荐 NVIDIA GPU 算力 ≥7.0）。首次使用建议从较小规模的模型开始测试（如 Llama 3 8B），确保环境配置正确后再部署大模型。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/vllm/vllm-openai" title="vllm/vllm-openai Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/vllm/vllm-openai</a></p>

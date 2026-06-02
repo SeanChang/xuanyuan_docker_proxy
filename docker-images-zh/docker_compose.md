@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: docker/compose
+description: "Docker Compose是Docker官方提供的工具，可帮助用户通过YAML文件便捷地定义、配置和运行由多个Docker容器组成的应用程序，实现服务、网络和卷等组件的统一管理与一键部署，详情参见官方文档[]"
 source: https://xuanyuan.cloud/zh/r/docker/compose
 canonical: https://xuanyuan.cloud/zh/r/docker/compose
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/docker/compose" title="docker/compose Docker 镜像中文简介、标签列表与拉取命令">docker/compose — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/docker/compose" title="docker/compose Docker 镜像中文简介、标签列表与拉取命令">docker/compose — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/docker/compose" title="docker/compose Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/docker/compose</a></p>
+<a href="https://xuanyuan.cloud/zh/r/docker/compose" title="docker/compose Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/docker/compose</a>
 
 ## 重要提示  
 
@@ -92,7 +93,3 @@ Compose 提供管理应用全生命周期的命令，包括：
 
 ## 发布  
 版本发布由维护者按照 [发布流程]([]) 执行。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/docker/compose" title="docker/compose Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/docker/compose</a></p>

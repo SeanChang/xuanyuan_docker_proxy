@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: heimdall777/openclaw
+description: "openclaw Docker镜像是基于GitHub仓库https://github.com/openclaw/openclaw的Dockerfile构建的镜像，用于运行或开发openclaw相关应用。"
 source: https://xuanyuan.cloud/zh/r/heimdall777/openclaw
 canonical: https://xuanyuan.cloud/zh/r/heimdall777/openclaw
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/heimdall777/openclaw" title="heimdall777/openclaw Docker 镜像中文简介、标签列表与拉取命令">heimdall777/openclaw — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/heimdall777/openclaw" title="heimdall777/openclaw Docker 镜像中文简介、标签列表与拉取命令">heimdall777/openclaw — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/heimdall777/openclaw" title="heimdall777/openclaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/heimdall777/openclaw</a></p>
+<a href="https://xuanyuan.cloud/zh/r/heimdall777/openclaw" title="heimdall777/openclaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/heimdall777/openclaw</a>
 
 # openclaw Docker镜像文档
 
@@ -48,7 +49,3 @@ docker run -it --rm openclaw/openclaw
 
 ### 配置说明
 目前官方Dockerfile未明确提供额外配置参数，详细使用方式请参考[项目GitHub仓库](https://github.com/openclaw/openclaw)的文档说明。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/heimdall777/openclaw" title="heimdall777/openclaw Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/heimdall777/openclaw</a></p>

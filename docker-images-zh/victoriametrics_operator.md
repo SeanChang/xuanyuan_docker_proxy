@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: victoriametrics/operator
+description: "用于在Kubernetes环境中自动化部署、管理和运维Victoria Metrics时序数据库的Operator控制器"
 source: https://xuanyuan.cloud/zh/r/victoriametrics/operator
 canonical: https://xuanyuan.cloud/zh/r/victoriametrics/operator
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/victoriametrics/operator" title="victoriametrics/operator Docker 镜像中文简介、标签列表与拉取命令">victoriametrics/operator — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/victoriametrics/operator" title="victoriametrics/operator Docker 镜像中文简介、标签列表与拉取命令">victoriametrics/operator — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/victoriametrics/operator" title="victoriametrics/operator Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/victoriametrics/operator</a></p>
+<a href="https://xuanyuan.cloud/zh/r/victoriametrics/operator" title="victoriametrics/operator Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/victoriametrics/operator</a>
 
 # VictoriaMetrics Operator 中文技术文档
 
@@ -205,7 +206,3 @@ spec:
 - [VictoriaMetrics Operator GitHub](https://github.com/VictoriaMetrics/VictoriaMetrics/tree/master/app/vmoperator)
 - [Helm Charts 仓库](https://victoriametrics.github.io/helm-charts/)
 - [CRD API 文档](https://docs.victoriametrics.com/operator/api.html)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/victoriametrics/operator" title="victoriametrics/operator Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/victoriametrics/operator</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/oraclelinux
+description: "甲骨文Linux的官方Docker构建版本，基于Oracle Linux发行版制作，经过严格测试并集成核心组件与安全更新，为容器化应用提供官方支持、稳定可靠的运行环境，适用于开发、测试及生产环境，确保与Oracle Linux系统的高度兼容性，满足企业级容器部署需求，是用户高效构建和运行容器化应用的开箱即用解决方案。"
 source: https://xuanyuan.cloud/zh/r/library/oraclelinux
 canonical: https://xuanyuan.cloud/zh/r/library/oraclelinux
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/oraclelinux" title="library/oraclelinux Docker 镜像中文简介、标签列表与拉取命令">library/oraclelinux — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/oraclelinux" title="library/oraclelinux Docker 镜像中文简介、标签列表与拉取命令">library/oraclelinux — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/oraclelinux" title="library/oraclelinux Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/oraclelinux</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/oraclelinux" title="library/oraclelinux Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/oraclelinux</a>
 
 # Oracle Linux 镜像介绍
 
@@ -101,7 +102,3 @@ Oracle Linux 订阅客户可通过 [My Oracle Support]([]) 门户获取支持。
 与所有 Docker 镜像类似，本镜像可能包含其他软件（如基础发行版的 Bash 等，及主要软件的直接/间接依赖），这些软件可能适用其他许可证。  
 部分自动检测到的附加许可证信息可在 [repo-info 仓库的 `oraclelinux/` 目录]([]) 中查看。  
 使用预构建镜像时，用户需自行确保其使用行为符合镜像中所有软件的相关许可证要求。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/oraclelinux" title="library/oraclelinux Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/oraclelinux</a></p>

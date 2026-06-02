@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: apache/druid
+description: "Apache Druid是一款开源实时分析数据库，专为大规模时序数据的快速查询与实时摄入设计，支持交互式分析，提供高性能数据处理能力。"
 source: https://xuanyuan.cloud/zh/r/apache/druid
 canonical: https://xuanyuan.cloud/zh/r/apache/druid
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/druid" title="apache/druid Docker 镜像中文简介、标签列表与拉取命令">apache/druid — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/druid" title="apache/druid Docker 镜像中文简介、标签列表与拉取命令">apache/druid — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/apache/druid" title="apache/druid Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/druid</a></p>
+<a href="https://xuanyuan.cloud/zh/r/apache/druid" title="apache/druid Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/druid</a>
 
 # Apache Druid Docker 镜像文档
 
@@ -213,7 +214,3 @@ Druid 配置主要通过 `runtime.properties` 文件定义，Docker 镜像默认
 - [Docker Hub 镜像页面](https://hub.docker.com/r/apache/druid)
 - [Docker 快速入门教程](https://druid.apache.org/docs/latest/tutorials/docker.html)
 - [Druid 配置参考](https://druid.apache.org/docs/latest/configuration/index.html)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/druid" title="apache/druid Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/apache/druid</a></p>

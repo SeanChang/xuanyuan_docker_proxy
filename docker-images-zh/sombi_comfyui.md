@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: sombi/comfyui
+description: "为RunPod平台设计的ComfyUI镜像，预安装自定义包，便于快速部署和运行AI工作流。"
 source: https://xuanyuan.cloud/zh/r/sombi/comfyui
 canonical: https://xuanyuan.cloud/zh/r/sombi/comfyui
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/sombi/comfyui" title="sombi/comfyui Docker 镜像中文简介、标签列表与拉取命令">sombi/comfyui — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/sombi/comfyui" title="sombi/comfyui Docker 镜像中文简介、标签列表与拉取命令">sombi/comfyui — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/sombi/comfyui" title="sombi/comfyui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/sombi/comfyui</a></p>
+<a href="https://xuanyuan.cloud/zh/r/sombi/comfyui" title="sombi/comfyui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/sombi/comfyui</a>
 
 # ComfyUI-Docker-RP 镜像文档
 
@@ -108,7 +109,3 @@ docker run -d \
 - **插件更新**：如需更新内置插件，可通过 ComfyUI-Manager 插件在 Web 界面中操作，或重建容器时指定新版本镜像  
 
 如需获取完整插件清单、默认工作流示例及高级配置，可参考 [GitHub 项目页](https://github.com/somb1/ComfyUI-Docker-RP)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/sombi/comfyui" title="sombi/comfyui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/sombi/comfyui</a></p>

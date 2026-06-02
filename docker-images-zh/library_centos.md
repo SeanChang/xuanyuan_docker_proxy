@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/centos
+description: "已弃用；CentOS的官方版本，该版本此前作为基于红帽企业Linux（RHEL）源代码构建的社区企业级Linux发行版，以稳定、可靠的特性广泛应用于服务器及企业级应用场景，目前已停止官方维护与更新支持。"
 source: https://xuanyuan.cloud/zh/r/library/centos
 canonical: https://xuanyuan.cloud/zh/r/library/centos
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/centos" title="library/centos Docker 镜像中文简介、标签列表与拉取命令">library/centos — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/centos" title="library/centos Docker 镜像中文简介、标签列表与拉取命令">library/centos — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/centos" title="library/centos Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/centos</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/centos" title="library/centos Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/centos</a>
 
 # CentOS Docker镜像说明
 
@@ -152,7 +153,3 @@ grep vsyscall /proc/self/maps
 - 镜像可能包含其他软件（如Bash等），其许可信息可参考[repo-info仓库`centos/`目录]([])。  
 
 使用前请确保遵守所有包含软件的许可协议。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/centos" title="library/centos Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/centos</a></p>

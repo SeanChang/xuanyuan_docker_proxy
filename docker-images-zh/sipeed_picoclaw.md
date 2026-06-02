@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: sipeed/picoclaw
+description: "矽速科技开源的 PicoClaw 超轻量个人 AI 助手镜像：纯 Go 实现，支持 MCP、网关与 Docker Compose（Gateway / Launcher / Agent），详见官方中文 README 与 Docker 文档。"
 source: https://xuanyuan.cloud/zh/r/sipeed/picoclaw
 canonical: https://xuanyuan.cloud/zh/r/sipeed/picoclaw
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/sipeed/picoclaw" title="sipeed/picoclaw Docker 镜像中文简介、标签列表与拉取命令">sipeed/picoclaw — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/sipeed/picoclaw" title="sipeed/picoclaw Docker 镜像中文简介、标签列表与拉取命令">sipeed/picoclaw — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/sipeed/picoclaw" title="sipeed/picoclaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/sipeed/picoclaw</a></p>
+<a href="https://xuanyuan.cloud/zh/r/sipeed/picoclaw" title="sipeed/picoclaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/sipeed/picoclaw</a>
 
 # sipeed/picoclaw 镜像文档
 
@@ -98,7 +99,3 @@ docker compose -f docker/docker-compose.yml --profile gateway up -d
 - **Web 控制台**：Launcher/Web 控制台**尚不支持身份验证**，请勿暴露到公网。
 - **无加密货币**：PicoClaw **没有**官方代币；请认准官方网站 [picoclaw.io](https://picoclaw.io) 与 [sipeed.com](https://sipeed.com)，谨防仿冒域名与诈骗信息。
 - **配置**：首次运行后务必在生成的 `config.json` 中配置 LLM Provider、Bot Token（若使用聊天渠道）等；完整示例与字段说明见官方[配置指南](https://github.com/sipeed/picoclaw/blob/main/docs/zh/configuration.md)与[提供商文档](https://github.com/sipeed/picoclaw/blob/main/docs/zh/providers.md)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/sipeed/picoclaw" title="sipeed/picoclaw Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/sipeed/picoclaw</a></p>

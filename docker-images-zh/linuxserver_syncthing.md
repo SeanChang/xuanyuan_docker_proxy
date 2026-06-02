@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/syncthing
+description: "LinuxServer.io提供的Syncthing容器，用于跨设备文件同步。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/syncthing
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/syncthing
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/syncthing" title="linuxserver/syncthing Docker 镜像中文简介、标签列表与拉取命令">linuxserver/syncthing — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/syncthing" title="linuxserver/syncthing Docker 镜像中文简介、标签列表与拉取命令">linuxserver/syncthing — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/syncthing" title="linuxserver/syncthing Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/syncthing</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/syncthing" title="linuxserver/syncthing Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/syncthing</a>
 
 # linuxserver/syncthing 镜像文档
 
@@ -313,7 +314,3 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 - **11.08.16:** - 重新基于 Alpine Linux 构建
 - **18.12.15:** - 初始测试/发布 (IronicBadger)
 - **24.09.15:** - 初始开发完成 (Lonix)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/syncthing" title="linuxserver/syncthing Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/syncthing</a></p>

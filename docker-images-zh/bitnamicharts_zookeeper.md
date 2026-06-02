@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnamicharts/zookeeper
+description: "Bitnami提供的Apache ZooKeeper Helm图表，用于在Kubernetes环境中简化分布式协调服务的部署与管理。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper" title="bitnamicharts/zookeeper Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/zookeeper — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper" title="bitnamicharts/zookeeper Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/zookeeper — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper" title="bitnamicharts/zookeeper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper" title="bitnamicharts/zookeeper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper</a>
 
 # Bitnami Apache ZooKeeper 镜像文档
 
@@ -317,7 +318,3 @@ persistence:
 - **版本迁移**：旧版本镜像（如 `10.6`）将迁移至 `bitnamilegacy` 仓库，不再更新，需及时升级。
 - **安全最佳实践**：禁用 `ALLOW_ANONYMOUS_LOGIN`，启用身份验证并使用 `existingSecret` 管理密码。
 - **性能优化**：事务日志建议使用独立高性能存储，避免与快照存储竞争 I/O。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper" title="bitnamicharts/zookeeper Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper</a></p>

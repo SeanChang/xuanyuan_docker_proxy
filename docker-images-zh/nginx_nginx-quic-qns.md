@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: nginx/nginx-quic-qns
+description: "用于 NGINX QUIC 协议互操作性测试的 Docker 镜像，集成 QUIC 支持，简化 QUIC 实现的兼容性验证与功能测试流程。"
 source: https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns
 canonical: https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns" title="nginx/nginx-quic-qns Docker 镜像中文简介、标签列表与拉取命令">nginx/nginx-quic-qns — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns" title="nginx/nginx-quic-qns Docker 镜像中文简介、标签列表与拉取命令">nginx/nginx-quic-qns — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns" title="nginx/nginx-quic-qns Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns</a></p>
+<a href="https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns" title="nginx/nginx-quic-qns Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns</a>
 
 # NGINX QUIC Interop 镜像文档
 
@@ -45,7 +46,3 @@ docker run -d --name nginx-quic-test -p 443:443/udp -v $(pwd)/custom-nginx.conf:
 - 确保主机防火墙允许 UDP 443 端口通信（QUIC 基于 UDP 传输）
 - 容器运行时需显式指定 UDP 端口映射（格式：`-p 主机端口:容器端口/udp`）
 - 自定义配置时建议参考 NGINX 官方 QUIC 文档，确保配置参数与模块版本匹配
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns" title="nginx/nginx-quic-qns Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns</a></p>

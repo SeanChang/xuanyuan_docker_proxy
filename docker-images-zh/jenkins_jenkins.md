@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: jenkins/jenkins
+description: "这是一款领先的开源自动化服务器，主要用于软件开发中的持续集成、持续部署（CI/CD）及各类自动化流程管理，支持代码构建、自动化测试、应用部署等全流程任务，具备高度可扩展性、跨平台运行能力和丰富的插件生态，能显著提升开发效率、简化复杂操作并降低运维成本，在全球开发者社区和企业中拥有广泛应用与良好口碑。"
 source: https://xuanyuan.cloud/zh/r/jenkins/jenkins
 canonical: https://xuanyuan.cloud/zh/r/jenkins/jenkins
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/jenkins/jenkins" title="jenkins/jenkins Docker 镜像中文简介、标签列表与拉取命令">jenkins/jenkins — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jenkins/jenkins" title="jenkins/jenkins Docker 镜像中文简介、标签列表与拉取命令">jenkins/jenkins — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/jenkins/jenkins" title="jenkins/jenkins Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jenkins/jenkins</a></p>
+<a href="https://xuanyuan.cloud/zh/r/jenkins/jenkins" title="jenkins/jenkins Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jenkins/jenkins</a>
 
 # Jenkins 持续集成与部署服务器  
 
@@ -37,7 +38,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 
 
 详细使用说明可查阅 [官方文档]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/jenkins/jenkins" title="jenkins/jenkins Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/jenkins/jenkins</a></p>

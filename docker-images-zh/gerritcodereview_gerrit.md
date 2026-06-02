@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: gerritcodereview/gerrit
+description: "官方Gerrit代码审查Docker镜像是由Gerrit项目官方发布的容器化部署方案，旨在为开发团队提供便捷、高效的代码审查系统运行环境，该镜像集成了Gerrit代码审查工具的核心功能，支持基于Git的版本控制、代码提交审核流程、团队协作管理等，通过Docker容器化技术简化了传统部署的复杂性，用户可快速拉取并启动镜像，实现代码审查系统的一键部署与运行，适用于各类软件开发团队构建规范的代码审查流程，提升代码质量与团队协作效率。"
 source: https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit
 canonical: https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit" title="gerritcodereview/gerrit Docker 镜像中文简介、标签列表与拉取命令">gerritcodereview/gerrit — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit" title="gerritcodereview/gerrit Docker 镜像中文简介、标签列表与拉取命令">gerritcodereview/gerrit — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit" title="gerritcodereview/gerrit Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit</a></p>
+<a href="https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit" title="gerritcodereview/gerrit Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit</a>
 
 # Gerrit Code Review Docker 镜像
 
@@ -225,7 +226,3 @@ PhpLdapAdmin 可通过 `[] 访问，用于管理 LDAP 用户。首次登录 Gerr
 ## 更多信息  
 - 查看 Gerrit 文档：`[]  
 - Gerrit 官方主页：[[]]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit" title="gerritcodereview/gerrit Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/gerritcodereview/gerrit</a></p>

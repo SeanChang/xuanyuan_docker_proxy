@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: joplin/server
+description: "Joplin Server是开源笔记应用Joplin的官方后端服务，主要用于支持用户数据同步、笔记管理等核心功能，而官方Joplin Server Docker镜像则是由Joplin开发团队正式发布的容器化部署方案，其设计初衷是简化服务器搭建流程，确保部署环境的一致性与运行稳定性，方便用户通过Docker快速部署和运行Joplin Server，从而满足个人或团队对笔记数据的安全存储与高效同步需求。"
 source: https://xuanyuan.cloud/zh/r/joplin/server
 canonical: https://xuanyuan.cloud/zh/r/joplin/server
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/joplin/server" title="joplin/server Docker 镜像中文简介、标签列表与拉取命令">joplin/server — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/joplin/server" title="joplin/server Docker 镜像中文简介、标签列表与拉取命令">joplin/server — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/joplin/server" title="joplin/server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/joplin/server</a></p>
+<a href="https://xuanyuan.cloud/zh/r/joplin/server" title="joplin/server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/joplin/server</a>
 
 # Joplin Server 安装指南
 
@@ -174,7 +175,3 @@ npm run start-dev
 
 ## 许可证
 详见[LICENSE.md]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/joplin/server" title="joplin/server Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/joplin/server</a></p>

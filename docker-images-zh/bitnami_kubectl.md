@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnami/kubectl
+description: "Bitnami Secure Image for kubectl 是 Bitnami 公司基于安全最佳实践构建的容器镜像，集成了 Kubernetes 命令行工具 kubectl，旨在为用户提供安全可靠的 Kubernetes 集群管理环境，该镜像经过严格的安全加固，包含漏洞扫描、依赖项验证及合规性检查，确保工具版本稳定且无已知安全风险，支持多种操作系统架构，可直接用于容器化部署或本地环境，帮助开发者和运维人员高效执行集群配置、资源管理及应用部署等操作，简化安全工具集成流程，保障 Kubernetes 管理任务的安全性与便捷性。"
 source: https://xuanyuan.cloud/zh/r/bitnami/kubectl
 canonical: https://xuanyuan.cloud/zh/r/bitnami/kubectl
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/kubectl" title="bitnami/kubectl Docker 镜像中文简介、标签列表与拉取命令">bitnami/kubectl — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/kubectl" title="bitnami/kubectl Docker 镜像中文简介、标签列表与拉取命令">bitnami/kubectl — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnami/kubectl" title="bitnami/kubectl Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/kubectl</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnami/kubectl" title="bitnami/kubectl Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/kubectl</a>
 
 # Bitnami Kubectl 软件包
 
@@ -114,7 +115,3 @@ docker run --rm --name kubectl -v /path/to/your/kube/config:/.kube/config bitnam
 本软件基于 Apache 许可证 2.0 版授权。您需遵守该许可证方可使用。许可证副本可从 <[]> 获取。  
 
 除非法律要求或书面约定，软件按 "现状" 提供，不附带任何明示或暗示的担保或条件。具体权限与限制详见许可证条款。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/kubectl" title="bitnami/kubectl Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/kubectl</a></p>

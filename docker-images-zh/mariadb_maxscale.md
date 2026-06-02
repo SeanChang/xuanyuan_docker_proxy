@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: mariadb/maxscale
+description: "MariaDB MaxScale 是世界上最先进的数据库代理，它能够实现数据库负载均衡、读写分离、高可用性支持与故障自动切换，同时提供数据分片管理、安全访问控制及性能监控等功能，有效提升数据库系统的运行效率、稳定性与可扩展性，简化复杂数据库环境的管理与维护。"
 source: https://xuanyuan.cloud/zh/r/mariadb/maxscale
 canonical: https://xuanyuan.cloud/zh/r/mariadb/maxscale
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mariadb/maxscale" title="mariadb/maxscale Docker 镜像中文简介、标签列表与拉取命令">mariadb/maxscale — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mariadb/maxscale" title="mariadb/maxscale Docker 镜像中文简介、标签列表与拉取命令">mariadb/maxscale — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/mariadb/maxscale" title="mariadb/maxscale Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mariadb/maxscale</a></p>
+<a href="https://xuanyuan.cloud/zh/r/mariadb/maxscale" title="mariadb/maxscale Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mariadb/maxscale</a>
 
 ![logo]([])
 
@@ -68,7 +69,3 @@ docker run -d --name mxs -v $PWD/my-maxscale.cnf:/etc/maxscale.cnf.d/my-maxscale
 ```bash
 docker exec -it mxs bash
 ```
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mariadb/maxscale" title="mariadb/maxscale Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mariadb/maxscale</a></p>

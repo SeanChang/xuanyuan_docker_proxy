@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ultralytics/yolov5
+description: "YOLOv5是Ultralytics推出的开源视觉AI模型，支持目标检测、图像分割与分类任务，具备快速准确的推理能力，可导出为ONNX、CoreML、TFLite等多种格式，适用于多场景计算机视觉应用，Docker镜像提供便捷部署环境。"
 source: https://xuanyuan.cloud/zh/r/ultralytics/yolov5
 canonical: https://xuanyuan.cloud/zh/r/ultralytics/yolov5
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ultralytics/yolov5" title="ultralytics/yolov5 Docker 镜像中文简介、标签列表与拉取命令">ultralytics/yolov5 — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ultralytics/yolov5" title="ultralytics/yolov5 Docker 镜像中文简介、标签列表与拉取命令">ultralytics/yolov5 — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ultralytics/yolov5" title="ultralytics/yolov5 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ultralytics/yolov5</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ultralytics/yolov5" title="ultralytics/yolov5 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ultralytics/yolov5</a>
 
 # YOLOv5 Docker镜像文档
 
@@ -125,7 +126,3 @@ docker run -v $(pwd)/runs:/app/runs ultralytics/yolov5 \
 - **问题反馈**：GitHub Issues ([ultralytics/yolov5](https://github.com/ultralytics/yolov5/issues))
 - **社区交流**：[Discord](https://ultralytics.com/discord)、[GitHub Discussions](https://github.com/ultralytics/yolov5/discussions)
 - **更新动态**：关注[Ultralytics Twitter](https://twitter.com/ultralytics)或[GitHub Releases](https://github.com/ultralytics/yolov5/releases)获取最新模型与功能
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ultralytics/yolov5" title="ultralytics/yolov5 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ultralytics/yolov5</a></p>

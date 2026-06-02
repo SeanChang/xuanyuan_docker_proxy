@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: starrocks/allin1-ubuntu
+description: "starrocks/allin1-ubuntu 是基于 Ubuntu 系统构建的 StarRocks 集成版 Docker 镜像，整合了 StarRocks 所有核心组件（FE、BE、Broker 等），支持一键启动完整集群环境。该镜像专为开发测试、快速体验及学习研究设计，无需复杂配置即可运行高性能分析型数据库，帮助用户便捷探索 StarRocks 的实时分析、高并发查询等核心能力，是轻量化部署和功能验证的理想选择。"
 source: https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu
 canonical: https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu" title="starrocks/allin1-ubuntu Docker 镜像中文简介、标签列表与拉取命令">starrocks/allin1-ubuntu — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu" title="starrocks/allin1-ubuntu Docker 镜像中文简介、标签列表与拉取命令">starrocks/allin1-ubuntu — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu" title="starrocks/allin1-ubuntu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu</a></p>
+<a href="https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu" title="starrocks/allin1-ubuntu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu</a>
 
 # StarRocks Docker 镜像使用说明
 
@@ -114,7 +115,3 @@ docker exec -ti starrocks-fe mysql -P9030 -h127.0.0.1 -uroot --prompt="StarRocks
 
 ### 其他客户端连接
 支持 MySQL 协议的客户端（如 DBeaver）均可连接，只需将默认 MySQL 端口替换为 9030 即可。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu" title="starrocks/allin1-ubuntu Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/starrocks/allin1-ubuntu</a></p>

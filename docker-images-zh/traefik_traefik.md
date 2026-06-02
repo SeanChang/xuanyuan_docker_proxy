@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: traefik/traefik
+description: "非官方Traefik镜像，Traefik是一款用于反向代理和负载均衡的工具，建议使用官方镜像（https://hub.docker.com/_/traefik）。"
 source: https://xuanyuan.cloud/zh/r/traefik/traefik
 canonical: https://xuanyuan.cloud/zh/r/traefik/traefik
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/traefik/traefik" title="traefik/traefik Docker 镜像中文简介、标签列表与拉取命令">traefik/traefik — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/traefik/traefik" title="traefik/traefik Docker 镜像中文简介、标签列表与拉取命令">traefik/traefik — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/traefik/traefik" title="traefik/traefik Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/traefik/traefik</a></p>
+<a href="https://xuanyuan.cloud/zh/r/traefik/traefik" title="traefik/traefik Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/traefik/traefik</a>
 
 # Traefik 镜像文档
 
@@ -165,7 +166,3 @@ curl test.docker.localhost
   - Traefik v3.x：[https://doc.traefik.io/traefik/](https://doc.traefik.io/traefik/)
   - Traefik v2.11：[https://doc.traefik.io/traefik/v2.11](https://doc.traefik.io/traefik/v2.11)
 - **社区支持**：[https://community.traefik.io](https://community.traefik.io)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/traefik/traefik" title="traefik/traefik Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/traefik/traefik</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: flannel/flannel
+description: "Flannel是一个专为Kubernetes设计的开源网络插件（CNI），旨在为集群中的Pod提供跨节点的网络连接，实现Pod间的高效通信；它通过为每个节点分配独立子网，确保Pod拥有唯一IP地址，并支持vxlan、host-gw等多种后端模式，简化网络配置，帮助用户轻松构建跨节点的Kubernetes网络环境，是轻量级且广泛应用的容器网络解决方案。"
 source: https://xuanyuan.cloud/zh/r/flannel/flannel
 canonical: https://xuanyuan.cloud/zh/r/flannel/flannel
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/flannel/flannel" title="flannel/flannel Docker 镜像中文简介、标签列表与拉取命令">flannel/flannel — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/flannel/flannel" title="flannel/flannel Docker 镜像中文简介、标签列表与拉取命令">flannel/flannel — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/flannel/flannel" title="flannel/flannel Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/flannel/flannel</a></p>
+<a href="https://xuanyuan.cloud/zh/r/flannel/flannel" title="flannel/flannel Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/flannel/flannel</a>
 
 # Flannel：Kubernetes 网络插件
 
@@ -139,7 +140,3 @@ kubectl apply -f []
 ## 参考链接  
 - 官方 GitHub：[[]]([])  
 - 后端配置文档：[Flannel Backends]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/flannel/flannel" title="flannel/flannel Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/flannel/flannel</a></p>

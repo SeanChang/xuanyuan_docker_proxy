@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: rosettacommons/rosetta
+description: "RosettaCommons官方维护的Rosetta/PyRosetta镜像，提供多种构建版本满足不同计算需求，学术和非商业用户可免费使用，商业用途需单独获取许可。"
 source: https://xuanyuan.cloud/zh/r/rosettacommons/rosetta
 canonical: https://xuanyuan.cloud/zh/r/rosettacommons/rosetta
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/rosettacommons/rosetta" title="rosettacommons/rosetta Docker 镜像中文简介、标签列表与拉取命令">rosettacommons/rosetta — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rosettacommons/rosetta" title="rosettacommons/rosetta Docker 镜像中文简介、标签列表与拉取命令">rosettacommons/rosetta — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/rosettacommons/rosetta" title="rosettacommons/rosetta Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rosettacommons/rosetta</a></p>
+<a href="https://xuanyuan.cloud/zh/r/rosettacommons/rosetta" title="rosettacommons/rosetta Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rosettacommons/rosetta</a>
 
 ## Rosetta/PyRosetta 官方镜像
 
@@ -35,7 +36,3 @@ exported_at: 2026-06-02T12:15:43.568Z
   - Rosetta：启用`mpi`、`cxx11thread`、`serialization`、`torch`、`tensorflow`扩展。  
   - PyRosetta：启用`cxx11thread`、`serialization`、`torch`、`tensorflow`扩展。
 - **`<TAG>-NNN`**：对应每周NNN版本的镜像。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/rosettacommons/rosetta" title="rosettacommons/rosetta Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/rosettacommons/rosetta</a></p>

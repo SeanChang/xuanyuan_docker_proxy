@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: btgoose/jdk17
+description: "基于CentOS系统的最新JDK 17环境镜像，提供稳定的Java开发与运行平台，适用于需要JDK 17环境的应用部署。"
 source: https://xuanyuan.cloud/zh/r/btgoose/jdk17
 canonical: https://xuanyuan.cloud/zh/r/btgoose/jdk17
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/btgoose/jdk17" title="btgoose/jdk17 Docker 镜像中文简介、标签列表与拉取命令">btgoose/jdk17 — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/btgoose/jdk17" title="btgoose/jdk17 Docker 镜像中文简介、标签列表与拉取命令">btgoose/jdk17 — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/btgoose/jdk17" title="btgoose/jdk17 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/btgoose/jdk17</a></p>
+<a href="https://xuanyuan.cloud/zh/r/btgoose/jdk17" title="btgoose/jdk17 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/btgoose/jdk17</a>
 
 # CentOS-JDK17镜像文档
 
@@ -93,7 +94,3 @@ services:
 | JAVA_HOME | JDK安装路径 | /usr/lib/jvm/jdk-17 |
 | JAVA_OPTS | JVM运行参数 | 空 |
 | PATH | 系统环境变量 | 包含JDK的bin目录 |
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/btgoose/jdk17" title="btgoose/jdk17 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/btgoose/jdk17</a></p>

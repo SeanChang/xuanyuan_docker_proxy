@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: justlikemaki/aiclient-2-api
+description: "AIClient-2-API 将 Gemini CLI、Qwen Code、Kiro Claude 等仅限客户端的大模型接口统一为本地 OpenAI 兼容 API，支持多协议转换、账号池与 Web 管理台，便于 Cline、NextChat 等工具调用 Claude、Gemini、Qwen 等模型。"
 source: https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api
 canonical: https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api" title="justlikemaki/aiclient-2-api Docker 镜像中文简介、标签列表与拉取命令">justlikemaki/aiclient-2-api — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api" title="justlikemaki/aiclient-2-api Docker 镜像中文简介、标签列表与拉取命令">justlikemaki/aiclient-2-api — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api" title="justlikemaki/aiclient-2-api Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api</a></p>
+<a href="https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api" title="justlikemaki/aiclient-2-api Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api</a>
 
 # AIClient-2-API
 
@@ -88,7 +89,3 @@ curl http://localhost:3000/ollama/api/chat -H "Content-Type: application/json" -
 - [Docker Hub - justlikemaki/aiclient-2-api](https://hub.docker.com/r/justlikemaki/aiclient-2-api)
 - 项目 GitHub 与完整文档见镜像仓库说明
 - 开源协议：GNU General Public License v3 (GPLv3)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api" title="justlikemaki/aiclient-2-api Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api</a></p>

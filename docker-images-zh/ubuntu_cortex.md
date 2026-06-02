@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ubuntu/cortex
+description: "Cortex是基于Ubuntu的Prometheus长期存储解决方案，由Canonical维护，提供水平扩展、高可用、多租户支持及多种长期存储选项。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/cortex
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/cortex
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/cortex" title="ubuntu/cortex Docker 镜像中文简介、标签列表与拉取命令">ubuntu/cortex — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/cortex" title="ubuntu/cortex Docker 镜像中文简介、标签列表与拉取命令">ubuntu/cortex — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/cortex" title="ubuntu/cortex Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/cortex</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ubuntu/cortex" title="ubuntu/cortex Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/cortex</a>
 
 ## **弃用通知**
 
@@ -121,7 +122,3 @@ docker images --no-trunc --quiet ubuntu/cortex:<tag>
  | ~~1.7-21.04~~ | Ubuntu 21.04上的Cortex 1.7.0 | 2022年1月 | ~~1.10-21.10~~ |
  | ~~1.4-20.04~~ | Ubuntu 20.04 LTS上的Cortex 1.4.0 | 2021年1月 | ~~1.7-21.04~~ |
 | _`track`_ |
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/cortex" title="ubuntu/cortex Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/cortex</a></p>

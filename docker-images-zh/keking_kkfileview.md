@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: keking/kkfileview
+description: "kkFileView是文件文档在线预览解决方案，基本支持主流办公文档的在线预览，如doc、docx、xls、xlsx、ppt、pptx、pdf、txt、zip、rar、图片、视频、音频等。"
 source: https://xuanyuan.cloud/zh/r/keking/kkfileview
 canonical: https://xuanyuan.cloud/zh/r/keking/kkfileview
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/keking/kkfileview" title="keking/kkfileview Docker 镜像中文简介、标签列表与拉取命令">keking/kkfileview — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/keking/kkfileview" title="keking/kkfileview Docker 镜像中文简介、标签列表与拉取命令">keking/kkfileview — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/keking/kkfileview" title="keking/kkfileview Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/keking/kkfileview</a></p>
+<a href="https://xuanyuan.cloud/zh/r/keking/kkfileview" title="keking/kkfileview Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/keking/kkfileview</a>
 
 # kkFileView 镜像文档
 
@@ -89,7 +90,3 @@ docker-compose up -d
 - 官网：[https://kkfileview.keking.cn](https://kkfileview.keking.cn)
 - 码云开源地址：[https://gitee.com/kekingcn/file-online-preview](https://gitee.com/kekingcn/file-online-preview)
 - GitHub开源地址：[https://github.com/kekingcn/file-online-preview](https://github.com/kekingcn/file-online-preview)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/keking/kkfileview" title="keking/kkfileview Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/keking/kkfileview</a></p>

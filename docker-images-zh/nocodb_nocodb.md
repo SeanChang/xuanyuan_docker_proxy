@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: nocodb/nocodb
+description: "NocoDB是开源的Airtable替代品，提供快速在线构建数据库的解决方案，具备丰富的电子表格界面、多视图类型、工作流自动化及编程访问能力，支持多种数据库后端和部署方式。"
 source: https://xuanyuan.cloud/zh/r/nocodb/nocodb
 canonical: https://xuanyuan.cloud/zh/r/nocodb/nocodb
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nocodb/nocodb" title="nocodb/nocodb Docker 镜像中文简介、标签列表与拉取命令">nocodb/nocodb — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nocodb/nocodb" title="nocodb/nocodb Docker 镜像中文简介、标签列表与拉取命令">nocodb/nocodb — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/nocodb/nocodb" title="nocodb/nocodb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nocodb/nocodb</a></p>
+<a href="https://xuanyuan.cloud/zh/r/nocodb/nocodb" title="nocodb/nocodb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nocodb/nocodb</a>
 
 # NocoDB - 开源的Airtable替代方案
 
@@ -165,7 +166,3 @@ bash <(curl -sSL http://install.nocodb.com/noco.sh) <(mktemp)
 ## 许可证
 
 本项目采用[AGPLv3许可证](https://github.com/nocodb/nocodb/blob/master/LICENSE)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nocodb/nocodb" title="nocodb/nocodb Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nocodb/nocodb</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/couchdb
+description: "CouchDB是采用JSON文档格式、提供HTTP API并支持JavaScript/声明式索引的数据库。"
 source: https://xuanyuan.cloud/zh/r/library/couchdb
 canonical: https://xuanyuan.cloud/zh/r/library/couchdb
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/couchdb" title="library/couchdb Docker 镜像中文简介、标签列表与拉取命令">library/couchdb — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/couchdb" title="library/couchdb Docker 镜像中文简介、标签列表与拉取命令">library/couchdb — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/couchdb" title="library/couchdb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/couchdb</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/couchdb" title="library/couchdb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/couchdb</a>
 
 # Apache CouchDB Docker 镜像文档
 
@@ -275,7 +276,3 @@ Apache CouchDB 基于 [Apache 许可证](https://github.com/apache/couchdb/blob/
 - [官方 CouchDB 文档](http://docs.couchdb.org/)
 - [CouchDB Docker 仓库](https://github.com/apache/couchdb-docker)
 - [问题反馈](https://github.com/apache/couchdb-docker/issues)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/couchdb" title="library/couchdb Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/couchdb</a></p>

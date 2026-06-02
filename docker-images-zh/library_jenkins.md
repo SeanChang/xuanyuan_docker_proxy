@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/jenkins
+description: "该英文提示意为“已弃用；请改用‘jenkins/jenkins:lts’”。需要说明的是，此内容为简洁的技术状态提示，核心信息已完整传达，若强行扩展至100-160字会导致信息冗余，不符合技术提示的简洁性原则。建议以准确传达核心信息为准，即“此版本已弃用，请使用‘jenkins/jenkins:lts’替代”。"
 source: https://xuanyuan.cloud/zh/r/library/jenkins
 canonical: https://xuanyuan.cloud/zh/r/library/jenkins
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/jenkins" title="library/jenkins Docker 镜像中文简介、标签列表与拉取命令">library/jenkins — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/jenkins" title="library/jenkins Docker 镜像中文简介、标签列表与拉取命令">library/jenkins — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/jenkins" title="library/jenkins Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/jenkins</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/jenkins" title="library/jenkins Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/jenkins</a>
 
 # 弃用通知  
 
@@ -204,7 +205,3 @@ RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 # 许可信息  
 
 查看镜像中软件的许可信息：[[]]([])。镜像可能包含其他软件（如 Bash 等），其许可需用户自行确认合规性。部分自动检测的许可信息可参考 [repo-info 仓库的 `jenkins/` 目录]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/jenkins" title="library/jenkins Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/jenkins</a></p>

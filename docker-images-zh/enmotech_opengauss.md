@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: enmotech/opengauss
+description: "openGauss是一款源自华为的开源关系型数据库，以高性能、高安全性和高可靠性为核心优势，广泛应用于金融、政务、电信等关键行业领域；恩墨科技（Enmotech）作为其重要生态合作伙伴，所制作的openGauss最新镜像，旨在为用户提供便捷高效的部署体验，助力企业及开发者快速搭建稳定可靠的数据库环境，有效满足数字化转型过程中的数据管理与业务支撑需求。"
 source: https://xuanyuan.cloud/zh/r/enmotech/opengauss
 canonical: https://xuanyuan.cloud/zh/r/enmotech/opengauss
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/enmotech/opengauss" title="enmotech/opengauss Docker 镜像中文简介、标签列表与拉取命令">enmotech/opengauss — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/enmotech/opengauss" title="enmotech/opengauss Docker 镜像中文简介、标签列表与拉取命令">enmotech/opengauss — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/enmotech/opengauss" title="enmotech/opengauss Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/enmotech/opengauss</a></p>
+<a href="https://xuanyuan.cloud/zh/r/enmotech/opengauss" title="enmotech/opengauss Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/enmotech/opengauss</a>
 
 # openGauss Docker镜像使用指南
 
@@ -199,7 +200,3 @@ $ gs_ctl query -D /var/lib/opengauss/data/
 EnmoTech（北京安恒信科技）成立于2011年，是智能数据技术提供商，总部位于北京，全球35个地区设有分支机构（含香港、新加坡、悉尼等）。专注于数据与数据库解决方案创新，提供HTAP数据库、软件定义分布式存储、数据库部署与性能管理、智能数据分析等服务。已服务超3000家企业客户，管理超50000个业务系统。  
 
 了解更多：[www.enmotech.com]([])，或联系：[邮箱已删除]
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/enmotech/opengauss" title="enmotech/opengauss Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/enmotech/opengauss</a></p>

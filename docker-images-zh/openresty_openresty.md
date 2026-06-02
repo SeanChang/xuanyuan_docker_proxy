@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: openresty/openresty
+description: "OpenResty官方Docker镜像是基于NGINX和LuaJIT构建的动态Web平台，它整合了NGINX的高性能HTTP处理与反向代理能力及LuaJIT的高效即时编译脚本技术，适用于开发高并发、低延迟的动态Web应用、API网关、负载均衡系统等场景。该官方Docker镜像提供标准化部署环境，简化配置流程，确保跨平台一致性与可靠性，助力开发者快速集成并高效利用OpenResty的强大功能，实现灵活的Web服务开发与部署。"
 source: https://xuanyuan.cloud/zh/r/openresty/openresty
 canonical: https://xuanyuan.cloud/zh/r/openresty/openresty
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/openresty/openresty" title="openresty/openresty Docker 镜像中文简介、标签列表与拉取命令">openresty/openresty — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openresty/openresty" title="openresty/openresty Docker 镜像中文简介、标签列表与拉取命令">openresty/openresty — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/openresty/openresty" title="openresty/openresty Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openresty/openresty</a></p>
+<a href="https://xuanyuan.cloud/zh/r/openresty/openresty" title="openresty/openresty Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openresty/openresty</a>
 
 # docker-openresty：OpenResty 的 Docker 工具
 
@@ -153,7 +154,3 @@ docker build -t 自定义镜像名 -f bionic/Dockerfile .
 
 ## 反馈与贡献  
 使用中遇到问题可提交 [GitHub Issue]([])，或通过 [Travis CI]([])、[Appveyor]([]) 查看构建状态。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/openresty/openresty" title="openresty/openresty Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/openresty/openresty</a></p>

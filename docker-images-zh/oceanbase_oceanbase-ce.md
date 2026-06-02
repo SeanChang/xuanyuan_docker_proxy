@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: oceanbase/oceanbase-ce
+description: "OceanBase是由蚂蚁集团自主研发的开源分布式混合事务/分析处理（HTAP）数据库管理系统，具备高可用性、高并发处理能力和海量数据存储能力，兼容MySQL等主流数据库协议，可同时支持在线事务处理（OLTP）与实时分析处理（OLAP），广泛应用于金融、电商、政务等关键业务领域，为企业提供稳定高效、兼具事务与分析能力的数据服务。"
 source: https://xuanyuan.cloud/zh/r/oceanbase/oceanbase-ce
 canonical: https://xuanyuan.cloud/zh/r/oceanbase/oceanbase-ce
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/oceanbase/oceanbase-ce" title="oceanbase/oceanbase-ce Docker 镜像中文简介、标签列表与拉取命令">oceanbase/oceanbase-ce — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/oceanbase/oceanbase-ce" title="oceanbase/oceanbase-ce Docker 镜像中文简介、标签列表与拉取命令">oceanbase/oceanbase-ce — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/oceanbase/oceanbase-ce" title="oceanbase/oceanbase-ce Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/oceanbase/oceanbase-ce</a></p>
+<a href="https://xuanyuan.cloud/zh/r/oceanbase/oceanbase-ce" title="oceanbase/oceanbase-ce Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/oceanbase/oceanbase-ce</a>
 
 # 使用 Docker 部署 OceanBase
 
@@ -115,7 +116,3 @@ docker run -d -p 2881:2881 -v $PWD/ob:/root/ob -v $PWD/obd/cluster:/root/.obd/cl
 ## 故障诊断
 
 Docker 启动时默认开启 `enable_rich_error_msg` 参数。若启动失败，可通过 trace 命令获取详细错误信息。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/oceanbase/oceanbase-ce" title="oceanbase/oceanbase-ce Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/oceanbase/oceanbase-ce</a></p>

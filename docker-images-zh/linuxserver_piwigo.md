@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/piwigo
+description: "这是由LinuxServer.io提供的Piwigo容器，其中Piwigo是一款开源照片管理系统，具备相册组织、图片分类、标签管理、在线分享及多平台访问等功能，该容器旨在为用户提供便捷部署方式，帮助个人摄影爱好者、家庭或小型团队轻松搭建和安全管理照片库，满足高效存储与分享图片的需求，同时依托LinuxServer.io的容器优化技术，确保运行稳定且易于配置。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/piwigo
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/piwigo
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/piwigo" title="linuxserver/piwigo Docker 镜像中文简介、标签列表与拉取命令">linuxserver/piwigo — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/piwigo" title="linuxserver/piwigo Docker 镜像中文简介、标签列表与拉取命令">linuxserver/piwigo — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/piwigo" title="linuxserver/piwigo Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/piwigo</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/piwigo" title="linuxserver/piwigo Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/piwigo</a>
 
 # LinuxServer.io Piwigo 容器介绍
 
@@ -262,7 +263,3 @@ docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/piwigo:latest .
 - [论坛]([])  
 - [GitHub]([])（源码仓库）  
 - [赞助支持]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/piwigo" title="linuxserver/piwigo Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/piwigo</a></p>

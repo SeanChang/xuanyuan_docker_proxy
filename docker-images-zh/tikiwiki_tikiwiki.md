@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: tikiwiki/tikiwiki
+description: "这是一款为史上最全面的CMS量身打造的Docker镜像，集成了该内容管理系统运行所需的全套环境配置与核心功能组件，致力于为用户提供便捷高效的部署体验，助力开发者快速搭建从基础内容管理到复杂业务集成的全功能平台，全面满足多样化场景需求，堪称目前针对该顶级CMS的一站式容器化解决方案。"
 source: https://xuanyuan.cloud/zh/r/tikiwiki/tikiwiki
 canonical: https://xuanyuan.cloud/zh/r/tikiwiki/tikiwiki
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/tikiwiki/tikiwiki" title="tikiwiki/tikiwiki Docker 镜像中文简介、标签列表与拉取命令">tikiwiki/tikiwiki — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/tikiwiki/tikiwiki" title="tikiwiki/tikiwiki Docker 镜像中文简介、标签列表与拉取命令">tikiwiki/tikiwiki — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/tikiwiki/tikiwiki" title="tikiwiki/tikiwiki Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/tikiwiki/tikiwiki</a></p>
+<a href="https://xuanyuan.cloud/zh/r/tikiwiki/tikiwiki" title="tikiwiki/tikiwiki Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/tikiwiki/tikiwiki</a>
 
 # TikiWiki Docker镜像
 
@@ -200,7 +201,3 @@ examplecom_tiki_1      /entrypoint.sh apache2-for ...   Up      443/tcp, 80/tcp
 examplecom_tiki_2      /entrypoint.sh apache2-for ...   Up      443/tcp, 80/tcp     
 examplecom_tiki_3      /entrypoint.sh apache2-for ...   Up      443/tcp, 80/tcp     
 ```
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/tikiwiki/tikiwiki" title="tikiwiki/tikiwiki Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/tikiwiki/tikiwiki</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: kafbat/kafka-ui
+description: "Apache Kafka的Kafbat UI镜像，提供可视化用户界面，用于管理和监控Apache Kafka集群。"
 source: https://xuanyuan.cloud/zh/r/kafbat/kafka-ui
 canonical: https://xuanyuan.cloud/zh/r/kafbat/kafka-ui
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kafbat/kafka-ui" title="kafbat/kafka-ui Docker 镜像中文简介、标签列表与拉取命令">kafbat/kafka-ui — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kafbat/kafka-ui" title="kafbat/kafka-ui Docker 镜像中文简介、标签列表与拉取命令">kafbat/kafka-ui — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/kafbat/kafka-ui" title="kafbat/kafka-ui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kafbat/kafka-ui</a></p>
+<a href="https://xuanyuan.cloud/zh/r/kafbat/kafka-ui" title="kafbat/kafka-ui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kafbat/kafka-ui</a>
 
 # Kafbat UI Docker镜像技术文档
 
@@ -152,7 +153,3 @@ services:
 
 ### 支持项目
 Kafbat团队独立运作，成员利用业余时间贡献代码。如需赞助，可访问[赞助页面](https://github.com/sponsors/kafbat)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kafbat/kafka-ui" title="kafbat/kafka-ui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kafbat/kafka-ui</a></p>

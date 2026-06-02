@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/elasticsearch
+description: "Elasticsearch是一款功能强大的开源搜索与分析引擎，它基于Lucene构建，具备分布式、高扩展、实时处理的特性，能够高效存储、检索和分析各类结构化与非结构化数据，广泛应用于日志分析、全文搜索、业务智能等场景，通过简化数据探索流程，帮助用户快速从海量数据中获取有价值的洞察，让复杂数据的分析与利用变得简单高效。"
 source: https://xuanyuan.cloud/zh/r/library/elasticsearch
 canonical: https://xuanyuan.cloud/zh/r/library/elasticsearch
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/elasticsearch" title="library/elasticsearch Docker 镜像中文简介、标签列表与拉取命令">library/elasticsearch — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/elasticsearch" title="library/elasticsearch Docker 镜像中文简介、标签列表与拉取命令">library/elasticsearch — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/elasticsearch" title="library/elasticsearch Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/elasticsearch</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/elasticsearch" title="library/elasticsearch Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/elasticsearch</a>
 
 # Elasticsearch Docker镜像使用指南
 
@@ -104,7 +105,3 @@ $ docker run -d --name elasticsearch --net somenetwork -p 9200:9200 -p 9300:9300
 Docker镜像可能包含基础系统（如Bash等）及依赖软件，这些软件可能采用其他许可证。部分自动检测的许可证信息可参考[repo-info仓库的elasticsearch目录]([])。  
 
 使用前请确保遵守所有包含软件的相关许可证要求，用户需自行承担合规责任。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/elasticsearch" title="library/elasticsearch Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/elasticsearch</a></p>

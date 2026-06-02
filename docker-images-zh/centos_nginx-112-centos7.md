@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: centos/nginx-112-centos7
+description: "用于运行nginx 1.12或构建基于nginx的应用程序的平台"
 source: https://xuanyuan.cloud/zh/r/centos/nginx-112-centos7
 canonical: https://xuanyuan.cloud/zh/r/centos/nginx-112-centos7
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/centos/nginx-112-centos7" title="centos/nginx-112-centos7 Docker 镜像中文简介、标签列表与拉取命令">centos/nginx-112-centos7 — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/centos/nginx-112-centos7" title="centos/nginx-112-centos7 Docker 镜像中文简介、标签列表与拉取命令">centos/nginx-112-centos7 — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/centos/nginx-112-centos7" title="centos/nginx-112-centos7 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/centos/nginx-112-centos7</a></p>
+<a href="https://xuanyuan.cloud/zh/r/centos/nginx-112-centos7" title="centos/nginx-112-centos7 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/centos/nginx-112-centos7</a>
 
 Nginx 1.12服务器和反向代理服务器容器镜像
 
@@ -79,7 +80,3 @@ podman logs <container>
 ## 参见
 
 本容器镜像的Dockerfile及其他源码可在https://github.com/sclorg/nginx-container获取。该仓库还包含其他版本的Python环境Dockerfile。CentOS的Dockerfile名为`Dockerfile`，RHEL7为`Dockerfile.rhel7`，RHEL8为`Dockerfile.rhel8`，Fedora为`Dockerfile.fedora`。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/centos/nginx-112-centos7" title="centos/nginx-112-centos7 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/centos/nginx-112-centos7</a></p>

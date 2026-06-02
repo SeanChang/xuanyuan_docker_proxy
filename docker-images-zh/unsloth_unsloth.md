@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: unsloth/unsloth
+description: "Unsloth Docker镜像是一个预构建容器，包含LLM微调与强化学习开源框架Unsloth的所有依赖，无需额外设置即可快速使用。支持Jupyter Lab和SSH双访问模式，适用于Windows、Linux、WSL及多数NVIDIA GPU，可立即开始LLM微调工作。"
 source: https://xuanyuan.cloud/zh/r/unsloth/unsloth
 canonical: https://xuanyuan.cloud/zh/r/unsloth/unsloth
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/unsloth/unsloth" title="unsloth/unsloth Docker 镜像中文简介、标签列表与拉取命令">unsloth/unsloth — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/unsloth/unsloth" title="unsloth/unsloth Docker 镜像中文简介、标签列表与拉取命令">unsloth/unsloth — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/unsloth/unsloth" title="unsloth/unsloth Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/unsloth/unsloth</a></p>
+<a href="https://xuanyuan.cloud/zh/r/unsloth/unsloth" title="unsloth/unsloth Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/unsloth/unsloth</a>
 
 # Unsloth Docker镜像
 
@@ -118,7 +119,3 @@ ssh -i ~/.ssh/container_key -p 2222 unsloth@localhost
 - 查阅[Unsloth文档](https://docs.unsloth.ai/)
 - 在Reddit社区提问：[r/unsloth](https://reddit.com/unsloth)
 - 查看`unsloth-notebooks/`目录中的示例笔记本
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/unsloth/unsloth" title="unsloth/unsloth Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/unsloth/unsloth</a></p>

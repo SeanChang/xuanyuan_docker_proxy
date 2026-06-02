@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/bookstack
+description: "linuxserver/bookstack 是一款开源知识管理工具，帮助用户构建结构化知识库，支持 Markdown 编辑、富文本格式、多层级章节管理、全文搜索、版本历史追踪及思维导图可视化。界面简洁直观，支持团队协作与权限管理，通过 Docker 快速部署，适用于个人笔记整理、项目文档管理、企业知识库搭建等场景，帮助高效沉淀和共享信息，提升团队协作效率。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/bookstack
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/bookstack
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/bookstack" title="linuxserver/bookstack Docker 镜像中文简介、标签列表与拉取命令">linuxserver/bookstack — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/bookstack" title="linuxserver/bookstack Docker 镜像中文简介、标签列表与拉取命令">linuxserver/bookstack — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/bookstack" title="linuxserver/bookstack Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/bookstack</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/bookstack" title="linuxserver/bookstack Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/bookstack</a>
 
 # LinuxServer.io BookStack 容器介绍  
 
@@ -303,7 +304,3 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 - [论坛]([])：社区讨论  
 - [GitHub]([])：源码仓库  
 - [Open Collective]([])：支持我们的开发
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/bookstack" title="linuxserver/bookstack Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/bookstack</a></p>

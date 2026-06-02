@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/scratch
+description: "明确的空镜像，主要用于构建基础镜像（如debian、busybox）或超小镜像（仅包含单个二进制文件及其依赖，如hello-world）。"
 source: https://xuanyuan.cloud/zh/r/library/scratch
 canonical: https://xuanyuan.cloud/zh/r/library/scratch
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/scratch" title="library/scratch Docker 镜像中文简介、标签列表与拉取命令">library/scratch — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/scratch" title="library/scratch Docker 镜像中文简介、标签列表与拉取命令">library/scratch — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/scratch" title="library/scratch Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/scratch</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/scratch" title="library/scratch Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/scratch</a>
 
 # FROM scratch 镜像文档
 
@@ -52,7 +53,3 @@ CMD ["/hello"]
 
 上述使用方法参考自 [Docker 官方文档](https://docs.docker.com/engine/userguide/eng-image/baseimages/#creating-a-simple-parent-image-using-scratch)：  
 > 你可以使用 Docker 保留的最小镜像 `scratch` 作为构建容器的起点。使用 `scratch` “镜像” 向构建过程表明，你希望 Dockerfile 中的下一个命令成为镜像的第一层文件系统。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/scratch" title="library/scratch Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/scratch</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: nousresearch/hermes-agent
+description: "Hermes Agent（MIT）：官方宣称唯一内置学习闭环的自改进 AI 智能体。从经验创建技能、使用中改进、主动巩固记忆、检索过往对话并跨会话加深对你的建模；可用 Nous Portal、OpenRouter（200+）、OpenAI、Kimi 等并通过 hermes model 切换；六种终端后端、内置 cron、子智能体与 OpenClaw 迁移。"
 source: https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent
 canonical: https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent" title="nousresearch/hermes-agent Docker 镜像中文简介、标签列表与拉取命令">nousresearch/hermes-agent — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent" title="nousresearch/hermes-agent Docker 镜像中文简介、标签列表与拉取命令">nousresearch/hermes-agent — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent" title="nousresearch/hermes-agent Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent</a></p>
+<a href="https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent" title="nousresearch/hermes-agent Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent</a>
 
 # Hermes Agent
 
@@ -86,7 +87,3 @@ hermes              # 开始对话
 
 **Docker 镜像**的具体运行方式、compose 与环境变量等，另见官方用户文档中的 Docker 说明：  
 https://hermes-agent.nousresearch.com/docs/user-guide/docker
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent" title="nousresearch/hermes-agent Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nousresearch/hermes-agent</a></p>

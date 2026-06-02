@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: n8nio/n8n
+description: "这是一款免费且开源、采用公平代码许可的基于节点的工作流自动化工具，它通过直观的节点连接方式，帮助用户轻松构建和自动化各类复杂工作流程，适用于个人、团队及企业等不同场景，兼具灵活性与易用性，致力于为用户提供高效、透明的自动化解决方案。"
 source: https://xuanyuan.cloud/zh/r/n8nio/n8n
 canonical: https://xuanyuan.cloud/zh/r/n8nio/n8n
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/n8nio/n8n" title="n8nio/n8n Docker 镜像中文简介、标签列表与拉取命令">n8nio/n8n — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/n8nio/n8n" title="n8nio/n8n Docker 镜像中文简介、标签列表与拉取命令">n8nio/n8n — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/n8nio/n8n" title="n8nio/n8n Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/n8nio/n8n</a></p>
+<a href="https://xuanyuan.cloud/zh/r/n8nio/n8n" title="n8nio/n8n Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/n8nio/n8n</a>
 
 # n8n - 面向技术团队的安全工作流自动化平台  
 
@@ -215,7 +216,3 @@ docker buildx build --platform linux/amd64,linux/arm64 --build-arg N8N_VERSION=1
 - **技术支持**：访问 [社区论坛]([]) 获取官方团队及用户帮助  
 - **招聘信息**：查看 [职位页面]([])，加入 n8n 团队  
 - **许可证**：详见 [许可证说明]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/n8nio/n8n" title="n8nio/n8n Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/n8nio/n8n</a></p>

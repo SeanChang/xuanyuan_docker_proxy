@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: frangoteam/fuxa
+description: "FUXA是一款开源的基于Web的过程可视化（SCADA/HMI/仪表盘）软件。https://github.com/frangoteam/FUXA"
 source: https://xuanyuan.cloud/zh/r/frangoteam/fuxa
 canonical: https://xuanyuan.cloud/zh/r/frangoteam/fuxa
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/frangoteam/fuxa" title="frangoteam/fuxa Docker 镜像中文简介、标签列表与拉取命令">frangoteam/fuxa — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/frangoteam/fuxa" title="frangoteam/fuxa Docker 镜像中文简介、标签列表与拉取命令">frangoteam/fuxa — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/frangoteam/fuxa" title="frangoteam/fuxa Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/frangoteam/fuxa</a></p>
+<a href="https://xuanyuan.cloud/zh/r/frangoteam/fuxa" title="frangoteam/fuxa Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/frangoteam/fuxa</a>
 
 # FUXA Docker镜像文档
 
@@ -45,7 +46,3 @@ docker run -d -p 1881:1881 \
   -v fuxa_logs:/usr/src/app/FUXA/server/_logs \      # 日志文件
   -v fuxa_images:/usr/src/app/FUXA/server/_images \  # 图片资源
   frangoteam/fuxa:latest
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/frangoteam/fuxa" title="frangoteam/fuxa Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/frangoteam/fuxa</a></p>

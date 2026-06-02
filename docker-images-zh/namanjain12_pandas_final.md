@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: namanjain12/pandas_final
+description: "pandas_final 是基于 Python 数据分析库 pandas 构建的自定义 Docker 镜像，旨在提供开箱即用的数据分析环境，集成了 pandas 及相关依赖（如 numpy、matplotlib 等），简化数据处理、清洗、转换及统计分析的环境配置流程，适用于个人项目、数据预处理任务及轻量级数据分析服务部署，帮助用户快速启动数据相关工作流。"
 source: https://xuanyuan.cloud/zh/r/namanjain12/pandas_final
 canonical: https://xuanyuan.cloud/zh/r/namanjain12/pandas_final
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/namanjain12/pandas_final" title="namanjain12/pandas_final Docker 镜像中文简介、标签列表与拉取命令">namanjain12/pandas_final — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/namanjain12/pandas_final" title="namanjain12/pandas_final Docker 镜像中文简介、标签列表与拉取命令">namanjain12/pandas_final — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/namanjain12/pandas_final" title="namanjain12/pandas_final Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/namanjain12/pandas_final</a></p>
+<a href="https://xuanyuan.cloud/zh/r/namanjain12/pandas_final" title="namanjain12/pandas_final Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/namanjain12/pandas_final</a>
 
 # pandas_final Docker 镜像使用指南
 
@@ -155,7 +156,3 @@ $ docker run --name some-pandas -v pandas-data:/data -it namanjain12/pandas_fina
 ## 许可信息
 
 镜像中包含的 pandas 及其他开源库遵循各自的许可协议（如 pandas 采用 BSD 许可证），使用前请遵守相关条款。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/namanjain12/pandas_final" title="namanjain12/pandas_final Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/namanjain12/pandas_final</a></p>

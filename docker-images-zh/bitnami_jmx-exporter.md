@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnami/jmx-exporter
+description: "Bitnami提供的安全镜像，用于运行jmx-exporter以导出JMX指标，适用于Java应用监控场景。"
 source: https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter
 canonical: https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter" title="bitnami/jmx-exporter Docker 镜像中文简介、标签列表与拉取命令">bitnami/jmx-exporter — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter" title="bitnami/jmx-exporter Docker 镜像中文简介、标签列表与拉取命令">bitnami/jmx-exporter — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter" title="bitnami/jmx-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter" title="bitnami/jmx-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter</a>
 
 # Bitnami JMX Exporter 镜像文档
 
@@ -178,7 +179,3 @@ Copyright © 2025 Broadcom. "Broadcom" 指 Broadcom Inc. 及其子公司。
 本镜像基于 Apache License 2.0 许可分发，详见 [LICENSE](http://www.apache.org/licenses/LICENSE-2.0)。
 
 > 商标说明：本镜像由 Bitnami 打包，相关商标归各自公司所有，使用不代表关联或背书。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter" title="bitnami/jmx-exporter Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter</a></p>

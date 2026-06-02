@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: kasmweb/redroid
+description: "Redroid（远程Android）是适用于Kasm Workspaces的镜像，提供远程Android系统环境，支持在Kasm平台上远程访问和运行Android应用。"
 source: https://xuanyuan.cloud/zh/r/kasmweb/redroid
 canonical: https://xuanyuan.cloud/zh/r/kasmweb/redroid
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kasmweb/redroid" title="kasmweb/redroid Docker 镜像中文简介、标签列表与拉取命令">kasmweb/redroid — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kasmweb/redroid" title="kasmweb/redroid Docker 镜像中文简介、标签列表与拉取命令">kasmweb/redroid — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/kasmweb/redroid" title="kasmweb/redroid Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/redroid</a></p>
+<a href="https://xuanyuan.cloud/zh/r/kasmweb/redroid" title="kasmweb/redroid Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/redroid</a>
 
 # Kasm Workspaces Redroid 镜像文档
 
@@ -157,7 +158,3 @@ sudo docker run --rm -it --privileged --shm-size=512m \
 Kasm Workspaces 团队已开源我们的镜像库（[信息](https://www.kasmweb.com/docs/latest/guide/custom_images.html) 和 [源代码](https://github.com/kasmtech/workspaces-images)）。
 
 原生 Web 渲染由我们的开源项目 [KasmVNC](https://github.com/kasmtech/KasmVNC) 提供支持。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kasmweb/redroid" title="kasmweb/redroid Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/redroid</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/kong
+description: "这是一款专为API和微服务打造的云原生API网关，具备基于云原生架构的弹性扩展、动态路由、流量管理、安全防护及监控分析等核心能力，能够有效连接、管理和保护分布式微服务与各类API接口，助力企业构建高效、可靠、可扩展的现代应用架构，满足数字化转型中对服务治理和API生命周期管理的需求。"
 source: https://xuanyuan.cloud/zh/r/library/kong
 canonical: https://xuanyuan.cloud/zh/r/library/kong
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/kong" title="library/kong Docker 镜像中文简介、标签列表与拉取命令">library/kong — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/kong" title="library/kong Docker 镜像中文简介、标签列表与拉取命令">library/kong — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/kong" title="library/kong Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/kong</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/kong" title="library/kong Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/kong</a>
 
 # Kong Docker 镜像使用参考
 
@@ -75,7 +76,3 @@ Kong 官方文档请访问 [docs.konghq.com]([])。
 自动检测的附加许可证信息可查看 [repo-info 仓库的 `kong/` 目录]([])。  
 
 使用预构建镜像时，用户需自行确保对镜像中所有软件的使用符合相关许可证要求。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/kong" title="library/kong Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/kong</a></p>

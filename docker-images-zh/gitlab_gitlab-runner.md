@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: gitlab/gitlab-runner
+description: "GitLab CI多Runner是GitLab CI/CD生态中的关键组件，主要用于通过GitLab CI系统自动获取并运行各类流水线作业，支持在多种环境中执行构建、测试、部署等软件开发流程中的关键步骤，助力团队实现自动化协作与高效交付。"
 source: https://xuanyuan.cloud/zh/r/gitlab/gitlab-runner
 canonical: https://xuanyuan.cloud/zh/r/gitlab/gitlab-runner
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/gitlab/gitlab-runner" title="gitlab/gitlab-runner Docker 镜像中文简介、标签列表与拉取命令">gitlab/gitlab-runner — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gitlab/gitlab-runner" title="gitlab/gitlab-runner Docker 镜像中文简介、标签列表与拉取命令">gitlab/gitlab-runner — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/gitlab/gitlab-runner" title="gitlab/gitlab-runner Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gitlab/gitlab-runner</a></p>
+<a href="https://xuanyuan.cloud/zh/r/gitlab/gitlab-runner" title="gitlab/gitlab-runner Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/gitlab/gitlab-runner</a>
 
 # GitLab Runner Docker 镜像  
 
@@ -18,7 +19,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 `gitlab/gitlab-runner:latest` 是可用于在容器中运行 GitLab Runner 的镜像。  
 
 完整使用指南可参考 [GitLab Runner 文档]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/gitlab/gitlab-runner" title="gitlab/gitlab-runner Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/gitlab/gitlab-runner</a></p>

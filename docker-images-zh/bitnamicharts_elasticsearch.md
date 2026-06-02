@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnamicharts/elasticsearch
+description: "Bitnami提供的Elasticsearch Helm chart，用于在Kubernetes环境中便捷部署和管理分布式搜索引擎Elasticsearch。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/elasticsearch
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/elasticsearch
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/elasticsearch" title="bitnamicharts/elasticsearch Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/elasticsearch — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/elasticsearch" title="bitnamicharts/elasticsearch Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/elasticsearch — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/elasticsearch" title="bitnamicharts/elasticsearch Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/elasticsearch</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnamicharts/elasticsearch" title="bitnamicharts/elasticsearch Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/elasticsearch</a>
 
 # Bitnami Elasticsearch Stack
 
@@ -332,7 +333,3 @@ Elasticsearch 数据存储路径为容器内 `/bitnami/elasticsearch/data`。默
 | `containerPorts.restAPI` | Elasticsearch REST API 端口 | `9200` |
 | `containerPorts.transport` | Elasticsearch 传输端口 | `9300` |
 | `plugins` | 要安装的插件列表（逗号分隔） | `""` |
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/elasticsearch" title="bitnamicharts/elasticsearch Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/elasticsearch</a></p>

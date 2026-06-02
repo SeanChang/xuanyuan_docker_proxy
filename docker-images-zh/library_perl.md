@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/perl
+description: "Perl是一种高级、通用、解释型动态编程语言，此Docker镜像用于在容器环境中运行Perl应用程序，支持多种版本和变体以适应不同需求。"
 source: https://xuanyuan.cloud/zh/r/library/perl
 canonical: https://xuanyuan.cloud/zh/r/library/perl
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/perl" title="library/perl Docker 镜像中文简介、标签列表与拉取命令">library/perl — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/perl" title="library/perl Docker 镜像中文简介、标签列表与拉取命令">library/perl — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/perl" title="library/perl Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/perl</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/perl" title="library/perl Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/perl</a>
 
 # 快速参考
 
@@ -92,7 +93,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 - [`5.38.5-slim-threaded-bookworm`, `5.38-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/9a593371b5b762c4e6247a4b14141dfaa0ccaeb8/5.038.005-slim,threaded-bookworm/Dockerfile)
 
 - [`5.38.5-slim-threaded-bullseye`, `5.38-slim-threaded-bullseye`](https://github.com/perl/docker-perl/blob/9a593371b5b762c4e6247a4b14141dfaa0ccaeb8/5.038.005-slim,threaded-bullseye/Docker
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/perl" title="library/perl Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/perl</a></p>

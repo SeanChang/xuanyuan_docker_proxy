@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: xyliucd/ascow
+description: "基于ABHPC研发的适用于Slurm调度系统的超算用户与管理集成系统"
 source: https://xuanyuan.cloud/zh/r/xyliucd/ascow
 canonical: https://xuanyuan.cloud/zh/r/xyliucd/ascow
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/xyliucd/ascow" title="xyliucd/ascow Docker 镜像中文简介、标签列表与拉取命令">xyliucd/ascow — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/xyliucd/ascow" title="xyliucd/ascow Docker 镜像中文简介、标签列表与拉取命令">xyliucd/ascow — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/xyliucd/ascow" title="xyliucd/ascow Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xyliucd/ascow</a></p>
+<a href="https://xuanyuan.cloud/zh/r/xyliucd/ascow" title="xyliucd/ascow Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xyliucd/ascow</a>
 
 # 1 项目简介
 ## 1.1 声明
@@ -117,7 +118,3 @@ attributes:
     placeholder: "比如：/home/user/fds/test.fds"
 ```
 新增目录链接识别，可在交互式应用中直接链接到用户算例目录。优化资源选择，默认CPU和GPU核数独立设置，以方便用户选择资源。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/xyliucd/ascow" title="xyliucd/ascow Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/xyliucd/ascow</a></p>

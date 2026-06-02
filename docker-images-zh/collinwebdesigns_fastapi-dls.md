@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: collinwebdesigns/fastapi-dls
+description: "最小化的委托许可服务（DLS），提供委托许可服务功能。"
 source: https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls
 canonical: https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls" title="collinwebdesigns/fastapi-dls Docker 镜像中文简介、标签列表与拉取命令">collinwebdesigns/fastapi-dls — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls" title="collinwebdesigns/fastapi-dls Docker 镜像中文简介、标签列表与拉取命令">collinwebdesigns/fastapi-dls — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls" title="collinwebdesigns/fastapi-dls Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls</a></p>
+<a href="https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls" title="collinwebdesigns/fastapi-dls Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls</a>
 
 # FastAPI-DLS 技术文档
 
@@ -156,7 +157,3 @@ docker run -d \
 2. **端口映射**：容器内端口固定为 `443`，修改外部端口时需同步更新 `DLS_PORT` 环境变量（例如外部端口 `9443` 对应 `DLS_PORT=9443`）。
 3. **证书管理**：首次启动时，`/app/cert` 目录会自动生成 SSL 证书，若需更换自定义证书，可直接替换该目录下的文件。
 4. **数据库备份**：使用命名卷 `db` 持久化数据库，建议定期备份该卷数据以防丢失。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls" title="collinwebdesigns/fastapi-dls Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls</a></p>

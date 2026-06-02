@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ubuntu/redis
+description: "Redis是开源键值存储，提供由Canonical维护的长期版本。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/redis
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/redis
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/redis" title="ubuntu/redis Docker 镜像中文简介、标签列表与拉取命令">ubuntu/redis — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/redis" title="ubuntu/redis Docker 镜像中文简介、标签列表与拉取命令">ubuntu/redis — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/redis" title="ubuntu/redis Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/redis</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ubuntu/redis" title="ubuntu/redis Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/redis</a>
 
 # Redis™ 软件 | Ubuntu Docker 镜像文档
 
@@ -161,7 +162,3 @@ kubectl apply -f redis-deployment.yml
 请将 bug 标题格式化为：`redis: <问题摘要>`，并包含所用镜像的 digest（通过以下命令获取）：  
 ```sh
 docker images --no-trunc --quiet ubuntu/redis:<tag>
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/redis" title="ubuntu/redis Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/redis</a></p>

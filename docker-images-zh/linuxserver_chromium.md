@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/chromium
+description: "linuxserver/chromium是基于开源浏览器项目Chromium的Docker镜像，支持通过Web界面访问，提供多架构支持、GPU加速、安全配置选项及定期更新，适用于在容器环境中运行浏览器的场景。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/chromium
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/chromium
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/chromium" title="linuxserver/chromium Docker 镜像中文简介、标签列表与拉取命令">linuxserver/chromium — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/chromium" title="linuxserver/chromium Docker 镜像中文简介、标签列表与拉取命令">linuxserver/chromium — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/chromium" title="linuxserver/chromium Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/chromium</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/chromium" title="linuxserver/chromium Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/chromium</a>
 
 # linuxserver/chromium
 
@@ -353,7 +354,3 @@ uid=1000(your_user) gid=1000(your_user) groups=1000(your_user)
 如需为开发或自定义修改本地构建镜像：
 ```bash
 git clone https://github.com/linuxserver
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/chromium" title="linuxserver/chromium Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/chromium</a></p>

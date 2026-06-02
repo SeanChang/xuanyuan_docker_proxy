@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ai/qwen3-reranker
+description: "多语言重排序模型，用于文本检索，支持119种语言的文档相关性评分。"
 source: https://xuanyuan.cloud/zh/r/ai/qwen3-reranker
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen3-reranker
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-reranker" title="ai/qwen3-reranker Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-reranker — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen3-reranker" title="ai/qwen3-reranker Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-reranker — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-reranker" title="ai/qwen3-reranker Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-reranker</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ai/qwen3-reranker" title="ai/qwen3-reranker Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-reranker</a>
 
 # Qwen3-Reranker
 
@@ -102,7 +103,3 @@ curl --location 'http://localhost:8080/engines/vllm/score' \
 - [Qwen3-Reranker 0.6B](https://huggingface.co/Qwen/Qwen3-Reranker-0.6B)
 - [Qwen3-Reranker 4B](https://huggingface.co/Qwen/Qwen3-Reranker-4B)
 - [Qwen3-Reranker 8B](https://huggingface.co/Qwen/Qwen3-Reranker-8B)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/qwen3-reranker" title="ai/qwen3-reranker Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen3-reranker</a></p>

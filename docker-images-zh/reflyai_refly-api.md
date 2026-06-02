@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: reflyai/refly-api
+description: "全球首个面向非技术创作者的 Vibe 工作流平台，通过简单的提示词和可视化画布构建、分享和变现 AI 自动化工作流，无需编写代码。提供可干预的智能体、极简工作流工具、工作流副驾驶和工作流市场等核心功能。"
 source: https://xuanyuan.cloud/zh/r/reflyai/refly-api
 canonical: https://xuanyuan.cloud/zh/r/reflyai/refly-api
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/reflyai/refly-api" title="reflyai/refly-api Docker 镜像中文简介、标签列表与拉取命令">reflyai/refly-api — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/reflyai/refly-api" title="reflyai/refly-api Docker 镜像中文简介、标签列表与拉取命令">reflyai/refly-api — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/reflyai/refly-api" title="reflyai/refly-api Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/reflyai/refly-api</a></p>
+<a href="https://xuanyuan.cloud/zh/r/reflyai/refly-api" title="reflyai/refly-api Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/reflyai/refly-api</a>
 
 # Refly.AI
 
@@ -94,7 +95,3 @@ Refly Cloud · 自托管 · 论坛 · Discord · Twitter · 文档
 ## 许可证
 
 本仓库采用 ReflyAI 开源许可证，本质上是 Apache 2.0 许可证，但有一些额外的限制。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/reflyai/refly-api" title="reflyai/refly-api Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/reflyai/refly-api</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: prom/node-exporter
+description: "prom/node-exporter 是 Prometheus 开源生态中的核心主机监控组件，主要用于采集并通过 HTTP 接口暴露 Linux、Windows、macOS 等操作系统的系统级运行指标，包括 CPU 使用率、内存占用、磁盘空间与 I/O 性能、网络流量与连接状态、进程信息及系统负载等关键数据，为 Prometheus 提供底层主机监控数据源，支持用户构建全面的服务器性能监控与告警体系，广泛适用于物理机、虚拟机及容器化环境的基础监控场景。"
 source: https://xuanyuan.cloud/zh/r/prom/node-exporter
 canonical: https://xuanyuan.cloud/zh/r/prom/node-exporter
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/node-exporter" title="prom/node-exporter Docker 镜像中文简介、标签列表与拉取命令">prom/node-exporter — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/prom/node-exporter" title="prom/node-exporter Docker 镜像中文简介、标签列表与拉取命令">prom/node-exporter — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/prom/node-exporter" title="prom/node-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/node-exporter</a></p>
+<a href="https://xuanyuan.cloud/zh/r/prom/node-exporter" title="prom/node-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/node-exporter</a>
 
 # Node exporter
 
@@ -244,7 +245,3 @@ sysctl -w kernel.perf_event_paranoid=X
 
 
 ####
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/node-exporter" title="prom/node-exporter Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/prom/node-exporter</a></p>

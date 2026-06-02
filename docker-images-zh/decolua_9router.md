@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: decolua/9router
+description: "9Router AI 路由网关，将多种 AI 编程工具统一接入 40+ 服务商与 100+ 模型，支持本地持久化配置与 20128 端口 Web 管理。"
 source: https://xuanyuan.cloud/zh/r/decolua/9router
 canonical: https://xuanyuan.cloud/zh/r/decolua/9router
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/decolua/9router" title="decolua/9router Docker 镜像中文简介、标签列表与拉取命令">decolua/9router — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/decolua/9router" title="decolua/9router Docker 镜像中文简介、标签列表与拉取命令">decolua/9router — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/decolua/9router" title="decolua/9router Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/decolua/9router</a></p>
+<a href="https://xuanyuan.cloud/zh/r/decolua/9router" title="decolua/9router Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/decolua/9router</a>
 
 # 9Router Docker 镜像（decolua/9router）
 
@@ -62,7 +63,3 @@ docker stop 9router && docker rm 9router
 - 多 IDE / AI 客户端共用一套模型路由与密钥管理
 - 自建内网 AI 网关，降低直连公网 API 的复杂度
 - 需要按提供商或模型切换、聚合调用的开发与团队环境
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/decolua/9router" title="decolua/9router Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/decolua/9router</a></p>

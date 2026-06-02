@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: anujdatar/cups
+description: "通用UNIX打印系统（CUPS）服务器运行在Docker容器中，该容器化部署方式借助Docker的轻量级虚拟化技术，实现了打印服务的隔离运行、快速部署与跨环境移植，可高效管理网络打印任务、处理打印请求及协调打印机资源，为用户提供稳定且灵活的打印服务支持。"
 source: https://xuanyuan.cloud/zh/r/anujdatar/cups
 canonical: https://xuanyuan.cloud/zh/r/anujdatar/cups
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/anujdatar/cups" title="anujdatar/cups Docker 镜像中文简介、标签列表与拉取命令">anujdatar/cups — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/anujdatar/cups" title="anujdatar/cups Docker 镜像中文简介、标签列表与拉取命令">anujdatar/cups — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/anujdatar/cups" title="anujdatar/cups Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/anujdatar/cups</a></p>
+<a href="https://xuanyuan.cloud/zh/r/anujdatar/cups" title="anujdatar/cups Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/anujdatar/cups</a>
 
 # CUPS-docker  
 [GitHub地址]([])  
@@ -108,7 +109,3 @@ services:
 
 ## 致谢  
 本项目基于 **RagingTiger** 的工作开发：[[]]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/anujdatar/cups" title="anujdatar/cups Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/anujdatar/cups</a></p>

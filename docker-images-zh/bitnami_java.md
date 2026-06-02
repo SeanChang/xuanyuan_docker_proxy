@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnami/java
+description: "Bitnami Secure Image for Java 是 Bitnami 推出的针对 Java 应用开发与部署的安全镜像，其预配置了稳定的 Java 运行环境及相关依赖组件，通过严格的安全加固措施（如漏洞修复、最小权限配置、加密传输支持等）保障应用安全性，同时具备跨平台兼容性，可无缝适配主流云服务与容器平台，能帮助开发者与运维人员快速构建安全可靠的 Java 应用环境，有效减少环境配置时间与潜在安全风险。"
 source: https://xuanyuan.cloud/zh/r/bitnami/java
 canonical: https://xuanyuan.cloud/zh/r/bitnami/java
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/java" title="bitnami/java Docker 镜像中文简介、标签列表与拉取命令">bitnami/java — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/java" title="bitnami/java Docker 镜像中文简介、标签列表与拉取命令">bitnami/java — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnami/java" title="bitnami/java Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/java</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnami/java" title="bitnami/java Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/java</a>
 
 # Bitnami Java 软件包介绍
 
@@ -208,7 +209,3 @@ Java 发行版已从 AdoptOpenJDK 迁移至 OpenJDK Liberica。作为 VMware 的
 <[]>
 
 除非适用法律要求或书面同意，否则根据许可证分发的软件按“原样”分发，不附带任何明示或暗示的担保或条件。有关许可证下权限和限制的具体语言，请参阅许可证。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/java" title="bitnami/java Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/java</a></p>

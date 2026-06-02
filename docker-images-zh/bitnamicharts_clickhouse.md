@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnamicharts/clickhouse
+description: "Bitnami提供的Helm chart，用于在Kubernetes环境中简化ClickHouse列式数据库的部署、配置与管理，适用于OLAP场景下的数据分析需求。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse" title="bitnamicharts/clickhouse Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/clickhouse — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse" title="bitnamicharts/clickhouse Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/clickhouse — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse" title="bitnamicharts/clickhouse Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse" title="bitnamicharts/clickhouse Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse</a>
 
 # Bitnami ClickHouse Helm Chart 文档
 
@@ -317,7 +318,3 @@ Bitnami ClickHouse 镜像将数据和配置存储在容器的 `/bitnami/clickhou
 | `defaultInitContainers.volumePermissions.image.pullPolicy` | 镜像拉取策略 | `IfNotPresent` |
 
 > **注**：完整参数列表请参考 [Bitnami ClickHouse Chart 官方文档](https://github.com/bitnami/charts/blob/main/bitnami/clickhouse/README.md)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse" title="bitnamicharts/clickhouse Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse</a></p>

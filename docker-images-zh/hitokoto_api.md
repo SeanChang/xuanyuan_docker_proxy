@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: hitokoto/api
+description: "Hitokoto官方一言接口程序，基于Teng-koa实现，提供高扩展性，支持请求统计、JS回调、多进程运行、遥测等功能，适用于构建可扩展的一言API服务。"
 source: https://xuanyuan.cloud/zh/r/hitokoto/api
 canonical: https://xuanyuan.cloud/zh/r/hitokoto/api
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/hitokoto/api" title="hitokoto/api Docker 镜像中文简介、标签列表与拉取命令">hitokoto/api — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hitokoto/api" title="hitokoto/api Docker 镜像中文简介、标签列表与拉取命令">hitokoto/api — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/hitokoto/api" title="hitokoto/api Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hitokoto/api</a></p>
+<a href="https://xuanyuan.cloud/zh/r/hitokoto/api" title="hitokoto/api Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hitokoto/api</a>
 
 # Hitokoto API
 
@@ -100,7 +101,3 @@ Transfer/sec:     12.51MB
 
 ## 关于贡献
 可参考开发者文档了解框架基本运作机理，便于开发扩展功能（如新增音乐接口等）。项目团队持续基于Alinode、DeepScan、CodeClimate分析结果优化框架，计划通过多版本重构解决历史问题。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/hitokoto/api" title="hitokoto/api Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/hitokoto/api</a></p>

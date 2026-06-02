@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/clickhouse
+description: "ClickHouse 是一款专注于实时数据应用与分析领域的开源数据库，它不仅是目前速度最快的数据库之一，在资源利用效率上也表现卓越，能够高效支持各类实时应用场景下的数据存储、查询与分析需求，凭借其快速响应能力和低资源消耗特性，为实时数据处理与分析提供稳定可靠的解决方案。"
 source: https://xuanyuan.cloud/zh/r/library/clickhouse
 canonical: https://xuanyuan.cloud/zh/r/library/clickhouse
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/clickhouse" title="library/clickhouse Docker 镜像中文简介、标签列表与拉取命令">library/clickhouse — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/clickhouse" title="library/clickhouse Docker 镜像中文简介、标签列表与拉取命令">library/clickhouse — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/clickhouse" title="library/clickhouse Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/clickhouse</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/clickhouse" title="library/clickhouse Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/clickhouse</a>
 
 # ClickHouse Docker 镜像使用指南
 
@@ -257,7 +258,3 @@ EOSQL
 - 镜像包含的其他软件（如 Bash 等）可能涉及其他许可协议，详情见 [repo-info 仓库的 `clickhouse/` 目录]([])。  
 
 使用前请确保遵守所有软件的许可协议。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/clickhouse" title="library/clickhouse Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/clickhouse</a></p>

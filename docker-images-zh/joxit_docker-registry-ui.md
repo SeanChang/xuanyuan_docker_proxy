@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: joxit/docker-registry-ui
+description: "Docker Registry v2网页用户界面是用于可视化管理Docker镜像仓库的Web应用工具，支持浏览镜像列表、查看标签信息、检索镜像详情、执行镜像上传下载等操作，帮助用户直观监控和维护Docker镜像资源，提升镜像管理效率。"
 source: https://xuanyuan.cloud/zh/r/joxit/docker-registry-ui
 canonical: https://xuanyuan.cloud/zh/r/joxit/docker-registry-ui
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/joxit/docker-registry-ui" title="joxit/docker-registry-ui Docker 镜像中文简介、标签列表与拉取命令">joxit/docker-registry-ui — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/joxit/docker-registry-ui" title="joxit/docker-registry-ui Docker 镜像中文简介、标签列表与拉取命令">joxit/docker-registry-ui — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/joxit/docker-registry-ui" title="joxit/docker-registry-ui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/joxit/docker-registry-ui</a></p>
+<a href="https://xuanyuan.cloud/zh/r/joxit/docker-registry-ui" title="joxit/docker-registry-ui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/joxit/docker-registry-ui</a>
 
 # Docker Registry 用户界面
 
@@ -226,7 +227,3 @@ services:
 - [S3 存储后端配置]([])  
 - [HTTPS 配置]([])  
 - [Electron 独立应用]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/joxit/docker-registry-ui" title="joxit/docker-registry-ui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/joxit/docker-registry-ui</a></p>

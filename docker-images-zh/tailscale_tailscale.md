@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: tailscale/tailscale
+description: "在您专属的安全虚拟专用网络中，将您的设备与用户连接在一起，该网络能有效保障数据传输的私密性与安全性，支持多设备无缝接入，让用户无论身处何地都能便捷、安全地互联互通，满足个人或企业对网络连接的专属化、安全化需求，打造稳定可靠的私有网络环境。"
 source: https://xuanyuan.cloud/zh/r/tailscale/tailscale
 canonical: https://xuanyuan.cloud/zh/r/tailscale/tailscale
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/tailscale/tailscale" title="tailscale/tailscale Docker 镜像中文简介、标签列表与拉取命令">tailscale/tailscale — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/tailscale/tailscale" title="tailscale/tailscale Docker 镜像中文简介、标签列表与拉取命令">tailscale/tailscale — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/tailscale/tailscale" title="tailscale/tailscale Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/tailscale/tailscale</a></p>
+<a href="https://xuanyuan.cloud/zh/r/tailscale/tailscale" title="tailscale/tailscale Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/tailscale/tailscale</a>
 
 ### Tailscale Docker 镜像使用说明
 
@@ -114,7 +115,3 @@ docker exec tailscaled tailscale --socket /tmp/tailscaled.sock status
 
 ### 许可证
 详见 [许可证信息]()。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/tailscale/tailscale" title="tailscale/tailscale Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/tailscale/tailscale</a></p>

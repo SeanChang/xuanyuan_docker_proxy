@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: 0penclaw/openclaw
+description: "基于GitHub仓库https://github.com/openclaw/openclaw的Dockerfile构建的OpenClaw Docker镜像，用于OpenClaw应用的容器化部署。"
 source: https://xuanyuan.cloud/zh/r/0penclaw/openclaw
 canonical: https://xuanyuan.cloud/zh/r/0penclaw/openclaw
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/0penclaw/openclaw" title="0penclaw/openclaw Docker 镜像中文简介、标签列表与拉取命令">0penclaw/openclaw — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/0penclaw/openclaw" title="0penclaw/openclaw Docker 镜像中文简介、标签列表与拉取命令">0penclaw/openclaw — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/0penclaw/openclaw" title="0penclaw/openclaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/0penclaw/openclaw</a></p>
+<a href="https://xuanyuan.cloud/zh/r/0penclaw/openclaw" title="0penclaw/openclaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/0penclaw/openclaw</a>
 
 # OpenClaw Docker镜像文档
 
@@ -55,7 +56,3 @@ docker run -d --name openclaw-container openclaw:latest
 - 确保Docker引擎正常运行，且用户具有足够权限执行Docker命令
 - 如有特定端口映射或数据卷挂载需求，需在`docker run`命令中添加相应参数（如`-p`、`-v`等）
 - 建议定期从GitHub仓库获取最新的Dockerfile以更新镜像，确保应用功能和安全性
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/0penclaw/openclaw" title="0penclaw/openclaw Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/0penclaw/openclaw</a></p>

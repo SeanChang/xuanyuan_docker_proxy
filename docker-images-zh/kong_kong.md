@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: kong/kong
+description: "Kong官方构建的Kong OSS（开源API网关）Docker镜像，由Kong官方维护，官方Docker Hub仓库地址：https://hub.docker.com/_/kong。"
 source: https://xuanyuan.cloud/zh/r/kong/kong
 canonical: https://xuanyuan.cloud/zh/r/kong/kong
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kong/kong" title="kong/kong Docker 镜像中文简介、标签列表与拉取命令">kong/kong — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kong/kong" title="kong/kong Docker 镜像中文简介、标签列表与拉取命令">kong/kong — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/kong/kong" title="kong/kong Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kong/kong</a></p>
+<a href="https://xuanyuan.cloud/zh/r/kong/kong" title="kong/kong Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kong/kong</a>
 
 # Kong OSS 官方Docker镜像
 
@@ -64,7 +65,3 @@ docker run -d --name kong-oss \
 
 ---
 注：使用前请参考官方文档获取最新配置选项和最佳实践。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kong/kong" title="kong/kong Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kong/kong</a></p>

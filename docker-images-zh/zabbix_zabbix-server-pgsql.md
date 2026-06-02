@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: zabbix/zabbix-server-pgsql
+description: "支持PostgreSQL数据库的Zabbix服务器镜像，用于部署和运行Zabbix监控系统。"
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-pgsql
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-pgsql
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-pgsql" title="zabbix/zabbix-server-pgsql Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-server-pgsql — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-pgsql" title="zabbix/zabbix-server-pgsql Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-server-pgsql — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-pgsql" title="zabbix/zabbix-server-pgsql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-pgsql</a></p>
+<a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-pgsql" title="zabbix/zabbix-server-pgsql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-pgsql</a>
 
 ![logo](https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png)
 
@@ -237,7 +238,3 @@ docker run --name some-zabbix-server-pgsql \
 - Zabbix 6.4及以下版本：GNU General Public License v2 (GPLv2)
 
 详细许可条款见[FSF官方文档](http://www.fsf.org/licenses/)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-pgsql" title="zabbix/zabbix-server-pgsql Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-pgsql</a></p>

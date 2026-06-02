@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: xiaoyaliu/alist
+description: "我将 .xiaoya.pro 的内容以内嵌方式部署于容器中并对外发布，同时新增了原生不具备的搜索功能，在保留原平台内容完整性的基础上，通过容器化部署提升了服务的稳定性与可访问性，并借助新增的搜索功能为用户提供了更便捷的内容查找体验。"
 source: https://xuanyuan.cloud/zh/r/xiaoyaliu/alist
 canonical: https://xuanyuan.cloud/zh/r/xiaoyaliu/alist
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/xiaoyaliu/alist" title="xiaoyaliu/alist Docker 镜像中文简介、标签列表与拉取命令">xiaoyaliu/alist — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/xiaoyaliu/alist" title="xiaoyaliu/alist Docker 镜像中文简介、标签列表与拉取命令">xiaoyaliu/alist — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/xiaoyaliu/alist" title="xiaoyaliu/alist Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xiaoyaliu/alist</a></p>
+<a href="https://xuanyuan.cloud/zh/r/xiaoyaliu/alist" title="xiaoyaliu/alist Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xiaoyaliu/alist</a>
 
 ### 数据内容参考  
 数据内容请参考：[.xiaoya.pro]()  
@@ -48,7 +49,3 @@ docker restart xiaoya
 
 
 ![相关图示]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/xiaoyaliu/alist" title="xiaoyaliu/alist Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/xiaoyaliu/alist</a></p>

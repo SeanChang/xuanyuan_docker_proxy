@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: zeroclue/comfyui
+description: "ComfyUI的Docker镜像，提供可视化界面用于创建和运行AI生成图像工作流，支持Stable Diffusion等模型，简化部署与使用流程，适合AI图像生成研究和应用开发。"
 source: https://xuanyuan.cloud/zh/r/zeroclue/comfyui
 canonical: https://xuanyuan.cloud/zh/r/zeroclue/comfyui
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zeroclue/comfyui" title="zeroclue/comfyui Docker 镜像中文简介、标签列表与拉取命令">zeroclue/comfyui — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zeroclue/comfyui" title="zeroclue/comfyui Docker 镜像中文简介、标签列表与拉取命令">zeroclue/comfyui — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/zeroclue/comfyui" title="zeroclue/comfyui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zeroclue/comfyui</a></p>
+<a href="https://xuanyuan.cloud/zh/r/zeroclue/comfyui" title="zeroclue/comfyui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zeroclue/comfyui</a>
 
 # ComfyUI Docker镜像
 
@@ -139,7 +140,3 @@ docker run -p 8188:8188 \
 - GPU加速需要兼容的NVIDIA显卡和驱动
 - 首次运行可能需要下载额外资源，请确保网络连接正常
 - 生产环境使用时建议配置适当的资源限制和安全措施
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zeroclue/comfyui" title="zeroclue/comfyui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zeroclue/comfyui</a></p>

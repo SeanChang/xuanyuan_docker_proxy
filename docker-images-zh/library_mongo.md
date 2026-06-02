@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/mongo
+description: "MongoDB是一种文档型数据库，具备高可用性和易扩展性，它采用灵活的文档模型（以BSON格式存储数据，类似JSON），能够高效处理非结构化和半结构化数据，通过副本集机制保障数据的高可用性，同时支持分片集群实现水平扩展，可轻松应对数据量和访问量的增长，适用于各类需要灵活存储和弹性扩展的应用场景。"
 source: https://xuanyuan.cloud/zh/r/library/mongo
 canonical: https://xuanyuan.cloud/zh/r/library/mongo
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/mongo" title="library/mongo Docker 镜像中文简介、标签列表与拉取命令">library/mongo — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/mongo" title="library/mongo Docker 镜像中文简介、标签列表与拉取命令">library/mongo — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/mongo" title="library/mongo Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/mongo</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/mongo" title="library/mongo Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/mongo</a>
 
 # MongoDB Docker 镜像使用指南
 
@@ -272,7 +273,3 @@ $ docker exec some-mongo sh -c 'exec mongodump -d <database_name> --archive' > /
 ```  
 - `<database_name>`：需备份的数据库名  
 - `/host/path/backup.archive`：主机
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/mongo" title="library/mongo Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/mongo</a></p>

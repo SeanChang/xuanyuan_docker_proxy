@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: eosphorosai/dbgpt-openai
+description: "轻量级Docker镜像，仅包含DB-GPT中的代理模型，适用于CPU环境。"
 source: https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt-openai
 canonical: https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt-openai
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt-openai" title="eosphorosai/dbgpt-openai Docker 镜像中文简介、标签列表与拉取命令">eosphorosai/dbgpt-openai — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt-openai" title="eosphorosai/dbgpt-openai Docker 镜像中文简介、标签列表与拉取命令">eosphorosai/dbgpt-openai — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt-openai" title="eosphorosai/dbgpt-openai Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt-openai</a></p>
+<a href="https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt-openai" title="eosphorosai/dbgpt-openai Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt-openai</a>
 
 # DB-GPT Proxy (CPU) 镜像文档
 
@@ -124,7 +125,3 @@ networks:
 - **无GPU支持**：镜像仅支持CPU运行，不可用于依赖GPU的代理加速场景。
 - **后端依赖**：需确保`BACKEND_MODEL_URL`指向可用的DB-GPT模型服务（或兼容API的模型服务），否则代理无法正常转发请求。
 - **网络连通性**：容器需与后端模型服务处于同一网络（或通过公网地址访问），建议使用Docker网络（如bridge、overlay）确保通信。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt-openai" title="eosphorosai/dbgpt-openai Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/eosphorosai/dbgpt-openai</a></p>

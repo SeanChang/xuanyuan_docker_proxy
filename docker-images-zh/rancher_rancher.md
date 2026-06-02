@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: rancher/rancher
+description: "这是一款专为在生产环境中部署容器的组织打造的容器管理平台，它能全面支持容器的部署、监控、扩展与运维等全生命周期管理，帮助企业有效提升生产环境中容器应用的运行效率与稳定性，优化资源配置，简化管理流程，适用于各类需要在生产场景中规模化或复杂化部署容器的机构，满足其对容器应用可靠运行与高效管理的核心需求。"
 source: https://xuanyuan.cloud/zh/r/rancher/rancher
 canonical: https://xuanyuan.cloud/zh/r/rancher/rancher
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/rancher/rancher" title="rancher/rancher Docker 镜像中文简介、标签列表与拉取命令">rancher/rancher — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rancher/rancher" title="rancher/rancher Docker 镜像中文简介、标签列表与拉取命令">rancher/rancher — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/rancher/rancher" title="rancher/rancher Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rancher/rancher</a></p>
+<a href="https://xuanyuan.cloud/zh/r/rancher/rancher" title="rancher/rancher Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rancher/rancher</a>
 
 ### 镜像说明  
 
@@ -26,7 +27,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 
 ### 使用参考  
 关于 Rancher 的具体使用方法，可查阅官方文档：[]
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/rancher/rancher" title="rancher/rancher Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/rancher/rancher</a></p>

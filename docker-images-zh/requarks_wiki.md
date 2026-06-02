@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: requarks/wiki
+description: "Wiki.js - 一款基于NodeJS构建的现代化、轻量级且功能强大的维基应用"
 source: https://xuanyuan.cloud/zh/r/requarks/wiki
 canonical: https://xuanyuan.cloud/zh/r/requarks/wiki
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/requarks/wiki" title="requarks/wiki Docker 镜像中文简介、标签列表与拉取命令">requarks/wiki — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/requarks/wiki" title="requarks/wiki Docker 镜像中文简介、标签列表与拉取命令">requarks/wiki — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/requarks/wiki" title="requarks/wiki Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/requarks/wiki</a></p>
+<a href="https://xuanyuan.cloud/zh/r/requarks/wiki" title="requarks/wiki Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/requarks/wiki</a>
 
 <img src="https://static.requarks.io/logo/wikijs-full.svg" width="500" />
 
@@ -100,7 +101,3 @@ https://js.wiki
 - [1.x版本Docker安装指南](https://docs-legacy.requarks.io/wiki/install/docker)  
 
 配置项包括数据库连接（支持PostgreSQL、MySQL、SQLite等）、端口映射、数据卷挂载、环境变量设置等，需根据实际需求调整。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/requarks/wiki" title="requarks/wiki Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/requarks/wiki</a></p>

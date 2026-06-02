@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: osrf/ros
+description: "OSRF 提供的 ROS（机器人操作系统）Docker 镜像，支持 ROS 1 和 ROS 2，基于官方镜像构建并包含桌面安装元包，适用于开发环境和 GUI 应用程序。必须使用显式标签拉取，不支持 latest 标签。"
 source: https://xuanyuan.cloud/zh/r/osrf/ros
 canonical: https://xuanyuan.cloud/zh/r/osrf/ros
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/osrf/ros" title="osrf/ros Docker 镜像中文简介、标签列表与拉取命令">osrf/ros — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/osrf/ros" title="osrf/ros Docker 镜像中文简介、标签列表与拉取命令">osrf/ros — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/osrf/ros" title="osrf/ros Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/osrf/ros</a></p>
+<a href="https://xuanyuan.cloud/zh/r/osrf/ros" title="osrf/ros Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/osrf/ros</a>
 
 # OSRF ROS Docker 镜像
 
@@ -119,7 +120,3 @@ docker run -it \
 ## 许可证
 
 遵循 ROS 和相应基础镜像的许可证协议。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/osrf/ros" title="osrf/ros Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/osrf/ros</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: kindest/base
+description: "KIND（Kubernetes IN Docker）项目的基础镜像，用于提供构建和运行本地Kubernetes集群所需的底层环境，支持KIND工具创建开发、测试用Kubernetes集群。"
 source: https://xuanyuan.cloud/zh/r/kindest/base
 canonical: https://xuanyuan.cloud/zh/r/kindest/base
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kindest/base" title="kindest/base Docker 镜像中文简介、标签列表与拉取命令">kindest/base — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kindest/base" title="kindest/base Docker 镜像中文简介、标签列表与拉取命令">kindest/base — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/kindest/base" title="kindest/base Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kindest/base</a></p>
+<a href="https://xuanyuan.cloud/zh/r/kindest/base" title="kindest/base Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kindest/base</a>
 
 # kind 基础镜像技术文档
 
@@ -87,7 +88,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 - **自建基础镜像指南**：[kind 快速入门 - 构建基础镜像](https://kind.sigs.k8s.io/docs/user/quick-start/#building-the-base-image)
 - **源代码**：[github.com/kubernetes-sigs/kind/tree/main/images/base](https://github.com/kubernetes-sigs/kind/tree/main/images/base)
 - **贡献指南**：[kind 贡献者入门](https://kind.sigs.k8s.io/docs/contributing/getting-started/)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kindest/base" title="kindest/base Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kindest/base</a></p>

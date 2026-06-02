@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: kubernetesui/dashboard
+description: "用于Kubernetes集群的通用Web用户界面"
 source: https://xuanyuan.cloud/zh/r/kubernetesui/dashboard
 canonical: https://xuanyuan.cloud/zh/r/kubernetesui/dashboard
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kubernetesui/dashboard" title="kubernetesui/dashboard Docker 镜像中文简介、标签列表与拉取命令">kubernetesui/dashboard — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kubernetesui/dashboard" title="kubernetesui/dashboard Docker 镜像中文简介、标签列表与拉取命令">kubernetesui/dashboard — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/kubernetesui/dashboard" title="kubernetesui/dashboard Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kubernetesui/dashboard</a></p>
+<a href="https://xuanyuan.cloud/zh/r/kubernetesui/dashboard" title="kubernetesui/dashboard Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kubernetesui/dashboard</a>
 
 # Kubernetes Dashboard 镜像文档
 
@@ -116,7 +117,3 @@ services:
 1. **生产环境部署**：建议通过 Kubernetes 官方资源清单部署（`kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml`），而非直接 Docker 运行，以确保与集群的安全集成（如 RBAC、网络策略）。  
 2. **安全配置**：生产环境必须启用 HTTPS，配置自定义证书，并通过 RBAC 严格限制用户权限（避免使用高权限 ServiceAccount）。  
 3. **版本兼容性**：Dashboard 版本需与 Kubernetes 集群版本匹配（如 Dashboard v2.7.x 兼容 K8s 1.24+），具体参考 [官方版本说明](https://github.com/kubernetes/dashboard/releases)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kubernetesui/dashboard" title="kubernetesui/dashboard Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kubernetesui/dashboard</a></p>

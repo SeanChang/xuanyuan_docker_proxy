@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/swarm
+description: "已弃用；请改用“docker swarm init”。"
 source: https://xuanyuan.cloud/zh/r/library/swarm
 canonical: https://xuanyuan.cloud/zh/r/library/swarm
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/swarm" title="library/swarm Docker 镜像中文简介、标签列表与拉取命令">library/swarm — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/swarm" title="library/swarm Docker 镜像中文简介、标签列表与拉取命令">library/swarm — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/swarm" title="library/swarm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/swarm</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/swarm" title="library/swarm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/swarm</a>
 
 # Swarm 镜像文档
 
@@ -130,7 +131,3 @@ swarm manage --tlsverify --tlscacert=<CA证书路径> --tlscert=<服务端证书
 - **额外许可证信息**：可参考 [repo-info 仓库的 swarm 目录](https://github.com/docker-library/repo-info/tree/master/repos/swarm)。  
 
 **使用须知**：使用本镜像需确保遵守所有包含软件的相关许可证。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/swarm" title="library/swarm Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/swarm</a></p>

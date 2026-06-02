@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: mongodb/atlas
+description: "从命令行创建、管理和自动化MongoDB Atlas资源"
 source: https://xuanyuan.cloud/zh/r/mongodb/atlas
 canonical: https://xuanyuan.cloud/zh/r/mongodb/atlas
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mongodb/atlas" title="mongodb/atlas Docker 镜像中文简介、标签列表与拉取命令">mongodb/atlas — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mongodb/atlas" title="mongodb/atlas Docker 镜像中文简介、标签列表与拉取命令">mongodb/atlas — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/mongodb/atlas" title="mongodb/atlas Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mongodb/atlas</a></p>
+<a href="https://xuanyuan.cloud/zh/r/mongodb/atlas" title="mongodb/atlas Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mongodb/atlas</a>
 
 # Atlas CLI Docker镜像
 
@@ -63,7 +64,3 @@ docker pull mongodb/atlas:tag
 ## 许可证
 
 MongoDB Atlas CLI采用Apache 2.0许可证发布，详见[许可证文件](https://github.com/mongodb/mongodb-atlas-cli/blob/master/LICENSE)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mongodb/atlas" title="mongodb/atlas Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mongodb/atlas</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnami/pgpool
+description: "Bitnami提供的安全pgpool镜像，用于PostgreSQL数据库的连接池管理、负载均衡及高可用中间件。"
 source: https://xuanyuan.cloud/zh/r/bitnami/pgpool
 canonical: https://xuanyuan.cloud/zh/r/bitnami/pgpool
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/pgpool" title="bitnami/pgpool Docker 镜像中文简介、标签列表与拉取命令">bitnami/pgpool — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/pgpool" title="bitnami/pgpool Docker 镜像中文简介、标签列表与拉取命令">bitnami/pgpool — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnami/pgpool" title="bitnami/pgpool Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/pgpool</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnami/pgpool" title="bitnami/pgpool Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/pgpool</a>
 
 # Bitnami Pgpool-II 镜像文档
 
@@ -322,7 +323,3 @@ services:
 - **数据持久化**：通过卷挂载持久化 PostgreSQL 数据（如示例中 `pg_0_data` 卷）
 - **版本迁移**：2025 年 8 月 28 日后，历史版本镜像将迁移至 `docker.io/bitnamilegacy` 仓库，建议定期更新 `latest` 标签或迁移至 Secure Images
 - **非 root 容器**：镜像默认以非 root 用户运行，提升安全性，避免挂载特权路径
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/pgpool" title="bitnami/pgpool Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/pgpool</a></p>

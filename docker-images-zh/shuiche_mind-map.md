@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: shuiche/mind-map
+description: "这是一款基于Web的思维导图工具，支持在线创建、编辑与管理思维导图，界面简洁直观且操作便捷，能帮助用户高效梳理思路、规划项目或整理信息，其源码已开源，地址为[]"
 source: https://xuanyuan.cloud/zh/r/shuiche/mind-map
 canonical: https://xuanyuan.cloud/zh/r/shuiche/mind-map
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/shuiche/mind-map" title="shuiche/mind-map Docker 镜像中文简介、标签列表与拉取命令">shuiche/mind-map — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/shuiche/mind-map" title="shuiche/mind-map Docker 镜像中文简介、标签列表与拉取命令">shuiche/mind-map — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/shuiche/mind-map" title="shuiche/mind-map Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/shuiche/mind-map</a></p>
+<a href="https://xuanyuan.cloud/zh/r/shuiche/mind-map" title="shuiche/mind-map Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/shuiche/mind-map</a>
 
 ## 思维导图项目 Docker 部署说明  
 
@@ -25,7 +26,3 @@ docker run -d -p 8081:8080 shuiche/mind-map:latest
 - `-d`：后台运行容器；  
 - `-p 8081:8080`：将主机的 8081 端口映射到容器的 8080 端口（访问项目时使用 `[]  
 - `shuiche/mind-map:latest`：使用的 Docker 镜像名称及版本。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/shuiche/mind-map" title="shuiche/mind-map Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/shuiche/mind-map</a></p>

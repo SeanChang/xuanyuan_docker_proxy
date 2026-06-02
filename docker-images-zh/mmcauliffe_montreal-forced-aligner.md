@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: mmcauliffe/montreal-forced-aligner
+description: "蒙特利尔强制对齐器(Montreal Forced Aligner)的官方Docker镜像，用于音频与文本的强制对齐，生成音素级时间标记，支持多语言语音处理与语音数据预处理。"
 source: https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner
 canonical: https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner" title="mmcauliffe/montreal-forced-aligner Docker 镜像中文简介、标签列表与拉取命令">mmcauliffe/montreal-forced-aligner — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner" title="mmcauliffe/montreal-forced-aligner Docker 镜像中文简介、标签列表与拉取命令">mmcauliffe/montreal-forced-aligner — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner" title="mmcauliffe/montreal-forced-aligner Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner</a></p>
+<a href="https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner" title="mmcauliffe/montreal-forced-aligner Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner</a>
 
 # 蒙特利尔强制对齐器(Montreal Forced Aligner) Docker镜像
 
@@ -93,7 +94,3 @@ docker run -it --rm \
 - MFA官方项目：[GitHub仓库](https://github.com/MontrealCorpusTools/Montreal-Forced-Aligner)
 - 完整文档：[MFA ReadTheDocs](https://montreal-forced-aligner.readthedocs.io/)
 - 预训练模型列表：[官方模型库](https://mfa-models.readthedocs.io/)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner" title="mmcauliffe/montreal-forced-aligner Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner</a></p>

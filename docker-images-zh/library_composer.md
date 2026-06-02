@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/composer
+description: "Composer是PHP的依赖管理器，用于管理PHP项目的依赖。"
 source: https://xuanyuan.cloud/zh/r/library/composer
 canonical: https://xuanyuan.cloud/zh/r/library/composer
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/composer" title="library/composer Docker 镜像中文简介、标签列表与拉取命令">library/composer — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/composer" title="library/composer Docker 镜像中文简介、标签列表与拉取命令">library/composer — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/composer" title="library/composer Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/composer</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/composer" title="library/composer Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/composer</a>
 
 # Composer Docker镜像文档
 
@@ -243,7 +244,3 @@ services:
 一些能够自动检测到的其他许可证信息可能位于[`repo-info`仓库的`composer/`目录](https://github.com/docker-library/repo-info/tree/master/repos/composer)中。
 
 至于任何预构建镜像的使用，镜像用户有责任确保对本镜像的任何使用都符合其中包含的所有软件的相关许可证。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/composer" title="library/composer Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/composer</a></p>

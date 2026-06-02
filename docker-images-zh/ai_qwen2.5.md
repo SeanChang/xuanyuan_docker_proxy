@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ai/qwen2.5
+description: "通义千问迎来重要更新，本次升级在语言能力上实现显著提升，涵盖更精准的语义理解、更自然的文本生成及更深入的多轮对话表现，同时大幅拓宽支持范围，包括更长文本处理、多模态交互（如图文结合）及更多行业场景适配，为用户带来更智能、更全面的AI服务体验。"
 source: https://xuanyuan.cloud/zh/r/ai/qwen2.5
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen2.5
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/qwen2.5" title="ai/qwen2.5 Docker 镜像中文简介、标签列表与拉取命令">ai/qwen2.5 — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen2.5" title="ai/qwen2.5 Docker 镜像中文简介、标签列表与拉取命令">ai/qwen2.5 — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ai/qwen2.5" title="ai/qwen2.5 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen2.5</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ai/qwen2.5" title="ai/qwen2.5 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen2.5</a>
 
 # Qwen2.5-7B Instruct
 
@@ -107,7 +108,3 @@ docker model run ai/qwen2.5
 
 - [Qwen2.5：基础模型系列介绍]([])  
 - [Qwen2.5 技术报告]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/qwen2.5" title="ai/qwen2.5 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ai/qwen2.5</a></p>

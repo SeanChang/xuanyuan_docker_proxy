@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/solr
+description: "Solr是一款基于Apache Lucene构建的极速、开源多模态搜索平台，它凭借Lucene强大的底层索引与检索技术，实现了超快速的信息响应能力，作为开源项目具备高度灵活性与可扩展性，支持文本、图像等多种模态数据的搜索需求，广泛应用于企业级信息检索、内容管理等场景，为用户提供高效、精准且可定制的搜索体验。"
 source: https://xuanyuan.cloud/zh/r/library/solr
 canonical: https://xuanyuan.cloud/zh/r/library/solr
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/solr" title="library/solr Docker 镜像中文简介、标签列表与拉取命令">library/solr — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/solr" title="library/solr Docker 镜像中文简介、标签列表与拉取命令">library/solr — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/solr" title="library/solr Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/solr</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/solr" title="library/solr Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/solr</a>
 
 # Solr Docker 镜像介绍
 
@@ -102,7 +103,3 @@ Solr 基于 [Apache License, Version 2.0]([]) 许可。
 与所有 Docker 镜像一样，本镜像可能包含其他软件（如基础系统的 Bash 等），这些软件可能采用其他许可协议。部分自动检测到的许可信息可在 [repo-info 仓库的 solr/ 目录]([]) 中找到。
 
 使用预构建镜像时，用户需自行确保其使用符合所有包含软件的许可要求。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/solr" title="library/solr Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/solr</a></p>

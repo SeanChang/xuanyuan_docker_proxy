@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: kartoza/geoserver
+description: "kartoza/geoserver 是基于开源GeoServer构建的Docker镜像，可快速部署和运行地理空间数据服务器，完整支持OGC标准（如WMS、WFS、WCS），方便用户轻松发布、管理和可视化各类地理数据，适用于GIS应用、地图服务和空间数据分析场景。容器化设计简化部署流程，确保跨平台运行一致性，内置优化配置提供稳定高效的地图服务能力，帮助开发者和系统管理员快速搭建地理数据服务平台，有效降低GIS系统搭建复杂度，加速地理空间应用开发与部署。"
 source: https://xuanyuan.cloud/zh/r/kartoza/geoserver
 canonical: https://xuanyuan.cloud/zh/r/kartoza/geoserver
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kartoza/geoserver" title="kartoza/geoserver Docker 镜像中文简介、标签列表与拉取命令">kartoza/geoserver — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kartoza/geoserver" title="kartoza/geoserver Docker 镜像中文简介、标签列表与拉取命令">kartoza/geoserver — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/kartoza/geoserver" title="kartoza/geoserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kartoza/geoserver</a></p>
+<a href="https://xuanyuan.cloud/zh/r/kartoza/geoserver" title="kartoza/geoserver Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kartoza/geoserver</a>
 
 # Kartoza docker-geoserver 介绍  
 
@@ -342,7 +343,3 @@ docker run --name "geoserver" -e GEOSERVER_ADMIN_USER=kartoza -v /data/controlfl
 ### JMS 集群  
 
 GeoServer 支持基于 JMS 集群插件的集群部署，详细配置见 [kartoza 集群文档]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kartoza/geoserver" title="kartoza/geoserver Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kartoza/geoserver</a></p>

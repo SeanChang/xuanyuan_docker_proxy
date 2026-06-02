@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/wordpress
+description: "WordPress作为全球广泛使用的开源平台，是一款功能丰富的内容管理系统，它能够通过灵活运用各类插件、实用小工具及多样化主题，帮助用户轻松构建个性化网站、高效管理图文影音等各类内容，并根据需求自定义界面风格与功能模块，满足从个人博客到企业站点的不同场景应用需求。"
 source: https://xuanyuan.cloud/zh/r/library/wordpress
 canonical: https://xuanyuan.cloud/zh/r/library/wordpress
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/wordpress" title="library/wordpress Docker 镜像中文简介、标签列表与拉取命令">library/wordpress — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/wordpress" title="library/wordpress Docker 镜像中文简介、标签列表与拉取命令">library/wordpress — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/wordpress" title="library/wordpress Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/wordpress</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/wordpress" title="library/wordpress Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/wordpress</a>
 
 # WordPress Docker 镜像使用指南
 
@@ -184,7 +185,3 @@ volumes:
 ### 预装主题/插件  
 - **运行时挂载**：将主题/插件目录挂载到 `/var/www/html/wp-content/themes/` 或 `/var/www/html/wp-content/plugins/`。  
 - **构建时集成**：构建镜像时，将主题/插件放在 `/usr/src/wordpress/wp-content/`（容器首次启动时会复制
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/wordpress" title="library/wordpress Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/wordpress</a></p>

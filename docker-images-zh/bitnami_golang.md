@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnami/golang
+description: "Bitnami安全Golang镜像，提供加固配置与安全更新，适用于构建和运行Golang应用的生产环境。"
 source: https://xuanyuan.cloud/zh/r/bitnami/golang
 canonical: https://xuanyuan.cloud/zh/r/bitnami/golang
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/golang" title="bitnami/golang Docker 镜像中文简介、标签列表与拉取命令">bitnami/golang — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/golang" title="bitnami/golang Docker 镜像中文简介、标签列表与拉取命令">bitnami/golang — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnami/golang" title="bitnami/golang Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/golang</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnami/golang" title="bitnami/golang Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/golang</a>
 
 # Bitnami Golang 镜像文档
 
@@ -252,7 +253,3 @@ docker-compose up -d
 <http://www.apache.org/licenses/LICENSE-2.0>
 
 除非适用法律要求或书面同意，否则根据许可证分发的软件按 “原样” 分发，不附带任何明示或暗示的担保或条件。有关许可证下权限和限制的具体语言，请参阅许可证。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/golang" title="bitnami/golang Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/golang</a></p>

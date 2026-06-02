@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: atlassian/maven
+description: "在预创建的非root用户下运行的Apache Maven"
 source: https://xuanyuan.cloud/zh/r/atlassian/maven
 canonical: https://xuanyuan.cloud/zh/r/atlassian/maven
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/atlassian/maven" title="atlassian/maven Docker 镜像中文简介、标签列表与拉取命令">atlassian/maven — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/atlassian/maven" title="atlassian/maven Docker 镜像中文简介、标签列表与拉取命令">atlassian/maven — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/atlassian/maven" title="atlassian/maven Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/atlassian/maven</a></p>
+<a href="https://xuanyuan.cloud/zh/r/atlassian/maven" title="atlassian/maven Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/atlassian/maven</a>
 
 # Maven Docker镜像文档
 
@@ -52,7 +53,3 @@ docker run --rm -v /本地路径/.m2:/home/user/.m2 [镜像名称] mvn clean ins
 - **运行用户**：容器内默认使用预创建的非root用户（用户名通常为`user`，具体可通过`docker exec -it [容器ID] whoami`命令查看）
 - **目录权限**：`/home/user`和`/home/user/.m2`目录拥有非root用户的读写权限，避免对主机文件系统的未授权修改
 - **权限扩展**：如需额外权限，可通过`--user`参数临时调整用户，但建议优先保持非root运行模式以确保安全性
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/atlassian/maven" title="atlassian/maven Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/atlassian/maven</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: mediagis/nominatim
+description: "可直接运行的Nominatim容器，提供地理编码（地址与坐标互转）服务。"
 source: https://xuanyuan.cloud/zh/r/mediagis/nominatim
 canonical: https://xuanyuan.cloud/zh/r/mediagis/nominatim
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mediagis/nominatim" title="mediagis/nominatim Docker 镜像中文简介、标签列表与拉取命令">mediagis/nominatim — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mediagis/nominatim" title="mediagis/nominatim Docker 镜像中文简介、标签列表与拉取命令">mediagis/nominatim — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/mediagis/nominatim" title="mediagis/nominatim Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mediagis/nominatim</a></p>
+<a href="https://xuanyuan.cloud/zh/r/mediagis/nominatim" title="mediagis/nominatim Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mediagis/nominatim</a>
 
 # Nominatim Docker 镜像文档
 
@@ -157,7 +158,3 @@ docker-compose up -d
       <td align="center" valign="top" width="16.66%"><a href="https://github.com/FritschAuctores"><img src="https://avatars2.githubusercontent.com/u/43264099?v=4?s=100" width="100px;" alt="FritschAuctores"/><br /><sub><b>FritschAuctores</b></sub></a><br /><a href="https://github.com/mediagis/nominatim-docker/commits?author=FritschAuctores" title="代码">💻</a></td>
       <td align="center" valign="top" width="16.66%"><a href="https://github.com/rebos"><img src="https://avatars.githubusercontent.com/u/490798?v=4?s=100" width="100px;" alt="rebos"/><br /><sub><b>rebos</b></sub></a><br /><a href="https://github.com/mediagis/nominatim-docker/commits?author=rebos" title="代码">💻</a></td>
       <td align="center" valign="top" width="16.66%"><a href="https://leonard.io/blog/"><img src="https://avatars.githubusercontent.com/u/151346?v=4?s=100" width="100px;" alt="Leonard Ehrenfried"/><br /><sub><b>Leonard Ehrenfried</b></sub></a><br /><a href="#infra-leonardehrenfried" title="基础设施（托管、构建工具等）">🚇
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mediagis/nominatim" title="mediagis/nominatim Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mediagis/nominatim</a></p>

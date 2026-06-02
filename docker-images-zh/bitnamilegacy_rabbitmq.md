@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnamilegacy/rabbitmq
+description: "Bitnami旧版镜像（不再更新）"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/rabbitmq
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/rabbitmq
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/rabbitmq" title="bitnamilegacy/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/rabbitmq — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/rabbitmq" title="bitnamilegacy/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/rabbitmq — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/rabbitmq" title="bitnamilegacy/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamilegacy/rabbitmq</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/rabbitmq" title="bitnamilegacy/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamilegacy/rabbitmq</a>
 
 # Bitnami旧版镜像文档
 
@@ -50,7 +51,3 @@ docker push [私有仓库地址]/[镜像名称]:[标签]
 ## 注意事项
 - **仓库生命周期**：Bitnami Legacy仓库未来可能被永久移除，建议尽快完成必要镜像的迁移存储
 - **生产环境建议**：对于生产工作负载和长期支持需求，强烈建议采用[Bitnami Secure Images](https://bitnami.com/)，其包含强化容器、更小攻击面、CVE透明度（通过VEX/KEV）、SBOM以及企业级支持
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/rabbitmq" title="bitnamilegacy/rabbitmq Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamilegacy/rabbitmq</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/bazarr
+description: "Bazarr Docker镜像，用于自动下载、管理媒体文件字幕，支持多语言，可与媒体服务器集成，简化字幕获取与维护流程。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/bazarr
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/bazarr
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/bazarr" title="linuxserver/bazarr Docker 镜像中文简介、标签列表与拉取命令">linuxserver/bazarr — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/bazarr" title="linuxserver/bazarr Docker 镜像中文简介、标签列表与拉取命令">linuxserver/bazarr — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/bazarr" title="linuxserver/bazarr Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/bazarr</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/bazarr" title="linuxserver/bazarr Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/bazarr</a>
 
 # linuxserver/bazarr
 
@@ -317,7 +318,3 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 - **23.03.19:** - 切换到新的基础镜像，迁移至 arm32v7 标签
 - **22.02.19:** - 重新基于 Alpine 3.9 构建
 - **11.09.18:** - 初始发布
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/bazarr" title="linuxserver/bazarr Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/bazarr</a></p>

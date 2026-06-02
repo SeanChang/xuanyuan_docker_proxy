@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: nvidia/cuda
+description: "英伟达在GitLab仓库（gitlab.com/nvidia/cuda）提供的CUDA（并行计算平台）和cuDNN（深度神经网络加速库）镜像，为开发者提供了预配置的开发环境，支持高效进行并行计算应用开发、深度学习模型训练及推理任务，确保了环境的一致性和部署的便捷性，是构建基于英伟达GPU加速应用的重要资源。"
 source: https://xuanyuan.cloud/zh/r/nvidia/cuda
 canonical: https://xuanyuan.cloud/zh/r/nvidia/cuda
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nvidia/cuda" title="nvidia/cuda Docker 镜像中文简介、标签列表与拉取命令">nvidia/cuda — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nvidia/cuda" title="nvidia/cuda Docker 镜像中文简介、标签列表与拉取命令">nvidia/cuda — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/nvidia/cuda" title="nvidia/cuda Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nvidia/cuda</a></p>
+<a href="https://xuanyuan.cloud/zh/r/nvidia/cuda" title="nvidia/cuda Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nvidia/cuda</a>
 
 ## NVIDIA CUDA  
 [CUDA](https://developer.nvidia.com/cuda-zone) 是 NVIDIA 开发的并行计算平台与编程模型，用于图形处理器（GPU）的通用计算。借助 CUDA，开发者可利用 GPU 算力显著加速计算应用。  
@@ -146,7 +147,3 @@ Error response from daemon: manifest for nvidia/cuda:latest not found: manifest 
 
 ## 描述来源  
 本文档基于 CUDA 容器镜像源码仓库的 `doc/README.md`（[历史记录](https://gitlab.com/nvidia/container-images/cuda/blob/master/dist/13.2.0/ubi8/runtime/Dockerfile)）。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nvidia/cuda" title="nvidia/cuda Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nvidia/cuda</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ubuntu/zookeeper
+description: "ZooKeeper提供集中式配置信息维护，由Canonical提供长期支持的跟踪版本。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/zookeeper
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/zookeeper
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/zookeeper" title="ubuntu/zookeeper Docker 镜像中文简介、标签列表与拉取命令">ubuntu/zookeeper — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/zookeeper" title="ubuntu/zookeeper Docker 镜像中文简介、标签列表与拉取命令">ubuntu/zookeeper — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/zookeeper" title="ubuntu/zookeeper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/zookeeper</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ubuntu/zookeeper" title="ubuntu/zookeeper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/zookeeper</a>
 
 # zookeeper | Ubuntu
 
@@ -97,7 +98,3 @@ docker images --no-trunc --quiet ubuntu/zookeeper:<tag>
 | 跟踪 | 版本 | 生命周期结束（EOL） | 升级路径 |
 |---|---|---|---|
 | _`track`_ |
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/zookeeper" title="ubuntu/zookeeper Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/zookeeper</a></p>

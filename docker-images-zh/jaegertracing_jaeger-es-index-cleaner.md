@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: jaegertracing/jaeger-es-index-cleaner
+description: "jaeger-es-index-cleaner用于清理Elasticsearch中的旧Jaeger索引，解决Elasticsearch不支持TTL过期旧数据的问题，帮助管理可观测性数据的保留时间。"
 source: https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-es-index-cleaner
 canonical: https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-es-index-cleaner
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-es-index-cleaner" title="jaegertracing/jaeger-es-index-cleaner Docker 镜像中文简介、标签列表与拉取命令">jaegertracing/jaeger-es-index-cleaner — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-es-index-cleaner" title="jaegertracing/jaeger-es-index-cleaner Docker 镜像中文简介、标签列表与拉取命令">jaegertracing/jaeger-es-index-cleaner — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-es-index-cleaner" title="jaegertracing/jaeger-es-index-cleaner Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-es-index-cleaner</a></p>
+<a href="https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-es-index-cleaner" title="jaegertracing/jaeger-es-index-cleaner Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-es-index-cleaner</a>
 
 # jaeger-es-index-cleaner 镜像文档
 
@@ -98,7 +99,3 @@ services:
 - **权限检查**：确保容器对目标 Elasticsearch 具有索引删除权限（如 `delete_index` 权限）。
 - **索引命名规范**：工具依赖 Jaeger 默认的索引命名格式（如 `jaeger-span-*`、`jaeger-service-*`），自定义索引名可能导致清理异常。
 - **数据备份**：执行清理前建议备份重要索引，避免误删。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-es-index-cleaner" title="jaegertracing/jaeger-es-index-cleaner Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-es-index-cleaner</a></p>

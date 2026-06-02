@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: circleci/python
+description: "CircleCI提供的Python扩展镜像，基于官方Python镜像，预装开发和CI常用工具（如git、ssh、docker等），默认使用非root用户，支持浏览器测试等变体，适用于CI/CD流程和开发环境。"
 source: https://xuanyuan.cloud/zh/r/circleci/python
 canonical: https://xuanyuan.cloud/zh/r/circleci/python
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/circleci/python" title="circleci/python Docker 镜像中文简介、标签列表与拉取命令">circleci/python — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/circleci/python" title="circleci/python Docker 镜像中文简介、标签列表与拉取命令">circleci/python — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/circleci/python" title="circleci/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/circleci/python</a></p>
+<a href="https://xuanyuan.cloud/zh/r/circleci/python" title="circleci/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/circleci/python</a>
 
 # CircleCI Python 镜像
 
@@ -51,7 +52,3 @@ docker run -it --rm circleci/python:3.9-browsers python -c "from selenium import
 ## 用户反馈
 ### 问题反馈
 如遇到镜像相关问题或有疑问，请通过[CircleCI Discuss Forum](https://discuss.circleci.com/c/ecosystem/circleci-images)联系我们。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/circleci/python" title="circleci/python Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/circleci/python</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnami/postgresql
+description: "Bitnami PostgreSQL安全镜像是一款专为PostgreSQL数据库设计的预配置、安全强化型容器镜像，集成自动更新的安全补丁、最小化攻击面架构、合规性验证工具及行业最佳安全实践，旨在简化数据库部署流程，同时保障数据存储与访问的安全性、稳定性及可靠性，适用于企业级应用场景下高效、安全的数据库环境搭建。"
 source: https://xuanyuan.cloud/zh/r/bitnami/postgresql
 canonical: https://xuanyuan.cloud/zh/r/bitnami/postgresql
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql" title="bitnami/postgresql Docker 镜像中文简介、标签列表与拉取命令">bitnami/postgresql — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql" title="bitnami/postgresql Docker 镜像中文简介、标签列表与拉取命令">bitnami/postgresql — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql" title="bitnami/postgresql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/postgresql</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql" title="bitnami/postgresql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/postgresql</a>
 
 # Bitnami PostgreSQL 软件包
 
@@ -164,7 +165,3 @@ docker run --name postgresql bitnami/postgresql:latest
 | `POSTGRESQL_PGBACKREST_CONF_FILE`            | pgbackrest 配置文件                                                | `${POSTGRESQL_DATA_DIR}/pgbackrest.conf`      |
 | `POSTGRESQL_FIRST_BOOT`                      | 首次启动标记（repmgr 需用）                                        | `yes`                                         |
 | `NSS_WRAPPER_LIB`                            | NSS 包装库路径（repmgr 需用）                                      | `/opt/bitnami/common/lib/libnss_wrapper.so`   |
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql" title="bitnami/postgresql Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/postgresql</a></p>

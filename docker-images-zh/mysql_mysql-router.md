@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: mysql/mysql-router
+description: "MySQL Router提供应用程序与后端MySQL服务器之间的透明路由。"
 source: https://xuanyuan.cloud/zh/r/mysql/mysql-router
 canonical: https://xuanyuan.cloud/zh/r/mysql/mysql-router
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mysql/mysql-router" title="mysql/mysql-router Docker 镜像中文简介、标签列表与拉取命令">mysql/mysql-router — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mysql/mysql-router" title="mysql/mysql-router Docker 镜像中文简介、标签列表与拉取命令">mysql/mysql-router — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/mysql/mysql-router" title="mysql/mysql-router Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mysql/mysql-router</a></p>
+<a href="https://xuanyuan.cloud/zh/r/mysql/mysql-router" title="mysql/mysql-router Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mysql/mysql-router</a>
 
 # MySQL Router 是什么？
 
@@ -78,7 +79,3 @@ https://dev.mysql.com/doc/mysql-router/8.0/en/mysql-router-rest-api-reference.ht
 
 有关完整使用文档，请参见：  
 https://dev.mysql.com/doc/mysql-router/8.0/en/mysql-router-installation-docker.html
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mysql/mysql-router" title="mysql/mysql-router Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mysql/mysql-router</a></p>

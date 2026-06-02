@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ubuntu/jre
+description: "这是一种基于Ubuntu的无发行版Java运行时环境，它通过精简系统组件以减少攻击面、提升安全性，尤其适用于容器化应用场景，其长期支持版本系列由Canonical负责持续维护与更新。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/jre
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/jre
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/jre" title="ubuntu/jre Docker 镜像中文简介、标签列表与拉取命令">ubuntu/jre — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/jre" title="ubuntu/jre Docker 镜像中文简介、标签列表与拉取命令">ubuntu/jre — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/jre" title="ubuntu/jre Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/jre</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ubuntu/jre" title="ubuntu/jre Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/jre</a>
 
 # Chiselled Ubuntu JRE Docker 镜像
 
@@ -162,7 +163,3 @@ docker images --no-trunc --quiet ubuntu/jre:<标签>  # 替换为实际标签
 | 渠道（Track） | 版本（Version） | 停止维护（EOL） | 升级路径（Upgrade Path） |
 |--------------|----------------|-----------------|--------------------------|
 | _`track`_    |                |                 |                          |
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/jre" title="ubuntu/jre Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/jre</a></p>

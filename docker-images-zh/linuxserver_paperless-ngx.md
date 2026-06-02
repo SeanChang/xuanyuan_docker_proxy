@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/paperless-ngx
+description: "LinuxServer.io提供的paperless-ngx镜像，用于纸质文档的数字化管理，支持扫描、索引、存储与检索，帮助用户高效管理电子文档。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/paperless-ngx
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/paperless-ngx
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/paperless-ngx" title="linuxserver/paperless-ngx Docker 镜像中文简介、标签列表与拉取命令">linuxserver/paperless-ngx — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/paperless-ngx" title="linuxserver/paperless-ngx Docker 镜像中文简介、标签列表与拉取命令">linuxserver/paperless-ngx — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/paperless-ngx" title="linuxserver/paperless-ngx Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/paperless-ngx</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/paperless-ngx" title="linuxserver/paperless-ngx Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/paperless-ngx</a>
 
 # linuxserver/paperless-ngx 镜像文档
 
@@ -235,7 +236,3 @@ docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/paperless-ngx:arm64v8-
 - **2022.05.12**：修复Redis禁用问题，添加PostgreSQL依赖
 - **2022.04.11**：替换uwsgi为gunicorn解决WebSocket问题
 - **2022.03.11**：初始发布
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/paperless-ngx" title="linuxserver/paperless-ngx Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/paperless-ngx</a></p>

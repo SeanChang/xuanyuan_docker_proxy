@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: chuckcharlie/cups-avahi-airprint
+description: "基于Alpine的AirPrint中继，为iOS设备提供打印支持，适用于网络中不支持AirPrint的打印机，支持ARM64和AMD64架构。"
 source: https://xuanyuan.cloud/zh/r/chuckcharlie/cups-avahi-airprint
 canonical: https://xuanyuan.cloud/zh/r/chuckcharlie/cups-avahi-airprint
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/chuckcharlie/cups-avahi-airprint" title="chuckcharlie/cups-avahi-airprint Docker 镜像中文简介、标签列表与拉取命令">chuckcharlie/cups-avahi-airprint — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/chuckcharlie/cups-avahi-airprint" title="chuckcharlie/cups-avahi-airprint Docker 镜像中文简介、标签列表与拉取命令">chuckcharlie/cups-avahi-airprint — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/chuckcharlie/cups-avahi-airprint" title="chuckcharlie/cups-avahi-airprint Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/chuckcharlie/cups-avahi-airprint</a></p>
+<a href="https://xuanyuan.cloud/zh/r/chuckcharlie/cups-avahi-airprint" title="chuckcharlie/cups-avahi-airprint Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/chuckcharlie/cups-avahi-airprint</a>
 
 # chuckcharlie/cups-avahi-airprint
 
@@ -79,7 +80,3 @@ services:
 1. 通过 `http://[主机IP]:631` 访问CUPS管理界面，使用`CUPSADMIN`和`CUPSPASSWORD`登录
 2. 配置打印机时，确保勾选 **"共享此打印机（Share This Printer）"** 选项
 3. 配置完成后，需关闭Web浏览器至少60秒。CUPS仅在检测到连接关闭达一分钟左右时，才会写入配置文件。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/chuckcharlie/cups-avahi-airprint" title="chuckcharlie/cups-avahi-airprint Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/chuckcharlie/cups-avahi-airprint</a></p>

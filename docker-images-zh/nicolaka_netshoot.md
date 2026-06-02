@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: nicolaka/netshoot
+description: "这是一个Docker网络故障排查的“瑞士军刀”容器，集成了多种网络诊断工具，可高效支持Docker环境下网络连接、配置、性能及通信异常等问题的排查与分析，轻量便携且功能全面，为开发与运维人员快速定位和解决Docker网络故障提供一站式工具支持。"
 source: https://xuanyuan.cloud/zh/r/nicolaka/netshoot
 canonical: https://xuanyuan.cloud/zh/r/nicolaka/netshoot
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nicolaka/netshoot" title="nicolaka/netshoot Docker 镜像中文简介、标签列表与拉取命令">nicolaka/netshoot — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nicolaka/netshoot" title="nicolaka/netshoot Docker 镜像中文简介、标签列表与拉取命令">nicolaka/netshoot — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/nicolaka/netshoot" title="nicolaka/netshoot Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nicolaka/netshoot</a></p>
+<a href="https://xuanyuan.cloud/zh/r/nicolaka/netshoot" title="nicolaka/netshoot Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nicolaka/netshoot</a>
 
 # netshoot：Docker 与 Kubernetes 网络排障利器容器
 
@@ -215,7 +216,3 @@ docker run --rm --cap-add=NET_ADMIN --cap-add=NET_RAW -it nicolaka/netshoot term
 
 ## 反馈与协作  
 netshoot 持续迭代，欢迎通过项目仓库提交问题或贡献代码。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nicolaka/netshoot" title="nicolaka/netshoot Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nicolaka/netshoot</a></p>

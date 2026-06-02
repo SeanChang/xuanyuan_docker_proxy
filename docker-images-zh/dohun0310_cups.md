@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: dohun0310/cups
+description: "支持CUPS和AirPrint，并集成systemd，用于网络打印机管理的Docker镜像。"
 source: https://xuanyuan.cloud/zh/r/dohun0310/cups
 canonical: https://xuanyuan.cloud/zh/r/dohun0310/cups
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/dohun0310/cups" title="dohun0310/cups Docker 镜像中文简介、标签列表与拉取命令">dohun0310/cups — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dohun0310/cups" title="dohun0310/cups Docker 镜像中文简介、标签列表与拉取命令">dohun0310/cups — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/dohun0310/cups" title="dohun0310/cups Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dohun0310/cups</a></p>
+<a href="https://xuanyuan.cloud/zh/r/dohun0310/cups" title="dohun0310/cups Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dohun0310/cups</a>
 
 # CUPS 打印服务器 Docker 镜像
 
@@ -75,7 +76,3 @@ docker run -d -p 631:631 -p 5353:5353 -v $(pwd):/etc/cups -e TZ=Asia/Seoul -e US
 - CUPS组件：cups、cups-client、cups-filters、cups-bsd、foomatic-db
 - 打印驱动：printer-driver-all、printer-driver-cups-pdf、openprinting-ppds、hpijs-ppds、hp-ppd
 - 辅助工具：cups-filters、openprinting-ppds
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/dohun0310/cups" title="dohun0310/cups Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/dohun0310/cups</a></p>

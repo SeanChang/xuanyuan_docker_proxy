@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: zabbix/zabbix-java-gateway
+description: "Zabbix Java Gateway是Zabbix监控系统的组件，用于实现Zabbix Server对Java应用程序的JMX指标监控，作为网关连接Zabbix Server与Java应用，获取并传递Java应用性能数据。"
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway" title="zabbix/zabbix-java-gateway Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-java-gateway — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway" title="zabbix/zabbix-java-gateway Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-java-gateway — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway" title="zabbix/zabbix-java-gateway Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway</a></p>
+<a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway" title="zabbix/zabbix-java-gateway Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway</a>
 
 # Zabbix Java Gateway
 
@@ -194,7 +195,3 @@ Zabbix Java Gateway提供多种版本标签，基于不同基础操作系统和Z
 - Zabbix 7.0及后续版本采用GNU Affero General Public License v3（AGPLv3）许可。
 - Zabbix 6.4及之前版本采用GNU General Public License v2（GPLv2）许可。
 详细条款参见[Free Software Foundation](http://www.fsf.org/licenses/)。商业使用时，建议通过购买技术支持支持Zabbix开发。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway" title="zabbix/zabbix-java-gateway Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-java-gateway</a></p>

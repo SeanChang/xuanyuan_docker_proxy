@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: prom/pushgateway
+description: "Prometheus Pushgateway是用于接收临时性或批处理作业指标数据并将其暴露给Prometheus服务器抓取的中间件，解决非持续运行作业的指标收集问题。"
 source: https://xuanyuan.cloud/zh/r/prom/pushgateway
 canonical: https://xuanyuan.cloud/zh/r/prom/pushgateway
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/pushgateway" title="prom/pushgateway Docker 镜像中文简介、标签列表与拉取命令">prom/pushgateway — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/prom/pushgateway" title="prom/pushgateway Docker 镜像中文简介、标签列表与拉取命令">prom/pushgateway — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/prom/pushgateway" title="prom/pushgateway Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/pushgateway</a></p>
+<a href="https://xuanyuan.cloud/zh/r/prom/pushgateway" title="prom/pushgateway Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/pushgateway</a>
 
 # Prometheus Pushgateway 镜像文档
 
@@ -112,7 +113,3 @@ services:
     - job_name: 'pushgateway'
       static_configs:
         - targets: ['pushgateway:9091']  # Pushgateway 地址（容器名或 IP）
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/pushgateway" title="prom/pushgateway Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/prom/pushgateway</a></p>

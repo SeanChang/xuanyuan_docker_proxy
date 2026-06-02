@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: agentscope/copaw
+description: "基于 AgentScope 的开源个人 AI 助理 CoPaw 的 Docker 镜像，支持多渠道接入与本地/云端部署，可通过 Web 控制台或钉钉、飞书、QQ 等频道使用。"
 source: https://xuanyuan.cloud/zh/r/agentscope/copaw
 canonical: https://xuanyuan.cloud/zh/r/agentscope/copaw
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/agentscope/copaw" title="agentscope/copaw Docker 镜像中文简介、标签列表与拉取命令">agentscope/copaw — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/agentscope/copaw" title="agentscope/copaw Docker 镜像中文简介、标签列表与拉取命令">agentscope/copaw — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/agentscope/copaw" title="agentscope/copaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/agentscope/copaw</a></p>
+<a href="https://xuanyuan.cloud/zh/r/agentscope/copaw" title="agentscope/copaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/agentscope/copaw</a>
 
 # CoPaw
 
@@ -89,7 +90,3 @@ volumes:
 ## 许可证
 
 CoPaw 为开源项目，许可证见 [GitHub 仓库](https://github.com/agentscope-ai/CoPaw)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/agentscope/copaw" title="agentscope/copaw Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/agentscope/copaw</a></p>

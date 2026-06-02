@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: elestio/postgres
+description: "Elestio验证和打包的PostgreSQL镜像，提供高级对象关系型数据库管理系统，支持SQL标准扩展子集（事务、外键、子查询等），确保与原始源同步更新、及时获取最新修复和功能，并经过质量控制检查，适合可靠的数据库部署需求。"
 source: https://xuanyuan.cloud/zh/r/elestio/postgres
 canonical: https://xuanyuan.cloud/zh/r/elestio/postgres
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/elestio/postgres" title="elestio/postgres Docker 镜像中文简介、标签列表与拉取命令">elestio/postgres — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/elestio/postgres" title="elestio/postgres Docker 镜像中文简介、标签列表与拉取命令">elestio/postgres — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/elestio/postgres" title="elestio/postgres Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/elestio/postgres</a></p>
+<a href="https://xuanyuan.cloud/zh/r/elestio/postgres" title="elestio/postgres Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/elestio/postgres</a>
 
 # Postgres，由Elestio验证和打包
 
@@ -108,7 +109,3 @@ docker-compose up -d
 - <a target="_blank" href="https://www.postgresql.org/docs/">Postgres文档</a>
 
 - <a target="_blank" href="https://github.com/elestio-examples/postgres">Elestio/postgres GitHub仓库</a>
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/elestio/postgres" title="elestio/postgres Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/elestio/postgres</a></p>

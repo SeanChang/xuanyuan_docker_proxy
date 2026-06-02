@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: githubyumao/mcsmanager-daemon
+description: "MCSManager官方守护进程镜像，自动从GitHub仓库构建。"
 source: https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon
 canonical: https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon" title="githubyumao/mcsmanager-daemon Docker 镜像中文简介、标签列表与拉取命令">githubyumao/mcsmanager-daemon — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon" title="githubyumao/mcsmanager-daemon Docker 镜像中文简介、标签列表与拉取命令">githubyumao/mcsmanager-daemon — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon" title="githubyumao/mcsmanager-daemon Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon</a></p>
+<a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon" title="githubyumao/mcsmanager-daemon Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon</a>
 
 # MCSManager 官方Docker镜像文档
 
@@ -153,7 +154,3 @@ services:
 3. **性能需求**：根据管理的服务器数量调整主机资源（CPU、内存、磁盘IO），建议至少2核4G内存起步。
 4. **版本兼容性**：面板与守护进程版本需保持一致，避免因版本差异导致功能异常。
 5. **官方文档**：详细配置及高级功能请参考[MCSManager Docker安装文档](https://docs.mcsmanager.com/docker-install.html)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon" title="githubyumao/mcsmanager-daemon Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon</a></p>

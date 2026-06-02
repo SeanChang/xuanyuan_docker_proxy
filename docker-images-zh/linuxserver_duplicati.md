@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/duplicati
+description: "LinuxServer.io提供的Duplicati容器，用于数据备份与同步，支持加密和压缩功能。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/duplicati
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/duplicati
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/duplicati" title="linuxserver/duplicati Docker 镜像中文简介、标签列表与拉取命令">linuxserver/duplicati — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/duplicati" title="linuxserver/duplicati Docker 镜像中文简介、标签列表与拉取命令">linuxserver/duplicati — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/duplicati" title="linuxserver/duplicati Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/duplicati</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/duplicati" title="linuxserver/duplicati Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/duplicati</a>
 
 # linuxserver/duplicati 镜像文档
 
@@ -329,7 +330,3 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 - **09.12.17:** - 修复续行。
 - **31.08.17:** - 仅构建测试版或发布版（感谢 deasmi）。
 - **24.04.17:** - 初始发布。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/duplicati" title="linuxserver/duplicati Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/duplicati</a></p>

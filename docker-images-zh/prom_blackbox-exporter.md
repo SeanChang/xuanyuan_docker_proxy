@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: prom/blackbox-exporter
+description: "Blackbox Exporter是Prometheus生态的黑盒探测工具，支持通过HTTP、HTTPS、DNS、TCP、ICMP和gRPC协议对目标端点进行探测，提供探测成功率等指标，用于监控端点可用性和性能。"
 source: https://xuanyuan.cloud/zh/r/prom/blackbox-exporter
 canonical: https://xuanyuan.cloud/zh/r/prom/blackbox-exporter
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/blackbox-exporter" title="prom/blackbox-exporter Docker 镜像中文简介、标签列表与拉取命令">prom/blackbox-exporter — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/prom/blackbox-exporter" title="prom/blackbox-exporter Docker 镜像中文简介、标签列表与拉取命令">prom/blackbox-exporter — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/prom/blackbox-exporter" title="prom/blackbox-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/blackbox-exporter</a></p>
+<a href="https://xuanyuan.cloud/zh/r/prom/blackbox-exporter" title="prom/blackbox-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/blackbox-exporter</a>
 
 # Blackbox Exporter
 
@@ -185,7 +186,3 @@ ICMP探针（ping）需要特殊权限：
 - **Docker环境**：使用ICMP探针时需添加`--cap-add=NET_RAW`参数
   ```bash
   docker run --rm --cap-add=NET_RAW -p 9115:9115 quay.io/prometheus/blackbox-exporter:latest
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/blackbox-exporter" title="prom/blackbox-exporter Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/prom/blackbox-exporter</a></p>

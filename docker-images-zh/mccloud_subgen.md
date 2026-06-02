@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: mccloud/subgen
+description: "通过OpenAI和Plex、Bazarr、Emby、Jellyfin或Tautulli的webhooks自动生成字幕的Docker镜像"
 source: https://xuanyuan.cloud/zh/r/mccloud/subgen
 canonical: https://xuanyuan.cloud/zh/r/mccloud/subgen
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mccloud/subgen" title="mccloud/subgen Docker 镜像中文简介、标签列表与拉取命令">mccloud/subgen — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mccloud/subgen" title="mccloud/subgen Docker 镜像中文简介、标签列表与拉取命令">mccloud/subgen — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/mccloud/subgen" title="mccloud/subgen Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mccloud/subgen</a></p>
+<a href="https://xuanyuan.cloud/zh/r/mccloud/subgen" title="mccloud/subgen Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mccloud/subgen</a>
 
 # subgen Docker镜像文档
 
@@ -122,7 +123,3 @@ docker-compose up -d
 ## 项目地址
 
 GitHub仓库：[https://github.com/McCloudS/subgen](https://github.com/McCloudS/subgen)（包含详细安装及配置说明）
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mccloud/subgen" title="mccloud/subgen Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mccloud/subgen</a></p>

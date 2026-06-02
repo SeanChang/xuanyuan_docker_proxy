@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: arm64v8/redis
+description: "Redis是全球速度最快的数据平台，它整合了缓存、向量搜索与NoSQL数据库功能，可高效实现数据缓存以提升访问速度、支持向量搜索满足AI驱动的相似性查询需求，并作为NoSQL数据库提供灵活的数据存储与处理能力，广泛适用于各类高性能数据应用场景。"
 source: https://xuanyuan.cloud/zh/r/arm64v8/redis
 canonical: https://xuanyuan.cloud/zh/r/arm64v8/redis
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/arm64v8/redis" title="arm64v8/redis Docker 镜像中文简介、标签列表与拉取命令">arm64v8/redis — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/arm64v8/redis" title="arm64v8/redis Docker 镜像中文简介、标签列表与拉取命令">arm64v8/redis — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/arm64v8/redis" title="arm64v8/redis Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/arm64v8/redis</a></p>
+<a href="https://xuanyuan.cloud/zh/r/arm64v8/redis" title="arm64v8/redis Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/arm64v8/redis</a>
 
 # Redis 官方镜像（arm64v8 架构）介绍
 
@@ -148,7 +149,3 @@ $ docker run -v /myredis/conf:/usr/local/etc/redis --name myredis arm64v8/redis 
 与所有 Docker 镜像一样，本镜像可能包含其他软件（如基础系统的 Bash 等），其许可协议需另行确认。自动检测到的许可信息可参考 [repo-info 仓库的 `redis/` 目录]([])。  
 
 使用前请确保遵守所有包含软件的许可协议。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/arm64v8/redis" title="arm64v8/redis Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/arm64v8/redis</a></p>

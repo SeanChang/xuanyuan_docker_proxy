@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: umamisoftware/umami
+description: "Umami 是一款简单易用、运行高效且以隐私保护为核心的谷歌分析替代工具，它专为注重数据隐私与使用便捷性的用户设计，无需复杂技术配置即可快速部署，能实时、准确统计网站流量数据；其核心优势在于严格遵循隐私保护原则，不收集或存储个人身份信息，避免用户数据被滥用，确保数据收集过程符合全球隐私法规要求，为网站管理员提供安全、透明且高效的数据分析体验，是替代传统第三方分析工具的理想轻量级方案。"
 source: https://xuanyuan.cloud/zh/r/umamisoftware/umami
 canonical: https://xuanyuan.cloud/zh/r/umamisoftware/umami
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/umamisoftware/umami" title="umamisoftware/umami Docker 镜像中文简介、标签列表与拉取命令">umamisoftware/umami — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/umamisoftware/umami" title="umamisoftware/umami Docker 镜像中文简介、标签列表与拉取命令">umamisoftware/umami — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/umamisoftware/umami" title="umamisoftware/umami Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/umamisoftware/umami</a></p>
+<a href="https://xuanyuan.cloud/zh/r/umamisoftware/umami" title="umamisoftware/umami Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/umamisoftware/umami</a>
 
 # Umami：轻量隐私友好的网站统计工具
 
@@ -36,7 +37,3 @@ Umami 是一款面向网站管理者的轻量级数据统计工具，定位为 G
 - 追求网站性能优化，避免第三方工具拖慢页面加载速度。  
 
 无论是快速部署监控流量，还是日常查看用户行为数据，Umami 都能提供轻量化、无负担的解决方案。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/umamisoftware/umami" title="umamisoftware/umami Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/umamisoftware/umami</a></p>

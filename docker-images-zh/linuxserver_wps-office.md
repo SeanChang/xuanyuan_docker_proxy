@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/wps-office
+description: "LinuxServer.io提供的WPS Office Docker镜像，用于在容器环境中便捷部署和运行WPS Office办公套件，支持文档、表格、演示文稿等功能，具备易用性和持续更新特性。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/wps-office
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/wps-office
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/wps-office" title="linuxserver/wps-office Docker 镜像中文简介、标签列表与拉取命令">linuxserver/wps-office — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/wps-office" title="linuxserver/wps-office Docker 镜像中文简介、标签列表与拉取命令">linuxserver/wps-office — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/wps-office" title="linuxserver/wps-office Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/wps-office</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/wps-office" title="linuxserver/wps-office Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/wps-office</a>
 
 # linuxserver/wps-office
 
@@ -335,7 +336,3 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 - **06.01.24:** - 基于Debian Bookworm重建
 - **17.01.24:** - 更新Chromium包装器
 - **21.04.23:** - 初始发布
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/wps-office" title="linuxserver/wps-office Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/wps-office</a></p>

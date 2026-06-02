@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: alpine/curl
+description: "基于Alpine Linux的轻量级Docker镜像，集成了curl命令行工具，专为网络数据传输设计。支持HTTP、HTTPS、FTP等多种协议，可用于API测试、文件下载、服务监控等场景。得益于Alpine的精简特性，镜像体积小巧，启动快速，非常适合在容器化环境中执行临时网络请求或自动化任务，是开发调试、CI/CD流程及微服务健康检查的理想工具。"
 source: https://xuanyuan.cloud/zh/r/alpine/curl
 canonical: https://xuanyuan.cloud/zh/r/alpine/curl
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/curl" title="alpine/curl Docker 镜像中文简介、标签列表与拉取命令">alpine/curl — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/curl" title="alpine/curl Docker 镜像中文简介、标签列表与拉取命令">alpine/curl — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/alpine/curl" title="alpine/curl Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpine/curl</a></p>
+<a href="https://xuanyuan.cloud/zh/r/alpine/curl" title="alpine/curl Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpine/curl</a>
 
 # alpine/curl
 
@@ -89,7 +90,3 @@ $ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock \
 ================================
 Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 ```
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/curl" title="alpine/curl Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/alpine/curl</a></p>

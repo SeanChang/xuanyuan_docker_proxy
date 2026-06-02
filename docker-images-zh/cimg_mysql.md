@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: cimg/mysql
+description: "cimg/mysql Docker镜像基于官方MySQL稳定版构建，为开发与CI/CD环境提供轻量级高性能服务。内置优化配置，支持数据持久化与网络隔离，基于Ubuntu系统并包含常用客户端工具。可快速部署单节点实例及容器化架构集成，适合自动化测试、本地开发及小型生产环境。镜像定期更新，确保安全性与兼容性，简化数据库环境一致性管理。"
 source: https://xuanyuan.cloud/zh/r/cimg/mysql
 canonical: https://xuanyuan.cloud/zh/r/cimg/mysql
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/mysql" title="cimg/mysql Docker 镜像中文简介、标签列表与拉取命令">cimg/mysql — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cimg/mysql" title="cimg/mysql Docker 镜像中文简介、标签列表与拉取命令">cimg/mysql — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/cimg/mysql" title="cimg/mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cimg/mysql</a></p>
+<a href="https://xuanyuan.cloud/zh/r/cimg/mysql" title="cimg/mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cimg/mysql</a>
 
 # CircleCI 便利镜像：MySQL  
 
@@ -182,7 +183,3 @@ git commit -m "更新子模块以支持 xxx 功能"
 
 ## 许可证  
 本仓库采用 MIT 许可证，详情见 [LICENSE 文件](./LICENSE)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/mysql" title="cimg/mysql Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/cimg/mysql</a></p>

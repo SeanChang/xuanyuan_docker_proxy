@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/nextcloud
+description: "LinuxServer.io提供的Nextcloud容器，用于搭建私有云存储、文件同步与共享平台。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/nextcloud
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/nextcloud
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/nextcloud" title="linuxserver/nextcloud Docker 镜像中文简介、标签列表与拉取命令">linuxserver/nextcloud — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/nextcloud" title="linuxserver/nextcloud Docker 镜像中文简介、标签列表与拉取命令">linuxserver/nextcloud — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/nextcloud" title="linuxserver/nextcloud Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/nextcloud</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/nextcloud" title="linuxserver/nextcloud Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/nextcloud</a>
 
 # linuxserver/nextcloud Docker镜像文档
 
@@ -327,7 +328,3 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 - **22.05.17:** 更新至Nextcloud 12.0，添加依赖并说明SAMEORIGIN行注释要求
 - **03.05.17:** 使用memcache社区仓库
 - **07.03.17:** 发布至主仓库，升级至PHP7和Alpine 3.5
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/nextcloud" title="linuxserver/nextcloud Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/nextcloud</a></p>

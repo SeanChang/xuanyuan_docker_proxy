@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: veeshall/minikube
+description: "基于Ubuntu 16.04的Docker镜像，预装kubectl v1.7.5和minikube v0.22.1，包含vim、curl、sudo等基础工具，创建mkuser用户并配置无密码sudo权限，入口点为bash，适用于本地Kubernetes环境的基础开发测试。"
 source: https://xuanyuan.cloud/zh/r/veeshall/minikube
 canonical: https://xuanyuan.cloud/zh/r/veeshall/minikube
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/veeshall/minikube" title="veeshall/minikube Docker 镜像中文简介、标签列表与拉取命令">veeshall/minikube — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/veeshall/minikube" title="veeshall/minikube Docker 镜像中文简介、标签列表与拉取命令">veeshall/minikube — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/veeshall/minikube" title="veeshall/minikube Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/veeshall/minikube</a></p>
+<a href="https://xuanyuan.cloud/zh/r/veeshall/minikube" title="veeshall/minikube Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/veeshall/minikube</a>
 
 # 镜像概述
 
@@ -92,7 +93,3 @@ docker run -it --name minikube-env <镜像名称或ID>
 1. **minikube运行依赖**：minikube需要宿主机提供虚拟化支持（如Docker、KVM等），容器内运行可能受限于Docker引擎配置，建议在支持嵌套虚拟化的环境中使用。
 2. **工具版本兼容性**：预装的kubectl（v1.7.5）和minikube（v0.22.1）版本较旧，可能不支持最新Kubernetes特性，仅适用于历史版本兼容性测试。
 3. **安全考虑**：镜像配置了`mkuser`无密码sudo权限，生产环境中应谨慎使用，建议仅用于开发测试场景。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/veeshall/minikube" title="veeshall/minikube Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/veeshall/minikube</a></p>

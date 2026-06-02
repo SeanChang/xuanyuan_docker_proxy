@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: calico/cni
+description: "Project Calico的CNI插件是为容器编排平台（如Kubernetes）设计的容器网络接口插件，作为开源项目Calico实现容器网络功能的关键组件，它提供网络连接配置、网络策略管理、跨节点网络通信等核心功能，支持动态网络参数调整，确保容器间高效、安全的网络互通，助力容器化应用稳定运行。"
 source: https://xuanyuan.cloud/zh/r/calico/cni
 canonical: https://xuanyuan.cloud/zh/r/calico/cni
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/calico/cni" title="calico/cni Docker 镜像中文简介、标签列表与拉取命令">calico/cni — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/calico/cni" title="calico/cni Docker 镜像中文简介、标签列表与拉取命令">calico/cni — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/calico/cni" title="calico/cni Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/calico/cni</a></p>
+<a href="https://xuanyuan.cloud/zh/r/calico/cni" title="calico/cni Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/calico/cni</a>
 
 # Calico CNI网络插件  
 
@@ -49,7 +50,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 
 
 [![Analytics]([])]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/calico/cni" title="calico/cni Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/calico/cni</a></p>

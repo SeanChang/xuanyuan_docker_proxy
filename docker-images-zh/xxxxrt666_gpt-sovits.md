@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: xxxxrt666/gpt-sovits
+description: "GPT-SoVITS Docker镜像，支持CU126和CU128版本"
 source: https://xuanyuan.cloud/zh/r/xxxxrt666/gpt-sovits
 canonical: https://xuanyuan.cloud/zh/r/xxxxrt666/gpt-sovits
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/xxxxrt666/gpt-sovits" title="xxxxrt666/gpt-sovits Docker 镜像中文简介、标签列表与拉取命令">xxxxrt666/gpt-sovits — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/xxxxrt666/gpt-sovits" title="xxxxrt666/gpt-sovits Docker 镜像中文简介、标签列表与拉取命令">xxxxrt666/gpt-sovits — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/xxxxrt666/gpt-sovits" title="xxxxrt666/gpt-sovits Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xxxxrt666/gpt-sovits</a></p>
+<a href="https://xuanyuan.cloud/zh/r/xxxxrt666/gpt-sovits" title="xxxxrt666/gpt-sovits Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xxxxrt666/gpt-sovits</a>
 
 🐳 Docker概述
 
@@ -38,7 +39,3 @@ bash docker_build.sh --cuda <12.6|12.8> [--lite]
 ```bash
 docker exec -it <GPT-SoVITS-CU126-Lite|GPT-SoVITS-CU128-Lite|GPT-SoVITS-CU126|GPT-SoVITS-CU128> bash
 ```
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/xxxxrt666/gpt-sovits" title="xxxxrt666/gpt-sovits Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/xxxxrt666/gpt-sovits</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: triliumnext/trilium
+description: "Trilium Notes 是一款免费开源的跨平台层级笔记应用，专注于构建大型个人知识库，支持深度笔记树结构、富文本编辑、代码笔记、全文搜索、版本控制、加密及多设备同步等功能。"
 source: https://xuanyuan.cloud/zh/r/triliumnext/trilium
 canonical: https://xuanyuan.cloud/zh/r/triliumnext/trilium
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/triliumnext/trilium" title="triliumnext/trilium Docker 镜像中文简介、标签列表与拉取命令">triliumnext/trilium — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/triliumnext/trilium" title="triliumnext/trilium Docker 镜像中文简介、标签列表与拉取命令">triliumnext/trilium — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/triliumnext/trilium" title="triliumnext/trilium Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/triliumnext/trilium</a></p>
+<a href="https://xuanyuan.cloud/zh/r/triliumnext/trilium" title="triliumnext/trilium Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/triliumnext/trilium</a>
 
 # Trilium Notes 镜像文档
 
@@ -131,7 +132,3 @@ Trilium 容器主要通过以下方式配置：
 - [GitHub 仓库](https://github.com/TriliumNext/Trilium)
 - [Docker Hub 镜像](https://hub.docker.com/r/triliumnext/trilium)
 - [第三方资源集合](https://github.com/Nriver/awesome-trilium)（主题、脚本、插件等）
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/triliumnext/trilium" title="triliumnext/trilium Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/triliumnext/trilium</a></p>

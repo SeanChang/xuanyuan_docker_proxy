@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: continuumio/miniconda3
+description: "强大且灵活的包管理器"
 source: https://xuanyuan.cloud/zh/r/continuumio/miniconda3
 canonical: https://xuanyuan.cloud/zh/r/continuumio/miniconda3
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/continuumio/miniconda3" title="continuumio/miniconda3 Docker 镜像中文简介、标签列表与拉取命令">continuumio/miniconda3 — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/continuumio/miniconda3" title="continuumio/miniconda3 Docker 镜像中文简介、标签列表与拉取命令">continuumio/miniconda3 — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/continuumio/miniconda3" title="continuumio/miniconda3 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/continuumio/miniconda3</a></p>
+<a href="https://xuanyuan.cloud/zh/r/continuumio/miniconda3" title="continuumio/miniconda3 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/continuumio/miniconda3</a>
 
 # docker-miniconda
 
@@ -44,7 +45,3 @@ docker run -i -t -p 8888:8888 continuumio/miniconda3 /bin/bash -c "
 ```
 
 然后，您可以通过在浏览器中打开`http://localhost:8888`查看Jupyter Notebook；如果使用Docker Machine，则打开`http://<DOCKER-MACHINE-IP>:8888`。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/continuumio/miniconda3" title="continuumio/miniconda3 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/continuumio/miniconda3</a></p>

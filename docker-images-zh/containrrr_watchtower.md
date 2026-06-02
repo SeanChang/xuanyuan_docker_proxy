@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: containrrr/watchtower
+description: "一种用于自动化Docker容器基础镜像更新的流程，旨在通过自动化手段减少人工干预、提升更新效率，同时确保容器环境的安全性与稳定性，适用于各类基于Docker的应用部署场景，为开发和运维团队提供高效、可靠的基础镜像管理解决方案。"
 source: https://xuanyuan.cloud/zh/r/containrrr/watchtower
 canonical: https://xuanyuan.cloud/zh/r/containrrr/watchtower
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/containrrr/watchtower" title="containrrr/watchtower Docker 镜像中文简介、标签列表与拉取命令">containrrr/watchtower — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/containrrr/watchtower" title="containrrr/watchtower Docker 镜像中文简介、标签列表与拉取命令">containrrr/watchtower — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/containrrr/watchtower" title="containrrr/watchtower Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/containrrr/watchtower</a></p>
+<a href="https://xuanyuan.cloud/zh/r/containrrr/watchtower" title="containrrr/watchtower Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/containrrr/watchtower</a>
 
 # Watchtower
 
@@ -46,7 +47,3 @@ docker run -d \
 
 ## 贡献者  
 感谢所有为项目贡献代码、文档和反馈的开发者。本项目遵循 [all-contributors]([]) 规范，欢迎任何形式的贡献（代码优化、文档完善、测试用例等）！
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/containrrr/watchtower" title="containrrr/watchtower Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/containrrr/watchtower</a></p>

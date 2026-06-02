@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: hyperf/hyperf
+description: "Hyperf官方提供的Docker镜像，用于运行基于Hyperf框架的高性能PHP协程应用，支持API及微服务开发部署。"
 source: https://xuanyuan.cloud/zh/r/hyperf/hyperf
 canonical: https://xuanyuan.cloud/zh/r/hyperf/hyperf
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/hyperf/hyperf" title="hyperf/hyperf Docker 镜像中文简介、标签列表与拉取命令">hyperf/hyperf — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hyperf/hyperf" title="hyperf/hyperf Docker 镜像中文简介、标签列表与拉取命令">hyperf/hyperf — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/hyperf/hyperf" title="hyperf/hyperf Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hyperf/hyperf</a></p>
+<a href="https://xuanyuan.cloud/zh/r/hyperf/hyperf" title="hyperf/hyperf Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hyperf/hyperf</a>
 
 # Hyperf Docker 镜像文档
 
@@ -219,7 +220,3 @@ ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so
 - [Hyperf 官方 GitHub](https://github.com/hyperf)
 - [Hyperf 官方文档](https://doc.hyperf.io)
 - [Hyperf Docker 镜像源码](https://github.com/hyperf-cloud/hyperf-docker)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/hyperf/hyperf" title="hyperf/hyperf Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/hyperf/hyperf</a></p>

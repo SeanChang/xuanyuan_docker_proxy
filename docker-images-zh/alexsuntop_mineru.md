@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: alexsuntop/mineru
+description: "MinerU镜像基于官方Dockerfile构建，支持部署vLLM后端服务器、文档解析API服务及Gradio WebUI界面，支持本地模型加载与GPU资源配置，适用于AI文档解析与交互场景。"
 source: https://xuanyuan.cloud/zh/r/alexsuntop/mineru
 canonical: https://xuanyuan.cloud/zh/r/alexsuntop/mineru
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/alexsuntop/mineru" title="alexsuntop/mineru Docker 镜像中文简介、标签列表与拉取命令">alexsuntop/mineru — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alexsuntop/mineru" title="alexsuntop/mineru Docker 镜像中文简介、标签列表与拉取命令">alexsuntop/mineru — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/alexsuntop/mineru" title="alexsuntop/mineru Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alexsuntop/mineru</a></p>
+<a href="https://xuanyuan.cloud/zh/r/alexsuntop/mineru" title="alexsuntop/mineru Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alexsuntop/mineru</a>
 
 # MinerU 镜像文档
 
@@ -132,7 +133,3 @@ mineru -p demo.pdf -o ./output -b vlm-http-client -u http://localhost:30000
 | vLLM后端服务器     | 30000    | 30000          | vLLM服务通信端口    |
 | 文档解析API服务    | 8000     | 8000           | API接口访问端口     |
 | Gradio WebUI       | 7860     | 7860           | Web界面访问端口     |
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/alexsuntop/mineru" title="alexsuntop/mineru Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/alexsuntop/mineru</a></p>

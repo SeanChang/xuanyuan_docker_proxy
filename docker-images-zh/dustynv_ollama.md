@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: dustynv/ollama
+description: "GitHub仓库dusty-nv/jetson-containers中的Ollama LLM包，是为NVIDIA Jetson嵌入式平台设计的容器化解决方案，旨在简化大型语言模型（LLM）的部署与运行流程，支持多种主流LLM模型，充分利用Jetson设备的硬件加速能力，适用于边缘AI计算、智能终端开发等场景，为开发者提供便捷高效的本地化LLM部署工具。"
 source: https://xuanyuan.cloud/zh/r/dustynv/ollama
 canonical: https://xuanyuan.cloud/zh/r/dustynv/ollama
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/dustynv/ollama" title="dustynv/ollama Docker 镜像中文简介、标签列表与拉取命令">dustynv/ollama — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dustynv/ollama" title="dustynv/ollama Docker 镜像中文简介、标签列表与拉取命令">dustynv/ollama — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/dustynv/ollama" title="dustynv/ollama Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dustynv/ollama</a></p>
+<a href="https://xuanyuan.cloud/zh/r/dustynv/ollama" title="dustynv/ollama Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dustynv/ollama</a>
 
 # Ollama 使用指南
 
@@ -164,7 +165,3 @@ jetson-containers build ollama
 
 构建过程中会自动集成依赖项并进行测试。可添加 `--help` 参数查看构建选项：`jetson-containers build ollama --help`。
 </details>
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/dustynv/ollama" title="dustynv/ollama Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/dustynv/ollama</a></p>

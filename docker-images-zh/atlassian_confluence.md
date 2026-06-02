@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: atlassian/confluence
+description: "Atlassian Confluence的Docker镜像，原以`atlassian/confluence`和`atlassian/confluence-server`双名称发布，2024年2月15日后仅前者持续更新，建议切换至`atlassian/confluence`以获取最新更新及标签。"
 source: https://xuanyuan.cloud/zh/r/atlassian/confluence
 canonical: https://xuanyuan.cloud/zh/r/atlassian/confluence
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/atlassian/confluence" title="atlassian/confluence Docker 镜像中文简介、标签列表与拉取命令">atlassian/confluence — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/atlassian/confluence" title="atlassian/confluence Docker 镜像中文简介、标签列表与拉取命令">atlassian/confluence — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/atlassian/confluence" title="atlassian/confluence Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/atlassian/confluence</a></p>
+<a href="https://xuanyuan.cloud/zh/r/atlassian/confluence" title="atlassian/confluence Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/atlassian/confluence</a>
 
 # Atlassian Confluence Server Docker 镜像文档
 
@@ -98,7 +99,3 @@ docker run -v /data/your-confluence-home:/var/atlassian/application-data/conflue
 ## 高级用法
 
 如需高级配置（如自定义参数、故障排查、可支持性等），请参考 [完整文档](https://atlassian.github.io/data-center-helm-charts/containers/CONFLUENCE/)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/atlassian/confluence" title="atlassian/confluence Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/atlassian/confluence</a></p>

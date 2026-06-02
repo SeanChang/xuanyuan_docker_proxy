@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: snowdreamtech/aria2
+description: "用于Aria2的Docker镜像，支持多架构（如amd64、arm64等），提供命令行及Web界面（AriaNG、WebUI）部署方式，可自动生成RPC密钥，方便管理下载任务。"
 source: https://xuanyuan.cloud/zh/r/snowdreamtech/aria2
 canonical: https://xuanyuan.cloud/zh/r/snowdreamtech/aria2
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/snowdreamtech/aria2" title="snowdreamtech/aria2 Docker 镜像中文简介、标签列表与拉取命令">snowdreamtech/aria2 — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/snowdreamtech/aria2" title="snowdreamtech/aria2 Docker 镜像中文简介、标签列表与拉取命令">snowdreamtech/aria2 — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/snowdreamtech/aria2" title="snowdreamtech/aria2 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/snowdreamtech/aria2</a></p>
+<a href="https://xuanyuan.cloud/zh/r/snowdreamtech/aria2" title="snowdreamtech/aria2 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/snowdreamtech/aria2</a>
 
 # Aria2 Docker镜像
 
@@ -104,7 +105,3 @@ docker buildx build -t snowdreamtech/aria2 --platform=linux/386,linux/amd64,linu
 ## 许可证
 
 MIT
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/snowdreamtech/aria2" title="snowdreamtech/aria2 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/snowdreamtech/aria2</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: tenable/nessus
+description: "官方Nessus扫描器Docker镜像，用于部署Nessus漏洞扫描工具，支持指定Nessus版本和操作系统（Oracle或Ubuntu），可通过docker pull命令获取。"
 source: https://xuanyuan.cloud/zh/r/tenable/nessus
 canonical: https://xuanyuan.cloud/zh/r/tenable/nessus
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/tenable/nessus" title="tenable/nessus Docker 镜像中文简介、标签列表与拉取命令">tenable/nessus — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/tenable/nessus" title="tenable/nessus Docker 镜像中文简介、标签列表与拉取命令">tenable/nessus — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/tenable/nessus" title="tenable/nessus Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/tenable/nessus</a></p>
+<a href="https://xuanyuan.cloud/zh/r/tenable/nessus" title="tenable/nessus Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/tenable/nessus</a>
 
 # Nessus Scanner 官方镜像
 
@@ -46,7 +47,3 @@ $ docker pull tenable/nessus:<version-OS>
 
 ### 发布说明
 - **发布说明**：[Nessus发布说明](https://docs.tenable.com/releasenotes/Content/nessus/nessus.htm)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/tenable/nessus" title="tenable/nessus Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/tenable/nessus</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: xiaozhu674/gameservermanager
+description: "新一代一站式游戏开服面板，提供便捷的游戏服务器开设与管理功能。"
 source: https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager
 canonical: https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager" title="xiaozhu674/gameservermanager Docker 镜像中文简介、标签列表与拉取命令">xiaozhu674/gameservermanager — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager" title="xiaozhu674/gameservermanager Docker 镜像中文简介、标签列表与拉取命令">xiaozhu674/gameservermanager — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager" title="xiaozhu674/gameservermanager Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager</a></p>
+<a href="https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager" title="xiaozhu674/gameservermanager Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager</a>
 
 # 新一代一站式游戏开服面板 Docker 镜像文档
 
@@ -179,7 +180,3 @@ services:
 - **安全加固**：生产环境中建议禁用`ADMIN_PASSWORD`明文环境变量，改用面板内手动设置；外部访问建议通过HTTPS反向代理（如Nginx+Let's Encrypt）。
 - **数据备份**：定期备份`/games`和`/config`目录，避免因容器故障或数据损坏导致游戏存档丢失。
 - **版本更新**：升级镜像前需备份数据，新版本可能存在配置文件格式变更，需参考官方更新日志进行适配。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager" title="xiaozhu674/gameservermanager Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager</a></p>

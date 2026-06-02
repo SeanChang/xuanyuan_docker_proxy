@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: dockette/debian
+description: "基于Debian的基础Docker镜像，提供Sid、Jessie、Wheezy等特殊变体，包含预定义用户和优化配置，适用于构建轻量级应用环境。"
 source: https://xuanyuan.cloud/zh/r/dockette/debian
 canonical: https://xuanyuan.cloud/zh/r/dockette/debian
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/dockette/debian" title="dockette/debian Docker 镜像中文简介、标签列表与拉取命令">dockette/debian — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dockette/debian" title="dockette/debian Docker 镜像中文简介、标签列表与拉取命令">dockette/debian — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/dockette/debian" title="dockette/debian Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dockette/debian</a></p>
+<a href="https://xuanyuan.cloud/zh/r/dockette/debian" title="dockette/debian Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dockette/debian</a>
 
 # Debian
 
@@ -77,7 +78,3 @@ docker run -it --rm dockette/debian:wheezy-slim /bin/bash
 FROM dockette/debian:buster-slim
 
 RUN apt update && apt install -y curl
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/dockette/debian" title="dockette/debian Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/dockette/debian</a></p>

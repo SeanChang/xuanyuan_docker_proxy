@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: kasmweb/terminal
+description: "Kasm Workspaces的浏览器可访问版xfce4-terminal，用于在Docker容器流平台中提供基于浏览器的终端访问，支持通过Web界面使用xfce4-terminal终端应用。"
 source: https://xuanyuan.cloud/zh/r/kasmweb/terminal
 canonical: https://xuanyuan.cloud/zh/r/kasmweb/terminal
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kasmweb/terminal" title="kasmweb/terminal Docker 镜像中文简介、标签列表与拉取命令">kasmweb/terminal — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kasmweb/terminal" title="kasmweb/terminal Docker 镜像中文简介、标签列表与拉取命令">kasmweb/terminal — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/kasmweb/terminal" title="kasmweb/terminal Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/terminal</a></p>
+<a href="https://xuanyuan.cloud/zh/r/kasmweb/terminal" title="kasmweb/terminal Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/terminal</a>
 
 # Kasm Workspaces 终端镜像
 
@@ -103,7 +104,3 @@ sudo docker run --rm -it --shm-size=512m -p 6901:6901 -e VNC_PW=password kasmweb
 [installation]: https://www.kasmweb.com/docs/latest/install.html "安装"
 [custom_images]: https://www.kasmweb.com/docs/latest/how_to/building_images.html "自定义镜像"
 [github_support]: https://github.com/kasmtech/workspaces-issues/issues "GitHub支持"
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kasmweb/terminal" title="kasmweb/terminal Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/terminal</a></p>

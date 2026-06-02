@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: lsiodev/radarr
+description: "Radarr是一款用于电影收藏管理的工具，可自动搜索、下载和整理电影文件，帮助用户维护有序的电影库。"
 source: https://xuanyuan.cloud/zh/r/lsiodev/radarr
 canonical: https://xuanyuan.cloud/zh/r/lsiodev/radarr
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/lsiodev/radarr" title="lsiodev/radarr Docker 镜像中文简介、标签列表与拉取命令">lsiodev/radarr — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/lsiodev/radarr" title="lsiodev/radarr Docker 镜像中文简介、标签列表与拉取命令">lsiodev/radarr — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/lsiodev/radarr" title="lsiodev/radarr Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/lsiodev/radarr</a></p>
+<a href="https://xuanyuan.cloud/zh/r/lsiodev/radarr" title="lsiodev/radarr Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/lsiodev/radarr</a>
 
 # linuxserver/radarr 镜像文档
 
@@ -246,7 +247,3 @@ docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/radarr:arm64v8-latest 
 - **17.04.17**：切换到内部 mono 基础镜像，添加 python 依赖
 - **13.04.17**：切换到官方 mono 仓库
 - **10.01.17**：初始发布
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/lsiodev/radarr" title="lsiodev/radarr Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/lsiodev/radarr</a></p>

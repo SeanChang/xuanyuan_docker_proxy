@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: emqx/emqx-enterprise
+description: "EMQX Enterprise的官方Docker镜像，这是一个高性能、可扩展的企业级MQTT平台，支持连接数百万IoT设备并实时处理消息，适用于AI、IoT和工业物联网等场景。"
 source: https://xuanyuan.cloud/zh/r/emqx/emqx-enterprise
 canonical: https://xuanyuan.cloud/zh/r/emqx/emqx-enterprise
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/emqx/emqx-enterprise" title="emqx/emqx-enterprise Docker 镜像中文简介、标签列表与拉取命令">emqx/emqx-enterprise — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/emqx/emqx-enterprise" title="emqx/emqx-enterprise Docker 镜像中文简介、标签列表与拉取命令">emqx/emqx-enterprise — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/emqx/emqx-enterprise" title="emqx/emqx-enterprise Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/emqx/emqx-enterprise</a></p>
+<a href="https://xuanyuan.cloud/zh/r/emqx/emqx-enterprise" title="emqx/emqx-enterprise Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/emqx/emqx-enterprise</a>
 
 # EMQX Enterprise 概述
 
@@ -252,7 +253,3 @@ docker run -d --name emqx -p 18083:18083 -p 1883:1883 \
 - [@je-al](https://github.com/emqx/emqx-docker/issues/2)
 - [@RaymondMouthaan](https://github.com/emqx/emqx-docker/pull/91)
 - [@zhongjiewu](https://github.com/emqx/emqx/issues/3427)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/emqx/emqx-enterprise" title="emqx/emqx-enterprise Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/emqx/emqx-enterprise</a></p>

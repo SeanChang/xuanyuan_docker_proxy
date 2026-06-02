@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: alpine/jmeter
+description: "在Docker环境中运行JMeter性能测试工具的镜像，便于快速部署和执行性能测试任务。"
 source: https://xuanyuan.cloud/zh/r/alpine/jmeter
 canonical: https://xuanyuan.cloud/zh/r/alpine/jmeter
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/jmeter" title="alpine/jmeter Docker 镜像中文简介、标签列表与拉取命令">alpine/jmeter — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/jmeter" title="alpine/jmeter Docker 镜像中文简介、标签列表与拉取命令">alpine/jmeter — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/alpine/jmeter" title="alpine/jmeter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpine/jmeter</a></p>
+<a href="https://xuanyuan.cloud/zh/r/alpine/jmeter" title="alpine/jmeter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpine/jmeter</a>
 
 # docker-jmeter 镜像文档
 
@@ -137,7 +138,3 @@ services:
 - **Docker Hub 镜像**：[alpine/jmeter](https://hub.docker.com/r/alpine/jmeter)（镜像下载及标签信息）  
 - **构建日志**：[CircleCI 流水线](https://app.circleci.com/pipelines/github/alpine-docker/jmeter)（查看镜像构建过程）  
 - **JMeter 官方文档**：[Apache JMeter User Manual](https://jmeter.apache.org/usermanual/index.html)（测试计划编写及参数说明）
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/jmeter" title="alpine/jmeter Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/alpine/jmeter</a></p>

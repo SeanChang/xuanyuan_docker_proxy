@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: mohanadkombar/cosmos-predict2.5
+description: "cosmos--predec2.5是用于运行Cosmos Predict 2.5应用的Docker镜像，基于输入JSON配置执行视频生成任务，预安装所有必要依赖以确保环境一致性。"
 source: https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5
 canonical: https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5" title="mohanadkombar/cosmos-predict2.5 Docker 镜像中文简介、标签列表与拉取命令">mohanadkombar/cosmos-predict2.5 — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5" title="mohanadkombar/cosmos-predict2.5 Docker 镜像中文简介、标签列表与拉取命令">mohanadkombar/cosmos-predict2.5 — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5" title="mohanadkombar/cosmos-predict2.5 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5</a></p>
+<a href="https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5" title="mohanadkombar/cosmos-predict2.5 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5</a>
 
 # cosmos--predec2.5 Docker镜像文档
 
@@ -49,7 +50,3 @@ docker run -v /本地路径/config.json:/app/config.json cosmos--predec2.5
 
 ### 环境一致性保障
 由于镜像已固化所有依赖组件，无需在宿主环境中安装额外库或工具，直接运行即可确保应用按预期执行。如需调整配置，仅需修改外部JSON文件并重新挂载，无需重建镜像。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5" title="mohanadkombar/cosmos-predict2.5 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mohanadkombar/cosmos-predict2.5</a></p>

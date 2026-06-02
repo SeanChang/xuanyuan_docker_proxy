@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: temporalio/temporal
+description: "Temporal的命令行界面与开发服务器，用于Temporal工作流平台的命令行操作及开发环境搭建。"
 source: https://xuanyuan.cloud/zh/r/temporalio/temporal
 canonical: https://xuanyuan.cloud/zh/r/temporalio/temporal
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/temporalio/temporal" title="temporalio/temporal Docker 镜像中文简介、标签列表与拉取命令">temporalio/temporal — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/temporalio/temporal" title="temporalio/temporal Docker 镜像中文简介、标签列表与拉取命令">temporalio/temporal — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/temporalio/temporal" title="temporalio/temporal Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/temporalio/temporal</a></p>
+<a href="https://xuanyuan.cloud/zh/r/temporalio/temporal" title="temporalio/temporal Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/temporalio/temporal</a>
 
 # Temporal CLI Docker镜像文档
 
@@ -80,7 +81,3 @@ docker run --rm -p 7233:7233 -p 8233:8233 temporalio/temporal:latest server star
 - 开发服务器基于SQLite持久化，仅适用于开发和测试场景，**不建议用于生产环境**
 - 端口映射需确保主机端口未被占用，冲突时可修改主机端口（如`-p 7234:7233`）
 - 完整文档参考[Temporal官方CLI文档](https://docs.temporal.io/cli)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/temporalio/temporal" title="temporalio/temporal Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/temporalio/temporal</a></p>

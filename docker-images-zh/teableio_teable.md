@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: teableio/teable
+description: "Teable 是一个超快速、实时、专业、开发者友好的无代码数据库，基于Postgres构建，采用类电子表格界面，可创建复杂的企业级数据库应用，无需担心数据安全和可扩展性问题。"
 source: https://xuanyuan.cloud/zh/r/teableio/teable
 canonical: https://xuanyuan.cloud/zh/r/teableio/teable
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/teableio/teable" title="teableio/teable Docker 镜像中文简介、标签列表与拉取命令">teableio/teable — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/teableio/teable" title="teableio/teable Docker 镜像中文简介、标签列表与拉取命令">teableio/teable — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/teableio/teable" title="teableio/teable Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/teableio/teable</a></p>
+<a href="https://xuanyuan.cloud/zh/r/teableio/teable" title="teableio/teable Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/teableio/teable</a>
 
 # Teable 镜像文档
 
@@ -140,7 +141,3 @@ volumes:
 - 部分功能（如条件格式、图表工具、扩展功能等）标注为“即将推出”，请关注官方更新获取最新功能。
 - 隐私优先特性中的“自带数据库”功能即将支持，届时可连接自有数据库实例。
 - 为确保数据安全和性能，建议在生产环境中配置适当的存储卷和数据库连接。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/teableio/teable" title="teableio/teable Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/teableio/teable</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: factoriotools/factorio
+description: "搭建《异星工厂》私人服务器，为好友打造稳定联机空间，共同进入危机与机遇并存的异星世界：协作采集矿石、提炼材料，设计精密自动化生产线，研发科技解锁高级设备，在抵御异星生物突袭时分工配合，于建造与生存的沉浸式体验中增进默契，尽情享受多人联机的策略布局与创造乐趣。"
 source: https://xuanyuan.cloud/zh/r/factoriotools/factorio
 canonical: https://xuanyuan.cloud/zh/r/factoriotools/factorio
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/factoriotools/factorio" title="factoriotools/factorio Docker 镜像中文简介、标签列表与拉取命令">factoriotools/factorio — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/factoriotools/factorio" title="factoriotools/factorio Docker 镜像中文简介、标签列表与拉取命令">factoriotools/factorio — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/factoriotools/factorio" title="factoriotools/factorio Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/factoriotools/factorio</a></p>
+<a href="https://xuanyuan.cloud/zh/r/factoriotools/factorio" title="factoriotools/factorio Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/factoriotools/factorio</a>
 
 # Factorio [![Docker 版本]([])]([]) [![Docker 拉取量]([])]([]) [![Docker 星标]([])]([])
 
@@ -327,7 +328,3 @@ docker run -d \
 - [DBendit]([])（权限列表支持）  
 - [Zopanix]([])（原作者）  
 - 其他贡献者：[Rfvgyhn]([])、[gnomus]([])、[bplein]([]) 等。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/factoriotools/factorio" title="factoriotools/factorio Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/factoriotools/factorio</a></p>

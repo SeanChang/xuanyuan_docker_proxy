@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: localai/localai-backends
+description: "为LocalAI提供额外后端支持的Docker镜像，用于扩展其功能与兼容性。"
 source: https://xuanyuan.cloud/zh/r/localai/localai-backends
 canonical: https://xuanyuan.cloud/zh/r/localai/localai-backends
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/localai/localai-backends" title="localai/localai-backends Docker 镜像中文简介、标签列表与拉取命令">localai/localai-backends — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/localai/localai-backends" title="localai/localai-backends Docker 镜像中文简介、标签列表与拉取命令">localai/localai-backends — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/localai/localai-backends" title="localai/localai-backends Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/localai/localai-backends</a></p>
+<a href="https://xuanyuan.cloud/zh/r/localai/localai-backends" title="localai/localai-backends Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/localai/localai-backends</a>
 
 # LocalAI 额外后端镜像 (extra-backends)
 
@@ -191,7 +192,3 @@ curl http://localhost:8080/v1/backends
 
 - **Q：模型缓存目录占用过大如何清理？**  
   A：手动删除 `MODEL_CACHE_PATH` 下的过期模型文件，或通过设置 `CACHE_TTL` 自动清理过期缓存。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/localai/localai-backends" title="localai/localai-backends Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/localai/localai-backends</a></p>

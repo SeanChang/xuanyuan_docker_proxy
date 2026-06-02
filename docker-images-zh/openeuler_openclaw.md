@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: openeuler/openclaw
+description: "OpenClaw是一款可在个人设备上运行的AI助手，支持WhatsApp、Telegram、Slack、Discord等多种消息渠道，由openEuler CloudNative SIG维护。"
 source: https://xuanyuan.cloud/zh/r/openeuler/openclaw
 canonical: https://xuanyuan.cloud/zh/r/openeuler/openclaw
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/openclaw" title="openeuler/openclaw Docker 镜像中文简介、标签列表与拉取命令">openeuler/openclaw — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/openclaw" title="openeuler/openclaw Docker 镜像中文简介、标签列表与拉取命令">openeuler/openclaw — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/openeuler/openclaw" title="openeuler/openclaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/openclaw</a></p>
+<a href="https://xuanyuan.cloud/zh/r/openeuler/openclaw" title="openeuler/openclaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/openclaw</a>
 
 # OpenClaw Docker镜像文档
 
@@ -78,7 +79,3 @@ docker exec -it my-openclaw openclaw tui
 ## 问答
 
 如有任何问题或需要使用特殊功能，请在[openeuler-docker-images](https://gitee.com/openeuler/openeuler-docker-images)提交issue或pull request。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/openclaw" title="openeuler/openclaw Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/openclaw</a></p>

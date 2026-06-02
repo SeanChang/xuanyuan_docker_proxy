@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: macrosan/kylin
+description: "银河麒麟高级服务器操作系统V10是一款面向企业级服务器应用的国产操作系统，基于自主研发的Kylin软件源构建，整合了稳定高效的系统组件与安全增强机制，包含Kylin-V10-SP1/SP2/SP3（服务包1/2/3）等多个版本，通过持续迭代优化系统性能、兼容性及安全防护能力，为关键行业服务器环境提供可靠支撑。"
 source: https://xuanyuan.cloud/zh/r/macrosan/kylin
 canonical: https://xuanyuan.cloud/zh/r/macrosan/kylin
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/macrosan/kylin" title="macrosan/kylin Docker 镜像中文简介、标签列表与拉取命令">macrosan/kylin — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/macrosan/kylin" title="macrosan/kylin Docker 镜像中文简介、标签列表与拉取命令">macrosan/kylin — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/macrosan/kylin" title="macrosan/kylin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/macrosan/kylin</a></p>
+<a href="https://xuanyuan.cloud/zh/r/macrosan/kylin" title="macrosan/kylin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/macrosan/kylin</a>
 
 # 银河麒麟高级服务器操作系统V10 Docker镜像介绍
 
@@ -92,7 +93,3 @@ release V10 (SP1) /(Tercel)-x86_64-Build20/20210518
 bash-5.0# rpm -q kylin-release 
 kylin-release-10-24.6.p37.ky10.x86_64
 ```
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/macrosan/kylin" title="macrosan/kylin Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/macrosan/kylin</a></p>

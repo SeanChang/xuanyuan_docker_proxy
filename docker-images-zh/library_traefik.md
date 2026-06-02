@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/traefik
+description: "Traefik 是一款专为云原生环境打造的边缘路由器，作为现代 HTTP 反向代理与负载均衡器，它能自动发现服务、动态配置路由规则，无缝集成 Kubernetes、Docker 等容器编排平台，简化微服务架构下的流量管理，支持 HTTPS、TLS 加密及多种协议，为云原生应用提供高效、安全、灵活的边缘流量处理能力。"
 source: https://xuanyuan.cloud/zh/r/library/traefik
 canonical: https://xuanyuan.cloud/zh/r/library/traefik
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/traefik" title="library/traefik Docker 镜像中文简介、标签列表与拉取命令">library/traefik — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/traefik" title="library/traefik Docker 镜像中文简介、标签列表与拉取命令">library/traefik — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/traefik" title="library/traefik Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/traefik</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/traefik" title="library/traefik Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/traefik</a>
 
 # Traefik Docker镜像介绍
 
@@ -188,7 +189,3 @@ Windows容器配置指南：[Windows Containers Quick Start]([])
 - 镜像中软件的许可证信息：[Traefik LICENSE.md]([])  
 - 基础镜像及依赖软件可能包含其他许可证，可参考[repo-info仓库的`traefik`目录]([])中的自动检测信息。  
 使用前请确保遵守所有包含软件的许可证要求。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/traefik" title="library/traefik Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/traefik</a></p>

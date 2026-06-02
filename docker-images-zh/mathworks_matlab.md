@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: mathworks/matlab
+description: "MATLAB Docker容器，用于在云和服务器环境中访问MATLAB，支持通过浏览器和VNC进行交互，提供基于Ubuntu的预构建镜像，适用于工程师和科学家的编程平台，集成矩阵数学编程语言与桌面环境。"
 source: https://xuanyuan.cloud/zh/r/mathworks/matlab
 canonical: https://xuanyuan.cloud/zh/r/mathworks/matlab
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mathworks/matlab" title="mathworks/matlab Docker 镜像中文简介、标签列表与拉取命令">mathworks/matlab — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mathworks/matlab" title="mathworks/matlab Docker 镜像中文简介、标签列表与拉取命令">mathworks/matlab — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/mathworks/matlab" title="mathworks/matlab Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mathworks/matlab</a></p>
+<a href="https://xuanyuan.cloud/zh/r/mathworks/matlab" title="mathworks/matlab Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mathworks/matlab</a>
 
 # MATLAB Docker容器
 
@@ -244,7 +245,3 @@ $ docker run -it --rm --shm-size=512M my-matlab-container
 如果您需要帮助或请求其他功能或能力，请联系[MathWorks技术支持](https://www.mathworks.com/support/contact_us.html)。
 
 Copyright 2020-2025 The MathWorks, Inc.
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mathworks/matlab" title="mathworks/matlab Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mathworks/matlab</a></p>

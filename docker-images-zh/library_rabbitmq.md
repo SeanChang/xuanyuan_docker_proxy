@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/rabbitmq
+description: "RabbitMQ是一款开源的多协议消息代理，主要用于在分布式系统中实现应用间的异步通信，支持AMQP、MQTT、STOMP等多种消息协议，能够有效解耦服务、提升系统可靠性与可扩展性，适用于微服务架构、实时数据处理及异步任务处理等场景，由Erlang语言开发，具备高并发、高可用特性，广泛应用于企业级系统。"
 source: https://xuanyuan.cloud/zh/r/library/rabbitmq
 canonical: https://xuanyuan.cloud/zh/r/library/rabbitmq
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/rabbitmq" title="library/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">library/rabbitmq — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/rabbitmq" title="library/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">library/rabbitmq — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/rabbitmq" title="library/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/rabbitmq</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/rabbitmq" title="library/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/rabbitmq</a>
 
 # RabbitMQ Docker镜像使用指南
 
@@ -204,7 +205,3 @@ RUN rabbitmq-plugins enable --offline rabbitmq_mqtt rabbitmq_federation_manageme
 与所有Docker镜像一样，本镜像可能包含其他软件（如基础系统的Bash等），其许可证需另行确认。自动检测到的许可证信息可在[repo-info仓库的rabbitmq目录]([])查看。  
 
 使用前请确保遵守所有包含软件的许可证要求。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/rabbitmq" title="library/rabbitmq Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/rabbitmq</a></p>

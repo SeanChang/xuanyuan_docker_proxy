@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: apache/iotdb
+description: "这是一款物联网原生数据库，具备高性能特性，专为物联网场景设计，能够高效管理和分析海量异构的物联网数据，涵盖数据的实时采集、存储、处理与整合全流程，并支持实时监控、趋势预测及深度业务洞察等多样化分析需求，为物联网应用提供稳定可靠的数据支撑和高效运算能力。"
 source: https://xuanyuan.cloud/zh/r/apache/iotdb
 canonical: https://xuanyuan.cloud/zh/r/apache/iotdb
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/iotdb" title="apache/iotdb Docker 镜像中文简介、标签列表与拉取命令">apache/iotdb — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/iotdb" title="apache/iotdb Docker 镜像中文简介、标签列表与拉取命令">apache/iotdb — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/apache/iotdb" title="apache/iotdb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/iotdb</a></p>
+<a href="https://xuanyuan.cloud/zh/r/apache/iotdb" title="apache/iotdb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/iotdb</a>
 
 # Apache IoTDB 简介
 
@@ -112,7 +113,3 @@ networks:
 ```
 
 更多部署细节可参考 [Docker 安装文档]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/iotdb" title="apache/iotdb Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/apache/iotdb</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: dyrnq/kube-webhook-certgen
+description: "k8s.gcr.io/ingress-nginx/kube-webhook-certgen是位于Google Container Registry（k8s.gcr.io）的Kubernetes官方镜像，属于ingress-nginx组件，是用于为Kubernetes Webhook生成和管理TLS证书的工具，其主要功能是通过自动生成、更新和轮换证书，保障Webhook在与Kubernetes API服务器通信时的安全加密，是确保Ingress控制器能够正常处理入站流量、实现API对象配置验证及动态路由规则生效的关键组件。"
 source: https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen
 canonical: https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen" title="dyrnq/kube-webhook-certgen Docker 镜像中文简介、标签列表与拉取命令">dyrnq/kube-webhook-certgen — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen" title="dyrnq/kube-webhook-certgen Docker 镜像中文简介、标签列表与拉取命令">dyrnq/kube-webhook-certgen — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen" title="dyrnq/kube-webhook-certgen Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen</a></p>
+<a href="https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen" title="dyrnq/kube-webhook-certgen Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen</a>
 
 ### k8s.gcr.io/ingress-nginx/kube-webhook-certgen 工具镜像介绍
 
@@ -81,7 +82,3 @@ docker run --rm k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.8.0 \
 2. **权限要求**：执行生成/更新命令的账号需有目标命名空间的 Secret 创建权限。  
 3. **生产环境建议**：自签名证书仅适用于测试环境，生产环境需使用外部 CA 签发的证书，并关闭工具的自动生成功能。  
 4. **镜像拉取**：k8s.gcr.io 镜像源国内访问受限，建议提前配置镜像代理或使用第三方镜像源（如阿里云、Docker Hub 镜像）。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen" title="dyrnq/kube-webhook-certgen Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen</a></p>

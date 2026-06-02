@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: althack/ros2
+description: "一系列适用于ROS 2的开发容器"
 source: https://xuanyuan.cloud/zh/r/althack/ros2
 canonical: https://xuanyuan.cloud/zh/r/althack/ros2
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/althack/ros2" title="althack/ros2 Docker 镜像中文简介、标签列表与拉取命令">althack/ros2 — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/althack/ros2" title="althack/ros2 Docker 镜像中文简介、标签列表与拉取命令">althack/ros2 — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/althack/ros2" title="althack/ros2 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/althack/ros2</a></p>
+<a href="https://xuanyuan.cloud/zh/r/althack/ros2" title="althack/ros2 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/althack/ros2</a>
 
 # althack/ros2 Docker镜像文档
 
@@ -175,7 +176,3 @@ services:
 ```
 
 通过日期标签可避免因镜像更新导致的依赖版本变化问题，保障开发环境的稳定性。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/althack/ros2" title="althack/ros2 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/althack/ros2</a></p>

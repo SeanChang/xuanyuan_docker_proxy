@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: intel/python
+description: "Intel® Distribution for Python* 是增强性能的Python发行版，集成Intel® Math Kernel Library等性能库，可提升程序速度10到100倍，支持Intel dGPU，包含最新驱动和OneAPI运行时库，加速数值计算与机器学习框架。"
 source: https://xuanyuan.cloud/zh/r/intel/python
 canonical: https://xuanyuan.cloud/zh/r/intel/python
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/intel/python" title="intel/python Docker 镜像中文简介、标签列表与拉取命令">intel/python — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/intel/python" title="intel/python Docker 镜像中文简介、标签列表与拉取命令">intel/python — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/intel/python" title="intel/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/intel/python</a></p>
+<a href="https://xuanyuan.cloud/zh/r/intel/python" title="intel/python Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/intel/python</a>
 
 # Intel® Distribution for Python*
 
@@ -109,7 +110,3 @@ docker compose run xpu
 [Intel® DPC++ Compiler Library]: https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler-download.html
 [Intel® Collective Communications Library]: https://www.intel.com/content/www/us/en/developer/tools/oneapi/oneccl.html
 [Intel® dGPU drivers]: https://dgpu-docs.intel.com/releases/releases.html
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/intel/python" title="intel/python Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/intel/python</a></p>

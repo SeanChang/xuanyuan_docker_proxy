@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: maxkeytop/maxkey
+description: "MaxKey认证端是提供单点登录及身份验证服务的Docker镜像，用于企业级应用的统一身份认证管理。"
 source: https://xuanyuan.cloud/zh/r/maxkeytop/maxkey
 canonical: https://xuanyuan.cloud/zh/r/maxkeytop/maxkey
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/maxkeytop/maxkey" title="maxkeytop/maxkey Docker 镜像中文简介、标签列表与拉取命令">maxkeytop/maxkey — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/maxkeytop/maxkey" title="maxkeytop/maxkey Docker 镜像中文简介、标签列表与拉取命令">maxkeytop/maxkey — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/maxkeytop/maxkey" title="maxkeytop/maxkey Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/maxkeytop/maxkey</a></p>
+<a href="https://xuanyuan.cloud/zh/r/maxkeytop/maxkey" title="maxkeytop/maxkey Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/maxkeytop/maxkey</a>
 
 # MaxKey 单点登录认证系统 Docker 镜像文档
 
@@ -170,7 +171,3 @@ services:
 - **代码托管**：[GitHub](https://github.com/dromara/MaxKey) | [码云(Gitee)](https://gitee.com/dromara/MaxKey)
 - **安装部署文档**：[MaxKey 安装部署](https://www.maxkey.top/zh/about/download.html)
 - **技术支持**：QQ群（1054466084）、邮箱（support@maxsso.net）
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/maxkeytop/maxkey" title="maxkeytop/maxkey Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/maxkeytop/maxkey</a></p>

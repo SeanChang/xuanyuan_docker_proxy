@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: alpinelinux/golang
+description: "基于Alpine Linux的Golang构建容器，用于Golang应用程序的编译和构建环境，提供轻量级基础并包含完整Golang开发工具链，适用于本地开发及CI/CD流水线构建阶段。"
 source: https://xuanyuan.cloud/zh/r/alpinelinux/golang
 canonical: https://xuanyuan.cloud/zh/r/alpinelinux/golang
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/alpinelinux/golang" title="alpinelinux/golang Docker 镜像中文简介、标签列表与拉取命令">alpinelinux/golang — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpinelinux/golang" title="alpinelinux/golang Docker 镜像中文简介、标签列表与拉取命令">alpinelinux/golang — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/alpinelinux/golang" title="alpinelinux/golang Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpinelinux/golang</a></p>
+<a href="https://xuanyuan.cloud/zh/r/alpinelinux/golang" title="alpinelinux/golang Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpinelinux/golang</a>
 
 # Golang-Alpine 构建容器
 
@@ -99,7 +100,3 @@ docker run --rm golang:alpine apk add --no-cache git make
 - `golang:1.21-alpine`：Golang 1.21 + 最新Alpine稳定版
 
 建议根据项目Golang版本需求选择对应标签，避免因版本差异导致构建错误。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/alpinelinux/golang" title="alpinelinux/golang Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/alpinelinux/golang</a></p>

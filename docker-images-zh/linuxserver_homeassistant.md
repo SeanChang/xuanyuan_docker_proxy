@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/homeassistant
+description: "LinuxServer提供的Home Assistant Docker镜像，是一款功能强大的家庭自动化平台，可集中管理智能家居设备，支持数百种设备协议与品牌，通过可视化界面与自动化规则实现场景联动。该镜像基于轻量级架构构建，集成完善的社区插件生态，支持数据持久化与安全更新，帮助用户轻松搭建个性化智能家庭系统，简化部署流程并降低维护成本，打造高效、智能的现代生活体验。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/homeassistant
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/homeassistant
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/homeassistant" title="linuxserver/homeassistant Docker 镜像中文简介、标签列表与拉取命令">linuxserver/homeassistant — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/homeassistant" title="linuxserver/homeassistant Docker 镜像中文简介、标签列表与拉取命令">linuxserver/homeassistant — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/homeassistant" title="linuxserver/homeassistant Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/homeassistant</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/homeassistant" title="linuxserver/homeassistant Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/homeassistant</a>
 
 # LinuxServer.io Docker Home Assistant 容器介绍
 
@@ -276,7 +277,3 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 - **13.02.24**：基于 Alpine 3.19 重建，升级 Python 3.12，调整 Python 包结构。  
 - **05.07.23**：不再支持 armhf 架构。  
 - **30.01.21**：初始发布。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/homeassistant" title="linuxserver/homeassistant Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/homeassistant</a></p>

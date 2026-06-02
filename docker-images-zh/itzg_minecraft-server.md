@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: itzg/minecraft-server
+description: "这是一款支持动态版本切换、多种服务器类型及丰富模组包的我的世界服务器，玩家可根据需求自由选择适配的游戏版本，体验生存、创造、冒险等多样化服务器模式，并轻松加载各类热门模组包，享受高度自定义的游戏乐趣。"
 source: https://xuanyuan.cloud/zh/r/itzg/minecraft-server
 canonical: https://xuanyuan.cloud/zh/r/itzg/minecraft-server
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/itzg/minecraft-server" title="itzg/minecraft-server Docker 镜像中文简介、标签列表与拉取命令">itzg/minecraft-server — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/itzg/minecraft-server" title="itzg/minecraft-server Docker 镜像中文简介、标签列表与拉取命令">itzg/minecraft-server — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/itzg/minecraft-server" title="itzg/minecraft-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/itzg/minecraft-server</a></p>
+<a href="https://xuanyuan.cloud/zh/r/itzg/minecraft-server" title="itzg/minecraft-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/itzg/minecraft-server</a>
 
 ### itzg/minecraft-server Docker镜像介绍  
 
@@ -44,7 +45,3 @@ docker run -d -p 25565:25565 --name mc -v mc-data:/data itzg/minecraft-server
 如果你使用的是主机（如Xbox/PlayStation）、移动设备或原生Windows系统的Minecraft客户端，需使用基岩版服务器镜像：  
 
 [itzg/minecraft-bedrock-server]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/itzg/minecraft-server" title="itzg/minecraft-server Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/itzg/minecraft-server</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: instructure/libreoffice
+description: "LibreOffice是一款开源办公套件Docker镜像，集成文字处理、电子表格、演示文稿等工具，适用于文档创建、编辑及格式转换等办公任务。"
 source: https://xuanyuan.cloud/zh/r/instructure/libreoffice
 canonical: https://xuanyuan.cloud/zh/r/instructure/libreoffice
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/instructure/libreoffice" title="instructure/libreoffice Docker 镜像中文简介、标签列表与拉取命令">instructure/libreoffice — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/instructure/libreoffice" title="instructure/libreoffice Docker 镜像中文简介、标签列表与拉取命令">instructure/libreoffice — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/instructure/libreoffice" title="instructure/libreoffice Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/instructure/libreoffice</a></p>
+<a href="https://xuanyuan.cloud/zh/r/instructure/libreoffice" title="instructure/libreoffice Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/instructure/libreoffice</a>
 
 # Instructure 开源基础 Docker 镜像
 
@@ -167,7 +168,3 @@ services:
 执行批量构建：
 ```bash
 docker-compose build
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/instructure/libreoffice" title="instructure/libreoffice Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/instructure/libreoffice</a></p>

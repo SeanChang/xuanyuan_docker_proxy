@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/mongo-express
+description: "这是一款基于Web的MongoDB管理界面，专为MongoDB数据库设计，使用Node.js后端框架及Express构建，提供便捷的Web端管理功能，支持用户在浏览器中进行数据库的日常管理操作，如数据查询、文档管理、索引配置等，具备轻量高效、易于部署的特点，适用于开发人员和管理员快速管理MongoDB数据库实例。"
 source: https://xuanyuan.cloud/zh/r/library/mongo-express
 canonical: https://xuanyuan.cloud/zh/r/library/mongo-express
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/mongo-express" title="library/mongo-express Docker 镜像中文简介、标签列表与拉取命令">library/mongo-express — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/mongo-express" title="library/mongo-express Docker 镜像中文简介、标签列表与拉取命令">library/mongo-express — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/mongo-express" title="library/mongo-express Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/mongo-express</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/mongo-express" title="library/mongo-express Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/mongo-express</a>
 
 # mongo-express 镜像使用指南
 
@@ -141,7 +142,3 @@ $ docker run -it --rm \
 Docker 镜像可能包含基础系统（如 Bash）及依赖软件，这些软件可能有独立许可证。部分自动检测的许可证信息可在 [repo-info 仓库的 `mongo-express/` 目录]([]) 查看。  
 
 使用前请确保遵守所有包含软件的许可证要求。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/mongo-express" title="library/mongo-express Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/mongo-express</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: canal/canal-server
+description: "canal-server是阿里巴巴开源的数据库增量同步中间件服务端组件，基于MySQL binlog日志解析技术，通过实时监听并解析数据库变更日志，将增量数据高效、可靠地同步至下游系统（如消息队列、数据仓库、缓存等），支持数据订阅、实时数据集成、跨系统数据同步等场景，为业务提供低延迟、高可用的数据变更捕获与分发能力。"
 source: https://xuanyuan.cloud/zh/r/canal/canal-server
 canonical: https://xuanyuan.cloud/zh/r/canal/canal-server
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/canal/canal-server" title="canal/canal-server Docker 镜像中文简介、标签列表与拉取命令">canal/canal-server — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/canal/canal-server" title="canal/canal-server Docker 镜像中文简介、标签列表与拉取命令">canal/canal-server — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/canal/canal-server" title="canal/canal-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/canal/canal-server</a></p>
+<a href="https://xuanyuan.cloud/zh/r/canal/canal-server" title="canal/canal-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/canal/canal-server</a>
 
 # Canal服务容器构建说明  
 
@@ -67,7 +68,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 - **启动流程**：  
   - 入口脚本为 `/alidata/bin/main.sh`（通过 `ENTRYPOINT` 指定，固定执行）。  
   - 启动命令为 `/home/admin/app.sh`（通过 `CMD` 指定，作为主脚本运行，可在启动容器时覆盖）。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/canal/canal-server" title="canal/canal-server Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/canal/canal-server</a></p>

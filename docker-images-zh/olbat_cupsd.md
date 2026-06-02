@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: olbat/cupsd
+description: "这是一个包含CUPS打印服务器（即通用Unix打印系统，用于管理打印队列、处理打印请求及协调打印任务）与各类打印驱动程序的Docker镜像，旨在为容器化环境提供便捷的打印服务部署方案，支持多种打印机型号，可简化跨平台打印配置流程，适用于需快速搭建和高效管理打印服务的开发、测试或生产场景。"
 source: https://xuanyuan.cloud/zh/r/olbat/cupsd
 canonical: https://xuanyuan.cloud/zh/r/olbat/cupsd
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/olbat/cupsd" title="olbat/cupsd Docker 镜像中文简介、标签列表与拉取命令">olbat/cupsd — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/olbat/cupsd" title="olbat/cupsd Docker 镜像中文简介、标签列表与拉取命令">olbat/cupsd — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/olbat/cupsd" title="olbat/cupsd Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/olbat/cupsd</a></p>
+<a href="https://xuanyuan.cloud/zh/r/olbat/cupsd" title="olbat/cupsd Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/olbat/cupsd</a>
 
 ### 说明  
 本镜像基于 [[]]([]) 构建。
@@ -78,7 +79,3 @@ docker run -d -p 631:631 -v /var/run/dbus:/var/run/dbus -v $PWD/cupsd.conf:/etc/
   - 或通过搜索引擎查找其他支持资源。  
 
 - 关于容器启动、本地网络访问、NAS部署等问题，也请联系对应支持渠道。若涉及Docker网络配置，建议先阅读 [Docker 网络文档]([]) 了解基础概念。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/olbat/cupsd" title="olbat/cupsd Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/olbat/cupsd</a></p>

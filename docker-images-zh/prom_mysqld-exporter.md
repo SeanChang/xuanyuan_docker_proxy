@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: prom/mysqld-exporter
+description: "Prometheus MySQL导出器，用于收集MySQL数据库性能指标并暴露给Prometheus监控系统，支持实时监控与指标分析。"
 source: https://xuanyuan.cloud/zh/r/prom/mysqld-exporter
 canonical: https://xuanyuan.cloud/zh/r/prom/mysqld-exporter
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/mysqld-exporter" title="prom/mysqld-exporter Docker 镜像中文简介、标签列表与拉取命令">prom/mysqld-exporter — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/prom/mysqld-exporter" title="prom/mysqld-exporter Docker 镜像中文简介、标签列表与拉取命令">prom/mysqld-exporter — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/prom/mysqld-exporter" title="prom/mysqld-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/mysqld-exporter</a></p>
+<a href="https://xuanyuan.cloud/zh/r/prom/mysqld-exporter" title="prom/mysqld-exporter Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/mysqld-exporter</a>
 
 # MySQL Server Exporter 镜像文档
 
@@ -261,7 +262,3 @@ scrape_configs:
 ## 8. 示例规则与告警
 
 导出器配套的 [mysqld-mixin](https://github.com/prometheus/mysqld_exporter/tree/main/mysqld-mixin) 提供了示例监控规则、告警规则和 Grafana 仪表板，可直接集成到 Prometheus 和 Grafana 中。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/mysqld-exporter" title="prom/mysqld-exporter Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/prom/mysqld-exporter</a></p>

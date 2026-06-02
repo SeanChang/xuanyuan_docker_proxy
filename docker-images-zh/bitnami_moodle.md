@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnami/moodle
+description: "Bitnami提供的Moodle安全镜像，用于快速部署安全、预配置的开源学习管理系统。"
 source: https://xuanyuan.cloud/zh/r/bitnami/moodle
 canonical: https://xuanyuan.cloud/zh/r/bitnami/moodle
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/moodle" title="bitnami/moodle Docker 镜像中文简介、标签列表与拉取命令">bitnami/moodle — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/moodle" title="bitnami/moodle Docker 镜像中文简介、标签列表与拉取命令">bitnami/moodle — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnami/moodle" title="bitnami/moodle Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/moodle</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnami/moodle" title="bitnami/moodle Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/moodle</a>
 
 # Bitnami Secure Image for moodle 技术文档
 
@@ -54,7 +55,3 @@ Bitnami Secure Image for moodle 需通过商业订阅获取，详情可访问 [B
 
 ### 4.3 进一步信息
 如需了解更多关于 Bitnami Secure Images 商业方案的技术细节、订阅流程或支持服务，可访问 [Bitnami 官方网站](https://bitnami.com/) 获取详细资料。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/moodle" title="bitnami/moodle Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/moodle</a></p>

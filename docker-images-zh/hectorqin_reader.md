@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: hectorqin/reader
+description: "阅读3服务器版是一款面向企业与机构的专业文档管理及阅读服务平台，具备高效文档存储、安全权限控制、多终端同步及智能阅读功能，支持多种文件格式，可促进团队协作与信息高效流转，满足企业级文档管理与阅读需求。"
 source: https://xuanyuan.cloud/zh/r/hectorqin/reader
 canonical: https://xuanyuan.cloud/zh/r/hectorqin/reader
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/hectorqin/reader" title="hectorqin/reader Docker 镜像中文简介、标签列表与拉取命令">hectorqin/reader — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hectorqin/reader" title="hectorqin/reader Docker 镜像中文简介、标签列表与拉取命令">hectorqin/reader — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/hectorqin/reader" title="hectorqin/reader Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hectorqin/reader</a></p>
+<a href="https://xuanyuan.cloud/zh/r/hectorqin/reader" title="hectorqin/reader Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hectorqin/reader</a>
 
 # 阅读3网页版工具介绍
 
@@ -132,7 +133,3 @@ docker run -d --restart=always --name=reader ... reader:latest
 **访问地址**：  
 - Web端：`[]  
 - 接口地址：`[]
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/hectorqin/reader" title="hectorqin/reader Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/hectorqin/reader</a></p>

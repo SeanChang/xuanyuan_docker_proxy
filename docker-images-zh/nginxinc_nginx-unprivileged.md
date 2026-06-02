@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: nginxinc/nginx-unprivileged
+description: "非特权NGINX Docker构建文件是指用于构建以非root用户身份在Docker容器中运行NGINX的配置文件，通过预设用户权限、环境变量及安全参数，确保NGINX在低权限模式下仍能正常处理HTTP请求、反向代理及负载均衡等功能，有效降低因容器漏洞引发的权限提升风险，适用于对安全性要求较高的生产环境部署场景。"
 source: https://xuanyuan.cloud/zh/r/nginxinc/nginx-unprivileged
 canonical: https://xuanyuan.cloud/zh/r/nginxinc/nginx-unprivileged
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nginxinc/nginx-unprivileged" title="nginxinc/nginx-unprivileged Docker 镜像中文简介、标签列表与拉取命令">nginxinc/nginx-unprivileged — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nginxinc/nginx-unprivileged" title="nginxinc/nginx-unprivileged Docker 镜像中文简介、标签列表与拉取命令">nginxinc/nginx-unprivileged — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/nginxinc/nginx-unprivileged" title="nginxinc/nginx-unprivileged Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nginxinc/nginx-unprivileged</a></p>
+<a href="https://xuanyuan.cloud/zh/r/nginxinc/nginx-unprivileged" title="nginxinc/nginx-unprivileged Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nginxinc/nginx-unprivileged</a>
 
 # 非特权用户运行的NGINX Docker镜像
 
@@ -54,7 +55,3 @@ Alpine slim镜像仅支持`amd64`和`arm64v8`架构。
 ## 常见问题  
 - 若覆盖默认`nginx.conf`文件，可能出现错误提示：`nginx: [emerg] open() "/var/run/nginx.pid" failed (13: Permission denied)`。  
   **解决方法**：在自定义配置中添加行`pid /tmp/nginx.pid`。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nginxinc/nginx-unprivileged" title="nginxinc/nginx-unprivileged Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nginxinc/nginx-unprivileged</a></p>

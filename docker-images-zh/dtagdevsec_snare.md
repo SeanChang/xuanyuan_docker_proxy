@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: dtagdevsec/snare
+description: "T-Pot Snare是T-Pot蜜罐平台中的Web蜜罐组件，用于模拟Web应用程序诱捕攻击者，记录其攻击行为和流量数据，助力安全威胁分析与情报收集。"
 source: https://xuanyuan.cloud/zh/r/dtagdevsec/snare
 canonical: https://xuanyuan.cloud/zh/r/dtagdevsec/snare
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/dtagdevsec/snare" title="dtagdevsec/snare Docker 镜像中文简介、标签列表与拉取命令">dtagdevsec/snare — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dtagdevsec/snare" title="dtagdevsec/snare Docker 镜像中文简介、标签列表与拉取命令">dtagdevsec/snare — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/dtagdevsec/snare" title="dtagdevsec/snare Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dtagdevsec/snare</a></p>
+<a href="https://xuanyuan.cloud/zh/r/dtagdevsec/snare" title="dtagdevsec/snare Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dtagdevsec/snare</a>
 
 # T-Pot Snare Docker镜像文档
 
@@ -167,7 +168,3 @@ networks:
 - **资源隔离**：蜜罐应部署于独立网络环境，避免被攻击者用作跳板攻击其他系统。
 - **数据安全**：捕获的攻击日志可能包含敏感信息（如攻击者IP、Payload），需加密存储并限制访问权限。
 - **镜像更新**：定期拉取最新镜像（`docker pull telekomsecurity/tpot-snare:latest`），获取功能更新与安全修复。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/dtagdevsec/snare" title="dtagdevsec/snare Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/dtagdevsec/snare</a></p>

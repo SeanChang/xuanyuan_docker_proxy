@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: atlassian/bamboo-server
+description: "Atlassian Bamboo Server Docker镜像提供企业级持续集成与持续部署（CI/CD）服务，用于自动化软件构建、测试和部署流程，支持团队协作与多环境管理，助力高效交付软件项目。"
 source: https://xuanyuan.cloud/zh/r/atlassian/bamboo-server
 canonical: https://xuanyuan.cloud/zh/r/atlassian/bamboo-server
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/atlassian/bamboo-server" title="atlassian/bamboo-server Docker 镜像中文简介、标签列表与拉取命令">atlassian/bamboo-server — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/atlassian/bamboo-server" title="atlassian/bamboo-server Docker 镜像中文简介、标签列表与拉取命令">atlassian/bamboo-server — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/atlassian/bamboo-server" title="atlassian/bamboo-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/atlassian/bamboo-server</a></p>
+<a href="https://xuanyuan.cloud/zh/r/atlassian/bamboo-server" title="atlassian/bamboo-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/atlassian/bamboo-server</a>
 
 # Atlassian Bamboo Docker 镜像文档
 
@@ -377,7 +378,3 @@ $> jcmd <pid> <command>  # 执行诊断命令
 
 Copyright © 2020 Atlassian Corporation Pty Ltd.  
 基于 Apache License 2.0 许可。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/atlassian/bamboo-server" title="atlassian/bamboo-server Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/atlassian/bamboo-server</a></p>

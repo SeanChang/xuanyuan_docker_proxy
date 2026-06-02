@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/openssh-server
+description: "提供OpenSSH服务器服务，支持远程登录与服务器管理，具备易于部署、配置灵活的特点，适用于各类需要安全远程访问的场景。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/openssh-server
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/openssh-server
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/openssh-server" title="linuxserver/openssh-server Docker 镜像中文简介、标签列表与拉取命令">linuxserver/openssh-server — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/openssh-server" title="linuxserver/openssh-server Docker 镜像中文简介、标签列表与拉取命令">linuxserver/openssh-server — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/openssh-server" title="linuxserver/openssh-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/openssh-server</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/openssh-server" title="linuxserver/openssh-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/openssh-server</a>
 
 # linuxserver/openssh-server
 
@@ -318,7 +319,3 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 - **13.01.20:** - 添加openssh-sftp-server
 - **19.12.19:** - 基于Alpine 3.11重建
 - **17.10.19:** - 初始发布
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/openssh-server" title="linuxserver/openssh-server Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/openssh-server</a></p>

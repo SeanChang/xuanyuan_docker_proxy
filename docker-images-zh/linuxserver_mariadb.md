@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/mariadb
+description: "LinuxServer.io提供的Mariadb容器，用于部署和运行Mariadb关系型数据库服务。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/mariadb
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/mariadb
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/mariadb" title="linuxserver/mariadb Docker 镜像中文简介、标签列表与拉取命令">linuxserver/mariadb — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/mariadb" title="linuxserver/mariadb Docker 镜像中文简介、标签列表与拉取命令">linuxserver/mariadb — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/mariadb" title="linuxserver/mariadb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/mariadb</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/mariadb" title="linuxserver/mariadb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/mariadb</a>
 
 # linuxserver/mariadb
 
@@ -394,7 +395,3 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 * **26.01.**16:** - 将mysqld_safe脚本的用户更改为abc，更好地处理重启时不干净的关闭
 * **23.12.15:** - 移除自动更新功能，某些版本更新之间容器可能会中断
 * **12.08.15:** - 初始发布
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/mariadb" title="linuxserver/mariadb Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/mariadb</a></p>

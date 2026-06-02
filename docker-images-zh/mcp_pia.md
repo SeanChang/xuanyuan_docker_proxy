@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: mcp/pia
+description: "一个MCP服务器，用于帮助美国政府开放数据集实现AI友好化。"
 source: https://xuanyuan.cloud/zh/r/mcp/pia
 canonical: https://xuanyuan.cloud/zh/r/mcp/pia
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mcp/pia" title="mcp/pia Docker 镜像中文简介、标签列表与拉取命令">mcp/pia — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mcp/pia" title="mcp/pia Docker 镜像中文简介、标签列表与拉取命令">mcp/pia — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/mcp/pia" title="mcp/pia Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mcp/pia</a></p>
+<a href="https://xuanyuan.cloud/zh/r/mcp/pia" title="mcp/pia Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mcp/pia</a>
 
 # Program Integrity Alliance MCP服务器
 
@@ -247,7 +248,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 • SourceDocumentDataSource：发布文档的数据源/机构。主要来源（>1k文档）：'Department of Justice'、'Congress.gov'、'Oversight.gov'、'CRS'、'GAO'、'Federal Register'
 • SourceDocumentDataSet：文档所属的数据集或集合。值：'press-releases'、'reports'、'bills-and-laws'、'federal-reports'、'executive orders'、'state-and-local-reports'、'federal reports'
 • SourceDocumentOrg：与文档关联的组织。有许多值，使用pia_search_content_facets工具查看可用选项
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mcp/pia" title="mcp/pia Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mcp/pia</a></p>

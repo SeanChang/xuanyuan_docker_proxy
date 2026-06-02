@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: apache/apisix-dashboard
+description: "Apache APISIX Dashboard是Apache APISIX的官方Web UI，旨在为用户提供友好、直观的界面以管理和运维APISIX集群，支持可视化配置路由、服务、上游、插件等核心资源，实时监控集群运行状态与流量指标，有效简化APISIX的运维复杂度，帮助用户更高效地部署、管理和维护API网关。"
 source: https://xuanyuan.cloud/zh/r/apache/apisix-dashboard
 canonical: https://xuanyuan.cloud/zh/r/apache/apisix-dashboard
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/apisix-dashboard" title="apache/apisix-dashboard Docker 镜像中文简介、标签列表与拉取命令">apache/apisix-dashboard — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/apisix-dashboard" title="apache/apisix-dashboard Docker 镜像中文简介、标签列表与拉取命令">apache/apisix-dashboard — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/apache/apisix-dashboard" title="apache/apisix-dashboard Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/apisix-dashboard</a></p>
+<a href="https://xuanyuan.cloud/zh/r/apache/apisix-dashboard" title="apache/apisix-dashboard Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/apisix-dashboard</a>
 
 # Apache APISIX Docker 镜像使用说明
 
@@ -129,7 +130,3 @@ plugin_attr:
       ip: "0.0.0.0"
       port: 9091
 ```
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/apisix-dashboard" title="apache/apisix-dashboard Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/apache/apisix-dashboard</a></p>

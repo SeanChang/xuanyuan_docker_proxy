@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: nodejs/devcontainer
+description: "Node.js官方开发容器镜像，提供一致的Node.js开发环境，包含必要工具与依赖，支持便捷搭建和维护跨平台、团队协作的开发环境。"
 source: https://xuanyuan.cloud/zh/r/nodejs/devcontainer
 canonical: https://xuanyuan.cloud/zh/r/nodejs/devcontainer
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nodejs/devcontainer" title="nodejs/devcontainer Docker 镜像中文简介、标签列表与拉取命令">nodejs/devcontainer — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nodejs/devcontainer" title="nodejs/devcontainer Docker 镜像中文简介、标签列表与拉取命令">nodejs/devcontainer — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/nodejs/devcontainer" title="nodejs/devcontainer Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nodejs/devcontainer</a></p>
+<a href="https://xuanyuan.cloud/zh/r/nodejs/devcontainer" title="nodejs/devcontainer Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nodejs/devcontainer</a>
 
 # Node.js Dev Container 镜像文档
 
@@ -238,7 +239,3 @@ CMD ["npm", "run", "dev"]
 2. **权限问题**：默认使用非 root 用户 `node`，若需修改文件权限，可通过 `sudo` 命令（容器内已预配置密码less sudo）。
 3. **镜像更新**：基础镜像会定期更新，建议通过 `devcontainer.json` 锁定 Node.js 版本（如 `18` 而非 `lts`）以避免意外升级。
 4. **性能优化**：本地开发时，通过 `mounts` 配置挂载本地 npm/yarn 缓存目录，可大幅加速依赖安装。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nodejs/devcontainer" title="nodejs/devcontainer Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nodejs/devcontainer</a></p>

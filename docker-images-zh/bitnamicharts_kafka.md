@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnamicharts/kafka
+description: "Bitnami为Apache Kafka提供的Helm Chart是一款预配置的Kubernetes包管理工具，旨在简化分布式流处理平台Apache Kafka在Kubernetes集群中的部署、配置与全生命周期运维管理，集成了高可用性集群设置、安全认证机制、Prometheus监控指标及自动伸缩策略等核心功能，帮助用户无需手动处理复杂的集群参数配置，即可快速搭建稳定、可扩展且符合生产级标准的Kafka服务，适用于从开发测试到大规模生产环境的各类场景。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/kafka
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/kafka
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/kafka" title="bitnamicharts/kafka Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/kafka — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/kafka" title="bitnamicharts/kafka Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/kafka — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/kafka" title="bitnamicharts/kafka Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/kafka</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnamicharts/kafka" title="bitnamicharts/kafka Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/kafka</a>
 
 # Bitnami Apache Kafka 软件包介绍
 
@@ -232,7 +233,3 @@ Bitnami Kafka 镜像将数据存储在容器内 `/bitnami/kafka` 路径，通过
 
 
 > **注意**：完整参数列表超出本文长度限制，详见 [GitHub 完整文档]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/kafka" title="bitnamicharts/kafka Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/kafka</a></p>

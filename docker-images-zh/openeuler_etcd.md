@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: openeuler/etcd
+description: "官方etcd Docker镜像，基于openEuler构建，提供分布式键值存储功能，适用于在集群中安全存储数据，具有可靠性、容错性和易用性。"
 source: https://xuanyuan.cloud/zh/r/openeuler/etcd
 canonical: https://xuanyuan.cloud/zh/r/openeuler/etcd
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/etcd" title="openeuler/etcd Docker 镜像中文简介、标签列表与拉取命令">openeuler/etcd — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/etcd" title="openeuler/etcd Docker 镜像中文简介、标签列表与拉取命令">openeuler/etcd — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/openeuler/etcd" title="openeuler/etcd Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/etcd</a></p>
+<a href="https://xuanyuan.cloud/zh/r/openeuler/etcd" title="openeuler/etcd Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/etcd</a>
 
 # etcd | openEuler Docker镜像文档
 
@@ -69,7 +70,3 @@ docker run -d --name Etcd-server \
 
 - [openEuler CloudNative SIG](https://gitee.com/openeuler/cloudnative)
 - [openEuler社区](https://gitee.com/openeuler/community)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/etcd" title="openeuler/etcd Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/etcd</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/django
+description: "该镜像已官方弃用，推荐使用标准`python`镜像替代，2016年12月31日后不再更新。其原价值为预安装mysql-client、postgresql-client和sqlite3，用于Django框架，现可通过自定义Dockerfile实现类似功能。"
 source: https://xuanyuan.cloud/zh/r/library/django
 canonical: https://xuanyuan.cloud/zh/r/library/django
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/django" title="library/django Docker 镜像中文简介、标签列表与拉取命令">library/django — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/django" title="library/django Docker 镜像中文简介、标签列表与拉取命令">library/django — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/django" title="library/django Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/django</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/django" title="library/django Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/django</a>
 
 # **已弃用**
 
@@ -138,7 +139,3 @@ $ docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/
 # 许可证
 
 查看此镜像中包含软件的[许可证信息](https://github.com/django/django/blob/master/LICENSE)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/django" title="library/django Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/django</a></p>

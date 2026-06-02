@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: outlovecn/portainer-cn
+description: "Portainer 容器管理工具中文版本，基于官方2.11.1版本开发，仅对界面及交互内容进行中文本地化处理，未改动核心功能，全面支持X86、ARM及ARM64三种硬件架构，满足不同平台用户的容器管理需求。"
 source: https://xuanyuan.cloud/zh/r/outlovecn/portainer-cn
 canonical: https://xuanyuan.cloud/zh/r/outlovecn/portainer-cn
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/outlovecn/portainer-cn" title="outlovecn/portainer-cn Docker 镜像中文简介、标签列表与拉取命令">outlovecn/portainer-cn — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/outlovecn/portainer-cn" title="outlovecn/portainer-cn Docker 镜像中文简介、标签列表与拉取命令">outlovecn/portainer-cn — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/outlovecn/portainer-cn" title="outlovecn/portainer-cn Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/outlovecn/portainer-cn</a></p>
+<a href="https://xuanyuan.cloud/zh/r/outlovecn/portainer-cn" title="outlovecn/portainer-cn Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/outlovecn/portainer-cn</a>
 
 # Portainer 中文镜像部署指南  
 
@@ -81,7 +82,3 @@ docker pull outlovecn/portainer-cn
 ```  
 
 拉取完成后，可通过 `docker images` 查看本地镜像，后续需要时可手动通过 `docker run` 命令启动容器（参考「通过 docker cli 直接部署」中的参数）。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/outlovecn/portainer-cn" title="outlovecn/portainer-cn Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/outlovecn/portainer-cn</a></p>

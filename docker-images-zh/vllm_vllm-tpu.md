@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: vllm/vllm-tpu
+description: "vLLM框架在TPU上运行的Docker镜像仓库"
 source: https://xuanyuan.cloud/zh/r/vllm/vllm-tpu
 canonical: https://xuanyuan.cloud/zh/r/vllm/vllm-tpu
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/vllm/vllm-tpu" title="vllm/vllm-tpu Docker 镜像中文简介、标签列表与拉取命令">vllm/vllm-tpu — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/vllm/vllm-tpu" title="vllm/vllm-tpu Docker 镜像中文简介、标签列表与拉取命令">vllm/vllm-tpu — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/vllm/vllm-tpu" title="vllm/vllm-tpu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/vllm/vllm-tpu</a></p>
+<a href="https://xuanyuan.cloud/zh/r/vllm/vllm-tpu" title="vllm/vllm-tpu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/vllm/vllm-tpu</a>
 
 # vLLM TPU 镜像技术文档
 
@@ -177,7 +178,3 @@ docker-compose up -d
 2. **模型兼容性**：部分模型可能需要适配 TPU 算子，建议优先使用 vLLM 官方验证过的模型（见 [vLLM 模型支持列表](https://docs.vllm.ai/en/latest/models/supported_models.html)）。
 3. **资源限制**：根据模型大小调整容器内存限制（通过 `--memory` 参数），避免 OOM 错误（推荐预留模型大小 2 倍以上内存）。
 4. **版本匹配**：确保镜像版本与 TPU 硬件型号兼容（如 TPU v4 需使用基于 JAX 0.4.10+ 构建的镜像版本）。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/vllm/vllm-tpu" title="vllm/vllm-tpu Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/vllm/vllm-tpu</a></p>

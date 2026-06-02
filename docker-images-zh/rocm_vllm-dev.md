@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: rocm/vllm-dev
+description: "rocm/vllm-dev是基于AMD ROCm平台的高性能大语言模型开发镜像，集成vllm框架与AMD GPU加速能力，专为开发者打造大语言模型部署、推理优化及二次开发环境。镜像预配置PyTorch、HIP等核心依赖，支持低延迟、高吞吐量的LLM推理，可快速进行模型加载、性能调优与多实例部署测试，助力开发者高效构建和调试大语言模型应用，充分发挥AMD GPU在AI计算中的算力优势。"
 source: https://xuanyuan.cloud/zh/r/rocm/vllm-dev
 canonical: https://xuanyuan.cloud/zh/r/rocm/vllm-dev
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/rocm/vllm-dev" title="rocm/vllm-dev Docker 镜像中文简介、标签列表与拉取命令">rocm/vllm-dev — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rocm/vllm-dev" title="rocm/vllm-dev Docker 镜像中文简介、标签列表与拉取命令">rocm/vllm-dev — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/rocm/vllm-dev" title="rocm/vllm-dev Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rocm/vllm-dev</a></p>
+<a href="https://xuanyuan.cloud/zh/r/rocm/vllm-dev" title="rocm/vllm-dev Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rocm/vllm-dev</a>
 
 ## vLLM-dev
 
@@ -39,7 +40,3 @@ docker run -it --rm \
 ### 文档
 
 完整文档（含入门指南、环境配置等内容）详见 [此处]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/rocm/vllm-dev" title="rocm/vllm-dev Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/rocm/vllm-dev</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnami/dotnet
+description: "Bitnami dotnet安全镜像"
 source: https://xuanyuan.cloud/zh/r/bitnami/dotnet
 canonical: https://xuanyuan.cloud/zh/r/bitnami/dotnet
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/dotnet" title="bitnami/dotnet Docker 镜像中文简介、标签列表与拉取命令">bitnami/dotnet — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/dotnet" title="bitnami/dotnet Docker 镜像中文简介、标签列表与拉取命令">bitnami/dotnet — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnami/dotnet" title="bitnami/dotnet Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/dotnet</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnami/dotnet" title="bitnami/dotnet Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/dotnet</a>
 
 # Bitnami dotnet安全镜像
 
@@ -23,7 +24,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 - 对互联网热门Helm图表的一流支持
 
 通过访问我们的网站[了解更多关于商业版Bitnami安全镜像的信息](https://bitnami.com/)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/dotnet" title="bitnami/dotnet Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/dotnet</a></p>

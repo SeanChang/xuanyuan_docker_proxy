@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: eclipse/centos
+description: "基于CentOS的最小化环境，仅集成git和openssh，适用于需要轻量版本控制系统和SSH服务的场景。"
 source: https://xuanyuan.cloud/zh/r/eclipse/centos
 canonical: https://xuanyuan.cloud/zh/r/eclipse/centos
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/eclipse/centos" title="eclipse/centos Docker 镜像中文简介、标签列表与拉取命令">eclipse/centos — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/eclipse/centos" title="eclipse/centos Docker 镜像中文简介、标签列表与拉取命令">eclipse/centos — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/eclipse/centos" title="eclipse/centos Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/eclipse/centos</a></p>
+<a href="https://xuanyuan.cloud/zh/r/eclipse/centos" title="eclipse/centos Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/eclipse/centos</a>
 
 # Eclipse Che 基础栈 Docker 镜像
 
@@ -187,7 +188,3 @@ git clone https://github.com/example/project.git /workspace/project
 - [Eclipse Che 官方文档](https://eclipse.org/che/docs/)
 - [Che Stacks 定制指南](https://github.com/eclipse/che/blob/master/CUSTOMIZING.md)
 - [Eclipse Che GitHub 仓库](https://github.com/eclipse/che)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/eclipse/centos" title="eclipse/centos Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/eclipse/centos</a></p>

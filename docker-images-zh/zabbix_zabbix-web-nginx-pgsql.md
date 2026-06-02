@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: zabbix/zabbix-web-nginx-pgsql
+description: "基于Nginx并支持PostgreSQL数据库的Zabbix前端界面，用于管理被监控资源和查看监控统计数据，是官方Zabbix Web界面Docker镜像之一。"
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql" title="zabbix/zabbix-web-nginx-pgsql Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-web-nginx-pgsql — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql" title="zabbix/zabbix-web-nginx-pgsql Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-web-nginx-pgsql — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql" title="zabbix/zabbix-web-nginx-pgsql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql</a></p>
+<a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql" title="zabbix/zabbix-web-nginx-pgsql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql</a>
 
 # Zabbix Web界面（Nginx+PostgreSQL）Docker镜像
 
@@ -316,7 +317,3 @@ WEB_REAL_IP_HEADER=
 ## 支持的Docker版本
 
 官方支持Docker 1.12.0版本，对旧版本（低至1.6）提供尽力支持。升级Docker引擎请参考[Docker安装文档](
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql" title="zabbix/zabbix-web-nginx-pgsql Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql</a></p>

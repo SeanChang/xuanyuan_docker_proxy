@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnamicharts/prometheus
+description: "Bitnami提供的Helm图表，用于在Kubernetes集群中简化Prometheus监控工具的部署与管理。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/prometheus
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/prometheus
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/prometheus" title="bitnamicharts/prometheus Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/prometheus — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/prometheus" title="bitnamicharts/prometheus Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/prometheus — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/prometheus" title="bitnamicharts/prometheus Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/prometheus</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnamicharts/prometheus" title="bitnamicharts/prometheus Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/prometheus</a>
 
 # Bitnami Prometheus Helm Chart
 
@@ -343,7 +344,3 @@ server:
 - 生产环境建议采用 Bitnami Secure Images，包含硬化容器、更小攻击面、CVE 透明度（VEX/KEV）、SBOM 和企业支持
 
 更多详情参见 [Bitnami Secure Images 公告](https://github.com/bitnami/containers/issues/83267)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/prometheus" title="bitnamicharts/prometheus Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/prometheus</a></p>

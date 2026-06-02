@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: serversideup/php
+description: "适合生产环境的PHP Docker镜像，针对Laravel和WordPress进行了优化。"
 source: https://xuanyuan.cloud/zh/r/serversideup/php
 canonical: https://xuanyuan.cloud/zh/r/serversideup/php
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/serversideup/php" title="serversideup/php Docker 镜像中文简介、标签列表与拉取命令">serversideup/php — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/serversideup/php" title="serversideup/php Docker 镜像中文简介、标签列表与拉取命令">serversideup/php — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/serversideup/php" title="serversideup/php Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/serversideup/php</a></p>
+<a href="https://xuanyuan.cloud/zh/r/serversideup/php" title="serversideup/php Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/serversideup/php</a>
 
 # serversideup/php Docker 镜像文档
 
@@ -242,7 +243,3 @@ volumes:
 - Alpine 变体通常体积更小，但可能缺少某些 Debian 软件包
 - 生产环境中建议使用特定版本标签而非 `latest`，以确保一致性
 - 对于高流量应用，建议适当调整 PHP-FPM 进程数和内存限制
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/serversideup/php" title="serversideup/php Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/serversideup/php</a></p>

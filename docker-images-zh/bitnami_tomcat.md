@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnami/tomcat
+description: "Bitnami Tomcat安全镜像是为Apache Tomcat提供的预配置、安全增强型部署解决方案，集成了安全最佳实践，包括漏洞修复、最小化攻击面、合规性配置及安全更新机制，可简化Java Web应用的部署流程，支持快速搭建安全可靠的Tomcat运行环境，适用于开发、测试及生产环境，有效降低部署复杂度与潜在安全风险，助力用户高效管理Tomcat服务。"
 source: https://xuanyuan.cloud/zh/r/bitnami/tomcat
 canonical: https://xuanyuan.cloud/zh/r/bitnami/tomcat
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/tomcat" title="bitnami/tomcat Docker 镜像中文简介、标签列表与拉取命令">bitnami/tomcat — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/tomcat" title="bitnami/tomcat Docker 镜像中文简介、标签列表与拉取命令">bitnami/tomcat — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnami/tomcat" title="bitnami/tomcat Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/tomcat</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnami/tomcat" title="bitnami/tomcat Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/tomcat</a>
 
 # Bitnami Apache Tomcat 软件包介绍
 
@@ -339,7 +340,3 @@ docker run --name tomcat bitnami/tomcat:latest
 Copyright &copy; 2025 Broadcom。"Broadcom"指Broadcom Inc.及其子公司。  
 
 根据Apache License 2.0许可协议授权（详见[LICENSE]([])）。使用本文件需遵守许可协议，除非法律要求或书面同意，软件按"原样"分发，不提供任何明示或暗示担保。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/tomcat" title="bitnami/tomcat Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/tomcat</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: portainer/pause
+description: "Kubernetes官方构建的暂停容器，包含ARM32 v6和v7架构镜像，用于Kubernetes集群中Pod的基础网络命名空间管理。"
 source: https://xuanyuan.cloud/zh/r/portainer/pause
 canonical: https://xuanyuan.cloud/zh/r/portainer/pause
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/portainer/pause" title="portainer/pause Docker 镜像中文简介、标签列表与拉取命令">portainer/pause — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/portainer/pause" title="portainer/pause Docker 镜像中文简介、标签列表与拉取命令">portainer/pause — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/portainer/pause" title="portainer/pause Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/portainer/pause</a></p>
+<a href="https://xuanyuan.cloud/zh/r/portainer/pause" title="portainer/pause Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/portainer/pause</a>
 
 # Kubernetes Pause容器
 
@@ -107,7 +108,3 @@ podInfraContainerImage: "registry.k8s.io/pause:3.9-arm32v7"
 - **ARM32 v7**：适用于ARMv7架构设备（如树莓派2/3、主流ARM嵌入式处理器）。  
 
 > 注：完整架构列表及最新版本可参考[Kubernetes官方镜像仓库](https://console.cloud.google.com/gcr/images/k8s-artifacts-prod/us/pause)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/portainer/pause" title="portainer/pause Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/portainer/pause</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: 6053537/portainer-ce
+description: "Portainer-CE 中文版"
 source: https://xuanyuan.cloud/zh/r/6053537/portainer-ce
 canonical: https://xuanyuan.cloud/zh/r/6053537/portainer-ce
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/6053537/portainer-ce" title="6053537/portainer-ce Docker 镜像中文简介、标签列表与拉取命令">6053537/portainer-ce — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/6053537/portainer-ce" title="6053537/portainer-ce Docker 镜像中文简介、标签列表与拉取命令">6053537/portainer-ce — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/6053537/portainer-ce" title="6053537/portainer-ce Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/6053537/portainer-ce</a></p>
+<a href="https://xuanyuan.cloud/zh/r/6053537/portainer-ce" title="6053537/portainer-ce Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/6053537/portainer-ce</a>
 
 # Portainer-CE 中文版
 
@@ -119,7 +120,3 @@ volumes:
 
 ## 许可信息  
 Portainer 基于 zlib 许可证开源，详见 [LICENSE]([])。第三方开源组件说明见 [ATTRIBUTIONS.md]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/6053537/portainer-ce" title="6053537/portainer-ce Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/6053537/portainer-ce</a></p>

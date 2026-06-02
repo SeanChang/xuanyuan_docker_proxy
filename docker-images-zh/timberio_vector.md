@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: timberio/vector
+description: "这是一款由Datadog维护的高性能遥测数据路由器，专门用于高效处理和路由各类遥测数据，涵盖日志、指标与追踪信息，旨在为用户提供稳定且快速的数据传输与分发能力，满足复杂系统中对遥测数据实时处理的核心需求。"
 source: https://xuanyuan.cloud/zh/r/timberio/vector
 canonical: https://xuanyuan.cloud/zh/r/timberio/vector
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/timberio/vector" title="timberio/vector Docker 镜像中文简介、标签列表与拉取命令">timberio/vector — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/timberio/vector" title="timberio/vector Docker 镜像中文简介、标签列表与拉取命令">timberio/vector — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/timberio/vector" title="timberio/vector Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/timberio/vector</a></p>
+<a href="https://xuanyuan.cloud/zh/r/timberio/vector" title="timberio/vector Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/timberio/vector</a>
 
 ### Vector 介绍
 
@@ -84,7 +85,3 @@ Vector Docker 镜像标签说明如下（标签会随[版本发布]([])自动更
 
 ### 源码文件  
 Vector Docker 源码文件位于[GitHub 仓库]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/timberio/vector" title="timberio/vector Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/timberio/vector</a></p>

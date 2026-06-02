@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: jianjungki/mineru
+description: "MinerU的Docker镜像，封装了PDF转机器可读格式的完整功能，支持WebUI、API及GPU加速，快速部署解决环境问题。"
 source: https://xuanyuan.cloud/zh/r/jianjungki/mineru
 canonical: https://xuanyuan.cloud/zh/r/jianjungki/mineru
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/jianjungki/mineru" title="jianjungki/mineru Docker 镜像中文简介、标签列表与拉取命令">jianjungki/mineru — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jianjungki/mineru" title="jianjungki/mineru Docker 镜像中文简介、标签列表与拉取命令">jianjungki/mineru — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/jianjungki/mineru" title="jianjungki/mineru Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jianjungki/mineru</a></p>
+<a href="https://xuanyuan.cloud/zh/r/jianjungki/mineru" title="jianjungki/mineru Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/jianjungki/mineru</a>
 
 # MinerU Docker镜像 技术文档
 
@@ -160,7 +161,3 @@ docker run -p 8001:8001 --env-file .env \
 - Docker Hub镜像地址：[https://hub.docker.com/r/jianjungki/mineru](https://hub.docker.com/r/jianjungki/mineru)
 - 官方文档：[https://opendatalab.github.io/MinerU/](https://opendatalab.github.io/MinerU/)
 - 快速开始指南：[https://opendatalab.github.io/MinerU/quick_start/](https://opendatalab.github.io/MinerU/quick_start/)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/jianjungki/mineru" title="jianjungki/mineru Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/jianjungki/mineru</a></p>

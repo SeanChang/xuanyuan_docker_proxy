@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: justlikemaki/openclaw-docker-cn-im
+description: "OpenClaw 的中国 IM 平台整合 Docker 版本，预装飞书、钉钉、QQ 机器人、企业微信等通道，并可通过 OpenAI/Claude 协议对接 AIClient-2-API 等后端服务，用于快速搭建多 IM 入口的 AI 机器人网关。"
 source: https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im
 canonical: https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im" title="justlikemaki/openclaw-docker-cn-im Docker 镜像中文简介、标签列表与拉取命令">justlikemaki/openclaw-docker-cn-im — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im" title="justlikemaki/openclaw-docker-cn-im Docker 镜像中文简介、标签列表与拉取命令">justlikemaki/openclaw-docker-cn-im — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im" title="justlikemaki/openclaw-docker-cn-im Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im</a></p>
+<a href="https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im" title="justlikemaki/openclaw-docker-cn-im Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im</a>
 
 # justlikemaki/openclaw-docker-cn-im 镜像说明
 
@@ -163,7 +164,3 @@ docker run -d \
 ## 许可协议
 
 项目基于 OpenClaw 构建，遵循 GPL-3.0（GNU General Public License v3.0）协议，具体条款请参考上游仓库与镜像页面中的 LICENSE 说明。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im" title="justlikemaki/openclaw-docker-cn-im Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/justlikemaki/openclaw-docker-cn-im</a></p>

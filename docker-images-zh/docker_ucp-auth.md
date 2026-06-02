@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: docker/ucp-auth
+description: "docker/ucp镜像是Docker企业版核心组件，用于构建和管理容器集群，提供集中化控制、多租户管理及安全集成功能，支持企业级容器编排与运维。"
 source: https://xuanyuan.cloud/zh/r/docker/ucp-auth
 canonical: https://xuanyuan.cloud/zh/r/docker/ucp-auth
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/docker/ucp-auth" title="docker/ucp-auth Docker 镜像中文简介、标签列表与拉取命令">docker/ucp-auth — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/docker/ucp-auth" title="docker/ucp-auth Docker 镜像中文简介、标签列表与拉取命令">docker/ucp-auth — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/docker/ucp-auth" title="docker/ucp-auth Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/docker/ucp-auth</a></p>
+<a href="https://xuanyuan.cloud/zh/r/docker/ucp-auth" title="docker/ucp-auth Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/docker/ucp-auth</a>
 
 # Docker UCP 镜像文档
 
@@ -191,7 +192,3 @@ docker run --rm -it \
 - [Docker UCP 官方文档](https://docs.docker.com/ee/ucp/)
 - [UCP 部署最佳实践](https://docs.docker.com/ee/ucp/admin/install/best-practices/)
 - [UCP API 参考](https://docs.docker.com/ee/ucp/api/ucp-api/)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/docker/ucp-auth" title="docker/ucp-auth Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/docker/ucp-auth</a></p>

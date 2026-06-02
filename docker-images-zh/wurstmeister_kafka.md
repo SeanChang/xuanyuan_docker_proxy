@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: wurstmeister/kafka
+description: "支持多代理的Apache Kafka Docker镜像，用于部署和运行分布式Kafka集群，适用于高吞吐量消息传递与流处理场景。"
 source: https://xuanyuan.cloud/zh/r/wurstmeister/kafka
 canonical: https://xuanyuan.cloud/zh/r/wurstmeister/kafka
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/wurstmeister/kafka" title="wurstmeister/kafka Docker 镜像中文简介、标签列表与拉取命令">wurstmeister/kafka — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/wurstmeister/kafka" title="wurstmeister/kafka Docker 镜像中文简介、标签列表与拉取命令">wurstmeister/kafka — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/wurstmeister/kafka" title="wurstmeister/kafka Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/wurstmeister/kafka</a></p>
+<a href="https://xuanyuan.cloud/zh/r/wurstmeister/kafka" title="wurstmeister/kafka Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/wurstmeister/kafka</a>
 
 # wurstmeister/kafka 镜像文档
 
@@ -298,7 +299,3 @@ docker-compose scale kafka=3  # 扩展至 3 个 Broker
 - [Kafka 官方文档](https://kafka.apache.org/documentation/)
 - [Docker Compose 配置参考](https://docs.docker.com/compose/compose-file/)
 - [Connectivity Guide（网络连接指南）](https://github.com/wurstmeister/kafka-docker/wiki/Connectivity)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/wurstmeister/kafka" title="wurstmeister/kafka Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/wurstmeister/kafka</a></p>

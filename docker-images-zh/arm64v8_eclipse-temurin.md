@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: arm64v8/eclipse-temurin
+description: "由Eclipse Temurin构建的OpenJDK二进制文件官方镜像，用于运行Java应用程序。"
 source: https://xuanyuan.cloud/zh/r/arm64v8/eclipse-temurin
 canonical: https://xuanyuan.cloud/zh/r/arm64v8/eclipse-temurin
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/arm64v8/eclipse-temurin" title="arm64v8/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">arm64v8/eclipse-temurin — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/arm64v8/eclipse-temurin" title="arm64v8/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">arm64v8/eclipse-temurin — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/arm64v8/eclipse-temurin" title="arm64v8/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/arm64v8/eclipse-temurin</a></p>
+<a href="https://xuanyuan.cloud/zh/r/arm64v8/eclipse-temurin" title="arm64v8/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/arm64v8/eclipse-temurin</a>
 
 # arm64v8/eclipse-temurin Docker镜像文档
 
@@ -86,7 +87,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 - [`21.0.8_9-jre-noble`, `21-jre-noble`](https://github.com/adoptium/containers/blob/fc54f27893bb7c1ffb1d7eb82f2d22d7605e57bc/21/jre/ubuntu/noble/Dockerfile)
 - [`21.0.8_9-jre-ubi10-minimal`, `21-jre-ubi10-minimal`](https://github.com/adoptium/containers/blob/fc54f27893bb7c1ffb1d7eb82f2d22d7605e57bc/21/jre/ubi/ubi10-minimal/Dockerfile)
 - [`21.0.8_9-jre-ubi9-minimal`, `21-jre-ubi9-minimal`](https://github.com/adoptium/containers/blob/fc54f27893bb7c1ffb1d7eb82f2d22d7605e57bc/21/jre/ubi/ubi
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/arm64v8/eclipse-temurin" title="arm64v8/eclipse-temurin Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/arm64v8/eclipse-temurin</a></p>

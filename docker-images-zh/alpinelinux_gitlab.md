@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: alpinelinux/gitlab
+description: "基于Alpine Linux的轻量级Gitlab容器镜像，提供Git仓库管理、代码审查、CI/CD流水线等DevOps功能，适合资源受限环境部署。"
 source: https://xuanyuan.cloud/zh/r/alpinelinux/gitlab
 canonical: https://xuanyuan.cloud/zh/r/alpinelinux/gitlab
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/alpinelinux/gitlab" title="alpinelinux/gitlab Docker 镜像中文简介、标签列表与拉取命令">alpinelinux/gitlab — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpinelinux/gitlab" title="alpinelinux/gitlab Docker 镜像中文简介、标签列表与拉取命令">alpinelinux/gitlab — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/alpinelinux/gitlab" title="alpinelinux/gitlab Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpinelinux/gitlab</a></p>
+<a href="https://xuanyuan.cloud/zh/r/alpinelinux/gitlab" title="alpinelinux/gitlab Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpinelinux/gitlab</a>
 
 # 基于Alpine Linux的Gitlab镜像文档  
 
@@ -102,7 +103,3 @@ services:
 3. **资源配置**：生产环境建议配置≥4GB内存，避免因资源不足导致服务不稳定  
 4.** 备份策略**：定期备份`/srv/gitlab/data`目录，可通过`gitlab-backup create`命令生成备份文件  
 5.** 升级说明 **：升级前需备份数据，建议遵循Gitlab官方版本升级路径（跨版本升级需逐步进行）
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/alpinelinux/gitlab" title="alpinelinux/gitlab Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/alpinelinux/gitlab</a></p>

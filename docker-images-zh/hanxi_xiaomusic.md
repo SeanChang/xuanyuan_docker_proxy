@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: hanxi/xiaomusic
+description: "Xiaomusic 是一款基于命令行的网易云音乐第三方客户端，采用 Python 开发，支持跨平台运行，提供音乐播放、歌曲搜索、歌单管理、收藏同步及实时歌词显示等功能，界面简洁轻量，无需图形界面即可便捷使用，开源免费且持续更新，旨在为用户提供高效纯粹的音乐聆听体验。"
 source: https://xuanyuan.cloud/zh/r/hanxi/xiaomusic
 canonical: https://xuanyuan.cloud/zh/r/hanxi/xiaomusic
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/hanxi/xiaomusic" title="hanxi/xiaomusic Docker 镜像中文简介、标签列表与拉取命令">hanxi/xiaomusic — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hanxi/xiaomusic" title="hanxi/xiaomusic Docker 镜像中文简介、标签列表与拉取命令">hanxi/xiaomusic — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/hanxi/xiaomusic" title="hanxi/xiaomusic Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hanxi/xiaomusic</a></p>
+<a href="https://xuanyuan.cloud/zh/r/hanxi/xiaomusic" title="hanxi/xiaomusic Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hanxi/xiaomusic</a>
 
 # XiaoMusic：让小爱音箱自由播放音乐  
 
@@ -122,7 +123,3 @@ xiaomusic --config config.json
 
 ## 免责声明  
 本项目仅供学习研究使用，不得用于商业用途。用户需遵守当地法律法规，自行承担使用风险（包括但不限于设备损坏、账号封禁等）。项目及作者对违法使用导致的后果不承担责任。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/hanxi/xiaomusic" title="hanxi/xiaomusic Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/hanxi/xiaomusic</a></p>

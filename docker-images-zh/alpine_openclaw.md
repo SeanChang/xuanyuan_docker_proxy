@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: alpine/openclaw
+description: "OpenClaw - 您的个人AI助手，支持任何操作系统和平台，以独特的“龙虾方式”提供服务。🦞"
 source: https://xuanyuan.cloud/zh/r/alpine/openclaw
 canonical: https://xuanyuan.cloud/zh/r/alpine/openclaw
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/openclaw" title="alpine/openclaw Docker 镜像中文简介、标签列表与拉取命令">alpine/openclaw — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/openclaw" title="alpine/openclaw Docker 镜像中文简介、标签列表与拉取命令">alpine/openclaw — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/alpine/openclaw" title="alpine/openclaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpine/openclaw</a></p>
+<a href="https://xuanyuan.cloud/zh/r/alpine/openclaw" title="alpine/openclaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpine/openclaw</a>
 
 # OpenClaw Docker镜像文档
 
@@ -54,7 +55,3 @@ export OPENCLAW_IMAGE="alpine/openclaw:latest"
 - OpenClaw Docker官方指南：[https://docs.openclaw.ai/install/docker](https://docs.openclaw.ai/install/docker)
 - 初学者安全运行指南：[https://medium.com/p/94112a9b57be](https://medium.com/p/94112a9b57be)
 - Mac mini本地LLM部署指南：[https://medium.com/p/fb3857f73e0b](https://medium.com/p/fb3857f73e0b)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/openclaw" title="alpine/openclaw Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/alpine/openclaw</a></p>

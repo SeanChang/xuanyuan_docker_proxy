@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: joyqi/typecho
+description: "Typecho官方Docker镜像，用于快速部署轻量级博客系统，支持多种数据库驱动及环境变量配置。"
 source: https://xuanyuan.cloud/zh/r/joyqi/typecho
 canonical: https://xuanyuan.cloud/zh/r/joyqi/typecho
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/joyqi/typecho" title="joyqi/typecho Docker 镜像中文简介、标签列表与拉取命令">joyqi/typecho — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/joyqi/typecho" title="joyqi/typecho Docker 镜像中文简介、标签列表与拉取命令">joyqi/typecho — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/joyqi/typecho" title="joyqi/typecho Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/joyqi/typecho</a></p>
+<a href="https://xuanyuan.cloud/zh/r/joyqi/typecho" title="joyqi/typecho Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/joyqi/typecho</a>
 
 **快速参考**
 
@@ -169,7 +170,3 @@ $ docker run --name typecho-server -p 8080:80 -e TYPECHO_SITE_URL=https://your-d
 ```bash
 $ docker run --name typecho-server -v /var/typecho:/app/usr -e TYPECHO_SITE_URL=https://your-domain.com -d joyqi/typecho:nightly-php7.4
 ```
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/joyqi/typecho" title="joyqi/typecho Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/joyqi/typecho</a></p>

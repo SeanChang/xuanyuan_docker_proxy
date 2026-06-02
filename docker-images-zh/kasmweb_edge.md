@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: kasmweb/edge
+description: "适用于Kasm Workspaces的Microsoft Edge Insider Preview浏览器镜像，支持通过浏览器访问，集成KasmVNC实现高性能Web原生渲染，可用于桌面、应用及Web服务的流式访问。"
 source: https://xuanyuan.cloud/zh/r/kasmweb/edge
 canonical: https://xuanyuan.cloud/zh/r/kasmweb/edge
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kasmweb/edge" title="kasmweb/edge Docker 镜像中文简介、标签列表与拉取命令">kasmweb/edge — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kasmweb/edge" title="kasmweb/edge Docker 镜像中文简介、标签列表与拉取命令">kasmweb/edge — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/kasmweb/edge" title="kasmweb/edge Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/edge</a></p>
+<a href="https://xuanyuan.cloud/zh/r/kasmweb/edge" title="kasmweb/edge Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/edge</a>
 
 # Kasm Workspaces Edge镜像
 
@@ -92,7 +93,3 @@ sudo docker run --rm -it --shm-size=512m -p 6901:6901 -e VNC_PW=password kasmweb
 [installation]: https://www.kasmweb.com/docs/latest/install.html "Installation"
 [custom_images]: https://www.kasmweb.com/docs/latest/how_to/building_images.html "Custom Images"
 [github_support]: https://github.com/kasmtech/workspaces-issues/issues "GitHub Support"
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kasmweb/edge" title="kasmweb/edge Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/edge</a></p>

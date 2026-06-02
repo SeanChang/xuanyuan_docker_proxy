@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: iwfwebsolutions/mysql
+description: "IWF优化的MySQL基础镜像，包含适用于大多数项目的MySQL配置，用于构建自定义数据库容器。"
 source: https://xuanyuan.cloud/zh/r/iwfwebsolutions/mysql
 canonical: https://xuanyuan.cloud/zh/r/iwfwebsolutions/mysql
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/iwfwebsolutions/mysql" title="iwfwebsolutions/mysql Docker 镜像中文简介、标签列表与拉取命令">iwfwebsolutions/mysql — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/iwfwebsolutions/mysql" title="iwfwebsolutions/mysql Docker 镜像中文简介、标签列表与拉取命令">iwfwebsolutions/mysql — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/iwfwebsolutions/mysql" title="iwfwebsolutions/mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/iwfwebsolutions/mysql</a></p>
+<a href="https://xuanyuan.cloud/zh/r/iwfwebsolutions/mysql" title="iwfwebsolutions/mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/iwfwebsolutions/mysql</a>
 
 # IWF优化MySQL基础镜像
 
@@ -72,7 +73,3 @@ docker run -d \
 ### 详细配置参考
 更多配置细节（如环境变量、数据持久化、网络配置等）请查阅GitHub官方文档：  
 [https://github.com/iwf-web/docker-db](https://github.com/iwf-web/docker-db)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/iwfwebsolutions/mysql" title="iwfwebsolutions/mysql Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/iwfwebsolutions/mysql</a></p>

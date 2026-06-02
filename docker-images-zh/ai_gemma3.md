@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ai/gemma3
+description: "Google最新推出的AI模型Gemma，虽体型小巧却性能强劲，尤其在聊天交互与内容生成领域表现突出；其轻量化设计不仅便于高效部署，还能在保证响应速度的同时，持续输出高质量内容，为用户带来便捷且智能的使用体验，是一款兼顾小巧体型与强大功能的新一代AI模型。"
 source: https://xuanyuan.cloud/zh/r/ai/gemma3
 canonical: https://xuanyuan.cloud/zh/r/ai/gemma3
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/gemma3" title="ai/gemma3 Docker 镜像中文简介、标签列表与拉取命令">ai/gemma3 — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/gemma3" title="ai/gemma3 Docker 镜像中文简介、标签列表与拉取命令">ai/gemma3 — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ai/gemma3" title="ai/gemma3 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/gemma3</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ai/gemma3" title="ai/gemma3 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/gemma3</a>
 
 # Gemma 3（Unsloth GGUF版本）
 
@@ -98,7 +99,3 @@ docker model run ai/gemma3
 - [Gemma 3模型概述]([])  
 - [Gemma 3技术报告]([])  
 - [Unsloth Dynamic 2.0 GGUF格式说明]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/gemma3" title="ai/gemma3 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ai/gemma3</a></p>

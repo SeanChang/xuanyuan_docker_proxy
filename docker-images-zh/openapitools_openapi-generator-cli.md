@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: openapitools/openapi-generator-cli
+description: "OpenAPI Generator的命令行界面工具，用于通过命令行生成API客户端、服务器端代码及文档等。"
 source: https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli
 canonical: https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli" title="openapitools/openapi-generator-cli Docker 镜像中文简介、标签列表与拉取命令">openapitools/openapi-generator-cli — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli" title="openapitools/openapi-generator-cli Docker 镜像中文简介、标签列表与拉取命令">openapitools/openapi-generator-cli — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli" title="openapitools/openapi-generator-cli Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli</a></p>
+<a href="https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli" title="openapitools/openapi-generator-cli Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli</a>
 
 # openapi-generator-cli 镜像文档
 
@@ -126,7 +127,3 @@ docker-compose up
 ## 5. 参考链接  
 - 官方项目文档：[OpenAPI Generator GitHub README](https://github.com/OpenAPITools/openapi-generator#16---docker)  
 - 教程：[YouTube 视频教程](https://www.youtube.com/watch?v=9MuEP01h1XU)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli" title="openapitools/openapi-generator-cli Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli</a></p>

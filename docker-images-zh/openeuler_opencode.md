@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: openeuler/opencode
+description: "opencode官方Docker镜像，由openEuler基础设施SIG维护，用于快速部署和运行opencode服务，支持通过挂载配置目录实现数据持久化。"
 source: https://xuanyuan.cloud/zh/r/openeuler/opencode
 canonical: https://xuanyuan.cloud/zh/r/openeuler/opencode
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/opencode" title="openeuler/opencode Docker 镜像中文简介、标签列表与拉取命令">openeuler/opencode — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/opencode" title="openeuler/opencode Docker 镜像中文简介、标签列表与拉取命令">openeuler/opencode — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/openeuler/opencode" title="openeuler/opencode Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/opencode</a></p>
+<a href="https://xuanyuan.cloud/zh/r/openeuler/opencode" title="openeuler/opencode Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/opencode</a>
 
 # opencode Docker镜像文档
 
@@ -49,7 +50,3 @@ docker run \
 ### 获取帮助
 
 如在使用过程中遇到问题，可通过[openEuler infrastructure SIG](https://gitcode.com/openeuler/infrastructure)获取支持。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/opencode" title="openeuler/opencode Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/opencode</a></p>

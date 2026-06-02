@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: glpi/glpi
+description: "GLPI是一款免费的资产与IT管理软件包，它能够全面管理IT资产（包括计算机、服务器、网络设备等硬件）、软件许可、耗材库存，并提供IT服务管理功能，如工单处理、问题跟踪、变更管理等，支持企业或组织高效追踪、维护和优化IT资源，提升管理效率与资源利用率，满足日常IT运维与资产监控的需求。"
 source: https://xuanyuan.cloud/zh/r/glpi/glpi
 canonical: https://xuanyuan.cloud/zh/r/glpi/glpi
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/glpi/glpi" title="glpi/glpi Docker 镜像中文简介、标签列表与拉取命令">glpi/glpi — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/glpi/glpi" title="glpi/glpi Docker 镜像中文简介、标签列表与拉取命令">glpi/glpi — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/glpi/glpi" title="glpi/glpi Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/glpi/glpi</a></p>
+<a href="https://xuanyuan.cloud/zh/r/glpi/glpi" title="glpi/glpi Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/glpi/glpi</a>
 
 # GLPI Docker镜像
 
@@ -115,7 +116,3 @@ docker compose up -d
 ## 卷
 `glpi/glpi`镜像默认提供卷，包含`config`、`marketplace`和`files`目录。  
 **注意**：GLPI 10.0.x版本的`marketplace`目录路径不同，未包含在默认卷中。如果需要使用市场功能，建议手动创建卷，映射路径`/var/www/glpi/marketplace`。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/glpi/glpi" title="glpi/glpi Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/glpi/glpi</a></p>

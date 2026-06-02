@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/adoptopenjdk
+description: "该Docker镜像已弃用，建议使用官方eclipse-temurin镜像。"
 source: https://xuanyuan.cloud/zh/r/library/adoptopenjdk
 canonical: https://xuanyuan.cloud/zh/r/library/adoptopenjdk
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/adoptopenjdk" title="library/adoptopenjdk Docker 镜像中文简介、标签列表与拉取命令">library/adoptopenjdk — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/adoptopenjdk" title="library/adoptopenjdk Docker 镜像中文简介、标签列表与拉取命令">library/adoptopenjdk — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/adoptopenjdk" title="library/adoptopenjdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/adoptopenjdk</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/adoptopenjdk" title="library/adoptopenjdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/adoptopenjdk</a>
 
 # ⚠️ 镜像弃用通知
 
@@ -147,7 +148,3 @@ Dockerfile 及相关脚本采用 [Apache 许可证 2.0 版](http://www.apache.or
 
 ### 7.3 用户责任
 使用本镜像时，用户需确保遵守所有包含软件的许可协议。镜像可能包含其他开源软件，其许可信息可参考 [repo-info 仓库](https://github.com/docker-library/repo-info/tree/master/repos/adoptopenjdk)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/adoptopenjdk" title="library/adoptopenjdk Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/adoptopenjdk</a></p>

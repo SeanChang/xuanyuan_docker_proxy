@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: kasmweb/core-cuda-focal
+description: "Kasm Workspaces的CUDA工具包基础镜像，提供GPU加速支持，适用于构建和运行依赖CUDA的应用环境。"
 source: https://xuanyuan.cloud/zh/r/kasmweb/core-cuda-focal
 canonical: https://xuanyuan.cloud/zh/r/kasmweb/core-cuda-focal
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/kasmweb/core-cuda-focal" title="kasmweb/core-cuda-focal Docker 镜像中文简介、标签列表与拉取命令">kasmweb/core-cuda-focal — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kasmweb/core-cuda-focal" title="kasmweb/core-cuda-focal Docker 镜像中文简介、标签列表与拉取命令">kasmweb/core-cuda-focal — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/kasmweb/core-cuda-focal" title="kasmweb/core-cuda-focal Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/core-cuda-focal</a></p>
+<a href="https://xuanyuan.cloud/zh/r/kasmweb/core-cuda-focal" title="kasmweb/core-cuda-focal Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/core-cuda-focal</a>
 
 # kasmweb/core-cuda-focal 镜像技术文档
 
@@ -130,7 +131,3 @@ sudo docker run --rm -it --shm-size=512m -p 6901:6901 -e VNC_PW=password kasmweb
 [installation]: https://www.kasmweb.com/docs/latest/install.html "安装指南"
 [custom_images]: https://www.kasmweb.com/docs/latest/how_to/building_images.html "自定义镜像"
 [github_support]: https://github.com/kasmtech/workspaces-issues/issues "GitHub支持"
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/kasmweb/core-cuda-focal" title="kasmweb/core-cuda-focal Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/kasmweb/core-cuda-focal</a></p>

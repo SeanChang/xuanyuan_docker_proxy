@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/plex
+description: "这是由LinuxServer.io为您提供的Plex Media Server容器，它是一款集成了Plex媒体服务器软件的轻量级、可移植Docker容器，能够帮助用户高效组织电影、音乐、照片等各类媒体文件，并支持跨设备流式传输与访问，适用于搭建个人或家庭媒体中心；LinuxServer.io作为专注开源容器开发的组织，致力于提供高质量、易于部署的容器镜像，此Plex Media Server容器便是其优质作品，为媒体管理与分享带来便捷体验。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/plex
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/plex
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/plex" title="linuxserver/plex Docker 镜像中文简介、标签列表与拉取命令">linuxserver/plex — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/plex" title="linuxserver/plex Docker 镜像中文简介、标签列表与拉取命令">linuxserver/plex — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/plex" title="linuxserver/plex Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/plex</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/plex" title="linuxserver/plex Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/plex</a>
 
 # LinuxServer.io Plex 容器介绍
 
@@ -309,7 +310,3 @@ docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/plex:latest .
 - **09.07.15**：支持指定具体版本号  
 - **08.07.15**：添加自动更新功能  
 - **03.07.15**：修复用户权限问题（使用 abc 用户而非 plex）
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/plex" title="linuxserver/plex Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/plex</a></p>

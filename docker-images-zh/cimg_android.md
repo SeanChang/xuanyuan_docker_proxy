@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: cimg/android
+description: "专为 CircleCI 构建的专注于持续集成的 Android Docker 镜像"
 source: https://xuanyuan.cloud/zh/r/cimg/android
 canonical: https://xuanyuan.cloud/zh/r/cimg/android
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/android" title="cimg/android Docker 镜像中文简介、标签列表与拉取命令">cimg/android — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cimg/android" title="cimg/android Docker 镜像中文简介、标签列表与拉取命令">cimg/android — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/cimg/android" title="cimg/android Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cimg/android</a></p>
+<a href="https://xuanyuan.cloud/zh/r/cimg/android" title="cimg/android Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cimg/android</a>
 
 # CircleCI 便捷镜像 => Android
 
@@ -219,7 +220,3 @@ git commit -m "更新子模块以修复 foo 问题。"
 ## 许可证
 
 本仓库采用 MIT 许可证授权。许可证详见[此处](./LICENSE)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/android" title="cimg/android Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/cimg/android</a></p>

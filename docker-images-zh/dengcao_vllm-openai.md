@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: dengcao/vllm-openai
+description: "vLLM是一个快速且易用的大语言模型推理与服务库，最初由加州大学伯克利分校开发，采用PagedAttention技术优化内存使用，支持高吞吐量、低延迟的推理，兼容Hugging Face模型格式，可轻松部署各类LLM，适用于科研和生产环境，显著提升大语言模型的服务效率。"
 source: https://xuanyuan.cloud/zh/r/dengcao/vllm-openai
 canonical: https://xuanyuan.cloud/zh/r/dengcao/vllm-openai
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/dengcao/vllm-openai" title="dengcao/vllm-openai Docker 镜像中文简介、标签列表与拉取命令">dengcao/vllm-openai — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dengcao/vllm-openai" title="dengcao/vllm-openai Docker 镜像中文简介、标签列表与拉取命令">dengcao/vllm-openai — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/dengcao/vllm-openai" title="dengcao/vllm-openai Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dengcao/vllm-openai</a></p>
+<a href="https://xuanyuan.cloud/zh/r/dengcao/vllm-openai" title="dengcao/vllm-openai Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dengcao/vllm-openai</a>
 
 # Qwen3-Reranker模型部署与调用说明
 
@@ -73,7 +74,3 @@ docker compose up -d
 
 ## 五、测试验证
 上述部署及调用流程已在FastGPT平台验证，可正常实现文本排序功能。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/dengcao/vllm-openai" title="dengcao/vllm-openai Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/dengcao/vllm-openai</a></p>

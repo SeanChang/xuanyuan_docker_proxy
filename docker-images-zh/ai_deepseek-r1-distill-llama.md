@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ai/deepseek-r1-distill-llama
+description: "由DeepSeek开发的蒸馏版LLaMA模型，快速且针对实际任务优化，适用于高效执行各类真实场景任务。"
 source: https://xuanyuan.cloud/zh/r/ai/deepseek-r1-distill-llama
 canonical: https://xuanyuan.cloud/zh/r/ai/deepseek-r1-distill-llama
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/deepseek-r1-distill-llama" title="ai/deepseek-r1-distill-llama Docker 镜像中文简介、标签列表与拉取命令">ai/deepseek-r1-distill-llama — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/deepseek-r1-distill-llama" title="ai/deepseek-r1-distill-llama Docker 镜像中文简介、标签列表与拉取命令">ai/deepseek-r1-distill-llama — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ai/deepseek-r1-distill-llama" title="ai/deepseek-r1-distill-llama Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/deepseek-r1-distill-llama</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ai/deepseek-r1-distill-llama" title="ai/deepseek-r1-distill-llama Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ai/deepseek-r1-distill-llama</a>
 
 # Deepseek-R1-Distill-Llama 镜像文档
 
@@ -128,7 +129,3 @@ docker model run ai/deepseek-r1-distill-llama
 ## 相关链接
 
 - [DeepSeek-R1 论文](https://arxiv.org/abs/2501.12948)：《DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning》
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ai/deepseek-r1-distill-llama" title="ai/deepseek-r1-distill-llama Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ai/deepseek-r1-distill-llama</a></p>

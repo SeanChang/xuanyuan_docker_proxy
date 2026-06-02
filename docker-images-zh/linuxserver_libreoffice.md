@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/libreoffice
+description: "LinuxServer.io 提供的 LibreOffice Docker 镜像，支持多架构，具备定期更新、用户映射和安全增强特性，可通过 Web 界面访问的免费办公套件。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/libreoffice
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/libreoffice
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/libreoffice" title="linuxserver/libreoffice Docker 镜像中文简介、标签列表与拉取命令">linuxserver/libreoffice — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/libreoffice" title="linuxserver/libreoffice Docker 镜像中文简介、标签列表与拉取命令">linuxserver/libreoffice — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/libreoffice" title="linuxserver/libreoffice Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/libreoffice</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/libreoffice" title="linuxserver/libreoffice Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/libreoffice</a>
 
 # LinuxServer.io LibreOffice 容器镜像
 
@@ -123,7 +124,3 @@ docker pull lscr.io/linuxserver/libreoffice:latest
 - **12.07.25:** 基于 Selkies 重构，Alpine 3.22，强制 HTTPS
 - **18.03.23:** 迁移至 KasmVNC 基础镜像
 - **05.04.21:** 初始发布
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/libreoffice" title="linuxserver/libreoffice Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/libreoffice</a></p>

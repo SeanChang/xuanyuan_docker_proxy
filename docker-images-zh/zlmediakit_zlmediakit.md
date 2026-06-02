@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: zlmediakit/zlmediakit
+description: "该简介涵盖网页实时通信（WebRTC）、实时流传输协议（RTSP）、实时消息传输协议（RTMP）、HTTP直播流（HLS）、HTTP-FLV流媒体协议、WebSocket-FLV流媒体协议、HTTP-TS流媒体协议、HTTP-fMP4流媒体协议、WebSocket-fMP4流媒体协议、国家标准GB/T 28181视频监控联网系统标准（GB28181）及安全可靠传输协议（SRT）等多种流媒体与实时通信相关协议。"
 source: https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit
 canonical: https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit" title="zlmediakit/zlmediakit Docker 镜像中文简介、标签列表与拉取命令">zlmediakit/zlmediakit — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit" title="zlmediakit/zlmediakit Docker 镜像中文简介、标签列表与拉取命令">zlmediakit/zlmediakit — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit" title="zlmediakit/zlmediakit Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit</a></p>
+<a href="https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit" title="zlmediakit/zlmediakit Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit</a>
 
 # ZLMediaKit：基于C++11的高性能运营级流媒体服务框架
 
@@ -203,7 +204,3 @@ bash build_docker_images.sh
 
 感谢以下贡献者（排名不分先后）对项目的代码贡献、问题反馈与资金支持：  
 [老陈]([])、[Gemfield]([])、[南冠彤]([])、[凹凸慢]([])、[chenxiaolei]([])、[史前小虫]([])、[清涩绿茶]([])、[3503207480]([])、[DroidChow]([])、[阿塞]([])、[火宣]([])、[γ瑞γミ]([])、[linkingvision]([])、[茄子]([])、[好心情](mailto:[邮箱已删除])、[浮沉]([])、[Xiaofeng Wang]([])、[doodoocoder]([])、[qingci]([])、[swwheihei]([])、[KKKKK5G]([])、[Zhou Weimin](mailto:[邮箱已删除])、[Jim Jin]([])、[西瓜丶](mailto:[邮箱已删除])、[MingZhuLiu]([])、[chengxiaosheng]([])、[big panda](mailto:[邮箱已删除])、[tanningzhong]([])、[hctym1995]([])、[hewenyuan]([])、[sunhui](mailto:[邮箱已删除])、[mirs](mailto:[邮箱已删除])、[Kevin Cheng](mailto:[邮箱已删除])、[Liu Jiang](mailto:[邮箱已删除])、[along]([])、[qingci](mailto:[邮箱已删除])、[lyg1949](mailto:[邮箱已删除])、[zhlong](mailto:[邮箱已删除])、[大裤衩](mailto:[邮箱已删除])、[droid.chow](mailto:[邮箱已删除])、[陈晓林]([]
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit" title="zlmediakit/zlmediakit Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit</a></p>

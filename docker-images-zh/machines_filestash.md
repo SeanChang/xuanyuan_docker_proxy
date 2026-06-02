@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: machines/filestash
+description: "Filestash 官方 Docker 镜像，用于通过 Web 界面管理 FTP、SFTP、S3、Dropbox 等多种协议与云服务的文件数据。"
 source: https://xuanyuan.cloud/zh/r/machines/filestash
 canonical: https://xuanyuan.cloud/zh/r/machines/filestash
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/machines/filestash" title="machines/filestash Docker 镜像中文简介、标签列表与拉取命令">machines/filestash — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/machines/filestash" title="machines/filestash Docker 镜像中文简介、标签列表与拉取命令">machines/filestash — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/machines/filestash" title="machines/filestash Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/machines/filestash</a></p>
+<a href="https://xuanyuan.cloud/zh/r/machines/filestash" title="machines/filestash Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/machines/filestash</a>
 
 # Filestash Docker 镜像
 
@@ -53,7 +54,3 @@ docker run -d -p 8334:8334 -v /宿主机路径:/app/data --name filestash mickae
 ```bash
 docker run -d -p 8080:8334 --name filestash mickael-kerjean/filestash
 ```
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/machines/filestash" title="machines/filestash Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/machines/filestash</a></p>

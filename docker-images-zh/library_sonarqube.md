@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/sonarqube
+description: "SonarQube的官方镜像是一款专注于代码质量与安全的代码分析工具，其核心功能包括对代码进行全面扫描、精准检测潜在缺陷、有效识别安全漏洞及科学评估代码质量指标，能帮助开发团队在软件开发流程中及时发现并修复问题，从而显著提升软件产品的可靠性与安全性，是开发过程中保障代码质量和安全的重要工具。"
 source: https://xuanyuan.cloud/zh/r/library/sonarqube
 canonical: https://xuanyuan.cloud/zh/r/library/sonarqube
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/sonarqube" title="library/sonarqube Docker 镜像中文简介、标签列表与拉取命令">library/sonarqube — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/sonarqube" title="library/sonarqube Docker 镜像中文简介、标签列表与拉取命令">library/sonarqube — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/sonarqube" title="library/sonarqube Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/sonarqube</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/sonarqube" title="library/sonarqube Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/sonarqube</a>
 
 # SonarQube Docker 镜像介绍
 
@@ -190,7 +191,3 @@ SonarQube 实例管理相关文档见 [Instance Administration]([])。
 与所有 Docker 镜像一样，本镜像可能包含其他软件（如基础系统的 Bash 等），其许可证需用户自行确认合规性。
 
 部分自动检测的许可证信息可在 [repo-info 仓库的 `sonarqube/` 目录]([]) 查看。使用前，请确保遵守所有包含软件的相关许可证。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/sonarqube" title="library/sonarqube Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/sonarqube</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ubuntu/bind9
+description: "BIND 9是灵活且功能全面的DNS系统，提供由Canonical维护的长期版本。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/bind9
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/bind9
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/bind9" title="ubuntu/bind9 Docker 镜像中文简介、标签列表与拉取命令">ubuntu/bind9 — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/bind9" title="ubuntu/bind9 Docker 镜像中文简介、标签列表与拉取命令">ubuntu/bind9 — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ubuntu/bind9" title="ubuntu/bind9 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/bind9</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ubuntu/bind9" title="ubuntu/bind9 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/bind9</a>
 
 # Bind9 Docker镜像（基于Ubuntu）
 
@@ -133,7 +134,3 @@ docker images --no-trunc --quiet ubuntu/bind9:<tag>
 |---------------------|---------------------------------------|--------------|-------------------|
 | ~~9.16-21.10~~      | Bind9 9.16.1 on Ubuntu 21.10          | 2022-07      | 9.18-22.04_beta   |
 | _`track`_           | -                                     | -            | -                 |
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ubuntu/bind9" title="ubuntu/bind9 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ubuntu/bind9</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: longhornio/csi-provisioner
+description: "CSI Provisioner是实现容器存储接口(CSI)的存储卷供应组件，用于为Kubernetes等容器集群动态创建、管理存储卷，支持存储资源的自动分配与生命周期管理，满足容器化应用的存储需求。"
 source: https://xuanyuan.cloud/zh/r/longhornio/csi-provisioner
 canonical: https://xuanyuan.cloud/zh/r/longhornio/csi-provisioner
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/longhornio/csi-provisioner" title="longhornio/csi-provisioner Docker 镜像中文简介、标签列表与拉取命令">longhornio/csi-provisioner — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/longhornio/csi-provisioner" title="longhornio/csi-provisioner Docker 镜像中文简介、标签列表与拉取命令">longhornio/csi-provisioner — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/longhornio/csi-provisioner" title="longhornio/csi-provisioner Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/longhornio/csi-provisioner</a></p>
+<a href="https://xuanyuan.cloud/zh/r/longhornio/csi-provisioner" title="longhornio/csi-provisioner Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/longhornio/csi-provisioner</a>
 
 # CSI Provisioner 镜像文档
 
@@ -194,7 +195,3 @@ kubectl get pvc example-pvc
 - 配置正确的RBAC权限，避免因权限不足导致操作失败
 - StorageClass的`parameters`需与CSI驱动要求匹配，否则可能导致供应失败
 - 对于生产环境，建议部署多个Provisioner副本（通过Deployment的`replicas`配置）以提高可用性
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/longhornio/csi-provisioner" title="longhornio/csi-provisioner Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/longhornio/csi-provisioner</a></p>

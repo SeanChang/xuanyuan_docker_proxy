@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: leesonaa/immich
+description: "这是一条用于容器镜像操作的指令，具体是从GitHub容器仓库（ghcr.io）拉取和推送由imagegenius组织提供的immich应用最新版本镜像（标签为latest），是容器化部署流程中获取、更新或分发应用镜像时常用的基础命令，适用于需要通过容器技术管理immich应用版本的场景。"
 source: https://xuanyuan.cloud/zh/r/leesonaa/immich
 canonical: https://xuanyuan.cloud/zh/r/leesonaa/immich
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/leesonaa/immich" title="leesonaa/immich Docker 镜像中文简介、标签列表与拉取命令">leesonaa/immich — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/leesonaa/immich" title="leesonaa/immich Docker 镜像中文简介、标签列表与拉取命令">leesonaa/immich — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/leesonaa/immich" title="leesonaa/immich Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/leesonaa/immich</a></p>
+<a href="https://xuanyuan.cloud/zh/r/leesonaa/immich" title="leesonaa/immich Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/leesonaa/immich</a>
 
 ### ghcr.io/imagegenius/immich:latest 镜像拉取与推送操作说明  
 
@@ -84,7 +85,3 @@ docker push ghcr.io/imagegenius/immich:latest
 - **拉取无需权限**：任何用户均可拉取该镜像，无需登录 ghcr.io；  
 - **推送需权限**：仅有权限用户可推送，未授权用户执行推送会提示权限错误；  
 - **镜像标签**：`latest` 为动态标签，指向最新版。若需操作特定版本，可将标签替换为具体版本号（如 `v1.91.0`，需仓库存在对应标签）。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/leesonaa/immich" title="leesonaa/immich Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/leesonaa/immich</a></p>

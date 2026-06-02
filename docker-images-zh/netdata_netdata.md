@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: netdata/netdata
+description: "这是Netdata的官方镜像，专门用于监控系统、容器及应用程序；作为一款开源实时监控工具，它可提供全面的性能数据采集与分析功能，支持对服务器资源占用、容器运行状态、应用程序响应速度等多维度指标进行实时追踪，帮助用户直观掌握系统运行状况，快速定位并解决潜在问题，适用于各类IT环境的监控需求，确保业务稳定高效运行。"
 source: https://xuanyuan.cloud/zh/r/netdata/netdata
 canonical: https://xuanyuan.cloud/zh/r/netdata/netdata
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/netdata/netdata" title="netdata/netdata Docker 镜像中文简介、标签列表与拉取命令">netdata/netdata — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/netdata/netdata" title="netdata/netdata Docker 镜像中文简介、标签列表与拉取命令">netdata/netdata — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/netdata/netdata" title="netdata/netdata Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/netdata/netdata</a></p>
+<a href="https://xuanyuan.cloud/zh/r/netdata/netdata" title="netdata/netdata Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/netdata/netdata</a>
 
 ### Netdata 概述  
 
@@ -48,7 +49,3 @@ Netdata 是一款高性能的开源可观测性平台，专注于为基础设施
 ### 安装方法  
 
 通过Docker安装Netdata的详细步骤，可参考[官方文档]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/netdata/netdata" title="netdata/netdata Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/netdata/netdata</a></p>

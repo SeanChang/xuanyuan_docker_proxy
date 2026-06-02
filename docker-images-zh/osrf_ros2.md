@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: osrf/ros2
+description: "这里所提供的是仅用于ROS2开发工作的实验性Docker镜像，该类镜像仅适用于开发场景，不设置“latest”标签，因此用户在从仓库拉取该镜像时，必须通过明确指定的标签来进行操作，以确保能够准确获取到所需的镜像版本。"
 source: https://xuanyuan.cloud/zh/r/osrf/ros2
 canonical: https://xuanyuan.cloud/zh/r/osrf/ros2
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/osrf/ros2" title="osrf/ros2 Docker 镜像中文简介、标签列表与拉取命令">osrf/ros2 — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/osrf/ros2" title="osrf/ros2 Docker 镜像中文简介、标签列表与拉取命令">osrf/ros2 — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/osrf/ros2" title="osrf/ros2 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/osrf/ros2</a></p>
+<a href="https://xuanyuan.cloud/zh/r/osrf/ros2" title="osrf/ros2 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/osrf/ros2</a>
 
 # OSRF Docker镜像文档说明  
 
@@ -17,7 +18,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 
 **查看文档**：  
 直接点击链接即可访问完整内容：[]
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/osrf/ros2" title="osrf/ros2 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/osrf/ros2</a></p>

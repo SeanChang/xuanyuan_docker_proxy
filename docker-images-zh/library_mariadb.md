@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/mariadb
+description: "MariaDB Server 是一款从 MySQL 分叉而来的高性能开源关系型数据库，它继承了 MySQL 的核心架构与兼容性，同时凭借持续的技术革新和社区驱动的优化，在查询效率、并发处理及数据安全等方面实现了显著提升，广泛应用于企业级系统、Web服务平台及各类数据存储场景，成为全球开发者和组织青睐的开源数据库解决方案之一。"
 source: https://xuanyuan.cloud/zh/r/library/mariadb
 canonical: https://xuanyuan.cloud/zh/r/library/mariadb
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/mariadb" title="library/mariadb Docker 镜像中文简介、标签列表与拉取命令">library/mariadb — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/mariadb" title="library/mariadb Docker 镜像中文简介、标签列表与拉取命令">library/mariadb — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/mariadb" title="library/mariadb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/mariadb</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/mariadb" title="library/mariadb Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/mariadb</a>
 
 # MariaDB Docker 镜像使用指南
 
@@ -338,7 +339,3 @@ $ docker run --name some-mariadb -v mariadb-data:/var/lib/mysql -d mariadb:lates
 
 ## 许可证  
 镜像中软件的许可信息见 [MariaDB 许可 FAQ]([])。镜像可能包含其他软件（如 Bash），其许可需用户自行确认合规性。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/mariadb" title="library/mariadb Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/mariadb</a></p>

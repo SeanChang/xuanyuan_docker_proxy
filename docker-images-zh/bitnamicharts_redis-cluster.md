@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnamicharts/redis-cluster
+description: "Bitnami Redis® Cluster的Helm Chart，用于在Kubernetes集群部署支持分片的Redis集群。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/redis-cluster
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/redis-cluster
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/redis-cluster" title="bitnamicharts/redis-cluster Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/redis-cluster — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/redis-cluster" title="bitnamicharts/redis-cluster Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/redis-cluster — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/redis-cluster" title="bitnamicharts/redis-cluster Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/redis-cluster</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnamicharts/redis-cluster" title="bitnamicharts/redis-cluster Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/redis-cluster</a>
 
 # Bitnami Redis® Cluster 软件包
 
@@ -235,7 +236,3 @@ tls.certCAFilename="ca.pem"
 默认挂载Persistent Volume（动态供应），禁用时使用emptyDir（仅测试环境），因缺少nodes.conf文件可能导致节点独立运行。
 
 注意：此Chart的README因超出DockerHub限制被截断。完整README请参见https://github.com/bitnami/charts/blob/main/bitnami/redis-cluster/README.md
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamicharts/redis-cluster" title="bitnamicharts/redis-cluster Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamicharts/redis-cluster</a></p>

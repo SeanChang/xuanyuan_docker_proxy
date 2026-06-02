@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/redmine
+description: "Redmine是一款基于Ruby on Rails框架开发的灵活的项目管理Web应用程序，它集成了任务分配与跟踪、问题管理、时间记录、版本控制、文档协作等功能，支持多项目并行管理和自定义用户角色权限，适用于各类团队高效规划、执行和监控项目进度，凭借开源特性和可扩展性，成为企业和开发团队常用的项目协作工具。"
 source: https://xuanyuan.cloud/zh/r/library/redmine
 canonical: https://xuanyuan.cloud/zh/r/library/redmine
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/redmine" title="library/redmine Docker 镜像中文简介、标签列表与拉取命令">library/redmine — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/redmine" title="library/redmine Docker 镜像中文简介、标签列表与拉取命令">library/redmine — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/redmine" title="library/redmine Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/redmine</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/redmine" title="library/redmine Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/redmine</a>
 
 # Redmine Docker 镜像使用指南
 
@@ -209,7 +210,3 @@ Redmine镜像提供多种版本，适用于不同场景：
 
 Redmine基于[GNU General Public License v2]([])（GPL）开源。  
 镜像中可能包含其他软件，其许可证请参考[repo-info仓库的`redmine`目录]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/redmine" title="library/redmine Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/redmine</a></p>

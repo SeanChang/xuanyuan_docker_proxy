@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: cimg/php
+description: "CircleCI PHP便捷镜像，专为PHP项目在CircleCI平台上的持续集成流程设计，提供预配置环境以简化集成部署。"
 source: https://xuanyuan.cloud/zh/r/cimg/php
 canonical: https://xuanyuan.cloud/zh/r/cimg/php
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/php" title="cimg/php Docker 镜像中文简介、标签列表与拉取命令">cimg/php — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cimg/php" title="cimg/php Docker 镜像中文简介、标签列表与拉取命令">cimg/php — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/cimg/php" title="cimg/php Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cimg/php</a></p>
+<a href="https://xuanyuan.cloud/zh/r/cimg/php" title="cimg/php Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/cimg/php</a>
 
 # cimg/php Docker镜像文档
 
@@ -199,7 +200,3 @@ docker run -it test/php:7.4.26 bash  # 运行容器测试
 ## 许可证
 
 本镜像仓库采用MIT许可证，详见 [LICENSE](https://raw.githubusercontent.com/CircleCI-Public/cimg-php/main/LICENSE)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/cimg/php" title="cimg/php Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/cimg/php</a></p>

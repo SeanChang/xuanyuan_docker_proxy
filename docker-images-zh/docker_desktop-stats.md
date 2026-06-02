@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: docker/desktop-stats
+description: "Docker Desktop云助手镜像，用于辅助Docker Desktop与云服务的集成配置及管理，简化云环境下的容器操作流程。"
 source: https://xuanyuan.cloud/zh/r/docker/desktop-stats
 canonical: https://xuanyuan.cloud/zh/r/docker/desktop-stats
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/docker/desktop-stats" title="docker/desktop-stats Docker 镜像中文简介、标签列表与拉取命令">docker/desktop-stats — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/docker/desktop-stats" title="docker/desktop-stats Docker 镜像中文简介、标签列表与拉取命令">docker/desktop-stats — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/docker/desktop-stats" title="docker/desktop-stats Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/docker/desktop-stats</a></p>
+<a href="https://xuanyuan.cloud/zh/r/docker/desktop-stats" title="docker/desktop-stats Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/docker/desktop-stats</a>
 
 # Docker Desktop Cloud Helper Image 文档
 
@@ -123,7 +124,3 @@ docker-compose up
 - 确保 `DOCKER_CLOUD_API_KEY` 具备足够权限（至少包含 `read` 权限），避免因权限不足导致探索失败；
 - 若 Docker Cloud 引擎启用 TLS 认证，需确保本地 Docker Desktop 已配置对应 CA 证书（可通过挂载证书文件至容器 `/etc/ssl/certs` 目录实现）；
 - 对于大规模引擎（资源数量 >1000），建议设置 `REQUEST_TIMEOUT` 为 `60` 秒以上，避免请求超时。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/docker/desktop-stats" title="docker/desktop-stats Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/docker/desktop-stats</a></p>

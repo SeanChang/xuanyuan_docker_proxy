@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: knowstreaming/knowstreaming-manager
+description: "KnowStreaming管理端镜像，用于Kafka集群的可视化监控、管理与运维，支持主题管理、消费者组监控、性能指标分析等核心功能，帮助用户简化Kafka运维工作。"
 source: https://xuanyuan.cloud/zh/r/knowstreaming/knowstreaming-manager
 canonical: https://xuanyuan.cloud/zh/r/knowstreaming/knowstreaming-manager
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/knowstreaming/knowstreaming-manager" title="knowstreaming/knowstreaming-manager Docker 镜像中文简介、标签列表与拉取命令">knowstreaming/knowstreaming-manager — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/knowstreaming/knowstreaming-manager" title="knowstreaming/knowstreaming-manager Docker 镜像中文简介、标签列表与拉取命令">knowstreaming/knowstreaming-manager — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/knowstreaming/knowstreaming-manager" title="knowstreaming/knowstreaming-manager Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/knowstreaming/knowstreaming-manager</a></p>
+<a href="https://xuanyuan.cloud/zh/r/knowstreaming/knowstreaming-manager" title="knowstreaming/knowstreaming-manager Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/knowstreaming/knowstreaming-manager</a>
 
 # KnowStreaming Manager 镜像文档
 
@@ -81,7 +82,3 @@ docker run -d \
 - MySQL数据库需提前创建`knowstreaming`数据库，并执行初始化SQL脚本（可从KnowStreaming官方仓库获取）
 - Kafka集群需配置允许管理端访问的权限（如通过ACL配置）
 - 生产环境建议使用docker-compose或Kubernetes进行部署，确保高可用性
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/knowstreaming/knowstreaming-manager" title="knowstreaming/knowstreaming-manager Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/knowstreaming/knowstreaming-manager</a></p>

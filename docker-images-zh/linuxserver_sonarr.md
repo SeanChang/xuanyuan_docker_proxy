@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/sonarr
+description: "由LinuxServer.io提供的Sonarr容器，是一款专为电视节目集管理设计的自动化工具，能够监控指定剧集的更新信息、自动从索引器获取下载链接并通过下载客户端（如Deluge、qBittorrent等）完成资源下载，同时支持按自定义规则整理文件结构、重命名剧集文件以保持媒体库整洁有序；LinuxServer.io作为专注于提供高质量容器化应用的团队，其构建的Sonarr容器基于轻量级Linux系统，优化了资源占用与运行稳定性，适合家庭媒体服务器或个人影视库的自动化管理场景使用。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/sonarr
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/sonarr
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/sonarr" title="linuxserver/sonarr Docker 镜像中文简介、标签列表与拉取命令">linuxserver/sonarr — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/sonarr" title="linuxserver/sonarr Docker 镜像中文简介、标签列表与拉取命令">linuxserver/sonarr — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/sonarr" title="linuxserver/sonarr Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/sonarr</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/sonarr" title="linuxserver/sonarr Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/sonarr</a>
 
 # linuxserver/sonarr 容器介绍
 
@@ -184,7 +185,3 @@ docker build --no-cache --pull -t lscr.io/linuxserver/sonarr:latest .
 - [论坛]([])：社区讨论  
 - [GitHub 源码]([])：查看所有仓库  
 - [捐赠支持]([])：支持团队发展
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/sonarr" title="linuxserver/sonarr Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/sonarr</a></p>

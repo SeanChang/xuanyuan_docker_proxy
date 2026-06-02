@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/sapmachine
+description: "library/sapmachine 是 SAP 官方提供的 OpenJDK 二进制分发版 Docker 镜像，基于 SapMachine 构建——这是 SAP 开发、质量测试并长期支持的 OpenJDK 衍生版本，兼容 Java SE 标准。该镜像支持 Java 11、17、21（长期支持 LTS 版本）及 25（最新版本），适配 Ubuntu（Noble/Jammy）、Alpine（3.21/3.22）等基础镜像，提供 JDK、JRE、无头（Headless）等多种变体，满足企业级 Java 应用（如 Spring Boot 微服务、SAP 自研系统）在容器化环境中的部署需求，同时覆盖 amd64、arm64v8、ppc64le 多架构场景。"
 source: https://xuanyuan.cloud/zh/r/library/sapmachine
 canonical: https://xuanyuan.cloud/zh/r/library/sapmachine
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/sapmachine" title="library/sapmachine Docker 镜像中文简介、标签列表与拉取命令">library/sapmachine — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/sapmachine" title="library/sapmachine Docker 镜像中文简介、标签列表与拉取命令">library/sapmachine — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/sapmachine" title="library/sapmachine Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/sapmachine</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/sapmachine" title="library/sapmachine Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/sapmachine</a>
 
 # SapMachine Docker 镜像使用指南
 
@@ -238,7 +239,3 @@ SapMachine 镜像提供多种变体，需根据场景选择：
 - **基础镜像软件**：Ubuntu/Alpine 镜像中包含的系统组件（如 Bash、musl）遵循各自开源许可（如 MIT、Apache）
 
 使用前请确保遵守所有包含软件的许可条款，商业场景需确认 GPLv2 Classpath Exception 的适用范围（详见 SapMachine 许可页面 https://sap.github.io/SapMachine/license.html）。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/sapmachine" title="library/sapmachine Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/sapmachine</a></p>

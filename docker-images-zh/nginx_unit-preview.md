@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: nginx/unit-preview
+description: "用于预览Unit新功能的Docker镜像，提供便捷的测试环境，帮助开发者提前体验和评估即将发布的功能特性，无需手动搭建复杂开发环境。"
 source: https://xuanyuan.cloud/zh/r/nginx/unit-preview
 canonical: https://xuanyuan.cloud/zh/r/nginx/unit-preview
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nginx/unit-preview" title="nginx/unit-preview Docker 镜像中文简介、标签列表与拉取命令">nginx/unit-preview — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nginx/unit-preview" title="nginx/unit-preview Docker 镜像中文简介、标签列表与拉取命令">nginx/unit-preview — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/nginx/unit-preview" title="nginx/unit-preview Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nginx/unit-preview</a></p>
+<a href="https://xuanyuan.cloud/zh/r/nginx/unit-preview" title="nginx/unit-preview Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nginx/unit-preview</a>
 
 ## 镜像概述
 
@@ -102,7 +103,3 @@ docker-compose up -d
 - 该镜像包含的功能为预览版，存在不稳定风险，**禁止用于生产环境**。  
 - 镜像版本随Unit开发进度更新，建议定期执行`docker pull unit-preview-features:latest`获取最新预览功能。  
 - 功能异常排查：通过容器日志定位问题，命令为 `docker logs unit-preview`。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nginx/unit-preview" title="nginx/unit-preview Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nginx/unit-preview</a></p>

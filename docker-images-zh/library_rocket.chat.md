@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/rocket.chat
+description: "这是一套完整的开源聊天解决方案，具备实时消息传递、文件分享、音视频通话、群组管理等全面功能，支持多平台部署与高度自定义开发，依托开源社区持续优化安全性能与兼容性，适用于企业协作、社交互动、客户服务等多样化场景，为用户提供无许可限制、低成本且灵活可控的通讯工具。"
 source: https://xuanyuan.cloud/zh/r/library/rocket.chat
 canonical: https://xuanyuan.cloud/zh/r/library/rocket.chat
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/rocket.chat" title="library/rocket.chat Docker 镜像中文简介、标签列表与拉取命令">library/rocket.chat — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/rocket.chat" title="library/rocket.chat Docker 镜像中文简介、标签列表与拉取命令">library/rocket.chat — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/rocket.chat" title="library/rocket.chat Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/rocket.chat</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/rocket.chat" title="library/rocket.chat Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/rocket.chat</a>
 
 # Rocket.Chat Docker镜像使用指南
 
@@ -132,7 +133,3 @@ $ docker run --name rocketchat -p 80:3000 \
 - 额外许可证信息可参考 [repo-info仓库的`rocket.chat/`目录]([])。  
 
 使用前请确保遵守所有包含软件的许可证要求。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/rocket.chat" title="library/rocket.chat Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/rocket.chat</a></p>

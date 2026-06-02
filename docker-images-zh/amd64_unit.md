@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: amd64/unit
+description: "已弃用；官方构建的NGINX Unit：通用Web应用服务器"
 source: https://xuanyuan.cloud/zh/r/amd64/unit
 canonical: https://xuanyuan.cloud/zh/r/amd64/unit
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/amd64/unit" title="amd64/unit Docker 镜像中文简介、标签列表与拉取命令">amd64/unit — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/amd64/unit" title="amd64/unit Docker 镜像中文简介、标签列表与拉取命令">amd64/unit — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/amd64/unit" title="amd64/unit Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/amd64/unit</a></p>
+<a href="https://xuanyuan.cloud/zh/r/amd64/unit" title="amd64/unit Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/amd64/unit</a>
 
 # NGINX Unit Docker 镜像文档
 
@@ -101,7 +102,3 @@ NGINX Unit 是一款轻量级、多功能的应用运行时环境，作为单一
 
 
 **重要提示**：使用本镜像即表示用户已知晓其废弃状态及安全风险，并自行承担相关责任。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/amd64/unit" title="amd64/unit Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/amd64/unit</a></p>

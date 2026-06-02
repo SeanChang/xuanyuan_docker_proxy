@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: hyperledger/fabric-ca
+description: "Fabric CA是Hyperledger Fabric区块链生态中的核心证书颁发机构，主要负责网络中用户、节点、管理员等各类身份的注册、证书颁发与撤销管理，通过提供安全的身份认证机制确保区块链网络中实体身份的唯一性和合法性，有效支持访问控制策略的实施，保障网络通信与交易的安全性，是构建可信区块链环境的关键基础设施。"
 source: https://xuanyuan.cloud/zh/r/hyperledger/fabric-ca
 canonical: https://xuanyuan.cloud/zh/r/hyperledger/fabric-ca
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/hyperledger/fabric-ca" title="hyperledger/fabric-ca Docker 镜像中文简介、标签列表与拉取命令">hyperledger/fabric-ca — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hyperledger/fabric-ca" title="hyperledger/fabric-ca Docker 镜像中文简介、标签列表与拉取命令">hyperledger/fabric-ca — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/hyperledger/fabric-ca" title="hyperledger/fabric-ca Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hyperledger/fabric-ca</a></p>
+<a href="https://xuanyuan.cloud/zh/r/hyperledger/fabric-ca" title="hyperledger/fabric-ca Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hyperledger/fabric-ca</a>
 
 # Fabric CA
 
@@ -45,7 +46,3 @@ Fabric CA 的核心功能围绕数字证书的生命周期管理展开：
 *   **数据库配置**：Fabric CA 需要数据库来存储用户信息、证书元数据、CRL 等。支持 SQLite、PostgreSQL、MySQL 等数据库。
 
 通过合理配置和管理 Fabric CA，可以为 Hyperledger Fabric 区块链网络提供坚实的身份基础设施，确保网络通信和交易的安全性与可追溯性。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/hyperledger/fabric-ca" title="hyperledger/fabric-ca Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/hyperledger/fabric-ca</a></p>

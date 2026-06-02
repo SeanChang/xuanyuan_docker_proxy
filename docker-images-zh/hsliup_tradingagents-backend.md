@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: hsliup/tradingagents-backend
+description: "基于多智能体架构的 AI 股票分析系统后端服务"
 source: https://xuanyuan.cloud/zh/r/hsliup/tradingagents-backend
 canonical: https://xuanyuan.cloud/zh/r/hsliup/tradingagents-backend
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/hsliup/tradingagents-backend" title="hsliup/tradingagents-backend Docker 镜像中文简介、标签列表与拉取命令">hsliup/tradingagents-backend — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hsliup/tradingagents-backend" title="hsliup/tradingagents-backend Docker 镜像中文简介、标签列表与拉取命令">hsliup/tradingagents-backend — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/hsliup/tradingagents-backend" title="hsliup/tradingagents-backend Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hsliup/tradingagents-backend</a></p>
+<a href="https://xuanyuan.cloud/zh/r/hsliup/tradingagents-backend" title="hsliup/tradingagents-backend Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hsliup/tradingagents-backend</a>
 
 # TradingAgents-CN 后端服务镜像文档
 
@@ -161,7 +162,3 @@ volumes:
   - Tushare：https://tushare.pro/register?reg=tacn
   - 阿里百炼：https://dashscope.aliyun.com/
   - DeepSeek：https://platform.deepseek.com/
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/hsliup/tradingagents-backend" title="hsliup/tradingagents-backend Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/hsliup/tradingagents-backend</a></p>

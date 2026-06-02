@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: amd64/debian
+description: "Debian是一款完全由自由开源软件组成的Linux发行版。"
 source: https://xuanyuan.cloud/zh/r/amd64/debian
 canonical: https://xuanyuan.cloud/zh/r/amd64/debian
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/amd64/debian" title="amd64/debian Docker 镜像中文简介、标签列表与拉取命令">amd64/debian — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/amd64/debian" title="amd64/debian Docker 镜像中文简介、标签列表与拉取命令">amd64/debian — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/amd64/debian" title="amd64/debian Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/amd64/debian</a></p>
+<a href="https://xuanyuan.cloud/zh/r/amd64/debian" title="amd64/debian Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/amd64/debian</a>
 
 # Debian Docker 镜像文档
 
@@ -163,7 +164,3 @@ services:
 
 
 ###
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/amd64/debian" title="amd64/debian Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/amd64/debian</a></p>

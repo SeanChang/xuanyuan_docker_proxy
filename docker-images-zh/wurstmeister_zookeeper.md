@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: wurstmeister/zookeeper
+description: "提供Apache ZooKeeper分布式协调服务的Docker镜像，用于分布式系统中的配置管理、命名服务、同步控制及集群协调，支持容器化快速部署与集成。"
 source: https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper
 canonical: https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper" title="wurstmeister/zookeeper Docker 镜像中文简介、标签列表与拉取命令">wurstmeister/zookeeper — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper" title="wurstmeister/zookeeper Docker 镜像中文简介、标签列表与拉取命令">wurstmeister/zookeeper — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper" title="wurstmeister/zookeeper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper</a></p>
+<a href="https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper" title="wurstmeister/zookeeper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper</a>
 
 # Zookeeper Docker 镜像文档
 
@@ -230,7 +231,3 @@ healthcheck:
 - 定期备份数据目录，防止数据丢失
 - 对于大规模部署，建议根据实际负载调整 JVM 参数和 ZooKeeper 配置
 - 在云环境中部署时，注意配置适当的安全组和网络策略，限制访问来源
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper" title="wurstmeister/zookeeper Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper</a></p>

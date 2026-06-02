@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/caddy
+description: "Caddy 2是一款采用Go语言编写的功能强大、企业级就绪的开源Web服务器，其核心特性包括自动HTTPS功能，能够为网站提供便捷且安全的加密连接，适用于从个人项目到大型企业应用的各类场景，凭借轻量级架构和高效性能，成为Web服务部署的理想选择。"
 source: https://xuanyuan.cloud/zh/r/library/caddy
 canonical: https://xuanyuan.cloud/zh/r/library/caddy
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/caddy" title="library/caddy Docker 镜像中文简介、标签列表与拉取命令">library/caddy — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/caddy" title="library/caddy Docker 镜像中文简介、标签列表与拉取命令">library/caddy — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/caddy" title="library/caddy Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/caddy</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/caddy" title="library/caddy Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/caddy</a>
 
 # Caddy Docker 镜像使用指南
 
@@ -227,7 +228,3 @@ $ docker compose exec -w /etc/caddy caddy caddy reload
 
 本镜像包含软件的许可证信息见 [Caddy 许可证]([])。  
 Docker 镜像可能包含其他软件（如基础系统的 Bash 等），其许可证需用户自行确认合规
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/caddy" title="library/caddy Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/caddy</a></p>

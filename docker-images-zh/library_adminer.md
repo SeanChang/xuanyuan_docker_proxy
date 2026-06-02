@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/adminer
+description: "这是一款将数据库管理功能集成于单个PHP文件中的轻量级工具，支持数据的添加、查询、更新与删除操作，可便捷管理数据库结构，无需复杂安装配置，仅需将文件上传至服务器即可使用，适用于小型项目开发、临时数据管理或快速原型搭建，为开发者提供高效、简洁的数据库操作体验。"
 source: https://xuanyuan.cloud/zh/r/library/adminer
 canonical: https://xuanyuan.cloud/zh/r/library/adminer
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/adminer" title="library/adminer Docker 镜像中文简介、标签列表与拉取命令">library/adminer — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/adminer" title="library/adminer Docker 镜像中文简介、标签列表与拉取命令">library/adminer — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/adminer" title="library/adminer Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/adminer</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/adminer" title="library/adminer Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/adminer</a>
 
 # Adminer Docker镜像使用指南
 
@@ -183,7 +184,3 @@ docker run -p 8080:8080 -e ADMINER_DEFAULT_SERVER=mysql adminer
 与所有Docker镜像一样，可能包含其他软件（如Bash等基础系统组件），其许可协议需另行确认。部分自动检测的许可信息可在 [repo-info 仓库的 `adminer/` 目录]([]) 查看。  
 
 使用前，用户需确保遵守所有包含软件的相关许可协议。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/adminer" title="library/adminer Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/adminer</a></p>

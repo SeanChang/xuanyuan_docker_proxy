@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: onlyoffice/documentserver-de
+description: "ONLYOFFICE Developer Edition是面向开发者的办公协作解决方案开发工具包，提供丰富的API与SDK，支持将文档编辑（含文本文档、电子表格、演示文稿）、实时在线协作、版本管理及权限控制等核心功能无缝集成至企业自有应用或服务中，允许开发者根据业务需求自定义界面、扩展功能模块，并支持多平台部署与数据安全保障，助力快速构建定制化办公协作系统。"
 source: https://xuanyuan.cloud/zh/r/onlyoffice/documentserver-de
 canonical: https://xuanyuan.cloud/zh/r/onlyoffice/documentserver-de
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/onlyoffice/documentserver-de" title="onlyoffice/documentserver-de Docker 镜像中文简介、标签列表与拉取命令">onlyoffice/documentserver-de — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/onlyoffice/documentserver-de" title="onlyoffice/documentserver-de Docker 镜像中文简介、标签列表与拉取命令">onlyoffice/documentserver-de — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/onlyoffice/documentserver-de" title="onlyoffice/documentserver-de Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/onlyoffice/documentserver-de</a></p>
+<a href="https://xuanyuan.cloud/zh/r/onlyoffice/documentserver-de" title="onlyoffice/documentserver-de Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/onlyoffice/documentserver-de</a>
 
 # ONLYOFFICE Document Server 中文使用指南
 
@@ -249,7 +250,3 @@ bash opensource-install.sh -md yourdomain.com
 ## 用户反馈与支持  
 - 官方论坛：[dev.onlyoffice.org]([])  
 - Stack Overflow：使用标签 [onlyoffice]([]) 提问
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/onlyoffice/documentserver-de" title="onlyoffice/documentserver-de Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/onlyoffice/documentserver-de</a></p>

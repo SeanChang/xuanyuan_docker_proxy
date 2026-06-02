@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: seataio/seata-server
+description: "这是一款专为微服务架构打造的分布式事务解决方案，兼具高性能与易用性核心特性。在微服务架构中，跨服务事务的数据一致性管理常面临复杂挑战，该方案通过优化底层处理逻辑实现低延迟、高吞吐量的高性能表现，同时简化集成流程并提供直观操作接口，大幅降低开发者的学习与使用门槛，助力技术团队高效应对分布式环境下的事务协调需求，切实保障业务数据的准确性及系统运行的稳定性。"
 source: https://xuanyuan.cloud/zh/r/seataio/seata-server
 canonical: https://xuanyuan.cloud/zh/r/seataio/seata-server
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/seataio/seata-server" title="seataio/seata-server Docker 镜像中文简介、标签列表与拉取命令">seataio/seata-server — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/seataio/seata-server" title="seataio/seata-server Docker 镜像中文简介、标签列表与拉取命令">seataio/seata-server — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/seataio/seata-server" title="seataio/seata-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/seataio/seata-server</a></p>
+<a href="https://xuanyuan.cloud/zh/r/seataio/seata-server" title="seataio/seata-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/seataio/seata-server</a>
 
 # Seata Server 介绍
 
@@ -123,7 +124,3 @@ $ docker logs -f seata-server
 
 ### 提交反馈  
 如遇问题，可在 [GitHub Issues]([]) 提交反馈。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/seataio/seata-server" title="seataio/seata-server Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/seataio/seata-server</a></p>

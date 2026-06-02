@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/jackett
+description: "这是由LinuxServer.io提供的Jackett容器，其中Jackett是一款实用的种子索引聚合工具，能够整合多个torrent追踪器的搜索结果，为qBittorrent、Deluge等各类P2P下载客户端提供统一的搜索接口，帮助用户更便捷地查找和获取所需资源；而LinuxServer.io团队凭借专业的容器化技术，确保该Jackett容器具备稳定的运行环境、简便的部署流程以及持续的更新支持，可满足用户在不同系统环境下高效使用Jackett的需求。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/jackett
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/jackett
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/jackett" title="linuxserver/jackett Docker 镜像中文简介、标签列表与拉取命令">linuxserver/jackett — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/jackett" title="linuxserver/jackett Docker 镜像中文简介、标签列表与拉取命令">linuxserver/jackett — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/jackett" title="linuxserver/jackett Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/jackett</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/jackett" title="linuxserver/jackett Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/jackett</a>
 
 # LinuxServer.io Jackett 容器介绍
 
@@ -236,7 +237,3 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 - [论坛]([])：社区讨论与问题反馈。  
 - [GitHub]([])：源码仓库。  
 - [赞助支持]([])：欢迎通过捐赠或贡献支持开发。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/jackett" title="linuxserver/jackett Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/jackett</a></p>

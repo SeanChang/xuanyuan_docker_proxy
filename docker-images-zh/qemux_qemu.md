@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: qemux/qemu
+description: "一个在Docker容器中运行虚拟机的QEMU镜像，提供Web界面控制，支持多种磁盘格式（如.iso、.qcow2、.vmdk等），并具备KVM加速等高性能选项，实现接近原生的运行速度。"
 source: https://xuanyuan.cloud/zh/r/qemux/qemu
 canonical: https://xuanyuan.cloud/zh/r/qemux/qemu
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/qemux/qemu" title="qemux/qemu Docker 镜像中文简介、标签列表与拉取命令">qemux/qemu — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/qemux/qemu" title="qemux/qemu Docker 镜像中文简介、标签列表与拉取命令">qemux/qemu — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/qemux/qemu" title="qemux/qemu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/qemux/qemu</a></p>
+<a href="https://xuanyuan.cloud/zh/r/qemux/qemu" title="qemux/qemu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/qemux/qemu</a>
 
 # QEMU Docker镜像
 
@@ -333,7 +334,3 @@ environment:
 ```yaml
 environment:
   DEBUG: "Y"
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/qemux/qemu" title="qemux/qemu Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/qemux/qemu</a></p>

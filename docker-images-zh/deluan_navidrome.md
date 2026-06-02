@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: deluan/navidrome
+description: "Navidrome Music Server的官方Docker镜像，这是一个开源Web音乐收藏服务器和流媒体服务，让您能从任何浏览器或移动设备访问个人音乐库，如同个人Spotify。"
 source: https://xuanyuan.cloud/zh/r/deluan/navidrome
 canonical: https://xuanyuan.cloud/zh/r/deluan/navidrome
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/deluan/navidrome" title="deluan/navidrome Docker 镜像中文简介、标签列表与拉取命令">deluan/navidrome — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/deluan/navidrome" title="deluan/navidrome Docker 镜像中文简介、标签列表与拉取命令">deluan/navidrome — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/deluan/navidrome" title="deluan/navidrome Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/deluan/navidrome</a></p>
+<a href="https://xuanyuan.cloud/zh/r/deluan/navidrome" title="deluan/navidrome Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/deluan/navidrome</a>
 
 # Navidrome Music Server Docker镜像
 
@@ -73,7 +74,3 @@ services:
 ## Subsonic API兼容性
 
 Navidrome实现了Subsonic API，兼容各类Subsonic客户端。最新API功能支持情况可查看[兼容性表](https://www.navidrome.org/docs/developers/subsonic-api)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/deluan/navidrome" title="deluan/navidrome Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/deluan/navidrome</a></p>

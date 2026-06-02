@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: redis/redis-stack
+description: "Redis Stack是一个集成方案，它安装Redis服务器并赋予其额外的数据库功能，如搜索、JSON数据处理、时间序列管理等，同时包含RedisInsight这一可视化管理工具，帮助用户便捷部署、监控和管理Redis数据库，有效提升开发与运维效率。"
 source: https://xuanyuan.cloud/zh/r/redis/redis-stack
 canonical: https://xuanyuan.cloud/zh/r/redis/redis-stack
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/redis/redis-stack" title="redis/redis-stack Docker 镜像中文简介、标签列表与拉取命令">redis/redis-stack — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/redis/redis-stack" title="redis/redis-stack Docker 镜像中文简介、标签列表与拉取命令">redis/redis-stack — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/redis/redis-stack" title="redis/redis-stack Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/redis/redis-stack</a></p>
+<a href="https://xuanyuan.cloud/zh/r/redis/redis-stack" title="redis/redis-stack Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/redis/redis-stack</a>
 
 # 在 Docker 上运行 Redis Stack  
 ## 如何使用 Docker 安装 Redis Stack  
@@ -96,7 +97,3 @@ docker run -v `pwd`/local-redis-stack.conf:/redis-stack.conf -p 6379:6379 -p 800
   ```bash  
   docker run -e REDISTIMESERIES_ARGS="RETENTION_POLICY=20" redis/redis-stack:latest  
   ```
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/redis/redis-stack" title="redis/redis-stack Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/redis/redis-stack</a></p>

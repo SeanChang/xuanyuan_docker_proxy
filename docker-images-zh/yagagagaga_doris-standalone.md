@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: yagagagaga/doris-standalone
+description: "Apache Doris是一款易用、高性能的统一分析型数据库。"
 source: https://xuanyuan.cloud/zh/r/yagagagaga/doris-standalone
 canonical: https://xuanyuan.cloud/zh/r/yagagagaga/doris-standalone
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/yagagagaga/doris-standalone" title="yagagagaga/doris-standalone Docker 镜像中文简介、标签列表与拉取命令">yagagagaga/doris-standalone — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/yagagagaga/doris-standalone" title="yagagagaga/doris-standalone Docker 镜像中文简介、标签列表与拉取命令">yagagagaga/doris-standalone — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/yagagagaga/doris-standalone" title="yagagagaga/doris-standalone Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/yagagagaga/doris-standalone</a></p>
+<a href="https://xuanyuan.cloud/zh/r/yagagagaga/doris-standalone" title="yagagagaga/doris-standalone Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/yagagagaga/doris-standalone</a>
 
 # Doris-Standalone Docker镜像文档
 
@@ -174,7 +175,3 @@ mysql -uroot -P9030 -h127.0.0.1
 ## 附加工具
 
 若需Doris管理工具，可参考 [Doris-Manager](https://hub.docker.com/r/yagagagaga/doris-manager) 镜像。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/yagagagaga/doris-standalone" title="yagagagaga/doris-standalone Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/yagagagaga/doris-standalone</a></p>

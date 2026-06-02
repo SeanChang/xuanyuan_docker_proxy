@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: databack/mysql-backup
+description: "用于将MySQL数据库备份到任何位置的工具，支持定时备份、恢复操作及旧备份清理。"
 source: https://xuanyuan.cloud/zh/r/databack/mysql-backup
 canonical: https://xuanyuan.cloud/zh/r/databack/mysql-backup
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/databack/mysql-backup" title="databack/mysql-backup Docker 镜像中文简介、标签列表与拉取命令">databack/mysql-backup — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/databack/mysql-backup" title="databack/mysql-backup Docker 镜像中文简介、标签列表与拉取命令">databack/mysql-backup — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/databack/mysql-backup" title="databack/mysql-backup Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/databack/mysql-backup</a></p>
+<a href="https://xuanyuan.cloud/zh/r/databack/mysql-backup" title="databack/mysql-backup Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/databack/mysql-backup</a>
 
 # mysql-backup
 
@@ -149,7 +150,3 @@ docker run -e DB_SERVER=gotodb.example.com -e DB_USER=user123 -e DB_PASS=pass123
 ## 许可证
 
 MIT许可证。版权所有Avi Deitcher https://github.com/deitch
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/databack/mysql-backup" title="databack/mysql-backup Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/databack/mysql-backup</a></p>

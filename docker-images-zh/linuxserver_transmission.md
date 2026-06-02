@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/transmission
+description: "这是由LinuxServer.io提供的Transmission容器，其中Transmission是一款轻量级开源BitTorrent客户端，支持高效文件传输，兼容BitTorrent、DHT等多种协议；该容器采用Docker技术构建，便于快速部署、轻松管理和灵活扩展，适用于个人用户或服务器环境，LinuxServer.io作为专注于开源容器开发的团队，确保其具备良好的安全性与稳定性。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/transmission
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/transmission
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/transmission" title="linuxserver/transmission Docker 镜像中文简介、标签列表与拉取命令">linuxserver/transmission — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/transmission" title="linuxserver/transmission Docker 镜像中文简介、标签列表与拉取命令">linuxserver/transmission — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/transmission" title="linuxserver/transmission Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/transmission</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/transmission" title="linuxserver/transmission Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/transmission</a>
 
 # linuxserver/transmission 容器介绍
 
@@ -270,7 +271,3 @@ docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/transmission:arm64v8-l
 - **05.01.23**：重构至Alpine 3.17，恢复GNU findutils包  
 - **02.11.22**：重构至Alpine 3.16，迁移至s6v3  
 - **更早版本**：详见[GitHub历史]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/transmission" title="linuxserver/transmission Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/transmission</a></p>

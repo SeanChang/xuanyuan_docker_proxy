@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: netboxcommunity/netbox
+description: "社区维护的Netbox Docker镜像，用于便捷部署和运行开源IP地址管理（IPAM）与数据中心基础设施管理（DCIM）工具。"
 source: https://xuanyuan.cloud/zh/r/netboxcommunity/netbox
 canonical: https://xuanyuan.cloud/zh/r/netboxcommunity/netbox
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/netboxcommunity/netbox" title="netboxcommunity/netbox Docker 镜像中文简介、标签列表与拉取命令">netboxcommunity/netbox — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/netboxcommunity/netbox" title="netboxcommunity/netbox Docker 镜像中文简介、标签列表与拉取命令">netboxcommunity/netbox — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/netboxcommunity/netbox" title="netboxcommunity/netbox Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/netboxcommunity/netbox</a></p>
+<a href="https://xuanyuan.cloud/zh/r/netboxcommunity/netbox" title="netboxcommunity/netbox Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/netboxcommunity/netbox</a>
 
 # netbox-docker
 
@@ -208,7 +209,3 @@ netbox-docker由社区维护，获取支持的渠道：
 [netbox-docker-slack-channel]: https://netdev-community.slack.com/archives/C01P0GEVBU7
 [netbox-slack-channel]: https://netdev-community.slack.com/archives/C01P0FRSXRV
 [netbox-docker-license]: https://github.com/netbox-community/netbox-docker/blob/release/LICENSE
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/netboxcommunity/netbox" title="netboxcommunity/netbox Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/netboxcommunity/netbox</a></p>

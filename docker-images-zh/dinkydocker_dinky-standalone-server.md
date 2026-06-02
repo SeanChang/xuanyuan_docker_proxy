@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: dinkydocker/dinky-standalone-server
+description: "Dinky是一款基于Apache Flink构建的实时数据开发平台，致力于为用户提供集数据采集、处理、分析与应用于一体的全流程开发工具，支持可视化任务编排、实时数据监控及高效运维管理，能够显著降低实时数据开发门槛，助力企业快速响应业务需求，构建稳定、高效的实时数据应用系统。"
 source: https://xuanyuan.cloud/zh/r/dinkydocker/dinky-standalone-server
 canonical: https://xuanyuan.cloud/zh/r/dinkydocker/dinky-standalone-server
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/dinkydocker/dinky-standalone-server" title="dinkydocker/dinky-standalone-server Docker 镜像中文简介、标签列表与拉取命令">dinkydocker/dinky-standalone-server — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dinkydocker/dinky-standalone-server" title="dinkydocker/dinky-standalone-server Docker 镜像中文简介、标签列表与拉取命令">dinkydocker/dinky-standalone-server — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/dinkydocker/dinky-standalone-server" title="dinkydocker/dinky-standalone-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dinkydocker/dinky-standalone-server</a></p>
+<a href="https://xuanyuan.cloud/zh/r/dinkydocker/dinky-standalone-server" title="dinkydocker/dinky-standalone-server Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/dinkydocker/dinky-standalone-server</a>
 
 # Dinky
 
@@ -128,7 +129,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 
 ### 版权信息  
 详见[LICENSE]([])文档。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/dinkydocker/dinky-standalone-server" title="dinkydocker/dinky-standalone-server Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/dinkydocker/dinky-standalone-server</a></p>

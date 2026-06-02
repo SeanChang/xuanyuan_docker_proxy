@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: 1panel/openclaw
+description: "运行在个人设备上的跨平台AI助理，支持飞书、钉钉、企业微信等多种沟通渠道，可7x24小时本地运行。"
 source: https://xuanyuan.cloud/zh/r/1panel/openclaw
 canonical: https://xuanyuan.cloud/zh/r/1panel/openclaw
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/1panel/openclaw" title="1panel/openclaw Docker 镜像中文简介、标签列表与拉取命令">1panel/openclaw — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/1panel/openclaw" title="1panel/openclaw Docker 镜像中文简介、标签列表与拉取命令">1panel/openclaw — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/1panel/openclaw" title="1panel/openclaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/1panel/openclaw</a></p>
+<a href="https://xuanyuan.cloud/zh/r/1panel/openclaw" title="1panel/openclaw Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/1panel/openclaw</a>
 
 ## OpenClaw Docker镜像文档
 
@@ -49,7 +50,3 @@ docker run -d --name openclaw --restart always [配置参数] 1panel-dev/runtime
 ```
 
 > 注：手动部署需自行配置通讯渠道密钥、AI模型连接等参数，建议优先通过1Panel进行部署以获得最佳体验。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/1panel/openclaw" title="1panel/openclaw Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/1panel/openclaw</a></p>

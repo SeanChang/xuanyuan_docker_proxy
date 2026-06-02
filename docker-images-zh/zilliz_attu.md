@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: zilliz/attu
+description: "Attu是Milvus的一站式管理工具，提供图形化界面用于监控、管理和操作Milvus向量数据库，可显著降低Milvus的管理成本，支持Milvus 2.x版本，兼容Zilliz Cloud及自建Milvus服务。"
 source: https://xuanyuan.cloud/zh/r/zilliz/attu
 canonical: https://xuanyuan.cloud/zh/r/zilliz/attu
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/zilliz/attu" title="zilliz/attu Docker 镜像中文简介、标签列表与拉取命令">zilliz/attu — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zilliz/attu" title="zilliz/attu Docker 镜像中文简介、标签列表与拉取命令">zilliz/attu — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/zilliz/attu" title="zilliz/attu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zilliz/attu</a></p>
+<a href="https://xuanyuan.cloud/zh/r/zilliz/attu" title="zilliz/attu Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/zilliz/attu</a>
 
 # Attu
 
@@ -169,7 +170,3 @@ kubectl apply -f https://raw.githubusercontent.com/zilliztech/attu/main/attu-k8s
 💬 加入Milvus Discord社区，分享知识、提问和参与讨论。不仅是代码交流，更是与志同道合者连接的平台！点击下方链接加入：
 
 <a href="https://discord.com/invite/8uyFbECzPX"><img style="display:block; margin: '8px';" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b5061df29d55a92d945_full_logo_blurple_RGB.svg" alt="Discord社区"/></a>
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/zilliz/attu" title="zilliz/attu Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/zilliz/attu</a></p>

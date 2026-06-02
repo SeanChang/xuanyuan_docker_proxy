@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: apache/kafka
+description: "Apache Kafka是一个开源的分布式流处理平台，旨在提供高吞吐量、低延迟的实时数据流传递服务，支持发布/订阅消息模式，能够持久化存储海量数据流并确保数据可靠性，具备水平扩展能力和容错机制，广泛应用于日志收集、事件驱动架构、实时数据集成及流处理系统等场景，为企业级应用提供高效、稳定的数据流传输与处理解决方案。"
 source: https://xuanyuan.cloud/zh/r/apache/kafka
 canonical: https://xuanyuan.cloud/zh/r/apache/kafka
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/kafka" title="apache/kafka Docker 镜像中文简介、标签列表与拉取命令">apache/kafka — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/kafka" title="apache/kafka Docker 镜像中文简介、标签列表与拉取命令">apache/kafka — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/apache/kafka" title="apache/kafka Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/kafka</a></p>
+<a href="https://xuanyuan.cloud/zh/r/apache/kafka" title="apache/kafka Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/apache/kafka</a>
 
 # Apache Kafka®
 
@@ -309,7 +310,3 @@ docker compose down
 - [Kafka Connect 介绍]([])：配置式连接器框架，支持外部系统与 Kafka 间的数据传输
 - [Kafka 相关书籍与论文]([])
 - [流处理会议演讲幻灯片与录像]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/apache/kafka" title="apache/kafka Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/apache/kafka</a></p>

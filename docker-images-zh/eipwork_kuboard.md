@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: eipwork/kuboard
+description: "Kuboard是一款用于管理Kubernetes集群的实用仪表盘。"
 source: https://xuanyuan.cloud/zh/r/eipwork/kuboard
 canonical: https://xuanyuan.cloud/zh/r/eipwork/kuboard
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/eipwork/kuboard" title="eipwork/kuboard Docker 镜像中文简介、标签列表与拉取命令">eipwork/kuboard — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/eipwork/kuboard" title="eipwork/kuboard Docker 镜像中文简介、标签列表与拉取命令">eipwork/kuboard — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/eipwork/kuboard" title="eipwork/kuboard Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/eipwork/kuboard</a></p>
+<a href="https://xuanyuan.cloud/zh/r/eipwork/kuboard" title="eipwork/kuboard Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/eipwork/kuboard</a>
 
 # Kuboard Docker镜像文档
 
@@ -168,7 +169,3 @@ Kuboard配置、用户数据等需持久化存储，推荐通过Docker卷（Volu
 - **官方网站**：[https://kuboard.cn](https://kuboard.cn)  
 - **安装文档**：[https://kuboard.cn/install/install-dashboard.html](https://kuboard.cn/install/install-dashboard.html)  
 - **GitHub仓库**：[https://github.com/eipwork/kuboard-press](https://github.com/eipwork/kuboard-press)
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/eipwork/kuboard" title="eipwork/kuboard Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/eipwork/kuboard</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: b3log/siyuan
+description: "思源笔记（SiYuan）是一款以本地优先为核心的个人知识管理工具，支持双链笔记、块级编辑与Markdown格式，其Docker镜像提供便捷部署方案，可实现环境隔离、版本控制与跨平台运行，帮助用户快速搭建稳定的笔记系统，满足高效知识整理与管理需求。"
 source: https://xuanyuan.cloud/zh/r/b3log/siyuan
 canonical: https://xuanyuan.cloud/zh/r/b3log/siyuan
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/b3log/siyuan" title="b3log/siyuan Docker 镜像中文简介、标签列表与拉取命令">b3log/siyuan — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/b3log/siyuan" title="b3log/siyuan Docker 镜像中文简介、标签列表与拉取命令">b3log/siyuan — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/b3log/siyuan" title="b3log/siyuan Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/b3log/siyuan</a></p>
+<a href="https://xuanyuan.cloud/zh/r/b3log/siyuan" title="b3log/siyuan Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/b3log/siyuan</a>
 
 ## 项目简介  
 
@@ -70,7 +71,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 ## 许可证  
 
 项目采用 AGPLv3 开源许可证，详细条款见 [LICENSE 文件]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/b3log/siyuan" title="b3log/siyuan Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/b3log/siyuan</a></p>

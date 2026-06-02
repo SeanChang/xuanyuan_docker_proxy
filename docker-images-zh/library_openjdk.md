@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: library/openjdk
+description: "OpenJDK的预发布/非生产环境构建版本，通常包含最新开发的功能、性能优化及安全修复，主要供开发者和测试人员在非生产环境中进行早期验证、兼容性测试与功能评估，旨在帮助发现潜在问题并反馈改进，为后续正式版本的发布奠定基础，但因未经过充分的稳定性验证，不建议用于生产系统，以避免可能的运行风险。"
 source: https://xuanyuan.cloud/zh/r/library/openjdk
 canonical: https://xuanyuan.cloud/zh/r/library/openjdk
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/library/openjdk" title="library/openjdk Docker 镜像中文简介、标签列表与拉取命令">library/openjdk — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/openjdk" title="library/openjdk Docker 镜像中文简介、标签列表与拉取命令">library/openjdk — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/library/openjdk" title="library/openjdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/openjdk</a></p>
+<a href="https://xuanyuan.cloud/zh/r/library/openjdk" title="library/openjdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/library/openjdk</a>
 
 # 弃用通知  
 
@@ -185,7 +186,3 @@ RAM限制在Windows Server容器中受支持，但JVM目前无法检测。需通
 ## `openjdk:<version>`（12及以上版本）、`openjdk:<version>-oracle` 和 `openjdk:<version>-oraclelinux8`  
 
 从`openjdk:12`开始，默认镜像及`-oracle`、`-oraclelinux8`变体基于官方[Oracle Linux 8镜像]([])，该镜像根据[Oracle Linux最终用户协议（EULA）]([]
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/library/openjdk" title="library/openjdk Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/library/openjdk</a></p>

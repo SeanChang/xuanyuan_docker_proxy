@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnamilegacy/kube-state-metrics
+description: "Bitnami遗留镜像（不再更新）"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/kube-state-metrics
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/kube-state-metrics
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/kube-state-metrics" title="bitnamilegacy/kube-state-metrics Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/kube-state-metrics — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/kube-state-metrics" title="bitnamilegacy/kube-state-metrics Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/kube-state-metrics — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/kube-state-metrics" title="bitnamilegacy/kube-state-metrics Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamilegacy/kube-state-metrics</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/kube-state-metrics" title="bitnamilegacy/kube-state-metrics Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamilegacy/kube-state-metrics</a>
 
 # Bitnami遗留镜像文档
 
@@ -51,7 +52,3 @@ docker push [你的私有registry地址]/[镜像名称]:[标签]
 - CVE透明度（通过VEX/KEV提供漏洞披露）
 - 软件物料清单（SBOMs）
 - 企业级技术支持
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/kube-state-metrics" title="bitnamilegacy/kube-state-metrics Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamilegacy/kube-state-metrics</a></p>

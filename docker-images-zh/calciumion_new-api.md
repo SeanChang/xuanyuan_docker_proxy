@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: calciumion/new-api
+description: "New API官方镜像是一款专注于AI模型接口管理与分发的系统，它集成了接口全生命周期管理功能，支持模型注册、版本控制、权限配置及实时监控，同时提供高效的分发机制，可快速将AI模型接口部署至各类应用场景，帮助开发者简化接口对接流程、提升管理效率，并保障接口调用的稳定性与安全性，为AI模型的落地应用提供一站式解决方案。"
 source: https://xuanyuan.cloud/zh/r/calciumion/new-api
 canonical: https://xuanyuan.cloud/zh/r/calciumion/new-api
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/calciumion/new-api" title="calciumion/new-api Docker 镜像中文简介、标签列表与拉取命令">calciumion/new-api — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/calciumion/new-api" title="calciumion/new-api Docker 镜像中文简介、标签列表与拉取命令">calciumion/new-api — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/calciumion/new-api" title="calciumion/new-api Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/calciumion/new-api</a></p>
+<a href="https://xuanyuan.cloud/zh/r/calciumion/new-api" title="calciumion/new-api Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/calciumion/new-api</a>
 
 # New API官方镜像：AI模型接口管理与分发系统
 
@@ -45,7 +46,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 
 
 通过该系统，可简化AI模型接口的管理与分发流程，降低跨团队协作成本，同时保障接口调用的可控性与稳定性。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/calciumion/new-api" title="calciumion/new-api Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/calciumion/new-api</a></p>

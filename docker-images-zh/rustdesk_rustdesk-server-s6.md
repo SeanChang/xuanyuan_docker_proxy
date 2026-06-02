@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: rustdesk/rustdesk-server-s6
+description: "基于s6-overlay的RustDesk Server镜像专为容器化部署打造，集成hbbs和hbbr核心服务，兼容Docker与Podman环境，具备自动重启、进程监控及服务自愈能力，配置流程简化，支持安全的P2P远程桌面连接，无需依赖第三方中转服务器，适用于企业或个人搭建私有化远程桌面服务，可有效保障数据传输隐私与连接稳定性，轻量级架构提升部署效率与资源利用率。"
 source: https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6
 canonical: https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6" title="rustdesk/rustdesk-server-s6 Docker 镜像中文简介、标签列表与拉取命令">rustdesk/rustdesk-server-s6 — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6" title="rustdesk/rustdesk-server-s6 Docker 镜像中文简介、标签列表与拉取命令">rustdesk/rustdesk-server-s6 — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6" title="rustdesk/rustdesk-server-s6 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6</a></p>
+<a href="https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6" title="rustdesk/rustdesk-server-s6 Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6</a>
 
 ### 基于s6-overlay的RustDesk Server镜像  
 
@@ -91,7 +92,3 @@ docker run -d --name rustdesk-server \
 - **端口映射**：需确保宿主机开放容器映射的端口（如21115-21117），防火墙规则同步放行。  
 - **密钥保存**：首次启动后，`/data`目录下的`id_ed25519.pub`是客户端连接需用的公钥，建议备份。  
 - **服务状态**：容器启动后，可通过`docker logs rustdesk-server`查看`s6-overlay`和服务运行日志，排查问题。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6" title="rustdesk/rustdesk-server-s6 Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: pulp/pulp
+description: "包含所有兼容插件的Pulp 3内容管理系统镜像，用于管理软件包、容器镜像等各类内容。"
 source: https://xuanyuan.cloud/zh/r/pulp/pulp
 canonical: https://xuanyuan.cloud/zh/r/pulp/pulp
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/pulp/pulp" title="pulp/pulp Docker 镜像中文简介、标签列表与拉取命令">pulp/pulp — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/pulp/pulp" title="pulp/pulp Docker 镜像中文简介、标签列表与拉取命令">pulp/pulp — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/pulp/pulp" title="pulp/pulp Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/pulp/pulp</a></p>
+<a href="https://xuanyuan.cloud/zh/r/pulp/pulp" title="pulp/pulp Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/pulp/pulp</a>
 
 # Pulp 3 全插件镜像
 
@@ -119,7 +120,3 @@ docker-compose up -d
 - 生产环境建议使用 PostgreSQL 替代内置 SQLite，通过 `PULP_DATABASE_URL` 配置外部数据库
 - 首次启动需初始化数据库，耗时约几分钟，可通过 `docker logs pulp3-full` 查看进度
 - 高负载场景需调整 CPU/内存资源限制，并考虑水平扩展节点
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/pulp/pulp" title="pulp/pulp Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/pulp/pulp</a></p>

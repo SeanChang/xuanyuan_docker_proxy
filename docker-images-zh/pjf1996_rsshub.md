@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: pjf1996/rsshub
+description: "RSSHub是全球最大的RSS网络，由超过5000个全球实例组成，聚合来自各种来源的数百万内容，提供丰富的RSS订阅服务，支持自定义部署。"
 source: https://xuanyuan.cloud/zh/r/pjf1996/rsshub
 canonical: https://xuanyuan.cloud/zh/r/pjf1996/rsshub
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/pjf1996/rsshub" title="pjf1996/rsshub Docker 镜像中文简介、标签列表与拉取命令">pjf1996/rsshub — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/pjf1996/rsshub" title="pjf1996/rsshub Docker 镜像中文简介、标签列表与拉取命令">pjf1996/rsshub — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/pjf1996/rsshub" title="pjf1996/rsshub Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/pjf1996/rsshub</a></p>
+<a href="https://xuanyuan.cloud/zh/r/pjf1996/rsshub" title="pjf1996/rsshub Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/pjf1996/rsshub</a>
 
 # RSSHub
 
@@ -73,7 +74,3 @@ docker run -d --name rsshub -p 1200:1200 \
 ## 关于作者
 
 **RSSHub** 由[DIYgod](https://github.com/DIYgod)创建，采用[MIT许可证](https://github.com/DIYgod/RSSHub/blob/master/LICENSE)发布。由DIYgod维护，并得到众多贡献者的帮助。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/pjf1996/rsshub" title="pjf1996/rsshub Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/pjf1996/rsshub</a></p>

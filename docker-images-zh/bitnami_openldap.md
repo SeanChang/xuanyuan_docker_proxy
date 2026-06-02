@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnami/openldap
+description: "Bitnami Secure Image for openldap 是由 Bitnami 提供的一款针对 OpenLDAP（轻量级目录访问协议的开源实现，广泛用于用户认证、授权及目录服务管理）的预配置安全镜像，该镜像经过安全加固，集成了优化的配置、必要的依赖管理及最新安全补丁，旨在帮助用户快速、安全地部署 OpenLDAP 服务，适用于企业级环境，确保目录服务的稳定性与数据安全性，简化部署流程并降低运维复杂度。"
 source: https://xuanyuan.cloud/zh/r/bitnami/openldap
 canonical: https://xuanyuan.cloud/zh/r/bitnami/openldap
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/openldap" title="bitnami/openldap Docker 镜像中文简介、标签列表与拉取命令">bitnami/openldap — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/openldap" title="bitnami/openldap Docker 镜像中文简介、标签列表与拉取命令">bitnami/openldap — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnami/openldap" title="bitnami/openldap Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/openldap</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnami/openldap" title="bitnami/openldap Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/openldap</a>
 
 ### Bitnami openldap安全镜像说明  
 
@@ -26,7 +27,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 
 
 了解更多关于Bitnami安全镜像商业方案的信息，可[访问官方网站]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/openldap" title="bitnami/openldap Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/openldap</a></p>

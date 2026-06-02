@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: guergeiro/pnpm
+description: "提供Node运行时与pnpm包管理器的捆绑镜像，适用于JavaScript/TypeScript项目开发、构建及运行，支持高效包管理与环境快速配置。"
 source: https://xuanyuan.cloud/zh/r/guergeiro/pnpm
 canonical: https://xuanyuan.cloud/zh/r/guergeiro/pnpm
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/guergeiro/pnpm" title="guergeiro/pnpm Docker 镜像中文简介、标签列表与拉取命令">guergeiro/pnpm — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/guergeiro/pnpm" title="guergeiro/pnpm Docker 镜像中文简介、标签列表与拉取命令">guergeiro/pnpm — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/guergeiro/pnpm" title="guergeiro/pnpm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/guergeiro/pnpm</a></p>
+<a href="https://xuanyuan.cloud/zh/r/guergeiro/pnpm" title="guergeiro/pnpm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/guergeiro/pnpm</a>
 
 # guergeiro/pnpm 镜像文档
 
@@ -136,7 +137,3 @@ $ docker-compose up -d
 
 - **版本兼容性**：镜像支持基于 [Node.js 发布计划](https://github.com/nodejs/release#release-schedule) 和 [pnpm 兼容性列表](https://pnpm.io/installation#compatibility)
 - **特殊版本标签**：`lts-latest`、`latest-latest`、`current-latest` 等标签仅对应最新版本的 pnpm，不支持历史 pnpm 版本
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/guergeiro/pnpm" title="guergeiro/pnpm Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/guergeiro/pnpm</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: alpine/node
+description: "该镜像无更新，建议直接使用官方Node.js镜像以获取最新功能、安全补丁和技术支持。"
 source: https://xuanyuan.cloud/zh/r/alpine/node
 canonical: https://xuanyuan.cloud/zh/r/alpine/node
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/node" title="alpine/node Docker 镜像中文简介、标签列表与拉取命令">alpine/node — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/node" title="alpine/node Docker 镜像中文简介、标签列表与拉取命令">alpine/node — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/alpine/node" title="alpine/node Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpine/node</a></p>
+<a href="https://xuanyuan.cloud/zh/r/alpine/node" title="alpine/node Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/alpine/node</a>
 
 # 镜像说明
 
@@ -66,7 +67,3 @@ services:
 - **安全风险**：本镜像未同步官方安全更新，可能存在已知漏洞，请勿用于生产环境。
 - **兼容性问题**：长期使用可能导致与新版Node.js生态工具（如npm、yarn）不兼容。
 - **迁移建议**：若已基于本镜像构建项目，可直接替换为官方Node.js镜像，无需修改代码或配置。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/alpine/node" title="alpine/node Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/alpine/node</a></p>

@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: openeuler/open-webui
+description: "open-webui的官方Docker镜像，基于openEuler构建，由openEuler CloudNative SIG维护，支持amd64和arm64架构，提供Web UI服务的便捷部署方案。"
 source: https://xuanyuan.cloud/zh/r/openeuler/open-webui
 canonical: https://xuanyuan.cloud/zh/r/openeuler/open-webui
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/open-webui" title="openeuler/open-webui Docker 镜像中文简介、标签列表与拉取命令">openeuler/open-webui — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/open-webui" title="openeuler/open-webui Docker 镜像中文简介、标签列表与拉取命令">openeuler/open-webui — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/openeuler/open-webui" title="openeuler/open-webui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/open-webui</a></p>
+<a href="https://xuanyuan.cloud/zh/r/openeuler/open-webui" title="openeuler/open-webui Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/open-webui</a>
 
 # 快速参考
 
@@ -70,7 +71,3 @@ exported_at: 2026-06-02T12:15:43.568Z
 
 # 问题与反馈
 如有任何问题或需要使用某些特殊功能，请在[openeuler-docker-images](https://gitee.com/openeuler/openeuler-docker-images)提交issue或pull request。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/openeuler/open-webui" title="openeuler/open-webui Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/openeuler/open-webui</a></p>

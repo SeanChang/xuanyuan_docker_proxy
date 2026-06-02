@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: ringcentral/jdk
+description: "这是一个包含glibc和JDK的阿尔卑斯Linux镜像，它融合了阿尔卑斯Linux轻量级、高效的系统特性与glibc的广泛兼容性，同时集成JDK以提供完整的Java开发及运行环境，适用于需在精简系统中部署Java应用的场景，有效解决了原生阿尔卑斯Linux使用musl libc可能导致的兼容性问题，为开发者打造了既精简又功能完善的运行载体。"
 source: https://xuanyuan.cloud/zh/r/ringcentral/jdk
 canonical: https://xuanyuan.cloud/zh/r/ringcentral/jdk
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/ringcentral/jdk" title="ringcentral/jdk Docker 镜像中文简介、标签列表与拉取命令">ringcentral/jdk — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ringcentral/jdk" title="ringcentral/jdk Docker 镜像中文简介、标签列表与拉取命令">ringcentral/jdk — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/ringcentral/jdk" title="ringcentral/jdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ringcentral/jdk</a></p>
+<a href="https://xuanyuan.cloud/zh/r/ringcentral/jdk" title="ringcentral/jdk Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/ringcentral/jdk</a>
 
 # JDK
 
@@ -89,7 +90,3 @@ docker pull ringcentral/jdk:latest
 更多详细信息可参考以下链接：  
 - [GitHub 仓库]([])  
 - [Docker Hub 镜像页]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/ringcentral/jdk" title="ringcentral/jdk Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/ringcentral/jdk</a></p>

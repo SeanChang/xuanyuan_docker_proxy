@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: nginx/nginx-ingress-operator
+description: "用于NGINX和NGINX Plus入口控制器的NGINX入口操作器，基于Helm图表构建。"
 source: https://xuanyuan.cloud/zh/r/nginx/nginx-ingress-operator
 canonical: https://xuanyuan.cloud/zh/r/nginx/nginx-ingress-operator
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nginx/nginx-ingress-operator" title="nginx/nginx-ingress-operator Docker 镜像中文简介、标签列表与拉取命令">nginx/nginx-ingress-operator — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nginx/nginx-ingress-operator" title="nginx/nginx-ingress-operator Docker 镜像中文简介、标签列表与拉取命令">nginx/nginx-ingress-operator — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/nginx/nginx-ingress-operator" title="nginx/nginx-ingress-operator Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nginx/nginx-ingress-operator</a></p>
+<a href="https://xuanyuan.cloud/zh/r/nginx/nginx-ingress-operator" title="nginx/nginx-ingress-operator Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nginx/nginx-ingress-operator</a>
 
 # NGINX Ingress Operator
 
@@ -223,7 +224,3 @@ NGINX Ingress Operator 发布在 GitHub，最新稳定版本为 [3.3.1](https://
 ## 贡献
 
 如需贡献代码，参见 [贡献指南](./CONTRIBUTING.md)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nginx/nginx-ingress-operator" title="nginx/nginx-ingress-operator Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nginx/nginx-ingress-operator</a></p>

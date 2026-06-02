@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: hiyouga/llamafactory
+description: "LLaMA-Factory官方Docker镜像是由开源大模型微调平台LLaMA-Factory提供的官方容器化部署包，旨在为开发者和研究者提供便捷、高效的大模型微调与应用环境，支持多种主流大模型及训练方法，可简化部署流程，实现快速环境搭建与管理，助力用户轻松开展大模型微调、评估及应用开发工作。"
 source: https://xuanyuan.cloud/zh/r/hiyouga/llamafactory
 canonical: https://xuanyuan.cloud/zh/r/hiyouga/llamafactory
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/hiyouga/llamafactory" title="hiyouga/llamafactory Docker 镜像中文简介、标签列表与拉取命令">hiyouga/llamafactory — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hiyouga/llamafactory" title="hiyouga/llamafactory Docker 镜像中文简介、标签列表与拉取命令">hiyouga/llamafactory — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/hiyouga/llamafactory" title="hiyouga/llamafactory Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hiyouga/llamafactory</a></p>
+<a href="https://xuanyuan.cloud/zh/r/hiyouga/llamafactory" title="hiyouga/llamafactory Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/hiyouga/llamafactory</a>
 
 # LLaMA-Factory 官方 Docker 镜像
 
@@ -66,7 +67,3 @@ docker run -it --rm \
 ## 相关链接  
 - LLaMA-Factory 项目主页：[[]]([])  
 - Docker 镜像仓库：[[]]([])（可查看所有镜像标签和版本信息）
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/hiyouga/llamafactory" title="hiyouga/llamafactory Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/hiyouga/llamafactory</a></p>

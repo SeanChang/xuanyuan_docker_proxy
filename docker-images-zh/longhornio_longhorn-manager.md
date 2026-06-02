@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: longhornio/longhorn-manager
+description: "Longhorn manager是管理Longhorn分布式块存储集群的核心组件，负责在Kubernetes环境中协调存储节点、卷生命周期管理及数据高可用，提供持久化存储解决方案。"
 source: https://xuanyuan.cloud/zh/r/longhornio/longhorn-manager
 canonical: https://xuanyuan.cloud/zh/r/longhornio/longhorn-manager
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/longhornio/longhorn-manager" title="longhornio/longhorn-manager Docker 镜像中文简介、标签列表与拉取命令">longhornio/longhorn-manager — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/longhornio/longhorn-manager" title="longhornio/longhorn-manager Docker 镜像中文简介、标签列表与拉取命令">longhornio/longhorn-manager — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/longhornio/longhorn-manager" title="longhornio/longhorn-manager Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/longhornio/longhorn-manager</a></p>
+<a href="https://xuanyuan.cloud/zh/r/longhornio/longhorn-manager" title="longhornio/longhorn-manager Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/longhornio/longhorn-manager</a>
 
 # Longhorn Manager Docker镜像文档
 
@@ -207,7 +208,3 @@ services:
 3. **版本兼容性**：Longhorn 版本需与 Kubernetes 版本匹配（详见 [官方兼容性矩阵](https://longhorn.io/docs/latest/overview/compatibility/)）；  
 4. **备份验证**：定期测试备份恢复流程，确保数据可恢复性；  
 5. **资源规划**：每个存储卷副本占用约 1GB 内存（用于缓存），需根据副本数预留节点内存。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/longhornio/longhorn-manager" title="longhornio/longhorn-manager Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/longhornio/longhorn-manager</a></p>

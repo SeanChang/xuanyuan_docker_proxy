@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: mattrayner/lamp
+description: "Docker-LAMP是一套基于Phusion基础镜像的Docker镜像，包含Apache、MySQL和PHP组成的LAMP栈，支持Ubuntu 14.04、16.04和18.04版本，提供一站式LAMP开发环境，适用于各类PHP应用开发与部署，具备多版本灵活性和简便的使用流程。"
 source: https://xuanyuan.cloud/zh/r/mattrayner/lamp
 canonical: https://xuanyuan.cloud/zh/r/mattrayner/lamp
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/mattrayner/lamp" title="mattrayner/lamp Docker 镜像中文简介、标签列表与拉取命令">mattrayner/lamp — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mattrayner/lamp" title="mattrayner/lamp Docker 镜像中文简介、标签列表与拉取命令">mattrayner/lamp — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/mattrayner/lamp" title="mattrayner/lamp Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mattrayner/lamp</a></p>
+<a href="https://xuanyuan.cloud/zh/r/mattrayner/lamp" title="mattrayner/lamp Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/mattrayner/lamp</a>
 
 # Docker-LAMP
 
@@ -265,7 +266,3 @@ Docker-LAMP采用[Apache 2.0许可证][info-license]授权。
 [shield-license]: https://img.shields.io/badge/license-Apache%202.0-blue.svg
 
 [dgraziotin-lamp]: https://github.com/dgraziotin/osx-docker-lamp
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/mattrayner/lamp" title="mattrayner/lamp Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/mattrayner/lamp</a></p>

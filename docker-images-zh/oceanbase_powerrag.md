@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: oceanbase/powerrag
+description: "PowerRAG：基于RAGFlow的开源项目，支持多模态检索，扩展文档处理、结构化信息提取、效果评估及反馈机制，助力开发者构建更智能、更准确的RAG系统，为LLM应用提供综合数据服务引擎。"
 source: https://xuanyuan.cloud/zh/r/oceanbase/powerrag
 canonical: https://xuanyuan.cloud/zh/r/oceanbase/powerrag
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/oceanbase/powerrag" title="oceanbase/powerrag Docker 镜像中文简介、标签列表与拉取命令">oceanbase/powerrag — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/oceanbase/powerrag" title="oceanbase/powerrag Docker 镜像中文简介、标签列表与拉取命令">oceanbase/powerrag — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/oceanbase/powerrag" title="oceanbase/powerrag Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/oceanbase/powerrag</a></p>
+<a href="https://xuanyuan.cloud/zh/r/oceanbase/powerrag" title="oceanbase/powerrag Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/oceanbase/powerrag</a>
 
 # PowerRAG
 
@@ -36,7 +37,3 @@ PowerRAG主要面向构建检索增强生成（RAG）应用的开发者和研究
 ## 使用方法和配置说明
 
 PowerRAG通过原子API设计支持灵活集成，可快速构建、监控和优化LLM-based问答、知识提取及生成系统。详细使用指南、配置参数及部署示例（如docker run命令、docker-compose配置等），请参考项目官方文档：https://github.com/oceanbase/powerrag。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/oceanbase/powerrag" title="oceanbase/powerrag Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/oceanbase/powerrag</a></p>

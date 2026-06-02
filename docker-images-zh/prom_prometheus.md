@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: prom/prometheus
+description: "Prometheus（简称Prom）是一款开源的监控与告警系统，由SoundCloud发起，现为云原生计算基金会（CNCF）毕业项目，采用时序数据库存储监控指标，支持多维度数据模型和PromQL查询语言，可通过静态配置或动态服务发现机制采集数据，并能基于自定义规则触发告警，广泛集成于Kubernetes等云原生环境，为分布式系统提供可靠的性能监控与问题诊断能力。"
 source: https://xuanyuan.cloud/zh/r/prom/prometheus
 canonical: https://xuanyuan.cloud/zh/r/prom/prometheus
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/prometheus" title="prom/prometheus Docker 镜像中文简介、标签列表与拉取命令">prom/prometheus — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/prom/prometheus" title="prom/prometheus Docker 镜像中文简介、标签列表与拉取命令">prom/prometheus — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/prom/prometheus" title="prom/prometheus Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/prometheus</a></p>
+<a href="https://xuanyuan.cloud/zh/r/prom/prometheus" title="prom/prometheus Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/prom/prometheus</a>
 
 # Prometheus
 
@@ -137,7 +138,3 @@ Prometheus 版本号与 Go 模块版本遵循以下规则：
 ## 许可协议
 
 采用 Apache License 2.0，详见 [LICENSE]([])。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/prom/prometheus" title="prom/prometheus Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/prom/prometheus</a></p>

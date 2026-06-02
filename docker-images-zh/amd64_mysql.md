@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: amd64/mysql
+description: "MySQL是一种广泛使用的开源关系型数据库管理系统(RDBMS)。"
 source: https://xuanyuan.cloud/zh/r/amd64/mysql
 canonical: https://xuanyuan.cloud/zh/r/amd64/mysql
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/amd64/mysql" title="amd64/mysql Docker 镜像中文简介、标签列表与拉取命令">amd64/mysql — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/amd64/mysql" title="amd64/mysql Docker 镜像中文简介、标签列表与拉取命令">amd64/mysql — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/amd64/mysql" title="amd64/mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/amd64/mysql</a></p>
+<a href="https://xuanyuan.cloud/zh/r/amd64/mysql" title="amd64/mysql Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/amd64/mysql</a>
 
 ** 注意 **：这是[`mysql`官方镜像](https://hub.docker.com/_/mysql)的`amd64`架构构建的“每个架构”仓库——更多信息，请参见官方镜像文档中的[“除amd64之外的架构？”](https://github.com/docker-library/official-images#architectures-other-than-amd64)和官方镜像FAQ中的[“镜像的源代码在Git中已更改，现在该怎么办？”](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what)。
 
@@ -248,7 +249,3 @@ $ docker run -v "$PWD/data":/var/lib/mysql --user 1000:1000 --name some-mysql -e
 ## 创建数据库备份
 
 大多数常规工具都可以使用，尽管在某些
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/amd64/mysql" title="amd64/mysql Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/amd64/mysql</a></p>

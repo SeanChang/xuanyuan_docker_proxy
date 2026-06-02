@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: paddlecloud/paddledetection
+description: "PaddleDetection模型套件的标准Docker镜像，用于便捷的Docker化部署和云上部署，包含运行模型案例的所有依赖，支持异构硬件环境和常见CUDA版本，开箱即用且持续更新。"
 source: https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection
 canonical: https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection" title="paddlecloud/paddledetection Docker 镜像中文简介、标签列表与拉取命令">paddlecloud/paddledetection — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection" title="paddlecloud/paddledetection Docker 镜像中文简介、标签列表与拉取命令">paddlecloud/paddledetection — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection" title="paddlecloud/paddledetection Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection</a></p>
+<a href="https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection" title="paddlecloud/paddledetection Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection</a>
 
 # PaddleDetection
 
@@ -63,7 +64,3 @@ docker run --name dev --runtime=nvidia -v $PWD:/mnt -p 8888:8888 -it paddlecloud
 | paddlecloud/paddledetection:2.4-cpu-e9a542 | 2022年05月09日 |
 | paddlecloud/paddledetection:2.4-gpu-cuda11.2-cudnn8-e9a542 | 2022年05月09日 |
 | paddlecloud/paddledetection:2.4-gpu-cuda10.2-cudnn7-e9a542 | 2022年05月09日 |
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection" title="paddlecloud/paddledetection Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/paddlecloud/paddledetection</a></p>

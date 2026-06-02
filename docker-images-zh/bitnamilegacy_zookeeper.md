@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnamilegacy/zookeeper
+description: "Bitnami旧版镜像（不再更新）"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/zookeeper
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/zookeeper
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/zookeeper" title="bitnamilegacy/zookeeper Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/zookeeper — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/zookeeper" title="bitnamilegacy/zookeeper Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/zookeeper — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/zookeeper" title="bitnamilegacy/zookeeper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamilegacy/zookeeper</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/zookeeper" title="bitnamilegacy/zookeeper Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnamilegacy/zookeeper</a>
 
 # Bitnami旧版镜像文档
 
@@ -62,7 +63,3 @@ docker push [私有registry地址]/[镜像名]:[标签]
 - CVE透明度：通过VEX/KEV提供CVE漏洞透明度报告
 - SBOM支持：包含软件物料清单，便于供应链安全管理
 - 企业级支持：提供专业的技术支持服务
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/zookeeper" title="bitnamilegacy/zookeeper Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnamilegacy/zookeeper</a></p>

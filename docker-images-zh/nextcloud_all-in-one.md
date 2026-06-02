@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: nextcloud/all-in-one
+description: "Nextcloud官方安装方式——Nextcloud一体化方案（AIO），作为一款开源文件同步与共享解决方案的官方部署工具，不仅提供便捷的部署流程，还简化了后续的维护工作，帮助用户轻松搭建和管理属于自己的私有云存储系统，无需复杂的技术配置即可快速上手使用，有效降低了私有云部署的技术门槛，让个人及企业用户都能高效拥有安全可控的文件管理平台。"
 source: https://xuanyuan.cloud/zh/r/nextcloud/all-in-one
 canonical: https://xuanyuan.cloud/zh/r/nextcloud/all-in-one
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/nextcloud/all-in-one" title="nextcloud/all-in-one Docker 镜像中文简介、标签列表与拉取命令">nextcloud/all-in-one — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nextcloud/all-in-one" title="nextcloud/all-in-one Docker 镜像中文简介、标签列表与拉取命令">nextcloud/all-in-one — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/nextcloud/all-in-one" title="nextcloud/all-in-one Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nextcloud/all-in-one</a></p>
+<a href="https://xuanyuan.cloud/zh/r/nextcloud/all-in-one" title="nextcloud/all-in-one Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/nextcloud/all-in-one</a>
 
 # Nextcloud All-in-One
 
@@ -90,7 +91,3 @@ nextcloud/all-in-one:latest
 
 ## FAQ  
 详见 [官方FAQ]([])
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/nextcloud/all-in-one" title="nextcloud/all-in-one Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/nextcloud/all-in-one</a></p>

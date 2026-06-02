@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/kasm
+description: "Kasm Workspaces 是一个容器流式传输平台，通过基于浏览器的方式提供对桌面、应用程序和 Web 服务的访问，采用容器化桌面基础设施 (CDI) 创建按需、一次性的 Docker 容器，适用于远程浏览器隔离、数据防泄漏、桌面即服务等场景。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/kasm
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/kasm
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/kasm" title="linuxserver/kasm Docker 镜像中文简介、标签列表与拉取命令">linuxserver/kasm — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/kasm" title="linuxserver/kasm Docker 镜像中文简介、标签列表与拉取命令">linuxserver/kasm — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/kasm" title="linuxserver/kasm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/kasm</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/kasm" title="linuxserver/kasm Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/kasm</a>
 
 # linuxserver/kasm
 
@@ -294,7 +295,3 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 * **05.11.22:** - 基于 Jammy 重新构建，添加 GPU 支持和游戏手柄支持。
 * **23.09.22:** - 迁移到 s6v3。
 * **02.07.22:** - 初始发布。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/kasm" title="linuxserver/kasm Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/kasm</a></p>

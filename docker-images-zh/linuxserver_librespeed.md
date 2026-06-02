@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: linuxserver/librespeed
+description: "LinuxServer.io提供的Librespeed镜像，用于部署开源自托管网络速度测试工具，支持上传与下载速度测试。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/librespeed
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/librespeed
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/librespeed" title="linuxserver/librespeed Docker 镜像中文简介、标签列表与拉取命令">linuxserver/librespeed — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/librespeed" title="linuxserver/librespeed Docker 镜像中文简介、标签列表与拉取命令">linuxserver/librespeed — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/linuxserver/librespeed" title="linuxserver/librespeed Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/librespeed</a></p>
+<a href="https://xuanyuan.cloud/zh/r/linuxserver/librespeed" title="linuxserver/librespeed Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/librespeed</a>
 
 # linuxserver/librespeed
 
@@ -321,7 +322,3 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 - **01.06.20:** - 重新基于alpine 3.12构建
 - **29.04.20:** - 为LibreSpeed添加捐赠链接到Github赞助按钮和容器日志
 - **09.01.20:** - 初始发布
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/linuxserver/librespeed" title="linuxserver/librespeed Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/linuxserver/librespeed</a></p>

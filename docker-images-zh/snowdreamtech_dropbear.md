@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: snowdreamtech/dropbear
+description: "Dropbear SSH服务器的Docker镜像，支持多种架构（amd64、arm32v5/v6/v7、arm64v8、i386、mips64le等），用于快速部署轻量级SSH服务。"
 source: https://xuanyuan.cloud/zh/r/snowdreamtech/dropbear
 canonical: https://xuanyuan.cloud/zh/r/snowdreamtech/dropbear
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/snowdreamtech/dropbear" title="snowdreamtech/dropbear Docker 镜像中文简介、标签列表与拉取命令">snowdreamtech/dropbear — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/snowdreamtech/dropbear" title="snowdreamtech/dropbear Docker 镜像中文简介、标签列表与拉取命令">snowdreamtech/dropbear — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/snowdreamtech/dropbear" title="snowdreamtech/dropbear Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/snowdreamtech/dropbear</a></p>
+<a href="https://xuanyuan.cloud/zh/r/snowdreamtech/dropbear" title="snowdreamtech/dropbear Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/snowdreamtech/dropbear</a>
 
 # Dropbear Docker镜像文档
 
@@ -125,7 +126,3 @@ docker buildx build -t snowdreamtech/dropbear --platform=linux/386,linux/amd64,l
 ## 许可协议
 
 MIT
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/snowdreamtech/dropbear" title="snowdreamtech/dropbear Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/snowdreamtech/dropbear</a></p>

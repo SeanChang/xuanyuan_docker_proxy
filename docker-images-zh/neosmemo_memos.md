@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: neosmemo/memos
+description: "这是一款以隐私安全为首要原则的轻量级笔记服务，无需复杂操作即可轻松捕捉你的精彩想法，随时随地记录灵感瞬间，并支持便捷分享，在保障信息安全的同时有效提升记录效率，让每一个创意都能被及时留存与传递。"
 source: https://xuanyuan.cloud/zh/r/neosmemo/memos
 canonical: https://xuanyuan.cloud/zh/r/neosmemo/memos
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/neosmemo/memos" title="neosmemo/memos Docker 镜像中文简介、标签列表与拉取命令">neosmemo/memos — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/neosmemo/memos" title="neosmemo/memos Docker 镜像中文简介、标签列表与拉取命令">neosmemo/memos — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/neosmemo/memos" title="neosmemo/memos Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/neosmemo/memos</a></p>
+<a href="https://xuanyuan.cloud/zh/r/neosmemo/memos" title="neosmemo/memos Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/neosmemo/memos</a>
 
 # Memos：自己搭的轻量笔记，数据握在自己手里  
 
@@ -59,7 +60,3 @@ docker run -d --name memos -p 5230:5230 -v ~/.memos/:/var/opt/memos usememos/mem
 如果觉得「大厂笔记怕隐私泄露」「复杂工具用起来麻烦」「想完全控制自己的数据」，Memos 挺合适的。开源免费，代码透明，想改功能还能自己二次开发。日常随手记点东西，它比笨重的编辑器轻量，比纯文本文件好管理，当个「个人小数据库」刚好。  
 
 想试试的话，直接用 Docker 跑起来，5 分钟就能上手。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/neosmemo/memos" title="neosmemo/memos Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/neosmemo/memos</a></p>

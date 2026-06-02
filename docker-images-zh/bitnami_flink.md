@@ -1,15 +1,16 @@
-<!-- xuanyuan-docker-images-zh
+---
 image: bitnami/flink
+description: "Bitnami安全镜像为Apache Flink提供预配置、安全强化的运行环境，适用于部署流处理与批处理应用。"
 source: https://xuanyuan.cloud/zh/r/bitnami/flink
 canonical: https://xuanyuan.cloud/zh/r/bitnami/flink
-exported_at: 2026-06-02T12:15:43.568Z
--->
+exported_at: 2026-06-02T12:18:45.496Z
+---
 
-<p><strong>轩辕镜像中文简介（在线版）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/flink" title="bitnami/flink Docker 镜像中文简介、标签列表与拉取命令">bitnami/flink — 轩辕镜像中文简介</a></p>
+**轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/flink" title="bitnami/flink Docker 镜像中文简介、标签列表与拉取命令">bitnami/flink — 轩辕镜像中文简介</a>
 
-<p>含镜像标签、拉取命令、部署文档与相关推荐。</p>
+含镜像标签、拉取命令、部署文档与相关推荐。
 
-<p><a href="https://xuanyuan.cloud/zh/r/bitnami/flink" title="bitnami/flink Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/flink</a></p>
+<a href="https://xuanyuan.cloud/zh/r/bitnami/flink" title="bitnami/flink Docker 镜像中文简介、标签列表与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/flink</a>
 
 # Bitnami Apache Flink 镜像文档
 
@@ -190,7 +191,3 @@ docker run --name flink-history -e FLINK_MODE=history-server bitnami/flink:lates
 ## 许可证
 Copyright © 2025 Broadcom。"Broadcom" 指 Broadcom Inc. 及其子公司。  
 本软件基于 Apache License 2.0 许可证授权，详见 [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)。
-
----
-
-<p><strong>镜像详情与拉取命令（轩辕镜像）：</strong><a href="https://xuanyuan.cloud/zh/r/bitnami/flink" title="bitnami/flink Docker 镜像中文简介、标签与拉取命令">https://xuanyuan.cloud/zh/r/bitnami/flink</a></p>
