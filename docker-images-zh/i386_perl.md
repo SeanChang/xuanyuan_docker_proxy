@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: i386/perl
-description: "Perl是一种高级、通用、解释型、动态编程语言。"
 source: https://xuanyuan.cloud/zh/r/i386/perl
 canonical: https://xuanyuan.cloud/zh/r/i386/perl
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [i386/perl — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/i386/perl)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[i386/perl Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/i386/perl)
+> **轩辕镜像中文简介（在线版）：** [i386/perl — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/i386/perl "i386/perl Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/i386/perl
 
 **注意：** 这是 [perl 官方镜像](https://hub.docker.com/_/perl) 的 `i386` 架构构建的“per-architecture”仓库——更多信息请参见官方镜像文档中的“[除 amd64 外的架构？](https://github.com/docker-library/official-images#architectures-other-than-amd64)”以及官方镜像 FAQ 中的“[Git 中镜像的源代码已更改，该怎么办？](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what)”。
 

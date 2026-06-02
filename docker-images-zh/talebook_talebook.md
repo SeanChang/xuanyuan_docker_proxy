@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: talebook/talebook
-description: "这是一款美观的图书管理系统，具备推送至Kindle、在线阅读、书籍上传、下载及管理等功能，同时支持群晖、威联通等所有X86架构系统的Docker部署。"
 source: https://xuanyuan.cloud/zh/r/talebook/talebook
 canonical: https://xuanyuan.cloud/zh/r/talebook/talebook
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [talebook/talebook — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/talebook/talebook)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[talebook/talebook Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/talebook/talebook)
+> **轩辕镜像中文简介（在线版）：** [talebook/talebook — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/talebook/talebook "talebook/talebook Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/talebook/talebook
 
 # 基于Calibre + Vue的在线图书管理系统  
 

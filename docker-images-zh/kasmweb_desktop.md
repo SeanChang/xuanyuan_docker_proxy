@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: kasmweb/desktop
-description: "Ubuntu桌面版是Kasm Workspaces平台提供的一款基于Ubuntu操作系统的容器化桌面环境，旨在为用户提供安全、高效的远程工作体验；它保留了Ubuntu原生桌面的直观操作与丰富功能，预装常用办公及开发工具，支持跨设备访问，并通过Kasm的隔离运行架构确保数据安全，同时具备灵活的资源管理能力，适用于开发、办公、学习等多种场景，助力用户轻松构建云端虚拟工作空间。"
 source: https://xuanyuan.cloud/zh/r/kasmweb/desktop
 canonical: https://xuanyuan.cloud/zh/r/kasmweb/desktop
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [kasmweb/desktop — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kasmweb/desktop)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[kasmweb/desktop Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/kasmweb/desktop)
+> **轩辕镜像中文简介（在线版）：** [kasmweb/desktop — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kasmweb/desktop "kasmweb/desktop Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/kasmweb/desktop
 
 # Kasm Workspaces 介绍  
 

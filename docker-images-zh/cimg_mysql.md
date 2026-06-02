@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: cimg/mysql
-description: "cimg/mysql Docker镜像基于官方MySQL稳定版构建，为开发与CI/CD环境提供轻量级高性能服务。内置优化配置，支持数据持久化与网络隔离，基于Ubuntu系统并包含常用客户端工具。可快速部署单节点实例及容器化架构集成，适合自动化测试、本地开发及小型生产环境。镜像定期更新，确保安全性与兼容性，简化数据库环境一致性管理。"
 source: https://xuanyuan.cloud/zh/r/cimg/mysql
 canonical: https://xuanyuan.cloud/zh/r/cimg/mysql
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [cimg/mysql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/cimg/mysql)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[cimg/mysql Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/cimg/mysql)
+> **轩辕镜像中文简介（在线版）：** [cimg/mysql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/cimg/mysql "cimg/mysql Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/cimg/mysql
 
 # CircleCI 便利镜像：MySQL  
 

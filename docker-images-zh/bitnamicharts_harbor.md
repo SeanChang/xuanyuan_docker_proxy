@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: bitnamicharts/harbor
-description: "Bitnami提供的Helm chart，用于简化企业级Docker镜像仓库Harbor在Kubernetes环境中的部署和管理。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/harbor
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/harbor
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [bitnamicharts/harbor — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamicharts/harbor)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[bitnamicharts/harbor Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnamicharts/harbor)
+> **轩辕镜像中文简介（在线版）：** [bitnamicharts/harbor — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamicharts/harbor "bitnamicharts/harbor Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/bitnamicharts/harbor
 
 # Harbor 镜像文档
 

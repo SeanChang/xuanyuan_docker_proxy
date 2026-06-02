@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: xiaozhu674/gameservermanager
-description: "新一代一站式游戏开服面板，提供便捷的游戏服务器开设与管理功能。"
 source: https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager
 canonical: https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [xiaozhu674/gameservermanager — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[xiaozhu674/gameservermanager Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager)
+> **轩辕镜像中文简介（在线版）：** [xiaozhu674/gameservermanager — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager "xiaozhu674/gameservermanager Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager
 
 # 新一代一站式游戏开服面板 Docker 镜像文档
 

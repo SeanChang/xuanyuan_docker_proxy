@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: xhofe/alist
-description: "这是一款由Gin（Go语言Web框架）和React（JavaScript前端库）驱动的文件列表程序，支持多种存储方式（如本地磁盘、云存储服务等），能帮助用户高效管理和查看分布在不同存储位置的文件，兼具后端高效处理能力与前端友好交互体验，为跨存储场景下的文件管理提供便捷解决方案。"
 source: https://xuanyuan.cloud/zh/r/xhofe/alist
 canonical: https://xuanyuan.cloud/zh/r/xhofe/alist
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [xhofe/alist — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/xhofe/alist)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[xhofe/alist Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/xhofe/alist)
+> **轩辕镜像中文简介（在线版）：** [xhofe/alist — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/xhofe/alist "xhofe/alist Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/xhofe/alist
 
 ##  简介  
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: linuxserver/msedge
-description: "Docker镜像linuxserver/msedge是基于Linux环境的Microsoft Edge无头浏览器容器，专为服务器端网页自动化场景设计。支持无界面运行，适用于自动化测试、网页渲染、Selenium集成及CI/CD流程，可高效处理网页截图、JS执行等任务。集成LinuxServer优化配置，轻量易部署，提供稳定的浏览器运行环境，满足开发者在服务器端进行网页自动化操作的需求，无需图形界面即可高效完成浏览器相关工作。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/msedge
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/msedge
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [linuxserver/msedge — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/msedge)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[linuxserver/msedge Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/linuxserver/msedge)
+> **轩辕镜像中文简介（在线版）：** [linuxserver/msedge — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/msedge "linuxserver/msedge Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/linuxserver/msedge
 
 # LinuxServer.io 容器：msedge
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: library/almalinux
-description: "AlmaLinux OS的官方构建版本是一款由社区驱动开发、基于Red Hat Enterprise Linux（RHEL）源代码构建的开源Linux发行版，旨在作为RHEL的免费开源替代方案，提供长期稳定的企业级支持，适用于服务器部署、企业IT基础设施及关键业务应用，确保用户获得与RHEL高度兼容的操作系统环境，同时维护开源软件的自由与可访问性，满足企业对安全、可靠及成本效益的核心需求。"
 source: https://xuanyuan.cloud/zh/r/library/almalinux
 canonical: https://xuanyuan.cloud/zh/r/library/almalinux
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [library/almalinux — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/almalinux)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[library/almalinux Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/almalinux)
+> **轩辕镜像中文简介（在线版）：** [library/almalinux — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/almalinux "library/almalinux Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/library/almalinux
 
 ## AlmaLinux Docker镜像介绍
 

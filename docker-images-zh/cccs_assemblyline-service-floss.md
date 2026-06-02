@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: cccs/assemblyline-service-floss
-description: "Assemblyline 4混淆字符串求解器，用于解析混淆字符串以辅助相关分析。"
 source: https://xuanyuan.cloud/zh/r/cccs/assemblyline-service-floss
 canonical: https://xuanyuan.cloud/zh/r/cccs/assemblyline-service-floss
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [cccs/assemblyline-service-floss — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/cccs/assemblyline-service-floss)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[cccs/assemblyline-service-floss Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/cccs/assemblyline-service-floss)
+> **轩辕镜像中文简介（在线版）：** [cccs/assemblyline-service-floss — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/cccs/assemblyline-service-floss "cccs/assemblyline-service-floss Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/cccs/assemblyline-service-floss
 
 # Floss Service
 

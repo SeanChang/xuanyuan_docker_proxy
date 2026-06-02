@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: multiarch/qemu-user-static
-description: "提供多架构的QEMU静态二进制文件，用于支持在不同架构系统上进行跨架构模拟和应用运行。"
 source: https://xuanyuan.cloud/zh/r/multiarch/qemu-user-static
 canonical: https://xuanyuan.cloud/zh/r/multiarch/qemu-user-static
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [multiarch/qemu-user-static — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/multiarch/qemu-user-static)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[multiarch/qemu-user-static Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/multiarch/qemu-user-static)
+> **轩辕镜像中文简介（在线版）：** [multiarch/qemu-user-static — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/multiarch/qemu-user-static "multiarch/qemu-user-static Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/multiarch/qemu-user-static
 
 # qemu-user-static Docker镜像文档
 

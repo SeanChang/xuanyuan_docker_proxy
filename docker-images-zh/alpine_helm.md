@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: alpine/helm
-description: "当Kubernetes Helm有新发布时自动触发Docker构建的镜像"
 source: https://xuanyuan.cloud/zh/r/alpine/helm
 canonical: https://xuanyuan.cloud/zh/r/alpine/helm
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [alpine/helm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alpine/helm)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[alpine/helm Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/alpine/helm)
+> **轩辕镜像中文简介（在线版）：** [alpine/helm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alpine/helm "alpine/helm Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/alpine/helm
 
 # Alpine/Helm Docker镜像文档
 

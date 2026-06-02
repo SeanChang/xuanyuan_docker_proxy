@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: ngc7331/mcsmanager-daemon
-description: "这是一款非官方的MCSManager Docker镜像，内置OpenJDK运行环境，主要用于便捷部署和管理Minecraft服务器。该镜像通过容器化技术封装了MCSManager管理面板及其所需的Java运行环境，用户无需额外配置OpenJDK即可直接启动使用，有效简化了服务器搭建流程，提升了部署效率，同时借助Docker的环境隔离特性，确保了运行环境的一致性和稳定性，适用于需要快速部署Minecraft服务器的个人用户或小型团队。"
 source: https://xuanyuan.cloud/zh/r/ngc7331/mcsmanager-daemon
 canonical: https://xuanyuan.cloud/zh/r/ngc7331/mcsmanager-daemon
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [ngc7331/mcsmanager-daemon — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ngc7331/mcsmanager-daemon)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[ngc7331/mcsmanager-daemon Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/ngc7331/mcsmanager-daemon)
+> **轩辕镜像中文简介（在线版）：** [ngc7331/mcsmanager-daemon — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ngc7331/mcsmanager-daemon "ngc7331/mcsmanager-daemon Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/ngc7331/mcsmanager-daemon
 
 # Docker化MCSManager快速部署方案
 

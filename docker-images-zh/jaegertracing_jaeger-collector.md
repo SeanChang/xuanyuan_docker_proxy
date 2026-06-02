@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: jaegertracing/jaeger-collector
-description: "Jaeger Collector是Jaeger分布式追踪系统的核心组件，用于接收来自SDK的追踪数据并将其标准化、处理后发送到指定的存储系统，实现追踪数据的集中收集与持久化。"
 source: https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-collector
 canonical: https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-collector
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [jaegertracing/jaeger-collector — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-collector)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[jaegertracing/jaeger-collector Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-collector)
+> **轩辕镜像中文简介（在线版）：** [jaegertracing/jaeger-collector — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-collector "jaegertracing/jaeger-collector Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-collector
 
 # Jaeger Collector 镜像文档
 

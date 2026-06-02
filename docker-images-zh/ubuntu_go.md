@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: ubuntu/go
-description: "Go是一种开源编程语言，旨在开发简单、高效且可靠的软件。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/go
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/go
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [ubuntu/go — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ubuntu/go)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[ubuntu/go Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/ubuntu/go)
+> **轩辕镜像中文简介（在线版）：** [ubuntu/go — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ubuntu/go "ubuntu/go Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/ubuntu/go
 
 # Go 镜像文档
 

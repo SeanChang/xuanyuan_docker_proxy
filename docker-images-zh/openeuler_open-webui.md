@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: openeuler/open-webui
-description: "open-webui的官方Docker镜像，基于openEuler构建，由openEuler CloudNative SIG维护，支持amd64和arm64架构，提供Web UI服务的便捷部署方案。"
 source: https://xuanyuan.cloud/zh/r/openeuler/open-webui
 canonical: https://xuanyuan.cloud/zh/r/openeuler/open-webui
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [openeuler/open-webui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/openeuler/open-webui)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[openeuler/open-webui Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/openeuler/open-webui)
+> **轩辕镜像中文简介（在线版）：** [openeuler/open-webui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/openeuler/open-webui "openeuler/open-webui Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/openeuler/open-webui
 
 # 快速参考
 

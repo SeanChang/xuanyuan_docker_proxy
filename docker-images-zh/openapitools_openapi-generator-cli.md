@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: openapitools/openapi-generator-cli
-description: "OpenAPI Generator的命令行界面工具，用于通过命令行生成API客户端、服务器端代码及文档等。"
 source: https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli
 canonical: https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [openapitools/openapi-generator-cli — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[openapitools/openapi-generator-cli Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli)
+> **轩辕镜像中文简介（在线版）：** [openapitools/openapi-generator-cli — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli "openapitools/openapi-generator-cli Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli
 
 # openapi-generator-cli 镜像文档
 

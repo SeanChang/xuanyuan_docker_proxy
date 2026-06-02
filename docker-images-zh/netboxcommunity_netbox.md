@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: netboxcommunity/netbox
-description: "社区维护的Netbox Docker镜像，用于便捷部署和运行开源IP地址管理（IPAM）与数据中心基础设施管理（DCIM）工具。"
 source: https://xuanyuan.cloud/zh/r/netboxcommunity/netbox
 canonical: https://xuanyuan.cloud/zh/r/netboxcommunity/netbox
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [netboxcommunity/netbox — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/netboxcommunity/netbox)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[netboxcommunity/netbox Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/netboxcommunity/netbox)
+> **轩辕镜像中文简介（在线版）：** [netboxcommunity/netbox — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/netboxcommunity/netbox "netboxcommunity/netbox Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/netboxcommunity/netbox
 
 # netbox-docker
 

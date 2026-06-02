@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: bitnamilegacy/mysql
-description: "Bitnami旧版镜像（不再更新）"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/mysql
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/mysql
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [bitnamilegacy/mysql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamilegacy/mysql)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[bitnamilegacy/mysql Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnamilegacy/mysql)
+> **轩辕镜像中文简介（在线版）：** [bitnamilegacy/mysql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamilegacy/mysql "bitnamilegacy/mysql Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/bitnamilegacy/mysql
 
 # Bitnami旧版镜像文档
 

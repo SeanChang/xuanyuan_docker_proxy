@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: qwenllm/qwenvl
-description: "阿里云提出的Qwen2-VL大型视觉语言模型的官方仓库镜像"
 source: https://xuanyuan.cloud/zh/r/qwenllm/qwenvl
 canonical: https://xuanyuan.cloud/zh/r/qwenllm/qwenvl
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [qwenllm/qwenvl — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/qwenllm/qwenvl)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[qwenllm/qwenvl Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/qwenllm/qwenvl)
+> **轩辕镜像中文简介（在线版）：** [qwenllm/qwenvl — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/qwenllm/qwenvl "qwenllm/qwenvl Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/qwenllm/qwenvl
 
 # Qwen2-VL Docker镜像文档
 

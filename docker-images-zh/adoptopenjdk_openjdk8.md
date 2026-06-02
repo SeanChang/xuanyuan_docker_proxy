@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: adoptopenjdk/openjdk8
-description: "这是由AdoptOpenJDK构建的OpenJDK 8版本二进制文件的Docker镜像，AdoptOpenJDK作为社区驱动的项目，致力于提供高质量、免费且开源的Java开发工具包（JDK）二进制文件，而Docker镜像则通过容器化技术将OpenJDK 8的运行环境打包，便于开发者和企业快速部署、运行基于Java 8的应用程序，确保环境一致性和跨平台兼容性，满足各类Java应用的开发与生产需求。"
 source: https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk8
 canonical: https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk8
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [adoptopenjdk/openjdk8 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk8)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[adoptopenjdk/openjdk8 Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk8)
+> **轩辕镜像中文简介（在线版）：** [adoptopenjdk/openjdk8 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk8 "adoptopenjdk/openjdk8 Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk8
 
 # AdoptOpenJDK Docker镜像使用指南
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: halohub/halo
-description: "强大易用的开源建站工具。"
 source: https://xuanyuan.cloud/zh/r/halohub/halo
 canonical: https://xuanyuan.cloud/zh/r/halohub/halo
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [halohub/halo — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/halohub/halo)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[halohub/halo Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/halohub/halo)
+> **轩辕镜像中文简介（在线版）：** [halohub/halo — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/halohub/halo "halohub/halo Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/halohub/halo
 
 # Halo 开源建站工具 Docker 镜像文档
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: dbeaver/cloudbeaver
-description: "CloudBeaver Community是一款开源免费的跨平台数据库管理工具，支持MySQL、PostgreSQL、SQLite、Oracle等多种主流数据库，提供直观的图形化界面，可实现多数据库连接统一管理、SQL语句编辑与高效执行、数据导入导出及可视化查询分析，适用于开发者、数据分析师等用户日常数据库操作，通过社区驱动持续优化功能，助力用户轻松应对各类数据库管理需求。"
 source: https://xuanyuan.cloud/zh/r/dbeaver/cloudbeaver
 canonical: https://xuanyuan.cloud/zh/r/dbeaver/cloudbeaver
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [dbeaver/cloudbeaver — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/dbeaver/cloudbeaver)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[dbeaver/cloudbeaver Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/dbeaver/cloudbeaver)
+> **轩辕镜像中文简介（在线版）：** [dbeaver/cloudbeaver — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/dbeaver/cloudbeaver "dbeaver/cloudbeaver Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/dbeaver/cloudbeaver
 
 ![CloudBeaver]([])
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: frappe/erpnext
-description: "ERPNext是一款免费开源的企业资源规划（ERP）系统，集成财务会计（含总账、应收应付账款、财务报表）、供应链管理（涵盖采购、库存、销售及物流跟踪）、客户关系管理（客户信息、销售机会与互动分析）、人力资源管理（员工档案、考勤、薪资与绩效）及项目管理（任务分解、进度与成本控制）等核心模块，支持业务流程自定义自动化、跨部门数据实时同步与集成报表分析，用户可免费获取完整源代码并按需修改、分发或二次开发，无需许可费用，凭借开源社区持续迭代与全球开发者支持，具备高灵活性与可扩展性，能满足各规模企业信息化需求，助力消除信息孤岛、提升运营效率、降低管理成本，实现从基础操作到战略决策的全流程数字化管理。"
 source: https://xuanyuan.cloud/zh/r/frappe/erpnext
 canonical: https://xuanyuan.cloud/zh/r/frappe/erpnext
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [frappe/erpnext — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/frappe/erpnext)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[frappe/erpnext Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/frappe/erpnext)
+> **轩辕镜像中文简介（在线版）：** [frappe/erpnext — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/frappe/erpnext "frappe/erpnext Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/frappe/erpnext
 
 # ERPNext 介绍
 

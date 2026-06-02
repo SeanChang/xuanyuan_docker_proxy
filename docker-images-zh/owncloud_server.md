@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: owncloud/server
-description: "ownCloud是一个安全的协作平台，提供文件存储、共享及团队协作功能。"
 source: https://xuanyuan.cloud/zh/r/owncloud/server
 canonical: https://xuanyuan.cloud/zh/r/owncloud/server
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [owncloud/server — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/owncloud/server)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[owncloud/server Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/owncloud/server)
+> **轩辕镜像中文简介（在线版）：** [owncloud/server — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/owncloud/server "owncloud/server Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/owncloud/server
 
 # ownCloud 服务器 Docker 镜像
 

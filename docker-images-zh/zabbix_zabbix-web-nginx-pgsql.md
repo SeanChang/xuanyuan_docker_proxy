@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: zabbix/zabbix-web-nginx-pgsql
-description: "基于Nginx并支持PostgreSQL数据库的Zabbix前端界面，用于管理被监控资源和查看监控统计数据，是官方Zabbix Web界面Docker镜像之一。"
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [zabbix/zabbix-web-nginx-pgsql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[zabbix/zabbix-web-nginx-pgsql Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql)
+> **轩辕镜像中文简介（在线版）：** [zabbix/zabbix-web-nginx-pgsql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql "zabbix/zabbix-web-nginx-pgsql Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql
 
 # Zabbix Web界面（Nginx+PostgreSQL）Docker镜像
 

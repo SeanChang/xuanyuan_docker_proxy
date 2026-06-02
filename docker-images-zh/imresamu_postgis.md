@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: imresamu/postgis
-description: "这是一个用于PostGIS/PostGIS镜像的测试用仓库，其中PostGIS是基于PostgreSQL的开源空间数据库扩展，该仓库的GitHub地址为[]"
 source: https://xuanyuan.cloud/zh/r/imresamu/postgis
 canonical: https://xuanyuan.cloud/zh/r/imresamu/postgis
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [imresamu/postgis — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/imresamu/postgis)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[imresamu/postgis Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/imresamu/postgis)
+> **轩辕镜像中文简介（在线版）：** [imresamu/postgis — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/imresamu/postgis "imresamu/postgis Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/imresamu/postgis
 
 # imresamu/postgis 镜像介绍
 

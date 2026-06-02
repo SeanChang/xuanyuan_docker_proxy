@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: verlai/verl
-description: "verl 是一款聚焦大模型\"训练+推理\"全流程的工具集，核心定位是降低大模型强化学习（RL）训练与高效推理的门槛，支持 FSDP、Megatron-LM 训练后端和 vLLM、SGLang、TGI 推理引擎，内置多种 RL 算法，适用于企业级大模型落地场景。"
 source: https://xuanyuan.cloud/zh/r/verlai/verl
 canonical: https://xuanyuan.cloud/zh/r/verlai/verl
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [verlai/verl — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/verlai/verl)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[verlai/verl Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/verlai/verl)
+> **轩辕镜像中文简介（在线版）：** [verlai/verl — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/verlai/verl "verlai/verl Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/verlai/verl
 
 # verl - 大模型强化学习训练与推理工具集
 

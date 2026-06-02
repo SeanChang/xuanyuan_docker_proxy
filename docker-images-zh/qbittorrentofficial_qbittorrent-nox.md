@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: qbittorrentofficial/qbittorrent-nox
-description: "官方qbittorrent-nox Docker镜像是由qbittorrent开发团队官方维护的、针对无图形界面版本qbittorrent-nox的容器化部署包，旨在为用户提供安全可靠、易于跨平台部署的BT客户端运行环境，适用于服务器、云平台等需高效后台运行的场景，用户可通过Docker快速拉取并配置使用，无需复杂依赖管理，确保与官方版本同步更新及良好兼容性。"
 source: https://xuanyuan.cloud/zh/r/qbittorrentofficial/qbittorrent-nox
 canonical: https://xuanyuan.cloud/zh/r/qbittorrentofficial/qbittorrent-nox
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [qbittorrentofficial/qbittorrent-nox — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/qbittorrentofficial/qbittorrent-nox)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[qbittorrentofficial/qbittorrent-nox Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/qbittorrentofficial/qbittorrent-nox)
+> **轩辕镜像中文简介（在线版）：** [qbittorrentofficial/qbittorrent-nox — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/qbittorrentofficial/qbittorrent-nox "qbittorrentofficial/qbittorrent-nox Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/qbittorrentofficial/qbittorrent-nox
 
 # qBittorrent-nox Docker镜像 [![GitHub Actions CI状态]([])]([])
 

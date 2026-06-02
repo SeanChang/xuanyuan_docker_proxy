@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: maxkeytop/maxkey
-description: "MaxKey认证端是提供单点登录及身份验证服务的Docker镜像，用于企业级应用的统一身份认证管理。"
 source: https://xuanyuan.cloud/zh/r/maxkeytop/maxkey
 canonical: https://xuanyuan.cloud/zh/r/maxkeytop/maxkey
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [maxkeytop/maxkey — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/maxkeytop/maxkey)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[maxkeytop/maxkey Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/maxkeytop/maxkey)
+> **轩辕镜像中文简介（在线版）：** [maxkeytop/maxkey — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/maxkeytop/maxkey "maxkeytop/maxkey Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/maxkeytop/maxkey
 
 # MaxKey 单点登录认证系统 Docker 镜像文档
 

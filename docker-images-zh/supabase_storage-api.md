@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: supabase/storage-api
-description: "Supabase的存储后端API服务，提供文件存储、检索和管理功能，支持与Supabase生态系统集成的对象存储解决方案，处理文件上传、下载及访问控制等操作。"
 source: https://xuanyuan.cloud/zh/r/supabase/storage-api
 canonical: https://xuanyuan.cloud/zh/r/supabase/storage-api
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [supabase/storage-api — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/supabase/storage-api)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[supabase/storage-api Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/supabase/storage-api)
+> **轩辕镜像中文简介（在线版）：** [supabase/storage-api — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/supabase/storage-api "supabase/storage-api Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/supabase/storage-api
 
 # Supabase Storage Backend API 镜像文档
 

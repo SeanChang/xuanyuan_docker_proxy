@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: apache/hive
-description: "Apache Hive是基于Hadoop的分布式数据仓库工具，支持类SQL查询语言（HQL）以高效分析和处理大规模结构化数据；其Docker镜像是预先集成Hive核心组件、依赖环境及配置的可执行文件包，可快速部署至各类环境，确保开发、测试与生产环境一致性，大幅简化Hive服务的安装配置流程，为数据仓库构建、数据查询及分析任务提供便捷、稳定且高效的运行载体。"
 source: https://xuanyuan.cloud/zh/r/apache/hive
 canonical: https://xuanyuan.cloud/zh/r/apache/hive
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [apache/hive — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apache/hive)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[apache/hive Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/apache/hive)
+> **轩辕镜像中文简介（在线版）：** [apache/hive — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apache/hive "apache/hive Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/apache/hive
 
 ## Apache Hive 介绍
 

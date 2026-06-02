@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: jxxghp/moviepilot
-description: "MoviePilot是一款为影视爱好者打造的智能媒体管理工具，具备自动搜索、下载、整理资源及元数据匹配功能，支持多下载源，可与Plex/Emby等媒体服务器集成，提供友好的Web界面和自定义分类规则，帮助用户轻松保持媒体库的有序与最新状态。"
 source: https://xuanyuan.cloud/zh/r/jxxghp/moviepilot
 canonical: https://xuanyuan.cloud/zh/r/jxxghp/moviepilot
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [jxxghp/moviepilot — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jxxghp/moviepilot)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[jxxghp/moviepilot Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/jxxghp/moviepilot)
+> **轩辕镜像中文简介（在线版）：** [jxxghp/moviepilot — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jxxghp/moviepilot "jxxghp/moviepilot Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/jxxghp/moviepilot
 
 # MoviePilot：NAS媒体库自动化管理工具
 

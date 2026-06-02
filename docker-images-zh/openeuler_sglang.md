@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: openeuler/sglang
-description: "SGLang是基于openEuler构建的高性能大语言模型和视觉语言模型服务框架，提供低延迟、高吞吐量推理，支持多设备（NVIDIA/AMD GPU、CPU等）和多模型，适用于从单GPU到分布式集群的部署场景。"
 source: https://xuanyuan.cloud/zh/r/openeuler/sglang
 canonical: https://xuanyuan.cloud/zh/r/openeuler/sglang
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [openeuler/sglang — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/openeuler/sglang)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[openeuler/sglang Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/openeuler/sglang)
+> **轩辕镜像中文简介（在线版）：** [openeuler/sglang — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/openeuler/sglang "openeuler/sglang Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/openeuler/sglang
 
 # SGLang | openEuler Docker镜像文档
 

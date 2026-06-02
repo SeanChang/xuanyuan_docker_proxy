@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: hashicorp/consul
-description: "基于当前版本自动构建的Consul镜像。有关使用详情，请参见README。"
 source: https://xuanyuan.cloud/zh/r/hashicorp/consul
 canonical: https://xuanyuan.cloud/zh/r/hashicorp/consul
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [hashicorp/consul — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/hashicorp/consul)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[hashicorp/consul Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/hashicorp/consul)
+> **轩辕镜像中文简介（在线版）：** [hashicorp/consul — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/hashicorp/consul "hashicorp/consul Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/hashicorp/consul
 
 # Consul 官方镜像构建说明
 

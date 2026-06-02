@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: openeuler/openclaw
-description: "OpenClaw是一款可在个人设备上运行的AI助手，支持WhatsApp、Telegram、Slack、Discord等多种消息渠道，由openEuler CloudNative SIG维护。"
 source: https://xuanyuan.cloud/zh/r/openeuler/openclaw
 canonical: https://xuanyuan.cloud/zh/r/openeuler/openclaw
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [openeuler/openclaw — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/openeuler/openclaw)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[openeuler/openclaw Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/openeuler/openclaw)
+> **轩辕镜像中文简介（在线版）：** [openeuler/openclaw — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/openeuler/openclaw "openeuler/openclaw Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/openeuler/openclaw
 
 # OpenClaw Docker镜像文档
 

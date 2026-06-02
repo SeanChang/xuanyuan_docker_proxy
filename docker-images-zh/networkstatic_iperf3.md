@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: networkstatic/iperf3
-description: "这是一个用于网络性能和带宽测试的IPerf3 Docker镜像构建项目，旨在帮助用户通过容器化方式快速部署IPerf3工具，便捷地进行网络吞吐量、延迟、抖动等关键性能指标的测量与评估，适用于服务器、网络设备及通信链路的性能测试场景，提供一致、高效的测试环境，简化网络性能分析流程。"
 source: https://xuanyuan.cloud/zh/r/networkstatic/iperf3
 canonical: https://xuanyuan.cloud/zh/r/networkstatic/iperf3
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [networkstatic/iperf3 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/networkstatic/iperf3)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[networkstatic/iperf3 Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/networkstatic/iperf3)
+> **轩辕镜像中文简介（在线版）：** [networkstatic/iperf3 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/networkstatic/iperf3 "networkstatic/iperf3 Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/networkstatic/iperf3
 
 # iperf3 Docker镜像：网络性能与带宽测试工具
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: chainguard/jdk
-description: "借助Chainguard的低至零CVE容器镜像，开发者能够高效构建、安全交付并稳定运行软件，有效降低因漏洞暴露带来的安全风险，为软件从开发到部署的全生命周期提供可靠的安全保障，助力打造更稳固的软件运行环境。"
 source: https://xuanyuan.cloud/zh/r/chainguard/jdk
 canonical: https://xuanyuan.cloud/zh/r/chainguard/jdk
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [chainguard/jdk — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/chainguard/jdk)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[chainguard/jdk Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/chainguard/jdk)
+> **轩辕镜像中文简介（在线版）：** [chainguard/jdk — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/chainguard/jdk "chainguard/jdk Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/chainguard/jdk
 
 ### Chainguard JDK 容器镜像
 

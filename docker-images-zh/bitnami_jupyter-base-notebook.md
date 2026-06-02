@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: bitnami/jupyter-base-notebook
-description: "Bitnami 安全镜像（适用于 Jupyter 基础笔记本）是一款经过专业安全加固与优化配置的容器镜像，旨在为开发者提供开箱即用的 Jupyter 基础笔记本环境，集成了必要的依赖组件、安全补丁及最佳实践，可有效简化部署流程并降低安全风险，适用于数据科学、机器学习及教育等场景下的交互式编程与开发工作。"
 source: https://xuanyuan.cloud/zh/r/bitnami/jupyter-base-notebook
 canonical: https://xuanyuan.cloud/zh/r/bitnami/jupyter-base-notebook
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [bitnami/jupyter-base-notebook — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/jupyter-base-notebook)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[bitnami/jupyter-base-notebook Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnami/jupyter-base-notebook)
+> **轩辕镜像中文简介（在线版）：** [bitnami/jupyter-base-notebook — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/jupyter-base-notebook "bitnami/jupyter-base-notebook Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/bitnami/jupyter-base-notebook
 
 # Bitnami Secure Image for jupyter-base-notebook 说明  
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: zabbix/zabbix-web-nginx-mysql
-description: "Zabbix前端是一款用于网络、服务器、应用程序等IT资源监控的界面，它基于Nginx Web服务器构建，并支持MySQL数据库作为数据存储后端，能够为用户提供直观的监控数据展示、配置管理及告警信息查看等功能，是Zabbix监控系统中实现用户与系统交互的核心组件。"
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [zabbix/zabbix-web-nginx-mysql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[zabbix/zabbix-web-nginx-mysql Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql)
+> **轩辕镜像中文简介（在线版）：** [zabbix/zabbix-web-nginx-mysql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql "zabbix/zabbix-web-nginx-mysql Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql
 
 ![logo]()
 

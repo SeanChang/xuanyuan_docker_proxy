@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: bitnami/kibana
-description: "Bitnami提供的Kibana安全镜像，用于部署和运行安全加固的Kibana环境。"
 source: https://xuanyuan.cloud/zh/r/bitnami/kibana
 canonical: https://xuanyuan.cloud/zh/r/bitnami/kibana
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [bitnami/kibana — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/kibana)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[bitnami/kibana Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnami/kibana)
+> **轩辕镜像中文简介（在线版）：** [bitnami/kibana — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/kibana "bitnami/kibana Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/bitnami/kibana
 
 # Bitnami Kibana 镜像文档
 

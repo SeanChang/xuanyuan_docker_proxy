@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: emby/embyserver
-description: "官方的Emby媒体服务器（64位amd64架构）是用于集中管理、组织和流式传输电影、音乐、照片、剧集等各类媒体文件的官方版本应用程序，支持多平台设备访问，提供高清播放、自定义媒体库分类、用户权限管理及跨设备同步等功能，适用于64位系统，为用户打造便捷高效的家庭媒体中心解决方案。"
 source: https://xuanyuan.cloud/zh/r/emby/embyserver
 canonical: https://xuanyuan.cloud/zh/r/emby/embyserver
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [emby/embyserver — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/emby/embyserver)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[emby/embyserver Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/emby/embyserver)
+> **轩辕镜像中文简介（在线版）：** [emby/embyserver — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/emby/embyserver "emby/embyserver Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/emby/embyserver
 
 # Emby Media Server
 

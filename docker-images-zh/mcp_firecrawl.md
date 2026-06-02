@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: mcp/firecrawl
-description: "官方Firecrawl MCP服务器，为Cursor、Claude等工具提供强大的网页抓取与搜索功能。"
 source: https://xuanyuan.cloud/zh/r/mcp/firecrawl
 canonical: https://xuanyuan.cloud/zh/r/mcp/firecrawl
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [mcp/firecrawl — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mcp/firecrawl)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[mcp/firecrawl Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/mcp/firecrawl)
+> **轩辕镜像中文简介（在线版）：** [mcp/firecrawl — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mcp/firecrawl "mcp/firecrawl Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/mcp/firecrawl
 
 # Firecrawl MCP Server
 

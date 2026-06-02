@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: library/docker
-description: "Docker in Docker（通常称为“dind”）是一种允许在Docker容器内部嵌套运行Docker引擎的技术，它能够在一个容器环境中启动、管理其他Docker容器，常用于持续集成/持续部署（CI/CD）流水线、Docker工具开发测试及需要隔离Docker环境的场景，通过这种方式可简化开发、测试和部署流程，同时保持容器化环境的独立性与一致性。"
 source: https://xuanyuan.cloud/zh/r/library/docker
 canonical: https://xuanyuan.cloud/zh/r/library/docker
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [library/docker — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/docker)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[library/docker Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/docker)
+> **轩辕镜像中文简介（在线版）：** [library/docker — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/docker "library/docker Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/library/docker
 
 # Docker 镜像使用指南
 

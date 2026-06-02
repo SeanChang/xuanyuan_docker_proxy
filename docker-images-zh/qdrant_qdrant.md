@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: qdrant/qdrant
-description: "Qdrant是一个向量相似性搜索引擎和向量数据库，提供生产级服务，支持存储、搜索和管理带有附加负载的向量点，具备强大的扩展过滤能力，适用于神经网络或语义匹配、分面搜索等AI应用，使用Rust编写，确保高性能和可靠性。"
 source: https://xuanyuan.cloud/zh/r/qdrant/qdrant
 canonical: https://xuanyuan.cloud/zh/r/qdrant/qdrant
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [qdrant/qdrant — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/qdrant/qdrant)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[qdrant/qdrant Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/qdrant/qdrant)
+> **轩辕镜像中文简介（在线版）：** [qdrant/qdrant — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/qdrant/qdrant "qdrant/qdrant Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/qdrant/qdrant
 
 # Qdrant 向量搜索引擎 Docker 镜像文档
 

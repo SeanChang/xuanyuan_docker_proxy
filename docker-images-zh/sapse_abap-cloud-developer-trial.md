@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: sapse/abap-cloud-developer-trial
-description: "该Docker镜像文档包含系统要求、拉取、运行、故障排除及许可更新等操作指南，但未明确其核心功能与用途。"
 source: https://xuanyuan.cloud/zh/r/sapse/abap-cloud-developer-trial
 canonical: https://xuanyuan.cloud/zh/r/sapse/abap-cloud-developer-trial
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [sapse/abap-cloud-developer-trial — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/sapse/abap-cloud-developer-trial)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[sapse/abap-cloud-developer-trial Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/sapse/abap-cloud-developer-trial)
+> **轩辕镜像中文简介（在线版）：** [sapse/abap-cloud-developer-trial — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/sapse/abap-cloud-developer-trial "sapse/abap-cloud-developer-trial Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/sapse/abap-cloud-developer-trial
 
 # ABAP Cloud Developer Trial Docker镜像文档
 

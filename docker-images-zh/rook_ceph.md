@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: rook/ceph
-description: "开源分布式存储系统Ceph为Kubernetes集群提供文件存储（File Storage）、块存储（Block Storage）及对象存储（Object Storage）服务，可满足容器化应用在数据持久化、高可用性、可扩展性等核心场景下的存储需求，助力用户高效管理集群中的各类数据资源，实现存储与容器编排的无缝集成。"
 source: https://xuanyuan.cloud/zh/r/rook/ceph
 canonical: https://xuanyuan.cloud/zh/r/rook/ceph
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [rook/ceph — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rook/ceph)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[rook/ceph Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/rook/ceph)
+> **轩辕镜像中文简介（在线版）：** [rook/ceph — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rook/ceph "rook/ceph Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/rook/ceph
 
 # Ceph 存储服务：为 Kubernetes 集群提供文件、块和对象存储支持
 

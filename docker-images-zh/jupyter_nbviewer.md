@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: jupyter/nbviewer
-description: "用于查看Jupyter Notebook文件的轻量级工具，无需运行完整内核即可展示文档内容，适用于分享和预览场景。"
 source: https://xuanyuan.cloud/zh/r/jupyter/nbviewer
 canonical: https://xuanyuan.cloud/zh/r/jupyter/nbviewer
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [jupyter/nbviewer — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jupyter/nbviewer)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[jupyter/nbviewer Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/jupyter/nbviewer)
+> **轩辕镜像中文简介（在线版）：** [jupyter/nbviewer — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jupyter/nbviewer "jupyter/nbviewer Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/jupyter/nbviewer
 
 # Jupyter Notebook Viewer 镜像文档
 

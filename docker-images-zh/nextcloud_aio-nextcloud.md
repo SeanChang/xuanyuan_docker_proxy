@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: nextcloud/aio-nextcloud
-description: "Nextcloud All-in-One镜像提供一站式部署方案，集成所有必要组件，用于快速搭建开源文件同步与共享平台，简化部署流程。"
 source: https://xuanyuan.cloud/zh/r/nextcloud/aio-nextcloud
 canonical: https://xuanyuan.cloud/zh/r/nextcloud/aio-nextcloud
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [nextcloud/aio-nextcloud — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/nextcloud/aio-nextcloud)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[nextcloud/aio-nextcloud Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/nextcloud/aio-nextcloud)
+> **轩辕镜像中文简介（在线版）：** [nextcloud/aio-nextcloud — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/nextcloud/aio-nextcloud "nextcloud/aio-nextcloud Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/nextcloud/aio-nextcloud
 
 # Nextcloud All-in-One (AIO) Docker镜像文档
 

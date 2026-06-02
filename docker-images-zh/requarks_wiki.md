@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: requarks/wiki
-description: "Wiki.js - 一款基于NodeJS构建的现代化、轻量级且功能强大的维基应用"
 source: https://xuanyuan.cloud/zh/r/requarks/wiki
 canonical: https://xuanyuan.cloud/zh/r/requarks/wiki
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [requarks/wiki — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/requarks/wiki)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[requarks/wiki Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/requarks/wiki)
+> **轩辕镜像中文简介（在线版）：** [requarks/wiki — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/requarks/wiki "requarks/wiki Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/requarks/wiki
 
 <img src="https://static.requarks.io/logo/wikijs-full.svg" width="500" />
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: ai/llama3.3
-description: "最新LLama 3版本，具备改进的推理能力和生成质量。"
 source: https://xuanyuan.cloud/zh/r/ai/llama3.3
 canonical: https://xuanyuan.cloud/zh/r/ai/llama3.3
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [ai/llama3.3 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ai/llama3.3)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[ai/llama3.3 Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/ai/llama3.3)
+> **轩辕镜像中文简介（在线版）：** [ai/llama3.3 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ai/llama3.3 "ai/llama3.3 Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/ai/llama3.3
 
 # Llama 3.3
 

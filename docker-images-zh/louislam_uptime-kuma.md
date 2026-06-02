@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: louislam/uptime-kuma
-description: "一款美观的自托管监控工具，用于监控网站、服务等的运行状态，支持本地部署和数据持久化存储。"
 source: https://xuanyuan.cloud/zh/r/louislam/uptime-kuma
 canonical: https://xuanyuan.cloud/zh/r/louislam/uptime-kuma
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [louislam/uptime-kuma — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/louislam/uptime-kuma)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[louislam/uptime-kuma Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/louislam/uptime-kuma)
+> **轩辕镜像中文简介（在线版）：** [louislam/uptime-kuma — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/louislam/uptime-kuma "louislam/uptime-kuma Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/louislam/uptime-kuma
 
 # Uptime Kuma
 

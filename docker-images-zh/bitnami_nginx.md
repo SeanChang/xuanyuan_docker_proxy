@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: bitnami/nginx
-description: "Bitnami Nginx安全镜像是由Bitnami提供的预配置、安全加固且高度优化的软件包，专为快速部署稳定可靠的Nginx Web服务器环境而设计，集成了自动安全更新、漏洞修复机制及合规性支持，可有效简化服务器配置流程，保障Web应用在生产环境中的安全性与高性能，适用于各类Web服务场景如静态资源托管、反向代理及负载均衡等。"
 source: https://xuanyuan.cloud/zh/r/bitnami/nginx
 canonical: https://xuanyuan.cloud/zh/r/bitnami/nginx
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [bitnami/nginx — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/nginx)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[bitnami/nginx Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnami/nginx)
+> **轩辕镜像中文简介（在线版）：** [bitnami/nginx — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/nginx "bitnami/nginx Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/bitnami/nginx
 
 # Bitnami NGINX Open Source 软件包
 

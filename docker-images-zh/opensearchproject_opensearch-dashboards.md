@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: opensearchproject/opensearch-dashboards
-description: "OpenSearch Dashboards（官网：[]"
 source: https://xuanyuan.cloud/zh/r/opensearchproject/opensearch-dashboards
 canonical: https://xuanyuan.cloud/zh/r/opensearchproject/opensearch-dashboards
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [opensearchproject/opensearch-dashboards — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/opensearchproject/opensearch-dashboards)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[opensearchproject/opensearch-dashboards Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/opensearchproject/opensearch-dashboards)
+> **轩辕镜像中文简介（在线版）：** [opensearchproject/opensearch-dashboards — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/opensearchproject/opensearch-dashboards "opensearchproject/opensearch-dashboards Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/opensearchproject/opensearch-dashboards
 
 # OpenSearch Dashboards 镜像使用指南
 

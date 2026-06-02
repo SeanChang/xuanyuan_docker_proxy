@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: library/maven
-description: "Apache Maven是一款基于项目对象模型（POM）的软件项目管理与理解工具，主要用于自动化项目构建流程、统一管理项目依赖、整合项目信息（如文档、报告等），并通过标准化的项目结构和生命周期管理，帮助开发团队提高协作效率、简化构建过程，确保项目开发的一致性与可重复性。"
 source: https://xuanyuan.cloud/zh/r/library/maven
 canonical: https://xuanyuan.cloud/zh/r/library/maven
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [library/maven — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/maven)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[library/maven Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/maven)
+> **轩辕镜像中文简介（在线版）：** [library/maven — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/maven "library/maven Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/library/maven
 
 # Maven Docker镜像使用指南
 

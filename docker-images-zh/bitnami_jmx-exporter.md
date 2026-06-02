@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: bitnami/jmx-exporter
-description: "Bitnami提供的安全镜像，用于运行jmx-exporter以导出JMX指标，适用于Java应用监控场景。"
 source: https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter
 canonical: https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [bitnami/jmx-exporter — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[bitnami/jmx-exporter Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter)
+> **轩辕镜像中文简介（在线版）：** [bitnami/jmx-exporter — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter "bitnami/jmx-exporter Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter
 
 # Bitnami JMX Exporter 镜像文档
 

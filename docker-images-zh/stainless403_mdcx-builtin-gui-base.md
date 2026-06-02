@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: stainless403/mdcx-builtin-gui-base
-description: "MDCx Docker镜像支持通过网页进行使用。"
 source: https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base
 canonical: https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [stainless403/mdcx-builtin-gui-base — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[stainless403/mdcx-builtin-gui-base Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base)
+> **轩辕镜像中文简介（在线版）：** [stainless403/mdcx-builtin-gui-base — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base "stainless403/mdcx-builtin-gui-base Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base
 
 # mdcx-builtin-gui-base 镜像文档
 

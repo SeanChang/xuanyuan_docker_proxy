@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: guergeiro/pnpm
-description: "提供Node运行时与pnpm包管理器的捆绑镜像，适用于JavaScript/TypeScript项目开发、构建及运行，支持高效包管理与环境快速配置。"
 source: https://xuanyuan.cloud/zh/r/guergeiro/pnpm
 canonical: https://xuanyuan.cloud/zh/r/guergeiro/pnpm
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [guergeiro/pnpm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/guergeiro/pnpm)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[guergeiro/pnpm Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/guergeiro/pnpm)
+> **轩辕镜像中文简介（在线版）：** [guergeiro/pnpm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/guergeiro/pnpm "guergeiro/pnpm Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/guergeiro/pnpm
 
 # guergeiro/pnpm 镜像文档
 

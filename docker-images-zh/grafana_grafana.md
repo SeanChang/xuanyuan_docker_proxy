@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: grafana/grafana
-description: "官方Grafana Docker容器是由Grafana官方维护的轻量级虚拟化部署单元，集成了开源数据可视化与监控平台的核心功能，包含最新稳定版本，配置经过优化，支持快速部署并可无缝集成到各类监控系统中，为用户提供便捷、高效的数据监控与可视化解决方案。"
 source: https://xuanyuan.cloud/zh/r/grafana/grafana
 canonical: https://xuanyuan.cloud/zh/r/grafana/grafana
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [grafana/grafana — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/grafana/grafana)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[grafana/grafana Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/grafana/grafana)
+> **轩辕镜像中文简介（在线版）：** [grafana/grafana — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/grafana/grafana "grafana/grafana Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/grafana/grafana
 
 # Grafana Docker 镜像
 

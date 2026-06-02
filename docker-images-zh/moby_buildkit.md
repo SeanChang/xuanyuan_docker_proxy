@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: moby/buildkit
-description: "这是一款适用于容器镜像构建的并发、缓存高效且与Dockerfile无关的构建工具包，它通过并发处理能力显著提升构建速度，借助高效缓存机制大幅减少重复计算与资源消耗，同时摆脱对Dockerfile的依赖限制，支持多样化的构建配置与场景需求，为开发者提供灵活、高效且兼容性强的容器构建解决方案。"
 source: https://xuanyuan.cloud/zh/r/moby/buildkit
 canonical: https://xuanyuan.cloud/zh/r/moby/buildkit
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [moby/buildkit — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/moby/buildkit)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[moby/buildkit Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/moby/buildkit)
+> **轩辕镜像中文简介（在线版）：** [moby/buildkit — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/moby/buildkit "moby/buildkit Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/moby/buildkit
 
 # BuildKit 介绍
 

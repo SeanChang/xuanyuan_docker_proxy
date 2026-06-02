@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: unsloth/unsloth
-description: "Unsloth Docker镜像是一个预构建容器，包含LLM微调与强化学习开源框架Unsloth的所有依赖，无需额外设置即可快速使用。支持Jupyter Lab和SSH双访问模式，适用于Windows、Linux、WSL及多数NVIDIA GPU，可立即开始LLM微调工作。"
 source: https://xuanyuan.cloud/zh/r/unsloth/unsloth
 canonical: https://xuanyuan.cloud/zh/r/unsloth/unsloth
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [unsloth/unsloth — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/unsloth/unsloth)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[unsloth/unsloth Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/unsloth/unsloth)
+> **轩辕镜像中文简介（在线版）：** [unsloth/unsloth — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/unsloth/unsloth "unsloth/unsloth Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/unsloth/unsloth
 
 # Unsloth Docker镜像
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: ddev/mysql
-description: "为ddev-dbserver-mysql-5.7提供的ARM64基础镜像，适用于Apple Silicon等ARM64架构环境"
 source: https://xuanyuan.cloud/zh/r/ddev/mysql
 canonical: https://xuanyuan.cloud/zh/r/ddev/mysql
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [ddev/mysql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ddev/mysql)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[ddev/mysql Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/ddev/mysql)
+> **轩辕镜像中文简介（在线版）：** [ddev/mysql — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ddev/mysql "ddev/mysql Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/ddev/mysql
 
 # ddev/mysql-arm64-images Docker镜像 (ddev/ddev-mysql)
 

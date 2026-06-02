@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: traefik/traefik
-description: "非官方Traefik镜像，Traefik是一款用于反向代理和负载均衡的工具，建议使用官方镜像（https://hub.docker.com/_/traefik）。"
 source: https://xuanyuan.cloud/zh/r/traefik/traefik
 canonical: https://xuanyuan.cloud/zh/r/traefik/traefik
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [traefik/traefik — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/traefik/traefik)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[traefik/traefik Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/traefik/traefik)
+> **轩辕镜像中文简介（在线版）：** [traefik/traefik — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/traefik/traefik "traefik/traefik Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/traefik/traefik
 
 # Traefik 镜像文档
 

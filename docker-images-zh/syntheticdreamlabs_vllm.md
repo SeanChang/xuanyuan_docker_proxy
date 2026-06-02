@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: syntheticdreamlabs/vllm
-description: "vLLM构建镜像用于构建高性能大语言模型服务环境，支持快速部署及推理性能优化。"
 source: https://xuanyuan.cloud/zh/r/syntheticdreamlabs/vllm
 canonical: https://xuanyuan.cloud/zh/r/syntheticdreamlabs/vllm
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [syntheticdreamlabs/vllm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/syntheticdreamlabs/vllm)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[syntheticdreamlabs/vllm Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/syntheticdreamlabs/vllm)
+> **轩辕镜像中文简介（在线版）：** [syntheticdreamlabs/vllm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/syntheticdreamlabs/vllm "syntheticdreamlabs/vllm Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/syntheticdreamlabs/vllm
 
 # vLLM 镜像文档
 

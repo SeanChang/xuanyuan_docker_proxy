@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: alpine/socat
-description: "基于Alpine的轻量级容器，用于运行socat网络工具，实现端口转发、数据流转发等网络通信功能。"
 source: https://xuanyuan.cloud/zh/r/alpine/socat
 canonical: https://xuanyuan.cloud/zh/r/alpine/socat
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [alpine/socat — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alpine/socat)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[alpine/socat Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/alpine/socat)
+> **轩辕镜像中文简介（在线版）：** [alpine/socat — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alpine/socat "alpine/socat Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/alpine/socat
 
 # socat Docker镜像文档
 

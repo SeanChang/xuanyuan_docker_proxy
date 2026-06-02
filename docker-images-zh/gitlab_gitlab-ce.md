@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: gitlab/gitlab-ce
-description: "GitLab社区版Docker镜像是基于Omnibus软件包构建的容器化部署方案，它整合了GitLab社区版的全部核心功能与必要依赖，通过Docker容器技术实现快速部署与便捷管理，适用于开发者和团队搭建自托管的Git仓库、进行代码管理、CI/CD流程自动化等场景，为开源项目和中小企业提供轻量高效的版本控制与协作平台。"
 source: https://xuanyuan.cloud/zh/r/gitlab/gitlab-ce
 canonical: https://xuanyuan.cloud/zh/r/gitlab/gitlab-ce
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [gitlab/gitlab-ce — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/gitlab/gitlab-ce)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[gitlab/gitlab-ce Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/gitlab/gitlab-ce)
+> **轩辕镜像中文简介（在线版）：** [gitlab/gitlab-ce — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/gitlab/gitlab-ce "gitlab/gitlab-ce Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/gitlab/gitlab-ce
 
 # GitLab Docker镜像介绍  
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: hyperf/hyperf
-description: "Hyperf官方提供的Docker镜像，用于运行基于Hyperf框架的高性能PHP协程应用，支持API及微服务开发部署。"
 source: https://xuanyuan.cloud/zh/r/hyperf/hyperf
 canonical: https://xuanyuan.cloud/zh/r/hyperf/hyperf
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [hyperf/hyperf — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/hyperf/hyperf)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[hyperf/hyperf Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/hyperf/hyperf)
+> **轩辕镜像中文简介（在线版）：** [hyperf/hyperf — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/hyperf/hyperf "hyperf/hyperf Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/hyperf/hyperf
 
 # Hyperf Docker 镜像文档
 

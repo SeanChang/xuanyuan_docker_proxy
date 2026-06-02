@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: mtphotos/mt-photos
-description: "MT Photos是一款为NAS（网络附加存储）用户准备的照片管理系统，主要用于帮助用户高效存储、整理和管理各类照片资源，满足NAS环境下对照片数据的集中化、便捷化管理需求，为用户提供专业的照片管理解决方案。"
 source: https://xuanyuan.cloud/zh/r/mtphotos/mt-photos
 canonical: https://xuanyuan.cloud/zh/r/mtphotos/mt-photos
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [mtphotos/mt-photos — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mtphotos/mt-photos)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[mtphotos/mt-photos Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/mtphotos/mt-photos)
+> **轩辕镜像中文简介（在线版）：** [mtphotos/mt-photos — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mtphotos/mt-photos "mtphotos/mt-photos Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/mtphotos/mt-photos
 
 # MT Photos 安装使用指南
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: mcp/postman
-description: "Postman的MCP服务器用于将AI代理、助手及聊天机器人直接连接至Postman上的API。"
 source: https://xuanyuan.cloud/zh/r/mcp/postman
 canonical: https://xuanyuan.cloud/zh/r/mcp/postman
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [mcp/postman — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mcp/postman)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[mcp/postman Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/mcp/postman)
+> **轩辕镜像中文简介（在线版）：** [mcp/postman — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mcp/postman "mcp/postman Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/mcp/postman
 
 # Postman MCP Server 技术文档
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: elestio/minio
-description: "由Elestio验证并打包的Minio对象存储服务，提供兼容S3 API的高性能数据存储解决方案，适用于云原生环境下的文件存储与管理。"
 source: https://xuanyuan.cloud/zh/r/elestio/minio
 canonical: https://xuanyuan.cloud/zh/r/elestio/minio
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [elestio/minio — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/elestio/minio)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[elestio/minio Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/elestio/minio)
+> **轩辕镜像中文简介（在线版）：** [elestio/minio — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/elestio/minio "elestio/minio Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/elestio/minio
 
 # MinIO，由 Elestio 验证和打包
 

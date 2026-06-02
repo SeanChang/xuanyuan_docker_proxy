@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: zlmediakit/zlmediakit
-description: "该简介涵盖网页实时通信（WebRTC）、实时流传输协议（RTSP）、实时消息传输协议（RTMP）、HTTP直播流（HLS）、HTTP-FLV流媒体协议、WebSocket-FLV流媒体协议、HTTP-TS流媒体协议、HTTP-fMP4流媒体协议、WebSocket-fMP4流媒体协议、国家标准GB/T 28181视频监控联网系统标准（GB28181）及安全可靠传输协议（SRT）等多种流媒体与实时通信相关协议。"
 source: https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit
 canonical: https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [zlmediakit/zlmediakit — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[zlmediakit/zlmediakit Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit)
+> **轩辕镜像中文简介（在线版）：** [zlmediakit/zlmediakit — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit "zlmediakit/zlmediakit Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit
 
 # ZLMediaKit：基于C++11的高性能运营级流媒体服务框架
 

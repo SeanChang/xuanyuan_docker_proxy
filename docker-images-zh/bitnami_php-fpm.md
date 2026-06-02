@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: bitnami/php-fpm
-description: "Bitnami php-fpm安全镜像是一款经过专业安全加固、预配置优化的PHP FastCGI进程管理器运行环境镜像，基于轻量级操作系统构建，集成必要依赖组件与安全补丁，通过最小化攻击面、强化访问控制及合规性检查保障PHP应用在生产环境中的稳定运行与数据安全，支持快速部署、无缝集成主流Web服务器（如Nginx、Apache）及容器化平台，为开发者与运维团队提供高效可靠的php-fpm运行解决方案。"
 source: https://xuanyuan.cloud/zh/r/bitnami/php-fpm
 canonical: https://xuanyuan.cloud/zh/r/bitnami/php-fpm
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [bitnami/php-fpm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/php-fpm)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[bitnami/php-fpm Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnami/php-fpm)
+> **轩辕镜像中文简介（在线版）：** [bitnami/php-fpm — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/php-fpm "bitnami/php-fpm Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/bitnami/php-fpm
 
 # Bitnami PHP-FPM 软件包介绍
 

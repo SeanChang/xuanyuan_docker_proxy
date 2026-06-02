@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: cleanstart/minio
-description: "基于最小化CleanStart OS构建的安全设计、高性能加固容器镜像，专为速度优化。"
 source: https://xuanyuan.cloud/zh/r/cleanstart/minio
 canonical: https://xuanyuan.cloud/zh/r/cleanstart/minio
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [cleanstart/minio — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/cleanstart/minio)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[cleanstart/minio Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/cleanstart/minio)
+> **轩辕镜像中文简介（在线版）：** [cleanstart/minio — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/cleanstart/minio "cleanstart/minio Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/cleanstart/minio
 
 # CleanStart MinIO容器镜像
 

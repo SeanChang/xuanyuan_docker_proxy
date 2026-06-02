@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: rook/minio
-description: "Minio是面向云原生环境的高性能分布式对象存储服务器。"
 source: https://xuanyuan.cloud/zh/r/rook/minio
 canonical: https://xuanyuan.cloud/zh/r/rook/minio
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [rook/minio — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rook/minio)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[rook/minio Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/rook/minio)
+> **轩辕镜像中文简介（在线版）：** [rook/minio — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/rook/minio "rook/minio Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/rook/minio
 
 # Minio Docker镜像文档
 

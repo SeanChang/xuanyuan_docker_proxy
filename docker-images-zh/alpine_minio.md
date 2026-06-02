@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: alpine/minio
-description: "社区维护的Minio Docker镜像，在官方停止提供后自动构建最新版本，支持多架构（amd64/arm等），适用于对象存储服务部署，生产环境建议使用具体版本标签。"
 source: https://xuanyuan.cloud/zh/r/alpine/minio
 canonical: https://xuanyuan.cloud/zh/r/alpine/minio
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [alpine/minio — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alpine/minio)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[alpine/minio Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/alpine/minio)
+> **轩辕镜像中文简介（在线版）：** [alpine/minio — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alpine/minio "alpine/minio Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/alpine/minio
 
 # Minio Docker镜像
 

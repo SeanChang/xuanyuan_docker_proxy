@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: percona/percona-server-mongodb
-description: "Percona Server for MongoDB Docker镜像是用于运行兼容MongoDB的增强版数据库服务器，提供高性能、企业级特性及可靠性的容器化解决方案。"
 source: https://xuanyuan.cloud/zh/r/percona/percona-server-mongodb
 canonical: https://xuanyuan.cloud/zh/r/percona/percona-server-mongodb
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [percona/percona-server-mongodb — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/percona/percona-server-mongodb)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[percona/percona-server-mongodb Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/percona/percona-server-mongodb)
+> **轩辕镜像中文简介（在线版）：** [percona/percona-server-mongodb — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/percona/percona-server-mongodb "percona/percona-server-mongodb Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/percona/percona-server-mongodb
 
 # Percona Server for MongoDB Docker镜像文档
 

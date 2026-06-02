@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: ai/qwen3-reranker
-description: "多语言重排序模型，用于文本检索，支持119种语言的文档相关性评分。"
 source: https://xuanyuan.cloud/zh/r/ai/qwen3-reranker
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen3-reranker
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [ai/qwen3-reranker — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ai/qwen3-reranker)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[ai/qwen3-reranker Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/ai/qwen3-reranker)
+> **轩辕镜像中文简介（在线版）：** [ai/qwen3-reranker — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ai/qwen3-reranker "ai/qwen3-reranker Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/ai/qwen3-reranker
 
 # Qwen3-Reranker
 

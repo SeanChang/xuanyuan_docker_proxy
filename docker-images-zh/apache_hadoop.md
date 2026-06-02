@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: apache/hadoop
-description: "Apache Hadoop便捷构建版本是Apache软件基金会推出的预编译分布式计算框架构建包，集成HDFS分布式文件系统、YARN资源管理器及MapReduce计算模型等核心组件，无需复杂编译配置即可快速搭建运行环境，适用于处理大规模数据集的分布式存储与并行计算任务，满足开发、测试及中小型生产环境的便捷使用需求。"
 source: https://xuanyuan.cloud/zh/r/apache/hadoop
 canonical: https://xuanyuan.cloud/zh/r/apache/hadoop
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [apache/hadoop — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apache/hadoop)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[apache/hadoop Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/apache/hadoop)
+> **轩辕镜像中文简介（在线版）：** [apache/hadoop — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apache/hadoop "apache/hadoop Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/apache/hadoop
 
 ## Apache Hadoop  
 

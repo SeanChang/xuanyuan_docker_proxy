@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: library/redis
-description: "Redis 官方 Docker 镜像，提供开箱即用的高性能键值数据库服务，适合作为缓存、会话存储、消息队列和排行榜等场景的基础组件，支持持久化与多架构部署，适合本地开发与生产环境按需扩展使用。"
 source: https://xuanyuan.cloud/zh/r/library/redis
 canonical: https://xuanyuan.cloud/zh/r/library/redis
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [library/redis — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/redis)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[library/redis Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/redis)
+> **轩辕镜像中文简介（在线版）：** [library/redis — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/redis "library/redis Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/library/redis
 
 # Redis 官方 Docker 镜像中文说明
 

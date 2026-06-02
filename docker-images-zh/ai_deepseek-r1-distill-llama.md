@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: ai/deepseek-r1-distill-llama
-description: "由DeepSeek开发的蒸馏版LLaMA模型，快速且针对实际任务优化，适用于高效执行各类真实场景任务。"
 source: https://xuanyuan.cloud/zh/r/ai/deepseek-r1-distill-llama
 canonical: https://xuanyuan.cloud/zh/r/ai/deepseek-r1-distill-llama
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [ai/deepseek-r1-distill-llama — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ai/deepseek-r1-distill-llama)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[ai/deepseek-r1-distill-llama Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/ai/deepseek-r1-distill-llama)
+> **轩辕镜像中文简介（在线版）：** [ai/deepseek-r1-distill-llama — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ai/deepseek-r1-distill-llama "ai/deepseek-r1-distill-llama Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/ai/deepseek-r1-distill-llama
 
 # Deepseek-R1-Distill-Llama 镜像文档
 

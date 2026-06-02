@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: alpine/git
-description: "这是一个运行于Alpine Linux系统中的简易Git容器，Alpine Linux以其极致精简的特性为基础，使得该容器在保持Git核心功能的同时，具备轻量高效的运行表现，尤其适用于各类小型Linux发行版环境，能够满足资源受限场景下的版本控制需求，为嵌入式系统、边缘设备或轻量级开发环境提供便捷的Git服务支持。"
 source: https://xuanyuan.cloud/zh/r/alpine/git
 canonical: https://xuanyuan.cloud/zh/r/alpine/git
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [alpine/git — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alpine/git)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[alpine/git Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/alpine/git)
+> **轩辕镜像中文简介（在线版）：** [alpine/git — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alpine/git "alpine/git Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/alpine/git
 
 ### docker-git-alpine：基于Alpine Linux的轻量Git容器  
 

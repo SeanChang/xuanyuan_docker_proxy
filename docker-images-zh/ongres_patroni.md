@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: ongres/patroni
-description: "PostgreSQL数据库与Patroni结合的高可用性OCI镜像，提供自动化故障转移、集群管理及持续可用性保障，适用于容器化环境中的关键数据库部署。"
 source: https://xuanyuan.cloud/zh/r/ongres/patroni
 canonical: https://xuanyuan.cloud/zh/r/ongres/patroni
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [ongres/patroni — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ongres/patroni)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[ongres/patroni Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/ongres/patroni)
+> **轩辕镜像中文简介（在线版）：** [ongres/patroni — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/ongres/patroni "ongres/patroni Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/ongres/patroni
 
 # PostgreSQL + Patroni 高可用OCI镜像文档
 

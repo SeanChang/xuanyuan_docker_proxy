@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: deluan/navidrome
-description: "Navidrome Music Server的官方Docker镜像，这是一个开源Web音乐收藏服务器和流媒体服务，让您能从任何浏览器或移动设备访问个人音乐库，如同个人Spotify。"
 source: https://xuanyuan.cloud/zh/r/deluan/navidrome
 canonical: https://xuanyuan.cloud/zh/r/deluan/navidrome
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [deluan/navidrome — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/deluan/navidrome)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[deluan/navidrome Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/deluan/navidrome)
+> **轩辕镜像中文简介（在线版）：** [deluan/navidrome — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/deluan/navidrome "deluan/navidrome Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/deluan/navidrome
 
 # Navidrome Music Server Docker镜像
 

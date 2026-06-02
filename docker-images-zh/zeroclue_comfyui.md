@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: zeroclue/comfyui
-description: "ComfyUI的Docker镜像，提供可视化界面用于创建和运行AI生成图像工作流，支持Stable Diffusion等模型，简化部署与使用流程，适合AI图像生成研究和应用开发。"
 source: https://xuanyuan.cloud/zh/r/zeroclue/comfyui
 canonical: https://xuanyuan.cloud/zh/r/zeroclue/comfyui
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [zeroclue/comfyui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zeroclue/comfyui)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[zeroclue/comfyui Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/zeroclue/comfyui)
+> **轩辕镜像中文简介（在线版）：** [zeroclue/comfyui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zeroclue/comfyui "zeroclue/comfyui Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/zeroclue/comfyui
 
 # ComfyUI Docker镜像
 

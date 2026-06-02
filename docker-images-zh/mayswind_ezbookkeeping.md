@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: mayswind/ezbookkeeping
-description: "这是一款由你自行托管的轻量级个人记账应用，它小巧不占资源，专注于满足个人日常财务记录需求，支持收支明细录入、账单智能分类及简易财务统计，所有数据存储在你的个人设备或服务器中，无需依赖第三方平台，让你完全掌控财务信息，有效保障数据隐私与安全，操作界面简洁直观，新手也能快速上手，轻松管理个人收支。"
 source: https://xuanyuan.cloud/zh/r/mayswind/ezbookkeeping
 canonical: https://xuanyuan.cloud/zh/r/mayswind/ezbookkeeping
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [mayswind/ezbookkeeping — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mayswind/ezbookkeeping)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[mayswind/ezbookkeeping Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/mayswind/ezbookkeeping)
+> **轩辕镜像中文简介（在线版）：** [mayswind/ezbookkeeping — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mayswind/ezbookkeeping "mayswind/ezbookkeeping Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/mayswind/ezbookkeeping
 
 # ezBookkeeping  
 [![License]([])]([])  

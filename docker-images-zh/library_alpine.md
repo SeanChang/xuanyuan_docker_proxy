@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: library/alpine
-description: "这是一款基于轻量级Alpine Linux构建的最小化Docker镜像，它不仅包含完整的软件包索引以确保用户能便捷获取所需依赖，而且体积仅为5MB，能极大节省存储空间与网络传输资源，非常适合对资源占用有严格要求的容器化应用场景，为快速部署和高效运行提供了轻量可靠的基础环境。"
 source: https://xuanyuan.cloud/zh/r/library/alpine
 canonical: https://xuanyuan.cloud/zh/r/library/alpine
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [library/alpine — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/alpine)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[library/alpine Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/alpine)
+> **轩辕镜像中文简介（在线版）：** [library/alpine — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/alpine "library/alpine Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/library/alpine
 
 # Alpine Linux Docker 镜像介绍
 

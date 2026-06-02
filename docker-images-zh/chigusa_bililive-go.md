@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: chigusa/bililive-go
-description: "这是一个针对GitHub项目github.com/hr3lxphr6j/bililive-go的Docker镜像，其中bililive-go是一款专注于B站直播的实用工具，通常具备直播录制、弹幕管理、直播状态监控等功能，该Docker镜像的作用是为用户提供便捷的部署与运行环境，有效简化安装配置流程，帮助开发者或普通用户快速启用bililive-go进行B站直播相关的操作与管理。"
 source: https://xuanyuan.cloud/zh/r/chigusa/bililive-go
 canonical: https://xuanyuan.cloud/zh/r/chigusa/bililive-go
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [chigusa/bililive-go — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/chigusa/bililive-go)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[chigusa/bililive-go Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/chigusa/bililive-go)
+> **轩辕镜像中文简介（在线版）：** [chigusa/bililive-go — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/chigusa/bililive-go "chigusa/bililive-go Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/chigusa/bililive-go
 
 # bililive-go
 

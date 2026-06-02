@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: linuxserver/calibre
-description: "linuxserver/calibre Docker镜像是一款集电子书库管理、格式转换与阅读于一体的开源工具，提供强大的一站式数字阅读解决方案。通过容器化技术实现跨平台快速部署，无需繁琐配置即可运行。该镜像经LinuxServer优化，内置Web界面与阅读器，支持多设备访问、数据持久化及主流格式转换，轻量高效且安全可靠，适合个人及小型团队构建私有的数字图书资源中心。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/calibre
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/calibre
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [linuxserver/calibre — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/calibre)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[linuxserver/calibre Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/linuxserver/calibre)
+> **轩辕镜像中文简介（在线版）：** [linuxserver/calibre — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/calibre "linuxserver/calibre Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/linuxserver/calibre
 
 # LinuxServer.io Calibre Docker 镜像介绍
 

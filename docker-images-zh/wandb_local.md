@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: wandb/local
-description: "在您自己的服务器上运行Weights & Biases（wandb.com），该平台专注于机器学习实验跟踪、模型版本控制、团队协作与结果可视化，能帮助数据科学家和工程师有效管理项目流程、复现实验结果、优化模型性能，进而加速机器学习项目的开发与迭代效率。"
 source: https://xuanyuan.cloud/zh/r/wandb/local
 canonical: https://xuanyuan.cloud/zh/r/wandb/local
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [wandb/local — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/wandb/local)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[wandb/local Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/wandb/local)
+> **轩辕镜像中文简介（在线版）：** [wandb/local — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/wandb/local "wandb/local Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/wandb/local
 
 # wandb/local  
 

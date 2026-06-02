@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: linuxserver/code-server
-description: "linuxserver/code-server是VS Code服务器版Docker镜像，可在浏览器中运行完整VS Code开发环境，无需本地安装即可跨设备访问。支持全部VS Code扩展、代码同步与终端功能，适配远程开发、团队协作或低配置设备场景。镜像经linuxserver优化，兼容ARM/AMD架构，内置持久化存储与安全配置，开箱即用，轻松打造云端IDE，提升开发灵活性与效率。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/code-server
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/code-server
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [linuxserver/code-server — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/code-server)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[linuxserver/code-server Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/linuxserver/code-server)
+> **轩辕镜像中文简介（在线版）：** [linuxserver/code-server — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/code-server "linuxserver/code-server Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/linuxserver/code-server
 
 # LinuxServer.io code-server 容器介绍  
 

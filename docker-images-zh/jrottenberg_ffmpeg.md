@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: jrottenberg/ffmpeg
-description: "FFmpeg 2.8 - 3.x - 4.x Docker镜像，由FFmpeg开发者版权所有(C) 2000-2017，从源码编译，支持多种基础镜像和硬件加速。"
 source: https://xuanyuan.cloud/zh/r/jrottenberg/ffmpeg
 canonical: https://xuanyuan.cloud/zh/r/jrottenberg/ffmpeg
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [jrottenberg/ffmpeg — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jrottenberg/ffmpeg)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[jrottenberg/ffmpeg Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/jrottenberg/ffmpeg)
+> **轩辕镜像中文简介（在线版）：** [jrottenberg/ffmpeg — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jrottenberg/ffmpeg "jrottenberg/ffmpeg Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/jrottenberg/ffmpeg
 
 # FFmpeg Docker镜像
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: tensorflow/tensorflow
-description: "TensorFlow（官网：[]"
 source: https://xuanyuan.cloud/zh/r/tensorflow/tensorflow
 canonical: https://xuanyuan.cloud/zh/r/tensorflow/tensorflow
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [tensorflow/tensorflow — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/tensorflow/tensorflow)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[tensorflow/tensorflow Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/tensorflow/tensorflow)
+> **轩辕镜像中文简介（在线版）：** [tensorflow/tensorflow — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/tensorflow/tensorflow "tensorflow/tensorflow Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/tensorflow/tensorflow
 
 # TensorFlow Runtime Docker 镜像
 

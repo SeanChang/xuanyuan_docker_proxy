@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: library/php
-description: "PHP脚本语言虽最初为Web开发设计，却兼具通用目的用途，作为一种广泛应用的服务器端脚本语言，它能高效处理动态网页生成、数据库交互等Web开发核心任务，同时也可用于编写命令行脚本、开发桌面应用及进行系统管理等非Web领域，凭借其简洁语法与跨平台特性，成为众多开发者在不同场景下的实用工具。"
 source: https://xuanyuan.cloud/zh/r/library/php
 canonical: https://xuanyuan.cloud/zh/r/library/php
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [library/php — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/php)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[library/php Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/php)
+> **轩辕镜像中文简介（在线版）：** [library/php — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/php "library/php Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/library/php
 
 # PHP Docker 镜像使用指南
 

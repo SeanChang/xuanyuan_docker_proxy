@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: bitnami/redis-exporter
-description: "Bitnami安全镜像，集成redis-exporter工具，用于安全导出Redis监控指标。"
 source: https://xuanyuan.cloud/zh/r/bitnami/redis-exporter
 canonical: https://xuanyuan.cloud/zh/r/bitnami/redis-exporter
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [bitnami/redis-exporter — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/redis-exporter)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[bitnami/redis-exporter Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnami/redis-exporter)
+> **轩辕镜像中文简介（在线版）：** [bitnami/redis-exporter — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/redis-exporter "bitnami/redis-exporter Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/bitnami/redis-exporter
 
 # Bitnami Redis Exporter 镜像文档
 

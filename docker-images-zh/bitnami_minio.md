@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: bitnami/minio
-description: "Bitnami MinIO安全镜像是一款针对MinIO对象存储服务精心打造的预配置容器镜像，通过集成自动安全更新、合规性检查及性能优化机制实现深度安全加固，可简化企业级云原生环境下的部署流程，有效增强数据存储的保密性与可靠性，助力用户快速构建稳定高效的对象存储解决方案。"
 source: https://xuanyuan.cloud/zh/r/bitnami/minio
 canonical: https://xuanyuan.cloud/zh/r/bitnami/minio
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [bitnami/minio — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/minio)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[bitnami/minio Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnami/minio)
+> **轩辕镜像中文简介（在线版）：** [bitnami/minio — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/minio "bitnami/minio Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/bitnami/minio
 
 # Bitnami Secure Image for minio 说明  
 

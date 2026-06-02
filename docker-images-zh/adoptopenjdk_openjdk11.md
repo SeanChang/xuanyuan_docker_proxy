@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: adoptopenjdk/openjdk11
-description: "这是由开源社区AdoptOpenJDK构建的OpenJDK 11版本二进制文件的Docker镜像，旨在为容器环境中基于Java 11开发的各类应用程序提供标准化、轻量级的部署与运行支持，方便开发者快速搭建一致的运行环境，确保应用在不同平台间的可移植性和稳定性。"
 source: https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk11
 canonical: https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk11
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [adoptopenjdk/openjdk11 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk11)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[adoptopenjdk/openjdk11 Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk11)
+> **轩辕镜像中文简介（在线版）：** [adoptopenjdk/openjdk11 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk11 "adoptopenjdk/openjdk11 Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/adoptopenjdk/openjdk11
 
 # AdoptOpenJDK Docker镜像使用说明
 

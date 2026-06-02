@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: linuxserver/jellyfin
-description: "LinuxServer.io 提供的 Jellyfin 容器，是一款自由软件媒体系统，支持媒体管理与流式传输，具备跨平台特性、定期更新和用户权限映射功能。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/jellyfin
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/jellyfin
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [linuxserver/jellyfin — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/jellyfin)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[linuxserver/jellyfin Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/linuxserver/jellyfin)
+> **轩辕镜像中文简介（在线版）：** [linuxserver/jellyfin — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/jellyfin "linuxserver/jellyfin Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/linuxserver/jellyfin
 
 # LinuxServer.io Jellyfin 容器
 

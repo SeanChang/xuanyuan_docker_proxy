@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: a10networks/a10-kubernetes-connector
-description: "A10 Thunder Kubernetes Connector(TKC)是一款Ingress Controller，用于监控Kubernetes资源的添加、删除和更新操作，并相应配置A10 Thunder ADC（应用交付控制器）。"
 source: https://xuanyuan.cloud/zh/r/a10networks/a10-kubernetes-connector
 canonical: https://xuanyuan.cloud/zh/r/a10networks/a10-kubernetes-connector
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [a10networks/a10-kubernetes-connector — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/a10networks/a10-kubernetes-connector)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[a10networks/a10-kubernetes-connector Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/a10networks/a10-kubernetes-connector)
+> **轩辕镜像中文简介（在线版）：** [a10networks/a10-kubernetes-connector — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/a10networks/a10-kubernetes-connector "a10networks/a10-kubernetes-connector Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/a10networks/a10-kubernetes-connector
 
 ## A10 Thunder Kubernetes Connector 概述
 

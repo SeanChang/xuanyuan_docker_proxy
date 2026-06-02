@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: newfuture/ddns
-description: "基于Alpine的DDNS服务，用于将域名动态更新到本机IP，支持dnspod、阿里DNS、CloudFlare、华为云、DNSCOM等服务商。"
 source: https://xuanyuan.cloud/zh/r/newfuture/ddns
 canonical: https://xuanyuan.cloud/zh/r/newfuture/ddns
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [newfuture/ddns — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/newfuture/ddns)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[newfuture/ddns Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/newfuture/ddns)
+> **轩辕镜像中文简介（在线版）：** [newfuture/ddns — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/newfuture/ddns "newfuture/ddns Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/newfuture/ddns
 
 # [<img src="https://ddns.newfuture.cc/doc/img/ddns.svg" width="32px" height="32px"/>](https://ddns.newfuture.cc) DDNS
 

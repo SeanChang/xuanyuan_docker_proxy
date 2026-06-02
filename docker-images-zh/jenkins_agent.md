@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: jenkins/agent
-description: "提供Jenkins代理可执行文件agent.jar的基础镜像。"
 source: https://xuanyuan.cloud/zh/r/jenkins/agent
 canonical: https://xuanyuan.cloud/zh/r/jenkins/agent
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [jenkins/agent — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jenkins/agent)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[jenkins/agent Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/jenkins/agent)
+> **轩辕镜像中文简介（在线版）：** [jenkins/agent — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/jenkins/agent "jenkins/agent Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/jenkins/agent
 
 # Jenkins Agent Docker 镜像文档
 

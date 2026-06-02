@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: elswork/samba
-description: "用于构建多架构Samba镜像的Dockerfile，支持Linux与Windows文件共享，适配amd64、arm64等多种平台，是个人定制的Docker配置方案。"
 source: https://xuanyuan.cloud/zh/r/elswork/samba
 canonical: https://xuanyuan.cloud/zh/r/elswork/samba
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [elswork/samba — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/elswork/samba)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[elswork/samba Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/elswork/samba)
+> **轩辕镜像中文简介（在线版）：** [elswork/samba — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/elswork/samba "elswork/samba Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/elswork/samba
 
 # Samba
 

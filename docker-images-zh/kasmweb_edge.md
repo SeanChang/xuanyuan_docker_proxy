@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: kasmweb/edge
-description: "适用于Kasm Workspaces的Microsoft Edge Insider Preview浏览器镜像，支持通过浏览器访问，集成KasmVNC实现高性能Web原生渲染，可用于桌面、应用及Web服务的流式访问。"
 source: https://xuanyuan.cloud/zh/r/kasmweb/edge
 canonical: https://xuanyuan.cloud/zh/r/kasmweb/edge
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [kasmweb/edge — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kasmweb/edge)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[kasmweb/edge Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/kasmweb/edge)
+> **轩辕镜像中文简介（在线版）：** [kasmweb/edge — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kasmweb/edge "kasmweb/edge Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/kasmweb/edge
 
 # Kasm Workspaces Edge镜像
 

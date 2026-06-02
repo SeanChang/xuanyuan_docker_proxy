@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: apacherocketmq/rocketmq-dashboard
-description: "这是一个用于Apache RocketMQ控制台的Docker镜像，提供直观的可视化界面，支持用户便捷监控和管理RocketMQ集群，可查看消息流转状态、集群节点信息、主题配置及消费者消费情况等，同时通过Docker容器化技术简化部署流程，实现快速启动与环境一致性，助力开发者和运维人员高效运维RocketMQ服务。"
 source: https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard
 canonical: https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [apacherocketmq/rocketmq-dashboard — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[apacherocketmq/rocketmq-dashboard Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard)
+> **轩辕镜像中文简介（在线版）：** [apacherocketmq/rocketmq-dashboard — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard "apacherocketmq/rocketmq-dashboard Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard
 
 # Apache RocketMQ Dashboard Docker 镜像使用介绍
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: xyliucd/ascow
-description: "基于ABHPC研发的适用于Slurm调度系统的超算用户与管理集成系统"
 source: https://xuanyuan.cloud/zh/r/xyliucd/ascow
 canonical: https://xuanyuan.cloud/zh/r/xyliucd/ascow
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [xyliucd/ascow — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/xyliucd/ascow)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[xyliucd/ascow Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/xyliucd/ascow)
+> **轩辕镜像中文简介（在线版）：** [xyliucd/ascow — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/xyliucd/ascow "xyliucd/ascow Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/xyliucd/ascow
 
 # 1 项目简介
 ## 1.1 声明

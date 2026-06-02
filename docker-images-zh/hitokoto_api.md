@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: hitokoto/api
-description: "Hitokoto官方一言接口程序，基于Teng-koa实现，提供高扩展性，支持请求统计、JS回调、多进程运行、遥测等功能，适用于构建可扩展的一言API服务。"
 source: https://xuanyuan.cloud/zh/r/hitokoto/api
 canonical: https://xuanyuan.cloud/zh/r/hitokoto/api
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [hitokoto/api — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/hitokoto/api)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[hitokoto/api Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/hitokoto/api)
+> **轩辕镜像中文简介（在线版）：** [hitokoto/api — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/hitokoto/api "hitokoto/api Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/hitokoto/api
 
 # Hitokoto API
 

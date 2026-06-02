@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: opencloudeu/opencloud
-description: "OpenCloud服务器后端Docker镜像，包含Golang代码库，用于部署后端服务，支持通过OpenID Connect认证（外部IdP或嵌入式LibreGraph Connect），数据存储于文件系统，默认根目录为$HOME/.opencloud/。"
 source: https://xuanyuan.cloud/zh/r/opencloudeu/opencloud
 canonical: https://xuanyuan.cloud/zh/r/opencloudeu/opencloud
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [opencloudeu/opencloud — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/opencloudeu/opencloud)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[opencloudeu/opencloud Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/opencloudeu/opencloud)
+> **轩辕镜像中文简介（在线版）：** [opencloudeu/opencloud — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/opencloudeu/opencloud "opencloudeu/opencloud Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/opencloudeu/opencloud
 
 # OpenCloud服务器后端Docker镜像
 

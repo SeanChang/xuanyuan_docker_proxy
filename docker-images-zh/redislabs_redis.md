@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: redislabs/redis
-description: "Redis Labs提供的集群化内存数据库引擎，完全兼容开源Redis，具备企业级特性，支持高性能、零停机线性扩展和高可用性，适用于分布式应用场景。"
 source: https://xuanyuan.cloud/zh/r/redislabs/redis
 canonical: https://xuanyuan.cloud/zh/r/redislabs/redis
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [redislabs/redis — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/redislabs/redis)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[redislabs/redis Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/redislabs/redis)
+> **轩辕镜像中文简介（在线版）：** [redislabs/redis — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/redislabs/redis "redislabs/redis Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/redislabs/redis
 
 ### 支持的标签
 * _`8.0.2-41`_,

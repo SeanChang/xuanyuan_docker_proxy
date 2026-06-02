@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: nodejs/devcontainer
-description: "Node.js官方开发容器镜像，提供一致的Node.js开发环境，包含必要工具与依赖，支持便捷搭建和维护跨平台、团队协作的开发环境。"
 source: https://xuanyuan.cloud/zh/r/nodejs/devcontainer
 canonical: https://xuanyuan.cloud/zh/r/nodejs/devcontainer
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [nodejs/devcontainer — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/nodejs/devcontainer)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[nodejs/devcontainer Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/nodejs/devcontainer)
+> **轩辕镜像中文简介（在线版）：** [nodejs/devcontainer — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/nodejs/devcontainer "nodejs/devcontainer Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/nodejs/devcontainer
 
 # Node.js Dev Container 镜像文档
 

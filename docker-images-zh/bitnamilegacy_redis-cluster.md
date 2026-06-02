@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: bitnamilegacy/redis-cluster
-description: "旧版Bitnami镜像，已不再更新"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/redis-cluster
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/redis-cluster
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [bitnamilegacy/redis-cluster — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamilegacy/redis-cluster)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[bitnamilegacy/redis-cluster Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnamilegacy/redis-cluster)
+> **轩辕镜像中文简介（在线版）：** [bitnamilegacy/redis-cluster — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnamilegacy/redis-cluster "bitnamilegacy/redis-cluster Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/bitnamilegacy/redis-cluster
 
 # Bitnami Legacy 镜像文档
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: linuxserver/rustdesk
-description: "linuxserver/rustdesk是一款基于Rust语言开发的开源远程桌面工具Docker镜像，提供便捷的远程控制、文件传输和屏幕共享功能。得益于Docker容器化部署，具有安装简单、配置灵活的特点，同时支持自建服务器，确保数据传输安全与隐私保护。该镜像继承了RustDesk原生的高性能与低延迟特性，兼容Windows、macOS、Linux等多平台系统，适用于个人远程办公、家庭设备管理及企业IT运维等场景，是一款轻量高效且安全可靠的远程桌面解决方案。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/rustdesk
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/rustdesk
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [linuxserver/rustdesk — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/rustdesk)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[linuxserver/rustdesk Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/linuxserver/rustdesk)
+> **轩辕镜像中文简介（在线版）：** [linuxserver/rustdesk — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/linuxserver/rustdesk "linuxserver/rustdesk Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/linuxserver/rustdesk
 
 # LinuxServer.io rustdesk 容器介绍
 

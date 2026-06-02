@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: alpinelinux/golang
-description: "基于Alpine Linux的Golang构建容器，用于Golang应用程序的编译和构建环境，提供轻量级基础并包含完整Golang开发工具链，适用于本地开发及CI/CD流水线构建阶段。"
 source: https://xuanyuan.cloud/zh/r/alpinelinux/golang
 canonical: https://xuanyuan.cloud/zh/r/alpinelinux/golang
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [alpinelinux/golang — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alpinelinux/golang)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[alpinelinux/golang Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/alpinelinux/golang)
+> **轩辕镜像中文简介（在线版）：** [alpinelinux/golang — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/alpinelinux/golang "alpinelinux/golang Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/alpinelinux/golang
 
 # Golang-Alpine 构建容器
 

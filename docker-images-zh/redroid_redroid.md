@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: redroid/redroid
-description: "远程安卓多架构GPU加速安卓云（Android In Cloud）解决方案是一种能够在云端提供高效远程安卓服务的综合性技术方案，该方案支持多种架构并集成先进的GPU加速技术，可显著提升远程安卓应用的运行效率、图形处理能力和整体性能，适用于需要在云端远程访问和运行安卓环境的各类应用场景。"
 source: https://xuanyuan.cloud/zh/r/redroid/redroid
 canonical: https://xuanyuan.cloud/zh/r/redroid/redroid
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [redroid/redroid — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/redroid/redroid)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[redroid/redroid Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/redroid/redroid)
+> **轩辕镜像中文简介（在线版）：** [redroid/redroid — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/redroid/redroid "redroid/redroid Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/redroid/redroid
 
 # redroid 介绍
 

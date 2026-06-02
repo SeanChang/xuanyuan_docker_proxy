@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: docker/buildkit-syft-scanner
-description: "这是基于Syft扫描器的BuildKit SBOM生成器镜像，用于在Docker构建输出中包含扫描结果，实现了BuildKit SBOM扫描协议。"
 source: https://xuanyuan.cloud/zh/r/docker/buildkit-syft-scanner
 canonical: https://xuanyuan.cloud/zh/r/docker/buildkit-syft-scanner
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [docker/buildkit-syft-scanner — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/docker/buildkit-syft-scanner)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[docker/buildkit-syft-scanner Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/docker/buildkit-syft-scanner)
+> **轩辕镜像中文简介（在线版）：** [docker/buildkit-syft-scanner — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/docker/buildkit-syft-scanner "docker/buildkit-syft-scanner Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/docker/buildkit-syft-scanner
 
 # BuildKit Syft Scanner 镜像文档
 

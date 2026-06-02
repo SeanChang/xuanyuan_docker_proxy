@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: kalilinux/kali-rolling
-description: "官方卡利Linux Docker镜像，即kali-rolling滚动更新版本的每周快照，为用户提供便捷、轻量级的安全测试与渗透工具环境，可通过Docker快速部署使用，集成了Kali Linux的核心工具与最新更新，适合安全研究人员、渗透测试工程师等专业人士在容器化环境中高效开展相关工作。"
 source: https://xuanyuan.cloud/zh/r/kalilinux/kali-rolling
 canonical: https://xuanyuan.cloud/zh/r/kalilinux/kali-rolling
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [kalilinux/kali-rolling — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kalilinux/kali-rolling)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[kalilinux/kali-rolling Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/kalilinux/kali-rolling)
+> **轩辕镜像中文简介（在线版）：** [kalilinux/kali-rolling — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/kalilinux/kali-rolling "kalilinux/kali-rolling Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/kalilinux/kali-rolling
 
 ## Kali Linux Docker 镜像（Rolling 版）
 

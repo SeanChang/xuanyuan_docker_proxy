@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: langgenius/dify-web
-description: "Dify.AI前端Docker镜像是针对AI应用开发平台Dify.AI的前端部署解决方案，集成了预构建的前端资源、优化的运行环境及依赖配置，用户无需手动安装前端开发工具或处理复杂依赖，通过Docker命令即可快速启动、运行或集成Dify.AI的前端界面，适用于开发、测试及生产环境，有效简化部署流程，提升前端服务的部署效率与环境一致性。"
 source: https://xuanyuan.cloud/zh/r/langgenius/dify-web
 canonical: https://xuanyuan.cloud/zh/r/langgenius/dify-web
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [langgenius/dify-web — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/langgenius/dify-web)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[langgenius/dify-web Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/langgenius/dify-web)
+> **轩辕镜像中文简介（在线版）：** [langgenius/dify-web — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/langgenius/dify-web "langgenius/dify-web Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/langgenius/dify-web
 
 # Dify.AI 前端 Docker 镜像
 

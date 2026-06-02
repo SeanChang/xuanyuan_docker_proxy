@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: mcp/pia
-description: "一个MCP服务器，用于帮助美国政府开放数据集实现AI友好化。"
 source: https://xuanyuan.cloud/zh/r/mcp/pia
 canonical: https://xuanyuan.cloud/zh/r/mcp/pia
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [mcp/pia — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mcp/pia)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[mcp/pia Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/mcp/pia)
+> **轩辕镜像中文简介（在线版）：** [mcp/pia — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/mcp/pia "mcp/pia Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/mcp/pia
 
 # Program Integrity Alliance MCP服务器
 

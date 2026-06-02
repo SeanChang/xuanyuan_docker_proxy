@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: grafana/promtail
-description: "Promtail 是 Grafana Labs 开发的日志收集工具，专为与开源日志聚合系统 Loki 协同工作而设计，主要功能是收集、标记和转换容器及应用程序日志，并将其发送到 Loki 进行存储和查询。作为 Loki 日志栈的关键组件，Promtail 轻量高效，支持动态标签配置和日志过滤，广泛应用于容器化环境及传统服务器的日志收集场景，帮助用户构建完整的日志监控与分析工具链。"
 source: https://xuanyuan.cloud/zh/r/grafana/promtail
 canonical: https://xuanyuan.cloud/zh/r/grafana/promtail
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [grafana/promtail — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/grafana/promtail)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[grafana/promtail Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/grafana/promtail)
+> **轩辕镜像中文简介（在线版）：** [grafana/promtail — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/grafana/promtail "grafana/promtail Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/grafana/promtail
 
 # Promtail Docker 镜像使用指南
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: moodlehq/moodle-php-apache
-description: "为Moodle配置的Apache/PHP环境，包含所有支持的数据库驱动"
 source: https://xuanyuan.cloud/zh/r/moodlehq/moodle-php-apache
 canonical: https://xuanyuan.cloud/zh/r/moodlehq/moodle-php-apache
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [moodlehq/moodle-php-apache — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/moodlehq/moodle-php-apache)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[moodlehq/moodle-php-apache Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/moodlehq/moodle-php-apache)
+> **轩辕镜像中文简介（在线版）：** [moodlehq/moodle-php-apache — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/moodlehq/moodle-php-apache "moodlehq/moodle-php-apache Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/moodlehq/moodle-php-apache
 
 # moodle-php-apache: Moodle PHP环境
 

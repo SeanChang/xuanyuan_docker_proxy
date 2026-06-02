@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: calico/kube-controllers
-description: "calico/kube-controllers 是 Project Calico 提供的 Kubernetes 控制器镜像，负责监控 Kubernetes API 事件并同步 Calico 网络策略、命名空间、服务账户等资源到数据存储（如 etcd），确保集群状态的一致性。"
 source: https://xuanyuan.cloud/zh/r/calico/kube-controllers
 canonical: https://xuanyuan.cloud/zh/r/calico/kube-controllers
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [calico/kube-controllers — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/calico/kube-controllers)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[calico/kube-controllers Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/calico/kube-controllers)
+> **轩辕镜像中文简介（在线版）：** [calico/kube-controllers — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/calico/kube-controllers "calico/kube-controllers Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/calico/kube-controllers
 
 # Calico Kubernetes 控制器 Docker 镜像使用指南
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: dyrnq/open-webui
-description: "ghcr.io/open-webui/open-webui 是 GitHub 容器镜像仓库中托管的一款开源 Web 用户界面应用，主要用于构建和部署 AI 交互平台，支持多种主流大语言模型接入，提供可自定义的界面布局与交互功能，便于开发者和用户通过 Web 浏览器便捷访问、管理和使用 AI 服务，具备轻量化部署特性，适合个人或企业快速搭建专属 AI 交互界面。"
 source: https://xuanyuan.cloud/zh/r/dyrnq/open-webui
 canonical: https://xuanyuan.cloud/zh/r/dyrnq/open-webui
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [dyrnq/open-webui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/dyrnq/open-webui)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[dyrnq/open-webui Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/dyrnq/open-webui)
+> **轩辕镜像中文简介（在线版）：** [dyrnq/open-webui — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/dyrnq/open-webui "dyrnq/open-webui Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/dyrnq/open-webui
 
 ## Open WebUI 容器镜像使用指南
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: library/influxdb
-description: "InfluxDB 是一款开源时序数据库，专为实时分析工作负载构建，其设计聚焦于高效处理海量时间序列数据，具备高写入吞吐量与快速查询响应能力，广泛适用于监控系统、日志分析、IoT 数据采集等场景，能够满足实时数据接入、存储与即时分析的核心需求，为各类实时业务提供可靠的数据支撑。"
 source: https://xuanyuan.cloud/zh/r/library/influxdb
 canonical: https://xuanyuan.cloud/zh/r/library/influxdb
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [library/influxdb — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/influxdb)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[library/influxdb Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/influxdb)
+> **轩辕镜像中文简介（在线版）：** [library/influxdb — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/influxdb "library/influxdb Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/library/influxdb
 
 # InfluxDB Docker 镜像使用指南
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: phpipam/phpipam-www
-description: "phpIPAM是一款基于Web的开源IP地址管理应用程序（IPAM），其源代码开放且免费使用，用户可通过浏览器便捷访问，主要功能包括IP地址的分配、跟踪、规划与监控，能有效记录地址使用状态、关联设备信息、预防地址冲突，适用于企业、机构等各类网络环境的IP资源管理需求。"
 source: https://xuanyuan.cloud/zh/r/phpipam/phpipam-www
 canonical: https://xuanyuan.cloud/zh/r/phpipam/phpipam-www
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [phpipam/phpipam-www — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/phpipam/phpipam-www)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[phpipam/phpipam-www Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/phpipam/phpipam-www)
+> **轩辕镜像中文简介（在线版）：** [phpipam/phpipam-www — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/phpipam/phpipam-www "phpipam/phpipam-www Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/phpipam/phpipam-www
 
 # phpIPAM Apache2 容器部署说明
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: gdy666/lucky
-description: "这是一款可替代socat的轻量级网络工具，支持在IPv6网络环境下通过TCP与UDP协议实现内网IPv4地址的转发，并集成动态域名服务功能，目前更多实用特性仍在持续开发完善中。"
 source: https://xuanyuan.cloud/zh/r/gdy666/lucky
 canonical: https://xuanyuan.cloud/zh/r/gdy666/lucky
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [gdy666/lucky — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/gdy666/lucky)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[gdy666/lucky Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/gdy666/lucky)
+> **轩辕镜像中文简介（在线版）：** [gdy666/lucky — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/gdy666/lucky "gdy666/lucky Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/gdy666/lucky
 
 # Lucky(大吉)
 

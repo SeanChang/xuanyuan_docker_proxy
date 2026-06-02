@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: langgenius/dify-plugin-daemon
-description: "langgenius/dify-plugin-daemon：Dify 平台的插件守护进程核心组件，负责插件的生命周期管理与任务执行，支持插件注册、任务调度与依赖环境封装；是 Dify 插件功能生效的关键中间件，需与 dify-api、dify-web 等组件协同工作，仅支持 Linux/arm64 架构。"
 source: https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon
 canonical: https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [langgenius/dify-plugin-daemon — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[langgenius/dify-plugin-daemon Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon)
+> **轩辕镜像中文简介（在线版）：** [langgenius/dify-plugin-daemon — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon "langgenius/dify-plugin-daemon Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon
 
 # langgenius/dify-plugin-daemon 镜像使用指南
 

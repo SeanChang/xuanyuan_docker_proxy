@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: homebrew/ubuntu22.04
-description: "这是一个基于Ubuntu 22.04操作系统的Docker镜像，其中集成了Homebrew这款开源包管理器，旨在为用户提供便捷的容器化环境，以便在Docker中高效使用Homebrew进行软件包的安装、管理与依赖维护，适用于各类开发、测试及部署场景，兼具Ubuntu 22.04的稳定性与Homebrew开源生态的丰富功能。"
 source: https://xuanyuan.cloud/zh/r/homebrew/ubuntu22.04
 canonical: https://xuanyuan.cloud/zh/r/homebrew/ubuntu22.04
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [homebrew/ubuntu22.04 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/homebrew/ubuntu22.04)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[homebrew/ubuntu22.04 Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/homebrew/ubuntu22.04)
+> **轩辕镜像中文简介（在线版）：** [homebrew/ubuntu22.04 — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/homebrew/ubuntu22.04 "homebrew/ubuntu22.04 Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/homebrew/ubuntu22.04
 
 ## Homebrew/ubuntu22.04 镜像介绍
 

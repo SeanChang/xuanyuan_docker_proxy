@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: library/nats
-description: "NATS是一款开源、高性能的云原生消息系统，专为云环境与分布式架构打造，具备低延迟、高吞吐量的核心优势，能高效支撑实时数据传输、微服务通信及分布式系统间的消息传递，为现代应用提供可靠且灵活的异步通信解决方案。"
 source: https://xuanyuan.cloud/zh/r/library/nats
 canonical: https://xuanyuan.cloud/zh/r/library/nats
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [library/nats — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/nats)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[library/nats Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/library/nats)
+> **轩辕镜像中文简介（在线版）：** [library/nats — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/library/nats "library/nats Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/library/nats
 
 # NATS Docker镜像使用指南
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: 2000cubits/php-cli-developer
-description: "包含开发工具的PHP命令行界面(CLI)镜像，提供完整的PHP运行环境及常用开发工具，适用于PHP应用的开发、调试和脚本运行。"
 source: https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer
 canonical: https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [2000cubits/php-cli-developer — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[2000cubits/php-cli-developer Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer)
+> **轩辕镜像中文简介（在线版）：** [2000cubits/php-cli-developer — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer "2000cubits/php-cli-developer Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer
 
 # PHP CLI 开发工具镜像
 

@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: oceanbase/seekdb
-description: "seekdb Docker镜像用于快速搭建SeekDB测试环境，可在Docker Hub、quay.io及ghcr.io获取。注意：仅适用于测试，不建议生产环境；MacOS和Intel芯片上Docker版本>4.9.0存在已知问题，可通过指定链接下载兼容版本。"
 source: https://xuanyuan.cloud/zh/r/oceanbase/seekdb
 canonical: https://xuanyuan.cloud/zh/r/oceanbase/seekdb
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [oceanbase/seekdb — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/oceanbase/seekdb)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[oceanbase/seekdb Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/oceanbase/seekdb)
+> **轩辕镜像中文简介（在线版）：** [oceanbase/seekdb — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/oceanbase/seekdb "oceanbase/seekdb Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/oceanbase/seekdb
 
 # 使用Docker部署SeekDB
 

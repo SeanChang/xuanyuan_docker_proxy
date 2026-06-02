@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: bitnami/pytorch
-description: "比特纳米PyTorch安全镜像是一款为深度学习框架PyTorch量身打造的预配置、安全加固型容器镜像，集成经过严格测试的依赖组件，具备漏洞扫描、合规性检查及持续更新机制，可有效保障开发环境安全，简化从模型训练到部署的全流程，适用于科研机构、企业开发者在AI项目中快速构建稳定、安全的PyTorch运行环境。"
 source: https://xuanyuan.cloud/zh/r/bitnami/pytorch
 canonical: https://xuanyuan.cloud/zh/r/bitnami/pytorch
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [bitnami/pytorch — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/pytorch)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[bitnami/pytorch Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/bitnami/pytorch)
+> **轩辕镜像中文简介（在线版）：** [bitnami/pytorch — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/bitnami/pytorch "bitnami/pytorch Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/bitnami/pytorch
 
 # Bitnami PyTorch 包介绍
 

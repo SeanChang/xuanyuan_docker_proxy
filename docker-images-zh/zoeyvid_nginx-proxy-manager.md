@@ -1,16 +1,15 @@
-﻿---
+<!-- xuanyuan-docker-images-zh
 image: zoeyvid/nginx-proxy-manager
-description: "zoeyvid/npmplus是一款增强型npm工具，具备高效的包管理、依赖解析、版本控制及命令行优化等功能，能帮助开发者简化工作流程，提升各类Node.js项目的构建效率，适用于多种开发场景。"
 source: https://xuanyuan.cloud/zh/r/zoeyvid/nginx-proxy-manager
 canonical: https://xuanyuan.cloud/zh/r/zoeyvid/nginx-proxy-manager
-exported_at: 2026-06-02T12:04:49.546Z
----
+exported_at: 2026-06-02T12:13:30.631Z
+-->
 
-**轩辕镜像中文简介（在线版）：** [zoeyvid/nginx-proxy-manager — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zoeyvid/nginx-proxy-manager)
-
-含镜像标签、拉取命令、部署文档与相关推荐。
-
-[zoeyvid/nginx-proxy-manager Docker 镜像中文简介、标签列表与拉取命令](https://xuanyuan.cloud/zh/r/zoeyvid/nginx-proxy-manager)
+> **轩辕镜像中文简介（在线版）：** [zoeyvid/nginx-proxy-manager — 轩辕镜像中文简介](https://xuanyuan.cloud/zh/r/zoeyvid/nginx-proxy-manager "zoeyvid/nginx-proxy-manager Docker 镜像中文简介、标签列表与拉取命令")
+>
+> 含镜像标签、拉取命令、部署文档与相关推荐。
+>
+> https://xuanyuan.cloud/zh/r/zoeyvid/nginx-proxy-manager
 
 ## zoeyvid/npmplus 介绍  
 
