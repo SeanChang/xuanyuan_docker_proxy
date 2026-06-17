@@ -164,6 +164,308 @@ restore_docker_daemon_config() {
   return 0
 }
 
+# daemon.json 安全写入：备份、检测敏感项、用户确认、合并写入、重启 Docker
+DAEMON_DATA_ROOT=""
+DAEMON_STORAGE_DRIVER=""
+DAEMON_OTHER_KEYS=""
+DAEMON_HAS_CUSTOM_CONFIG=false
+DAEMON_ADD_SCRIPT_DNS=false
+
+_daemon_merge_tools_available() {
+  command -v jq &>/dev/null || command -v python3 &>/dev/null
+}
+
+backup_daemon_json() {
+  sudo mkdir -p /etc/docker
+  if [[ -f /etc/docker/daemon.json ]]; then
+    local ts
+    ts=$(date +%Y%m%d_%H%M%S)
+    sudo cp /etc/docker/daemon.json "/etc/docker/daemon.json.backup.${ts}"
+    echo "✅ 已备份现有配置到 /etc/docker/daemon.json.backup.${ts}"
+  fi
+}
+
+read_daemon_sensitive_keys() {
+  DAEMON_DATA_ROOT=""
+  DAEMON_STORAGE_DRIVER=""
+  DAEMON_OTHER_KEYS=""
+  DAEMON_HAS_CUSTOM_CONFIG=false
+
+  if [[ ! -f /etc/docker/daemon.json ]]; then
+    return 0
+  fi
+
+  local content
+  content=$(sudo cat /etc/docker/daemon.json 2>/dev/null || echo "{}")
+  if [[ -z "$content" || "$content" == "{}" || "$content" == "null" ]]; then
+    return 0
+  fi
+
+  if command -v jq &>/dev/null; then
+    DAEMON_DATA_ROOT=$(echo "$content" | jq -r '."data-root" // empty' 2>/dev/null)
+    DAEMON_STORAGE_DRIVER=$(echo "$content" | jq -r '."storage-driver" // empty' 2>/dev/null)
+    local key
+    while IFS= read -r key; do
+      [[ -z "$key" ]] && continue
+      case "$key" in
+        registry-mirrors|insecure-registries|dns) ;;
+        data-root|storage-driver) ;;
+        *)
+          if [[ -n "$DAEMON_OTHER_KEYS" ]]; then
+            DAEMON_OTHER_KEYS="${DAEMON_OTHER_KEYS}, ${key}"
+          else
+            DAEMON_OTHER_KEYS="$key"
+          fi
+          ;;
+      esac
+    done < <(echo "$content" | jq -r 'keys[]?' 2>/dev/null)
+  elif command -v python3 &>/dev/null; then
+    local py_out
+    py_out=$(echo "$content" | python3 -c "
+import json, sys
+try:
+    d = json.load(sys.stdin)
+except Exception:
+    sys.exit(0)
+if not isinstance(d, dict):
+    sys.exit(0)
+skip = {'registry-mirrors', 'insecure-registries', 'dns'}
+for k, v in d.items():
+    if k == 'data-root':
+        print('DATA_ROOT:' + str(v))
+    elif k == 'storage-driver':
+        print('STORAGE_DRIVER:' + str(v))
+    elif k not in skip:
+        print('OTHER:' + k)
+" 2>/dev/null)
+    while IFS= read -r line; do
+      case "$line" in
+        DATA_ROOT:*) DAEMON_DATA_ROOT="${line#DATA_ROOT:}" ;;
+        STORAGE_DRIVER:*) DAEMON_STORAGE_DRIVER="${line#STORAGE_DRIVER:}" ;;
+        OTHER:*)
+          local ok="${line#OTHER:}"
+          if [[ -n "$DAEMON_OTHER_KEYS" ]]; then
+            DAEMON_OTHER_KEYS="${DAEMON_OTHER_KEYS}, ${ok}"
+          else
+            DAEMON_OTHER_KEYS="$ok"
+          fi
+          ;;
+      esac
+    done <<< "$py_out"
+  else
+    if echo "$content" | grep -q '"data-root"'; then
+      DAEMON_DATA_ROOT=$(echo "$content" | grep -oE '"data-root"[[:space:]]*:[[:space:]]*"[^"]*"' | head -1 | sed -E 's/.*:[[:space:]]*"([^"]*)".*/\1/')
+    fi
+    if echo "$content" | grep -q '"storage-driver"'; then
+      DAEMON_STORAGE_DRIVER=$(echo "$content" | grep -oE '"storage-driver"[[:space:]]*:[[:space:]]*"[^"]*"' | head -1 | sed -E 's/.*:[[:space:]]*"([^"]*)".*/\1/')
+    fi
+    if echo "$content" | grep -qE '"(log-driver|live-restore|bip|graph|exec-opts|storage-opts|default-address-pools)"'; then
+      DAEMON_OTHER_KEYS="(检测到其它自定义项，请安装 jq 以查看详情)"
+    fi
+  fi
+
+  if [[ -n "$DAEMON_DATA_ROOT" || -n "$DAEMON_STORAGE_DRIVER" || -n "$DAEMON_OTHER_KEYS" ]]; then
+    DAEMON_HAS_CUSTOM_CONFIG=true
+  fi
+  return 0
+}
+
+prepare_script_dns_flag() {
+  DAEMON_ADD_SCRIPT_DNS=false
+  if [[ "$SKIP_DNS" != "true" ]]; then
+    if ! grep -q "nameserver" /etc/resolv.conf; then
+      DAEMON_ADD_SCRIPT_DNS=true
+    else
+      echo "ℹ️  检测到系统已配置 DNS，跳过 Docker DNS 配置以避免冲突"
+    fi
+  fi
+}
+
+confirm_apply_daemon_config() {
+  read_daemon_sensitive_keys
+
+  echo ""
+  echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  echo " 即将修改 /etc/docker/daemon.json"
+  echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  echo " 将更新：registry-mirrors、insecure-registries"
+  if [[ "$DAEMON_ADD_SCRIPT_DNS" == "true" ]]; then
+    echo " 将添加：dns（119.29.29.29 / 114.114.114.114）"
+  fi
+  echo ""
+  echo " ⚠️  应用配置后将重启 Docker 服务"
+  echo "     运行中的容器会停止，但不会删除镜像和容器数据"
+  echo "     可用 docker start 或 docker compose 重新拉起"
+  echo ""
+
+  if [[ "$DAEMON_HAS_CUSTOM_CONFIG" == "true" ]]; then
+    echo " 检测到现有 Docker 自定义配置，以下项将被保留："
+    [[ -n "$DAEMON_DATA_ROOT" ]] && echo "   data-root: $DAEMON_DATA_ROOT"
+    [[ -n "$DAEMON_STORAGE_DRIVER" ]] && echo "   storage-driver: $DAEMON_STORAGE_DRIVER"
+    [[ -n "$DAEMON_OTHER_KEYS" ]] && echo "   其它: $DAEMON_OTHER_KEYS"
+    echo ""
+    echo " 本脚本仅更新镜像加速相关项，不会改动 data-root 等存储路径。"
+    echo ""
+  fi
+
+  if ! _daemon_merge_tools_available; then
+    if [[ "$DAEMON_HAS_CUSTOM_CONFIG" == "true" ]]; then
+      echo "❌ 检测到自定义 Docker 配置，但系统缺少 jq / python3，无法安全合并。"
+      echo "💡 请安装 jq 后重试（如: sudo apt-get install -y jq），或手动编辑 /etc/docker/daemon.json"
+      return 1
+    fi
+    echo " ⚠️  系统缺少 jq / python3，将写入最小镜像配置（无其它自定义项时安全）。"
+    echo ""
+  fi
+
+  local _confirm
+  read -r -p "确认继续？[y/N]: " _confirm
+  if [[ ! "$_confirm" =~ ^[Yy]$ ]]; then
+    return 2
+  fi
+  return 0
+}
+
+write_merged_daemon_json() {
+  local mirror_list="$1"
+  local insecure_registries="$2"
+  local add_dns="$3"
+
+  backup_daemon_json
+
+  if ! _daemon_merge_tools_available && [[ "$DAEMON_HAS_CUSTOM_CONFIG" == "true" ]]; then
+    echo "❌ 无法安全写入：存在自定义配置但缺少 jq / python3。"
+    return 1
+  fi
+
+  local tmp_json
+  tmp_json=$(mktemp)
+
+  if command -v jq &>/dev/null; then
+    local base_json="{}"
+    if [[ -f /etc/docker/daemon.json ]]; then
+      base_json=$(sudo cat /etc/docker/daemon.json 2>/dev/null || echo "{}")
+    fi
+    if [[ "$add_dns" == "true" ]]; then
+      echo "$base_json" | jq --argjson mirrors "$mirror_list" --argjson insecure "$insecure_registries" \
+        '. + {"registry-mirrors": $mirrors, "insecure-registries": $insecure, "dns": ["119.29.29.29", "114.114.114.114"]}' \
+        > "$tmp_json" 2>/dev/null || { rm -f "$tmp_json"; echo "❌ jq 合并配置失败"; return 1; }
+    else
+      echo "$base_json" | jq --argjson mirrors "$mirror_list" --argjson insecure "$insecure_registries" \
+        '. + {"registry-mirrors": $mirrors, "insecure-registries": $insecure}' \
+        > "$tmp_json" 2>/dev/null || { rm -f "$tmp_json"; echo "❌ jq 合并配置失败"; return 1; }
+    fi
+  elif command -v python3 &>/dev/null; then
+    local existing_for_py="{}"
+    if [[ -f /etc/docker/daemon.json ]]; then
+      existing_for_py=$(sudo cat /etc/docker/daemon.json 2>/dev/null || echo "{}")
+    fi
+    local py_status
+    py_status=$(python3 - "$mirror_list" "$insecure_registries" "$add_dns" "$existing_for_py" <<'PYEOF'
+import json, sys
+mirrors = json.loads(sys.argv[1])
+insecure = json.loads(sys.argv[2])
+add_dns = sys.argv[3] == "true"
+try:
+    data = json.loads(sys.argv[4]) if sys.argv[4].strip() else {}
+except Exception:
+    data = {}
+if not isinstance(data, dict):
+    data = {}
+data["registry-mirrors"] = mirrors
+data["insecure-registries"] = insecure
+if add_dns:
+    data["dns"] = ["119.29.29.29", "114.114.114.114"]
+print(json.dumps(data, indent=2, ensure_ascii=False))
+PYEOF
+)
+    if [[ $? -ne 0 ]]; then
+      rm -f "$tmp_json"
+      echo "❌ python3 合并配置失败"
+      return 1
+    fi
+    echo "$py_status" > "$tmp_json"
+  else
+    if [[ "$add_dns" == "true" ]]; then
+      cat > "$tmp_json" <<EOF
+{
+  "registry-mirrors": $mirror_list,
+  "insecure-registries": $insecure_registries,
+  "dns": ["119.29.29.29", "114.114.114.114"]
+}
+EOF
+    else
+      cat > "$tmp_json" <<EOF
+{
+  "registry-mirrors": $mirror_list,
+  "insecure-registries": $insecure_registries
+}
+EOF
+    fi
+  fi
+
+  sudo cp "$tmp_json" /etc/docker/daemon.json
+  rm -f "$tmp_json"
+  echo "✅ 镜像配置已写入 /etc/docker/daemon.json（已合并保留现有自定义项）"
+  return 0
+}
+
+restart_docker_for_config() {
+  local SCRIPT_SYSTEMD_OK=false
+  if command -v systemctl &>/dev/null; then
+    local PID1_COMM
+    PID1_COMM=$(tr -d '\0' < /proc/1/comm 2>/dev/null || echo "")
+    if [[ "$PID1_COMM" == "systemd" ]] && systemctl show-environment &>/dev/null 2>&1; then
+      SCRIPT_SYSTEMD_OK=true
+    fi
+  fi
+
+  if [[ "$SCRIPT_SYSTEMD_OK" == "true" ]]; then
+    if systemctl is-active --quiet docker 2>/dev/null || systemctl list-unit-files docker.service &>/dev/null 2>&1; then
+      echo "正在重启 Docker 服务以应用新配置..."
+      sudo systemctl daemon-reexec || true
+      sudo systemctl restart docker || true
+      sleep 3
+      if systemctl is-active --quiet docker 2>/dev/null; then
+        echo "✅ Docker 服务重启成功，新配置已生效"
+      else
+        echo "❌ Docker 服务重启失败，请手动重启"
+      fi
+    else
+      echo "⚠️  Docker 服务未运行，配置将在下次启动时生效"
+    fi
+  else
+    echo "ℹ️  未检测到可用 systemd，请手动执行: sudo systemctl restart docker（或按需启动 dockerd）"
+  fi
+
+  echo ""
+  echo "ℹ️  重启 Docker 会停止运行中的容器，但不会删除镜像和容器数据。"
+  echo "💡 请执行 docker ps -a 和 docker images 确认；可用 docker start 或 compose 重新拉起服务。"
+}
+
+apply_docker_mirror_config() {
+  local mirror_list="$1"
+  local insecure_registries="$2"
+  local confirm_rc write_rc
+
+  prepare_script_dns_flag
+  confirm_apply_daemon_config
+  confirm_rc=$?
+  if [[ $confirm_rc -eq 2 ]]; then
+    echo "已取消，未修改 /etc/docker/daemon.json"
+    return 2
+  elif [[ $confirm_rc -ne 0 ]]; then
+    return 1
+  fi
+
+  if ! write_merged_daemon_json "$mirror_list" "$insecure_registries" "$DAEMON_ADD_SCRIPT_DNS"; then
+    return 1
+  fi
+
+  restart_docker_for_config
+  return 0
+}
+
 echo "=========================================="
 echo "🐳 欢迎使用轩辕镜像 Docker 一键安装配置脚本"
 echo "=========================================="
@@ -185,17 +487,30 @@ while true; do
         # 检查是否已经安装了 Docker
         if command -v docker &> /dev/null; then
             DOCKER_VERSION=$(docker --version | grep -oE '[0-9]+\.[0-9]+' | head -1)
+            MAJOR_VERSION=$(echo "$DOCKER_VERSION" | cut -d. -f1)
             echo ""
             echo "⚠️  检测到系统已安装 Docker 版本: $DOCKER_VERSION"
             echo ""
-            echo "⚠️  重要提示："
-            echo "   选择此选项将进行 Docker 升级或重装操作"
-            echo "   这可能会影响现有的 Docker 容器和数据"
-            echo "   建议在操作前备份重要的容器和数据"
-            echo ""
-            echo "请确认是否继续："
-            echo "1) 确认继续安装/升级 Docker"
-            echo "2) 返回选择菜单"
+            if [[ "$MAJOR_VERSION" -ge 20 ]]; then
+                echo "ℹ️  重要提示："
+                echo "   您的 Docker 版本已满足要求，本次将仅配置镜像加速"
+                echo "   不会重装或升级 Docker"
+                echo "   配置完成后将重启 Docker 服务，运行中的容器会停止"
+                echo "   镜像与容器数据不会删除，可用 docker start 或 compose 重新拉起"
+                echo ""
+                echo "请确认是否继续："
+                echo "1) 确认继续配置镜像加速"
+                echo "2) 返回选择菜单"
+            else
+                echo "⚠️  重要提示："
+                echo "   选择此选项将进行 Docker 升级或重装操作"
+                echo "   这可能会影响现有的 Docker 容器和数据"
+                echo "   建议在操作前备份重要的容器和数据"
+                echo ""
+                echo "请确认是否继续："
+                echo "1) 确认继续安装/升级 Docker"
+                echo "2) 返回选择菜单"
+            fi
             echo ""
             
             # 循环等待用户输入有效选择
@@ -204,7 +519,11 @@ while true; do
                 
                 if [[ "$confirm_choice" == "1" ]]; then
                     echo ""
-                    echo "✅ 用户确认继续，将进行 Docker 安装/升级..."
+                    if [[ "$MAJOR_VERSION" -ge 20 ]]; then
+                        echo "✅ 用户确认继续，将进行镜像加速配置..."
+                    else
+                        echo "✅ 用户确认继续，将进行 Docker 安装/升级..."
+                    fi
                     echo ""
                     break
                 elif [[ "$confirm_choice" == "2" ]]; then
@@ -347,15 +666,7 @@ EOF
         fi
         
         # 创建 Docker 配置目录
-        mkdir -p /etc/docker
-        
-        # 备份现有配置
-        if [ -f /etc/docker/daemon.json ]; then
-            sudo cp /etc/docker/daemon.json /etc/docker/daemon.json.backup.$(date +%Y%m%d_%H%M%S)
-            echo "✅ 已备份现有配置到 /etc/docker/daemon.json.backup.*"
-        fi
-        
-        # 写入新配置
+        sudo mkdir -p /etc/docker
         
         # 根据用户选择设置 insecure-registries
         if [[ "$choice" == "2" ]]; then
@@ -401,32 +712,14 @@ EOF
 )
         fi
 
-        cat <<EOF | tee /etc/docker/daemon.json
-{
-  "registry-mirrors": $mirror_list,
-  "insecure-registries": $insecure_registries
-}
-EOF
-
-# 如果没有禁用 DNS 配置且宿主机没有配置 DNS，则添加 DNS 配置
-if [[ "$SKIP_DNS" != "true" ]]; then
-  if grep -q "nameserver" /etc/resolv.conf; then
-    echo "ℹ️  检测到系统已配置 DNS，跳过 Docker DNS 配置以避免冲突"
-  else
-    # 使用 jq 或 python 来修改 json 文件，避免直接覆盖
-    if command -v jq &> /dev/null; then
-      tmp_json=$(mktemp)
-      sudo jq '. + {"dns": ["119.29.29.29", "114.114.114.114"]}' /etc/docker/daemon.json > "$tmp_json" && sudo mv "$tmp_json" /etc/docker/daemon.json
-      echo "✅ 已添加 Docker DNS 配置"
-    else
-      # 简单的 sed 替换作为后备方案
-      sudo sed -i 's/}/,\n  "dns": ["119.29.29.29", "114.114.114.114"]\n}/' /etc/docker/daemon.json
-      echo "✅ 已添加 Docker DNS 配置"
-    fi
-  fi
-fi
+        apply_docker_mirror_config "$mirror_list" "$insecure_registries"
+        apply_rc=$?
+        if [[ $apply_rc -eq 2 ]]; then
+            exit 0
+        elif [[ $apply_rc -ne 0 ]]; then
+            exit 1
+        fi
         
-        echo "✅ 镜像配置已更新"
         echo ""
         echo "当前配置的镜像源："
         if [[ "$choice" == "2" ]]; then
@@ -446,25 +739,6 @@ fi
         fi
         echo ""
         
-        # 如果 Docker 服务正在运行，重启以应用配置
-        if systemctl is-active --quiet docker 2>/dev/null; then
-            echo "正在重启 Docker 服务以应用新配置..."
-            systemctl daemon-reexec || true
-            systemctl restart docker || true
-            
-            # 等待服务启动
-            sleep 3
-            
-            if systemctl is-active --quiet docker; then
-                echo "✅ Docker 服务重启成功，新配置已生效"
-            else
-                echo "❌ Docker 服务重启失败，请手动重启"
-            fi
-        else
-            echo "⚠️  Docker 服务未运行，配置将在下次启动时生效"
-        fi
-        
-        echo ""
         echo "🎉 镜像配置完成！"
         exit 0
     elif [[ "$mode_choice" == "3" ]]; then
@@ -890,26 +1164,13 @@ EOF
 )
         fi
 
-        # 准备 DNS 配置字符串
-dns_config=""
-if [[ "$SKIP_DNS" != "true" ]]; then
-  if ! grep -q "nameserver" /etc/resolv.conf; then
-     dns_config=',
-  "dns": ["119.29.29.29", "114.114.114.114"]'
-  else
-     echo "ℹ️  检测到系统已配置 DNS，跳过 Docker DNS 配置以避免冲突"
-  fi
-fi
-
-cat <<EOF | sudo tee /etc/docker/daemon.json > /dev/null
-{
-  "registry-mirrors": $mirror_list,
-  "insecure-registries": $insecure_registries$dns_config
-}
-EOF
-        
-        sudo systemctl daemon-reexec || true
-        sudo systemctl restart docker || true
+        apply_docker_mirror_config "$mirror_list" "$insecure_registries"
+        apply_rc=$?
+        if [[ $apply_rc -eq 2 ]]; then
+            exit 0
+        elif [[ $apply_rc -ne 0 ]]; then
+            exit 1
+        fi
         
         echo ">>> [6/8] 安装完成！"
         echo "🎉Docker 镜像已配置完成"
@@ -1056,26 +1317,13 @@ EOF
 )
         fi
 
-        # 准备 DNS 配置字符串
-dns_config=""
-if [[ "$SKIP_DNS" != "true" ]]; then
-  if ! grep -q "nameserver" /etc/resolv.conf; then
-     dns_config=',
-  "dns": ["119.29.29.29", "114.114.114.114"]'
-  else
-     echo "ℹ️  检测到系统已配置 DNS，跳过 Docker DNS 配置以避免冲突"
-  fi
-fi
-
-cat <<EOF | sudo tee /etc/docker/daemon.json > /dev/null
-{
-  "registry-mirrors": $mirror_list,
-  "insecure-registries": $insecure_registries$dns_config
-}
-EOF
-        
-        sudo systemctl daemon-reexec || true
-        sudo systemctl restart docker || true
+        apply_docker_mirror_config "$mirror_list" "$insecure_registries"
+        apply_rc=$?
+        if [[ $apply_rc -eq 2 ]]; then
+            exit 0
+        elif [[ $apply_rc -ne 0 ]]; then
+            exit 1
+        fi
         
         echo ">>> [6/8] 安装完成！"
         echo "🎉Docker 镜像已配置完成"
@@ -5797,26 +6045,13 @@ EOF
 )
         fi
 
-        # 准备 DNS 配置字符串
-dns_config=""
-if [[ "$SKIP_DNS" != "true" ]]; then
-  if ! grep -q "nameserver" /etc/resolv.conf; then
-     dns_config=',
-  "dns": ["119.29.29.29", "114.114.114.114"]'
-  else
-     echo "ℹ️  检测到系统已配置 DNS，跳过 Docker DNS 配置以避免冲突"
-  fi
-fi
-
-cat <<EOF | sudo tee /etc/docker/daemon.json > /dev/null
-{
-  "registry-mirrors": $mirror_list,
-  "insecure-registries": $insecure_registries$dns_config
-}
-EOF
-        
-        sudo systemctl daemon-reexec || true
-        sudo systemctl restart docker || true
+        apply_docker_mirror_config "$mirror_list" "$insecure_registries"
+        apply_rc=$?
+        if [[ $apply_rc -eq 2 ]]; then
+            exit 0
+        elif [[ $apply_rc -ne 0 ]]; then
+            exit 1
+        fi
         
         echo ">>> [6/8] 安装完成！"
         echo "🎉Docker 镜像已配置完成"
@@ -7326,23 +7561,14 @@ EOF
 )
 fi
 
-# 准备 DNS 配置字符串
-dns_config=""
-if [[ "$SKIP_DNS" != "true" ]]; then
-  if ! grep -q "nameserver" /etc/resolv.conf; then
-     dns_config=',
-  "dns": ["119.29.29.29", "114.114.114.114"]'
-  else
-     echo "ℹ️  检测到系统已配置 DNS，跳过 Docker DNS 配置以避免冲突"
-  fi
+apply_docker_mirror_config "$mirror_list" "$insecure_registries"
+apply_rc=$?
+if [[ $apply_rc -eq 2 ]]; then
+  echo "已取消安装配置"
+  exit 0
+elif [[ $apply_rc -ne 0 ]]; then
+  exit 1
 fi
-
-cat <<EOF | sudo tee /etc/docker/daemon.json > /dev/null
-{
-  "registry-mirrors": $mirror_list,
-  "insecure-registries": $insecure_registries$dns_config
-}
-EOF
 
 # 避免在容器/无 systemd 环境反复调用 systemctl 导致 “PID 1 / bus” 报错
 SCRIPT_SYSTEMD_OK=false
@@ -7353,25 +7579,12 @@ if command -v systemctl &>/dev/null; then
   fi
 fi
 
-if [[ "$SCRIPT_SYSTEMD_OK" == "true" ]]; then
-  sudo systemctl daemon-reexec || true
-  sudo systemctl restart docker || true
-else
-  echo "ℹ️  未检测到可用 systemd，跳过 systemctl 重载 Docker（容器或无 dbus 环境常见）"
-fi
-
 echo ">>> [6/8] 安装完成！"
 echo "🎉Docker 镜像已配置完成"
 echo "轩辕镜像 · 专业版 - 开发者首选的专业 Docker 镜像高效稳定拉取服务"
 echo "官方网站: https://xuanyuan.cloud/"
 
-echo ">>> [7/8] 重载 Docker 配置并重启服务..."
-if [[ "$SCRIPT_SYSTEMD_OK" == "true" ]]; then
-  sudo systemctl daemon-reexec || true
-  sudo systemctl restart docker || true
-else
-  echo "ℹ️  无 systemd 时请在完整系统执行: sudo systemctl restart docker，或手动: sudo dockerd &"
-fi
+echo ">>> [7/8] 验证 Docker 服务..."
 
 # 等待 Docker 服务完全启动
 echo "等待 Docker 服务启动..."
