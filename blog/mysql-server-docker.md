@@ -4,8 +4,6 @@
 
 *分类: Docker,MySQL Server | 标签: mysql-server,docker,部署教程 | 发布时间: 2025-11-26 08:06:50*
 
-> MySQL是世界上最流行的开源关系型数据库管理系统，由Oracle公司开发和维护。它以高性能、可靠性和易用性著称，广泛应用于从个人网站到企业级应用的各种场景。MySQL支持多用户、多线程操作，提供了丰富的SQL功能和强大的数据处理能力，同时具备良好的可扩展性和安全性。
-
 ## 概述
 
 MySQL是世界上最流行的开源关系型数据库管理系统，由Oracle公司开发和维护。它以高性能、可靠性和易用性著称，广泛应用于从个人网站到企业级应用的各种场景。MySQL支持多用户、多线程操作，提供了丰富的SQL功能和强大的数据处理能力，同时具备良好的可扩展性和安全性。
@@ -44,7 +42,9 @@ docker pull xxx.xuanyuan.run/mysql/mysql-server:latest
 # docker pull xxx.xuanyuan.run/mysql/mysql-server:5.7
 ```
 
-> 说明：镜像拉取过程中，轩辕访问支持能力会自动从国内节点获取缓存镜像，通常可达到MB/s级下载访问表现，大幅优于直接从Docker Hub拉取。
+> 说明：`xxx.xuanyuan.run` 请替换为你的专属域名，或使用登录拉取域名 `docker.xuanyuan.run`（如 `docker pull docker.xuanyuan.run/mysql/mysql-server:latest`）。`docker pull` 与 `docker run` 须使用同一完整镜像名。
+
+> 镜像拉取过程中，轩辕访问支持能力会自动从国内节点获取缓存镜像，通常可达到MB/s级下载访问表现，大幅优于直接从Docker Hub拉取。
 
 ### 镜像验证
 
@@ -83,7 +83,11 @@ docker run --name=mysql-server -d \
 ```bash
 # 创建数据存储目录
 mkdir -p /data/mysql/{data,conf,logs}
-chmod -R 777 /data/mysql  # 实际生产环境应根据安全需求调整权限
+# SELinux 场景（CentOS/Rocky）需设置目录标签
+# chcon -Rt svirt_sandbox_file_t /data/mysql
+
+# 首次部署：数据目录必须为空，否则 MySQL 初始化会失败（详见「故障排查」）
+ls -la /data/mysql/data   # 应仅有 . 和 ..，无其他文件
 
 # 启动容器（生产环境配置）
 docker run --name=mysql-server -d \
@@ -102,12 +106,14 @@ docker run --name=mysql-server -d \
 关键参数详解：
 - `--restart=always`：容器退出时自动重启，确保服务高可用
 - `-v /data/mysql/data:/var/lib/mysql`：将MySQL数据目录挂载到主机，实现数据持久化
-- `-v /data/mysql/conf:/etc/my.cnf.d`：挂载配置文件目录，便于自定义MySQL配置
+- `-v /data/mysql/conf:/etc/my.cnf.d`：挂载配置文件目录，便于自定义MySQL配置（`mysql/mysql-server` 镜像使用 `/etc/my.cnf.d`；若使用 Docker 官方的 `library/mysql` 镜像，配置目录为 `/etc/mysql/conf.d`，勿混用）
 - `-v /data/mysql/logs:/var/log/mysql`：挂载日志目录，方便日志收集与分析
 - `-e MYSQL_ROOT_PASSWORD="YourStrongPassword123!"`：设置root用户密码（生产环境务必使用强密码）
 - `-e MYSQL_INNODB_BUFFER_POOL_SIZE=1G`：设置InnoDB缓冲池大小（通常建议设为物理内存的50%）
 - `--memory=2G`：限制容器最大使用内存为2GB
 - `--cpus=1`：限制容器使用1个CPU核心
+
+> **权限说明**：`mysql/mysql-server` 容器内运行用户 UID 通常为 **999**（`mysql` 用户），entrypoint 会自动处理空数据目录权限，**一般无需**手动 `chmod 777` 或 `chown 1000:1000`。
 
 ### 自定义配置（通过配置文件）
 
@@ -133,17 +139,27 @@ docker restart mysql-server
 
 ### 容器状态检查
 
-容器启动后，首先检查运行状态：
+容器启动后，首先检查运行状态（**执行 `docker exec` 前必须先确认容器在运行**）：
 
 ```bash
-# 查看容器运行状态
+# 查看容器运行状态（STATUS 应为 Up）
 docker ps | grep mysql-server
 
-# 健康状态检查（MySQL容器内置健康检查机制）
+# 若未显示或状态为 Exited，查看退出原因
+docker ps -a | grep mysql-server
+docker logs mysql-server
+docker inspect mysql-server --format='{{.State.ExitCode}} {{.State.Error}}'
+
+# 容器名冲突时，先删除旧容器再重建
+# docker rm -f mysql-server
+
+# 健康状态检查（MySQL容器内置健康检查机制，容器运行后可用）
 docker inspect --format='{{.State.Health.Status}}' mysql-server
 
 # 预期输出：healthy（表示MySQL服务已就绪）
 ```
+
+若提示 `container ... is not running`，说明容器已退出，请查看日志并按「故障排查」章节处理，不要直接 `docker exec`。
 
 ### 日志查看与初始密码获取
 
@@ -249,11 +265,7 @@ docker rm mysql-server
 # 2. 使用相同的数据卷重新创建容器
 docker run --name=mysql-server -d \
   -p 3306:3306 \
-<<<<<<< HEAD
   -v /data/mysql/data:/var/lib/mysql \
-=======
-  -v /data/mysql/data:/var/lib/mysql \
->>>>>>> 5c20320
   -e MYSQL_ROOT_PASSWORD="YourStrongPassword123!" \
   xxx.xuanyuan.run/mysql/mysql-server:latest
 
@@ -268,25 +280,31 @@ docker exec -it mysql-server mysql -uroot -p"YourStrongPassword123!" -e "USE tes
 ### 数据安全
 
 1. **数据备份策略**
-   ```bash
-   # 创建定期备份脚本（示例：每日凌晨2点备份）
-   cat > /data/mysql/backup.sh << EOF
-   #!/bin/bash
-   BACKUP_DIR="/data/mysql/backups"
-   TIMESTAMP=\$(date +%Y%m%d_%H%M%S)
-   mkdir -p \$BACKUP_DIR
-   docker exec mysql-server mysqldump -uroot -p"YourStrongPassword123!" --all-databases > \$BACKUP_DIR/full_backup_\$TIMESTAMP.sql
-   # 保留最近30天备份
-   find \$BACKUP_DIR -name "full_backup_*.sql" -mtime +30 -delete
-   EOF
 
-   # 添加执行权限并设置定时任务
-   chmod +x /data/mysql/backup.sh
-   crontab -e
-   # 添加以下行：
-   # 0 2 * * * /data/mysql/backup.sh
-   EOF
-   ```
+创建定期备份脚本（示例：每日凌晨 2 点备份）：
+
+```bash
+cat > /data/mysql/backup.sh << 'EOF'
+#!/bin/bash
+BACKUP_DIR="/data/mysql/backups"
+TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+mkdir -p "$BACKUP_DIR"
+docker exec mysql-server mysqldump -uroot -p"YourStrongPassword123!" --all-databases > "$BACKUP_DIR/full_backup_${TIMESTAMP}.sql"
+find "$BACKUP_DIR" -name "full_backup_*.sql" -mtime +30 -delete
+EOF
+
+chmod +x /data/mysql/backup.sh
+```
+
+配置定时任务：
+
+```bash
+crontab -e
+# 添加以下行（每日凌晨 2 点执行）：
+# 0 2 * * * /data/mysql/backup.sh >> /data/mysql/backups/backup.log 2>&1
+```
+
+> 备份文件输出到宿主机 `/data/mysql/backups`，**勿**将备份目录挂载到容器内 `/var/lib/mysql` 子路径，否则会导致数据目录非空、MySQL 初始化失败。
 
 2. **密码管理**
    - 避免在命令行直接暴露密码，生产环境建议使用Docker Secrets或环境变量文件
@@ -369,14 +387,24 @@ docker exec -it mysql-server mysql -uroot -p"YourStrongPassword123!" -e "USE tes
 **症状**：`docker ps`未显示容器，或状态为Exited
 
 **排查步骤**：
-1. 查看启动日志：
+1. 查看启动日志与退出码：
    ```bash
    docker logs mysql-server
+   docker inspect mysql-server --format='{{.State.ExitCode}} {{.State.Error}}'
    ```
 2. 常见原因及解决：
-   - 端口冲突：`Bind for 0.0.0.0:3306 failed`，需更换主机端口或停止占用端口的进程
-   - 数据目录权限问题：`Permission denied`，需确保宿主机`/data/mysql/data`目录权限正确（建议设置为777，生产环境可根据安全需求调整用户组）
-   - 配置文件错误：检查`/data/mysql/conf`目录下的配置文件语法
+   - **端口冲突**：`Bind for 0.0.0.0:3306 failed`，需更换主机端口或停止占用端口的进程
+   - **数据目录非空**：日志出现 `data directory has files in it` 或 `/var/lib/mysql/ is unusable`，说明 `/data/mysql/data` 在首次启动时不为空（含上次失败残留）。无重要数据时：
+     ```bash
+     docker rm -f mysql-server
+     rm -rf /data/mysql/data/*
+     ls -la /data/mysql/data   # 确认仅剩 . 和 ..
+     # 重新 docker run
+     ```
+   - **CPU 不支持 x86-64-v2**：日志出现 `Fatal glibc error: CPU does not support x86-64-v2`，ExitCode 常为 127。较新的 MySQL 8.0 镜像要求 x86-64-v2 指令集。排查：`grep -m1 flags /proc/cpuinfo`（若无 `sse4_2`、`popcnt` 等即不支持）。解决：换 `xxx.xuanyuan.run/mysql/mysql-server:5.7`，或虚拟机中将 CPU 类型改为 `host` / `x86-64-v2-AES` 后重启 VM
+   - **数据目录权限问题**：`Permission denied`。优先确认数据目录为空；SELinux 场景执行 `chcon -Rt svirt_sandbox_file_t /data/mysql`。一般无需 `chmod 777` 或 `chown 1000:1000`（容器内 mysql 用户 UID 为 999，entrypoint 会自动处理空目录）
+   - **配置文件错误**：检查`/data/mysql/conf`目录下的配置文件语法
+   - **容器名冲突**：重复 `docker run --name=mysql-server` 报 `name already in use`，先 `docker rm -f mysql-server` 再重试
 
 ### 连接失败
 
