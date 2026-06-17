@@ -3,7 +3,7 @@
 ## 📚 目录
 
 ### 🤖 AI 辅助使用
-- [让 AI 帮你使用轩辕镜像](#让-ai-帮你使用轩辕镜像)
+- [让 AI 帮你使用轩辕镜像？](#让-ai-帮你使用轩辕镜像)
 
 ### 🚀 一键安装
 - [Linux 一键安装 Docker + 轩辕镜像加速](#linux-一键安装-docker--轩辕镜像加速)
@@ -281,22 +281,26 @@
 - [Linux Kernel CVE-2026-31431 安全通告](./blog/linux-kernel-copy-fail-cve-2026-31431.md)
 - [NGINX CVE-2026-42945 安全通告](./blog/nginx-http-cve-2026-42945.md)
 
-## 让 AI 帮你使用轩辕镜像
+## 让 AI 帮你使用轩辕镜像？
 
-如果你用 [DeepSeek](https://chat.deepseek.com/)、[元宝 AI](https://yuanbao.tencent.com/)、[ChatGPT](https://chatgpt.com/)、Copilot、[Claude](https://claude.ai/)、[Gemini](https://gemini.google.com/) 等 AI 代为编写轩辕镜像的 `docker pull`、修改 compose 镜像地址，或排查拉取失败等问题，请让 AI **先读规则再动手**，只要在 AI 对话里直接发送下面这句话即可：
+<details open>
+<summary>点击收起说明</summary>
+
+如果你使用 [DeepSeek](https://chat.deepseek.com/)、[元宝 AI](https://yuanbao.tencent.com/)、Copilot、[ChatGPT](https://chatgpt.com/) 等 AI 工具，协助配置轩辕镜像、编写 `docker pull` 命令、修改 Docker Compose 镜像地址、配置镜像加速、排查镜像拉取失败、分析报错日志等问题，请先让 AI 阅读并遵守轩辕镜像的规则文档。
+
+只需在 AI 对话中先发送下面这句话即可：
 
 ```
-生成 docker pull、修改 compose 的 image，或排查拉取失败前，请先阅读并严格遵守 https://xuanyuan.cloud/agents.md 中的规则。
+请先完整阅读并严格遵守以下文档中的全部规则与要求：
+
+https://xuanyuan.cloud/agents.md
+
+在未充分阅读并理解该文档前，不要生成任何命令、配置、修改建议、故障排查方案或技术回答。后续所有输出都必须严格以该文档中的规范为最高优先级执行。
 ```
 
-**使用建议：**
+[查看 agents.md 用法指南与完整示范。](https://xuanyuan.cloud/usage/agents) 国内用户首推 [元宝 AI](https://yuanbao.tencent.com/)、[DeepSeek](https://chat.deepseek.com/) 的深度思考模式，不推荐豆包 AI；Cursor 等编辑器可在对话 @ [https://xuanyuan.cloud/agents.md](https://xuanyuan.cloud/agents.md)，或加入 User Rules。 若 AI 无法访问外链，可 [打开说明文档](https://xuanyuan.cloud/agents.md) 复制全文粘贴。文档会随站点更新，复制内容可能过期，建议定期检查。
 
-- **国内用户**首推 [DeepSeek](https://chat.deepseek.com/)、[元宝 AI](https://yuanbao.tencent.com/) 的深度思考模式，不推荐豆包 AI
-- **国外用户**可用 [ChatGPT](https://chatgpt.com/)、[Claude](https://claude.ai/)、[Gemini](https://gemini.google.com/)、Copilot 等；需能访问 `xuanyuan.cloud` 外链，或自行复制 [agents.md](https://xuanyuan.cloud/agents.md) 全文粘贴
-- Cursor 等编辑器可在对话 @ [https://xuanyuan.cloud/agents.md](https://xuanyuan.cloud/agents.md)，或加入 User Rules
-- 若 AI 无法访问外链，可[打开说明文档](https://xuanyuan.cloud/agents.md)复制全文粘贴；文档会随站点更新，复制内容可能过期，建议定期检查
-
-机器可读规则全文：[https://xuanyuan.cloud/agents.md](https://xuanyuan.cloud/agents.md)
+</details>
 
 本仓库 [`docker-images-zh/`](./docker-images-zh/) 目录同步收录 **950+** 个热门镜像的中文简介（含标签说明、拉取示例与轩辕在线页链接），可按镜像名检索；完整索引见 [Docker 镜像中文简介库](./docker-images-zh/README.md)。
 
