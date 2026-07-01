@@ -2,7 +2,7 @@
 
 ![SWEBENCH-VERIFIED Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-swebench-verified.png)
 
-*分类: SWEBENCH-VERIFIED,人工智能 | 标签: swebench-verified,人工智能 | 发布时间: 2026-01-21 16:05:44*
+*分类: Docker部署教程 | 标签: swebench-verified,人工智能 | 发布时间: 2026-01-21 16:05:44*
 
 > SWEBENCH-VERIFIED（镜像名称：`slimshetty/swebench-verified`）是由R2E-Gym项目核心贡献者发布的容器化应用，专为SWE-Bench Verified基准提供预配置的运行环境。该镜像封装了基准数据集、测试工具与适配的运行时环境，旨在简化AI编程助手性能验证、基准工具开发与实验复现流程，避免手动搭建依赖的复杂性，确保实验结果的一致性与可复现性。
 

@@ -2,7 +2,7 @@
 
 ![phpMyAdmin Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-phpmyadmin.png)
 
-*分类: Docker,phpMyAdmin | 标签: phpmyadmin,docker,部署教程 | 发布时间: 2025-11-11 07:52:48*
+*分类: Docker部署教程 | 标签: phpmyadmin,docker,部署教程 | 发布时间: 2025-11-11 07:52:48*
 
 > phpMyAdmin是一款用PHP编写的免费开源工具，旨在通过Web界面管理MySQL和MariaDB数据库。它支持数据库管理、表操作、用户权限配置等多种功能，同时提供SQL语句直接执行能力，是Web开发者和数据库管理员的常用工具。
 

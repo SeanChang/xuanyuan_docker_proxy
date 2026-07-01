@@ -2,7 +2,7 @@
 
 ![OBPROXY-CE Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-oceanbase-obproxy-ce.png)
 
-*分类: Docker,OBPROXY-CE | 标签: obproxy-ce,docker,部署教程 | 发布时间: 2025-11-26 05:50:11*
+*分类: Docker部署教程 | 标签: obproxy-ce,docker,部署教程 | 发布时间: 2025-11-26 05:50:11*
 
 > OceanBase Database Proxy（简称OBPROXY-CE）是OceanBase数据库生态中的专用代理服务器，作为客户端与OceanBase集群之间的中间层，承担着SQL请求路由、负载均衡、连接管理、高可用切换等核心功能。通过OBPROXY-CE，用户可以透明地访问OceanBase集群，无需关心后端OBServer节点的具体分布和状态，显著简化了数据库集群的运维复杂度。
 

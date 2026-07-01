@@ -2,7 +2,7 @@
 
 ![Docker 部署 Open WebUI + Ollama 完整教程（Windows / Linux 通用）—— 打造自己的本地OpenAI](https://img.xuanyuan.dev/docker/blog/docker-open-webui-ollama-1.png)
 
-*分类: OpenWebUI,Ollama,部署教程,部署方案,一键部署 | 标签: OpenWebUI,Ollama,部署教程,部署方案,一键部署 | 发布时间: 2026-04-23 15:06:47*
+*分类: Docker部署教程 | 标签: OpenWebUI,Ollama,部署教程,部署方案,一键部署 | 发布时间: 2026-04-23 15:06:47*
 
 > 无需复杂配置！Docker一键部署Open WebUI+Ollama，Windows/Linux通用，新手也能轻松上手。无需依赖云端，打造专属本地OpenAI，实现可视化聊天交互，兼顾数据隐私，还附带常见问题排查，全程步骤清晰，快速拥有本地大模型平台！
 

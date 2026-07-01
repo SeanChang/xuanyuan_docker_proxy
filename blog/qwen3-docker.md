@@ -2,7 +2,7 @@
 
 ![QWEN3 企业级 Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-qwen3.png)
 
-*分类: 人工智能,qwen3,Ai,大模型 | 标签: qwen3,人工智能,Ai,大模型 | 发布时间: 2026-01-10 16:06:23*
+*分类: Docker部署教程 | 标签: qwen3,人工智能,Ai,大模型 | 发布时间: 2026-01-10 16:06:23*
 
 > QWEN3是Qwen LLM系列的最新一代大语言模型，专为顶级编码、数学、推理和语言任务设计。该模型支持密集型（Dense）和混合专家（Mixture-of-Experts, MoE）两种架构，提供从0.6B到235B-A22B等多种规模的模型变体，适用于从轻型应用到大规模研究的各种部署场景。
 

@@ -2,7 +2,7 @@
 
 ![用 Docker 一键部署 Filestash：打造你的全能 Web 文件管理器](https://img.xuanyuan.dev/docker/blog/docker-filestash.png)
 
-*分类: Filestash,部署教程,文件管理 | 标签: Filestash,部署教程,文件管理 | 发布时间: 2026-04-23 02:15:44*
+*分类: Docker部署教程 | 标签: Filestash,部署教程,文件管理 | 发布时间: 2026-04-23 02:15:44*
 
 > 还在为不同存储协议装一堆客户端？SFTP、FTP、WebDAV、S3、云盘……每次都要切换工具，传个文件像“打地鼠”？今天给大家安利一个神器——Filestash，一个开源的 Web 文件管理器，把所有存储协议都收进浏览器里，用 Docker 几分钟就能搭好，运维、开发、日常用都超爽！
 

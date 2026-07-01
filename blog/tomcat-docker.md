@@ -2,7 +2,7 @@
 
 ![TOMCAT Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-tomcat.png)
 
-*分类: Docker,TOMCAT | 标签: tomcat,docker,部署教程 | 发布时间: 2025-11-11 07:59:27*
+*分类: Docker部署教程 | 标签: tomcat,docker,部署教程 | 发布时间: 2025-11-11 07:59:27*
 
 > Apache Tomcat（简称Tomcat）是由Apache软件基金会开发的开源Web服务器和Servlet容器，实现了Java Servlet和JavaServer Pages（JSP）规范，为Java Web应用提供了"纯Java"的HTTP运行环境。Tomcat以其轻量、稳定、可扩展的特性，广泛应用于企业级Java应用部署。
 

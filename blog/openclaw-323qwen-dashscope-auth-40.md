@@ -2,7 +2,7 @@
 
 ![OpenClaw 3.23：术后修复完成——Qwen DashScope 全球端点支持、Auth 凭证系统大修及40+稳定性修复](https://openclaw.ai/blog/openclaw-logo-text.png)
 
-*分类: OpenClaw,AI,部署教程 | 标签: OpenClaw,AI,部署教程,飞书,钉钉,QQ | 发布时间: 2026-03-25 06:09:15*
+*分类: Docker部署教程 | 标签: OpenClaw,AI,部署教程,飞书,钉钉,QQ | 发布时间: 2026-03-25 06:09:15*
 
 > 3.22版本曾推翻旧架构、重建底层基座：12项不兼容更新（Breaking Changes）、全新插件注册中心、30个安全补丁，这既是OpenClaw历史上规模最大的版本发布，也是问题暴露最多的一次。
 

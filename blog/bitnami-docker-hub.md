@@ -2,7 +2,7 @@
 
 ![重要公告：Bitnami 部分镜像 Docker Hub 免费获取通道变更，替代拉取方案看这篇就够了](https://img.xuanyuan.dev/docker/blog/docker-bitnami.png)
 
-*分类: Bitnami,公告,Docker | 标签: Bitnami,公告,Docker | 发布时间: 2026-02-23 04:37:37*
+*分类: Docker部署教程 | 标签: Bitnami,公告,Docker | 发布时间: 2026-02-23 04:37:37*
 
 > 近期Bitnami官方对旗下镜像分发策略进行重大调整，原可在Docker Hub免费获取的Bitnami核心安全镜像（覆盖Kafka、Redis、MySQL、Elasticsearch等全品类），现已全面取消免费下载服务，这将直接影响大家日常的开发、测试和项目部署工作。为了让大家快速找到可落地的解决方案，我们整理了清晰的替代拉取方法、场景化使用建议，小白也能一步上手，建议收藏备用！
 

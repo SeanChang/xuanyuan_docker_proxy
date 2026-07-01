@@ -2,7 +2,7 @@
 
 ![PADDLEDETECTION Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-paddlepaddle.png)
 
-*分类: Docker,PADDLEDETECTION | 标签: paddledetection,docker,部署教程 | 发布时间: 2025-12-03 05:49:55*
+*分类: Docker部署教程 | 标签: paddledetection,docker,部署教程 | 发布时间: 2025-12-03 05:49:55*
 
 > PADDLEDETECTION是百度飞桨(PaddlePaddle)推出的目标检测与识别工具套件，集成了多种主流目标检测算法，提供丰富的预训练模型和便捷的部署方案。该套件广泛应用于工业质检、智能监控、自动驾驶等领域，支持从模型训练到推理部署的全流程任务。
 

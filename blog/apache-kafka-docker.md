@@ -2,7 +2,7 @@
 
 ![Apache Kafka Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-kafka.png)
 
-*分类: Docker,Kafka | 标签: kafka,docker,部署教程 | 发布时间: 2025-12-03 08:04:30*
+*分类: Docker部署教程 | 标签: kafka,docker,部署教程 | 发布时间: 2025-12-03 08:04:30*
 
 > Apache Kafka是一个开源的分布式事件流平台，旨在高吞吐量、低延迟地处理实时数据流。它最初由LinkedIn开发，2011年开源，2012年成为Apache Software Foundation顶级项目。Kafka广泛应用于流处理、数据集成、发布/订阅消息传递等场景，全球数千家组织使用它来支持关键业务的实时应用。
 

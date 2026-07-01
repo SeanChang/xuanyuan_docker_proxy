@@ -2,7 +2,7 @@
 
 ![Home Assistant Docker 部署规范：多场景架构设计与安全边界实践](https://img.xuanyuan.dev/docker/blog/docker-home-assistant.png)
 
-*分类: Docker,Home Assistant | 标签: home-assistant,docker,部署教程 | 发布时间: 2025-10-03 07:50:22*
+*分类: Docker部署教程 | 标签: home-assistant,docker,部署教程 | 发布时间: 2025-10-03 07:50:22*
 
 > 本文详细介绍在Docker中部署Home Assistant的全流程，含从轩辕镜像查看详情、多种方式拉取镜像，提供快速部署、持久化挂载（推荐）、docker-compose部署三种方案，还包含结果验证方法与常见问题解决办法。
 

@@ -2,7 +2,7 @@
 
 ![Nacos Server Docker 部署完整教程：从入门到精通](https://img.xuanyuan.dev/docker/blog/docker-nacos.png)
 
-*分类: Docker,Nacos | 标签: nacos,docker,部署教程 | 发布时间: 2025-10-10 02:54:08*
+*分类: Docker部署教程 | 标签: nacos,docker,部署教程 | 发布时间: 2025-10-10 02:54:08*
 
 > Nacos 让服务之间不用硬编码对方的 IP，就算服务地址变了，也不用修改代码，Nacos 会自动同步最新信息——这就是“服务发现”的核心价值。
 

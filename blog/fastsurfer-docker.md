@@ -2,7 +2,7 @@
 
 ![FastSurfer Docker容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-fastsurfer.png)
 
-*分类: Docker,FastSurfer | 标签: fastsurfer,docker,部署教程 | 发布时间: 2025-12-14 10:41:52*
+*分类: Docker部署教程 | 标签: fastsurfer,docker,部署教程 | 发布时间: 2025-12-14 10:41:52*
 
 > FastSurfer 是一款基于深度学习的快速、准确的人类脑MRI分析 pipeline，提供与FreeSurfer完全兼容的体积和基于表面的厚度分析功能，支持亚毫米分辨率，并能对小脑、下丘脑等神经解剖结构进行细分。作为容器化应用，FastSurfer通过Docker镜像实现了跨平台快速部署，为神经影像研究提供了高效可靠的解决方案。
 

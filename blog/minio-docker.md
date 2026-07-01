@@ -2,7 +2,7 @@
 
 ![🚀 MinIO Docker 部署全指南](https://img.xuanyuan.dev/docker/blog/docker-minio.png)
 
-*分类: Docker,MinIO | 标签: MinIO,docker,部署教程 | 发布时间: 2025-10-07 02:58:22*
+*分类: Docker部署教程 | 标签: MinIO,docker,部署教程 | 发布时间: 2025-10-07 02:58:22*
 
 > MinIO 是一款**高性能对象存储系统**，完全兼容 Amazon S3 协议。你可以把它理解为「自建版的私有云存储」——可存放图片、视频、备份文件、日志等。官方镜像：`minio/minio`，国内加速镜像：[https://xuanyuan.cloud/r/minio/minio](https://xuanyuan.cloud/r/minio/minio)
 

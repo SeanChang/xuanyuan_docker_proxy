@@ -2,7 +2,7 @@
 
 ![QDRANT 向量搜索引擎 Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-qdrant.png)
 
-*分类: Docker,QDRANT | 标签: qdrant,docker,部署教程 | 发布时间: 2025-12-09 07:45:13*
+*分类: Docker部署教程 | 标签: qdrant,docker,部署教程 | 发布时间: 2025-12-09 07:45:13*
 
 > QDRANT（读作"quadrant"）是一款高性能向量相似度搜索引擎和向量数据库，专为下一代AI应用设计。作为用Rust语言开发的生产级服务，QDRANT提供便捷的API用于存储、搜索和管理向量数据（带有附加 payload 的向量），特别优化了扩展过滤功能，适用于神经网络或语义匹配、分面搜索等各类应用场景。
 

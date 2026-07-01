@@ -2,7 +2,7 @@
 
 ![从零开始Docker部署OpenClaw：踩坑全记录+新手保姆级教程](https://img.xuanyuan.dev/docker/blog/docker-openclaw.png)
 
-*分类: OpenClaw,AI,部署教程 | 标签: OpenClaw,AI,部署教程 | 发布时间: 2026-04-25 09:00:29*
+*分类: Docker部署教程 | 标签: OpenClaw,AI,部署教程 | 发布时间: 2026-04-25 09:00:29*
 
 > OpenClaw（江湖人称"龙虾"）绝对是其中的佼佼者。它不仅支持GPT-5.5、Claude Opus等几乎所有主流大模型，还能一键集成浏览器控制、文件操作、语音通话等强大功能。今天将完整的部署步骤和所有踩坑经验整理出来，新手照着做也能10分钟成功部署！
 

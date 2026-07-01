@@ -2,7 +2,7 @@
 
 ![Docker Registry 企业级容器化部署与运维规范](https://img.xuanyuan.dev/docker/blog/docker-registry.png)
 
-*分类: Docker,Registry | 标签: registry,docker,部署教程 | 发布时间: 2026-01-11 03:24:55*
+*分类: Docker部署教程 | 标签: registry,docker,部署教程 | 发布时间: 2026-01-11 03:24:55*
 
 > REGISTRY是一个基于OCI Distribution规范的容器镜像存储与分发系统实现，主要用于存储和分发容器镜像及相关制品。作为Docker生态系统的重要组成部分，REGISTRY允许用户搭建私有或本地镜像仓库，实现镜像的集中管理、版本控制和安全分发。该镜像由Docker社区维护，支持多种硬件架构，包括amd64、arm32v6、arm32v7、arm64v8、ppc64le、riscv64和s390x等，具备良好的跨平台兼容性。
 

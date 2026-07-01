@@ -2,7 +2,7 @@
 
 ![Supabase Studio 镜像拉取与 Docker 部署全指南](https://img.xuanyuan.dev/docker/blog/docker-supabase-studio.png)
 
-*分类: Docker,Supabase | 标签: supabase,docker,部署教程 | 发布时间: 2025-10-15 08:00:52*
+*分类: Docker部署教程 | 标签: supabase,docker,部署教程 | 发布时间: 2025-10-15 08:00:52*
 
 > Supabase Studio是开源后端即服务平台Supabase的图形化管理界面，专为开发者设计，提供一站式数据库、身份验证、存储等核心功能的可视化操作能力。
 

@@ -2,7 +2,7 @@
 
 ![verl Docker 容器化部署手册](https://img.xuanyuan.dev/docker/blog/docker-verl.png)
 
-*分类: Docker,verl | 标签: verl,docker,部署教程 | 发布时间: 2025-10-08 14:26:55*
+*分类: Docker部署教程 | 标签: verl,docker,部署教程 | 发布时间: 2025-10-08 14:26:55*
 
 > 无论你是刚接触大模型工具的初学者，还是需要高效管理训练任务的高级工程师，本教程都将带你一步步完成 verlai/verl 镜像的 Docker 部署——从工具认知、环境搭建到多场景部署实践，每个步骤均配备完整命令与详细说明，确保照着做就能成。
 

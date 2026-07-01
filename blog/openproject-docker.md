@@ -2,7 +2,7 @@
 
 ![OpenProject Docker 容器化部署指南：从快速启动到生产环境配置](https://img.xuanyuan.dev/docker/blog/docker-openproject.png)
 
-*分类: OpenProject,部署教程,项目管理 | 标签: OpenProject,部署教程,项目管理 | 发布时间: 2026-02-03 03:10:05*
+*分类: Docker部署教程 | 标签: OpenProject,部署教程,项目管理 | 发布时间: 2026-02-03 03:10:05*
 
 > OpenProject是一款功能全面的开源项目管理平台，支持敏捷管理、任务跟踪、工时记录、成本控制等多种项目管理需求，提供社区版和企业版两种部署选项，适配不同规模团队与组织的使用场景。
 

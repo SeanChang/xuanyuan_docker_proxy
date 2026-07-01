@@ -2,7 +2,7 @@
 
 ![手把手教你用 Docker 部署 Python](https://img.xuanyuan.dev/docker/blog/docker-python.png)
 
-*分类: Docker,Python | 标签: python,docker,部署教程 | 发布时间: 2025-10-03 07:06:23*
+*分类: Docker部署教程 | 标签: python,docker,部署教程 | 发布时间: 2025-10-03 07:06:23*
 
 > 本文介绍了通过Docker部署Python的全流程，包括从轩辕镜像查看、下载Python镜像（含多种拉取方式），到以快速部署、挂载本地项目、docker-compose管理三种方式部署容器，还涵盖安装第三方库、构建自定义镜像的进阶实践及常见问题解决办法。
 

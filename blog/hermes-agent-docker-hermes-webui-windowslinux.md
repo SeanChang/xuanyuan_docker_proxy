@@ -2,7 +2,7 @@
 
 ![给 Hermes Agent 装个可视化面板！Docker 一键部署 Hermes WebUI 完整教程（Windows\+Linux 双环境）](https://img.xuanyuan.dev/docker/blog/docker-hermes-webui-1.png)
 
-*分类: Hermes-Agent,部署教程,部署文档 | 标签: Hermes-Agent,部署教程,部署文档 | 发布时间: 2026-04-23 06:16:28*
+*分类: Docker部署教程 | 标签: Hermes-Agent,部署教程,部署文档 | 发布时间: 2026-04-23 06:16:28*
 
 > 用过 Hermes Agent 的朋友都知道，它的命令行模式虽然功能强大，但对新手和不想敲命令的朋友来说还是有点门槛。好消息是，它的 Web UI 终于来了！不用再对着黑框框敲命令，点一点就能配置、管理和使用，今天就给大家分享一下 Hermes WebUI 的完整部署教程。
 

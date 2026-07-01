@@ -2,7 +2,7 @@
 
 ![3 分钟用 Docker 部署 CoPaw！你的专属AI个人助理](https://img.xuanyuan.dev/docker/blog/docker-copaw.png)
 
-*分类: CoPaw,openclaw,Ai,人工智能 | 标签: CoPaw,openclaw,Ai,人工智能 | 发布时间: 2026-03-03 13:50:17*
+*分类: Docker部署教程 | 标签: CoPaw,openclaw,Ai,人工智能 | 发布时间: 2026-03-03 13:50:17*
 
 > 在 AI 个人助理领域，Copaw 绝对是近期的黑马——它支持钉钉/飞书/QQ 等多端接入、本地/云端灵活部署、Skills 自由扩展，还能无缝对接 OpenAI/Azure OpenAI/本地大模型。无论是个人开发者快速验证创意，还是企业级落地生产应用，Copaw 都能提供轻量化且高可扩展的解决方案。
 

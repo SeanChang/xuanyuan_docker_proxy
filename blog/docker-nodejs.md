@@ -2,7 +2,7 @@
 
 ![Docker 容器化部署 Node.js 全指南](https://img.xuanyuan.dev/docker/blog/docker-node.png)
 
-*分类: Docker,Node | 标签: nodejs,docker,部署教程 | 发布时间: 2025-10-03 07:43:00*
+*分类: Docker部署教程 | 标签: nodejs,docker,部署教程 | 发布时间: 2025-10-03 07:43:00*
 
 > 本文介绍如何在轩辕镜像查看Node.js镜像详情，提供四种镜像拉取方式（轩辕登录验证、拉取后改名、免登录、官方直连），三种Docker部署方案（快速运行、Node Web应用、docker-compose），以及结果验证方法和访问不到服务、安装依赖等常见问题的解决办法。
 > 

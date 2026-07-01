@@ -2,7 +2,7 @@
 
 ![飞书/钉钉/QQ 机器人一站式搞定！OpenClaw Docker 部署教程](https://img.xuanyuan.dev/docker/blog/docker-openclaw-im.png)
 
-*分类: OpenClaw,AI,部署教程 | 标签: OpenClaw,AI,部署教程,飞书,钉钉,QQ | 发布时间: 2026-03-06 02:54:25*
+*分类: Docker部署教程 | 标签: OpenClaw,AI,部署教程,飞书,钉钉,QQ | 发布时间: 2026-03-06 02:54:25*
 
 > OpenClaw 中国 IM 插件整合版 Docker 镜像，预装并配置了飞书、钉钉、QQ机器人、企业微信等主流中国 IM 平台插件，让您可以快速部署一个支持多个中国 IM 平台的 AI 机器人网关。
 > 

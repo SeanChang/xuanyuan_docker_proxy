@@ -2,7 +2,7 @@
 
 ![LANGFUSE Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-langfuse.png)
 
-*分类: Docker,LANGFUSE | 标签: langfuse,docker,部署教程 | 发布时间: 2025-12-03 08:13:32*
+*分类: Docker部署教程 | 标签: langfuse,docker,部署教程 | 发布时间: 2025-12-03 08:13:32*
 
 > LANGFUSE 是一款开源的 LLM 工程平台，旨在为大型语言模型（LLM）应用提供可观测性、评估工具、提示管理、 playground 界面及性能指标分析等核心功能。作为连接 LLM 模型与实际业务应用的桥梁，LANGFUSE 支持与各类模型、框架集成，允许复杂的嵌套结构，并提供开放 API 以构建下游业务场景。
 

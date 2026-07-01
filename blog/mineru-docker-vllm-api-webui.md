@@ -2,7 +2,7 @@
 
 ![MinerU Docker 部署指南：PDF 结构化解析服务实践](https://img.xuanyuan.dev/docker/blog/docker-mineru.png)
 
-*分类: MinerU,PDF,人工智能,vLLM | 标签: mineru,部署教程,人工智能,vLLM | 发布时间: 2025-12-30 07:27:09*
+*分类: Docker部署教程 | 标签: mineru,部署教程,人工智能,vLLM | 发布时间: 2025-12-30 07:27:09*
 
 > MinerU 是一款面向开发者与科研用户的容器化应用，专为 vLLM 后端服务设计，提供高效的文档解析与处理能力。通过 Docker 容器化部署 MinerU，可以简化安装流程、确保环境一致性，并便于在不同环境中快速迁移和扩展。
 > 

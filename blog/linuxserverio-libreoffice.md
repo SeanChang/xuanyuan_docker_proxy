@@ -2,7 +2,7 @@
 
 ![LinuxServer.io LibreOffice 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-libreoffice.png)
 
-*分类: Docker,LibreOffice | 标签: libreoffice,docker,部署教程 | 发布时间: 2025-12-13 06:58:06*
+*分类: Docker部署教程 | 标签: libreoffice,docker,部署教程 | 发布时间: 2025-12-13 06:58:06*
 
 > LIBREOFFICE 是一款免费且功能强大的办公套件，作为 OpenOffice.org 的继任者，其简洁的界面和丰富的工具集能够有效提升用户的创造力与生产力。LinuxServer.io 团队提供的 LIBREOFFICE 容器镜像具有定期应用更新、简单的用户映射（PGID/PUID）、基于 s6 overlay 的自定义基础镜像、每周基础 OS 更新及定期安全更新等特性，支持 x86-64 和 arm64 架构，可通过 Web 界面便捷访问。
 

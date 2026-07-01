@@ -2,7 +2,7 @@
 
 ![服务器没有桌面？Docker 跑个 Chrome，浏览器就能远程用](https://img.xuanyuan.dev/docker/blog/docker-linuxserver-chrome.png)
 
-*分类: linuxserver,chrome,远程浏览器,Docker部署,端口冲突 | 标签: linuxserver,chrome,远程浏览器,Docker部署,端口冲突 | 发布时间: 2026-06-16 03:02:27*
+*分类: Docker部署教程 | 标签: linuxserver,chrome,远程浏览器,Docker部署,端口冲突 | 发布时间: 2026-06-16 03:02:27*
 
 > 手把手教你用轩辕镜像拉取 linuxserver/chrome，docker run 启动远程 Chrome，并解决 3000 端口占用问题。
 

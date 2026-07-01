@@ -2,7 +2,7 @@
 
 ![Clawdbot/Moltbot Docker容器化部署指南：打造个人AI助手的完整方案](https://img.xuanyuan.dev/docker/blog/docker-moltbot.png)
 
-*分类: Moltbot,Clawdbot,人工智能 | 标签: moltbot,Clawdbot,人工智能 | 发布时间: 2026-01-29 12:58:46*
+*分类: Docker部署教程 | 标签: moltbot,Clawdbot,人工智能 | 发布时间: 2026-01-29 12:58:46*
 
 > Moltbot 是一款面向个人用户的自托管 AI 助手容器化应用。它支持在用户自有设备或服务器上运行，兼容多种操作系统与平台，帮助用户构建完全可控的个人 AI 助手环境。
 

@@ -2,7 +2,7 @@
 
 ![Docker 部署 MinerU 全指南](https://img.xuanyuan.dev/docker/blog/docker-mineru.png)
 
-*分类: Docker,MinerU | 标签: mineru,docker,部署教程 | 发布时间: 2025-10-21 13:16:51*
+*分类: Docker部署教程 | 标签: mineru,docker,部署教程 | 发布时间: 2025-10-21 13:16:51*
 
 > MinerU 是一款专注于PDF格式转化的工具，尤其擅长将科技文献转化为机器可读格式（如markdown、json），诞生于书生-浦语预训练过程中，核心价值体现在对复杂排版PDF的精准解析与结构化提取。
 

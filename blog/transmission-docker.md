@@ -2,7 +2,7 @@
 
 ![Transmission Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-transmission.png)
 
-*分类: Docker,Transmission | 标签: transmission,docker,部署教程 | 发布时间: 2025-12-14 12:25:46*
+*分类: Docker部署教程 | 标签: transmission,docker,部署教程 | 发布时间: 2025-12-14 12:25:46*
 
 > Transmission 是由LinuxServer.io团队提供的容器化应用，基于Transmission BitTorrent客户端构建。Transmission设计理念为简单易用且功能强大，具备BitTorrent客户端所需的核心特性：加密传输、Web管理界面、节点交换、磁力链接支持、DHT网络、µTP协议、UPnP与NAT-PMP端口转发、WebSeed支持、监控目录、Tracker编辑、全局及每种子速度限制等。
 

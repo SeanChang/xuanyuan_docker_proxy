@@ -2,7 +2,7 @@
 
 ![Stirling PDF Docker 容器化部署指南：本地PDF编辑解决方案](https://img.xuanyuan.dev/docker/blog/docker-s-pdf.png)
 
-*分类: Docker,S-PDF | 标签: s-pdf,docker,部署教程 | 发布时间: 2025-12-14 12:30:37*
+*分类: Docker部署教程 | 标签: s-pdf,docker,部署教程 | 发布时间: 2025-12-14 12:30:37*
 
 > S-PDF（Stirling PDF）是一款本地部署的基于网页的PDF编辑器，支持在个人设备或本地服务器上搭建，确保文档处理过程中的数据隐私与安全，无需依赖云端服务。该工具提供PDF编辑、转换、合并、拆分、压缩、添加水印、签名等多种实用功能，通过浏览器即可访问使用，无需安装额外客户端，适用于个人用户与小型团队高效处理PDF文件需求。
 

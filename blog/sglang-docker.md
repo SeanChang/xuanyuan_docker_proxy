@@ -2,7 +2,7 @@
 
 ![SGLANG Docker容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-sglang.png)
 
-*分类: Docker,SGLANG | 标签: sglang,docker,部署教程 | 发布时间: 2025-11-08 11:35:29*
+*分类: Docker部署教程 | 标签: sglang,docker,部署教程 | 发布时间: 2025-11-08 11:35:29*
 
 > SGLANG 是一个高性能的语言模型推理引擎，旨在为大语言模型（LLM）应用提供高效、灵活的部署和服务能力。该引擎基于sgl-project开源项目开发，支持复杂的提示工程、多轮对话管理和推理优化，广泛应用于智能客服、内容生成、代码辅助等场景。
 > 

@@ -2,7 +2,7 @@
 
 ![2026 国内 Docker 镜像拉取指南：不只会配 daemon.json，这个站还给了 10 万个镜像的中文说明书](https://img.xuanyuan.dev/docker/blog/docker-2026-l.png)
 
-*分类: Docker,容器,DevOps,群晖,NAS,镜像加速 | 标签: Docker,容器,DevOps,群晖,NAS,镜像加速 | 发布时间: 2026-06-15 15:05:19*
+*分类: Docker部署教程 | 标签: Docker,容器,DevOps,群晖,NAS,镜像加速 | 发布时间: 2026-06-15 15:05:19*
 
 > 多数公益 Docker 镜像源已关停，单靠抄旧教程往往无效。本文整理一套完整方案：轩辕镜像提供 10 万+ 镜像中文文档、20+ 场景配置教程、Docker 在线工具集，以及 Docker Hub/GHCR/GCR 等 9 类仓库加速。
 

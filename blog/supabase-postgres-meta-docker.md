@@ -2,7 +2,7 @@
 
 ![Supabase Postgres-Meta 镜像拉取与 Docker 部署全指南](https://img.xuanyuan.dev/docker/blog/docker-supabase-postgres-meta.png)
 
-*分类: Docker,Supabase  | 标签: supabase-postgres-meta,docker,部署教程 | 发布时间: 2025-10-15 08:05:43*
+*分类: Docker部署教程 | 标签: supabase-postgres-meta,docker,部署教程 | 发布时间: 2025-10-15 08:05:43*
 
 > Postgres-Meta是Supabase团队开发的PostgreSQL数据库RESTful管理工具，专为通过现代API方式简化数据库操作而设计。
 

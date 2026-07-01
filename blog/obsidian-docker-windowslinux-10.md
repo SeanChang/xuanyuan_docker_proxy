@@ -2,7 +2,7 @@
 
 ![Obsidian Docker 部署｜Windows+Linux 通用，新手也能10分钟上手](https://img.xuanyuan.dev/docker/blog/docker-obsidian-2.png)
 
-*分类: Obsidian,部署教程,笔记软件 | 标签: Obsidian,部署教程,笔记软件 | 发布时间: 2026-04-21 07:33:20*
+*分类: Docker部署教程 | 标签: Obsidian,部署教程,笔记软件 | 发布时间: 2026-04-21 07:33:20*
 
 > Obsidian 作为一款备受欢迎的本地知识管理工具，凭借其灵活的笔记链接、本地存储优势，成为很多开发者、知识管理者的首选。而通过 Docker 部署 Obsidian，不仅能实现跨环境快速部署，还能轻松实现数据持久化，适配 NAS、服务器、个人电脑等多种场景。本文将详细介绍 Windows 和 Linux 两大系统下，通过 Docker 部署 Obsidian 的完整流程，同时提供 Docker 一键安装命令，降低部署门槛。
 

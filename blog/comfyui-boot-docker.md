@@ -2,7 +2,7 @@
 
 ![ComfyUI Docker 镜像部署指南](https://img.xuanyuan.dev/docker/blog/docker-comfyui.png)
 
-*分类: 人工智能,ComfyUI,PyTorch,Stable Diffusion | 标签: comfyui,人工智能,部署教程,Stable Diffusion | 发布时间: 2025-12-31 06:41:21*
+*分类: Docker部署教程 | 标签: comfyui,人工智能,部署教程,Stable Diffusion | 发布时间: 2025-12-31 06:41:21*
 
 > ComfyUI 是一款基于节点工作流的 Stable Diffusion 图形界面，支持通过可视化方式组合复杂的图像生成流程。ComfyUI-BOOT 基于官方 ComfyUI 构建，内置：Python 运行环境，PyTorch（按 CUDA / 架构区分），ComfyUI 本体，启动与下载脚本，用于简化 ComfyUI 的部署与启动流程。
 

@@ -2,7 +2,7 @@
 
 ![VLLM Docker 容器化部署指南：在 NVIDIA Jetson 平台高效运行大语言模型推理服务](https://img.xuanyuan.dev/docker/blog/docker-dustynv-vllm.png)
 
-*分类: Docker,VLLM | 标签: vllm-docker-nvidia,docker,部署教程 | 发布时间: 2025-12-02 06:05:50*
+*分类: Docker部署教程 | 标签: vllm-docker-nvidia,docker,部署教程 | 发布时间: 2025-12-02 06:05:50*
 
 > VLLM是一个高效的开源大语言模型（LLM）推理服务框架，通过创新的PagedAttention技术实现高吞吐量和低延迟的推理性能。本文介绍的`dustynv/vllm`镜像是针对NVIDIA Jetson平台优化的容器化版本，由[dustynv/jetson-containers](https://github.com/dustynv/jetson-containers)项目构建，专为边缘计算场景设计，支持在资源受限的嵌入式设备上部署高性能LLM推理服务。
 

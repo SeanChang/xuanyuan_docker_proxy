@@ -2,7 +2,7 @@
 
 ![Selenium Standalone Chromium 容器化部署全指南：从测试环境到企业级安全实践](https://img.xuanyuan.dev/docker/blog/docker-selenium-standalone-chromium.png)
 
-*分类: Selenium,Standalone,Chromium | 标签: selenium,部署教程 | 发布时间: 2026-01-18 09:25:40*
+*分类: Docker部署教程 | 标签: selenium,部署教程 | 发布时间: 2026-01-18 09:25:40*
 
 > STANDALONE-CHROMIUM是一个基于Docker的容器化应用，提供了Selenium Grid Standalone模式与Chromium浏览器的集成环境。该镜像允许开发者通过Selenium Grid远程运行WebDriver测试，实现浏览器自动化测试的便捷部署与管理。Selenium Grid Standalone模式将Hub和Node的功能集成在单一实例中，适合中小型测试场景或开发环境使用。
 

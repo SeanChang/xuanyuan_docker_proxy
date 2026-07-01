@@ -2,7 +2,7 @@
 
 ![Docker 拉取部署 OpenJDK 全指南：替代方案、实操步骤与最佳实践](https://img.xuanyuan.dev/docker/blog/docker-openjdk.png)
 
-*分类: Docker,OpenJDK | 标签: openjdk,docker,部署教程 | 发布时间: 2025-10-15 07:06:33*
+*分类: Docker部署教程 | 标签: openjdk,docker,部署教程 | 发布时间: 2025-10-15 07:06:33*
 
 > OpenJDK作为Java SE的开源实现，是企业级Java应用的核心运行环境，而Docker的容器化部署能有效解决环境一致性、资源隔离等问题。需要注意的是，官方 library/openjdk 镜像已正式弃用，仅保留早期访问版（Early Access builds）更新，生产环境需优先选择 amazoncorretto 、 eclipse-temurin 等替代方案。本文将详细介绍Docker环境搭建、OpenJDK拉取部署步骤，并梳理关键注意事项、最佳实践及核心资源汇总。
 

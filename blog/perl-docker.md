@@ -2,7 +2,7 @@
 
 ![PERL Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-perl.png)
 
-*分类: Docker,PERL | 标签: perl,docker,部署教程 | 发布时间: 2025-11-08 12:26:11*
+*分类: Docker部署教程 | 标签: perl,docker,部署教程 | 发布时间: 2025-11-08 12:26:11*
 
 > PERL（Practical Extraction and Reporting Language）是一种高级、通用、解释型、动态编程语言，其语法借鉴了C、Shell脚本、AWK和sed等多种语言特性，广泛应用于系统管理、Web开发、网络编程等领域。通过Docker容器化部署PERL，可以实现环境一致性、快速部署和资源隔离，有效简化开发与运维流程。
 

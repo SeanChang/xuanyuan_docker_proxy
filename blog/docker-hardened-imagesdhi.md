@@ -2,7 +2,7 @@
 
 ![关于 Docker Hardened Images（DHI）无法拉取的说明公告](https://img.xuanyuan.dev/docker/blog/docker-dhi.png)
 
-*分类: Docker,公告,DHI | 标签: Docker,公告,DHI,clickhouse-server | 发布时间: 2026-02-25 03:33:29*
+*分类: Docker部署教程 | 标签: Docker,公告,DHI,clickhouse-server | 发布时间: 2026-02-25 03:33:29*
 
 > 关于 Docker Hardened Images（DHI）无法拉取的说明公告
 

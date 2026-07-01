@@ -2,7 +2,7 @@
 
 ![MySQL Docker 容器化部署全指南](https://img.xuanyuan.dev/docker/blog/docker-mysql.png)
 
-*分类: Database,MySQL,library | 标签: mysql,docker,数据库,部署教程,library | 发布时间: 2025-10-02 12:23:14*
+*分类: Docker部署教程 | 标签: mysql,docker,数据库,部署教程,library | 发布时间: 2025-10-02 12:23:14*
 
 > 本文详细介绍MySQL容器化部署全流程，含4种镜像拉取方式、3种部署方案（快速部署适测试、挂载目录适生产、docker-compose适企业级）、3种结果验证手段及5类常见问题解决方案，还针对不同用户给出操作建议（如初学者先试快速部署，生产用挂载或compose）。
 

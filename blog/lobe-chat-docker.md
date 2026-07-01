@@ -2,7 +2,7 @@
 
 ![LOBE-CHAT Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-lobe-chat.png)
 
-*分类: Docker,LOBE-CHAT | 标签: lobe-chat,docker,部署教程 | 发布时间: 2025-11-16 06:42:42*
+*分类: Docker部署教程 | 标签: lobe-chat,docker,部署教程 | 发布时间: 2025-11-16 06:42:42*
 
 > LOBE-CHAT 是一款开源、可扩展、高性能的聊天机器人框架，专注于支持私有 ChatGPT/LLM 网页应用部署。作为基于容器化架构的中间件，它提供了灵活的功能扩展机制和优化的性能表现，适用于构建企业级私有大语言模型交互平台。通过 Docker 容器化部署，LOBE-CHAT 能够实现环境一致性、快速交付和跨平台运行，有效降低部署复杂度并提升运维效率。
 

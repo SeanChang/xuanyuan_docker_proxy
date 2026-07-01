@@ -2,7 +2,7 @@
 
 ![GPUSTACK Docker 容器化部署指南（生产级规范与最佳实践）](https://img.xuanyuan.dev/docker/blog/docker-gpustack.png)
 
-*分类: Docker,GPUSTACK | 标签: gpustack,docker,部署教程 | 发布时间: 2025-11-19 08:48:46*
+*分类: Docker部署教程 | 标签: gpustack,docker,部署教程 | 发布时间: 2025-11-19 08:48:46*
 
 > GPUSTACK 是一款专注于 GPU 集群管理的中间件，旨在简化大语言模型（LLMs）及其他 GPU 密集型应用的部署与运行流程。通过统一的集群管理接口，GPUSTACK 能够高效调度 GPU 资源、优化任务分配，并提供监控与运维支持，适用于 AI 实验室、企业级 AI 平台等场景。
 

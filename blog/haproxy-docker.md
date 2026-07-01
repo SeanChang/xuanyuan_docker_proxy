@@ -2,7 +2,7 @@
 
 ![HAPROXY Docker 容器化部署指南：从入门到生产环境实践](https://img.xuanyuan.dev/docker/blog/docker-haproxy.png)
 
-*分类: Docker,HAPROXY | 标签: haproxy,docker,部署教程 | 发布时间: 2025-12-13 06:23:01*
+*分类: Docker部署教程 | 标签: haproxy,docker,部署教程 | 发布时间: 2025-12-13 06:23:01*
 
 > HAPROXY（High Availability Proxy）是一款免费开源的高可用性解决方案，专注于为TCP和HTTP应用提供负载均衡与代理服务。作为一款用C语言编写的轻量级软件，HAPROXY以其卓越的性能和资源效率著称，能够将请求智能分发到多台服务器，有效提升应用系统的可用性和扩展性。
 

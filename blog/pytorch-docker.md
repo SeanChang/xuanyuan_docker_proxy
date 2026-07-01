@@ -2,7 +2,7 @@
 
 ![PyTorch Docker 容器化部署与生产运行实践](https://img.xuanyuan.dev/docker/blog/docker-pytorch.png)
 
-*分类: 人工智能,PyTorch | 标签: PyTorch,人工智能 | 发布时间: 2026-01-12 14:24:26*
+*分类: Docker部署教程 | 标签: PyTorch,人工智能 | 发布时间: 2026-01-12 14:24:26*
 
 > PyTorch是一款以Python为首要设计理念的深度学习框架，凭借简洁易用的Python接口、动态计算图机制及强大的灵活性，广泛应用于学术研究与工业开发。它在Python环境中提供张量（Tensors）和动态神经网络支持，并具备强大的GPU加速能力，支持从快速原型设计到大规模部署的全流程，深度融合Python数据科学生态，为开发者提供高效且直观的深度学习解决方案。
 

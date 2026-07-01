@@ -2,7 +2,7 @@
 
 ![告别多账号切换！用 9Router 一键把所有 AI 模型变成一个 API，Cursor/Cline 直接起飞](https://img.xuanyuan.dev/docker/blog/docker-9router.png)
 
-*分类: OpenClaw,AI,9Router,部署教程 | 标签: OpenClaw,AI,9Router,部署教程 | 发布时间: 2026-05-20 06:30:30*
+*分类: Docker部署教程 | 标签: OpenClaw,AI,9Router,部署教程 | 发布时间: 2026-05-20 06:30:30*
 
 > 还在为 AI 客户端配置混乱、多账号来回切换、Token 消耗过高而头疼？最近爆火的开源项目 **9Router** 彻底解决了这些痛点！它能把 OpenAI、Claude、Gemini、Copilot、Ollama 等所有主流 AI 服务，统一成一个标准的 OpenAI API 接口，不管是 Cursor、Cline 还是 Cherry Studio、OpenWebUI，直接用一个地址就能调用所有模型，还自带 Token 压缩，大幅降低成本！本文从 0 开始带你用 Docker 一键部署，全程干货无废话。
 

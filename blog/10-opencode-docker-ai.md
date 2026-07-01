@@ -2,7 +2,7 @@
 
 ![10 分钟上手 OpenCode：Docker 一键部署，浏览器里用 AI 写代码](https://img.xuanyuan.dev/docker/blog/opencode.png)
 
-*分类: OpenCode,人工智能,AI,AI编程 | 标签: OpenCode,Docker,轩辕镜像,AI编程,openEuler,WSL | 发布时间: 2026-06-21 16:38:36*
+*分类: Docker部署教程 | 标签: OpenCode,Docker,轩辕镜像,AI编程,openEuler,WSL | 发布时间: 2026-06-21 16:38:36*
 
 > 零基础教程：Docker 一键安装、轩辕镜像加速拉取 openeuler/opencode、Web 部署、打开项目、AI 生成 hello-world 主页。含 WSL 与 Linux 服务器差异说明与常见问题排错。
 

@@ -2,7 +2,7 @@
 
 ![QUARTZUI Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-quartzui.png)
 
-*分类: Docker,QUARTZUI | 标签: quartzui,docker,部署教程 | 发布时间: 2025-12-02 03:31:15*
+*分类: Docker部署教程 | 标签: quartzui,docker,部署教程 | 发布时间: 2025-12-02 03:31:15*
 
 > QUARTZUI 是一款基于 Quartz.NET 3.0 的 Web 管理界面，专为简化定时任务管理而设计。该工具采用容器化打包，实现开箱即用，内置 SQLite 持久化存储，具有语言无关性、业务代码零污染、支持 RESTful 风格接口等特性，配置过程简单直观，适合各类需要定时任务管理的场景。
 

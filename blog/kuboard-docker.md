@@ -2,7 +2,7 @@
 
 ![KUBOARD Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-kuboard.png)
 
-*分类: Docker,KUBOARD | 标签: kuboard,docker,部署教程 | 发布时间: 2025-11-16 05:32:07*
+*分类: Docker部署教程 | 标签: kuboard,docker,部署教程 | 发布时间: 2025-11-16 05:32:07*
 
 > KUBOARD是一款专为Kubernetes设计的多集群管理平台，提供直观的Web界面和丰富的功能集，帮助用户简化Kubernetes集群的部署、监控、运维和资源管理流程。作为轻量级且功能全面的Kubernetes仪表盘，KUBOARD支持多集群管理、工作负载可视化、资源配置管理、日志查看、监控告警等核心功能，适用于从开发测试到生产环境的全场景使用。
 

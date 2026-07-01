@@ -2,7 +2,7 @@
 
 ![5 分钟私有化部署 GLPI：IT 资产与服务台一键上线，免费开源资产管理](https://img.xuanyuan.dev/docker/blog/glpi.png)
 
-*分类: GLPI,Docker,轩辕镜像,ITSM,资产管理,服务台,私有化部署,部署教程 | 标签: GLPI,Docker,轩辕镜像,ITSM,资产管理,服务台,私有化部署,部署教程 | 发布时间: 2026-06-25 08:21:41*
+*分类: Docker部署教程 | 标签: GLPI,Docker,轩辕镜像,ITSM,资产管理,服务台,私有化部署,部署教程 | 发布时间: 2026-06-25 08:21:41*
 
 > 5 分钟跟做教程：Docker Compose 私有化部署 GLPI，轩辕镜像加速拉取，免费 IT 资产台账与 ITIL 服务台一键上线。含老旧 CPU 兼容、Compose 排错与默认管理员 glpi/glpi，Ubuntu 24.04 实测。
 

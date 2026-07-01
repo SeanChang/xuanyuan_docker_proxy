@@ -2,7 +2,7 @@
 
 ![使用 Docker 部署 Clawdbot（官方推荐方式）](https://img.xuanyuan.dev/docker/blog/docker-clawdbot.png)
 
-*分类: Clawdbot,moltbot,人工智能 | 标签: clawdbot,moltbot,人工智能 | 发布时间: 2026-01-25 09:33:33*
+*分类: Docker部署教程 | 标签: clawdbot,moltbot,人工智能 | 发布时间: 2026-01-25 09:33:33*
 
 > Clawdbot 是一款开源的运行在您自己的设备上的个人 AI 助手，该项目聚焦于 Claude 等大模型能力，打造跨平台的 AI 助手操作体验。如果你想要一个感觉像本地助手、速度快、始终在线的单人个人助理，那一定不要错过。
 

@@ -2,7 +2,7 @@
 
 ![1Panel Docker 容器化部署指南：轻松管理你的 Linux 服务器](https://img.xuanyuan.dev/docker/blog/docker-1panel.png)
 
-*分类: 1Panel,baota,面板,linux | 标签: linux,部署教程 | 发布时间: 2026-03-11 13:05:57*
+*分类: Docker部署教程 | 标签: linux,部署教程 | 发布时间: 2026-03-11 13:05:57*
 
 > 使用 Docker 部署 1Panel，不仅能让环境隔离更彻底，还能让迁移和备份变得超级简单。
 > 

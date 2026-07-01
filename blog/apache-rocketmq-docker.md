@@ -2,7 +2,7 @@
 
 ![Apache RocketMQ Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-rocketmq.png)
 
-*分类: Docker,Apache RocketMQ | 标签: apache-rocketmq,docker,部署教程 | 发布时间: 2025-12-09 07:04:06*
+*分类: Docker部署教程 | 标签: apache-rocketmq,docker,部署教程 | 发布时间: 2025-12-09 07:04:06*
 
 > Apache RocketMQ是一款分布式消息中间件，由Apache软件基金会开发维护，具有高吞吐量、低延迟、高可靠性等特点，广泛应用于分布式系统中的异步通信、流量削峰、系统解耦等场景。随着容器化技术的普及，采用Docker部署RocketMQ可以显著简化环境配置、提高部署一致性和运维效率。
 

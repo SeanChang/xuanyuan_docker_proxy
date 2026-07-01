@@ -2,7 +2,7 @@
 
 ![Docker 部署 AlmaLinux 全流程教程](https://img.xuanyuan.dev/docker/blog/docker-almalinux.png)
 
-*分类: Docker,AlmaLinux  | 标签: almalinux,docker,部署教程 | 发布时间: 2025-10-26 06:27:05*
+*分类: Docker部署教程 | 标签: almalinux,docker,部署教程 | 发布时间: 2025-10-26 06:27:05*
 
 > AlmaLinux 作为 RHEL 二进制兼容的免费企业级发行版，由 CloudLinux 团队发起、基金会维护，不仅解决了 CentOS 停更后的替代需求，更以“永久免费+10年长期支持”成为企业服务器部署的优选。而通过 Docker 部署，能彻底规避传统装机“环境不一致、迁移难、版本管理乱”的痛点，尤其适合遗留 CentOS 系统迁移、微服务基础设施搭建等场景。
 

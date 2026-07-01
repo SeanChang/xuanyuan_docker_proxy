@@ -2,7 +2,7 @@
 
 ![NVIDIA CUDA 镜像 Docker 容器化部署全流程](https://img.xuanyuan.dev/docker/blog/docker-cuda.png)
 
-*分类: Docker,CUDA | 标签: nvidia,cuda,docker,部署教程 | 发布时间: 2025-10-10 02:44:12*
+*分类: Docker部署教程 | 标签: nvidia,cuda,docker,部署教程 | 发布时间: 2025-10-10 02:44:12*
 
 > CPU 像“全能但慢的多面手”，适合处理逻辑复杂但数据量小的任务；GPU 像“成千上万的小工人”，擅长同时处理大量重复、简单的计算。CUDA 就是连接开发者与 GPU 能力的“桥梁”，让 GPU 能脱离显卡驱动，直接为科学计算、AI 训练、数据处理等任务服务。
 

@@ -2,7 +2,7 @@
 
 ![OpenCode 企业级 Docker 部署完整指南](https://img.xuanyuan.dev/docker/blog/docker-opencode.png)
 
-*分类: OpenCode,人工智能,moltbot | 标签: opencode,人工智能,moltbot | 发布时间: 2026-01-25 10:30:44*
+*分类: Docker部署教程 | 标签: opencode,人工智能,moltbot | 发布时间: 2026-01-25 10:30:44*
 
 > OpenCode 是一个开源的 AI 编程助手与代码代理（coding agent），旨在让开发者在终端、IDE 或桌面环境下高效地与 AI 协同开发、分析、生成和重构代码。它支持多种大型语言模型（LLM），包括 Claude、OpenAI、Google 等，也可连接本地模型，采用客户端/服务器架构，提供图形界面、终端 UI、GitHub 集成等使用方式。
 

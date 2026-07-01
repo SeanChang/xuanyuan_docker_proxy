@@ -2,7 +2,7 @@
 
 ![重要通知：官方 OpenJDK 镜像已正式弃用，建议立即迁移至轩辕镜像支持的替代方案](https://img.xuanyuan.dev/docker/blog/docker-openjdk-2026.png)
 
-*分类: OpenJDK,公告,Docker,jdk | 标签: OpenJDK,公告,Docker,,jdk | 发布时间: 2026-02-23 13:00:16*
+*分类: Docker部署教程 | 标签: OpenJDK,公告,Docker,,jdk | 发布时间: 2026-02-23 13:00:16*
 
 > 为保障您的容器化 Java 应用安全与稳定性，特此提醒：Docker 官方库中的 OpenJDK 镜像（library/openjdk）已正式弃用，轩辕镜像平台同步更新了该镜像的状态标识，即日起请您尽快停止在生产环境中使用，并迁移至受支持的替代方案。
 

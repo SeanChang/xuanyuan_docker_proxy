@@ -2,7 +2,7 @@
 
 ![Docker in Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-docker.png)
 
-*分类: Docker | 标签: docker,部署教程 | 发布时间: 2025-12-03 06:59:33*
+*分类: Docker部署教程 | 标签: docker,部署教程 | 发布时间: 2025-12-03 06:59:33*
 
 > DOCKER（Docker in Docker，简称DinD）是一种特殊的容器化方案，允许在Docker容器内部运行Docker引擎。尽管通常不推荐在生产环境中使用嵌套容器，但DinD在特定场景下具有重要价值，如Docker引擎本身的开发、CI/CD流水线中的容器化构建环境等。
 

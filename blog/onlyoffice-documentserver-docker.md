@@ -2,7 +2,7 @@
 
 ![onlyoffice Ubuntu Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/onlyoffice.png)
 
-*分类: Docker,onlyoffice-documentserver | 标签: onlyoffice-documentserver,docker,部署教程 | 发布时间: 2025-12-10 06:46:38*
+*分类: Docker部署教程 | 标签: onlyoffice-documentserver,docker,部署教程 | 发布时间: 2025-12-10 06:46:38*
 
 > onlyoffice 是一款功能丰富的容器化在线办公套件，提供文本、电子表格和演示文稿的查看与编辑功能，完全兼容Office Open XML格式（.docx、.xlsx、.pptx），并支持实时协作编辑。作为ONLYOFFICE生态系统的核心组件，DOCUMENTSERVER可独立部署或与Community Server、Mail Server集成，实现文档存储、共享、权限管理等扩展功能。
 

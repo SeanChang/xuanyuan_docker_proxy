@@ -2,7 +2,7 @@
 
 ![Docker OpenClaw 生产环境部署指南（单机架构版）](https://img.xuanyuan.dev/docker/blog/docker-openclaw.png)
 
-*分类: OpenClaw,AI,部署教程 | 标签: OpenClaw,AI,部署教程,Moltbot,Clawdbot,人工智能 | 发布时间: 2026-02-24 09:04:51*
+*分类: Docker部署教程 | 标签: OpenClaw,AI,部署教程,Moltbot,Clawdbot,人工智能 | 发布时间: 2026-02-24 09:04:51*
 
 > 本文给出一套经过验证的 OpenClaw 单机生产部署方案，覆盖安全、稳定性与可维护性设计。
 > 

@@ -2,7 +2,7 @@
 
 ![OPENLIST Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-openlist.png)
 
-*分类: Docker,OPENLIST | 标签: openlist,docker,部署教程 | 发布时间: 2025-12-03 03:01:29*
+*分类: Docker部署教程 | 标签: openlist,docker,部署教程 | 发布时间: 2025-12-03 03:01:29*
 
 > OPENLIST是一款基于Gin后端和SolidJS前端开发的多存储文件列表程序，作为AList的分支项目，它继承了文件管理的核心功能并可能提供额外特性。该程序支持多种存储后端集成，包括本地文件系统、云存储服务等，适用于个人或企业构建轻量级文件管理解决方案。
 

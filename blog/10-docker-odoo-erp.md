@@ -2,7 +2,7 @@
 
 ![10 分钟用 Docker 跑起 Odoo！中小企业免费 ERP 部署实战](https://img.xuanyuan.dev/docker/blog/docker-odoo.png)
 
-*分类: Docker,Odoo,ERP,PostgreSQL | 标签: Docker,Odoo,ERP,PostgreSQL | 发布时间: 2026-06-08 03:47:21*
+*分类: Docker部署教程 | 标签: Docker,Odoo,ERP,PostgreSQL | 发布时间: 2026-06-08 03:47:21*
 
 > 不少中小企业都有这样的困扰：销售靠Excel记账、库存人工盘点、财务对账耗时费力、客户信息零散混乱，多个办公系统切换使用，数据不通、效率低下。今天给大家分享一套零成本、一体化的解决方案——Odoo开源ERP系统。全程采用Docker部署，无需复杂环境配置，10分钟即可搭建完成，适配国内服务器，稳定高速、无冗余操作。
 

@@ -2,7 +2,7 @@
 
 ![OLMOCR Docker 容器化部署指南：高效文档识别工具的容器化实践](https://img.xuanyuan.dev/docker/blog/docker-olmocr.png)
 
-*分类: Docker,OLMOCR | 标签: olmocr,docker,部署教程 | 发布时间: 2025-12-11 03:41:12*
+*分类: Docker部署教程 | 标签: olmocr,docker,部署教程 | 发布时间: 2025-12-11 03:41:12*
 
 > OLMOCR（Optical Layout Markup OCR）是由Allen Institute for AI开发的一款先进的文档识别工具包，专注于将PDF和基于图像的文档转换为清晰、可读的纯文本格式。作为一款容器化应用，OLMOCR提供了便捷的部署方式和强大的文档处理能力，特别适合需要批量处理扫描文档、PDF文件和图像格式文档的场景。
 

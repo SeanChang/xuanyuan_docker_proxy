@@ -2,7 +2,7 @@
 
 ![n8n Docker 部署不踩雷！国内环境适配+生产级权限配置全流程](https://img.xuanyuan.dev/docker/blog/docker-n8n.png)
 
-*分类: Docker,n8n | 标签: n8n,docker,部署教程 | 发布时间: 2025-10-08 06:26:59*
+*分类: Docker部署教程 | 标签: n8n,docker,部署教程 | 发布时间: 2025-10-08 06:26:59*
 
 > n8n是一款专为技术团队打造的开源工作流自动化平台（Workflow Automation Platform），兼具「低代码（No-code）」与「可编程（Pro-code）」双重特性。它让你可以轻松地将不同系统、API 和服务连接起来，自动执行任务、数据同步、通知、集成 AI 模型等各种流程。n8n 不仅能节省大量重复性工作，还能在团队内部构建稳定、安全的自动化体系。
 

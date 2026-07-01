@@ -2,7 +2,7 @@
 
 ![refly Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-reflyai.png)
 
-*分类: Docker,refly | 标签: refly,docker,部署教程 | 发布时间: 2025-12-10 08:14:46*
+*分类: Docker部署教程 | 标签: refly,docker,部署教程 | 发布时间: 2025-12-10 08:14:46*
 
 > REFLY-WEB是Refly.AI平台的前端Web界面组件，旨在为用户提供直观的可视化画布和交互界面，支持通过零代码方式构建、管理和分享AI自动化工作流。该组件具备拖拽式工作流构建、实时执行监控、多设备响应式设计等核心特性，需与`reflyai/refly-api`后端服务配合使用，共同构成完整的Refly.AI平台。
 

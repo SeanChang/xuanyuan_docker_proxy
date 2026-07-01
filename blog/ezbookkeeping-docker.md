@@ -2,7 +2,7 @@
 
 ![EZBOOKKEEPING Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-ezbookkeeping.png)
 
-*分类: Docker,EZBOOKKEEPING | 标签: ezbookkeeping,docker,部署教程 | 发布时间: 2025-12-06 15:55:37*
+*分类: Docker部署教程 | 标签: ezbookkeeping,docker,部署教程 | 发布时间: 2025-12-06 15:55:37*
 
 > EZBOOKKEEPING是一款轻量级、自托管的个人财务管理应用，具有友好的用户界面和强大的记账功能。该应用设计资源占用低且高度可扩展，既能在树莓派等小型设备上流畅运行，也能扩展到NAS、微型服务器甚至大型集群环境。
 

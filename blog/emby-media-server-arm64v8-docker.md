@@ -2,7 +2,7 @@
 
 ![Emby Media Server ARM64V8 Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-emby-media-server.png)
 
-*分类: Docker,Emby Media Server | 标签: emby-media-server-arm64v8,docker,部署教程 | 发布时间: 2025-12-14 12:50:48*
+*分类: Docker部署教程 | 标签: emby-media-server-arm64v8,docker,部署教程 | 发布时间: 2025-12-14 12:50:48*
 
 > Emby Media Server ARM64V8 是基于arm64v8架构的官方Emby Media Server容器化应用。Emby Media Server是一款功能强大的媒体服务器软件，允许用户组织、管理和流式传输个人媒体内容，包括视频、音频、照片等，支持多设备访问和跨平台同步。
 

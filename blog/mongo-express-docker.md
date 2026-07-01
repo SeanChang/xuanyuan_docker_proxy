@@ -2,7 +2,7 @@
 
 ![MONGO-EXPRESS Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-mongo-express.png)
 
-*分类: Docker,MONGO-EXPRESS | 标签: mongo-express,docker,部署教程 | 发布时间: 2025-11-11 08:46:04*
+*分类: Docker部署教程 | 标签: mongo-express,docker,部署教程 | 发布时间: 2025-11-11 08:46:04*
 
 > MONGO-EXPRESS是一个基于Web的MongoDB管理界面，采用Node.js、Express.js和Bootstrap3开发，提供直观的图形化界面用于管理MongoDB数据库。通过MONGO-EXPRESS，用户可以方便地执行数据库查询、管理集合、操作文档以及配置数据库参数等任务，特别适合开发环境中的快速数据库管理。
 

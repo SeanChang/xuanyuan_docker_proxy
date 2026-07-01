@@ -2,7 +2,7 @@
 
 ![DDNS-GO Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-ddnsgo.png)
 
-*分类: Docker,DDNS-GO | 标签: ddns-go,docker,部署教程 | 发布时间: 2025-12-02 04:04:18*
+*分类: Docker部署教程 | 标签: ddns-go,docker,部署教程 | 发布时间: 2025-12-02 04:04:18*
 
 > DDNS-GO是一款简单易用的动态域名解析（DDNS）工具，能够自动获取公网IPv4/IPv6地址并更新至指定的域名服务商，实现域名与动态IP的实时绑定。该工具支持多种操作系统和硬件架构，兼容阿里云、腾讯云、Cloudflare等主流DNS服务商，提供Web界面配置和管理，适合个人和企业用户实现动态IP环境下的域名解析需求。
 

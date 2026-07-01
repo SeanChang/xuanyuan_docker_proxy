@@ -2,7 +2,7 @@
 
 ![告别广告和追踪！5 分钟用 Docker searxng 搭建你的私人搜索引擎](https://img.xuanyuan.dev/docker/blog/docker-searxng.png)
 
-*分类: searxng,部署教程 | 标签: searxng,部署教程 | 发布时间: 2026-04-27 02:29:35*
+*分类: Docker部署教程 | 标签: searxng,部署教程 | 发布时间: 2026-04-27 02:29:35*
 
 > 厌倦了满屏广告的搜索引擎？担心搜索隐私被泄露？本文教你用Docker一键部署开源元搜索引擎SearXNG，聚合Google、Bing、DuckDuckGo等多个搜索源，去广告、去追踪，打造完全属于你自己的私人搜索入口。
 

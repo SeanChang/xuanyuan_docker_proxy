@@ -2,7 +2,7 @@
 
 ![轻量AI接口网关一键部署｜calciumion/new-api Windows/Linux Docker 部署全教程](https://img.xuanyuan.dev/docker/blog/docker-newapi.png)
 
-*分类: new-api,AI,部署教程,one-api | 标签: new-api,AI,部署教程,one-api | 发布时间: 2026-05-11 07:22:59*
+*分类: Docker部署教程 | 标签: new-api,AI,部署教程,one-api | 发布时间: 2026-05-11 07:22:59*
 
 > 推荐一款轻量高效的AI统一API服务镜像——calciumion/new-api，无需复杂配置，依托Docker即可一键极速部署。本文完整讲解Windows、Linux全环境部署流程，全程复制命令就能操作，纯新手也能快速落地，看完直接上手私有AI接口网关搭建。
 

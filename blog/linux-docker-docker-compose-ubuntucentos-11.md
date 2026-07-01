@@ -2,7 +2,7 @@
 
 ![手把手教你在 Linux 上安装 Docker 与 Docker Compose（支持 Ubuntu、CentOS 等 11 个发行版） ](https://img.xuanyuan.dev/docker/blog/docker-linux.png)
 
-*分类: Docker, Docker Compose | 标签: docker Compose,docker,安装教程 | 发布时间: 2025-10-26 03:17:40*
+*分类: Docker部署教程 | 标签: docker Compose,docker,安装教程 | 发布时间: 2025-10-26 03:17:40*
 
 > 该脚本支持 11 种 Linux 发行版，包括国产操作系统（Anolis OS、OpenCloudOS、Alinux），一键安装 docker、docker-compose 并自动配置国内镜像访问支持源。
 

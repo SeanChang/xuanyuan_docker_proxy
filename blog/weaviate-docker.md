@@ -1,6 +1,6 @@
 # WEAVIATE Docker 容器化部署指南
 
-*分类: Docker,WEAVIATE | 标签: weaviate,docker,部署教程 | 发布时间: 2025-12-02 07:50:01*
+*分类: Docker部署教程 | 标签: weaviate,docker,部署教程 | 发布时间: 2025-12-02 07:50:01*
 
 > WEAVIATE（镜像名称：semitechnologies/weaviate）是一款开源向量数据库，专为新一代人工智能应用设计。作为“AI原生数据库”，它通过内置的向量搜索与混合搜索能力、易于集成的机器学习模型接口以及对数据隐私的专注支持，帮助各级开发者快速构建、迭代和扩展AI应用能力。
 

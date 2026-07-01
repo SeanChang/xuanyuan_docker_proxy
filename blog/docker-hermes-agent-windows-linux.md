@@ -2,7 +2,7 @@
 
 ![Docker 部署 Hermes Agent 完整指南（Windows / Linux 通用）](https://img.xuanyuan.dev/docker/blog/docker-hermes-agent.png)
 
-*分类: OpenClaw,AI,Hermes,hermes-agent,部署教程 | 标签: OpenClaw,AI,Hermes,hermes-agent,部署教程 | 发布时间: 2026-04-20 07:46:03*
+*分类: Docker部署教程 | 标签: OpenClaw,AI,Hermes,hermes-agent,部署教程 | 发布时间: 2026-04-20 07:46:03*
 
 > Hermes Agent 是 Nous Research 推出的 AI 自主智能体（AI Autonomous Agent），能轻松执行各类复杂任务，比如自动编写代码、执行终端命令、操作浏览器、规划并完成任务，以及进行文件读写和脚本生成，是开发、运维和研究的得力助手。
 

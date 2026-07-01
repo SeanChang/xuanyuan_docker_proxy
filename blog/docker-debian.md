@@ -2,7 +2,7 @@
 
 ![Docker 部署 Debian 全流程教程](https://img.xuanyuan.dev/docker/blog/docker-debian.png)
 
-*分类: Docker,Debian | 标签: debian,docker,部署教程 | 发布时间: 2025-10-24 05:33:49*
+*分类: Docker部署教程 | 标签: debian,docker,部署教程 | 发布时间: 2025-10-24 05:33:49*
 
 > Debian 是一款完全由自由及开源软件构成的 Linux 发行版，由全球志愿者社区协作维护，始终坚守软件自由与开源核心原则，在开源生态中占据基石地位。无论是搭建开发环境、运行后端服务，还是构建嵌入式系统，Debian 都能凭借“可靠、兼容、灵活”的特性提供稳定支撑。
 

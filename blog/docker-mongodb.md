@@ -2,7 +2,7 @@
 
 ![基于 Docker 的 MongoDB 部署与使用指南](https://img.xuanyuan.dev/docker/blog/docker-mangodb.png)
 
-*分类: Docker,MongoDB | 标签: MongoDB,docker,部署教程 | 发布时间: 2025-10-04 08:28:06*
+*分类: Docker部署教程 | 标签: MongoDB,docker,部署教程 | 发布时间: 2025-10-04 08:28:06*
 
 > 本文介绍MongoDB的定义与适用场景，详述Docker环境下的准备工作、单节点快速部署、Docker Compose配置、初始化脚本编写、数据持久化方案、备份恢复方法，还提供副本集搭建示例、生产环境要点及常见问题排查，附官方与权威参考资源。
 

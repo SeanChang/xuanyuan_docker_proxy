@@ -2,7 +2,7 @@
 
 ![MySQL Server Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-mysql-server.png)
 
-*分类: Docker,MySQL Server | 标签: mysql-server,docker,部署教程 | 发布时间: 2025-11-26 08:06:50*
+*分类: Docker部署教程 | 标签: mysql-server,docker,部署教程 | 发布时间: 2025-11-26 08:06:50*
 
 > MySQL是世界上最流行的开源关系型数据库管理系统，由Oracle公司开发和维护。它以高性能、可靠性和易用性著称，广泛应用于从个人网站到企业级应用的各种场景。MySQL支持多用户、多线程操作，提供了丰富的SQL功能和强大的数据处理能力，同时具备良好的可扩展性和安全性。
 

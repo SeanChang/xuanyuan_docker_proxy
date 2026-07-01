@@ -2,7 +2,7 @@
 
 ![🚀 RAGFlow Docker 部署全流程教程](https://img.xuanyuan.dev/docker/blog/docker-ragflow.png)
 
-*分类: Docker,RAGFlow | 标签: RAGFlow,docker,部署教程 | 发布时间: 2025-10-04 02:51:33*
+*分类: Docker部署教程 | 标签: RAGFlow,docker,部署教程 | 发布时间: 2025-10-04 02:51:33*
 
 > 本文介绍开源下一代RAG系统RAGFlow的特点（检索增强生成、插件化设计等），详解其Docker部署前的软硬件准备、环境参数设置、镜像下载（含版本选择）、容器启动（含仓库克隆原因）、配置文件说明、搜索引擎切换及常见问题排查，助用户完成部署。
 

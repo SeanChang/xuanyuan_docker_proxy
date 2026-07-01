@@ -2,7 +2,7 @@
 
 ![Falco Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-falco.png)
 
-*分类: Docker,Falco | 标签: falco,docker,部署教程 | 发布时间: 2025-12-14 06:37:53*
+*分类: Docker部署教程 | 标签: falco,docker,部署教程 | 发布时间: 2025-12-14 06:37:53*
 
 > Falco 是一款为云原生平台设计的容器原生运行时安全工具，专为Linux操作系统开发。作为Cloud Native Computing Foundation (CNCF) 的孵化项目，Falco 最初由Sysdig创建，目前已被众多组织在生产环境中采用。
 

@@ -2,7 +2,7 @@
 
 ![Docker 部署 GitLab CE 完整版教程](https://img.xuanyuan.dev/docker/blog/docker-gitlab.png)
 
-*分类: Docker,GITLAB | 标签: gitlab,docker,部署教程 | 发布时间: 2025-12-03 07:44:58*
+*分类: Docker部署教程 | 标签: gitlab,docker,部署教程 | 发布时间: 2025-12-03 07:44:58*
 
 > GitLab Community Edition（简称GITLAB-CE）是一款开源的DevOps平台，集成了代码仓库管理、版本控制、 issue 跟踪、CI/CD 流水线、Wiki 和容器仓库等功能，为软件开发团队提供一站式的协作解决方案。通过Docker容器化部署GITLAB-CE，可大幅简化安装流程、提高环境一致性，并便于快速扩展和迁移。本文将详细介绍如何通过Docker快速部署GITLAB-CE，并提供生产环境优化建议及故障排查方案。
 

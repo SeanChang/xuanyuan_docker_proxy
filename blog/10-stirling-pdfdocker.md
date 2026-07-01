@@ -2,7 +2,7 @@
 
 ![10 分钟上手 Stirling PDF：Docker 一键部署，浏览器里合并压缩加水印](https://img.xuanyuan.dev/docker/blog/stirling-pdf.png)
 
-*分类: Stirling PDF,Docker,轩辕镜像,PDF工具,ultra-lite,部署教程 | 标签: Stirling PDF,Docker,轩辕镜像,PDF工具,ultra-lite,部署教程 | 发布时间: 2026-06-24 14:55:12*
+*分类: Docker部署教程 | 标签: Stirling PDF,Docker,轩辕镜像,PDF工具,ultra-lite,部署教程 | 发布时间: 2026-06-24 14:55:12*
 
 > 想在浏览器里合并 PDF、加水印、改文字，又不想装 Adobe 或一堆桌面软件？**Stirling PDF** 是一款开源、可本地托管的 Web PDF 工具箱，提供合并、拆分、压缩、水印、文本编辑等 60+ 工具，文件在服务器内存中临时处理，任务完成后自动清理，适合个人与小团队私有化部署。
 

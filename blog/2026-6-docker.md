@@ -2,7 +2,7 @@
 
 ![2026 年 6 月最新 Docker 镜像源加速列表与使用指南](https://img.xuanyuan.dev/docker/blog/docker-2026-6.png)
 
-*分类: Docker,镜像源,轩辕镜像 | 标签: Docker,镜像源,轩辕镜像 | 发布时间: 2026-06-01 03:08:58*
+*分类: Docker部署教程 | 标签: Docker,镜像源,轩辕镜像 | 发布时间: 2026-06-01 03:08:58*
 
 > 本文汇总了2026 年 6 月最新可用且稳定的国内Docker镜像加速地址，覆盖Docker、K8s containerd、Podman、nerdctl等主流场景，零基础用户也能按步骤完成配置。
 

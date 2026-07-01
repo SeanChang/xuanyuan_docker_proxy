@@ -2,7 +2,7 @@
 
 ![qBittorrent Docker 企业级部署（生产环境终版）](https://img.xuanyuan.dev/docker/blog/docker-qbittorrent.png)
 
-*分类: Docker,qBittorrent  | 标签: qBittorrent,docker,部署教程 | 发布时间: 2025-10-03 12:53:27*
+*分类: Docker部署教程 | 标签: qBittorrent,docker,部署教程 | 发布时间: 2025-10-03 12:53:27*
 
 > 很多 qBittorrent Docker 教程只能“跑起来”，却无法长期稳定运行在生产环境。
 > 本文从企业运维视角出发，系统梳理 qBittorrent 在 Docker 环境下的标准化部署规范，明确测试、生产、企业级、PT 专用等不同场景边界，重点覆盖版本锁定、最小权限、安全隔离、资源限制、日志与健康检查等生产级要点，可直接纳入企业内部 Wiki 使用。

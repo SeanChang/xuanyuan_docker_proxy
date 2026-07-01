@@ -2,7 +2,7 @@
 
 ![Portainer-CE 中文版 Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-portainer-ce-cn.png)
 
-*分类: Docker,Portainer-CE | 标签: portainer-ce,docker,部署教程 | 发布时间: 2025-12-14 13:03:16*
+*分类: Docker部署教程 | 标签: portainer-ce,docker,部署教程 | 发布时间: 2025-12-14 13:03:16*
 
 > Portainer-CE 中文版是一款容器化应用管理工具，提供了直观的Web界面用于管理Docker环境。本版本为中文汉化版，已去除原版中的企业版升级广告及英文提示公告，提供更友好的中文用户体验。该镜像已在arm64和amd64架构上进行测试，适合各类服务器和NAS设备部署。截至目前，该项目的Docker镜像拉取量已突破150万次，反映了其在容器管理领域的广泛应用。
 

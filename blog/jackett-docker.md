@@ -2,7 +2,7 @@
 
 ![JACKETT Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-jackett.png)
 
-*分类: Docker,JACKETT | 标签: jackett,docker,部署教程 | 发布时间: 2025-12-14 03:23:08*
+*分类: Docker部署教程 | 标签: jackett,docker,部署教程 | 发布时间: 2025-12-14 03:23:08*
 
 > JACKETT是一款由LinuxServer.io团队开发的容器化应用，作为代理服务器运行，能够将Sonarr、SickRage、CouchPotato、Mylar等应用的查询请求转换为特定跟踪网站的HTTP查询，解析HTML响应后将结果返回给请求软件。这一功能使得获取最新上传内容（如RSS）和执行搜索变得更加便捷，同时集中维护索引器的抓取和转换逻辑，减轻了其他应用的负担。
 

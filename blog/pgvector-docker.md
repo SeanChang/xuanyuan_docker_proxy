@@ -2,7 +2,7 @@
 
 ![PGVECTOR Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-pgvector.png)
 
-*分类: Docker,PGVECTOR | 标签: pgvector,docker,部署教程 | 发布时间: 2025-11-11 07:55:58*
+*分类: Docker部署教程 | 标签: pgvector,docker,部署教程 | 发布时间: 2025-11-11 07:55:58*
 
 > PGVECTOR是PostgreSQL的一个开源向量相似性搜索扩展，提供高效的向量存储和相似度查询功能，广泛应用于机器学习、自然语言处理、推荐系统等需要向量计算的场景。通过Docker容器化部署PGVECTOR，可以实现环境一致性、快速部署和资源隔离，简化在开发、测试和生产环境中的应用流程。本文将详细介绍PGVECTOR的Docker容器化部署方案，包括环境准备、镜像拉取、容器运行、功能验证及生产环境配置建议。
 

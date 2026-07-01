@@ -2,7 +2,7 @@
 
 ![POWERRAG Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-powerrag.png)
 
-*分类: Docker,POWERRAG | 标签: powerrag,docker,部署教程 | 发布时间: 2025-12-06 15:41:43*
+*分类: Docker部署教程 | 标签: powerrag,docker,部署教程 | 发布时间: 2025-12-06 15:41:43*
 
 > POWERRAG Community Edition是一款基于RAGFlow构建的开源项目，采用Apache License 2.0许可协议。该项目在保留RAGFlow核心能力和接口兼容性的基础上，扩展了文档处理、结构化信息提取、效果评估及反馈机制等功能，旨在为大型语言模型（LLM）应用提供更全面的集成数据服务引擎。
 
