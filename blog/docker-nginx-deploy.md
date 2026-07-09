@@ -221,9 +221,9 @@ useradd -u 101 -M -s /sbin/nologin nginx-user
 chown -R 101:101 /data/nginx
 chmod -R 750 /data/nginx
 
-# ⚠️ 修正：证书目录需 700 权限（x 权限允许访问目录内文件），证书文件 600
+# ⚠️ 修正：证书目录需 700 权限；证书文件放入后再执行 chmod 600
 chmod 700 /data/nginx/certs
-chmod 600 /data/nginx/certs/*  # 证书文件严格权限，禁止其他用户读取
+# 上传证书后执行：chmod 600 /data/nginx/certs/*.pem
 ```
 
 #### 第二步：准备测试网页
@@ -239,24 +239,23 @@ chown 101:101 /data/nginx/html/index.html
 
 ```bash
 
-# 生产环境：使用非 root 专用镜像 + 时区配置 + 端口安全提示 + 资源限制
-# ⚠️ 关键：unprivileged 镜像默认监听 8080 端口，需映射为宿主机 80
-# unprivileged 镜像端口映射（8080=HTTP，8443=HTTPS）
+# 生产环境：使用非 root 专用镜像 + 时区 + 资源限制 + 安全加固
+# ⚠️ 关键：unprivileged 镜像默认监听 8080/8443，映射为宿主机 80/443
 docker run -d --name nginx-web \
   -p 80:8080 \
   -p 443:8443 \
-  -e TZ=Asia/Shanghai \      # 修正容器时区
-  --memory=512m \            # 单机生效：限制内存 512MB
-  --cpus="1.0" \             # 单机生效：限制 CPU 核心数 1.0
-  --no-new-privileges=true \ # 生产级：禁止容器内提权，降低逃逸风险
-  --read-only=true \         # 生产级：容器文件系统只读，防 WebShell 写入
-  --tmpfs /var/run/nginx:uid=101,gid=101 \ # 只读模式下需临时目录存放 pid 文件
-  --tmpfs /var/cache/nginx:uid=101,gid=101 \ # 只读模式下需临时目录存放缓存
-  -v /data/nginx/html:/usr/share/nginx/html \  # 网页目录挂载
-  -v /data/nginx/conf:/etc/nginx/conf.d \      # 配置目录挂载
-  -v /data/nginx/logs:/var/log/nginx \        # 日志目录挂载
-  -v /data/nginx/certs:/etc/nginx/certs:ro \  # 证书目录只读挂载（降低风险）
-  nginxinc/nginx-unprivileged:1.26-alpine  # 生产级：非 root 专用镜像
+  -e TZ=Asia/Shanghai \
+  --memory=512m \
+  --cpus="1.0" \
+  --no-new-privileges=true \
+  --read-only=true \
+  --tmpfs /var/run/nginx:uid=101,gid=101 \
+  --tmpfs /var/cache/nginx:uid=101,gid=101 \
+  -v /data/nginx/html:/usr/share/nginx/html \
+  -v /data/nginx/conf:/etc/nginx/conf.d \
+  -v /data/nginx/logs:/var/log/nginx \
+  -v /data/nginx/certs:/etc/nginx/certs:ro \
+  nginxinc/nginx-unprivileged:1.26-alpine
 ```
 
 #### 目录映射说明：
@@ -298,14 +297,16 @@ server {
 }
 ```
 
-#### 配置更新后重启容器
+#### 配置更新后重载（推荐，零停机）
 
-修改配置文件后，需重启容器使配置生效：
+修改 `/data/nginx/conf/` 下的配置文件后，在宿主机执行：
 
 ```bash
 
-docker restart nginx-web
+docker exec nginx-web nginx -t && docker exec nginx-web nginx -s reload
 ```
+
+若 `nginx -t` 报错，请检查语法后再重载。仅当修改端口映射、挂载目录等容器级参数时，才需要 `docker restart nginx-web`。
 
 ### 3.3 docker-compose 部署（企业推荐/生产级）
 
@@ -362,9 +363,8 @@ services:
 mkdir -p html conf logs certs
 # 配置非 root 权限
 chown -R 101:101 html conf logs certs
-# 修正证书目录权限：目录 700，文件 600
+# 修正证书目录权限：目录 700；证书文件上传后再 chmod 600
 chmod 700 certs
-chmod 600 certs/*
 chmod 750 html conf logs
 ```
 
@@ -433,25 +433,30 @@ docker compose logs nginx | grep healthcheck
 
 ### 5.2 生产级 HTTPS 配置（含私钥安全）
 
-1. **准备证书**：获取 SSL 证书文件（`fullchain.pem` 证书链和 `privkey.pem` 私钥），放到 `/data/nginx/certs` 目录；
-        ⚠️ 生产级：私钥文件权限必须为 600，目录权限 700，禁止其他用户读取：`chmod 700 /data/nginx/certs
+1. **准备证书**：获取 SSL 证书文件（`fullchain.pem` 证书链和 `privkey.pem` 私钥），放到 `/data/nginx/certs` 目录，并设置权限：
+
+```bash
+
+chmod 700 /data/nginx/certs
 chmod 600 /data/nginx/certs/privkey.pem
-chown 101:101 /data/nginx/certs/*`
+chown 101:101 /data/nginx/certs/*
+```
 
 2. **挂载证书目录**：容器启动命令中添加 ` -v /data/nginx/certs:/etc/nginx/certs:ro`（只读挂载，降低风险）；
 
-3. **修改 Nginx 配置**：更新 `default.conf`，添加 HTTPS 监听规则（适配 unprivileged 镜像 8443 端口）：
-        `server {
-    listen 8443 ssl;  # 容器内端口，对应宿主机 443:8443 映射
-    ⚠️ 注意：这里监听的是容器内 8443 端口，外部访问的 443 由 Docker 端口映射提供。
+3. **修改 Nginx 配置**：在宿主机编辑 `/data/nginx/conf/default.conf`，添加 HTTPS 监听规则（适配 unprivileged 镜像 8443 端口）：
+
+```nginx
+
+# HTTPS 站点（容器内 8443，对应宿主机 443:8443 映射）
+server {
+    listen 8443 ssl;
     server_name example.com;  # 替换为实际域名
 
-    # 证书路径（容器内路径）
     ssl_certificate     /etc/nginx/certs/fullchain.pem;
     ssl_certificate_key /etc/nginx/certs/privkey.pem;
 
-    # 生产级 SSL 优化配置
-    ssl_protocols TLSv1.2 TLSv1.3;  # 禁用低版本 TLS
+    ssl_protocols TLSv1.2 TLSv1.3;
     ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256;
     ssl_session_timeout 1d;
     ssl_session_cache shared:SSL:10m;
@@ -460,14 +465,20 @@ chown 101:101 /data/nginx/certs/*`
     index  index.html;
 }
 
-# 生产级：强制 HTTP 跳转 HTTPS
+# 强制 HTTP 跳转 HTTPS
 server {
     listen 8080;
     server_name example.com;
     return 301 https://$host$request_uri;
-` `}`
+}
+```
 
-4. **重启容器**：`docker restart nginx-web`
+4. **重载配置**：
+
+```bash
+
+docker exec nginx-web nginx -t && docker exec nginx-web nginx -s reload
+```
 
 ### 5.3 日志管理（单机/集群分级方案）
 
@@ -522,6 +533,51 @@ error_log /dev/stderr warn;`
 - 前置 CDN/WAF，所有公网请求先经过 WAF 清洗后再转发到 Nginx；
 
 - 安全组仅放行 SLB/CDN 节点 IP，禁止直接访问 Nginx 服务器。
+
+### 5.5 如何开启 Gzip 压缩？需要进容器改吗？
+
+**不需要进容器。** 按本文 **3.2 目录挂载** 或 **3.3 docker-compose** 部署时，配置目录已挂载到宿主机，在宿主机改文件即可持久生效。
+
+| 部署方式 | 是否需进容器 | 配置位置 |
+|---|---|---|
+| 3.2 / 3.3（推荐） | 否 | 宿主机 `/data/nginx/conf/` 或 `./conf/` |
+| 3.1 快速部署（无挂载） | 是（临时，容器重建后丢失） | 容器内 `/etc/nginx/`，不推荐 |
+
+在宿主机新建 `/data/nginx/conf/gzip.conf`（docker-compose 场景则为 `./conf/gzip.conf`）：
+
+```nginx
+
+gzip on;
+gzip_vary on;
+gzip_proxied any;
+gzip_comp_level 6;
+gzip_min_length 1024;
+gzip_types
+    text/plain
+    text/css
+    text/javascript
+    application/javascript
+    application/json
+    application/xml
+    image/svg+xml;
+```
+
+保存后执行：
+
+```bash
+
+docker exec nginx-web nginx -t && docker exec nginx-web nginx -s reload
+```
+
+验证压缩是否生效：
+
+```bash
+
+curl -H "Accept-Encoding: gzip" -I http://服务器IP/
+# 响应头应包含 Content-Encoding: gzip
+```
+
+说明：官方 Nginx 镜像主配置 `nginx.conf` 中可能已默认开启 `gzip`，但 `gzip_types` 类型可能不全；通过挂载目录补充 `gzip.conf` 即可覆盖/扩展，**无需修改容器内主配置文件**。
 
 ## 6、架构示意图
 
