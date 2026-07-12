@@ -3,7 +3,7 @@ image: ryshe/terraria
 description: "提供支持原版及移动设备的Terraria服务器，集成TShock工具以实现管理功能。"
 source: https://xuanyuan.cloud/zh/r/ryshe/terraria
 canonical: https://xuanyuan.cloud/zh/r/ryshe/terraria
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ryshe/terraria" title="ryshe/terraria Docker 镜像中文简介、标签列表与拉取命令">ryshe/terraria 中文简介</a>
@@ -64,7 +64,7 @@ mkdir -p $HOME/terraria/logs  # 日志（可选）
 ```bash
 docker run -it -p 7777:7777 --rm \
   -v $HOME/terraria/world:/root/.local/share/Terraria/Worlds \
-  ryshe/terraria:latest \
+  docker.xuanyuan.run/ryshe/terraria:latest \
   -world /root/.local/share/Terraria/Worlds/<世界名称>.wld \
   -autocreate <世界大小>
 ```  
@@ -80,7 +80,7 @@ docker run -it -p 7777:7777 --rm \
 ```bash
 docker run -it -p 7777:7777 --rm \
   -v $HOME/terraria/world:/root/.local/share/Terraria/Worlds \
-  ryshe/terraria:latest
+  docker.xuanyuan.run/ryshe/terraria:latest
 ```  
 
 
@@ -103,7 +103,7 @@ docker run -d --rm --name="terraria-server" \
 
 1. 拉取最新镜像：  
    ```bash
-   docker pull ryshe/terraria:latest
+   docker pull docker.xuanyuan.run/ryshe/terraria:latest
    ```  
 
 2. 停止并删除旧容器（需替换`<容器ID/名称>`）：  
@@ -219,7 +219,7 @@ docker run -d --rm --name="terraria-server" \
    ```bash
    docker run -it -p 7777:7777 --rm \
      -v $HOME/terraria/world:/root/.local/share/Terraria/Worlds \
-     ryshe/terraria:mobile-1.4.0.5
+     docker.xuanyuan.run/ryshe/terraria:mobile-1.4.0.5
    ```  
 5. **TShock文档**：服务器管理细节（如命令行参数、权限配置）参考[TShock官方文档](https://tshock.readme.io/)。  
 

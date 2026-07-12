@@ -3,7 +3,7 @@ image: bitnami/rabbitmq
 description: "Bitnami Secure Image for rabbitmq是比特纳米公司推出的针对RabbitMQ消息代理的安全镜像，该镜像经专业安全加固，预装必要依赖与优化配置，可保障消息传输的机密性与完整性，支持快速部署至云平台、容器环境或本地服务器，能有效简化开发与运维流程，同时满足企业级安全合规需求，为分布式系统中的消息通信提供稳定可靠的安全运行环境。"
 source: https://xuanyuan.cloud/zh/r/bitnami/rabbitmq
 canonical: https://xuanyuan.cloud/zh/r/bitnami/rabbitmq
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/rabbitmq" title="bitnami/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">bitnami/rabbitmq 中文简介</a>
@@ -16,7 +16,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 镜像现状  
 当前，Bitnami RabbitMQ 安全镜像已不再通过 Docker Hub 免费提供。该镜像现为商业订阅制产品，提供基于 Debian 和 Photon 两种基础操作系统的 OCI 制品。  
 
-不过，Docker Hub 仍提供其他 Bitnami 安全镜像的开发者版本。如需获取完整列表，可访问 [公共目录]([]) 并筛选“可用性类型：试用”。  
+不过，Docker Hub 仍提供其他 Bitnami 安全镜像的开发者版本。如需获取完整列表，可访问 [公共目录]  并筛选“可用性类型：试用”。  
 
 
 ### 推荐升级至 Photon 版镜像  
@@ -29,4 +29,4 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ### 了解更多  
-如需详细了解 Bitnami 商业安全镜像方案，可访问 [官方网站]([])。
+如需详细了解 Bitnami 商业安全镜像方案，可访问 [官方网站] 。

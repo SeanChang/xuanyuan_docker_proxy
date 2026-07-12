@@ -3,7 +3,7 @@ image: alpine/node
 description: "该镜像无更新，建议直接使用官方Node.js镜像以获取最新功能、安全补丁和技术支持。"
 source: https://xuanyuan.cloud/zh/r/alpine/node
 canonical: https://xuanyuan.cloud/zh/r/alpine/node
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/node" title="alpine/node Docker 镜像中文简介、标签列表与拉取命令">alpine/node 中文简介</a>
@@ -31,10 +31,10 @@ exported_at: 2026-06-02T12:26:10.133Z
 直接拉取并运行官方Node.js镜像（以LTS版本为例）：
 ```bash
 # 拉取官方Node.js LTS镜像（当前为20.x版本）
-docker pull node:lts
+docker pull docker.xuanyuan.run/node:lts
 
 # 运行交互式容器（测试Node环境）
-docker run -it --rm node:lts node -v  # 输出Node.js版本号
+docker run -it --rm docker.xuanyuan.run/node:lts node -v # 输出Node.js版本号
 ```
 
 ### 4.2 项目集成（Docker Compose）
@@ -43,7 +43,7 @@ docker run -it --rm node:lts node -v  # 输出Node.js版本号
 version: '3'
 services:
   app:
-    image: node:lts  # 使用官方LTS镜像
+    image: docker.xuanyuan.run/node:lts  # 使用官方LTS镜像
     working_dir: /app
     volumes:
       - ./:/app  # 挂载本地项目目录

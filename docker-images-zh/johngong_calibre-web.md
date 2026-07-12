@@ -3,7 +3,7 @@ image: johngong/calibre-web
 description: "calibre-web:0.6.25是一款功能实用的电子书管理工具，它不仅支持对个人电子书库进行便捷的分类、整理与阅读管理，还集成了ebook-convert转换功能，能够实现EPUB、MOBI、PDF等多种主流电子书格式之间的快速相互转换，帮助用户轻松适配不同阅读设备的格式需求，有效提升电子书资源的管理与利用效率。"
 source: https://xuanyuan.cloud/zh/r/johngong/calibre-web
 canonical: https://xuanyuan.cloud/zh/r/johngong/calibre-web
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/johngong/calibre-web" title="johngong/calibre-web Docker 镜像中文简介、标签列表与拉取命令">johngong/calibre-web 中文简介</a>
@@ -16,9 +16,9 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 项目简介  
 本文介绍群晖NAS上通过Docker部署的calibre-web电子书管理方案，整合了ebook-convert格式转换工具及calibre-server服务，支持多架构（amd64/arm64v8/arm32v7）。  
 
-- **项目地址**：[GitHub]([])  
+- **项目地址**：[GitHub]   
 - **感谢上游项目**：  
-  [calibre-web]([])、[calibre]([])  
+  [calibre-web] 、[calibre]   
 
 
 ## 版本信息  
@@ -51,8 +51,8 @@ exported_at: 2026-06-02T12:26:10.133Z
 1. **下载镜像**  
    | 镜像源       | 命令                                  |
    |--------------|---------------------------------------|
-   | DockerHub    | `docker pull johngong/calibre-web:latest` |
-   | GitHub       | `docker pull ghcr.io/gshang2017/calibre-web:latest` |
+   | DockerHub    | `docker pull docker.xuanyuan.run/johngong/calibre-web:latest` |
+   | GitHub       | `docker pull ***-ghcr.xuanyuan.run/gshang2017/calibre-web:latest` |
 
 2. **创建容器**  
    ```bash

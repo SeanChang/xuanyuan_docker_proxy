@@ -3,7 +3,7 @@ image: xiaozhu674/gameservermanager
 description: "新一代一站式游戏开服面板，提供便捷的游戏服务器开设与管理功能。"
 source: https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager
 canonical: https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/xiaozhu674/gameservermanager" title="xiaozhu674/gameservermanager Docker 镜像中文简介、标签列表与拉取命令">xiaozhu674/gameservermanager 中文简介</a>
@@ -62,7 +62,7 @@ docker run -d \
   -e ADMIN_USER=admin \
   -e ADMIN_PASSWORD=your_secure_password \
   -e TZ=Asia/Shanghai \
-  game-panel:latest
+  docker.xuanyuan.run/game-panel:latest
 ```
 
 
@@ -75,7 +75,7 @@ version: '3.8'
 
 services:
   game-panel:
-    image: game-panel:latest
+    image: docker.xuanyuan.run/game-panel:latest
     container_name: game-server-panel
     restart: unless-stopped
     ports:
@@ -104,7 +104,7 @@ services:
 
   # 外部数据库示例（MySQL），若使用sqlite可删除此服务
   db:
-    image: mysql:8.0
+    image: docker.xuanyuan.run/mysql:8.0
     container_name: game-panel-db
     restart: unless-stopped
     volumes:

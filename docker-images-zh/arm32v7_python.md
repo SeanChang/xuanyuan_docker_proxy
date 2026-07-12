@@ -3,7 +3,7 @@ image: arm32v7/python
 description: "Python是一种解释型、交互式、面向对象的开源编程语言，适用于各类软件开发。"
 source: https://xuanyuan.cloud/zh/r/arm32v7/python
 canonical: https://xuanyuan.cloud/zh/r/arm32v7/python
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/arm32v7/python" title="arm32v7/python Docker 镜像中文简介、标签列表与拉取命令">arm32v7/python 中文简介</a>
@@ -76,7 +76,7 @@ Shared Tags 为版本别名，指向特定基础镜像：
 
 ```dockerfile
 # 使用 Python 3 最新版本
-FROM arm32v7/python:3
+FROM docker.xuanyuan.run/arm32v7/python:3
 
 WORKDIR /usr/src/app
 

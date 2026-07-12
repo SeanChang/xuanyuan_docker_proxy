@@ -3,7 +3,7 @@ image: linuxserver/kasm
 description: "Kasm Workspaces 是一个容器流式传输平台，通过基于浏览器的方式提供对桌面、应用程序和 Web 服务的访问，采用容器化桌面基础设施 (CDI) 创建按需、一次性的 Docker 容器，适用于远程浏览器隔离、数据防泄漏、桌面即服务等场景。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/kasm
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/kasm
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/kasm" title="linuxserver/kasm Docker 镜像中文简介、标签列表与拉取命令">linuxserver/kasm 中文简介</a>
@@ -80,7 +80,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ---
 services:
   kasm:
-    image: lscr.io/linuxserver/kasm:latest
+    image: docker.xuanyuan.run/linuxserver/kasm:latest
     container_name: kasm
     privileged: true
     security_opt:
@@ -231,7 +231,7 @@ docker run -d \
 * 更新镜像：
 
     ```bash
-    docker pull lscr.io/linuxserver/kasm:latest
+    docker pull docker.xuanyuan.run/linuxserver/kasm:latest
     ```
 
 * 停止运行中的容器：
@@ -274,7 +274,7 @@ docker build \
 可以使用 `lscr.io/linuxserver/qemu-static` 在 x86_64 硬件上构建 ARM 变体，反之亦然：
 
 ```bash
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```
 
 注册后，可以使用 `-f Dockerfile.aarch64` 指定要使用的 dockerfile。

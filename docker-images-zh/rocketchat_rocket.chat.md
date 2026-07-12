@@ -3,7 +3,7 @@ image: rocketchat/rocket.chat
 description: "官方Rocket.Chat Docker部署镜像，用于快速部署开源团队聊天与协作平台。"
 source: https://xuanyuan.cloud/zh/r/rocketchat/rocket.chat
 canonical: https://xuanyuan.cloud/zh/r/rocketchat/rocket.chat
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rocketchat/rocket.chat" title="rocketchat/rocket.chat Docker 镜像中文简介、标签列表与拉取命令">rocketchat/rocket.chat 中文简介</a>
@@ -56,10 +56,10 @@ Rocket.Chat 是一款开源的企业级 Web 聊天平台，支持实时通信、
 
 ```bash
 # 拉取最新稳定版
-docker pull rocketchat/rocket.chat:latest
+docker pull docker.xuanyuan.run/rocketchat/rocket.chat:latest
 
 # 拉取特定版本（示例）
-docker pull rocketchat/rocket.chat:v6.3.0
+docker pull docker.xuanyuan.run/rocketchat/rocket.chat:v6.3.0
 ```
 
 
@@ -74,7 +74,7 @@ docker run -d \
   -v /path/to/mongodb/data:/data/db \
   -e MONGO_INITDB_ROOT_USERNAME=mongoadmin \
   -e MONGO_INITDB_ROOT_PASSWORD=mongopassword \
-  mongo:4.4 --replSet rs0
+  docker.xuanyuan.run/mongo:4.4 --replSet rs0
 ```
 
 #### 步骤 2：初始化 MongoDB 副本集（必需）
@@ -114,7 +114,7 @@ version: '3'
 
 services:
   mongodb:
-    image: mongo:4.4
+    image: docker.xuanyuan.run/mongo:4.4
     container_name: mongodb
     restart: always
     volumes:
@@ -127,7 +127,7 @@ services:
       - rocketchat_network
 
   rocketchat:
-    image: rocketchat/rocket.chat:latest
+    image: docker.xuanyuan.run/rocketchat/rocket.chat:latest
     container_name: rocketchat
     restart: always
     depends_on:

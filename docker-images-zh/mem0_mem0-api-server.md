@@ -3,7 +3,7 @@ image: mem0/mem0-api-server
 description: "Mem0 REST API服务器，提供RESTful API接口，用于支持应用程序间的数据交互与服务调用。"
 source: https://xuanyuan.cloud/zh/r/mem0/mem0-api-server
 canonical: https://xuanyuan.cloud/zh/r/mem0/mem0-api-server
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mem0/mem0-api-server" title="mem0/mem0-api-server Docker 镜像中文简介、标签列表与拉取命令">mem0/mem0-api-server 中文简介</a>
@@ -97,7 +97,7 @@ docker run -d \
   -e SERVER_PORT=8080 \
   -e LOG_LEVEL=info \
   -e AUTH_ENABLED=false \
-  mem0/rest-api-server:latest
+  docker.xuanyuan.run/mem0/rest-api-server:latest
 ```
 
 #### 4.3.2 带认证和配置文件挂载
@@ -109,7 +109,7 @@ docker run -d \
   -e AUTH_ENABLED=true \
   -e JWT_SECRET="your-256-bit-secret" \
   -v /local/path/config.yaml:/app/config.yaml \
-  mem0/rest-api-server:latest
+  docker.xuanyuan.run/mem0/rest-api-server:latest
 ```
 
 #### 4.3.3 Docker Compose 配置
@@ -117,7 +117,7 @@ docker run -d \
 version: '3.8'
 services:
   mem0-api:
-    image: mem0/rest-api-server:latest
+    image: docker.xuanyuan.run/mem0/rest-api-server:latest
     container_name: mem0-api
     restart: always
     ports:

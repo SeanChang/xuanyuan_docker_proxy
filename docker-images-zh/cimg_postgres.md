@@ -3,7 +3,7 @@ image: cimg/postgres
 description: "CircleCI便捷镜像，集成PostgreSQL数据库，用于CI/CD流程中快速部署和运行PostgreSQL相关的测试及开发任务，简化配置。"
 source: https://xuanyuan.cloud/zh/r/cimg/postgres
 canonical: https://xuanyuan.cloud/zh/r/cimg/postgres
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cimg/postgres" title="cimg/postgres Docker 镜像中文简介、标签列表与拉取命令">cimg/postgres 中文简介</a>
@@ -121,7 +121,7 @@ jobs:
 
 #### 拉取镜像
 ```bash
-docker pull cimg/postgres:13.2
+docker pull docker.xuanyuan.run/cimg/postgres:13.2
 ```
 
 #### 启动容器
@@ -132,7 +132,7 @@ docker run -d \
   -e POSTGRES_PASSWORD=mypassword \
   -e POSTGRES_DB=mydb \
   --name pg-test \
-  cimg/postgres:13.2
+  docker.xuanyuan.run/cimg/postgres:13.2
 ```
 **环境变量说明**：
 - `POSTGRES_USER`：默认数据库用户（未指定时为 `postgres`）。
@@ -170,7 +170,7 @@ cd cimg-postgres
 ```bash
 cd 13.2
 docker build -t test/postgres:13.2 .  # 本地构建镜像
-docker run -it test/postgres:13.2 bash  # 启动容器并进入交互终端
+docker run -it docker.xuanyuan.run/test/postgres:13.2 bash # 启动容器并进入交互终端
 ```
 
 

@@ -3,7 +3,7 @@ image: linuxserver/code-server
 description: "linuxserver/code-server是VS Code服务器版Docker镜像，可在浏览器中运行完整VS Code开发环境，无需本地安装即可跨设备访问。支持全部VS Code扩展、代码同步与终端功能，适配远程开发、团队协作或低配置设备场景。镜像经linuxserver优化，兼容ARM/AMD架构，内置持久化存储与安全配置，开箱即用，轻松打造云端IDE，提升开发灵活性与效率。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/code-server
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/code-server
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/code-server" title="linuxserver/code-server Docker 镜像中文简介、标签列表与拉取命令">linuxserver/code-server 中文简介</a>
@@ -25,7 +25,7 @@ LinuxServer.io 团队推出的容器镜像具有以下特点：
 
 ## 什么是 code-server？  
 
-[code-server]([]) 是一款可通过浏览器访问的远程 VS Code 服务，支持：  
+[code-server]  是一款可通过浏览器访问的远程 VS Code 服务，支持：  
 - 在 Chromebook、平板、笔记本等设备上保持一致的开发环境  
 - 方便 Windows/macOS 工作站开发 Linux 应用  
 - 利用云服务器资源加速测试、编译和下载  
@@ -57,7 +57,7 @@ LinuxServer.io 团队推出的容器镜像具有以下特点：
    ```  
 
 ### 密码哈希设置  
-如需使用哈希密码，可参考 [官方文档]([]) 生成。  
+如需使用哈希密码，可参考 [官方文档]  生成。  
 
 
 ## 特殊运行模式  
@@ -66,12 +66,12 @@ LinuxServer.io 团队推出的容器镜像具有以下特点：
 本镜像支持以只读模式运行，需注意：  
 - 必须将 `/tmp` 挂载为 tmpfs  
 - 容器内无 `sudo` 权限  
-详细配置见 [文档]([])。  
+详细配置见 [文档] 。  
 
 ### 非 root 用户运行  
 支持非 root 用户启动容器，需注意：  
 - 容器内无 `sudo` 权限  
-详细配置见 [文档]([])。  
+详细配置见 [文档] 。  
 
 
 ## 使用方法  
@@ -86,7 +86,7 @@ LinuxServer.io 团队推出的容器镜像具有以下特点：
 ---  
 services:  
   code-server:  
-    image: lscr.io/linuxserver/code-server:latest  
+    image: docker.xuanyuan.run/linuxserver/code-server:latest  
     container_name: code-server  
     environment:  
       - PUID=1000                # 用户 ID（通过 `id 用户名` 查看）  
@@ -141,7 +141,7 @@ docker run -d \
 | `-e HASHED_PASSWORD`  | 可选，哈希密码（覆盖 `PASSWORD`）                                   |  
 | `-e SUDO_PASSWORD`    | 可选，终端 sudo 密码                                                 |  
 | `-e SUDO_PASSWORD_HASH` | 可选，sudo 哈希密码（覆盖 `SUDO_PASSWORD`）                        |  
-| `-e PROXY_DOMAIN`     | 可选，子域名代理配置，参考 [文档]([]) |  
+| `-e PROXY_DOMAIN`     | 可选，子域名代理配置，参考 [文档]  |  
 | `-e DEFAULT_WORKSPACE` | 可选，默认打开的工作目录                                            |  
 | `-e PWA_APPNAME`      | 可选，自定义 PWA 应用名称                                           |  
 | `-v /config`          | 容器内配置文件目录，需映射到主机路径                                |  
@@ -208,7 +208,7 @@ docker image prune
 #### 通过 docker run  
 ```bash  
 # 更新镜像  
-docker pull lscr.io/linuxserver/code-server:latest  
+docker pull docker.xuanyuan.run/linuxserver/code-server:latest  
 
 # 停止并删除旧容器  
 docker stop code-server && docker rm code-server  
@@ -229,7 +229,7 @@ docker build --no-cache --pull -t lscr.io/linuxserver/code-server:latest .
 
 如需跨架构构建（如 x86 构建 arm 镜像），需先注册 qemu-static：  
 ```bash  
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset  
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```  
 然后使用对应架构的 Dockerfile（如 `-f Dockerfile.aarch64`）。  
 
@@ -249,8 +249,8 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 
 ## 社区支持  
 
-- [博客]([])：容器使用指南、教程和观点  
+- [博客] ：容器使用指南、教程和观点  
 - []()：实时社区交流与支持  
-- [论坛]([])：社区问答平台  
-- [GitHub]([])：源码仓库  
-- [Open Collective]([])：支持项目发展（捐赠或贡献）
+- [论坛] ：社区问答平台  
+- [GitHub] ：源码仓库  
+- [Open Collective] ：支持项目发展（捐赠或贡献）

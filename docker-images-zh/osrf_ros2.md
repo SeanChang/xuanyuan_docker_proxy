@@ -3,7 +3,7 @@ image: osrf/ros2
 description: "这里所提供的是仅用于ROS2开发工作的实验性Docker镜像，该类镜像仅适用于开发场景，不设置“latest”标签，因此用户在从仓库拉取该镜像时，必须通过明确指定的标签来进行操作，以确保能够准确获取到所需的镜像版本。"
 source: https://xuanyuan.cloud/zh/r/osrf/ros2
 canonical: https://xuanyuan.cloud/zh/r/osrf/ros2
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/osrf/ros2" title="osrf/ros2 Docker 镜像中文简介、标签列表与拉取命令">osrf/ros2 中文简介</a>

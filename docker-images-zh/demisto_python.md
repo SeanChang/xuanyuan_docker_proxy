@@ -3,7 +3,7 @@ image: demisto/python
 description: "基于python:2.7的Demisto基础Python镜像，包含requests、olefile、pip和stix等基本Python库，适用于构建依赖这些特定库的Python 2.7应用环境。"
 source: https://xuanyuan.cloud/zh/r/demisto/python
 canonical: https://xuanyuan.cloud/zh/r/demisto/python
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/demisto/python" title="demisto/python Docker 镜像中文简介、标签列表与拉取命令">demisto/python 中文简介</a>
@@ -33,13 +33,13 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 拉取镜像
 （假设镜像托管于Demisto官方仓库，具体拉取命令需根据实际仓库地址调整）
 ```bash
-docker pull demisto/python-base:latest
+docker pull docker.xuanyuan.run/demisto/python-base:latest
 ```
 
 ### 运行容器
 通过以下命令启动一个交互式容器，可直接使用预安装的库：
 ```bash
-docker run -it --rm demisto/python-base:latest python
+docker run -it --rm docker.xuanyuan.run/demisto/python-base:latest python
 ```
 进入Python交互环境后，可验证库是否安装：
 ```python
@@ -53,7 +53,7 @@ print("stix version:", stix.__version__)
 ### 作为基础镜像构建应用
 在Dockerfile中使用本镜像作为基础，构建自定义应用：
 ```dockerfile
-FROM demisto/python-base:latest
+FROM docker.xuanyuan.run/demisto/python-base:latest
 
 # 复制应用代码
 COPY . /app

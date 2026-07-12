@@ -3,7 +3,7 @@ image: linuxserver/wps-office
 description: "LinuxServer.io提供的WPS Office Docker镜像，用于在容器环境中便捷部署和运行WPS Office办公套件，支持文档、表格、演示文稿等功能，具备易用性和持续更新特性。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/wps-office
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/wps-office
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/wps-office" title="linuxserver/wps-office Docker 镜像中文简介、标签列表与拉取命令">linuxserver/wps-office 中文简介</a>
@@ -79,7 +79,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ---
 services:
   wps-office:
-    image: lscr.io/linuxserver/wps-office:latest
+    image: docker.xuanyuan.run/linuxserver/wps-office:latest
     container_name: wps-office
     environment:
       - PUID=1000               # 用户ID（通过`id your_user`获取）
@@ -202,7 +202,7 @@ docker run -d \
 docker run -d \
   --name=wps-office \
   --gpus all \
-  --runtime nvidia \
+  --runtime docker.xuanyuan.run/nvidia \
   # 其他参数...
   lscr.io/linuxserver/wps-office:latest
 ```
@@ -211,7 +211,7 @@ docker run -d \
 ```yaml
 services:
   wps-office:
-    image: lscr.io/linuxserver/wps-office:latest
+    image: docker.xuanyuan.run/linuxserver/wps-office:latest
     deploy:
       resources:
         reservations:
@@ -299,7 +299,7 @@ docker image prune
 
 ```bash
 # 拉取最新镜像
-docker pull lscr.io/linuxserver/wps-office:latest
+docker pull docker.xuanyuan.run/linuxserver/wps-office:latest
 # 停止并删除旧容器
 docker stop wps-office && docker rm wps-office
 # 用原参数启动新容器（/config目录需映射正确以保留数据）
@@ -323,7 +323,7 @@ docker build \
 
 跨架构构建需先注册qemu-static：
 ```bash
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```
 
 

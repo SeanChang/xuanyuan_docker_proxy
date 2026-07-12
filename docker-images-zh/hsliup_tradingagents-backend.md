@@ -3,7 +3,7 @@ image: hsliup/tradingagents-backend
 description: "基于多智能体架构的 AI 股票分析系统后端服务"
 source: https://xuanyuan.cloud/zh/r/hsliup/tradingagents-backend
 canonical: https://xuanyuan.cloud/zh/r/hsliup/tradingagents-backend
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hsliup/tradingagents-backend" title="hsliup/tradingagents-backend Docker 镜像中文简介、标签列表与拉取命令">hsliup/tradingagents-backend 中文简介</a>
@@ -78,7 +78,7 @@ docker run -d \
   -e DASHSCOPE_API_KEY=your-api-key \
   -e DEEPSEEK_API_KEY=your-api-key \
   --network tradingagents-network \
-  hsliup/tradingagents-backend:latest
+  docker.xuanyuan.run/hsliup/tradingagents-backend:latest
 ```
 
 ### Docker Compose 配置示例
@@ -87,7 +87,7 @@ version: '3.8'
 
 services:
   backend:
-    image: hsliup/tradingagents-backend:latest
+    image: docker.xuanyuan.run/hsliup/tradingagents-backend:latest
     container_name: tradingagents-backend
     ports:
       - "8000:8000"
@@ -108,7 +108,7 @@ services:
       retries: 3
 
   mongodb:
-    image: mongo:4.4
+    image: docker.xuanyuan.run/mongo:4.4
     container_name: tradingagents-mongodb
     environment:
       - MONGO_INITDB_ROOT_USERNAME=admin
@@ -118,7 +118,7 @@ services:
     restart: unless-stopped
 
   redis:
-    image: redis:7-alpine
+    image: docker.xuanyuan.run/redis:7-alpine
     container_name: tradingagents-redis
     restart: unless-stopped
 

@@ -3,7 +3,7 @@ image: nginx/unit-preview
 description: "用于预览Unit新功能的Docker镜像，提供便捷的测试环境，帮助开发者提前体验和评估即将发布的功能特性，无需手动搭建复杂开发环境。"
 source: https://xuanyuan.cloud/zh/r/nginx/unit-preview
 canonical: https://xuanyuan.cloud/zh/r/nginx/unit-preview
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nginx/unit-preview" title="nginx/unit-preview Docker 镜像中文简介、标签列表与拉取命令">nginx/unit-preview 中文简介</a>
@@ -35,7 +35,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 通过以下命令快速启动镜像，体验Unit新功能：
 
 ```bash
-docker run -d -p 8080:80 --name unit-preview unit-preview-features:latest
+docker run -d -p 8080:80 --name unit-preview docker.xuanyuan.run/unit-preview-features:latest
 ```
 
 **说明**：  
@@ -61,7 +61,7 @@ docker run -d -p 8080:80 --name unit-preview unit-preview-features:latest
 
 **示例**：指定日志级别为`debug`并仅启用`feature-x`功能  
 ```bash
-docker run -d -p 8080:80 -e UNIT_LOG_LEVEL=debug -e FEATURE_FLAGS=feature-x --name unit-preview unit-preview-features:latest
+docker run -d -p 8080:80 -e UNIT_LOG_LEVEL=debug -e FEATURE_FLAGS=feature-x --name unit-preview docker.xuanyuan.run/unit-preview-features:latest
 ```
 
 #### 数据持久化（可选）
@@ -69,7 +69,7 @@ docker run -d -p 8080:80 -e UNIT_LOG_LEVEL=debug -e FEATURE_FLAGS=feature-x --na
 通过挂载本地目录保留测试数据（默认数据目录为`/data`）：
 
 ```bash
-docker run -d -p 8080:80 -v ./local-test-data:/data --name unit-preview unit-preview-features:latest
+docker run -d -p 8080:80 -v ./local-test-data:/data --name unit-preview docker.xuanyuan.run/unit-preview-features:latest
 ```
 
 ### docker-compose配置示例
@@ -80,7 +80,7 @@ docker run -d -p 8080:80 -v ./local-test-data:/data --name unit-preview unit-pre
 version: '3'
 services:
   unit-preview:
-    image: unit-preview-features:latest
+    image: docker.xuanyuan.run/unit-preview-features:latest
     ports:
       - "8080:80"
     environment:
@@ -99,5 +99,5 @@ docker-compose up -d
 ### 注意事项
 
 - 该镜像包含的功能为预览版，存在不稳定风险，**禁止用于生产环境**。  
-- 镜像版本随Unit开发进度更新，建议定期执行`docker pull unit-preview-features:latest`获取最新预览功能。  
+- 镜像版本随Unit开发进度更新，建议定期执行`docker pull docker.xuanyuan.run/unit-preview-features:latest`获取最新预览功能。  
 - 功能异常排查：通过容器日志定位问题，命令为 `docker logs unit-preview`。

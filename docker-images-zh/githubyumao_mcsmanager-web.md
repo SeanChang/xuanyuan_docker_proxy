@@ -3,7 +3,7 @@ image: githubyumao/mcsmanager-web
 description: "MCSManager官方Web镜像，用于通过Web界面管理Minecraft服务器，从GitHub仓库自动构建。"
 source: https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web
 canonical: https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-web" title="githubyumao/mcsmanager-web Docker 镜像中文简介、标签列表与拉取命令">githubyumao/mcsmanager-web 中文简介</a>
@@ -69,7 +69,7 @@ docker run -d \
 version: '3.8'
 services:
   mcsmanager:
-    image: mcsmanager/mcsmanager:latest
+    image: docker.xuanyuan.run/mcsmanager/mcsmanager:latest
     container_name: mcsmanager
     restart: always
     ports:

@@ -3,7 +3,7 @@ image: bitnamicharts/postgresql
 description: "Bitnami的PostgreSQL Helm chart，用于在Kubernetes环境中便捷部署和管理PostgreSQL数据库，支持灵活配置与可靠运行。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/postgresql
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/postgresql
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/postgresql" title="bitnamicharts/postgresql Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/postgresql 中文简介</a>
@@ -56,7 +56,7 @@ PostgreSQL（简称Postgres）是一款开源对象关系型数据库，以可�
 
 ```bash
 # 简单启动（非持久化，仅用于测试）
-docker run --name postgresql -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 bitnami/postgresql:latest
+docker run --name postgresql -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 docker.xuanyuan.run/bitnami/postgresql:latest
 
 # 持久化启动（数据保存在宿主机目录）
 docker run --name postgresql \
@@ -65,7 +65,7 @@ docker run --name postgresql \
   -e POSTGRES_DB=mydb \
   -v /path/on/host:/bitnami/postgresql \
   -p 5432:5432 \
-  bitnami/postgresql:latest
+  docker.xuanyuan.run/bitnami/postgresql:latest
 ```
 
 ### Docker Compose 部署
@@ -75,7 +75,7 @@ version: '3'
 
 services:
   postgresql:
-    image: bitnami/postgresql:latest
+    image: docker.xuanyuan.run/bitnami/postgresql:latest
     ports:
       - "5432:5432"
     environment:
@@ -157,14 +157,14 @@ PostgreSQL数据默认存储在容器内`/bitnami/postgresql`路径。为确保�
 docker run --name postgresql \
   -e POSTGRES_PASSWORD=mysecretpassword \
   -v /host/path/to/postgres/data:/bitnami/postgresql \
-  bitnami/postgresql:latest
+  docker.xuanyuan.run/bitnami/postgresql:latest
 
 # 使用Docker命名卷（推荐）
 docker volume create postgres_data
 docker run --name postgresql \
   -e POSTGRES_PASSWORD=mysecretpassword \
   -v postgres_data:/bitnami/postgresql \
-  bitnami/postgresql:latest
+  docker.xuanyuan.run/bitnami/postgresql:latest
 ```
 
 
@@ -180,7 +180,7 @@ docker run --name postgresql-master \
   -e REPLICATION_PASSWORD=replpassword \
   -v master_data:/bitnami/postgresql \
   --network postgres-net \
-  bitnami/postgresql:latest
+  docker.xuanyuan.run/bitnami/postgresql:latest
 ```
 
 #### 启动从节点
@@ -209,7 +209,7 @@ docker run --name postgresql-slave \
 docker run --name postgresql \
   -e POSTGRES_PASSWORD=mysecretpassword \
   -e POSTGRESQL_EXTRA_FLAGS="-c max_connections=200 -c shared_buffers=256MB" \
-  bitnami/postgresql:latest
+  docker.xuanyuan.run/bitnami/postgresql:latest
 ```
 
 #### 通过配置文件自定义
@@ -221,7 +221,7 @@ docker run --name postgresql \
   -e POSTGRES_PASSWORD=mysecretpassword \
   -v /host/path/to/postgresql.conf:/opt/bitnami/postgresql/conf/postgresql.conf \
   -v /host/path/to/pg_hba.conf:/opt/bitnami/postgresql/conf/pg_hba.conf \
-  bitnami/postgresql:latest
+  docker.xuanyuan.run/bitnami/postgresql:latest
 ```
 
 
@@ -262,7 +262,7 @@ docker run --name postgresql \
   -v $(pwd)/server.key:/opt/bitnami/postgresql/certs/server.key \
   -e TLS_CERT_FILE=/opt/bitnami/postgresql/certs/server.crt \
   -e TLS_KEY_FILE=/opt/bitnami/postgresql/certs/server.key \
-  bitnami/postgresql:latest
+  docker.xuanyuan.run/bitnami/postgresql:latest
 ```
 
 
@@ -357,13 +357,13 @@ velero restore create --from-backup postgres-backup
 docker stop postgresql
 
 # 备份数据（关键步骤）
-docker run --rm -v postgres_data:/source -v $(pwd):/backup alpine tar -czf /backup/postgres_backup.tar.gz -C /source .
+docker run --rm -v postgres_data:/source -v $(pwd):/backup docker.xuanyuan.run/alpine tar -czf /backup/postgres_backup.tar.gz -C /source .
 
 # 启动新版本容器
 docker run --name postgresql-new \
   -e POSTGRES_PASSWORD=mysecretpassword \
   -v postgres_data:/bitnami/postgresql \
-  bitnami/postgresql:16  # 指定新版本标签
+  docker.xuanyuan.run/bitnami/postgresql:16 # 指定新版本标签
 
 # 验证后重命名
 docker rm postgresql && docker rename postgresql-new postgresql

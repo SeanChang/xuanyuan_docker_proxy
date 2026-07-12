@@ -3,7 +3,7 @@ image: guacamole/guacamole
 description: "Apache Guacamole是一款无客户端远程桌面网关，支持VNC和RDP等协议。"
 source: https://xuanyuan.cloud/zh/r/guacamole/guacamole
 canonical: https://xuanyuan.cloud/zh/r/guacamole/guacamole
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/guacamole/guacamole" title="guacamole/guacamole Docker 镜像中文简介、标签列表与拉取命令">guacamole/guacamole 中文简介</a>
@@ -32,7 +32,7 @@ docker run --name some-guacamole --link some-guacd:guacd \
     -e POSTGRES_DATABASE=guacamole_db  \
     -e POSTGRES_USER=guacamole_user    \
     -e POSTGRES_PASSWORD=some_password \
-    -d -p 8080:8080 guacamole/guacamole
+    -d -p 8080:8080 docker.xuanyuan.run/guacamole/guacamole
 ```
 
 将Guacamole链接到PostgreSQL需指定三个环境变量，若缺少任何一个，镜像将报错并停止：
@@ -47,7 +47,7 @@ docker run --name some-guacamole --link some-guacd:guacd \
 生成用于初始化全新PostgreSQL数据库的SQL脚本（如[Guacamole手册](https://guacamole.apache.org/doc/gug/jdbc-auth.html#jdbc-auth-postgresql)所述）：
 
 ```bash
-docker run --rm guacamole/guacamole /opt/guacamole/bin/initdb.sh --postgres > initdb.sql
+docker run --rm docker.xuanyuan.run/guacamole/guacamole /opt/guacamole/bin/initdb.sh --postgres > initdb.sql
 ```
 
 生成脚本后，需执行以下步骤：
@@ -65,7 +65,7 @@ docker run --name some-guacamole --link some-guacd:guacd \
     -e MYSQL_DATABASE=guacamole_db  \
     -e MYSQL_USER=guacamole_user    \
     -e MYSQL_PASSWORD=some_password \
-    -d -p 8080:8080 guacamole/guacamole
+    -d -p 8080:8080 docker.xuanyuan.run/guacamole/guacamole
 ```
 
 将Guacamole链接到MySQL需指定三个环境变量，若缺少任何一个，镜像将报错并停止：
@@ -80,7 +80,7 @@ docker run --name some-guacamole --link some-guacd:guacd \
 生成用于初始化全新MySQL数据库的SQL脚本（如[Guacamole手册](https://guacamole.apache.org/doc/gug/jdbc-auth.html#jdbc-auth-mysql)所述）：
 
 ```bash
-docker run --rm guacamole/guacamole /opt/guacamole/bin/initdb.sh --mysql > initdb.sql
+docker run --rm docker.xuanyuan.run/guacamole/guacamole /opt/guacamole/bin/initdb.sh --mysql > initdb.sql
 ```
 
 生成脚本后，需执行以下步骤：

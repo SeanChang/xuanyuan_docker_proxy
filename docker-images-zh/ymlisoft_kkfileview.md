@@ -3,7 +3,7 @@ image: ymlisoft/kkfileview
 description: "基于4.4.0版本升级的Docker镜像，主要升级JDK至21（支持百分比配置JVM）和Spring Boot至3.4（消除高危漏洞），同时优化pom依赖解决冲突，删除项目自用图片及个人信息。"
 source: https://xuanyuan.cloud/zh/r/ymlisoft/kkfileview
 canonical: https://xuanyuan.cloud/zh/r/ymlisoft/kkfileview
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ymlisoft/kkfileview" title="ymlisoft/kkfileview Docker 镜像中文简介、标签列表与拉取命令">ymlisoft/kkfileview 中文简介</a>
@@ -42,7 +42,7 @@ docker run -d --name [自定义容器名称] [镜像名称]:[升级版本标签]
 version: '3'
 services:
   app:
-    image: [镜像名称]:[升级版本标签]
+    image: docker.xuanyuan.run/[镜像名称]:[升级版本标签]
     container_name: [自定义容器名称]
     # 其他配置（如端口映射、环境变量等）与原4.4.0版本保持一致
 ```

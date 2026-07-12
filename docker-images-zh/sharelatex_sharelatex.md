@@ -3,7 +3,7 @@ image: sharelatex/sharelatex
 description: "官方的ShareLaTeX社区版Docker镜像是一款基于Docker容器化技术构建的开源在线LaTeX协作编辑工具，支持多人实时协作编写、编译和预览LaTeX文档，适用于学术论文、技术报告、书籍等各类文档的高效排版，为用户提供便捷的本地化部署方案，无需复杂配置即可快速搭建功能完备的LaTeX编辑环境，满足科研人员、学生及技术文档撰写者的协作编辑需求。"
 source: https://xuanyuan.cloud/zh/r/sharelatex/sharelatex
 canonical: https://xuanyuan.cloud/zh/r/sharelatex/sharelatex
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/sharelatex/sharelatex" title="sharelatex/sharelatex Docker 镜像中文简介、标签列表与拉取命令">sharelatex/sharelatex 中文简介</a>
@@ -38,7 +38,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ##### 1. 拉取镜像  
 打开命令行（Windows用PowerShell，Linux/macOS用终端），输入以下命令，从Docker Hub下载官方镜像：  
 ```bash
-docker pull sharelatex/sharelatex:latest
+docker pull docker.xuanyuan.run/sharelatex/sharelatex:latest
 ```  
 （`latest`是最新稳定版标签，需要特定版本可以换成具体版本号，比如`4.0.1`）  
 
@@ -78,15 +78,15 @@ docker run -d \
 ```bash
 docker stop my-sharelatex  # 停掉旧容器
 docker rm my-sharelatex    # 删除旧容器（数据在本地，删容器不影响）
-docker pull sharelatex/sharelatex:latest  # 拉新镜像
+docker pull docker.xuanyuan.run/sharelatex/sharelatex:latest  # 拉新镜像
 # 重新启动容器（用之前的命令，记得改回你的本地路径）
-docker run -d --name my-sharelatex -p 80:80 -v /本地路径/数据存储:/var/lib/sharelatex --restart always sharelatex/sharelatex:latest
+docker run -d --name my-sharelatex -p 80:80 -v /本地路径/数据存储:/var/lib/sharelatex --restart always docker.xuanyuan.run/sharelatex/sharelatex:latest
 ```  
 
 
 ### 五、其他说明  
 - 管理员账户可以在后台添加普通用户、设置权限（比如限制谁能编辑文档）。  
 - 如果需要HTTPS加密访问（比如公网服务器），可以在容器前面加个Nginx反向代理，配SSL证书（具体方法可以搜“Nginx反向代理Docker容器 HTTPS”）。  
-- 更多高级配置（比如改默认编辑器主题、装额外LaTeX包），可以看[官方GitHub文档]([])（有英文说明）。  
+- 更多高级配置（比如改默认编辑器主题、装额外LaTeX包），可以看[官方GitHub文档] （有英文说明）。  
 
 按上面的步骤操作，基本能满足日常使用需求了。

@@ -3,7 +3,7 @@ image: ecpe4s/ubuntu20.04
 description: "E4S（Extreme-scale Scientific Software Stack）基础Ubuntu镜像，集成Spack包管理器，用于科学计算软件的安装、版本管理及依赖解析，适用于构建稳定的科学计算环境。"
 source: https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04
 canonical: https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ecpe4s/ubuntu20.04" title="ecpe4s/ubuntu20.04 Docker 镜像中文简介、标签列表与拉取命令">ecpe4s/ubuntu20.04 中文简介</a>
@@ -27,11 +27,11 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 基础操作
 1. **拉取镜像**（假设官方镜像标签为`e4s/ubuntu-spack:latest`）：
    ```bash
-   docker pull e4s/ubuntu-spack:latest
+   docker pull docker.xuanyuan.run/e4s/ubuntu-spack:latest
    ```
 2. **启动容器**（交互式终端模式）：
    ```bash
-   docker run -it --name e4s-spack-env e4s/ubuntu-spack:latest /bin/bash
+   docker run -it --name e4s-spack-env docker.xuanyuan.run/e4s/ubuntu-spack:latest /bin/bash
    ```
 3. **Spack基础使用示例**（容器内操作）：
    ```bash

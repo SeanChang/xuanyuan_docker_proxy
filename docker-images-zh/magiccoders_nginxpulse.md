@@ -3,7 +3,7 @@ image: magiccoders/nginxpulse
 description: "轻量级Nginx访问日志分析与可视化面板，提供实时统计、PV过滤、IP归属地及客户端解析功能。"
 source: https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse
 canonical: https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/magiccoders/nginxpulse" title="magiccoders/nginxpulse Docker 镜像中文简介、标签列表与拉取命令">magiccoders/nginxpulse 中文简介</a>
@@ -73,7 +73,7 @@ docker run -d --name nginxpulse \
   -v ./docker_local/pgdata:/app/var/pgdata \
   -v ./docker_local/configs:/app/configs \
   -v /etc/localtime:/etc/localtime:ro \
-  magiccoders/nginxpulse:latest
+  docker.xuanyuan.run/magiccoders/nginxpulse:latest
 ```
 
 > 注意：docker_local 请替换为你宿主机存在的目录，确保文件权限设置正确，能被容器正常访问，否则会出现无日志的情况。
@@ -86,7 +86,7 @@ docker run -d --name nginxpulse \
 ```yaml
 services:
   nginxpulse:
-    image: magiccoders/nginxpulse:latest
+    image: docker.xuanyuan.run/magiccoders/nginxpulse:latest
     container_name: local_nginxpulse
     ports:
       - "8088:8088"

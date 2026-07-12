@@ -3,7 +3,7 @@ image: spack/centos7
 description: "预装Spack的CentOS 7系统镜像，提供多平台软件包管理功能，支持多版本、多配置软件的非破坏性安装与管理。"
 source: https://xuanyuan.cloud/zh/r/spack/centos7
 canonical: https://xuanyuan.cloud/zh/r/spack/centos7
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/spack/centos7" title="spack/centos7 Docker 镜像中文简介、标签列表与拉取命令">spack/centos7 中文简介</a>
@@ -38,7 +38,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 #### 启动容器
 
 ```bash
-docker run -it spack/centos7 /bin/bash
+docker run -it docker.xuanyuan.run/spack/centos7 /bin/bash
 ```
 
 #### 验证Spack安装
@@ -77,7 +77,7 @@ spack search <package-name>
 可通过挂载本地配置文件来自定义Spack行为：
 
 ```bash
-docker run -it -v /path/to/local/spack/config:/root/.spack spack/centos7 /bin/bash
+docker run -it -v /path/to/local/spack/config:/root/.spack docker.xuanyuan.run/spack/centos7 /bin/bash
 ```
 
 #### 指定软件版本和配置
@@ -98,7 +98,7 @@ spack install hdf5 +mpi
 version: '3'
 services:
   spack-env:
-    image: spack/centos7
+    image: docker.xuanyuan.run/spack/centos7
     container_name: spack-workspace
     volumes:
       - ./spack-data:/root/spack/var/spack

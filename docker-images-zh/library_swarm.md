@@ -3,7 +3,7 @@ image: library/swarm
 description: "已弃用；请改用“docker swarm init”。"
 source: https://xuanyuan.cloud/zh/r/library/swarm
 canonical: https://xuanyuan.cloud/zh/r/library/swarm
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/swarm" title="library/swarm Docker 镜像中文简介、标签列表与拉取命令">library/swarm 中文简介</a>
@@ -58,20 +58,20 @@ exported_at: 2026-06-02T12:26:10.133Z
 #### 1. 创建集群（获取集群 ID）
 ```bash
 # 创建集群并获取唯一 cluster_id（仅作历史演示，实际已不可用）
-docker run --rm swarm create
+docker run --rm docker.xuanyuan.run/swarm create
 # 输出示例：6856663cdefdec325839a4b7e1de38e8（此为 cluster_id）
 ```
 
 #### 2. 在各节点启动 Swarm 代理
 ```bash
 # <node_ip> 为节点的 IP 地址（需保证 Swarm 管理器可访问）
-docker run -d swarm join --addr=<node_ip:2375> token://<cluster_id>
+docker run -d docker.xuanyuan.run/swarm join --addr=<node_ip:2375> token://<cluster_id>
 ```
 
 #### 3. 启动 Swarm 管理器
 ```bash
 # 在任意机器（如本地笔记本）启动管理器，暴露 <swarm_port> 端口
-docker run -t -p <swarm_port>:2375 -t swarm manage token://<cluster_id>
+docker run -t -p <swarm_port>:2375 -t docker.xuanyuan.run/swarm manage token://<cluster_id>
 ```
 
 #### 4. 通过 Docker CLI 操作集群
@@ -91,7 +91,7 @@ docker -H tcp://<swarm_ip:swarm_port> logs ...
 
 #### 5. 列出集群节点
 ```bash
-docker run --rm swarm list token://<cluster_id>
+docker run --rm docker.xuanyuan.run/swarm list token://<cluster_id>
 # 输出示例：<node_ip:2375>
 ```
 

@@ -3,7 +3,7 @@ image: bitnamicharts/postgresql-ha
 description: "Bitnami提供的Helm chart，用于在Kubernetes环境中部署和管理高可用PostgreSQL数据库实例。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/postgresql-ha
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/postgresql-ha
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/postgresql-ha" title="bitnamicharts/postgresql-ha Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/postgresql-ha 中文简介</a>

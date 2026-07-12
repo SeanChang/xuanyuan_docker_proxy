@@ -3,7 +3,7 @@ image: linuxserver/calibre
 description: "linuxserver/calibre Docker镜像是一款集电子书库管理、格式转换与阅读于一体的开源工具，提供强大的一站式数字阅读解决方案。通过容器化技术实现跨平台快速部署，无需繁琐配置即可运行。该镜像经LinuxServer优化，内置Web界面与阅读器，支持多设备访问、数据持久化及主流格式转换，轻量高效且安全可靠，适合个人及小型团队构建私有的数字图书资源中心。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/calibre
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/calibre
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/calibre" title="linuxserver/calibre Docker 镜像中文简介、标签列表与拉取命令">linuxserver/calibre 中文简介</a>
@@ -22,17 +22,17 @@ LinuxServer.io 团队致力于提供高质量 Docker 容器，其发布的镜像
 - 定期进行安全更新  
 
 如需了解更多，可通过以下渠道联系：  
-- [博客]([])：包含容器使用指南、教程及观点文章  
+- [博客] ：包含容器使用指南、教程及观点文章  
 - []()：实时社区支持与团队交流  
-- [Discourse]([])：社区论坛  
-- [GitHub]([])：所有代码仓库  
-- [Open Collective]([])：支持我们的开发与维护  
+- [Discourse] ：社区论坛  
+- [GitHub] ：所有代码仓库  
+- [Open Collective] ：支持我们的开发与维护  
 
 
 ## linuxserver/calibre 镜像  
 
 ### 关于 Calibre  
-[Calibre]([]) 是一款功能强大且易用的电子书管理工具，支持电子书格式转换、管理、编辑等多种功能，完全免费开源，适合普通用户和技术爱好者使用。
+[Calibre]  是一款功能强大且易用的电子书管理工具，支持电子书格式转换、管理、编辑等多种功能，完全免费开源，适合普通用户和技术爱好者使用。
 
 
 ### 支持的架构  
@@ -66,11 +66,11 @@ LinuxServer.io 团队致力于提供高质量 Docker 容器，其发布的镜像
 
 
 ### 反向代理与安全注意事项  
-- **自签名证书**：镜像默认使用自签名证书，访问协议为 `https`。若反向代理需验证证书，需[关闭容器证书检查]([])。  
+- **自签名证书**：镜像默认使用自签名证书，访问协议为 `https`。若反向代理需验证证书，需[关闭容器证书检查] 。  
 - **现代桌面应用兼容性**：部分 GUI 应用可能受 Docker 系统调用限制影响，可添加 `--security-opt seccomp=unconfined` 参数解决（适用于旧内核或 libseccomp 版本）。  
 
 > ⚠️ **安全警告**：  
-> 该容器具有主机系统的特权访问权限，请勿直接暴露到公网。HTTPS 是功能完整的必要条件（如 WebCodecs 需 HTTPS 支持）。默认无身份验证，可通过 `CUSTOM_USER` 和 `PASSWORD` 环境变量启用基础 HTTP 认证（仅适用于可信局域网）；公网暴露建议搭配反向代理（如 [SWAG]([])）并使用强认证机制。Web 界面包含带无密码 sudo 权限的终端，任何访问者可获取容器内 root 权限，需谨慎管理访问权限。  
+> 该容器具有主机系统的特权访问权限，请勿直接暴露到公网。HTTPS 是功能完整的必要条件（如 WebCodecs 需 HTTPS 支持）。默认无身份验证，可通过 `CUSTOM_USER` 和 `PASSWORD` 环境变量启用基础 HTTP 认证（仅适用于可信局域网）；公网暴露建议搭配反向代理（如 [SWAG] ）并使用强认证机制。Web 界面包含带无密码 sudo 权限的终端，任何访问者可获取容器内 root 权限，需谨慎管理访问权限。  
 
 
 ### Selkies 基础镜像功能（可选配置）  
@@ -115,7 +115,7 @@ LinuxServer.io 团队致力于提供高质量 Docker 容器，其发布的镜像
 ```bash  
 proot-apps install filezilla  # 示例：安装 FileZilla  
 ```  
-[支持的应用列表]([])  
+[支持的应用列表]   
 
 
 #### 原生应用（非持久化）  
@@ -136,7 +136,7 @@ environment:
 ---  
 services:  
   calibre:  
-    image: lscr.io/linuxserver/calibre:latest  
+    image: docker.xuanyuan.run/linuxserver/calibre:latest  
     container_name: calibre  
     security_opt:  
       - seccomp:unconfined  # 可选，解决部分 GUI 兼容性问题  
@@ -216,8 +216,8 @@ docker run -d \
 
 ## Docker Mods  
 通过 Docker Mods 扩展容器功能，支持的 Mods 可通过以下链接查看：  
-- [Calibre 专用 Mods]([])  
-- [通用 Mods]([])  
+- [Calibre 专用 Mods]   
+- [通用 Mods]   
 
 
 ## 支持与维护  
@@ -251,7 +251,7 @@ docker image prune
 #### 通过 Docker Run  
 ```bash  
 # 拉取最新镜像  
-docker pull lscr.io/linuxserver/calibre:latest  
+docker pull docker.xuanyuan.run/linuxserver/calibre:latest  
 # 停止并删除旧容器  
 docker stop calibre && docker rm calibre  
 # 用原参数重建容器（配置会保留）  

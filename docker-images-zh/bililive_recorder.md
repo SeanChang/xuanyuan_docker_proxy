@@ -3,7 +3,7 @@ image: bililive/recorder
 description: "B站录播姬(BililiveRecorder)的Docker镜像，用于便捷录制B站直播内容，支持直播自动录制与管理，提供稳定可靠的录播解决方案。"
 source: https://xuanyuan.cloud/zh/r/bililive/recorder
 canonical: https://xuanyuan.cloud/zh/r/bililive/recorder
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bililive/recorder" title="bililive/recorder Docker 镜像中文简介、标签列表与拉取命令">bililive/recorder 中文简介</a>
@@ -33,7 +33,7 @@ B站录播姬(BililiveRecorder)的Docker镜像，旨在提供便捷、稳定的B
 docker run -d \
   --name bililive-recorder \
   -v /本地目录路径/recordings:/app/Recordings \
-  bililiverecorder/bililive-recorder
+  docker.xuanyuan.run/bililiverecorder/bililive-recorder
 ```
 - `-d`：后台运行容器。
 - `--name bililive-recorder`：指定容器名称，便于管理。
@@ -46,7 +46,7 @@ docker run -d \
   --name bililive-recorder \
   -v /本地目录路径/recordings:/app/Recordings \
   -v /本地目录路径/config:/app/Config \
-  bililiverecorder/bililive-recorder
+  docker.xuanyuan.run/bililiverecorder/bililive-recorder
 ```
 配置文件位于容器内`/app/Config`目录，可通过本地挂载的配置目录进行自定义修改。
 

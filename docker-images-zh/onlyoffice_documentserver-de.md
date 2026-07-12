@@ -3,7 +3,7 @@ image: onlyoffice/documentserver-de
 description: "ONLYOFFICE Developer Edition是面向开发者的办公协作解决方案开发工具包，提供丰富的API与SDK，支持将文档编辑（含文本文档、电子表格、演示文稿）、实时在线协作、版本管理及权限控制等核心功能无缝集成至企业自有应用或服务中，允许开发者根据业务需求自定义界面、扩展功能模块，并支持多平台部署与数据安全保障，助力快速构建定制化办公协作系统。"
 source: https://xuanyuan.cloud/zh/r/onlyoffice/documentserver-de
 canonical: https://xuanyuan.cloud/zh/r/onlyoffice/documentserver-de
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/onlyoffice/documentserver-de" title="onlyoffice/documentserver-de Docker 镜像中文简介、标签列表与拉取命令">onlyoffice/documentserver-de 中文简介</a>
@@ -234,17 +234,17 @@ bash opensource-install.sh -md yourdomain.com
 
 
 ### Mono 问题  
-- 依赖 Mono 环境（推荐 3.12.1 或更早版本），部分 Linux 内核版本可能不兼容，兼容内核列表见 [官方文档]([])。  
+- 依赖 Mono 环境（推荐 3.12.1 或更早版本），部分 Linux 内核版本可能不兼容，兼容内核列表见 [官方文档] 。  
 
 
 ## 项目信息  
-- **官网**：[[]]([])  
-- **代码仓库**：[[]]([])  
-- **Docker 镜像**：[[]]([])  
+- **官网**：[[]]   
+- **代码仓库**：[[]]   
+- **Docker 镜像**：[[]]   
 - **许可证**：GNU AGPL v3.0  
-- **SaaS 版本**：[[]]([])  
+- **SaaS 版本**：[[]]   
 
 
 ## 用户反馈与支持  
-- 官方论坛：[dev.onlyoffice.org]([])  
-- Stack Overflow：使用标签 [onlyoffice]([]) 提问
+- 官方论坛：[dev.onlyoffice.org]   
+- Stack Overflow：使用标签 [onlyoffice]  提问

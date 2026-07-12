@@ -3,7 +3,7 @@ image: alpine/jmeter
 description: "在Docker环境中运行JMeter性能测试工具的镜像，便于快速部署和执行性能测试任务。"
 source: https://xuanyuan.cloud/zh/r/alpine/jmeter
 canonical: https://xuanyuan.cloud/zh/r/alpine/jmeter
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/jmeter" title="alpine/jmeter Docker 镜像中文简介、标签列表与拉取命令">alpine/jmeter 中文简介</a>
@@ -101,7 +101,7 @@ docker run --rm \
 version: '3.8'
 services:
   jmeter:
-    image: alpine/jmeter:5.6-alpine
+    image: docker.xuanyuan.run/alpine/jmeter:5.6-alpine
     volumes:
       - ./tests:/jmeter/tests       # 测试脚本目录
       - ./results:/jmeter/results   # 结果输出目录
@@ -117,7 +117,7 @@ services:
       - app  # 确保被测服务启动后再执行测试
 
   app:  # 被测服务示例（需替换为实际服务配置）
-    image: my-app:latest
+    image: docker.xuanyuan.run/my-app:latest
     ports:
       - "8080:8080"
 ```

@@ -3,7 +3,7 @@ image: gz1903/roonserver
 description: "用于运行RoonServer的Docker镜像，首次运行时会自动下载RoonServer，支持在任何设备上以最高音质播放音频，集成Qobuz、Tidal等多种音频服务，支持外部存储卷和网络共享，适用于构建家庭高品质音频系统。"
 source: https://xuanyuan.cloud/zh/r/gz1903/roonserver
 canonical: https://xuanyuan.cloud/zh/r/gz1903/roonserver
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gz1903/roonserver" title="gz1903/roonserver Docker 镜像中文简介、标签列表与拉取命令">gz1903/roonserver 中文简介</a>
@@ -61,7 +61,7 @@ docker run -d \
 -v roon-data:/data \
 -v roon-music:/music \
 -v roon-backups:/backup \
-gz1903/roonserver:latest
+docker.xuanyuan.run/gz1903/roonserver:latest
 ```
 
 **参数说明**：
@@ -83,7 +83,7 @@ gz1903/roonserver:latest
 version: "3.7"
 services:
   roon:
-    image: gz1903/roonserver:latest
+    image: docker.xuanyuan.run/gz1903/roonserver:latest
     container_name: roonserver
     network_mode: host
     privileged: true
@@ -119,7 +119,7 @@ TimeoutStartSec=0
 TimeoutStopSec=180
 ExecStartPre=-/usr/bin/docker kill %n
 ExecStartPre=-/usr/bin/docker rm -f %n
-ExecStartPre=/usr/bin/docker pull gz1903/roonserver:latest
+ExecStartPre=/usr/bin/docker pull docker.xuanyuan.run/gz1903/roonserver:latest
 ExecStart=/usr/bin/docker \
   run --name %n \
   --net=host \

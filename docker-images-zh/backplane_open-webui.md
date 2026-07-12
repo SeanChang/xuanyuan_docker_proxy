@@ -3,7 +3,7 @@ image: backplane/open-webui
 description: "非官方的自动化Docker Hub镜像，用于镜像open-webui的GHCR仓库中的带标签镜像。"
 source: https://xuanyuan.cloud/zh/r/backplane/open-webui
 canonical: https://xuanyuan.cloud/zh/r/backplane/open-webui
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/backplane/open-webui" title="backplane/open-webui Docker 镜像中文简介、标签列表与拉取命令">backplane/open-webui 中文简介</a>
@@ -52,13 +52,13 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ```bash
 # main变体（无后缀）
-docker pull backplane/open-webui:0
+docker pull docker.xuanyuan.run/backplane/open-webui:0
 
 # cuda变体
-docker pull backplane/open-webui:0-cuda
+docker pull docker.xuanyuan.run/backplane/open-webui:0-cuda
 
 # ollama变体
-docker pull backplane/open-webui:0-ollama
+docker pull docker.xuanyuan.run/backplane/open-webui:0-ollama
 ```  
 
 
@@ -67,13 +67,13 @@ docker pull backplane/open-webui:0-ollama
 
 ```bash
 # main变体（无后缀）
-docker pull backplane/open-webui:0.1
+docker pull docker.xuanyuan.run/backplane/open-webui:0.1
 
 # cuda变体
-docker pull backplane/open-webui:0.1-cuda
+docker pull docker.xuanyuan.run/backplane/open-webui:0.1-cuda
 
 # ollama变体
-docker pull backplane/open-webui:0.1-ollama
+docker pull docker.xuanyuan.run/backplane/open-webui:0.1-ollama
 ```  
 
 
@@ -82,13 +82,13 @@ docker pull backplane/open-webui:0.1-ollama
 
 ```bash
 # main变体（无后缀）
-docker pull backplane/open-webui:0.1.123
+docker pull docker.xuanyuan.run/backplane/open-webui:0.1.123
 
 # cuda变体
-docker pull backplane/open-webui:0.1.123-cuda
+docker pull docker.xuanyuan.run/backplane/open-webui:0.1.123-cuda
 
 # ollama变体
-docker pull backplane/open-webui:0.1.123-ollama
+docker pull docker.xuanyuan.run/backplane/open-webui:0.1.123-ollama
 ```  
 
 

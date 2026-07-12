@@ -3,7 +3,7 @@ image: vllm/vllm-openai
 description: "vllm/vllm-openai：vLLM 高性能大模型推理框架的官方 Docker 镜像，封装 OpenAI API 兼容的推理服务；支持 PagedAttention 与连续批处理，吞吐量可达传统引擎 10-24 倍；支持 50+ 开源模型与量化方案，适用开源模型部署、OpenAI 应用本地化与高并发生产场景。"
 source: https://xuanyuan.cloud/zh/r/vllm/vllm-openai
 canonical: https://xuanyuan.cloud/zh/r/vllm/vllm-openai
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/vllm/vllm-openai" title="vllm/vllm-openai Docker 镜像中文简介、标签列表与拉取命令">vllm/vllm-openai 中文简介</a>
@@ -56,7 +56,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 开发者无需手动安装 vLLM 依赖（如 CUDA、PyTorch），通过 Docker 拉取镜像后，仅需一条命令即可启动大模型服务：
 
 ```bash
-docker run --gpus all -p 8000:8000 vllm/vllm-openai:latest --model meta-llama/Llama-3-70b-chat-hf --api-server
+docker run --gpus all -p 8000:8000 docker.xuanyuan.run/vllm/vllm-openai:latest --model meta-llama/Llama-3-70b-chat-hf --api-server
 ```
 
 ### 3.2 OpenAI 应用的本地化替代
@@ -106,7 +106,7 @@ sudo systemctl restart docker
 nvidia-smi
 
 # 验证 Docker GPU 支持
-docker run --rm --gpus all nvidia/cuda:12.0.0-base-ubuntu22.04 nvidia-smi
+docker run --rm --gpus all docker.xuanyuan.run/nvidia/cuda:12.0.0-base-ubuntu22.04 nvidia-smi
 ```
 
 ## 五、镜像拉取与启动
@@ -213,7 +213,7 @@ curl http://localhost:8000/v1/chat/completions \
 ### 6.3 使用 Python SDK
 
 ```python
-from openai import OpenAI
+from docker.xuanyuan.run/openai import OpenAI
 
 # 指定 vLLM 服务的地址
 client = OpenAI(
@@ -377,7 +377,7 @@ docker run -d \
   --name vllm-custom \
   --gpus all \
   -p 8000:8000 \
-  vllm-custom:v0.7.3 \
+  docker.xuanyuan.run/vllm-custom:v0.7.3 \
   --model meta-llama/Llama-3-70b-chat-hf \
   --api-server
 ```

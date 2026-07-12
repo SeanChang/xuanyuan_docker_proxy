@@ -3,7 +3,7 @@ image: ubuntu/python
 description: "这是一个基于Ubuntu系统精雕细琢而成的运行基石，集成了Python运行时环境，通过精简优化的系统底层确保了高效稳定的性能，为Python应用程序提供了可靠的运行载体，无论是开发调试、测试验证还是生产部署场景，都能满足轻量、安全且高效的运行需求，是构建Python应用生态的理想基础组件。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/python
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/python
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/python" title="ubuntu/python Docker 镜像中文简介、标签列表与拉取命令">ubuntu/python 中文简介</a>
@@ -17,17 +17,17 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 关于Python  
 
-Python是一种高级通用编程语言，其设计理念强调代码可读性，采用显著的缩进格式。Python是动态类型语言，支持垃圾回收，兼容结构化、面向对象、函数式等多种编程范式。更多信息可访问[python.org]([])。  
+Python是一种高级通用编程语言，其设计理念强调代码可读性，采用显著的缩进格式。Python是动态类型语言，支持垃圾回收，兼容结构化、面向对象、函数式等多种编程范式。更多信息可访问[python.org] 。  
 
 本镜像是精简化的Ubuntu基础镜像，仅包含Python运行时及其标准库，可直接用于生产环境，也可作为基础镜像添加应用所需的额外依赖。
 
 
 ## 标签与架构  
-![LTS]([])  
+![LTS]   
 LTS通道提供长达5年的免费安全维护。  
 
-![ESM]([])  
-ESM通过Canonical受限仓库提供长达10年的客户安全维护，详情见[官方说明]([])。  
+![ESM]   
+ESM通过Canonical受限仓库提供长达10年的客户安全维护，详情见[官方说明] 。  
 
 
 | 通道标签                | 其他可用标签                                                                 | 支持截止日期 | 当前版本                          | 架构支持       |
@@ -43,14 +43,14 @@ ESM通过Canonical受限仓库提供长达10年的客户安全维护，详情见
 
 
 ### 商业使用与扩展安全维护通道  
-若需商业分发、使用ESM通道或获取未列出的版本/通道，请联系Canonical团队（[官方联系方式]([])或发送邮件至[邮箱已删除]）。
+若需商业分发、使用ESM通道或获取未列出的版本/通道，请联系Canonical团队（[官方联系方式] 或发送邮件至[邮箱已删除]）。
 
 
 ## 使用方法  
 
 ### 本地启动镜像  
 ```sh
-docker run -d --name python-container -e TZ=UTC ubuntu/python:3.13-25.04_stable
+docker run -d --name python-container -e TZ=UTC docker.xuanyuan.run/ubuntu/python:3.13-25.04_stable
 ```
 
 
@@ -68,7 +68,7 @@ docker exec -it python-container python3
 
 ## 问题反馈与功能请求  
 如发现镜像漏洞或需特定功能，请提交bug报告：  
-[[]]([])  
+[[]]   
 
 报告标题格式：`python: <问题摘要>`，并附上镜像摘要（通过以下命令获取）：  
 ```sh
@@ -77,7 +77,7 @@ docker images --no-trunc --quiet ubuntu/python:<tag>
 
 
 ## 已弃用通道与标签  
-以下通道（标签）不再更新，请升级至新版本；若无法升级，可[联系支持]([])。  
+以下通道（标签）不再更新，请升级至新版本；若无法升级，可[联系支持] 。  
 
 | 通道          | 版本                          | 生命周期结束 | 升级路径 |
 |---------------|-------------------------------|--------------|----------|

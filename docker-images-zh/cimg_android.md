@@ -3,7 +3,7 @@ image: cimg/android
 description: "专为 CircleCI 构建的专注于持续集成的 Android Docker 镜像"
 source: https://xuanyuan.cloud/zh/r/cimg/android
 canonical: https://xuanyuan.cloud/zh/r/cimg/android
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cimg/android" title="cimg/android Docker 镜像中文简介、标签列表与拉取命令">cimg/android 中文简介</a>
@@ -156,7 +156,7 @@ git clone --recurse-submodules git@github.com:CircleCI-Public/cimg-android.git
 ```bash
 cd 2021.07
 docker build -t test/android:2021.07.1 .
-docker run -it test/android:2021.07.1 bash
+docker run -it docker.xuanyuan.run/test/android:2021.07.1 bash
 ```
 
 ### 构建 Dockerfile

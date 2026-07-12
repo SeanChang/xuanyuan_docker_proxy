@@ -3,7 +3,7 @@ image: hyperf/hyperf
 description: "Hyperf官方提供的Docker镜像，用于运行基于Hyperf框架的高性能PHP协程应用，支持API及微服务开发部署。"
 source: https://xuanyuan.cloud/zh/r/hyperf/hyperf
 canonical: https://xuanyuan.cloud/zh/r/hyperf/hyperf
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hyperf/hyperf" title="hyperf/hyperf Docker 镜像中文简介、标签列表与拉取命令">hyperf/hyperf 中文简介</a>
@@ -86,7 +86,7 @@ Zend OPcache
 #### 步骤 1：创建项目 Dockerfile
 在 Hyperf 项目根目录创建 `Dockerfile`，示例如下（以 `7.4-alpine-v3.12-swoole` 为例）：
 ```dockerfile
-FROM hyperf/hyperf:7.4-alpine-v3.12-swoole
+FROM docker.xuanyuan.run/hyperf/hyperf:7.4-alpine-v3.12-swoole
 
 # 设置工作目录
 WORKDIR /opt/www
@@ -110,7 +110,7 @@ docker build -t hyperf-app .
 
 #### 步骤 3：运行容器
 ```bash
-docker run -d -p 9501:9501 --name hyperf-container hyperf-app
+docker run -d -p 9501:9501 --name hyperf-container docker.xuanyuan.run/hyperf-app
 ```
 - `-p 9501:9501`：映射 Hyperf 默认端口
 - `--name hyperf-container`：指定容器名称
@@ -124,7 +124,7 @@ version: '3.8'
 services:
   hyperf:
     build: .
-    image: hyperf-app
+    image: docker.xuanyuan.run/hyperf-app
     container_name: hyperf-app
     ports:
       - "9501:9501"
@@ -139,7 +139,7 @@ services:
       - REDIS_HOST=redis
 
   mysql:
-    image: mysql:5.7
+    image: docker.xuanyuan.run/mysql:5.7
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=hyperf
@@ -147,7 +147,7 @@ services:
       - "3306:3306"
 
   redis:
-    image: redis:alpine
+    image: docker.xuanyuan.run/redis:alpine
     ports:
       - "6379:6379"
 ```

@@ -3,7 +3,7 @@ image: linuxserver/jellyfin
 description: "LinuxServer.io 提供的 Jellyfin 容器，是一款自由软件媒体系统，支持媒体管理与流式传输，具备跨平台特性、定期更新和用户权限映射功能。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/jellyfin
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/jellyfin
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/jellyfin" title="linuxserver/jellyfin Docker 镜像中文简介、标签列表与拉取命令">linuxserver/jellyfin 中文简介</a>
@@ -76,7 +76,7 @@ Web 界面地址：`http://<您的IP>:8096`，更多信息参见[官方文档](h
 ---
 services:
   jellyfin:
-    image: lscr.io/linuxserver/jellyfin:latest
+    image: docker.xuanyuan.run/linuxserver/jellyfin:latest
     container_name: jellyfin
     environment:
       - PUID=1000
@@ -133,7 +133,7 @@ docker run -d \
 # Docker Compose
 docker-compose pull jellyfin && docker-compose up -d
 # Docker CLI
-docker pull lscr.io/linuxserver/jellyfin:latest && docker stop jellyfin && docker rm jellyfin && docker run ...（使用原参数）
+docker pull docker.xuanyuan.run/linuxserver/jellyfin:latest && docker stop jellyfin && docker rm jellyfin && docker run ...（使用原参数）
 ```
 
 ### 查看日志

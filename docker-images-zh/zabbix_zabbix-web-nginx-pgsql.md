@@ -3,7 +3,7 @@ image: zabbix/zabbix-web-nginx-pgsql
 description: "基于Nginx并支持PostgreSQL数据库的Zabbix前端界面，用于管理被监控资源和查看监控统计数据，是官方Zabbix Web界面Docker镜像之一。"
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-pgsql" title="zabbix/zabbix-web-nginx-pgsql Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-web-nginx-pgsql 中文简介</a>
@@ -79,7 +79,7 @@ docker run --name some-zabbix-web-nginx-pgsql \
   -e POSTGRES_PASSWORD="some-password" \
   -e ZBX_SERVER_HOST="some-zabbix-server" \
   -e PHP_TZ="some-timezone" \
-  -d zabbix/zabbix-web-nginx-pgsql:tag
+  -d docker.xuanyuan.run/zabbix/zabbix-web-nginx-pgsql:tag
 ```
 
 其中：
@@ -101,7 +101,7 @@ docker run --name some-zabbix-web-nginx-pgsql \
   -e POSTGRES_PASSWORD="some-password" \
   -e ZBX_SERVER_HOST="some-zabbix-server" \
   -e PHP_TZ="some-timezone" \
-  -d zabbix/zabbix-web-nginx-pgsql:tag
+  -d docker.xuanyuan.run/zabbix/zabbix-web-nginx-pgsql:tag
 ```
 
 ### 链接容器到PostgreSQL数据库
@@ -114,7 +114,7 @@ docker run --name some-zabbix-web-nginx-pgsql \
   -e POSTGRES_PASSWORD="some-password" \
   -e ZBX_SERVER_HOST="some-zabbix-server" \
   -e PHP_TZ="some-timezone" \
-  -d zabbix/zabbix-web-nginx-pgsql:tag
+  -d docker.xuanyuan.run/zabbix/zabbix-web-nginx-pgsql:tag
 ```
 
 ### 容器Shell访问和日志查看
@@ -158,7 +158,7 @@ docker run --name some-zabbix-web-nginx-pgsql \
   -v ./.POSTGRES_PASSWORD:/run/secrets/POSTGRES_PASSWORD -e POSTGRES_PASSWORD_FILE=/var/run/secrets/POSTGRES_PASSWORD \
   -e ZBX_SERVER_HOST="some-zabbix-server" \
   -e PHP_TZ="some-timezone" \
-  -d zabbix/zabbix-web-nginx-pgsql:tag
+  -d docker.xuanyuan.run/zabbix/zabbix-web-nginx-pgsql:tag
 ```
 
 **Docker Swarm环境示例**：
@@ -171,7 +171,7 @@ docker run --name some-zabbix-web-nginx-pgsql \
   -e POSTGRES_PASSWORD_FILE=/run/secrets/POSTGRES_PASSWORD \
   -e ZBX_SERVER_HOST="some-zabbix-server" \
   -e PHP_TZ="some-timezone" \
-  -d zabbix/zabbix-web-nginx-pgsql:tag
+  -d docker.xuanyuan.run/zabbix/zabbix-web-nginx-pgsql:tag
 ```
 
 默认值：`POSTGRES_USER=zabbix`，`POSTGRES_PASSWORD=zabbix`。

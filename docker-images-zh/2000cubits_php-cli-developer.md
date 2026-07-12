@@ -3,7 +3,7 @@ image: 2000cubits/php-cli-developer
 description: "包含开发工具的PHP命令行界面(CLI)镜像，提供完整的PHP运行环境及常用开发工具，适用于PHP应用的开发、调试和脚本运行。"
 source: https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer
 canonical: https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/2000cubits/php-cli-developer" title="2000cubits/php-cli-developer Docker 镜像中文简介、标签列表与拉取命令">2000cubits/php-cli-developer 中文简介</a>
@@ -57,19 +57,19 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 #### 1. 获取镜像
 ```bash
-docker pull [镜像名称]:[版本标签]  # 例如: docker pull php-cli-dev:8.2
+docker pull docker.xuanyuan.run/[镜像名称]:[版本标签]  # 例如: docker pull docker.xuanyuan.run/php-cli-dev:8.2
 ```
 
 #### 2. 运行PHP脚本
 将本地项目目录挂载到容器中，执行PHP脚本：
 ```bash
-docker run --rm -v $(pwd):/app php-cli-dev:8.2 php /app/your-script.php
+docker run --rm -v $(pwd):/app docker.xuanyuan.run/php-cli-dev:8.2 php /app/your-script.php
 ```
 
 #### 3. 交互式终端
 启动容器并进入交互式终端，进行开发调试：
 ```bash
-docker run -it --rm -v $(pwd):/app php-cli-dev:8.2 /bin/bash
+docker run -it --rm -v $(pwd):/app docker.xuanyuan.run/php-cli-dev:8.2 /bin/bash
 ```
 
 ### 调试配置（Xdebug）
@@ -85,13 +85,13 @@ docker run --rm -v $(pwd):/app \
 ### 依赖管理（Composer）
 在容器中使用Composer安装依赖：
 ```bash
-docker run --rm -v $(pwd):/app php-cli-dev:8.2 composer install
+docker run --rm -v $(pwd):/app docker.xuanyuan.run/php-cli-dev:8.2 composer install
 ```
 
 ### 单元测试（PHPUnit）
 执行PHPUnit测试用例：
 ```bash
-docker run --rm -v $(pwd):/app php-cli-dev:8.2 phpunit /app/tests
+docker run --rm -v $(pwd):/app docker.xuanyuan.run/php-cli-dev:8.2 phpunit /app/tests
 ```
 
 ### 环境变量配置
@@ -107,7 +107,7 @@ docker run --rm -v $(pwd):/app php-cli-dev:8.2 phpunit /app/tests
 ### 扩展管理
 如需安装额外PHP扩展，可在Dockerfile中基于本镜像构建：
 ```dockerfile
-FROM php-cli-dev:8.2
+FROM docker.xuanyuan.run/php-cli-dev:8.2
 RUN docker-php-ext-install redis  # 安装Redis扩展
 ```
 

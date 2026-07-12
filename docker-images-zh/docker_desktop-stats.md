@@ -3,7 +3,7 @@ image: docker/desktop-stats
 description: "Docker Desktop云助手镜像，用于辅助Docker Desktop与云服务的集成配置及管理，简化云环境下的容器操作流程。"
 source: https://xuanyuan.cloud/zh/r/docker/desktop-stats
 canonical: https://xuanyuan.cloud/zh/r/docker/desktop-stats
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/docker/desktop-stats" title="docker/desktop-stats Docker 镜像中文简介、标签列表与拉取命令">docker/desktop-stats 中文简介</a>
@@ -83,7 +83,7 @@ docker run -it --rm \
   -e EXPLORATION_SCOPE="all" \
   -e OUTPUT_FORMAT="json" \
   -v "$(pwd)/results:/app/results" \
-  docker/desktop-cloud-helper:latest
+  docker.xuanyuan.run/docker/desktop-cloud-helper:latest
 ```
 
 **参数说明**：
@@ -99,7 +99,7 @@ docker run -it --rm \
 version: '3.8'
 services:
   cloud-helper:
-    image: docker/desktop-cloud-helper:latest
+    image: docker.xuanyuan.run/docker/desktop-cloud-helper:latest
     environment:
       - DOCKER_CLOUD_ENGINE_URL=https://cloud-engine.example.com:2376
       - DOCKER_CLOUD_API_KEY=your-api-key-here

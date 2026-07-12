@@ -3,7 +3,7 @@ image: apache/hive
 description: "Apache Hive是基于Hadoop的分布式数据仓库工具，支持类SQL查询语言（HQL）以高效分析和处理大规模结构化数据；其Docker镜像是预先集成Hive核心组件、依赖环境及配置的可执行文件包，可快速部署至各类环境，确保开发、测试与生产环境一致性，大幅简化Hive服务的安装配置流程，为数据仓库构建、数据查询及分析任务提供便捷、稳定且高效的运行载体。"
 source: https://xuanyuan.cloud/zh/r/apache/hive
 canonical: https://xuanyuan.cloud/zh/r/apache/hive
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/hive" title="apache/hive Docker 镜像中文简介、标签列表与拉取命令">apache/hive 中文简介</a>
@@ -38,7 +38,7 @@ export HIVE_VERSION=4.1.0
 docker run -d -p 10000:10000 -p 10002:10002 \
   --env SERVICE_NAME=hiveserver2 \
   --name hive4 \
-  apache/hive:${HIVE_VERSION}
+  docker.xuanyuan.run/apache/hive:${HIVE_VERSION}
 ```  
 
 
@@ -48,7 +48,7 @@ docker run -d -p 10000:10000 -p 10002:10002 \
 docker run -d -p 9083:9083 \
   --env SERVICE_NAME=metastore \
   --name metastore-standalone \
-  apache/hive:${HIVE_VERSION}
+  docker.xuanyuan.run/apache/hive:${HIVE_VERSION}
 ```  
 
 > **注意**：此模式下，容器停止后数据会丢失。若需持久化表结构和数据，需搭配外部 Postgres 数据库及卷（volume）存储。  

@@ -3,7 +3,7 @@ image: zilliz/attu
 description: "Attu是Milvus的一站式管理工具，提供图形化界面用于监控、管理和操作Milvus向量数据库，可显著降低Milvus的管理成本，支持Milvus 2.x版本，兼容Zilliz Cloud及自建Milvus服务。"
 source: https://xuanyuan.cloud/zh/r/zilliz/attu
 canonical: https://xuanyuan.cloud/zh/r/zilliz/attu
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zilliz/attu" title="zilliz/attu Docker 镜像中文简介、标签列表与拉取命令">zilliz/attu 中文简介</a>
@@ -38,7 +38,7 @@ Attu是Milvus的一站式管理工具，通过图形化界面可显著降低Milv
 以下是启动Attu容器的步骤：
 
 ```bash
-docker run -p 8000:3000 -e MILVUS_URL={milvus服务器IP}:19530 zilliz/attu:v2.4
+docker run -p 8000:3000 -e MILVUS_URL={milvus服务器IP}:19530 docker.xuanyuan.run/zilliz/attu:v2.4
 ```
 
 确保Attu容器可访问Milvus服务器IP。启动后，在浏览器中输入`http://{Attu服务器IP}:8000`即可访问Attu图形界面。
@@ -67,7 +67,7 @@ docker run -p 8000:3000 \
 -e PRIVATE_KEY_PATH=/app/tls/client.key \
 -e CERT_CHAIN_PATH=/app/tls/client.pem \
 -e SERVER_NAME=your_server_name \
-zilliz/attu:dev
+docker.xuanyuan.run/zilliz/attu:dev
 ```
 
 #### 自定义服务器端口示例
@@ -80,7 +80,7 @@ docker run --network host \
 -e ATTU_LOG_LEVEL=info  \
 -e SERVER_NAME=your_server_name \
 -e SERVER_PORT=8080 \
-zilliz/attu:dev
+docker.xuanyuan.run/zilliz/attu:dev
 ```
 
 ### 在Kubernetes中运行Attu

@@ -3,7 +3,7 @@ image: dockette/debian
 description: "基于Debian的基础Docker镜像，提供Sid、Jessie、Wheezy等特殊变体，包含预定义用户和优化配置，适用于构建轻量级应用环境。"
 source: https://xuanyuan.cloud/zh/r/dockette/debian
 canonical: https://xuanyuan.cloud/zh/r/dockette/debian
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dockette/debian" title="dockette/debian Docker 镜像中文简介、标签列表与拉取命令">dockette/debian 中文简介</a>
@@ -48,24 +48,24 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ```bash
 # Sid版本
-docker run -it --rm dockette/debian:sid /bin/bash
-docker run -it --rm dockette/debian:sid-slim /bin/bash
+docker run -it --rm docker.xuanyuan.run/dockette/debian:sid /bin/bash
+docker run -it --rm docker.xuanyuan.run/dockette/debian:sid-slim /bin/bash
 
 # Buster版本
-docker run -it --rm dockette/debian:buster /bin/bash
-docker run -it --rm dockette/debian:buster-slim /bin/bash
+docker run -it --rm docker.xuanyuan.run/dockette/debian:buster /bin/bash
+docker run -it --rm docker.xuanyuan.run/dockette/debian:buster-slim /bin/bash
 
 # Stretch版本
-docker run -it --rm dockette/debian:stretch /bin/bash
-docker run -it --rm dockette/debian:stretch-slim /bin/bash
+docker run -it --rm docker.xuanyuan.run/dockette/debian:stretch /bin/bash
+docker run -it --rm docker.xuanyuan.run/dockette/debian:stretch-slim /bin/bash
 
 # Jessie版本
-docker run -it --rm dockette/debian:jessie /bin/bash
-docker run -it --rm dockette/debian:jessie-slim /bin/bash
+docker run -it --rm docker.xuanyuan.run/dockette/debian:jessie /bin/bash
+docker run -it --rm docker.xuanyuan.run/dockette/debian:jessie-slim /bin/bash
 
 # Wheezy版本
-docker run -it --rm dockette/debian:wheezy /bin/bash
-docker run -it --rm dockette/debian:wheezy-slim /bin/bash
+docker run -it --rm docker.xuanyuan.run/dockette/debian:wheezy /bin/bash
+docker run -it --rm docker.xuanyuan.run/dockette/debian:wheezy-slim /bin/bash
 ```
 
 ### 作为基础镜像

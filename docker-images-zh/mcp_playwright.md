@@ -3,7 +3,7 @@ image: mcp/playwright
 description: "Playwright MCP服务器是基于微软Playwright自动化测试工具的管理控制平台，主要用于跨浏览器（如Chrome、Firefox、WebKit等）的端到端测试任务调度与执行，支持用户交互模拟、多环境部署管理、测试资源分配、CI/CD流程集成及测试结果分析，能有效提升Web应用测试效率，保障应用在不同浏览器和设备上的兼容性与稳定性，助力开发团队实现高质量软件交付。"
 source: https://xuanyuan.cloud/zh/r/mcp/playwright
 canonical: https://xuanyuan.cloud/zh/r/mcp/playwright
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mcp/playwright" title="mcp/playwright Docker 镜像中文简介、标签列表与拉取命令">mcp/playwright 中文简介</a>
@@ -12,18 +12,18 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 # Playwright MCP Server  
 基于Playwright的模型上下文协议（MCP）服务器。  
-[什么是MCP服务器？]([])  
+[什么是MCP服务器？]   
 
 
 ## 基本特性  
 | 属性 | 详情 |  
 |------|------|  
-| **Docker镜像** | [mcp/playwright]([]) |  
-| **作者** | [microsoft]([]) |  
+| **Docker镜像** | [mcp/playwright]  |  
+| **作者** | [microsoft]  |  
 | **代码仓库** | [] |  
 | **Dockerfile** | [] |  
 | **镜像构建方** | Docker Inc. |  
-| **Docker Scout健康评分** | ![Docker Scout Health Score]([]) |  
+| **Docker Scout健康评分** | ![Docker Scout Health Score]  |  
 | **验证签名** | `COSIGN_REPOSITORY=mcp/signatures cosign verify mcp/playwright --key [] |  
 | **许可证** | Apache License 2.0 |  
 
@@ -318,4 +318,4 @@ exported_at: 2026-06-02T12:26:10.133Z
 }
 ```  
 
-[为什么使用Docker运行MCP服务器更安全？]([])
+[为什么使用Docker运行MCP服务器更安全？]

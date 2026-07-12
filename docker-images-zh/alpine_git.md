@@ -3,7 +3,7 @@ image: alpine/git
 description: "这是一个运行于Alpine Linux系统中的简易Git容器，Alpine Linux以其极致精简的特性为基础，使得该容器在保持Git核心功能的同时，具备轻量高效的运行表现，尤其适用于各类小型Linux发行版环境，能够满足资源受限场景下的版本控制需求，为嵌入式系统、边缘设备或轻量级开发环境提供便捷的Git服务支持。"
 source: https://xuanyuan.cloud/zh/r/alpine/git
 canonical: https://xuanyuan.cloud/zh/r/alpine/git
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/git" title="alpine/git Docker 镜像中文简介、标签列表与拉取命令">alpine/git 中文简介</a>
@@ -15,7 +15,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 #### 简介  
 这是一个运行在Alpine Linux上的轻量Git容器，尤其适合RancherOS等没有包管理器的小型Linux发行版。  
-[![DockerHub Badge]([])]([])  
+[![DockerHub Badge] ]   
 
 
 #### 重要更新说明  
@@ -25,7 +25,7 @@ exported_at: 2026-06-02T12:26:10.133Z
   2. 旧版本不再更新为多架构镜像；  
   3. 此后新版本均支持多架构（`--platform linux/amd64,linux/arm/v7,linux/arm64/v8,linux/arm/v6,linux/ppc64le,linux/s390x,linux/386`）；  
   4. 仅保证`amd64`架构可用（其他架构无测试环境，如有问题需提交PR修复）；  
-  5. 拉取/运行命令与其他架构无差异，例如在ARM设备（如Mac M1芯片）上直接执行`docker pull alpine/git:v2.30.2`即可获取对应镜像。  
+  5. 拉取/运行命令与其他架构无差异，例如在ARM设备（如Mac M1芯片）上直接执行`docker pull docker.xuanyuan.run/alpine/git:v2.30.2`即可获取对应镜像。  
 
 
 #### 相关链接  
@@ -38,11 +38,11 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 #### 基础用法  
 ```bash
-docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git alpine/git <git_command>
+docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git docker.xuanyuan.run/alpine/git <git_command>
 ```  
 例如，克隆本仓库：  
 ```bash
-docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git alpine/git clone []  
+docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git docker.xuanyuan.run/alpine/git clone []
 
 
 #### 可选用法1：简化命令（推荐）  
@@ -100,7 +100,7 @@ git push -u origin master
 
 
 ### 支持的协议  
-支持git、http/https、ssh协议，详情可参考Git官方文档：[Git on the Server - The Protocols]([])  
+支持git、http/https、ssh协议，详情可参考Git官方文档：[Git on the Server - The Protocols]   
 
 
 ### 自动化构建说明  

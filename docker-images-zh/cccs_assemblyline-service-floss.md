@@ -3,7 +3,7 @@ image: cccs/assemblyline-service-floss
 description: "Assemblyline 4混淆字符串求解器，用于解析混淆字符串以辅助相关分析。"
 source: https://xuanyuan.cloud/zh/r/cccs/assemblyline-service-floss
 canonical: https://xuanyuan.cloud/zh/r/cccs/assemblyline-service-floss
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cccs/assemblyline-service-floss" title="cccs/assemblyline-service-floss Docker 镜像中文简介、标签列表与拉取命令">cccs/assemblyline-service-floss 中文简介</a>
@@ -93,7 +93,7 @@ Assemblyline服务使用以下标签定义：
 ```bash
 docker run \
     --name Floss \
-    --env SERVICE_API_HOST=http://`ip addr show docker0 | grep "inet " | awk '{print $2}' | cut -f1 -d"/"`:5003 \
+    --env SERVICE_API_HOST=http://`ip docker.xuanyuan.run/addr show docker0 | grep "inet " | awk '{print $2}' | cut -f1 -d"/"`:5003 \
     --network=host \
     cccs/assemblyline-service-floss
 ```

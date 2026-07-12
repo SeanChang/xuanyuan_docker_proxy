@@ -3,7 +3,7 @@ image: library/couchdb
 description: "CouchDB是采用JSON文档格式、提供HTTP API并支持JavaScript/声明式索引的数据库。"
 source: https://xuanyuan.cloud/zh/r/library/couchdb
 canonical: https://xuanyuan.cloud/zh/r/library/couchdb
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/couchdb" title="library/couchdb Docker 镜像中文简介、标签列表与拉取命令">library/couchdb 中文简介</a>
@@ -95,7 +95,7 @@ $ docker run -p 5984:5984 -d couchdb:tag
 version: '3'
 services:
   couchdb:
-    image: couchdb:3.5.0
+    image: docker.xuanyuan.run/couchdb:3.5.0
     container_name: couchdb
     ports:
       - "5984:5984"
@@ -145,7 +145,7 @@ $ docker run -v /host/path/to/config:/opt/couchdb/etc/local.d -d couchdb:tag
 #### 方法 2：自定义 Dockerfile
 
 ```dockerfile
-FROM couchdb:3.5.0
+FROM docker.xuanyuan.run/couchdb:3.5.0
 COPY custom.ini /opt/couchdb/etc/local.d/
 ```
 

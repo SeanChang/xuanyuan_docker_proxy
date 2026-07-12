@@ -3,7 +3,7 @@ image: lsiodev/radarr
 description: "Radarr是一款用于电影收藏管理的工具，可自动搜索、下载和整理电影文件，帮助用户维护有序的电影库。"
 source: https://xuanyuan.cloud/zh/r/lsiodev/radarr
 canonical: https://xuanyuan.cloud/zh/r/lsiodev/radarr
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/lsiodev/radarr" title="lsiodev/radarr Docker 镜像中文简介、标签列表与拉取命令">lsiodev/radarr 中文简介</a>
@@ -72,7 +72,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 version: "2.1"
 services:
   radarr:
-    image: lscr.io/linuxserver/radarr:latest
+    image: docker.xuanyuan.run/linuxserver/radarr:latest
     container_name: radarr
     environment:
       - PUID=1000        # 用户ID，详见下方说明
@@ -178,7 +178,7 @@ docker image prune
 ### 通过 Docker Run 更新
 ```bash
 # 拉取最新镜像
-docker pull lscr.io/linuxserver/radarr:latest
+docker pull docker.xuanyuan.run/linuxserver/radarr:latest
 # 停止并删除旧容器
 docker stop radarr && docker rm radarr
 # 用相同参数重建容器（/config 卷会保留配置）
@@ -191,7 +191,7 @@ docker image prune
 ```bash
 docker run --rm \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  containrrr/watchtower \
+  docker.xuanyuan.run/containrrr/watchtower \
   --run-once radarr
 ```
 > **注意**：不建议长期使用 Watchtower 自动更新，推荐使用 Docker Compose 进行版本管理。
@@ -215,7 +215,7 @@ docker build \
 ### 构建 ARM 架构镜像（需在 x86_64 主机上）
 ```bash
 # 注册 qemu-user-static
-docker run --rm --privileged multiarch/qemu-user-static:register --reset
+docker run --rm --privileged docker.xuanyuan.run/multiarch/qemu-user-static:register --reset
 # 构建特定架构（如 arm64v8）
 docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/radarr:arm64v8-latest .
 ```

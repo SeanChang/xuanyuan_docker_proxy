@@ -3,14 +3,14 @@ image: mariadb/maxscale
 description: "MariaDB MaxScale 是世界上最先进的数据库代理，它能够实现数据库负载均衡、读写分离、高可用性支持与故障自动切换，同时提供数据分片管理、安全访问控制及性能监控等功能，有效提升数据库系统的运行效率、稳定性与可扩展性，简化复杂数据库环境的管理与维护。"
 source: https://xuanyuan.cloud/zh/r/mariadb/maxscale
 canonical: https://xuanyuan.cloud/zh/r/mariadb/maxscale
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mariadb/maxscale" title="mariadb/maxscale Docker 镜像中文简介、标签列表与拉取命令">mariadb/maxscale 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-![logo]([])
+![logo] 
 
 # MariaDB MaxScale Docker镜像
 
@@ -18,7 +18,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## Travis CI构建状态  
-![build status badge]([])]([])
+![build status badge] ] 
 
 
 ## 构建镜像  
@@ -33,13 +33,13 @@ make build-image
 ### 拉取镜像  
 从Docker Hub拉取最新的MaxScale镜像：  
 ```bash
-docker pull mariadb/maxscale:latest
+docker pull docker.xuanyuan.run/mariadb/maxscale:latest
 ```
 
 ### 启动容器  
 将MaxScale容器以名称“mxs”后台运行：  
 ```bash
-docker run -d --name mxs mariadb/maxscale:latest
+docker run -d --name mxs docker.xuanyuan.run/mariadb/maxscale:latest
 ```
 
 
@@ -49,16 +49,16 @@ docker run -d --name mxs mariadb/maxscale:latest
 
 ```bash
 # 启动容器并映射8989端口
-docker run -d -p 8989:8989 --name mxs mariadb/maxscale:latest
+docker run -d -p 8989:8989 --name mxs docker.xuanyuan.run/mariadb/maxscale:latest
 
 # 通过curl访问REST API
-curl -u admin:mariadb [] API的信息，请参见[MaxScale文档]([])。
+curl -u admin:mariadb [] API的信息，请参见[MaxScale文档] 。
 
 
 ### 通过配置文件自定义配置  
 如需自定义配置，可通过额外的配置文件（例如`my-maxscale.cnf`）实现。需将该文件挂载到容器内的`/etc/maxscale.cnf.d/`目录：  
 ```bash
-docker run -d --name mxs -v $PWD/my-maxscale.cnf:/etc/maxscale.cnf.d/my-maxscale.cnf mariadb/maxscale:latest
+docker run -d --name mxs -v $PWD/my-maxscale.cnf:/etc/maxscale.cnf.d/my-maxscale.cnf docker.xuanyuan.run/mariadb/maxscale:latest
 ```
 
 

@@ -3,7 +3,7 @@ image: maxkeytop/maxkey
 description: "MaxKey认证端是提供单点登录及身份验证服务的Docker镜像，用于企业级应用的统一身份认证管理。"
 source: https://xuanyuan.cloud/zh/r/maxkeytop/maxkey
 canonical: https://xuanyuan.cloud/zh/r/maxkeytop/maxkey
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/maxkeytop/maxkey" title="maxkeytop/maxkey Docker 镜像中文简介、标签列表与拉取命令">maxkeytop/maxkey 中文简介</a>
@@ -83,7 +83,7 @@ docker run -d \
   -e DB_NAME=maxkey \
   -e DB_USER=maxkey_user \
   -e DB_PASSWORD=your_secure_password \
-  maxkey/maxkey:latest
+  docker.xuanyuan.run/maxkey/maxkey:latest
 ```
 > 注：`maxkey/maxkey:latest`为示例镜像名称，实际请以官方提供的镜像标签为准。
 
@@ -94,7 +94,7 @@ version: '3.8'
 
 services:
   maxkey:
-    image: maxkey/maxkey:latest
+    image: docker.xuanyuan.run/maxkey/maxkey:latest
     container_name: maxkey
     restart: always
     ports:
@@ -117,7 +117,7 @@ services:
       - mysql
 
   mysql:
-    image: mysql:8.0
+    image: docker.xuanyuan.run/mysql:8.0
     container_name: maxkey-mysql
     restart: always
     ports:

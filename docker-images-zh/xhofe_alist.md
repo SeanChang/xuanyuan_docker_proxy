@@ -3,7 +3,7 @@ image: xhofe/alist
 description: "这是一款由Gin（Go语言Web框架）和React（JavaScript前端库）驱动的文件列表程序，支持多种存储方式（如本地磁盘、云存储服务等），能帮助用户高效管理和查看分布在不同存储位置的文件，兼具后端高效处理能力与前端友好交互体验，为跨存储场景下的文件管理提供便捷解决方案。"
 source: https://xuanyuan.cloud/zh/r/xhofe/alist
 canonical: https://xuanyuan.cloud/zh/r/xhofe/alist
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/xhofe/alist" title="xhofe/alist Docker 镜像中文简介、标签列表与拉取命令">xhofe/alist 中文简介</a>
@@ -21,12 +21,12 @@ AList 是一款支持多种存储的文件列表程序，基于 Gin 和 Solidjs 
 #### 稳定版（推荐）  
 通过 Docker 部署稳定版，执行以下命令：  
 ```shell  
-docker run -d --restart=always -v /etc/:/opt//data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="" xhofe/:latest  
+docker run -d --restart=always -v /etc/:/opt//data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="" docker.xuanyuan.run/xhofe/:latest
 ```  
 
 #### 测试版（不推荐，功能可能不稳定）  
 ```shell  
-docker run -d --restart=always -v /etc/:/opt//data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="" xhofe/:main  
+docker run -d --restart=always -v /etc/:/opt//data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="" docker.xuanyuan.run/xhofe/:main
 ```  
 
 
@@ -51,6 +51,6 @@ docker run -d --restart=always -v /etc/:/opt//data -p 5244:5244 -e PUID=0 -e PGI
 
 ## 其他信息  
 
-- **在线演示**：可访问 [演示站点]([]) 体验功能。  
+- **在线演示**：可访问 [演示站点]  体验功能。  
 - **赞助支持**：项目发展依赖社区支持，详情见 [赞助页面]()。  
 - **开源协议**： 基于 AGPL-3.0 协议开源。

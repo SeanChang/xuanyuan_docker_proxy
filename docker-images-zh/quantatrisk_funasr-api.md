@@ -3,7 +3,7 @@ image: quantatrisk/funasr-api
 description: "基于FunASR和Qwen3-ASR的生产级本地语音识别API服务，支持多模型、OpenAI API兼容接口、流式识别和说话人分离，提供GPU加速和批量处理能力。"
 source: https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api
 canonical: https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/quantatrisk/funasr-api" title="quantatrisk/funasr-api Docker 镜像中文简介、标签列表与拉取命令">quantatrisk/funasr-api 中文简介</a>
@@ -28,7 +28,7 @@ docker run -d --name funasr-api \
   -v ./models/huggingface:/root/.cache/huggingface \
   -v ./logs:/app/logs \
   -v ./temp:/app/temp \
-  quantatrisk/funasr-api:gpu-latest
+  docker.xuanyuan.run/quantatrisk/funasr-api:gpu-latest
 ```
 
 ### CPU版本
@@ -41,7 +41,7 @@ docker run -d --name funasr-api \
   -v ./models/modelscope:/root/.cache/modelscope \
   -v ./logs:/app/logs \
   -v ./temp:/app/temp \
-  quantatrisk/funasr-api:cpu-latest
+  docker.xuanyuan.run/quantatrisk/funasr-api:cpu-latest
 ```
 
 ## 支持的标签
@@ -128,7 +128,7 @@ curl -X POST "http://localhost:17003/stream/v1/asr" \
 docker run --rm \
   -v ./models/modelscope:/root/.cache/modelscope \
   -v ./models/huggingface:/root/.cache/huggingface \
-  quantatrisk/funasr-api:gpu-latest \
+  docker.xuanyuan.run/quantatrisk/funasr-api:gpu-latest \
   python -c "from app.utils.download_models import download_models; download_models()"
 ```
 

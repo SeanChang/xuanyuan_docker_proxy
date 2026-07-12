@@ -3,7 +3,7 @@ image: bitnamicharts/elasticsearch
 description: "Bitnami提供的Elasticsearch Helm chart，用于在Kubernetes环境中便捷部署和管理分布式搜索引擎Elasticsearch。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/elasticsearch
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/elasticsearch
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/elasticsearch" title="bitnamicharts/elasticsearch Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/elasticsearch 中文简介</a>
@@ -251,7 +251,7 @@ snapshotRepoPath: "/snapshots"  # 快照仓库路径
 ```yaml
 sidecars:
   - name: your-image-name
-    image: your-image
+    image: docker.xuanyuan.run/your-image
     imagePullPolicy: Always
     ports:
       - name: portname
@@ -262,7 +262,7 @@ sidecars:
 ```yaml
 initContainers:
   - name: your-image-name
-    image: your-image
+    image: docker.xuanyuan.run/your-image
     imagePullPolicy: Always
 ```
 

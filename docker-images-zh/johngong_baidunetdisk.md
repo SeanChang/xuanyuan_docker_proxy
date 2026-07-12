@@ -3,7 +3,7 @@ image: johngong/baidunetdisk
 description: "需要提醒的是，百度网盘官方并未推出过“VNC版”客户端，此类非官方版本可能存在安全风险，如信息泄露、恶意程序植入等，且使用非官方软件可能违反相关服务协议。建议您通过百度网盘官方渠道下载和使用正版客户端，以保障账号和数据安全。"
 source: https://xuanyuan.cloud/zh/r/johngong/baidunetdisk
 canonical: https://xuanyuan.cloud/zh/r/johngong/baidunetdisk
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/johngong/baidunetdisk" title="johngong/baidunetdisk Docker 镜像中文简介、标签列表与拉取命令">johngong/baidunetdisk 中文简介</a>
@@ -14,9 +14,9 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 项目简介  
-本文介绍如何在群晖NAS上通过Docker部署百度网盘，方便本地管理和下载文件。项目源码及更多细节可查看GitHub仓库：[[]]([])。  
+本文介绍如何在群晖NAS上通过Docker部署百度网盘，方便本地管理和下载文件。项目源码及更多细节可查看GitHub仓库：[[]] 。  
 
-**特别感谢**：本项目基于 [jlesage/docker-baseimage-gui]([]) 基础镜像开发，感谢原作者的开源贡献。
+**特别感谢**：本项目基于 [jlesage/docker-baseimage-gui]  基础镜像开发，感谢原作者的开源贡献。
 
 
 ## 支持版本  
@@ -48,8 +48,8 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 | 镜像源       | 拉取命令                                  |
 | :----------- | :---------------------------------------- |
-| DockerHub    | `docker pull johngong/baidunetdisk:latest` |
-| GitHub       | `docker pull ghcr.io/gshang2017/baidunetdisk:latest` |
+| DockerHub    | `docker pull docker.xuanyuan.run/johngong/baidunetdisk:latest` |
+| GitHub       | `docker pull ***-ghcr.xuanyuan.run/gshang2017/baidunetdisk:latest` |
 
 #### 2. 创建容器  
 替换以下命令中的 `<本地配置文件路径>` 和 `<本地下载路径>` 为实际路径（如 `/volume1/docker/baidunetdisk/config` 和 `/volume1/downloads`），执行创建容器：  
@@ -131,4 +131,4 @@ docker image rm johngong/baidunetdisk:latest
 
 
 ## 其他说明  
-更多高级参数配置（如网络模式、资源限制等），可参考基础镜像文档：[jlesage/baseimage-gui]([])。
+更多高级参数配置（如网络模式、资源限制等），可参考基础镜像文档：[jlesage/baseimage-gui] 。

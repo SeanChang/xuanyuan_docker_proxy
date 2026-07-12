@@ -3,7 +3,7 @@ image: apache/druid
 description: "Apache Druid是一款开源实时分析数据库，专为大规模时序数据的快速查询与实时摄入设计，支持交互式分析，提供高性能数据处理能力。"
 source: https://xuanyuan.cloud/zh/r/apache/druid
 canonical: https://xuanyuan.cloud/zh/r/apache/druid
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/druid" title="apache/druid Docker 镜像中文简介、标签列表与拉取命令">apache/druid 中文简介</a>
@@ -80,7 +80,7 @@ version: '3.8'
 services:
   # ZooKeeper 依赖
   zookeeper:
-    image: zookeeper:3.8
+    image: docker.xuanyuan.run/zookeeper:3.8
     ports:
       - "2181:2181"
     environment:
@@ -91,7 +91,7 @@ services:
 
   # 元数据库（PostgreSQL）
   postgres:
-    image: postgres:14
+    image: docker.xuanyuan.run/postgres:14
     ports:
       - "5432:5432"
     environment:
@@ -103,7 +103,7 @@ services:
 
   # Druid Coordinator（集群协调）
   coordinator:
-    image: apache/druid:latest
+    image: docker.xuanyuan.run/apache/druid:latest
     depends_on:
       - zookeeper
       - postgres
@@ -124,7 +124,7 @@ services:
 
   # Druid Overlord（任务管理）
   overlord:
-    image: apache/druid:latest
+    image: docker.xuanyuan.run/apache/druid:latest
     depends_on:
       - zookeeper
       - postgres

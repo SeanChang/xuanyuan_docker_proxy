@@ -3,7 +3,7 @@ image: umamisoftware/umami
 description: "Umami 是一款简单易用、运行高效且以隐私保护为核心的谷歌分析替代工具，它专为注重数据隐私与使用便捷性的用户设计，无需复杂技术配置即可快速部署，能实时、准确统计网站流量数据；其核心优势在于严格遵循隐私保护原则，不收集或存储个人身份信息，避免用户数据被滥用，确保数据收集过程符合全球隐私法规要求，为网站管理员提供安全、透明且高效的数据分析体验，是替代传统第三方分析工具的理想轻量级方案。"
 source: https://xuanyuan.cloud/zh/r/umamisoftware/umami
 canonical: https://xuanyuan.cloud/zh/r/umamisoftware/umami
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/umamisoftware/umami" title="umamisoftware/umami Docker 镜像中文简介、标签列表与拉取命令">umamisoftware/umami 中文简介</a>

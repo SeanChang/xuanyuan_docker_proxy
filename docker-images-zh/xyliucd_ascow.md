@@ -3,7 +3,7 @@ image: xyliucd/ascow
 description: "基于ABHPC研发的适用于Slurm调度系统的超算用户与管理集成系统"
 source: https://xuanyuan.cloud/zh/r/xyliucd/ascow
 canonical: https://xuanyuan.cloud/zh/r/xyliucd/ascow
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/xyliucd/ascow" title="xyliucd/ascow Docker 镜像中文简介、标签列表与拉取命令">xyliucd/ascow 中文简介</a>
@@ -35,7 +35,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 2.2 使用方法
 首先拉取镜像：
 ```bash
-docker pull xyliucd/ascow:latest
+docker pull docker.xuanyuan.run/xyliucd/ascow:latest
 ```
 使用`scow-cli`生成docker-compose.yml文件：
 ```bash

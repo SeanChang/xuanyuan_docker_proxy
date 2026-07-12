@@ -3,7 +3,7 @@ image: nginx/nginx-prometheus-exporter
 description: "NGINX Prometheus Exporter用于收集并导出NGINX与NGINX Plus的监控指标，供Prometheus采集以实现对其运行状态的监控。"
 source: https://xuanyuan.cloud/zh/r/nginx/nginx-prometheus-exporter
 canonical: https://xuanyuan.cloud/zh/r/nginx/nginx-prometheus-exporter
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nginx/nginx-prometheus-exporter" title="nginx/nginx-prometheus-exporter Docker 镜像中文简介、标签列表与拉取命令">nginx/nginx-prometheus-exporter 中文简介</a>
@@ -76,14 +76,14 @@ server {
 **监控NGINX开源版**:
 ```bash
 docker run -d -p 9113:9113 --name nginx-exporter \
-  nginx/nginx-prometheus-exporter:latest \
+  docker.xuanyuan.run/nginx/nginx-prometheus-exporter:latest \
   --nginx.scrape-uri=http://<nginx-ip>:8080/stub_status
 ```
 
 **监控NGINX Plus**:
 ```bash
 docker run -d -p 9113:9113 --name nginx-exporter \
-  nginx/nginx-prometheus-exporter:latest \
+  docker.xuanyuan.run/nginx/nginx-prometheus-exporter:latest \
   --nginx.plus --nginx.scrape-uri=http://<nginx-plus-ip>:8080/api
 ```
 
@@ -91,7 +91,7 @@ docker run -d -p 9113:9113 --name nginx-exporter \
 ```bash
 docker run -d -p 9113:9113 --name nginx-exporter \
   -v /var/run/nginx.sock:/var/run/nginx.sock \
-  nginx/nginx-prometheus-exporter:latest \
+  docker.xuanyuan.run/nginx/nginx-prometheus-exporter:latest \
   --nginx.scrape-uri=unix:/var/run/nginx.sock:/stub_status
 ```
 
@@ -102,7 +102,7 @@ version: '3'
 
 services:
   nginx-exporter:
-    image: nginx/nginx-prometheus-exporter:latest
+    image: docker.xuanyuan.run/nginx/nginx-prometheus-exporter:latest
     container_name: nginx-exporter
     restart: always
     ports:
@@ -115,7 +115,7 @@ services:
       - monitoring-network
 
   nginx:
-    image: nginx:latest
+    image: docker.xuanyuan.run/nginx:latest
     container_name: nginx
     restart: always
     ports:
@@ -159,7 +159,7 @@ docker run -d -p 9113:9113 --name nginx-exporter \
   -e NGINX_PLUS=false \
   -e SCRAPE_URI=http://nginx:8080/stub_status \
   -e TIMEOUT=10s \
-  nginx/nginx-prometheus-exporter:latest
+  docker.xuanyuan.run/nginx/nginx-prometheus-exporter:latest
 ```
 
 ## 导出的指标

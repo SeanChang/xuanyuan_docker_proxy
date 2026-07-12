@@ -3,7 +3,7 @@ image: timescale/timescaledb-ha
 description: "包含TimescaleDB时序数据库与Patroni高可用工具，用于构建具备高可用性的时序数据存储解决方案。"
 source: https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha
 canonical: https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/timescale/timescaledb-ha" title="timescale/timescaledb-ha Docker 镜像中文简介、标签列表与拉取命令">timescale/timescaledb-ha 中文简介</a>
@@ -68,7 +68,7 @@ docker run -d \
   -e PATRONI_SCOPE=timescale-cluster \
   -e PATRONI_MODE=standalone \
   -v timescaledb-data:/var/lib/postgresql/data \
-  timescale/timescaledb-ha:latest
+  docker.xuanyuan.run/timescale/timescaledb-ha:latest
 ```
 
 #### 4.2.2 参数说明
@@ -90,7 +90,7 @@ docker run -d \
     -p 2379:2379 \
     -e ETCD_LISTEN_CLIENT_URLS=http://0.0.0.0:2379 \
     -e ETCD_ADVERTISE_CLIENT_URLS=http://etcd:2379 \
-    quay.io/coreos/etcd:v3.5.9
+    ***-quay.xuanyuan.run/coreos/etcd:v3.5.9
   ```
 
 #### 4.3.2 Docker Compose 集群配置（主从架构）
@@ -101,7 +101,7 @@ version: '3.8'
 services:
   # 主节点
   patroni-master:
-    image: timescale/timescaledb-ha:latest
+    image: docker.xuanyuan.run/timescale/timescaledb-ha:latest
     container_name: patroni-master
     ports:
       - "5432:5432"
@@ -123,7 +123,7 @@ services:
 
   # 从节点
   patroni-replica:
-    image: timescale/timescaledb-ha:latest
+    image: docker.xuanyuan.run/timescale/timescaledb-ha:latest
     container_name: patroni-replica
     ports:
       - "5433:5432"  # 避免端口冲突
@@ -144,7 +144,7 @@ services:
 
   # etcd 配置存储
   etcd:
-    image: quay.io/coreos/etcd:v3.5.9
+    image: ***-quay.xuanyuan.run/coreos/etcd:v3.5.9
     container_name: etcd
     ports:
       - "2379:2379"

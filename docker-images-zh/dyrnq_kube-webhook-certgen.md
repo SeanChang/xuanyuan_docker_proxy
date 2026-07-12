@@ -3,7 +3,7 @@ image: dyrnq/kube-webhook-certgen
 description: "k8s.gcr.io/ingress-nginx/kube-webhook-certgen是位于Google Container Registry（k8s.gcr.io）的Kubernetes官方镜像，属于ingress-nginx组件，是用于为Kubernetes Webhook生成和管理TLS证书的工具，其主要功能是通过自动生成、更新和轮换证书，保障Webhook在与Kubernetes API服务器通信时的安全加密，是确保Ingress控制器能够正常处理入站流量、实现API对象配置验证及动态路由规则生效的关键组件。"
 source: https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen
 canonical: https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dyrnq/kube-webhook-certgen" title="dyrnq/kube-webhook-certgen Docker 镜像中文简介、标签列表与拉取命令">dyrnq/kube-webhook-certgen 中文简介</a>
@@ -39,7 +39,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ##### 1. 拉取镜像  
 需根据 ingress-nginx 控制器版本选择对应工具版本（版本号需匹配，如控制器 v1.8.0 对应 certgen v1.8.0）：  
 ```bash
-docker pull k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.8.0
+docker pull ***-k8s.xuanyuan.run/ingress-nginx/kube-webhook-certgen:v1.8.0
 ```  
 > 国内环境可替换镜像源（如 `registry.aliyuncs.com/google_containers/ingress-nginx/kube-webhook-certgen:v1.8.0`）。
 
@@ -50,7 +50,7 @@ docker pull k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.8.0
 - `--secret-name`：生成的 Secret 名称（默认 `ingress-nginx-admission`）  
 
 ```bash
-docker run --rm k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.8.0 \
+docker run --rm ***-k8s.xuanyuan.run/ingress-nginx/kube-webhook-certgen:v1.8.0 \
   create \
   --host=ingress-nginx-controller-admission,ingress-nginx-controller-admission.ingress-nginx.svc \
   --namespace=ingress-nginx \
@@ -67,7 +67,7 @@ kubectl get secret ingress-nginx-admission -n ingress-nginx
 ##### 4. 证书更新（如需）  
 将命令中的 `create` 替换为 `renew`，其他参数不变，即可更新证书：  
 ```bash
-docker run --rm k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.8.0 \
+docker run --rm ***-k8s.xuanyuan.run/ingress-nginx/kube-webhook-certgen:v1.8.0 \
   renew \
   --host=ingress-nginx-controller-admission,ingress-nginx-controller-admission.ingress-nginx.svc \
   --namespace=ingress-nginx \

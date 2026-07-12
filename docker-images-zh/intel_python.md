@@ -3,7 +3,7 @@ image: intel/python
 description: "Intel® Distribution for Python* 是增强性能的Python发行版，集成Intel® Math Kernel Library等性能库，可提升程序速度10到100倍，支持Intel dGPU，包含最新驱动和OneAPI运行时库，加速数值计算与机器学习框架。"
 source: https://xuanyuan.cloud/zh/r/intel/python
 canonical: https://xuanyuan.cloud/zh/r/intel/python
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/intel/python" title="intel/python Docker 镜像中文简介、标签列表与拉取命令">intel/python 中文简介</a>
@@ -36,7 +36,7 @@ git clone https://github.com/intel/ai-containers
 cd ai-containers/python
 docker run --rm -it \
     -v $PWD/tests:/tests \
-    intel/python:latest \
+    docker.xuanyuan.run/intel/python:latest \
     python /tests/perf_sample.py
 ```
 
@@ -48,7 +48,7 @@ docker run --rm -it \
 # 使用上述命令的工作目录
 docker run --rm -it \
     -v $PWD/tests:/tests \
-    python:3.10-slim-bullseye \
+    docker.xuanyuan.run/python:3.10-slim-bullseye \
     bash
 pip install numpy
 python /tests/perf_sample.py
@@ -63,7 +63,7 @@ python /tests/perf_sample.py
 docker run --rm -it \
     -v $PWD/tests:/tests \
     --device /dev/dri \
-    intel/python:3.11-xpu-full \
+    docker.xuanyuan.run/intel/python:3.11-xpu-full \
     bash /tests/xpu_base_layers_test.sh
 ```
 

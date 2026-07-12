@@ -3,7 +3,7 @@ image: wantcat/trendradar
 description: "TrendRadar 是一款多平台热点聚合与智能推送助手，从知乎、抖音、B 站、微博、百度热搜等渠道采集热点，并通过企业微信、飞书、钉钉、Telegram、邮件、ntfy 等通道按关键词与时间窗口智能推送，适合投资者、自媒体人和关注时事的用户以“少刷屏、看重点”的方式获取高价值资讯。"
 source: https://xuanyuan.cloud/zh/r/wantcat/trendradar
 canonical: https://xuanyuan.cloud/zh/r/wantcat/trendradar
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/wantcat/trendradar" title="wantcat/trendradar Docker 镜像中文简介、标签列表与拉取命令">wantcat/trendradar 中文简介</a>
@@ -112,13 +112,13 @@ TrendRadar 不仅告诉你“什么在热搜”，还关注“热点如何演变
 ## Docker 快速启动示例
 
 ```bash
-docker pull wantcat/trendradar
+docker pull docker.xuanyuan.run/wantcat/trendradar
 
 # 简易运行示例（实际使用中建议挂载配置与数据目录）
 docker run -d \
   --name trendradar \
   -e TZ=Asia/Shanghai \
-  wantcat/trendradar:latest
+  docker.xuanyuan.run/wantcat/trendradar:latest
 ```
 
 更多高级配置（推送通道、关键词、平台列表、MCP 接入等）请参考项目源码与文档，在 `config/config.yaml`、`frequency_words.txt` 等文件中按需调整。

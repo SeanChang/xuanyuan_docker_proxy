@@ -3,7 +3,7 @@ image: ubuntu/nginx
 description: "Nginx是一款高性能的反向代理和Web服务器，以高并发处理能力、低资源消耗及出色的稳定性著称，广泛应用于各类网站架构中，承担请求转发、负载均衡、静态资源服务等关键任务，其长期跟踪版本由Canonical公司负责维护，为用户提供持续可靠的技术支持与版本更新。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/nginx
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/nginx
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/nginx" title="ubuntu/nginx Docker 镜像中文简介、标签列表与拉取命令">ubuntu/nginx 中文简介</a>
@@ -25,7 +25,7 @@ Nginx（"engine X"）是由Igor Sysoev开发的高性能Web服务器与反向代
 
 ### LTS与ESM维护说明  
 - **LTS**：LTS渠道提供长达5年的免费安全维护。  
-- **ESM**：通过Canonical的受限仓库，可为客户提供长达10年的安全维护（[获取详情]([])）。  
+- **ESM**：通过Canonical的受限仓库，可为客户提供长达10年的安全维护（[获取详情] ）。  
 
 
 ### 标签详情表  
@@ -53,7 +53,7 @@ Nginx（"engine X"）是由Igor Sysoev开发的高性能Web服务器与反向代
 
 
 ### 商业用途与ESM渠道  
-若需将镜像用于商业分发，或需要ESM维护支持，或使用未列出的渠道/版本，可联系Canonical团队（邮箱：[邮箱已删除]，或通过[官方链接]([])）。
+若需将镜像用于商业分发，或需要ESM维护支持，或使用未列出的渠道/版本，可联系Canonical团队（邮箱：[邮箱已删除]，或通过[官方链接] ）。
 
 
 ## 使用方法  
@@ -61,7 +61,7 @@ Nginx（"engine X"）是由Igor Sysoev开发的高性能Web服务器与反向代
 ### 本地启动  
 通过以下命令在本地启动容器：  
 ```sh
-docker run -d --name nginx-container -e TZ=UTC -p 8080:80 ubuntu/nginx:1.27-24.04_stable
+docker run -d --name nginx-container -e TZ=UTC -p 8080:80 docker.xuanyuan.run/ubuntu/nginx:1.27-24.04_stable
 ```  
 启动后，可通过`[]  
 
@@ -74,7 +74,7 @@ docker run -d --name nginx-container -e TZ=UTC -p 8080:80 ubuntu/nginx:1.27-24.0
 | `-p 8080:80`                          | 将容器内80端口映射到本地8080端口，暴露Nginx服务。                     |
 | `-v /local/path/to/website:/var/www/html` | 挂载本地网站目录到容器内`/var/www/html`，以提供本地网站服务。          |
 | `-v /path/to/conf.template:/etc/nginx/templates/conf.template` | 挂载配置模板文件到容器内`/etc/nginx/templates`，模板会自动处理并生成配置文件到`/etc/nginx/conf.d`（例如模板中`listen ${NGINX_PORT};`会生成`listen 80;`）。 |
-| `-v /path/to/nginx.conf:/etc/nginx/nginx.conf` | 挂载本地Nginx配置文件（可参考[示例配置]([])）。 |  
+| `-v /path/to/nginx.conf:/etc/nginx/nginx.conf` | 挂载本地Nginx配置文件（可参考[示例配置] ）。 |  
 
 
 ### 测试与调试  
@@ -95,9 +95,9 @@ snap alias microk8s.kubectl kubectl
 
 ### 部署步骤  
 1. 下载配置文件：  
-   - [nginx.conf]([])（Nginx主配置）  
-   - [index.html]([])（示例网页）  
-   - [nginx-deployment.yml]([])（Kubernetes部署文件）  
+   - [nginx.conf] （Nginx主配置）  
+   - [index.html] （示例网页）  
+   - [nginx-deployment.yml] （Kubernetes部署文件）  
 
 2. 编辑`nginx-deployment.yml`，将`containers.nginx.image`字段设置为目标标签（例如`ubuntu/nginx:1.27-24.04_stable`）。  
 
@@ -114,7 +114,7 @@ snap alias microk8s.kubectl kubectl
 
 ## 问题反馈  
 若发现镜像 bug 或需请求功能，可通过以下链接提交issue：  
-[[]]([])  
+[[]]   
 
 提交时请按格式命名标题：`nginx: <问题摘要>`，并附上所用镜像的完整摘要（通过以下命令获取）：  
 ```sh
@@ -123,7 +123,7 @@ docker images --no-trunc --quiet ubuntu/nginx:<tag>
 
 
 ## 废弃标签与渠道  
-以下渠道（标签）已停止更新，建议升级至新版渠道；若无法升级，可[联系支持]([])。  
+以下渠道（标签）已停止更新，建议升级至新版渠道；若无法升级，可[联系支持] 。  
 
 | 渠道 | 版本 | 停止维护时间 | 升级路径 |
 |------|------|--------------|----------|

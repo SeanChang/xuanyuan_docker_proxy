@@ -3,7 +3,7 @@ image: arm64v8/nginx
 description: "Nginx的官方构建版本是一款高性能的HTTP和反向代理服务器，同时也可作为IMAP/POP3/SMTP代理服务器，其官方版本经过严格测试，包含稳定的核心功能及多种扩展模块，广泛应用于网站部署、负载均衡、动静分离等场景，凭借高效的并发处理能力和低资源消耗，成为全球范围内主流的Web服务器解决方案之一。"
 source: https://xuanyuan.cloud/zh/r/arm64v8/nginx
 canonical: https://xuanyuan.cloud/zh/r/arm64v8/nginx
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/arm64v8/nginx" title="arm64v8/nginx Docker 镜像中文简介、标签列表与拉取命令">arm64v8/nginx 中文简介</a>
@@ -14,64 +14,64 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 说明  
-本仓库是 [nginx 官方镜像]([])针对 `arm64v8` 架构的“按架构拆分”仓库。更多信息可参考官方镜像文档中的[“非 amd64 架构说明”]([])和 FAQ 中的[“镜像源码在 Git 中变更后如何处理？”]([])。
+本仓库是 [nginx 官方镜像] 针对 `arm64v8` 架构的“按架构拆分”仓库。更多信息可参考官方镜像文档中的[“非 amd64 架构说明”] 和 FAQ 中的[“镜像源码在 Git 中变更后如何处理？”] 。
 
 
 ## 快速参考  
 
 ### 维护方  
-[NGINX Docker 维护团队]([])  
+[NGINX Docker 维护团队]   
 
 ### 帮助支持  
-可通过 [Docker 社区 Slack]([])、[Server Fault]([])、[Unix & Linux]([]) 或 [Stack Overflow]([]) 获取帮助。  
+可通过 [Docker 社区 Slack] 、[Server Fault] 、[Unix & Linux]  或 [Stack Overflow]  获取帮助。  
 
 
 ## 支持的标签及对应 Dockerfile 链接  
 
 - **基础版（Debian）**  
-  [`1.29.2`, `mainline`, `1`, `1.29`, `latest`, `1.29.2-trixie`, `mainline-trixie`, `1-trixie`, `1.29-trixie`, `trixie`]([])  
+  [`1.29.2`, `mainline`, `1`, `1.29`, `latest`, `1.29.2-trixie`, `mainline-trixie`, `1-trixie`, `1.29-trixie`, `trixie`]   
 
 - **Perl 模块版（Debian）**  
-  [`1.29.2-perl`, `mainline-perl`, `1-perl`, `1.29-perl`, `perl`, `1.29.2-trixie-perl`, `mainline-trixie-perl`, `1-trixie-perl`, `1.29-trixie-perl`, `trixie-perl`]([])  
+  [`1.29.2-perl`, `mainline-perl`, `1-perl`, `1.29-perl`, `perl`, `1.29.2-trixie-perl`, `mainline-trixie-perl`, `1-trixie-perl`, `1.29-trixie-perl`, `trixie-perl`]   
 
 - **OpenTelemetry 版（Debian）**  
-  [`1.29.2-otel`, `mainline-otel`, `1-otel`, `1.29-otel`, `otel`, `1.29.2-trixie-otel`, `mainline-trixie-otel`, `1-trixie-otel`, `1.29-trixie-otel`, `trixie-otel`]([])  
+  [`1.29.2-otel`, `mainline-otel`, `1-otel`, `1.29-otel`, `otel`, `1.29.2-trixie-otel`, `mainline-trixie-otel`, `1-trixie-otel`, `1.29-trixie-otel`, `trixie-otel`]   
 
 - **Alpine 基础版**  
-  [`1.29.2-alpine`, `mainline-alpine`, `1-alpine`, `1.29-alpine`, `alpine`, `1.29.2-alpine3.22`, `mainline-alpine3.22`, `1-alpine3.22`, `1.29-alpine3.22`, `alpine3.22`]([])  
+  [`1.29.2-alpine`, `mainline-alpine`, `1-alpine`, `1.29-alpine`, `alpine`, `1.29.2-alpine3.22`, `mainline-alpine3.22`, `1-alpine3.22`, `1.29-alpine3.22`, `alpine3.22`]   
 
 - **Alpine Perl 模块版**  
-  [`1.29.2-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.29-alpine-perl`, `alpine-perl`, `1.29.2-alpine3.22-perl`, `mainline-alpine3.22-perl`, `1-alpine3.22-perl`, `1.29-alpine3.22-perl`, `alpine3.22-perl`]([])  
+  [`1.29.2-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.29-alpine-perl`, `alpine-perl`, `1.29.2-alpine3.22-perl`, `mainline-alpine3.22-perl`, `1-alpine3.22-perl`, `1.29-alpine3.22-perl`, `alpine3.22-perl`]   
 
 - **Alpine 精简版**  
-  [`1.29.2-alpine-slim`, `mainline-alpine-slim`, `1-alpine-slim`, `1.29-alpine-slim`, `alpine-slim`, `1.29.2-alpine3.22-slim`, `mainline-alpine3.22-slim`, `1-alpine3.22-slim`, `1.29-alpine3.22-slim`, `alpine3.22-slim`]([])  
+  [`1.29.2-alpine-slim`, `mainline-alpine-slim`, `1-alpine-slim`, `1.29-alpine-slim`, `alpine-slim`, `1.29.2-alpine3.22-slim`, `mainline-alpine3.22-slim`, `1-alpine3.22-slim`, `1.29-alpine3.22-slim`, `alpine3.22-slim`]   
 
 - **Alpine OpenTelemetry 版**  
-  [`1.29.2-alpine-otel`, `mainline-alpine-otel`, `1-alpine-otel`, `1.29-alpine-otel`, `alpine-otel`, `1.29.2-alpine3.22-otel`, `mainline-alpine3.22-otel`, `1-alpine3.22-otel`, `1.29-alpine3.22-otel`, `alpine3.22-otel`]([])  
+  [`1.29.2-alpine-otel`, `mainline-alpine-otel`, `1-alpine-otel`, `1.29-alpine-otel`, `alpine-otel`, `1.29.2-alpine3.22-otel`, `mainline-alpine3.22-otel`, `1-alpine3.22-otel`, `1.29-alpine3.22-otel`, `alpine3.22-otel`]   
 
 - **稳定版（Debian bookworm）**  
-  [`1.28.0`, `stable`, `1.28`, `1.28.0-bookworm`, `stable-bookworm`, `1.28-bookworm`]([])（及对应 `-perl`、`-otel`、Alpine 变体，标签列表略，可参考上方链接结构）  
+  [`1.28.0`, `stable`, `1.28`, `1.28.0-bookworm`, `stable-bookworm`, `1.28-bookworm`] （及对应 `-perl`、`-otel`、Alpine 变体，标签列表略，可参考上方链接结构）  
 
 
 ## 快速参考（续）  
 
 ### 问题反馈  
-[[]]([])  
+[[]]   
 
 ### 支持的架构  
-（[更多信息]([])）  
-[`amd64`]([])、[`arm32v5`]([])、[`arm32v6`]([])、[`arm32v7`]([])、[`arm64v8`]([])、[`i386`]([])、[`mips64le`]([])、[`ppc64le`]([])、[`riscv64`]([])、[`s390x`]([])  
+（[更多信息] ）  
+[`amd64`] 、[`arm32v5`] 、[`arm32v6`] 、[`arm32v7`] 、[`arm64v8`] 、[`i386`] 、[`mips64le`] 、[`ppc64le`] 、[`riscv64`] 、[`s390x`]   
 
 ### 镜像 artifact 详情  
-[repo-info 仓库的 `repos/nginx/` 目录]([])（[历史记录]([])）  
+[repo-info 仓库的 `repos/nginx/` 目录] （[历史记录] ）  
 （包含镜像元数据、传输大小等）  
 
 ### 镜像更新  
-[official-images 仓库的 `library/nginx` 标签]([])  
-[official-images 仓库的 `library/nginx` 文件]([])（[历史记录]([])）  
+[official-images 仓库的 `library/nginx` 标签]   
+[official-images 仓库的 `library/nginx` 文件] （[历史记录] ）  
 
 ### 本文档来源  
-[docs 仓库的 `nginx/` 目录]([])（[历史记录]([])）  
+[docs 仓库的 `nginx/` 目录] （[历史记录] ）  
 
 
 ## 什么是 nginx？  
@@ -79,7 +79,7 @@ Nginx（发音“engine-x”）是一款开源的反向代理服务器，支持 
 
 > 更多信息：[.org/wiki/Nginx]()  
 
-![nginx  logo]([])  
+![nginx  logo]   
 
 
 ## 如何使用本镜像  
@@ -93,7 +93,7 @@ $ docker run --name some-nginx -v /本地/静态文件目录:/usr/share/nginx/ht
 
 或通过 Dockerfile 构建包含静态文件的自定义镜像（更推荐）：  
 ```dockerfile
-FROM arm64v8/nginx
+FROM docker.xuanyuan.run/arm64v8/nginx
 COPY 本地静态文件目录 /usr/share/nginx/html
 ```  
 构建并运行：  
@@ -127,7 +127,7 @@ $ docker run --name my-custom-nginx -v /本地路径/nginx.conf:/etc/nginx/nginx
 
 #### 构建包含自定义配置的镜像：  
 ```dockerfile
-FROM arm64v8/nginx
+FROM docker.xuanyuan.run/arm64v8/nginx
 COPY nginx.conf /etc/nginx/nginx.conf
 ```  
 > 若自定义 `CMD`，需包含 `-g daemon off;` 确保 nginx 前台运行，避免容器启动后立即退出。  
@@ -145,7 +145,7 @@ $ docker run --name my-custom-nginx -d custom-nginx
 **示例（使用 compose.yaml）**：  
 ```yaml
 web:
-  image: arm64v8/nginx
+  image: docker.xuanyuan.run/arm64v8/nginx
   volumes:
    - ./templates:/etc/nginx/templates  # 挂载模板目录
   ports:
@@ -204,7 +204,7 @@ http {
 ```console
 $ docker run -d -v $PWD/nginx.conf:/etc/nginx/nginx.conf arm64v8/nginx
 ```  
-> 也可直接使用官方 [nginx-unprivileged 镜像]([])。  
+> 也可直接使用官方 [nginx-unprivileged 镜像] 。  
 
 
 ## 镜像变体  
@@ -223,6 +223,6 @@ $ docker run -d -v $PWD/nginx.conf:/etc/nginx/nginx.conf arm64v8/nginx
 
 
 ## 许可证  
-镜像中软件的许可证信息可查看 [nginx 官方许可证]([])。  
-Docker 镜像可能包含其他软件（如基础系统的 Bash 等），其许可证可能不同。可在 [repo-info 仓库的 `nginx/` 目录]([]) 查看自动检测的附加许可证信息。  
+镜像中软件的许可证信息可查看 [nginx 官方许可证] 。  
+Docker 镜像可能包含其他软件（如基础系统的 Bash 等），其许可证可能不同。可在 [repo-info 仓库的 `nginx/` 目录]  查看自动检测的附加许可证信息。  
 使用前请确保遵守所有包含软件的许可证要求。

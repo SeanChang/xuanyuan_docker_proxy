@@ -3,7 +3,7 @@ image: bitnami/postgresql-repmgr
 description: "Bitnami postgresql-repmgr 安全镜像"
 source: https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr
 canonical: https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql-repmgr" title="bitnami/postgresql-repmgr Docker 镜像中文简介、标签列表与拉取命令">bitnami/postgresql-repmgr 中文简介</a>

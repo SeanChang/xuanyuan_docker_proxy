@@ -3,7 +3,7 @@ image: amd64/mongo
 description: "MongoDB文档数据库提供高可用性及易扩展性。"
 source: https://xuanyuan.cloud/zh/r/amd64/mongo
 canonical: https://xuanyuan.cloud/zh/r/amd64/mongo
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/amd64/mongo" title="amd64/mongo Docker 镜像中文简介、标签列表与拉取命令">amd64/mongo 中文简介</a>
@@ -98,7 +98,7 @@ $ docker run -it --network some-network --rm amd64/mongo mongosh --host some-mon
 ```yaml
 services:
   mongo:
-    image: amd64/mongo:8.0.15-noble  # 指定版本标签
+    image: docker.xuanyuan.run/amd64/mongo:8.0.15-noble  # 指定版本标签
     restart: always
     environment:
       MONGO_INITDB_ROOT_USERNAME: root  # 初始化 root 用户
@@ -107,7 +107,7 @@ services:
       - mongo-data:/data/db  # 持久化数据存储
 
   mongo-express:
-    image: mongo-express
+    image: docker.xuanyuan.run/mongo-express
     restart: always
     ports:
       - "8081:8081"  # 暴露管理界面端口
@@ -166,7 +166,7 @@ $ docker run --name some-mongo -d amd64/mongo --profile 1
 ```yaml
 services:
   mongo:
-    image: amd64/mongo
+    image: docker.xuanyuan.run/amd64/mongo
     command: --profile 1  # 传递 mongod 参数
 ```
 

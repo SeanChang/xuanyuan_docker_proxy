@@ -3,7 +3,7 @@ image: openeuler/etcd
 description: "官方etcd Docker镜像，基于openEuler构建，提供分布式键值存储功能，适用于在集群中安全存储数据，具有可靠性、容错性和易用性。"
 source: https://xuanyuan.cloud/zh/r/openeuler/etcd
 canonical: https://xuanyuan.cloud/zh/r/openeuler/etcd
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/etcd" title="openeuler/etcd Docker 镜像中文简介、标签列表与拉取命令">openeuler/etcd 中文简介</a>
@@ -52,7 +52,7 @@ docker run -d --name Etcd-server \
     --publish 2380:2380 \
     --env ALLOW_NONE_AUTHENTICATION=yes \
     --env ETCD_ADVERTISE_CLIENT_URLS=http://etcd-server:2379 \
-    openeuler/etcd:latest
+    docker.xuanyuan.run/openeuler/etcd:latest
 ```
 
 #### 环境变量说明

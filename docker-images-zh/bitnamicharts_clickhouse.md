@@ -3,7 +3,7 @@ image: bitnamicharts/clickhouse
 description: "Bitnami提供的Helm chart，用于在Kubernetes环境中简化ClickHouse列式数据库的部署、配置与管理，适用于OLAP场景下的数据分析需求。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/clickhouse" title="bitnamicharts/clickhouse Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/clickhouse 中文简介</a>
@@ -223,7 +223,7 @@ clickhouse:
 ```yaml
 sidecars:
 - name: metrics-exporter
-  image: my-exporter:latest
+  image: docker.xuanyuan.run/my-exporter:latest
   imagePullPolicy: Always
   ports:
   - name: metrics

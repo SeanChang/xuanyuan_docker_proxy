@@ -3,7 +3,7 @@ image: kubernetesui/dashboard
 description: "用于Kubernetes集群的通用Web用户界面"
 source: https://xuanyuan.cloud/zh/r/kubernetesui/dashboard
 canonical: https://xuanyuan.cloud/zh/r/kubernetesui/dashboard
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kubernetesui/dashboard" title="kubernetesui/dashboard Docker 镜像中文简介、标签列表与拉取命令">kubernetesui/dashboard 中文简介</a>
@@ -54,7 +54,7 @@ docker run -d \
   --name kubernetes-dashboard \
   -p 8443:8443 \
   -e KUBERNETES_DASHBOARD_APISERVER_URL=https://<k8s-apiserver-ip>:6443 \
-  kubernetesui/dashboard:latest
+  docker.xuanyuan.run/kubernetesui/dashboard:latest
 ```
 - 说明：  
   - `-p 8443:8443`：映射容器 8443 端口（Dashboard 默认 HTTPS 端口）到主机。  
@@ -71,7 +71,7 @@ docker run -d \
   -e KUBERNETES_DASHBOARD_TLS_CERT_FILE=/certs/tls.crt \
   -e KUBERNETES_DASHBOARD_TLS_KEY_FILE=/certs/tls.key \
   -e KUBERNETES_DASHBOARD_APISERVER_URL=https://<k8s-apiserver-ip>:6443 \
-  kubernetesui/dashboard:latest
+  docker.xuanyuan.run/kubernetesui/dashboard:latest
 ```
 
 
@@ -80,7 +80,7 @@ docker run -d \
 version: '3'
 services:
   kubernetes-dashboard:
-    image: kubernetesui/dashboard:latest
+    image: docker.xuanyuan.run/kubernetesui/dashboard:latest
     container_name: kubernetes-dashboard
     ports:
       - "8443:8443"

@@ -3,7 +3,7 @@ image: guiji2025/fun-asr
 description: "guiji2025/fun-asr：基于阿里达摩院 FunASR 工具包的容器镜像，集成 VAD/ASR/PUNC 全链路语音识别，支持离线批量转写、实时流式识别、高并发处理；提供 CPU/GPU/英文/实时服务等多个版本，适配 AI 数字人、会议转写、智能客服等场景。"
 source: https://xuanyuan.cloud/zh/r/guiji2025/fun-asr
 canonical: https://xuanyuan.cloud/zh/r/guiji2025/fun-asr
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/guiji2025/fun-asr" title="guiji2025/fun-asr Docker 镜像中文简介、标签列表与拉取命令">guiji2025/fun-asr 中文简介</a>
@@ -136,7 +136,7 @@ sudo apt-get install -y nvidia-container-toolkit
 sudo systemctl restart docker
 
 # 验证 GPU 支持
-docker run --rm --gpus all nvidia/cuda:12.0.0-base-ubuntu22.04 nvidia-smi
+docker run --rm --gpus all docker.xuanyuan.run/nvidia/cuda:12.0.0-base-ubuntu22.04 nvidia-smi
 ```
 
 ## 五、镜像拉取与启动
@@ -189,7 +189,7 @@ version: '3.8'
 
 services:
   heygem-asr:
-    image: guiji2025/fun-asr
+    image: docker.xuanyuan.run/guiji2025/fun-asr
     container_name: heygem-asr
     restart: always
     runtime: nvidia  # 启用 GPU 加速
@@ -367,13 +367,13 @@ digital-human:
   services:
     # AI 数字人交互模块
     interaction:
-      image: digital-human-core
+      image: docker.xuanyuan.run/digital-human-core
       depends_on:
         - asr-service
     
     # ASR 语音识别服务
     asr-service:
-      image: guiji2025/fun-asr
+      image: docker.xuanyuan.run/guiji2025/fun-asr
       ports:
         - '10095:10095'
 ```
@@ -397,7 +397,7 @@ done
 
 ```python
 # 客服系统集成示例
-from funasr import ASR
+from docker.xuanyuan.run/funasr import ASR
 
 # 初始化 ASR 客户端
 asr_client = ASR(api_url="http://fun-asr:10095")

@@ -3,7 +3,7 @@ image: kartoza/postgis
 description: "即开即用的PostGIS地理空间数据库是基于PostgreSQL的高效空间扩展解决方案，可快速存储、查询和分析各类地理空间数据，涵盖矢量数据（如点、线、面要素）与栅格数据处理，支持空间索引优化、地理编码转换、拓扑关系验证及空间分析函数等核心功能，适用于GIS应用开发、城市规划、环境监测、位置服务等多场景，无需复杂配置即可直接部署使用。"
 source: https://xuanyuan.cloud/zh/r/kartoza/postgis
 canonical: https://xuanyuan.cloud/zh/r/kartoza/postgis
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kartoza/postgis" title="kartoza/postgis Docker 镜像中文简介、标签列表与拉取命令">kartoza/postgis 中文简介</a>
@@ -12,12 +12,12 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 # docker-postgis：运行 PostGIS 的 Docker 容器
 
-[![Build Status]([])]([])
+[![Build Status] ] 
 
 
 ## 简介
 
-`docker-postgis` 是一个运行 PostGIS 的轻量 Docker 容器。你可以在 Docker Hub 上访问其页面：[[]]([])。
+`docker-postgis` 是一个运行 PostGIS 的轻量 Docker 容器。你可以在 Docker Hub 上访问其页面：[[]] 。
 
 与其他 PostGIS Docker 容器相比，本容器的特点包括：
 
@@ -48,7 +48,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 推荐方式：拉取 Docker 可信构建镜像
 通过以下命令拉取指定版本的镜像（首次拉取流量较大）：  
 ```shell
-docker pull kartoza/postgis:image_version
+docker pull docker.xuanyuan.run/kartoza/postgis:image_version
 ```
 
 
@@ -169,13 +169,13 @@ docker build --build-arg GENERATE_ALL_LOCALE=0 -t kartoza/postgis .
 
 ### 基础命令
 ```shell
-docker run --name "postgis" -p 25432:5432 -d -t kartoza/postgis
+docker run --name "postgis" -p 25432:5432 -d -t docker.xuanyuan.run/kartoza/postgis
 ```
 > **注意**：若未指定 `POSTGRES_PASS`，会生成随机密码，可通过容器日志或 `/tmp/PGPASSWORD.txt` 文件查看。
 
 
 ### 使用 docker-compose
-项目提供 `docker-compose.yml`，包含数据库和备份服务（基于 [docker-pg-backup]([])），默认暴露端口 `25432`：  
+项目提供 `docker-compose.yml`，包含数据库和备份服务（基于 [docker-pg-backup] ），默认暴露端口 `25432`：  
 ```shell
 docker-compose up -d  # 启动服务（数据存储在 Docker 卷中，非本地磁盘）
 ```
@@ -198,7 +198,7 @@ docker-compose up -d  # 启动服务（数据存储在 Docker 卷中，非本地
 将 `.sql`、`.sql.gz` 或 `.sh` 文件挂载到 `/docker-entrypoint-initdb.d` 目录，容器启动时会自动执行。默认仅在首次启动时执行，若需每次启动执行，设置 `IGNORE_INIT_HOOK_LOCKFILE=TRUE`。  
 示例：  
 ```shell
-docker run -d -v `pwd`/setup.sql:/docker-entrypoint-initdb.d/setup.sql kartoza/postgis
+docker run -d -v `pwd`/setup.sql:/docker-entrypoint-initdb.d/setup.sql docker.xuanyuan.run/kartoza/postgis
 ```
 
 
@@ -207,7 +207,7 @@ docker run -d -v `pwd`/setup.sql:/docker-entrypoint-initdb.d/setup.sql kartoza/p
 ### 强制 SSL 连接
 设置 `FORCE_SSL=TRUE` 强制客户端使用 SSL 连接：  
 ```shell
-docker run -e FORCE_SSL=TRUE -p 25432:5432 -d kartoza/postgis
+docker run -e FORCE_SSL=TRUE -p 25432:5432 -d docker.xuanyuan.run/kartoza/postgis
 ```
 
 ### 使用自定义证书
@@ -219,7 +219,7 @@ docker run -p 25432:5432 \
   -e SSL_KEY_FILE=/ssl/privkey.pem \
   -e SSL_CA_FILE=/ssl/root.crt \
   -v /path/to/certs:/ssl \
-  -d kartoza/postgis
+  -d docker.xuanyuan.run/kartoza/postgis
 ```
 
 

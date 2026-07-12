@@ -3,7 +3,7 @@ image: bitnami/pgpool
 description: "Bitnami提供的安全pgpool镜像，用于PostgreSQL数据库的连接池管理、负载均衡及高可用中间件。"
 source: https://xuanyuan.cloud/zh/r/bitnami/pgpool
 canonical: https://xuanyuan.cloud/zh/r/bitnami/pgpool
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/pgpool" title="bitnami/pgpool Docker 镜像中文简介、标签列表与拉取命令">bitnami/pgpool 中文简介</a>
@@ -67,13 +67,13 @@ Bitnami Pgpool-II 镜像是经过安全加固的容器化版本，基于 Bitnami
 
 ### 5.1 拉取最新镜像
 ```bash
-docker pull bitnami/pgpool:latest
+docker pull docker.xuanyuan.run/bitnami/pgpool:latest
 ```
 
 ### 5.2 指定版本拉取
 查看 [Docker Hub 标签列表](https://hub.docker.com/r/bitnami/pgpool/tags/) 获取可用版本，格式为：
 ```bash
-docker pull bitnami/pgpool:[TAG]
+docker pull docker.xuanyuan.run/bitnami/pgpool:[TAG]
 ```
 
 ### 5.3 本地构建（可选）
@@ -88,7 +88,7 @@ docker build -t bitnami/pgpool:latest .
 
 ### 6.1 单节点快速运行
 ```bash
-docker run --name pgpool bitnami/pgpool:latest
+docker run --name pgpool docker.xuanyuan.run/bitnami/pgpool:latest
 ```
 > 默认凭据和配置选项见 [环境变量](#9-环境变量) 部分。
 
@@ -116,7 +116,7 @@ docker run --detach --name pg-0 \
   --env POSTGRESQL_USERNAME=customuser \
   --env POSTGRESQL_PASSWORD=custompassword \
   --env POSTGRESQL_DATABASE=customdatabase \
-  bitnami/postgresql-repmgr:latest
+  docker.xuanyuan.run/bitnami/postgresql-repmgr:latest
 
 # 备节点 pg-1
 docker run --detach --name pg-1 \
@@ -130,7 +130,7 @@ docker run --detach --name pg-1 \
   --env POSTGRESQL_USERNAME=customuser \
   --env POSTGRESQL_PASSWORD=custompassword \
   --env POSTGRESQL_DATABASE=customdatabase \
-  bitnami/postgresql-repmgr:latest
+  docker.xuanyuan.run/bitnami/postgresql-repmgr:latest
 ```
 
 #### 步骤 3：启动 Pgpool-II 代理
@@ -146,14 +146,14 @@ docker run --detach --name pgpool \
   --env PGPOOL_POSTGRES_PASSWORD=adminpassword \
   --env PGPOOL_ADMIN_USERNAME=admin \
   --env PGPOOL_ADMIN_PASSWORD=adminpassword \
-  bitnami/pgpool:latest
+  docker.xuanyuan.run/bitnami/pgpool:latest
 ```
 
 #### 步骤 4：验证连接
 ```bash
 docker run -it --rm \
   --network my-network \
-  bitnami/postgresql:latest \
+  docker.xuanyuan.run/bitnami/postgresql:latest \
   psql -h pgpool -U customuser -d customdatabase
 ```
 
@@ -169,7 +169,7 @@ networks:
 
 services:
   pg-0:
-    image: bitnami/postgresql-repmgr:latest
+    image: docker.xuanyuan.run/bitnami/postgresql-repmgr:latest
     volumes:
       - pg_0_data:/bitnami/postgresql
     environment:
@@ -184,7 +184,7 @@ services:
       - REPMGR_NODE_NETWORK_NAME=pg-0
 
   pg-1:
-    image: bitnami/postgresql-repmgr:latest
+    image: docker.xuanyuan.run/bitnami/postgresql-repmgr:latest
     volumes:
       - pg_1_data:/bitnami/postgresql
     environment:
@@ -199,7 +199,7 @@ services:
       - REPMGR_NODE_NETWORK_NAME=pg-1
 
   pgpool:
-    image: bitnami/pgpool:latest
+    image: docker.xuanyuan.run/bitnami/pgpool:latest
     ports:
       - 5432:5432
     environment:
@@ -238,7 +238,7 @@ docker-compose up -d
 # docker-compose.yml 示例片段
 services:
   pgpool:
-    image: bitnami/pgpool:latest
+    image: docker.xuanyuan.run/bitnami/pgpool:latest
     volumes:
       - /path/to/init-scripts:/docker-entrypoint-initdb.d  # 本地脚本目录挂载
 ```
@@ -257,7 +257,7 @@ docker run \
   -e PGPOOL_ENABLE_TLS=yes \
   -e PGPOOL_TLS_CERT_FILE=/opt/bitnami/pgpool/certs/postgres.crt \
   -e PGPOOL_TLS_KEY_FILE=/opt/bitnami/pgpool/certs/postgres.key \
-  bitnami/pgpool:latest
+  docker.xuanyuan.run/bitnami/pgpool:latest
 ```
 
 ### 8.3 自定义配置文件

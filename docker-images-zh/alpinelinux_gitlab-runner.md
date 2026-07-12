@@ -3,7 +3,7 @@ image: alpinelinux/gitlab-runner
 description: "基于Alpine Linux的GitLab Runner，支持比官方版本更多的架构。"
 source: https://xuanyuan.cloud/zh/r/alpinelinux/gitlab-runner
 canonical: https://xuanyuan.cloud/zh/r/alpinelinux/gitlab-runner
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpinelinux/gitlab-runner" title="alpinelinux/gitlab-runner Docker 镜像中文简介、标签列表与拉取命令">alpinelinux/gitlab-runner 中文简介</a>
@@ -51,7 +51,7 @@ Alpine Linux GitLab Runner 是一款基于 Alpine Linux 发行版构建的轻量
 ### 4.1 拉取镜像
 从镜像仓库拉取最新版本（替换 `latest` 为具体版本号如 `v16.0.0-alpine` 以固定版本）：
 ```bash
-docker pull <镜像仓库地址>/alpine-gitlab-runner:latest
+docker pull docker.xuanyuan.run/<镜像仓库地址>/alpine-gitlab-runner:latest
 ```
 
 
@@ -60,7 +60,7 @@ docker pull <镜像仓库地址>/alpine-gitlab-runner:latest
 首次使用需向 GitLab 服务器注册 Runner，需提供 GitLab 实例 URL、注册令牌（从 GitLab 项目/群组设置中获取）、Runner 名称、标签等信息：
 ```bash
 docker run --rm -v /etc/gitlab-runner:/etc/gitlab-runner \
-  <镜像仓库地址>/alpine-gitlab-runner:latest register \
+  docker.xuanyuan.run/<镜像仓库地址>/alpine-gitlab-runner:latest register \
   --non-interactive \
   --url "https://gitlab.example.com/" \
   --registration-token "REGISTRATION_TOKEN" \
@@ -88,7 +88,7 @@ docker run -d --name gitlab-runner \
 version: '3.8'
 services:
   gitlab-runner:
-    image: <镜像仓库地址>/alpine-gitlab-runner:latest
+    image: docker.xuanyuan.run/<镜像仓库地址>/alpine-gitlab-runner:latest
     container_name: gitlab-runner
     restart: always
     volumes:

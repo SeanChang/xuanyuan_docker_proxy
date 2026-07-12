@@ -3,7 +3,7 @@ image: zabbix/zabbix-server-pgsql
 description: "支持PostgreSQL数据库的Zabbix服务器镜像，用于部署和运行Zabbix监控系统。"
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-pgsql
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-pgsql
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-pgsql" title="zabbix/zabbix-server-pgsql Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-server-pgsql 中文简介</a>
@@ -58,7 +58,7 @@ docker run --name some-zabbix-server-pgsql \
   -e DB_SERVER_HOST="some-postgres-server" \
   -e POSTGRES_USER="some-user" \
   -e POSTGRES_PASSWORD="some-password" \
-  --init -d zabbix/zabbix-server-pgsql:tag
+  --init -d docker.xuanyuan.run/zabbix/zabbix-server-pgsql:tag
 ```
 
 **参数说明**：
@@ -75,7 +75,7 @@ docker run --name some-zabbix-server-pgsql \
 version: '3.8'
 services:
   postgres:
-    image: postgres:16-alpine
+    image: docker.xuanyuan.run/postgres:16-alpine
     environment:
       POSTGRES_USER: zabbix
       POSTGRES_PASSWORD: zabbix
@@ -85,7 +85,7 @@ services:
     restart: always
 
   zabbix-server:
-    image: zabbix/zabbix-server-pgsql:alpine-7.4-latest
+    image: docker.xuanyuan.run/zabbix/zabbix-server-pgsql:alpine-7.4-latest
     environment:
       DB_SERVER_HOST: postgres
       POSTGRES_USER: zabbix
@@ -144,7 +144,7 @@ docker run --name some-zabbix-server-pgsql \
   -e DB_SERVER_HOST="some-postgres-server" \
   -e POSTGRES_USER_FILE=/run/secrets/POSTGRES_USER \
   -e POSTGRES_PASSWORD_FILE=/run/secrets/POSTGRES_PASSWORD \
-  --init -d zabbix/zabbix-server-pgsql:tag
+  --init -d docker.xuanyuan.run/zabbix/zabbix-server-pgsql:tag
 ```
 
 #### 核心服务配置参数
@@ -182,7 +182,7 @@ Zabbix Server支持以下卷挂载，用于扩展功能或持久化数据：
 docker run --name some-zabbix-server-pgsql \
   -v /host/alertscripts:/usr/lib/zabbix/alertscripts \
   -e DB_SERVER_HOST="some-postgres-server" \
-  --init -d zabbix/zabbix-server-pgsql:tag
+  --init -d docker.xuanyuan.run/zabbix/zabbix-server-pgsql:tag
 ```
 
 

@@ -3,7 +3,7 @@ image: jumpserver/jms_all
 description: "JumpServer all-in-one Docker 镜像，提供一体化部署方案，支持快速部署和使用 JumpServer，适用于纯 B/S 架构 Web 端访问。"
 source: https://xuanyuan.cloud/zh/r/jumpserver/jms_all
 canonical: https://xuanyuan.cloud/zh/r/jumpserver/jms_all
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jumpserver/jms_all" title="jumpserver/jms_all Docker 镜像中文简介、标签列表与拉取命令">jumpserver/jms_all 中文简介</a>
@@ -114,7 +114,7 @@ docker run --name jms_all -d \
   -v /opt/jumpserver/kael/data:/opt/kael/data \
   -v /opt/jumpserver/chen/data:/opt/chen/data \
   -v /opt/jumpserver/web/log:/var/log/nginx \
-  jumpserver/jms_all:latest
+  docker.xuanyuan.run/jumpserver/jms_all:latest
 ```
 
 ### 升级 JumpServer
@@ -131,7 +131,7 @@ mysqldump -h$DB_HOST -p$DB_PORT -u$DB_USER -p$DB_PASSWORD $DB_NAME > /opt/jumpse
 # 示例: mysqldump -h192.168.100.11 -p3306 -ujumpserver -pnu4x599Wq7u0Bn8EABh3J91G jumpserver > /opt/jumpserver-v2.12.0.sql
 
 # 拉取新版本镜像
-docker pull jumpserver/jms_all:latest
+docker pull docker.xuanyuan.run/jumpserver/jms_all:latest
 
 # 删除旧版本容器
 docker rm jms_all
@@ -159,5 +159,5 @@ docker run --name jms_all -d \
   -v /opt/jumpserver/kael/data:/opt/kael/data \
   -v /opt/jumpserver/chen/data:/opt/chen/data \
   -v /opt/jumpserver/web/log:/var/log/nginx \
-  jumpserver/jms_all:latest
+  docker.xuanyuan.run/jumpserver/jms_all:latest
 ```

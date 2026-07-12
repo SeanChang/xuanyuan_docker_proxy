@@ -3,7 +3,7 @@ image: summary/portainer-ce
 description: "Portainer-CE中文汉化版是一款轻量级容器管理平台，提供Docker、Kubernetes等容器环境的可视化管理界面，支持中文操作，便于中文用户高效管理容器资源。"
 source: https://xuanyuan.cloud/zh/r/summary/portainer-ce
 canonical: https://xuanyuan.cloud/zh/r/summary/portainer-ce
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/summary/portainer-ce" title="summary/portainer-ce Docker 镜像中文简介、标签列表与拉取命令">summary/portainer-ce 中文简介</a>
@@ -63,7 +63,7 @@ docker run -d \
   -v portainer_data:/data \
   --restart=always \
   --name=portainer-ce \
-  summary/portainer-ce
+  docker.xuanyuan.run/summary/portainer-ce
 ```
 
 #### 参数说明
@@ -83,7 +83,7 @@ docker run -d \
 version: '3'
 services:
   portainer:
-    image: summary/portainer-ce
+    image: docker.xuanyuan.run/summary/portainer-ce
     container_name: portainer-ce
     restart: always
     ports:

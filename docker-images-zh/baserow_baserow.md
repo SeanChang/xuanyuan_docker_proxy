@@ -3,7 +3,7 @@ image: baserow/baserow
 description: "Baserow的一站式Docker镜像，是开源无代码数据库工具，可作为Airtable的替代品。"
 source: https://xuanyuan.cloud/zh/r/baserow/baserow
 canonical: https://xuanyuan.cloud/zh/r/baserow/baserow
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/baserow/baserow" title="baserow/baserow Docker 镜像中文简介、标签列表与拉取命令">baserow/baserow 中文简介</a>
@@ -60,7 +60,7 @@ docker run \
   -p 80:80 \
   -p 443:443 \
   --restart unless-stopped \
-  baserow/baserow:1.35.3
+  docker.xuanyuan.run/baserow/baserow:1.35.3
 ```
 
 > **注意**：
@@ -189,7 +189,7 @@ docker run \
   -p 80:80 \
   -p 443:443 \
   --restart unless-stopped \
-  baserow/baserow:1.35.3
+  docker.xuanyuan.run/baserow/baserow:1.35.3
 ```
 
 ### 在处理 SSL 的反向代理后运行
@@ -202,7 +202,7 @@ docker run \
   -v baserow_data:/baserow/data \
   -p 80:80 \
   --restart unless-stopped \
-  baserow/baserow:1.35.3
+  docker.xuanyuan.run/baserow/baserow:1.35.3
 ```
 
 ### 使用非标准 HTTP 端口
@@ -215,7 +215,7 @@ docker run \
   -v baserow_data:/baserow/data \
   -p 3001:80 \
   --restart unless-stopped \
-  baserow/baserow:1.35.3
+  docker.xuanyuan.run/baserow/baserow:1.35.3
 ```
 
 ### 使用外部 PostgreSQL 服务器
@@ -234,7 +234,7 @@ docker run \
   -p 80:80 \
   -p 443:443 \
   --restart unless-stopped \
-  baserow/baserow:1.35.3
+  docker.xuanyuan.run/baserow/baserow:1.35.3
 ```
 
 ### 使用外部 Redis 服务器
@@ -253,7 +253,7 @@ docker run \
   -p 80:80 \
   -p 443:443 \
   --restart unless-stopped \
-  baserow/baserow:1.35.3
+  docker.xuanyuan.run/baserow/baserow:1.35.3
 ```
 
 ### 使用外部邮件服务器
@@ -273,7 +273,7 @@ docker run \
   -p 80:80 \
   -p 443:443 \
   --restart unless-stopped \
-  baserow/baserow:1.35.3
+  docker.xuanyuan.run/baserow/baserow:1.35.3
 ```
 
 ### 连接同一主机上的 PostgreSQL 服务器
@@ -308,7 +308,7 @@ docker run \
   -v baserow_data:/baserow/data \
   -p 80:80 \
   -p 443:443 \
-  baserow/baserow:1.35.3
+  docker.xuanyuan.run/baserow/baserow:1.35.3
 ```
 
 ### 通过文件提供密钥

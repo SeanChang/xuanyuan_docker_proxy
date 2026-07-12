@@ -3,7 +3,7 @@ image: linuxserver/smokeping
 description: "由LinuxServer.io为您提供的Smokeping容器，是一款集成了开源网络性能监测工具的容器化应用，可实时监测网络延迟、抖动及丢包率，并通过图形化界面直观展示数据，帮助用户分析网络稳定性；该容器由专注于提供优化配置与持续更新支持的LinuxServer.io团队开发，便于快速部署和管理，满足用户对网络性能监控的需求。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/smokeping
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/smokeping
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/smokeping" title="linuxserver/smokeping Docker 镜像中文简介、标签列表与拉取命令">linuxserver/smokeping 中文简介</a>
@@ -25,7 +25,7 @@ LinuxServer.io 团队致力于提供高质量容器，核心特点包括：
 
 ## 关于 Smokeping 容器  
 
-[Smokeping]([]) 是一款网络延迟监控工具，可追踪网络节点的延迟变化。示例效果可参考 [UCDavis 演示]([])。  
+[Smokeping]  是一款网络延迟监控工具，可追踪网络节点的延迟变化。示例效果可参考 [UCDavis 演示] 。  
 
 
 ## 支持的架构  
@@ -49,7 +49,7 @@ LinuxServer.io 团队致力于提供高质量容器，核心特点包括：
    （将 `smokeping` 替换为容器ID）。  
 4. **容器重启**：执行 `docker restart smokeping`（替换为容器ID）。  
 5. **默认配置说明**：默认 `Targets` 文件包含示例配置，可能需要根据实际需求修改。  
-6. **主从架构设置**：在主节点修改 `Targets`、`Slaves` 和 `smokeping_secrets` 文件，参考 [官方文档]([])。  
+6. **主从架构设置**：在主节点修改 `Targets`、`Slaves` 和 `smokeping_secrets` 文件，参考 [官方文档] 。  
 
 
 ## 使用方法  
@@ -62,7 +62,7 @@ LinuxServer.io 团队致力于提供高质量容器，核心特点包括：
 ---  
 services:  
   smokeping:  
-    image: lscr.io/linuxserver/smokeping:latest  
+    image: docker.xuanyuan.run/linuxserver/smokeping:latest  
     container_name: smokeping  
     hostname: smokeping # 可选  
     environment:  
@@ -165,7 +165,7 @@ id your_user
 
 1. 拉取最新镜像：  
    ```bash  
-   docker pull lscr.io/linuxserver/smokeping:latest  
+   docker pull docker.xuanyuan.run/linuxserver/smokeping:latest  
    ```  
 2. 停止并删除旧容器：  
    ```bash  
@@ -185,8 +185,8 @@ id your_user
 
 ## 支持与资源  
 
-- **文档**：[LinuxServer.io 博客]([])（含教程和指南）  
-- **社区**：[]()（实时支持）、[Discourse]([])（论坛）  
-- **代码**：[GitHub 仓库]([])  
+- **文档**：[LinuxServer.io 博客] （含教程和指南）  
+- **社区**：[]()（实时支持）、[Discourse] （论坛）  
+- **代码**：[GitHub 仓库]   
 
 如需支持或贡献，可通过上述渠道联系团队。

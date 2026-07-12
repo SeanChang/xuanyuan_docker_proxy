@@ -3,7 +3,7 @@ image: dolibarr/dolibarr
 description: "这是一个用于Dolibarr ERP CRM的Docker镜像，Dolibarr是一款集成企业资源规划（ERP）与客户关系管理（CRM）功能的开源Web套件，专为中小企业打造，涵盖销售管理、库存跟踪、财务管理、客户互动等核心业务模块，支持自定义配置与功能扩展，而Docker镜像则提供了快速部署、环境隔离及跨平台运行的便利，助力用户高效搭建和管理企业级业务系统。"
 source: https://xuanyuan.cloud/zh/r/dolibarr/dolibarr
 canonical: https://xuanyuan.cloud/zh/r/dolibarr/dolibarr
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dolibarr/dolibarr" title="dolibarr/dolibarr Docker 镜像中文简介、标签列表与拉取命令">dolibarr/dolibarr 中文简介</a>
@@ -16,7 +16,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 关于 Dolibarr
 
 Dolibarr 是一款开源的 ERP 与 CRM 集成套件，可用于管理组织活动，包括联系人、报价单、发票、订单、库存、日程、人力资源、费用报表、会计、文档管理、生产制造等功能。  
-[更多信息]([])
+[更多信息] 
 
 
 ## Docker 镜像版本
@@ -32,7 +32,7 @@ Linux x86-64（`amd64`）和 ARMv8 64 位（`arm64v8`）。
 
 ## 如何运行镜像
 
-本镜像基于 [官方 PHP 仓库]([]) 和 [官方 Dolibarr 仓库]([]) 构建，构建工具见 [Dolibarr docker build 仓库]([])。  
+本镜像基于 [官方 PHP 仓库]  和 [官方 Dolibarr 仓库]  构建，构建工具见 [Dolibarr docker build 仓库] 。  
 
 镜像不含数据库，需关联数据库容器。推荐使用 Docker Compose 配合 MariaDB（也可使用 MySQL）部署，步骤如下：
 
@@ -55,7 +55,7 @@ mkdir /home/dolibarr_mariadb /home/dolibarr_documents /home/dolibarr_custom
 
 services:
     mariadb:
-        image: mariadb:latest
+        image: docker.xuanyuan.run/mariadb:latest
         environment:
             MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root}  # 数据库 root 密码
             MYSQL_DATABASE: ${MYSQL_DATABASE:-dolidb}          # 数据库名
@@ -69,7 +69,7 @@ services:
         # dolibarr/dolibarr:latest（最新稳定版）
         # dolibarr/dolibarr:develop（开发版）
         # dolibarr/dolibarr:x.y.z（指定版本）
-        image: dolibarr/dolibarr:latest
+        image: docker.xuanyuan.run/dolibarr/dolibarr:latest
         environment:
             DOLI_INIT_DEMO: ${DOLI_INIT_DEMO:-0}              # 是否加载演示数据（1=是）
             DOLI_DB_HOST: ${DOLI_DB_HOST:-mariadb}            # 数据库主机名（关联 mariadb 服务）
@@ -113,11 +113,11 @@ sudo docker-compose logs # 查看日志
 ### 其他部署示例
 
 更多场景的 docker-compose 配置示例见 `examples` 目录：  
-- [带定时任务的部署]([])  
-- [配置 Let's Encrypt 证书]([])  
-- [使用 MySQL 数据库]([])  
-- [搭配 Traefik 反向代理]([])  
-- [使用 Docker Secrets 管理敏感信息]([])  
+- [带定时任务的部署]   
+- [配置 Let's Encrypt 证书]   
+- [使用 MySQL 数据库]   
+- [搭配 Traefik 反向代理]   
+- [使用 Docker Secrets 管理敏感信息]   
 
 
 ## 版本升级与数据库迁移

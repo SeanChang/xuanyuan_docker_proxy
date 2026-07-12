@@ -3,7 +3,7 @@ image: library/docker
 description: "Docker in Docker（通常称为“dind”）是一种允许在Docker容器内部嵌套运行Docker引擎的技术，它能够在一个容器环境中启动、管理其他Docker容器，常用于持续集成/持续部署（CI/CD）流水线、Docker工具开发测试及需要隔离Docker环境的场景，通过这种方式可简化开发、测试和部署流程，同时保持容器化环境的独立性与一致性。"
 source: https://xuanyuan.cloud/zh/r/library/docker
 canonical: https://xuanyuan.cloud/zh/r/library/docker
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/docker" title="library/docker Docker 镜像中文简介、标签列表与拉取命令">library/docker 中文简介</a>
@@ -16,47 +16,47 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 基础信息
 
 ### 维护者  
-[Tianon（Docker 项目成员）]([])
+[Tianon（Docker 项目成员）] 
 
 ### 获取帮助渠道  
-[Docker 社区 Slack]([])、[Server Fault]([])、[Unix & Linux]([]) 或 [Stack Overflow]([])
+[Docker 社区 Slack] 、[Server Fault] 、[Unix & Linux]  或 [Stack Overflow] 
 
 
 ## 支持的标签及对应 Dockerfile 链接  
-（关于“共享标签”与“基础标签”的区别，参见 [FAQ]([])）
+（关于“共享标签”与“基础标签”的区别，参见 [FAQ] ）
 
 ### 基础标签  
-- [`28.5.1-cli`, `28.5-cli`, `28-cli`, `cli`, `28.5.1-cli-alpine3.22`]([])  
-- [`28.5.1-dind`, `28.5-dind`, `28-dind`, `dind`, `28.5.1-dind-alpine3.22`, `28.5.1`, `28.5`, `28`, `latest`, `28.5.1-alpine3.22`]([])  
-- [`28.5.1-dind-rootless`, `28.5-dind-rootless`, `28-dind-rootless`, `dind-rootless`]([])  
-- [`28.5.1-windowsservercore-ltsc2025`, `28.5-windowsservercore-ltsc2025`, `28-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`]([])  
-- [`28.5.1-windowsservercore-ltsc2022`, `28.5-windowsservercore-ltsc2022`, `28-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`]([])  
+- [`28.5.1-cli`, `28.5-cli`, `28-cli`, `cli`, `28.5.1-cli-alpine3.22`]   
+- [`28.5.1-dind`, `28.5-dind`, `28-dind`, `dind`, `28.5.1-dind-alpine3.22`, `28.5.1`, `28.5`, `28`, `latest`, `28.5.1-alpine3.22`]   
+- [`28.5.1-dind-rootless`, `28.5-dind-rootless`, `28-dind-rootless`, `dind-rootless`]   
+- [`28.5.1-windowsservercore-ltsc2025`, `28.5-windowsservercore-ltsc2025`, `28-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`]   
+- [`28.5.1-windowsservercore-ltsc2022`, `28.5-windowsservercore-ltsc2022`, `28-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`]   
 
 ### 共享标签  
 - `28.5.1-windowsservercore`, `28.5-windowsservercore`, `28-windowsservercore`, `windowsservercore`:  
-  - [`28.5.1-windowsservercore-ltsc2025`]([])  
-  - [`28.5.1-windowsservercore-ltsc2022`]([])  
+  - [`28.5.1-windowsservercore-ltsc2025`]   
+  - [`28.5.1-windowsservercore-ltsc2022`]   
 
 
 ## 扩展信息  
 
 ### 问题反馈地址  
-[[]]([])  
+[[]]   
 
 ### 支持的架构  
-（详情参见 [官方说明]([])）  
-[`amd64`]([]), [`arm32v6`]([]), [`arm32v7`]([]), [`arm64v8`]([]), [`windows-amd64`]([])  
+（详情参见 [官方说明] ）  
+[`amd64`] , [`arm32v6`] , [`arm32v7`] , [`arm64v8`] , [`windows-amd64`]   
 
 ### 镜像 artifact 详情  
-[repo-info 仓库的 `repos/docker/` 目录]([])（[历史记录]([])）  
+[repo-info 仓库的 `repos/docker/` 目录] （[历史记录] ）  
 （包含镜像元数据、传输大小等）  
 
 ### 镜像更新  
-[official-images 仓库的 `library/docker` 标签]([])  
-[official-images 仓库的 `library/docker` 文件]([])（[历史记录]([])）  
+[official-images 仓库的 `library/docker` 标签]   
+[official-images 仓库的 `library/docker` 文件] （[历史记录] ）  
 
 ### 本文档来源  
-[docs 仓库的 `docker/` 目录]([])（[历史记录]([])）  
+[docs 仓库的 `docker/` 目录] （[历史记录] ）  
 
 
 ## 什么是 Docker-in-Docker？  
@@ -67,7 +67,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 > 来源：[.org/wiki/Docker_(software)]()  
 
-使用 Docker-in-Docker 前，建议阅读 Jérôme Petazzoni 的[相关博客文章]([])，其中详细介绍了其优缺点及潜在问题。  
+使用 Docker-in-Docker 前，建议阅读 Jérôme Petazzoni 的[相关博客文章] ，其中详细介绍了其优缺点及潜在问题。  
 
 
 ## 如何使用本镜像  
@@ -100,7 +100,7 @@ $ docker run --privileged --name some-docker -d \
 	docker:dind
 ```  
 
-**注意**：`--privileged` 是 Docker-in-Docker 正常运行的必要参数，但会赋予容器对主机环境的完全访问权限，使用时需谨慎（详见 [Docker 文档]([])）。  
+**注意**：`--privileged` 是 Docker-in-Docker 正常运行的必要参数，但会赋予容器对主机环境的完全访问权限，使用时需谨慎（详见 [Docker 文档] ）。  
 
 
 ### 从其他容器连接  
@@ -169,9 +169,9 @@ $ docker run --privileged --name some-docker -v /my/own/var-lib-docker:/var/lib/
 
 
 ### `docker:<version>-rootless`  
-无 root 权限变体，实验性特性（详情参见 [docker-library/docker#174]([])）。  
+无 root 权限变体，实验性特性（详情参见 [docker-library/docker#174] ）。  
 
-**注意**：与常规 `dind` 镜像相同，`--privileged` 是必要参数（[相关说明]([]) 及 [安全说明]([])）。  
+**注意**：与常规 `dind` 镜像相同，`--privileged` 是必要参数（[相关说明]  及 [安全说明] ）。  
 
 **基础用法示例**：  
 
@@ -189,7 +189,7 @@ $ docker exec -it some-docker docker-entrypoint.sh sh # 进入容器，自动配
 如需修改 UID/GID，可通过 Dockerfile 调整：  
 
 ```dockerfile
-FROM docker:dind-rootless
+FROM docker.xuanyuan.run/docker:dind-rootless
 USER root
 RUN set -eux; \
 	sed -i -e 's/^rootless:x:1000:1000:/rootless:x:1234:5678:/' /etc/passwd; \
@@ -205,10 +205,10 @@ Windows 不支持嵌套容器，此变体仅包含客户端（需连接现有 Do
 
 ## 许可协议  
 
-查看 [软件许可信息]([])。  
+查看 [软件许可信息] 。  
 
 与所有 Docker 镜像一样，本镜像可能包含其他软件（如 Bash 等基础组件及依赖），可能适用不同许可协议。  
 
-自动检测的附加许可信息可参见 [repo-info 仓库的 `docker/` 目录]([])。  
+自动检测的附加许可信息可参见 [repo-info 仓库的 `docker/` 目录] 。  
 
 使用前，请确保遵守所有包含软件的许可协议。

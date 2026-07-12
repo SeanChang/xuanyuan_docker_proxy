@@ -3,7 +3,7 @@ image: library/nats
 description: "NATS是一款开源、高性能的云原生消息系统，专为云环境与分布式架构打造，具备低延迟、高吞吐量的核心优势，能高效支撑实时数据传输、微服务通信及分布式系统间的消息传递，为现代应用提供可靠且灵活的异步通信解决方案。"
 source: https://xuanyuan.cloud/zh/r/library/nats
 canonical: https://xuanyuan.cloud/zh/r/library/nats
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/nats" title="library/nats Docker 镜像中文简介、标签列表与拉取命令">library/nats 中文简介</a>
@@ -16,113 +16,113 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 快速参考
 
 ### 维护者  
-[NATS项目]([])
+[NATS项目] 
 
 
 ### 获取帮助的途径  
-- Docker社区Slack：[dockr.ly/comm-slack]([])  
-- Server Fault：[serverfault.com/help/on-topic]([])  
-- Unix & Linux：[unix.stackexchange.com/help/on-topic]([])  
-- Stack Overflow：[stackoverflow.com/help/on-topic]([])  
+- Docker社区Slack：[dockr.ly/comm-slack]   
+- Server Fault：[serverfault.com/help/on-topic]   
+- Unix & Linux：[unix.stackexchange.com/help/on-topic]   
+- Stack Overflow：[stackoverflow.com/help/on-topic]   
 
 
 ## 支持的标签及对应Dockerfile链接  
 
-（关于"共享标签"与"基础标签"的区别，可参考[FAQ]([])）
+（关于"共享标签"与"基础标签"的区别，可参考[FAQ] ）
 
 
 ### 基础标签（Simple Tags）  
 - `2.12.0-alpine3.22`, `2.12-alpine3.22`, `2-alpine3.22`, `alpine3.22`, `2.12.0-alpine`, `2.12-alpine`, `2-alpine`, `alpine`  
-  [Dockerfile]([])  
+  [Dockerfile]   
 
 - `2.12.0-scratch`, `2.12-scratch`, `2-scratch`, `scratch`, `2.12.0-linux`, `2.12-linux`, `2-linux`, `linux`  
-  [Dockerfile]([])  
+  [Dockerfile]   
 
 - `2.12.0-windowsservercore-ltsc2022`, `2.12-windowsservercore-ltsc2022`, `2-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`  
-  [Dockerfile]([])  
+  [Dockerfile]   
 
 - `2.12.0-nanoserver-ltsc2022`, `2.12-nanoserver-ltsc2022`, `2-nanoserver-ltsc2022`, `nanoserver-ltsc2022`  
-  [Dockerfile]([])  
+  [Dockerfile]   
 
 - `2.11.10-alpine3.22`, `2.11-alpine3.22`, `2.11.10-alpine`, `2.11-alpine`  
-  [Dockerfile]([])  
+  [Dockerfile]   
 
 - `2.11.10-scratch`, `2.11-scratch`, `2.11.10-linux`, `2.11-linux`  
-  [Dockerfile]([])  
+  [Dockerfile]   
 
 - `2.11.10-windowsservercore-ltsc2022`, `2.11-windowsservercore-ltsc2022`  
-  [Dockerfile]([])  
+  [Dockerfile]   
 
 - `2.11.10-nanoserver-ltsc2022`, `2.11-nanoserver-ltsc2022`  
-  [Dockerfile]([])  
+  [Dockerfile]   
 
 - `2.10.29-alpine3.22`, `2.10-alpine3.22`, `2.10.29-alpine`, `2.10-alpine`  
-  [Dockerfile]([])  
+  [Dockerfile]   
 
 - `2.10.29-scratch`, `2.10-scratch`, `2.10.29-linux`, `2.10-linux`  
-  [Dockerfile]([])  
+  [Dockerfile]   
 
 - `2.10.29-windowsservercore-ltsc2022`, `2.10-windowsservercore-ltsc2022`  
-  [Dockerfile]([])  
+  [Dockerfile]   
 
 - `2.10.29-nanoserver-ltsc2022`, `2.10-nanoserver-ltsc2022`  
-  [Dockerfile]([])  
+  [Dockerfile]   
 
 
 ### 共享标签（Shared Tags）  
 - `2.12.0`, `2.12`, `2`, `latest`：  
-  - `2.12.0-scratch` [Dockerfile]([])  
-  - `2.12.0-nanoserver-ltsc2022` [Dockerfile]([])  
+  - `2.12.0-scratch` [Dockerfile]   
+  - `2.12.0-nanoserver-ltsc2022` [Dockerfile]   
 
 - `2.12.0-windowsservercore`, `2.12-windowsservercore`, `2-windowsservercore`, `windowsservercore`：  
-  - `2.12.0-windowsservercore-ltsc2022` [Dockerfile]([])  
+  - `2.12.0-windowsservercore-ltsc2022` [Dockerfile]   
 
 - `2.12.0-nanoserver`, `2.12-nanoserver`, `2-nanoserver`, `nanoserver`：  
-  - `2.12.0-nanoserver-ltsc2022` [Dockerfile]([])  
+  - `2.12.0-nanoserver-ltsc2022` [Dockerfile]   
 
 - `2.11.10`, `2.11`：  
-  - `2.11.10-scratch` [Dockerfile]([])  
-  - `2.11.10-nanoserver-ltsc2022` [Dockerfile]([])  
+  - `2.11.10-scratch` [Dockerfile]   
+  - `2.11.10-nanoserver-ltsc2022` [Dockerfile]   
 
 - `2.11.10-windowsservercore`, `2.11-windowsservercore`：  
-  - `2.11.10-windowsservercore-ltsc2022` [Dockerfile]([])  
+  - `2.11.10-windowsservercore-ltsc2022` [Dockerfile]   
 
 - `2.11.10-nanoserver`, `2.11-nanoserver`：  
-  - `2.11.10-nanoserver-ltsc2022` [Dockerfile]([])  
+  - `2.11.10-nanoserver-ltsc2022` [Dockerfile]   
 
 - `2.10.29`, `2.10`：  
-  - `2.10.29-scratch` [Dockerfile]([])  
-  - `2.10.29-nanoserver-ltsc2022` [Dockerfile]([])  
+  - `2.10.29-scratch` [Dockerfile]   
+  - `2.10.29-nanoserver-ltsc2022` [Dockerfile]   
 
 - `2.10.29-windowsservercore`, `2.10-windowsservercore`：  
-  - `2.10.29-windowsservercore-ltsc2022` [Dockerfile]([])  
+  - `2.10.29-windowsservercore-ltsc2022` [Dockerfile]   
 
 - `2.10.29-nanoserver`, `2.10-nanoserver`：  
-  - `2.10.29-nanoserver-ltsc2022` [Dockerfile]([])  
+  - `2.10.29-nanoserver-ltsc2022` [Dockerfile]   
 
 
 ## 快速参考（续）  
 
 ### 问题反馈地址  
-[[]]([])  
+[[]]   
 
 
 ### 支持的架构  
-（更多信息：[official-images文档]([])）  
+（更多信息：[official-images文档] ）  
 `amd64`, `arm32v6`, `arm32v7`, `arm64v8`, `ppc64le`, `s390x`, `windows-amd64`  
 
 
 ### 镜像详情  
-[repo-info仓库的`repos/nats/`目录]([])（含镜像元数据、传输大小等）  
+[repo-info仓库的`repos/nats/`目录] （含镜像元数据、传输大小等）  
 
 
 ### 镜像更新  
-- official-images仓库的`library/nats`标签：[issues]([])  
-- official-images仓库的`library/nats`文件：[文件]([])（[更新历史]([])）  
+- official-images仓库的`library/nats`标签：[issues]   
+- official-images仓库的`library/nats`文件：[文件] （[更新历史] ）  
 
 
 ### 本文档来源  
-[docs仓库的`nats/`目录]([])（[更新历史]([])）  
+[docs仓库的`nats/`目录] （[更新历史] ）  
 
 
 ## NATS：高性能云原生消息系统  

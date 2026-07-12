@@ -3,7 +3,7 @@ image: bitnami/metrics-server
 description: "Bitnami Secure Image for metrics-server是由Bitnami提供的针对Kubernetes指标服务器（metrics-server）的安全优化镜像，该镜像集成预配置的安全加固措施、定期漏洞扫描与更新机制，确保指标服务器在收集和聚合集群节点及Pod资源指标（如CPU、内存使用率）时的稳定性与安全性，同时符合行业合规标准，简化用户在Kubernetes环境中部署和管理安全可靠的指标收集组件的流程。"
 source: https://xuanyuan.cloud/zh/r/bitnami/metrics-server
 canonical: https://xuanyuan.cloud/zh/r/bitnami/metrics-server
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/metrics-server" title="bitnami/metrics-server Docker 镜像中文简介、标签列表与拉取命令">bitnami/metrics-server 中文简介</a>
@@ -16,7 +16,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 镜像获取说明  
 此镜像已不再通过 Docker Hub 免费提供。目前，它作为构建好的 OCI 制品，提供 Debian 和 Photon 两种基础操作系统格式，需通过 Bitnami Secure Images 的商业订阅获取。  
 
-不过，Docker Hub 上仍提供其他 Bitnami Secure Images 的开发者版本。完整列表可通过 [访问公开目录]([])，并按“可用性类型：试用版（Trial）”筛选查看。  
+不过，Docker Hub 上仍提供其他 Bitnami Secure Images 的开发者版本。完整列表可通过 [访问公开目录] ，并按“可用性类型：试用版（Trial）”筛选查看。  
 
 
 ## 推荐升级至 Photon 版本  
@@ -29,4 +29,4 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 了解更多  
-如需了解 Bitnami Secure Images 商业产品的详细信息，可 [访问官方网站]([])。
+如需了解 Bitnami Secure Images 商业产品的详细信息，可 [访问官方网站] 。

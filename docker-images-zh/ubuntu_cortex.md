@@ -3,7 +3,7 @@ image: ubuntu/cortex
 description: "Cortex是基于Ubuntu的Prometheus长期存储解决方案，由Canonical维护，提供水平扩展、高可用、多租户支持及多种长期存储选项。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/cortex
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/cortex
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/cortex" title="ubuntu/cortex Docker 镜像中文简介、标签列表与拉取命令">ubuntu/cortex 中文简介</a>
@@ -56,7 +56,7 @@ _斜体标签在ubuntu/cortex中不可用，此处列出仅为完整起见。_
 ### 本地启动镜像
 
 ```sh
-docker run -d --name cortex-container -e TZ=UTC -p 32709:9009 ubuntu/cortex:1.11-22.04_beta
+docker run -d --name cortex-container -e TZ=UTC -p 32709:9009 docker.xuanyuan.run/ubuntu/cortex:1.11-22.04_beta
 ```
 访问Cortex服务器：`http://localhost:32709`。
 

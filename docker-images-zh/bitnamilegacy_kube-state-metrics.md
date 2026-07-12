@@ -3,7 +3,7 @@ image: bitnamilegacy/kube-state-metrics
 description: "Bitnami遗留镜像（不再更新）"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/kube-state-metrics
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/kube-state-metrics
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/kube-state-metrics" title="bitnamilegacy/kube-state-metrics Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/kube-state-metrics 中文简介</a>
@@ -34,7 +34,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ```bash
 # 1. 拉取遗留镜像
-docker pull bitnami/[镜像名称]:[标签]
+docker pull docker.xuanyuan.run/bitnami/[镜像名称]:[标签]
 
 # 2. 标记镜像为自有registry地址
 docker tag bitnami/[镜像名称]:[标签] [你的私有registry地址]/[镜像名称]:[标签]

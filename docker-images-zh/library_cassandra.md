@@ -3,7 +3,7 @@ image: library/cassandra
 description: "Apache Cassandra是一款开源的分布式存储系统。"
 source: https://xuanyuan.cloud/zh/r/library/cassandra
 canonical: https://xuanyuan.cloud/zh/r/library/cassandra
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/cassandra" title="library/cassandra Docker 镜像中文简介、标签列表与拉取命令">library/cassandra 中文简介</a>
@@ -66,7 +66,7 @@ Apache Cassandra 是一个开源分布式数据库管理系统，设计用于跨
 启动 Cassandra 实例的基本命令如下：
 
 ```bash
-docker run --name some-cassandra --network some-network -d cassandra:tag
+docker run --name some-cassandra --network some-network -d docker.xuanyuan.run/cassandra:tag
 ```
 
 - `--name some-cassandra`：指定容器名称（可自定义）。  
@@ -83,12 +83,12 @@ docker run --name some-cassandra --network some-network -d cassandra:tag
 
 1. 启动第一个节点（种子节点）：  
    ```bash
-   docker run --name some-cassandra --network some-network -d cassandra:tag
+   docker run --name some-cassandra --network some-network -d docker.xuanyuan.run/cassandra:tag
    ```
 
 2. 启动后续节点，指定种子节点为第一个节点的容器名：  
    ```bash
-   docker run --name some-cassandra2 --network some-network -d -e CASSANDRA_SEEDS=some-cassandra cassandra:tag
+   docker run --name some-cassandra2 --network some-network -d -e CASSANDRA_SEEDS=some-cassandra docker.xuanyuan.run/cassandra:tag
    ```
 
 #### 跨机集群（如两台云服务器）
@@ -97,12 +97,12 @@ docker run --name some-cassandra --network some-network -d cassandra:tag
 
 1. 服务器 A 启动种子节点，暴露 gossip 端口（7000）并指定广播地址：  
    ```bash
-   docker run --name some-cassandra -d -e CASSANDRA_BROADCAST_ADDRESS=10.42.42.42 -p 7000:7000 cassandra:tag
+   docker run --name some-cassandra -d -e CASSANDRA_BROADCAST_ADDRESS=10.42.42.42 -p 7000:7000 docker.xuanyuan.run/cassandra:tag
    ```
 
 2. 服务器 B 启动节点，指定种子节点为服务器 A 的 IP，并暴露端口：  
    ```bash
-   docker run --name some-cassandra -d -e CASSANDRA_BROADCAST_ADDRESS=10.43.43.43 -p 7000:7000 -e CASSANDRA_SEEDS=10.42.42.42 cassandra:tag
+   docker run --name some-cassandra -d -e CASSANDRA_BROADCAST_ADDRESS=10.43.43.43 -p 7000:7000 -e CASSANDRA_SEEDS=10.42.42.42 docker.xuanyuan.run/cassandra:tag
    ```
 
 
@@ -111,7 +111,7 @@ docker run --name some-cassandra --network some-network -d cassandra:tag
 使用 `cqlsh`（Cassandra 查询语言 shell）连接运行中的 Cassandra 容器：
 
 ```bash
-docker run -it --network some-network --rm cassandra cqlsh some-cassandra
+docker run -it --network some-network --rm docker.xuanyuan.run/cassandra cqlsh some-cassandra
 ```
 
 - `-it`：交互模式，分配终端。  
@@ -148,13 +148,13 @@ docker logs some-cassandra
 最灵活的方式是通过挂载自定义 `cassandra.yaml` 文件覆盖默认配置：
 
 ```bash
-docker run --name some-cassandra -v /path/on/host/cassandra.yaml:/etc/cassandra/cassandra.yaml -d cassandra:tag
+docker run --name some-cassandra -v /path/on/host/cassandra.yaml:/etc/cassandra/cassandra.yaml -d docker.xuanyuan.run/cassandra:tag
 ```
 
 如需使用非默认配置文件名，可通过启动参数指定：
 
 ```bash
-docker run --name some-cassandra -d cassandra:tag -Dcassandra.config=/path/to/custom-config.yaml
+docker run --name some-cassandra -d docker.xuanyuan.run/cassandra:tag -Dcassandra.config=/path/to/custom-config.yaml
 ```
 
 #### 环境变量配置
@@ -185,7 +185,7 @@ docker run --name some-cassandra -d cassandra:tag -Dcassandra.config=/path/to/cu
 version: '3'
 services:
   cassandra-seed:
-    image: cassandra:latest
+    image: docker.xuanyuan.run/cassandra:latest
     container_name: cassandra-seed
     environment:
       - CASSANDRA_CLUSTER_NAME=MyCluster
@@ -200,7 +200,7 @@ services:
       - "9042:9042"  # CQL 端口
 
   cassandra-node1:
-    image: cassandra:latest
+    image: docker.xuanyuan.run/cassandra:latest
     container_name: cassandra-node1
     environment:
       - CASSANDRA_CLUSTER_NAME=MyCluster
@@ -214,7 +214,7 @@ services:
       - cassandra-seed
 
   cassandra-node2:
-    image: cassandra:latest
+    image: docker.xuanyuan.run/cassandra:latest
     container_name: cassandra-node2
     environment:
       - CASSANDRA_CLUSTER_NAME=MyCluster
@@ -246,7 +246,7 @@ docker-compose up -d
 Cassandra 默认将数据存储在容器内的 `/var/lib/cassandra`。为避免数据丢失，建议通过**卷挂载**将数据持久化到主机：
 
 ```bash
-docker run --name some-cassandra -v /host/datadir:/var/lib/cassandra -d cassandra:tag
+docker run --name some-cassandra -v /host/datadir:/var/lib/cassandra -d docker.xuanyuan.run/cassandra:tag
 ```
 
 - `/host/datadir`：主机上的目录（需提前创建并设置权限）。  

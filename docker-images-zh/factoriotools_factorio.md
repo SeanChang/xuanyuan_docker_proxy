@@ -3,14 +3,14 @@ image: factoriotools/factorio
 description: "搭建《异星工厂》私人服务器，为好友打造稳定联机空间，共同进入危机与机遇并存的异星世界：协作采集矿石、提炼材料，设计精密自动化生产线，研发科技解锁高级设备，在抵御异星生物突袭时分工配合，于建造与生存的沉浸式体验中增进默契，尽情享受多人联机的策略布局与创造乐趣。"
 source: https://xuanyuan.cloud/zh/r/factoriotools/factorio
 canonical: https://xuanyuan.cloud/zh/r/factoriotools/factorio
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/factoriotools/factorio" title="factoriotools/factorio Docker 镜像中文简介、标签列表与拉取命令">factoriotools/factorio 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-# Factorio [![Docker 版本]([])]([]) [![Docker 拉取量]([])]([]) [![Docker 星标]([])]([])
+# Factorio [![Docker 版本] ]  [![Docker 拉取量] ]  [![Docker 星标] ] 
 
 
 > [!NOTE]
@@ -20,7 +20,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 镜像标签说明
 
 * `latest` - 最新版本（可能为实验版）。  
-* `stable` - 在 [factorio.com]([]) 上标记为稳定的版本（自 2.0 起，版本先以实验版发布，稳定后会更新为此标签，详见 [FFF-435]([])）。  
+* `stable` - 在 [factorio.com]  上标记为稳定的版本（自 2.0 起，版本先以实验版发布，稳定后会更新为此标签，详见 [FFF-435] ）。  
 * `0.x` - 某分支的最新版本（如 `2.0` 为 2.0 分支最新版）。  
 * `0.x.y` - 特定版本（如 `2.0.69`）。  
 * `0.x-z` - 版本的增量修复版。  
@@ -28,9 +28,9 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 关于 Factorio 服务器
 
-[Factorio]([]) 是一款工厂建造与维护主题的游戏。玩家可通过采矿、研发科技、搭建基础设施、自动化生产来扩张工厂，并抵御敌人。游戏支持自定义地图、Lua 编写模组及多人联机，且针对大规模工厂优化，运行稳定。
+[Factorio]  是一款工厂建造与维护主题的游戏。玩家可通过采矿、研发科技、搭建基础设施、自动化生产来扩张工厂，并抵御敌人。游戏支持自定义地图、Lua 编写模组及多人联机，且针对大规模工厂优化，运行稳定。
 
-**注意**：本镜像仅包含服务器程序，完整游戏需从 [Factorio 官网]([])、[Steam]([])、[GOG.com]([]) 或 [Humble Bundle]([]) 购买。
+**注意**：本镜像仅包含服务器程序，完整游戏需从 [Factorio 官网] 、[Steam] 、[GOG.com]  或 [Humble Bundle]  购买。
 
 
 ## 使用指南
@@ -83,7 +83,7 @@ docker start factorio
 
 ```shell
 # 启动容器（带交互终端）
-docker run -d -it --name factorio factoriotools/factorio
+docker run -d -it --name factorio docker.xuanyuan.run/factoriotools/factorio
 
 # 进入控制台（按 Ctrl+P+Q 可退出但不终止容器）
 docker attach factorio
@@ -110,7 +110,7 @@ docker stop factorio
 docker rm factorio
 
 # 拉取最新镜像
-docker pull factoriotools/factorio
+docker pull docker.xuanyuan.run/factoriotools/factorio
 
 # 重新启动（使用原命令即可）
 sudo docker run -d ...  # 同快速启动步骤
@@ -165,7 +165,7 @@ sudo docker run -d ... \
 1. **手动安装**：将模组（`.zip`）复制到 `/opt/factorio/mods` 目录，重启服务器。  
 
 2. **自动更新模组（0.17+）**：  
-   设置 `UPDATE_MODS_ON_START=true`，并提供 Factorio 账号的 `USERNAME` 和 `TOKEN`（在 [Factorio 个人资料]([]) 获取）。  
+   设置 `UPDATE_MODS_ON_START=true`，并提供 Factorio 账号的 `USERNAME` 和 `TOKEN`（在 [Factorio 个人资料]  获取）。  
 
 3. **跳过指定模组更新**：  
    通过 `UPDATE_IGNORE=mod1,mod2` 忽略特定模组（逗号分隔名称），避免兼容性问题。  
@@ -245,7 +245,7 @@ docker run -d ... \
 version: '2'
 services:
   factorio:
-    image: factoriotools/factorio
+    image: docker.xuanyuan.run/factoriotools/factorio
     ports:
       - "34197:34197/udp"  # 游戏端口
       - "27015:27015/tcp"  # RCON 端口
@@ -320,9 +320,9 @@ docker run -d \
 
 ## 贡献者
 
-- [dtandersen]([])（维护者）  
-- [Fank]([])（版本更新监控）  
-- [SuperSandro2000]([])（CI 与维护）  
-- [DBendit]([])（权限列表支持）  
-- [Zopanix]([])（原作者）  
-- 其他贡献者：[Rfvgyhn]([])、[gnomus]([])、[bplein]([]) 等。
+- [dtandersen] （维护者）  
+- [Fank] （版本更新监控）  
+- [SuperSandro2000] （CI 与维护）  
+- [DBendit] （权限列表支持）  
+- [Zopanix] （原作者）  
+- 其他贡献者：[Rfvgyhn] 、[gnomus] 、[bplein]  等。

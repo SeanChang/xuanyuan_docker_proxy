@@ -3,7 +3,7 @@ image: ai/llama3.3
 description: "最新LLama 3版本，具备改进的推理能力和生成质量。"
 source: https://xuanyuan.cloud/zh/r/ai/llama3.3
 canonical: https://xuanyuan.cloud/zh/r/ai/llama3.3
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/llama3.3" title="ai/llama3.3 Docker 镜像中文简介、标签列表与拉取命令">ai/llama3.3 中文简介</a>

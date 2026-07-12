@@ -3,7 +3,7 @@ image: requarks/wiki
 description: "Wiki.js - 一款基于NodeJS构建的现代化、轻量级且功能强大的维基应用"
 source: https://xuanyuan.cloud/zh/r/requarks/wiki
 canonical: https://xuanyuan.cloud/zh/r/requarks/wiki
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/requarks/wiki" title="requarks/wiki Docker 镜像中文简介、标签列表与拉取命令">requarks/wiki 中文简介</a>
@@ -76,7 +76,7 @@ https://js.wiki
 1. **拉取镜像**  
    根据需求选择对应标签，例如拉取最新版：  
    ```bash
-   docker pull requarks/wiki:latest
+   docker pull docker.xuanyuan.run/requarks/wiki:latest
    ```
 
 2. **运行容器**  
@@ -86,7 +86,7 @@ https://js.wiki
      -e "DB_TYPE=sqlite" \
      -v /path/to/data:/wiki/data \
      -v /path/to/config:/wiki/config \
-     requarks/wiki:latest
+     docker.xuanyuan.run/requarks/wiki:latest
    ```
 
 3. **访问应用**  

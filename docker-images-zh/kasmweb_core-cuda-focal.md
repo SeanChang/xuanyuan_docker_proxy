@@ -3,7 +3,7 @@ image: kasmweb/core-cuda-focal
 description: "Kasm Workspaces的CUDA工具包基础镜像，提供GPU加速支持，适用于构建和运行依赖CUDA的应用环境。"
 source: https://xuanyuan.cloud/zh/r/kasmweb/core-cuda-focal
 canonical: https://xuanyuan.cloud/zh/r/kasmweb/core-cuda-focal
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kasmweb/core-cuda-focal" title="kasmweb/core-cuda-focal Docker 镜像中文简介、标签列表与拉取命令">kasmweb/core-cuda-focal 中文简介</a>

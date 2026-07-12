@@ -3,7 +3,7 @@ image: joxit/docker-registry-ui
 description: "Docker Registry v2网页用户界面是用于可视化管理Docker镜像仓库的Web应用工具，支持浏览镜像列表、查看标签信息、检索镜像详情、执行镜像上传下载等操作，帮助用户直观监控和维护Docker镜像资源，提升镜像管理效率。"
 source: https://xuanyuan.cloud/zh/r/joxit/docker-registry-ui
 canonical: https://xuanyuan.cloud/zh/r/joxit/docker-registry-ui
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/joxit/docker-registry-ui" title="joxit/docker-registry-ui Docker 镜像中文简介、标签列表与拉取命令">joxit/docker-registry-ui 中文简介</a>
@@ -12,20 +12,20 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 # Docker Registry 用户界面
 
-[![Stars]([])]([])
-[![Pulls]([])]([])
-[![Sponsor]([])]([])
-[![Artifact Hub]([])]([])
-[![Version]([])]([])
+[![Stars] ] 
+[![Pulls] ] 
+[![Sponsor] ] 
+[![Artifact Hub] ] 
+[![Version] ] 
 
 
 ## 概述
 
 本项目旨在为私有 Docker 镜像仓库提供简洁完整的用户界面，支持多种自定义配置，核心选项 `SINGLE_REGISTRY` 可禁用镜像仓库动态切换功能（与旧版 **static** 标签行为一致）。
 
-若从 1.x 版本迁移至 2.x，可参考 [迁移指南]([])；1.x 版本说明见 [历史文档]([])。
+若从 1.x 版本迁移至 2.x，可参考 [迁移指南] ；1.x 版本说明见 [历史文档] 。
 
-界面基于类 React 微型库 [Riot]([]) 和组件库 [riot-mui]([]) 开发。如果觉得本项目有帮助，欢迎通过 [赞助]([]) 支持开发。
+界面基于类 React 微型库 [Riot]  和组件库 [riot-mui]  开发。如果觉得本项目有帮助，欢迎通过 [赞助]  支持开发。
 
 
 ## 支持的 Docker 镜像标签
@@ -39,7 +39,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 - `2.x.y`：2.x.y 具体版本
 
 
-## [项目页面]([]) | [在线演示]([]) | [使用示例]([]) | [Helm Chart]([])
+## [项目页面]  | [在线演示]  | [使用示例]  | [Helm Chart] 
 
 ![预览]([] "Docker Registry UI 预览")
 
@@ -47,19 +47,19 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 隐藏功能
 
 - **批量删除镜像**：
-  - 通过复选框选择多个标签删除（1.2.0 起支持，详见 [#29]([])、[#79]([])）。
-  - 按住 `ALT + 点击` 表头复选框，选中当前页所有标签（1.2.1 起支持，详见 [#80]([])、[#81]([])）。
-  - 按住 `Shift + 点击` 起始标签，再 `Shift + 点击` 结束标签，选中连续标签（2.4.0 起支持，详见 [#287]([])）。
+  - 通过复选框选择多个标签删除（1.2.0 起支持，详见 [#29] 、[#79] ）。
+  - 按住 `ALT + 点击` 表头复选框，选中当前页所有标签（1.2.1 起支持，详见 [#80] 、[#81] ）。
+  - 按住 `Shift + 点击` 起始标签，再 `Shift + 点击` 结束标签，选中连续标签（2.4.0 起支持，详见 [#287] ）。
 
 - 鼠标悬停标签时显示 sha256 摘要。
 
-- 标签列表支持数字排序（0.4.0 起支持，详见 [#45]([])、[#46]([])）。
+- 标签列表支持数字排序（0.4.0 起支持，详见 [#45] 、[#46] ）。
 
-- **共享界面**：当 `SINGLE_REGISTRY=false` 时，可通过公共演示页 + URL 参数共享（例如 `[] `Access-Control-Allow-Origin` 设为 `[] **搜索框快捷键**：按 `Ctrl + F` 或 `F3` 聚焦搜索框（2.1.0 起支持，详见 [#213]([])）。
+- **共享界面**：当 `SINGLE_REGISTRY=false` 时，可通过公共演示页 + URL 参数共享（例如 `[] `Access-Control-Allow-Origin` 设为 `[] **搜索框快捷键**：按 `Ctrl + F` 或 `F3` 聚焦搜索框（2.1.0 起支持，详见 [#213] ）。
 
-- 历史页面支持多架构显示（1.5.0 起支持，详见 [#130]([])、[#134]([])）。
+- 历史页面支持多架构显示（1.5.0 起支持，详见 [#130] 、[#134] ）。
 
-- 显示 Dockerfile 内容（2.4.0 起支持，详见 [#286]([])）。
+- 显示 Dockerfile 内容（2.4.0 起支持，详见 [#286] ）。
 
 - 缓存仓库请求（如 blobs 和含 `sha256:` 的 manifest）。
 
@@ -70,7 +70,7 @@ exported_at: 2026-06-02T12:26:10.133Z
   `false` 时界面顶部显示仓库切换菜单，支持动态添加/切换仓库；`true` 时仅显示单个仓库，无切换菜单。
 
 - **删除所有标签后，镜像为何仍显示在界面？**  
-  Docker 仓库的垃圾回收机制不会自动删除空镜像（无标签但有残留数据）。需手动删除仓库数据目录中的对应文件夹（详见 [#77]([])）。
+  Docker 仓库的垃圾回收机制不会自动删除空镜像（无标签但有残留数据）。需手动删除仓库数据目录中的对应文件夹（详见 [#77] ）。
 
 - **界面显示的镜像大小与 `docker images` 不一致？**  
   界面显示的是镜像压缩后的大小，而非本地解压后的大小。
@@ -82,30 +82,30 @@ exported_at: 2026-06-02T12:26:10.133Z
   仅支持基础认证（Basic Auth）。作为纯前端应用，依赖浏览器自带的认证窗口。
 
 - **能否搭配非安全仓库（无 HTTPS）使用？**  
-  可以，但需先配置 Docker 客户端（详见 [#76]([])）。
+  可以，但需先配置 Docker 客户端（详见 [#76] ）。
 
 - **"Mixed Content" 错误是什么？**  
   表示界面使用 HTTPS 但仓库使用 HTTP（非加密）。HTTPS 页面无法加载 HTTP 资源，需将仓库升级为 HTTPS。
 
 - **为何 Nginx 默认 `Host` 设为 `$http_host`？**  
-  用于解决 [#88]([]) 问题，详见 [#113]([])。
+  用于解决 [#88]  问题，详见 [#113] 。
 
 - **使用 Basic Auth 时，OPTIONS（预检请求）和 DELETE 请求返回 401 错误？**  
-  Docker 仓库存在 bug，预检请求会返回 401，违反 [W3C 预检请求规范]([])，且官方已明确不会修复（[distribution/distribution#4458]([])）。解决方案：将界面与仓库部署在同一域名下（如 `registry.example.com/ui/`），或使用 `NGINX_PROXY_PASS_URL`，或在仓库前端部署反向代理（Nginx/Apache）并对 OPTIONS 请求返回 200。
+  Docker 仓库存在 bug，预检请求会返回 401，违反 [W3C 预检请求规范] ，且官方已明确不会修复（[distribution/distribution#4458] ）。解决方案：将界面与仓库部署在同一域名下（如 `registry.example.com/ui/`），或使用 `NGINX_PROXY_PASS_URL`，或在仓库前端部署反向代理（Nginx/Apache）并对 OPTIONS 请求返回 200。
 
 - **能否通过 Electron 作为独立应用运行？**  
-  可以，示例见 [此处]([])（详见 [#129]([])）。
+  可以，示例见 [此处] （详见 [#129] ）。
 
 - **通过界面删除镜像后，服务器上仍存在？**  
-  界面仅删除标签引用，需运行仓库垃圾回收命令清理残留数据：`registry garbage-collect config.yml` 或 `docker exec registry registry garbage-collect config.yml`（详见 [#77]([])、[#147]([])）。
+  界面仅删除标签引用，需运行仓库垃圾回收命令清理残留数据：`registry garbage-collect config.yml` 或 `docker exec registry registry garbage-collect config.yml`（详见 [#77] 、[#147] ）。
 
 - **删除一个标签后，相同 SHA 的所有标签都被删除？**  
   Docker 仓库 API 限制：删除标签需通过 `name` 和 `manifest`（内容 SHA），因此相同 SHA 的标签会被批量删除。
 
 - **能否以非特权用户运行容器？**  
-  可以，使用 `--user nginx` 以 `nginx` 用户运行，此时监听端口自动改为 8080（详见 [#224]([])、[#234]([])）。
+  可以，使用 `--user nginx` 以 `nginx` 用户运行，此时监听端口自动改为 8080（详见 [#224] 、[#234] ）。
 
-- **更多问题**：可参考 [使用示例]([]) 或提交 Issue。
+- **更多问题**：可参考 [使用示例]  或提交 Issue。
 
 
 ## 配置选项
@@ -149,7 +149,7 @@ version: '3.8'
 
 services:
   registry-ui:
-    image: joxit/docker-registry-ui:main
+    image: docker.xuanyuan.run/joxit/docker-registry-ui:main
     restart: always
     ports:
       - 80:80
@@ -162,7 +162,7 @@ services:
     container_name: registry-ui
 
   registry-server:
-    image: registry:2.8.2
+    image: docker.xuanyuan.run/registry:2.8.2
     restart: always
     environment:
       # 配置 CORS，允许界面域名访问
@@ -197,7 +197,7 @@ services:
       Access-Control-Allow-Headers: ['Authorization', 'Accept', 'Cache-Control']
   ```
 
-> 若仍有 CORS 问题，可尝试浏览器插件临时绕过（详见 [#25]([])）。
+> 若仍有 CORS 问题，可尝试浏览器插件临时绕过（详见 [#25] ）。
 
 
 ## 启用删除功能
@@ -219,9 +219,9 @@ services:
 
 ## 更多示例
 
-- [将界面作为代理使用]([])  
-- [独立部署界面]([])  
-- [搭配 Traefik 使用]([])  
-- [S3 存储后端配置]([])  
-- [HTTPS 配置]([])  
-- [Electron 独立应用]([])
+- [将界面作为代理使用]   
+- [独立部署界面]   
+- [搭配 Traefik 使用]   
+- [S3 存储后端配置]   
+- [HTTPS 配置]   
+- [Electron 独立应用]

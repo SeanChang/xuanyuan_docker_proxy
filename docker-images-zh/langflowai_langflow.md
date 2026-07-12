@@ -3,7 +3,7 @@ image: langflowai/langflow
 description: "Langflow是用于RAG和多智能体AI应用的低代码应用构建器。"
 source: https://xuanyuan.cloud/zh/r/langflowai/langflow
 canonical: https://xuanyuan.cloud/zh/r/langflowai/langflow
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/langflowai/langflow" title="langflowai/langflow Docker 镜像中文简介、标签列表与拉取命令">langflowai/langflow 中文简介</a>
@@ -62,14 +62,14 @@ Langflow 是一款面向 RAG（检索增强生成）和多智能体 AI 应用的
 ### 4.3 镜像拉取
 通过以下命令拉取最新版本镜像：
 ```bash
-docker pull langflowai/langflow:latest
+docker pull docker.xuanyuan.run/langflowai/langflow:latest
 ```
 
 
 ### 4.4 启动容器
 #### 4.4.1 基础运行命令
 ```bash
-docker run -it --rm -p 7860:7860 langflowai/langflow:latest
+docker run -it --rm -p 7860:7860 docker.xuanyuan.run/langflowai/langflow:latest
 ```
 - 参数说明：
   - `-it`：以交互模式运行容器，支持终端输入输出。
@@ -88,7 +88,7 @@ version: '3.8'
 
 services:
   langflow:
-    image: langflowai/langflow:latest
+    image: docker.xuanyuan.run/langflowai/langflow:latest
     container_name: langflow
     ports:
       - "7860:7860"  # 端口映射

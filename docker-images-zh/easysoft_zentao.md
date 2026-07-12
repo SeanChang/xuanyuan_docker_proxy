@@ -3,7 +3,7 @@ image: easysoft/zentao
 description: "禅道官方（ZenTao Official）是为企业及团队提供专业项目管理软件与服务的官方平台，专注于产品管理、项目协作、任务跟踪、缺陷管理等一体化解决方案，助力团队高效规划研发流程、统筹资源分配、把控项目进度，实现从需求提出到产品交付的全流程可视化管理，提升协作效率与项目成功率。"
 source: https://xuanyuan.cloud/zh/r/easysoft/zentao
 canonical: https://xuanyuan.cloud/zh/r/easysoft/zentao
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/easysoft/zentao" title="easysoft/zentao Docker 镜像中文简介、标签列表与拉取命令">easysoft/zentao 中文简介</a>
@@ -12,21 +12,21 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 # 禅道官方镜像（ZenTaoPMS）
 
-![GitHub Workflow Status (event)]([])
-![Docker Pulls]([])
-![Docker Image Size]([])
-![GitHub tag]([])
+![GitHub Workflow Status (event)] 
+![Docker Pulls] 
+![Docker Image Size] 
+![GitHub tag] 
 
 
 ## 特别说明
-从 18.6 版本开始（企业版 8.6、旗舰版 4.6），镜像结构已调整。若从旧版本升级至 18.6 及以上，需参考[旧版Docker镜像升级说明]([])；全新安装不受影响。
+从 18.6 版本开始（企业版 8.6、旗舰版 4.6），镜像结构已调整。若从旧版本升级至 18.6 及以上，需参考[旧版Docker镜像升级说明] ；全新安装不受影响。
 
 
 ## 快速参考
-- 一键安装：通过[渠成软件百宝箱]([])部署 ZenTao  
-- Dockerfile 源码：[[]]([])  
-- ZenTao 源码：[[]]([])  
-- 官网：[[]]([])  
+- 一键安装：通过[渠成软件百宝箱] 部署 ZenTao  
+- Dockerfile 源码：[[]]   
+- ZenTao 源码：[[]]   
+- 官网：[[]]   
 
 
 ## 一、关于 ZenTao
@@ -34,17 +34,17 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 "禅"与"道"是中国传统文化的代表，命名"禅道"旨在传达"摒弃繁文缛节，还原管理本质"的理念。  
 
-![禅道界面截图]([])  
+![禅道界面截图]   
 
-官网：[[]]([])  
+官网：[[]]   
 
 
 ## 二、支持的版本（Tag）
-以下为最新5个版本，完整版本列表见[Docker Hub标签页]([])。  
+以下为最新5个版本，完整版本列表见[Docker Hub标签页] 。  
 
 ### 镜像地址
 - 国内镜像：`hub.zentao.net/app/zentao`  
-- Docker Hub：[easysoft/zentao]([])  
+- Docker Hub：[easysoft/zentao]   
 
 
 ### 开源版
@@ -123,7 +123,7 @@ docker run -it \
 version: '3'
 services:
   zentao-mysql:
-    image: mysql:5.7
+    image: docker.xuanyuan.run/mysql:5.7
     container_name: zentao-mysql
     ports:
       - '13306:3306'
@@ -184,7 +184,7 @@ docker run -it \
 多节点部署时，建议用Redis共享Session：  
 1. 先启动Redis容器：  
 ```bash
-docker run -d --name redis redis:3.2-alpine  # 启动Redis  
+docker run -d --name redis docker.xuanyuan.run/redis:3.2-alpine # 启动Redis
 ```  
 
 2. 启动禅道并连接Redis：  

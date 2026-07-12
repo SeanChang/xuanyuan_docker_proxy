@@ -3,7 +3,7 @@ image: envoyproxy/envoy
 description: "云原生高性能边缘/中间层/服务代理"
 source: https://xuanyuan.cloud/zh/r/envoyproxy/envoy
 canonical: https://xuanyuan.cloud/zh/r/envoyproxy/envoy
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/envoyproxy/envoy" title="envoyproxy/envoy Docker 镜像中文简介、标签列表与拉取命令">envoyproxy/envoy 中文简介</a>

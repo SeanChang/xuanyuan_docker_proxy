@@ -3,7 +3,7 @@ image: hyperledger/fabric-peer
 description: "超级账本项目（Hyperledger Project）的Fabric Peer节点Docker镜像是区块链网络中核心节点的容器化部署组件，支持账本维护、智能合约执行与交易验证等关键功能，可便捷集成到基于超级账本Fabric的分布式账本系统，为区块链应用提供高效可靠的节点运行环境，助力开发者快速搭建和部署企业级区块链网络。"
 source: https://xuanyuan.cloud/zh/r/hyperledger/fabric-peer
 canonical: https://xuanyuan.cloud/zh/r/hyperledger/fabric-peer
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hyperledger/fabric-peer" title="hyperledger/fabric-peer Docker 镜像中文简介、标签列表与拉取命令">hyperledger/fabric-peer 中文简介</a>
@@ -18,10 +18,10 @@ exported_at: 2026-06-02T12:26:10.133Z
 - **Hyperledger Fabric 项目页面**：[]  
 
 - **Docker 帮助资源**：  
-  [Docker 社区论坛]([])、[Docker 社区 Slack]([])、[Stack Overflow]([])  
+  [Docker 社区论坛] 、[Docker 社区 Slack] 、[Stack Overflow]   
 
 - **Hyperledger Fabric 帮助资源**：  
-  [Fabric 文档]([])、[Stack Overflow（标签：hyperledger-fabric）]([])、[聊天频道]([])（[登录帮助]([])）  
+  [Fabric 文档] 、[Stack Overflow（标签：hyperledger-fabric）] 、[聊天频道] （[登录帮助] ）  
 
 - **支持说明**：  
   本镜像仅用于开发和测试环境。生产环境需使用各厂商提供的商业支持版本。  
@@ -31,9 +31,9 @@ exported_at: 2026-06-02T12:26:10.133Z
 - **可用标签**：  
   架构特定标签（如 `amd64-2.0.0`）、版本特定标签（如 `2.0.0`）、次要版本最新补丁（如 `2.0`）  
 
-- **镜像 Dockerfile**：[Dockerfile 位置]([])  
+- **镜像 Dockerfile**：[Dockerfile 位置]   
 
-- **描述来源**：[Fabric GitHub 仓库]([])  
+- **描述来源**：[Fabric GitHub 仓库]   
 
 
 ## 什么是 Hyperledger Fabric Peer？
@@ -130,7 +130,7 @@ $ docker logs peer0.org1.example.com
 
 上述命令会增加账本（kvledger）和链码构建（chaincode.platform）的调试日志，用于排查相关问题。  
 
-也可通过 peer 运维服务动态调整运行中节点的日志级别，详见 [日志级别管理文档]([])。  
+也可通过 peer 运维服务动态调整运行中节点的日志级别，详见 [日志级别管理文档] 。  
 
 
 ## 构建自定义 Fabric 镜像  
@@ -138,4 +138,4 @@ $ docker logs peer0.org1.example.com
 
 
 ## 许可协议  
-Hyperledger Fabric 采用 [Apache 许可证 2.0 版]([]) 授权。
+Hyperledger Fabric 采用 [Apache 许可证 2.0 版]  授权。

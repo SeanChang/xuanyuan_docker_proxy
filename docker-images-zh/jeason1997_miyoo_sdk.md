@@ -3,7 +3,7 @@ image: jeason1997/miyoo_sdk
 description: "MiyooSDK Docker镜像为Miyoo掌机应用开发者提供预配置的开发环境，集成交叉编译工具链、依赖库和构建脚本，简化跨平台应用开发与测试流程。"
 source: https://xuanyuan.cloud/zh/r/jeason1997/miyoo_sdk
 canonical: https://xuanyuan.cloud/zh/r/jeason1997/miyoo_sdk
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jeason1997/miyoo_sdk" title="jeason1997/miyoo_sdk Docker 镜像中文简介、标签列表与拉取命令">jeason1997/miyoo_sdk 中文简介</a>
@@ -38,7 +38,7 @@ MiyooSDK Docker镜像是针对Miyoo系列掌机应用开发的标准化开发环
 
 1. **拉取镜像**（假设镜像名称为`miyoo-sdk`）：
    ```bash
-   docker pull jeason1997/miyoo-sdk:latest
+   docker pull docker.xuanyuan.run/jeason1997/miyoo-sdk:latest
    ```
 
 2. **启动开发环境**：
@@ -46,7 +46,7 @@ MiyooSDK Docker镜像是针对Miyoo系列掌机应用开发的标准化开发环
    docker run -it --rm \
      -v $(pwd):/workspace \
      -w /workspace \
-     jeason1997/miyoo-sdk:latest
+     docker.xuanyuan.run/jeason1997/miyoo-sdk:latest
    ```
    - `-v $(pwd):/workspace`：将当前目录挂载为容器工作目录
    - `-w /workspace`：设置容器工作目录为`/workspace`
@@ -80,7 +80,7 @@ docker run -it --rm \
   -v $(pwd):/workspace \
   -e MIYOO_MODEL=miyoo_mini_plus \
   -e DEBUG_MODE=on \
-  jeason1997/miyoo-sdk:latest
+  docker.xuanyuan.run/jeason1997/miyoo-sdk:latest
 ```
 
 #### 持久化开发环境
@@ -88,7 +88,7 @@ docker run -it --rm \
 如需保存自定义配置（如额外安装的工具），可将容器提交为新镜像：
 ```bash
 # 启动容器并自定义配置
-docker run -it --name my-miyoo-dev jeason1997/miyoo-sdk:latest
+docker run -it --name my-miyoo-dev docker.xuanyuan.run/jeason1997/miyoo-sdk:latest
 # 在容器内安装额外工具后，新开终端执行提交
 docker commit my-miyoo-dev my-custom-miyoo-sdk:latest
 ```
@@ -100,7 +100,7 @@ docker commit my-miyoo-dev my-custom-miyoo-sdk:latest
 version: '3'
 services:
   miyoo-dev:
-    image: jeason1997/miyoo-sdk:latest
+    image: docker.xuanyuan.run/jeason1997/miyoo-sdk:latest
     volumes:
       - ./project:/workspace
     environment:

@@ -3,7 +3,7 @@ image: serversideup/php
 description: "适合生产环境的PHP Docker镜像，针对Laravel和WordPress进行了优化。"
 source: https://xuanyuan.cloud/zh/r/serversideup/php
 canonical: https://xuanyuan.cloud/zh/r/serversideup/php
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/serversideup/php" title="serversideup/php Docker 镜像中文简介、标签列表与拉取命令">serversideup/php 中文简介</a>
@@ -145,7 +145,7 @@ docker run -d \
   --name php-app \
   -p 80:80 \
   -v $(pwd):/var/www/html \
-  serversideup/php:8.2-fpm-nginx
+  docker.xuanyuan.run/serversideup/php:8.2-fpm-nginx
 ```
 
 ### Docker Compose 示例
@@ -157,7 +157,7 @@ version: '3.8'
 
 services:
   app:
-    image: serversideup/php:8.2-fpm-nginx
+    image: docker.xuanyuan.run/serversideup/php:8.2-fpm-nginx
     container_name: laravel-app
     restart: unless-stopped
     ports:
@@ -180,7 +180,7 @@ services:
       - db
 
   db:
-    image: mysql:8.0
+    image: docker.xuanyuan.run/mysql:8.0
     container_name: laravel-db
     restart: unless-stopped
     environment:

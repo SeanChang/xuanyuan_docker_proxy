@@ -3,7 +3,7 @@ image: eclipse/centos
 description: "基于CentOS的最小化环境，仅集成git和openssh，适用于需要轻量版本控制系统和SSH服务的场景。"
 source: https://xuanyuan.cloud/zh/r/eclipse/centos
 canonical: https://xuanyuan.cloud/zh/r/eclipse/centos
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/eclipse/centos" title="eclipse/centos Docker 镜像中文简介、标签列表与拉取命令">eclipse/centos 中文简介</a>
@@ -59,7 +59,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 #### 1. 基础测试（直接运行容器）
 通过以下命令启动镜像并进入交互式终端，验证环境完整性：
 ```bash
-docker run -it --rm eclipse/che-stack-centos-minimal:latest /bin/bash
+docker run -it --rm docker.xuanyuan.run/eclipse/che-stack-centos-minimal:latest /bin/bash
 ```
 > 说明：`--rm` 参数表示容器退出后自动清理，适合临时测试；`-it` 启用交互式终端。
 
@@ -96,7 +96,7 @@ docker run -it --rm eclipse/che-stack-centos-minimal:latest /bin/bash
 version: '3'
 services:
   che-server:
-    image: eclipse/che-server:latest
+    image: docker.xuanyuan.run/eclipse/che-server:latest
     ports:
       - "8080:8080"  // Che 控制台访问端口
     volumes:
@@ -106,7 +106,7 @@ services:
       - CHE_LOG_LEVEL=INFO  // 日志级别（可选：DEBUG/INFO/WARN/ERROR）
 
   workspace-example:
-    image: eclipse/che-stack-centos-minimal:latest
+    image: docker.xuanyuan.run/eclipse/che-stack-centos-minimal:latest
     depends_on:
       - che-server
     volumes:
@@ -176,7 +176,7 @@ git clone https://github.com/example/project.git /workspace/project
 - **安全性**：默认配置下 SSH 无密码访问，生产环境需通过 `passwd` 命令设置密码或配置 SSH 密钥认证。
 - **扩展性**：如需添加工具（如 `gcc`、`java`），可通过 Dockerfile 基于本镜像构建定制镜像：
   ```dockerfile
-  FROM eclipse/che-stack-centos-minimal:latest
+  FROM docker.xuanyuan.run/eclipse/che-stack-centos-minimal:latest
   RUN yum install -y gcc  # 添加 gcc 编译器
   ```
 - **兼容性**：已测试兼容 Eclipse Che 4.0+、Docker 20.10+，支持 Linux/macOS/Windows（需开启 WSL2 或 Docker Desktop）。

@@ -3,7 +3,7 @@ image: enmotech/opengauss
 description: "openGauss是一款源自华为的开源关系型数据库，以高性能、高安全性和高可靠性为核心优势，广泛应用于金融、政务、电信等关键行业领域；恩墨科技（Enmotech）作为其重要生态合作伙伴，所制作的openGauss最新镜像，旨在为用户提供便捷高效的部署体验，助力企业及开发者快速搭建稳定可靠的数据库环境，有效满足数字化转型过程中的数据管理与业务支撑需求。"
 source: https://xuanyuan.cloud/zh/r/enmotech/opengauss
 canonical: https://xuanyuan.cloud/zh/r/enmotech/opengauss
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/enmotech/opengauss" title="enmotech/opengauss Docker 镜像中文简介、标签列表与拉取命令">enmotech/opengauss 中文简介</a>
@@ -15,39 +15,39 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 快速参考
 
-- **维护者**：[EnmoTech开源团队]([])  
-- **获取帮助**：[墨天轮-openGauss]([])  
+- **维护者**：[EnmoTech开源团队]   
+- **获取帮助**：[墨天轮-openGauss]   
 
 
-> **注意**：若在macOS或Windows系统上运行openGauss 5.0及以上版本的容器，需使用 [`enmotech/opengauss-lite`]([]) 镜像。因5.0版本起，openGauss企业版容器在macOS/Windows上无法正常启动，Linux系统无此问题。
+> **注意**：若在macOS或Windows系统上运行openGauss 5.0及以上版本的容器，需使用 [`enmotech/opengauss-lite`]  镜像。因5.0版本起，openGauss企业版容器在macOS/Windows上无法正常启动，Linux系统无此问题。
 
 
 ## 支持的标签及Dockerfile链接
 
-- [`latest`]([])  
-- [`6.0.0`]([])  
-- [`5.1.0`]([])  
-- [`5.0.3`]([])  
-- [`5.0.2`]([])  
-- [`5.0.1`]([])  
-- [`5.0.0`]([])  
-- [`3.1.1`]([])  
-- [`3.1.0`]([])  
-- [`3.0.3`]([])  
-- [`3.0.0`]([])  
-- [`2.1.0`]([])  
-- [`2.0.1`]([])  
-- [`2.0.0`]([])  
-- [`1.1.0`]([])  
-- [`1.0.1`]([])  
-- [`1.0.0`]([])  
+- [`latest`]   
+- [`6.0.0`]   
+- [`5.1.0`]   
+- [`5.0.3`]   
+- [`5.0.2`]   
+- [`5.0.1`]   
+- [`5.0.0`]   
+- [`3.1.1`]   
+- [`3.1.0`]   
+- [`3.0.3`]   
+- [`3.0.0`]   
+- [`2.1.0`]   
+- [`2.0.1`]   
+- [`2.0.0`]   
+- [`1.1.0`]   
+- [`1.0.1`]   
+- [`1.0.0`]   
 
 
 ## 关于openGauss
 
 openGauss是一款开源关系型数据库管理系统，基于Mulan PSL v2许可证发布。其内核源自PostgreSQL，深度融合华为在数据库领域的经验，持续构建面向企业需求的竞争力特性。openGauss也是开源免费的数据库平台，鼓励社区贡献与协作。  
 
-openGauss社区官网：[[]]([])  
+openGauss社区官网：[[]]   
 
 
 ## Enmotech openGauss镜像的特点
@@ -65,15 +65,15 @@ openGauss社区官网：[[]]([])
   企业版与精简版分离。`enmotech/opengauss` 为企业版，`enmotech/opengauss-lite` 为精简版。  
 
 - **3.0及以上版本**：  
-  容器使用 [openGauss数据库精简版]([])；默认启动时空闲内存低于200M；新增vi、ps等基础命令。  
+  容器使用 [openGauss数据库精简版] ；默认启动时空闲内存低于200M；新增vi、ps等基础命令。  
 
 - **2.0及以上版本**：  
-  - x86-64架构：运行于 [Ubuntu 18.04操作系统]([])  
-  - ARM64架构：运行于 [Debian 10操作系统]([])  
+  - x86-64架构：运行于 [Ubuntu 18.04操作系统]   
+  - ARM64架构：运行于 [Debian 10操作系统]   
 
 - **1.1.0及以下版本**：  
-  - x86-64架构：运行于 [CentOS 7.6操作系统]([])  
-  - ARM64架构：运行于 [openEuler 20.03 LTS操作系统]([])  
+  - x86-64架构：运行于 [CentOS 7.6操作系统]   
+  - ARM64架构：运行于 [openEuler 20.03 LTS操作系统]   
 
 
 ## 如何使用该镜像
@@ -146,7 +146,7 @@ $ docker run --name opengauss --privileged=true -d -e GS_PASSWORD=Secretpassword
 
 #### 1. 拉取镜像  
 ```console
-$ docker pull enmotech/opengauss:latest
+$ docker pull docker.xuanyuan.run/enmotech/opengauss:latest
 ```
 
 #### 2. 获取并运行主从创建脚本  
@@ -190,11 +190,11 @@ $ gs_ctl query -D /var/lib/opengauss/data/
 
 ## 许可证
 
-本镜像遵循GPL v3.0许可证，详情参见：[[]]([])  
+本镜像遵循GPL v3.0许可证，详情参见：[[]]   
 
 
 ## 关于EnmoTech
 
 EnmoTech（北京安恒信科技）成立于2011年，是智能数据技术提供商，总部位于北京，全球35个地区设有分支机构（含香港、新加坡、悉尼等）。专注于数据与数据库解决方案创新，提供HTAP数据库、软件定义分布式存储、数据库部署与性能管理、智能数据分析等服务。已服务超3000家企业客户，管理超50000个业务系统。  
 
-了解更多：[www.enmotech.com]([])，或联系：[邮箱已删除]
+了解更多：[www.enmotech.com] ，或联系：[邮箱已删除]

@@ -3,7 +3,7 @@ image: opencloudeu/opencloud
 description: "OpenCloud服务器后端Docker镜像，包含Golang代码库，用于部署后端服务，支持通过OpenID Connect认证（外部IdP或嵌入式LibreGraph Connect），数据存储于文件系统，默认根目录为$HOME/.opencloud/。"
 source: https://xuanyuan.cloud/zh/r/opencloudeu/opencloud
 canonical: https://xuanyuan.cloud/zh/r/opencloudeu/opencloud
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/opencloudeu/opencloud" title="opencloudeu/opencloud Docker 镜像中文简介、标签列表与拉取命令">opencloudeu/opencloud 中文简介</a>
@@ -46,14 +46,14 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 #### 1. 初始化配置
 ```bash
-docker run -v $HOME/.opencloud:/root/.opencloud opencloudeu/opencloud init
+docker run -v $HOME/.opencloud:/root/.opencloud docker.xuanyuan.run/opencloudeu/opencloud init
 ```
 - `-v $HOME/.opencloud:/root/.opencloud`：挂载本地目录至容器内，持久化配置数据
 - 配置文件将生成在本地`$HOME/.opencloud`目录
 
 #### 2. 启动服务器
 ```bash
-docker run -d -p 8080:8080 -v $HOME/.opencloud:/root/.opencloud opencloudeu/opencloud server
+docker run -d -p 8080:8080 -v $HOME/.opencloud:/root/.opencloud docker.xuanyuan.run/opencloudeu/opencloud server
 ```
 - `-d`：后台运行容器
 - `-p 8080:8080`：映射容器8080端口至主机（默认服务端口，可根据配置调整）

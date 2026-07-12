@@ -3,7 +3,7 @@ image: portainer/portainer
 description: "本仓库现已被弃用，不再进行维护与更新，建议用户迁移至 portainer/portainer-ce 仓库以获取持续的功能支持、安全更新及技术维护，该替代仓库为官方推荐的社区版资源，能够提供更稳定的服务和及时的问题修复。"
 source: https://xuanyuan.cloud/zh/r/portainer/portainer
 canonical: https://xuanyuan.cloud/zh/r/portainer/portainer
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/portainer/portainer" title="portainer/portainer Docker 镜像中文简介、标签列表与拉取命令">portainer/portainer 中文简介</a>
@@ -16,7 +16,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 仓库状态  
 本仓库已弃用。自2022年1月起，仓库最新标签将指向 Portainer CE 2.X 版本，建议使用 `portainer/portainer-ce` 仓库获取最新版本。  
 
-![Docker Pulls]([])  
+![Docker Pulls]   
 
 
 > **注意**：当前仓库（`portainer/portainer`）仅为 Portainer v1.24.x 版本的主页，现已停止维护；所有 Portainer 2.0 及以上版本的更新，均发布在 `portainer/portainer-ce` 仓库。  
@@ -29,20 +29,20 @@ Portainer 是一款轻量级管理界面工具，可帮助你轻松管理 Docker
 
 
 ## 快速开始  
-- [部署 Portainer]([])  
-- [官方文档]([])  
+- [部署 Portainer]   
+- [官方文档]   
 
 
 ## 获取帮助  
 社区支持渠道：  
-- 问题反馈：[GitHub Issues]([])  
-- 常见问题：[FAQ 文档]([])  
-- 交流群组：[Slack 频道]([])  
+- 问题反馈：[GitHub Issues]   
+- 常见问题：[FAQ 文档]   
+- 交流群组：[Slack 频道]   
 
 
 ## 问题反馈与贡献  
-- 如需报告 Bug 或提出功能需求，请提交 [新 Issue]([])。  
-- 若希望参与 Portainer 开发，可参考 [贡献指南]([]) 进行本地构建并提交 Pull Request。我们非常欢迎社区贡献！  
+- 如需报告 Bug 或提出功能需求，请提交 [新 Issue] 。  
+- 若希望参与 Portainer 开发，可参考 [贡献指南]  进行本地构建并提交 Pull Request。我们非常欢迎社区贡献！  
 
 
 ## 限制说明  

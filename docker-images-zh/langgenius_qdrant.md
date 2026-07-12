@@ -3,7 +3,7 @@ image: langgenius/qdrant
 description: "基于qdrant:v1.6.1版本，添加了中文、日文和韩文分词器支持的向量数据库镜像，用于提升东亚语言文本的向量检索效果。"
 source: https://xuanyuan.cloud/zh/r/langgenius/qdrant
 canonical: https://xuanyuan.cloud/zh/r/langgenius/qdrant
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/langgenius/qdrant" title="langgenius/qdrant Docker 镜像中文简介、标签列表与拉取命令">langgenius/qdrant 中文简介</a>
@@ -48,7 +48,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ### 镜像拉取
 ```bash
-docker pull [镜像仓库地址]/qdrant-cjk:v1.6.1  # 替换为实际镜像仓库地址
+docker pull docker.xuanyuan.run/[镜像仓库地址]/qdrant-cjk:v1.6.1  # 替换为实际镜像仓库地址
 ```
 
 ### 基本运行命令
@@ -58,7 +58,7 @@ docker run -d \
   -p 6333:6333 \
   -p 6334:6334 \
   -v $(pwd)/qdrant_data:/qdrant/storage \
-  [镜像仓库地址]/qdrant-cjk:v1.6.1
+  docker.xuanyuan.run/[镜像仓库地址]/qdrant-cjk:v1.6.1
 ```
 - `-p 6333:6333`：映射REST API端口
 - `-p 6334:6334`：映射gRPC端口
@@ -79,7 +79,7 @@ docker run -d \
 version: '3.8'
 services:
   qdrant-cjk:
-    image: [镜像仓库地址]/qdrant-cjk:v1.6.1
+    image: docker.xuanyuan.run/[镜像仓库地址]/qdrant-cjk:v1.6.1
     container_name: qdrant-cjk
     ports:
       - "6333:6333"

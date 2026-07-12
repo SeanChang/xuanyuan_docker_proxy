@@ -3,7 +3,7 @@ image: islandora/activemq
 description: "消息代理镜像，用于在分布式系统中传递、路由、存储和转发消息，实现应用间异步通信与解耦。"
 source: https://xuanyuan.cloud/zh/r/islandora/activemq
 canonical: https://xuanyuan.cloud/zh/r/islandora/activemq
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/islandora/activemq" title="islandora/activemq Docker 镜像中文简介、标签列表与拉取命令">islandora/activemq 中文简介</a>
@@ -42,7 +42,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 通过以下命令可快速启动ActiveMQ实例，默认启用Web控制台（`http://localhost:8161`），默认登录凭据为`admin/password`：
 
 ```bash
-docker run --rm -ti -p 8161:8161 islandora/activemq
+docker run --rm -ti -p 8161:8161 docker.xuanyuan.run/islandora/activemq
 ```
 
 > **注意**：若未配置凭据（环境变量），将无法登录Web控制台。
@@ -75,7 +75,7 @@ docker run -d \
 version: '3.8'
 services:
   activemq:
-    image: islandora/activemq
+    image: docker.xuanyuan.run/islandora/activemq
     container_name: activemq
     restart: always
     ports:

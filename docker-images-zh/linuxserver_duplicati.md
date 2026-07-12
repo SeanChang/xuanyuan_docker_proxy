@@ -3,7 +3,7 @@ image: linuxserver/duplicati
 description: "LinuxServer.io提供的Duplicati容器，用于数据备份与同步，支持加密和压缩功能。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/duplicati
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/duplicati
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/duplicati" title="linuxserver/duplicati Docker 镜像中文简介、标签列表与拉取命令">linuxserver/duplicati 中文简介</a>
@@ -83,7 +83,7 @@ Web 界面位于 `<您的 IP>:8200`。
 ---
 services:
   duplicati:
-    image: lscr.io/linuxserver/duplicati:latest
+    image: docker.xuanyuan.run/linuxserver/duplicati:latest
     container_name: duplicati
     environment:
       - PUID=1000
@@ -260,7 +260,7 @@ docker inspect -f '{{ index .Config.Labels "build_version" }}' lscr.io/linuxserv
 - 更新镜像：
 
   ```bash
-  docker pull lscr.io/linuxserver/duplicati:latest
+  docker pull docker.xuanyuan.run/linuxserver/duplicati:latest
   ```
 
 - 停止运行中的容器：
@@ -304,7 +304,7 @@ docker build \
 可以使用 `lscr.io/linuxserver/qemu-static` 在 x86_64 硬件上构建 ARM 变体，反之亦然：
 
 ```bash
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```
 
 注册后，您可以使用 `-f Dockerfile.aarch64` 指定要使用的 dockerfile。

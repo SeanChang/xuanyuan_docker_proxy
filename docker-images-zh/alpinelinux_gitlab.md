@@ -3,7 +3,7 @@ image: alpinelinux/gitlab
 description: "基于Alpine Linux的轻量级Gitlab容器镜像，提供Git仓库管理、代码审查、CI/CD流水线等DevOps功能，适合资源受限环境部署。"
 source: https://xuanyuan.cloud/zh/r/alpinelinux/gitlab
 canonical: https://xuanyuan.cloud/zh/r/alpinelinux/gitlab
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpinelinux/gitlab" title="alpinelinux/gitlab Docker 镜像中文简介、标签列表与拉取命令">alpinelinux/gitlab 中文简介</a>
@@ -54,7 +54,7 @@ docker run -d \
   -v /srv/gitlab/config:/etc/gitlab \
   -v /srv/gitlab/logs:/var/log/gitlab \
   -e GITLAB_OMNIBUS_CONFIG="external_url 'http://gitlab.example.com'; gitlab_rails['gitlab_shell_ssh_port'] =２２;" \
-  alpine-gitlab:latest
+  docker.xuanyuan.run/alpine-gitlab:latest
 ```  
 > 说明：  
 > - `-v` 参数挂载三个关键目录：数据目录(/var/opt/gitlab)、配置目录(/etc/gitlab)、日志目录(/var/log/gitlab)，需确保宿主机目录权限正确  
@@ -67,7 +67,7 @@ docker run -d \
 version: '3.8'
 services:
   gitlab:
-    image: alpine-gitlab:latest
+    image: docker.xuanyuan.run/alpine-gitlab:latest
     container_name: gitlab-alpine
     restart: always
     ports:

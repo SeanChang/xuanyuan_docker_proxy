@@ -3,7 +3,7 @@ image: victoriametrics/vmagent
 description: "用于从各种来源收集指标、过滤并发送到VictoriaMetrics的代理"
 source: https://xuanyuan.cloud/zh/r/victoriametrics/vmagent
 canonical: https://xuanyuan.cloud/zh/r/victoriametrics/vmagent
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/victoriametrics/vmagent" title="victoriametrics/vmagent Docker 镜像中文简介、标签列表与拉取命令">victoriametrics/vmagent 中文简介</a>
@@ -27,7 +27,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 我们建议指定镜像的确切标签：
 ```
-docker pull victoriametrics/vmagent:{TAG}
+docker pull docker.xuanyuan.run/victoriametrics/vmagent:{TAG}
 ```
 有关详细信息，请参见[快速开始](https://docs.victoriametrics.com/vmagent/#quick-start)。
 
@@ -37,7 +37,7 @@ docker pull victoriametrics/vmagent:{TAG}
 ```
 docker run -d --name vmagent \
   -v /path/to/prometheus.yml:/etc/vmagent/prometheus.yml \
-  victoriametrics/vmagent:{TAG} \
+  docker.xuanyuan.run/victoriametrics/vmagent:{TAG} \
   -promscrape.config=/etc/vmagent/prometheus.yml \
   -remoteWrite.url=http://victoriametrics:8428/api/v1/write
 ```

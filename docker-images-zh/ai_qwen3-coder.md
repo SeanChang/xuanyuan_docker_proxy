@@ -3,7 +3,7 @@ image: ai/qwen3-coder
 description: "Qwen3-Coder是Qwen推出的新一代智能编码代理模型系列。"
 source: https://xuanyuan.cloud/zh/r/ai/qwen3-coder
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen3-coder
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen3-coder" title="ai/qwen3-coder Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3-coder 中文简介</a>

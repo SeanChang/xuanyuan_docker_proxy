@@ -3,7 +3,7 @@ image: portainer/portainer-ce
 description: "Portainer CE 是一款轻量级容器化应用服务交付平台，旨在简化容器应用全生命周期管理，涵盖部署、监控、运维等核心环节，支持多环境统一管理，提供直观可视化界面，帮助用户高效配置、管理和扩展容器集群，降低容器技术使用门槛，适用于开发、测试及生产环境，为企业提供灵活、高效的容器应用交付解决方案。"
 source: https://xuanyuan.cloud/zh/r/portainer/portainer-ce
 canonical: https://xuanyuan.cloud/zh/r/portainer/portainer-ce
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/portainer/portainer-ce" title="portainer/portainer-ce Docker 镜像中文简介、标签列表与拉取命令">portainer/portainer-ce 中文简介</a>
@@ -22,15 +22,15 @@ Portainer Business Edition（BE）基于 CE 的开源基础开发，新增多项
 
 
 ## 版本对比与资源链接  
-- [CE 与 BE 版本功能对比]([])  
-- [3 节点免费使用 BE]([])（可长期免费使用 BE 管理 3 个节点）  
-- [快速开始使用 Portainer]([])  
-- [Portainer 安装指南]([])  
+- [CE 与 BE 版本功能对比]   
+- [3 节点免费使用 BE] （可长期免费使用 BE 管理 3 个节点）  
+- [快速开始使用 Portainer]   
+- [Portainer 安装指南]   
 
 
 ## CE 快速上手  
-- [部署 Portainer CE]([])  
-- [CE 完整文档]([])  
+- [部署 Portainer CE]   
+- [CE 完整文档]   
 
 
 ## 注意事项（历史版本升级）  
@@ -39,10 +39,10 @@ Portainer Business Edition（BE）基于 CE 的开源基础开发，新增多项
 
 ## 获取帮助（社区版支持）  
 CE 用户可通过以下渠道获取支持：  
-- 问题反馈：[GitHub Issues]([])  
-- 常见问题：[官方文档 FAQ]([])  
+- 问题反馈：[GitHub Issues]   
+- 常见问题：[官方文档 FAQ]   
 - 社区交流：[Slack 频道]()（需通过链接加入）  
 
 
 ## 问题反馈与贡献  
-如需报告 Bug 或提出功能建议，可直接在 [GitHub]([]) 提交新 issue。
+如需报告 Bug 或提出功能建议，可直接在 [GitHub]  提交新 issue。

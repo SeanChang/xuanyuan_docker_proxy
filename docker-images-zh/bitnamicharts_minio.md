@@ -3,7 +3,7 @@ image: bitnamicharts/minio
 description: "Bitnami提供的Helm chart，用于在Kubernetes环境中部署和管理MinIO对象存储服务。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/minio
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/minio
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/minio" title="bitnamicharts/minio Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/minio 中文简介</a>
@@ -71,7 +71,7 @@ docker run -d \
   -e MINIO_ROOT_USER=admin \
   -e MINIO_ROOT_PASSWORD=password \
   -v minio_data:/bitnami/minio/data \
-  bitnami/minio:latest
+  docker.xuanyuan.run/bitnami/minio:latest
 ```
 - `-p 9000:9000`：S3 API 端口映射
 - `-p 9001:9001`：MinIO 控制台端口映射
@@ -84,7 +84,7 @@ docker run -d \
 version: '3'
 services:
   minio:
-    image: bitnami/minio:latest
+    image: docker.xuanyuan.run/bitnami/minio:latest
     ports:
       - "9000:9000"
       - "9001:9001"

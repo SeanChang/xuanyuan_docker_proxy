@@ -3,7 +3,7 @@ image: bitnami/prometheus
 description: "Bitnami为普罗米修斯（Prometheus）提供的安全镜像，基于严格的安全标准构建，集成了开源监控工具普罗米修斯的核心功能，包含漏洞修复、合规性检查及安全加固措施，支持快速部署与稳定运行，适用于企业级监控场景，可有效保障监控系统的安全性与可靠性，助力用户轻松构建安全合规的监控环境。"
 source: https://xuanyuan.cloud/zh/r/bitnami/prometheus
 canonical: https://xuanyuan.cloud/zh/r/bitnami/prometheus
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/prometheus" title="bitnami/prometheus Docker 镜像中文简介、标签列表与拉取命令">bitnami/prometheus 中文简介</a>
@@ -14,7 +14,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 镜像可用性说明  
-该镜像已不再通过 Docker Hub 免费提供。目前，它作为构建好的 OCI 制品，提供 Debian 和 Photon 两种基础操作系统格式，需通过 Bitnami Secure Images 的商业订阅获取。不过，Docker Hub 上仍有其他 Bitnami Secure Images 的开发者版可供使用，完整列表可通过 [访问公共目录]([]) 并筛选“Availability Type: Trial”查看。  
+该镜像已不再通过 Docker Hub 免费提供。目前，它作为构建好的 OCI 制品，提供 Debian 和 Photon 两种基础操作系统格式，需通过 Bitnami Secure Images 的商业订阅获取。不过，Docker Hub 上仍有其他 Bitnami Secure Images 的开发者版可供使用，完整列表可通过 [访问公共目录]  并筛选“Availability Type: Trial”查看。  
 
 
 ## 推荐升级至 Photon-based 版本  
@@ -26,4 +26,4 @@ exported_at: 2026-06-02T12:26:10.133Z
 - 对主流 Helm charts 提供一流支持  
 
 
-了解更多 Bitnami Secure Images 商业产品详情，可访问 [官方网站]([])。
+了解更多 Bitnami Secure Images 商业产品详情，可访问 [官方网站] 。

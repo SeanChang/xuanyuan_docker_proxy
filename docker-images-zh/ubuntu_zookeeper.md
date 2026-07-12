@@ -3,7 +3,7 @@ image: ubuntu/zookeeper
 description: "ZooKeeper提供集中式配置信息维护，由Canonical提供长期支持的跟踪版本。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/zookeeper
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/zookeeper
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/zookeeper" title="ubuntu/zookeeper Docker 镜像中文简介、标签列表与拉取命令">ubuntu/zookeeper 中文简介</a>
@@ -49,7 +49,7 @@ LTS通道提供长达5年的免费安全维护。
 本地启动此镜像：
 
 ```sh
-docker run -d --name zookeeper-container -e TZ=UTC -p 2181:2181 ubuntu/zookeeper:3.1-22.04_beta
+docker run -d --name zookeeper-container -e TZ=UTC -p 2181:2181 docker.xuanyuan.run/ubuntu/zookeeper:3.1-22.04_beta
 ```
 在`http://localhost:2181`访问您的ZooKeeper服务器。
 

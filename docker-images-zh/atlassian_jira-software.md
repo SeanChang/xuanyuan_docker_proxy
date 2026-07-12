@@ -3,7 +3,7 @@ image: atlassian/jira-software
 description: "Jira Software是供敏捷团队使用的软件开发工具。"
 source: https://xuanyuan.cloud/zh/r/atlassian/jira-software
 canonical: https://xuanyuan.cloud/zh/r/atlassian/jira-software
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/atlassian/jira-software" title="atlassian/jira-software Docker 镜像中文简介、标签列表与拉取命令">atlassian/jira-software 中文简介</a>
@@ -86,7 +86,7 @@ docker run -v jiraVolume:/var/atlassian/application-data/jira \
   --name="jira" \
   -d \
   -p 8080:8080 \
-  atlassian/jira-software
+  docker.xuanyuan.run/atlassian/jira-software
 ```
 
 #### 3. 访问应用
@@ -117,7 +117,7 @@ docker run -v jiraServiceManagementVolume:/var/atlassian/application-data/jira \
 version: '3'
 services:
   jira-core:
-    image: atlassian/jira-core
+    image: docker.xuanyuan.run/atlassian/jira-core
     container_name: jira-core
     ports:
       - "8082:8080"

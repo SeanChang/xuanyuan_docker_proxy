@@ -3,7 +3,7 @@ image: suwayomi/suwayomi-vui
 description: "基于Svelte框架构建的Suwayomi应用基础用户界面"
 source: https://xuanyuan.cloud/zh/r/suwayomi/suwayomi-vui
 canonical: https://xuanyuan.cloud/zh/r/suwayomi/suwayomi-vui
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/suwayomi/suwayomi-vui" title="suwayomi/suwayomi-vui Docker 镜像中文简介、标签列表与拉取命令">suwayomi/suwayomi-vui 中文简介</a>
@@ -62,7 +62,7 @@ version: '3'
 
 services:
   suwayomi-backend:
-    image: ghcr.io/suwayomi/suwayomi-server:latest
+    image: ***-ghcr.xuanyuan.run/suwayomi/suwayomi-server:latest
     restart: always
     ports:
       - "4567:4567"  # Suwayomi 后端默认端口
@@ -71,7 +71,7 @@ services:
       - /path/to/manga:/manga  # 本地漫画文件目录映射
 
   suwayomi-ui:
-    image: robonau/svelte-skeleton-suwayomi-ui:latest
+    image: docker.xuanyuan.run/robonau/svelte-skeleton-suwayomi-ui:latest
     restart: always
     ports:
       - "80:80"  # UI 访问端口

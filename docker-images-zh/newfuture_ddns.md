@@ -3,7 +3,7 @@ image: newfuture/ddns
 description: "基于Alpine的DDNS服务，用于将域名动态更新到本机IP，支持dnspod、阿里DNS、CloudFlare、华为云、DNSCOM等服务商。"
 source: https://xuanyuan.cloud/zh/r/newfuture/ddns
 canonical: https://xuanyuan.cloud/zh/r/newfuture/ddns
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/newfuture/ddns" title="newfuture/ddns Docker 镜像中文简介、标签列表与拉取命令">newfuture/ddns 中文简介</a>
@@ -60,14 +60,14 @@ DDNS镜像版本(Docker Tag)：
 
 ```bash
 # 拉取最新稳定版
-docker pull newfuture/ddns:latest
+docker pull docker.xuanyuan.run/newfuture/ddns:latest
 # 或直接使用
-docker pull newfuture/ddns
+docker pull docker.xuanyuan.run/newfuture/ddns
 ```
 
 指定特定版本：
 ```bash
-docker pull newfuture/ddns:v4.0.0
+docker pull docker.xuanyuan.run/newfuture/ddns:v4.0.0
 ```
 
 ### 镜像源
@@ -78,7 +78,7 @@ docker pull newfuture/ddns:v4.0.0
 
 使用GitHub源：
 ```bash
-docker pull ghcr.io/newfuture/ddns
+docker pull ***-ghcr.xuanyuan.run/newfuture/ddns
 ```
 
 ### 运行方式
@@ -91,10 +91,10 @@ DDNS Docker镜像支持三种配置方式：命令行、环境变量和配置文
 
 ```bash
 # 查看帮助
-docker run --rm newfuture/ddns -h
+docker run --rm docker.xuanyuan.run/newfuture/ddns -h
 
 # 基本使用示例
-docker run --rm -v /local/config/:/ddns/ --network=host newfuture/ddns \
+docker run --rm -v /local/config/:/ddns/ --network=host docker.xuanyuan.run/newfuture/ddns \
   --dns=dnspod \
   --id=12345 \
   --token=mytokenkey \
@@ -104,7 +104,7 @@ docker run --rm -v /local/config/:/ddns/ --network=host newfuture/ddns \
   --index4 0
 
 # 启用调试模式
-docker run --rm -v /local/config/:/ddns/ --network=host newfuture/ddns \
+docker run --rm -v /local/config/:/ddns/ --network=host docker.xuanyuan.run/newfuture/ddns \
   --dns=dnspod \
   --id=12345 \
   --token=mytokenkey \
@@ -125,12 +125,12 @@ docker run -d \
   -e DDNS_INDEX4=['public',0] \
   --network host \
   --name ddns \
-  newfuture/ddns
+  docker.xuanyuan.run/newfuture/ddns
 ```
 
 使用环境变量文件：
 ```bash
-docker run -d --env-file .env --network host --name ddns newfuture/ddns
+docker run -d --env-file .env --network host --name ddns docker.xuanyuan.run/newfuture/ddns
 ```
 
 支持的主要环境变量：
@@ -156,7 +156,7 @@ docker run -d \
   -v /host/config/:/ddns/ \
   --network host \
   --name ddns \
-  newfuture/ddns
+  docker.xuanyuan.run/newfuture/ddns
 ```
 
 其中`/host/config/`是您本地包含`config.json`的目录。基本的config.json格式示例：
@@ -185,7 +185,7 @@ docker run -d \
   -e DDNS_IPV4=example.com \
   --network host \
   --name ddns \
-  newfuture/ddns
+  docker.xuanyuan.run/newfuture/ddns
 ```
 
 #### bridge网络模式（默认）
@@ -200,7 +200,7 @@ docker run -d \
   -e DDNS_IPV4=example.com \
   -e DDNS_INDEX4=public \
   --name ddns \
-  newfuture/ddns
+  docker.xuanyuan.run/newfuture/ddns
 ```
 
 ### 高级配置
@@ -217,13 +217,13 @@ docker run -d \
   -e DDNS_IPV4='["example.com", "www.example.com", "sub.example.com"]' \
   --network host \
   --name ddns \
-  newfuture/ddns
+  docker.xuanyuan.run/newfuture/ddns
 ```
 
 命令行参数方式配置多域名：
 
 ```bash
-docker run --rm --network host newfuture/ddns \
+docker run --rm --network host docker.xuanyuan.run/newfuture/ddns \
   --dns dnspod \
   --id 12345 \
   --token mytokenkey \
@@ -258,7 +258,7 @@ docker run -d \
   -e DDNS_TOKEN=mytokenkey \
   -e DDNS_IPV6=example.com \
   --name ddns \
-  newfuture/ddns
+  docker.xuanyuan.run/newfuture/ddns
 ```
 
 ### Docker Compose部署方案
@@ -271,7 +271,7 @@ docker run -d \
 version: "3"
 services:
     ddns:
-        image: newfuture/ddns:latest
+        image: docker.xuanyuan.run/newfuture/ddns:latest
         restart: always
         network_mode: host
         environment:
@@ -289,7 +289,7 @@ services:
 version: "3"
 services:
     ddns:
-        image: newfuture/ddns:latest
+        image: docker.xuanyuan.run/newfuture/ddns:latest
         restart: always
         network_mode: host
         volumes:
@@ -306,7 +306,7 @@ docker-compose up -d
 如需在容器中添加其他工具或自定义环境，可基于官方镜像创建Dockerfile：
 
 ```dockerfile
-FROM newfuture/ddns:latest
+FROM docker.xuanyuan.run/newfuture/ddns:latest
 
 # 安装额外工具
 RUN apk add --no-cache curl

@@ -3,7 +3,7 @@ image: wangbowen/kkfileview
 description: "非官方 kkFileView 镜像，基于原项目进行了bug修复和功能优化，提供文件预览功能。"
 source: https://xuanyuan.cloud/zh/r/wangbowen/kkfileview
 canonical: https://xuanyuan.cloud/zh/r/wangbowen/kkfileview
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/wangbowen/kkfileview" title="wangbowen/kkfileview Docker 镜像中文简介、标签列表与拉取命令">wangbowen/kkfileview 中文简介</a>
@@ -38,7 +38,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 通过以下命令快速启动容器：
 
 ```bash
-docker run -d -p 8012:8012 --name kkfileview iwangbowen/kkfileview:latest
+docker run -d -p 8012:8012 --name kkfileview docker.xuanyuan.run/iwangbowen/kkfileview:latest
 ```
 
 ### 镜像更新记录

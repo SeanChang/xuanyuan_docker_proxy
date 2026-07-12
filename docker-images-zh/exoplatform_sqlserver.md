@@ -3,7 +3,7 @@ image: exoplatform/sqlserver
 description: "用于测试目的的SQL Server镜像，基于官方Microsoft SQL Server Linux镜像构建，可轻松创建包含专用数据库和用户的SQL Server环境。"
 source: https://xuanyuan.cloud/zh/r/exoplatform/sqlserver
 canonical: https://xuanyuan.cloud/zh/r/exoplatform/sqlserver
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/exoplatform/sqlserver" title="exoplatform/sqlserver Docker 镜像中文简介、标签列表与拉取命令">exoplatform/sqlserver 中文简介</a>
@@ -41,7 +41,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ### 基本运行命令
 ```bash
-docker run -d -e SA_PASSWORD=<密码> -e SQLSERVER_DATABASE=<数据库名> -e SQLSERVER_USER=<用户名> -e SQLSERVER_PASSWORD=<用户密码> -p <本地端口>:1433 exoplatform/sqlserver:2017-CU8
+docker run -d -e SA_PASSWORD=<密码> -e SQLSERVER_DATABASE=<数据库名> -e SQLSERVER_USER=<用户名> -e SQLSERVER_PASSWORD=<用户密码> -p <本地端口>:1433 docker.xuanyuan.run/exoplatform/sqlserver:2017-CU8
 ```
 
 > **注意**：对于Docker4Mac和Docker4Windows用户，Docker实例必须至少分配**3192MB内存**。
@@ -68,7 +68,7 @@ docker run -d -e SA_PASSWORD=<密码> -e SQLSERVER_DATABASE=<数据库名> -e SQ
 
 例如：
 ```bash
-docker run -d -e SA_PASSWORD=YourStrong!Passw0rd -e SQLSERVER_DATABASE=testdb -e SQLSERVER_USER=testuser -e SQLSERVER_PASSWORD=UserStrong!Passw0rd -p 1433:1433 -v sqlserver_data:/var/opt/mssql exoplatform/sqlserver:2017-CU8
+docker run -d -e SA_PASSWORD=YourStrong!Passw0rd -e SQLSERVER_DATABASE=testdb -e SQLSERVER_USER=testuser -e SQLSERVER_PASSWORD=UserStrong!Passw0rd -p 1433:1433 -v sqlserver_data:/var/opt/mssql docker.xuanyuan.run/exoplatform/sqlserver:2017-CU8
 ```
 
 ## 适用场景

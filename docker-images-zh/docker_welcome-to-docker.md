@@ -3,7 +3,7 @@ image: docker/welcome-to-docker
 description: "供Docker新手入门使用的Docker镜像。"
 source: https://xuanyuan.cloud/zh/r/docker/welcome-to-docker
 canonical: https://xuanyuan.cloud/zh/r/docker/welcome-to-docker
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/docker/welcome-to-docker" title="docker/welcome-to-docker Docker 镜像中文简介、标签列表与拉取命令">docker/welcome-to-docker 中文简介</a>
@@ -52,7 +52,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 无需手动拉取镜像，执行 `docker run` 命令时 Docker 会自动从 Docker Hub 拉取最新版本：
 ```bash
 # 自动拉取并运行镜像（若本地无镜像）
-docker run -d -p 8088:80 --name welcome-to-docker docker/welcome-to-docker
+docker run -d -p 8088:80 --name welcome-to-docker docker.xuanyuan.run/docker/welcome-to-docker
 ```
 
 
@@ -103,7 +103,7 @@ docker rm welcome-to-docker
 ### 1. 基础部署（docker run 命令）
 直接使用官方推荐命令快速启动（同上文 "运行容器" 部分）：
 ```bash
-docker run -d -p 8088:80 --name welcome-to-docker docker/welcome-to-docker
+docker run -d -p 8088:80 --name welcome-to-docker docker.xuanyuan.run/docker/welcome-to-docker
 ```
 
 
@@ -114,7 +114,7 @@ version: '3.8'
 
 services:
   welcome-app:
-    image: docker/welcome-to-docker
+    image: docker.xuanyuan.run/docker/welcome-to-docker
     container_name: welcome-to-docker
     ports:
       - "8088:80"  # 宿主机端口:容器端口

@@ -3,7 +3,7 @@ image: okteto/python
 description: "该镜像包含用于与Okteto CLI配合使用的Python开发环境，Okteto是面向开发者的Kubernetes工具。"
 source: https://xuanyuan.cloud/zh/r/okteto/python
 canonical: https://xuanyuan.cloud/zh/r/okteto/python
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/okteto/python" title="okteto/python Docker 镜像中文简介、标签列表与拉取命令">okteto/python 中文简介</a>
@@ -59,7 +59,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 #### 拉取镜像
 ```bash
-docker pull [镜像仓库地址]/python-okteto-dev:[标签]  # 例如：docker pull okteto/python:3.10-okteto
+docker pull docker.xuanyuan.run/[镜像仓库地址]/python-okteto-dev:[标签]  # 例如：docker pull docker.xuanyuan.run/okteto/python:3.10-okteto
 ```
 
 #### 基本运行（本地开发模式）
@@ -84,7 +84,7 @@ docker run -it --name python-okteto-dev \
 ```yaml
 # okteto.yml
 name: python-app          # 开发环境名称
-image: [镜像名称]:[标签]   # 使用当前开发镜像
+image: docker.xuanyuan.run/[镜像名称]:[标签]   # 使用当前开发镜像
 workdir: /app             # 容器内工作目录
 command: python app.py    # 应用启动命令（开发阶段可替换为调试命令，如 `python -m debugpy --listen 0.0.0.0:5678 app.py`）
 sync:
@@ -130,7 +130,7 @@ okteto up  # 启动开发环境，自动同步代码并转发端口
 version: '3.8'
 services:
   python-dev:
-    image: [镜像名称]:[标签]
+    image: docker.xuanyuan.run/[镜像名称]:[标签]
     volumes:
       - ./:/app:cached  # 本地代码目录挂载（cached 模式优化性能）
     ports:

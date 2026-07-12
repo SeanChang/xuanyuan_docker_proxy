@@ -3,7 +3,7 @@ image: alpine/minio
 description: "社区维护的Minio Docker镜像，在官方停止提供后自动构建最新版本，支持多架构（amd64/arm等），适用于对象存储服务部署，生产环境建议使用具体版本标签。"
 source: https://xuanyuan.cloud/zh/r/alpine/minio
 canonical: https://xuanyuan.cloud/zh/r/alpine/minio
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/minio" title="alpine/minio Docker 镜像中文简介、标签列表与拉取命令">alpine/minio 中文简介</a>
@@ -42,7 +42,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 通过以下命令启动独立模式Minio服务（使用本地存储）：
 
 ```bash
-docker run -p 9000:9000 -p 9001:9001 alpine/minio:RELEASE.2025-10-15T17-29-55Z server /tmp/minio --console-address :9001
+docker run -p 9000:9000 -p 9001:9001 docker.xuanyuan.run/alpine/minio:RELEASE.2025-10-15T17-29-55Z server /tmp/minio --console-address :9001
 ```
 
 #### 访问Web控制台

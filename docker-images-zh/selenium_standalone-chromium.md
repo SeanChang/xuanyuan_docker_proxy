@@ -3,7 +3,7 @@ image: selenium/standalone-chromium
 description: "Selenium Grid独立模式镜像，集成Chromium浏览器，用于运行基于Chrome的自动化测试。"
 source: https://xuanyuan.cloud/zh/r/selenium/standalone-chromium
 canonical: https://xuanyuan.cloud/zh/r/selenium/standalone-chromium
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/selenium/standalone-chromium" title="selenium/standalone-chromium Docker 镜像中文简介、标签列表与拉取命令">selenium/standalone-chromium 中文简介</a>
@@ -42,7 +42,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 #### Docker Run 命令
 
 ```bash
-docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-chromium:latest
+docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" docker.xuanyuan.run/selenium/standalone-chromium:latest
 ```
 
 **参数说明**：
@@ -60,7 +60,7 @@ docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-chro
 version: '3'
 services:
   selenium-standalone:
-    image: selenium/standalone-chromium:latest
+    image: docker.xuanyuan.run/selenium/standalone-chromium:latest
     ports:
       - "4444:4444"  # Selenium Grid 服务端口
       - "7900:7900"  # VNC 可视化端口

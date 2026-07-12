@@ -3,7 +3,7 @@ image: linuxserver/homeassistant
 description: "LinuxServer提供的Home Assistant Docker镜像，是一款功能强大的家庭自动化平台，可集中管理智能家居设备，支持数百种设备协议与品牌，通过可视化界面与自动化规则实现场景联动。该镜像基于轻量级架构构建，集成完善的社区插件生态，支持数据持久化与安全更新，帮助用户轻松搭建个性化智能家庭系统，简化部署流程并降低维护成本，打造高效、智能的现代生活体验。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/homeassistant
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/homeassistant
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/homeassistant" title="linuxserver/homeassistant Docker 镜像中文简介、标签列表与拉取命令">linuxserver/homeassistant 中文简介</a>
@@ -15,7 +15,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## LinuxServer.io 团队简介
 
-[LinuxServer.io]([]) 团队致力于提供高质量 Docker 容器，其发布的容器具有以下特点：  
+[LinuxServer.io]  团队致力于提供高质量 Docker 容器，其发布的容器具有以下特点：  
 - 应用定期及时更新  
 - 简单的用户权限映射（通过 PGID、PUID 配置）  
 - 基于 s6 overlay 的自定义基础镜像  
@@ -24,16 +24,16 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ### 社区与支持渠道  
-- [博客]([])：容器使用指南、教程及技术观点  
+- [博客] ：容器使用指南、教程及技术观点  
 - []()：实时社区支持与团队交流  
-- [Discourse]([])：社区论坛，可发布问题与讨论  
-- [GitHub]([])：所有仓库源代码  
-- [Open Collective]([])：支持我们的捐赠或预算贡献平台  
+- [Discourse] ：社区论坛，可发布问题与讨论  
+- [GitHub] ：所有仓库源代码  
+- [Open Collective] ：支持我们的捐赠或预算贡献平台  
 
 
 ## LinuxServer/HomeAssistant 容器
 
-该容器基于 [Home Assistant Core]([]) 构建。Home Assistant 是一款开源家庭自动化工具，强调本地控制与隐私保护，适合运行在树莓派或本地服务器上，由全球爱好者社区支持。
+该容器基于 [Home Assistant Core]  构建。Home Assistant 是一款开源家庭自动化工具，强调本地控制与隐私保护，适合运行在树莓派或本地服务器上，由全球爱好者社区支持。
 
 
 ### 支持的架构  
@@ -81,7 +81,7 @@ Home Assistant 依赖 zeroconf/mDNS 和 UPnP 协议自动发现网络设备，**
 
 ### Ping 集成  
 
-使用 [Ping 集成]([]) 需为容器添加 `NET_RAW` 权限（配置同上）。  
+使用 [Ping 集成]  需为容器添加 `NET_RAW` 权限（配置同上）。  
 
 
 ## 使用方法  
@@ -95,7 +95,7 @@ Home Assistant 依赖 zeroconf/mDNS 和 UPnP 协议自动发现网络设备，**
 ---
 services:
   homeassistant:
-    image: lscr.io/linuxserver/homeassistant:latest
+    image: docker.xuanyuan.run/linuxserver/homeassistant:latest
     container_name: homeassistant
     network_mode: host  # 设备发现需用 host 模式
     environment:
@@ -165,9 +165,9 @@ id 用户名  # 示例输出：uid=1000(用户) gid=1000(用户) 组=1000(用户
 
 ## Docker Mods  
 
-可通过 [Docker Mods]([]) 扩展容器功能。访问以下链接查看可用 Mods：  
-- [Home Assistant 专用 Mods]([])  
-- [通用 Mods]([])  
+可通过 [Docker Mods]  扩展容器功能。访问以下链接查看可用 Mods：  
+- [Home Assistant 专用 Mods]   
+- [通用 Mods]   
 
 
 ## 支持信息  
@@ -222,7 +222,7 @@ id 用户名  # 示例输出：uid=1000(用户) gid=1000(用户) 组=1000(用户
 
 - **拉取新镜像**：  
   ```bash
-  docker pull lscr.io/linuxserver/homeassistant:latest
+  docker pull docker.xuanyuan.run/linuxserver/homeassistant:latest
   ```  
 
 - **停止并删除旧容器**：  
@@ -243,7 +243,7 @@ id 用户名  # 示例输出：uid=1000(用户) gid=1000(用户) 组=1000(用户
 
 ### 镜像更新通知  
 
-推荐使用 [Diun]([]) 接收更新通知，不建议使用自动更新工具。  
+推荐使用 [Diun]  接收更新通知，不建议使用自动更新工具。  
 
 
 ## 本地构建  
@@ -260,7 +260,7 @@ docker build \
 
 **跨架构构建**：需先注册 qemu-static：  
 ```bash
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```  
 然后指定架构 Dockerfile，例如 `-f Dockerfile.aarch64`。  
 

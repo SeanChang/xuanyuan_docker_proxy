@@ -3,7 +3,7 @@ image: apache/nifi
 description: "提供Apache NiFi的非官方二进制构建，用于数据集成、数据流自动化与管理。"
 source: https://xuanyuan.cloud/zh/r/apache/nifi
 canonical: https://xuanyuan.cloud/zh/r/apache/nifi
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/nifi" title="apache/nifi Docker 镜像中文简介、标签列表与拉取命令">apache/nifi 中文简介</a>
@@ -52,7 +52,7 @@ Apache NiFi是一个强大的数据集成工具，用于自动化和管理系统
 docker run --name nifi \
   -p 8443:8443 \
   -d \
-  apache/nifi:latest
+  docker.xuanyuan.run/apache/nifi:latest
 ```
 
 - 访问地址：`https://localhost:8443/nifi`
@@ -75,7 +75,7 @@ docker run --name nifi \
   -p 9443:9443 \
   -d \
   -e NIFI_WEB_HTTPS_PORT='9443' \
-  apache/nifi:latest
+  docker.xuanyuan.run/apache/nifi:latest
 ```
 
 #### 指定凭据
@@ -88,7 +88,7 @@ docker run --name nifi \
   -d \
   -e SINGLE_USER_CREDENTIALS_USERNAME=admin \
   -e SINGLE_USER_CREDENTIALS_PASSWORD=ctsBtRBKHRAx69EqUghvvgEvjnaLjFEB \
-  apache/nifi:latest
+  docker.xuanyuan.run/apache/nifi:latest
 ```
 
 > **注意**：若密码长度不足12字符，NiFi将自动生成随机凭据。支持的环境变量可参考容器内`secure.sh`和`start.sh`脚本。
@@ -191,7 +191,7 @@ docker run --name nifi \
 
 ```bash
 # 启动容器
-docker run -d --name nifi apache/nifi
+docker run -d --name nifi docker.xuanyuan.run/apache/nifi
 
 # 执行Toolkit命令
 docker exec -ti nifi nifi-toolkit-current/bin/cli.sh nifi current-user

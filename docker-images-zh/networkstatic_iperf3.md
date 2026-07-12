@@ -3,7 +3,7 @@ image: networkstatic/iperf3
 description: "这是一个用于网络性能和带宽测试的IPerf3 Docker镜像构建项目，旨在帮助用户通过容器化方式快速部署IPerf3工具，便捷地进行网络吞吐量、延迟、抖动等关键性能指标的测量与评估，适用于服务器、网络设备及通信链路的性能测试场景，提供一致、高效的测试环境，简化网络性能分析流程。"
 source: https://xuanyuan.cloud/zh/r/networkstatic/iperf3
 canonical: https://xuanyuan.cloud/zh/r/networkstatic/iperf3
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/networkstatic/iperf3" title="networkstatic/iperf3 Docker 镜像中文简介、标签列表与拉取命令">networkstatic/iperf3 中文简介</a>
@@ -14,14 +14,14 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 项目资源
-- 项目二进制文件及源代码：[[]]([])  
-- Dockerfile的GitHub仓库：[github.com/nerdalert/iperf3]([])  
+- 项目二进制文件及源代码：[[]]   
+- Dockerfile的GitHub仓库：[github.com/nerdalert/iperf3]   
 
 
 ## 运行Docker镜像查看Iperf选项
 通过以下命令可查看iperf3的所有可用选项：  
 ```bash
-docker run -it --rm -p 5201:5201 networkstatic/iperf3 --help
+docker run -it --rm -p 5201:5201 docker.xuanyuan.run/networkstatic/iperf3 --help
 ```
 
 
@@ -32,7 +32,7 @@ docker run -it --rm -p 5201:5201 networkstatic/iperf3 --help
 ### Iperf3服务器端
 启动一个监听服务（默认端口5201），并命名容器为“iperf3-server”：  
 ```bash
-docker run -it --rm --name=iperf3-server -p 5201:5201 networkstatic/iperf3 -s
+docker run -it --rm --name=iperf3-server -p 5201:5201 docker.xuanyuan.run/networkstatic/iperf3 -s
 ```  
 **参数说明**：  
 - `--rm`：测试结束后自动删除容器，避免残留  
@@ -62,7 +62,7 @@ docker inspect --format "{{ .NetworkSettings.IPAddress }}" iperf3-server
 #### 步骤2：运行客户端测试  
 启动客户端容器，连接服务器IP进行带宽测试：  
 ```bash
-docker run -it --rm networkstatic/iperf3 -c 172.17.0.163
+docker run -it --rm docker.xuanyuan.run/networkstatic/iperf3 -c 172.17.0.163
 ```  
 **参数说明**：  
 - `-c`：以客户端模式运行，后接服务器IP  
@@ -87,7 +87,7 @@ iperf Done.
 ## 高级命令示例（一行测试）  
 若需简化操作，可通过嵌套命令直接获取服务器IP并运行测试（适用于刚启动服务器的场景）：  
 ```bash
-docker run -it --rm networkstatic/iperf3 -c $(docker inspect --format "{{ .NetworkSettings.IPAddress }}" $(docker ps -ql))
+docker run -it --rm docker.xuanyuan.run/networkstatic/iperf3 -c $(docker inspect --format "{{ .NetworkSettings.IPAddress }}" $(docker ps -ql))
 ```  
 **命令逻辑**：  
 - `docker ps -ql`：返回最后启动的容器ID（即刚启动的服务器容器）  
@@ -97,4 +97,4 @@ docker run -it --rm networkstatic/iperf3 -c $(docker inspect --format "{{ .Netwo
 
 ## 致谢与相关工具  
 - 感谢ESNET团队重新开发iperf3，提供了优秀的网络测试工具。  
-- 如需将测试结果图形化展示，可参考工具：[nerdalert/cloud-bandwidth]([])
+- 如需将测试结果图形化展示，可参考工具：[nerdalert/cloud-bandwidth]

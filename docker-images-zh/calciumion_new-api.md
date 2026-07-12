@@ -3,7 +3,7 @@ image: calciumion/new-api
 description: "New API官方镜像是一款专注于AI模型接口管理与分发的系统，它集成了接口全生命周期管理功能，支持模型注册、版本控制、权限配置及实时监控，同时提供高效的分发机制，可快速将AI模型接口部署至各类应用场景，帮助开发者简化接口对接流程、提升管理效率，并保障接口调用的稳定性与安全性，为AI模型的落地应用提供一站式解决方案。"
 source: https://xuanyuan.cloud/zh/r/calciumion/new-api
 canonical: https://xuanyuan.cloud/zh/r/calciumion/new-api
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/calciumion/new-api" title="calciumion/new-api Docker 镜像中文简介、标签列表与拉取命令">calciumion/new-api 中文简介</a>
@@ -34,10 +34,10 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 快速上手（以Docker为例）  
-1. **获取镜像**：从官方仓库拉取镜像（`docker pull newapi/interface-manager:latest`）。  
+1. **获取镜像**：从官方仓库拉取镜像（`docker pull docker.xuanyuan.run/newapi/interface-manager:latest`）。  
 2. **启动服务**：运行容器并挂载配置文件（如数据库连接信息、初始管理员账号），示例命令：  
    ```bash  
-   docker run -d -p 8080:8080 -v ./config:/app/config newapi/interface-manager:latest  
+   docker run -d -p 8080:8080 -v ./config:/app/config docker.xuanyuan.run/newapi/interface-manager:latest
    ```  
 3. **配置接口**：访问 `[] 进入管理后台，在“接口管理”页面添加AI模型服务地址（如 `[]  
 4. **分配权限**：在“用户管理”中创建团队账号，关联接口权限与调用额度，团队成员即可通过分配的API密钥调用接口。  

@@ -3,7 +3,7 @@ image: linuxserver/bookstack
 description: "linuxserver/bookstack 是一款开源知识管理工具，帮助用户构建结构化知识库，支持 Markdown 编辑、富文本格式、多层级章节管理、全文搜索、版本历史追踪及思维导图可视化。界面简洁直观，支持团队协作与权限管理，通过 Docker 快速部署，适用于个人笔记整理、项目文档管理、企业知识库搭建等场景，帮助高效沉淀和共享信息，提升团队协作效率。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/bookstack
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/bookstack
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/bookstack" title="linuxserver/bookstack Docker 镜像中文简介、标签列表与拉取命令">linuxserver/bookstack 中文简介</a>
@@ -23,7 +23,7 @@ LinuxServer.io 团队专注于提供高质量容器，主要特点包括：
 
 
 ## BookStack 容器概述  
-[BookStack]([]) 是一款免费开源的 Wiki 工具，专为创建美观文档设计。它提供直观的 WYSIWYG 编辑器，同时支持 Markdown，帮助团队轻松构建详细实用的文档。BookStack 基于 SQL 数据库，致力于让文档编写从负担变为享受。  
+[BookStack]  是一款免费开源的 Wiki 工具，专为创建美观文档设计。它提供直观的 WYSIWYG 编辑器，同时支持 Markdown，帮助团队轻松构建详细实用的文档。BookStack 基于 SQL 数据库，致力于让文档编写从负担变为享受。  
 
 
 ## 支持的架构  
@@ -41,7 +41,7 @@ LinuxServer.io 团队专注于提供高质量容器，主要特点包括：
 默认用户名：`[邮箱已删除]`，密码：`password`。访问地址：`http://<主机IP>:6875`。  
 
 ### 依赖说明  
-需搭配 MariaDB 数据库（可使用 [LinuxServer MariaDB 容器]([])）。  
+需搭配 MariaDB 数据库（可使用 [LinuxServer MariaDB 容器] ）。  
 
 ### 反向代理配置  
 若通过子路径反向代理（如 SWAG 或 Traefik），**必须**设置 `APP_URL` 环境变量为外部域名，否则无法正常使用。  
@@ -67,13 +67,13 @@ docker exec -it bookstack php /app/www/artisan bookstack:update-url ${旧URL} ${
 ```  
 
 ### 高级配置（自定义 .env 文件）  
-如需配置邮件、LDAP 等高级功能，可通过环境变量或自定义 `.env` 文件实现。容器会自动在 `/config/www/.env` 生成示例配置文件，可参考 [BookStack 官方文档]([]) 修改。  
+如需配置邮件、LDAP 等高级功能，可通过环境变量或自定义 `.env` 文件实现。容器会自动在 `/config/www/.env` 生成示例配置文件，可参考 [BookStack 官方文档]  修改。  
 
 
 ## 只读运行  
 本镜像支持只读容器文件系统，需注意：  
 - 必须将 `/tmp` 挂载为 tmpfs  
-- 详情参考 [LinuxServer 只读文档]([])  
+- 详情参考 [LinuxServer 只读文档]   
 
 
 ## 使用方法  
@@ -87,7 +87,7 @@ docker exec -it bookstack php /app/www/artisan bookstack:update-url ${旧URL} ${
 ---  
 services:  
   bookstack:  
-    image: lscr.io/linuxserver/bookstack:latest  
+    image: docker.xuanyuan.run/linuxserver/bookstack:latest  
     container_name: bookstack  
     environment:  
       - PUID=1000               # 用户ID，详见下方说明  
@@ -146,7 +146,7 @@ docker run -d \
 | `-e DB_USERNAME=`     | 数据库用户名                                                            |  
 | `-e DB_PASSWORD=`     | 数据库密码（至少4位，特殊字符需转义）                                    |  
 | `-e DB_DATABASE=`     | 数据库名                                                                |  
-| `-e QUEUE_CONNECTION=`| 可选，设为 database 启用异步操作（参考 [官方文档]([])） |  
+| `-e QUEUE_CONNECTION=`| 可选，设为 database 启用异步操作（参考 [官方文档] ） |  
 | `-v /config`          | 持久化配置目录                                                          |  
 | `--read-only=true`    | 启用只读文件系统（需配合 tmpfs 挂载）                                   |  
 
@@ -172,7 +172,7 @@ id your_user
 
 
 ## Docker Mods  
-可通过 Docker Mods 扩展容器功能，支持 BookStack 的 Mods 及通用 Mods 列表见 [LinuxServer Mods 页面]([])。  
+可通过 Docker Mods 扩展容器功能，支持 BookStack 的 Mods 及通用 Mods 列表见 [LinuxServer Mods 页面] 。  
 
 
 ## 支持信息  
@@ -222,7 +222,7 @@ id your_user
 ### 通过 Docker Run  
 - 更新镜像：  
   ```bash  
-  docker pull lscr.io/linuxserver/bookstack:latest  
+  docker pull docker.xuanyuan.run/linuxserver/bookstack:latest  
   ```  
 - 停止并删除旧容器：  
   ```bash  
@@ -237,7 +237,7 @@ id your_user
 
 
 ### 镜像更新通知  
-推荐使用 [Diun]([]) 接收更新通知，不建议使用自动更新工具。  
+推荐使用 [Diun]  接收更新通知，不建议使用自动更新工具。  
 
 
 ## 本地构建  
@@ -252,7 +252,7 @@ docker build \
 ```  
 跨架构构建（如 x86_64 构建 ARM 镜像）需先运行：  
 ```bash  
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset  
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```  
 然后指定架构 Dockerfile（如 `-f Dockerfile.aarch64`）。  
 
@@ -297,8 +297,8 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 
 
 ## 社区资源  
-- [博客]([])：容器使用指南、教程及观点  
+- [博客] ：容器使用指南、教程及观点  
 - []()：实时支持与社区交流  
-- [论坛]([])：社区讨论  
-- [GitHub]([])：源码仓库  
-- [Open Collective]([])：支持我们的开发
+- [论坛] ：社区讨论  
+- [GitHub] ：源码仓库  
+- [Open Collective] ：支持我们的开发

@@ -3,7 +3,7 @@ image: linuxserver/bazarr
 description: "Bazarr Docker镜像，用于自动下载、管理媒体文件字幕，支持多语言，可与媒体服务器集成，简化字幕获取与维护流程。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/bazarr
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/bazarr
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/bazarr" title="linuxserver/bazarr Docker 镜像中文简介、标签列表与拉取命令">linuxserver/bazarr 中文简介</a>
@@ -79,7 +79,7 @@ LinuxServer.io 团队提供的此容器镜像具有以下特点：
 ---
 services:
   bazarr:
-    image: lscr.io/linuxserver/bazarr:latest
+    image: docker.xuanyuan.run/linuxserver/bazarr:latest
     container_name: bazarr
     environment:
       - PUID=1000
@@ -234,7 +234,7 @@ docker image prune
 #### 更新镜像：
 
 ```bash
-docker pull lscr.io/linuxserver/bazarr:latest
+docker pull docker.xuanyuan.run/linuxserver/bazarr:latest
 ```
 
 #### 停止运行中的容器：
@@ -278,7 +278,7 @@ docker build \
 可使用 `lscr.io/linuxserver/qemu-static` 在 x86_64 硬件上构建 ARM 变体，反之亦然：
 
 ```bash
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```
 
 注册后，可使用 `-f Dockerfile.aarch64` 指定要使用的 Dockerfile。

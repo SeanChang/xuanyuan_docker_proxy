@@ -3,7 +3,7 @@ image: library/django
 description: "该镜像已官方弃用，推荐使用标准`python`镜像替代，2016年12月31日后不再更新。其原价值为预安装mysql-client、postgresql-client和sqlite3，用于Django框架，现可通过自定义Dockerfile实现类似功能。"
 source: https://xuanyuan.cloud/zh/r/library/django
 canonical: https://xuanyuan.cloud/zh/r/library/django
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/django" title="library/django Docker 镜像中文简介、标签列表与拉取命令">library/django 中文简介</a>
@@ -19,7 +19,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 例如，以下`Dockerfile`可作为使用PostgreSQL的Django项目的良好起点：
 
 ```dockerfile
-FROM python:3.4
+FROM docker.xuanyuan.run/python:3.4
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
@@ -80,7 +80,7 @@ Django 是一个免费开源的 Web 应用框架，使用 Python 编写，遵循
 ## 在 Django 应用项目中创建`Dockerfile`
 
 ```dockerfile
-FROM django:onbuild
+FROM docker.xuanyuan.run/django:onbuild
 ```
 
 将此文件放在应用根目录，与`requirements.txt`同级。

@@ -3,7 +3,7 @@ image: hurlenko/filebrowser
 description: "基于Web的文件管理器。镜像体积小。支持arm、arm64和amd64架构。"
 source: https://xuanyuan.cloud/zh/r/hurlenko/filebrowser
 canonical: https://xuanyuan.cloud/zh/r/hurlenko/filebrowser
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hurlenko/filebrowser" title="hurlenko/filebrowser Docker 镜像中文简介、标签列表与拉取命令">hurlenko/filebrowser 中文简介</a>
@@ -52,7 +52,7 @@ filebrowser提供了一个基于Web的文件管理界面，可用于上传、删
 ### Docker
 
 ```bash
-docker run -d --name filebrowser -p 80:8080 hurlenko/filebrowser
+docker run -d --name filebrowser -p 80:8080 docker.xuanyuan.run/hurlenko/filebrowser
 ```
 
 以当前用户身份运行并映射自定义卷位置：
@@ -65,7 +65,7 @@ docker run -d \
     -v /数据目录:/data \
     -v /配置目录:/config \
     -e FB_BASEURL=/filebrowser \
-    hurlenko/filebrowser
+    docker.xuanyuan.run/hurlenko/filebrowser
 ```
 
 ### docker-compose
@@ -77,7 +77,7 @@ version: "3"
 
 services:
   filebrowser:
-    image: hurlenko/filebrowser
+    image: docker.xuanyuan.run/hurlenko/filebrowser
     user: "${UID}:${GID}"
     ports:
       - 443:8080
@@ -144,7 +144,7 @@ docker run \
     -v /路径/音乐:/data/music \
     -v /路径/电影:/data/movies \
     -v /路径/照片:/data/photos \
-    hurlenko/filebrowser
+    docker.xuanyuan.run/hurlenko/filebrowser
 ```
 
 ## 构建镜像

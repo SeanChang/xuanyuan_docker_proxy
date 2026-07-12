@@ -3,7 +3,7 @@ image: phpipam/phpipam-www
 description: "phpIPAM是一款基于Web的开源IP地址管理应用程序（IPAM），其源代码开放且免费使用，用户可通过浏览器便捷访问，主要功能包括IP地址的分配、跟踪、规划与监控，能有效记录地址使用状态、关联设备信息、预防地址冲突，适用于企业、机构等各类网络环境的IP资源管理需求。"
 source: https://xuanyuan.cloud/zh/r/phpipam/phpipam-www
 canonical: https://xuanyuan.cloud/zh/r/phpipam/phpipam-www
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/phpipam/phpipam-www" title="phpipam/phpipam-www Docker 镜像中文简介、标签列表与拉取命令">phpipam/phpipam-www 中文简介</a>
@@ -16,13 +16,13 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 适用人群  
 phpIPAM 的典型用户（网络管理员）通常对 LAMP 栈经验有限，这些 Docker 镜像提供了更简单的方式来创建和维护可用的 phpIPAM 环境。考虑到目标用户，设计上优先考虑简洁性而非复杂性，因此不支持部分高级用例。  
 
-原生 SSL 支持可通过 DockerHub 上的反向 HTTPS 代理镜像实现（如 HAProxy，详见下文示例）。如需高级用例，可参考官方文档 [[]]([]) 在虚拟机中手动安装。
+原生 SSL 支持可通过 DockerHub 上的反向 HTTPS 代理镜像实现（如 HAProxy，详见下文示例）。如需高级用例，可参考官方文档 [[]]  在虚拟机中手动安装。
 
 
 ## 源码与问题反馈  
-- **Dockerfile 构建源码**：[[]]([])  
+- **Dockerfile 构建源码**：[[]]   
 - **容器相关问题/PR**：同上仓库  
-- **phpIPAM 应用本身问题/PR**：[[]]([])  
+- **phpIPAM 应用本身问题/PR**：[[]]   
 
 
 ## 容器镜像  
@@ -66,7 +66,7 @@ version: '3'
 
 services:
   phpipam-web:
-    image: phpipam/phpipam-www:latest
+    image: docker.xuanyuan.run/phpipam/phpipam-www:latest
     ports:
       - "80:80"  # Web 端口映射
     environment:
@@ -82,7 +82,7 @@ services:
       - phpipam-mariadb  # 依赖数据库容器
 
   phpipam-cron:
-    image: phpipam/phpipam-cron:latest
+    image: docker.xuanyuan.run/phpipam/phpipam-cron:latest
     environment:
       - TZ=Europe/London
       - IPAM_DATABASE_HOST=phpipam-mariadb
@@ -95,7 +95,7 @@ services:
       - phpipam-mariadb
 
   phpipam-mariadb:
-    image: mariadb:latest  # 数据库容器
+    image: docker.xuanyuan.run/mariadb:latest  # 数据库容器
     environment:
       - MYSQL_ROOT_PASSWORD=my_secret_mysql_root_pass  # 数据库 root 密码
     restart: unless-stopped
@@ -117,7 +117,7 @@ version: '3'
 
 services:
   phpipam-web:
-    image: phpipam/phpipam-www:latest
+    image: docker.xuanyuan.run/phpipam/phpipam-www:latest
     ports:
       - "80:80"
     environment:
@@ -132,7 +132,7 @@ services:
       - phpipam-ca:/usr/local/share/ca-certificates:ro
 
   phpipam-cron:
-    image: phpipam/phpipam-cron:latest
+    image: docker.xuanyuan.run/phpipam/phpipam-cron:latest
     environment:
         - TZ=Europe/London
         - IPAM_DATABASE_HOST=my.database.server
@@ -200,7 +200,7 @@ volumes:
 ```bash
 docker run -d -p 443:443 -p 80:80 --name HAProxy --restart always \
   -v haproxy_ssl:/etc/ssl/certs -v haproxy_cfg:/usr/local/etc/haproxy \
-  haproxy:latest
+  docker.xuanyuan.run/haproxy:latest
 ```  
 
 ### 2. 配置 HAProxy  

@@ -3,7 +3,7 @@ image: rustdesk/rustdesk-server-s6
 description: "基于s6-overlay的RustDesk Server镜像专为容器化部署打造，集成hbbs和hbbr核心服务，兼容Docker与Podman环境，具备自动重启、进程监控及服务自愈能力，配置流程简化，支持安全的P2P远程桌面连接，无需依赖第三方中转服务器，适用于企业或个人搭建私有化远程桌面服务，可有效保障数据传输隐私与连接稳定性，轻量级架构提升部署效率与资源利用率。"
 source: https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6
 canonical: https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rustdesk/rustdesk-server-s6" title="rustdesk/rustdesk-server-s6 Docker 镜像中文简介、标签列表与拉取命令">rustdesk/rustdesk-server-s6 中文简介</a>
@@ -23,7 +23,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ```bash
 docker run -d --name rustdesk-server \
   -p 21115:21115 -p 21116:21116 -p 21116:21116/udp -p 21117:21117 \
-  rustdesk/rustdesk-server-s6:latest
+  docker.xuanyuan.run/rustdesk/rustdesk-server-s6:latest
 ```  
 
 
@@ -37,7 +37,7 @@ mkdir -p /path/to/rustdesk-data
 docker run -d --name rustdesk-server \
   -p 21115:21115 -p 21116:21116 -p 21116:21116/udp -p 21117:21117 \
   -v /path/to/rustdesk-data:/data \
-  rustdesk/rustdesk-server-s6:latest
+  docker.xuanyuan.run/rustdesk/rustdesk-server-s6:latest
 ```  
 数据卷`/data`会存放生成的密钥文件（`id_ed25519`和`id_ed25519.pub`）及服务日志。  
 
@@ -63,7 +63,7 @@ docker run -d --name rustdesk-server \
   -e RUSTDESK_SERVER_KEY="my_secure_server_key_123" \
   -e REG_PORT=21119 \
   -e RELAY_PORT=21118 \
-  rustdesk/rustdesk-server-s6:latest
+  docker.xuanyuan.run/rustdesk/rustdesk-server-s6:latest
 ```  
 
 

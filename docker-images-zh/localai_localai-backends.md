@@ -3,7 +3,7 @@ image: localai/localai-backends
 description: "为LocalAI提供额外后端支持的Docker镜像，用于扩展其功能与兼容性。"
 source: https://xuanyuan.cloud/zh/r/localai/localai-backends
 canonical: https://xuanyuan.cloud/zh/r/localai/localai-backends
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/localai/localai-backends" title="localai/localai-backends Docker 镜像中文简介、标签列表与拉取命令">localai/localai-backends 中文简介</a>
@@ -67,7 +67,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 从 Docker Hub 拉取最新版本镜像：
 ```bash
-docker pull localai/extra-backends:latest
+docker pull docker.xuanyuan.run/localai/extra-backends:latest
 ```
 
 如需指定版本，可替换 `latest` 为具体版本号（如 `v2.1.0`）。
@@ -102,7 +102,7 @@ version: '3.8'
 
 services:
   localai:
-    image: localai/localai:latest
+    image: docker.xuanyuan.run/localai/localai:latest
     ports:
       - "8080:8080"
     environment:
@@ -114,7 +114,7 @@ services:
       - localai-net
 
   extra-backends:
-    image: localai/extra-backends:latest
+    image: docker.xuanyuan.run/localai/extra-backends:latest
     ports:
       - "8081:8081"
     environment:

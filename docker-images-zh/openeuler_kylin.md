@@ -3,7 +3,7 @@ image: openeuler/kylin
 description: "官方Kylin Docker镜像，基于openEuler构建，提供高并发、高性能的智能OLAP引擎，支持低成本、高效的数据分析体验，适用于各类数据查询与分析场景。"
 source: https://xuanyuan.cloud/zh/r/openeuler/kylin
 canonical: https://xuanyuan.cloud/zh/r/openeuler/kylin
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openeuler/kylin" title="openeuler/kylin Docker 镜像中文简介、标签列表与拉取命令">openeuler/kylin 中文简介</a>
@@ -47,7 +47,7 @@ docker run -d \
     -p 8032:8032 \
     -p 8042:8042 \
     -p 2181:2181 \
-    openeuler/kylin:latest
+    docker.xuanyuan.run/openeuler/kylin:latest
 ```
 
 ## 查看启动日志

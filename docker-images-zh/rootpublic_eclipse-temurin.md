@@ -3,7 +3,7 @@ image: rootpublic/eclipse-temurin
 description: "Root精选eclipse-temurin镜像是基于官方eclipse-temurin的安全、轻量且便捷的容器化应用起点，具有减小镜像大小、最小化攻击面和提升初始安全态势的特点。"
 source: https://xuanyuan.cloud/zh/r/rootpublic/eclipse-temurin
 canonical: https://xuanyuan.cloud/zh/r/rootpublic/eclipse-temurin
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rootpublic/eclipse-temurin" title="rootpublic/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">rootpublic/eclipse-temurin 中文简介</a>
@@ -38,7 +38,7 @@ Root精选镜像具备以下核心优势：
 #### 基本运行命令
 运行一个简单的Java应用（假设当前目录下有编译好的`app.jar`）：
 ```bash
-docker run -it --rm -v $(pwd):/app -w /app root-curated/eclipse-temurin java -jar app.jar
+docker run -it --rm -v $(pwd):/app -w /app docker.xuanyuan.run/root-curated/eclipse-temurin java -jar app.jar
 ```
 
 #### Docker Compose配置示例
@@ -47,7 +47,7 @@ docker run -it --rm -v $(pwd):/app -w /app root-curated/eclipse-temurin java -ja
 version: '3.8'
 services:
   java-application:
-    image: root-curated/eclipse-temurin
+    image: docker.xuanyuan.run/root-curated/eclipse-temurin
     volumes:
       - ./application:/app
     working_dir: /app

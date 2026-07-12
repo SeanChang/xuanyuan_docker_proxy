@@ -3,7 +3,7 @@ image: oceanbase/seekdb
 description: "seekdb Docker镜像用于快速搭建SeekDB测试环境，可在Docker Hub、quay.io及ghcr.io获取。注意：仅适用于测试，不建议生产环境；MacOS和Intel芯片上Docker版本>4.9.0存在已知问题，可通过指定链接下载兼容版本。"
 source: https://xuanyuan.cloud/zh/r/oceanbase/seekdb
 canonical: https://xuanyuan.cloud/zh/r/oceanbase/seekdb
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/oceanbase/seekdb" title="oceanbase/seekdb Docker 镜像中文简介、标签列表与拉取命令">oceanbase/seekdb 中文简介</a>
@@ -31,11 +31,11 @@ exported_at: 2026-06-02T12:26:10.133Z
 启动SeekDB实例，请使用以下命令：
 
 ```bash
-docker run -d -p 2881:2881 -p 2886:2886 oceanbase/seekdb
+docker run -d -p 2881:2881 -p 2886:2886 docker.xuanyuan.run/oceanbase/seekdb
 
 # 如需在启动后执行初始化SQL脚本，需挂载包含初始化脚本的目录，并通过环境变量INIT_SCRIPTS_PATH指定容器内的目录。
 # 请勿在SQL脚本中修改root用户密码。如需修改root用户密码，请使用环境变量ROOT_PASSWORD。
-docker run -d -p 2881:2881 -p 2886:2886 -v {init_sql_folder_path}:/root/boot/init.d -e INIT_SCRIPTS_PATH=/root/boot/init.d oceanbase/seekdb
+docker run -d -p 2881:2881 -p 2886:2886 -v {init_sql_folder_path}:/root/boot/init.d -e INIT_SCRIPTS_PATH=/root/boot/init.d docker.xuanyuan.run/oceanbase/seekdb
 ```
 
 ## 支持的环境变量
@@ -70,7 +70,7 @@ log_disk_size=2G
 启动命令示例如下：
 ```
 # 注意：如果决定使用配置文件，请不要指定与资源相关的环境变量。
-docker run -d -p 2881:2881 -p 2886:2886 -v {config_file}:/etc/oceanbase/seekdb.cnf oceanbase/seekdb
+docker run -d -p 2881:2881 -p 2886:2886 -v {config_file}:/etc/oceanbase/seekdb.cnf docker.xuanyuan.run/oceanbase/seekdb
 ```
 
 ## 数据持久化
@@ -79,7 +79,7 @@ SeekDB部署在`/var/lib/oceanbase`目录。如需在主机上持久化数据，
 
 ```
 mkdir -p seekdb
-docker run -d -p 2881:2881 -p 2886:2886 -v $PWD/seekdb:/var/lib/oceanbase --name seekdb oceanbase/seekdb
+docker run -d -p 2881:2881 -p 2886:2886 -v $PWD/seekdb:/var/lib/oceanbase --name seekdb docker.xuanyuan.run/oceanbase/seekdb
 ```
 
 ## 连接SeekDB实例

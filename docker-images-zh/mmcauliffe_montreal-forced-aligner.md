@@ -3,7 +3,7 @@ image: mmcauliffe/montreal-forced-aligner
 description: "蒙特利尔强制对齐器(Montreal Forced Aligner)的官方Docker镜像，用于音频与文本的强制对齐，生成音素级时间标记，支持多语言语音处理与语音数据预处理。"
 source: https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner
 canonical: https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mmcauliffe/montreal-forced-aligner" title="mmcauliffe/montreal-forced-aligner Docker 镜像中文简介、标签列表与拉取命令">mmcauliffe/montreal-forced-aligner 中文简介</a>
@@ -37,7 +37,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ### 镜像拉取
 ```bash
-docker pull montrealcorpustools/montreal-forced-aligner:latest
+docker pull docker.xuanyuan.run/montrealcorpustools/montreal-forced-aligner:latest
 ```
 
 ### 基础对齐命令示例
@@ -45,7 +45,7 @@ docker pull montrealcorpustools/montreal-forced-aligner:latest
 ```bash
 docker run -it --rm \
   -v $(pwd)/mfa_data:/data \
-  montrealcorpustools/montreal-forced-aligner \
+  docker.xuanyuan.run/montrealcorpustools/montreal-forced-aligner \
   mfa align \
     /data/audio_dir \          # 容器内音频文件目录（对应本地./mfa_data/audio_dir）
     /data/transcripts.txt \    # 容器内文本转录本文件（对应本地./mfa_data/transcripts.txt）

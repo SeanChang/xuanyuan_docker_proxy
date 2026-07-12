@@ -3,7 +3,7 @@ image: dr34m/openclaw
 description: "每10分钟自动从官方仓库ghcr.io/openclaw/openclaw同步的Docker镜像，通过Github Action实现安全透明同步，无恶意软件风险。"
 source: https://xuanyuan.cloud/zh/r/dr34m/openclaw
 canonical: https://xuanyuan.cloud/zh/r/dr34m/openclaw
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dr34m/openclaw" title="dr34m/openclaw Docker 镜像中文简介、标签列表与拉取命令">dr34m/openclaw 中文简介</a>
@@ -34,13 +34,13 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ```sh
 # 拉取最新版本
-docker pull dr34m/openclaw:latest
+docker pull docker.xuanyuan.run/dr34m/openclaw:latest
 
 # 拉取main分支版本
-docker pull dr34m/openclaw:main
+docker pull docker.xuanyuan.run/dr34m/openclaw:main
 
 # 拉取main分支的精简版本
-docker pull dr34m/openclaw:main-slim
+docker pull docker.xuanyuan.run/dr34m/openclaw:main-slim
 ```
 
 ### 镜像使用

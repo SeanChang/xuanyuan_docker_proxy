@@ -3,7 +3,7 @@ image: nextcloud/all-in-one
 description: "Nextcloud官方安装方式——Nextcloud一体化方案（AIO），作为一款开源文件同步与共享解决方案的官方部署工具，不仅提供便捷的部署流程，还简化了后续的维护工作，帮助用户轻松搭建和管理属于自己的私有云存储系统，无需复杂的技术配置即可快速上手使用，有效降低了私有云部署的技术门槛，让个人及企业用户都能高效拥有安全可控的文件管理平台。"
 source: https://xuanyuan.cloud/zh/r/nextcloud/all-in-one
 canonical: https://xuanyuan.cloud/zh/r/nextcloud/all-in-one
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nextcloud/all-in-one" title="nextcloud/all-in-one Docker 镜像中文简介、标签列表与拉取命令">nextcloud/all-in-one 中文简介</a>
@@ -23,25 +23,25 @@ Nextcloud All-in-One（AIO）是官方推荐的Nextcloud安装方式，提供一
 - Nextcloud Office（可选）  
 - Nextcloud Talk 高性能后端及TURN服务器（可选）  
 - Nextcloud Talk 录制服务器（可选）  
-- 备份方案（可选，基于 [BorgBackup]([])）  
+- 备份方案（可选，基于 [BorgBackup] ）  
 - Imaginary（可选，用于预览heic、heif、illustrator、pdf、svg、tiff和webp格式文件）  
 - ClamAV（可选，Nextcloud防病毒后端）  
 - 全文搜索（可选）  
 - 白板功能（可选）  
-- Docker Socket Proxy（可选，用于 [Nextcloud App API]([])）  
-- [社区容器]([])  
+- Docker Socket Proxy（可选，用于 [Nextcloud App API] ）  
+- [社区容器]   
 
 
 ## 截图  
 | 首次设置界面 | 安装后界面 |  
 |---|---|  
-| ![image]([]) | ![image]([]) |  
+| ![image]  | ![image]  |  
 
 
 ## 使用方法  
 
 ### 适用场景  
-以下步骤适用于**无前置Web服务器/反向代理（如Apache、Nginx等）** 的Linux环境。若需在Web服务器/反向代理后运行AIO，详见 [反向代理文档]([])。其他系统参考：macOS 见 [此文档](#how-to-run-aio-on-macos)、Windows 见 [此文档](#how-to-run-aio-on-windows)、Synology 见 [此文档](#how-to-run-aio-on-synology-dsm)。  
+以下步骤适用于**无前置Web服务器/反向代理（如Apache、Nginx等）** 的Linux环境。若需在Web服务器/反向代理后运行AIO，详见 [反向代理文档] 。其他系统参考：macOS 见 [此文档](#how-to-run-aio-on-macos)、Windows 见 [此文档](#how-to-run-aio-on-windows)、Synology 见 [此文档](#how-to-run-aio-on-synology-dsm)。  
 
 
 ### 安装步骤  
@@ -54,7 +54,7 @@ curl -fsSL [] | sudo sh
 
 
 #### 2. （可选）启用IPv6支持  
-如需IPv6，按 [此文档]([]) 配置。  
+如需IPv6，按 [此文档]  配置。  
 
 
 #### 3. 启动容器  
@@ -72,7 +72,7 @@ sudo docker run \
 nextcloud/all-in-one:latest  
 ```  
 
-> **注意**：默认数据存储在Docker卷中，如需自定义数据目录位置，参考 [调整数据目录文档]([])。  
+> **注意**：默认数据存储在Docker卷中，如需自定义数据目录位置，参考 [调整数据目录文档] 。  
 
 
 #### 4. 访问管理界面  
@@ -88,4 +88,4 @@ nextcloud/all-in-one:latest
 
 
 ## FAQ  
-详见 [官方FAQ]([])
+详见 [官方FAQ]

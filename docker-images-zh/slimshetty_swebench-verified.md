@@ -3,7 +3,7 @@ image: slimshetty/swebench-verified
 description: "slimshetty/swebench-verified：专为 SWE-Bench Verified 基准提供的预配置 Docker 环境，由 R2E-Gym 项目核心贡献者发布；封装基准数据集与测试工具，支持 AI 编程助手性能验证、基准工具开发与实验复现，避免手动搭建依赖，确保可复现性。"
 source: https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified
 canonical: https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/slimshetty/swebench-verified" title="slimshetty/swebench-verified Docker 镜像中文简介、标签列表与拉取命令">slimshetty/swebench-verified 中文简介</a>

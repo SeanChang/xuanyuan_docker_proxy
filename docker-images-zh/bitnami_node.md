@@ -3,7 +3,7 @@ image: bitnami/node
 description: "Bitnami 提供的 Node.js 安全镜像，基于 Photon Linux 构建，具有强化安全特性、最小漏洞、合规支持和供应链安全保障，适用于快速部署安全可靠的 Node.js 应用。"
 source: https://xuanyuan.cloud/zh/r/bitnami/node
 canonical: https://xuanyuan.cloud/zh/r/bitnami/node
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/node" title="bitnami/node Docker 镜像中文简介、标签列表与拉取命令">bitnami/node 中文简介</a>
@@ -22,7 +22,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 快速使用 (TL;DR)
 
 ```console
-docker run -it --name node bitnami/node:latest
+docker run -it --name node docker.xuanyuan.run/bitnami/node:latest
 ```
 
 这是由 Bitnami 构建和维护的经过强化的最小 CVE 镜像。Bitnami 安全镜像基于云优化、安全强化的企业级 [Photon Linux 操作系统](https://vmware.github.io/photon/)。选择 BSI 镜像的理由：
@@ -49,13 +49,13 @@ docker run -it --name node bitnami/node:latest
 获取 Bitnami Node.js Docker 镜像的推荐方式是从 [Docker Hub 注册表](https://hub.docker.com/r/bitnami/node) 拉取预构建镜像。
 
 ```console
-docker pull bitnami/node:latest
+docker pull docker.xuanyuan.run/bitnami/node:latest
 ```
 
 要使用特定版本，您可以拉取带版本的标签。您可以在 Docker Hub 注册表中查看 [可用版本列表](https://hub.docker.com/r/bitnami/node/tags/)。
 
 ```console
-docker pull bitnami/node:[TAG]
+docker pull docker.xuanyuan.run/bitnami/node:[TAG]
 ```
 
 如果需要，您也可以通过克隆仓库、切换到包含 Dockerfile 的目录并执行 `docker build` 命令来自行构建镜像。请记住将下面示例命令中的 `APP`、`VERSION` 和 `OPERATING-SYSTEM` 路径占位符替换为正确的值。
@@ -71,7 +71,7 @@ docker build -t bitnami/APP:latest .
 默认情况下，运行此镜像会将您带入 Node.js REPL，您可以在其中交互式地测试和尝试 Node.js 功能。
 
 ```console
-docker run -it --name node bitnami/node
+docker run -it --name node docker.xuanyuan.run/bitnami/node
 ```
 
 **延伸阅读：**
@@ -85,7 +85,7 @@ docker run -it --name node bitnami/node
 Node.js 镜像的默认工作目录是 `/app`。您可以将主机上包含 Node.js 脚本的文件夹挂载到此目录，并使用 `node` 命令正常运行它。
 
 ```console
-docker run -it --name node -v /path/to/app:/app bitnami/node \
+docker run -it --name node -v /path/to/app:/app docker.xuanyuan.run/bitnami/node \
   node script.js
 ```
 
@@ -94,8 +94,8 @@ docker run -it --name node -v /path/to/app:/app bitnami/node \
 如果您的 Node.js 应用有定义应用依赖和启动脚本的 `package.json`，您可以在运行应用之前安装依赖。
 
 ```console
-docker run --rm -v /path/to/app:/app bitnami/node npm install
-docker run -it --name node  -v /path/to/app:/app bitnami/node npm start
+docker run --rm -v /path/to/app:/app docker.xuanyuan.run/bitnami/node npm install
+docker run -it --name node -v /path/to/app:/app docker.xuanyuan.run/bitnami/node npm start
 ```
 
 或者通过修改此仓库中提供的 [`docker-compose.yml`](https://github.com/bitnami/containers/blob/main/bitnami/node/docker-compose.yml) 文件：
@@ -137,7 +137,7 @@ node:
 以下是 Dockerfile 示例：
 
 ```dockerfile
-FROM bitnami/node
+FROM docker.xuanyuan.run/bitnami/node
 
 ARG NPM_TOKEN
 COPY npmrc /root/.npmrc
@@ -190,7 +190,7 @@ var server = app.listen(3000, '0.0.0.0', function () {
 要从主机访问 Web 服务器，您可以让 Docker 将主机上的随机端口映射到容器内的 `3000` 端口。
 
 ```console
-docker run -it --name node -v /path/to/app:/app -P bitnami/node node index.js
+docker run -it --name node -v /path/to/app:/app -P docker.xuanyuan.run/bitnami/node node index.js
 ```
 
 运行 `docker port` 以确定 Docker 分配的随机端口。
@@ -203,7 +203,7 @@ $ docker port node
 您也可以指定要从主机转发到容器的端口。
 
 ```console
-docker run -it --name node -p 8080:3000 -v /path/to/app:/app bitnami/node node index.js
+docker run -it --name node -p 8080:3000 -v /path/to/app:/app docker.xuanyuan.run/bitnami/node node index.js
 ```
 
 通过在浏览器中导航到 `http://localhost:8080` 访问 Web 服务器。
@@ -252,7 +252,7 @@ server {
 ```console
 docker run -it --name myapp --network app-tier \
   -v /path/to/app:/app \
-  bitnami/node node index.js
+  docker.xuanyuan.run/bitnami/node node index.js
 ```
 
 #### 步骤 4：运行 nginx 镜像
@@ -261,7 +261,7 @@ docker run -it --name myapp --network app-tier \
 docker run -it \
   -v /path/to/vhost.conf:/bitnami/nginx/conf/vhosts/yourapp.conf:ro \
   --network app-tier \
-  bitnami/nginx
+  docker.xuanyuan.run/bitnami/nginx
 ```
 
 ## 维护
@@ -273,7 +273,7 @@ Bitnami 会在 Node.js 上游版本发布后尽快提供更新版本，包括安
 #### 步骤 1：获取更新的镜像
 
 ```console
-docker pull bitnami/node:latest
+docker pull docker.xuanyuan.run/bitnami/node:latest
 ```
 
 #### 步骤 2：删除当前运行的容器
@@ -287,7 +287,7 @@ docker rm -v node
 从新镜像重新创建容器。
 
 ```console
-docker run --name node bitnami/node:latest
+docker run --name node docker.xuanyuan.run/bitnami/node:latest
 ```
 
 ## 重要变更

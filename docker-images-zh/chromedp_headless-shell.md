@@ -3,7 +3,7 @@ image: chromedp/headless-shell
 description: "Chrome无头浏览器外壳的极简容器，用于网页自动化与驱动"
 source: https://xuanyuan.cloud/zh/r/chromedp/headless-shell
 canonical: https://xuanyuan.cloud/zh/r/chromedp/headless-shell
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/chromedp/headless-shell" title="chromedp/headless-shell Docker 镜像中文简介、标签列表与拉取命令">chromedp/headless-shell 中文简介</a>
@@ -46,10 +46,10 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ```bash
 # 拉取最新版本
-docker pull chromedp/headless-shell:latest
+docker pull docker.xuanyuan.run/chromedp/headless-shell:latest
 
 # 拉取特定版本（示例版本号）
-docker pull chromedp/headless-shell:74.0.3717.1
+docker pull docker.xuanyuan.run/chromedp/headless-shell:74.0.3717.1
 ```
 
 ### 运行容器
@@ -57,7 +57,7 @@ docker pull chromedp/headless-shell:74.0.3717.1
 #### 基本运行命令
 
 ```bash
-docker run -d -p 9222:9222 --rm --name headless-shell chromedp/headless-shell
+docker run -d -p 9222:9222 --rm --name headless-shell docker.xuanyuan.run/chromedp/headless-shell
 ```
 
 #### 处理常见问题
@@ -65,7 +65,7 @@ docker run -d -p 9222:9222 --rm --name headless-shell chromedp/headless-shell
 若容器因`BUS_ADRERR`错误崩溃，需增大共享内存大小：
 
 ```bash
-docker run -d -p 9222:9222 --rm --name headless-shell --shm-size 2G chromedp/headless-shell
+docker run -d -p 9222:9222 --rm --name headless-shell --shm-size docker.xuanyuan.run/2G chromedp/headless-shell
 ```
 
 #### 参数说明
@@ -116,7 +116,7 @@ docker run -d -p 9222:9222 --rm --name headless-shell --shm-size 2G chromedp/hea
 version: '3.8'
 services:
   headless-shell:
-    image: chromedp/headless-shell:latest
+    image: docker.xuanyuan.run/chromedp/headless-shell:latest
     container_name: headless-shell
     ports:
       - "9222:9222"

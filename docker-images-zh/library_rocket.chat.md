@@ -3,7 +3,7 @@ image: library/rocket.chat
 description: "这是一套完整的开源聊天解决方案，具备实时消息传递、文件分享、音视频通话、群组管理等全面功能，支持多平台部署与高度自定义开发，依托开源社区持续优化安全性能与兼容性，适用于企业协作、社交互动、客户服务等多样化场景，为用户提供无许可限制、低成本且灵活可控的通讯工具。"
 source: https://xuanyuan.cloud/zh/r/library/rocket.chat
 canonical: https://xuanyuan.cloud/zh/r/library/rocket.chat
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/rocket.chat" title="library/rocket.chat Docker 镜像中文简介、标签列表与拉取命令">library/rocket.chat 中文简介</a>
@@ -16,51 +16,51 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 快速参考
 
 ### 维护者  
-[Rocket.Chat]([])（官方GitHub仓库）
+[Rocket.Chat] （官方GitHub仓库）
 
 
 ### 获取帮助  
 可通过以下渠道寻求支持：  
-- Docker社区Slack：[[]]([])  
-- Server Fault（服务器运维问题）：[[]]([])  
-- Unix & Linux（系统相关问题）：[[]]([])  
-- Stack Overflow（开发相关问题）：[[]]([])  
+- Docker社区Slack：[[]]   
+- Server Fault（服务器运维问题）：[[]]   
+- Unix & Linux（系统相关问题）：[[]]   
+- Stack Overflow（开发相关问题）：[[]]   
 
 
 ## 支持的标签及对应Dockerfile链接  
 
 以下是当前支持的镜像标签及其Dockerfile源码链接：  
 
-- [`7.10.0`, `7.10`, `7`, `latest`]([])  
-- [`7.9.3`, `7.9`]([])  
-- [`7.8.4`, `7.8`]([])  
-- [`7.7.8`, `7.7`]([])  
-- [`7.6.5`, `7.6`]([])  
-- [`7.5.4`, `7.5`]([])  
-- [`7.4.5`, `7.4`]([])  
+- [`7.10.0`, `7.10`, `7`, `latest`]   
+- [`7.9.3`, `7.9`]   
+- [`7.8.4`, `7.8`]   
+- [`7.7.8`, `7.7`]   
+- [`7.6.5`, `7.6`]   
+- [`7.5.4`, `7.5`]   
+- [`7.4.5`, `7.4`]   
 
 
 ## 快速参考（续）  
 
 ### 问题反馈地址  
-[[]]([])  
+[[]]   
 
 
 ### 支持的架构  
-仅支持 [`amd64`]([])（更多架构信息可参考[官方说明]([])）  
+仅支持 [`amd64`] （更多架构信息可参考[官方说明] ）  
 
 
 ### 镜像详情  
-可查看 [repo-info仓库的`repos/rocket.chat/`目录]([])（含镜像元数据、传输大小等信息，[历史记录]([])）  
+可查看 [repo-info仓库的`repos/rocket.chat/`目录] （含镜像元数据、传输大小等信息，[历史记录] ）  
 
 
 ### 镜像更新  
-- 关注 [official-images仓库的`library/rocket.chat`标签]([])  
-- 查看 [official-images仓库的`library/rocket.chat`文件]([])（[历史更新记录]([])）  
+- 关注 [official-images仓库的`library/rocket.chat`标签]   
+- 查看 [official-images仓库的`library/rocket.chat`文件] （[历史更新记录] ）  
 
 
 ### 本文档来源  
-[docs仓库的`rocket.chat/`目录]([])（[历史编辑记录]([])）  
+[docs仓库的`rocket.chat/`目录] （[历史编辑记录] ）  
 
 
 ## Rocket.Chat简介  
@@ -120,14 +120,14 @@ $ docker run --name rocketchat -p 80:3000 \
 
 ## 参考文档与社区  
 
-- **生产环境部署指南**：[[]]([])  
-- **社区帮助**：访问 [Rocket.Chat社区论坛]([]) 获取技术支持  
+- **生产环境部署指南**：[[]]   
+- **社区帮助**：访问 [Rocket.Chat社区论坛]  获取技术支持  
 
 
 ## 许可证信息  
 
-- 本镜像包含的软件许可证信息：[查看Rocket.Chat许可证]([])  
+- 本镜像包含的软件许可证信息：[查看Rocket.Chat许可证]   
 - 镜像可能包含基础系统或依赖软件（如Bash等），其许可证需用户自行确认合规性。  
-- 额外许可证信息可参考 [repo-info仓库的`rocket.chat/`目录]([])。  
+- 额外许可证信息可参考 [repo-info仓库的`rocket.chat/`目录] 。  
 
 使用前请确保遵守所有包含软件的许可证要求。

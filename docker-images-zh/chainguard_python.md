@@ -3,7 +3,7 @@ image: chainguard/python
 description: "Chainguard的低至零CVE漏洞容器镜像，用于构建、交付和运行安全软件。"
 source: https://xuanyuan.cloud/zh/r/chainguard/python
 canonical: https://xuanyuan.cloud/zh/r/chainguard/python
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/chainguard/python" title="chainguard/python Docker 镜像中文简介、标签列表与拉取命令">chainguard/python 中文简介</a>
@@ -43,7 +43,7 @@ Chainguard Python 容器镜像是由 Chainguard 提供的安全强化版 Python 
 
 #### 从 Docker Hub 拉取
 ```bash
-docker pull chainguard/python:latest
+docker pull docker.xuanyuan.run/chainguard/python:latest
 ```
 
 #### 从 Chainguard Registry 拉取
@@ -57,7 +57,7 @@ docker pull cgr.dev/chainguard/python:latest
 
 拉取镜像后，可通过以下命令验证基本功能（如查看 Python 版本）：
 ```bash
-docker run --rm chainguard/python:latest python --version
+docker run --rm docker.xuanyuan.run/chainguard/python:latest python --version
 ```
 
 

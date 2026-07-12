@@ -3,7 +3,7 @@ image: linuxserver/emulatorjs
 description: "linuxserver/emulatorjs 是一款基于Docker的自托管网页版多平台游戏模拟器，支持NES、SNES、PS1、街机等经典主机游戏，无需复杂配置即可快速部署。通过浏览器实现跨设备（电脑、手机、平板）访问，支持自定义ROM导入与管理，还原复古游戏操作体验。轻量化设计兼顾性能与易用性，适合家庭娱乐或复古游戏收藏爱好者，让你随时随地重温童年经典游戏时光。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/emulatorjs
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/emulatorjs
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/emulatorjs" title="linuxserver/emulatorjs Docker 镜像中文简介、标签列表与拉取命令">linuxserver/emulatorjs 中文简介</a>
@@ -15,13 +15,13 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 重要通知：该镜像已弃用
 **此镜像已停止维护**，不再提供支持及更新。建议考虑以下替代方案：  
-- [gaseous - server]([])  
-- [romm]([])  
-- [webrcade]([])  
+- [gaseous - server]   
+- [romm]   
+- [webrcade]   
 
 
 ## 关于 LinuxServer.io
-[LinuxServer.io]([]) 团队专注于提供高质量容器镜像，核心特点包括：  
+[LinuxServer.io]  团队专注于提供高质量容器镜像，核心特点包括：  
 - 定期、及时的应用更新  
 - 简化的用户权限映射（通过 PGID、PUID）  
 - 基于 s6 overlay 的自定义基础镜像  
@@ -29,15 +29,15 @@ exported_at: 2026-06-02T12:26:10.133Z
 - 常规安全更新  
 
 可通过以下渠道获取支持与信息：  
-- [博客]([])（含使用指南、教程）  
+- [博客] （含使用指南、教程）  
 - []()（实时社区交流）  
-- [Discourse]([])（社区论坛）  
-- [Fleet]([])（镜像管理界面）  
-- [GitHub]([])（源码仓库）  
+- [Discourse] （社区论坛）  
+- [Fleet] （镜像管理界面）  
+- [GitHub] （源码仓库）  
 
 
 ## 项目概述：linuxserver/emulatorjs
-[emulatorjs]([]) 是一款基于浏览器的复古游戏模拟器，支持多种经典游戏机，整合了 Libretro 和 EmulatorJS 等模拟器核心，可在几乎所有设备上运行。
+[emulatorjs]  是一款基于浏览器的复古游戏模拟器，支持多种经典游戏机，整合了 Libretro 和 EmulatorJS 等模拟器核心，可在几乎所有设备上运行。
 
 
 ## 支持的架构
@@ -59,7 +59,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 2. **添加 ROM 文件**：将 ROM 文件放入 `/data/roms` 对应子目录（如 NES 游戏放入 `roms/nes`），按界面指引添加到前端（运行在 80 端口）。  
 
 ### 注意事项
-- **项目命名说明**：本项目（linuxserver/emulatorjs）仅为自托管场景提供前端界面，基于社区优化的 Libretro 核心（[源码]([])），与 [EmulatorJS 官方项目]([]) 无关联。  
+- **项目命名说明**：本项目（linuxserver/emulatorjs）仅为自托管场景提供前端界面，基于社区优化的 Libretro 核心（[源码] ），与 [EmulatorJS 官方项目]  无关联。  
 - **静态文件提取**：容器内 `/emulatorjs/frontend` 目录包含可独立部署的静态前端文件，生成游戏库后可将其复制到其他 Web 服务器（如对象存储），无需继续运行容器。  
 - **禁用 IPFS**：若无需 IPFS 后端，可通过环境变量 `-e DISABLE_IPFS=true` 启动容器。  
 
@@ -92,7 +92,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ---
 services:
   emulatorjs:
-    image: lscr.io/linuxserver/emulatorjs:latest
+    image: docker.xuanyuan.run/linuxserver/emulatorjs:latest
     container_name: emulatorjs
     environment:
       - PUID=1000        # 用户 ID（必填）
@@ -180,7 +180,7 @@ docker image prune
 #### Docker Run 方式
 ```bash
 # 更新镜像
-docker pull lscr.io/linuxserver/emulatorjs:latest
+docker pull docker.xuanyuan.run/linuxserver/emulatorjs:latest
 # 停止并删除旧容器
 docker stop emulatorjs && docker rm emulatorjs
 # 重新创建容器（保留 /config 和 /data 目录则配置不会丢失）
@@ -195,7 +195,7 @@ docker build --no-cache --pull -t lscr.io/linuxserver/emulatorjs:latest .
 ```  
 如需跨架构构建（如 x86 构建 ARM 镜像），需先运行：  
 ```bash
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```  
 
 

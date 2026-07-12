@@ -3,7 +3,7 @@ image: bitnamilegacy/rabbitmq
 description: "Bitnami旧版镜像（不再更新）"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/rabbitmq
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/rabbitmq
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/rabbitmq" title="bitnamilegacy/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/rabbitmq 中文简介</a>
@@ -28,16 +28,16 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 拉取镜像
 如需使用旧版镜像，可通过以下命令从Legacy仓库拉取：
 ```bash
-docker pull bitnami/[镜像名称]:[标签]
+docker pull docker.xuanyuan.run/bitnami/[镜像名称]:[标签]
 ```
 > 示例：拉取旧版nginx镜像  
-> `docker pull bitnami/nginx:1.21.6`
+> `docker pull docker.xuanyuan.run/bitnami/nginx:1.21.6`
 
 ### 存储至私有仓库
 由于该仓库未来可能被移除，建议将所需镜像拉取后存储至自有容器 registry：
 ```bash
 # 1. 拉取镜像
-docker pull bitnami/[镜像名称]:[标签]
+docker pull docker.xuanyuan.run/bitnami/[镜像名称]:[标签]
 
 # 2. 标记为私有仓库地址
 docker tag bitnami/[镜像名称]:[标签] [私有仓库地址]/[镜像名称]:[标签]

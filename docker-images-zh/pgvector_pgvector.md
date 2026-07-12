@@ -3,7 +3,7 @@ image: pgvector/pgvector
 description: "这是一款适用于PostgreSQL的开源向量相似性搜索工具，可无缝集成至PostgreSQL数据库，支持对文本嵌入、图像特征、音频向量等各类向量数据进行高效相似性查询。它借助优化的索引结构与搜索算法实现快速检索相似向量结果，助力用户在人工智能、机器学习、推荐系统等场景下，利用PostgreSQL便捷处理向量数据，提升查询效率与开发灵活性，且作为开源项目具备代码透明、社区支持完善、易于扩展等优势。"
 source: https://xuanyuan.cloud/zh/r/pgvector/pgvector
 canonical: https://xuanyuan.cloud/zh/r/pgvector/pgvector
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/pgvector/pgvector" title="pgvector/pgvector Docker 镜像中文简介、标签列表与拉取命令">pgvector/pgvector 中文简介</a>
@@ -81,13 +81,13 @@ INSERT INTO documents (content, embedding) VALUES
 ```sql
 -- 例：查找与目标向量最相似的 Top 10 文档（余弦相似度 <=>）
 SELECT id, content, embedding <=> '[0.18, 0.31, ..., 0.92]' AS similarity 
-FROM documents 
+FROM docker.xuanyuan.run/documents 
 ORDER BY similarity  -- 按相似度升序（值越小越相似）
 LIMIT 10;
 
 -- 欧氏距离查询（适用于高维稀疏向量）
 SELECT id, embedding <-> '[0.18, 0.31, ..., 0.92]' AS distance 
-FROM documents 
+FROM docker.xuanyuan.run/documents 
 ORDER BY distance 
 LIMIT 10;
 ```  

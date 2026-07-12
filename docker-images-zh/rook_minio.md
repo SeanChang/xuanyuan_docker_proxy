@@ -3,7 +3,7 @@ image: rook/minio
 description: "Minio是面向云原生环境的高性能分布式对象存储服务器。"
 source: https://xuanyuan.cloud/zh/r/rook/minio
 canonical: https://xuanyuan.cloud/zh/r/rook/minio
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rook/minio" title="rook/minio Docker 镜像中文简介、标签列表与拉取命令">rook/minio 中文简介</a>
@@ -92,7 +92,7 @@ version: '3.8'
 
 services:
   minio:
-    image: minio/minio
+    image: docker.xuanyuan.run/minio/minio
     container_name: minio
     restart: always  # 自动重启
     ports:
@@ -157,7 +157,7 @@ docker run -d \
   -e "MINIO_ROOT_USER=admin" \
   -e "MINIO_ROOT_PASSWORD=password123" \
   -v /opt/minio/node1/data:/data \
-  minio/minio server \
+  docker.xuanyuan.run/minio/minio server \
     http://192.168.1.10:9000/data \  # 节点1数据路径
     http://192.168.1.11:9000/data \  # 节点2数据路径
   --console-address ":9001"
@@ -171,7 +171,7 @@ docker run -d \
   -e "MINIO_ROOT_USER=admin" \
   -e "MINIO_ROOT_PASSWORD=password123" \
   -v /opt/minio/node2/data:/data \
-  minio/minio server \
+  docker.xuanyuan.run/minio/minio server \
     http://192.168.1.10:9000/data \  # 节点1数据路径
     http://192.168.1.11:9000/data \  # 节点2数据路径
   --console-address ":9001"

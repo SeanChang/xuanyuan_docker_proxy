@@ -3,7 +3,7 @@ image: mediagis/nominatim
 description: "可直接运行的Nominatim容器，提供地理编码（地址与坐标互转）服务。"
 source: https://xuanyuan.cloud/zh/r/mediagis/nominatim
 canonical: https://xuanyuan.cloud/zh/r/mediagis/nominatim
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mediagis/nominatim" title="mediagis/nominatim Docker 镜像中文简介、标签列表与拉取命令">mediagis/nominatim 中文简介</a>
@@ -48,7 +48,7 @@ docker run -it \
   -e PBF_URL=https://download.geofabrik.de/europe/monaco-latest.osm.pbf \
   -p 8080:8080 \
   --name nominatim \
-  mediagis/nominatim:5.1
+  docker.xuanyuan.run/mediagis/nominatim:5.1
 ```
 
 **参数说明**：
@@ -66,7 +66,7 @@ docker run -it \
 
 ```bash
 # 拉取 Nominatim 5.1 版本
-docker pull mediagis/nominatim:5.1
+docker pull docker.xuanyuan.run/mediagis/nominatim:5.1
 ```
 
 所有可用标签参见 [Docker Hub 标签页](https://hub.docker.com/r/mediagis/nominatim/tags)。
@@ -89,7 +89,7 @@ version: '3'
 
 services:
   nominatim:
-    image: mediagis/nominatim:5.1
+    image: docker.xuanyuan.run/mediagis/nominatim:5.1
     container_name: nominatim
     ports:
       - "8080:8080"

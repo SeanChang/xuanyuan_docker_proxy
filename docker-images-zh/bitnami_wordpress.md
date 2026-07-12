@@ -3,7 +3,7 @@ image: bitnami/wordpress
 description: "Bitnami Secure Image for WordPress是由Bitnami提供的适用于WordPress的安全优化镜像，其集成预配置的安全防护设置、自动漏洞更新机制、SSL证书支持及基础防火墙功能，可有效降低恶意攻击与数据泄露风险，同时优化服务器资源分配与运行性能，确保WordPress网站快速稳定部署，且兼容主流云平台与本地服务器环境，为用户提供开箱即用的安全可靠建站解决方案。"
 source: https://xuanyuan.cloud/zh/r/bitnami/wordpress
 canonical: https://xuanyuan.cloud/zh/r/bitnami/wordpress
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/wordpress" title="bitnami/wordpress Docker 镜像中文简介、标签列表与拉取命令">bitnami/wordpress 中文简介</a>
@@ -17,25 +17,25 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 > WordPress 是全球最流行的博客及内容管理平台。功能强大且操作简单，从学生到跨国企业，都用它搭建美观、实用的网站。
 
-[WordPress 概览]([])
+[WordPress 概览] 
 
 
 ## 快速启动
 
 ```console
-docker run --name wordpress bitnami/wordpress:latest
+docker run --name wordpress docker.xuanyuan.run/bitnami/wordpress:latest
 ```
 
 **注意**：此快速设置仅适用于开发环境。建议修改不安全的默认凭据，并参考[环境变量](#环境变量)部分的配置选项，以实现更安全的部署。
 
-这是由 Bitnami 构建和维护的精简、强化 CVE 镜像。Bitnami 安全镜像基于云优化、安全强化的企业级 [Photon Linux 操作系统]([])。选择 BSI 镜像的理由：  
+这是由 Bitnami 构建和维护的精简、强化 CVE 镜像。Bitnami 安全镜像基于云优化、安全强化的企业级 [Photon Linux 操作系统] 。选择 BSI 镜像的理由：  
 - 主流开源软件的强化安全镜像，漏洞数量接近零  
 - 漏洞分类与优先级划分，含 VEX 声明、KEV 和 EPSS 评分  
 - 合规性支持，包括 FIPS、STIG 和离线部署选项，附安全物料清单（SBOM）  
 - 通过 in-toto 提供软件供应链来源证明  
 - 全面支持主流 Helm 图表  
 
-每个镜像均附带安全元数据，可在[公开目录]([])中查看。注：部分数据需[订阅 BSI 商业版]([])方可获取。  
+每个镜像均附带安全元数据，可在[公开目录] 中查看。注：部分数据需[订阅 BSI 商业版] 方可获取。  
 
 如需基于 Debian Linux 的旧版镜像，请查看 Bitnami Legacy 仓库。
 

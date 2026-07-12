@@ -3,7 +3,7 @@ image: library/nginx
 description: "Nginx 官方 Docker 镜像，提供高性能 Web 服务器和反向代理能力，适合部署静态站点、反向代理和负载均衡入口，可通过挂载配置和静态目录快速搭建统一的 Web 与 API 网关层。"
 source: https://xuanyuan.cloud/zh/r/library/nginx
 canonical: https://xuanyuan.cloud/zh/r/library/nginx
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/nginx" title="library/nginx Docker 镜像中文简介、标签列表与拉取命令">library/nginx 中文简介</a>
@@ -37,7 +37,7 @@ docker run -d \
   --name nginx \
   -p 80:80 \
   -v /var/www/html:/usr/share/nginx/html:ro \
-  nginx:latest
+  docker.xuanyuan.run/nginx:latest
 ```
 
 - 将宿主机 `/var/www/html` 挂载为容器内默认站点目录；
@@ -56,7 +56,7 @@ docker run -d \
   -p 80:80 \
   -v /opt/nginx/conf/nginx.conf:/etc/nginx/nginx.conf:ro \
   -v /var/www/html:/usr/share/nginx/html:ro \
-  nginx:latest
+  docker.xuanyuan.run/nginx:latest
 ```
 
 推荐做法是：

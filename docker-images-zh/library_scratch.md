@@ -3,7 +3,7 @@ image: library/scratch
 description: "明确的空镜像，主要用于构建基础镜像（如debian、busybox）或超小镜像（仅包含单个二进制文件及其依赖，如hello-world）。"
 source: https://xuanyuan.cloud/zh/r/library/scratch
 canonical: https://xuanyuan.cloud/zh/r/library/scratch
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/scratch" title="library/scratch Docker 镜像中文简介、标签列表与拉取命令">library/scratch 中文简介</a>
@@ -37,7 +37,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 以下示例展示如何使用 `FROM scratch` 创建一个仅包含单个二进制文件的最小容器：
 
 ```dockerfile
-FROM scratch
+FROM docker.xuanyuan.run/scratch
 COPY hello /
 CMD ["/hello"]
 ```

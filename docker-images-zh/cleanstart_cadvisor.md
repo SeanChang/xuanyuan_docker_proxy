@@ -3,7 +3,7 @@ image: cleanstart/cadvisor
 description: "基于CleanStart最小化安全加固OS的cAdvisor容器镜像，提供容器资源使用和性能特性监控，支持实时指标收集、Prometheus集成及历史数据分析，包含企业级安全加固，适用于生产环境部署。"
 source: https://xuanyuan.cloud/zh/r/cleanstart/cadvisor
 canonical: https://xuanyuan.cloud/zh/r/cleanstart/cadvisor
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cleanstart/cadvisor" title="cleanstart/cadvisor Docker 镜像中文简介、标签列表与拉取命令">cleanstart/cadvisor 中文简介</a>
@@ -37,8 +37,8 @@ cAdvisor（容器顾问）为容器用户提供运行中容器的资源使用情
 从镜像仓库下载容器镜像
 
 ```bash
-docker pull cleanstart/cadvisor:latest
-docker pull cleanstart/cadvisor:latest-dev
+docker pull docker.xuanyuan.run/cleanstart/cadvisor:latest
+docker pull docker.xuanyuan.run/cleanstart/cadvisor:latest-dev
 ```
 
 ### 基本运行
@@ -46,7 +46,7 @@ docker pull cleanstart/cadvisor:latest-dev
 使用基本配置运行容器
 
 ```bash
-docker run -d --name cadvisor -v /:/rootfs:ro -v /var/run:/var/run:ro -v /sys:/sys:ro -v /var/lib/docker/:/var/lib/docker:ro -v /dev/disk/:/dev/disk:ro -p 8080:8080 cleanstart/cadvisor:latest
+docker run -d --name cadvisor -v /:/rootfs:ro -v /var/run:/var/run:ro -v /sys:/sys:ro -v /var/lib/docker/:/var/lib/docker:ro -v /dev/disk/:/dev/disk:ro -p 8080:8080 docker.xuanyuan.run/cleanstart/cadvisor:latest
 ```
 
 ### 生产部署
@@ -64,7 +64,7 @@ docker run -d --name cadvisor-prod \
   -v /var/lib/docker/:/var/lib/docker:ro \
   -v /dev/disk/:/dev/disk:ro \
   -p 8080:8080 \
-  cleanstart/cadvisor:latest
+  docker.xuanyuan.run/cleanstart/cadvisor:latest
 ```
 
 ### 卷挂载
@@ -72,7 +72,7 @@ docker run -d --name cadvisor-prod \
 挂载监控所需的系统目录
 
 ```bash
-docker run -d -v /:/rootfs:ro -v /var/run:/var/run:ro -v /sys:/sys:ro cleanstart/cadvisor:latest
+docker run -d -v /:/rootfs:ro -v /var/run:/var/run:ro -v /sys:/sys:ro docker.xuanyuan.run/cleanstart/cadvisor:latest
 ```
 
 ### 端口转发
@@ -80,7 +80,7 @@ docker run -d -v /:/rootfs:ro -v /var/run:/var/run:ro -v /sys:/sys:ro cleanstart
 暴露指标端点运行
 
 ```bash
-docker run -d -p 8080:8080 cleanstart/cadvisor:latest
+docker run -d -p 8080:8080 docker.xuanyuan.run/cleanstart/cadvisor:latest
 ```
 
 ## 配置

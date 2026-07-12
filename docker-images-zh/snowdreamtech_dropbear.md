@@ -3,7 +3,7 @@ image: snowdreamtech/dropbear
 description: "Dropbear SSH服务器的Docker镜像，支持多种架构（amd64、arm32v5/v6/v7、arm64v8、i386、mips64le等），用于快速部署轻量级SSH服务。"
 source: https://xuanyuan.cloud/zh/r/snowdreamtech/dropbear
 canonical: https://xuanyuan.cloud/zh/r/snowdreamtech/dropbear
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/snowdreamtech/dropbear" title="snowdreamtech/dropbear Docker 镜像中文简介、标签列表与拉取命令">snowdreamtech/dropbear 中文简介</a>
@@ -49,7 +49,7 @@ docker run -d \
   -e TZ=Asia/Shanghai \
   -p 22:22 \
   --restart unless-stopped \
-  snowdreamtech/dropbear:latest
+  docker.xuanyuan.run/snowdreamtech/dropbear:latest
 ```
 
 #### 高级部署（带数据持久化）
@@ -71,7 +71,7 @@ docker run -d \
 ```yaml
 services:
   dropbear:
-    image: snowdreamtech/dropbear:latest
+    image: docker.xuanyuan.run/snowdreamtech/dropbear:latest
     container_name: dropbear
     ports:
       - '22:22'  # 映射SSH端口
@@ -85,7 +85,7 @@ services:
 ```yaml
 services:
   dropbear:
-    image: snowdreamtech/dropbear:latest
+    image: docker.xuanyuan.run/snowdreamtech/dropbear:latest
     container_name: dropbear
     ports:
       - '22:22'

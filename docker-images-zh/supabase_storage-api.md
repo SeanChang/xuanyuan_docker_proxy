@@ -3,7 +3,7 @@ image: supabase/storage-api
 description: "Supabase的存储后端API服务，提供文件存储、检索和管理功能，支持与Supabase生态系统集成的对象存储解决方案，处理文件上传、下载及访问控制等操作。"
 source: https://xuanyuan.cloud/zh/r/supabase/storage-api
 canonical: https://xuanyuan.cloud/zh/r/supabase/storage-api
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/supabase/storage-api" title="supabase/storage-api Docker 镜像中文简介、标签列表与拉取命令">supabase/storage-api 中文简介</a>
@@ -40,7 +40,7 @@ docker run -d \
   -e STORAGE_PATH="/data/storage" \
   -e PORT=5000 \
   -v /host/path/to/storage:/data/storage \
-  supabase/storage-api:latest
+  docker.xuanyuan.run/supabase/storage-api:latest
 ```
 
 ### Docker Compose 配置示例
@@ -48,7 +48,7 @@ docker run -d \
 version: '3.8'
 services:
   storage:
-    image: supabase/storage-api:latest
+    image: docker.xuanyuan.run/supabase/storage-api:latest
     container_name: supabase-storage
     ports:
       - "5000:5000"
@@ -73,7 +73,7 @@ services:
     restart: unless-stopped
 
   postgres:
-    image: supabase/postgres:14.1.0.11
+    image: docker.xuanyuan.run/supabase/postgres:14.1.0.11
     environment:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=supabase

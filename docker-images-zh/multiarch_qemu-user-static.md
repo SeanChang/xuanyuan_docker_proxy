@@ -3,7 +3,7 @@ image: multiarch/qemu-user-static
 description: "提供多架构的QEMU静态二进制文件，用于支持在不同架构系统上进行跨架构模拟和应用运行。"
 source: https://xuanyuan.cloud/zh/r/multiarch/qemu-user-static
 canonical: https://xuanyuan.cloud/zh/r/multiarch/qemu-user-static
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/multiarch/qemu-user-static" title="multiarch/qemu-user-static Docker 镜像中文简介、标签列表与拉取命令">multiarch/qemu-user-static 中文简介</a>
@@ -42,13 +42,13 @@ qemu-user-static 镜像是一个提供多架构支持的工具镜像，主要包
 #### 1. 注册 qemu-*-static（排除当前架构）  
 将 `qemu-*-static` 注册到 `binfmt_misc`，支持除当前主机架构外的所有处理器：  
 ```bash
-docker run --rm --privileged multiarch/qemu-user-static:register
+docker run --rm --privileged docker.xuanyuan.run/multiarch/qemu-user-static:register
 ```
 
 #### 2. 重置并注册（推荐首次使用）  
 先移除所有已注册的 `binfmt_misc` 配置，再重新注册，避免冲突：  
 ```bash
-docker run --rm --privileged multiarch/qemu-user-static:register --reset
+docker run --rm --privileged docker.xuanyuan.run/multiarch/qemu-user-static:register --reset
 ```
 
 #### 参数说明  

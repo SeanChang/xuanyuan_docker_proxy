@@ -3,7 +3,7 @@ image: bitnami/openldap
 description: "Bitnami Secure Image for openldap 是由 Bitnami 提供的一款针对 OpenLDAP（轻量级目录访问协议的开源实现，广泛用于用户认证、授权及目录服务管理）的预配置安全镜像，该镜像经过安全加固，集成了优化的配置、必要的依赖管理及最新安全补丁，旨在帮助用户快速、安全地部署 OpenLDAP 服务，适用于企业级环境，确保目录服务的稳定性与数据安全性，简化部署流程并降低运维复杂度。"
 source: https://xuanyuan.cloud/zh/r/bitnami/openldap
 canonical: https://xuanyuan.cloud/zh/r/bitnami/openldap
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/openldap" title="bitnami/openldap Docker 镜像中文简介、标签列表与拉取命令">bitnami/openldap 中文简介</a>
@@ -12,7 +12,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ### Bitnami openldap安全镜像说明  
 
-该镜像已不再通过Docker Hub免费提供。目前，它作为构建完成的OCI制品，提供Debian和Photon两种基础操作系统格式，需通过Bitnami安全镜像的商业订阅获取。不过，Docker Hub上仍有其他Bitnami安全镜像的开发者版可供使用，完整列表可通过[访问公共目录]([])并筛选“可用性类型：试用”查看。  
+该镜像已不再通过Docker Hub免费提供。目前，它作为构建完成的OCI制品，提供Debian和Photon两种基础操作系统格式，需通过Bitnami安全镜像的商业订阅获取。不过，Docker Hub上仍有其他Bitnami安全镜像的开发者版可供使用，完整列表可通过[访问公共目录] 并筛选“可用性类型：试用”查看。  
 
 
 ### 推荐升级及优势  
@@ -24,4 +24,4 @@ exported_at: 2026-06-02T12:26:10.133Z
 - 对主流Helm charts的原生适配与支持  
 
 
-了解更多关于Bitnami安全镜像商业方案的信息，可[访问官方网站]([])。
+了解更多关于Bitnami安全镜像商业方案的信息，可[访问官方网站] 。

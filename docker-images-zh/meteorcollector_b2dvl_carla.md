@@ -3,7 +3,7 @@ image: meteorcollector/b2dvl_carla
 description: "Bench2Drive-VL的官方Docker镜像，用于提供便捷的环境部署，支持相关基准测试与研究工作。GitHub地址：https://github.com/Thinklab-SJTU/Bench2Drive-VL"
 source: https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla
 canonical: https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/meteorcollector/b2dvl_carla" title="meteorcollector/b2dvl_carla Docker 镜像中文简介、标签列表与拉取命令">meteorcollector/b2dvl_carla 中文简介</a>
@@ -35,7 +35,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 可通过以下方式获取镜像（具体版本请参考项目GitHub文档）：
 ```bash
 # 示例：从Docker Hub拉取（如项目提供）
-docker pull [镜像仓库地址]/bench2drive-vl:latest
+docker pull docker.xuanyuan.run/[镜像仓库地址]/bench2drive-vl:latest
 
 # 或从源码构建（参考GitHub文档）
 git clone https://github.com/Thinklab-SJTU/Bench2Drive-VL.git
@@ -45,7 +45,7 @@ docker build -t bench2drive-vl .
 
 ### 基本运行命令
 ```bash
-docker run -it --name bench2drive-vl-instance bench2drive-vl
+docker run -it --name bench2drive-vl-instance docker.xuanyuan.run/bench2drive-vl
 ```
 
 ### 高级配置示例
@@ -56,7 +56,7 @@ docker run -it \
   -v /本地路径/数据目录:/容器内路径/数据目录 \
   -v /本地路径/配置文件:/容器内路径/配置文件 \
   --name bench2drive-vl-instance \
-  bench2drive-vl
+  docker.xuanyuan.run/bench2drive-vl
 ```
 
 #### 2. 端口映射（如需对外提供服务）
@@ -75,7 +75,7 @@ docker run -it \
   -e ENV_VAR1=value1 \
   -e ENV_VAR2=value2 \
   --name bench2drive-vl-instance \
-  bench2drive-vl
+  docker.xuanyuan.run/bench2drive-vl
 ```
 
 ### 注意事项

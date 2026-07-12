@@ -3,7 +3,7 @@ image: rocker/cuda
 description: "集成NVIDIA CUDA库的Rocker镜像，提供R语言环境下的GPU加速计算支持，基于rocker-org/rocker-versioned2项目构建。"
 source: https://xuanyuan.cloud/zh/r/rocker/cuda
 canonical: https://xuanyuan.cloud/zh/r/rocker/cuda
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rocker/cuda" title="rocker/cuda Docker 镜像中文简介、标签列表与拉取命令">rocker/cuda 中文简介</a>
@@ -24,11 +24,11 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## Docker部署示例
 ### 1. 拉取镜像
 ```bash
-docker pull rocker/cuda:latest
+docker pull docker.xuanyuan.run/rocker/cuda:latest
 ```
 
 ### 2. 运行容器（启用GPU支持）
 ```bash
-docker run --gpus all -it --rm rocker/cuda:latest R
+docker run --gpus all -it --rm docker.xuanyuan.run/rocker/cuda:latest R
 ```
 > 说明：`--gpus all`参数用于启用容器对GPU的访问，确保主机已安装NVIDIA Docker运行时（nvidia-container-runtime）。

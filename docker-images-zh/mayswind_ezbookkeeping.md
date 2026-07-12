@@ -3,7 +3,7 @@ image: mayswind/ezbookkeeping
 description: "这是一款由你自行托管的轻量级个人记账应用，它小巧不占资源，专注于满足个人日常财务记录需求，支持收支明细录入、账单智能分类及简易财务统计，所有数据存储在你的个人设备或服务器中，无需依赖第三方平台，让你完全掌控财务信息，有效保障数据隐私与安全，操作界面简洁直观，新手也能快速上手，轻松管理个人收支。"
 source: https://xuanyuan.cloud/zh/r/mayswind/ezbookkeeping
 canonical: https://xuanyuan.cloud/zh/r/mayswind/ezbookkeeping
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mayswind/ezbookkeeping" title="mayswind/ezbookkeeping Docker 镜像中文简介、标签列表与拉取命令">mayswind/ezbookkeeping 中文简介</a>
@@ -11,18 +11,18 @@ exported_at: 2026-06-02T12:26:10.133Z
 含镜像标签、拉取命令、部署文档与相关推荐。
 
 # ezBookkeeping  
-[![License]([])]([])  
-[![Go Report]([])]([])  
-[![Latest Release]([])]([])  
+[![License] ]   
+[![Go Report] ]   
+[![Latest Release] ]   
 
 
 ## 简介  
 ezBookkeeping 是一款轻量级自托管个人财务应用，界面操作简单，记账功能实用。部署方便，一条 Docker 命令就能启动；资源占用低，扩展性强，不管是树莓派这类小型设备，还是 NAS、微型服务器，甚至大型集群环境都能稳定运行。  
 
-应用同时适配手机和电脑使用，支持 PWA（渐进式 Web 应用）。你可以[添加到手机主屏幕]([])，像原生 App 一样操作。  
+应用同时适配手机和电脑使用，支持 PWA（渐进式 Web 应用）。你可以[添加到手机主屏幕] ，像原生 App 一样操作。  
 
-GitHub 地址：[[]]([])  
-在线演示：[[]]([])  
+GitHub 地址：[[]]   
+在线演示：[[]]   
 
 
 ## 主要特点  
@@ -63,15 +63,15 @@ GitHub 地址：[[]]([])
 
 ## 界面截图  
 ### 桌面版  
-[![ezBookkeeping]([])]([])  
+[![ezBookkeeping] ]   
 
 ### 移动版  
-[![ezBookkeeping]([])]([])  
+[![ezBookkeeping] ]   
 
 
 ## 安装方法  
 ### Docker 部署  
-可前往 [Docker Hub]([]) 查看所有镜像和版本标签。  
+可前往 [Docker Hub]  查看所有镜像和版本标签。  
 
 **最新正式版：**  
 ```bash  
@@ -85,9 +85,9 @@ $ docker run -p8080:8080 mayswind/ezbookkeeping:latest-snapshot
 
 
 ## 文档  
-1. [英文]([])  
-2. [中文 (简体)]([])  
+1. [英文]   
+2. [中文 (简体)]   
 
 
 ## 开源协议  
-[MIT]([])
+[MIT]

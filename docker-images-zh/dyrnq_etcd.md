@@ -3,7 +3,7 @@ image: dyrnq/etcd
 description: "Kubernetes官方分布式键值存储镜像，为K8s集群提供高可用、一致性的数据存储服务，用于保存集群状态和配置信息，是Kubernetes核心组件之一。"
 source: https://xuanyuan.cloud/zh/r/dyrnq/etcd
 canonical: https://xuanyuan.cloud/zh/r/dyrnq/etcd
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dyrnq/etcd" title="dyrnq/etcd Docker 镜像中文简介、标签列表与拉取命令">dyrnq/etcd 中文简介</a>
@@ -56,11 +56,11 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 4.1 镜像拉取
 通过以下命令拉取最新版本镜像：
 ```bash
-docker pull registry.k8s.io/etcd:latest
+docker pull ***-k8s.xuanyuan.run/etcd:latest
 ```
 如需指定版本（如 `3.5.10`），可替换标签：
 ```bash
-docker pull registry.k8s.io/etcd:3.5.10
+docker pull ***-k8s.xuanyuan.run/etcd:3.5.10
 ```
 
 
@@ -112,7 +112,7 @@ docker run -d \
   --publish 2379:2379 \
   --publish 2380:2380 \
   --volume etcd-data-1:/var/lib/etcd \
-  registry.k8s.io/etcd:latest \
+  ***-k8s.xuanyuan.run/etcd:latest \
   etcd \
     --name=etcd-node-1 \
     --data-dir=/var/lib/etcd \
@@ -132,7 +132,7 @@ docker run -d \
   --publish 2379:2379 \
   --publish 2380:2380 \
   --volume etcd-data-2:/var/lib/etcd \
-  registry.k8s.io/etcd:latest \
+  ***-k8s.xuanyuan.run/etcd:latest \
   etcd \
     --name=etcd-node-2 \
     --data-dir=/var/lib/etcd \
@@ -152,7 +152,7 @@ docker run -d \
   --publish 2379:2379 \
   --publish 2380:2380 \
   --volume etcd-data-3:/var/lib/etcd \
-  registry.k8s.io/etcd:latest \
+  ***-k8s.xuanyuan.run/etcd:latest \
   etcd \
     --name=etcd-node-3 \
     --data-dir=/var/lib/etcd \
@@ -214,7 +214,7 @@ etcd 支持通过环境变量配置核心参数，常用变量如下：
 version: '3'
 services:
   etcd:
-    image: registry.k8s.io/etcd:latest
+    image: ***-k8s.xuanyuan.run/etcd:latest
     container_name: etcd-single
     ports:
       - "2379:2379"  # 客户端端口

@@ -3,7 +3,7 @@ image: wurstmeister/zookeeper
 description: "提供Apache ZooKeeper分布式协调服务的Docker镜像，用于分布式系统中的配置管理、命名服务、同步控制及集群协调，支持容器化快速部署与集成。"
 source: https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper
 canonical: https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/wurstmeister/zookeeper" title="wurstmeister/zookeeper Docker 镜像中文简介、标签列表与拉取命令">wurstmeister/zookeeper 中文简介</a>
@@ -52,7 +52,7 @@ Zookeeper Docker 镜像是基于 Apache ZooKeeper 的容器化部署方案。Apa
 #### 单节点启动
 
 ```bash
-docker run --name zookeeper -p 2181:2181 -d zookeeper
+docker run --name docker.xuanyuan.run/zookeeper -p 2181:2181 -d zookeeper
 ```
 
 #### 自定义配置启动
@@ -63,7 +63,7 @@ docker run --name zookeeper \
   -v /path/to/zoo.cfg:/conf/zoo.cfg \
   -v /path/to/data:/data \
   -v /path/to/datalog:/datalog \
-  -d zookeeper
+  -d docker.xuanyuan.run/zookeeper
 ```
 
 #### 使用 docker-compose 启动
@@ -72,7 +72,7 @@ docker run --name zookeeper \
 version: '3'
 services:
   zookeeper:
-    image: zookeeper
+    image: docker.xuanyuan.run/zookeeper
     container_name: zookeeper
     ports:
       - "2181:2181"
@@ -111,7 +111,7 @@ volumes:
 version: '3'
 services:
   zk1:
-    image: zookeeper
+    image: docker.xuanyuan.run/zookeeper
     container_name: zk1
     restart: always
     hostname: zk1
@@ -125,7 +125,7 @@ services:
       - zk1-datalog:/datalog
 
   zk2:
-    image: zookeeper
+    image: docker.xuanyuan.run/zookeeper
     container_name: zk2
     restart: always
     hostname: zk2
@@ -139,7 +139,7 @@ services:
       - zk2-datalog:/datalog
 
   zk3:
-    image: zookeeper
+    image: docker.xuanyuan.run/zookeeper
     container_name: zk3
     restart: always
     hostname: zk3
@@ -178,7 +178,7 @@ ZooKeeper 容器使用以下目录存储持久化数据：
 docker exec -it zookeeper zkCli.sh -server localhost:2181
 
 # 从宿主机或其他容器连接
-docker run -it --rm --link zookeeper:zookeeper zookeeper zkCli.sh -server zookeeper:2181
+docker run -it --rm --link zookeeper:zookeeper docker.xuanyuan.run/zookeeper zkCli.sh -server zookeeper:2181
 ```
 
 ### 4.6 健康检查

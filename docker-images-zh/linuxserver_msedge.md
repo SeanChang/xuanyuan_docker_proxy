@@ -3,7 +3,7 @@ image: linuxserver/msedge
 description: "Docker镜像linuxserver/msedge是基于Linux环境的Microsoft Edge无头浏览器容器，专为服务器端网页自动化场景设计。支持无界面运行，适用于自动化测试、网页渲染、Selenium集成及CI/CD流程，可高效处理网页截图、JS执行等任务。集成LinuxServer优化配置，轻量易部署，提供稳定的浏览器运行环境，满足开发者在服务器端进行网页自动化操作的需求，无需图形界面即可高效完成浏览器相关工作。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/msedge
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/msedge
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/msedge" title="linuxserver/msedge Docker 镜像中文简介、标签列表与拉取命令">linuxserver/msedge 中文简介</a>
@@ -12,7 +12,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 # LinuxServer.io 容器：msedge
 
-LinuxServer.io 团队推出的 [msedge]([]) 容器，基于 Chromium 内核的 Microsoft Edge 浏览器，提供跨平台网页浏览能力。以下是该容器的详细介绍与使用指南。
+LinuxServer.io 团队推出的 [msedge]  容器，基于 Chromium 内核的 Microsoft Edge 浏览器，提供跨平台网页浏览能力。以下是该容器的详细介绍与使用指南。
 
 
 ## 容器核心特性
@@ -46,7 +46,7 @@ LinuxServer.io 容器一贯具备以下优势：
 ### 关键配置说明  
 
 #### 反向代理注意事项  
-容器默认使用自签名证书，通信协议为 HTTPS。若反向代理启用证书验证，需[关闭对该容器的验证检查]([])。  
+容器默认使用自签名证书，通信协议为 HTTPS。若反向代理启用证书验证，需[关闭对该容器的验证检查] 。  
 
 #### 系统兼容性  
 部分现代 GUI 桌面应用可能受 Docker 系统调用限制影响。若宿主机内核或 libseccomp 版本较旧，可添加 `--security-opt seccomp=unconfined` 参数运行容器，以允许必要的系统调用（注：此参数会降低安全性，仅在必要时使用）。  
@@ -58,13 +58,13 @@ LinuxServer.io 容器一贯具备以下优势：
 > 该容器拥有宿主机系统的特权访问权限。除非已做好严格安全配置，否则切勿暴露在公网环境中。  
 
 - **HTTPS 强制要求**：WebCodecs 等现代浏览器功能（用于音视频处理）仅支持 HTTPS 连接，HTTP 环境下无法正常工作。  
-- **默认无认证**：容器默认不启用身份验证。可通过 `CUSTOM_USER` 和 `PASSWORD` 环境变量开启基础 HTTP 认证，但仅建议在可信局域网内使用。若需公网访问，强烈建议搭配反向代理（如 [SWAG]([])）并启用强认证机制。  
+- **默认无认证**：容器默认不启用身份验证。可通过 `CUSTOM_USER` 和 `PASSWORD` 环境变量开启基础 HTTP 认证，但仅建议在可信局域网内使用。若需公网访问，强烈建议搭配反向代理（如 [SWAG] ）并启用强认证机制。  
 - **终端权限风险**：Web 界面包含带无密码 sudo 权限的终端，任何能访问 GUI 的用户均可在容器内获取 root 权限，安装软件或探测局域网。  
 
 
 ### 自定义配置项  
 
-该容器基于 [Docker Baseimage Selkies]([]) 构建，支持通过环境变量和运行参数自定义功能。  
+该容器基于 [Docker Baseimage Selkies]  构建，支持通过环境变量和运行参数自定义功能。  
 
 #### 可选环境变量  
 
@@ -123,7 +123,7 @@ docker run ... --device /dev/dri:/dev/dri -e DRINODE=/dev/dri/renderD128 ...
 
 #### 应用安装与管理  
 
-- **PRoot Apps（推荐，持久化）**：通过 `proot-apps install <应用名>` 安装到用户目录（如 `proot-apps install filezilla`），支持跨容器保留。[支持列表]([])。  
+- **PRoot Apps（推荐，持久化）**：通过 `proot-apps install <应用名>` 安装到用户目录（如 `proot-apps install filezilla`），支持跨容器保留。[支持列表] 。  
 - **原生应用（非持久化）**：通过 `universal-package-install` 模块安装系统包，需在环境变量中指定：  
   ```yaml  
   environment:  
@@ -139,7 +139,7 @@ docker run ... --device /dev/dri:/dev/dri -e DRINODE=/dev/dri/renderD128 ...
 ```yaml  
 services:  
   msedge:  
-    image: lscr.io/linuxserver/msedge:latest  
+    image: docker.xuanyuan.run/linuxserver/msedge:latest  
     container_name: msedge  
     environment:  
       - PUID=1000          # 宿主机用户 ID（通过 `id 用户名` 查看）  
@@ -211,7 +211,7 @@ docker image prune
 #### 通过 Docker 命令行  
 ```bash  
 # 拉取最新镜像  
-docker pull lscr.io/linuxserver/msedge:latest  
+docker pull docker.xuanyuan.run/linuxserver/msedge:latest  
 # 停止并删除旧容器  
 docker stop msedge && docker rm msedge  
 # 用原参数启动新容器（配置通过 /config 目录持久化）  
@@ -229,7 +229,7 @@ docker run -d ... lscr.io/linuxserver/msedge:latest
 ## 支持与社区  
 
 获取帮助或参与讨论：  
-- [博客]([])：容器使用教程与技巧。  
+- [博客] ：容器使用教程与技巧。  
 - []()：实时社区支持。  
-- [论坛]([])：问题反馈与经验分享。  
-- [GitHub]([])：源码与贡献指南。
+- [论坛] ：问题反馈与经验分享。  
+- [GitHub] ：源码与贡献指南。

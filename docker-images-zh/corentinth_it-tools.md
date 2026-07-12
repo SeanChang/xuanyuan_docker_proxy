@@ -3,7 +3,7 @@ image: corentinth/it-tools
 description: "面向开发者的实用在线工具集，作为Web应用提供出色的用户体验。"
 source: https://xuanyuan.cloud/zh/r/corentinth/it-tools
 canonical: https://xuanyuan.cloud/zh/r/corentinth/it-tools
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/corentinth/it-tools" title="corentinth/it-tools Docker 镜像中文简介、标签列表与拉取命令">corentinth/it-tools 中文简介</a>
@@ -21,7 +21,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 使用以下命令快速部署it-tools容器：
 
 ```bash
-docker run -d -p 8080:80 --name it-tools -it corentinth/it-tools
+docker run -d -p 8080:80 --name it-tools -it docker.xuanyuan.run/corentinth/it-tools
 ```
 
 参数说明：

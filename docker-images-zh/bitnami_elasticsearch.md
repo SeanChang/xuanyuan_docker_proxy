@@ -3,7 +3,7 @@ image: bitnami/elasticsearch
 description: "Bitnami为Elasticsearch提供的安全镜像，是预先配置且经过安全加固的解决方案，集成开源搜索引擎Elasticsearch的核心功能，可支持日志分析、全文搜索、实时数据处理等多种应用场景，通过优化性能、简化部署流程并遵循安全最佳实践，助力用户快速构建安全可靠的Elasticsearch运行环境，适用于开发、测试及生产环境，有效降低配置复杂度与潜在安全风险。"
 source: https://xuanyuan.cloud/zh/r/bitnami/elasticsearch
 canonical: https://xuanyuan.cloud/zh/r/bitnami/elasticsearch
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/elasticsearch" title="bitnami/elasticsearch Docker 镜像中文简介、标签列表与拉取命令">bitnami/elasticsearch 中文简介</a>
@@ -18,7 +18,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ### 仍可获取的开发者版本  
-不过，Docker Hub 上仍提供其他 Bitnami 安全镜像的开发者版本。完整列表可通过 [公共目录]([]) 筛选“可用性类型：试用”获取。  
+不过，Docker Hub 上仍提供其他 Bitnami 安全镜像的开发者版本。完整列表可通过 [公共目录]  筛选“可用性类型：试用”获取。  
 
 
 ### 升级推荐：从 Debian 到 Photon-based 镜像  
@@ -30,4 +30,4 @@ exported_at: 2026-06-02T12:26:10.133Z
 - 对主流 Helm charts 的一流支持  
 
 
-了解更多关于商业版 Bitnami 安全镜像产品，可访问 [官方网站]([])。
+了解更多关于商业版 Bitnami 安全镜像产品，可访问 [官方网站] 。

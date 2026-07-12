@@ -3,7 +3,7 @@ image: tikiwiki/tikiwiki
 description: "这是一款为史上最全面的CMS量身打造的Docker镜像，集成了该内容管理系统运行所需的全套环境配置与核心功能组件，致力于为用户提供便捷高效的部署体验，助力开发者快速搭建从基础内容管理到复杂业务集成的全功能平台，全面满足多样化场景需求，堪称目前针对该顶级CMS的一站式容器化解决方案。"
 source: https://xuanyuan.cloud/zh/r/tikiwiki/tikiwiki
 canonical: https://xuanyuan.cloud/zh/r/tikiwiki/tikiwiki
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/tikiwiki/tikiwiki" title="tikiwiki/tikiwiki Docker 镜像中文简介、标签列表与拉取命令">tikiwiki/tikiwiki 中文简介</a>
@@ -17,7 +17,7 @@ TikiWiki 是一款基于 PHP 开发的全功能内容管理系统，更多信息
 执行以下命令拉取最新版 TikiWiki 镜像：
 
 ```bash
-docker pull tikiwiki/tikiwiki:latest
+docker pull docker.xuanyuan.run/tikiwiki/tikiwiki:latest
 ```
 
 
@@ -59,7 +59,7 @@ docker run --rm --name tiki --link mariadb:db \
 version: '2'
 services:
   tiki:
-    image: tikiwiki/tikiwiki:24.x  # 使用 24.x 版本镜像
+    image: docker.xuanyuan.run/tikiwiki/tikiwiki:24.x  # 使用 24.x 版本镜像
     ports:
       - "80:80"                     # 主机 80 端口映射到容器 80 端口
     depends_on:
@@ -69,7 +69,7 @@ services:
       - TIKI_DB_PASS=wiki           # 数据库密码
       - TIKI_DB_NAME=tikiwiki       # 数据库名称
   db:
-    image: mariadb                  # 使用 MariaDB 镜像
+    image: docker.xuanyuan.run/mariadb                  # 使用 MariaDB 镜像
     environment:
       - MYSQL_USER=tiki             # 创建数据库用户 tiki
       - MYSQL_PASSWORD=wiki         # 用户 tiki 的密码
@@ -97,7 +97,7 @@ version: '3.7'
 
 services:
   haproxy:
-    image: eeacms/haproxy          # 反向代理/负载均衡镜像
+    image: docker.xuanyuan.run/eeacms/haproxy          # 反向代理/负载均衡镜像
     depends_on:
       - tiki                       # 依赖 tiki 服务启动
     ports:
@@ -108,7 +108,7 @@ services:
       LOG_LEVEL: "info"            # 日志级别
 
   tiki:
-    image: tikiwiki/tikiwiki:24.x  # TikiWiki 镜像
+    image: docker.xuanyuan.run/tikiwiki/tikiwiki:24.x  # TikiWiki 镜像
     depends_on:
       - db                         # 依赖 db 服务（MariaDB）
     deploy:
@@ -128,7 +128,7 @@ services:
       - tiki_sessions:/var/www/sessions/
 
   db:
-    image: mariadb                 # MariaDB 数据库
+    image: docker.xuanyuan.run/mariadb                 # MariaDB 数据库
     environment:
       - MYSQL_USER=tiki            # 数据库用户
       - MYSQL_PASSWORD=wiki        # 用户密码

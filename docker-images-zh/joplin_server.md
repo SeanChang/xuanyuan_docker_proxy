@@ -3,7 +3,7 @@ image: joplin/server
 description: "Joplin Server是开源笔记应用Joplin的官方后端服务，主要用于支持用户数据同步、笔记管理等核心功能，而官方Joplin Server Docker镜像则是由Joplin开发团队正式发布的容器化部署方案，其设计初衷是简化服务器搭建流程，确保部署环境的一致性与运行稳定性，方便用户通过Docker快速部署和运行Joplin Server，从而满足个人或团队对笔记数据的安全存储与高效同步需求。"
 source: https://xuanyuan.cloud/zh/r/joplin/server
 canonical: https://xuanyuan.cloud/zh/r/joplin/server
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/joplin/server" title="joplin/server Docker 镜像中文简介、标签列表与拉取命令">joplin/server 中文简介</a>
@@ -14,17 +14,17 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 前置要求
-- **Docker Engine**：用于运行Joplin Server，需根据操作系统安装。参考[Docker官方文档]([])完成安装。  
-- **Docker Compose**：若不使用PostgreSQL存储数据（如笔记、标签等内容），需安装Docker Compose。参考[Docker Compose官方文档]([])完成安装。  
+- **Docker Engine**：用于运行Joplin Server，需根据操作系统安装。参考[Docker官方文档] 完成安装。  
+- **Docker Compose**：若不使用PostgreSQL存储数据（如笔记、标签等内容），需安装Docker Compose。参考[Docker Compose官方文档] 完成安装。  
 
 
 ## Docker环境配置
 ### 基础配置步骤
-1. 复制[.env-sample文件]([])到Docker配置文件目录（例如`/home/[用户名]/docker`）。  
+1. 复制[.env-sample文件] 到Docker配置文件目录（例如`/home/[用户名]/docker`）。  
 2. 将文件重命名为`.env`。  
 3. 运行以下命令测试默认配置启动服务器：  
    ```shell
-   docker run --env-file .env -p 22300:22300 joplin/server:latest
+   docker run --env-file .env -p 22300:22300 docker.xuanyuan.run/joplin/server:latest
    ```  
    服务器默认监听本地`22300`端口，使用SQLite数据库（适合测试，无需额外配置）。生产环境需连接外部数据库，配置方法见下文。  
 
@@ -66,13 +66,13 @@ POSTGRES_CONNECTION_STRING=postgresql://用户名:密码@数据库地址:端口/
 
 
 ### 使用docker-compose创建数据库
-1. 下载[示例docker-compose文件]([])到Docker配置目录（如`/home/[用户名]/docker/docker-compose.yml`）。  
+1. 下载[示例docker-compose文件] 到Docker配置目录（如`/home/[用户名]/docker/docker-compose.yml`）。  
 2. 根据需求修改文件中的配置项（如端口、密码等）。  
 
 
 ## 反向代理配置（可选）
 仅当需要通过互联网访问Joplin Server时需配置反向代理。可参考以下文档：  
-- [Apache反向代理配置]([])  
+- [Apache反向代理配置]   
 - [Nginx反向代理配置]()  
 
 
@@ -168,8 +168,8 @@ npm run start-dev
 
 
 ## 变更日志
-[查看变更日志]([])
+[查看变更日志] 
 
 
 ## 许可证
-详见[LICENSE.md]([])
+详见[LICENSE.md]

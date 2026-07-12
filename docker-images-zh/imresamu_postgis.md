@@ -3,7 +3,7 @@ image: imresamu/postgis
 description: "这是一个用于PostGIS/PostGIS镜像的测试用仓库，其中PostGIS是基于PostgreSQL的开源空间数据库扩展，该仓库的GitHub地址为[]"
 source: https://xuanyuan.cloud/zh/r/imresamu/postgis
 canonical: https://xuanyuan.cloud/zh/r/imresamu/postgis
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/imresamu/postgis" title="imresamu/postgis Docker 镜像中文简介、标签列表与拉取命令">imresamu/postgis 中文简介</a>
@@ -15,15 +15,15 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 开发状态
 ### 🚧 实验性开发中
-- **测试镜像**（支持 amd64 + arm64）：[[]]([])  
-  - 内部仅 amd64 仓库：[[]]([])  
-  - 内部仅 arm64 仓库：[[]]([])  
-- **代码仓库**：[[]]([])  
+- **测试镜像**（支持 amd64 + arm64）：[[]]   
+  - 内部仅 amd64 仓库：[[]]   
+  - 内部仅 arm64 仓库：[[]]   
+- **代码仓库**：[[]]   
 - **状态**：实验性，积极开发中  
 
 
 ## 镜像概述
-`imresamu/postgis` 镜像基于官方 [`postgres`]([]) 镜像构建，提供 Debian 和 Alpine 两种变体，支持 PostgreSQL 13、14、15、16、17 版本，且包含 PostGIS 扩展。此外，还提供基于最新两个 PostgreSQL 版本（16、17）构建的镜像，其中 PostGIS 及其依赖（如 GEOS、PROJ 等）均从各自的主分支编译。
+`imresamu/postgis` 镜像基于官方 [`postgres`]  镜像构建，提供 Debian 和 Alpine 两种变体，支持 PostgreSQL 13、14、15、16、17 版本，且包含 PostGIS 扩展。此外，还提供基于最新两个 PostgreSQL 版本（16、17）构建的镜像，其中 PostGIS 及其依赖（如 GEOS、PROJ 等）均从各自的主分支编译。
 
 ### 默认数据库扩展
 父镜像 `postgres` 创建的默认数据库会预装以下扩展：
@@ -55,8 +55,8 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 | 架构   | 构建系统                          | 状态                                                                 |
 |--------|-----------------------------------|----------------------------------------------------------------------|
-| Amd64  | [GithubCI-logs]([]) | [![Build PostGIS images]([])]([]) |
-| Arm64  | [CircleCI-logs]([]) | [![CircleCI]([])]([]) |
+| Amd64  | [GithubCI-logs]  | [![Build PostGIS images] ]  |
+| Arm64  | [CircleCI-logs]  | [![CircleCI] ]  |
 
 
 ## 推荐版本（新用户）
@@ -73,11 +73,11 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 | `docker.io/imresamu/postgis:` 标签                                                                 | Dockerfile                                                                 | 架构       | 系统     | PostgreSQL | PostGIS |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|------------|----------|------------|---------|
-| [`13-3.5-bookworm`]([]), [`13-3.5.3-bookworm`]([]), [`13-3.5`]([]) | [Dockerfile]([]) | amd64 arm64 | bookworm | 13         | 3.5.3   |
-| [`14-3.5-bookworm`]([]), [`14-3.5.3-bookworm`]([]), [`14-3.5`]([]) | [Dockerfile]([]) | amd64 arm64 | bookworm | 14         | 3.5.3   |
-| [`15-3.5-bookworm`]([]), [`15-3.5.3-bookworm`]([]), [`15-3.5`]([]) | [Dockerfile]([]) | amd64 arm64 | bookworm | 15         | 3.5.3   |
-| [`16-3.5-bookworm`]([]), [`16-3.5.3-bookworm`]([]), [`16-3.5`]([]) | [Dockerfile]([]) | amd64 arm64 | bookworm | 16         | 3.5.3   |
-| [`17-3.5-bookworm`]([]), [`17-3.5.3-bookworm`]([]), [`17-3.5`]([]), [`latest`]([]) | [Dockerfile]([]) | amd64 arm64 | bookworm | 17         | 3.5.3   |
+| [`13-3.5-bookworm`] , [`13-3.5.3-bookworm`] , [`13-3.5`]  | [Dockerfile]  | amd64 arm64 | bookworm | 13         | 3.5.3   |
+| [`14-3.5-bookworm`] , [`14-3.5.3-bookworm`] , [`14-3.5`]  | [Dockerfile]  | amd64 arm64 | bookworm | 14         | 3.5.3   |
+| [`15-3.5-bookworm`] , [`15-3.5.3-bookworm`] , [`15-3.5`]  | [Dockerfile]  | amd64 arm64 | bookworm | 15         | 3.5.3   |
+| [`16-3.5-bookworm`] , [`16-3.5.3-bookworm`] , [`16-3.5`]  | [Dockerfile]  | amd64 arm64 | bookworm | 16         | 3.5.3   |
+| [`17-3.5-bookworm`] , [`17-3.5.3-bookworm`] , [`17-3.5`] , [`latest`]  | [Dockerfile]  | amd64 arm64 | bookworm | 17         | 3.5.3   |
 
 
 ## Debian - bullseye
@@ -85,11 +85,11 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 | `docker.io/imresamu/postgis:` 标签                                                                 | Dockerfile                                                                 | 架构       | 系统     | PostgreSQL | PostGIS |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|------------|----------|------------|---------|
-| [`13-3.5-bullseye`]([]), [`13-3.5.2-bullseye`]([]) | [Dockerfile]([]) | amd64 arm64 | bullseye | 13         | 3.5.2   |
-| [`14-3.5-bullseye`]([]), [`14-3.5.2-bullseye`]([]) | [Dockerfile]([]) | amd64 arm64 | bullseye | 14         | 3.5.2   |
-| [`15-3.5-bullseye`]([]), [`15-3.5.2-bullseye`]([]) | [Dockerfile]([]) | amd64 arm64 | bullseye | 15         | 3.5.2   |
-| [`16-3.5-bullseye`]([]), [`16-3.5.2-bullseye`]([]) | [Dockerfile]([]) | amd64 arm64 | bullseye | 16         | 3.5.2   |
-| [`17-3.5-bullseye`]([]), [`17-3.5.2-bullseye`]([]) | [Dockerfile]([]) | amd64 arm64 | bullseye | 17         | 3.5.2   |
+| [`13-3.5-bullseye`] , [`13-3.5.2-bullseye`]  | [Dockerfile]  | amd64 arm64 | bullseye | 13         | 3.5.2   |
+| [`14-3.5-bullseye`] , [`14-3.5.2-bullseye`]  | [Dockerfile]  | amd64 arm64 | bullseye | 14         | 3.5.2   |
+| [`15-3.5-bullseye`] , [`15-3.5.2-bullseye`]  | [Dockerfile]  | amd64 arm64 | bullseye | 15         | 3.5.2   |
+| [`16-3.5-bullseye`] , [`16-3.5.2-bullseye`]  | [Dockerfile]  | amd64 arm64 | bullseye | 16         | 3.5.2   |
+| [`17-3.5-bullseye`] , [`17-3.5.2-bullseye`]  | [Dockerfile]  | amd64 arm64 | bullseye | 17         | 3.5.2   |
 
 
 ## Recent（实验性）
@@ -97,8 +97,8 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 | `docker.io/imresamu/postgis:` 标签                                                                                                                                                                                                 | Dockerfile                                                                 | 架构       | 系统     | PostgreSQL | PostGIS                                                                 |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|------------|----------|------------|-------------------------------------------------------------------------|
-| [`16-recent-bookworm`]([]), [`16-recent-postgis3.5.3-geos3.13.1-proj9.6.2-gdal3.11.0-cgal6.0.1-sfcgal2.1.0-bookworm`]([]), [`16-recent`]([]) | [Dockerfile]([]) | amd64 arm64 | bookworm | 16         | postgis=tags/3.5.3, geos=tags/3.13.1, proj=tags/9.6.2, gdal=tags/v3.11.0, cgal=tags/v6.0.1, sfcgal=tags/v2.1.0 |
-| [`17-recent-bookworm`]([]), [`17-recent-postgis3.5.3-geos3.13.1-proj9.6.2-gdal3.11.0-cgal6.0.1-sfcgal2.1.0-bookworm`]([]), [`17-recent`]([]), [`recent`]([]) | [Dockerfile]([]) | amd64 arm64 | bookworm | 17         | postgis=tags/3.5.3, geos=tags/3.13.1, proj=tags/9.6.2, gdal=tags/v3.11.0, cgal=tags/v6.0.1, sfcgal=tags/v2.1.0 |
+| [`16-recent-bookworm`] , [`16-recent-postgis3.5.3-geos3.13.1-proj9.6.2-gdal3.11.0-cgal6.0.1-sfcgal2.1.0-bookworm`] , [`16-recent`]  | [Dockerfile]  | amd64 arm64 | bookworm | 16         | postgis=tags/3.5.3, geos=tags/3.13.1, proj=tags/9.6.2, gdal=tags/v3.11.0, cgal=tags/v6.0.1, sfcgal=tags/v2.1.0 |
+| [`17-recent-bookworm`] , [`17-recent-postgis3.5.3-geos3.13.1-proj9.6.2-gdal3.11.0-cgal6.0.1-sfcgal2.1.0-bookworm`] , [`17-recent`] , [`recent`]  | [Dockerfile]  | amd64 arm64 | bookworm | 17         | postgis=tags/3.5.3, geos=tags/3.13.1, proj=tags/9.6.2, gdal=tags/v3.11.0, cgal=tags/v6.0.1, sfcgal=tags/v2.1.0 |
 
 
 ## Debian Geo Bundle（实验性）
@@ -106,5 +106,5 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 | `docker.io/imresamu/postgis:` 标签                                                                         | Dockerfile                                                                       | 架构       | 系统     | PostgreSQL | PostGIS |
 |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|------------|----------|------------|---------|
-| [`16-3.5-bundle0-bookworm`]([]), [`16-3.5.3-bundle0-bookworm`]([]), [`16-3.5-bundle0`]([]) | [Dockerfile]([]) | amd64 arm64 | bookworm | 16         | 3.5.3   |
+| [`16-3.5-bundle0-bookworm`] , [`16-3.5.3-bundle0-bookworm`] , [`16-3.5-bundle0`]  | [Dockerfile]  | amd64 arm64 | bookworm | 16         | 3.5.3   |
 | [`17-3.5-bundle0-bookworm`]([]

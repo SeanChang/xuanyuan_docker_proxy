@@ -3,7 +3,7 @@ image: amd64/drupal
 description: "Drupal是一款开源内容管理平台，支持数百万网站和应用的运行。"
 source: https://xuanyuan.cloud/zh/r/amd64/drupal
 canonical: https://xuanyuan.cloud/zh/r/amd64/drupal
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/amd64/drupal" title="amd64/drupal Docker 镜像中文简介、标签列表与拉取命令">amd64/drupal 中文简介</a>
@@ -159,7 +159,7 @@ $ docker run --name some-drupal --network some-network -d \
 
 services:
   drupal:
-    image: amd64/drupal:10-apache
+    image: docker.xuanyuan.run/amd64/drupal:10-apache
     ports:
       - 8080:80
     volumes:
@@ -170,7 +170,7 @@ services:
     restart: always
 
   postgres:
-    image: postgres:16
+    image: docker.xuanyuan.run/postgres:16
     environment:
       POSTGRES_PASSWORD: example
     restart: always
@@ -187,7 +187,7 @@ $ docker compose up -d
 本镜像默认不包含额外的 PHP 扩展。如需添加，可基于本镜像创建自定义 Dockerfile，参考 [php 镜像文档](https://github.com/docker-library/docs/blob/master/php/README.md#how-to-install-more-php-extensions) 中的方法编译安装扩展。示例 Dockerfile：
 
 ```dockerfile
-FROM amd64/drupal:10-apache
+FROM docker.xuanyuan.run/amd64/drupal:10-apache
 
 # 安装 gd 扩展示例
 RUN apt-get update && apt-get install -y \

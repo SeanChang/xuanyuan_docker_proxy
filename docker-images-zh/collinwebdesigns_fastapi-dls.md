@@ -3,7 +3,7 @@ image: collinwebdesigns/fastapi-dls
 description: "最小化的委托许可服务（DLS），提供委托许可服务功能。"
 source: https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls
 canonical: https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/collinwebdesigns/fastapi-dls" title="collinwebdesigns/fastapi-dls Docker 镜像中文简介、标签列表与拉取命令">collinwebdesigns/fastapi-dls 中文简介</a>
@@ -57,7 +57,7 @@ x-dls-variables: &dls-variables
 
 services:
   dls:
-    image: collinwebdesigns/fastapi-dls:latest # 镜像名称
+    image: docker.xuanyuan.run/collinwebdesigns/fastapi-dls:latest # 镜像名称
     restart: always # 容器重启策略
     environment:
       <<: *dls-variables # 引用上述环境变量
@@ -89,7 +89,7 @@ docker run -d \
   -p 443:443 \
   -v /opt/docker/fastapi-dls/cert:/app/cert \
   -v db:/app/database \
-  collinwebdesigns/fastapi-dls:latest
+  docker.xuanyuan.run/collinwebdesigns/fastapi-dls:latest
 ```
 
 

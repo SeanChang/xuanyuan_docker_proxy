@@ -3,7 +3,7 @@ image: apacherocketmq/rocketmq-dashboard
 description: "这是一个用于Apache RocketMQ控制台的Docker镜像，提供直观的可视化界面，支持用户便捷监控和管理RocketMQ集群，可查看消息流转状态、集群节点信息、主题配置及消费者消费情况等，同时通过Docker容器化技术简化部署流程，实现快速启动与环境一致性，助力开发者和运维人员高效运维RocketMQ服务。"
 source: https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard
 canonical: https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apacherocketmq/rocketmq-dashboard" title="apacherocketmq/rocketmq-dashboard Docker 镜像中文简介、标签列表与拉取命令">apacherocketmq/rocketmq-dashboard 中文简介</a>
@@ -35,7 +35,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 打开终端，执行下面这个命令拉取最新的 RocketMQ Dashboard 镜像（具体的镜像名称和标签，你可以去 Docker Hub 或者官方仓库看看最新的）：
 
 ```bash
-docker pull apache/rocketmq-dashboard:latest
+docker pull docker.xuanyuan.run/apache/rocketmq-dashboard:latest
 ```
 
 ### 3.3 运行容器
@@ -45,7 +45,7 @@ docker pull apache/rocketmq-dashboard:latest
 基本命令格式如下：
 
 ```bash
-docker run -d -p [宿主机端口]:8080 -e "ROCKETMQ_CONFIG_NAMESRVADDR=[NameServer 地址:端口]" --name rocketmq-dashboard apache/rocketmq-dashboard:latest
+docker run -d -p [宿主机端口]:8080 -e "ROCKETMQ_CONFIG_NAMESRVADDR=[NameServer 地址:端口]" --name rocketmq-dashboard docker.xuanyuan.run/apache/rocketmq-dashboard:latest
 ```
 
 **参数说明**：
@@ -60,7 +60,7 @@ docker run -d -p [宿主机端口]:8080 -e "ROCKETMQ_CONFIG_NAMESRVADDR=[NameSer
 假设你的 NameServer 地址是 `192.168.1.100:9876`，想把 Dashboard 的 8080 端口映射到宿主机的 8080 端口，命令就是：
 
 ```bash
-docker run -d -p 8080:8080 -e "ROCKETMQ_CONFIG_NAMESRVADDR=192.168.1.100:9876" --name rocketmq-dashboard apache/rocketmq-dashboard:latest
+docker run -d -p 8080:8080 -e "ROCKETMQ_CONFIG_NAMESRVADDR=192.168.1.100:9876" --name rocketmq-dashboard docker.xuanyuan.run/apache/rocketmq-dashboard:latest
 ```
 
 ### 3.4 访问 Dashboard
@@ -78,6 +78,6 @@ docker run -d -p 8080:8080 -e "ROCKETMQ_CONFIG_NAMESRVADDR=192.168.1.100:9876" -
 
 ## 五、获取更多信息
 
-*   Apache RocketMQ 官网：[[]]([])
+*   Apache RocketMQ 官网：[[]] 
 *   RocketMQ Dashboard GitHub 仓库：通常在 RocketMQ 主仓库的子模块或者相关链接里能找到。
 *   Docker Hub 镜像页面：搜索 `rocketmq-dashboard` 可以找到官方或社区维护的镜像，上面会有更详细的说明。

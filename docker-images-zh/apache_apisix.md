@@ -3,7 +3,7 @@ image: apache/apisix
 description: "Apache APISIX是一款动态、实时、高性能的云原生API网关，提供负载均衡、动态上游、金丝雀发布、熔断、认证、可观测性等丰富流量管理功能，适用于处理传统南北向流量及服务间东西向流量。"
 source: https://xuanyuan.cloud/zh/r/apache/apisix
 canonical: https://xuanyuan.cloud/zh/r/apache/apisix
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/apisix" title="apache/apisix Docker 镜像中文简介、标签列表与拉取命令">apache/apisix 中文简介</a>
@@ -32,7 +32,7 @@ Apache APISIX支持单机模式，也支持使用etcd数据库作为配置中心
 docker run -d --name apache-apisix \
   -p 9080:9080 \
   -e APISIX_STAND_ALONE=true \
-  apache/apisix
+  docker.xuanyuan.run/apache/apisix
 ```
 
 向运行中的APISIX容器添加路由和插件配置：
@@ -86,7 +86,7 @@ docker run -d \
   --net host \
   -e ALLOW_NONE_AUTHENTICATION=yes \
   -e ETCD_ADVERTISE_CLIENT_URLS=http://127.0.0.1:2379 \
-  bitnami/etcd:latest
+  docker.xuanyuan.run/bitnami/etcd:latest
 ```
 
 2. 启动APISIX。
@@ -95,7 +95,7 @@ docker run -d \
 docker run -d \
   --name apache-apisix \
   --net host \
-  apache/apisix
+  docker.xuanyuan.run/apache/apisix
 ```
 
 #### 方案二
@@ -113,7 +113,7 @@ docker run -d --name etcd \
   -p 2380:2380 \
   -e ALLOW_NONE_AUTHENTICATION=yes \
   -e ETCD_ADVERTISE_CLIENT_URLS=http://127.0.0.1:2379 \
-  bitnami/etcd:latest
+  docker.xuanyuan.run/bitnami/etcd:latest
 ```
 
 2. 查看上一步的返回结果，可看到`subnet`地址。在当前目录创建APISIX配置文件。需将`allow_admin`设置为步骤1中获取的`subnet`地址。
@@ -144,7 +144,7 @@ EOF
   -p 9080:9080 \
   -p 9180:9180 \
   -v $(pwd)/config.yaml:/usr/local/apisix/conf/config.yaml \
-  apache/apisix
+  docker.xuanyuan.run/apache/apisix
 ```
 
 #### 测试示例

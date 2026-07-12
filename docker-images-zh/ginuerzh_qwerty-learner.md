@@ -3,7 +3,7 @@ image: ginuerzh/qwerty-learner
 description: "qwerty-learner是一个开源的Web打字练习应用，支持多语言、多种键盘布局，提供实时打字统计和进度跟踪功能，帮助用户提升打字速度和准确性。"
 source: https://xuanyuan.cloud/zh/r/ginuerzh/qwerty-learner
 canonical: https://xuanyuan.cloud/zh/r/ginuerzh/qwerty-learner
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ginuerzh/qwerty-learner" title="ginuerzh/qwerty-learner Docker 镜像中文简介、标签列表与拉取命令">ginuerzh/qwerty-learner 中文简介</a>
@@ -41,12 +41,12 @@ qwerty-learner是一个基于Web的开源打字练习应用，旨在通过交互
 ```bash
 docker run -d \
   --name qwerty-learner \
-  -p 8080:80 \  # 映射容器80端口到主机8080端口（可自定义主机端口）
+  -p 5173:5173 \  # 映射容器5173端口到主机5173端口（可自定义主机端口）
   -v ./custom-content:/app/public/custom \  # （可选）挂载自定义练习内容目录
   --restart unless-stopped \
-  realkai42/qwerty-learner:latest
+  ginuerzh/qwerty-learner:latest
 ```
-启动后，在浏览器中访问 `http://localhost:8080` 即可使用应用。
+启动后，在浏览器中访问 `http://localhost:5173` 即可使用应用。
 
 ### Docker Compose 部署（推荐）
 创建 `docker-compose.yml` 文件，配置如下：
@@ -54,10 +54,10 @@ docker run -d \
 version: '3.8'
 services:
   qwerty-learner:
-    image: realkai42/qwerty-learner:latest
+    image: docker.xuanyuan.run/ginuerzh/qwerty-learner:latest
     container_name: qwerty-learner
     ports:
-      - "8080:80"  # 主机端口:容器端口（可修改主机端口，如8888:80）
+      - "5173:5173"  # 主机端口:容器端口（可修改主机端口，如8888:5173）
     volumes:
       - ./custom-content:/app/public/custom  # 自定义练习内容挂载（可选）
     restart: unless-stopped
@@ -68,11 +68,11 @@ docker-compose up -d
 ```
 
 ### 访问应用
-容器启动后，通过浏览器访问 `http://<主机IP>:8080`（将 `<主机IP>` 替换为部署主机的IP地址，本地部署直接使用 `localhost`）。
+容器启动后，通过浏览器访问 `http://<主机IP>:5173`（将 `<主机IP>` 替换为部署主机的IP地址，本地部署直接使用 `localhost`）。
 
 ### 环境变量配置
 支持通过环境变量自定义应用行为，配置方式：在 `docker run` 或 `docker-compose.yml` 中添加 `-e 变量名=值`。常用变量如下：
-- `PORT`: 容器内部服务端口（默认：80，修改需同步调整端口映射）
+- `PORT`: 容器内部服务端口（默认：5173，修改需同步调整端口映射）
 - `CUSTOM_CONTENT_PATH`: 自定义练习内容目录（默认：`/app/public/custom`，需配合 volumes 挂载使用）
 - `DEFAULT_LANGUAGE`: 默认语言（可选值：`en`/`zh`/`ja`，默认：`en`）
 - `DEFAULT_LAYOUT`: 默认键盘布局（可选值：`qwerty`/`dvorak`/`colemak`，默认：`qwerty`）
@@ -88,6 +88,6 @@ docker-compose up -d
 应用学习进度数据默认存储在浏览器本地存储（LocalStorage），如需多设备同步，需通过外部服务（如云存储）手动导出/导入进度文件（路径：应用设置 → 导出进度）。
 
 ## 常见问题
-- **端口冲突**：若主机8080端口被占用，修改 `-p` 参数中的主机端口（如 `-p 8888:80`）
+- **端口冲突**：若主机5173端口被占用，修改 `-p` 参数中的主机端口（如 `-p 8888:5173`）
 - **自定义内容不显示**：检查文件命名格式是否正确，确保挂载路径与 `CUSTOM_CONTENT_PATH` 一致
 - **中文显示乱码**：确保自定义文本文件编码为 UTF-8

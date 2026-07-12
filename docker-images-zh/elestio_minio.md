@@ -3,7 +3,7 @@ image: elestio/minio
 description: "由Elestio验证并打包的Minio对象存储服务，提供兼容S3 API的高性能数据存储解决方案，适用于云原生环境下的文件存储与管理。"
 source: https://xuanyuan.cloud/zh/r/elestio/minio
 canonical: https://xuanyuan.cloud/zh/r/elestio/minio
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/elestio/minio" title="elestio/minio Docker 镜像中文简介、标签列表与拉取命令">elestio/minio 中文简介</a>
@@ -97,7 +97,7 @@ chown -R 1000:1000 ./data  # 设置与容器内用户一致的权限（UID:GID=1
 version: '3.3'
 services:
   minio:
-    image: elestio/minio:${SOFTWARE_VERSION_TAG}
+    image: docker.xuanyuan.run/elestio/minio:${SOFTWARE_VERSION_TAG}
     restart: always
     dns:
       - 8.8.8.8

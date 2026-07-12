@@ -3,7 +3,7 @@ image: library/memcached
 description: "这是一款免费且开源的高性能分布式内存对象缓存系统，主要通过将频繁访问的数据存储在内存中以实现快速数据检索，有效减轻数据库等后端存储的访问压力，提升应用系统的响应速度和整体性能，广泛适用于各类分布式架构环境及高并发业务场景，为开发者提供可靠、高效的数据缓存解决方案。"
 source: https://xuanyuan.cloud/zh/r/library/memcached
 canonical: https://xuanyuan.cloud/zh/r/library/memcached
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/memcached" title="library/memcached Docker 镜像中文简介、标签列表与拉取命令">library/memcached 中文简介</a>
@@ -16,15 +16,15 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 快速参考
 
 ### 维护者  
-[Docker 社区]([])  
+[Docker 社区]   
 
 
 ### 获取帮助  
 可通过以下渠道寻求支持：  
-- [Docker 社区 Slack]([])  
-- [Server Fault]([])  
-- [Unix & Linux]([])  
-- [Stack Overflow]([])  
+- [Docker 社区 Slack]   
+- [Server Fault]   
+- [Unix & Linux]   
+- [Stack Overflow]   
 
 
 ## 支持的标签及对应 Dockerfile 链接  
@@ -32,35 +32,35 @@ exported_at: 2026-06-02T12:26:10.133Z
 以下是当前支持的镜像标签，及对应的 Dockerfile 源码链接：  
 
 - `1.6.39`, `1.6`, `1`, `latest`, `1.6.39-trixie`, `1.6-trixie`, `1-trixie`, `trixie`  
-  [Dockerfile]([])  
+  [Dockerfile]   
 
 - `1.6.39-alpine`, `1.6-alpine`, `1-alpine`, `alpine`, `1.6.39-alpine3.22`, `1.6-alpine3.22`, `1-alpine3.22`, `alpine3.22`  
-  [Dockerfile]([])  
+  [Dockerfile]   
 
 
 ## 快速参考（续）
 
 ### 问题反馈  
-若发现镜像问题，可在 [GitHub 仓库]([]) 提交 issue。  
+若发现镜像问题，可在 [GitHub 仓库]  提交 issue。  
 
 
 ### 支持的架构  
-（更多信息见 [官方说明]([])）  
+（更多信息见 [官方说明] ）  
 `amd64`, `arm32v5`, `arm32v6`, `arm32v7`, `arm64v8`, `i386`, `ppc64le`, `riscv64`, `s390x`  
 
 
 ### 镜像详情  
-镜像的元数据、传输大小等详细信息，可查看 [repo-info 仓库的 memcached 目录]([])（含 [历史记录]([])）。  
+镜像的元数据、传输大小等详细信息，可查看 [repo-info 仓库的 memcached 目录] （含 [历史记录] ）。  
 
 
 ### 镜像更新  
 镜像更新信息可通过以下途径追踪：  
-- [official-images 仓库的 library/memcached 标签]([])  
-- [official-images 仓库的 library/memcached 文件]([])（含 [历史记录]([])）  
+- [official-images 仓库的 library/memcached 标签]   
+- [official-images 仓库的 library/memcached 文件] （含 [历史记录] ）  
 
 
 ### 描述来源  
-本文档内容来源于 [docs 仓库的 memcached 目录]([])（含 [历史记录]([])）。  
+本文档内容来源于 [docs 仓库的 memcached 目录] （含 [历史记录] ）。  
 
 
 ## 什么是 Memcached？  
@@ -107,14 +107,14 @@ $ docker run --name my-memcache -d memcached memcached --memory-limit=64
 ```yaml
 services:
   memcached:
-    image: memcached
+    image: docker.xuanyuan.run/memcached
     command:
       - --conn-limit=1024    # 最大连接数限制为 1024
       - --memory-limit=64    # 内存限制为 64MB
       - --threads=4          # 启动 4 个工作线程
 ```  
 
-更多配置细节可参考 [memcached 官方 wiki]([])。  
+更多配置细节可参考 [memcached 官方 wiki] 。  
 
 
 ## 镜像变体  
@@ -131,15 +131,15 @@ services:
 
 ### `memcached:<version>-alpine`  
 
-此变体基于 [Alpine Linux]([])（轻量级 Linux 发行版）构建，镜像体积极小（约 5MB），适合对镜像大小有严格要求的场景。  
+此变体基于 [Alpine Linux] （轻量级 Linux 发行版）构建，镜像体积极小（约 5MB），适合对镜像大小有严格要求的场景。  
 
-**注意**：Alpine 使用 `musl libc` 而非 `glibc`，部分依赖 `glibc` 的软件可能存在兼容性问题。此外，Alpine 镜像通常不包含 `git`、`bash` 等额外工具，若需安装，可参考 [Alpine 官方镜像文档]([]) 进行扩展。  
+**注意**：Alpine 使用 `musl libc` 而非 `glibc`，部分依赖 `glibc` 的软件可能存在兼容性问题。此外，Alpine 镜像通常不包含 `git`、`bash` 等额外工具，若需安装，可参考 [Alpine 官方镜像文档]  进行扩展。  
 
 
 ## 许可证  
 
-镜像中包含的 memcached 软件许可证信息，可查看 [memcached 源码仓库的 LICENSE 文件]([])。  
+镜像中包含的 memcached 软件许可证信息，可查看 [memcached 源码仓库的 LICENSE 文件] 。  
 
-与所有 Docker 镜像一样，本镜像可能包含其他软件（如 Debian 基础系统中的 Bash 等），这些软件可能具有独立许可证。自动检测到的额外许可证信息，可参考 [repo-info 仓库的 memcached 目录]([])。  
+与所有 Docker 镜像一样，本镜像可能包含其他软件（如 Debian 基础系统中的 Bash 等），这些软件可能具有独立许可证。自动检测到的额外许可证信息，可参考 [repo-info 仓库的 memcached 目录] 。  
 
 使用前请确保遵守镜像中所有软件的相关许可证要求。

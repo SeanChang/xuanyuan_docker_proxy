@@ -3,7 +3,7 @@ image: jgraph/drawio
 description: "draw.io的Docker镜像是将免费开源的多功能图形绘制工具draw.io打包而成的容器化应用，该工具支持流程图、思维导图、UML图、网络拓扑图等多种图表绘制，具备本地存储与云端同步功能，可导出PNG、PDF、SVG等多种格式；通过Docker镜像，用户无需复杂配置即可快速部署和运行draw.io，适用于开发团队协作、教学设计、项目管理等场景，助力高效完成图表绘制工作，提升整体效率。"
 source: https://xuanyuan.cloud/zh/r/jgraph/drawio
 canonical: https://xuanyuan.cloud/zh/r/jgraph/drawio
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jgraph/drawio" title="jgraph/drawio Docker 镜像中文简介、标签列表与拉取命令">jgraph/drawio 中文简介</a>
@@ -15,7 +15,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 简介
 
-[diagrams.net]([])（原 draw.io）是一款免费在线图表工具，可用于绘制流程图、网络图、UML 图、ER 图、数据库架构图、BPMN 图、电路图等，支持导入 `.vsdx`、Gliffy™ 和 Lucidchart™ 文件。  
+[diagrams.net] （原 draw.io）是一款免费在线图表工具，可用于绘制流程图、网络图、UML 图、ER 图、数据库架构图、BPMN 图、电路图等，支持导入 `.vsdx`、Gliffy™ 和 Lucidchart™ 文件。  
 
 本仓库包含以下内容：  
 - 与 diagrams.net 版本同步更新的 Docker 镜像  
@@ -27,10 +27,10 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 镜像说明
 
-Dockerfile 基于 `tomcat:9-jre11` 构建（详见 [Docker Hub tomcat 镜像]([])）。  
+Dockerfile 基于 `tomcat:9-jre11` 构建（详见 [Docker Hub tomcat 镜像] ）。  
 
 > **注意**：自 16.5.3 版本起，不再维护 alpine 和 debian 镜像，统一使用单一镜像以减少安全漏洞。  
-> 本项目从 [fjudith/draw.io]([]) fork 而来。  
+> 本项目从 [fjudith/draw.io]  fork 而来。  
 
 
 ## 功能特性
@@ -46,7 +46,7 @@ Dockerfile 基于 `tomcat:9-jre11` 构建（详见 [Docker Hub tomcat 镜像]([]
 ### 运行容器  
 执行以下命令启动 diagrams.net 容器：  
 ```bash
-docker run -it --rm --name="draw" -p 8080:8080 -p 8443:8443 jgraph/drawio
+docker run -it --rm --name="draw" -p 8080:8080 -p 8443:8443 docker.xuanyuan.run/jgraph/drawio
 ```
 
 ### 访问服务  
@@ -108,4 +108,4 @@ docker run -it --rm --name="draw" -p 8080:8080 -p 8443:8443 jgraph/drawio
 
 
 ## 参考链接  
-- [diagrams.net 官方仓库]([])
+- [diagrams.net 官方仓库]

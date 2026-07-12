@@ -3,7 +3,7 @@ image: prom/mysqld-exporter
 description: "Prometheus MySQL导出器，用于收集MySQL数据库性能指标并暴露给Prometheus监控系统，支持实时监控与指标分析。"
 source: https://xuanyuan.cloud/zh/r/prom/mysqld-exporter
 canonical: https://xuanyuan.cloud/zh/r/prom/mysqld-exporter
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/prom/mysqld-exporter" title="prom/mysqld-exporter Docker 镜像中文简介、标签列表与拉取命令">prom/mysqld-exporter 中文简介</a>
@@ -217,7 +217,7 @@ docker run -d \
 version: '3'
 services:
   mysqld-exporter:
-    image: prom/mysqld-exporter
+    image: docker.xuanyuan.run/prom/mysqld-exporter
     container_name: mysqld-exporter
     ports:
       - "9104:9104"

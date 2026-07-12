@@ -3,7 +3,7 @@ image: prom/node-exporter
 description: "prom/node-exporter 是 Prometheus 开源生态中的核心主机监控组件，主要用于采集并通过 HTTP 接口暴露 Linux、Windows、macOS 等操作系统的系统级运行指标，包括 CPU 使用率、内存占用、磁盘空间与 I/O 性能、网络流量与连接状态、进程信息及系统负载等关键数据，为 Prometheus 提供底层主机监控数据源，支持用户构建全面的服务器性能监控与告警体系，广泛适用于物理机、虚拟机及容器化环境的基础监控场景。"
 source: https://xuanyuan.cloud/zh/r/prom/node-exporter
 canonical: https://xuanyuan.cloud/zh/r/prom/node-exporter
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/prom/node-exporter" title="prom/node-exporter Docker 镜像中文简介、标签列表与拉取命令">prom/node-exporter 中文简介</a>
@@ -15,19 +15,19 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 Node exporter 是一款 Prometheus 导出器，用于收集类 Unix 内核暴露的硬件和操作系统指标，采用 Go 语言开发，支持可插拔的指标收集器。  
 
-Windows 用户建议使用 [Windows exporter]([])，如需暴露 NVIDIA GPU 指标，可搭配使用 [prometheus-dcgm]([])。
+Windows 用户建议使用 [Windows exporter] ，如需暴露 NVIDIA GPU 指标，可搭配使用 [prometheus-dcgm] 。
 
 
 ## 安装与使用
 
-如果您刚接触 Prometheus 和 `node_exporter`，可参考 [简易分步指南]([])。  
+如果您刚接触 Prometheus 和 `node_exporter`，可参考 [简易分步指南] 。  
 
 `node_exporter` 默认监听 HTTP 端口 9100，更多配置选项可通过 `--help` 查看。
 
 
 ### Ansible 自动化部署
 
-如需通过 [Ansible]([]) 自动化安装，可使用 [Prometheus 社区角色]([])。
+如需通过 [Ansible]  自动化安装，可使用 [Prometheus 社区角色] 。
 
 
 ### Docker 部署
@@ -44,7 +44,7 @@ docker run -d \
   --net="host" \
   --pid="host" \
   -v "/:/host:ro,rslave" \
-  quay.io/prometheus/node-exporter:latest \
+  ***-quay.xuanyuan.run/prometheus/node-exporter:latest \
   --path.rootfs=/host
 ```
 
@@ -57,7 +57,7 @@ version: '3.8'
 
 services:
   node_exporter:
-    image: quay.io/prometheus/node-exporter:latest
+    image: ***-quay.xuanyuan.run/prometheus/node-exporter:latest
     container_name: node_exporter
     command:
       - '--path.rootfs=/host'
@@ -145,7 +145,7 @@ services:
 | nvme          | 从 `/sys/class/nvme/` 暴露 NVMe 设备信息                              | Linux                                         |
 | os            | 从 `/etc/os-release` 或 `/usr/lib/os-release` 暴露操作系统版本信息     | 所有系统                                     |
 | powersupplyclass | 从 `/sys/class/power_supply` 暴露电源统计信息                      | Linux                                         |
-| pressure      | 从 `/proc/pressure/` 暴露压力 stall 统计信息                          | Linux（内核 4.20+ 且启用 [CONFIG_PSI]([])） |
+| pressure      | 从 `/proc/pressure/` 暴露压力 stall 统计信息                          | Linux（内核 4.20+ 且启用 [CONFIG_PSI] ） |
 | rapl          | 从 `/sys/class/powercap` 暴露能源相关统计信息                         | Linux                                         |
 | schedstat     | 从 `/proc/schedstat` 暴露任务调度器统计信息                           | Linux                                         |
 | selinux       | 暴露 SELinux 统计信息                                                | Linux                                         |
@@ -223,7 +223,7 @@ sysctl -w kernel.perf_event_paranoid=X
 - 0：允许访问 CPU 特定数据，但不允许原始跟踪点采样  
 - -1：无限制  
 
-多数场景下 `0` 可提供最完整指标，更多信息见 [`man 2 perf_event_open`]([])。  
+多数场景下 `0` 可提供最完整指标，更多信息见 [`man 2 perf_event_open`] 。  
 
 默认情况下，`perf` 收集器仅收集 `node_exporter` 运行的 CPU（通过 `runtime.NumCPU` 获取）。如需指定其他 CPU，使用 `--collector.perf.cpus` 标志，例如：  
 ```bash

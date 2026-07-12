@@ -3,7 +3,7 @@ image: linuxserver/libreoffice
 description: "LinuxServer.io 提供的 LibreOffice Docker 镜像，支持多架构，具备定期更新、用户映射和安全增强特性，可通过 Web 界面访问的免费办公套件。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/libreoffice
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/libreoffice
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/libreoffice" title="linuxserver/libreoffice Docker 镜像中文简介、标签列表与拉取命令">linuxserver/libreoffice 中文简介</a>
@@ -57,7 +57,7 @@ LinuxServer.io 团队提供的此容器镜像具有以下特点：
 ---
 services:
   libreoffice:
-    image: lscr.io/linuxserver/libreoffice:latest
+    image: docker.xuanyuan.run/linuxserver/libreoffice:latest
     container_name: libreoffice
     environment:
       - PUID=1000
@@ -85,7 +85,7 @@ docker run -d \
   -v /path/to/config:/config \
   --shm-size="1gb" \
   --restart unless-stopped \
-  lscr.io/linuxserver/libreoffice:latest
+  docker.xuanyuan.run/linuxserver/libreoffice:latest
 ```
 
 ## 参数说明
@@ -112,7 +112,7 @@ docker-compose pull libreoffice
 
 ### Docker CLI
 ```bash
-docker pull lscr.io/linuxserver/libreoffice:latest
+docker pull docker.xuanyuan.run/linuxserver/libreoffice:latest
  docker stop libreoffice
  docker rm libreoffice
  # 重新运行初始 docker run 命令

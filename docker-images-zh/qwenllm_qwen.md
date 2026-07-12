@@ -3,7 +3,7 @@ image: qwenllm/qwen
 description: "阿里云提出的Qwen聊天与预训练大型语言模型的官方仓库。"
 source: https://xuanyuan.cloud/zh/r/qwenllm/qwen
 canonical: https://xuanyuan.cloud/zh/r/qwenllm/qwen
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/qwenllm/qwen" title="qwenllm/qwen Docker 镜像中文简介、标签列表与拉取命令">qwenllm/qwen 中文简介</a>
@@ -56,7 +56,7 @@ Qwen Docker镜像是阿里云官方提供的Qwen系列大语言模型（Large La
 通过Docker Hub或阿里云容器镜像服务拉取官方镜像：
 ```bash
 # 从Docker Hub拉取（示例，实际标签以官方为准）
-docker pull qwenlm/qwen:latest
+docker pull docker.xuanyuan.run/qwenlm/qwen:latest
 
 # 从阿里云容器镜像服务拉取（推荐国内用户）
 docker pull .xuanyuan.run/qwen/qwen:latest
@@ -95,7 +95,7 @@ docker run -it --rm \
 version: '3.8'
 services:
   qwen-service:
-    image: qwenlm/qwen:latest
+    image: docker.xuanyuan.run/qwenlm/qwen:latest
     restart: unless-stopped
     ports:
       - "8000:8000"

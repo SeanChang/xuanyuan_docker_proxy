@@ -3,7 +3,7 @@ image: jenkins/inbound-agent
 description: "这是一个用于Jenkins代理的镜像，该镜像支持通过TCP或WebSocket协议建立入站连接至Jenkins控制器，旨在实现代理与控制器之间的稳定通信，确保Jenkins任务能够在代理节点上顺利执行，适用于需要灵活配置网络连接方式的Jenkins环境，为分布式构建和部署提供可靠的基础设施支持。"
 source: https://xuanyuan.cloud/zh/r/jenkins/inbound-agent
 canonical: https://xuanyuan.cloud/zh/r/jenkins/inbound-agent
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jenkins/inbound-agent" title="jenkins/inbound-agent Docker 镜像中文简介、标签列表与拉取命令">jenkins/inbound-agent 中文简介</a>
@@ -14,11 +14,11 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 警告
-**注意！** 该镜像曾以 [jenkinsci/jnlp-slave]([]) 和 [jenkins/jnlp-slave]([]) 发布，目前这两个镜像已弃用，请使用 [jenkins/inbound-agent]([])。
+**注意！** 该镜像曾以 [jenkinsci/jnlp-slave]  和 [jenkins/jnlp-slave]  发布，目前这两个镜像已弃用，请使用 [jenkins/inbound-agent] 。
 
 
 ## 概述
-本镜像用于 Jenkins 代理，通过 TCP 或 WebSocket 与 Jenkins 控制器建立入站连接。代理功能基于 [Jenkins Remoting 库]([]) 实现，其版本取自基础 [Docker Agent 镜像]([])。关于代理的更多使用说明，参见 [《使用代理》]([]) 文档。
+本镜像用于 Jenkins 代理，通过 TCP 或 WebSocket 与 Jenkins 控制器建立入站连接。代理功能基于 [Jenkins Remoting 库]  实现，其版本取自基础 [Docker Agent 镜像] 。关于代理的更多使用说明，参见 [《使用代理》]  文档。
 
 
 ## 用容器镜像配置代理
@@ -43,13 +43,13 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ##### Linux代理
 ```bash
-docker run --init jenkins/inbound-agent -url [] <secret> <agent name>
+docker run --init docker.xuanyuan.run/jenkins/inbound-agent -url [] <secret> <agent name>
 ```
 *注：`--init` 参数用于正确处理子进程（避免僵尸进程），必须添加。*
 
 ##### Windows代理
 ```bash
-docker run jenkins/inbound-agent:windowsservercore-ltsc2019 -Url [] -Secret <secret> -Name <agent name>
+docker run docker.xuanyuan.run/jenkins/inbound-agent:windowsservercore-ltsc2019 -Url [] -Secret <secret> -Name <agent name>
 ```
 
 
@@ -58,12 +58,12 @@ docker run jenkins/inbound-agent:windowsservercore-ltsc2019 -Url [] -Secret <sec
 
 ##### Linux代理
 ```bash
-docker run --init jenkins/inbound-agent -url [] -workDir=/home/jenkins/agent <secret> <agent name>
+docker run --init docker.xuanyuan.run/jenkins/inbound-agent -url [] -workDir=/home/jenkins/agent <secret> <agent name>
 ```
 
 ##### Windows代理
 ```bash
-docker run jenkins/inbound-agent:windowsservercore-ltsc2019 -Url [] -WorkDir=C:/Jenkins/agent -Secret <secret> -Name <agent name>
+docker run docker.xuanyuan.run/jenkins/inbound-agent:windowsservercore-ltsc2019 -Url [] -WorkDir=C:/Jenkins/agent -Secret <secret> -Name <agent name>
 ```
 
 
@@ -90,7 +90,7 @@ docker run jenkins/inbound-agent:windowsservercore-ltsc2019 -Url [] -WorkDir=C:/
 
 
 ## Windows Jenkins Java参数说明
-Windows环境下，`JENKINS_JAVA_OPTS` 环境变量或 `-JenkinsJavaOpts` 命令行参数的解析遵循 [Powershell命令解析规则]([])。若参数包含Powershell表达式特殊字符，需用引号包裹：  
+Windows环境下，`JENKINS_JAVA_OPTS` 环境变量或 `-JenkinsJavaOpts` 命令行参数的解析遵循 [Powershell命令解析规则] 。若参数包含Powershell表达式特殊字符，需用引号包裹：  
 - 示例1：`-XX:+PrintCommandLineFlags --show-version` 需改为 `" -XX:+PrintCommandLineFlags" --show-version`  
 - 示例2：`-Dsome.property=some value --show-version` 需改为 `"-Dsome.property='some value'" --show-version`  
 
@@ -98,8 +98,8 @@ Windows环境下，`JENKINS_JAVA_OPTS` 环境变量或 `-JenkinsJavaOpts` 命令
 ## 配置注意事项
 
 ### 支持的JNLP协议
-自3.40-1版本起，本镜像仅支持 [JNLP4-connect协议]([])，已移除早期不支持的旧协议。因此，Jenkins 2.32之前的版本不再兼容。
+自3.40-1版本起，本镜像仅支持 [JNLP4-connect协议] ，已移除早期不支持的旧协议。因此，Jenkins 2.32之前的版本不再兼容。
 
 
 ### Amazon ECS使用说明
-运行前需确保ECS容器代理已 [更新]([])，旧版本可能无法正确处理 `entryPoint` 参数。详见 [entryPoint定义]([])。
+运行前需确保ECS容器代理已 [更新] ，旧版本可能无法正确处理 `entryPoint` 参数。详见 [entryPoint定义] 。

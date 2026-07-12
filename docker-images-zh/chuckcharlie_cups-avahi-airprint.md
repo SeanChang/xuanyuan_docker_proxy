@@ -3,7 +3,7 @@ image: chuckcharlie/cups-avahi-airprint
 description: "基于Alpine的AirPrint中继，为iOS设备提供打印支持，适用于网络中不支持AirPrint的打印机，支持ARM64和AMD64架构。"
 source: https://xuanyuan.cloud/zh/r/chuckcharlie/cups-avahi-airprint
 canonical: https://xuanyuan.cloud/zh/r/chuckcharlie/cups-avahi-airprint
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/chuckcharlie/cups-avahi-airprint" title="chuckcharlie/cups-avahi-airprint Docker 镜像中文简介、标签列表与拉取命令">chuckcharlie/cups-avahi-airprint 中文简介</a>
@@ -51,7 +51,7 @@ docker run --name cups --restart unless-stopped --net host \
   -v <你的配置目录>:/config \
   -e CUPSADMIN="<用户名>" \
   -e CUPSPASSWORD="<密码>" \
-  chuckcharlie/cups-avahi-airprint:latest
+  docker.xuanyuan.run/chuckcharlie/cups-avahi-airprint:latest
 ```
 
 ### 示例docker-compose配置
@@ -59,7 +59,7 @@ docker run --name cups --restart unless-stopped --net host \
 version: '3.5'
 services:
   cups:
-    image: chuckcharlie/cups-avahi-airprint:latest
+    image: docker.xuanyuan.run/chuckcharlie/cups-avahi-airprint:latest
     container_name: cups
     network_mode: host
     volumes:

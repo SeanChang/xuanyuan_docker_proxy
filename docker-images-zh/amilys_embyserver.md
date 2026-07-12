@@ -3,7 +3,7 @@ image: amilys/embyserver
 description: "Emby媒体服务器是用于集中管理、组织和流式传输电影、音乐、照片、剧集等各类媒体文件的版本应用程序，支持多平台设备访问，提供高清播放、自定义媒体库分类、用户权限管理及跨设备同步等功能。"
 source: https://xuanyuan.cloud/zh/r/amilys/embyserver
 canonical: https://xuanyuan.cloud/zh/r/amilys/embyserver
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/amilys/embyserver" title="amilys/embyserver Docker 镜像中文简介、标签列表与拉取命令">amilys/embyserver 中文简介</a>
@@ -23,20 +23,20 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ### 1. emby-erx Emby 增强/美化插件  
 - **功能**：提供 Emby 界面美化与功能增强  
-- **作者**：[Nolovenodie/emby-crx]([])  
+- **作者**：[Nolovenodie/emby-crx]   
 - **启用方法**：  
   在 `/config/config/ext.sh` 中添加媒体库 ID（多个 ID 用逗号分隔，媒体库 ID 可从媒体库页面 URL 的 `parentId` 参数获取），重启容器后按 `Ctrl+F5` 刷新网页。  
 
 
 ### 2. dd-danmaku Emby 弹幕库插件  
 - **功能**：为视频播放添加弹幕支持  
-- **作者**：[RyoLee/dd-danmaku]([])  
+- **作者**：[RyoLee/dd-danmaku]   
 - **启用/关闭**：在 `/config/config/ext.sh` 中通过配置 `extmod` 参数控制（详见下方扩展脚本说明）。  
 
 
 ### 3. emby 调用外部播放器  
 - **功能**：支持调用外部播放器（如 Potplayer）播放内容  
-- **作者**：[bpking1/embyExternalUrl]([])  
+- **作者**：[bpking1/embyExternalUrl]   
 - **启用/关闭**：在 `/config/config/ext.sh` 中通过配置 `extmod` 参数控制。  
 
 
@@ -84,4 +84,4 @@ exit 0
 4. **启动容器**：重启容器后刷新浏览器完成更新。  
 
 
-**安卓与电视客户端**：可通过链接 [[]]([]) 获取。
+**安卓与电视客户端**：可通过链接 [[]]  获取。

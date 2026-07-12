@@ -3,7 +3,7 @@ image: apache/rocketmq
 description: "Apache RocketMQ是由阿里巴巴开源并捐献给Apache基金会的分布式消息与流处理平台，具备高吞吐量、低延迟、高可用性和可靠性，支持发布订阅、事务消息、定时消息等核心功能，可高效处理金融、电商、物流等领域的海量数据，保障消息可靠传递与系统稳定运行，是企业级分布式架构中实现异步通信、流量削峰和数据解耦的关键组件。"
 source: https://xuanyuan.cloud/zh/r/apache/rocketmq
 canonical: https://xuanyuan.cloud/zh/r/apache/rocketmq
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/rocketmq" title="apache/rocketmq Docker 镜像中文简介、标签列表与拉取命令">apache/rocketmq 中文简介</a>
@@ -75,7 +75,7 @@ Apache RocketMQ 是一款开源的分布式消息中间件，2016年成为 Apach
 
 
 ### 2. 下载与安装  
-1. 从 [Apache RocketMQ 官网]([]) 下载最新稳定版（如 5.2.0），或通过源码编译：  
+1. 从 [Apache RocketMQ 官网]  下载最新稳定版（如 5.2.0），或通过源码编译：  
    ```bash  
    git clone []  
    cd rocketmq  
@@ -159,4 +159,4 @@ sh bin/mqshutdown namesrv
 ```  
 
 
-通过以上步骤，即可快速搭建 RocketMQ 环境并体验消息发送/消费流程。更多高级功能（如事务消息、顺序消息）可参考 [官方文档]([])。
+通过以上步骤，即可快速搭建 RocketMQ 环境并体验消息发送/消费流程。更多高级功能（如事务消息、顺序消息）可参考 [官方文档] 。

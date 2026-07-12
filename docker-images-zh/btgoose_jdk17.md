@@ -3,7 +3,7 @@ image: btgoose/jdk17
 description: "基于CentOS系统的最新JDK 17环境镜像，提供稳定的Java开发与运行平台，适用于需要JDK 17环境的应用部署。"
 source: https://xuanyuan.cloud/zh/r/btgoose/jdk17
 canonical: https://xuanyuan.cloud/zh/r/btgoose/jdk17
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/btgoose/jdk17" title="btgoose/jdk17 Docker 镜像中文简介、标签列表与拉取命令">btgoose/jdk17 中文简介</a>
@@ -33,7 +33,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ### 镜像拉取
 ```bash
-docker pull [镜像仓库地址]/centos-jdk17:latest
+docker pull docker.xuanyuan.run/[镜像仓库地址]/centos-jdk17:latest
 ```
 > 注：请将`[镜像仓库地址]`替换为实际的镜像仓库地址
 
@@ -41,7 +41,7 @@ docker pull [镜像仓库地址]/centos-jdk17:latest
 
 #### 1. 启动交互式终端
 ```bash
-docker run -it --name jdk17-dev centos-jdk17 /bin/bash
+docker run -it --name jdk17-dev docker.xuanyuan.run/centos-jdk17 /bin/bash
 ```
 进入容器后可直接使用`java`、`javac`等命令：
 ```bash
@@ -52,7 +52,7 @@ javac -version  # 查看编译器版本
 #### 2. 运行Java应用
 将本地Java应用JAR包挂载到容器中运行：
 ```bash
-docker run -v /本地应用路径:/app centos-jdk17 java -jar /app/your-application.jar
+docker run -v /本地应用路径:/app docker.xuanyuan.run/centos-jdk17 java -jar /app/your-application.jar
 ```
 
 ### 高级配置
@@ -60,13 +60,13 @@ docker run -v /本地应用路径:/app centos-jdk17 java -jar /app/your-applicat
 #### 自定义JVM参数
 通过环境变量`JAVA_OPTS`设置JVM参数：
 ```bash
-docker run -e JAVA_OPTS="-Xmx1024m -Xms512m -XX:+UseG1GC" -v /本地应用路径:/app centos-jdk17 java $JAVA_OPTS -jar /app/your-application.jar
+docker run -e JAVA_OPTS="-Xmx1024m -Xms512m -XX:+UseG1GC" -v /本地应用路径:/app docker.xuanyuan.run/centos-jdk17 java $JAVA_OPTS -jar /app/your-application.jar
 ```
 
 #### 持久化数据
 如需持久化应用日志或数据，可挂载数据卷：
 ```bash
-docker run -v /本地应用路径:/app -v /本地日志路径:/app/logs centos-jdk17 java -jar /app/your-application.jar
+docker run -v /本地应用路径:/app -v /本地日志路径:/app/logs docker.xuanyuan.run/centos-jdk17 java -jar /app/your-application.jar
 ```
 
 ### docker-compose配置示例
@@ -74,7 +74,7 @@ docker run -v /本地应用路径:/app -v /本地日志路径:/app/logs centos-j
 version: '3'
 services:
   java-app:
-    image: [镜像仓库地址]/centos-jdk17:latest
+    image: docker.xuanyuan.run/[镜像仓库地址]/centos-jdk17:latest
     container_name: java-application
     environment:
       - JAVA_OPTS=-Xmx1024m -Xms512m

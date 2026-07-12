@@ -3,7 +3,7 @@ image: mcp/elasticsearch
 description: "通过自然语言对话与Elasticsearch索引进行交互"
 source: https://xuanyuan.cloud/zh/r/mcp/elasticsearch
 canonical: https://xuanyuan.cloud/zh/r/mcp/elasticsearch
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mcp/elasticsearch" title="mcp/elasticsearch Docker 镜像中文简介、标签列表与拉取命令">mcp/elasticsearch 中文简介</a>
@@ -80,7 +80,7 @@ Elasticsearch MCP Server 是一个基于 Model Context Protocol (MCP) 的 Docker
 docker run -i --rm \
   -e ES_URL="http://localhost:9200" \
   -e ES_API_KEY="your-api-key" \
-  mcp/elasticsearch stdio
+  docker.xuanyuan.run/mcp/elasticsearch stdio
 ```
 
 **参数说明**：

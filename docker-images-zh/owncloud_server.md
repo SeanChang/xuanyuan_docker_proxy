@@ -3,7 +3,7 @@ image: owncloud/server
 description: "ownCloud是一个安全的协作平台，提供文件存储、共享及团队协作功能。"
 source: https://xuanyuan.cloud/zh/r/owncloud/server
 canonical: https://xuanyuan.cloud/zh/r/owncloud/server
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/owncloud/server" title="owncloud/server Docker 镜像中文简介、标签列表与拉取命令">owncloud/server 中文简介</a>
@@ -97,13 +97,13 @@ docker run -d \
   -e MYSQL_USER=owncloud \
   -e MYSQL_PASSWORD=owncloud \
   -v mariadb_data:/var/lib/mysql \
-  mariadb:10.5
+  docker.xuanyuan.run/mariadb:10.5
 
 # 启动 Redis 容器
 docker run -d \
   --name owncloud-redis \
   -v redis_data:/data \
-  redis:6-alpine
+  docker.xuanyuan.run/redis:6-alpine
 
 # 启动 ownCloud 服务器容器
 docker run -d \
@@ -119,7 +119,7 @@ docker run -d \
   -e OWNCLOUD_DB_HOST=db \
   -e OWNCLOUD_REDIS_ENABLED=true \
   -e OWNCLOUD_REDIS_HOST=redis \
-  owncloud/server:latest
+  docker.xuanyuan.run/owncloud/server:latest
 ```
 
 ### 使用 docker-compose 部署
@@ -131,7 +131,7 @@ version: '3'
 
 services:
   owncloud:
-    image: owncloud/server:latest
+    image: docker.xuanyuan.run/owncloud/server:latest
     container_name: owncloud-server
     ports:
       - "8080:8080"
@@ -150,7 +150,7 @@ services:
       - redis
 
   db:
-    image: mariadb:10.5
+    image: docker.xuanyuan.run/mariadb:10.5
     container_name: owncloud-mariadb
     volumes:
       - mariadb_data:/var/lib/mysql
@@ -161,7 +161,7 @@ services:
       - MYSQL_PASSWORD=owncloud
 
   redis:
-    image: redis:6-alpine
+    image: docker.xuanyuan.run/redis:6-alpine
     container_name: owncloud-redis
     volumes:
       - redis_data:/data

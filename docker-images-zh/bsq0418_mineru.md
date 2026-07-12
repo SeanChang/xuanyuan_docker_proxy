@@ -3,7 +3,7 @@ image: bsq0418/mineru
 description: "基于NEON优化的arm64 Docker镜像，集成MinerU PDF智能工具包（magic-pdf[full]），可将PDF转换为Markdown、JSON等结构化格式，预下载模型，适用于Apple Silicon、AWS Graviton等arm64环境，无需GPU即可运行。"
 source: https://xuanyuan.cloud/zh/r/bsq0418/mineru
 canonical: https://xuanyuan.cloud/zh/r/bsq0418/mineru
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bsq0418/mineru" title="bsq0418/mineru Docker 镜像中文简介、标签列表与拉取命令">bsq0418/mineru 中文简介</a>
@@ -34,7 +34,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 快速开始
 ### 1. 拉取镜像
 ```bash
-docker pull <dockerhub-namespace>/mineru:<tag>
+docker pull docker.xuanyuan.run/<dockerhub-namespace>/mineru:<tag>
 ```
 将`<dockerhub-namespace>`和`<tag>`替换为Docker Hub上发布的仓库和标签。
 
@@ -42,7 +42,7 @@ docker pull <dockerhub-namespace>/mineru:<tag>
 ```bash
 docker run --name mineru-dev \
   -v $(pwd)/data:/workspace \
-  -it <dockerhub-namespace>/mineru:<tag> /bin/bash
+  -it docker.xuanyuan.run/<dockerhub-namespace>/mineru:<tag> /bin/bash
 ```
 - `$(pwd)/data`用于存放待处理PDF和输出文件。
 - 默认工作目录为`/mineru`；`magic-pdf.json`已复制到`/root/`和`/home/ubuntu/`。

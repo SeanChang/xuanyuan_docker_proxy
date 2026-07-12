@@ -3,7 +3,7 @@ image: hanxi/xiaomusic
 description: "Xiaomusic 是一款基于命令行的网易云音乐第三方客户端，采用 Python 开发，支持跨平台运行，提供音乐播放、歌曲搜索、歌单管理、收藏同步及实时歌词显示等功能，界面简洁轻量，无需图形界面即可便捷使用，开源免费且持续更新，旨在为用户提供高效纯粹的音乐聆听体验。"
 source: https://xuanyuan.cloud/zh/r/hanxi/xiaomusic
 canonical: https://xuanyuan.cloud/zh/r/hanxi/xiaomusic
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hanxi/xiaomusic" title="hanxi/xiaomusic Docker 镜像中文简介、标签列表与拉取命令">hanxi/xiaomusic 中文简介</a>
@@ -47,7 +47,7 @@ docker run -p 58090:8090 -e XIAOMUSIC_PUBLIC_PORT=58090 \
 ```yaml
 services:
   xiaomusic:
-    image:   # 国内替换为 docker.hanxi.cc/
+    image:   docker.xuanyuan.run/# 国内替换为 docker.hanxi.cc/
     container_name: xiaomusic
     restart: unless-stopped
     ports:
@@ -95,7 +95,7 @@ xiaomusic --config config.json
 已测试支持多种小爱音箱型号，包括：  
 - 经典款：小爱音箱（L06A）、Redmi 小爱音箱 Play（L07A）、小米 AI 音箱（S12）等  
 - 触屏款：LX04、X10A、X08A 等（部分需开启“型号兼容模式”）  
-- 其他型号：可通过 [型号查询页面]([]) 确认，或反馈至项目 Issues 添加支持。  
+- 其他型号：可通过 [型号查询页面]  确认，或反馈至项目 Issues 添加支持。  
 
 #### 音乐格式  
 - **本地音乐**：支持 mp3、flac、wav、ape、ogg、m4a  
@@ -114,9 +114,9 @@ xiaomusic --config config.json
 
 
 ## 交流与支持  
-- **讨论渠道**：QQ 群（604526973、1021062499）、QQ 频道 [xiaomusic]([])  
+- **讨论渠道**：QQ 群（604526973、1021062499）、QQ 频道 [xiaomusic]   
 - **安装帮助**：若安装困难，可联系作者远程协助（需支付 50 元辛苦费，周末及晚间提供服务）  
-- **相关工具**：配套工具推荐：[tiny-nav（NAS 导航工具）]([])、[epub2mp3（听书工具）]([])  
+- **相关工具**：配套工具推荐：[tiny-nav（NAS 导航工具）] 、[epub2mp3（听书工具）]   
 
 
 ## 免责声明  

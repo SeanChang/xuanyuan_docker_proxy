@@ -3,7 +3,7 @@ image: gvenzl/oracle-xe
 description: "Oracle数据库XE版（包括21c、18c、11g版本）面向所有用户开放使用！若需了解Oracle数据库23c免费版的相关信息，可通过gvenzl/oracle-free获取详细内容，该资源提供了23c免费版的功能介绍及使用指南。"
 source: https://xuanyuan.cloud/zh/r/gvenzl/oracle-xe
 canonical: https://xuanyuan.cloud/zh/r/gvenzl/oracle-xe
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gvenzl/oracle-xe" title="gvenzl/oracle-xe Docker 镜像中文简介、标签列表与拉取命令">gvenzl/oracle-xe 中文简介</a>
@@ -20,28 +20,28 @@ Oracle Database Express Edition（XE）的容器/ Docker 镜像，兼容 `podman
 各版本标签按 Oracle 数据库版本（21c、18c、11g）分类，包含不同镜像变体（基础版、slim 版、full 版及 faststart 版）：  
 
 - **21c**  
-  - 基础版：`latest`, `21`, `21.3.0`（[Dockerfile]([])）  
-  - faststart 版：`latest-faststart`, `21-faststart`, `21.3.0-faststart`（[Dockerfile]([])）  
-  - slim 版：`slim`, `21-slim`, `21.3.0-slim`（[Dockerfile]([])）  
-  - slim-faststart 版：`slim-faststart`, `21-slim-faststart`, `21.3.0-slim-faststart`（[Dockerfile]([])）  
-  - full 版：`full`, `21-full`, `21.3.0-full`（[Dockerfile]([])）  
-  - full-faststart 版：`full-faststart`, `21-full-faststart`, `21.3.0-full-faststart`（[Dockerfile]([])）  
+  - 基础版：`latest`, `21`, `21.3.0`（[Dockerfile] ）  
+  - faststart 版：`latest-faststart`, `21-faststart`, `21.3.0-faststart`（[Dockerfile] ）  
+  - slim 版：`slim`, `21-slim`, `21.3.0-slim`（[Dockerfile] ）  
+  - slim-faststart 版：`slim-faststart`, `21-slim-faststart`, `21.3.0-slim-faststart`（[Dockerfile] ）  
+  - full 版：`full`, `21-full`, `21.3.0-full`（[Dockerfile] ）  
+  - full-faststart 版：`full-faststart`, `21-full-faststart`, `21.3.0-full-faststart`（[Dockerfile] ）  
 
 - **18c**  
-  - 基础版：`18`, `18.4.0`（[Dockerfile]([])）  
-  - faststart 版：`18-faststart`, `18.4.0-faststart`（[Dockerfile]([])）  
-  - slim 版：`18-slim`, `18.4.0-slim`（[Dockerfile]([])）  
-  - slim-faststart 版：`18-slim-faststart`, `18.4.0-slim-faststart`（[Dockerfile]([])）  
-  - full 版：`18-full`, `18.4.0-full`（[Dockerfile]([])）  
-  - full-faststart 版：`18-full-faststart`, `18.4.0-full-faststart`（[Dockerfile]([])）  
+  - 基础版：`18`, `18.4.0`（[Dockerfile] ）  
+  - faststart 版：`18-faststart`, `18.4.0-faststart`（[Dockerfile] ）  
+  - slim 版：`18-slim`, `18.4.0-slim`（[Dockerfile] ）  
+  - slim-faststart 版：`18-slim-faststart`, `18.4.0-slim-faststart`（[Dockerfile] ）  
+  - full 版：`18-full`, `18.4.0-full`（[Dockerfile] ）  
+  - full-faststart 版：`18-full-faststart`, `18.4.0-full-faststart`（[Dockerfile] ）  
 
 - **11g R2**  
-  - 基础版：`11`, `11.2.0.2`（[Dockerfile]([])）  
-  - faststart 版：`11-faststart`, `11.2.0.2-faststart`（[Dockerfile]([])）  
-  - slim 版：`11-slim`, `11.2.0.2-slim`（[Dockerfile]([])）  
-  - slim-faststart 版：`11-slim-faststart`, `11.2.0.2-slim-faststart`（[Dockerfile]([])）  
-  - full 版：`11-full`, `11.2.0.2-full`（[Dockerfile]([])）  
-  - full-faststart 版：`11-full-faststart`, `11.2.0.2-full-faststart`（[Dockerfile]([])）  
+  - 基础版：`11`, `11.2.0.2`（[Dockerfile] ）  
+  - faststart 版：`11-faststart`, `11.2.0.2-faststart`（[Dockerfile] ）  
+  - slim 版：`11-slim`, `11.2.0.2-slim`（[Dockerfile] ）  
+  - slim-faststart 版：`11-slim-faststart`, `11.2.0.2-slim-faststart`（[Dockerfile] ）  
+  - full 版：`11-full`, `11.2.0.2-full`（[Dockerfile] ）  
+  - full-faststart 版：`11-full-faststart`, `11.2.0.2-full-faststart`（[Dockerfile] ）  
 
 
 ## 快速启动  
@@ -72,7 +72,7 @@ docker exec <容器名或ID> resetPassword <新密码>
 
 ### Apple M 芯片适配  
 Oracle 数据库暂无 ARM 架构版本，无法直接通过 Docker Desktop 在 Apple M 芯片上运行。可通过 `colima` 模拟 x86_64 环境：  
-1. 安装 [colima]([])  
+1. 安装 [colima]   
 2. 启动 colima：`colima start --arch x86_64 --memory 4`（分配 4GB 内存）  
 3. 按常规方式启动容器  
 
@@ -81,29 +81,29 @@ Oracle 数据库暂无 ARM 架构版本，无法直接通过 Docker Desktop 在 
 
 以下是部分使用该镜像的组织/项目（*标注已迁移至 `gvenzl/oracle-free`*）：  
 
-- [Airbyte]([])  
-- [Apache Spark]([])  
-- *[Benthos]([])*  
-- [Ebean]([])  
-- [Eclipse Vert.x]([])  
-- [Flowable]([])  
-- [GeoTools]([])  
-- [Hibernate]([])  
-- *[Hibernate Reactive]([])*  
-- [Hibernate Search]([])  
-- *[jOOQ]([])*  
-- [Liquibase]([])  
-- [Micronaut Data]([])  
-- *[Quarkus]([])*  
-- [Ruby API for Oracle PL/SQL]([])  
-- *[Ruby on Rails ActiveRecord adapter]([])*  
-- [Rucio by CERN]([])  
-- [SchemaCrawler]([])  
-- *[Spring Data JDBC]([])*  
-- [Sqitch]([])  
-- [Testcontainers]([])  
-- [Upscheme]([])  
-- [utPLSQL]([])  
+- [Airbyte]   
+- [Apache Spark]   
+- *[Benthos] *  
+- [Ebean]   
+- [Eclipse Vert.x]   
+- [Flowable]   
+- [GeoTools]   
+- [Hibernate]   
+- *[Hibernate Reactive] *  
+- [Hibernate Search]   
+- *[jOOQ] *  
+- [Liquibase]   
+- [Micronaut Data]   
+- *[Quarkus] *  
+- [Ruby API for Oracle PL/SQL]   
+- *[Ruby on Rails ActiveRecord adapter] *  
+- [Rucio by CERN]   
+- [SchemaCrawler]   
+- *[Spring Data JDBC] *  
+- [Sqitch]   
+- [Testcontainers]   
+- [Upscheme]   
+- [utPLSQL]   
 
 
 ## 镜像使用说明  
@@ -125,12 +125,12 @@ Oracle 数据库暂无 ARM 架构版本，无法直接通过 Docker Desktop 在 
 
 
 ### GitHub Actions 集成  
-可作为 [Service Container]([]) 在 GitHub Actions 工作流中使用。示例配置：  
+可作为 [Service Container]  在 GitHub Actions 工作流中使用。示例配置：  
 
 ```yaml
 services:
   oracle:  # 服务标签（用于容器间访问）
-    image: :latest  # 镜像及标签
+    image: docker.xuanyuan.run/:latest  # 镜像及标签
     env:  # 环境变量配置
       ORACLE_RANDOM_PASSWORD: true  # 随机生成密码
       APP_USER: my_user  # 创建应用用户
@@ -226,4 +226,4 @@ docker run --name some-oracle -e ORACLE_PASSWORD_FILE=/run/secrets/oracle-passwd
 
 ## 反馈  
 
-如有问题或建议，可通过 [GitHub Issues]([]) 提交。
+如有问题或建议，可通过 [GitHub Issues]  提交。

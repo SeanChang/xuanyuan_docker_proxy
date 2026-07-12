@@ -3,7 +3,7 @@ image: koryking/1panel
 description: "1panel在Docker中运行的镜像，支持通过环境变量设置应用安装位置。"
 source: https://xuanyuan.cloud/zh/r/koryking/1panel
 canonical: https://xuanyuan.cloud/zh/r/koryking/1panel
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/koryking/1panel" title="koryking/1panel Docker 镜像中文简介、标签列表与拉取命令">koryking/1panel 中文简介</a>
@@ -58,7 +58,7 @@ services:
       - PANEL_ENTRANCE=koryking  # 安全入口路径（默认 entrance，URL 路径部分）
       - PANEL_USERNAME=koryking  # 登录用户名（默认 1panel）
       - PANEL_PASSWORD=koryking999  # 登录密码（默认 1panel_password）
-    image: docker.io/koryking/1panel:latest  # 镜像地址
+    image: docker.xuanyuan.run/koryking/1panel:latest  # 镜像地址
     labels:
       createdBy: "Apps"  # 自定义标签（可选）
 ```
@@ -91,7 +91,7 @@ docker run -d \
   -e PANEL_USERNAME=koryking \
   -e PANEL_PASSWORD=koryking999 \
   --label createdBy="Apps" \
-  docker.io/koryking/1panel:latest
+  docker.xuanyuan.run/koryking/1panel:latest
 ```
 
 

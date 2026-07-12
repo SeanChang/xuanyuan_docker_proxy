@@ -3,7 +3,7 @@ image: longhornio/csi-provisioner
 description: "CSI Provisioner是实现容器存储接口(CSI)的存储卷供应组件，用于为Kubernetes等容器集群动态创建、管理存储卷，支持存储资源的自动分配与生命周期管理，满足容器化应用的存储需求。"
 source: https://xuanyuan.cloud/zh/r/longhornio/csi-provisioner
 canonical: https://xuanyuan.cloud/zh/r/longhornio/csi-provisioner
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/longhornio/csi-provisioner" title="longhornio/csi-provisioner Docker 镜像中文简介、标签列表与拉取命令">longhornio/csi-provisioner 中文简介</a>
@@ -69,7 +69,7 @@ spec:
       serviceAccountName: csi-provisioner-sa
       containers:
       - name: csi-provisioner
-        image: csi-provisioner:latest  # 替换为实际镜像名称
+        image: docker.xuanyuan.run/csi-provisioner:latest  # 替换为实际镜像名称
         args:
           - "--csi-address=$(CSI_ENDPOINT)"
           - "--provisioner=$(PROVISIONER_NAME)"

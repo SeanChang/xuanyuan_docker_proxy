@@ -3,7 +3,7 @@ image: linuxserver/freshrss
 description: "LinuxServer.io提供的Freshrss容器，用于RSS订阅与内容聚合阅读。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/freshrss
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/freshrss
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/freshrss" title="linuxserver/freshrss Docker 镜像中文简介、标签列表与拉取命令">linuxserver/freshrss 中文简介</a>
@@ -73,7 +73,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ---
 services:
   freshrss:
-    image: lscr.io/linuxserver/freshrss:latest
+    image: docker.xuanyuan.run/linuxserver/freshrss:latest
     container_name: freshrss
     environment:
       - PUID=1000        # 用户ID（详见用户/组标识符）
@@ -97,7 +97,7 @@ docker run -d \
   -p 80:80 \
   -v /path/to/freshrss/config:/config \
   --restart unless-stopped \
-  lscr.io/linuxserver/freshrss:latest
+  docker.xuanyuan.run/linuxserver/freshrss:latest
 ```
 
 
@@ -210,7 +210,7 @@ docker image prune
 ### 通过 Docker Run 更新
 ```bash
 # 拉取最新镜像
-docker pull lscr.io/linuxserver/freshrss:latest
+docker pull docker.xuanyuan.run/linuxserver/freshrss:latest
 
 # 停止并删除旧容器
 docker stop freshrss && docker rm freshrss
@@ -224,7 +224,7 @@ docker run -d \
   -p 80:80 \
   -v /path/to/freshrss/config:/config \
   --restart unless-stopped \
-  lscr.io/linuxserver/freshrss:latest
+  docker.xuanyuan.run/linuxserver/freshrss:latest
 
 # 清理旧镜像（可选）
 docker image prune
@@ -254,7 +254,7 @@ docker build \
 ### 多架构构建（需 qemu-static）
 ```bash
 # 注册 qemu 模拟器
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 
 # 构建特定架构（如 arm64v8）
 docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/freshrss:arm64v8-latest .

@@ -3,7 +3,7 @@ image: vllm/vllm-tpu
 description: "vLLM框架在TPU上运行的Docker镜像仓库"
 source: https://xuanyuan.cloud/zh/r/vllm/vllm-tpu
 canonical: https://xuanyuan.cloud/zh/r/vllm/vllm-tpu
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/vllm/vllm-tpu" title="vllm/vllm-tpu Docker 镜像中文简介、标签列表与拉取命令">vllm/vllm-tpu 中文简介</a>
@@ -70,7 +70,7 @@ vLLM TPU 镜像是基于 vLLM（高效大语言模型推理库）构建的 Docke
 ### 2. 获取镜像
 镜像可通过 Docker Hub 或私有仓库获取，默认标签为 `latest`（对应最新稳定版本）：
 ```bash
-docker pull vllm/tpu:latest
+docker pull docker.xuanyuan.run/vllm/tpu:latest
 ```
 
 
@@ -130,7 +130,7 @@ version: '3.8'
 
 services:
   vllm-tpu-service:
-    image: vllm/tpu:latest
+    image: docker.xuanyuan.run/vllm/tpu:latest
     privileged: true
     devices:
       - /dev/tpu:/dev/tpu  # 挂载 TPU 设备

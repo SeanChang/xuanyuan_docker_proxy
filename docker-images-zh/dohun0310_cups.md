@@ -3,7 +3,7 @@ image: dohun0310/cups
 description: "支持CUPS和AirPrint，并集成systemd，用于网络打印机管理的Docker镜像。"
 source: https://xuanyuan.cloud/zh/r/dohun0310/cups
 canonical: https://xuanyuan.cloud/zh/r/dohun0310/cups
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dohun0310/cups" title="dohun0310/cups Docker 镜像中文简介、标签列表与拉取命令">dohun0310/cups 中文简介</a>
@@ -33,14 +33,14 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 默认部署
 通过以下命令快速启动默认配置的CUPS服务器：
 ```bash
-docker run -d -p 631:631 -p 5353:5353 --name cups dohun0310/cups
+docker run -d -p 631:631 -p 5353:5353 --name cups docker.xuanyuan.run/dohun0310/cups
 ```
 默认管理员账户信息：用户名`print`，密码`print`。
 
 ### 自定义部署
 如需自定义配置，可使用以下命令：
 ```bash
-docker run -d -p 631:631 -p 5353:5353 -v $(pwd):/etc/cups -e TZ=Asia/Seoul -e USERNAME=user -e PASSWORD=password --name cups dohun0310/cups
+docker run -d -p 631:631 -p 5353:5353 -v $(pwd):/etc/cups -e TZ=Asia/Seoul -e USERNAME=user -e PASSWORD=password --name cups docker.xuanyuan.run/dohun0310/cups
 ```
 **参数说明**：
 - `-v $(pwd):/etc/cups`：将当前目录挂载到容器内`/etc/cups`，实现配置持久化

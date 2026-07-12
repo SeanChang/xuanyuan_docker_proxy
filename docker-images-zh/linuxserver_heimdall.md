@@ -3,7 +3,7 @@ image: linuxserver/heimdall
 description: "linuxserver/heimdall 是一款轻量高效的Docker应用仪表板镜像，专为集中管理各类Web服务、应用和工具设计。支持自定义布局、分类整理与图标显示，可将常用服务（如NAS管理、智能家居平台、媒体服务器等）整合为直观入口，实现一键快速访问。采用响应式界面，适配电脑、平板及手机设备，操作简单且资源占用低，是个人服务器、家庭实验室或多服务环境下优化访问体验的理想工具。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/heimdall
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/heimdall
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/heimdall" title="linuxserver/heimdall Docker 镜像中文简介、标签列表与拉取命令">linuxserver/heimdall 中文简介</a>
@@ -14,7 +14,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## LinuxServer.io 团队简介  
-[LinuxServer.io]([]) 团队专注于提供高质量 Docker 容器，其容器具有以下特点：  
+[LinuxServer.io]  团队专注于提供高质量 Docker 容器，其容器具有以下特点：  
 - 定期、及时的应用更新  
 - 便捷的用户权限映射（通过 PGID、PUID）  
 - 基于 s6 overlay 的自定义基础镜像  
@@ -23,22 +23,22 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ### 社区与支持渠道  
-- [博客]([])：容器使用指南、教程及技术观点  
+- [博客] ：容器使用指南、教程及技术观点  
 - []()：实时社区交流与团队支持  
-- [Discourse]([])：社区论坛  
-- [GitHub]([])：所有代码仓库源码  
-- [Open Collective]([])：支持我们的捐赠或预算贡献平台  
+- [Discourse] ：社区论坛  
+- [GitHub] ：所有代码仓库源码  
+- [Open Collective] ：支持我们的捐赠或预算贡献平台  
 
 
 # linuxserver/heimdall 容器  
 
-[![Scarf.io pulls]([])]([])
-[![GitHub Stars]([])]([])
-[![Docker Pulls]([])]([])
+[![Scarf.io pulls] ] 
+[![GitHub Stars] ] 
+[![Docker Pulls] ] 
 
-[Heimdall]([]) 是一款轻量工具，用于集中管理常用网站和 Web 应用链接。其核心设计理念是简洁，可作为浏览器起始页，还支持集成 Google、Bing 或 DuckDuckGo 搜索栏。  
+[Heimdall]  是一款轻量工具，用于集中管理常用网站和 Web 应用链接。其核心设计理念是简洁，可作为浏览器起始页，还支持集成 Google、Bing 或 DuckDuckGo 搜索栏。  
 
-![heimdall]([])  
+![heimdall]   
 
 
 ## 支持的架构  
@@ -86,7 +86,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ---  
 services:  
   heimdall:  
-    image: lscr.io/linuxserver/heimdall:latest  
+    image: docker.xuanyuan.run/linuxserver/heimdall:latest  
     container_name: heimdall  
     environment:  
       - PUID=1000          # 用户ID（见下方说明）  
@@ -152,7 +152,7 @@ id your_user
 
 
 ## Docker Mods  
-可通过 [Docker Mods]([]) 扩展容器功能，支持 Heimdall 专用 Mod 和通用 Mod。  
+可通过 [Docker Mods]  扩展容器功能，支持 Heimdall 专用 Mod 和通用 Mod。  
 
 
 ## 支持信息  
@@ -206,7 +206,7 @@ id your_user
 ### 通过 docker run  
 - 更新镜像：  
   ```bash  
-  docker pull lscr.io/linuxserver/heimdall:latest  
+  docker pull docker.xuanyuan.run/linuxserver/heimdall:latest  
   ```  
 - 停止并删除旧容器：  
   ```bash  
@@ -220,7 +220,7 @@ id your_user
 
 
 ### 镜像更新通知  
-推荐使用 [Diun]([]) 监控镜像更新，不建议使用自动更新工具。  
+推荐使用 [Diun]  监控镜像更新，不建议使用自动更新工具。  
 
 
 ## 本地构建  
@@ -235,7 +235,7 @@ docker build \
 ```  
 跨架构构建（如 x86_64 构建 ARM）需先注册 QEMU：  
 ```bash  
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset  
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```  
 然后使用对应架构的 Dockerfile（如 `-f Dockerfile.aarch64`）。  
 

@@ -3,7 +3,7 @@ image: exoplatform/jdk
 description: "提供多种OpenJDK版本与Ubuntu系统组合的JDK Docker镜像，支持扩展镜像、运行UberJAR应用及直接启动JVM等场景。"
 source: https://xuanyuan.cloud/zh/r/exoplatform/jdk
 canonical: https://xuanyuan.cloud/zh/r/exoplatform/jdk
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/exoplatform/jdk" title="exoplatform/jdk Docker 镜像中文简介、标签列表与拉取命令">exoplatform/jdk 中文简介</a>
@@ -50,7 +50,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 - 扩展此镜像以添加您的Java应用
 
 ```dockerfile
-FROM exoplatform/jdk
+FROM docker.xuanyuan.run/exoplatform/jdk
 ...
 # 添加您的所有内容
 ```
@@ -60,13 +60,13 @@ FROM exoplatform/jdk
 docker build -t myorga/my-app .
 
 # 在容器中运行应用
-docker run --rm myorga/my-app
+docker run --rm docker.xuanyuan.run/myorga/my-app
 ```
 
 - 启动UberJAR Java应用
 
 ```bash
-docker run --rm -v /path/to/my/uberjar-app.jar:/uberjar-app.jar exoplatform/jdk -jar /uberjar-app.jar
+docker run --rm -v /path/to/my/uberjar-app.jar:/uberjar-app.jar docker.xuanyuan.run/exoplatform/jdk -jar /uberjar-app.jar
 ```
 
 - 启动JVM

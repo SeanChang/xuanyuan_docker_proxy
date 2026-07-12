@@ -3,7 +3,7 @@ image: jupyter/nbviewer
 description: "用于查看Jupyter Notebook文件的轻量级工具，无需运行完整内核即可展示文档内容，适用于分享和预览场景。"
 source: https://xuanyuan.cloud/zh/r/jupyter/nbviewer
 canonical: https://xuanyuan.cloud/zh/r/jupyter/nbviewer
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jupyter/nbviewer" title="jupyter/nbviewer Docker 镜像中文简介、标签列表与拉取命令">jupyter/nbviewer 中文简介</a>
@@ -51,10 +51,10 @@ Jupyter NBViewer 是 [The Jupyter Notebook Viewer](http://nbviewer.jupyter.org) 
 
 ```shell
 # 拉取镜像
-docker pull jupyter/nbviewer
+docker pull docker.xuanyuan.run/jupyter/nbviewer
 
 # 运行容器，映射端口 8080
-docker run -p 8080:8080 jupyter/nbviewer
+docker run -p 8080:8080 docker.xuanyuan.run/jupyter/nbviewer
 ```
 
 镜像会随 `master` 分支更新自动构建，确保获取最新版本。
@@ -69,14 +69,14 @@ docker run -p 8080:8080 jupyter/nbviewer
   docker run -p 8080:8080 \
     -e 'GITHUB_OAUTH_KEY=你的OAuth密钥' \
     -e 'GITHUB_OAUTH_SECRET=你的OAuth密钥密钥' \
-    jupyter/nbviewer
+    docker.xuanyuan.run/jupyter/nbviewer
   ```
 
 - **使用个人访问令牌**：
   ```shell
   docker run -p 8080:8080 \
     -e 'GITHUB_API_TOKEN=你的GitHub个人访问令牌' \
-    jupyter/nbviewer
+    docker.xuanyuan.run/jupyter/nbviewer
   ```
 
 
@@ -89,7 +89,7 @@ docker run -p 8080:8080 \
   -e 'GITHUB_OAUTH_KEY=企业OAuth密钥' \
   -e 'GITHUB_OAUTH_SECRET=企业OAuth密钥密钥' \
   -e 'GITHUB_API_URL=https://ghe.example.com/api/v3/' \
-  jupyter/nbviewer
+  docker.xuanyuan.run/jupyter/nbviewer
 ```
 
 配置后，所有 GitHub API 请求将指向企业实例，支持访问内部笔记本。
@@ -120,7 +120,7 @@ cd nbviewer
 docker build -t nbviewer .
 
 # 运行本地镜像
-docker run -p 8080:8080 nbviewer
+docker run -p 8080:8080 docker.xuanyuan.run/nbviewer
 ```
 
 

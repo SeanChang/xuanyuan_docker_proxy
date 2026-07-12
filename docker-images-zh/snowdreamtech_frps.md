@@ -3,7 +3,7 @@ image: snowdreamtech/frps
 description: "这是为Frp（一款用于内网穿透的快速反向代理工具，支持TCP、UDP、HTTP等多种协议）构建的Docker镜像，旨在帮助开发者、运维人员等用户轻松部署Frp服务端或客户端，无需手动配置复杂环境，通过容器化实现环境隔离与快速启动，适用于将内网服务安全、高效地暴露到公网等场景，有效简化部署流程并提升运维效率。"
 source: https://xuanyuan.cloud/zh/r/snowdreamtech/frps
 canonical: https://xuanyuan.cloud/zh/r/snowdreamtech/frps
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/snowdreamtech/frps" title="snowdreamtech/frps Docker 镜像中文简介、标签列表与拉取命令">snowdreamtech/frps 中文简介</a>
@@ -17,8 +17,8 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 文档
-- [英文文档]([])
-- [中文文档]([])
+- [英文文档] 
+- [中文文档] 
 
 
 ## 使用方法
@@ -63,8 +63,8 @@ docker run --restart=always --network host -d -v /etc/frp/.toml:/etc/frp/.toml -
 
 ## 快速参考
 
-- **问题反馈**：[GitHub Issues]([])  
-- **讨论交流**：[GitHub Discussions]([])  
+- **问题反馈**：[GitHub Issues]   
+- **讨论交流**：[GitHub Discussions]   
 - **维护者**：snowdream（邮箱：[邮箱已删除]）  
 
 
@@ -79,11 +79,11 @@ docker run --restart=always --network host -d -v /etc/frp/.toml:/etc/frp/.toml -
 
 
 ## 相关链接
-- 腾讯云：[官网链接]([])  
-- 阿里云：[官网链接]([])  
-- 华为云：[官网链接]([])  
-- Bandwagonhost/搬瓦工：[官网链接]([])  
-- Vultr：[官网链接]([])  
+- 腾讯云：[官网链接]   
+- 阿里云：[官网链接]   
+- 华为云：[官网链接]   
+- Bandwagonhost/搬瓦工：[官网链接]   
+- Vultr：[官网链接]   
 
 
 ## 联系方式（备注：frp）
@@ -94,8 +94,8 @@ docker run --restart=always --network host -d -v /etc/frp/.toml:/etc/frp/.toml -
 
 
 ## 官方站点
-1. [fatedier/frp（官方frp仓库）]([])  
-2. [snowdreamtech/frp（镜像仓库）]([])  
+1. [fatedier/frp（官方frp仓库）]   
+2. [snowdreamtech/frp（镜像仓库）]   
 3. [镜像（GitHub）]()  
 4. [镜像（GitHub）]()  
 5. [镜像（Docker Hub）]()  
@@ -107,4 +107,4 @@ MIT
 
 
 ## Star History
-[![Star History Chart]([])]([])
+[![Star History Chart] ]

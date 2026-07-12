@@ -3,7 +3,7 @@ image: linuxserver/firefox
 description: "LinuxServer/Firefox是一款容器化Firefox浏览器解决方案，可在Docker环境中快速部署运行，支持图形界面远程访问（如VNC/HTTP），用户配置、书签及扩展数据持久化存储，避免系统环境污染。兼容Linux、Windows、macOS等多平台，适合开发测试、远程办公或临时浏览器需求，提供隔离、轻量、安全的运行环境，依托LinuxServer优化配置与持续更新，确保稳定高效使用体验。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/firefox
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/firefox
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/firefox" title="linuxserver/firefox Docker 镜像中文简介、标签列表与拉取命令">linuxserver/firefox 中文简介</a>
@@ -23,16 +23,16 @@ LinuxServer.io 团队提供的容器具有以下特性：
 
 
 ## 社区与支持渠道  
-- [博客]([])：容器使用指南、教程及技术观点  
+- [博客] ：容器使用指南、教程及技术观点  
 - []()：实时社区支持与团队交流  
-- [论坛]([])：社区讨论与问题反馈  
-- [GitHub]([])：源码仓库  
-- [Open Collective]([])：支持我们的开发与维护  
+- [论坛] ：社区讨论与问题反馈  
+- [GitHub] ：源码仓库  
+- [Open Collective] ：支持我们的开发与维护  
 
 
 # linuxserver/firefox 容器  
 
-[Firefox]([]) 是由 Mozilla 基金会开发的免费开源网页浏览器，使用 Gecko 渲染引擎，支持当前及未来的网页标准。LinuxServer.io 提供的该容器将 Firefox 封装为可快速部署的 Docker 镜像。  
+[Firefox]  是由 Mozilla 基金会开发的免费开源网页浏览器，使用 Gecko 渲染引擎，支持当前及未来的网页标准。LinuxServer.io 提供的该容器将 Firefox 封装为可快速部署的 Docker 镜像。  
 
 
 ## 支持的架构  
@@ -60,7 +60,7 @@ LinuxServer.io 团队提供的容器具有以下特性：
 
 
 ### 反向代理注意事项  
-容器默认使用自签名证书，通信协议为 HTTPS。若使用严格验证证书的反向代理，需[关闭对容器的证书校验]([])。  
+容器默认使用自签名证书，通信协议为 HTTPS。若使用严格验证证书的反向代理，需[关闭对容器的证书校验] 。  
 
 > **注意**：部分现代 GUI 应用可能与 Docker 系统调用限制冲突，可通过 `--security-opt seccomp=unconfined` 参数允许相关调用（仅建议旧内核或 libseccomp 版本环境使用）。  
 
@@ -70,12 +70,12 @@ LinuxServer.io 团队提供的容器具有以下特性：
 > 该容器具有主机系统的特权访问权限，**切勿直接暴露到公网**，需确保已做好安全防护。  
 
 - **HTTPS 必需**：WebCodecs 等现代浏览器功能依赖 HTTPS，HTTP 连接下无法正常使用。  
-- **默认无认证**：可通过 `CUSTOM_USER` 和 `PASSWORD` 环境变量启用基础 HTTP 认证（仅适用于可信局域网）；公网暴露需搭配反向代理（如 [SWAG]([])）实现强认证。  
+- **默认无认证**：可通过 `CUSTOM_USER` 和 `PASSWORD` 环境变量启用基础 HTTP 认证（仅适用于可信局域网）；公网暴露需搭配反向代理（如 [SWAG] ）实现强认证。  
 - **容器内权限**：Web 界面包含带无密码 sudo 的终端，任何访问者可获取容器内 root 权限，需严格控制访问范围。  
 
 
 ### Selkies 基础镜像配置项  
-容器基于 [Docker Baseimage Selkies]([]) 构建，支持以下自定义配置：  
+容器基于 [Docker Baseimage Selkies]  构建，支持以下自定义配置：  
 
 
 #### 可选环境变量  
@@ -129,7 +129,7 @@ Docker Compose 配置示例：
 ```yaml  
 services:  
   firefox:  
-    image: lscr.io/linuxserver/firefox:latest  
+    image: docker.xuanyuan.run/linuxserver/firefox:latest  
     deploy:  
       resources:  
         reservations:  
@@ -149,7 +149,7 @@ services:
 # 示例：安装 FileZilla  
 proot-apps install filezilla  
 ```  
-[支持的应用列表]([])  
+[支持的应用列表]   
 
 
 #### 原生应用（非持久化）  
@@ -169,7 +169,7 @@ environment:
 ```yaml  
 services:  
   firefox:  
-    image: lscr.io/linuxserver/firefox:latest  
+    image: docker.xuanyuan.run/linuxserver/firefox:latest  
     container_name: firefox  
     environment:  
       - PUID=1000           # 用户 ID（通过 `id 用户名` 查看）  
@@ -273,7 +273,7 @@ docker image prune
 ### Docker Run  
 ```bash  
 # 拉取最新镜像  
-docker pull lscr.io/linuxserver/firefox:latest  
+docker pull docker.xuanyuan.run/linuxserver/firefox:latest  
 # 停止并删除旧容器  
 docker stop firefox && docker rm firefox  
 # 用原参数启动新容器（配置目录挂载正确则数据保留）  
@@ -289,7 +289,7 @@ docker build --no-cache --pull -t lscr.io/linuxserver/firefox:latest .
 ```  
 ARM 架构构建需先注册 qemu-static：  
 ```bash  
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset  
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 # 构建 arm64 镜像  
 docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/firefox:arm64v8-latest .  
 ```  
@@ -304,6 +304,6 @@ docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/firefox:arm64v8-latest
 
 
 ## 相关链接  
-- [容器源码]([])  
-- [Docker Mods（扩展功能）]([])  
-- [LinuxServer.io 官网]([])
+- [容器源码]   
+- [Docker Mods（扩展功能）]   
+- [LinuxServer.io 官网]

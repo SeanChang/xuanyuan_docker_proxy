@@ -3,7 +3,7 @@ image: ubuntu/bind9
 description: "BIND 9是灵活且功能全面的DNS系统，提供由Canonical维护的长期版本。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/bind9
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/bind9
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/bind9" title="ubuntu/bind9 Docker 镜像中文简介、标签列表与拉取命令">ubuntu/bind9 中文简介</a>
@@ -70,7 +70,7 @@ Bind9是一款灵活、功能全面的DNS系统，主要用于域名系统（DNS
 使用以下命令启动容器：
 
 ```sh
-docker run -d --name bind9-container -e TZ=UTC -p 30053:53 -p 30053:53/udp ubuntu/bind9:9.18-22.04_beta
+docker run -d --name bind9-container -e TZ=UTC -p 30053:53 -p 30053:53/udp docker.xuanyuan.run/ubuntu/bind9:9.18-22.04_beta
 ```
 
 启动后可通过`localhost:30053`访问Bind9服务器。

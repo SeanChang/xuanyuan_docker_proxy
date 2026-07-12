@@ -3,7 +3,7 @@ image: bitnami/jmx-exporter
 description: "Bitnami提供的安全镜像，用于运行jmx-exporter以导出JMX指标，适用于Java应用监控场景。"
 source: https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter
 canonical: https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/jmx-exporter" title="bitnami/jmx-exporter Docker 镜像中文简介、标签列表与拉取命令">bitnami/jmx-exporter 中文简介</a>
@@ -59,10 +59,10 @@ JMX Exporter 是一个用于通过 HTTP 暴露 JMX Beans 指标的工具，供 P
 
 ```console
 # 拉取最新版（安全加固版本）
-docker pull bitnami/jmx-exporter:latest
+docker pull docker.xuanyuan.run/bitnami/jmx-exporter:latest
 
 # 拉取特定版本（仅 legacy 仓库提供，不再更新）
-docker pull bitnamilegacy/jmx-exporter:[TAG]  # 如 2.50.0
+docker pull docker.xuanyuan.run/bitnamilegacy/jmx-exporter:[TAG]  # 如 2.50.0
 ```
 
 如需自定义构建，可克隆 Bitnami 容器仓库并构建：
@@ -78,7 +78,7 @@ docker build -t bitnami/jmx-exporter:latest .
 快速启动 JMX Exporter 容器：
 
 ```console
-docker run --name jmx-exporter -p 9404:9404 bitnami/jmx-exporter:latest
+docker run --name jmx-exporter -p 9404:9404 docker.xuanyuan.run/bitnami/jmx-exporter:latest
 ```
 
 > 说明：默认暴露 9404 端口（JMX Exporter 标准端口），可通过 `-p` 映射至主机端口。
@@ -94,7 +94,7 @@ docker network create jmx-exporter-network --driver bridge
 
 #### 步骤 2：启动 JMX Exporter 并加入网络
 ```console
-docker run --name jmx-exporter --network jmx-exporter-network bitnami/jmx-exporter:latest
+docker run --name jmx-exporter --network jmx-exporter-network docker.xuanyuan.run/bitnami/jmx-exporter:latest
 ```
 
 #### 步骤 3：连接其他容器
@@ -105,7 +105,7 @@ docker run --name jmx-exporter --network jmx-exporter-network bitnami/jmx-export
 JMX Exporter 配置需通过配置文件定义（详见 [官方配置文档](https://github.com/prometheus/jmx_exporter#configuration)）。可通过挂载配置文件到容器实现自定义配置：
 
 ```console
-docker run --name jmx-exporter -v /本地配置路径/config.yaml:/opt/bitnami/jmx-exporter/conf/config.yaml bitnami/jmx-exporter:latest
+docker run --name jmx-exporter -v /本地配置路径/config.yaml:/opt/bitnami/jmx-exporter/conf/config.yaml docker.xuanyuan.run/bitnami/jmx-exporter:latest
 ```
 
 
@@ -119,7 +119,7 @@ docker run --name jmx-exporter -v /本地配置路径/config.yaml:/opt/bitnami/j
 示例：禁用 FIPS 模式
 
 ```console
-docker run --name jmx-exporter -e OPENSSL_FIPS=no bitnami/jmx-exporter:latest
+docker run --name jmx-exporter -e OPENSSL_FIPS=no docker.xuanyuan.run/bitnami/jmx-exporter:latest
 ```
 
 
@@ -143,7 +143,7 @@ docker run --name jmx-exporter --log-driver json-file --log-opt max-size=10m bit
 ### 6.1 升级镜像
 1. **拉取最新镜像**：
    ```console
-   docker pull bitnami/jmx-exporter:latest
+   docker pull docker.xuanyuan.run/bitnami/jmx-exporter:latest
    ```
 
 2. **停止并删除旧容器**：
@@ -154,7 +154,7 @@ docker run --name jmx-exporter --log-driver json-file --log-opt max-size=10m bit
 
 3. **启动新容器**：
    ```console
-   docker run --name jmx-exporter -p 9404:9404 bitnami/jmx-exporter:latest
+   docker run --name jmx-exporter -p 9404:9404 docker.xuanyuan.run/bitnami/jmx-exporter:latest
    ```
 
 

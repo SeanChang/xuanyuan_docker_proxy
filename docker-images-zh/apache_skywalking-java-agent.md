@@ -3,7 +3,7 @@ image: apache/skywalking-java-agent
 description: "Apache SkyWalking的Java代理"
 source: https://xuanyuan.cloud/zh/r/apache/skywalking-java-agent
 canonical: https://xuanyuan.cloud/zh/r/apache/skywalking-java-agent
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/skywalking-java-agent" title="apache/skywalking-java-agent Docker 镜像中文简介、标签列表与拉取命令">apache/skywalking-java-agent 中文简介</a>
@@ -30,7 +30,7 @@ Dockerfile可在[此处](https://github.com/apache/skywalking-docker)获取。
 ## 基于此镜像构建Java应用镜像
 
 ```dockerfile
-FROM apache/skywalking-java-agent:9.4.0-jdk8
+FROM docker.xuanyuan.run/apache/skywalking-java-agent:9.4.0-jdk8
 
 # ... 构建你的Java应用
 ```
@@ -55,7 +55,7 @@ spec:
 
   containers:
     - name: agent-container
-      image: apache/skywalking-java-agent:9.4.0-alpine
+      image: docker.xuanyuan.run/apache/skywalking-java-agent:9.4.0-alpine
       volumeMounts:
         - name: skywalking-agent
           mountPath: /agent
@@ -63,7 +63,7 @@ spec:
       args: [ "-c", "cp -R /skywalking/agent /agent/" ]
 
     - name: app-container
-      image: springio/gs-spring-boot-docker
+      image: docker.xuanyuan.run/springio/gs-spring-boot-docker
       volumeMounts:
         - name: skywalking-agent
           mountPath: /skywalking

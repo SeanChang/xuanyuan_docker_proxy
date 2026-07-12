@@ -3,7 +3,7 @@ image: kvaps/mjpg-streamer
 description: "MJPG-streamer 网络摄像头流媒体服务器，用于通过HTTP协议传输USB摄像头等UVC设备的视频流，支持视频参数配置与访问控制。"
 source: https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer
 canonical: https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kvaps/mjpg-streamer" title="kvaps/mjpg-streamer Docker 镜像中文简介、标签列表与拉取命令">kvaps/mjpg-streamer 中文简介</a>
@@ -49,7 +49,7 @@ docker run \
 ```yaml
 mjpg-streamer:
   restart: always  # 服务异常退出时自动重启
-  image: kvaps/mjpg-streamer  # 使用的Docker镜像
+  image: docker.xuanyuan.run/kvaps/mjpg-streamer  # 使用的Docker镜像
   devices:
     - /dev/video0  # 挂载摄像头设备（根据实际设备路径调整）
   ports:

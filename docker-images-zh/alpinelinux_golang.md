@@ -3,7 +3,7 @@ image: alpinelinux/golang
 description: "基于Alpine Linux的Golang构建容器，用于Golang应用程序的编译和构建环境，提供轻量级基础并包含完整Golang开发工具链，适用于本地开发及CI/CD流水线构建阶段。"
 source: https://xuanyuan.cloud/zh/r/alpinelinux/golang
 canonical: https://xuanyuan.cloud/zh/r/alpinelinux/golang
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpinelinux/golang" title="alpinelinux/golang Docker 镜像中文简介、标签列表与拉取命令">alpinelinux/golang 中文简介</a>
@@ -42,7 +42,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ```bash
 # 挂载当前目录到容器内/app，指定工作目录为/app，执行go build
-docker run --rm -v $(pwd):/app -w /app golang:alpine go build -o myapp main.go
+docker run --rm -v $(pwd):/app -w /app docker.xuanyuan.run/golang:alpine go build -o myapp main.go
 ```
 
 - `--rm`：构建完成后自动删除容器，避免残留临时容器
@@ -57,14 +57,14 @@ docker run --rm -v $(pwd):/app -w /app golang:alpine go build -o myapp main.go
 
 ```dockerfile
 # 构建阶段：使用golang-alpine编译应用
-FROM golang:alpine AS builder
+FROM docker.xuanyuan.run/golang:alpine AS builder
 WORKDIR /app
 COPY . .
 RUN go mod download
 RUN CGO_ENABLED=0 GOOS=linux go build -o myapp main.go
 
 # 运行阶段：使用Alpine作为运行时
-FROM alpine:latest
+FROM docker.xuanyuan.run/alpine:latest
 WORKDIR /app
 COPY --from=builder /app/myapp .
 CMD ["./myapp"]
@@ -88,7 +88,7 @@ CMD ["./myapp"]
 
 ```bash
 # 安装git和make工具
-docker run --rm golang:alpine apk add --no-cache git make
+docker run --rm docker.xuanyuan.run/golang:alpine apk add --no-cache git make
 ```
 
 

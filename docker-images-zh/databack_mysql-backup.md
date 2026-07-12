@@ -3,7 +3,7 @@ image: databack/mysql-backup
 description: "用于将MySQL数据库备份到任何位置的工具，支持定时备份、恢复操作及旧备份清理。"
 source: https://xuanyuan.cloud/zh/r/databack/mysql-backup
 canonical: https://xuanyuan.cloud/zh/r/databack/mysql-backup
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/databack/mysql-backup" title="databack/mysql-backup Docker 镜像中文简介、标签列表与拉取命令">databack/mysql-backup 中文简介</a>
@@ -51,7 +51,7 @@ mysql-backup提供独立二进制文件和容器镜像两种形式。
 
 例如：
 ```bash
-docker run -d --restart=always -e DB_DUMP_FREQUENCY=60 -e DB_DUMP_BEGIN=2330 -e DB_DUMP_TARGET=/local/file/path -e DB_SERVER=my-db-address -v /local/file/path:/db databack/mysql-backup dump
+docker run -d --restart=always -e DB_DUMP_FREQUENCY=60 -e DB_DUMP_BEGIN=2330 -e DB_DUMP_TARGET=/local/file/path -e DB_SERVER=my-db-address -v /local/file/path:/db docker.xuanyuan.run/databack/mysql-backup dump
 
 # 或
 
@@ -75,7 +75,7 @@ dump:
 
 指定用户密码的示例：
 ```bash
-docker run -d --restart=always -e DB_USER=user123 -e DB_PASS=pass123 -e DB_DUMP_FREQUENCY=60 -e DB_DUMP_BEGIN=2330 -e DB_DUMP_TARGET=/db -e DB_SERVER=my-db-address -v /local/file/path:/db databack/mysql-backup dump
+docker run -d --restart=always -e DB_USER=user123 -e DB_PASS=pass123 -e DB_DUMP_FREQUENCY=60 -e DB_DUMP_BEGIN=2330 -e DB_DUMP_TARGET=/db -e DB_SERVER=my-db-address -v /local/file/path:/db docker.xuanyuan.run/databack/mysql-backup dump
 
 # 或
 
@@ -104,19 +104,19 @@ mysql-backup dump --user=user123 --pass=pass123 --frequency=60 --begin=2330 --ta
 恢复示例：
 1. 从本地文件恢复：
 ```bash
-docker run -e DB_SERVER=gotodb.example.com -e DB_USER=user123 -e DB_PASS=pass123 -e DB_RESTORE_TARGET=/backup/db_backup_201509271627.gz -v /local/path:/backup databack/mysql-backup restore
+docker run -e DB_SERVER=gotodb.example.com -e DB_USER=user123 -e DB_PASS=pass123 -e DB_RESTORE_TARGET=/backup/db_backup_201509271627.gz -v /local/path:/backup docker.xuanyuan.run/databack/mysql-backup restore
 ```
 2. 使用SSL从本地文件恢复：
 ```bash
-docker run -e DB_SERVER=gotodb.example.com -e DB_USER=user123 -e DB_PASS=pass123 -e DB_RESTORE_TARGET=/backup/db_backup_201509271627.gz -e RESTORE_OPTS="--ssl-cert /certs/client-cert.pem --ssl-key /certs/client-key.pem" -v /local/path:/backup -v /local/certs:/certs databack/mysql-backup restore
+docker run -e DB_SERVER=gotodb.example.com -e DB_USER=user123 -e DB_PASS=pass123 -e DB_RESTORE_TARGET=/backup/db_backup_201509271627.gz -e RESTORE_OPTS="--ssl-cert /certs/client-cert.pem --ssl-key /certs/client-key.pem" -v /local/path:/backup -v /local/certs:/certs docker.xuanyuan.run/databack/mysql-backup restore
 ```
 3. 从SMB文件恢复：
 ```bash
-docker run -e DB_SERVER=gotodb.example.com -e DB_USER=user123 -e DB_PASS=pass123 -e DB_RESTORE_TARGET=smb://smbserver/share1/backup/db_backup_201509271627.gz databack/mysql-backup restore
+docker run -e DB_SERVER=gotodb.example.com -e DB_USER=user123 -e DB_PASS=pass123 -e DB_RESTORE_TARGET=smb://smbserver/share1/backup/db_backup_201509271627.gz docker.xuanyuan.run/databack/mysql-backup restore
 ```
 4. 从S3文件恢复：
 ```bash
-docker run -e DB_SERVER=gotodb.example.com -e AWS_ACCESS_KEY_ID=awskeyid -e AWS_SECRET_ACCESS_KEY=secret -e AWS_REGION=eu-central-1 -e DB_USER=user123 -e DB_PASS=pass123 -e DB_RESTORE_TARGET=s3://bucket/path/db_backup_201509271627.gz databack/mysql-backup restore
+docker run -e DB_SERVER=gotodb.example.com -e AWS_ACCESS_KEY_ID=awskeyid -e AWS_SECRET_ACCESS_KEY=secret -e AWS_REGION=eu-central-1 -e DB_USER=user123 -e DB_PASS=pass123 -e DB_RESTORE_TARGET=s3://bucket/path/db_backup_201509271627.gz docker.xuanyuan.run/databack/mysql-backup restore
 ```
 
 ### 恢复特定数据库
@@ -127,20 +127,20 @@ docker run -e DB_SERVER=gotodb.example.com -e AWS_ACCESS_KEY_ID=awskeyid -e AWS_
 1. 多库备份恢复部分数据库：
    * 备份：
 ```bash
-docker run -e DB_SERVER=gotodb.example.com -e DB_USER=user123 -e DB_PASS=pass123 -v /local/path:/backup databack/mysql-backup dump
+docker run -e DB_SERVER=gotodb.example.com -e DB_USER=user123 -e DB_PASS=pass123 -v /local/path:/backup docker.xuanyuan.run/databack/mysql-backup dump
 ```
    * 恢复：
 ```bash
-docker run -e DB_SERVER=gotodb.example.com -e DB_USER=user123 -e DB_PASS=pass123 -e DB_RESTORE_TARGET=/backup/db_backup_201509271627.gz -e DB_NAMES="database1 database3" -v /local/path:/backup databack/mysql-backup restore
+docker run -e DB_SERVER=gotodb.example.com -e DB_USER=user123 -e DB_PASS=pass123 -e DB_RESTORE_TARGET=/backup/db_backup_201509271627.gz -e DB_NAMES="database1 database3" -v /local/path:/backup docker.xuanyuan.run/databack/mysql-backup restore
 ```
 2. 重命名恢复单个数据库：
    * 备份：
 ```bash
-docker run -e DB_SERVER=gotodb.example.com -e DB_USER=user123 -e DB_PASS=pass123 -e SINGLE_DATABASE=true -e DB_NAMES=database1 -v /local/path:/backup databack/mysql-backup dump
+docker run -e DB_SERVER=gotodb.example.com -e DB_USER=user123 -e DB_PASS=pass123 -e SINGLE_DATABASE=true -e DB_NAMES=database1 -v /local/path:/backup docker.xuanyuan.run/databack/mysql-backup dump
 ```
    * 恢复：
 ```bash
-docker run -e DB_SERVER=gotodb.example.com -e DB_USER=user123 -e DB_PASS=pass123 -e DB_RESTORE_TARGET=/backup/db_backup_201509271627.gz -e SINGLE_DATABASE=true -e DB_NAMES=newdatabase1 -v /local/path:/backup databack/mysql-backup restore
+docker run -e DB_SERVER=gotodb.example.com -e DB_USER=user123 -e DB_PASS=pass123 -e DB_RESTORE_TARGET=/backup/db_backup_201509271627.gz -e SINGLE_DATABASE=true -e DB_NAMES=newdatabase1 -v /local/path:/backup docker.xuanyuan.run/databack/mysql-backup restore
 ```
 
 恢复详细说明参见[restore](https://github.com/databacker/mysql-backup/tree/master/docs/restore.md)，所有配置选项参见[configuration](https://github.com/databacker/mysql-backup/tree/master/docs/configuration.md)。

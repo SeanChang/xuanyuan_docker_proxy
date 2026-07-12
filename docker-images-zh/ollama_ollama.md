@@ -3,7 +3,7 @@ image: ollama/ollama
 description: "轻松在本地部署和运行大型语言模型的最简单方式。"
 source: https://xuanyuan.cloud/zh/r/ollama/ollama
 canonical: https://xuanyuan.cloud/zh/r/ollama/ollama
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ollama/ollama" title="ollama/ollama Docker 镜像中文简介、标签列表与拉取命令">ollama/ollama 中文简介</a>
@@ -27,7 +27,7 @@ Ollama 让在本地搭建和运行大型语言模型变得简单。
 ### CPU 仅模式
 直接运行容器，无需额外硬件加速：
 ```bash
-docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama docker.xuanyuan.run/ollama/ollama
 ```
 
 ### NVIDIA GPU 模式
@@ -69,13 +69,13 @@ sudo systemctl restart docker
 
 #### 启动容器
 ```bash
-docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama docker.xuanyuan.run/ollama/ollama
 ```
 
 ### AMD GPU 模式
 使用 `rocm` 标签运行容器：
 ```bash
-docker run -d --device /dev/kfd --device /dev/dri -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama:rocm
+docker run -d --device /dev/kfd --device /dev/dri -v ollama:/root/.ollama -p 11434:11434 --name ollama docker.xuanyuan.run/ollama/ollama:rocm
 ```
 
 ## 运行模型

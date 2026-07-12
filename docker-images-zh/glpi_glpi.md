@@ -3,7 +3,7 @@ image: glpi/glpi
 description: "GLPI是一款免费的资产与IT管理软件包，它能够全面管理IT资产（包括计算机、服务器、网络设备等硬件）、软件许可、耗材库存，并提供IT服务管理功能，如工单处理、问题跟踪、变更管理等，支持企业或组织高效追踪、维护和优化IT资源，提升管理效率与资源利用率，满足日常IT运维与资产监控的需求。"
 source: https://xuanyuan.cloud/zh/r/glpi/glpi
 canonical: https://xuanyuan.cloud/zh/r/glpi/glpi
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/glpi/glpi" title="glpi/glpi Docker 镜像中文简介、标签列表与拉取命令">glpi/glpi 中文简介</a>
@@ -12,18 +12,18 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 # GLPI Docker镜像
 
-![GLPI on docker illustration]([])
+![GLPI on docker illustration] 
 
-[GLPI]([]) 是一款免费开源的资产与IT管理软件包，支持数据中心管理、ITIL服务台、许可证跟踪及软件审计功能。
+[GLPI]  是一款免费开源的资产与IT管理软件包，支持数据中心管理、ITIL服务台、许可证跟踪及软件审计功能。
 
 
 ## 相关链接
-- [报告问题]([])
-- [官方文档]([])
+- [报告问题] 
+- [官方文档] 
 
 
 ## 仓库说明
-本仓库包含Docker镜像的构建文件，相关镜像可在[GitHub Container Registry]([])和[Docker Hub]([])获取。
+本仓库包含Docker镜像的构建文件，相关镜像可在[GitHub Container Registry] 和[Docker Hub] 获取。
 
 
 ## 如何使用此镜像
@@ -36,7 +36,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ```yaml
 services:
   glpi:
-    image: "glpi/glpi:latest"
+    image: "docker.xuanyuan.run/glpi/glpi:latest"
     restart: "unless-stopped"
     volumes:
       - "./storage/glpi:/var/glpi:rw"
@@ -48,7 +48,7 @@ services:
       - "80:80"
 
   db:
-    image: "mysql"
+    image: "docker.xuanyuan.run/mysql"
     restart: "unless-stopped"
     volumes:
        - "./storage/mysql:/var/lib/mysql"
@@ -58,7 +58,7 @@ services:
       MYSQL_USER: ${GLPI_DB_USER}
       MYSQL_PASSWORD: ${GLPI_DB_PASSWORD}
     healthcheck:
-      test: mysqladmin ping -h 127.0.0.1 -u $$MYSQL_USER --password=$$MYSQL_PASSWORD
+      test: mysqladmin ping -h 127.0.0.1 -u $MYSQL_USER --password=$MYSQL_PASSWORD
       start_period: 5s
       interval: 5s
       timeout: 5s

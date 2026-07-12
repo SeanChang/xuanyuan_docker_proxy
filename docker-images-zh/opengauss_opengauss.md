@@ -3,7 +3,7 @@ image: opengauss/opengauss
 description: "openGauss官方Docker镜像是由openGauss官方提供的可移植容器打包格式，集成了openGauss数据库引擎、必要配置文件及运行依赖，旨在简化数据库部署流程，确保不同环境下的运行一致性，方便用户快速启动、配置和使用openGauss高性能关系型数据库，适用于开发测试、学习实践等多种场景，为用户提供便捷、高效的数据库使用体验。"
 source: https://xuanyuan.cloud/zh/r/opengauss/opengauss
 canonical: https://xuanyuan.cloud/zh/r/opengauss/opengauss
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/opengauss/opengauss" title="opengauss/opengauss Docker 镜像中文简介、标签列表与拉取命令">opengauss/opengauss 中文简介</a>
@@ -18,7 +18,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 通过以下命令可快速启动一个openGauss容器实例：
 
 ```shell
-docker run --name opengauss --privileged=true -d -e GS_PASSWORD=openGauss@123 opengauss/opengauss:tagname
+docker run --name opengauss --privileged=true -d -e GS_PASSWORD=openGauss@123 docker.xuanyuan.run/opengauss/opengauss:tagname
 ```
 
 **参数说明**：  
@@ -39,7 +39,7 @@ docker run --name opengauss --privileged=true -d -e GS_PASSWORD=openGauss@123 op
 先运行以下命令启动容器，并将容器的5432端口映射到主机（便于外部访问）：
 
 ```shell
-docker run --name opengauss --privileged=true -d -e GS_PASSWORD=openGauss@123 -p5432:5432 opengauss/opengauss:tagname
+docker run --name opengauss --privileged=true -d -e GS_PASSWORD=openGauss@123 -p5432:5432 docker.xuanyuan.run/opengauss/opengauss:tagname
 ```
 
 **新增参数说明**：  
@@ -72,7 +72,7 @@ gsql -d postgres -U gaussdb -W 'openGauss@123' -h host_ip -p 5432
 运行以下命令，将主机本地目录挂载到容器内的数据存储路径：
 
 ```shell
-docker run --name opengauss --privileged=true -d -e GS_PASSWORD=openGauss@123 -v /opengauss:/var/lib/opengauss/data opengauss/opengauss:tagname
+docker run --name opengauss --privileged=true -d -e GS_PASSWORD=openGauss@123 -v /opengauss:/var/lib/opengauss/data docker.xuanyuan.run/opengauss/opengauss:tagname
 ```
 
 **参数说明**：  

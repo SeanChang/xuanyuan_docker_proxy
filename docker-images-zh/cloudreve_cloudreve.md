@@ -3,7 +3,7 @@ image: cloudreve/cloudreve
 description: "这是一款支持多家云存储服务提供商的自托管文件管理与共享云盘系统，可帮助用户集中管理、分享存储于不同平台的文件，实现跨云存储的统一访问与操作，满足个人或团队对文件存储、管理及协作的多样化需求，兼具数据自主可控与多平台整合的优势。"
 source: https://xuanyuan.cloud/zh/r/cloudreve/cloudreve
 canonical: https://xuanyuan.cloud/zh/r/cloudreve/cloudreve
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cloudreve/cloudreve" title="cloudreve/cloudreve Docker 镜像中文简介、标签列表与拉取命令">cloudreve/cloudreve 中文简介</a>
@@ -15,10 +15,10 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 项目导航  
-官网 • [演示]([]) • [论坛]([]) • [文档]([]) • [下载]() • [群组]() • 许可证  
+官网 • [演示]  • [论坛]  • [文档]  • [下载]() • [群组]() • 许可证  
 
 
-![系统截图]([])
+![系统截图] 
 
 
 ## ✨ 特性  
@@ -54,7 +54,7 @@ chmod +x ./cloudreve
 ./cloudreve  
 ```  
 
-> 完整部署流程（含环境配置、服务注册等）可参考[快速开始文档]([])  
+> 完整部署流程（含环境配置、服务注册等）可参考[快速开始文档]   
 
 
 ## 🔨 自行构建  

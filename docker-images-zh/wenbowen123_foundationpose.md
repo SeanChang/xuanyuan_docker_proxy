@@ -3,7 +3,7 @@ image: wenbowen123/foundationpose
 description: "统一的6D物体姿态估计与跟踪基础模型，支持基于模型和无模型两种设置，无需微调即可应用于新物体。CVPR 2024 Highlight论文的官方实现。"
 source: https://xuanyuan.cloud/zh/r/wenbowen123/foundationpose
 canonical: https://xuanyuan.cloud/zh/r/wenbowen123/foundationpose
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/wenbowen123/foundationpose" title="wenbowen123/foundationpose Docker 镜像中文简介、标签列表与拉取命令">wenbowen123/foundationpose 中文简介</a>
@@ -77,7 +77,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ```bash
 cd docker/
-docker pull wenbowen123/foundationpose && docker tag wenbowen123/foundationpose foundationpose
+docker pull docker.xuanyuan.run/wenbowen123/foundationpose && docker tag wenbowen123/foundationpose foundationpose
 # 或者从头构建：docker build --network host -t foundationpose .
 bash docker/run_container.sh
 ```
@@ -97,7 +97,7 @@ docker exec -it foundationpose bash
 **对于较新的GPU（如4090）**，请参考[此链接](https://github.com/NVlabs/FoundationPose/issues/XX)。简而言之，执行以下操作：
 
 ```bash
-docker pull shingarey/foundationpose_custom_cuda121:latest
+docker pull docker.xuanyuan.run/shingarey/foundationpose_custom_cuda121:latest
 ```
 
 然后修改bash脚本以使用此镜像而不是`foundationpose:latest`。

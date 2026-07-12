@@ -3,7 +3,7 @@ image: gvenzl/oracle-free
 description: "甲骨文数据库（Oracle Database）免费向所有人开放啦！作为全球领先的企业级关系型数据库管理系统，它凭借高性能、高可靠性与强大的安全性广泛应用于各类关键业务场景，此次免费版本旨在降低开发者、学习者及小型组织的使用门槛，让更多用户能够轻松体验其卓越的数据管理能力，助力创新与技术探索。"
 source: https://xuanyuan.cloud/zh/r/gvenzl/oracle-free
 canonical: https://xuanyuan.cloud/zh/r/gvenzl/oracle-free
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gvenzl/oracle-free" title="gvenzl/oracle-free Docker 镜像中文简介、标签列表与拉取命令">gvenzl/oracle-free 中文简介</a>
@@ -62,13 +62,13 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 启动非持久化数据库容器  
 （容器删除后数据丢失，但重启容器数据保留）  
 ```shell
-docker run -d -p 1521:1521 -e ORACLE_PASSWORD=<你的密码> gvenzl/oracle-free
+docker run -d -p 1521:1521 -e ORACLE_PASSWORD=<你的密码> docker.xuanyuan.run/gvenzl/oracle-free
 ```
 
 ### 启动持久化数据库容器  
 （数据保存在卷中，不受容器生命周期影响）  
 ```shell
-docker run -d -p 1521:1521 -e ORACLE_PASSWORD=<你的密码> -v oracle-volume:/opt/oracle/oradata gvenzl/oracle-free
+docker run -d -p 1521:1521 -e ORACLE_PASSWORD=<你的密码> -v oracle-volume:/opt/oracle/oradata docker.xuanyuan.run/gvenzl/oracle-free
 ```
 
 ### 重置 SYS/SYSTEM 用户密码  
@@ -83,18 +83,18 @@ docker exec <容器名或ID> resetPassword <新密码>
 ## 使用这些镜像的项目
 
 以下项目已采用该镜像：  
-- [Benthos]([])（数据处理框架）  
-- [Hibernate Reactive]([])（响应式 ORM）  
-- [Ibis]([])（数据分析工具）  
-- [JobRunr]([])（任务调度库）  
-- [jOOQ]([])（SQL 构建工具）  
-- [Quarkus]([])（云原生 Java 框架）  
-- [Ruby on Rails ActiveRecord adapter]([])（Rails 数据库适配器）  
-- [Spring Data]([])（Spring 数据访问框架）  
-- [Micronaut]([])（微服务框架）  
-- [utPLSQL]([])（PL/SQL 测试框架）  
+- [Benthos] （数据处理框架）  
+- [Hibernate Reactive] （响应式 ORM）  
+- [Ibis] （数据分析工具）  
+- [JobRunr] （任务调度库）  
+- [jOOQ] （SQL 构建工具）  
+- [Quarkus] （云原生 Java 框架）  
+- [Ruby on Rails ActiveRecord adapter] （Rails 数据库适配器）  
+- [Spring Data] （Spring 数据访问框架）  
+- [Micronaut] （微服务框架）  
+- [utPLSQL] （PL/SQL 测试框架）  
 
-若你的项目使用了该镜像，可通过 [GitHub Issue]([]) 申请添加到列表。
+若你的项目使用了该镜像，可通过 [GitHub Issue]  申请添加到列表。
 
 
 ## 如何使用这些镜像
@@ -108,7 +108,7 @@ docker exec <容器名或ID> resetPassword <新密码>
 | Full   | `-full`    | 包含 Oracle 数据库完整功能，基于官方安装包构建。                     | 需要自定义扩展或深度定制数据库的场景。                       |
 | Faststart | `*-faststart` | 内置预初始化数据库，启动速度更快，但镜像体积较大。                 | 自动化测试（频繁启停容器且无需持久化数据）。                   |
 
-> 各类型镜像的具体修改内容可参考 [ImageDetails.md]([])。
+> 各类型镜像的具体修改内容可参考 [ImageDetails.md] 。
 
 
 ### 环境变量
@@ -135,7 +135,7 @@ docker exec <容器名或ID> resetPassword <新密码>
 ### GitHub Actions 集成
 
 #### 方式一：使用 Setup 动作  
-通过 GitHub Marketplace 的 [Setup Oracle DB Free]([]) 动作快速集成：  
+通过 GitHub Marketplace 的 [Setup Oracle DB Free]  动作快速集成：  
 ```yaml
 jobs:
   test:
@@ -153,7 +153,7 @@ jobs:
 ```yaml
 services:
   oracle:
-    image: gvenzl/oracle-free:latest  # 可替换为其他标签
+    image: docker.xuanyuan.run/gvenzl/oracle-free:latest  # 可替换为其他标签
     env:
       ORACLE_RANDOM_PASSWORD: true    # 随机生成管理员密码
       APP_USER: my_user               # 创建应用用户
@@ -182,7 +182,7 @@ services:
 version: "3.8"
 services:
   oracle:
-    image: gvenzl/oracle-free:latest  # 镜像标签
+    image: docker.xuanyuan.run/gvenzl/oracle-free:latest  # 镜像标签
     ports:
       - "1521:1521"                   # 端口映射
     environment:
@@ -227,7 +227,7 @@ docker exec my-oracle createAppUser app_user app_pwd PDB1
 
 敏感信息（如密码）可通过文件传入，只需在环境变量后添加 `_FILE` 后缀，从容器内文件读取值。例如：  
 ```shell
-docker run -d --name oracle-db -e ORACLE_PASSWORD_FILE=/run/secrets/oracle-passwd gvenzl/oracle-free
+docker run -d --name oracle-db -e ORACLE_PASSWORD_FILE=/run/secrets/oracle-passwd docker.xuanyuan.run/gvenzl/oracle-free
 ```
 支持的变量：`APP_USER_PASSWORD_FILE`、`ORACLE_PASSWORD_FILE`、`ORACLE_DATABASE_FILE`。  
 
@@ -258,7 +258,7 @@ docker run -d --name oracle-db -e ORACLE_PASSWORD_FILE=/run/secrets/oracle-passw
 
 2. 启动容器时挂载目录：  
    ```shell
-   docker run -d -p 1521:1521 -e ORACLE_RANDOM_PASSWORD=yes -v ./init_scripts:/container-entrypoint-initdb.d gvenzl/oracle-free:23-slim
+   docker run -d -p 1521:1521 -e ORACLE_RANDOM_PASSWORD=yes -v ./init_scripts:/container-entrypoint-initdb.d docker.xuanyuan.run/gvenzl/oracle-free:23-slim
    ```
 
 > **注意**：脚本仅在首次初始化时执行，已有数据库不会重复执行。
@@ -271,9 +271,9 @@ docker run -d --name oracle-db -e ORACLE_PASSWORD_FILE=/run/secrets/oracle-passw
 
 ### 配置脚本
 
-数据库配置脚本可参考 [config-scripts]([]) 目录。
+数据库配置脚本可参考 [config-scripts]  目录。
 
 
 ## 反馈与建议
 
-如有问题或建议，可通过 [GitHub Issues]([]) 提交。
+如有问题或建议，可通过 [GitHub Issues]  提交。

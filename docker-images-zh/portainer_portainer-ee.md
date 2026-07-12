@@ -3,7 +3,7 @@ image: portainer/portainer-ee
 description: "Portainer BE是用于容器化应用的功能全面的服务交付平台"
 source: https://xuanyuan.cloud/zh/r/portainer/portainer-ee
 canonical: https://xuanyuan.cloud/zh/r/portainer/portainer-ee
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/portainer/portainer-ee" title="portainer/portainer-ee Docker 镜像中文简介、标签列表与拉取命令">portainer/portainer-ee 中文简介</a>
@@ -69,7 +69,7 @@ docker run -d \
   --restart=always \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v portainer_data:/data \
-  portainer/portainer-be:latest
+  docker.xuanyuan.run/portainer/portainer-be:latest
 ```  
 - **参数说明**：  
   - `-p 8000:8000`：边缘代理端口，用于边缘节点通信；  
@@ -84,7 +84,7 @@ docker run -d \
 version: '3'
 services:
   portainer:
-    image: portainer/portainer-be:latest
+    image: docker.xuanyuan.run/portainer/portainer-be:latest
     container_name: portainer
     restart: always
     ports:

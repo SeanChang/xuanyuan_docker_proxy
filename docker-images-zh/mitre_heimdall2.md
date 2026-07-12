@@ -3,7 +3,7 @@ image: mitre/heimdall2
 description: "Heimdall用于查看、存储和比较各类自动化安全控制扫描结果。"
 source: https://xuanyuan.cloud/zh/r/mitre/heimdall2
 canonical: https://xuanyuan.cloud/zh/r/mitre/heimdall2
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mitre/heimdall2" title="mitre/heimdall2 Docker 镜像中文简介、标签列表与拉取命令">mitre/heimdall2 中文简介</a>
@@ -105,7 +105,7 @@ npm install -g @mitre/heimdall-lite
 也可以使用Docker运行heimdall-lite：
 
 ```bash
-docker run -d -p 8080:80 mitre/heimdall-lite:release-latest
+docker run -d -p 8080:80 docker.xuanyuan.run/mitre/heimdall-lite:release-latest
 ```
 
 然后可以通过[http://localhost:8080](http://localhost:8080)访问heimdall-lite。

@@ -3,7 +3,7 @@ image: mathworks/matlab
 description: "MATLAB Docker容器，用于在云和服务器环境中访问MATLAB，支持通过浏览器和VNC进行交互，提供基于Ubuntu的预构建镜像，适用于工程师和科学家的编程平台，集成矩阵数学编程语言与桌面环境。"
 source: https://xuanyuan.cloud/zh/r/mathworks/matlab
 canonical: https://xuanyuan.cloud/zh/r/mathworks/matlab
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mathworks/matlab" title="mathworks/matlab Docker 镜像中文简介、标签列表与拉取命令">mathworks/matlab 中文简介</a>
@@ -38,12 +38,12 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 要将R2025b MATLAB镜像拉取到本地机器，请执行：
 ```console
-docker pull mathworks/matlab:r2025b
+docker pull docker.xuanyuan.run/mathworks/matlab:r2025b
 ```
 
 要使用`-browser`选项启动容器，请执行：
 ```console
-docker run -it --rm -p 8888:8888 --shm-size=512M mathworks/matlab:r2025b -browser
+docker run -it --rm -p 8888:8888 --shm-size=512M docker.xuanyuan.run/mathworks/matlab:r2025b -browser
 ```
 系统将提供一个URL，用于在Web浏览器中访问MATLAB。
 
@@ -159,11 +159,11 @@ $ docker run -it --rm --shm-size=512M mathworks/matlab:r2025b -logfile "logfilen
 
 <i>示例：</i>
 ```console
-docker run -it --rm -e MLM_LICENSE_FILE=27000@MyLicenseServer --shm-size=512M mathworks/matlab:r2025b
+docker run -it --rm -e MLM_LICENSE_FILE=27000@MyLicenseServer --shm-size=512M docker.xuanyuan.run/mathworks/matlab:r2025b
 ```
 <br />
 ```console
-docker run -it --rm -e MLM_LICENSE_FILE=/license.dat --shm-size=512M mathworks/matlab:r2025b
+docker run -it --rm -e MLM_LICENSE_FILE=/license.dat --shm-size=512M docker.xuanyuan.run/mathworks/matlab:r2025b
 ```
 
 
@@ -173,7 +173,7 @@ docker run -it --rm -e MLM_LICENSE_FILE=/license.dat --shm-size=512M mathworks/m
 
 <i>示例：</i>
 ```console
-docker run -it --rm -e PROXY_SETTINGS=<proxy-server-address> --shm-size=512M mathworks/matlab:r2025b
+docker run -it --rm -e PROXY_SETTINGS=<proxy-server-address> --shm-size=512M docker.xuanyuan.run/mathworks/matlab:r2025b
 ```
 
 您可以使用以下任一形式指定代理服务器地址：
@@ -192,7 +192,7 @@ docker run -it --rm -e PROXY_SETTINGS=<proxy-server-address> --shm-size=512M mat
 
 <i>示例：</i>
 ```console
-docker run -it --rm -e PASSWORD=ILoveMATLAB -p 5901:5901 -p 6080:6080 --shm-size=512M mathworks/matlab:r2025b -vnc
+docker run -it --rm -e PASSWORD=ILoveMATLAB -p 5901:5901 -p 6080:6080 --shm-size=512M docker.xuanyuan.run/mathworks/matlab:r2025b -vnc
 ```
 
 
@@ -201,7 +201,7 @@ docker run -it --rm -e PASSWORD=ILoveMATLAB -p 5901:5901 -p 6080:6080 --shm-size
 创建名为`Dockerfile`的文件，内容如下：
 ```dockerfile
 ## 基于MATLAB基础镜像构建
-FROM mathworks/matlab:r2025b
+FROM docker.xuanyuan.run/mathworks/matlab:r2025b
 
 ## 复制要执行的脚本/函数
 COPY myscript.m ./

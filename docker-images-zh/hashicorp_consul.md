@@ -3,7 +3,7 @@ image: hashicorp/consul
 description: "基于当前版本自动构建的Consul镜像。有关使用详情，请参见README。"
 source: https://xuanyuan.cloud/zh/r/hashicorp/consul
 canonical: https://xuanyuan.cloud/zh/r/hashicorp/consul
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hashicorp/consul" title="hashicorp/consul Docker 镜像中文简介、标签列表与拉取命令">hashicorp/consul 中文简介</a>
@@ -26,7 +26,7 @@ Consul 1.16版本起，我们将停止在Dockerhub发布官方镜像，仅发布
 
 ### 基本运行命令
 ```bash
-docker run -d --name consul -p 8500:8500 hashicorp/consul agent -server -bootstrap -ui -client=0.0.0.0
+docker run -d --name consul -p 8500:8500 docker.xuanyuan.run/hashicorp/consul agent -server -bootstrap -ui -client=0.0.0.0
 ```
 
 ### 服务注册示例

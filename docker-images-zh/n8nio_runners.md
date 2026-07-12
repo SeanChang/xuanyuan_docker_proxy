@@ -3,7 +3,7 @@ image: n8nio/runners
 description: "n8nio/runners 是 n8nio 官方推出的任务运行器 Docker 镜像，专为开源工作流自动化平台 n8n 的代码执行场景设计，核心功能是承接 n8n 中 Code Node 发送的用户自定义 JavaScript 或 Python 代码任务，通过独立容器实现代码执行的隔离与资源管控。该镜像需作为 sidecar 容器与 n8n 主实例协同部署，目前（截至 2025 年 9 月）处于 Beta 测试阶段。"
 source: https://xuanyuan.cloud/zh/r/n8nio/runners
 canonical: https://xuanyuan.cloud/zh/r/n8nio/runners
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/n8nio/runners" title="n8nio/runners Docker 镜像中文简介、标签列表与拉取命令">n8nio/runners 中文简介</a>
@@ -63,7 +63,7 @@ docker run --name n8n-runners \
   -e N8N_RUNNERS_MODE=external \
   -e N8N_RUNNERS_AUTH_TOKEN=<随机安全密钥> \
   -e N8N_RUNNERS_TASK_BROKER_URI=n8n-main:5679 \
-  -d n8nio/runners:latest
+  -d docker.xuanyuan.run/n8nio/runners:latest
 ```
 
 - --network：加入与 n8n 主实例相同的网络，确保通信可达
@@ -78,7 +78,7 @@ docker run --name n8n-runners \
 version: '3.8'
 services:
   postgres:
-    image: postgres:15
+    image: docker.xuanyuan.run/postgres:15
     environment:
       POSTGRES_USER: n8n
       POSTGRES_PASSWORD: n8n-pass
@@ -87,7 +87,7 @@ services:
       - postgres-data:/var/lib/postgresql/data
 
   n8n-main:
-    image: n8nio/n8n:latest
+    image: docker.xuanyuan.run/n8nio/n8n:latest
     ports:
       - 5678:5678
     environment:
@@ -104,7 +104,7 @@ services:
       - postgres
 
   n8n-runners:
-    image: n8nio/runners:latest
+    image: docker.xuanyuan.run/n8nio/runners:latest
     environment:
       N8N_RUNNERS_AUTH_TOKEN: my-secure-token-123
       N8N_RUNNERS_TASK_BROKER_URI: n8n-main:5679

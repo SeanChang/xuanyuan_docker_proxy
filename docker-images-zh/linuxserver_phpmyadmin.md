@@ -3,7 +3,7 @@ image: linuxserver/phpmyadmin
 description: "phpMyAdmin是一款用PHP编写的免费软件工具，旨在通过Web界面管理MySQL和MariaDB，支持广泛的数据库操作。LinuxServer.io提供的此镜像包含定期更新、用户映射和安全更新等特性。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/phpmyadmin" title="linuxserver/phpmyadmin Docker 镜像中文简介、标签列表与拉取命令">linuxserver/phpmyadmin 中文简介</a>
@@ -68,7 +68,7 @@ LinuxServer.io团队提供的容器具有以下特点：
 ---
 services:
   phpmyadmin:
-    image: lscr.io/linuxserver/phpmyadmin:latest
+    image: docker.xuanyuan.run/linuxserver/phpmyadmin:latest
     container_name: phpmyadmin
     environment:
       - PUID=1000
@@ -214,7 +214,7 @@ uid=1000(your_user) gid=1000(your_user) groups=1000(your_user)
 * 更新镜像：
 
   ```bash
-  docker pull lscr.io/linuxserver/phpmyadmin:latest
+  docker pull docker.xuanyuan.run/linuxserver/phpmyadmin:latest
   ```
 
 * 停止运行中的容器：
@@ -257,7 +257,7 @@ docker build \
 可使用`lscr.io/linuxserver/qemu-static`在x86_64硬件上构建ARM变体，反之亦然：
 
 ```bash
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```
 
 注册后，可使用`-f Dockerfile.aarch64`指定要使用的dockerfile。

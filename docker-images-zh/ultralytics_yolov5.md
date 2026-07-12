@@ -3,7 +3,7 @@ image: ultralytics/yolov5
 description: "YOLOv5是Ultralytics推出的开源视觉AI模型，支持目标检测、图像分割与分类任务，具备快速准确的推理能力，可导出为ONNX、CoreML、TFLite等多种格式，适用于多场景计算机视觉应用，Docker镜像提供便捷部署环境。"
 source: https://xuanyuan.cloud/zh/r/ultralytics/yolov5
 canonical: https://xuanyuan.cloud/zh/r/ultralytics/yolov5
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ultralytics/yolov5" title="ultralytics/yolov5 Docker 镜像中文简介、标签列表与拉取命令">ultralytics/yolov5 中文简介</a>
@@ -40,7 +40,7 @@ YOLOv5是Ultralytics开源的先进视觉AI模型，代表了其在未来视觉A
 从Docker Hub拉取官方镜像：
 
 ```bash
-docker pull ultralytics/yolov5
+docker pull docker.xuanyuan.run/ultralytics/yolov5
 ```
 
 ### 2. 基本推理示例
@@ -49,7 +49,7 @@ docker pull ultralytics/yolov5
 挂载本地图像目录，对单张图像进行目标检测：
 
 ```bash
-docker run -v $(pwd)/data:/app/data ultralytics/yolov5 \
+docker run -v $(pwd)/data:/app/data docker.xuanyuan.run/ultralytics/yolov5 \
   python detect.py --weights yolov5s.pt --source /app/data/input.jpg --save-dir /app/data/output
 ```
 
@@ -62,13 +62,13 @@ docker run -v $(pwd)/data:/app/data ultralytics/yolov5 \
 处理本地视频文件：
 
 ```bash
-docker run -v $(pwd)/data:/app/data ultralytics/yolov5 \
+docker run -v $(pwd)/data:/app/data docker.xuanyuan.run/ultralytics/yolov5 \
   python detect.py --weights yolov5m.pt --source /app/data/video.mp4 --save-dir /app/data/video_output
 ```
 
 #### 2.3 摄像头实时推理（需要主机摄像头权限）
 ```bash
-docker run --device /dev/video0 -v $(pwd)/output:/app/runs/detect ultralytics/yolov5 \
+docker run --device /dev/video0 -v $(pwd)/output:/app/runs/detect docker.xuanyuan.run/ultralytics/yolov5 \
   python detect.py --weights yolov5s.pt --source 0
 ```
 
@@ -79,7 +79,7 @@ docker run --device /dev/video0 -v $(pwd)/output:/app/runs/detect ultralytics/yo
 挂载数据集与输出目录，使用自定义数据训练模型：
 
 ```bash
-docker run -v $(pwd)/dataset:/app/dataset -v $(pwd)/runs:/app/runs ultralytics/yolov5 \
+docker run -v $(pwd)/dataset:/app/dataset -v $(pwd)/runs:/app/runs docker.xuanyuan.run/ultralytics/yolov5 \
   python train.py --data /app/dataset/data.yaml --epochs 100 --weights yolov5s.pt --batch-size 16 --img 640
 ```
 
@@ -93,7 +93,7 @@ docker run -v $(pwd)/dataset:/app/dataset -v $(pwd)/runs:/app/runs ultralytics/y
 将训练好的模型导出为ONNX格式：
 
 ```bash
-docker run -v $(pwd)/runs:/app/runs ultralytics/yolov5 \
+docker run -v $(pwd)/runs:/app/runs docker.xuanyuan.run/ultralytics/yolov5 \
   python export.py --weights /app/runs/train/exp/weights/best.pt --include onnx --img 640
 ```
 

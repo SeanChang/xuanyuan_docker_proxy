@@ -3,7 +3,7 @@ image: bitnami/gitlab-runner-helper
 description: "Bitnami gitlab-runner-helper 安全镜像"
 source: https://xuanyuan.cloud/zh/r/bitnami/gitlab-runner-helper
 canonical: https://xuanyuan.cloud/zh/r/bitnami/gitlab-runner-helper
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/gitlab-runner-helper" title="bitnami/gitlab-runner-helper Docker 镜像中文简介、标签列表与拉取命令">bitnami/gitlab-runner-helper 中文简介</a>

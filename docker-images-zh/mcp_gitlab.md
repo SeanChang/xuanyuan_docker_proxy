@@ -3,7 +3,7 @@ image: mcp/gitlab
 description: "用于GitLab API的MCP服务器，支持项目管理、文件操作等功能，可通过Docker运行，提供安全的API交互能力。"
 source: https://xuanyuan.cloud/zh/r/mcp/gitlab
 canonical: https://xuanyuan.cloud/zh/r/mcp/gitlab
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mcp/gitlab" title="mcp/gitlab Docker 镜像中文简介、标签列表与拉取命令">mcp/gitlab 中文简介</a>

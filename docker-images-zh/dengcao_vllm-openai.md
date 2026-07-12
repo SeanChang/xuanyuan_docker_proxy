@@ -3,7 +3,7 @@ image: dengcao/vllm-openai
 description: "vLLM是一个快速且易用的大语言模型推理与服务库，最初由加州大学伯克利分校开发，采用PagedAttention技术优化内存使用，支持高吞吐量、低延迟的推理，兼容Hugging Face模型格式，可轻松部署各类LLM，适用于科研和生产环境，显著提升大语言模型的服务效率。"
 source: https://xuanyuan.cloud/zh/r/dengcao/vllm-openai
 canonical: https://xuanyuan.cloud/zh/r/dengcao/vllm-openai
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dengcao/vllm-openai" title="dengcao/vllm-openai Docker 镜像中文简介、标签列表与拉取命令">dengcao/vllm-openai 中文简介</a>
@@ -19,9 +19,9 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 二、支持模型
 当前镜像支持以下模型（模型文件可从ModelScope获取）：  
-- Qwen3-Reranker-0.6B：[ModelScope地址]([])  
-- Qwen3-Reranker-4B：[ModelScope地址]([])  
-- Qwen3-Reranker-8B：[ModelScope地址]([])  
+- Qwen3-Reranker-0.6B：[ModelScope地址]   
+- Qwen3-Reranker-4B：[ModelScope地址]   
+- Qwen3-Reranker-8B：[ModelScope地址]   
 - 其他Qwen3系列模型（如Qwen3-Embedding、通用Qwen3-Reranker）  
 
 
@@ -33,7 +33,7 @@ services:
   Qwen3-Reranker-0.6B:
     container_name: Qwen3-Reranker-0.6B
     restart: no
-    image: dengcao/vllm-openai:v0.9.2-dev  # 基于vllm开发版构建，测试可用
+    image: docker.xuanyuan.run/dengcao/vllm-openai:v0.9.2-dev  # 基于vllm开发版构建，测试可用
     ipc: host
     volumes:
       - ./models:/models  # 宿主机模型目录挂载到容器内/models（需提前将模型文件放入宿主机./models目录）

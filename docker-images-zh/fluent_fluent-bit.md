@@ -3,7 +3,7 @@ image: fluent/fluent-bit
 description: "Fluent Bit 是一款轻量级的日志与指标收集转发工具，以高效低耗为核心优势，适用于从边缘设备到云端的各类部署环境，能够实时采集、处理并转发系统日志、应用指标等多样化数据，支持多种数据源接入与输出目标对接，凭借小巧的体积和强大的性能，广泛应用于容器化部署、微服务架构及物联网场景中，为日志监控、数据分析与运维决策提供稳定可靠的数据流支持。"
 source: https://xuanyuan.cloud/zh/r/fluent/fluent-bit
 canonical: https://xuanyuan.cloud/zh/r/fluent/fluent-bit
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/fluent/fluent-bit" title="fluent/fluent-bit Docker 镜像中文简介、标签列表与拉取命令">fluent/fluent-bit 中文简介</a>
@@ -13,7 +13,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 # Fluent Bit
 
 
-[Fluent Bit]([]) 是一款轻量级高性能日志处理器。本仓库提供生产环境可用的容器镜像，稳定版基于 Distroless 构建，注重安全性，仅包含 Fluent Bit 二进制文件、必要系统库及基础配置。  
+[Fluent Bit]  是一款轻量级高性能日志处理器。本仓库提供生产环境可用的容器镜像，稳定版基于 Distroless 构建，注重安全性，仅包含 Fluent Bit 二进制文件、必要系统库及基础配置。  
 
 此外，我们还提供调试版镜像，包含 shell 和工具，可用于故障排查或测试场景。  
 
@@ -25,14 +25,14 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 步骤1：启动 Fluent Bit 实例  
 运行一个 Fluent Bit 实例，该实例将通过 Forward 协议监听 TCP 24224 端口，并每秒将消息以 JSON 行格式输出到 STDOUT 接口：  
 ```shell
-docker run -p 127.0.0.1:24224:24224 fluent/fluent-bit /fluent-bit/bin/fluent-bit -i forward -o stdout -p format=json_lines -f 1
+docker run -p 127.0.0.1:24224:24224 docker.xuanyuan.run/fluent/fluent-bit /fluent-bit/bin/fluent-bit -i forward -o stdout -p format=json_lines -f 1
 ```
 
 
 ### 步骤2：发送测试消息  
 运行另一个容器发送测试消息。这次 Docker 容器将使用 Fluent Forward 协议作为日志驱动：  
 ```shell
-docker run --log-driver=fluentd -t ubuntu echo "测试日志消息"
+docker run --log-driver=fluentd -t docker.xuanyuan.run/ubuntu echo "测试日志消息"
 ```
 
 
@@ -69,14 +69,14 @@ Fluent Bit v1.9.8
 
 ## Fluent Bit 与 Fluentd  
 
-[Fluent Bit]([]) 是 CNCF（云原生计算基金会）旗下 [Fluentd]([]) 项目的子项目。  
+[Fluent Bit]  是 CNCF（云原生计算基金会）旗下 [Fluentd]  项目的子项目。  
 
 
 ## 许可证  
 
-本程序遵循 [Apache License v2.0]([]) 协议。  
+本程序遵循 [Apache License v2.0]  协议。  
 
 
 ## 作者  
 
-[Fluent Bit]([]) 是 CNCF 旗下 Fluentd 项目的子项目，由 [众多贡献者]([]) 倾心打造。
+[Fluent Bit]  是 CNCF 旗下 Fluentd 项目的子项目，由 [众多贡献者]  倾心打造。

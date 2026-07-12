@@ -3,7 +3,7 @@ image: bitnamilegacy/mysql
 description: "Bitnami旧版镜像（不再更新）"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/mysql
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/mysql
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/mysql" title="bitnamilegacy/mysql Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/mysql 中文简介</a>

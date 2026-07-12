@@ -3,7 +3,7 @@ image: atlassian/confluence
 description: "Atlassian Confluence的Docker镜像，原以`atlassian/confluence`和`atlassian/confluence-server`双名称发布，2024年2月15日后仅前者持续更新，建议切换至`atlassian/confluence`以获取最新更新及标签。"
 source: https://xuanyuan.cloud/zh/r/atlassian/confluence
 canonical: https://xuanyuan.cloud/zh/r/atlassian/confluence
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/atlassian/confluence" title="atlassian/confluence Docker 镜像中文简介、标签列表与拉取命令">atlassian/confluence 中文简介</a>
@@ -71,7 +71,7 @@ docker run -v /data/your-confluence-home:/var/atlassian/application-data/conflue
   -d \
   -p 8090:8090 \
   -p 8091:8091 \
-  atlassian/confluence
+  docker.xuanyuan.run/atlassian/confluence
 ```
 
 #### 参数说明

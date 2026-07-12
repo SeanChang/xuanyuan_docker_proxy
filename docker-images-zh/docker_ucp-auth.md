@@ -3,7 +3,7 @@ image: docker/ucp-auth
 description: "docker/ucp镜像是Docker企业版核心组件，用于构建和管理容器集群，提供集中化控制、多租户管理及安全集成功能，支持企业级容器编排与运维。"
 source: https://xuanyuan.cloud/zh/r/docker/ucp-auth
 canonical: https://xuanyuan.cloud/zh/r/docker/ucp-auth
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/docker/ucp-auth" title="docker/ucp-auth Docker 镜像中文简介、标签列表与拉取命令">docker/ucp-auth 中文简介</a>
@@ -81,7 +81,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 docker run --rm -it \
   --name ucp \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  docker/ucp:latest \
+  docker.xuanyuan.run/docker/ucp:latest \
   install \
   --host-address <UCP_HOST_IP> \
   --admin-username <ADMIN_USER> \
@@ -95,7 +95,7 @@ docker run --rm -it \
 docker run --rm -it \
   --name ucp \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  docker/ucp:latest \
+  docker.xuanyuan.run/docker/ucp:latest \
   install \
   --host-address <MASTER_NODE_IP> \
   --admin-username <ADMIN_USER> \
@@ -110,7 +110,7 @@ docker run --rm -it \
 docker run --rm -it \
   --name ucp \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  docker/ucp:latest \
+  docker.xuanyuan.run/docker/ucp:latest \
   join \
   --token <JOIN_TOKEN> \
   --host-address <NEW_MASTER_IP> \
@@ -141,7 +141,7 @@ docker run --rm -it \
 ```bash
 docker run --rm -it \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  docker/ucp:latest \
+  docker.xuanyuan.run/docker/ucp:latest \
   upgrade \
   --interactive
 ```
@@ -151,7 +151,7 @@ docker run --rm -it \
 docker run --rm -it \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v /backup:/backup \
-  docker/ucp:latest \
+  docker.xuanyuan.run/docker/ucp:latest \
   backup \
   --passphrase "<BACKUP_PASSPHRASE>" \
   --output /backup/ucp-backup-$(date +%Y%m%d).tar
@@ -162,7 +162,7 @@ docker run --rm -it \
 docker run --rm -it \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v /backup:/backup \
-  docker/ucp:latest \
+  docker.xuanyuan.run/docker/ucp:latest \
   restore \
   --passphrase "<BACKUP_PASSPHRASE>" \
   /backup/ucp-backup-<DATE>.tar

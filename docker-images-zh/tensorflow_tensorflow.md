@@ -3,7 +3,7 @@ image: tensorflow/tensorflow
 description: "TensorFlow（官网：[]"
 source: https://xuanyuan.cloud/zh/r/tensorflow/tensorflow
 canonical: https://xuanyuan.cloud/zh/r/tensorflow/tensorflow
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/tensorflow/tensorflow" title="tensorflow/tensorflow Docker 镜像中文简介、标签列表与拉取命令">tensorflow/tensorflow 中文简介</a>
@@ -13,18 +13,18 @@ exported_at: 2026-06-02T12:26:10.133Z
 # TensorFlow Runtime Docker 镜像
 
 
-这些容器提供了快速运行或试用 TensorFlow 的方式。镜像源代码见 [GitHub]([])。若需构建 TensorFlow 或其扩展，建议参考 [TensorFlow Build Dockerfiles]([])。
+这些容器提供了快速运行或试用 TensorFlow 的方式。镜像源代码见 [GitHub] 。若需构建 TensorFlow 或其扩展，建议参考 [TensorFlow Build Dockerfiles] 。
 
 
 ## 基础依赖说明
-镜像基于 TensorFlow 官方 Python 二进制文件构建，需 CPU 支持 AVX 指令集。大多数现代 CPU 均支持 AVX，因此通常无需担心兼容性问题。更多信息可参考 [GitHub Issue]([])。
+镜像基于 TensorFlow 官方 Python 二进制文件构建，需 CPU 支持 AVX 指令集。大多数现代 CPU 均支持 AVX，因此通常无需担心兼容性问题。更多信息可参考 [GitHub Issue] 。
 
 
 ## 基础镜像标签说明
 - **系统版本**：2021 年 9 月后构建的镜像基于 Ubuntu 20.04，更早的镜像基于 Ubuntu 18.04 或 16.04。  
-- **标签含义**（适用于 TF 1.13 及以上版本，旧版本标签格式不同，可查看 [完整标签列表]([])）：  
+- **标签含义**（适用于 TF 1.13 及以上版本，旧版本标签格式不同，可查看 [完整标签列表] ）：  
   - `1.xx-`、`latest-`、`nightly-` 标签：预装 TensorFlow。版本化标签（如 `1.xx-`）包含具体版本号；`latest-` 标签为最新发布版（不含预发布版，如候选发布版、alpha 版、beta 版）；`nightly-` 标签包含最新 TensorFlow nightly Python 包。  
-  - `devel` 和 `custom-op` 标签：已不再支持，建议使用 [TensorFlow SIG Build Dockerfiles]([])。  
+  - `devel` 和 `custom-op` 标签：已不再支持，建议使用 [TensorFlow SIG Build Dockerfiles] 。  
 
 
 ## 可选特性
@@ -33,8 +33,8 @@ exported_at: 2026-06-02T12:26:10.133Z
   - 所有更新的镜像仅支持 Python 3，`-py3` 标签已弃用。  
 
 - **GPU 支持**：  
-  `-gpu` 标签基于 [Nvidia CUDA]([]) 构建，需通过 [nvidia-docker]([]) 运行。  
-  **注意**：TensorFlow 1.13 及以上版本的 GPU 镜像（含 `latest-` 标签）需支持 CUDA 10 的 Nvidia 驱动，具体参考 [Nvidia 支持矩阵]([])。  
+  `-gpu` 标签基于 [Nvidia CUDA]  构建，需通过 [nvidia-docker]  运行。  
+  **注意**：TensorFlow 1.13 及以上版本的 GPU 镜像（含 `latest-` 标签）需支持 CUDA 10 的 Nvidia 驱动，具体参考 [Nvidia 支持矩阵] 。  
 
 - **Jupyter 集成**：  
   `-jupyter` 标签包含 Jupyter 及部分 TensorFlow 教程笔记本，启动时自动运行 Jupyter 服务器。可将卷挂载到 `/tf/notebooks` 以使用自己的笔记本。  

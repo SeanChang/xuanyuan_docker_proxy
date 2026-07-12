@@ -3,7 +3,7 @@ image: ubuntu/airflow
 description: "基于Ubuntu的Apache Airflow Docker镜像，提供工作流管理平台，用于数据工程管道的程序化创作、调度和监控。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/airflow
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/airflow
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/airflow" title="ubuntu/airflow Docker 镜像中文简介、标签列表与拉取命令">ubuntu/airflow 中文简介</a>
@@ -44,7 +44,7 @@ ESM通道通过[Canonical的受限仓库](https://ubuntu.com/security/docker-ima
 
 ### 本地启动镜像
 ```sh
-docker run -d --name airflow-container -e TZ=UTC -p 8080:8080 -e AIRFLOW_HOME=/opt/airflow -v /path/to/dags:/opt/airflow/dags -v /path/to/airflow.cfg:/opt/airflow/airflow.cfg ubuntu/airflow:3.1-24.04_edge
+docker run -d --name airflow-container -e TZ=UTC -p 8080:8080 -e AIRFLOW_HOME=/opt/airflow -v /path/to/dags:/opt/airflow/dags -v /path/to/airflow.cfg:/opt/airflow/airflow.cfg docker.xuanyuan.run/ubuntu/airflow:3.1-24.04_edge
 ```
 
 ### Entrypoint 和 Pebble

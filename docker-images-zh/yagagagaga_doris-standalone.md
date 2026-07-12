@@ -3,7 +3,7 @@ image: yagagagaga/doris-standalone
 description: "Apache Doris是一款易用、高性能的统一分析型数据库。"
 source: https://xuanyuan.cloud/zh/r/yagagagaga/doris-standalone
 canonical: https://xuanyuan.cloud/zh/r/yagagagaga/doris-standalone
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/yagagagaga/doris-standalone" title="yagagagaga/doris-standalone Docker 镜像中文简介、标签列表与拉取命令">yagagagaga/doris-standalone 中文简介</a>
@@ -87,7 +87,7 @@ docker run -itd \
   -p 8030:8030 \
   -p 8040:8040 \
   -p 9030:9030 \
-  yagagagaga/doris-standalone
+  docker.xuanyuan.run/yagagagaga/doris-standalone
 ```
 
 #### Cloud Mode（3.0.0及以上版本）
@@ -104,7 +104,7 @@ docker run -itd \
   -p 8030:8030 \
   -p 8040:8040 \
   -p 9030:9030 \
-  yagagagaga/doris-standalone
+  docker.xuanyuan.run/yagagagaga/doris-standalone
 ```
 
 

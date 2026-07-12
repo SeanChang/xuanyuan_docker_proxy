@@ -3,7 +3,7 @@ image: postgis/postgis
 description: "PostGIS是PostgreSQL对象关系型数据库的空间数据库扩展器，它为PostgreSQL增添了对空间数据类型（如点、线、面、几何体集合等）的支持，提供空间索引功能以提升空间数据查询效率，并集成了丰富的空间分析函数（包括距离计算、缓冲区分析、叠加操作等），使PostgreSQL能够高效存储、管理与分析空间数据，广泛应用于地理信息系统（GIS）、位置服务、地图绘制等领域。"
 source: https://xuanyuan.cloud/zh/r/postgis/postgis
 canonical: https://xuanyuan.cloud/zh/r/postgis/postgis
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/postgis/postgis" title="postgis/postgis Docker 镜像中文简介、标签列表与拉取命令">postgis/postgis 中文简介</a>
@@ -15,7 +15,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 镜像概述
 
-`postgis/postgis` 镜像是在官方 [`postgres`]([]) 镜像基础上构建的，预装了 [PostGIS]([]) 空间数据库扩展。该镜像提供 Debian 和 Alpine 两种版本，支持 PostGIS 3.5.x，兼容 PostgreSQL 13、14、15、16、17 版本。此外，还提供基于最新两个 PostgreSQL 版本（16、17）构建的镜像，其中 PostGIS 及其依赖项均从各自的 master 分支编译。
+`postgis/postgis` 镜像是在官方 [`postgres`]  镜像基础上构建的，预装了 [PostGIS]  空间数据库扩展。该镜像提供 Debian 和 Alpine 两种版本，支持 PostGIS 3.5.x，兼容 PostgreSQL 13、14、15、16、17 版本。此外，还提供基于最新两个 PostgreSQL 版本（16、17）构建的镜像，其中 PostGIS 及其依赖项均从各自的 master 分支编译。
 
 
 ### 默认数据库扩展
@@ -50,12 +50,12 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 | DockerHub 镜像                          | Dockerfile 链接                                                                 | 操作系统          | PostgreSQL 版本 | PostGIS 版本 |
 |----------------------------------------|--------------------------------------------------------------------------------|-------------------|----------------|--------------|
-| [postgis/postgis:13-3.5]([]) | [Dockerfile]([]) | debian:bullseye   | 13             | 3.5.2        |
-| [postgis/postgis:14-3.5]([]) | [Dockerfile]([]) | debian:bullseye   | 14             | 3.5.2        |
-| [postgis/postgis:15-3.5]([]) | [Dockerfile]([]) | debian:bullseye   | 15             | 3.5.2        |
-| [postgis/postgis:16-3.5]([]) | [Dockerfile]([]) | debian:bullseye   | 16             | 3.5.2        |
-| [postgis/postgis:17-3.5]([]) | [Dockerfile]([]) | debian:bullseye   | 17             | 3.5.2        |
-| [postgis/postgis:18-3.6]([]) | [Dockerfile]([]) | debian:trixie     | 18             | 3.6.0        |
+| [postgis/postgis:13-3.5]  | [Dockerfile]  | debian:bullseye   | 13             | 3.5.2        |
+| [postgis/postgis:14-3.5]  | [Dockerfile]  | debian:bullseye   | 14             | 3.5.2        |
+| [postgis/postgis:15-3.5]  | [Dockerfile]  | debian:bullseye   | 15             | 3.5.2        |
+| [postgis/postgis:16-3.5]  | [Dockerfile]  | debian:bullseye   | 16             | 3.5.2        |
+| [postgis/postgis:17-3.5]  | [Dockerfile]  | debian:bullseye   | 17             | 3.5.2        |
+| [postgis/postgis:18-3.6]  | [Dockerfile]  | debian:trixie     | 18             | 3.6.0        |
 
 
 ### Alpine 版本
@@ -65,13 +65,13 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 | DockerHub 镜像                                | Dockerfile 链接                                                                         | 操作系统        | PostgreSQL 版本 | PostGIS 版本 |
 |----------------------------------------------|----------------------------------------------------------------------------------------|-----------------|----------------|--------------|
-| [postgis/postgis:13-3.5-alpine]([]) | [Dockerfile]([]) | alpine:3.22     | 13             | 3.5.3        |
-| [postgis/postgis:14-3.5-alpine]([]) | [Dockerfile]([]) | alpine:3.22     | 14             | 3.5.3        |
-| [postgis/postgis:15-3.5-alpine]([]) | [Dockerfile]([]) | alpine:3.22     | 15             | 3.5.3        |
-| [postgis/postgis:16-3.5-alpine]([]) | [Dockerfile]([]) | alpine:3.22     | 16             | 3.5.3        |
-| [postgis/postgis:17-3.5-alpine]([]) | [Dockerfile]([]) | alpine:3.22     | 17             | 3.5.3        |
-| [postgis/postgis:17-3.6-alpine]([]) | [Dockerfile]([]) | alpine:3.22     | 17             | 3.6.0        |
-| [postgis/postgis:18-3.6-alpine]([]) | [Dockerfile]([]) | alpine:3.22     | 18             | 3.6.0        |
+| [postgis/postgis:13-3.5-alpine]  | [Dockerfile]  | alpine:3.22     | 13             | 3.5.3        |
+| [postgis/postgis:14-3.5-alpine]  | [Dockerfile]  | alpine:3.22     | 14             | 3.5.3        |
+| [postgis/postgis:15-3.5-alpine]  | [Dockerfile]  | alpine:3.22     | 15             | 3.5.3        |
+| [postgis/postgis:16-3.5-alpine]  | [Dockerfile]  | alpine:3.22     | 16             | 3.5.3        |
+| [postgis/postgis:17-3.5-alpine]  | [Dockerfile]  | alpine:3.22     | 17             | 3.5.3        |
+| [postgis/postgis:17-3.6-alpine]  | [Dockerfile]  | alpine:3.22     | 17             | 3.6.0        |
+| [postgis/postgis:18-3.6-alpine]  | [Dockerfile]  | alpine:3.22     | 18             | 3.6.0        |
 
 
 ### 测试版本
@@ -80,8 +80,8 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 | DockerHub 镜像                          | Dockerfile 链接                                                                 | 操作系统        | PostgreSQL 版本 | PostGIS 版本                |
 |----------------------------------------|--------------------------------------------------------------------------------|-----------------|----------------|-----------------------------|
-| [postgis/postgis:16-master]([]) | [Dockerfile]([]) | debian:bullseye | 16             | 开发版（postgis/geos/proj/gdal） |
-| [postgis/postgis:17-master]([]) | [Dockerfile]([]) | debian:bullseye | 17             | 开发版（postgis/geos/proj/gdal） |
+| [postgis/postgis:16-master]  | [Dockerfile]  | debian:bullseye | 16             | 开发版（postgis/geos/proj/gdal） |
+| [postgis/postgis:17-master]  | [Dockerfile]  | debian:bullseye | 17             | 开发版（postgis/geos/proj/gdal） |
 
 
 ## 使用方法
@@ -91,10 +91,10 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 运行基础 PostGIS 数据库容器：  
 ```bash
-docker run --name some-postgis -e POSTGRES_PASSWORD=mysecretpassword -d postgis/postgis
+docker run --name some-postgis -e POSTGRES_PASSWORD=mysecretpassword -d docker.xuanyuan.run/postgis/postgis
 ```
 
-更多启动与管理细节，参考 [官方 postgres 镜像文档]([])。
+更多启动与管理细节，参考 [官方 postgres 镜像文档] 。
 
 
 ### 连接数据库
@@ -111,14 +111,14 @@ docker exec -ti some-postgis psql -U postgres
    ```  
 2. 启动服务端容器：  
    ```bash
-   docker run --name some-postgis --network some-network -e POSTGRES_PASSWORD=mysecretpassword -d postgis/postgis
+   docker run --name some-postgis --network some-network -e POSTGRES_PASSWORD=mysecretpassword -d docker.xuanyuan.run/postgis/postgis
    ```  
 3. 启动客户端容器连接：  
    ```bash
-   docker run -it --rm --network some-network postgis/postgis psql -h some-postgis -U postgres
+   docker run -it --rm --network some-network docker.xuanyuan.run/postgis/postgis psql -h some-postgis -U postgres
    ```
 
-关于创建和使用空间数据库的更多选项，参考 [PostGIS 官方文档]([])。
+关于创建和使用空间数据库的更多选项，参考 [PostGIS 官方文档] 。
 
 
 ## 支持的环境变量
@@ -136,7 +136,7 @@ docker exec -ti some-postgis psql -U postgres
 > 镜像环境变量与 PostgreSQL 客户端库（libpq）的变量（如 `PGDATABASE`、`PGUSER`）不同，需注意区分。  
 > 详细说明：[] 故障排查建议
 
-若遇到问题，建议先测试是否可复现于 [官方 PostgreSQL 镜像]([])，再按以下方向排查：  
+若遇到问题，建议先测试是否可复现于 [官方 PostgreSQL 镜像] ，再按以下方向排查：  
 
 - **PostgreSQL 相关**：  
   - 上游仓库：[] issues）  
@@ -202,7 +202,7 @@ NOTICE:  version "X.X.X" of extension "postgis" is already installed
 
 ## 贡献指南
 
-本项目是 [PostGIS 官方项目]([]) 的一部分，贡献规则较灵活：  
+本项目是 [PostGIS 官方项目]  的一部分，贡献规则较灵活：  
 1. 提交前请先查看现有 issues、讨论及 PR；  
 2. 重大变更建议先发起讨论；  
 3. 修改模板后需运行 `./update.sh` 脚本。  

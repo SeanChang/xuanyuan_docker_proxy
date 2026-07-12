@@ -3,7 +3,7 @@ image: kubegreen/kube-green
 description: "官方kube-green控制器镜像"
 source: https://xuanyuan.cloud/zh/r/kubegreen/kube-green
 canonical: https://xuanyuan.cloud/zh/r/kubegreen/kube-green
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kubegreen/kube-green" title="kubegreen/kube-green Docker 镜像中文简介、标签列表与拉取命令">kubegreen/kube-green 中文简介</a>
@@ -45,7 +45,7 @@ spec:
       serviceAccountName: kube-green-controller
       containers:
       - name: kube-green
-        image: kube-green/kube-green:latest  # 替换为具体版本标签
+        image: docker.xuanyuan.run/kube-green/kube-green:latest  # 替换为具体版本标签
         args:
         - --metrics-addr=:8080
         - --enable-leader-election

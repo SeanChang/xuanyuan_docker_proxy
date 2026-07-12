@@ -3,7 +3,7 @@ image: apache/flink
 description: "Apache Flink Docker镜像用于容器化部署Flink，可通过Docker Hub官方镜像获取（可能存在发布延迟或版本缺失），此处镜像由Flink PMC管理，完整使用文档参见官方指南。"
 source: https://xuanyuan.cloud/zh/r/apache/flink
 canonical: https://xuanyuan.cloud/zh/r/apache/flink
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/flink" title="apache/flink Docker 镜像中文简介、标签列表与拉取命令">apache/flink 中文简介</a>
@@ -24,17 +24,17 @@ Apache Flink Docker镜像通过Docker Hub以[官方镜像](https://hub.docker.co
 ## Docker部署方案示例
 ### 拉取镜像
 ```bash
-docker pull flink:latest
+docker pull docker.xuanyuan.run/flink:latest
 ```
 
 ### 启动JobManager
 ```bash
-docker run --name flink-jobmanager -d -p 8081:8081 flink:latest jobmanager
+docker run --name flink-jobmanager -d -p 8081:8081 docker.xuanyuan.run/flink:latest jobmanager
 ```
 
 ### 启动TaskManager（连接到JobManager）
 ```bash
-docker run --name flink-taskmanager -d --link flink-jobmanager:jobmanager flink:latest taskmanager
+docker run --name flink-taskmanager -d --link flink-jobmanager:jobmanager docker.xuanyuan.run/flink:latest taskmanager
 ```
 
 ### 提交作业示例

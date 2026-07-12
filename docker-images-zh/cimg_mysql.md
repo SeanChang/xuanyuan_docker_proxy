@@ -3,7 +3,7 @@ image: cimg/mysql
 description: "cimg/mysql Docker镜像基于官方MySQL稳定版构建，为开发与CI/CD环境提供轻量级高性能服务。内置优化配置，支持数据持久化与网络隔离，基于Ubuntu系统并包含常用客户端工具。可快速部署单节点实例及容器化架构集成，适合自动化测试、本地开发及小型生产环境。镜像定期更新，确保安全性与兼容性，简化数据库环境一致性管理。"
 source: https://xuanyuan.cloud/zh/r/cimg/mysql
 canonical: https://xuanyuan.cloud/zh/r/cimg/mysql
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cimg/mysql" title="cimg/mysql Docker 镜像中文简介、标签列表与拉取命令">cimg/mysql 中文简介</a>
@@ -16,11 +16,11 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 状态与链接  
-[![CircleCI 构建状态]([])]([])  
-[![软件许可证：MIT]([])]([])  
-[![Docker 拉取量]([])]([])  
-[![CircleCI 社区讨论]([])]([])  
-[![GitHub 仓库]([])]([])  
+[![CircleCI 构建状态] ]   
+[![软件许可证：MIT] ]   
+[![Docker 拉取量] ]   
+[![CircleCI 社区讨论] ]   
+[![GitHub 仓库] ]   
 
 
 > **注意**：本镜像旨在替代旧版 CircleCI MySQL 镜像 `circleci/mysql`。  
@@ -30,7 +30,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 支持政策  
-CircleCI  Docker 便利镜像的支持政策可参考 [CircleCI 文档]([])。该政策明确了镜像的发布、更新及弃用规则。  
+CircleCI  Docker 便利镜像的支持政策可参考 [CircleCI 文档] 。该政策明确了镜像的发布、更新及弃用规则。  
 
 
 ## 目录  
@@ -119,7 +119,7 @@ git clone --recurse-submodules [邮箱已删除]:CircleCI-Public/cimg-mysql.git
 docker build -t test/mysql:8.0 -f 8.0/Dockerfile .
 
 # 运行容器并进入交互终端
-docker run -it test/mysql:8.0 bash
+docker run -it docker.xuanyuan.run/test/mysql:8.0 bash
 ```  
 
 
@@ -151,7 +151,7 @@ docker run -it test/mysql:8.0 bash
 变更来源不同，整合方式也不同：  
 
 #### 构建脚本变更  
-`./shared` 子模块的变更需在 [独立仓库]([]) 中进行。若需同步到本镜像，需更新子模块：  
+`./shared` 子模块的变更需在 [独立仓库]  中进行。若需同步到本镜像，需更新子模块：  
 ```bash
 cd shared
 git pull  # 拉取子模块更新
@@ -170,13 +170,13 @@ git commit -m "更新子模块以支持 xxx 功能"
 
 
 ## 贡献方式  
-欢迎通过 [Issue]([]) 反馈问题或提交 [Pull Request]([])。贡献前建议阅读 [贡献指南](.github/CONTRIBUTING.md)，了解最佳实践及团队协作规范。  
+欢迎通过 [Issue]  反馈问题或提交 [Pull Request] 。贡献前建议阅读 [贡献指南](.github/CONTRIBUTING.md)，了解最佳实践及团队协作规范。  
 
 
 ## 补充资源  
-- [CircleCI 官方文档]([])：完整的 CircleCI 使用指南。  
-- [CircleCI 配置参考]([])：详细说明 `.circleci/config.yml` 支持的所有配置项。  
-- [Docker 官方文档]([])：深入学习 Docker 的基础资源。  
+- [CircleCI 官方文档] ：完整的 CircleCI 使用指南。  
+- [CircleCI 配置参考] ：详细说明 `.circleci/config.yml` 支持的所有配置项。  
+- [Docker 官方文档] ：深入学习 Docker 的基础资源。  
 
 
 ## 许可证  

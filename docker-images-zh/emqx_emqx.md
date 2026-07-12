@@ -3,7 +3,7 @@ image: emqx/emqx
 description: "这是一款专为人工智能（AI）、物联网（IoT）、工业物联网（IIoT）及联网车辆打造的最具可扩展性与可靠性的MQTT消息代理，能高效支持各类智能设备与系统间的实时数据传输与通信，为复杂互联场景下的稳定运行提供强大技术支撑，满足大规模设备接入与高并发消息处理需求。"
 source: https://xuanyuan.cloud/zh/r/emqx/emqx
 canonical: https://xuanyuan.cloud/zh/r/emqx/emqx
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/emqx/emqx" title="emqx/emqx Docker 镜像中文简介、标签列表与拉取命令">emqx/emqx 中文简介</a>
@@ -14,7 +14,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## EMQX 官方 Docker 镜像  
-[官网]() | [文档]() | [GitHub]([]) | [Slack]([]) | []()  
+[官网]() | [文档]() | [GitHub]  | [Slack]  | []()  
 
 支持架构：`amd64`、`arm64v8`  
 
@@ -85,7 +85,7 @@ EMQX 为现代连接系统提供以下关键能力：
 
 
 ### 高级可观测性与管理  
-- 全面监控支持：[Prometheus]()、[Grafana]([])、[Datadog]()、[OpenTelemetry]()。  
+- 全面监控支持：[Prometheus]()、[Grafana] 、[Datadog]()、[OpenTelemetry]()。  
 - 详细日志与 [追踪]() 功能。  
 - 易用的 [Dashboard]()，提供集群概览与管理界面。  
 - 丰富的 [HTTP API]()，支持自动化和第三方集成。  
@@ -107,7 +107,7 @@ EMQX 为现代连接系统提供以下关键能力：
 docker run -d --name emqx \
   -p 1883:1883 -p 8083:8083 -p 8084:8084 \
   -p 8883:8883 -p 18083:18083 \
-  emqx/emqx:latest
+  docker.xuanyuan.run/emqx/emqx:latest
 ```  
 
 容器内 EMQX 以 Linux 用户 `emqx` 身份运行。  
@@ -129,7 +129,7 @@ docker run -d --name emqx \
   -e EMQX_LISTENERS_TCP_DEFAULT_BIND=1884 \
   -p 18083:18083 \
   -p 1884:1884 \
-  emqx/emqx:latest
+  docker.xuanyuan.run/emqx/emqx:latest
 ```  
 
 更多配置细节见 [官方文档]()。  
@@ -156,7 +156,7 @@ EMQX 支持多种集群部署方式，详见 [文档]()。以下为基于 `docke
 ```yaml
 services:
   emqx1:
-    image: emqx/emqx:latest
+    image: docker.xuanyuan.run/emqx/emqx:latest
     environment:
       - "EMQX_NAME=emqx"
       - "EMQX_HOST=node1.emqx.io"
@@ -169,7 +169,7 @@ services:
           - node1.emqx.io
 
   emqx2:
-    image: emqx/emqx:latest
+    image: docker.xuanyuan.run/emqx/emqx:latest
     environment:
       - "EMQX_NAME=emqx"
       - "EMQX_HOST=node2.emqx.io"
@@ -224,7 +224,7 @@ volumes:
 
 services:
   emqx:
-    image: emqx/emqx:latest
+    image: docker.xuanyuan.run/emqx/emqx:latest
     restart: always
     environment:
       EMQX_NAME: foo_emqx
@@ -255,13 +255,13 @@ docker run -d --name emqx -p 18083:18083 -p 1883:1883 \
   --sysctl net.ipv4.tcp_wmem="1024 4096 16777216" \
   --sysctl net.ipv4.tcp_max_tw_buckets=1048576 \
   --sysctl net.ipv4.tcp_fin_timeout=15 \
-  emqx/emqx:latest
+  docker.xuanyuan.run/emqx/emqx:latest
 ```  
 
 **警告**：不要以特权模式运行 EMQX 容器，或挂载系统 `proc` 目录到容器内调优内核，存在安全风险。  
 
 
 ## 致谢  
-- [@je-al]([])  
-- [@RaymondMouthaan]([])  
-- [@zhongjiewu]([])
+- [@je-al]   
+- [@RaymondMouthaan]   
+- [@zhongjiewu]

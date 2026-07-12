@@ -3,7 +3,7 @@ image: amd64/mysql
 description: "MySQL是一种广泛使用的开源关系型数据库管理系统(RDBMS)。"
 source: https://xuanyuan.cloud/zh/r/amd64/mysql
 canonical: https://xuanyuan.cloud/zh/r/amd64/mysql
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/amd64/mysql" title="amd64/mysql Docker 镜像中文简介、标签列表与拉取命令">amd64/mysql 中文简介</a>
@@ -96,7 +96,7 @@ $ docker run -it --rm amd64/mysql mysql -hsome.mysql.host -usome-mysql-user -p
 
 services:
   db:
-    image: mysql
+    image: docker.xuanyuan.run/mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example

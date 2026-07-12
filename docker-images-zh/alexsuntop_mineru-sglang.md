@@ -3,7 +3,7 @@ image: alexsuntop/mineru-sglang
 description: "请使用alexsuntop/mineru，因为MinerU已切换至vLLM框架，以实现更高效的模型推理、更快的响应速度及更高的吞吐量，为用户提供更优质的使用体验，确保在处理各类任务时能够保持稳定性能与卓越效率，满足不同场景下的应用需求。"
 source: https://xuanyuan.cloud/zh/r/alexsuntop/mineru-sglang
 canonical: https://xuanyuan.cloud/zh/r/alexsuntop/mineru-sglang
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alexsuntop/mineru-sglang" title="alexsuntop/mineru-sglang Docker 镜像中文简介、标签列表与拉取命令">alexsuntop/mineru-sglang 中文简介</a>
@@ -16,7 +16,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 #### 一、概述  
 MinerU 是一款文档解析工具，其 SGLang 后端支持通过 Docker 快速部署。本文基于官方 Dockerfile 及 Docker Compose 配置，提供 SGLang 后端服务（含服务器、API、WebUI）的部署与使用说明。  
 
-> **注意**：MinerU 2.5+ 版本已切换为 vLLM 后端，相关镜像可参考 [alexsuntop/mineru]([])。本文内容适用于基于 SGLang 后端的旧版本（如 2.2.2）。  
+> **注意**：MinerU 2.5+ 版本已切换为 vLLM 后端，相关镜像可参考 [alexsuntop/mineru] 。本文内容适用于基于 SGLang 后端的旧版本（如 2.2.2）。  
 
 
 #### 二、环境准备  
@@ -25,7 +25,7 @@ MinerU 是一款文档解析工具，其 SGLang 后端支持通过 Docker 快速
 
 
 #### 三、配置说明  
-以下是核心配置文件 `docker-compose.yaml` 的关键说明（完整配置见 [源码仓库]([])）：  
+以下是核心配置文件 `docker-compose.yaml` 的关键说明（完整配置见 [源码仓库] ）：  
 
 
 ##### 3.1 默认配置（x-default）  
@@ -105,4 +105,4 @@ docker compose --profile gradio up -d
 3. **功能限制**：Gradio 界面可通过 `--max-convert-pages` 限制文档转换页数，避免资源过载。  
 
 
-**源码参考**：[compose-anything]([])
+**源码参考**：[compose-anything]

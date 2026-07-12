@@ -3,7 +3,7 @@ image: ascendai/cann
 description: "ascendai/cann Docker镜像是昇腾AI异构计算架构CANN的容器化部署方案，集成CANN核心组件与工具链，深度适配昇腾系列AI芯片，提供从模型训练到推理部署的全流程加速能力。通过容器化封装简化昇腾AI开发环境配置，确保跨平台部署一致性，助力开发者快速构建高效能深度学习应用，显著提升模型训练效率与推理性能，广泛适用于科研实验、智能计算及产业级AI解决方案开发场景。"
 source: https://xuanyuan.cloud/zh/r/ascendai/cann
 canonical: https://xuanyuan.cloud/zh/r/ascendai/cann
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ascendai/cann" title="ascendai/cann Docker 镜像中文简介、标签列表与拉取命令">ascendai/cann 中文简介</a>
@@ -15,7 +15,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 概述
 - 官方Ascend CANN Docker镜像  
-- 获取帮助：[Ascend社区]([])  
+- 获取帮助：[Ascend社区]   
 
 
 ## CANN简介
@@ -51,7 +51,7 @@ docker run \
     -v /usr/local/Ascend/driver/lib64/:/usr/local/Ascend/driver/lib64/ \
     -v /usr/local/Ascend/driver/version.info:/usr/local/Ascend/driver/version.info \
     -v /etc/ascend_install.info:/etc/ascend_install.info \
-    -it ascend/cann:tag bash
+    -it docker.xuanyuan.run/ascend/cann:tag bash
 ```
 
 **说明**：将命令中的`tag`替换为实际使用的镜像标签（如具体版本号）。  
@@ -68,11 +68,11 @@ docker run \
 
 
 ## 问题反馈
-若未找到所需的CANN镜像，或使用中遇到问题，可通过[提交issue]([])反馈。  
+若未找到所需的CANN镜像，或使用中遇到问题，可通过[提交issue] 反馈。  
 
 
 ## 许可证
-本镜像基于[Apache License, Version 2.0]([])许可。  
+本镜像基于[Apache License, Version 2.0] 许可。  
 
 与所有Docker镜像相同，本镜像可能包含其他受不同许可证约束的软件（如基础发行版中的Bash，以及所包含主软件的直接或间接依赖）。  
 

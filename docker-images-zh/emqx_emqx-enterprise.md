@@ -3,7 +3,7 @@ image: emqx/emqx-enterprise
 description: "EMQX Enterprise的官方Docker镜像，这是一个高性能、可扩展的企业级MQTT平台，支持连接数百万IoT设备并实时处理消息，适用于AI、IoT和工业物联网等场景。"
 source: https://xuanyuan.cloud/zh/r/emqx/emqx-enterprise
 canonical: https://xuanyuan.cloud/zh/r/emqx/emqx-enterprise
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/emqx/emqx-enterprise" title="emqx/emqx-enterprise Docker 镜像中文简介、标签列表与拉取命令">emqx/emqx-enterprise 中文简介</a>
@@ -106,7 +106,7 @@ EMQX 为现代连接系统提供以下关键能力：
 docker run -d --name emqx \
   -p 1883:1883 -p 8083:8083 -p 8084:8084 \
   -p 8883:8883 -p 18083:18083 \
-  emqx/emqx-enterprise:latest
+  docker.xuanyuan.run/emqx/emqx-enterprise:latest
 ```
 
 EMQX 代理在 Docker 容器中以 Linux 用户 `emqx` 运行。
@@ -129,7 +129,7 @@ docker run -d --name emqx \
     -e EMQX_LISTENERS__TCP__DEFAULT__BIND=1884 \
     -p 18083:18083 \
     -p 1884:1884 \
-    emqx/emqx-enterprise:latest
+    docker.xuanyuan.run/emqx/emqx-enterprise:latest
 ```
 
 更多配置详情见 [官方文档](https://docs.emqx.com/zh/emqx/latest/configuration/configuration.html)。
@@ -147,7 +147,7 @@ EMQX 支持多种集群方式，详情见 [文档](https://docs.emqx.com/zh/emqx
 ```yaml
 services:
   emqx1:
-    image: emqx/emqx-enterprise:latest
+    image: docker.xuanyuan.run/emqx/emqx-enterprise:latest
     ports:
       - "18083:18083"
     environment:
@@ -161,7 +161,7 @@ services:
           - node1.emqx.com
 
   emqx2:
-    image: emqx/emqx-enterprise:latest
+    image: docker.xuanyuan.run/emqx/emqx-enterprise:latest
     environment:
       - "EMQX_NODE__NAME=emqx@node2.emqx.com"
       - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
@@ -210,7 +210,7 @@ volumes:
 
 services:
   emqx:
-    image: emqx/emqx-enterprise:latest
+    image: docker.xuanyuan.run/emqx/emqx-enterprise:latest
     hostname: node.emqx.com
     restart: always
     environment:
@@ -241,7 +241,7 @@ docker run -d --name emqx -p 18083:18083 -p 1883:1883 \
   --sysctl net.ipv4.tcp_wmem="1024 4096 16777216" \
   --sysctl net.ipv4.tcp_max_tw_buckets=1048576 \
   --sysctl net.ipv4.tcp_fin_timeout=15 \
-  emqx/emqx-enterprise:latest
+  docker.xuanyuan.run/emqx/emqx-enterprise:latest
 ```
 
 **注意：不要以特权模式运行 EMQX Docker 容器，也不要挂载系统 proc 到容器中进行内核调优，这存在安全风险。**

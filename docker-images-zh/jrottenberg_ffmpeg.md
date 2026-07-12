@@ -3,7 +3,7 @@ image: jrottenberg/ffmpeg
 description: "FFmpeg 2.8 - 3.x - 4.x Docker镜像，由FFmpeg开发者版权所有(C) 2000-2017，从源码编译，支持多种基础镜像和硬件加速。"
 source: https://xuanyuan.cloud/zh/r/jrottenberg/ffmpeg
 canonical: https://xuanyuan.cloud/zh/r/jrottenberg/ffmpeg
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jrottenberg/ffmpeg" title="jrottenberg/ffmpeg Docker 镜像中文简介、标签列表与拉取命令">jrottenberg/ffmpeg 中文简介</a>
@@ -19,7 +19,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 本项目提供一个包含FFmpeg的极简Docker镜像。它根据[编译指南](https://trac.ffmpeg.org/wiki/CompilationGuide)的说明从源代码编译FFmpeg。
 
-您可以通过运行`docker pull jrottenberg/ffmpeg`安装此镜像的最新构建版本。
+您可以通过运行`docker pull docker.xuanyuan.run/jrottenberg/ffmpeg`安装此镜像的最新构建版本。
 
 该镜像可用作编码服务器的基础。
 
@@ -99,7 +99,7 @@ snapshot-alpine     35mb
 ### 从00:49:42处提取5秒视频转为GIF
 
 ```
-docker run jrottenberg/ffmpeg -stats  \
+docker run docker.xuanyuan.run/jrottenberg/ffmpeg -stats \
         -i http://archive.org/download/thethreeagesbusterkeaton/Buster.Keaton.The.Three.Ages.ogv \
         -loop 0  \
         -final_delay 500 -c:v gif -f gif -ss 00:49:42 -t 5 - > trow_ball.gif
@@ -111,7 +111,7 @@ docker run jrottenberg/ffmpeg -stats  \
 
 ```
 docker run -v $(pwd):$(pwd) -w $(pwd)\
-        jrottenberg/ffmpeg:3.2-scratch -stats \
+        docker.xuanyuan.run/jrottenberg/ffmpeg:3.2-scratch -stats \
         -i original.gif \
         original-converted.mp4
 ```
@@ -120,16 +120,16 @@ docker run -v $(pwd):$(pwd) -w $(pwd)\
 
 ```
 # 硬件编码示例
-docker run --runtime=nvidia jrottenberg/ffmpeg:2.8-nvidia -i INPUT -c:v nvenc_h264 -preset hq OUTPUT
+docker run --runtime=nvidia docker.xuanyuan.run/jrottenberg/ffmpeg:2.8-nvidia -i INPUT -c:v nvenc_h264 -preset hq OUTPUT
 
 # 完全硬件加速示例
-docker run --runtime=nvidia jrottenberg/ffmpeg:4.1-nvidia -hwaccel cuvid -c:v h264_cuvid -i INPUT -vf scale_npp=-1:720 -c:v h264_nvenc -preset slow OUTPUT
+docker run --runtime=nvidia docker.xuanyuan.run/jrottenberg/ffmpeg:4.1-nvidia -hwaccel cuvid -c:v h264_cuvid -i INPUT -vf scale_npp=-1:720 -c:v h264_nvenc -preset slow OUTPUT
 ```
 
 ### 基本视频转换
 
 ```
-docker run jrottenberg/ffmpeg \
+docker run docker.xuanyuan.run/jrottenberg/ffmpeg \
             -i http://url/to/media.mp4 \
             -stats \
             $ffmpeg_options  - > out.mp4
@@ -140,7 +140,7 @@ docker run jrottenberg/ffmpeg \
 ### VAAPI加速
 
 ```
-docker run --device /dev/dri:/dev/dri -v $(pwd):$(pwd) -w $(pwd) jrottenberg/ffmpeg:vaapi [...]
+docker run --device /dev/dri:/dev/dri -v $(pwd):$(pwd) -w $(pwd) docker.xuanyuan.run/jrottenberg/ffmpeg:vaapi [...]
 ```
 
 需在主机上安装Intel驱动，可运行vainfo命令检查显卡是否被正确识别。

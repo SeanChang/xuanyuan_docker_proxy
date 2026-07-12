@@ -3,7 +3,7 @@ image: althack/ros2
 description: "一系列适用于ROS 2的开发容器"
 source: https://xuanyuan.cloud/zh/r/althack/ros2
 canonical: https://xuanyuan.cloud/zh/r/althack/ros2
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/althack/ros2" title="althack/ros2 Docker 镜像中文简介、标签列表与拉取命令">althack/ros2 中文简介</a>
@@ -69,21 +69,21 @@ althack/ros2是一系列专为ROS 2开发设计的Docker镜像，旨在提供便
 使用`docker pull`命令拉取所需镜像，基本格式为：
 
 ```bash
-docker pull althack/ros2:<标签>
+docker pull docker.xuanyuan.run/althack/ros2:<标签>
 ```
 
 **示例**：
 - 拉取rolling版本的开发变体：
   ```bash
-  docker pull althack/ros2:rolling-dev
+  docker pull docker.xuanyuan.run/althack/ros2:rolling-dev
   ```
 - 拉取带CUDA的jazzy完整版本：
   ```bash
-  docker pull althack/ros2:jazzy-cuda-full
+  docker pull docker.xuanyuan.run/althack/ros2:jazzy-cuda-full
   ```
 - 拉取特定日期的humble仿真版本：
   ```bash
-  docker pull althack/ros2:humble-gazebo-2024-03-20
+  docker pull docker.xuanyuan.run/althack/ros2:humble-gazebo-2024-03-20
   ```
 
 ### 运行容器
@@ -96,7 +96,7 @@ docker pull althack/ros2:<标签>
 docker run -it --rm \
   --name ros2-dev-container \
   -v $(pwd):/workspace \
-  althack/ros2:rolling-dev
+  docker.xuanyuan.run/althack/ros2:rolling-dev
 ```
 
 #### 带GUI支持的仿真环境（Gazebo）
@@ -133,7 +133,7 @@ docker run -it --rm \
 version: '3.8'
 services:
   ros2-gazebo:
-    image: althack/ros2:rolling-gazebo
+    image: docker.xuanyuan.run/althack/ros2:rolling-gazebo
     container_name: ros2-simulation
     volumes:
       - ./workspace:/workspace
@@ -161,7 +161,7 @@ docker-compose exec ros2-gazebo bash
 为确保开发环境的一致性，建议使用带日期标签的镜像版本。例如，指定2024年5月10日构建的rolling-dev镜像：
 
 ```bash
-docker pull althack/ros2:rolling-dev-2024-05-10
+docker pull docker.xuanyuan.run/althack/ros2:rolling-dev-2024-05-10
 ```
 
 在Docker Compose中指定固定版本：
@@ -169,7 +169,7 @@ docker pull althack/ros2:rolling-dev-2024-05-10
 ```yaml
 services:
   ros2-dev:
-    image: althack/ros2:rolling-dev-2024-05-10
+    image: docker.xuanyuan.run/althack/ros2:rolling-dev-2024-05-10
     # ... 其他配置
 ```
 

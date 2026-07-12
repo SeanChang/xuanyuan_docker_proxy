@@ -3,7 +3,7 @@ image: zlmediakit/zlmediakit
 description: "该简介涵盖网页实时通信（WebRTC）、实时流传输协议（RTSP）、实时消息传输协议（RTMP）、HTTP直播流（HLS）、HTTP-FLV流媒体协议、WebSocket-FLV流媒体协议、HTTP-TS流媒体协议、HTTP-fMP4流媒体协议、WebSocket-fMP4流媒体协议、国家标准GB/T 28181视频监控联网系统标准（GB28181）及安全可靠传输协议（SRT）等多种流媒体与实时通信相关协议。"
 source: https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit
 canonical: https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zlmediakit/zlmediakit" title="zlmediakit/zlmediakit Docker 镜像中文简介、标签列表与拉取命令">zlmediakit/zlmediakit 中文简介</a>
@@ -13,20 +13,20 @@ exported_at: 2026-06-02T12:26:10.133Z
 # ZLMediaKit：基于C++11的高性能运营级流媒体服务框架
 
 
-![logo]([])
+![logo] 
 
-[![]([])]([])
-[![]([])]([])
-[![]([])]([])
-[![]([])]([])
+[![] ] 
+[![] ] 
+[![] ] 
+[![] ] 
 
-[![]([])]([])
-[![]([])]([])
-[![]([])]([])
-[![]([])]([])
+[![] ] 
+[![] ] 
+[![] ] 
+[![] ] 
 
-[![]([])]([])
-[![]([])]([])
+[![] ] 
+[![] ] 
 
 
 ## 项目特点
@@ -56,7 +56,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 功能清单
 
 ### 功能概览
-![功能一览]([])
+![功能一览] 
 
 
 #### RTSP[S]
@@ -118,16 +118,16 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 编译与测试
 
-**编译前请务必参考wiki文档《[快速开始]([])》操作。**
+**编译前请务必参考wiki文档《[快速开始] 》操作。**
 
 
 ## 如何使用
 
 根据需求选择以下使用方式：
 
-1. **作为SDK使用**：通过标准[C API]([])集成到项目，或供其他语言调用。  
-2. **直接部署服务器**：使用内置的[MediaServer]([])，无需开发即可部署，参考[restful API]([])与[web hook]([])实现业务逻辑。  
-3. **二次开发**：基于源码扩展功能，参考[测试程序]([])了解开发方式。
+1. **作为SDK使用**：通过标准[C API] 集成到项目，或供其他语言调用。  
+2. **直接部署服务器**：使用内置的[MediaServer] ，无需开发即可部署，参考[restful API] 与[web hook] 实现业务逻辑。  
+3. **二次开发**：基于源码扩展功能，参考[测试程序] 了解开发方式。
 
 
 ## Docker镜像
@@ -136,7 +136,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ```bash
 # 镜像与master分支代码同步，由GitHub CI自动编译推送
-docker run -id -p 1935:1935 -p 8080:80 -p 8443:443 -p 8554:554 -p 10000:10000 -p 10000:10000/udp -p 8000:8000/udp -p 9000:9000/udp zlmediakit/zlmediakit:master
+docker run -id -p 1935:1935 -p 8080:80 -p 8443:443 -p 8554:554 -p 10000:10000 -p 10000:10000/udp -p 8000:8000/udp -p 9000:9000/udp docker.xuanyuan.run/zlmediakit/zlmediakit:master
 ```
 
 或通过Dockerfile自行编译：
@@ -149,33 +149,33 @@ bash build_docker_images.sh
 ## 合作项目
 
 ### 可视化管理网站
-- [AKStreamNVR]([])：前后端分离Web项目，支持WebRTC与H265播放  
-- [MediaServerUI]([])：基于ZLMediaKit主线的管理界面  
-- [ZLMediaKit_NVR_UI]([])：基于ZLMediaKit分支的管理界面  
-- [ZLMediaServerManagent]([])：可视化后台管理系统  
+- [AKStreamNVR] ：前后端分离Web项目，支持WebRTC与H265播放  
+- [MediaServerUI] ：基于ZLMediaKit主线的管理界面  
+- [ZLMediaKit_NVR_UI] ：基于ZLMediaKit分支的管理界面  
+- [ZLMediaServerManagent] ：可视化后台管理系统  
 
 
 ### 流媒体管理平台
-- [wvp-GB28181-pro]([])：GB28181完整解决方案，支持WebRTC与H265  
-- [AKStream]([])：流媒体控制管理接口平台，支持GB28181  
-- [gosip]([])：Go语言实现的GB28181服务器  
-- [GB28181_Node_Http]([])：Node.js版本GB28181平台  
-- [FreeEhome]([])：Go语言实现的海康EHOME服务器  
+- [wvp-GB28181-pro] ：GB28181完整解决方案，支持WebRTC与H265  
+- [AKStream] ：流媒体控制管理接口平台，支持GB28181  
+- [gosip] ：Go语言实现的GB28181服务器  
+- [GB28181_Node_Http] ：Node.js版本GB28181平台  
+- [FreeEhome] ：Go语言实现的海康EHOME服务器  
 
 
 ### 客户端与播放器
-- [ZLMediaKit.Autogen]([])：C SDK的C#包装库  
-- [ZLM_ApiDemo]([])：基于C SDK的推流客户端  
-- [ZLMediaKit.HttpApi]([])：C#版本HTTP API与Hook  
-- [ZLMediaKit.DotNetCore.Sdk]([])：DotNetCore RESTful客户端  
-- [h265web.js]([])：基于WebAssembly的H265播放器  
-- [wsPlayer]([])：基于MSE的WebSocket-FMP4播放器  
-- [metaRTC]([])：国产WebRTC SDK  
+- [ZLMediaKit.Autogen] ：C SDK的C#包装库  
+- [ZLM_ApiDemo] ：基于C SDK的推流客户端  
+- [ZLMediaKit.HttpApi] ：C#版本HTTP API与Hook  
+- [ZLMediaKit.DotNetCore.Sdk] ：DotNetCore RESTful客户端  
+- [h265web.js] ：基于WebAssembly的H265播放器  
+- [wsPlayer] ：基于MSE的WebSocket-FMP4播放器  
+- [metaRTC] ：国产WebRTC SDK  
 
 
 ## 授权协议
 
-项目自有代码采用MIT协议，保留版权信息即可自由用于商用或非商业项目。但项目依赖部分第三方[开源代码]([])，商用时需自行评估并处理第三方依赖的版权问题。因使用本项目产生的商业纠纷或侵权行为与项目及开发者无关，使用者需自行承担法律风险。使用时应在授权协议中注明本项目依赖的第三方库协议。
+项目自有代码采用MIT协议，保留版权信息即可自由用于商用或非商业项目。但项目依赖部分第三方[开源代码] ，商用时需自行评估并处理第三方依赖的版权问题。因使用本项目产生的商业纠纷或侵权行为与项目及开发者无关，使用者需自行承担法律风险。使用时应在授权协议中注明本项目依赖的第三方库协议。
 
 
 ## 联系方式
@@ -190,15 +190,15 @@ bash build_docker_images.sh
 1. 先查阅README、wiki及已有issue，确认问题是否已解决。  
 2. 未解决可提交新issue。  
 3. 非普遍性问题可在QQ群交流。  
-4. 不建议QQ私聊咨询（原因参考[《为什么不提倡QQ私聊》]([])）。  
+4. 不建议QQ私聊咨询（原因参考[《为什么不提倡QQ私聊》] ）。  
 
 
 ## 特别感谢
 
-项目复用了解复用模块依赖[老陈]([])的[media-server]([])库，其TS/FMP4/MP4/PS容器格式的复用解复用功能均基于该库实现。开发过程中，老陈提供了关键技术支持，特此致谢。
+项目复用了解复用模块依赖[老陈] 的[media-server] 库，其TS/FMP4/MP4/PS容器格式的复用解复用功能均基于该库实现。开发过程中，老陈提供了关键技术支持，特此致谢。
 
 
 ## 致谢
 
 感谢以下贡献者（排名不分先后）对项目的代码贡献、问题反馈与资金支持：  
-[老陈]([])、[Gemfield]([])、[南冠彤]([])、[凹凸慢]([])、[chenxiaolei]([])、[史前小虫]([])、[清涩绿茶]([])、[3503207480]([])、[DroidChow]([])、[阿塞]([])、[火宣]([])、[γ瑞γミ]([])、[linkingvision]([])、[茄子]([])、[好心情](mailto:[邮箱已删除])、[浮沉]([])、[Xiaofeng Wang]([])、[doodoocoder]([])、[qingci]([])、[swwheihei]([])、[KKKKK5G]([])、[Zhou Weimin](mailto:[邮箱已删除])、[Jim Jin]([])、[西瓜丶](mailto:[邮箱已删除])、[MingZhuLiu]([])、[chengxiaosheng]([])、[big panda](mailto:[邮箱已删除])、[tanningzhong]([])、[hctym1995]([])、[hewenyuan]([])、[sunhui](mailto:[邮箱已删除])、[mirs](mailto:[邮箱已删除])、[Kevin Cheng](mailto:[邮箱已删除])、[Liu Jiang](mailto:[邮箱已删除])、[along]([])、[qingci](mailto:[邮箱已删除])、[lyg1949](mailto:[邮箱已删除])、[zhlong](mailto:[邮箱已删除])、[大裤衩](mailto:[邮箱已删除])、[droid.chow](mailto:[邮箱已删除])、[陈晓林]([]
+[老陈] 、[Gemfield] 、[南冠彤] 、[凹凸慢] 、[chenxiaolei] 、[史前小虫] 、[清涩绿茶] 、[3503207480] 、[DroidChow] 、[阿塞] 、[火宣] 、[γ瑞γミ] 、[linkingvision] 、[茄子] 、[好心情](mailto:[邮箱已删除])、[浮沉] 、[Xiaofeng Wang] 、[doodoocoder] 、[qingci] 、[swwheihei] 、[KKKKK5G] 、[Zhou Weimin](mailto:[邮箱已删除])、[Jim Jin] 、[西瓜丶](mailto:[邮箱已删除])、[MingZhuLiu] 、[chengxiaosheng] 、[big panda](mailto:[邮箱已删除])、[tanningzhong] 、[hctym1995] 、[hewenyuan] 、[sunhui](mailto:[邮箱已删除])、[mirs](mailto:[邮箱已删除])、[Kevin Cheng](mailto:[邮箱已删除])、[Liu Jiang](mailto:[邮箱已删除])、[along] 、[qingci](mailto:[邮箱已删除])、[lyg1949](mailto:[邮箱已删除])、[zhlong](mailto:[邮箱已删除])、[大裤衩](mailto:[邮箱已删除])、[droid.chow](mailto:[邮箱已删除])、[陈晓林]([]

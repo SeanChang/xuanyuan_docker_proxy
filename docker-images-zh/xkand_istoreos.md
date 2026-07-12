@@ -3,7 +3,7 @@ image: xkand/istoreos
 description: "iStoreOS自动化构建Docker镜像，基于官方x86_64固件，支持PVE/LXC快速部署与版本追溯"
 source: https://xuanyuan.cloud/zh/r/xkand/istoreos
 canonical: https://xuanyuan.cloud/zh/r/xkand/istoreos
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/xkand/istoreos" title="xkand/istoreos Docker 镜像中文简介、标签列表与拉取命令">xkand/istoreos 中文简介</a>
@@ -47,9 +47,9 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 部署方案示例
 #### Docker 部署
 ```bash
-docker pull tonc/istoreos:latest
+docker pull docker.xuanyuan.run/tonc/istoreos:latest
 # 运行容器（根据需求调整端口映射等参数）
-docker run -d --name istoreos --restart always tonc/istoreos:latest
+docker run -d --name istoreos --restart always docker.xuanyuan.run/tonc/istoreos:latest
 ```
 
 #### PVE-LXC 部署

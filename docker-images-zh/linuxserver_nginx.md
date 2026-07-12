@@ -3,7 +3,7 @@ image: linuxserver/nginx
 description: "LinuxServer.io提供的Nginx容器，用于部署Web服务器、实现反向代理及HTTP缓存等基础Web服务。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/nginx
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/nginx
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/nginx" title="linuxserver/nginx Docker 镜像中文简介、标签列表与拉取命令">linuxserver/nginx 中文简介</a>
@@ -74,7 +74,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ---
 services:
   nginx:
-    image: lscr.io/linuxserver/nginx:latest
+    image: docker.xuanyuan.run/linuxserver/nginx:latest
     container_name: nginx
     environment:
       - PUID=1000               # 用户ID（详见下方说明）
@@ -216,7 +216,7 @@ uid=1000(your_user) gid=1000(your_user) groups=1000(your_user)
 
 - **更新镜像**：
   ```bash
-  docker pull lscr.io/linuxserver/nginx:latest
+  docker pull docker.xuanyuan.run/linuxserver/nginx:latest
   ```
 
 - **停止并删除旧容器**：
@@ -253,7 +253,7 @@ docker build \
 跨架构构建（如 x86_64 构建 arm64 镜像）需先注册 qemu-static：
 
 ```bash
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```
 
 然后使用对应架构的 Dockerfile（如 `-f Dockerfile.aarch64`）。

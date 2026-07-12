@@ -3,7 +3,7 @@ image: paddlepaddle/paddle
 description: "并行分布式深度学习是一种通过将深度学习任务按数据并行、模型并行或混合并行等方式分解，并分配到多台计算机或计算节点（如CPU、GPU集群）上协同执行的技术，旨在加速大规模数据集和复杂模型的训练过程，通过并行计算提升效率、缩短训练时间，广泛应用于图像识别、自然语言处理、推荐系统、自动驾驶等领域，是应对海量数据和高复杂度模型训练挑战、推动人工智能技术规模化落地的关键支撑技术之一。"
 source: https://xuanyuan.cloud/zh/r/paddlepaddle/paddle
 canonical: https://xuanyuan.cloud/zh/r/paddlepaddle/paddle
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/paddlepaddle/paddle" title="paddlepaddle/paddle Docker 镜像中文简介、标签列表与拉取命令">paddlepaddle/paddle 中文简介</a>
@@ -13,19 +13,19 @@ exported_at: 2026-06-02T12:26:10.133Z
 # PaddlePaddle
 
 
-[![Build Status]([])]([])
-[![Documentation Status]([])]([])
-[![Documentation Status]([])]([])
-[![Coverage Status]([])]([])
-[![Release]([])]([])
-[![License]([])](LICENSE)
+[![Build Status] ] 
+[![Documentation Status] ] 
+[![Documentation Status] ] 
+[![Coverage Status] ] 
+[![Release] ] 
+[![License] ](LICENSE)
 
 
 欢迎来到PaddlePaddle的GitHub主页。  
 
 PaddlePaddle（并行分布式深度学习）是一款易用、高效、灵活且可扩展的深度学习平台，由百度科学家和工程师原创开发，旨在将深度学习技术应用于百度的众多产品中。  
 
-我们的愿景是通过PaddlePaddle让每个人都能使用深度学习。你可以通过[发布公告]([])了解PaddlePaddle的最新功能。
+我们的愿景是通过PaddlePaddle让每个人都能使用深度学习。你可以通过[发布公告] 了解PaddlePaddle的最新功能。
 
 
 ## 核心特性
@@ -51,19 +51,19 @@ PaddlePaddle设计之初就考虑了部署便捷性。在百度内部，PaddlePa
 
 
 ## 安装  
-建议参考[官网中文文档]([])进行安装。
+建议参考[官网中文文档] 进行安装。
 
 
 ## 文档  
 PaddlePaddle提供中英文文档，主要资源包括：  
-- [《深度学习入门》]([])：可在Jupyter Notebook中运行的在线互动学习书籍，适合入门；  
-- [分布式训练]([])：介绍如何在MPI集群上运行分布式训练任务；  
-- [Python API]([])：新API支持更简洁的代码编写；  
-- [如何贡献代码]([])：欢迎参与贡献，感谢你的支持！  
+- [《深度学习入门》] ：可在Jupyter Notebook中运行的在线互动学习书籍，适合入门；  
+- [分布式训练] ：介绍如何在MPI集群上运行分布式训练任务；  
+- [Python API] ：新API支持更简洁的代码编写；  
+- [如何贡献代码] ：欢迎参与贡献，感谢你的支持！  
 
 
 ## 问题反馈  
-欢迎通过[Github Issues]([])提交问题和bug报告。
+欢迎通过[Github Issues] 提交问题和bug报告。
 
 
 ## 版权与许可  

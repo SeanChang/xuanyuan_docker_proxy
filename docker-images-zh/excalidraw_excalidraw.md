@@ -3,7 +3,7 @@ image: excalidraw/excalidraw
 description: "用于自托管的Excalidraw客户端Docker镜像，提供手绘风格图表绘制功能的虚拟白板工具"
 source: https://xuanyuan.cloud/zh/r/excalidraw/excalidraw
 canonical: https://xuanyuan.cloud/zh/r/excalidraw/excalidraw
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/excalidraw/excalidraw" title="excalidraw/excalidraw Docker 镜像中文简介、标签列表与拉取命令">excalidraw/excalidraw 中文简介</a>
@@ -30,7 +30,7 @@ Excalidraw客户端Docker镜像是用于自托管的Excalidraw客户端，可部
 docker build -t excalidraw/excalidraw .
 
 # 运行容器（后台模式，映射端口5000到容器80端口）
-docker run --rm -dit --name excalidraw -p 5000:80 excalidraw/excalidraw:latest
+docker run --rm -dit --name excalidraw -p 5000:80 docker.xuanyuan.run/excalidraw/excalidraw:latest
 ```
 
 ## 使用场景

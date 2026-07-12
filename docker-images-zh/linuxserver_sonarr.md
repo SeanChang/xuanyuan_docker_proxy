@@ -3,7 +3,7 @@ image: linuxserver/sonarr
 description: "由LinuxServer.io提供的Sonarr容器，是一款专为电视节目集管理设计的自动化工具，能够监控指定剧集的更新信息、自动从索引器获取下载链接并通过下载客户端（如Deluge、qBittorrent等）完成资源下载，同时支持按自定义规则整理文件结构、重命名剧集文件以保持媒体库整洁有序；LinuxServer.io作为专注于提供高质量容器化应用的团队，其构建的Sonarr容器基于轻量级Linux系统，优化了资源占用与运行稳定性，适合家庭媒体服务器或个人影视库的自动化管理场景使用。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/sonarr
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/sonarr
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/sonarr" title="linuxserver/sonarr Docker 镜像中文简介、标签列表与拉取命令">linuxserver/sonarr 中文简介</a>
@@ -14,7 +14,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## LinuxServer.io 团队简介  
-[LinuxServer.io]([]) 团队专注于提供高质量容器镜像，其特点包括：  
+[LinuxServer.io]  团队专注于提供高质量容器镜像，其特点包括：  
 - 应用定期及时更新  
 - 简单的用户权限映射（通过 PGID、PUID）  
 - 基于 s6 overlay 的自定义基础镜像  
@@ -23,7 +23,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## Sonarr 应用说明  
-[Sonarr]([])（前身为 NZBdrone）是一款面向 Usenet 和 BT 用户的 PVR 工具，可监控多个 RSS 源获取新剧集，自动下载、分类并重命名文件，还能在更高质量版本发布时自动升级已下载文件。  
+[Sonarr] （前身为 NZBdrone）是一款面向 Usenet 和 BT 用户的 PVR 工具，可监控多个 RSS 源获取新剧集，自动下载、分类并重命名文件，还能在更高质量版本发布时自动升级已下载文件。  
 
 
 ## 支持的架构  
@@ -43,10 +43,10 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 应用设置  
-- **Web 界面访问**：通过 `<你的IP>:8989` 访问管理界面，更多信息见 [Sonarr 官网]([])。  
+- **Web 界面访问**：通过 `<你的IP>:8989` 访问管理界面，更多信息见 [Sonarr 官网] 。  
 
 - **媒体文件夹配置**：  
-  镜像默认提供 `/tv`（电视库）和 `/downloads`（下载目录）作为可选路径，适合快速上手，但可能失去硬链接（同一文件多路径引用，节省空间）和原子移动（即时文件移动，非复制+删除）功能。若需这些特性，建议参考 [Servarr 官方文档]([]) 规划路径。  
+  镜像默认提供 `/tv`（电视库）和 `/downloads`（下载目录）作为可选路径，适合快速上手，但可能失去硬链接（同一文件多路径引用，节省空间）和原子移动（即时文件移动，非复制+删除）功能。若需这些特性，建议参考 [Servarr 官方文档]  规划路径。  
 
 
 ## 使用方法  
@@ -60,7 +60,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ---
 services:
   sonarr:
-    image: lscr.io/linuxserver/sonarr:latest
+    image: docker.xuanyuan.run/linuxserver/sonarr:latest
     container_name: sonarr
     environment:
       - PUID=1000          # 用户ID（见下方说明）
@@ -105,8 +105,8 @@ docker run -d \
 | `-v /config`                  | 配置文件和数据库存储目录（必填）                                         |  
 | `-v /tv`                      | 电视库目录（可选，需配合应用设置）                                       |  
 | `-v /downloads`               | 下载客户端输出目录（可选，需配合应用设置）                               |  
-| `--read-only=true`            | 只读文件系统运行（需参考 [文档]([])） |  
-| `--user=1000:1000`            | 非root用户运行（需参考 [文档]([])） |  
+| `--read-only=true`            | 只读文件系统运行（需参考 [文档] ） |  
+| `--user=1000:1000`            | 非root用户运行（需参考 [文档] ） |  
 
 
 ## 用户/组ID（PUID/PGID）  
@@ -150,7 +150,7 @@ docker image prune
 #### docker cli  
 ```bash
 # 拉取最新镜像
-docker pull lscr.io/linuxserver/sonarr:latest
+docker pull docker.xuanyuan.run/linuxserver/sonarr:latest
 # 停止并删除旧容器
 docker stop sonarr && docker rm sonarr
 # 用原参数重建容器（/config目录会保留配置）
@@ -178,8 +178,8 @@ docker build --no-cache --pull -t lscr.io/linuxserver/sonarr:latest .
 
 
 ## 相关资源  
-- [LinuxServer 博客]([])：容器使用指南与教程  
+- [LinuxServer 博客] ：容器使用指南与教程  
 - [ 社区]()：实时支持与交流  
-- [论坛]([])：社区讨论  
-- [GitHub 源码]([])：查看所有仓库  
-- [捐赠支持]([])：支持团队发展
+- [论坛] ：社区讨论  
+- [GitHub 源码] ：查看所有仓库  
+- [捐赠支持] ：支持团队发展

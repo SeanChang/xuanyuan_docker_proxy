@@ -3,7 +3,7 @@ image: linuxserver/docker-compose
 description: "LinuxServer.io提供的docker-compose容器镜像，集成Docker Compose工具，支持通过yaml配置文件定义多容器应用架构，实现服务编排、依赖管理及生命周期控制（启动/停止/重启）。无需本地安装，环境隔离且跨平台兼容，适合开发、测试及生产环境快速部署多服务应用。简化多容器协作管理，支持版本控制与资源优化，提升容器化应用运维效率。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/docker-compose
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/docker-compose
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/docker-compose" title="linuxserver/docker-compose Docker 镜像中文简介、标签列表与拉取命令">linuxserver/docker-compose 中文简介</a>
@@ -14,9 +14,9 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 该镜像已停止维护。我们不再提供技术支持，也不会推送更新。  
 Docker Compose 现已可通过 Docker 官方仓库获取：  
-[[]]([])  
+[[]]   
 也可直接下载：  
-[[]]([])  
+[[]]   
 
 
 ## 关于 LinuxServer.io 团队
@@ -31,7 +31,7 @@ LinuxServer.io 团队发布的容器具有以下特点：
 
 ## linuxserver/docker-compose 镜像说明
 
-[docker-compose]([]) 是一款用于定义和运行多容器 Docker 应用的工具。通过 Compose 文件配置应用服务后，可一键创建并启动所有服务。
+[docker-compose]  是一款用于定义和运行多容器 Docker 应用的工具。通过 Compose 文件配置应用服务后，可一键创建并启动所有服务。
 
 
 ### 支持的架构
@@ -65,7 +65,7 @@ docker run --rm \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v "$PWD:$PWD" \
   -w="$PWD" \
-  lscr.io/linuxserver/docker-compose:latest \
+  docker.xuanyuan.run/linuxserver/docker-compose:latest \
   up
 ```
 可将最后一行的 `up` 替换为任意 docker-compose 命令及参数（如 `down`、`ps` 等）。
@@ -98,7 +98,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 ### 更新镜像
 
 1. 拉取最新镜像：  
-   `docker pull lscr.io/linuxserver/docker-compose:latest`  
+   `docker pull docker.xuanyuan.run/linuxserver/docker-compose:latest`  
 
 2. 清理旧镜像（可选）：  
    `docker image prune`  
@@ -122,7 +122,7 @@ docker build \
 **构建 ARM 版本**（需在 x86_64 设备上先注册 qemu）：  
 ```bash
 # 注册 qemu 以支持多架构构建
-docker run --rm --privileged multiarch/qemu-user-static:register --reset
+docker run --rm --privileged docker.xuanyuan.run/multiarch/qemu-user-static:register --reset
 
 # 构建指定架构（如 arm64）
 docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/docker-compose:arm64v8-latest .
@@ -138,4 +138,4 @@ docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/docker-compose:arm64v8
 - **2020.05.19**：初始发布  
 
 
-> 注：如需获取 LinuxServer.io 团队更多支持，可访问其 [博客]([])、[]() 或 [GitHub]([])。
+> 注：如需获取 LinuxServer.io 团队更多支持，可访问其 [博客] 、[]() 或 [GitHub] 。

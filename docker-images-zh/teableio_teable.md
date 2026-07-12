@@ -3,7 +3,7 @@ image: teableio/teable
 description: "Teable 是一个超快速、实时、专业、开发者友好的无代码数据库，基于Postgres构建，采用类电子表格界面，可创建复杂的企业级数据库应用，无需担心数据安全和可扩展性问题。"
 source: https://xuanyuan.cloud/zh/r/teableio/teable
 canonical: https://xuanyuan.cloud/zh/r/teableio/teable
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/teableio/teable" title="teableio/teable Docker 镜像中文简介、标签列表与拉取命令">teableio/teable 中文简介</a>
@@ -101,7 +101,7 @@ Teable 适用于多种场景：
 ### Docker 运行示例
 假设镜像名称为 `teable/teable`，基本运行命令：
 ```bash
-docker run -d -p 8080:8080 --name teable teable/teable
+docker run -d -p 8080:8080 --name teable docker.xuanyuan.run/teable/teable
 ```
 该命令将在后台运行Teable容器，映射容器的8080端口到主机的8080端口，通过 `http://localhost:8080` 访问应用。
 
@@ -110,7 +110,7 @@ docker run -d -p 8080:8080 --name teable teable/teable
 version: '3'
 services:
   teable:
-    image: teable/teable
+    image: docker.xuanyuan.run/teable/teable
     ports:
       - "8080:8080"
     volumes:
@@ -121,7 +121,7 @@ services:
       - postgres
 
   postgres:
-    image: postgres:14
+    image: docker.xuanyuan.run/postgres:14
     environment:
       - POSTGRES_USER=user
       - POSTGRES_PASSWORD=password

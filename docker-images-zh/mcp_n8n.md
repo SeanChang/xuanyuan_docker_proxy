@@ -3,7 +3,7 @@ image: mcp/n8n
 description: "连接n8n工作流自动化平台与AI模型，提供543个n8n节点、工作流模板和具备AI能力的自动化工具的访问。"
 source: https://xuanyuan.cloud/zh/r/mcp/n8n
 canonical: https://xuanyuan.cloud/zh/r/mcp/n8n
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mcp/n8n" title="mcp/n8n Docker 镜像中文简介、标签列表与拉取命令">mcp/n8n 中文简介</a>

@@ -3,7 +3,7 @@ image: dustynv/vllm
 description: "NVIDIA Jetson 平台优化的大语言模型推理服务框架"
 source: https://xuanyuan.cloud/zh/r/dustynv/vllm
 canonical: https://xuanyuan.cloud/zh/r/dustynv/vllm
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dustynv/vllm" title="dustynv/vllm Docker 镜像中文简介、标签列表与拉取命令">dustynv/vllm 中文简介</a>
@@ -65,7 +65,7 @@ version: '3.8'
 
 services:
   vllm:
-    image: dustynv/vllm:0.9.3-r36.4.0-cu128-24.04
+    image: docker.xuanyuan.run/dustynv/vllm:0.9.3-r36.4.0-cu128-24.04
     container_name: vllm-server
     runtime: nvidia
     network_mode: host

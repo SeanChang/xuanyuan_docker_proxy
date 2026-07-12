@@ -3,7 +3,7 @@ image: itzg/minecraft-server
 description: "这是一款支持动态版本切换、多种服务器类型及丰富模组包的我的世界服务器，玩家可根据需求自由选择适配的游戏版本，体验生存、创造、冒险等多样化服务器模式，并轻松加载各类热门模组包，享受高度自定义的游戏乐趣。"
 source: https://xuanyuan.cloud/zh/r/itzg/minecraft-server
 canonical: https://xuanyuan.cloud/zh/r/itzg/minecraft-server
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/itzg/minecraft-server" title="itzg/minecraft-server Docker 镜像中文简介、标签列表与拉取命令">itzg/minecraft-server 中文简介</a>
@@ -14,11 +14,11 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 #### 镜像基本信息  
-[![Docker 拉取量]([])]([])  
-[![Docker 星级]([])]([])  
-[![GitHub 问题]([])]([])  
+[![Docker 拉取量] ]   
+[![Docker 星级] ]   
+[![GitHub 问题] ]   
 [![ 社区]()]()  
-[![捐赠支持]([])]([])  
+[![捐赠支持] ]   
 
 
 #### 镜像简介  
@@ -26,14 +26,14 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 #### 查看详细文档  
-[![点击查看文档]([])]([])  
+[![点击查看文档] ]   
 
 
 #### 快速启动（最新稳定版）  
 若要直接使用最新稳定版，运行以下命令：  
 
 ```bash
-docker run -d -p 25565:25565 --name mc -v mc-data:/data itzg/minecraft-server
+docker run -d -p 25565:25565 --name mc -v mc-data:/data docker.xuanyuan.run/itzg/minecraft-server
 ```  
 
 **说明**：命令中 `-p 25565:25565` 将Minecraft标准服务器端口映射到主机，`-v mc-data:/data` 挂载数据卷确保服务器数据持久化，`--name mc` 为容器命名以便后续管理。  
@@ -42,4 +42,4 @@ docker run -d -p 25565:25565 --name mc -v mc-data:/data itzg/minecraft-server
 #### 基岩版服务器说明  
 如果你使用的是主机（如Xbox/PlayStation）、移动设备或原生Windows系统的Minecraft客户端，需使用基岩版服务器镜像：  
 
-[itzg/minecraft-bedrock-server]([])
+[itzg/minecraft-bedrock-server]

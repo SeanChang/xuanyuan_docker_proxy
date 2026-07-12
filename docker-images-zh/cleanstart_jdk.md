@@ -3,7 +3,7 @@ image: cleanstart/jdk
 description: "企业级Java开发工具包(JDK)容器镜像，基于OpenJDK构建，提供完整的Java开发和运行环境，包含必要的开发工具、调试能力和安全特性，专为云原生应用优化，具有轻量级和增强的安全控制。"
 source: https://xuanyuan.cloud/zh/r/cleanstart/jdk
 canonical: https://xuanyuan.cloud/zh/r/cleanstart/jdk
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cleanstart/jdk" title="cleanstart/jdk Docker 镜像中文简介、标签列表与拉取命令">cleanstart/jdk 中文简介</a>
@@ -41,8 +41,8 @@ exported_at: 2026-06-02T12:26:10.133Z
 从镜像仓库下载容器镜像
 
 ```bash
-docker pull cleanstart/jdk:latest
-docker pull cleanstart/jdk:latest-dev
+docker pull docker.xuanyuan.run/cleanstart/jdk:latest
+docker pull docker.xuanyuan.run/cleanstart/jdk:latest-dev
 ```
 
 #### 基本运行
@@ -50,7 +50,7 @@ docker pull cleanstart/jdk:latest-dev
 使用基本配置运行容器
 
 ```bash
-docker run -it --name jdk-test cleanstart/jdk:latest-dev
+docker run -it --name jdk-test docker.xuanyuan.run/cleanstart/jdk:latest-dev
 ```
 
 #### 生产环境部署
@@ -62,7 +62,7 @@ docker run -d --name jdk-prod \
   --read-only \
   --security-opt=no-new-privileges \
   --user 1000:1000 \
-  cleanstart/jdk:latest
+  docker.xuanyuan.run/cleanstart/jdk:latest
 ```
 
 #### 用于卷挂载的小型项目示例
@@ -84,7 +84,7 @@ EOF
 挂载本地目录以实现数据持久化
 
 ```bash
-docker run --rm -v $(pwd):/app -w /app cleanstart/jdk:latest $(which javac) jdk-test/HelloWorld.java
+docker run --rm -v $(pwd):/app -w /app docker.xuanyuan.run/cleanstart/jdk:latest $(which javac) jdk-test/HelloWorld.java
 ```
 
 ### 配置

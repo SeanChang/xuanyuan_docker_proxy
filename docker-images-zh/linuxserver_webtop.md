@@ -3,7 +3,7 @@ image: linuxserver/webtop
 description: "LinuxServer/webtop是轻量级Docker镜像，提供基于网页的Linux桌面环境，支持XFCE、KDE等多种桌面环境，内置浏览器、LibreOffice办公套件及基础工具。可通过HTTP/HTTPS协议远程访问并支持密码保护，适合开发者远程调试、家庭服务器管理或低配置设备临时办公。由LinuxServer团队维护，确保安全更新与稳定运行。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/webtop
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/webtop
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/webtop" title="linuxserver/webtop Docker 镜像中文简介、标签列表与拉取命令">linuxserver/webtop 中文简介</a>
@@ -14,7 +14,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## LinuxServer.io 团队简介  
-[LinuxServer.io]([]) 团队专注于提供高质量容器解决方案，其容器产品具有以下特点：  
+[LinuxServer.io]  团队专注于提供高质量容器解决方案，其容器产品具有以下特点：  
 - 定期及时的应用更新  
 - 简单的用户权限映射（PGID、PUID）  
 - 基于 s6 overlay 的自定义基础镜像  
@@ -22,15 +22,15 @@ exported_at: 2026-06-02T12:26:10.133Z
 - 常规安全更新  
 
 您可以通过以下渠道了解更多或获取支持：  
-- [博客]([])：容器使用指南、教程及观点分享  
+- [博客] ：容器使用指南、教程及观点分享  
 - []()：实时社区交流与技术支持  
-- [Discourse]([])：社区论坛  
-- [GitHub]([])：代码仓库  
-- [Open Collective]([])：支持我们的开发与维护  
+- [Discourse] ：社区论坛  
+- [GitHub] ：代码仓库  
+- [Open Collective] ：支持我们的开发与维护  
 
 
 ## Webtop 容器概述  
-[Webtop]([]) 是基于 Alpine、Ubuntu、Fedora 及 Arch 系统的容器，内置完整桌面环境（如 XFCE、i3、KDE 等），可通过任何现代浏览器访问。  
+[Webtop]  是基于 Alpine、Ubuntu、Fedora 及 Arch 系统的容器，内置完整桌面环境（如 XFCE、i3、KDE 等），可通过任何现代浏览器访问。  
 
 
 ## 支持的架构  
@@ -79,7 +79,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ### 反向代理配置  
-容器默认使用自签名证书，因此需通过 HTTPS 访问。若反向代理验证证书，需[关闭对容器的证书检查]([])。  
+容器默认使用自签名证书，因此需通过 HTTPS 访问。若反向代理验证证书，需[关闭对容器的证书检查] 。  
 
 > **注意**：现代 GUI 应用可能与 Docker 的系统调用限制冲突。若主机内核或 libseccomp 版本较旧，可添加 `--security-opt seccomp=unconfined` 参数启动容器。  
 
@@ -88,13 +88,13 @@ exported_at: 2026-06-02T12:26:10.133Z
 ⚠️ **警告**：本容器具有主机系统的特权访问权限，请勿暴露在公网环境中，除非已做好严格安全防护。  
 
 - **HTTPS 必需**：WebCodecs 等现代浏览器功能仅支持 HTTPS，HTTP 连接会导致音视频功能失效。  
-- **认证机制**：默认无认证。可通过 `CUSTOM_USER` 和 `PASSWORD` 环境变量启用基础 HTTP 认证（仅适合可信局域网）。公网暴露时，建议搭配 [SWAG]([]) 等反向代理实现强认证。  
+- **认证机制**：默认无认证。可通过 `CUSTOM_USER` 和 `PASSWORD` 环境变量启用基础 HTTP 认证（仅适合可信局域网）。公网暴露时，建议搭配 [SWAG]  等反向代理实现强认证。  
 - **终端权限**：Web 界面包含带无密码 sudo 权限的终端，任何访问者可在容器内获取 root 权限，安装软件或探测局域网。  
 - **seccomp 配置**：老旧硬件或系统可能需关闭 seccomp 限制（`--security-opt seccomp=unconfined`），但这会降低 Docker 安全性，仅在必要时使用。  
 
 
 ### 环境变量与运行参数  
-容器基于 [Docker Baseimage Selkies]([])，支持以下自定义配置：  
+容器基于 [Docker Baseimage Selkies] ，支持以下自定义配置：  
 
 #### 可选环境变量  
 | 变量名               | 描述                                  |  
@@ -140,7 +140,7 @@ Docker Compose 配置示例：
 ```yaml
 services:
   webtop:
-    image: lscr.io/linuxserver/webtop:latest
+    image: docker.xuanyuan.run/linuxserver/webtop:latest
     deploy:
       resources:
         reservations:
@@ -153,13 +153,13 @@ services:
 
 ### 应用安装  
 #### PRoot Apps（持久化，推荐）  
-原生包（如 `apt-get install`）在容器重建后丢失。推荐使用 [proot-apps]([]) 将应用安装到持久化 `$HOME` 目录：  
+原生包（如 `apt-get install`）在容器重建后丢失。推荐使用 [proot-apps]  将应用安装到持久化 `$HOME` 目录：  
 ```bash
 proot-apps install filezilla  # 安装 FileZilla，支持列表见链接
 ```  
 
 #### 原生应用（非持久化）  
-通过 [universal-package-install]([]) 模块安装系统原生包（容器重建后需重新安装）：  
+通过 [universal-package-install]  模块安装系统原生包（容器重建后需重新安装）：  
 ```yaml
 environment:
   - DOCKER_MODS=linuxserver/mods:universal-package-install
@@ -174,7 +174,7 @@ environment:
 ```yaml
 services:
   webtop:
-    image: lscr.io/linuxserver/webtop:latest  # 可替换为特定标签，如 ubuntu-xfce
+    image: docker.xuanyuan.run/linuxserver/webtop:latest  # 可替换为特定标签，如 ubuntu-xfce
     container_name: webtop
     environment:
       - PUID=1000          # 替换为您的用户 ID（通过 id 命令查看）
@@ -210,7 +210,7 @@ docker run -d \
   -v /path/to/data:/config \
   --shm-size="1gb" \
   --restart unless-stopped \
-  lscr.io/linuxserver/webtop:latest
+  docker.xuanyuan.run/linuxserver/webtop:latest
 ```  
 
 
@@ -253,7 +253,7 @@ docker image prune  # 清理旧镜像
 
 ### Docker CLI  
 ```bash
-docker pull lscr.io/linuxserver/webtop:latest
+docker pull docker.xuanyuan.run/linuxserver/webtop:latest
 docker stop webtop
 docker rm webtop
 # 重新运行 docker run 命令（配置会保留在 /config 目录）

@@ -3,7 +3,7 @@ image: cimg/openjdk
 description: "CircleCI OpenJDK（Java）Docker便捷镜像是由CircleCI平台提供的、基于OpenJDK（Java开发工具包）构建的Docker预配置镜像，旨在简化Java项目的持续集成与部署流程，内置必要的开发环境和工具，帮助开发者快速搭建稳定的构建环境，无需手动配置底层依赖，有效提升开发与自动化构建效率，适用于各类Java应用的自动化测试、构建及部署场景。"
 source: https://xuanyuan.cloud/zh/r/cimg/openjdk
 canonical: https://xuanyuan.cloud/zh/r/cimg/openjdk
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cimg/openjdk" title="cimg/openjdk Docker 镜像中文简介、标签列表与拉取命令">cimg/openjdk 中文简介</a>
@@ -49,7 +49,7 @@ jobs:
 
 ## 镜像工作原理  
 
-本镜像基于 [Adoptium]([]) 提供的 OpenJDK 构建，包含 Java 编程语言环境。  
+本镜像基于 [Adoptium]  提供的 OpenJDK 构建，包含 Java 编程语言环境。  
 
 
 ### 变体镜像  
@@ -73,7 +73,7 @@ jobs:
 
 
 #### 浏览器变体  
-在基础镜像中预装 Node.js、Selenium 及浏览器依赖（通过 apt 安装），需配合 [CircleCI Browser Tools orb]([]) 使用（用于安装 Chrome/Firefox 浏览器）。使用时添加 `-browser` 后缀，例如：  
+在基础镜像中预装 Node.js、Selenium 及浏览器依赖（通过 apt 安装），需配合 [CircleCI Browser Tools orb]  使用（用于安装 Chrome/Firefox 浏览器）。使用时添加 `-browser` 后缀，例如：  
 
 ```yaml
 orbs:
@@ -148,7 +148,7 @@ git clone --recurse-submodules [邮箱已删除]:CircleCI-Public/cimg-openjdk.gi
 ```bash
 cd 11.0  # 进入版本目录
 docker build -t test/openjdk:11.0.5 .  # 构建镜像
-docker run -it test/openjdk:11.0.5 bash  # 运行容器测试
+docker run -it docker.xuanyuan.run/test/openjdk:11.0.5 bash # 运行容器测试
 ```  
 
 
@@ -188,15 +188,15 @@ docker run -it test/openjdk:11.0.5 bash  # 运行容器测试
 
 1. **工具纳入标准**：仅添加维护活跃且对多数 Java 开发者有用的工具（避免镜像体积过大）。  
 2. **大型 PR 预讨论**：若 PR 工作量较大，建议先开 issue 讨论可行性。  
-3. **issue 范围**：用于报告 bug 或请求工具增减；使用问题请前往 [CircleCI Discuss]([])。  
+3. **issue 范围**：用于报告 bug 或请求工具增减；使用问题请前往 [CircleCI Discuss] 。  
 
 
 ## 相关资源  
 
-- [Adoptium]([])：OpenJDK 构建源  
-- [CircleCI 文档]([])：官方配置指南  
-- [CircleCI 配置参考]([])：`.circleci/config.yml` 语法说明  
-- [Docker 文档]([])：Docker 基础学习资源  
+- [Adoptium] ：OpenJDK 构建源  
+- [CircleCI 文档] ：官方配置指南  
+- [CircleCI 配置参考] ：`.circleci/config.yml` 语法说明  
+- [Docker 文档] ：Docker 基础学习资源  
 
 
 ## 许可证  

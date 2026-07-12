@@ -3,7 +3,7 @@ image: openresty/openresty
 description: "OpenResty官方Docker镜像是基于NGINX和LuaJIT构建的动态Web平台，它整合了NGINX的高性能HTTP处理与反向代理能力及LuaJIT的高效即时编译脚本技术，适用于开发高并发、低延迟的动态Web应用、API网关、负载均衡系统等场景。该官方Docker镜像提供标准化部署环境，简化配置流程，确保跨平台一致性与可靠性，助力开发者快速集成并高效利用OpenResty的强大功能，实现灵活的Web服务开发与部署。"
 source: https://xuanyuan.cloud/zh/r/openresty/openresty
 canonical: https://xuanyuan.cloud/zh/r/openresty/openresty
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openresty/openresty" title="openresty/openresty Docker 镜像中文简介、标签列表与拉取命令">openresty/openresty 中文简介</a>
@@ -14,7 +14,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 简介  
-`docker-openresty` 是 OpenResty 的 Docker 化工具（[GitHub 仓库]([])）。Docker 是容器管理平台，而 OpenResty 是基于 Nginx 核心，集成大量第三方模块及依赖的全功能 Web 应用服务器。
+`docker-openresty` 是 OpenResty 的 Docker 化工具（[GitHub 仓库] ）。Docker 是容器管理平台，而 OpenResty 是基于 Nginx 核心，集成大量第三方模块及依赖的全功能 Web 应用服务器。
 
 
 ## 镜像标签说明  
@@ -54,15 +54,15 @@ docker run [选项] openresty/openresty:bullseye-fat
 ### 自定义配置方法  
 1. **挂载配置目录**：将本地配置目录挂载到容器的 `/etc/nginx/conf.d/`，覆盖默认子配置：  
    ```bash
-   docker run -v /本地/custom/conf.d:/etc/nginx/conf.d openresty/openresty:alpine
+   docker run -v /本地/custom/conf.d:/etc/nginx/conf.d docker.xuanyuan.run/openresty/openresty:alpine
    ```  
 2. **替换主配置**：直接挂载自定义的 `nginx.conf` 替换默认配置（适用于 Windows 镜像）：  
    ```bash
-   docker run -v C:/本地/nginx.conf:C:/openresty/conf/nginx.conf openresty/openresty:windows
+   docker run -v C:/本地/nginx.conf:C:/openresty/conf/nginx.conf docker.xuanyuan.run/openresty/openresty:windows
    ```  
 3. **SELinux 环境**：若主机启用 SELinux（如 CentOS），挂载时需添加 `:Z` 标签：  
    ```bash
-   docker run -v /本地/custom/conf.d:/etc/nginx/conf.d:Z openresty/openresty:alpine
+   docker run -v /本地/custom/conf.d:/etc/nginx/conf.d:Z docker.xuanyuan.run/openresty/openresty:alpine
    ```  
 
 
@@ -74,11 +74,11 @@ OpenResty 包管理器 `opm`（路径 `/usr/local/openresty/bin/opm`）用于安
   ```bash
   apk add --no-cache curl perl
   ```  
-- **Debian (bullseye/buster) 镜像**：使用 `bullseye-fat` 镜像，或在自定义构建中安装 `openresty-opm` 包（参考 [示例 Dockerfile]([])）。  
+- **Debian (bullseye/buster) 镜像**：使用 `bullseye-fat` 镜像，或在自定义构建中安装 `openresty-opm` 包（参考 [示例 Dockerfile] ）。  
 
 
 ## LuaRocks 工具  
-Lua 包管理器 [LuaRocks]([]) 用于安装 Lua 模块，**默认包含在 `alpine-fat`、`centos`、`bionic` 镜像中**（`alpine` 镜像因追求精简未包含）。使用路径：`/usr/local/openresty/luajit/bin/luarocks`。  
+Lua 包管理器 [LuaRocks]  用于安装 Lua 模块，**默认包含在 `alpine-fat`、`centos`、`bionic` 镜像中**（`alpine` 镜像因追求精简未包含）。使用路径：`/usr/local/openresty/luajit/bin/luarocks`。  
 
 ### 安装 Lua 包示例  
 ```bash
@@ -100,7 +100,7 @@ RUN /usr/local/openresty/luajit/bin/luarocks install <包名>
    除 `alpine` 和 `windows` 镜像外，其他镜像均包含 `envsubst`（用于配置文件环境变量替换）。  
 
 4. **容器停止信号**：  
-   容器默认使用 `SIGQUIT` 信号停止 Nginx，以优雅关闭连接（Docker 默认 `SIGTERM` 会强制终止连接）。若配置中使用 UNIX 域套接字，需手动清理套接字文件（Nginx 已知问题 [#753]([])）。  
+   容器默认使用 `SIGQUIT` 信号停止 Nginx，以优雅关闭连接（Docker 默认 `SIGTERM` 会强制终止连接）。若配置中使用 UNIX 域套接字，需手动清理套接字文件（Nginx 已知问题 [#753] ）。  
 
 
 ## 镜像标签信息  
@@ -151,4 +151,4 @@ docker build -t 自定义镜像名 -f bionic/Dockerfile .
 
 
 ## 反馈与贡献  
-使用中遇到问题可提交 [GitHub Issue]([])，或通过 [Travis CI]([])、[Appveyor]([]) 查看构建状态。
+使用中遇到问题可提交 [GitHub Issue] ，或通过 [Travis CI] 、[Appveyor]  查看构建状态。

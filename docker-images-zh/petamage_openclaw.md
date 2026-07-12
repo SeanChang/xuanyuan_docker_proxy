@@ -3,7 +3,7 @@ image: petamage/openclaw
 description: "提供即用型OpenClaw环境的Docker镜像，无需繁琐的单独配置，由Petapod社区维护，可快速部署和使用。"
 source: https://xuanyuan.cloud/zh/r/petamage/openclaw
 canonical: https://xuanyuan.cloud/zh/r/petamage/openclaw
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/petamage/openclaw" title="petamage/openclaw Docker 镜像中文简介、标签列表与拉取命令">petamage/openclaw 中文简介</a>
@@ -21,7 +21,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 从Docker Hub拉取镜像：
 
 ```bash
-docker pull petamage/openclaw
+docker pull docker.xuanyuan.run/petamage/openclaw
 ```
 
 ---
@@ -58,7 +58,7 @@ docker run -it \
   -e SETUP_PASSWORD=your_setup_password \
   -e OPENCLAW_GATEWAY_TOKEN=64_CHARACTER_RANDOM \
   -e INTERNAL_GATEWAY_PORT=7777 \
-  petamage/openclaw
+  docker.xuanyuan.run/petamage/openclaw
 ```
 
 ### 后台运行容器（分离模式）
@@ -68,7 +68,7 @@ docker run -d \
   -e SETUP_PASSWORD=your_setup_password \
   -e OPENCLAW_GATEWAY_TOKEN=64_CHARACTER_RANDOM \
   -e INTERNAL_GATEWAY_PORT=7777 \
-  petamage/openclaw
+  docker.xuanyuan.run/petamage/openclaw
 ```
 
 ---
@@ -86,7 +86,7 @@ INTERNAL_GATEWAY_PORT=7777
 运行容器：
 
 ```bash
-docker run -d --env-file .env petamage/openclaw
+docker run -d --env-file .env docker.xuanyuan.run/petamage/openclaw
 ```
 
 ---

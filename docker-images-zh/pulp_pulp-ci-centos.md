@@ -3,7 +3,7 @@ image: pulp/pulp-ci-centos
 description: "Pulp 3的基础镜像，提供运行Pulp 3所需的核心依赖和环境，用于构建和部署Pulp 3相关服务。"
 source: https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos
 canonical: https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/pulp/pulp-ci-centos" title="pulp/pulp-ci-centos Docker 镜像中文简介、标签列表与拉取命令">pulp/pulp-ci-centos 中文简介</a>
@@ -36,7 +36,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 通过Docker Hub拉取官方镜像（具体标签请参考Pulp官方版本说明）：
 
 ```bash
-docker pull pulp/pulp-3-base:latest
+docker pull docker.xuanyuan.run/pulp/pulp-3-base:latest
 ```
 
 ### 作为基础镜像构建自定义服务
@@ -45,7 +45,7 @@ docker pull pulp/pulp-3-base:latest
 
 ```dockerfile
 # 基于Pulp 3基础镜像
-FROM pulp/pulp-3-base:latest
+FROM docker.xuanyuan.run/pulp/pulp-3-base:latest
 
 # 示例：安装Pulp Maven插件
 RUN pip install pulp-maven-plugin==0.16.0
@@ -70,7 +70,7 @@ CMD ["gunicorn", "pulp.wsgi:application", "--bind", "0.0.0.0:24817"]
 docker build -t my-custom-pulp:latest .
 
 # 运行容器（需提前配置数据库等依赖服务）
-docker run -d -p 24817:24817 --name my-pulp-service my-custom-pulp:latest
+docker run -d -p 24817:24817 --name my-pulp-service docker.xuanyuan.run/my-custom-pulp:latest
 ```
 
 ## 注意事项

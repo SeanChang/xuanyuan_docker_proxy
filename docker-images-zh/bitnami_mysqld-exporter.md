@@ -3,7 +3,7 @@ image: bitnami/mysqld-exporter
 description: "Bitnami MySQL Server Exporter安全镜像，用于收集MySQL服务器指标供Prometheus监控，基于Photon Linux构建，提供强化安全特性、合规支持及供应链安全保障。"
 source: https://xuanyuan.cloud/zh/r/bitnami/mysqld-exporter
 canonical: https://xuanyuan.cloud/zh/r/bitnami/mysqld-exporter
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/mysqld-exporter" title="bitnami/mysqld-exporter Docker 镜像中文简介、标签列表与拉取命令">bitnami/mysqld-exporter 中文简介</a>
@@ -22,7 +22,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 快速启动
 
 ```console
-docker run --name mysqld-exporter bitnami/mysqld-exporter:latest
+docker run --name mysqld-exporter docker.xuanyuan.run/bitnami/mysqld-exporter:latest
 ```
 
 这是由 Bitnami 构建和维护的强化、最小化 CVE 镜像。Bitnami 安全镜像基于云优化、安全强化的企业级 [Photon Linux 操作系统](https://vmware.github.io/photon/)。选择 BSI 镜像的理由：
@@ -53,13 +53,13 @@ docker run --name mysqld-exporter bitnami/mysqld-exporter:latest
 获取 Bitnami MySQL Server Exporter Docker 镜像的推荐方式是从 [Docker Hub Registry](https://hub.docker.com/r/bitnami/mysqld-exporter) 拉取预构建镜像。
 
 ```console
-docker pull bitnami/mysqld-exporter:latest
+docker pull docker.xuanyuan.run/bitnami/mysqld-exporter:latest
 ```
 
 要使用特定版本，可以拉取带版本的标签。您可以在 Docker Hub Registry 中查看[可用版本列表](https://hub.docker.com/r/bitnami/mysqld-exporter/tags/)。
 
 ```console
-docker pull bitnami/mysqld-exporter:[TAG]
+docker pull docker.xuanyuan.run/bitnami/mysqld-exporter:[TAG]
 ```
 
 如果您希望自己构建镜像，可以克隆仓库，切换到包含 Dockerfile 的目录，然后执行 `docker build` 命令。请记住替换示例命令中的 `APP`、`VERSION` 和 `OPERATING-SYSTEM` 路径占位符为正确值。
@@ -89,7 +89,7 @@ docker network create mysqld-exporter-network --driver bridge
 使用 `--network <NETWORK>` 参数执行 `docker run` 命令，将容器附加到 `mysqld-exporter-network` 网络。
 
 ```console
-docker run --name mysqld-exporter-node1 --network mysqld-exporter-network bitnami/mysqld-exporter:latest
+docker run --name mysqld-exporter-node1 --network mysqld-exporter-network docker.xuanyuan.run/bitnami/mysqld-exporter:latest
 ```
 
 #### 步骤 3：运行其他容器
@@ -125,7 +125,7 @@ Bitnami 会在 upstream 发布后尽快提供 MySQL Server Exporter 的更新版
 #### 步骤 1：获取更新的镜像
 
 ```console
-docker pull bitnami/mysqld-exporter:latest
+docker pull docker.xuanyuan.run/bitnami/mysqld-exporter:latest
 ```
 
 #### 步骤 2：停止运行中的容器
@@ -147,7 +147,7 @@ docker rm -v mysqld-exporter
 从新镜像重新创建容器。
 
 ```console
-docker run --name mysqld-exporter bitnami/mysqld-exporter:latest
+docker run --name mysqld-exporter docker.xuanyuan.run/bitnami/mysqld-exporter:latest
 ```
 
 ## 重要变更

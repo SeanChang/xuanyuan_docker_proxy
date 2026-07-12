@@ -3,7 +3,7 @@ image: immauss/openvas
 description: "集成PostgreSQL 13数据库的OpenVAS/GVMD 23.1镜像，提供漏洞扫描、任务管理及扫描结果存储功能的漏洞管理工具。"
 source: https://xuanyuan.cloud/zh/r/immauss/openvas
 canonical: https://xuanyuan.cloud/zh/r/immauss/openvas
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/immauss/openvas" title="immauss/openvas Docker 镜像中文简介、标签列表与拉取命令">immauss/openvas 中文简介</a>
@@ -66,7 +66,7 @@ docker run -d \
   -p 9392:9392 \
   -v gvm_data:/var/lib/gvm \
   -e ADMIN_PASSWORD="your_strong_password" \
-  immauss/openvas:latest
+  docker.xuanyuan.run/immauss/openvas:latest
 ```
 
 #### 参数说明：
@@ -83,7 +83,7 @@ version: '3.8'
 
 services:
   openvas:
-    image: immauss/openvas:latest
+    image: docker.xuanyuan.run/immauss/openvas:latest
     container_name: openvas
     ports:
       - "9392:9392"  # Web界面端口

@@ -3,7 +3,7 @@ image: linuxserver/librespeed
 description: "LinuxServer.io提供的Librespeed镜像，用于部署开源自托管网络速度测试工具，支持上传与下载速度测试。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/librespeed
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/librespeed
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/librespeed" title="linuxserver/librespeed Docker 镜像中文简介、标签列表与拉取命令">linuxserver/librespeed 中文简介</a>
@@ -78,7 +78,7 @@ https://github.com/librespeed/speedtest/blob/master/doc.md#creating-the-database
 ---
 services:
   librespeed:
-    image: lscr.io/linuxserver/librespeed:latest
+    image: docker.xuanyuan.run/linuxserver/librespeed:latest
     container_name: librespeed
     environment:
       - PUID=1000
@@ -255,7 +255,7 @@ docker image prune
 - 更新镜像：
 
 ```bash
-docker pull lscr.io/linuxserver/librespeed:latest
+docker pull docker.xuanyuan.run/linuxserver/librespeed:latest
 ```
 
 - 停止运行中的容器：
@@ -299,7 +299,7 @@ docker build \
 可以使用`lscr.io/linuxserver/qemu-static`在x86_64硬件上构建ARM变体，反之亦然：
 
 ```bash
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```
 
 注册后，您可以使用`-f Dockerfile.aarch64`定义要使用的dockerfile。

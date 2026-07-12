@@ -3,7 +3,7 @@ image: localai/localai
 description: "LocalAI是免费开源的OpenAI替代方案"
 source: https://xuanyuan.cloud/zh/r/localai/localai
 canonical: https://xuanyuan.cloud/zh/r/localai/localai
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/localai/localai" title="localai/localai Docker 镜像中文简介、标签列表与拉取命令">localai/localai 中文简介</a>
@@ -56,7 +56,7 @@ curl https://localai.io/install.sh | sh
 适用于无GPU环境，镜像体积较小：
 
 ```bash
-docker run -ti --name local-ai -p 8080:8080 localai/localai:latest-cpu
+docker run -ti --name local-ai -p 8080:8080 docker.xuanyuan.run/localai/localai:latest-cpu
 ```
 
 **参数说明**：
@@ -70,7 +70,7 @@ docker run -ti --name local-ai -p 8080:8080 localai/localai:latest-cpu
 需预先安装Nvidia Docker运行时，支持CUDA 12：
 
 ```bash
-docker run -ti --name local-ai -p 8080:8080 --gpus all localai/localai:latest-gpu-nvidia-cuda-12
+docker run -ti --name local-ai -p 8080:8080 --gpus all docker.xuanyuan.run/localai/localai:latest-gpu-nvidia-cuda-12
 ```
 
 **参数说明**：
@@ -81,7 +81,7 @@ docker run -ti --name local-ai -p 8080:8080 --gpus all localai/localai:latest-gp
 包含CPU和GPU支持，功能全面但镜像体积较大：
 
 ```bash
-docker run -ti --name local-ai -p 8080:8080 localai/localai:latest
+docker run -ti --name local-ai -p 8080:8080 docker.xuanyuan.run/localai/localai:latest
 ```
 
 ##### AIO（All-in-One）镜像（预下载模型）
@@ -89,7 +89,7 @@ docker run -ti --name local-ai -p 8080:8080 localai/localai:latest
 预下载一组常用模型，开箱即用：
 
 ```bash
-docker run -ti --name local-ai -p 8080:8080 localai/localai:latest-aio-cpu
+docker run -ti --name local-ai -p 8080:8080 docker.xuanyuan.run/localai/localai:latest-aio-cpu
 ```
 
 ### 4.2 模型加载与管理

@@ -3,7 +3,7 @@ image: zabbix/zabbix-web-nginx-mysql
 description: "Zabbix前端是一款用于网络、服务器、应用程序等IT资源监控的界面，它基于Nginx Web服务器构建，并支持MySQL数据库作为数据存储后端，能够为用户提供直观的监控数据展示、配置管理及告警信息查看等功能，是Zabbix监控系统中实现用户与系统交互的核心组件。"
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-web-nginx-mysql" title="zabbix/zabbix-web-nginx-mysql Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-web-nginx-mysql 中文简介</a>
@@ -62,7 +62,7 @@ docker run --name some-zabbix-web-nginx-mysql \
   -e MYSQL_PASSWORD="some-password" \
   -e ZBX_SERVER_HOST="some-zabbix-server" \
   -e PHP_TZ="some-timezone" \
-  -d zabbix/zabbix-web-nginx-mysql:tag
+  -d docker.xuanyuan.run/zabbix/zabbix-web-nginx-mysql:tag
 ```
 
 参数说明：  
@@ -74,7 +74,7 @@ docker run --name some-zabbix-web-nginx-mysql \
 - `some-timezone`：PHP 时区（如 `Asia/Shanghai`）  
 - `tag`：指定镜像版本标签（参考上文“支持的版本及标签”）  
 
-完整标签列表可查看 [Docker Hub]([])。
+完整标签列表可查看 [Docker Hub] 。
 
 
 ## 关联 Zabbix Server 容器
@@ -89,7 +89,7 @@ docker run --name some-zabbix-web-nginx-mysql \
   -e MYSQL_PASSWORD="some-password" \
   -e ZBX_SERVER_HOST="some-zabbix-server" \
   -e PHP_TZ="some-timezone" \
-  -d zabbix/zabbix-web-nginx-mysql:tag
+  -d docker.xuanyuan.run/zabbix/zabbix-web-nginx-mysql:tag
 ```
 
 
@@ -105,7 +105,7 @@ docker run --name some-zabbix-web-nginx-mysql \
   -e MYSQL_PASSWORD="some-password" \
   -e ZBX_SERVER_HOST="some-zabbix-server" \
   -e PHP_TZ="some-timezone" \
-  -d zabbix/zabbix-web-nginx-mysql:tag
+  -d docker.xuanyuan.run/zabbix/zabbix-web-nginx-mysql:tag
 ```
 
 
@@ -163,7 +163,7 @@ docker run --name some-zabbix-web-nginx-mysql \
   -v ./.MYSQL_PASSWORD:/run/secrets/MYSQL_PASSWORD \
   -e MYSQL_PASSWORD_FILE=/run/secrets/MYSQL_PASSWORD \
   -e PHP_TZ="Asia/Shanghai" \
-  -d zabbix/zabbix-web-nginx-mysql:tag
+  -d docker.xuanyuan.run/zabbix/zabbix-web-nginx-mysql:tag
 ```
 
 **示例（Docker Swarm 密钥）**：  
@@ -179,7 +179,7 @@ docker run --name some-zabbix-web-nginx-mysql \
   -e MYSQL_PASSWORD_FILE=/run/secrets/MYSQL_PASSWORD \
   -e ZBX_SERVER_HOST="some-zabbix-server" \
   -e PHP_TZ="Asia/Shanghai" \
-  -d zabbix/zabbix-web-nginx-mysql:tag
+  -d docker.xuanyuan.run/zabbix/zabbix-web-nginx-mysql:tag
 ```
 
 
@@ -196,7 +196,7 @@ docker run --name some-zabbix-web-nginx-mysql \
 
 ## 其他参数
 
-还支持 PHP-FPM 配置（如 `PHP_FPM_PM_MAX_CHILDREN`）、Nginx 配置（如 `WEB_REAL_IP_FROM`）、TLS 加密（如 `ZBX_DB_CA_FILE`）、SAML 认证（如 `ZBX_SSO_SP_KEY`）等，详细说明可参考 [官方文档]([])。
+还支持 PHP-FPM 配置（如 `PHP_FPM_PM_MAX_CHILDREN`）、Nginx 配置（如 `WEB_REAL_IP_FROM`）、TLS 加密（如 `ZBX_DB_CA_FILE`）、SAML 认证（如 `ZBX_SSO_SP_KEY`）等，详细说明可参考 [官方文档] 。
 
 
 # 容器卷挂载
@@ -210,7 +210,7 @@ docker run --name some-zabbix-web-nginx-mysql \
 - `ssl.key`：SSL 私钥文件  
 - `dhparam.pem`：DH 参数文件  
 
-配置方法参考 [Nginx 官方文档]([])。
+配置方法参考 [Nginx 官方文档] 。
 
 
 ## `/etc/zabbix/web/certs`  
@@ -244,17 +244,17 @@ Zabbix Web 界面镜像提供多种基础系统版本，适用于不同场景：
 # 支持的 Docker 版本
 
 官方推荐 Docker 1.12.0 及以上版本，旧版本（低至 1.6）可尝试使用，但不保证完全兼容。  
-升级 Docker 方法参考 [Docker 官方文档]([])。
+升级 Docker 方法参考 [Docker 官方文档] 。
 
 
 # 用户反馈与支持
 
 ## 文档  
-镜像详细文档位于 [GitHub 仓库]([]) 的 `web-nginx-mysql/` 目录。
+镜像详细文档位于 [GitHub 仓库]  的 `web-nginx-mysql/` 目录。
 
 
 ## 问题反馈  
-如遇使用问题，可通过 [GitHub Issues]([]) 提交。
+如遇使用问题，可通过 [GitHub Issues]  提交。
 
 
 ## 贡献代码  

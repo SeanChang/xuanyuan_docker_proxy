@@ -3,7 +3,7 @@ image: qwenllm/qwenvl
 description: "阿里云提出的Qwen2-VL大型视觉语言模型的官方仓库镜像"
 source: https://xuanyuan.cloud/zh/r/qwenllm/qwenvl
 canonical: https://xuanyuan.cloud/zh/r/qwenllm/qwenvl
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/qwenllm/qwenvl" title="qwenllm/qwenvl Docker 镜像中文简介、标签列表与拉取命令">qwenllm/qwenvl 中文简介</a>
@@ -63,7 +63,7 @@ Qwen2-VL Docker镜像是阿里云官方提供的Qwen2-VL大视觉语言模型（
 docker pull .xuanyuan.run/qwen/qwen2-vl:latest
 
 # 从Docker Hub拉取
-docker pull qwen/qwen2-vl:latest
+docker pull docker.xuanyuan.run/qwen/qwen2-vl:latest
 ```
 
 

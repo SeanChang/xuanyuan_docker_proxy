@@ -3,7 +3,7 @@ image: bennyzhao/quartzui
 description: "这是一个基于Quartz.NET 3.0的Web管理界面，采用Docker打包实现开箱即用，内置SQLite持久化功能，具备语言无关特性，可实现业务代码零污染，同时支持RESTful风格接口及傻瓜式配置。"
 source: https://xuanyuan.cloud/zh/r/bennyzhao/quartzui
 canonical: https://xuanyuan.cloud/zh/r/bennyzhao/quartzui
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bennyzhao/quartzui" title="bennyzhao/quartzui Docker 镜像中文简介、标签列表与拉取命令">bennyzhao/quartzui 中文简介</a>
@@ -14,13 +14,13 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ### 项目地址  
-GitHub：[zhaopeiym/quartzui]([])  
+GitHub：[zhaopeiym/quartzui]   
 
 
 ### 快速启动  
 通过以下一行 Docker 命令即可完成部署，实现开箱即用：  
 ```bash
-docker run -v /fileData/quartzuifile:/app/File --restart=unless-stopped --privileged=true --name quartzui -dp 5088:80 bennyzhao/quartzui
+docker run -v /fileData/quartzuifile:/app/File --restart=unless-stopped --privileged=true --name quartzui -dp docker.xuanyuan.run/5088:80 bennyzhao/quartzui
 ```  
 
 

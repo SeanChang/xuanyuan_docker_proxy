@@ -3,7 +3,7 @@ image: apache/beam_java17_sdk
 description: "Apache Beam Java 17 SDK镜像，用于构建和运行批处理与流处理数据管道，支持跨多种执行引擎（如Spark、Flink）运行，提供Java 17环境及Beam核心库，适合Java开发者快速开发分布式数据处理应用。"
 source: https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk
 canonical: https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/beam_java17_sdk" title="apache/beam_java17_sdk Docker 镜像中文简介、标签列表与拉取命令">apache/beam_java17_sdk 中文简介</a>
@@ -33,13 +33,13 @@ Apache Beam Java 17 SDK镜像是基于Java 17环境构建的官方Apache Beam开
 ### 4.1 基本使用（Docker Run）
 #### 4.1.1 拉取镜像
 ```bash
-docker pull apache/beam-java17-sdk:latest
+docker pull docker.xuanyuan.run/apache/beam-java17-sdk:latest
 ```
 
 #### 4.1.2 交互式开发环境
 挂载本地Beam项目代码至容器，进行开发与调试：
 ```bash
-docker run -it --rm -v /path/to/your/beam-project:/app apache/beam-java17-sdk:latest /bin/bash
+docker run -it --rm -v /path/to/your/beam-project:/app docker.xuanyuan.run/apache/beam-java17-sdk:latest /bin/bash
 ```
 
 #### 4.1.3 直接执行管道
@@ -65,7 +65,7 @@ docker run -it --rm \
   -e BEAM_RUNNER=SparkRunner \
   -e JAVA_OPTS="-Xmx2g -XX:+UseG1GC" \
   -v /path/to/project:/app \
-  apache/beam-java17-sdk:latest \
+  docker.xuanyuan.run/apache/beam-java17-sdk:latest \
   java -cp /app/target/pipeline.jar com.example.SparkPipeline --spark-master=spark://spark-cluster:7077
 ```
 
@@ -76,7 +76,7 @@ docker run -it --rm \
 version: '3.8'
 services:
   beam-pipeline:
-    image: apache/beam-java17-sdk:latest
+    image: docker.xuanyuan.run/apache/beam-java17-sdk:latest
     volumes:
       - ./your-beam-project:/app
     environment:
@@ -90,19 +90,19 @@ services:
 
   # 依赖服务示例（Flink集群、Kafka、PostgreSQL）
   flink-jobmanager:
-    image: flink:1.17-scala_2.12
+    image: docker.xuanyuan.run/flink:1.17-scala_2.12
     command: jobmanager
     environment:
       - JOB_MANAGER_RPC_ADDRESS=flink-jobmanager
 
   kafka:
-    image: confluentinc/cp-kafka:7.3.0
+    image: docker.xuanyuan.run/confluentinc/cp-kafka:7.3.0
     environment:
       - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
       - KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1
 
   db:
-    image: postgres:14
+    image: docker.xuanyuan.run/postgres:14
     environment:
       - POSTGRES_DB=beam_results
       - POSTGRES_USER=beam_user
@@ -113,7 +113,7 @@ services:
 #### 4.4.1 本地测试（DirectRunner）
 适用于开发阶段快速验证管道逻辑，无需分布式集群：
 ```bash
-docker run -it --rm -v /path/to/project:/app apache/beam-java17-sdk:latest \
+docker run -it --rm -v /path/to/project:/app docker.xuanyuan.run/apache/beam-java17-sdk:latest \
   java -cp /app/target/pipeline.jar com.example.TestPipeline \
   --runner=DirectRunner \
   --inputFile=/app/test-data/input.txt \
@@ -123,7 +123,7 @@ docker run -it --rm -v /path/to/project:/app apache/beam-java17-sdk:latest \
 #### 4.4.2 Spark集群执行（SparkRunner）
 需确保容器可访问Spark集群，配置`spark-master`地址：
 ```bash
-docker run -it --rm -v /path/to/project:/app apache/beam-java17-sdk:latest \
+docker run -it --rm -v /path/to/project:/app docker.xuanyuan.run/apache/beam-java17-sdk:latest \
   java -cp /app/target/pipeline.jar com.example.SparkPipeline \
   --runner=SparkRunner \
   --spark-master=spark://spark-master:7077 \
@@ -133,7 +133,7 @@ docker run -it --rm -v /path/to/project:/app apache/beam-java17-sdk:latest \
 #### 4.4.3 Flink集群执行（FlinkRunner）
 需提前部署Flink集群，并配置JobManager地址：
 ```bash
-docker run -it --rm -v /path/to/project:/app apache/beam-java17-sdk:latest \
+docker run -it --rm -v /path/to/project:/app docker.xuanyuan.run/apache/beam-java17-sdk:latest \
   java -cp /app/target/pipeline.jar com.example.FlinkPipeline \
   --runner=FlinkRunner \
   --flink-master=flink-jobmanager:8081 \

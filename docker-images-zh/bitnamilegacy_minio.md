@@ -3,7 +3,7 @@ image: bitnamilegacy/minio
 description: "Bitnami旧版镜像（不再更新）"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/minio
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/minio
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/minio" title="bitnamilegacy/minio Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/minio 中文简介</a>
@@ -20,7 +20,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 若依赖任何旧版镜像，建议立即执行以下操作以确保可用性：
 1. 拉取镜像至本地：
    ```bash
-   docker pull bitnami/[镜像名称]:[标签]
+   docker pull docker.xuanyuan.run/bitnami/[镜像名称]:[标签]
    ```
    （请将`[镜像名称]`和`[标签]`替换为具体镜像信息）
 

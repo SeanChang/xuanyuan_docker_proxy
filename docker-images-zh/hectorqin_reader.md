@@ -3,7 +3,7 @@ image: hectorqin/reader
 description: "阅读3服务器版是一款面向企业与机构的专业文档管理及阅读服务平台，具备高效文档存储、安全权限控制、多终端同步及智能阅读功能，支持多种文件格式，可促进团队协作与信息高效流转，满足企业级文档管理与阅读需求。"
 source: https://xuanyuan.cloud/zh/r/hectorqin/reader
 canonical: https://xuanyuan.cloud/zh/r/hectorqin/reader
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/hectorqin/reader" title="hectorqin/reader Docker 镜像中文简介、标签列表与拉取命令">hectorqin/reader 中文简介</a>
@@ -14,9 +14,9 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 项目说明  
-阅读3网页版是一款无需手机、自带接口服务的在线阅读工具。接口服务基于 [lightink-server]([]) 修改，网页端基于 [阅读3.0Web端]([]) 修改。  
+阅读3网页版是一款无需手机、自带接口服务的在线阅读工具。接口服务基于 [lightink-server]  修改，网页端基于 [阅读3.0Web端]  修改。  
 
-**在线体验**：[[]]([])  
+**在线体验**：[[]]   
 > Demo服务器为腾讯云1M带宽，性能有限，请勿高负载使用  
 > 注：Demo数据不定期清除  
 

@@ -3,7 +3,7 @@ image: mcp/aws-core-mcp-server
 description: "用于使用awslabs MCP服务器的基础镜像"
 source: https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server
 canonical: https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mcp/aws-core-mcp-server" title="mcp/aws-core-mcp-server Docker 镜像中文简介、标签列表与拉取命令">mcp/aws-core-mcp-server 中文简介</a>
@@ -62,7 +62,7 @@ MCP-CORE提示理解工具。
 运行本MCP服务器的Docker命令：
 
 ```bash
-docker run -i --rm mcp/aws-core-mcp-server
+docker run -i --rm docker.xuanyuan.run/mcp/aws-core-mcp-server
 ```
 
 ### 5.2 MCP服务器配置示例

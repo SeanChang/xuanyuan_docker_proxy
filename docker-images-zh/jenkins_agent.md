@@ -3,7 +3,7 @@ image: jenkins/agent
 description: "提供Jenkins代理可执行文件agent.jar的基础镜像。"
 source: https://xuanyuan.cloud/zh/r/jenkins/agent
 canonical: https://xuanyuan.cloud/zh/r/jenkins/agent
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jenkins/agent" title="jenkins/agent Docker 镜像中文简介、标签列表与拉取命令">jenkins/agent 中文简介</a>
@@ -57,14 +57,14 @@ exported_at: 2026-06-02T12:26:10.133Z
 通过控制器命令启动代理时，需先在 Jenkins 控制器中设置 **远程根目录** 为 `/home/jenkins/agent`，然后执行以下命令：
 
 ```sh
-docker run -i --rm --name agent --init jenkins/agent java -jar /usr/share/jenkins/agent.jar
+docker run -i --rm --name agent --init docker.xuanyuan.run/jenkins/agent java -jar /usr/share/jenkins/agent.jar
 ```
 
 #### Windows 容器
 对于 Windows 容器，需设置 **远程根目录** 为 `C:\Users\jenkins\Agent`，然后执行（以 `jdk17-windowsservercore-ltsc2019` 标签为例）：
 
 ```powershell
-docker run -i --rm --name agent --init jenkins/agent:jdk17-windowsservercore-ltsc2019 java -jar C:/ProgramData/Jenkins/agent.jar
+docker run -i --rm --name agent --init docker.xuanyuan.run/jenkins/agent:jdk17-windowsservercore-ltsc2019 java -jar C:/ProgramData/Jenkins/agent.jar
 ```
 
 ### 4.2 代理工作目录
@@ -73,12 +73,12 @@ docker run -i --rm --name agent --init jenkins/agent:jdk17-windowsservercore-lts
 
 #### Linux 示例
 ```sh
-docker run -i --rm --name agent1 --init -v agent1-workdir:/home/jenkins/agent jenkins/agent java -jar /usr/share/jenkins/agent.jar -workDir /home/jenkins/agent
+docker run -i --rm --name agent1 --init -v agent1-workdir:/home/jenkins/agent docker.xuanyuan.run/jenkins/agent java -jar /usr/share/jenkins/agent.jar -workDir /home/jenkins/agent
 ```
 
 #### Windows 容器示例
 ```powershell
-docker run -i --rm --name agent1 --init -v agent1-workdir:C:/Users/jenkins/Work jenkins/agent:jdk17-windowsservercore-ltsc2019 java -jar C:/ProgramData/Jenkins/agent.jar -workDir C:/Users/jenkins/Work
+docker run -i --rm --name agent1 --init -v agent1-workdir:C:/Users/jenkins/Work docker.xuanyuan.run/jenkins/agent:jdk17-windowsservercore-ltsc2019 java -jar C:/ProgramData/Jenkins/agent.jar -workDir C:/Users/jenkins/Work
 ```
 
 ### 4.3 时区配置
@@ -92,21 +92,21 @@ docker run -i --rm --name agent1 --init -v agent1-workdir:C:/Users/jenkins/Work 
 docker run --rm --tty --interactive --entrypoint=date \
   --volume=/etc/localtime:/etc/localtime:ro \
   --volume=/etc/timezone:/etc/timezone:ro \
-  jenkins/agent
+  docker.xuanyuan.run/jenkins/agent
 ```
 
 #### 方式 2：设置 `TZ` 环境变量
 通过 `TZ` 环境变量指定时区（[时区列表参考](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)）：
 
 ```bash
-docker run --rm --tty --interactive --env TZ=Asia/Shanghai --entrypoint=date jenkins/agent
+docker run --rm --tty --interactive --env TZ=Asia/Shanghai --entrypoint=date docker.xuanyuan.run/jenkins/agent
 ```
 
 #### 方式 3：基于本镜像构建自定义镜像时配置
 在 Dockerfile 中设置时区：
 
 ```dockerfile
-FROM jenkins/agent as agent
+FROM docker.xuanyuan.run/jenkins/agent as agent
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/"${TZ}" /etc/localtime && echo "${TZ}" > /etc/timezone \
     && dpkg-reconfigure -f noninteractive tzdata

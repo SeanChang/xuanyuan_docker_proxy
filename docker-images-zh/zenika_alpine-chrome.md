@@ -3,7 +3,7 @@ image: zenika/alpine-chrome
 description: "在极小的Alpine镜像中以无头模式运行的Chrome浏览器，适用于网页测试、自动化和内容生成等场景，体积小巧且功能丰富。"
 source: https://xuanyuan.cloud/zh/r/zenika/alpine-chrome
 canonical: https://xuanyuan.cloud/zh/r/zenika/alpine-chrome
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zenika/alpine-chrome" title="zenika/alpine-chrome Docker 镜像中文简介、标签列表与拉取命令">zenika/alpine-chrome 中文简介</a>

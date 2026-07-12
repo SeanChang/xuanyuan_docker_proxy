@@ -3,7 +3,7 @@ image: anujdatar/cups
 description: "通用UNIX打印系统（CUPS）服务器运行在Docker容器中，该容器化部署方式借助Docker的轻量级虚拟化技术，实现了打印服务的隔离运行、快速部署与跨环境移植，可高效管理网络打印任务、处理打印请求及协调打印机资源，为用户提供稳定且灵活的打印服务支持。"
 source: https://xuanyuan.cloud/zh/r/anujdatar/cups
 canonical: https://xuanyuan.cloud/zh/r/anujdatar/cups
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/anujdatar/cups" title="anujdatar/cups Docker 镜像中文简介、标签列表与拉取命令">anujdatar/cups 中文简介</a>
@@ -11,7 +11,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 含镜像标签、拉取命令、部署文档与相关推荐。
 
 # CUPS-docker  
-[GitHub地址]([])  
+[GitHub地址]   
 
 
 ## 简介  
@@ -30,7 +30,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 快速启动（默认参数）  
 使用默认配置快速启动容器：  
 ```sh
-docker run -d -p 631:631 --device /dev/bus/usb --name cups anujdatar/cups
+docker run -d -p 631:631 --device /dev/bus/usb --name cups docker.xuanyuan.run/anujdatar/cups
 ```  
 
 
@@ -81,7 +81,7 @@ docker run -d --name cups \
 version: "3"
 services:
     cups:
-        image: anujdatar/cups  # 镜像名称
+        image: docker.xuanyuan.run/anujdatar/cups  # 镜像名称
         container_name: cups   # 容器名称
         restart: unless-stopped  # 重启策略
         ports:
@@ -106,4 +106,4 @@ services:
 
 
 ## 致谢  
-本项目基于 **RagingTiger** 的工作开发：[[]]([])
+本项目基于 **RagingTiger** 的工作开发：[[]]

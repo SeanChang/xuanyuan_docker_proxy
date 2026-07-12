@@ -3,7 +3,7 @@ image: nvidia/cuda
 description: "英伟达在GitLab仓库（gitlab.com/nvidia/cuda）提供的CUDA（并行计算平台）和cuDNN（深度神经网络加速库）镜像，为开发者提供了预配置的开发环境，支持高效进行并行计算应用开发、深度学习模型训练及推理任务，确保了环境的一致性和部署的便捷性，是构建基于英伟达GPU加速应用的重要资源。"
 source: https://xuanyuan.cloud/zh/r/nvidia/cuda
 canonical: https://xuanyuan.cloud/zh/r/nvidia/cuda
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nvidia/cuda" title="nvidia/cuda Docker 镜像中文简介、标签列表与拉取命令">nvidia/cuda 中文简介</a>
@@ -56,7 +56,7 @@ cuda-fedora32-x86_64                                                            
 Importing GPG key 0x7FA2AF80:  
  Userid     : "cudatools <[邮箱已删除]>"  
  Fingerprint: AE09 FE4B BD22 3A84 B2CC FCE3 F60F 4B3D 7FA2 AF80  
- From       : https://developer.download.nvidia.com/compute/cuda/repos/fedora32/x86_64/7fa2af80.pub  
+ From       docker.xuanyuan.run/: https://developer.download.nvidia.com/compute/cuda/repos/fedora32/x86_64/7fa2af80.pub  
 Is this ok [y/N]: y  
 Key imported successfully  
 Import of key(s) didn't help, wrong key(s)?  
@@ -81,7 +81,7 @@ Error: GPG check FAILED
 ### 弃用：“latest”标签  
 NGC 和 Docker Hub 上的 CUDA、CUDAGL、OPENGL 镜像已弃用“latest”标签。移除后，以下命令将返回“manifest unknown”错误：  
 ```  
-$ docker pull nvidia/cuda  
+$ docker pull docker.xuanyuan.run/nvidia/cuda  
 Error response from daemon: manifest for nvidia/cuda:latest not found: manifest unknown: manifest unknown  
 ```  
 此为正常现象，非 bug。  

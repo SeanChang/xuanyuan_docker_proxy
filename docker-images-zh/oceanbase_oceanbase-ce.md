@@ -3,7 +3,7 @@ image: oceanbase/oceanbase-ce
 description: "OceanBase是由蚂蚁集团自主研发的开源分布式混合事务/分析处理（HTAP）数据库管理系统，具备高可用性、高并发处理能力和海量数据存储能力，兼容MySQL等主流数据库协议，可同时支持在线事务处理（OLTP）与实时分析处理（OLAP），广泛应用于金融、电商、政务等关键业务领域，为企业提供稳定高效、兼具事务与分析能力的数据服务。"
 source: https://xuanyuan.cloud/zh/r/oceanbase/oceanbase-ce
 canonical: https://xuanyuan.cloud/zh/r/oceanbase/oceanbase-ce
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/oceanbase/oceanbase-ce" title="oceanbase/oceanbase-ce Docker 镜像中文简介、标签列表与拉取命令">oceanbase/oceanbase-ce 中文简介</a>
@@ -15,20 +15,20 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 简介
 
-`oceanbase-ce` Docker 镜像可在 [dockerhub]([])、[quay.io]([]) 和 [ghcr.io]([]) 获取，用于帮助用户快速搭建 OceanBase 测试环境。
+`oceanbase-ce` Docker 镜像可在 [dockerhub] 、[quay.io]  和 [ghcr.io]  获取，用于帮助用户快速搭建 OceanBase 测试环境。
 
 
 ### 核心注意事项
 - 该镜像仅用于测试，**禁止在生产环境使用**。
 - 仅支持部署单实例集群。
-- 不支持 Kubernetes 环境。若需在 Kubernetes 上运行容器化 OceanBase，可参考 [ob-operator]([]) 仓库。
+- 不支持 Kubernetes 环境。若需在 Kubernetes 上运行容器化 OceanBase，可参考 [ob-operator]  仓库。
 
 
 ## 前置条件
 
 部署 `oceanbase-ce` 前，请确保满足以下要求：
 - 主机需至少拥有 2 物理核心和 8GB 内存。
-- 主机已安装并运行 Docker。Docker 安装可参考 [官方指南]([])。
+- 主机已安装并运行 Docker。Docker 安装可参考 [官方指南] 。
 
 
 ## 启动 OceanBase 实例
@@ -37,16 +37,16 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ```bash
 # 部署 mini 模式实例（资源占用最少）
-docker run -p 2881:2881 --name oceanbase-ce -d oceanbase/oceanbase-ce
+docker run -p 2881:2881 --name oceanbase-ce -d docker.xuanyuan.run/oceanbase/oceanbase-ce
 
 # 部署 normal 模式实例（使用容器全部资源）
-docker run -p 2881:2881 --name oceanbase-ce -e MODE=normal -d oceanbase/oceanbase-ce
+docker run -p 2881:2881 --name oceanbase-ce -e MODE=normal -d docker.xuanyuan.run/oceanbase/oceanbase-ce
 
 # 部署 slim 模式实例（快速启动，仅启动 observer）
-docker run -p 2881:2881 --name oceanbase-ce -e MODE=slim -d oceanbase/oceanbase-ce
+docker run -p 2881:2881 --name oceanbase-ce -e MODE=slim -d docker.xuanyuan.run/oceanbase/oceanbase-ce
 
 # 启动时执行初始化 SQL 脚本（注意：不要在脚本中修改 root 密码，若需修改密码请使用 OB_TENANT_PASSWORD 变量）
-docker run -p 2881:2881 --name oceanbase-ce -v {本地SQL脚本目录路径}:/root/boot/init.d -d oceanbase/oceanbase-ce
+docker run -p 2881:2881 --name oceanbase-ce -v {本地SQL脚本目录路径}:/root/boot/init.d -d docker.xuanyuan.run/oceanbase/oceanbase-ce
 ```
 
 初始化过程可能需要 5 分钟，可通过以下命令验证是否完成：
@@ -107,7 +107,7 @@ docker exec -it oceanbase-ce obd test sysbench obcluster
 ```bash
 mkdir -p ob
 mkdir -p obd/cluster
-docker run -d -p 2881:2881 -v $PWD/ob:/root/ob -v $PWD/obd/cluster:/root/.obd/cluster --name oceanbase oceanbase/oceanbase-ce
+docker run -d -p 2881:2881 -v $PWD/ob:/root/ob -v $PWD/obd/cluster:/root/.obd/cluster --name oceanbase docker.xuanyuan.run/oceanbase/oceanbase-ce
 ```
 
 

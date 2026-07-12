@@ -3,7 +3,7 @@ image: linuxserver/syncthing
 description: "LinuxServer.io提供的Syncthing容器，用于跨设备文件同步。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/syncthing
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/syncthing
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/syncthing" title="linuxserver/syncthing Docker 镜像中文简介、标签列表与拉取命令">linuxserver/syncthing 中文简介</a>
@@ -64,7 +64,7 @@ LinuxServer.io 团队提供的此容器镜像具有以下特点：
 ---
 services:
   syncthing:
-    image: lscr.io/linuxserver/syncthing:latest
+    image: docker.xuanyuan.run/linuxserver/syncthing:latest
     container_name: syncthing
     hostname: syncthing # 可选
     environment:
@@ -227,7 +227,7 @@ docker image prune
 
 #### 更新镜像：
 ```bash
-docker pull lscr.io/linuxserver/syncthing:latest
+docker pull docker.xuanyuan.run/linuxserver/syncthing:latest
 ```
 
 #### 停止运行中的容器：
@@ -267,7 +267,7 @@ docker build \
 可使用 `lscr.io/linuxserver/qemu-static` 在 x86_64 硬件上构建 ARM 变体，反之亦然：
 
 ```bash
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```
 
 注册后，可使用 `-f Dockerfile.aarch64` 指定要使用的 dockerfile。

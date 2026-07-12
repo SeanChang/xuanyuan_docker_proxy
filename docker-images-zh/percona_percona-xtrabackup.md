@@ -3,7 +3,7 @@ image: percona/percona-xtrabackup
 description: "Percona XtraBackup 官方Docker镜像，提供高性能MySQL/MariaDB数据库热备份解决方案。支持全量/增量备份及恢复，可在不中断业务的情况下完成数据备份，确保数据一致性与业务连续性。通过轻量级容器化设计简化部署流程，适用于各类数据安全场景，帮助用户高效实现数据备份策略，保障业务数据安全与灾难恢复能力。"
 source: https://xuanyuan.cloud/zh/r/percona/percona-xtrabackup
 canonical: https://xuanyuan.cloud/zh/r/percona/percona-xtrabackup
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/percona/percona-xtrabackup" title="percona/percona-xtrabackup Docker 镜像中文简介、标签列表与拉取命令">percona/percona-xtrabackup 中文简介</a>

@@ -3,7 +3,7 @@ image: triliumnext/trilium
 description: "Trilium Notes 是一款免费开源的跨平台层级笔记应用，专注于构建大型个人知识库，支持深度笔记树结构、富文本编辑、代码笔记、全文搜索、版本控制、加密及多设备同步等功能。"
 source: https://xuanyuan.cloud/zh/r/triliumnext/trilium
 canonical: https://xuanyuan.cloud/zh/r/triliumnext/trilium
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/triliumnext/trilium" title="triliumnext/trilium Docker 镜像中文简介、标签列表与拉取命令">triliumnext/trilium 中文简介</a>
@@ -68,7 +68,7 @@ docker run -d \
   -p 8080:8080 \
   -v /path/to/your/trilium-data:/data \
   --restart unless-stopped \
-  triliumnext/trilium
+  docker.xuanyuan.run/triliumnext/trilium
 ```
 
 **参数说明**：
@@ -87,7 +87,7 @@ version: '3'
 
 services:
   trilium:
-    image: triliumnext/trilium
+    image: docker.xuanyuan.run/triliumnext/trilium
     container_name: trilium
     ports:
       - "8080:8080"  # 主机端口:容器端口，可根据需要修改

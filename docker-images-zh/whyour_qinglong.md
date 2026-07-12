@@ -3,7 +3,7 @@ image: whyour/qinglong
 description: "一款支持TypeScript、JavaScript、Python3及Shell多种编程语言的定时任务管理面板，可帮助用户高效创建、配置和监控各类定时任务，满足不同开发场景下的自动化需求，提升任务执行的稳定性与管理效率。"
 source: https://xuanyuan.cloud/zh/r/whyour/qinglong
 canonical: https://xuanyuan.cloud/zh/r/whyour/qinglong
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/whyour/qinglong" title="whyour/qinglong Docker 镜像中文简介、标签列表与拉取命令">whyour/qinglong 中文简介</a>
@@ -32,9 +32,9 @@ exported_at: 2026-06-02T12:26:10.133Z
 提供 `latest`（基于 Alpine）和 `debian`（基于 Debian-slim）两种镜像。若需依赖 Alpine 不支持的库，建议使用 `debian` 镜像：  
 ```bash
 # 拉取最新镜像（Alpine 基础）
-docker pull whyour/qinglong:latest  
+docker pull docker.xuanyuan.run/whyour/qinglong:latest  
 # 拉取 Debian 基础镜像（依赖兼容性更好）
-docker pull whyour/qinglong:debian  
+docker pull docker.xuanyuan.run/whyour/qinglong:debian  
 ```
 
 ### npm 安装  

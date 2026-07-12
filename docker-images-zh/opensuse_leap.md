@@ -3,7 +3,7 @@ image: opensuse/leap
 description: "官方openSUSE Leap镜像"
 source: https://xuanyuan.cloud/zh/r/opensuse/leap
 canonical: https://xuanyuan.cloud/zh/r/opensuse/leap
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/opensuse/leap" title="opensuse/leap Docker 镜像中文简介、标签列表与拉取命令">opensuse/leap 中文简介</a>
@@ -38,26 +38,26 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 基本运行容器
 运行一个临时的 openSUSE Leap 容器：
 ```bash
-docker run -it --rm opensuse/leap:15.5
+docker run -it --rm docker.xuanyuan.run/opensuse/leap:15.5
 ```
 
 ## 交互式 Shell
 启动一个带有交互式 bash shell 的容器：
 ```bash
-docker run -it opensuse/leap:15.5 /bin/bash
+docker run -it docker.xuanyuan.run/opensuse/leap:15.5 /bin/bash
 ```
 
 ## 作为基础镜像构建自定义镜像
 创建 Dockerfile 以 openSUSE Leap 为基础镜像：
 ```dockerfile
-FROM opensuse/leap:15.5
+FROM docker.xuanyuan.run/opensuse/leap:15.5
 RUN zypper refresh && zypper install -y nginx
 CMD ["nginx", "-g", "daemon off;"]
 ```
 构建并运行自定义镜像：
 ```bash
 docker build -t my-leap-nginx .
-docker run -d -p 80:80 my-leap-nginx
+docker run -d -p 80:80 docker.xuanyuan.run/my-leap-nginx
 ```
 
 # 贡献方式

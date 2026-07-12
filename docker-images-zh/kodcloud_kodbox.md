@@ -3,7 +3,7 @@ image: kodcloud/kodbox
 description: "可道云（Kodbox）最新镜像，这是一款集成文件存储、在线协作、权限管理等功能的企业级云文档管理工具，支持多终端同步与高效团队协作，具备安全的数据加密与灵活的访问控制机制，助力用户轻松实现文件的集中管理与共享，官方网站为[]"
 source: https://xuanyuan.cloud/zh/r/kodcloud/kodbox
 canonical: https://xuanyuan.cloud/zh/r/kodcloud/kodbox
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/kodcloud/kodbox" title="kodcloud/kodbox Docker 镜像中文简介、标签列表与拉取命令">kodcloud/kodbox 中文简介</a>
@@ -16,7 +16,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 一、快速启动  
 若需快速体验可道云，直接运行以下命令启动容器（默认使用 80 端口）：  
 ```bash
-docker run -d -p 80:80 kodcloud/kodbox
+docker run -d -p 80:80 docker.xuanyuan.run/kodcloud/kodbox
 ```
 
 
@@ -30,7 +30,7 @@ docker run -d -p 80:80 kodcloud/kodbox
 
 2. **启动容器并挂载目录**：  
    ```bash
-   docker run -d -p 80:80 -v /data:/var/www/html kodcloud/kodbox
+   docker run -d -p 80:80 -v /data:/var/www/html docker.xuanyuan.run/kodcloud/kodbox
    ```  
    （`/data` 为本地目录，`/var/www/html` 为容器内站点根目录）
 
@@ -41,7 +41,7 @@ docker run -d -p 80:80 kodcloud/kodbox
 ### 使用已有 SSL 证书  
 将证书文件放入本地目录（如 `/path/to/ssl`），启动容器时挂载证书目录至 `/etc/nginx/ssl`，并映射 443 端口：  
 ```bash
-docker run -d -p 443:443 -v "/path/to/ssl":/etc/nginx/ssl --name kodbox kodcloud/kodbox
+docker run -d -p 443:443 -v "/path/to/ssl":/etc/nginx/ssl --name kodbox docker.xuanyuan.run/kodcloud/kodbox
 ```  
 
 
@@ -72,7 +72,7 @@ version: '3.5'
 
 services:
   db:  # 数据库服务（MariaDB）
-    image: mariadb:lts
+    image: docker.xuanyuan.run/mariadb:lts
     volumes:
       - "./db:/var/lib/mysql"  # 本地数据库目录（可修改为实际路径）
     environment:
@@ -80,7 +80,7 @@ services:
     # 其他配置：事务隔离、自动升级等
 
   app:  # 可道云应用服务
-    image: kodcloud/kodbox
+    image: docker.xuanyuan.run/kodcloud/kodbox
     ports:
       - 80:80  # 左侧为本地访问端口（可修改，如 8080:80）
     volumes:
@@ -93,7 +93,7 @@ services:
       - redis
 
   redis:  # 缓存服务（Redis）
-    image: redis:alpine
+    image: docker.xuanyuan.run/redis:alpine
 ```  
 
 
@@ -128,6 +128,6 @@ services:
 
 ## 六、其他设置  
 更多高级配置（如自定义容器 IP、挂载 NFS/SMB 卷），可参考官方文档：  
-- [自定义容器 IP]([])  
-- [挂载 NFS 卷]([])  
-- [挂载 SMB 卷]([])
+- [自定义容器 IP]   
+- [挂载 NFS 卷]   
+- [挂载 SMB 卷]

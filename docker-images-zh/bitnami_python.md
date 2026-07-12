@@ -3,7 +3,7 @@ image: bitnami/python
 description: "Bitnami 提供的 Python 安全镜像，基于 Photon Linux 构建，具备加固安全、漏洞管理及合规支持等特性。"
 source: https://xuanyuan.cloud/zh/r/bitnami/python
 canonical: https://xuanyuan.cloud/zh/r/bitnami/python
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/python" title="bitnami/python Docker 镜像中文简介、标签列表与拉取命令">bitnami/python 中文简介</a>
@@ -22,7 +22,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 概览
 
 ```console
-docker run -it --name python bitnami/python
+docker run -it --name python docker.xuanyuan.run/bitnami/python
 ```
 
 这是由 Bitnami 构建和维护的经过加固、CVE 数量极少的镜像。Bitnami 安全镜像（BSI）基于云优化、安全加固的企业级操作系统 [Photon Linux](https://vmware.github.io/photon/) 构建。选择 BSI 镜像的理由：
@@ -60,13 +60,13 @@ docker run -it --name python bitnami/python
 获取 Bitnami Python 镜像的推荐方式是从 [Docker Hub 仓库](https://hub.docker.com/r/bitnami/python) 拉取预构建镜像。
 
 ```console
-docker pull bitnami/python:latest
+docker pull docker.xuanyuan.run/bitnami/python:latest
 ```
 
 如需使用特定版本，您可以拉取带版本号的标签。您可以在 Docker Hub 仓库中查看 [可用版本列表](https://hub.docker.com/r/bitnami/python/tags/)。
 
 ```console
-docker pull bitnami/python:[TAG]
+docker pull docker.xuanyuan.run/bitnami/python:[TAG]
 ```
 
 如果您愿意，也可以通过克隆仓库、进入包含 Dockerfile 的目录并执行 `docker build` 命令来自行构建镜像。请记得将以下示例命令中的 `APP`、`VERSION` 和 `OPERATING-SYSTEM` 路径占位符替换为正确的值。
@@ -82,7 +82,7 @@ docker build -t bitnami/APP:latest .
 默认情况下，运行此镜像将使您进入 Python REPL，您可以在其中交互式地测试和尝试 Python 功能。
 
 ```console
-docker run -it --name python bitnami/python
+docker run -it --name python docker.xuanyuan.run/bitnami/python
 ```
 
 ## 配置
@@ -92,7 +92,7 @@ docker run -it --name python bitnami/python
 Python 镜像的默认工作目录为 `/app`。您可以将主机上包含 Python 脚本的文件夹挂载到此目录，然后使用 `python` 命令正常运行脚本。
 
 ```console
-docker run -it --name python -v /path/to/app:/app bitnami/python \
+docker run -it --name python -v /path/to/app:/app docker.xuanyuan.run/bitnami/python \
   python script.py
 ```
 
@@ -101,15 +101,15 @@ docker run -it --name python -v /path/to/app:/app bitnami/python \
 如果您的 Python 应用有定义依赖的 `requirements.txt` 文件，您可以在运行应用前安装依赖。
 
 ```console
-docker run --rm -v /path/to/app:/app bitnami/python pip install -r requirements.txt
-docker run -it --name python -v /path/to/app:/app bitnami/python python script.py
+docker run --rm -v /path/to/app:/app docker.xuanyuan.run/bitnami/python pip install -r requirements.txt
+docker run -it --name python -v /path/to/app:/app docker.xuanyuan.run/bitnami/python python script.py
 ```
 
 或使用 Docker Compose：
 
 ```yaml
 python:
-  image: bitnami/python:latest
+  image: docker.xuanyuan.run/bitnami/python:latest
   command: "sh -c 'pip install -r requirements.txt && python script.py'"
   volumes:
     - .:/app
@@ -129,7 +129,7 @@ Bitnami 会在 upstream 发布 Python 更新（包括安全补丁）后尽快提
 #### 步骤 1：获取更新后的镜像
 
 ```console
-docker pull bitnami/python:latest
+docker pull docker.xuanyuan.run/bitnami/python:latest
 ```
 
 如果使用 Docker Compose，请将 `image` 属性的值更新为 `bitnami/python:latest`。
@@ -151,7 +151,7 @@ docker-compose rm -v python
 使用新镜像重新创建容器。
 
 ```console
-docker run --name python bitnami/python:latest
+docker run --name python docker.xuanyuan.run/bitnami/python:latest
 ```
 
 或使用 Docker Compose：

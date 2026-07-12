@@ -3,7 +3,7 @@ image: bitnamicharts/rabbitmq
 description: "Bitnami的RabbitMQ Helm chart，用于在Kubernetes环境中便捷、可靠地部署和管理RabbitMQ消息队列。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/rabbitmq
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/rabbitmq
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/rabbitmq" title="bitnamicharts/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/rabbitmq 中文简介</a>

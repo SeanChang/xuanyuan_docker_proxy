@@ -3,7 +3,7 @@ image: redislabs/redis
 description: "Redis Labs提供的集群化内存数据库引擎，完全兼容开源Redis，具备企业级特性，支持高性能、零停机线性扩展和高可用性，适用于分布式应用场景。"
 source: https://xuanyuan.cloud/zh/r/redislabs/redis
 canonical: https://xuanyuan.cloud/zh/r/redislabs/redis
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/redislabs/redis" title="redislabs/redis Docker 镜像中文简介、标签列表与拉取命令">redislabs/redis 中文简介</a>
@@ -65,7 +65,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 1. **运行 Redis Enterprise 容器**
 
 ```bash
-docker run -d --cap-add sys_resource --name rp -p 8443:8443 -p 9443:9443 -p 12000:12000 redislabs/redis
+docker run -d --cap-add sys_resource --name rp -p 8443:8443 -p 9443:9443 -p 12000:12000 docker.xuanyuan.run/redislabs/redis
 ```
 
 2. **使用 `rladmin` 工具和 `create cluster` 命令配置 Redis Enterprise 集群**
@@ -106,7 +106,7 @@ Redis Enterprise Software 容器可在安装 Docker 的 MacOS、Linux 和 Window
 端口 8443 用于管理 UI，端口 12000 预留用于后续步骤创建的 Redis 数据库。
 
 ```bash
-docker run -d --cap-add sys_resource --name rp -p 8443:8443 -p 12000:12000 redislabs/redis
+docker run -d --cap-add sys_resource --name rp -p 8443:8443 -p 12000:12000 docker.xuanyuan.run/redislabs/redis
 ```
 
 2. **通过访问 `https://localhost:8443` 打开 RS Web 控制台进行设置**

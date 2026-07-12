@@ -3,7 +3,7 @@ image: flowgunso/seafile-client
 description: "用于同步一个或多个Seafile库，支持双因素认证、密码保护、上传限制及每周更新的Docker镜像。"
 source: https://xuanyuan.cloud/zh/r/flowgunso/seafile-client
 canonical: https://xuanyuan.cloud/zh/r/flowgunso/seafile-client
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/flowgunso/seafile-client" title="flowgunso/seafile-client Docker 镜像中文简介、标签列表与拉取命令">flowgunso/seafile-client 中文简介</a>
@@ -71,7 +71,7 @@ version: "3"
 
 services:
   seafile-client:
-    image: flrnnc/seafile-client:latest
+    image: docker.xuanyuan.run/flrnnc/seafile-client:latest
     volumes:
       - audio:/library/audio       # 音频库数据卷（同步到 /library/audio）
       - documents:/library/documents  # 文档库数据卷（同步到 /library/documents）
@@ -156,7 +156,7 @@ version: "3"
 
 services:
   seafile-client:
-    image: flrnnc/seafile-client:latest
+    image: docker.xuanyuan.run/flrnnc/seafile-client:latest
     volumes:
       - media:/library/media       # 媒体库数据卷（供 Plex 等容器挂载）
       - docs:/library/docs         # 文档库数据卷（供 Nextcloud 等容器挂载）

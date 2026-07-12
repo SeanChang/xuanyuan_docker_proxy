@@ -3,7 +3,7 @@ image: bitnami/minio-client
 description: "Bitnami提供的minio-client安全镜像，用于管理MinIO对象存储，具备安全可靠的部署特性。"
 source: https://xuanyuan.cloud/zh/r/bitnami/minio-client
 canonical: https://xuanyuan.cloud/zh/r/bitnami/minio-client
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/minio-client" title="bitnami/minio-client Docker 镜像中文简介、标签列表与拉取命令">bitnami/minio-client 中文简介</a>
@@ -23,7 +23,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 快速使用
 
 ```console
-docker run --name minio-client bitnami/minio-client:latest
+docker run --name minio-client docker.xuanyuan.run/bitnami/minio-client:latest
 ```
 
 
@@ -70,13 +70,13 @@ docker run --name minio-client bitnami/minio-client:latest
 获取Bitnami MinIO(R) Client Docker镜像的推荐方式是从[Docker Hub Registry](https://hub.docker.com/r/bitnami/minio-client)拉取预构建镜像。
 
 ```console
-docker pull bitnami/minio-client:latest
+docker pull docker.xuanyuan.run/bitnami/minio-client:latest
 ```
 
 如需使用特定版本，可拉取带版本的标签。您可以在Docker Hub Registry中查看[可用版本列表](https://hub.docker.com/r/bitnami/minio-client/tags/)。
 
 ```console
-docker pull bitnami/minio-client:[标签]
+docker pull docker.xuanyuan.run/bitnami/minio-client:[标签]
 ```
 
 如果需要，您也可以自行构建镜像：克隆仓库，进入包含Dockerfile的目录，执行`docker build`命令。请将以下示例命令中的`APP`、`VERSION`和`OPERATING-SYSTEM`路径占位符替换为正确值。
@@ -117,7 +117,7 @@ docker build -t bitnami/APP:latest .
 运行容器并直接执行`mc`命令：
 
 ```console
-docker run --rm bitnami/minio-client:latest --help
+docker run --rm docker.xuanyuan.run/bitnami/minio-client:latest --help
 ```
 
 上述命令将输出`mc`工具的帮助信息，展示所有支持的命令。
@@ -141,7 +141,7 @@ docker run -d \
   --network minio-network \
   -e MINIO_ROOT_USER=minio-root-user \
   -e MINIO_ROOT_PASSWORD=minio-root-password \
-  bitnami/minio:latest
+  docker.xuanyuan.run/bitnami/minio:latest
 ```
 
 3. **使用客户端连接并操作**：
@@ -155,7 +155,7 @@ docker run --rm \
   -e MINIO_SERVER_HOST=minio-server \
   -e MINIO_SERVER_ROOT_USER=minio-root-user \
   -e MINIO_SERVER_ROOT_PASSWORD=minio-root-password \
-  bitnami/minio-client:latest \
+  docker.xuanyuan.run/bitnami/minio-client:latest \
   mb minio/my-bucket
 ```
 
@@ -171,7 +171,7 @@ docker run --rm \
   -e MINIO_SERVER_PORT_NUMBER=9000 \
   -e MINIO_SERVER_ROOT_USER=AKIAEXAMPLE \
   -e MINIO_SERVER_ROOT_PASSWORD=secret123 \
-  bitnami/minio-client:latest \
+  docker.xuanyuan.run/bitnami/minio-client:latest \
   ls minio
 ```
 

@@ -3,7 +3,7 @@ image: library/celery
 description: "该镜像已弃用，请改用“python”镜像。"
 source: https://xuanyuan.cloud/zh/r/library/celery
 canonical: https://xuanyuan.cloud/zh/r/library/celery
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/celery" title="library/celery Docker 镜像中文简介、标签列表与拉取命令">library/celery 中文简介</a>
@@ -45,18 +45,18 @@ Celery 是一个基于分布式消息传递的开源异步任务队列/作业队
 #### 1. 连接 RabbitMQ 启动 Worker
 ```bash
 # 假设已启动 RabbitMQ 容器（名称：some-rabbit）
-docker run --link some-rabbit:rabbit --name some-celery -d celery
+docker run --link some-rabbit:rabbit --name some-celery -d docker.xuanyuan.run/celery
 ```
 
 #### 2. 检查集群状态
 ```bash
-docker run --link some-rabbit:rabbit --rm celery celery status
+docker run --link some-rabbit:rabbit --rm docker.xuanyuan.run/celery celery status
 ```
 
 #### 3. 连接 Redis 启动 Worker
 ```bash
 # 假设已启动 Redis 容器（名称：some-redis）
-docker run --link some-redis:redis -e CELERY_BROKER_URL=redis://redis --name some-celery -d celery
+docker run --link some-redis:redis -e CELERY_BROKER_URL=redis://redis --name some-celery -d docker.xuanyuan.run/celery
 ```
 
 

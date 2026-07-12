@@ -3,7 +3,7 @@ image: atmoz/sftp
 description: "易于使用的SFTP服务器"
 source: https://xuanyuan.cloud/zh/r/atmoz/sftp
 canonical: https://xuanyuan.cloud/zh/r/atmoz/sftp
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/atmoz/sftp" title="atmoz/sftp Docker 镜像中文简介、标签列表与拉取命令">atmoz/sftp 中文简介</a>
@@ -86,7 +86,7 @@ SFTP 镜像是一个基于 OpenSSH 的轻量级、易用的 SSH 文件传输协�
 ### 最简单的 docker run 示例
 
 ```bash
-docker run -p 22:22 -d atmoz/sftp foo:pass:::upload
+docker run -p 22:22 -d docker.xuanyuan.run/atmoz/sftp foo:pass:::upload
 ```
 
 **说明**：  
@@ -110,7 +110,7 @@ docker run \
 
 ```yaml
 sftp:
-    image: atmoz/sftp
+    image: docker.xuanyuan.run/atmoz/sftp
     volumes:
         - /host/path/upload:/home/foo/upload  # 挂载主机目录
     ports:
@@ -152,7 +152,7 @@ sftp -P 2222 foo@<主机IP>  # -P 指定主机端口（2222），foo 为用户�
 ```bash
 docker run \
     -v /host/path/share:/home/foo/share \
-    -p 2222:22 -d atmoz/sftp \
+    -p 2222:22 -d docker.xuanyuan.run/atmoz/sftp \
     'foo:$1$0G2g0GSt$ewU0t6GXG15.0hWoOX8X9.:e:1001'  # 加密密码（MD5格式），UID=1001
 ```
 
@@ -196,7 +196,7 @@ docker run \
        -v /host/path/ssh_host_ed25519_key:/etc/ssh/ssh_host_ed25519_key \
        -v /host/path/ssh_host_rsa_key:/etc/ssh/ssh_host_rsa_key \
        -v /host/path/share:/home/foo/share \
-       -p 2222:22 -d atmoz/sftp \
+       -p 2222:22 -d docker.xuanyuan.run/atmoz/sftp \
        foo::1001
    ```
 

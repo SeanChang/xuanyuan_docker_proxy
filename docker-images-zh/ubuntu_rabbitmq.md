@@ -3,7 +3,7 @@ image: ubuntu/rabbitmq
 description: "基于Ubuntu的RabbitMQ镜像 - 一个开源的多协议消息代理。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/rabbitmq
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/rabbitmq
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/rabbitmq" title="ubuntu/rabbitmq Docker 镜像中文简介、标签列表与拉取命令">ubuntu/rabbitmq 中文简介</a>
@@ -44,7 +44,7 @@ LTS 频道提供长达 5 年的免费安全维护。
 在本地启动此镜像：
 
 ```sh
-docker run -d --name rabbitmq-container -e TZ=UTC -p 5672:5672 -p 15672:15672 ubuntu/rabbitmq:3.12-24.04_edge
+docker run -d --name rabbitmq-container -e TZ=UTC -p 5672:5672 -p 15672:15672 docker.xuanyuan.run/ubuntu/rabbitmq:3.12-24.04_edge
 ```
 使用 AMQP 和 HTTPS 客户端（无 TLS）访问您的 RabbitMQ 实例。
 

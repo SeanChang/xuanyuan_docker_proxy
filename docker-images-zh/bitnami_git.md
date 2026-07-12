@@ -3,7 +3,7 @@ image: bitnami/git
 description: "Bitnami Git安全镜像，用于安全运行Git版本控制系统，具备预配置和安全加固特性，支持快速部署与使用。"
 source: https://xuanyuan.cloud/zh/r/bitnami/git
 canonical: https://xuanyuan.cloud/zh/r/bitnami/git
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/git" title="bitnami/git Docker 镜像中文简介、标签列表与拉取命令">bitnami/git 中文简介</a>
@@ -46,7 +46,7 @@ Bitnami Git 镜像是由 Bitnami 构建和维护的硬化、最小化 CVE 安全
 使用以下命令快速启动 Bitnami Git 容器：
 
 ```console
-docker run --name git bitnami/git:latest
+docker run --name git docker.xuanyuan.run/bitnami/git:latest
 ```
 
 
@@ -56,13 +56,13 @@ docker run --name git bitnami/git:latest
 从 Docker Hub  registry 拉取预构建镜像：
 
 ```console
-docker pull bitnami/git:latest
+docker pull docker.xuanyuan.run/bitnami/git:latest
 ```
 
 如需使用特定版本，可拉取带版本标签的镜像。查看 [Docker Hub 上的可用版本列表](https://hub.docker.com/r/bitnami/git/tags/)：
 
 ```console
-docker pull bitnami/git:[TAG]
+docker pull docker.xuanyuan.run/bitnami/git:[TAG]
 ```
 
 #### 本地构建镜像
@@ -81,7 +81,7 @@ docker build -t bitnami/APP:latest .
 通过 `docker run` 在容器内执行 Git 命令，例如查看 Git 版本：
 
 ```console
-docker run --name git bitnami/git:latest git --version
+docker run --name git docker.xuanyuan.run/bitnami/git:latest git --version
 ```
 
 #### FIPS 配置（Bitnami Secure Images）

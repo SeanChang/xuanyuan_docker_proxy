@@ -3,7 +3,7 @@ image: mongodb/mongodb-atlas-local
 description: "通过Docker创建、管理和自动化MongoDB Atlas Local资源"
 source: https://xuanyuan.cloud/zh/r/mongodb/mongodb-atlas-local
 canonical: https://xuanyuan.cloud/zh/r/mongodb/mongodb-atlas-local
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mongodb/mongodb-atlas-local" title="mongodb/mongodb-atlas-local Docker 镜像中文简介、标签列表与拉取命令">mongodb/mongodb-atlas-local 中文简介</a>
@@ -21,11 +21,11 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 快速开始
 1. 拉取Docker镜像。
 
-> 要拉取最新的Docker镜像，运行`docker pull mongodb/mongodb-atlas-local`。
+> 要拉取最新的Docker镜像，运行`docker pull docker.xuanyuan.run/mongodb/mongodb-atlas-local`。
 
-> 如果运行`docker pull mongodb/mongodb-atlas-local`时未指定版本标签，Docker会自动拉取最新版本的Docker镜像（`mongodb/mongodb-atlas-local:latest`）。
+> 如果运行`docker pull docker.xuanyuan.run/mongodb/mongodb-atlas-local`时未指定版本标签，Docker会自动拉取最新版本的Docker镜像（`mongodb/mongodb-atlas-local:latest`）。
 
-> 要拉取特定版本的Docker镜像，运行以下命令，将`<tag>`替换为版本标签：`docker pull mongodb/mongodb-atlas-local:<tag>`。
+> 要拉取特定版本的Docker镜像，运行以下命令，将`<tag>`替换为版本标签：`docker pull docker.xuanyuan.run/mongodb/mongodb-atlas-local:<tag>`。
 
 2. 运行数据库 `docker run -p 27017:27017 --name atlas-local mongodb/mongodb-atlas-local`
 

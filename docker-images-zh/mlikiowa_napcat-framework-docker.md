@@ -3,7 +3,7 @@ image: mlikiowa/napcat-framework-docker
 description: "napcat-framework-docker是NapCat框架的Docker镜像，用于简化NapCat框架的部署与运行，提供容器化环境以快速搭建基于NapCat的应用（如QQ机器人），支持环境隔离、配置持久化与便捷扩展，适用于开发和生产环境中NapCat服务的快速部署。"
 source: https://xuanyuan.cloud/zh/r/mlikiowa/napcat-framework-docker
 canonical: https://xuanyuan.cloud/zh/r/mlikiowa/napcat-framework-docker
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mlikiowa/napcat-framework-docker" title="mlikiowa/napcat-framework-docker Docker 镜像中文简介、标签列表与拉取命令">mlikiowa/napcat-framework-docker 中文简介</a>
@@ -43,9 +43,9 @@ napcat-framework-docker是NapCat框架的官方Docker镜像，旨在提供便捷
 从Docker Hub或私有仓库拉取镜像：
 
 ```bash
-docker pull napcat/napcat-framework:latest  # 拉取最新稳定版
+docker pull docker.xuanyuan.run/napcat/napcat-framework:latest  # 拉取最新稳定版
 # 或指定版本标签
-docker pull napcat/napcat-framework:v1.0.0
+docker pull docker.xuanyuan.run/napcat/napcat-framework:v1.0.0
 ```
 
 ### 基本运行命令
@@ -92,7 +92,7 @@ docker run -d --name napcat-service \
 version: '3.8'
 services:
   napcat:
-    image: napcat/napcat-framework:latest
+    image: docker.xuanyuan.run/napcat/napcat-framework:latest
     container_name: napcat-service
     restart: always
     ports:
@@ -147,5 +147,5 @@ docker logs -f napcat-service  # 实时查看日志
 - 定期拉取最新镜像以获取安全更新和功能优化：
 
 ```bash
-docker pull napcat/napcat-framework:latest
+docker pull docker.xuanyuan.run/napcat/napcat-framework:latest
 docker-compose pull  # 使用Compose时更新镜像

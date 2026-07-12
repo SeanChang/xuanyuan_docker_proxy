@@ -3,7 +3,7 @@ image: nyanmisaka/jellyfin
 description: "nyanmisaka开发的Jellyfin 10.10.7开发版（发布日期2023年7月30日）是一款功能强大的开源媒体服务器软件，主要用于帮助用户集中管理、组织和流式传输本地媒体文件，涵盖视频、音频、图片等多种格式，作为开发版本，它可能集成了最新的技术更新、功能增强以及问题修复，致力于提升媒体库管理效率和跨设备播放的稳定性，为用户打造更优质、便捷的个人媒体中心体验。"
 source: https://xuanyuan.cloud/zh/r/nyanmisaka/jellyfin
 canonical: https://xuanyuan.cloud/zh/r/nyanmisaka/jellyfin
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nyanmisaka/jellyfin" title="nyanmisaka/jellyfin Docker 镜像中文简介、标签列表与拉取命令">nyanmisaka/jellyfin 中文简介</a>
@@ -14,7 +14,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ### 项目基本信息  
-- **GitHub地址**：[[]]([])  
+- **GitHub地址**：[[]]   
 - **最新版本**：10.10.7 dev（更新日期：25/07/30）  
 
 
@@ -43,7 +43,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ### Windows构建版本下载  
 - Google Drive：[]()  
-- 百度网盘：[[]]([])（提取码：q8we）  
+- 百度网盘：[[]] （提取码：q8we）  
 
 
 ### 硬件支持详情  
@@ -110,4 +110,4 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 支持与捐赠  
 你的支持是项目持续优化的动力！可通过支付宝扫描下方二维码捐赠：  
 
-[![alipay]([])]([])
+[![alipay] ]

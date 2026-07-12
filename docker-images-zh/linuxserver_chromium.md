@@ -3,7 +3,7 @@ image: linuxserver/chromium
 description: "linuxserver/chromium是基于开源浏览器项目Chromium的Docker镜像，支持通过Web界面访问，提供多架构支持、GPU加速、安全配置选项及定期更新，适用于在容器环境中运行浏览器的场景。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/chromium
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/chromium
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/chromium" title="linuxserver/chromium Docker 镜像中文简介、标签列表与拉取命令">linuxserver/chromium 中文简介</a>
@@ -142,7 +142,7 @@ sudo systemctl restart docker
 ```yaml
 services:
   chromium:
-    image: lscr.io/linuxserver/chromium:latest
+    image: docker.xuanyuan.run/linuxserver/chromium:latest
     deploy:
       resources:
         reservations:
@@ -186,7 +186,7 @@ proot-apps install filezilla
 ---
 services:
   chromium:
-    image: lscr.io/linuxserver/chromium:latest
+    image: docker.xuanyuan.run/linuxserver/chromium:latest
     container_name: chromium
     environment:
       - PUID=1000
@@ -322,7 +322,7 @@ uid=1000(your_user) gid=1000(your_user) groups=1000(your_user)
 
 * 更新镜像：
   ```bash
-  docker pull lscr.io/linuxserver/chromium:latest
+  docker pull docker.xuanyuan.run/linuxserver/chromium:latest
   ```
 
 * 停止运行中的容器：

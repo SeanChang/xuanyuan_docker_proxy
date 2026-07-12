@@ -3,7 +3,7 @@ image: playwright/chromium
 description: "为Moon软件设计的Playwright Chromium镜像，提供浏览器自动化运行环境。"
 source: https://xuanyuan.cloud/zh/r/playwright/chromium
 canonical: https://xuanyuan.cloud/zh/r/playwright/chromium
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/playwright/chromium" title="playwright/chromium Docker 镜像中文简介、标签列表与拉取命令">playwright/chromium 中文简介</a>
@@ -67,7 +67,7 @@ version: '3.8'
 
 services:
   moon-playwright-chromium:
-    image: aerokube/moon-playwright-chromium:latest
+    image: docker.xuanyuan.run/aerokube/moon-playwright-chromium:latest
     networks:
       - moon-network
     environment:

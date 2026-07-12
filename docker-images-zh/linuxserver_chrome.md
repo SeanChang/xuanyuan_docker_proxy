@@ -3,7 +3,7 @@ image: linuxserver/chrome
 description: "LinuxServer提供的Chrome浏览器容器镜像，用于在隔离环境中运行Chrome，支持网页测试、自动化操作及服务器端网页渲染等场景。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/chrome
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/chrome
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/chrome" title="linuxserver/chrome Docker 镜像中文简介、标签列表与拉取命令">linuxserver/chrome 中文简介</a>
@@ -160,7 +160,7 @@ sudo systemctl restart docker
 ```yaml
 services:
   chrome:
-    image: lscr.io/linuxserver/chrome:latest
+    image: docker.xuanyuan.run/linuxserver/chrome:latest
     deploy:
       resources:
         reservations:
@@ -178,7 +178,7 @@ services:
 ---
 services:
   chrome:
-    image: lscr.io/linuxserver/chrome:latest
+    image: docker.xuanyuan.run/linuxserver/chrome:latest
     container_name: chrome
     environment:
       - PUID=1000
@@ -361,7 +361,7 @@ environment:
 - 更新镜像：
 
     ```bash
-    docker pull lscr.io/linuxserver/chrome:latest
+    docker pull docker.xuanyuan.run/linuxserver/chrome:latest
     ```
 
 - 停止运行中的容器：

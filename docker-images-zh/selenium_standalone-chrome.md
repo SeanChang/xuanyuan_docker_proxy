@@ -3,7 +3,7 @@ image: selenium/standalone-chrome
 description: "Selenium Grid的独立模式（Standalone mode）是一种集成了中心节点（hub）与执行节点（node）功能的简化测试部署方式，配合Chrome浏览器使用时，可在本地或小型测试环境中通过单一进程便捷启动，支持并行执行基于Selenium的自动化测试脚本，无需额外配置独立的中心节点与执行节点，有效简化测试环境搭建流程，提升测试效率，适用于快速验证测试用例或小规模自动化测试场景。"
 source: https://xuanyuan.cloud/zh/r/selenium/standalone-chrome
 canonical: https://xuanyuan.cloud/zh/r/selenium/standalone-chrome
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/selenium/standalone-chrome" title="selenium/standalone-chrome Docker 镜像中文简介、标签列表与拉取命令">selenium/standalone-chrome 中文简介</a>
@@ -14,7 +14,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 简介  
-此镜像包含带Chrome浏览器的[Selenium Grid Standalone]([])，可直接用于[远程运行WebDriver测试]([])。  
+此镜像包含带Chrome浏览器的[Selenium Grid Standalone] ，可直接用于[远程运行WebDriver测试] 。  
 
 
 ## 如何运行镜像  
@@ -23,7 +23,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 1. **启动Standalone Chrome实例**  
    执行以下Docker命令启动服务：  
    ```bash  
-   docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-chrome:latest  
+   docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" docker.xuanyuan.run/selenium/standalone-chrome:latest
    ```  
 
 2. **配置测试指向地址**  
@@ -39,7 +39,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ### 注意事项  
 - 运行包含浏览器的镜像时，需添加 `--shm-size=2g` 参数，确保使用主机的共享内存，避免性能问题。  
-- 示例中使用 `latest` 标签（自动拉取最新版本），但建议使用**完整标签**固定浏览器和Grid版本，具体可参考 [标签命名规范]([])。  
+- 示例中使用 `latest` 标签（自动拉取最新版本），但建议使用**完整标签**固定浏览器和Grid版本，具体可参考 [标签命名规范] 。  
 
 
 ## 如何选择正确的标签  
@@ -84,8 +84,8 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 完整文档  
-Docker-Selenium项目在GitHub提供了详细的[使用说明]([])，可根据具体场景配置镜像。  
+Docker-Selenium项目在GitHub提供了详细的[使用说明] ，可根据具体场景配置镜像。  
 
 
 ## 许可证  
-项目由志愿者社区开发维护，源代码基于 [Apache License 2.0]([]) 开源。
+项目由志愿者社区开发维护，源代码基于 [Apache License 2.0]  开源。

@@ -3,7 +3,7 @@ image: linuxserver/nextcloud
 description: "LinuxServer.io提供的Nextcloud容器，用于搭建私有云存储、文件同步与共享平台。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/nextcloud
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/nextcloud
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/nextcloud" title="linuxserver/nextcloud Docker 镜像中文简介、标签列表与拉取命令">linuxserver/nextcloud 中文简介</a>
@@ -116,7 +116,7 @@ volumes:
 ---
 services:
   nextcloud:
-    image: lscr.io/linuxserver/nextcloud:latest
+    image: docker.xuanyuan.run/linuxserver/nextcloud:latest
     container_name: nextcloud
     environment:
       - PUID=1000        # 容器内用户ID（需与宿主机目录权限匹配）
@@ -141,7 +141,7 @@ docker run -d \
   -v /path/to/nextcloud/config:/config \
   -v /path/to/data:/data \
   --restart unless-stopped \
-  lscr.io/linuxserver/nextcloud:latest
+  docker.xuanyuan.run/linuxserver/nextcloud:latest
 ```
 
 
@@ -229,7 +229,7 @@ docker image prune
 ### 通过docker cli更新
 ```bash
 # 更新镜像
-docker pull lscr.io/linuxserver/nextcloud:latest
+docker pull docker.xuanyuan.run/linuxserver/nextcloud:latest
 # 停止并删除旧容器
 docker stop nextcloud && docker rm nextcloud
 # 重新创建容器（保留卷数据）
@@ -255,7 +255,7 @@ docker build \
 ```
 跨架构构建（如x86_64构建ARM镜像）需先注册qemu-static：
 ```bash
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```
 然后使用对应架构的Dockerfile（如 `-f Dockerfile.aarch64`）。
 

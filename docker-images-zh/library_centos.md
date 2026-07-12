@@ -3,7 +3,7 @@ image: library/centos
 description: "已弃用；CentOS的官方版本，该版本此前作为基于红帽企业Linux（RHEL）源代码构建的社区企业级Linux发行版，以稳定、可靠的特性广泛应用于服务器及企业级应用场景，目前已停止官方维护与更新支持。"
 source: https://xuanyuan.cloud/zh/r/library/centos
 canonical: https://xuanyuan.cloud/zh/r/library/centos
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/centos" title="library/centos Docker 镜像中文简介、标签列表与拉取命令">library/centos 中文简介</a>
@@ -15,25 +15,25 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 弃用通知  
 该镜像的**所有标签均已停止支持（EOL）**。具体信息如下：  
-- 官方EOL日期：2024年6月30日（参考[Red Hat公告]([])及[docker-library/official-images#17094]([])）。  
-- 最后一次有效更新时间：2020年11月16日（早于EOL日期，详见[docker-library/official-images#9102]([])）。  
-更多背景可查看[CentOS官方EOL说明]([])及[docker-library/docs#2205]([])。请用户根据实际需求调整使用。
+- 官方EOL日期：2024年6月30日（参考[Red Hat公告] 及[docker-library/official-images#17094] ）。  
+- 最后一次有效更新时间：2020年11月16日（早于EOL日期，详见[docker-library/official-images#9102] ）。  
+更多背景可查看[CentOS官方EOL说明] 及[docker-library/docs#2205] 。请用户根据实际需求调整使用。
 
 
 ## 快速参考  
 
 ### 基础信息  
-- **维护方**：[CentOS项目]([])  
-- **获取帮助**：[Docker社区Slack]([])、[Server Fault]([])、[Unix & Linux Stack Exchange]([])或[Stack Overflow]([])  
+- **维护方**：[CentOS项目]   
+- **获取帮助**：[Docker社区Slack] 、[Server Fault] 、[Unix & Linux Stack Exchange] 或[Stack Overflow]   
 - **支持的标签**：无  
-- **提交问题**：[CentOS Bug跟踪]([])或[GitHub Issues]([])  
+- **提交问题**：[CentOS Bug跟踪] 或[GitHub Issues]   
 - **支持的架构**：无  
 
 
 ### 镜像详情  
-- **工件信息**：[repo-info仓库的`repos/centos/`目录]([])（含镜像元数据、传输大小等，[历史记录]([])）  
-- **更新记录**：[official-images仓库`library/centos`标签]([])及[配置文件]([])（[历史记录]([])）  
-- **本文档来源**：[docs仓库`centos/`目录]([])（[历史记录]([])）  
+- **工件信息**：[repo-info仓库的`repos/centos/`目录] （含镜像元数据、传输大小等，[历史记录] ）  
+- **更新记录**：[official-images仓库`library/centos`标签] 及[配置文件] （[历史记录] ）  
+- **本文档来源**：[docs仓库`centos/`目录] （[历史记录] ）  
 
 
 ## CentOS简介  
@@ -41,9 +41,9 @@ CentOS Linux是社区支持的Linux发行版，基于Red Hat提供的Red Hat Ent
 
 每个CentOS Linux版本支持周期最长10年（通过安全更新，具体周期取决于Red Hat提供的源代码支持期限），约每2年发布新版本，每6个月更新以支持新硬件，提供安全、低维护、可靠的Linux环境。  
 
-> 更多信息：[wiki.centos.org]([])  
+> 更多信息：[wiki.centos.org]   
 
-![logo]([])  
+![logo]   
 
 
 ## 镜像使用文档  
@@ -51,8 +51,8 @@ CentOS Linux是社区支持的Linux发行版，基于Red Hat提供的Red Hat Ent
 ### 滚动构建（Rolling builds）  
 CentOS项目为所有活跃版本提供定期更新的镜像，每月或紧急修复时更新。此类镜像以主版本号为标签，例如：  
 ```bash
-docker pull centos:6  # CentOS 6
-docker pull centos:7  # CentOS 7
+docker pull docker.xuanyuan.run/centos:6  # CentOS 6
+docker pull docker.xuanyuan.run/centos:7  # CentOS 7
 ```  
 
 
@@ -64,7 +64,7 @@ RUN yum -y update && yum clean all
 
 
 ### Overlayfs与yum  
-Docker 1.13+默认启用overlayfs存储后端（部分发行版）。在CentOS 6/7中使用overlayfs时，**需安装`yum-plugin-ovl`**，并确保`/etc/yum.conf`中`plugins=1`（默认已配置），否则可能出现rpmdb校验失败错误（详见[Docker #10180]([])）。  
+Docker 1.13+默认启用overlayfs存储后端（部分发行版）。在CentOS 6/7中使用overlayfs时，**需安装`yum-plugin-ovl`**，并确保`/etc/yum.conf`中`plugins=1`（默认已配置），否则可能出现rpmdb校验失败错误（详见[Docker #10180] ）。  
 
 
 ## 包文档  
@@ -84,7 +84,7 @@ yum reinstall <package-name>
 ### 构建systemd基础镜像  
 创建基础镜像的Dockerfile：  
 ```dockerfile
-FROM centos:7
+FROM docker.xuanyuan.run/centos:7
 ENV container docker
 # 清理不必要的systemd单元文件
 RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
@@ -109,7 +109,7 @@ docker build --rm -t local/c7-systemd .
 ### 示例：带systemd的应用容器（以httpd为例）  
 创建应用Dockerfile：  
 ```dockerfile
-FROM local/c7-systemd
+FROM docker.xuanyuan.run/local/c7-systemd
 # 安装httpd并启用服务
 RUN yum -y install httpd; yum clean all; systemctl enable httpd.service
 EXPOSE 80
@@ -125,12 +125,12 @@ docker build --rm -t local/c7-systemd-httpd .
 ### 运行systemd应用容器  
 运行时需挂载主机的cgroups文件系统：  
 ```bash
-docker run -ti -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 local/c7-systemd-httpd
+docker run -ti -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 docker.xuanyuan.run/local/c7-systemd-httpd
 ```  
 
 - **Ubuntu主机注意**：可能需额外挂载`/run`目录：  
   ```bash
-  docker run -ti -v /sys/fs/cgroup:/sys/fs/cgroup:ro -v /tmp/$(mktemp -d):/run -p 80:80 local/c7-systemd-httpd
+  docker run -ti -v /sys/fs/cgroup:/sys/fs/cgroup:ro -v /tmp/$(mktemp -d):/run -p 80:80 docker.xuanyuan.run/local/c7-systemd-httpd
   ```  
 
 
@@ -143,11 +143,11 @@ grep vsyscall /proc/self/maps
 # 若输出无[vsyscall]行，需在启动项添加内核参数`vsyscall=emulated`（修改bootloader配置）
 ```  
 
-参考：[LWN.net文章]([])  
+参考：[LWN.net文章]   
 
 
 ## 许可信息  
-- 镜像中软件许可：[CentOS许可信息]([])  
-- 镜像可能包含其他软件（如Bash等），其许可信息可参考[repo-info仓库`centos/`目录]([])。  
+- 镜像中软件许可：[CentOS许可信息]   
+- 镜像可能包含其他软件（如Bash等），其许可信息可参考[repo-info仓库`centos/`目录] 。  
 
 使用前请确保遵守所有包含软件的许可协议。

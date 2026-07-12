@@ -3,7 +3,7 @@ image: universonic/stable-diffusion-webui
 description: "这是一个适用于NVIDIA显卡的Stable Diffusion WebUI Docker镜像，集成了Stable Diffusion的网页用户界面，专为NVIDIA GPU优化以实现高效AI图像生成，包含必要依赖组件，可简化部署流程，方便开发者及用户快速搭建和使用Stable Diffusion进行文本到图像生成、图像编辑等任务，无需复杂配置即可利用GPU加速性能，是基于Docker容器技术的便捷工具。"
 source: https://xuanyuan.cloud/zh/r/universonic/stable-diffusion-webui
 canonical: https://xuanyuan.cloud/zh/r/universonic/stable-diffusion-webui
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/universonic/stable-diffusion-webui" title="universonic/stable-diffusion-webui Docker 镜像中文简介、标签列表与拉取命令">universonic/stable-diffusion-webui 中文简介</a>
@@ -22,7 +22,7 @@ Stable Diffusion web UI 是一个基于 Gradio 库开发的 Stable Diffusion 浏
 
 ```bash
 docker run --gpus all --restart unless-stopped -p 8080:8080 \
-  --name stable-diffusion-webui -d universonic/stable-diffusion-webui
+  --name stable-diffusion-webui -d docker.xuanyuan.run/universonic/stable-diffusion-webui
 ```  
 
 **参数说明**：  
@@ -69,7 +69,7 @@ version: "3.2"
 
 services:
   stable-diffusion-webui:
-    image: universonic/stable-diffusion-webui:minimal  # 使用轻量版镜像
+    image: docker.xuanyuan.run/universonic/stable-diffusion-webui:minimal  # 使用轻量版镜像
     command: --no-half --no-half-vae --precision full  # 非半精度模式（部分设备需此配置）
     runtime: nvidia  # 启用 NVIDIA 运行时
     restart: unless-stopped  # 除非手动停止，否则自动重启
@@ -106,4 +106,4 @@ services:
 
 ## 重要注意事项  
 - **模型文件必须存在**：若宿主机模型目录（如 `/my/own/datadir/models/Stable-diffusion`）未放置 Stable Diffusion 模型文件（checkpoint、vae 等），容器会启动失败并不断重启。需手动将模型文件放入该目录，等待服务启动后即可正常使用。  
-- **进一步问题参考**：更多配置细节可查阅 [官方文档]([])。
+- **进一步问题参考**：更多配置细节可查阅 [官方文档] 。

@@ -3,7 +3,7 @@ image: library/composer
 description: "Composer是PHP的依赖管理器，用于管理PHP项目的依赖。"
 source: https://xuanyuan.cloud/zh/r/library/composer
 canonical: https://xuanyuan.cloud/zh/r/library/composer
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/composer" title="library/composer Docker 镜像中文简介、标签列表与拉取命令">library/composer 中文简介</a>
@@ -116,7 +116,7 @@ $ eval $(ssh-agent); \
   --volume $PWD:/app \
   --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
   --env SSH_AUTH_SOCK=/ssh-auth.sock \
-  composer <command>
+  docker.xuanyuan.run/composer <command>
 ```
 
 **注意**: 在OSX上，这需要Docker For Mac v2.2.0.0或更高版本，参见[docker/for-mac#410](https://github.com/docker/for-mac/issues/410)。
@@ -132,7 +132,7 @@ $ eval $(ssh-agent); \
   --volume /etc/group:/etc/group:ro \
   --env SSH_AUTH_SOCK=/ssh-auth.sock \
   --user $(id -u):$(id -g) \
-  composer <command>
+  docker.xuanyuan.run/composer <command>
 ```
 
 ## 6. 故障排除
@@ -207,7 +207,7 @@ version: '3'
 
 services:
   composer:
-    image: composer:latest
+    image: docker.xuanyuan.run/composer:latest
     volumes:
       - .:/app
       - ${COMPOSER_HOME:-$HOME/.composer}:/tmp

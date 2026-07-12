@@ -3,7 +3,7 @@ image: unsloth/unsloth
 description: "Unsloth Docker镜像是一个预构建容器，包含LLM微调与强化学习开源框架Unsloth的所有依赖，无需额外设置即可快速使用。支持Jupyter Lab和SSH双访问模式，适用于Windows、Linux、WSL及多数NVIDIA GPU，可立即开始LLM微调工作。"
 source: https://xuanyuan.cloud/zh/r/unsloth/unsloth
 canonical: https://xuanyuan.cloud/zh/r/unsloth/unsloth
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/unsloth/unsloth" title="unsloth/unsloth Docker 镜像中文简介、标签列表与拉取命令">unsloth/unsloth 中文简介</a>
@@ -25,7 +25,7 @@ docker run -d -e JUPYTER_PASSWORD="mypassword" \
   -p 8888:8888 -p 2222:22 \
   -v $(pwd)/work:/workspace/work \
   --gpus all \
-  unsloth/unsloth
+  docker.xuanyuan.run/unsloth/unsloth
 ```
 
 通过`http://localhost:8888`访问Jupyter Lab，即可开始微调工作！
@@ -83,7 +83,7 @@ docker run -d -e JUPYTER_PORT=8000 \
   -p 8000:8000 -p 2222:22 \
   -v $(pwd)/work:/workspace/work \
   --gpus all \
-  unsloth/unsloth
+  docker.xuanyuan.run/unsloth/unsloth
 ```
 
 ### 设置SSH密钥

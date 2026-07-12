@@ -3,7 +3,7 @@ image: bellsoft/liberica-openjdk-alpine
 description: "Liberica是BellSoft提供的100%开源Java实现，用于支持Java应用的运行与开发环境。"
 source: https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-alpine
 canonical: https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-alpine
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-alpine" title="bellsoft/liberica-openjdk-alpine Docker 镜像中文简介、标签列表与拉取命令">bellsoft/liberica-openjdk-alpine 中文简介</a>
@@ -131,19 +131,19 @@ Dockerfile 支持以下构建参数，用于自定义镜像内容：
 ### 基础使用
 运行容器并验证 Java 版本：
 ```bash
-docker run -it --rm bellsoft/liberica-openjdk-alpine:latest java -version
+docker run -it --rm docker.xuanyuan.run/bellsoft/liberica-openjdk-alpine:latest java -version
 ```
 
 ### 运行 Java 应用
 #### 方法 1：挂载本地应用目录
 ```bash
-docker run -it --rm -v /path/to/your/app:/app bellsoft/liberica-openjdk-alpine:21 java -jar /app/MyApp.jar
+docker run -it --rm -v /path/to/your/app:/app docker.xuanyuan.run/bellsoft/liberica-openjdk-alpine:21 java -jar /app/MyApp.jar
 ```
 
 #### 方法 2：基于镜像构建应用镜像
 创建 `Dockerfile`：
 ```dockerfile
-FROM bellsoft/liberica-openjdk-alpine:21
+FROM docker.xuanyuan.run/bellsoft/liberica-openjdk-alpine:21
 WORKDIR /app
 COPY target/MyApp.jar /app/
 CMD ["java", "-jar", "MyApp.jar"]
@@ -151,7 +151,7 @@ CMD ["java", "-jar", "MyApp.jar"]
 构建并运行：
 ```bash
 docker build -t my-java-app .
-docker run -it --rm my-java-app
+docker run -it --rm docker.xuanyuan.run/my-java-app
 ```
 
 ### Docker Compose 示例
@@ -160,7 +160,7 @@ docker run -it --rm my-java-app
 version: '3.8'
 services:
   app:
-    image: bellsoft/liberica-openjdk-alpine:21
+    image: docker.xuanyuan.run/bellsoft/liberica-openjdk-alpine:21
     volumes:
       - ./target/MyApp.jar:/app/MyApp.jar
     command: java -jar /app/MyApp.jar
@@ -188,7 +188,7 @@ Caused by: java.lang.NullPointerException
 
 #### 运行时安装（临时）
 ```bash
-docker run -it --rm bellsoft/liberica-openjdk-alpine:latest sh -c "apk add fontconfig ttf-dejavu && java -jar /app/MyApp.jar"
+docker run -it --rm docker.xuanyuan.run/bellsoft/liberica-openjdk-alpine:latest sh -c "apk add fontconfig ttf-dejavu && java -jar /app/MyApp.jar"
 ```
 
 #### 构建时集成（推荐）

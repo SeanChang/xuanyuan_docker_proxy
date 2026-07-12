@@ -3,7 +3,7 @@ image: arm64v8/amazoncorretto
 description: "Corretto是免费的生产就绪型Open Java Development Kit（OpenJDK）发行版。"
 source: https://xuanyuan.cloud/zh/r/arm64v8/amazoncorretto
 canonical: https://xuanyuan.cloud/zh/r/arm64v8/amazoncorretto
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/arm64v8/amazoncorretto" title="arm64v8/amazoncorretto Docker 镜像中文简介、标签列表与拉取命令">arm64v8/amazoncorretto 中文简介</a>
@@ -121,19 +121,19 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 #### 检查 Java 版本
 ```bash
-docker run --rm arm64v8/amazoncorretto:17 java -version
+docker run --rm docker.xuanyuan.run/arm64v8/amazoncorretto:17 java -version
 ```
 
 #### 运行 Java 应用
 ```bash
-docker run --rm -v $(pwd):/app arm64v8/amazoncorretto:17 java -jar /app/your-application.jar
+docker run --rm -v $(pwd):/app docker.xuanyuan.run/arm64v8/amazoncorretto:17 java -jar /app/your-application.jar
 ```
 
 ### Dockerfile 示例
 
 #### 基于标准镜像构建应用
 ```dockerfile
-FROM arm64v8/amazoncorretto:17
+FROM docker.xuanyuan.run/arm64v8/amazoncorretto:17
 
 WORKDIR /app
 
@@ -146,7 +146,7 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 
 #### 基于 Alpine 镜像构建轻量级应用
 ```dockerfile
-FROM arm64v8/amazoncorretto:17-alpine
+FROM docker.xuanyuan.run/arm64v8/amazoncorretto:17-alpine
 
 WORKDIR /app
 
@@ -164,7 +164,7 @@ version: '3.8'
 
 services:
   app:
-    image: arm64v8/amazoncorretto:17
+    image: docker.xuanyuan.run/arm64v8/amazoncorretto:17
     container_name: java-app
     volumes:
       - ./target/your-application.jar:/app/app.jar
@@ -180,7 +180,7 @@ services:
 可以通过环境变量配置 JVM 参数：
 
 ```bash
-docker run --rm -e JAVA_OPTS="-Xmx512m -Xms256m" arm64v8/amazoncorretto:17 java $JAVA_OPTS -jar your-application.jar
+docker run --rm -e JAVA_OPTS="-Xmx512m -Xms256m" docker.xuanyuan.run/arm64v8/amazoncorretto:17 java $JAVA_OPTS -jar your-application.jar
 ```
 
 常用的 JVM 配置参数：
@@ -198,7 +198,7 @@ docker run --rm -e JAVA_OPTS="-Xmx512m -Xms256m" arm64v8/amazoncorretto:17 java 
 
 1. **拉取更新的镜像**：首先尝试拉取最新版本的镜像
    ```bash
-   docker pull arm64v8/amazoncorretto:<version>
+   docker pull docker.xuanyuan.run/arm64v8/amazoncorretto:<version>
    ```
 
 2. **更新基础镜像包**：如果没有更新的镜像可用，运行适当的命令更新平台包
@@ -207,7 +207,7 @@ docker run --rm -e JAVA_OPTS="-Xmx512m -Xms256m" arm64v8/amazoncorretto:17 java 
 
    Dockerfile 示例：
    ```dockerfile
-   FROM arm64v8/amazoncorretto:17-alpine
+   FROM docker.xuanyuan.run/arm64v8/amazoncorretto:17-alpine
    RUN apk -U upgrade
    # 其他配置...
    ```

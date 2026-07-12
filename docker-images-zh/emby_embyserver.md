@@ -3,7 +3,7 @@ image: emby/embyserver
 description: "官方的Emby媒体服务器（64位amd64架构）是用于集中管理、组织和流式传输电影、音乐、照片、剧集等各类媒体文件的官方版本应用程序，支持多平台设备访问，提供高清播放、自定义媒体库分类、用户权限管理及跨设备同步等功能，适用于64位系统，为用户打造便捷高效的家庭媒体中心解决方案。"
 source: https://xuanyuan.cloud/zh/r/emby/embyserver
 canonical: https://xuanyuan.cloud/zh/r/emby/embyserver
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/emby/embyserver" title="emby/embyserver Docker 镜像中文简介、标签列表与拉取命令">emby/embyserver 中文简介</a>
@@ -36,9 +36,9 @@ Emby 支持以下架构，每种架构对应独立的仓库：
 
 ### 问题反馈
 
-反馈问题前，请先尝试更新 Docker 至最新版本（参考 [Docker 安装指南]([])），看是否解决问题。SELinux 用户可尝试执行 `setenforce 0` 命令关闭 SELinux 测试。
+反馈问题前，请先尝试更新 Docker 至最新版本（参考 [Docker 安装指南] ），看是否解决问题。SELinux 用户可尝试执行 `setenforce 0` 命令关闭 SELinux 测试。
 
-若问题仍存在，请 [提交 issue]([]) 并附上以下信息：
+若问题仍存在，请 [提交 issue]  并附上以下信息：
 - `docker version` 和 `docker info` 命令的输出结果
 - 启动容器时使用的 `docker run` 命令或 `docker-compose.yml` 文件（敏感信息需脱敏）
 - 说明是否使用 Boot2Docker、VirtualBox 等工具
@@ -48,10 +48,10 @@ Emby 支持以下架构，每种架构对应独立的仓库：
 
 ### 安装
 
-推荐直接从 [Docker Hub]([]) 安装：
+推荐直接从 [Docker Hub]  安装：
 
 ```sh
-docker pull emby/embyserver:latest
+docker pull docker.xuanyuan.run/emby/embyserver:latest
 ```
 
 新版 .NET Core 版本完全通过命令行配置，不再需要启动脚本、配置文件及本地更新功能，更新时直接拉取最新镜像即可。
@@ -65,7 +65,7 @@ docker pull emby/embyserver:latest
 version: "2.3"
 services:
   emby:
-    image: emby/embyserver
+    image: docker.xuanyuan.run/emby/embyserver
     container_name: embyserver
     runtime: nvidia  # 暴露 NVIDIA GPU（如需）
     network_mode: host  # 启用 DLNA 和网络唤醒
@@ -120,7 +120,7 @@ docker run -d \
 更新命令与安装相同，拉取最新镜像即可：
 
 ```sh
-docker pull emby/embyserver:latest
+docker pull docker.xuanyuan.run/emby/embyserver:latest
 ```
 
 
@@ -159,4 +159,4 @@ getent group render | cut -d: -f3
 
 在 unRAID Web 界面的 Docker 设置中，添加以下仓库链接：  
 ```
-[] unRAID 模板添加的更多信息，可参考 [unRAID 论坛]([])。
+[] unRAID 模板添加的更多信息，可参考 [unRAID 论坛] 。

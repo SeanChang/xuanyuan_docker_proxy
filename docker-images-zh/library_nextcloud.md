@@ -3,7 +3,7 @@ image: library/nextcloud
 description: "Nextcloud手动构建Docker镜像是一款针对开源文件同步与共享平台Nextcloud的容器化部署包，支持用户通过手动配置方式构建，可灵活适配自建服务器环境，提供安全的文件存储、同步、共享及协作功能，适用于个人或企业搭建私有云存储系统，兼具部署便捷性与自定义扩展性，助力实现数据自主管理与高效协作。"
 source: https://xuanyuan.cloud/zh/r/library/nextcloud
 canonical: https://xuanyuan.cloud/zh/r/library/nextcloud
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/nextcloud" title="library/nextcloud Docker 镜像中文简介、标签列表与拉取命令">library/nextcloud 中文简介</a>
@@ -15,16 +15,16 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 重要说明
 
-⚠️⚠️⚠️ 本镜像由社区志愿者维护，适用于有经验的用户。若需快速部署并支持 Nextcloud Hub 全部功能，建议使用由 Nextcloud GmbH 官方维护的 [Nextcloud All-in-One Docker 容器]([])。
+⚠️⚠️⚠️ 本镜像由社区志愿者维护，适用于有经验的用户。若需快速部署并支持 Nextcloud Hub 全部功能，建议使用由 Nextcloud GmbH 官方维护的 [Nextcloud All-in-One Docker 容器] 。
 
 
 ## 基本参考信息
 
 ### 维护方
-[Nextcloud 社区]([])
+[Nextcloud 社区] 
 
 ### 帮助支持
-可通过 [Docker Community Slack]([])、[Server Fault]([])、[Unix & Linux]([]) 或 [Stack Overflow]([]) 获取帮助。
+可通过 [Docker Community Slack] 、[Server Fault] 、[Unix & Linux]  或 [Stack Overflow]  获取帮助。
 
 
 ## 支持的标签及对应 Dockerfile 链接
@@ -32,35 +32,35 @@ exported_at: 2026-06-02T12:26:10.133Z
 以下是常用镜像标签及其 Dockerfile 地址（仅列举部分主要版本）：
 
 - **Apache 版本**  
-  [`30.0.16-apache`, `30.0-apache`, `30-apache`, `30.0.16`, `30.0`, `30`]([])  
-  [`31.0.9-apache`, `31.0-apache`, `31-apache`, `stable-apache`, `production-apache`, `31.0.9`, `31.0`, `31`, `stable`, `production`]([])  
-  [`32.0.0-apache`, `32.0-apache`, `32-apache`, `apache`, `32.0.0`, `32.0`, `32`, `latest`]([])
+  [`30.0.16-apache`, `30.0-apache`, `30-apache`, `30.0.16`, `30.0`, `30`]   
+  [`31.0.9-apache`, `31.0-apache`, `31-apache`, `stable-apache`, `production-apache`, `31.0.9`, `31.0`, `31`, `stable`, `production`]   
+  [`32.0.0-apache`, `32.0-apache`, `32-apache`, `apache`, `32.0.0`, `32.0`, `32`, `latest`] 
 
 - **FPM 版本**  
-  [`30.0.16-fpm`, `30.0-fpm`, `30-fpm`]([])  
-  [`31.0.9-fpm`, `31.0-fpm`, `31-fpm`, `stable-fpm`, `production-fpm`]([])  
-  [`32.0.0-fpm`, `32.0-fpm`, `32-fpm`, `fpm`]([])
+  [`30.0.16-fpm`, `30.0-fpm`, `30-fpm`]   
+  [`31.0.9-fpm`, `31.0-fpm`, `31-fpm`, `stable-fpm`, `production-fpm`]   
+  [`32.0.0-fpm`, `32.0-fpm`, `32-fpm`, `fpm`] 
 
 - **FPM-Alpine 版本**  
-  [`30.0.16-fpm-alpine`, `30.0-fpm-alpine`, `30-fpm-alpine`]([])  
-  [`31.0.9-fpm-alpine`, `31.0-fpm-alpine`, `31-fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`]([])  
-  [`32.0.0-fpm-alpine`, `32.0-fpm-alpine`, `32-fpm-alpine`, `fpm-alpine`]([])
+  [`30.0.16-fpm-alpine`, `30.0-fpm-alpine`, `30-fpm-alpine`]   
+  [`31.0.9-fpm-alpine`, `31.0-fpm-alpine`, `31-fpm-alpine`, `stable-fpm-alpine`, `production-fpm-alpine`]   
+  [`32.0.0-fpm-alpine`, `32.0-fpm-alpine`, `32-fpm-alpine`, `fpm-alpine`] 
 
 
 ## 扩展参考信息
 
-- **问题反馈地址**：[[]]([])  
-- **支持的架构**：`amd64`、`arm32v5`、`arm32v6`、`arm32v7`、`arm64v8`、`i386`、`ppc64le`、`riscv64`、`s390x`（[架构详情]([])）  
-- **镜像详情**：[repo-info 仓库的 `repos/nextcloud/` 目录]([])（包含元数据、传输大小等）  
-- **镜像更新**：[official-images 仓库的 `library/nextcloud` 标签]([])  
-- **完整说明文档**：由于 Hub 长度限制，完整描述请参见 [GitHub 文档]([])
+- **问题反馈地址**：[[]]   
+- **支持的架构**：`amd64`、`arm32v5`、`arm32v6`、`arm32v7`、`arm64v8`、`i386`、`ppc64le`、`riscv64`、`s390x`（[架构详情] ）  
+- **镜像详情**：[repo-info 仓库的 `repos/nextcloud/` 目录] （包含元数据、传输大小等）  
+- **镜像更新**：[official-images 仓库的 `library/nextcloud` 标签]   
+- **完整说明文档**：由于 Hub 长度限制，完整描述请参见 [GitHub 文档] 
 
 
 ## 关于 Nextcloud
 
-Nextcloud 是一款开源的个人/企业数据管理平台，可安全存储文件、日历、联系人等数据，并支持多设备访问与共享。详情可访问 [Nextcloud 官网]([])。
+Nextcloud 是一款开源的个人/企业数据管理平台，可安全存储文件、日历、联系人等数据，并支持多设备访问与共享。详情可访问 [Nextcloud 官网] 。
 
-> **注意**：本 Docker 镜像是社区维护版本，Nextcloud GmbH 不提供技术支持。如需专业支持，可选择 [企业版]([]) 或 [All-in-One 容器]([])。
+> **注意**：本 Docker 镜像是社区维护版本，Nextcloud GmbH 不提供技术支持。如需专业支持，可选择 [企业版]  或 [All-in-One 容器] 。
 
 
 ## 如何使用本镜像
@@ -73,7 +73,7 @@ Nextcloud 是一款开源的个人/企业数据管理平台，可安全存储文
 Apache 镜像内置 Web 服务器，暴露 80 端口，直接运行即可启动服务：
 
 ```bash
-docker run -d -p 8080:80 nextcloud
+docker run -d -p 8080:80 docker.xuanyuan.run/nextcloud
 ```
 
 启动后，通过 `[] 访问 Nextcloud 初始化页面。
@@ -84,7 +84,7 @@ docker run -d -p 8080:80 nextcloud
 FPM 镜像需配合外部 Web 服务器（如 Nginx），仅提供 FastCGI 进程，不处理静态文件（样式表、图片等）。启动时无需映射端口（由 Web 服务器转发请求）：
 
 ```bash
-docker run -d nextcloud:fpm
+docker run -d docker.xuanyuan.run/nextcloud:fpm
 ```
 
 **注意**：Web 服务器需通过 `volumes-from` 挂载 Nextcloud 的静态文件目录（如 `/var/www/html`），具体配置可参考下文 Docker Compose 示例。
@@ -97,10 +97,10 @@ docker run -d nextcloud:fpm
 #### 示例：链接 MariaDB 容器
 ```bash
 # 启动数据库容器
-docker run -d -v db_data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=your_root_pw -e MYSQL_DATABASE=nextcloud -e MYSQL_USER=nextcloud -e MYSQL_PASSWORD=your_pw --name nextcloud_db mariadb:10.6
+docker run -d -v db_data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=your_root_pw -e MYSQL_DATABASE=nextcloud -e MYSQL_USER=nextcloud -e MYSQL_PASSWORD=your_pw --name nextcloud_db docker.xuanyuan.run/mariadb:10.6
 
 # 启动 Nextcloud 并链接数据库
-docker run -d -p 8080:80 --link nextcloud_db:mysql -e MYSQL_HOST=mysql -e MYSQL_DATABASE=nextcloud -e MYSQL_USER=nextcloud -e MYSQL_PASSWORD=your_pw nextcloud
+docker run -d -p 8080:80 --link nextcloud_db:mysql -e MYSQL_HOST=mysql -e MYSQL_DATABASE=nextcloud -e MYSQL_USER=nextcloud -e MYSQL_PASSWORD=your_pw docker.xuanyuan.run/nextcloud
 ```
 
 
@@ -115,10 +115,10 @@ Nextcloud 数据（文件上传、配置等）存储在容器内 `/var/www/html`
 #### 示例：使用命名卷持久化
 ```bash
 # 持久化 Nextcloud 数据
-docker run -d -v nextcloud_data:/var/www/html nextcloud
+docker run -d -v nextcloud_data:/var/www/html docker.xuanyuan.run/nextcloud
 
 # 持久化 MariaDB 数据
-docker run -d -v mariadb_data:/var/lib/mysql mariadb:10.6
+docker run -d -v mariadb_data:/var/lib/mysql docker.xuanyuan.run/mariadb:10.6
 ```
 
 #### 细分挂载（可选）
@@ -133,7 +133,7 @@ docker run -d \
   -v nextcloud:/var/www/html \
   -v nextcloud_config:/var/www/html/config \
   -v nextcloud_data:/var/www/html/data \
-  nextcloud
+  docker.xuanyuan.run/nextcloud
 ```
 
 
@@ -169,7 +169,7 @@ docker exec --user www-data <容器ID> php occ user:list
 docker run -d -p 8080:80 \
   -e NEXTCLOUD_ADMIN_USER=admin \
   -e NEXTCLOUD_ADMIN_PASSWORD=strong_password \
-  -e NEXTCLOUD_TRUSTED_DOMAINS=localhost 192.168.1.100 \
+  -e NEXTCLOUD_TRUSTED_DOMAINS=localhost docker.xuanyuan.run/192.168.1.100 \
   -e MYSQL_HOST=mysql -e MYSQL_DATABASE=nextcloud -e MYSQL_USER=nextcloud -e MYSQL_PASSWORD=db_pw \
   nextcloud
 ```
@@ -188,7 +188,7 @@ docker run -d -p 8080:80 \
 docker run -d -p 8080:80 \
   -e TRUSTED_PROXIES=192.168.1.10 \
   -e OVERWRITEPROTOCOL=https \
-  nextcloud
+  docker.xuanyuan.run/nextcloud
 ```
 
 
@@ -203,7 +203,7 @@ volumes:
 
 services:
   db:
-    image: mariadb:10.6
+    image: docker.xuanyuan.run/mariadb:10.6
     restart: always
     volumes:
       - db_data:/var/lib/mysql
@@ -215,7 +215,7 @@ services:
     command: --transaction-isolation=READ-COMMITTED --log-bin=binlog --binlog-format=ROW
 
   app:
-    image: nextcloud
+    image: docker.xuanyuan.run/nextcloud
     restart: always
     ports:
       - 8080:80
@@ -239,4 +239,4 @@ services:
 - **HTTPS 配置**：公网访问需配置 SSL（如通过 Nginx 或 Traefik 反向代理），避免数据传输风险。  
 - **性能优化**：大文件上传需调整 `PHP_UPLOAD_LIMIT` 及 Web 服务器请求体限制（如 `APACHE_BODY_LIMIT`）。  
 
-更多高级配置（如 Redis 缓存、S3 存储、钩子脚本等），请参考 [完整文档]([])。
+更多高级配置（如 Redis 缓存、S3 存储、钩子脚本等），请参考 [完整文档] 。

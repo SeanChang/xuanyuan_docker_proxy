@@ -3,7 +3,7 @@ image: zabbix/zabbix-server-mysql
 description: "Zabbix Server是一款广泛应用的开源监控解决方案，主要用于对网络设备、服务器、虚拟机及各类应用程序进行实时性能监控与状态管理，而支持MySQL数据库则使其能够高效存储、查询和管理海量监控数据，包括性能指标、事件日志及告警信息等，通过与MySQL的深度整合，进一步提升了监控系统的数据处理能力、稳定性和可扩展性，满足企业级监控场景下对数据可靠性与高效分析的需求。"
 source: https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-mysql
 canonical: https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-mysql
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zabbix/zabbix-server-mysql" title="zabbix/zabbix-server-mysql Docker 镜像中文简介、标签列表与拉取命令">zabbix/zabbix-server-mysql 中文简介</a>
@@ -58,7 +58,7 @@ Zabbix server 是 Zabbix 软件的核心进程。
 通过以下命令启动 Zabbix server 容器：  
 
 ```bash
-docker run --name some-zabbix-server-mysql -e DB_SERVER_HOST="some-mysql-server" -e MYSQL_USER="some-user" -e MYSQL_PASSWORD="some-password" --init -d zabbix/zabbix-server-mysql:tag
+docker run --name some-zabbix-server-mysql -e DB_SERVER_HOST="some-mysql-server" -e MYSQL_USER="some-user" -e MYSQL_PASSWORD="some-password" --init -d docker.xuanyuan.run/zabbix/zabbix-server-mysql:tag
 ```  
 
 参数说明：  
@@ -107,7 +107,7 @@ docker run --name some-zabbix-server-mysql \
   -e DB_SERVER_HOST="some-mysql-server" \
   -v ./.MYSQL_USER:/run/secrets/MYSQL_USER -e MYSQL_USER_FILE=/run/secrets/MYSQL_USER \
   -v ./.MYSQL_PASSWORD:/run/secrets/MYSQL_PASSWORD -e MYSQL_PASSWORD_FILE=/var/run/secrets/MYSQL_PASSWORD \
-  --init -d zabbix/zabbix-server-mysql:tag
+  --init -d docker.xuanyuan.run/zabbix/zabbix-server-mysql:tag
 ```  
 
 #### 示例：使用 Docker Swarm 密钥  
@@ -118,7 +118,7 @@ docker run --name some-zabbix-server-mysql \
   -e DB_SERVER_HOST="some-mysql-server" \
   -e MYSQL_USER_FILE=/run/secrets/MYSQL_USER \
   -e MYSQL_PASSWORD_FILE=/run/secrets/MYSQL_PASSWORD \
-  --init -d zabbix/zabbix-server-mysql:tag
+  --init -d docker.xuanyuan.run/zabbix/zabbix-server-mysql:tag
 ```  
 
 ### 其他常用变量  
@@ -178,16 +178,16 @@ SSH 检查/动作的密钥目录，对应 `SSHKeyLocation`。
 # 支持的 Docker 版本
 
 官方支持 Docker 1.12.0 及以上版本，1.6 及以上旧版本提供有限支持。  
-升级 Docker 可参考 [Docker 官方安装文档]([])。  
+升级 Docker 可参考 [Docker 官方安装文档] 。  
 
 
 # 用户反馈
 
 ## 文档  
-镜像文档存放于 [zabbix-docker 仓库的 `server-mysql/` 目录]([])，提交 PR 前建议先阅读仓库 [README.md]([])。  
+镜像文档存放于 [zabbix-docker 仓库的 `server-mysql/` 目录] ，提交 PR 前建议先阅读仓库 [README.md] 。  
 
 ## 问题反馈  
-使用中遇到问题可通过 [GitHub Issue]([]) 提交。  
+使用中遇到问题可通过 [GitHub Issue]  提交。  
 
 ## 贡献代码  
 欢迎提交功能改进、bug 修复或更新，建议先通过 GitHub Issue 讨论方案。  

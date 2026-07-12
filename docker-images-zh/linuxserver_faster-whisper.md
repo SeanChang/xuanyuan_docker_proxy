@@ -3,7 +3,7 @@ image: linuxserver/faster-whisper
 description: "LinuxServer.io提供的Faster Whisper语音识别模型Docker镜像，用于高效部署和运行语音转文本服务。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/faster-whisper" title="linuxserver/faster-whisper Docker 镜像中文简介、标签列表与拉取命令">linuxserver/faster-whisper 中文简介</a>
@@ -79,7 +79,7 @@ LinuxServer.io团队提供的该容器具有以下特点：
 ---
 services:
   faster-whisper:
-    image: lscr.io/linuxserver/faster-whisper:latest
+    image: docker.xuanyuan.run/linuxserver/faster-whisper:latest
     container_name: faster-whisper
     environment:
       - PUID=1000
@@ -128,7 +128,7 @@ docker run -d \
   -p 10300:10300 \
   -v /path/to/faster-whisper/data:/config \
   --restart unless-stopped \
-  lscr.io/linuxserver/faster-whisper:gpu
+  docker.xuanyuan.run/linuxserver/faster-whisper:gpu
 ```
 
 ## 参数说明
@@ -271,7 +271,7 @@ uid=1000(your_user) gid=1000(your_user) groups=1000(your_user)
 - 更新镜像：
 
     ```bash
-    docker pull lscr.io/linuxserver/faster-whisper:latest
+    docker pull docker.xuanyuan.run/linuxserver/faster-whisper:latest
     ```
 
 - 停止运行中的容器：
@@ -315,7 +315,7 @@ docker build \
 可以使用`lscr.io/linuxserver/qemu-static`在x86_64硬件上构建ARM变体，反之亦然：
 
 ```bash
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```
 
 注册后，可以使用`-f Dockerfile.aarch64`指定要使用的dockerfile。

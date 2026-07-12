@@ -3,7 +3,7 @@ image: bitnami/zookeeper
 description: "Bitnami为ZooKeeper提供的安全镜像是一款预配置且经过安全加固的软件包，旨在简化分布式协调服务ZooKeeper的部署与管理流程，集成了自动化安全更新、合规性检查及行业最佳实践配置，可确保在生产环境中稳定运行，适用于需要可靠分布式协调能力的企业级应用，帮助用户快速搭建安全高效的ZooKeeper集群，有效降低部署复杂度并显著增强系统整体安全性。"
 source: https://xuanyuan.cloud/zh/r/bitnami/zookeeper
 canonical: https://xuanyuan.cloud/zh/r/bitnami/zookeeper
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/zookeeper" title="bitnami/zookeeper Docker 镜像中文简介、标签列表与拉取命令">bitnami/zookeeper 中文简介</a>
@@ -16,7 +16,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 镜像获取方式变更  
 该 Zookeeper 安全镜像已不再通过 Docker Hub 免费提供。目前，它作为构建好的 OCI 制品（支持 Debian 和 Photon 两种基础操作系统格式），需通过 Bitnami 安全镜像的商业订阅获取。  
 
-不过，Docker Hub 上仍提供其他 Bitnami 安全镜像的开发者版。完整列表可通过 [公共目录]([]) 筛选“Availability Type: Trial”查看。  
+不过，Docker Hub 上仍提供其他 Bitnami 安全镜像的开发者版。完整列表可通过 [公共目录]  筛选“Availability Type: Trial”查看。  
 
 
 ### 升级建议及优势  
@@ -28,4 +28,4 @@ exported_at: 2026-06-02T12:26:10.133Z
 - 对互联网主流 Helm 图表提供一流支持。  
 
 
-了解更多关于商业版 Bitnami 安全镜像的信息，可访问 [官方网站]([])。
+了解更多关于商业版 Bitnami 安全镜像的信息，可访问 [官方网站] 。

@@ -3,7 +3,7 @@ image: proxysql/proxysql
 description: "官方ProxySQL Docker镜像，提供高性能MySQL数据库代理功能，用于数据库连接管理、读写分离、负载均衡及高可用部署。"
 source: https://xuanyuan.cloud/zh/r/proxysql/proxysql
 canonical: https://xuanyuan.cloud/zh/r/proxysql/proxysql
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/proxysql/proxysql" title="proxysql/proxysql Docker 镜像中文简介、标签列表与拉取命令">proxysql/proxysql 中文简介</a>
@@ -41,12 +41,12 @@ ProxySQL是一款高性能、高可用、协议感知的代理工具，专为MyS
 
 拉取最新版本镜像：
 ```bash
-docker pull proxysql/proxysql
+docker pull docker.xuanyuan.run/proxysql/proxysql
 ```
 
 拉取特定版本镜像（以2.1.0为例）：
 ```bash
-docker pull proxysql/proxysql:2.1.0
+docker pull docker.xuanyuan.run/proxysql/proxysql:2.1.0
 ```
 
 ### 运行容器
@@ -54,7 +54,7 @@ docker pull proxysql/proxysql:2.1.0
 通过自定义配置文件启动ProxySQL容器，需映射必要端口并挂载配置文件：
 
 ```bash
-docker run -p 16032:6032 -p 16033:6033 -p 16070:6070 -d -v /path/to/proxysql.cnf:/etc/proxysql.cnf proxysql/proxysql
+docker run -p 16032:6032 -p 16033:6033 -p 16070:6070 -d -v /path/to/proxysql.cnf:/etc/proxysql.cnf docker.xuanyuan.run/proxysql/proxysql
 ```
 
 **参数说明**：

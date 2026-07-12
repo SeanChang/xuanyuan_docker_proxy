@@ -3,7 +3,7 @@ image: bitnamilegacy/zookeeper
 description: "Bitnami旧版镜像（不再更新）"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/zookeeper
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/zookeeper
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/zookeeper" title="bitnamilegacy/zookeeper Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/zookeeper 中文简介</a>
@@ -33,14 +33,14 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 拉取镜像
 如需使用旧版镜像，可通过以下命令拉取（请替换`[镜像名]`和`[标签]`为实际值）：
 ```bash
-docker pull bitnami/[镜像名]:[标签]
+docker pull docker.xuanyuan.run/bitnami/[镜像名]:[标签]
 ```
 
 ### 镜像备份建议
 由于仓库未来可能被移除，建议将所需镜像拉取后存储到私有容器 registry，确保持续可用：
 ```bash
 # 1. 拉取旧版镜像
-docker pull bitnami/[镜像名]:[标签]
+docker pull docker.xuanyuan.run/bitnami/[镜像名]:[标签]
 
 # 2. 标记为私有registry地址（替换[私有registry地址]为实际地址）
 docker tag bitnami/[镜像名]:[标签] [私有registry地址]/[镜像名]:[标签]

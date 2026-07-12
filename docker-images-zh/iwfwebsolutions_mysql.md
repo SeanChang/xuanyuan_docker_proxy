@@ -3,7 +3,7 @@ image: iwfwebsolutions/mysql
 description: "IWF优化的MySQL基础镜像，包含适用于大多数项目的MySQL配置，用于构建自定义数据库容器。"
 source: https://xuanyuan.cloud/zh/r/iwfwebsolutions/mysql
 canonical: https://xuanyuan.cloud/zh/r/iwfwebsolutions/mysql
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/iwfwebsolutions/mysql" title="iwfwebsolutions/mysql Docker 镜像中文简介、标签列表与拉取命令">iwfwebsolutions/mysql 中文简介</a>
@@ -33,7 +33,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 可通过Docker Hub拉取镜像（具体镜像名称请参考GitHub文档），或直接基于源码构建：
 ```bash
 # 拉取镜像（示例，实际镜像名称以GitHub文档为准）
-docker pull iwf-web/docker-db:latest
+docker pull docker.xuanyuan.run/iwf-web/docker-db:latest
 
 # 或从源码构建
 git clone https://github.com/iwf-web/docker-db.git
@@ -45,7 +45,7 @@ docker build -t iwf-web/docker-db .
 可通过Dockerfile基于该基础镜像添加项目特定配置：
 ```dockerfile
 # 自定义Dockerfile示例
-FROM iwf-web/docker-db:latest
+FROM docker.xuanyuan.run/iwf-web/docker-db:latest
 
 # 添加项目专属配置（如自定义my.cnf）
 COPY ./custom-my.cnf /etc/mysql/conf.d/
@@ -65,7 +65,7 @@ docker run -d \
   --name my-mysql-container \
   -p 3306:3306 \
   -e MYSQL_ROOT_PASSWORD=password \
-  iwf-web/docker-db:latest
+  docker.xuanyuan.run/iwf-web/docker-db:latest
 ```
 
 ### 详细配置参考

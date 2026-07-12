@@ -3,7 +3,7 @@ image: milvusdb/milvus
 description: "Milvus 是一款开源的高性能向量数据库（官网：[]"
 source: https://xuanyuan.cloud/zh/r/milvusdb/milvus
 canonical: https://xuanyuan.cloud/zh/r/milvusdb/milvus
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/milvusdb/milvus" title="milvusdb/milvus Docker 镜像中文简介、标签列表与拉取命令">milvusdb/milvus 中文简介</a>
@@ -17,20 +17,20 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 Milvus 是一款开源的高性能向量数据库，专门用于复杂的相似性搜索和分析应用。它支持数十亿高维向量，是推荐系统、欺诈检测、图像检索等场景的有力工具。  
 
-想了解 Milvus 的详细介绍，可查看完整[文档]([])。  
+想了解 Milvus 的详细介绍，可查看完整[文档] 。  
 
 
 ### 加入社区  
 
-与其他用户和贡献者交流，欢迎加入我们的[Slack 频道]([])。  
+与其他用户和贡献者交流，欢迎加入我们的[Slack 频道] 。  
 
 
 ### 相关资源  
-- [官方网站]([])  
+- [官方网站]   
 - [Milvus Medium]()  
 - [Milvus ]()  
 
 
 ### 许可证  
 
-[Apache License 2.0]([])
+[Apache License 2.0]

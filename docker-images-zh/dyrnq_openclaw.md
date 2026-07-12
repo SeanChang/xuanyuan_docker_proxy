@@ -3,7 +3,7 @@ image: dyrnq/openclaw
 description: "OpenClaw是一款可在自有设备运行的个人AI助手，支持通过WhatsApp、Telegram等多种通讯渠道交互，提供跨平台语音功能及实时Canvas控制，网关作为控制平面，核心为智能助手功能。"
 source: https://xuanyuan.cloud/zh/r/dyrnq/openclaw
 canonical: https://xuanyuan.cloud/zh/r/dyrnq/openclaw
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dyrnq/openclaw" title="dyrnq/openclaw Docker 镜像中文简介、标签列表与拉取命令">dyrnq/openclaw 中文简介</a>
@@ -45,7 +45,7 @@ OpenClaw 是一款可在个人设备上部署的个人AI助手，旨在通过用
 
 ### 获取镜像
 ```bash
-docker pull ghcr.io/openclaw/openclaw
+docker pull ***-ghcr.xuanyuan.run/openclaw/openclaw
 ```
 
 ### 基本运行命令
@@ -54,7 +54,7 @@ docker run -d \
   --name openclaw \
   -p [端口映射] \
   -v [数据卷挂载路径]:/app/data \
-  ghcr.io/openclaw/openclaw
+  ***-ghcr.xuanyuan.run/openclaw/openclaw
 ```
 
 ### 配置说明
@@ -66,7 +66,7 @@ docker run -d \
 version: '3'
 services:
   openclaw:
-    image: ghcr.io/openclaw/openclaw
+    image: ***-ghcr.xuanyuan.run/openclaw/openclaw
     container_name: openclaw
     ports:
       - "8080:8080"  # 根据实际需求调整端口

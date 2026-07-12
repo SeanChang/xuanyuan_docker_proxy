@@ -3,7 +3,7 @@ image: overv/openstreetmap-tile-server
 description: "一个能轻松设置OpenStreetMap PNG瓦片服务器的Docker镜像，基于.osm.pbf文件，使用默认OpenStreetMap样式，简化瓦片服务部署流程，支持数据导入、自动更新及性能调优等功能。"
 source: https://xuanyuan.cloud/zh/r/overv/openstreetmap-tile-server
 canonical: https://xuanyuan.cloud/zh/r/overv/openstreetmap-tile-server
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/overv/openstreetmap-tile-server" title="overv/openstreetmap-tile-server Docker 镜像中文简介、标签列表与拉取命令">overv/openstreetmap-tile-server 中文简介</a>
@@ -26,7 +26,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 docker run \
     -v /绝对路径/至/luxembourg.osm.pbf:/data/region.osm.pbf \
     -v osm-data:/data/database/ \
-    overv/openstreetmap-tile-server \
+    docker.xuanyuan.run/overv/openstreetmap-tile-server \
     import
 ```
 
@@ -46,7 +46,7 @@ docker run \
     -v /绝对路径/至/luxembourg.osm.pbf:/data/region.osm.pbf \
     -v /绝对路径/至/luxembourg.poly:/data/region.poly \
     -v osm-data:/data/database/ \
-    overv/openstreetmap-tile-server \
+    docker.xuanyuan.run/overv/openstreetmap-tile-server \
     import
 ```
 
@@ -63,7 +63,7 @@ docker run \
     -e DOWNLOAD_PBF=https://download.geofabrik.de/europe/luxembourg-latest.osm.pbf \
     -e DOWNLOAD_POLY=https://download.geofabrik.de/europe/luxembourg.poly \
     -v osm-data:/data/database/ \
-    overv/openstreetmap-tile-server \
+    docker.xuanyuan.run/overv/openstreetmap-tile-server \
     import
 ```
 
@@ -81,7 +81,7 @@ docker run \
     -e NAME_SQL=test.sql \
     -v /home/user/openstreetmap-carto-modified:/data/style/ \
     -v osm-data:/data/database/ \
-    overv/openstreetmap-tile-server \
+    docker.xuanyuan.run/overv/openstreetmap-tile-server \
     import
 ```
 
@@ -101,7 +101,7 @@ docker run \
 docker run \
     -p 8080:80 \
     -v osm-data:/data/database/ \
-    -d overv/openstreetmap-tile-server \
+    -d docker.xuanyuan.run/overv/openstreetmap-tile-server \
     run
 ```
 
@@ -121,7 +121,7 @@ docker run \
     -p 8080:80 \
     -v osm-data:/data/database/ \
     -v osm-tiles:/data/tiles/ \
-    -d overv/openstreetmap-tile-server \
+    -d docker.xuanyuan.run/overv/openstreetmap-tile-server \
     run
 ```
 
@@ -139,7 +139,7 @@ docker run \
     -e UPDATES=enabled \
     -v osm-data:/data/database/ \
     -v osm-tiles:/data/tiles/ \
-    -d overv/openstreetmap-tile-server \
+    -d docker.xuanyuan.run/overv/openstreetmap-tile-server \
     run
 ```
 
@@ -163,7 +163,7 @@ docker run \
     -e EXPIRY_MAXZOOM=20 \
     -v osm-data:/data/database/ \
     -v osm-tiles:/data/tiles/ \
-    -d overv/openstreetmap-tile-server \
+    -d docker.xuanyuan.run/overv/openstreetmap-tile-server \
     run
 ```
 
@@ -176,7 +176,7 @@ docker run \
     -p 8080:80 \
     -v osm-data:/data/database/ \
     -e ALLOW_CORS=enabled \
-    -d overv/openstreetmap-tile-server \
+    -d docker.xuanyuan.run/overv/openstreetmap-tile-server \
     run
 ```
 
@@ -189,7 +189,7 @@ docker run \
     -p 8080:80 \
     -p 5432:5432 \
     -v osm-data:/data/database/ \
-    -d overv/openstreetmap-tile-server \
+    -d docker.xuanyuan.run/overv/openstreetmap-tile-server \
     run
 ```
 
@@ -207,7 +207,7 @@ docker run \
     -p 5432:5432 \
     -e PGPASSWORD=secret \
     -v osm-data:/data/database/ \
-    -d overv/openstreetmap-tile-server \
+    -d docker.xuanyuan.run/overv/openstreetmap-tile-server \
     run
 ```
 
@@ -223,7 +223,7 @@ docker run \
     -p 8080:80 \
     -e THREADS=24 \
     -v osm-data:/data/database/ \
-    -d overv/openstreetmap-tile-server \
+    -d docker.xuanyuan.run/overv/openstreetmap-tile-server \
     run
 ```
 
@@ -235,7 +235,7 @@ docker run \
     -p 8080:80 \
     -e "OSM2PGSQL_EXTRA_ARGS=-C 4096" \
     -v osm-data:/data/database/ \
-    -d overv/openstreetmap-tile-server \
+    -d docker.xuanyuan.run/overv/openstreetmap-tile-server \
     run
 ```
 
@@ -247,7 +247,7 @@ docker run \
     -p 8080:80 \
     -e AUTOVACUUM=off \
     -v osm-data:/data/database/ \
-    -d overv/openstreetmap-tile-server \
+    -d docker.xuanyuan.run/overv/openstreetmap-tile-server \
     run
 ```
 
@@ -260,7 +260,7 @@ docker run \
     -v /绝对路径/至/luxembourg.osm.pbf:/data/region.osm.pbf \
     -v osm-data:/data/database/ \
     -e "FLAT_NODES=enabled" \
-    overv/openstreetmap-tile-server \
+    docker.xuanyuan.run/overv/openstreetmap-tile-server \
     import
 ```
 
@@ -285,7 +285,7 @@ docker run \
     -p 8080:80 \
     -v osm-data:/data/database/ \
     --shm-size="192m" \
-    -d overv/openstreetmap-tile-server \
+    -d docker.xuanyuan.run/overv/openstreetmap-tile-server \
     run
 ```
 值过高可能会导致CPU负载和内存使用过高。你可能需要通过实验找到最佳值。

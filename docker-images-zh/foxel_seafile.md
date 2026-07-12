@@ -3,7 +3,7 @@ image: foxel/seafile
 description: "用于快速设置的Seafile Docker镜像，提供便捷部署方案。注意：该镜像已不再维护，新用户建议使用官方Seafile Docker设置指南。"
 source: https://xuanyuan.cloud/zh/r/foxel/seafile
 canonical: https://xuanyuan.cloud/zh/r/foxel/seafile
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/foxel/seafile" title="foxel/seafile Docker 镜像中文简介、标签列表与拉取命令">foxel/seafile 中文简介</a>
@@ -32,7 +32,7 @@ version: '2'
 
 services:
   seafile:
-    image: ghcr.io/foxel/seafile-docker/seafile:11.0.12
+    image: ***-ghcr.xuanyuan.run/foxel/seafile-docker/seafile:11.0.12
     ports:
       - "9080:80"
     environment:
@@ -46,7 +46,7 @@ services:
       MYSQL_RANDOM_ROOT_PASSWORD: 1
     volumes:
       - mysql:/var/lib/mysql
-    image: mysql:8.0
+    image: docker.xuanyuan.run/mysql:8.0
 
 volumes:
   mysql:

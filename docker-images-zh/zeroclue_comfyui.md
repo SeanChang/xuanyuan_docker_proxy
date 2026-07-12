@@ -3,7 +3,7 @@ image: zeroclue/comfyui
 description: "ComfyUI的Docker镜像，提供可视化界面用于创建和运行AI生成图像工作流，支持Stable Diffusion等模型，简化部署与使用流程，适合AI图像生成研究和应用开发。"
 source: https://xuanyuan.cloud/zh/r/zeroclue/comfyui
 canonical: https://xuanyuan.cloud/zh/r/zeroclue/comfyui
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/zeroclue/comfyui" title="zeroclue/comfyui Docker 镜像中文简介、标签列表与拉取命令">zeroclue/comfyui 中文简介</a>
@@ -42,7 +42,7 @@ ComfyUI Docker镜像提供了一个预配置的环境，用于部署和运行Com
 使用以下命令快速启动ComfyUI容器：
 
 ```bash
-docker run -p 8188:8188 zeroclue/comfyui
+docker run -p 8188:8188 docker.xuanyuan.run/zeroclue/comfyui
 ```
 
 启动后，通过浏览器访问 `http://localhost:8188` 即可使用ComfyUI界面。
@@ -56,7 +56,7 @@ docker run -p 8188:8188 \
   -v ./models:/app/models \
   -v ./workflows:/app/workflows \
   -v ./output:/app/output \
-  zeroclue/comfyui
+  docker.xuanyuan.run/zeroclue/comfyui
 ```
 
 ### Docker Compose 配置
@@ -67,7 +67,7 @@ docker run -p 8188:8188 \
 version: '3'
 services:
   comfyui:
-    image: zeroclue/comfyui
+    image: docker.xuanyuan.run/zeroclue/comfyui
     ports:
       - "8188:8188"
     volumes:
@@ -97,7 +97,7 @@ docker-compose up -d
 
 示例：
 ```bash
-docker run -p 8188:8188 -e PORT=8000 -e LOG_LEVEL=DEBUG zeroclue/comfyui
+docker run -p 8188:8188 -e PORT=8000 -e LOG_LEVEL=DEBUG docker.xuanyuan.run/zeroclue/comfyui
 ```
 
 ## 模型管理
@@ -113,7 +113,7 @@ docker run -p 8188:8188 -e PORT=8000 -e LOG_LEVEL=DEBUG zeroclue/comfyui
 对于GPU加速，需要确保系统已安装NVIDIA Docker支持，并使用适当的运行命令：
 
 ```bash
-docker run --gpus all -p 8188:8188 zeroclue/comfyui
+docker run --gpus all -p 8188:8188 docker.xuanyuan.run/zeroclue/comfyui
 ```
 
 ### 自定义扩展
@@ -123,7 +123,7 @@ docker run --gpus all -p 8188:8188 zeroclue/comfyui
 ```bash
 docker run -p 8188:8188 \
   -v ./extensions:/app/extensions \
-  zeroclue/comfyui
+  docker.xuanyuan.run/zeroclue/comfyui
 ```
 
 ## 访问界面

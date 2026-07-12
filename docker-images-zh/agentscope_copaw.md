@@ -3,7 +3,7 @@ image: agentscope/copaw
 description: "基于 AgentScope 的开源个人 AI 助理 CoPaw 的 Docker 镜像，支持多渠道接入与本地/云端部署，可通过 Web 控制台或钉钉、飞书、QQ 等频道使用。"
 source: https://xuanyuan.cloud/zh/r/agentscope/copaw
 canonical: https://xuanyuan.cloud/zh/r/agentscope/copaw
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/agentscope/copaw" title="agentscope/copaw Docker 镜像中文简介、标签列表与拉取命令">agentscope/copaw 中文简介</a>
@@ -31,8 +31,8 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 拉取并运行
 
 ```bash
-docker pull agentscope/copaw:latest
-docker run -p 8088:8088 -v copaw-data:/app/working agentscope/copaw:latest
+docker pull docker.xuanyuan.run/agentscope/copaw:latest
+docker run -p 8088:8088 -v copaw-data:/app/working docker.xuanyuan.run/agentscope/copaw:latest
 ```
 
 在浏览器打开 **http://127.0.0.1:8088/** 即可进入 CoPaw 控制台（与助手对话、配置 Agent）。
@@ -44,13 +44,13 @@ docker run -p 8088:8088 -v copaw-data:/app/working agentscope/copaw:latest
 使用云端大模型（如 DashScope、OpenAI）时，需配置 API Key。通过 `-e` 或 `--env-file` 传入：
 
 ```bash
-docker run -p 8088:8088 -v copaw-data:/app/working -e DASHSCOPE_API_KEY=你的Key agentscope/copaw:latest
+docker run -p 8088:8088 -v copaw-data:/app/working -e DASHSCOPE_API_KEY=你的Key docker.xuanyuan.run/agentscope/copaw:latest
 ```
 
 或使用 env 文件：
 
 ```bash
-docker run -p 8088:8088 -v copaw-data:/app/working --env-file .env agentscope/copaw:latest
+docker run -p 8088:8088 -v copaw-data:/app/working --env-file .env docker.xuanyuan.run/agentscope/copaw:latest
 ```
 
 仅使用本地模型（如 Ollama、llama.cpp）时，无需配置云端 API Key。
@@ -60,7 +60,7 @@ docker run -p 8088:8088 -v copaw-data:/app/working --env-file .env agentscope/co
 ```yaml
 services:
   copaw:
-    image: agentscope/copaw:latest
+    image: docker.xuanyuan.run/agentscope/copaw:latest
     ports:
       - "8088:8088"
     volumes:

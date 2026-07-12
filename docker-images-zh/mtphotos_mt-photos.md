@@ -3,7 +3,7 @@ image: mtphotos/mt-photos
 description: "MT Photos是一款为NAS（网络附加存储）用户准备的照片管理系统，主要用于帮助用户高效存储、整理和管理各类照片资源，满足NAS环境下对照片数据的集中化、便捷化管理需求，为用户提供专业的照片管理解决方案。"
 source: https://xuanyuan.cloud/zh/r/mtphotos/mt-photos
 canonical: https://xuanyuan.cloud/zh/r/mtphotos/mt-photos
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mtphotos/mt-photos" title="mtphotos/mt-photos Docker 镜像中文简介、标签列表与拉取命令">mtphotos/mt-photos 中文简介</a>
@@ -15,7 +15,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 准备条件
 - 硬件：需一台 **x86 架构** 的 NAS 或个人服务器；  
-- 环境：MT Photos 基于 Docker 运行，需提前安装 Docker，安装方法可参考 [Docker 官方文档]([])；  
+- 环境：MT Photos 基于 Docker 运行，需提前安装 Docker，安装方法可参考 [Docker 官方文档] ；  
 - 配置：建议设备总内存不低于 2G。  
 
 
@@ -30,7 +30,7 @@ MT Photos 支持两种照片/视频管理方式：导入本地已有的文件，
 ### 1. 拉取 Docker 镜像
 执行以下命令下载最新版本镜像：  
 ```bash
-docker pull mtphotos/mt-photos:latest
+docker pull docker.xuanyuan.run/mtphotos/mt-photos:latest
 ```
 
 
@@ -80,9 +80,9 @@ docker run -d \
 
 
 ## 图文教程参考
-如需更详细的步骤（如群晖 DSM、威联通 QTS 等系统的界面操作），可查看官方图文指南：[[]]([])
+如需更详细的步骤（如群晖 DSM、威联通 QTS 等系统的界面操作），可查看官方图文指南：[[]] 
 
 
 **官方网站**：  
-- 国际版：[[]]([])  
-- 中文版：[[]]([])
+- 国际版：[[]]   
+- 中文版：[[]]

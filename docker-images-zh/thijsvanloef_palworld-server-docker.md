@@ -3,7 +3,7 @@ image: thijsvanloef/palworld-server-docker
 description: "一个用于轻松运行幻兽帕鲁专用服务器的Docker容器。"
 source: https://xuanyuan.cloud/zh/r/thijsvanloef/palworld-server-docker
 canonical: https://xuanyuan.cloud/zh/r/thijsvanloef/palworld-server-docker
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/thijsvanloef/palworld-server-docker" title="thijsvanloef/palworld-server-docker Docker 镜像中文简介、标签列表与拉取命令">thijsvanloef/palworld-server-docker 中文简介</a>
@@ -59,7 +59,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ```yaml
 services:
    palworld:
-      image: thijsvanloef/palworld-server-docker:latest
+      image: docker.xuanyuan.run/thijsvanloef/palworld-server-docker:latest
       restart: unless-stopped
       container_name: palworld-server
       stop_grace_period: 30s # 设置等待容器优雅停止的时间
@@ -89,7 +89,7 @@ services:
 ```yaml
 services:
    palworld:
-      image: thijsvanloef/palworld-server-docker:latest
+      image: docker.xuanyuan.run/thijsvanloef/palworld-server-docker:latest
       restart: unless-stopped
       container_name: palworld-server
       stop_grace_period: 30s # 设置等待容器优雅停止的时间

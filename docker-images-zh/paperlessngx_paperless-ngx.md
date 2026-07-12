@@ -3,7 +3,7 @@ image: paperlessngx/paperless-ngx
 description: "Paperless-ngx是一款文档管理系统，可将物理文档转换为可搜索的在线档案，支持OCR识别、全文搜索、自动分类和邮件处理，帮助用户减少纸质文件，高效管理各类文档。"
 source: https://xuanyuan.cloud/zh/r/paperlessngx/paperless-ngx
 canonical: https://xuanyuan.cloud/zh/r/paperlessngx/paperless-ngx
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/paperlessngx/paperless-ngx" title="paperlessngx/paperless-ngx Docker 镜像中文简介、标签列表与拉取命令">paperlessngx/paperless-ngx 中文简介</a>

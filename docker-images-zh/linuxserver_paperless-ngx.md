@@ -3,7 +3,7 @@ image: linuxserver/paperless-ngx
 description: "LinuxServer.io提供的paperless-ngx镜像，用于纸质文档的数字化管理，支持扫描、索引、存储与检索，帮助用户高效管理电子文档。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/paperless-ngx
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/paperless-ngx
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/paperless-ngx" title="linuxserver/paperless-ngx Docker 镜像中文简介、标签列表与拉取命令">linuxserver/paperless-ngx 中文简介</a>
@@ -76,7 +76,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 version: "2.1"
 services:
   paperless-ngx:
-    image: lscr.io/linuxserver/paperless-ngx:latest
+    image: docker.xuanyuan.run/linuxserver/paperless-ngx:latest
     container_name: paperless-ngx
     environment:
       - PUID=1000               # 运行用户ID
@@ -185,7 +185,7 @@ docker image prune
 
 ```bash
 # 拉取最新镜像
-docker pull lscr.io/linuxserver/paperless-ngx:latest
+docker pull docker.xuanyuan.run/linuxserver/paperless-ngx:latest
 
 # 停止并删除旧容器
 docker stop paperless-ngx && docker rm paperless-ngx
@@ -202,7 +202,7 @@ docker image prune
 ```bash
 docker run --rm \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  containrrr/watchtower \
+  docker.xuanyuan.run/containrrr/watchtower \
   --run-once paperless-ngx
 ```
 
@@ -221,7 +221,7 @@ docker build \
   -t lscr.io/linuxserver/paperless-ngx:latest .
 
 # ARM架构构建（需先注册qemu）
-docker run --rm --privileged multiarch/qemu-user-static:register --reset
+docker run --rm --privileged docker.xuanyuan.run/multiarch/qemu-user-static:register --reset
 docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/paperless-ngx:arm64v8-latest .
 ```
 

@@ -3,7 +3,7 @@ image: alpine/k8s
 description: "用于EKS的Kubernetes工具箱，包含kubectl、helm、iam-authenticator、eksctl等工具，支持EKS环境下的Kubernetes集群管理与操作。"
 source: https://xuanyuan.cloud/zh/r/alpine/k8s
 canonical: https://xuanyuan.cloud/zh/r/alpine/k8s
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/k8s" title="alpine/k8s Docker 镜像中文简介、标签列表与拉取命令">alpine/k8s 中文简介</a>
@@ -69,24 +69,24 @@ exported_at: 2026-06-02T12:26:10.133Z
 #### 查看工具版本
 ```bash
 # 查看kubectl版本
-docker run --rm alpine/k8s:v1.28.0 kubectl version --client
+docker run --rm docker.xuanyuan.run/alpine/k8s:v1.28.0 kubectl version --client
 
 # 查看helm版本
-docker run --rm alpine/k8s:v1.28.0 helm version
+docker run --rm docker.xuanyuan.run/alpine/k8s:v1.28.0 helm version
 ```
 
 
 #### 挂载kubeconfig操作集群
 将本地kubeconfig文件挂载到容器中，执行集群操作：
 ```bash
-docker run --rm -v ~/.kube/config:/root/.kube/config alpine/k8s:v1.28.0 kubectl get nodes
+docker run --rm -v ~/.kube/config:/root/.kube/config docker.xuanyuan.run/alpine/k8s:v1.28.0 kubectl get nodes
 ```
 
 
 #### 交互式使用
 启动bash终端，交互式执行命令：
 ```bash
-docker run -it --rm -v ~/.kube/config:/root/.kube/config alpine/k8s:v1.28.0 bash
+docker run -it --rm -v ~/.kube/config:/root/.kube/config docker.xuanyuan.run/alpine/k8s:v1.28.0 bash
 ```
 
 

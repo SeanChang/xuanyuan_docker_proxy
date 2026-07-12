@@ -3,7 +3,7 @@ image: ai/gemma3
 description: "Google最新推出的AI模型Gemma，虽体型小巧却性能强劲，尤其在聊天交互与内容生成领域表现突出；其轻量化设计不仅便于高效部署，还能在保证响应速度的同时，持续输出高质量内容，为用户带来便捷且智能的使用体验，是一款兼顾小巧体型与强大功能的新一代AI模型。"
 source: https://xuanyuan.cloud/zh/r/ai/gemma3
 canonical: https://xuanyuan.cloud/zh/r/ai/gemma3
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/gemma3" title="ai/gemma3 Docker 镜像中文简介、标签列表与拉取命令">ai/gemma3 中文简介</a>
@@ -12,7 +12,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 # Gemma 3（Unsloth GGUF版本）
 
-![logo]([])
+![logo] 
 
 Gemma是一个多用途AI模型系列，适用于问答、摘要生成、推理等任务。该模型提供开放权重，支持负责任的商业使用，可处理图文输入，上下文长度达128K tokens，覆盖140多种语言。
 
@@ -40,7 +40,7 @@ Gemma 3 4B模型可用于以下场景：
 | **工具调用**     | ❌                                             |
 | **输入模态**     | 文本、图像                                    |
 | **输出模态**     | 文本、代码                                    |
-| **许可证**       | [Gemma使用条款]([]) |
+| **许可证**       | [Gemma使用条款]  |
 
 
 ## 可用模型变体
@@ -70,7 +70,7 @@ docker model pull ai/gemma3
 docker model run ai/gemma3
 ```
 
-更多关于Docker Model Runner的说明，可参考[官方文档]([])。
+更多关于Docker Model Runner的说明，可参考[官方文档] 。
 
 
 ## 基准性能测试
@@ -94,6 +94,6 @@ docker model run ai/gemma3
 
 
 ## 相关链接  
-- [Gemma 3模型概述]([])  
-- [Gemma 3技术报告]([])  
-- [Unsloth Dynamic 2.0 GGUF格式说明]([])
+- [Gemma 3模型概述]   
+- [Gemma 3技术报告]   
+- [Unsloth Dynamic 2.0 GGUF格式说明]

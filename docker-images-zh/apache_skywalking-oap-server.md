@@ -3,7 +3,7 @@ image: apache/skywalking-oap-server
 description: "Apache SkyWalking OAP Server是开源分布式可观测性平台Apache SkyWalking的核心组件，负责从代理、服务网格等数据源收集指标、追踪和日志数据，通过分析处理后存储于支持多种数据库的后端，并提供查询接口为UI展示及告警功能提供数据支持，助力用户实时监控分布式系统运行状态、诊断性能瓶颈、保障服务稳定性与可靠性。"
 source: https://xuanyuan.cloud/zh/r/apache/skywalking-oap-server
 canonical: https://xuanyuan.cloud/zh/r/apache/skywalking-oap-server
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/skywalking-oap-server" title="apache/skywalking-oap-server Docker 镜像中文简介、标签列表与拉取命令">apache/skywalking-oap-server 中文简介</a>
@@ -18,7 +18,7 @@ SkyWalking 是一款应用性能监控（APM）系统，专为微服务、云原
 ## 如何使用本镜像
 
 ### 通过 docker-compose 启动存储、OAP 及 Booster UI  
-快速启动时，可以使用单行脚本启动 ElasticSearch 或 [BanyanDB]([]) 作为存储，同时启动 OAP 服务器和 Booster UI。确保已安装 Docker。  
+快速启动时，可以使用单行脚本启动 ElasticSearch 或 [BanyanDB]  作为存储，同时启动 OAP 服务器和 Booster UI。确保已安装 Docker。  
 
 **Linux、macOS、Windows（WSL）**  
 ```shell
@@ -38,26 +38,26 @@ docker compose --project-name=skywalking-quickstart down
 
 ### 启动使用 H2 存储的独立容器  
 ```shell
-docker run --name oap --restart always -d apache/skywalking-oap-server:10.1.0
+docker run --name oap --restart always -d docker.xuanyuan.run/apache/skywalking-oap-server:10.1.0
 ```  
 
 
 ### 启动使用 BanyanDB 存储的独立容器  
 若 BanyanDB 地址为 `banyandb:17912`：  
 ```shell
-docker run --name oap --restart always -d -e SW_STORAGE=banyandb -e SW_STORAGE_BANYANDB_TARGETS=banyandb:17912 apache/skywalking-oap-server:10.1.0
+docker run --name oap --restart always -d -e SW_STORAGE=banyandb -e SW_STORAGE_BANYANDB_TARGETS=banyandb:17912 docker.xuanyuan.run/apache/skywalking-oap-server:10.1.0
 ```  
 
 
 ### 启动使用 ElasticSearch 7 存储的独立容器  
 若 ElasticSearch 地址为 `elasticsearch:9200`：  
 ```shell
-docker run --name oap --restart always -d -e SW_STORAGE=elasticsearch -e SW_STORAGE_ES_CLUSTER_NODES=elasticsearch:9200 apache/skywalking-oap-server:10.1.0
+docker run --name oap --restart always -d -e SW_STORAGE=elasticsearch -e SW_STORAGE_ES_CLUSTER_NODES=elasticsearch:9200 docker.xuanyuan.run/apache/skywalking-oap-server:10.1.0
 ```  
 
 
 ## 配置  
-可通过环境变量配置镜像，具体变量定义可参考 [后端设置文档]([])。  
+可通过环境变量配置镜像，具体变量定义可参考 [后端设置文档] 。  
 
 
 ## 扩展镜像  

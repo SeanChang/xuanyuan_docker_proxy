@@ -3,7 +3,7 @@ image: nodejs/devcontainer
 description: "Node.js官方开发容器镜像，提供一致的Node.js开发环境，包含必要工具与依赖，支持便捷搭建和维护跨平台、团队协作的开发环境。"
 source: https://xuanyuan.cloud/zh/r/nodejs/devcontainer
 canonical: https://xuanyuan.cloud/zh/r/nodejs/devcontainer
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nodejs/devcontainer" title="nodejs/devcontainer Docker 镜像中文简介、标签列表与拉取命令">nodejs/devcontainer 中文简介</a>
@@ -137,7 +137,7 @@ services:
       - DATABASE_URL=postgres://user:password@db:5432/mydb
 
   db:
-    image: postgres:15
+    image: docker.xuanyuan.run/postgres:15
     environment:
       - POSTGRES_USER=user
       - POSTGRES_PASSWORD=password
@@ -201,7 +201,7 @@ volumes:
 若基础镜像不满足需求，可创建 `.devcontainer/Dockerfile` 自定义构建：
 ```dockerfile
 # 基于 Node.js 18 基础镜像
-FROM mcr.microsoft.com/devcontainers/javascript-node:18
+FROM ***-mcr.xuanyuan.run/devcontainers/javascript-node:18
 
 # 安装额外系统依赖（如构建工具）
 RUN apt-get update && apt-get install -y --no-install-recommends \

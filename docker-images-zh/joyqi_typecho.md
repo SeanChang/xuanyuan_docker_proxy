@@ -3,7 +3,7 @@ image: joyqi/typecho
 description: "Typecho官方Docker镜像，用于快速部署轻量级博客系统，支持多种数据库驱动及环境变量配置。"
 source: https://xuanyuan.cloud/zh/r/joyqi/typecho
 canonical: https://xuanyuan.cloud/zh/r/joyqi/typecho
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/joyqi/typecho" title="joyqi/typecho Docker 镜像中文简介、标签列表与拉取命令">joyqi/typecho 中文简介</a>

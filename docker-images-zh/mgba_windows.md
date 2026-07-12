@@ -3,7 +3,7 @@ image: mgba/windows
 description: "用于Windows环境的自动化构建Docker镜像，集成编译工具链与CI/CD工具，支持.NET项目、桌面应用及服务端程序的源码拉取、编译、测试与打包全流程自动化。"
 source: https://xuanyuan.cloud/zh/r/mgba/windows
 canonical: https://xuanyuan.cloud/zh/r/mgba/windows
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mgba/windows" title="mgba/windows Docker 镜像中文简介、标签列表与拉取命令">mgba/windows 中文简介</a>
@@ -29,7 +29,7 @@ Windows autobuilds 是一个专为Windows操作系统设计的Docker镜像，集
 ### 部署示例
 #### 1. 拉取镜像
 ```bash
-docker pull [镜像仓库地址]/windows-autobuilds:ltsc2022  # 基于Windows Server 2022 LTSC版本
+docker pull docker.xuanyuan.run/[镜像仓库地址]/windows-autobuilds:ltsc2022  # 基于Windows Server 2022 LTSC版本
 ```
 
 #### 2. 运行构建容器
@@ -40,7 +40,7 @@ docker run -d \
   -v C:\local\output:/app/output \
   -e BUILD_SCRIPT=build.ps1 \
   -e GIT_REPO=https://github.com/example/win-app.git \
-  [镜像仓库地址]/windows-autobuilds:ltsc2022
+  docker.xuanyuan.run/[镜像仓库地址]/windows-autobuilds:ltsc2022
 ```
 > 参数说明：
 > - `-v`：挂载宿主机目录至容器内，分别用于源码输入（/app/src）和产物输出（/app/output）。

@@ -3,7 +3,7 @@ image: apache/seatunnel
 description: "SeaTunnel是一款下一代超高性能、分布式的海量数据集成工具，它专注于高效处理大规模数据的抽取、转换与加载（ETL）任务，支持多种异构数据源与目标系统的无缝对接，具备优异的横向扩展能力和运行稳定性，适用于各类企业级大数据平台环境，能够为数据整合、流转与分析提供快速、可靠且易维护的技术支撑。"
 source: https://xuanyuan.cloud/zh/r/apache/seatunnel
 canonical: https://xuanyuan.cloud/zh/r/apache/seatunnel
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/seatunnel" title="apache/seatunnel Docker 镜像中文简介、标签列表与拉取命令">apache/seatunnel 中文简介</a>
@@ -23,7 +23,7 @@ Apache SeaTunnel 是一款易用、高性能的分布式数据集成平台，支
 
 #### 下载镜像  
 ```shell  
-docker pull apache/seatunnel:<version_tag>  # 替换<version_tag>为具体版本号  
+docker pull docker.xuanyuan.run/apache/seatunnel:<version_tag>  # 替换<version_tag>为具体版本号  
 ```  
 
 #### 本地模式提交作业  
@@ -31,20 +31,20 @@ docker pull apache/seatunnel:<version_tag>  # 替换<version_tag>为具体版本
 
 - **运行默认配置作业（Fake Source 到 Console Sink）**  
   ```shell  
-  docker run --rm -it apache/seatunnel:<version_tag> ./bin/seatunnel.sh -m local -c config/v2.batch.config.template  
+  docker run --rm -it docker.xuanyuan.run/apache/seatunnel:<version_tag> ./bin/seatunnel.sh -m local -c config/v2.batch.config.template
   ```  
 
 - **运行自定义配置文件**  
   需将本地配置文件目录挂载到容器内，示例如下：  
   ```shell  
   # 假设本地配置文件路径为 /tmp/job/fake_to_console.conf  
-  docker run --rm -it -v /tmp/job/:/config apache/seatunnel:<version_tag> ./bin/seatunnel.sh -m local -c /config/fake_to_console.conf  
+  docker run --rm -it -v /tmp/job/:/config docker.xuanyuan.run/apache/seatunnel:<version_tag> ./bin/seatunnel.sh -m local -c /config/fake_to_console.conf
   ```  
 
 - **设置JVM参数运行**  
   通过 `-DJvmOption` 指定JVM参数（如内存配置）：  
   ```shell  
-  docker run --rm -it -v /tmp/job/:/config apache/seatunnel:<version_tag> ./bin/seatunnel.sh -DJvmOption="-Xms4G -Xmx4G" -m local -c /config/fake_to_console.conf  
+  docker run --rm -it -v /tmp/job/:/config docker.xuanyuan.run/apache/seatunnel:<version_tag> ./bin/seatunnel.sh -DJvmOption="-Xms4G -Xmx4G" -m local -c /config/fake_to_console.conf
   ```  
 
 
@@ -93,7 +93,7 @@ docker run -d --name seatunnel_worker_2 \
   --network seatunnel-network \  
   --rm \  
   -e ST_DOCKER_MEMBER_LIST=172.18.0.2:5801 \  
-  apache/seatunnel \  
+  docker.xuanyuan.run/apache/seatunnel \
   ./bin/seatunnel-cluster.sh -r worker  
 ```  
 
@@ -110,7 +110,7 @@ version: '3.8'
 
 services:  
   master:  
-    image: apache/seatunnel  
+    image: docker.xuanyuan.run/apache/seatunnel  
     container_name: seatunnel_master  
     environment:  
       - ST_DOCKER_MEMBER_LIST=172.16.0.2,172.16.0.3,172.16.0.4  # 集群节点IP列表  
@@ -122,7 +122,7 @@ services:
         ipv4_address: 172.16.0.2  # 主节点固定IP  
 
   worker1:  
-    image: apache/seatunnel  
+    image: docker.xuanyuan.run/apache/seatunnel  
     container_name: seatunnel_worker_1  
     environment:  
       - ST_DOCKER_MEMBER_LIST=172.16.0.2,172.16.0.3,172.16.0.4  
@@ -133,7 +133,7 @@ services:
         ipv4_address: 172.16.0.3  # worker1固定IP  
 
   worker2:  
-    image: apache/seatunnel  
+    image: docker.xuanyuan.run/apache/seatunnel  
     container_name: seatunnel_worker_2  
     environment:  
       - ST_DOCKER_MEMBER_LIST=172.16.0.2,172.16.0.3,172.16.0.4  
@@ -171,7 +171,7 @@ docker-compose up -d
 修改 `docker-compose.yaml`，添加 `worker3` 配置（示例）：  
 ```yaml  
   worker3:  
-    image: apache/seatunnel  
+    image: docker.xuanyuan.run/apache/seatunnel  
     container_name: seatunnel_worker_3  
     environment:  
       - ST_DOCKER_MEMBER_LIST=172.16.0.2,172.16.0.3,172.16.0.4,172.16.0.5  # 添加新IP  
@@ -204,12 +204,12 @@ docker run --name seatunnel_client \
   --network seatunnel-network \  
   -e ST_DOCKER_MEMBER_LIST=172.18.0.2:5801 \  
   --rm \  
-  apache/seatunnel \  
+  docker.xuanyuan.run/apache/seatunnel \
   ./bin/seatunnel.sh -l  
 ```  
 
-更多命令参考 [用户命令文档]([])。  
+更多命令参考 [用户命令文档] 。  
 
 
 ### 通过REST API操作  
-作业提交、状态查询等操作可通过REST API实现，详情参考 [作业提交API文档]([])。
+作业提交、状态查询等操作可通过REST API实现，详情参考 [作业提交API文档] 。

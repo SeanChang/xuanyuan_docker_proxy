@@ -3,7 +3,7 @@ image: onlyoffice/communityserver
 description: "这是一款集成化的一站式协作系统，可在单一平台内集中管理文档、项目、客户关系及邮件，支持团队成员实时协作，有效整合各类信息资源，避免多平台切换的繁琐，简化工作流程，助力提升团队整体办公效率与协同效果。"
 source: https://xuanyuan.cloud/zh/r/onlyoffice/communityserver
 canonical: https://xuanyuan.cloud/zh/r/onlyoffice/communityserver
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/onlyoffice/communityserver" title="onlyoffice/communityserver Docker 镜像中文简介、标签列表与拉取命令">onlyoffice/communityserver 中文简介</a>
@@ -297,15 +297,15 @@ sudo docker run -i -t -d --privileged -p 80:80 \
 
 
 ## 连接自定义模块  
-可开发并接入自定义模块，详细说明见[官方文档]([])。
+可开发并接入自定义模块，详细说明见[官方文档] 。
 
 
 ## 项目信息  
-- 官网：[[]]([])  
-- 代码仓库：[[]]([])  
+- 官网：[[]]   
+- 代码仓库：[[]]   
 - 许可证：Apache 2.0  
 
 
 ## 用户反馈与支持  
-- 技术论坛：[dev.onlyoffice.org]([])  
-- Stack Overflow：[仅标记“onlyoffice”的问题]([])
+- 技术论坛：[dev.onlyoffice.org]   
+- Stack Overflow：[仅标记“onlyoffice”的问题]

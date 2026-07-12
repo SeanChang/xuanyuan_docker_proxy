@@ -3,7 +3,7 @@ image: arm64v8/ros
 description: "机器人操作系统（ROS）是一个致力于简化机器人应用开发流程的开源项目，它通过提供丰富的工具、库和标准化约定，支持开发者高效构建从感知、规划到控制的各类机器人功能模块，兼容多种硬件平台并促进跨团队协作，广泛应用于科研探索、工业自动化、教育实践等领域，为全球机器人开发者社区提供了灵活且强大的技术框架。"
 source: https://xuanyuan.cloud/zh/r/arm64v8/ros
 canonical: https://xuanyuan.cloud/zh/r/arm64v8/ros
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/arm64v8/ros" title="arm64v8/ros Docker 镜像中文简介、标签列表与拉取命令">arm64v8/ros 中文简介</a>
@@ -14,58 +14,58 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 说明  
-本仓库是 [ROS 官方镜像]([]) 的 `arm64v8` 架构专用构建仓库。关于非 amd64 架构的更多信息，可参考官方镜像文档中的 [“除 amd64 外的架构？”]([]) 章节；若需了解镜像源码变更相关内容，参见官方镜像 FAQ 的 [“Git 中的镜像源码已变更，该如何处理？”]([])。  
+本仓库是 [ROS 官方镜像]  的 `arm64v8` 架构专用构建仓库。关于非 amd64 架构的更多信息，可参考官方镜像文档中的 [“除 amd64 外的架构？”]  章节；若需了解镜像源码变更相关内容，参见官方镜像 FAQ 的 [“Git 中的镜像源码已变更，该如何处理？”] 。  
 
 
 ## 快速参考  
 
 ### 维护方  
-[开源机器人基金会（Open Source Robotics Foundation）]([])  
+[开源机器人基金会（Open Source Robotics Foundation）]   
 
 
 ### 求助渠道  
-[Docker 社区 Slack]([])、[Server Fault]([])、[Unix & Linux]([]) 或 [Stack Overflow]([])  
+[Docker 社区 Slack] 、[Server Fault] 、[Unix & Linux]  或 [Stack Overflow]   
 
 
 ## 支持的标签及对应 Dockerfile 链接  
 
-- [`humble-ros-core`, `humble-ros-core-jammy`]([])  
-- [`humble-ros-base`, `humble-ros-base-jammy`, `humble`]([])  
-- [`humble-perception`, `humble-perception-jammy`]([])  
-- [`jazzy-ros-core`, `jazzy-ros-core-noble`]([])  
-- [`jazzy-ros-base`, `jazzy-ros-base-noble`, `jazzy`, `latest`]([])  
-- [`jazzy-perception`, `jazzy-perception-noble`]([])  
-- [`kilted-ros-core`, `kilted-ros-core-noble`]([])  
-- [`kilted-ros-base`, `kilted-ros-base-noble`, `kilted`]([])  
-- [`kilted-perception`, `kilted-perception-noble`]([])  
-- [`rolling-ros-core`, `rolling-ros-core-noble`]([])  
-- [`rolling-ros-base`, `rolling-ros-base-noble`, `rolling`]([])  
-- [`rolling-perception`, `rolling-perception-noble`]([])  
+- [`humble-ros-core`, `humble-ros-core-jammy`]   
+- [`humble-ros-base`, `humble-ros-base-jammy`, `humble`]   
+- [`humble-perception`, `humble-perception-jammy`]   
+- [`jazzy-ros-core`, `jazzy-ros-core-noble`]   
+- [`jazzy-ros-base`, `jazzy-ros-base-noble`, `jazzy`, `latest`]   
+- [`jazzy-perception`, `jazzy-perception-noble`]   
+- [`kilted-ros-core`, `kilted-ros-core-noble`]   
+- [`kilted-ros-base`, `kilted-ros-base-noble`, `kilted`]   
+- [`kilted-perception`, `kilted-perception-noble`]   
+- [`rolling-ros-core`, `rolling-ros-core-noble`]   
+- [`rolling-ros-base`, `rolling-ros-base-noble`, `rolling`]   
+- [`rolling-perception`, `rolling-perception-noble`]   
 
 
 ## 快速参考（续）  
 
 ### 问题反馈渠道  
-[[]]([])  
+[[]]   
 
 
 ### 支持的架构  
-（[更多信息]([])）  
-[`amd64`]([])、[`arm64v8`]([])  
+（[更多信息] ）  
+[`amd64`] 、[`arm64v8`]   
 
 
 ### 镜像制品详情  
-[repo-info 仓库的 `repos/ros/` 目录]([])（[历史记录]([])）  
+[repo-info 仓库的 `repos/ros/` 目录] （[历史记录] ）  
 （包含镜像元数据、传输大小等）  
 
 
 ### 镜像更新  
-[official-images 仓库的 `library/ros` 标签]([])  
-[official-images 仓库的 `library/ros` 文件]([])（[历史记录]([])）  
+[official-images 仓库的 `library/ros` 标签]   
+[official-images 仓库的 `library/ros` 文件] （[历史记录] ）  
 
 
 ### 本文档源码  
-[docs 仓库的 `ros/` 目录]([])（[历史记录]([])）  
+[docs 仓库的 `ros/` 目录] （[历史记录] ）  
 
 
 # 什么是 ROS？  
@@ -73,7 +73,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 > 参考：[.org/wiki/Robot_Operating_System]()  
 
-[![ROS 标志]([])]([])  
+[![ROS 标志] ]   
 
 
 # 如何使用本镜像  
@@ -83,7 +83,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 如需创建自定义 ROS 镜像并安装特定包，以下示例展示了如何通过 `apt-get` 安装官方发布的 Debian 包（以 C++ 和 Python 客户端库示例包为例）：  
 
 ```dockerfile
-FROM arm64v8/ros:rolling-ros-core as aptgetter
+FROM docker.xuanyuan.run/arm64v8/ros:rolling-ros-core as aptgetter
 
 # 安装 ROS 包
 RUN apt-get update && apt-get install -y \
@@ -223,7 +223,7 @@ rolling            876MB  # 完整 ros 镜像
 
 
 ## 部署场景  
-本镜像基于 [官方 Ubuntu 镜像]([]) 和 ROS 官方 Debian 包构建，提供稳定的机器人应用开发/部署平台。适用于科研和工业场景，简化自主控制、任务规划、定位导航、群体行为等复杂系统的开发、复用和交付流程。  
+本镜像基于 [官方 Ubuntu 镜像]  和 ROS 官方 Debian 包构建，提供稳定的机器人应用开发/部署平台。适用于科研和工业场景，简化自主控制、任务规划、定位导航、群体行为等复杂系统的开发、复用和交付流程。  
 
 容器化技术解决了 ROS 软件的可重复性和跨平台部署难题，帮助中小团队降低协作成本，专注于算法创新而非环境配置。  
 
@@ -234,7 +234,7 @@ rolling            876MB  # 完整 ros 镜像
 - `ros-core`：最小化 ROS 安装（仅含核心组件）；  
 - `ros-base`：包含基础工具和库（通常以发行版名称为标签，LTS 版本标记为 `latest`）。  
 
-**注意**：`ros-core` 不含 `rosdep`、`colcon` 等开发工具，需使用 `ros-base` 获取完整开发环境。图形化相关的 `desktop` 等元包可在 [OSRF 的 Docker Hub 仓库]([]) 获取。  
+**注意**：`ros-core` 不含 `rosdep`、`colcon` 等开发工具，需使用 `ros-base` 获取完整开发环境。图形化相关的 `desktop` 等元包可在 [OSRF 的 Docker Hub 仓库]  获取。  
 
 
 ### 数据持久化  
@@ -254,7 +254,7 @@ $ docker run --device /dev/video0:/dev/video0 arm64v8/ros  # 挂载摄像头
 
 
 ### 网络配置  
-ROS 支持分布式通信，建议通过 Docker 网络连接多个容器。如需简化外部通信，可使用 `host` 网络模式（注意：此模式会移除容器网络隔离，可能影响 DDS 通信，详情参见 [相关文档]([])）。  
+ROS 支持分布式通信，建议通过 Docker 网络连接多个容器。如需简化外部通信，可使用 `host` 网络模式（注意：此模式会移除容器网络隔离，可能影响 DDS 通信，详情参见 [相关文档] ）。  
 
 
 ## 部署示例：Docker Compose  
@@ -294,13 +294,13 @@ $ docker compose down
 
 
 # 更多资源  
-- [ROS 开发者文档]([])  
-- [ROS 问答社区]([])  
-- [ROS 论坛]([])  
-- [ROS 包索引]([])  
-- [开源机器人基金会（OSRF）]([])  
+- [ROS 开发者文档]   
+- [ROS 问答社区]   
+- [ROS 论坛]   
+- [ROS 包索引]   
+- [开源机器人基金会（OSRF）]   
 
 
 # 许可证  
-镜像中软件的许可证信息可在 [包索引]([]) 中查询。  
+镜像中软件的许可证信息可在 [包索引]  中查询。  
 Docker 镜像可能包含基础系统（如 Bash）及依赖软件，其许可证需

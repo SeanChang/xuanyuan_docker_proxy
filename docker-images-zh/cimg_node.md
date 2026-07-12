@@ -3,7 +3,7 @@ image: cimg/node
 description: "CircleCI Node.js Docker便捷镜像是为Node.js项目提供的预配置Docker镜像，旨在简化CI/CD流程中的环境设置，方便开发者快速集成和部署应用。"
 source: https://xuanyuan.cloud/zh/r/cimg/node
 canonical: https://xuanyuan.cloud/zh/r/cimg/node
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/cimg/node" title="cimg/node Docker 镜像中文简介、标签列表与拉取命令">cimg/node 中文简介</a>
@@ -139,7 +139,7 @@ git clone --recurse-submodules git@github.com:CircleCI-Public/cimg-node.git
 ```bash
 cd 12.16
 docker build -t test/node:12.16.3 .  # 构建测试镜像
-docker run -it test/node:12.16.3 bash  # 运行镜像验证
+docker run -it docker.xuanyuan.run/test/node:12.16.3 bash # 运行镜像验证
 ```
 
 ### 发布流程（维护者用）

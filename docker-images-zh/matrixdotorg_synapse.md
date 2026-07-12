@@ -3,7 +3,7 @@ image: matrixdotorg/synapse
 description: "Synapse是Matrix协议的参考实现家庭服务器，用于搭建和运行Matrix网络中的主服务器，默认使用SQLite数据库，生产环境建议连接PostgreSQL，不含TURN服务器。"
 source: https://xuanyuan.cloud/zh/r/matrixdotorg/synapse
 canonical: https://xuanyuan.cloud/zh/r/matrixdotorg/synapse
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/matrixdotorg/synapse" title="matrixdotorg/synapse Docker 镜像中文简介、标签列表与拉取命令">matrixdotorg/synapse 中文简介</a>
@@ -40,7 +40,7 @@ docker run -it --rm \
     --mount type=volume,src=synapse-data,dst=/data \
     -e SYNAPSE_SERVER_NAME=my.matrix.host \
     -e SYNAPSE_REPORT_STATS=yes \
-    matrixdotorg/synapse:latest generate
+    docker.xuanyuan.run/matrixdotorg/synapse:latest generate
 ```
 
 有关选择合适服务器名称的信息，请参见[https://matrix-org.github.io/synapse/latest/setup/installation.html](https://matrix-org.github.io/synapse/latest/setup/installation.html)。
@@ -65,7 +65,7 @@ docker run -it --rm \
 docker run -d --name synapse \
     --mount type=volume,src=synapse-data,dst=/data \
     -p 8008:8008 \
-    matrixdotorg/synapse:latest
+    docker.xuanyuan.run/matrixdotorg/synapse:latest
 ```
 
 （假设8008是Synapse配置的HTTP监听端口。）
@@ -92,7 +92,7 @@ docker logs synapse
 docker run -d --name synapse \
     --mount type=volume,src=synapse-data,dst=/data \
     -p 8008:8008 \
-    matrixdotorg/synapse:latest run \
+    docker.xuanyuan.run/matrixdotorg/synapse:latest run \
     -m synapse.app.generic_worker \
     --config-path=/data/homeserver.yaml \
     --config-path=/data/generic_worker.yaml
@@ -133,7 +133,7 @@ docker run -it --rm \
     --mount type=volume,src=synapse-data,dst=/data \
     -e SYNAPSE_SERVER_NAME=my.matrix.host \
     -e SYNAPSE_REPORT_STATS=yes \
-    matrixdotorg/synapse:latest migrate_config
+    docker.xuanyuan.run/matrixdotorg/synapse:latest migrate_config
 ```
 
 这将生成与旧版模式相同的配置文件，存储在`/data/homeserver.yaml`，之后可按[运行Synapse](#运行synapse)部分使用。

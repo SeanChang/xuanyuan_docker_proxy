@@ -3,7 +3,7 @@ image: gogs/gogs
 description: "Gogs是一款轻松便捷的自托管Git服务，它采用Go语言开发，具有轻量级特性，部署简单且资源占用低，适合个人开发者或小型团队搭建私有代码仓库，支持仓库管理、用户权限控制、分支管理等Git核心功能，能够帮助用户轻松实现代码的版本控制与协作管理，无需复杂配置即可快速上手使用。"
 source: https://xuanyuan.cloud/zh/r/gogs/gogs
 canonical: https://xuanyuan.cloud/zh/r/gogs/gogs
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/gogs/gogs" title="gogs/gogs Docker 镜像中文简介、标签列表与拉取命令">gogs/gogs 中文简介</a>
@@ -14,7 +14,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 基本说明
-Gogs 项目详情可参考 [GitHub 仓库]([])。
+Gogs 项目详情可参考 [GitHub 仓库] 。
 
 
 ## 使用方法
@@ -25,7 +25,7 @@ Gogs 项目详情可参考 [GitHub 仓库]([])。
 ### 基础部署步骤
 ```sh
 # 拉取镜像
-$ docker pull gogs/gogs
+$ docker pull docker.xuanyuan.run/gogs/gogs
 
 # 创建宿主机数据目录
 $ mkdir -p /var/gogs
@@ -84,7 +84,7 @@ $ docker run --name=gogs -p 10022:22 -p 10880:3000 -v gogs-data:/data gogs/gogs
 - **HTTP 端口（HTTP Port）**：填写容器内 Gogs 监听端口（默认 3000），与宿主机映射端口无关（如宿主机映射 10880:3000，此处仍填 `3000`）。  
 - **应用 URL（Application URL）**：组合域名和宿主机暴露的 HTTP 端口（如 `[]  
 
-完整配置文档见 [Gogs 官方文档]([])。
+完整配置文档见 [Gogs 官方文档] 。
 
 
 ### 容器环境变量选项
@@ -118,7 +118,7 @@ $ docker run --name=gogs -p 10022:22 -p 10880:3000 -v gogs-data:/data gogs/gogs
 ## 升级步骤
 ⚠️ **务必确保数据卷已挂载到容器外** ⚠️  
 
-1. 拉取最新镜像：`docker pull gogs/gogs`  
+1. 拉取最新镜像：`docker pull docker.xuanyuan.run/gogs/gogs`  
 2. 停止旧容器：`docker stop gogs`  
 3. 删除旧容器：`docker rm gogs`  
 4. 按首次部署步骤重新创建容器（保持相同的端口映射和数据卷挂载）。  
@@ -129,4 +129,4 @@ $ docker run --name=gogs -p 10022:22 -p 10880:3000 -v gogs-data:/data gogs/gogs
 
 
 ## 参考链接
-- [在 Docker 内的 Gogs 与本地系统共享 22 端口的方法]([])
+- [在 Docker 内的 Gogs 与本地系统共享 22 端口的方法]

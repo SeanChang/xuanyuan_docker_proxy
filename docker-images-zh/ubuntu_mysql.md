@@ -3,7 +3,7 @@ image: ubuntu/mysql
 description: "MySQL是一款广泛应用于各类Web应用、企业级系统及数据存储场景的开源SQL数据库，它以快速的数据处理能力、稳定的运行性能和高效的多线程架构为核心优势，其长期版本的维护工作由Canonical负责，为用户提供持续的技术支持、安全更新及功能优化服务，是全球众多开发者和企业信赖的数据库解决方案。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/mysql
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/mysql
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/mysql" title="ubuntu/mysql Docker 镜像中文简介、标签列表与拉取命令">ubuntu/mysql 中文简介</a>
@@ -18,14 +18,14 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## MySQL简介  
-MySQL是一款快速、稳定的多用户、多线程SQL数据库服务器。SQL（结构化查询语言）是全球最流行的数据库查询语言，而MySQL的核心目标是实现速度、健壮性与易用性的平衡。更多详情可参考[MySQL官方文档]([])。
+MySQL是一款快速、稳定的多用户、多线程SQL数据库服务器。SQL（结构化查询语言）是全球最流行的数据库查询语言，而MySQL的核心目标是实现速度、健壮性与易用性的平衡。更多详情可参考[MySQL官方文档] 。
 
 
 ## 标签与架构  
 
 ### 维护支持说明  
 - **LTS**：LTS渠道提供长达5年的免费安全维护。  
-- **ESM**：通过Canonical的受限仓库可提供长达10年的客户安全维护（[联系Canonical获取]([])）。  
+- **ESM**：通过Canonical的受限仓库可提供长达10年的客户安全维护（[联系Canonical获取] ）。  
 
 
 ### 渠道标签与架构详情  
@@ -50,7 +50,7 @@ MySQL是一款快速、稳定的多用户、多线程SQL数据库服务器。SQL
 ### 本地启动  
 通过以下命令启动镜像：  
 ```bash
-docker run -d --name mysql-container -e TZ=UTC -e MYSQL_ROOT_PASSWORD=My:S3cr3t -p 30306:3306 ubuntu/mysql:8.0-24.04_beta
+docker run -d --name mysql-container -e TZ=UTC -e MYSQL_ROOT_PASSWORD=My:S3cr3t -p 30306:3306 docker.xuanyuan.run/ubuntu/mysql:8.0-24.04_beta
 ```  
 启动后，可通过`localhost:30306`访问MySQL服务。
 
@@ -70,7 +70,7 @@ docker run -d --name mysql-container -e TZ=UTC -e MYSQL_ROOT_PASSWORD=My:S3cr3t 
 | `-e MYSQL_INITSB_SKIP_TZINFO=yes` | 禁用入口脚本自动加载时区数据（设为任意非空值即可）。                 |
 | `-p 30306:3306`               | 端口映射（本地30306端口映射容器3306端口）。                         |
 | `-v /path/to/data:/var/lib/mysql` | 数据持久化（避免每次启动容器重新初始化数据库）。                     |
-| `-v /path/to/config:/etc/mysql/mysql.conf.d/` | 挂载本地配置文件（参考[MySQL配置文档]([])）。 |
+| `-v /path/to/config:/etc/mysql/mysql.conf.d/` | 挂载本地配置文件（参考[MySQL配置文档] ）。 |
 
 
 ### 测试与调试  
@@ -87,18 +87,18 @@ docker run -d --name mysql-container -e TZ=UTC -e MYSQL_ROOT_PASSWORD=My:S3cr3t 
 
 
 ## 问题反馈与功能请求  
-若发现镜像bug或需请求功能，可在[launchpad提交issue]([])，标题格式为`mysql: <问题摘要>`。提交时需附上镜像摘要，可通过以下命令获取：  
+若发现镜像bug或需请求功能，可在[launchpad提交issue] ，标题格式为`mysql: <问题摘要>`。提交时需附上镜像摘要，可通过以下命令获取：  
 ```bash
 docker images --no-trunc --quiet ubuntu/mysql:<tag>
 ```  
 
 
 ## 已弃用渠道与标签  
-以下渠道（标签）已停止更新，请升级至新版本；若无法升级，可[联系Canonical]([])。  
+以下渠道（标签）已停止更新，请升级至新版本；若无法升级，可[联系Canonical] 。  
 
 | 渠道（Track） | 版本（Version） | 停止维护时间（EOL） | 升级路径（Upgrade Path） |
 |--------------|-----------------|---------------------|--------------------------|
 | _`track`_    |                 |                     |                          |  
 
 
-> **商业使用与ESM渠道**：若需商业分发或使用ESM渠道/未列出的版本，请[联系Canonical团队]([])（或发送邮件至[邮箱已删除]）。
+> **商业使用与ESM渠道**：若需商业分发或使用ESM渠道/未列出的版本，请[联系Canonical团队] （或发送邮件至[邮箱已删除]）。

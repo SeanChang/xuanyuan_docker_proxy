@@ -3,7 +3,7 @@ image: rustfs/rustfs
 description: "这是一款高性能分布式对象存储系统，作为MinIO的替代方案，适用于大规模数据存储场景，具备高扩展性、高可靠性与高效数据处理能力，采用Apache 2.0开源许可协议，支持免费使用、商用部署及二次开发，为用户提供灵活且经济的分布式存储解决方案。"
 source: https://xuanyuan.cloud/zh/r/rustfs/rustfs
 canonical: https://xuanyuan.cloud/zh/r/rustfs/rustfs
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rustfs/rustfs" title="rustfs/rustfs Docker 镜像中文简介、标签列表与拉取命令">rustfs/rustfs 中文简介</a>
@@ -51,13 +51,13 @@ curl -O [] && bash install_rustfs.sh
 ### 方式二：Docker 快速启动  
 ```bash
 # 稳定版（最新发布）
-docker run -d -p 9000:9000 -v /data:/data rustfs/rustfs:latest
+docker run -d -p 9000:9000 -v /data:/data docker.xuanyuan.run/rustfs/rustfs:latest
 
 # 开发版（主分支快照）
-docker run -d -p 9000:9000 -v /data:/data rustfs/rustfs:main-latest
+docker run -d -p 9000:9000 -v /data:/data docker.xuanyuan.run/rustfs/rustfs:main-latest
 
 # 指定版本（如 v1.0.0）
-docker run -d -p 9000:9000 -v /data:/data rustfs/rustfs:v1.0.0
+docker run -d -p 9000:9000 -v /data:/data docker.xuanyuan.run/rustfs/rustfs:v1.0.0
 ```
 
 
@@ -90,11 +90,11 @@ make help-docker            # 查看所有 Docker 相关命令
 
 
 ## 文档与支持  
-- **详细文档**：访问 [RustFS 文档中心]([]) 获取配置说明、API 手册及高级用法。  
+- **详细文档**：访问 [RustFS 文档中心]  获取配置说明、API 手册及高级用法。  
 - **社区支持**：  
-  - 常见问题：查看 [FAQ]([])；  
-  - 交流讨论：参与 [GitHub Discussions]([])；  
-  - 问题反馈：通过 [GitHub Issues]([]) 提交 bug 或建议。  
+  - 常见问题：查看 [FAQ] ；  
+  - 交流讨论：参与 [GitHub Discussions] ；  
+  - 问题反馈：通过 [GitHub Issues]  提交 bug 或建议。  
 
 
 ## 许可证  

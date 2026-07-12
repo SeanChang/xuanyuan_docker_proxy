@@ -3,7 +3,7 @@ image: openapitools/openapi-generator-cli
 description: "OpenAPI Generator的命令行界面工具，用于通过命令行生成API客户端、服务器端代码及文档等。"
 source: https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli
 canonical: https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/openapitools/openapi-generator-cli" title="openapitools/openapi-generator-cli Docker 镜像中文简介、标签列表与拉取命令">openapitools/openapi-generator-cli 中文简介</a>
@@ -92,13 +92,13 @@ docker run --rm \
 version: '3'
 services:
   generate-python-client:
-    image: openapitools/openapi-generator-cli
+    image: docker.xuanyuan.run/openapitools/openapi-generator-cli
     volumes:
       - ./:/local  # 挂载本地目录
     command: generate -i /local/openapi.yaml -g python -o /local/python-client
 
   generate-java-client:
-    image: openapitools/openapi-generator-cli
+    image: docker.xuanyuan.run/openapitools/openapi-generator-cli
     volumes:
       - ./:/local
     command: generate -i /local/openapi.yaml -g java -o /local/java-client --additional-properties=groupId=com.example,artifactId=my-api-client
@@ -117,7 +117,7 @@ docker-compose up
   ```  
 - **生成器列表**：通过 `list` 命令查看所有支持的生成器：  
   ```bash
-  docker run --rm openapitools/openapi-generator-cli list
+  docker run --rm docker.xuanyuan.run/openapitools/openapi-generator-cli list
   ```  
 - **高级配置**：复杂需求（如模板自定义、过滤器）可参考 [官方文档](https://github.com/OpenAPITools/openapi-generator#16---docker)。  
 

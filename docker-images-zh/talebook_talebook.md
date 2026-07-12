@@ -3,7 +3,7 @@ image: talebook/talebook
 description: "这是一款美观的图书管理系统，具备推送至Kindle、在线阅读、书籍上传、下载及管理等功能，同时支持群晖、威联通等所有X86架构系统的Docker部署。"
 source: https://xuanyuan.cloud/zh/r/talebook/talebook
 canonical: https://xuanyuan.cloud/zh/r/talebook/talebook
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/talebook/talebook" title="talebook/talebook Docker 镜像中文简介、标签列表与拉取命令">talebook/talebook 中文简介</a>
@@ -15,7 +15,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 项目简介  
 这是一个基于Calibre和Vue开发的在线图书管理系统，主打简洁易用的界面和实用功能，支持在线阅读。  
-演示网站：[[]]([])  
+演示网站：[[]]   
 
 
 ## 主要特点  
@@ -24,7 +24,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 - **多用户支持**：支持QQ、微博、Github等社交账号登录（原豆瓣登录已废弃）。  
 
 ### 核心功能  
-- **在线阅读**：集成[Readium.js]([])库，直接在网页端阅读电子书。  
+- **在线阅读**：集成[Readium.js] 库，直接在网页端阅读电子书。  
 - **Kindle推送**：支持邮件推送功能，方便将书籍发送到Kindle设备。  
 - **OPDS协议**：兼容KyBooks等阅读APP，可通过APP访问书库。  
 
@@ -40,14 +40,14 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 部署方式  
 ### Docker部署（推荐）  
 项目提供Docker镜像，部署简单快捷：  
-- 镜像地址：[Docker Hub]([])  
+- 镜像地址：[Docker Hub]   
 - 执行命令（替换`<本机端口>`和`<本机data目录>`）：  
   ```bash  
-  docker run -d --name calibre -p <本机端口>:80 -v <本机data目录>:/data talebook/calibre-webserver  
+  docker run -d --name calibre -p <本机端口>:80 -v <本机data目录>:/data docker.xuanyuan.run/talebook/calibre-webserver
   ```  
 - 示例（端口8080，数据目录`/data/calibre`）：  
   ```bash  
-  docker run -d --name calibre -p 8080:80 -v /data/calibre:/data talebook/calibre-webserver  
+  docker run -d --name calibre -p 8080:80 -v /data/calibre:/data docker.xuanyuan.run/talebook/calibre-webserver
   ```  
 
 ### 手动安装  
@@ -57,13 +57,13 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 致谢与资源  
 - **特别感谢**：感谢oldiy制作第一版Docker镜像及教程。  
 - **相关资源**：  
-  - 群晖安装教程：[[]]([])  
+  - 群晖安装教程：[[]]   
   - 讨论组：[加入]()  
-  - 演示地址：[Demo]([])  
-  - 网友案例：[夜读客]([])、[文渊阁]([])、[网友站点]([])  
+  - 演示地址：[Demo]   
+  - 网友案例：[夜读客] 、[文渊阁] 、[网友站点]   
 
 - 项目演示截图：  
-  ![项目截图]([])  
+  ![项目截图]   
 
 
 （项目曾用名：calibre-webserver）

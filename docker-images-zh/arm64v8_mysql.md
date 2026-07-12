@@ -3,7 +3,7 @@ image: arm64v8/mysql
 description: "MySQL是一款被广泛使用的开源关系型数据库管理系统（RDBMS），具有跨平台兼容性强、数据处理高效稳定、部署与维护便捷等特点，广泛应用于网站开发、企业级应用系统、数据存储与管理等多种场景，为全球众多开发者、中小型企业及大型机构提供可靠的结构化数据存储与查询支持。"
 source: https://xuanyuan.cloud/zh/r/arm64v8/mysql
 canonical: https://xuanyuan.cloud/zh/r/arm64v8/mysql
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/arm64v8/mysql" title="arm64v8/mysql Docker 镜像中文简介、标签列表与拉取命令">arm64v8/mysql 中文简介</a>
@@ -14,53 +14,53 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 说明  
-此仓库为 [mysql 官方镜像]([]) 的 arm64v8 架构构建版本专用仓库（按架构拆分）。更多信息可参考官方镜像文档中的 **“除 amd64 外的其他架构？”** [“Architectures other than amd64?”]([]) 以及官方镜像 FAQ 中的 **“镜像源码在 Git 中变更后如何处理？”** [“An image's source changed in Git, now what?”]([])。
+此仓库为 [mysql 官方镜像]  的 arm64v8 架构构建版本专用仓库（按架构拆分）。更多信息可参考官方镜像文档中的 **“除 amd64 外的其他架构？”** [“Architectures other than amd64?”]  以及官方镜像 FAQ 中的 **“镜像源码在 Git 中变更后如何处理？”** [“An image's source changed in Git, now what?”] 。
 
 
 ## 快速参考  
 
 ### 维护与支持  
 - **维护方**：  
-  [Docker 社区及 MySQL 团队]([])  
+  [Docker 社区及 MySQL 团队]   
 
 - **获取帮助**：  
-  [Docker 社区 Slack]([])、[Server Fault]([])、[Unix & Linux]([]) 或 [Stack Overflow]([])  
+  [Docker 社区 Slack] 、[Server Fault] 、[Unix & Linux]  或 [Stack Overflow]   
 
 
 ### 支持的标签及对应 Dockerfile 链接  
-- [9.4.0, 9.4, 9, innovation, latest, 9.4.0-oraclelinux9, 9.4-oraclelinux9, 9-oraclelinux9, innovation-oraclelinux9, oraclelinux9, 9.4.0-oracle, 9.4-oracle, 9-oracle, innovation-oracle, oracle]([])  
+- [9.4.0, 9.4, 9, innovation, latest, 9.4.0-oraclelinux9, 9.4-oraclelinux9, 9-oraclelinux9, innovation-oraclelinux9, oraclelinux9, 9.4.0-oracle, 9.4-oracle, 9-oracle, innovation-oracle, oracle]   
 
-- [8.4.6, 8.4, 8, lts, 8.4.6-oraclelinux9, 8.4-oraclelinux9, 8-oraclelinux9, lts-oraclelinux9, 8.4.6-oracle, 8.4-oracle, 8-oracle, lts-oracle]([])  
+- [8.4.6, 8.4, 8, lts, 8.4.6-oraclelinux9, 8.4-oraclelinux9, 8-oraclelinux9, lts-oraclelinux9, 8.4.6-oracle, 8.4-oracle, 8-oracle, lts-oracle]   
 
-- [8.0.43, 8.0, 8.0.43-oraclelinux9, 8.0-oraclelinux9, 8.0.43-oracle, 8.0-oracle]([])  
+- [8.0.43, 8.0, 8.0.43-oraclelinux9, 8.0-oraclelinux9, 8.0.43-oracle, 8.0-oracle]   
 
 
 ### 快速参考（续）  
 - **问题反馈地址**：  
-  [[]]([])  
+  [[]]   
 
-- **支持的架构**：（[更多信息]([])）  
-  [`amd64`]([])、[`arm64v8`]([])  
+- **支持的架构**：（[更多信息] ）  
+  [`amd64`] 、[`arm64v8`]   
 
 - **镜像制品详情**：  
-  [repo-info 仓库的 `repos/mysql/` 目录]([])（[历史记录]([])）  
+  [repo-info 仓库的 `repos/mysql/` 目录] （[历史记录] ）  
   （包含镜像元数据、传输大小等信息）  
 
 - **镜像更新**：  
-  [official-images 仓库的 `library/mysql` 标签]([])  
-  [official-images 仓库的 `library/mysql` 文件]([])（[历史记录]([])）  
+  [official-images 仓库的 `library/mysql` 标签]   
+  [official-images 仓库的 `library/mysql` 文件] （[历史记录] ）  
 
 - **本说明文档来源**：  
-  [docs 仓库的 `mysql/` 目录]([])（[历史记录]([])）  
+  [docs 仓库的 `mysql/` 目录] （[历史记录] ）  
 
 
 ## 什么是 MySQL？  
 
 MySQL 是全球最受欢迎的开源数据库。凭借其成熟的性能、可靠性和易用性，MySQL 已成为基于 Web 的应用程序的首选数据库，应用范围从个人项目和网站，到电子商务和信息服务，再到 、、、! 等知名网络平台。  
 
-如需 MySQL 服务器及其他 MySQL 产品的更多信息和相关下载，请访问 [www.mysql.com]([])。  
+如需 MySQL 服务器及其他 MySQL 产品的更多信息和相关下载，请访问 [www.mysql.com] 。  
 
-![logo]([])  
+![logo]   
 
 
 ## 如何使用此镜像  
@@ -91,7 +91,7 @@ $ docker run -it --network some-network --rm arm64v8/mysql mysql -hsome-mysql -u
 $ docker run -it --rm arm64v8/mysql mysql -hsome.mysql.host -usome-mysql-user -p
 ```  
 
-更多关于 MySQL 命令行客户端的信息可参考 [MySQL 文档]([])。  
+更多关于 MySQL 命令行客户端的信息可参考 [MySQL 文档] 。  
 
 
 ### 通过 docker compose 使用  
@@ -102,7 +102,7 @@ $ docker run -it --rm arm64v8/mysql mysql -hsome.mysql.host -usome-mysql-user -p
 
 services:
   db:
-    image: mysql
+    image: docker.xuanyuan.run/mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
@@ -168,7 +168,7 @@ $ docker run -it --rm arm64v8/mysql:tag --verbose --help
 
 
 #### MYSQL_DATABASE  
-可选变量，用于指定镜像启动时创建的数据库名称。若同时提供了用户/密码（见下文），则该用户将被授予对该数据库的超级用户权限（对应 `GRANT ALL`，详见 [创建账户文档]([])）。  
+可选变量，用于指定镜像启动时创建的数据库名称。若同时提供了用户/密码（见下文），则该用户将被授予对该数据库的超级用户权限（对应 `GRANT ALL`，详见 [创建账户文档] ）。  
 
 
 #### MYSQL_USER、MYSQL_PASSWORD  
@@ -206,7 +206,7 @@ $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql-ro
 ### 初始化新实例  
 容器首次启动时，将创建指定名称的新数据库并使用提供的配置变量初始化。此外，将执行 `/docker-entrypoint-initdb.d` 目录中扩展名为 `.sh`、`.sql`、`.sql.gz`、`.sql.bz2`、`.sql.xz` 和 `.sql.zst` 的文件，执行顺序为字母顺序。对于无执行权限的 `.sh` 文件，将通过 `source` 而非直接执行。  
 
-你可通过 [将 SQL 转储文件挂载到该目录]([]) 或提供 [自定义镜像]([]) 来填充 `arm64v8/mysql` 服务的数据。SQL 文件默认导入到 `MYSQL_DATABASE` 指定的数据库。  
+你可通过 [将 SQL 转储文件挂载到该目录]  或提供 [自定义镜像]  来填充 `arm64v8/mysql` 服务的数据。SQL 文件默认导入到 `MYSQL_DATABASE` 指定的数据库。  
 
 
 ## 注意事项  
@@ -216,7 +216,7 @@ $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql-ro
 重要提示：运行 Docker 容器中的应用时，有多种存储数据的方式。建议 `arm64v8/mysql` 镜像用户熟悉可用选项，包括：  
 
 - **让 Docker 通过内部卷管理在主机系统磁盘上写入数据库文件**：默认方式，简单且对用户透明。缺点是主机系统上的工具和应用可能难以定位文件（即容器外的程序）。  
-- **在主机系统上创建数据目录（容器外）并 [挂载到容器内可见目录]([])**：将数据库文件放在主机系统的已知位置，方便主机工具和应用访问。缺点是用户需确保目录存在，并正确设置主机系统上的目录权限和其他安全机制。  
+- **在主机系统上创建数据目录（容器外）并 [挂载到容器内可见目录] **：将数据库文件放在主机系统的已知位置，方便主机工具和应用访问。缺点是用户需确保目录存在，并正确设置主机系统上的目录权限和其他安全机制。  
 
 Docker 文档是了解不同存储选项和变体的良好起点，也有许多博客和论坛帖子讨论此领域的建议。以下仅展示上述第二种方式的基本步骤：  
 
@@ -233,7 +233,7 @@ $ docker run --name some-mysql -v /my/own/datadir:/var/lib/mysql -e MYSQL_ROOT_P
 ### MySQL 初始化完成前无法连接  
 若容器启动时未初始化数据库，则会创建默认数据库。虽为预期行为，但这意味着初始化完成前容器不接受传入连接。这可能导致使用 Docker Compose 等自动化工具同时启动多个容器时出现问题。  
 
-若你连接 MySQL 的应用无法优雅处理 MySQL  downtime 或等待 MySQL 启动，则可能需要在服务启动前添加连接重试循环。官方镜像中的实现示例可参考 [WordPress]([]) 或 [Bonita]([])。  
+若你连接 MySQL 的应用无法优雅处理 MySQL  downtime 或等待 MySQL 启动，则可能需要在服务启动前添加连接重试循环。官方镜像中的实现示例可参考 [WordPress]  或 [Bonita] 。  
 
 
 ### 针对现有数据库使用  

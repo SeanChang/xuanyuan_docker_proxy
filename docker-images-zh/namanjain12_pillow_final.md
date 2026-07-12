@@ -3,7 +3,7 @@ image: namanjain12/pillow_final
 description: "pillow_final 是基于 Python 图像处理库 Pillow 构建的自定义 Docker 镜像，集成了 Pillow 及底层图像依赖（如 libjpeg、libpng 等），提供开箱即用的图像处理环境，支持图像格式转换、裁剪、滤镜应用等操作，适用于批量图像处理、图像预处理服务及轻量级图像编辑工具部署，简化跨平台图像处理环境的配置流程。"
 source: https://xuanyuan.cloud/zh/r/namanjain12/pillow_final
 canonical: https://xuanyuan.cloud/zh/r/namanjain12/pillow_final
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/namanjain12/pillow_final" title="namanjain12/pillow_final Docker 镜像中文简介、标签列表与拉取命令">namanjain12/pillow_final 中文简介</a>
@@ -77,7 +77,7 @@ $ docker run --name some-pillow -v /host/path/to/images:/images -v /host/path/to
 ```yaml
 services:
   pillow-service:
-    image: namanjain12/pillow_final
+    image: docker.xuanyuan.run/namanjain12/pillow_final
     volumes:
       - ./input:/input  # 输入图像目录
       - ./output:/output  # 输出图像目录
@@ -112,7 +112,7 @@ $ docker logs some-pillow
 若需添加额外工具（如 OpenCV），可基于该镜像构建新镜像（创建 Dockerfile）：
 
 ```dockerfile
-FROM namanjain12/pillow_final
+FROM docker.xuanyuan.run/namanjain12/pillow_final
 RUN pip install opencv-python
 ```
 

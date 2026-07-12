@@ -3,7 +3,7 @@ image: lmsysorg/sglang
 description: "这是用于开源项目sglang（GitHub地址：[https://github.com/sgl-project/sglang]"
 source: https://xuanyuan.cloud/zh/r/lmsysorg/sglang
 canonical: https://xuanyuan.cloud/zh/r/lmsysorg/sglang
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/lmsysorg/sglang" title="lmsysorg/sglang Docker 镜像中文简介、标签列表与拉取命令">lmsysorg/sglang 中文简介</a>
@@ -16,8 +16,8 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 概述  
 sglang Docker镜像是为简化sglang项目（[https://github.com/sgl-project/sglang] 前提条件  
 使用前需确保环境已满足以下条件：  
-- 安装Docker Engine（推荐20.10+版本，[官方安装指南]([])）；  
-- （可选）如需使用GPU，需安装nvidia-docker（[配置说明]([])）；  
+- 安装Docker Engine（推荐20.10+版本，[官方安装指南] ）；  
+- （可选）如需使用GPU，需安装nvidia-docker（[配置说明] ）；  
 - 本地已准备好sglang所需的模型文件（如需要加载自定义模型）。  
 
 
@@ -26,7 +26,7 @@ sglang Docker镜像是为简化sglang项目（[https://github.com/sgl-project/sg
 ### 1. 拉取镜像  
 从Docker Hub拉取sglang官方镜像（若无特殊需求，建议使用`latest`标签获取最新版本）：  
 ```bash
-docker pull sgl-project/sglang:latest
+docker pull docker.xuanyuan.run/sgl-project/sglang:latest
 ```  
 
 
@@ -36,7 +36,7 @@ docker pull sgl-project/sglang:latest
 #### 基础启动（默认配置）  
 若无需自定义模型或端口，直接启动默认服务（默认监听容器内8000端口，使用内置示例模型）：  
 ```bash
-docker run -d --name sglang-service -p 8000:8000 sgl-project/sglang:latest
+docker run -d --name sglang-service -p 8000:8000 docker.xuanyuan.run/sgl-project/sglang:latest
 ```  
 
 #### 加载本地模型  
@@ -68,7 +68,7 @@ docker run -d --name sglang-service \
 - **模型文件权限**：挂载本地模型目录时，确保宿主机目录有读权限（可通过`chmod`调整，避免容器内权限不足）；  
 - **GPU支持**：如需使用GPU，启动时需添加`--gpus all`参数（需安装nvidia-docker）：  
   ```bash
-  docker run -d --name sglang-service --gpus all -p 8000:8000 sgl-project/sglang:latest
+  docker run -d --name sglang-service --gpus all -p 8000:8000 docker.xuanyuan.run/sgl-project/sglang:latest
   ```  
 - **停止/重启服务**：通过`docker stop sglang-service`停止，`docker start sglang-service`重启，`docker rm sglang-service`删除容器。  
 

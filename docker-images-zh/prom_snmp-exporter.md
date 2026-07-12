@@ -3,7 +3,7 @@ image: prom/snmp-exporter
 description: "Prometheus SNMP导出器，用于从SNMP设备收集数据并转换为Prometheus可抓取的格式，支持网络设备监控与指标采集。"
 source: https://xuanyuan.cloud/zh/r/prom/snmp-exporter
 canonical: https://xuanyuan.cloud/zh/r/prom/snmp-exporter
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/prom/snmp-exporter" title="prom/snmp-exporter Docker 镜像中文简介、标签列表与拉取命令">prom/snmp-exporter 中文简介</a>
@@ -55,7 +55,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ### 镜像获取
 ```bash
-docker pull prom/snmp-exporter
+docker pull docker.xuanyuan.run/prom/snmp-exporter
 ```
 
 
@@ -63,7 +63,7 @@ docker pull prom/snmp-exporter
 
 #### 1. 基础运行（默认配置）
 ```bash
-docker run -d -p 9116:9116 --name snmp-exporter prom/snmp-exporter
+docker run -d -p 9116:9116 --name snmp-exporter docker.xuanyuan.run/prom/snmp-exporter
 ```
 - 暴露端口：9116（默认 HTTP 端口）。
 - 默认配置：使用内置 `snmp.yml`，支持 `if_mib` 模块和 `public_v2` 认证（SNMP v2c 只读社区）。
@@ -73,7 +73,7 @@ docker run -d -p 9116:9116 --name snmp-exporter prom/snmp-exporter
 docker run -d -p 9116:9116 \
   -v /path/to/your/snmp.yml:/etc/snmp_exporter/snmp.yml \
   --name snmp-exporter \
-  prom/snmp-exporter --config.file=/etc/snmp_exporter/snmp.yml
+  docker.xuanyuan.run/prom/snmp-exporter --config.file=/etc/snmp_exporter/snmp.yml
 ```
 - 挂载自定义 `snmp.yml` 配置文件（路径可通过 `--config.file` 指定，支持多文件和 glob 匹配，如 `--config.file=snmp*.yml`）。
 
@@ -82,7 +82,7 @@ docker run -d -p 9116:9116 \
 version: '3'
 services:
   snmp-exporter:
-    image: prom/snmp-exporter
+    image: docker.xuanyuan.run/prom/snmp-exporter
     container_name: snmp-exporter
     ports:
       - "9116:9116"
@@ -233,7 +233,7 @@ basic_auth_users:
 
 默认情况下，exporter 会将 64 位计数器（Counter64）值截断为 2^53（避免 Prometheus 浮点精度丢失）。如对接非 Prometheus 系统需禁用此功能：
 ```bash
-docker run -d -p 9116:9116 --name snmp-exporter prom/snmp-exporter --no-snmp.wrap-large-counters
+docker run -d -p 9116:9116 --name snmp-exporter docker.xuanyuan.run/prom/snmp-exporter --no-snmp.wrap-large-counters
 ```
 
 

@@ -3,7 +3,7 @@ image: mcp/markitdown
 description: "一个轻量级的MCP服务器，用于调用MarkItDown功能。"
 source: https://xuanyuan.cloud/zh/r/mcp/markitdown
 canonical: https://xuanyuan.cloud/zh/r/mcp/markitdown
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mcp/markitdown" title="mcp/markitdown Docker 镜像中文简介、标签列表与拉取命令">mcp/markitdown 中文简介</a>

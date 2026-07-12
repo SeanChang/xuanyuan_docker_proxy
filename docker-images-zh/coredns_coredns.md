@@ -3,7 +3,7 @@ image: coredns/coredns
 description: "CoreDNS Docker仓库是用于存储和分发CoreDNS Docker镜像的平台，CoreDNS作为一款灵活可扩展的DNS服务器，采用Go语言编写，广泛应用于Kubernetes等容器编排系统，为容器集群提供高效域名解析服务；该仓库便于用户快速获取、部署及更新CoreDNS镜像，满足不同容器环境下的DNS配置需求，是容器化应用中实现可靠域名解析的重要资源。"
 source: https://xuanyuan.cloud/zh/r/coredns/coredns
 canonical: https://xuanyuan.cloud/zh/r/coredns/coredns
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/coredns/coredns" title="coredns/coredns Docker 镜像中文简介、标签列表与拉取命令">coredns/coredns 中文简介</a>
@@ -18,7 +18,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ### 使用前提  
-使用前需确保本地已安装 Docker 环境。可通过终端输入 `docker --version` 检查是否安装，若未安装，参考 [Docker 官方文档]([]) 完成安装。  
+使用前需确保本地已安装 Docker 环境。可通过终端输入 `docker --version` 检查是否安装，若未安装，参考 [Docker 官方文档]  完成安装。  
 
 
 ### 基本操作步骤  
@@ -26,11 +26,11 @@ exported_at: 2026-06-02T12:26:10.133Z
 #### 1. 拉取官方镜像  
 从 Docker Hub 拉取 CoreDNS 官方镜像（默认拉取最新版，标签为 `latest`）：  
 ```bash
-docker pull coredns/coredns:latest
+docker pull docker.xuanyuan.run/coredns/coredns:latest
 ```  
 若需指定版本（如 `1.11.1`），可替换标签：  
 ```bash
-docker pull coredns/coredns:1.11.1
+docker pull docker.xuanyuan.run/coredns/coredns:1.11.1
 ```  
 
 
@@ -68,7 +68,7 @@ docker run -d \
 
 
 ### 注意事项  
-- **配置文件 Corefile**：必须提前准备好，否则 CoreDNS 无法正常启动。配置示例可参考 [CoreDNS 官方文档]([])。  
+- **配置文件 Corefile**：必须提前准备好，否则 CoreDNS 无法正常启动。配置示例可参考 [CoreDNS 官方文档] 。  
 - **端口冲突**：默认映射主机 53 端口（DNS 标准端口），若主机已运行其他 DNS 服务（如 systemd-resolved），需先停止冲突服务或修改映射端口（如 `-p 5353:53/udp -p 5353:53/tcp`）。  
 - **镜像标签**：生产环境建议使用具体版本号（如 `1.11.1`），避免 `latest` 标签自动更新导致版本不可控。  
 - **持久化配置**：通过 `-v` 参数挂载本地目录（如 `/path/to/coredns-config:/etc/coredns`）保存 Corefile，避免容器删除后配置丢失。  

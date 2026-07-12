@@ -3,7 +3,7 @@ image: langgenius/dify-plugin-daemon
 description: "langgenius/dify-plugin-daemon：Dify 平台的插件守护进程核心组件，负责插件的生命周期管理与任务执行，支持插件注册、任务调度与依赖环境封装；是 Dify 插件功能生效的关键中间件，需与 dify-api、dify-web 等组件协同工作，仅支持 Linux/arm64 架构。"
 source: https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon
 canonical: https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/langgenius/dify-plugin-daemon" title="langgenius/dify-plugin-daemon Docker 镜像中文简介、标签列表与拉取命令">langgenius/dify-plugin-daemon 中文简介</a>
@@ -70,7 +70,7 @@ docker-compose up -d
 
 ```bash
 # 1. 联网环境：拉取镜像
-docker pull langgenius/dify-plugin-daemon:latest
+docker pull docker.xuanyuan.run/langgenius/dify-plugin-daemon:latest
 
 # 2. 导出镜像为 tar 文件
 docker save langgenius/dify-plugin-daemon:latest -o dify-plugin-daemon.tar
@@ -114,7 +114,7 @@ services:
   # 其他组件...
   
   dify-plugin-daemon:
-    image: langgenius/dify-plugin-daemon:0.0.9-local
+    image: docker.xuanyuan.run/langgenius/dify-plugin-daemon:0.0.9-local
     container_name: dify-plugin-daemon
     ports:
       - "5002:5002"
@@ -153,7 +153,7 @@ docker run -d \
   -e REDIS_URL=redis://your-redis:6379 \
   -e DATABASE_URL=postgresql://user:pass@your-db:5432/dify \
   -v ./plugins:/app/plugins \
-  langgenius/dify-plugin-daemon:0.0.9-local
+  docker.xuanyuan.run/langgenius/dify-plugin-daemon:0.0.9-local
 ```
 
 ### 5.3 版本选择建议

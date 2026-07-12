@@ -3,7 +3,7 @@ image: victoriametrics/operator
 description: "用于在Kubernetes环境中自动化部署、管理和运维Victoria Metrics时序数据库的Operator控制器"
 source: https://xuanyuan.cloud/zh/r/victoriametrics/operator
 canonical: https://xuanyuan.cloud/zh/r/victoriametrics/operator
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/victoriametrics/operator" title="victoriametrics/operator Docker 镜像中文简介、标签列表与拉取命令">victoriametrics/operator 中文简介</a>

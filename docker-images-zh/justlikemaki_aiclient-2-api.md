@@ -3,7 +3,7 @@ image: justlikemaki/aiclient-2-api
 description: "AIClient-2-API 将 Gemini CLI、Qwen Code、Kiro Claude 等仅限客户端的大模型接口统一为本地 OpenAI 兼容 API，支持多协议转换、账号池与 Web 管理台，便于 Cline、NextChat 等工具调用 Claude、Gemini、Qwen 等模型。"
 source: https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api
 canonical: https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/justlikemaki/aiclient-2-api" title="justlikemaki/aiclient-2-api Docker 镜像中文简介、标签列表与拉取命令">justlikemaki/aiclient-2-api 中文简介</a>
@@ -35,7 +35,7 @@ AIClient-2-API 是一款强大的 API 代理服务，可将仅在客户端内使
 ### 拉取与运行镜像
 
 ```bash
-docker pull justlikemaki/aiclient-2-api
+docker pull docker.xuanyuan.run/justlikemaki/aiclient-2-api
 ```
 
 ### 路径路由与 Provider 对应关系

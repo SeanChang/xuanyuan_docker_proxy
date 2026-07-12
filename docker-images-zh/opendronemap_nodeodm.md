@@ -3,7 +3,7 @@ image: opendronemap/nodeodm
 description: "NodeODM的自动化构建镜像，用于简化NodeODM的部署与使用"
 source: https://xuanyuan.cloud/zh/r/opendronemap/nodeodm
 canonical: https://xuanyuan.cloud/zh/r/opendronemap/nodeodm
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/opendronemap/nodeodm" title="opendronemap/nodeodm Docker 镜像中文简介、标签列表与拉取命令">opendronemap/nodeodm 中文简介</a>
@@ -47,7 +47,7 @@ NodeODM 是一个用于处理航拍图像的[标准 API 规范](https://github.c
 通过 Docker 快速启动 NodeODM 服务：
 
 ```bash
-docker run -p 3000:3000 opendronemap/nodeodm
+docker run -p 3000:3000 docker.xuanyuan.run/opendronemap/nodeodm
 ```
 
 - `-p 3000:3000`：映射容器 3000 端口到主机，用于 API 访问和 Web 界面
@@ -68,7 +68,7 @@ docker run -p 3000:3000 opendronemap/nodeodm
 将处理结果存储到外部硬盘，需挂载 `/var/www/data` 目录：
 
 ```bash
-docker run -p 3000:3000 -v /mnt/external_hd:/var/www/data opendronemap/nodeodm
+docker run -p 3000:3000 -v /mnt/external_hd:/var/www/data docker.xuanyuan.run/opendronemap/nodeodm
 ```
 
 - `-v /mnt/external_hd:/var/www/data`：将主机 `/mnt/external_hd` 目录映射到容器数据目录，实现结果持久化
@@ -79,7 +79,7 @@ docker run -p 3000:3000 -v /mnt/external_hd:/var/www/data opendronemap/nodeodm
 若需启用 GPU 加速 SIFT 处理，需使用 `gpu` 标签镜像并配置 GPU 访问：
 
 ```bash
-docker run -p 3000:3000 --gpus all opendronemap/nodeodm:gpu
+docker run -p 3000:3000 --gpus all docker.xuanyuan.run/opendronemap/nodeodm:gpu
 ```
 
 - **前置条件**：
@@ -87,7 +87,7 @@ docker run -p 3000:3000 --gpus all opendronemap/nodeodm:gpu
   - GPU 需支持 OpenCL（NVIDIA/AMD 显卡均兼容）
 - **验证 GPU 配置**：
   ```bash
-  docker run --rm --gpus all nvidia/cuda:10.0-base nvidia-smi
+  docker run --rm --gpus all docker.xuanyuan.run/nvidia/cuda:10.0-base nvidia-smi
   ```
   若输出 GPU 信息（如型号、驱动版本），则配置成功
 

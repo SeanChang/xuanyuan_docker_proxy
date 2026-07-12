@@ -3,7 +3,7 @@ image: jaegertracing/jaeger-collector
 description: "Jaeger Collector是Jaeger分布式追踪系统的核心组件，用于接收来自SDK的追踪数据并将其标准化、处理后发送到指定的存储系统，实现追踪数据的集中收集与持久化。"
 source: https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-collector
 canonical: https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-collector
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jaegertracing/jaeger-collector" title="jaegertracing/jaeger-collector Docker 镜像中文简介、标签列表与拉取命令">jaegertracing/jaeger-collector 中文简介</a>
@@ -74,7 +74,7 @@ docker run -d \
   -p 14250:14250 \
   -p 14268:14268 \
   -v /path/to/collector-config.yaml:/etc/jaeger/collector-config.yaml \
-  jaegertracing/jaeger-collector:latest \
+  docker.xuanyuan.run/jaegertracing/jaeger-collector:latest \
   --config-file=/etc/jaeger/collector-config.yaml
 ```
 
@@ -110,7 +110,7 @@ service:
 version: '3.8'
 services:
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.0
+    image: ***-elastic.xuanyuan.run/elasticsearch/elasticsearch:7.17.0
     environment:
       - discovery.type=single-node
       - ES_JAVA_OPTS=-Xms512m -Xmx512m
@@ -123,7 +123,7 @@ services:
       retries: 5
 
   jaeger-collector:
-    image: jaegertracing/jaeger-collector:latest
+    image: docker.xuanyuan.run/jaegertracing/jaeger-collector:latest
     depends_on:
       elasticsearch:
         condition: service_healthy

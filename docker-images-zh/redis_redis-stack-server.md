@@ -3,7 +3,7 @@ image: redis/redis-stack-server
 description: "redis-stack-server是一款用于安装Redis服务器的工具，它在标准Redis服务器的基础上，集成了多种额外的数据库功能，包括对JSON数据类型的原生支持、高效的全文搜索能力、时间序列数据的专门管理机制以及概率数据结构（如布隆过滤器）等，这些扩展功能显著增强了Redis的数据处理多样性和应用灵活性，使其能够更好地满足实时数据分析、内容检索、多模型数据存储等复杂场景的需求。"
 source: https://xuanyuan.cloud/zh/r/redis/redis-stack-server
 canonical: https://xuanyuan.cloud/zh/r/redis/redis-stack-server
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/redis/redis-stack-server" title="redis/redis-stack-server Docker 镜像中文简介、标签列表与拉取命令">redis/redis-stack-server 中文简介</a>
@@ -28,7 +28,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 启动Redis Stack服务器  
 使用`redis-stack-server`镜像启动服务器，命令如下（后台运行，指定容器名、端口映射及密码）：  
 ```bash
-docker run -d --name redis-stack -p 6379:6379 -e REDIS_ARGS="--requirepass mypassword" redis/redis-stack-server:latest
+docker run -d --name redis-stack -p 6379:6379 -e REDIS_ARGS="--requirepass mypassword" docker.xuanyuan.run/redis/redis-stack-server:latest
 ```  
 
 ### 连接服务器  
@@ -38,7 +38,7 @@ docker run -d --name redis-stack -p 6379:6379 -e REDIS_ARGS="--requirepass mypas
   docker exec -it redis-stack redis-cli
   ```  
 
-> 如需配置多用户及权限控制，可参考[Redis访问控制列表文档]([])。  
+> 如需配置多用户及权限控制，可参考[Redis访问控制列表文档] 。  
 
 
 ## 配置说明  
@@ -46,19 +46,19 @@ docker run -d --name redis-stack -p 6379:6379 -e REDIS_ARGS="--requirepass mypas
 ### 持久化数据  
 通过`-v`参数挂载本地目录到容器的`/data`目录，实现数据持久化。例如，将数据存储到本地`local-data`目录：  
 ```bash
-docker run -v /local-data/:/data redis/redis-stack-server:latest
+docker run -v /local-data/:/data docker.xuanyuan.run/redis/redis-stack-server:latest
 ```  
 
 ### 端口映射  
 默认Redis Stack服务器端口为6379，RedisInsight（若使用`redis/redis-stack`镜像）为8001。如需修改宿主机端口，调整`-p`参数左侧值（宿主机端口:容器端口）。例如，将Redis服务器映射到10001端口，RedisInsight映射到13333端口：  
 ```bash
-docker run -p 10001:6379 -p 13333:8001 redis/redis-stack:latest  # 注意：RedisInsight仅在redis/redis-stack镜像中可用
+docker run -p 10001:6379 -p 13333:8001 docker.xuanyuan.run/redis/redis-stack:latest # 注意：RedisInsight仅在redis/redis-stack镜像中可用
 ```  
 
 ### 使用本地配置文件  
 默认容器使用内部配置文件。如需加载本地配置文件，通过`-v`挂载本地文件到容器的`/redis-stack.conf`：  
 ```bash
-docker run -v `pwd`/local-redis-stack.conf:/redis-stack.conf -p 6379:6379 redis/redis-stack-server:latest
+docker run -v `pwd`/local-redis-stack.conf:/redis-stack.conf -p 6379:6379 docker.xuanyuan.run/redis/redis-stack-server:latest
 ```  
 （`pwd`表示当前目录，需确保本地配置文件路径正确）  
 
@@ -79,9 +79,9 @@ docker run -v `pwd`/local-redis-stack.conf:/redis-stack.conf -p 6379:6379 redis/
 #### 示例  
 - 通过`REDIS_ARGS`设置密码：  
   ```bash
-  docker run -e REDIS_ARGS="--requirepass redis-stack" redis/redis-stack-server:latest
+  docker run -e REDIS_ARGS="--requirepass redis-stack" docker.xuanyuan.run/redis/redis-stack-server:latest
   ```  
 - 通过`REDISTIMESERIES_ARGS`设置数据保留策略（如保留20秒）：  
   ```bash
-  docker run -e REDISTIMESERIES_ARGS="RETENTION_POLICY=20" redis/redis-stack-server:latest
+  docker run -e REDISTIMESERIES_ARGS="RETENTION_POLICY=20" docker.xuanyuan.run/redis/redis-stack-server:latest
   ```

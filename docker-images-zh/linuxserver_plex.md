@@ -3,7 +3,7 @@ image: linuxserver/plex
 description: "这是由LinuxServer.io为您提供的Plex Media Server容器，它是一款集成了Plex媒体服务器软件的轻量级、可移植Docker容器，能够帮助用户高效组织电影、音乐、照片等各类媒体文件，并支持跨设备流式传输与访问，适用于搭建个人或家庭媒体中心；LinuxServer.io作为专注开源容器开发的组织，致力于提供高质量、易于部署的容器镜像，此Plex Media Server容器便是其优质作品，为媒体管理与分享带来便捷体验。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/plex
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/plex
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/plex" title="linuxserver/plex Docker 镜像中文简介、标签列表与拉取命令">linuxserver/plex 中文简介</a>
@@ -14,7 +14,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## LinuxServer.io 团队简介  
-[LinuxServer.io]([]) 团队专注于提供高质量容器化应用，其容器具有以下特点：  
+[LinuxServer.io]  团队专注于提供高质量容器化应用，其容器具有以下特点：  
 - 定期、及时的应用更新  
 - 简单的用户权限映射（通过 PGID、PUID）  
 - 基于 s6 overlay 的自定义基础镜像  
@@ -24,16 +24,16 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 社区与支持  
 如需了解更多或寻求帮助，可通过以下渠道联系我们：  
-- [博客]([])：包含容器使用指南、教程和观点文章  
+- [博客] ：包含容器使用指南、教程和观点文章  
 - []()：实时社区聊天与技术支持  
-- [Discourse]([])：社区论坛，可发布问题和讨论  
-- [GitHub]([])：查看所有仓库源码  
-- [Open Collective]([])：支持我们的开发工作（捐赠或贡献预算）  
+- [Discourse] ：社区论坛，可发布问题和讨论  
+- [GitHub] ：查看所有仓库源码  
+- [Open Collective] ：支持我们的开发工作（捐赠或贡献预算）  
 
 
 # linuxserver/plex 容器  
 
-[Plex]([]) 是一款媒体服务器软件，可整理个人媒体库（视频、音乐、照片）并流式传输到智能电视、机顶盒和移动设备。本容器为独立的 Plex Media Server 打包版本，设计简洁，支持批量操作，提升使用效率。  
+[Plex]  是一款媒体服务器软件，可整理个人媒体库（视频、音乐、照片）并流式传输到智能电视、机顶盒和移动设备。本容器为独立的 Plex Media Server 打包版本，设计简洁，支持批量操作，提升使用效率。  
 
 
 ## 支持的架构  
@@ -68,7 +68,7 @@ Web 管理界面地址：`<你的IP>:32400/web`
 容器会自动配置 `abc` 用户对设备的访问权限。  
 
 #### Nvidia  
-需先在主机安装 [nvidia-container-toolkit]([])，然后启动容器时添加：  
+需先在主机安装 [nvidia-container-toolkit] ，然后启动容器时添加：  
 ```bash  
 --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=all  
 ```  
@@ -79,7 +79,7 @@ Web 管理界面地址：`<你的IP>:32400/web`
 
 
 ## 只读模式运行  
-容器支持只读文件系统，详情参考 [官方文档]([])。  
+容器支持只读文件系统，详情参考 [官方文档] 。  
 
 **限制**：  
 - 不支持运行时更新 Plex（含 PlexPass 测试版）  
@@ -87,7 +87,7 @@ Web 管理界面地址：`<你的IP>:32400/web`
 
 
 ## 非 root 用户运行  
-容器支持非 root 用户运行，详情参考 [官方文档]([])。  
+容器支持非 root 用户运行，详情参考 [官方文档] 。  
 
 **限制**：  
 - 不支持运行时更新 Plex（含 PlexPass 测试版）  
@@ -100,7 +100,7 @@ Web 管理界面地址：`<你的IP>:32400/web`
 ---  
 services:  
   plex:  
-    image: lscr.io/linuxserver/plex:latest  
+    image: docker.xuanyuan.run/linuxserver/plex:latest  
     container_name: plex  
     network_mode: host  
     environment:  
@@ -164,7 +164,7 @@ docker run -d \
 
 ## 可选参数  
 ### 桥接网络模式（不推荐）  
-若需使用桥接模式（非 host 网络），需映射端口（[官方端口说明]([])）：  
+若需使用桥接模式（非 host 网络），需映射端口（[官方端口说明] ）：  
 ```bash  
 -p 32400:32400 \         # 必选  
 -p 1900:1900/udp \       # 可选  
@@ -195,9 +195,9 @@ uid=1000(你的用户名) gid=1000(你的用户名) groups=1000(你的用户名)
 
 
 ## Docker Mods  
-可通过 [Docker Mods]([]) 扩展容器功能，查看可用模块：  
-- [Plex 专用 Mods]([])  
-- [通用 Mods]([])  
+可通过 [Docker Mods]  扩展容器功能，查看可用模块：  
+- [Plex 专用 Mods]   
+- [通用 Mods]   
 
 
 ## 支持信息  
@@ -241,7 +241,7 @@ uid=1000(你的用户名) gid=1000(你的用户名) groups=1000(你的用户名)
 ### 通过 docker cli  
 - 更新镜像：  
   ```bash  
-  docker pull lscr.io/linuxserver/plex:latest  
+  docker pull docker.xuanyuan.run/linuxserver/plex:latest  
   ```  
 - 重启容器：  
   ```bash  
@@ -262,7 +262,7 @@ docker build \
 ```  
 跨架构构建（如 x86_64 构建 arm64）：  
 ```bash  
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset  
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/plex:latest .  
 ```  
 

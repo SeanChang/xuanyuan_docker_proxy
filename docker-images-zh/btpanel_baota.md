@@ -3,7 +3,7 @@ image: btpanel/baota
 description: "宝塔Linux面板是一款提升运维效率的服务器管理软件，支持一键部署LAMP/LNMP、集群管理、系统监控、网站搭建、FTP服务、数据库配置及JAVA环境等100多项服务器管理功能，其功能全面、稳定少故障且安全可靠，已获全球百万用户认可并安装使用。"
 source: https://xuanyuan.cloud/zh/r/btpanel/baota
 canonical: https://xuanyuan.cloud/zh/r/btpanel/baota
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/btpanel/baota" title="btpanel/baota Docker 镜像中文简介、标签列表与拉取命令">btpanel/baota 中文简介</a>
@@ -18,9 +18,9 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 | 版本类型         | 标签               | 拉取命令                                  | 说明                     |  
 |------------------|--------------------|-------------------------------------------|--------------------------|  
-| 9.3.0 正式版     | latest             | `docker pull btpanel/baota:latest`        | 基于 Debian12            |  
-| 9.0.0 LTS 稳定版 | 9.0_lts_lnmp       | `docker pull btpanel/baota:9.0_lts_lnmp`  | -                        |  
-| 9.2.0 正式版     | 其他分支           | 前往 [Tags 页面]([]) 选择 | 基于不同系统维护         |  
+| 9.3.0 正式版     | latest             | `docker pull docker.xuanyuan.run/btpanel/baota:latest`        | 基于 Debian12            |  
+| 9.0.0 LTS 稳定版 | 9.0_lts_lnmp       | `docker pull docker.xuanyuan.run/btpanel/baota:9.0_lts_lnmp`  | -                        |  
+| 9.2.0 正式版     | 其他分支           | 前往 [Tags 页面]  选择 | 基于不同系统维护         |  
 
 
 ## 二、镜像标签说明  
@@ -46,14 +46,14 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 1. 常规拉取  
 - 拉取指定标签镜像（以 lnmp 为例）：  
   ```bash  
-  docker pull btpanel/baota:lnmp  
+  docker pull docker.xuanyuan.run/btpanel/baota:lnmp  
   ```  
 
 ### 2. 旧版本（7.9.4）拉取  
 ```bash  
-docker pull btpanel/baota:7.9.4-lnmp  # lnmp 环境  
+docker pull docker.xuanyuan.run/btpanel/baota:7.9.4-lnmp  # lnmp 环境  
 # 或  
-docker pull btpanel/baota:7.9.4-lamp  # lamp 环境  
+docker pull docker.xuanyuan.run/btpanel/baota:7.9.4-lamp  # lamp 环境  
 ```  
 
 ### 3. ARM 架构服务器  
@@ -81,7 +81,7 @@ docker run -d --restart unless-stopped --name baota \
   -v /home/website_data:/www/wwwroot \  
   -v /home/mysql_data:/www/server/data \  
   -v /home/vhost:/www/server/panel/vhost \  
-  btpanel/baota:lnmp  
+  docker.xuanyuan.run/btpanel/baota:lnmp
 ```  
 
 
@@ -107,8 +107,8 @@ docker run -d --restart unless-stopped --name baota \
 
 ### 2. 无法访问解决  
 若无法访问，需先开放服务器安全组端口（如阿里云、腾讯云服务器）：  
-- [阿里云安全组配置指引]([])  
-- [腾讯云安全组配置指引]([])  
+- [阿里云安全组配置指引]   
+- [腾讯云安全组配置指引]   
 
 
 ## 七、端口与目录说明  
@@ -132,5 +132,5 @@ docker run -d --restart unless-stopped --name baota \
 
 
 ## 相关资源  
-- Dockerfile 仓库：[btpanel]([])（欢迎 PR/Issue）  
-- 官方支持：[堡塔安全官方团队]([])（问题反馈与建议）
+- Dockerfile 仓库：[btpanel] （欢迎 PR/Issue）  
+- 官方支持：[堡塔安全官方团队] （问题反馈与建议）

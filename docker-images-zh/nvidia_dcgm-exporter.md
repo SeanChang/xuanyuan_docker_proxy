@@ -3,7 +3,7 @@ image: nvidia/dcgm-exporter
 description: "用于Prometheus的NVIDIA GPU指标导出器"
 source: https://xuanyuan.cloud/zh/r/nvidia/dcgm-exporter
 canonical: https://xuanyuan.cloud/zh/r/nvidia/dcgm-exporter
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nvidia/dcgm-exporter" title="nvidia/dcgm-exporter Docker 镜像中文简介、标签列表与拉取命令">nvidia/dcgm-exporter 中文简介</a>
@@ -62,7 +62,7 @@ docker run -d \
   --restart always \
   -p 9400:9400 \
   -v /etc/localtime:/etc/localtime:ro \
-  nvcr.io/nvidia/k8s/dcgm-exporter:latest
+  ***-nvcr.xuanyuan.run/nvidia/k8s/dcgm-exporter:latest
 ```
 
 **参数说明**：
@@ -77,7 +77,7 @@ docker run -d \
 version: '3.8'
 services:
   dcgm-exporter:
-    image: nvcr.io/nvidia/k8s/dcgm-exporter:latest
+    image: ***-nvcr.xuanyuan.run/nvidia/k8s/dcgm-exporter:latest
     container_name: dcgm-exporter
     restart: always
     deploy:

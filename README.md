@@ -9,7 +9,7 @@
 - [Linux 一键安装 Docker + 轩辕镜像加速](#linux-一键安装-docker--轩辕镜像加速)
 
 ### 📦 Docker 镜像中文简介库
-- [Docker 镜像中文简介库（950+ 镜像索引）](./docker-images-zh/README.md)
+- [Docker 镜像中文简介库（1800 镜像索引）](./docker-images-zh/README.md)
 
 ### 📘 平台与设备使用手册
 - [轩辕镜像平台配置手册总览](./usage/README.md)
@@ -339,7 +339,7 @@ https://xuanyuan.cloud/agents.md
 
 </details>
 
-本仓库 [`docker-images-zh/`](./docker-images-zh/) 目录同步收录 **950+** 个热门镜像的中文简介（含标签说明、拉取示例与轩辕在线页链接），可按镜像名检索；完整索引见 [Docker 镜像中文简介库](./docker-images-zh/README.md)。
+本仓库 [`docker-images-zh/`](./docker-images-zh/) 目录同步收录 **1800** 个热门镜像的中文简介（含标签说明、拉取示例与轩辕在线页链接），可按镜像名检索；完整索引见 [Docker 镜像中文简介库](./docker-images-zh/README.md)。
 
 ---
 

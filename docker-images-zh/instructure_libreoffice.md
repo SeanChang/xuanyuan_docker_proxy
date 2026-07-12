@@ -3,7 +3,7 @@ image: instructure/libreoffice
 description: "LibreOffice是一款开源办公套件Docker镜像，集成文字处理、电子表格、演示文稿等工具，适用于文档创建、编辑及格式转换等办公任务。"
 source: https://xuanyuan.cloud/zh/r/instructure/libreoffice
 canonical: https://xuanyuan.cloud/zh/r/instructure/libreoffice
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/instructure/libreoffice" title="instructure/libreoffice Docker 镜像中文简介、标签列表与拉取命令">instructure/libreoffice 中文简介</a>
@@ -145,7 +145,7 @@ cd 3.2
 docker build -t instructure/ruby-base:3.2 .
 
 # 5. 验证镜像
-docker run --rm instructure/ruby-base:3.2 ruby -v  # 输出 Ruby 3.2.2
+docker run --rm docker.xuanyuan.run/instructure/ruby-base:3.2 ruby -v # 输出 Ruby 3.2.2
 ```
 
 ### docker-compose 批量构建配置（示例）
@@ -155,13 +155,13 @@ version: '3.8'
 services:
   ruby-3.1:
     build: ./ruby/3.1
-    image: instructure/ruby-base:3.1
+    image: docker.xuanyuan.run/instructure/ruby-base:3.1
   ruby-3.2:
     build: ./ruby/3.2
-    image: instructure/ruby-base:3.2
+    image: docker.xuanyuan.run/instructure/ruby-base:3.2
   python-3.9:
     build: ./python/3.9
-    image: instructure/python-base:3.9
+    image: docker.xuanyuan.run/instructure/python-base:3.9
 ```
 执行批量构建：
 ```bash

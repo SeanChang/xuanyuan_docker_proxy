@@ -3,7 +3,7 @@ image: apache/tika
 description: "Apache Tika Server的容器镜像，提供内容检测、元数据及文本提取的HTTP服务，便于便捷部署和集成到应用系统中。"
 source: https://xuanyuan.cloud/zh/r/apache/tika
 canonical: https://xuanyuan.cloud/zh/r/apache/tika
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/apache/tika" title="apache/tika Docker 镜像中文简介、标签列表与拉取命令">apache/tika 中文简介</a>
@@ -47,7 +47,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 通过 Docker Hub 拉取指定版本镜像：  
 ```bash
-docker pull apache/tika:<version>
+docker pull docker.xuanyuan.run/apache/tika:<version>
 ```  
 - `<version>`：Tika Server 版本号，格式为 `x.y.z`（基础版）或 `x.y.z-full`（完整版），例如 `2.5.0` 或 `2.5.0-full`  
 
@@ -56,7 +56,7 @@ docker pull apache/tika:<version>
 
 #### 基础运行命令  
 ```bash
-docker run -d -p 127.0.0.1:9998:9998 apache/tika:<version>
+docker run -d -p 127.0.0.1:9998:9998 docker.xuanyuan.run/apache/tika:<version>
 ```  
 - **参数说明**：  
   - `-d`：后台运行容器  
@@ -65,7 +65,7 @@ docker run -d -p 127.0.0.1:9998:9998 apache/tika:<version>
 #### 公开网络访问（需谨慎）  
 若确认容器运行在隔离网络中，可移除 `127.0.0.1` 绑定，允许外部访问：  
 ```bash
-docker run -d -p 9998:9998 apache/tika:<version>
+docker run -d -p 9998:9998 docker.xuanyuan.run/apache/tika:<version>
 ```  
 
 #### Docker Compose 示例  
@@ -74,7 +74,7 @@ docker run -d -p 9998:9998 apache/tika:<version>
 version: '3'
 services:
   tika-server:
-    image: apache/tika:2.5.0-full  # 使用完整版示例
+    image: docker.xuanyuan.run/apache/tika:2.5.0-full  # 使用完整版示例
     ports:
       - "127.0.0.1:9998:9998"  # 仅本地访问
     restart: unless-stopped  # 容器退出时自动重启（非必要）
@@ -93,7 +93,7 @@ docker build -t 'apache/tika' github.com/apache/tika-docker
 ```  
 构建后运行：  
 ```bash
-docker run -d -p 127.0.0.1:9998:9998 apache/tika
+docker run -d -p 127.0.0.1:9998:9998 docker.xuanyuan.run/apache/tika
 ```  
 
 

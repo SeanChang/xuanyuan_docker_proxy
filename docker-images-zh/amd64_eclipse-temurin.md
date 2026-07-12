@@ -3,7 +3,7 @@ image: amd64/eclipse-temurin
 description: "Eclipse Temurin构建的OpenJDK二进制文件官方镜像"
 source: https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin
 canonical: https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/amd64/eclipse-temurin" title="amd64/eclipse-temurin Docker 镜像中文简介、标签列表与拉取命令">amd64/eclipse-temurin 中文简介</a>
@@ -42,7 +42,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 使用 `docker run` 命令直接运行 Java 应用 JAR 文件：
 
 ```bash
-docker run -it --rm -v /path/to/your/app.jar:/app.jar amd64/eclipse-temurin:21 java -jar /app.jar
+docker run -it --rm -v /path/to/your/app.jar:/app.jar docker.xuanyuan.run/amd64/eclipse-temurin:21 java -jar /app.jar
 ```
 
 #### 通过 Dockerfile 构建应用镜像
@@ -50,7 +50,7 @@ docker run -it --rm -v /path/to/your/app.jar:/app.jar amd64/eclipse-temurin:21 j
 创建包含 Java 应用的 Dockerfile：
 
 ```dockerfile
-FROM amd64/eclipse-temurin:21-jdk-alpine
+FROM docker.xuanyuan.run/amd64/eclipse-temurin:21-jdk-alpine
 WORKDIR /app
 COPY target/app.jar app.jar
 CMD ["java", "-jar", "app.jar"]
@@ -60,7 +60,7 @@ CMD ["java", "-jar", "app.jar"]
 
 ```bash
 docker build -t my-java-app .
-docker run -it --rm -p 8080:8080 my-java-app
+docker run -it --rm -p 8080:8080 docker.xuanyuan.run/my-java-app
 ```
 
 ### 生成自定义 JRE
@@ -69,7 +69,7 @@ docker run -it --rm -p 8080:8080 my-java-app
 
 ```dockerfile
 # 阶段 1: 构建自定义 JRE
-FROM amd64/eclipse-temurin:21-jdk-alpine as jre-builder
+FROM docker.xuanyuan.run/amd64/eclipse-temurin:21-jdk-alpine as jre-builder
 RUN $JAVA_HOME/bin/jlink \
     --add-modules java.base,java.sql,java.net.http \
     --strip-debug \
@@ -79,7 +79,7 @@ RUN $JAVA_HOME/bin/jlink \
     --output /javaruntime
 
 # 阶段 2: 构建应用镜像
-FROM alpine:3.22
+FROM docker.xuanyuan.run/alpine:3.22
 ENV JAVA_HOME=/opt/java/jre
 ENV PATH="$JAVA_HOME/bin:$PATH"
 COPY --from=jre-builder /javaruntime $JAVA_HOME
@@ -162,7 +162,7 @@ version: '3.8'
 services:
   app:
     build: .
-    image: my-java-app:latest
+    image: docker.xuanyuan.run/my-java-app:latest
     ports:
       - "8080:8080"
     environment:
@@ -175,7 +175,7 @@ services:
     depends_on:
       - db
   db:
-    image: mysql:8.0
+    image: docker.xuanyuan.run/mysql:8.0
     environment:
       - MYSQL_ROOT_PASSWORD=rootpass
       - MYSQL_DATABASE=mydb

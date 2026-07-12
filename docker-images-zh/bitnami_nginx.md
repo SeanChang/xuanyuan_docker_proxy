@@ -3,7 +3,7 @@ image: bitnami/nginx
 description: "Bitnami Nginx安全镜像是由Bitnami提供的预配置、安全加固且高度优化的软件包，专为快速部署稳定可靠的Nginx Web服务器环境而设计，集成了自动安全更新、漏洞修复机制及合规性支持，可有效简化服务器配置流程，保障Web应用在生产环境中的安全性与高性能，适用于各类Web服务场景如静态资源托管、反向代理及负载均衡等。"
 source: https://xuanyuan.cloud/zh/r/bitnami/nginx
 canonical: https://xuanyuan.cloud/zh/r/bitnami/nginx
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/nginx" title="bitnami/nginx Docker 镜像中文简介、标签列表与拉取命令">bitnami/nginx 中文简介</a>
@@ -17,17 +17,17 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 NGINX Open Source 是一款 Web 服务器，同时可作为反向代理、负载均衡器和 HTTP 缓存使用。因其能提供更快的内容传输能力，适用于高需求网站。
 
-[NGINX Open Source 概述]([])  
+[NGINX Open Source 概述]   
 **商标说明**：本软件包由 Bitnami 打包，提及的商标分属各自公司所有，使用不代表关联或背书。
 
 
 ## 快速启动
 
 ```console
-docker run --name nginx bitnami/nginx:latest
+docker run --name nginx docker.xuanyuan.run/bitnami/nginx:latest
 ```
 
-这是由 Bitnami 构建和维护的强化、最小化 CVE 镜像。Bitnami Secure Images（BSI）基于云优化、安全强化的企业级操作系统 [Photon Linux]([])。选择 BSI 镜像的理由：  
+这是由 Bitnami 构建和维护的强化、最小化 CVE 镜像。Bitnami Secure Images（BSI）基于云优化、安全强化的企业级操作系统 [Photon Linux] 。选择 BSI 镜像的理由：  
 - 热门开源软件的强化安全镜像，漏洞接近零  
 - 漏洞分类与优先级划分，支持 VEX 声明、KEV 和 EPSS 评分  
 - 合规性支持，包括 FIPS、STIG、离线部署选项及安全物料清单（SBOM）  
@@ -37,29 +37,29 @@ docker run --name nginx bitnami/nginx:latest
 
 ## 在 Kubernetes 中部署 NGINX Open Source
 
-通过 Helm Charts 部署 Bitnami 应用是在 Kubernetes 上快速启动的最简单方式。详见 [Bitnami NGINX Open Source Chart GitHub 仓库]([])。
+通过 Helm Charts 部署 Bitnami 应用是在 Kubernetes 上快速启动的最简单方式。详见 [Bitnami NGINX Open Source Chart GitHub 仓库] 。
 
 
 ## 为什么使用非 root 容器？
 
-非 root 容器增加了一层安全防护，通常推荐用于生产环境。但由于以非 root 用户运行，特权操作通常受限。详见 [相关文档]([])。
+非 root 容器增加了一层安全防护，通常推荐用于生产环境。但由于以非 root 用户运行，特权操作通常受限。详见 [相关文档] 。
 
 
 ## 支持的标签及对应 Dockerfile 链接
 
-了解 Bitnami 标签策略（滚动标签与不可变标签的区别），可参考 [文档]([])。标签对应关系可查看分支文件夹中的 `tags-info.yaml` 文件（如 `bitnami/ASSET/BRANCH/DISTRO/tags-info.yaml`）。
+了解 Bitnami 标签策略（滚动标签与不可变标签的区别），可参考 [文档] 。标签对应关系可查看分支文件夹中的 `tags-info.yaml` 文件（如 `bitnami/ASSET/BRANCH/DISTRO/tags-info.yaml`）。
 
 
 ## 获取镜像
 
 ### 拉取预构建镜像
-推荐从 [Docker Hub Registry]([]) 拉取预构建镜像：
+推荐从 [Docker Hub Registry]  拉取预构建镜像：
 ```console
-docker pull bitnami/nginx:latest  # 最新版本
+docker pull docker.xuanyuan.run/bitnami/nginx:latest  # 最新版本
 ```
-如需特定版本，拉取带版本标签的镜像（查看 [可用版本列表]([])）：
+如需特定版本，拉取带版本标签的镜像（查看 [可用版本列表] ）：
 ```console
-docker pull bitnami/nginx:[TAG]  # 替换 [TAG] 为具体版本
+docker pull docker.xuanyuan.run/bitnami/nginx:[TAG]  # 替换 [TAG] 为具体版本
 ```
 
 ### 手动构建镜像
@@ -74,7 +74,7 @@ docker build -t bitnami/APP:latest .
 
 镜像暴露 `/app` 目录作为卷，挂载至此的内容会通过默认服务器块提供服务：
 ```console
-docker run -v /本地路径/app:/app bitnami/nginx:latest
+docker run -v /本地路径/app:/app docker.xuanyuan.run/bitnami/nginx:latest
 ```
 或修改 `docker-compose.yml`：
 ```yaml
@@ -92,7 +92,7 @@ services:
 ### 随机端口映射
 让 Docker 将容器的 8080/8443 端口映射到主机随机端口：
 ```console
-docker run --name nginx -P bitnami/nginx:latest
+docker run --name nginx -P docker.xuanyuan.run/bitnami/nginx:latest
 ```
 用 `docker port` 查看映射的主机端口：
 ```console
@@ -102,7 +102,7 @@ docker port nginx  # 示例输出：8080/tcp -> 0.0.0.0:32769
 ### 指定端口映射
 手动指定主机端口（如主机 9000 端口映射到容器 8080 端口）：
 ```console
-docker run -p 9000:8080 bitnami/nginx:latest
+docker run -p 9000:8080 docker.xuanyuan.run/bitnami/nginx:latest
 ```
 访问 `[] 即可打开网站。
 
@@ -127,7 +127,7 @@ server {
 ```console
 docker run --name nginx \
   -v /本地路径/my_server_block.conf:/opt/bitnami/nginx/conf/server_blocks/my_server_block.conf:ro \
-  bitnami/nginx:latest
+  docker.xuanyuan.run/bitnami/nginx:latest
 ```
 或修改 `docker-compose.yml`：
 ```yaml
@@ -155,12 +155,12 @@ load_module /opt/bitnami/nginx/modules/ngx_http_dav_module.so;
 ```console
 docker run --name nginx \
   -v /本地路径/webdav.conf:/opt/bitnami/nginx/conf/context.d/main/webdav.conf:ro \
-  bitnami/nginx:latest
+  docker.xuanyuan.run/bitnami/nginx:latest
 ```
 
 
 ### 添加流服务器块
-如需使用 [NGINX Stream Core Module]([])，需将流服务器块配置文件挂载到 `/opt/bitnami/nginx/conf/stream_server_blocks/`，并设置环境变量 `NGINX_ENABLE_STREAM=yes`。
+如需使用 [NGINX Stream Core Module] ，需将流服务器块配置文件挂载到 `/opt/bitnami/nginx/conf/stream_server_blocks/`，并设置环境变量 `NGINX_ENABLE_STREAM=yes`。
 
 #### 步骤 1：创建流服务器块配置
 例如 `my_stream_server_block.conf`：
@@ -183,7 +183,7 @@ server {
 docker run --name nginx \
   -e NGINX_ENABLE_STREAM=yes \
   -v /本地路径/my_stream_server_block.conf:/opt/bitnami/nginx/conf/stream_server_blocks/my_stream_server_block.conf:ro \
-  bitnami/nginx:latest
+  docker.xuanyuan.run/bitnami/nginx:latest
 ```
 
 
@@ -244,7 +244,7 @@ docker run --name nginx -p 9000:9000 \  # 主机与容器端口一致
 ```console
 docker run --name nginx \
   -v /本地路径/your_nginx.conf:/opt/bitnami/nginx/conf/nginx.conf:ro \
-  bitnami/nginx:latest
+  docker.xuanyuan.run/bitnami/nginx:latest
 ```
 
 
@@ -280,7 +280,7 @@ server {
 docker logs nginx  # 单个容器
 docker-compose logs nginx  # Docker Compose 环境
 ```
-可通过 `--log-driver` 选项配置 [日志驱动]([])。
+可通过 `--log-driver` 选项配置 [日志驱动] 。
 
 
 ## 自定义镜像
@@ -288,7 +288,7 @@ docker-compose logs nginx  # Docker Compose 环境
 ### 扩展基础镜像
 若通过环境变量、自定义配置文件等方式无法满足需求，可基于 `bitnami/nginx` 构建自定义镜像。示例 `Dockerfile`：
 ```Dockerfile
-FROM bitnami/nginx
+FROM docker.xuanyuan.run/bitnami/nginx
 
 # 安装 vim 编辑器（需 root 权限）
 USER 0
@@ -311,7 +311,7 @@ ARG NGINX_VERSION=1.25.0
 ARG BITNAMI_NGINX_TAG=${NGINX_VERSION}-debian-12-r0
 
 # 构建阶段：编译 Perl 模块
-FROM bitnami/nginx:${BITNAMI_NGINX_TAG} AS builder
+FROM docker.xuanyuan.run/bitnami/nginx:${BITNAMI_NGINX_TAG} AS builder
 USER root
 ARG NGINX_VERSION
 RUN install_packages dirmngr gpg curl build-essential libpcre3-dev zlib1g-dev libperl-dev
@@ -326,7 +326,7 @@ RUN cd /tmp/nginx-${NGINX_VERSION} && \
   make && make install
 
 # 最终镜像：复制模块并启用
-FROM bitnami/nginx:${BITNAMI_NGINX_TAG}
+FROM docker.xuanyuan.run/bitnami/nginx:${BITNAMI_NGINX_TAG}
 USER root
 RUN install_packages libperl-dev
 COPY --from=builder /opt/bitnami/nginx/modules/ngx_http_perl_module.so /opt/bitnami/nginx/modules/
@@ -337,7 +337,7 @@ USER 1001
 
 
 ## 参考链接
-- [NGINX Open Source 官方网站]([])
-- [Bitnami NGINX Helm Chart]([])
-- [Bitnami 容器标签策略]([])
-- [非 root 容器文档]([])
+- [NGINX Open Source 官方网站] 
+- [Bitnami NGINX Helm Chart] 
+- [Bitnami 容器标签策略] 
+- [非 root 容器文档]

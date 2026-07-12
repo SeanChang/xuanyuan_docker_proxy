@@ -3,7 +3,7 @@ image: linuxserver/piwigo
 description: "这是由LinuxServer.io提供的Piwigo容器，其中Piwigo是一款开源照片管理系统，具备相册组织、图片分类、标签管理、在线分享及多平台访问等功能，该容器旨在为用户提供便捷部署方式，帮助个人摄影爱好者、家庭或小型团队轻松搭建和安全管理照片库，满足高效存储与分享图片的需求，同时依托LinuxServer.io的容器优化技术，确保运行稳定且易于配置。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/piwigo
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/piwigo
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/piwigo" title="linuxserver/piwigo Docker 镜像中文简介、标签列表与拉取命令">linuxserver/piwigo 中文简介</a>
@@ -23,7 +23,7 @@ LinuxServer.io 团队推出的容器具有以下特点：
 
 
 ## Piwigo 简介  
-[Piwigo]([]) 是一款网页相册管理软件，提供强大的图片发布与管理功能。  
+[Piwigo]  是一款网页相册管理软件，提供强大的图片发布与管理功能。  
 
 
 ## 支持架构  
@@ -53,7 +53,7 @@ LinuxServer.io 团队推出的容器具有以下特点：
 ---  
 services:  
   piwigo:  
-    image: lscr.io/linuxserver/piwigo:latest  
+    image: docker.xuanyuan.run/linuxserver/piwigo:latest  
     container_name: piwigo  
     environment:  
       - PUID=1000        # 用户ID（见下文说明）  
@@ -79,7 +79,7 @@ docker run -d \
   -v /path/to/piwigo/config:/config \  
   -v /path/to/appdata/gallery:/gallery \  
   --restart unless-stopped \  
-  lscr.io/linuxserver/piwigo:latest  
+  docker.xuanyuan.run/linuxserver/piwigo:latest
 ```  
 
 
@@ -123,8 +123,8 @@ uid=1000(your_user) gid=1000(your_user) groups=1000(your_user)
 
 ## Docker Mods  
 可通过 Docker Mods 扩展容器功能，相关 Mods 可查看：  
-- [Piwigo 专用 Mods]([])  
-- [通用 Mods]([])  
+- [Piwigo 专用 Mods]   
+- [通用 Mods]   
 
 
 ## 支持信息  
@@ -179,7 +179,7 @@ uid=1000(your_user) gid=1000(your_user) groups=1000(your_user)
 ### 通过 docker run 更新  
 - 更新镜像：  
   ```bash  
-  docker pull lscr.io/linuxserver/piwigo:latest  
+  docker pull docker.xuanyuan.run/linuxserver/piwigo:latest  
   ```  
 
 - 停止并删除旧容器：  
@@ -195,7 +195,7 @@ uid=1000(your_user) gid=1000(your_user) groups=1000(your_user)
 
 
 > [!提示]  
-> 推荐使用 [Diun]([]) 接收镜像更新通知，不建议使用自动更新工具。  
+> 推荐使用 [Diun]  接收镜像更新通知，不建议使用自动更新工具。  
 
 
 ## 本地构建  
@@ -210,7 +210,7 @@ docker build \
 ```  
 跨架构构建需先注册 qemu-static：  
 ```bash  
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset  
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```  
 然后指定架构 Dockerfile，例如：  
 ```bash  
@@ -255,9 +255,9 @@ docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/piwigo:latest .
 
 
 ## 相关链接  
-- [LinuxServer.io 官网]([])  
-- [博客]([])（含容器使用指南）  
+- [LinuxServer.io 官网]   
+- [博客] （含容器使用指南）  
 - []()（实时支持/社区交流）  
-- [论坛]([])  
-- [GitHub]([])（源码仓库）  
-- [赞助支持]([])
+- [论坛]   
+- [GitHub] （源码仓库）  
+- [赞助支持]

@@ -3,7 +3,7 @@ image: ubuntu/postgres
 description: "PostgreSQL是一款开源的对象关系型数据库，它功能强大、稳定性高，广泛应用于各类企业级应用和数据管理场景，支持复杂查询、事务处理及高级数据类型，其长期版本由Canonical负责维护，为用户提供持续的技术支持与更新服务，确保数据库系统在长期使用中的可靠性与安全性，是全球众多开发者和企业信赖的主流数据库解决方案之一。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/postgres
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/postgres
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/postgres" title="ubuntu/postgres Docker 镜像中文简介、标签列表与拉取命令">ubuntu/postgres 中文简介</a>
@@ -18,16 +18,16 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 关于 Postgres  
 
-PostgreSQL 是一款功能强大的开源对象关系型数据库系统。它完全符合 ACID 标准，全面支持外键、连接、视图、触发器及存储过程（支持多种语言）。支持多数 SQL:2008 数据类型，包括 INTEGER、NUMERIC、BOOLEAN、CHAR、VARCHAR、DATE、INTERVAL、TIMESTAMP 等，还可存储图片、音频、视频等二进制大对象。提供 C/C++、Java、.Net、Perl、Python、Ruby、Tcl、ODBC 等原生编程接口，文档完善。更多信息见 [PostgreSQL 官网]([])。
+PostgreSQL 是一款功能强大的开源对象关系型数据库系统。它完全符合 ACID 标准，全面支持外键、连接、视图、触发器及存储过程（支持多种语言）。支持多数 SQL:2008 数据类型，包括 INTEGER、NUMERIC、BOOLEAN、CHAR、VARCHAR、DATE、INTERVAL、TIMESTAMP 等，还可存储图片、音频、视频等二进制大对象。提供 C/C++、Java、.Net、Perl、Python、Ruby、Tcl、ODBC 等原生编程接口，文档完善。更多信息见 [PostgreSQL 官网] 。
 
 
 ## 标签与架构  
 
-![LTS]([])  
+![LTS]   
 LTS 通道提供最长 5 年免费安全维护。  
 
-![ESM]([])  
-ESM 通道通过 [Canonical 受限仓库]([]) 提供最长 10 年客户安全维护。  
+![ESM]   
+ESM 通道通过 [Canonical 受限仓库]  提供最长 10 年客户安全维护。  
 
 
 | 通道标签（Channel Tags） | 支持截止时间 | 当前版本 | 架构 |  
@@ -41,7 +41,7 @@ ESM 通道通过 [Canonical 受限仓库]([]) 提供最长 10 年客户安全维
 
 
 ### 商业使用与扩展安全维护（ESM）通道  
-若需商业再分发，或需要 ESM 通道及未列出的版本/通道，请 [联系 Canonical 团队]([])（或发送邮件至 [邮箱已删除]）。  
+若需商业再分发，或需要 ESM 通道及未列出的版本/通道，请 [联系 Canonical 团队] （或发送邮件至 [邮箱已删除]）。  
 
 
 ## 使用方法  
@@ -50,7 +50,7 @@ ESM 通道通过 [Canonical 受限仓库]([]) 提供最长 10 年客户安全维
 ### 本地启动镜像  
 
 ```sh
-docker run -d --name postgres-container -e TZ=UTC -p 30432:5432 -e POSTGRES_PASSWORD=My:s3Cr3t/ ubuntu/postgres:14-22.04_beta
+docker run -d --name postgres-container -e TZ=UTC -p 30432:5432 -e POSTGRES_PASSWORD=My:s3Cr3t/ docker.xuanyuan.run/ubuntu/postgres:14-22.04_beta
 ```  
 启动后，可通过 `localhost:30432` 访问 PostgreSQL 服务。  
 
@@ -68,7 +68,7 @@ docker run -d --name postgres-container -e TZ=UTC -p 30432:5432 -e POSTGRES_PASS
 | `-e POSTGRES_HOST_AUTH_METHOD=trust` | 为 `host` 类型连接（所有数据库、用户、地址）设置认证方式。若传递此参数，会在 `pg_hba.conf` 中添加：`host all all all $POSTGRES_HOST_AUTH_METHOD`。 |  
 | `-e PGDATA=/path/to/location` | 设置数据库文件存储位置，默认路径为 `/var/lib/postgresql/data`。 |  
 | `-p 30432:5432` | 将 Postgres 服务暴露至 `localhost:30432`。 |  
-| `-v /path/to/postgresql.conf:/etc/postgresql/postgresql.conf` | 挂载本地 [配置文件]([])（示例配置见 [此处]([])）。 |  
+| `-v /path/to/postgresql.conf:/etc/postgresql/postgresql.conf` | 挂载本地 [配置文件] （示例配置见 [此处] ）。 |  
 
 
 ### 初始化脚本  
@@ -104,9 +104,9 @@ $ docker run -it --rm --network postgres-network ubuntu/postgres:14-22.04_beta p
 
 ## Kubernetes 部署  
 
-适用于任何 Kubernetes 环境；若未部署 Kubernetes，推荐安装 [MicroK8s]([])，并执行 `microk8s.enable dns storage`，再通过 `snap alias microk8s.kubectl kubectl` 设置 `kubectl` 别名。  
+适用于任何 Kubernetes 环境；若未部署 Kubernetes，推荐安装 [MicroK8s] ，并执行 `microk8s.enable dns storage`，再通过 `snap alias microk8s.kubectl kubectl` 设置 `kubectl` 别名。  
 
-1. 下载 [postgresql.conf]([]) 和 [postgres-deployment.yml]([])；  
+1. 下载 [postgresql.conf]  和 [postgres-deployment.yml] ；  
 2. 在 `postgres-deployment.yml` 中设置 `containers.postgres.image` 为目标通道标签（如 `ubuntu/postgres:14-22.04_beta`）；  
 3. 执行部署命令：  
    ```sh
@@ -120,7 +120,7 @@ $ docker run -it --rm --network postgres-network ubuntu/postgres:14-22.04_beta p
 ## 问题反馈与功能请求  
 
 若发现镜像 bug 或需请求功能，请在以下链接提交 issue：  
-[[]]([])  
+[[]]   
 
 **标题格式**：`postgres: <问题摘要>`。提交时需包含所用镜像的 digest，可通过以下命令获取：  
 ```sh

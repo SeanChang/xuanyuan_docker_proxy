@@ -3,7 +3,7 @@ image: ddev/mysql
 description: "为ddev-dbserver-mysql-5.7提供的ARM64基础镜像，适用于Apple Silicon等ARM64架构环境"
 source: https://xuanyuan.cloud/zh/r/ddev/mysql
 canonical: https://xuanyuan.cloud/zh/r/ddev/mysql
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ddev/mysql" title="ddev/mysql Docker 镜像中文简介、标签列表与拉取命令">ddev/mysql 中文简介</a>
@@ -28,7 +28,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 单独运行容器：
 
 ```bash
-docker run -it --rm --entrypoint=bash ddev/ddev-mysql:<tag> bash
+docker run -it --rm --entrypoint=bash docker.xuanyuan.run/ddev/ddev-mysql:<tag> bash
 ```
 
 ## 源码

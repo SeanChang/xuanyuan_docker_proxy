@@ -3,7 +3,7 @@ image: uozi/nginx-ui
 description: "Nginx UI是一个基于Web的Nginx管理界面，支持配置编辑、Let's Encrypt证书自动部署与续期、服务器监控、日志查看等功能，采用Go和Vue开发，提供用户友好的操作界面，简化Nginx管理流程。"
 source: https://xuanyuan.cloud/zh/r/uozi/nginx-ui
 canonical: https://xuanyuan.cloud/zh/r/uozi/nginx-ui
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/uozi/nginx-ui" title="uozi/nginx-ui Docker 镜像中文简介、标签列表与拉取命令">uozi/nginx-ui 中文简介</a>
@@ -74,7 +74,7 @@ docker run -dit \
   -v /mnt/user/appdata/nginx:/etc/nginx \
   -v /mnt/user/appdata/nginx-ui:/etc/nginx-ui \
   -p 8080:80 -p 8443:443 \
-  uozi/nginx-ui:latest
+  docker.xuanyuan.run/uozi/nginx-ui:latest
 ```
 
 3. 容器运行后，通过`http://<服务器IP>:8080/install`访问Nginx UI面板进行登录。
@@ -101,7 +101,7 @@ services:
         ports:
             - 8080:80
             - 8443:443
-        image: 'uozi/nginx-ui:latest'
+        image: 'docker.xuanyuan.run/uozi/nginx-ui:latest'
 ```
 
 3. 执行以下命令创建容器：

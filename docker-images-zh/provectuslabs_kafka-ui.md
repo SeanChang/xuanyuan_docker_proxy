@@ -3,7 +3,7 @@ image: provectuslabs/kafka-ui
 description: "免费、开源的Web UI，用于监控和管理Apache Kafka集群"
 source: https://xuanyuan.cloud/zh/r/provectuslabs/kafka-ui
 canonical: https://xuanyuan.cloud/zh/r/provectuslabs/kafka-ui
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/provectuslabs/kafka-ui" title="provectuslabs/kafka-ui Docker 镜像中文简介、标签列表与拉取命令">provectuslabs/kafka-ui 中文简介</a>
@@ -36,7 +36,7 @@ UI for Apache Kafka 是一个多功能、快速且轻量级的Web UI，专为管
 docker run -d -p 8080:8080 \
   -e KAFKA_CLUSTERS_0_NAME=local-cluster \
   -e KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:9092 \
-  --name kafka-ui provectuslabs/kafka-ui
+  --name kafka-ui docker.xuanyuan.run/provectuslabs/kafka-ui
 ```
 
 ### Docker Compose 配置示例
@@ -44,7 +44,7 @@ docker run -d -p 8080:8080 \
 version: '3.8'
 services:
   kafka-ui:
-    image: provectuslabs/kafka-ui
+    image: docker.xuanyuan.run/provectuslabs/kafka-ui
     container_name: kafka-ui
     ports:
       - "8080:8080"

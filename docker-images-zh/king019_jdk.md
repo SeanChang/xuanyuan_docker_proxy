@@ -3,7 +3,7 @@ image: king019/jdk
 description: "基于JDK的Docker镜像，提供稳定的Java运行环境，支持多版本及轻量级部署，适用于开发、测试和生产环境中Java应用程序的运行与部署。"
 source: https://xuanyuan.cloud/zh/r/king019/jdk
 canonical: https://xuanyuan.cloud/zh/r/king019/jdk
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/king019/jdk" title="king019/jdk Docker 镜像中文简介、标签列表与拉取命令">king019/jdk 中文简介</a>

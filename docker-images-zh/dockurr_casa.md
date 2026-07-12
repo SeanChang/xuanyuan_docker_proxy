@@ -3,7 +3,7 @@ image: dockurr/casa
 description: "Docker容器化的CasaOS，无需在系统上直接安装即可运行的自托管操作系统。"
 source: https://xuanyuan.cloud/zh/r/dockurr/casa
 canonical: https://xuanyuan.cloud/zh/r/dockurr/casa
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dockurr/casa" title="dockurr/casa Docker 镜像中文简介、标签列表与拉取命令">dockurr/casa 中文简介</a>
@@ -25,7 +25,7 @@ CasaOS的Docker容器化版本，这是一个用于自托管的操作系统。
 ```yaml
 services:
   casa:
-    image: dockurr/casa
+    image: docker.xuanyuan.run/dockurr/casa
     container_name: casa
     ports:
       - 8080:8080

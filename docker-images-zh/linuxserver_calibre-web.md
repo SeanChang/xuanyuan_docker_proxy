@@ -3,7 +3,7 @@ image: linuxserver/calibre-web
 description: "这是由LinuxServer.io为您提供的Calibre-Web容器，其中Calibre-Web是一款基于Calibre的网页版电子书管理工具，支持通过浏览器便捷管理、搜索、分类及阅读电子书库，而该容器由LinuxServer.io团队精心打造，旨在提供稳定、高效且易于部署的电子书管理解决方案，帮助用户无需复杂配置即可快速搭建个人或团队的电子书管理系统，轻松实现电子书的一站式管理与访问。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/calibre-web
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/calibre-web
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/calibre-web" title="linuxserver/calibre-web Docker 镜像中文简介、标签列表与拉取命令">linuxserver/calibre-web 中文简介</a>
@@ -25,7 +25,7 @@ LinuxServer.io 团队推出的容器具有以下核心特性：
 
 ## calibre-web 简介
 
-[calibre-web]([]) 是一款基于 Web 的电子书管理工具，可通过现有 Calibre 数据库提供电子书浏览、阅读和下载功能。支持集成 Google Drive，也可直接通过界面编辑元数据和管理 Calibre 库。该软件基于 library 项目开发，采用 GPL v3 协议开源。
+[calibre-web]  是一款基于 Web 的电子书管理工具，可通过现有 Calibre 数据库提供电子书浏览、阅读和下载功能。支持集成 Google Drive，也可直接通过界面编辑元数据和管理 Calibre 库。该软件基于 library 项目开发，采用 GPL v3 协议开源。
 
 
 ## 支持架构
@@ -75,7 +75,7 @@ LinuxServer.io 团队推出的容器具有以下核心特性：
 ---
 services:
   calibre-web:
-    image: lscr.io/linuxserver/calibre-web:latest
+    image: docker.xuanyuan.run/linuxserver/calibre-web:latest
     container_name: calibre-web
     environment:
       - PUID=1000          # 用户ID（必填）
@@ -152,8 +152,8 @@ id your_user  # 示例输出：uid=1000(your_user) gid=1000(your_user)
 ## Docker Mods
 
 可通过 Docker Mods 扩展容器功能，支持的 mods 包括：  
-- **calibre-web 专用 mods**：[查看列表]([])  
-- **通用 mods**：[查看列表]([])  
+- **calibre-web 专用 mods**：[查看列表]   
+- **通用 mods**：[查看列表]   
 
 
 ## 支持与维护
@@ -194,7 +194,7 @@ docker image prune
 #### 通过 docker run  
 ```bash
 # 拉取最新镜像
-docker pull lscr.io/linuxserver/calibre-web:latest
+docker pull docker.xuanyuan.run/linuxserver/calibre-web:latest
 
 # 停止并删除旧容器
 docker stop calibre-web && docker rm calibre-web
@@ -214,7 +214,7 @@ git clone [] docker-calibre-web
 docker build --no-cache --pull -t lscr.io/linuxserver/calibre-web:latest .
 
 # 构建ARM镜像（需先安装qemu-static）
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 docker build -f Dockerfile.aarch64 --no-cache --pull -t lscr.io/linuxserver/calibre-web:arm64v8-latest .
 ```
 
@@ -245,8 +245,8 @@ docker build -f Dockerfile.aarch64 --no-cache --pull -t lscr.io/linuxserver/cali
 ---
 
 更多资源：  
-- [LinuxServer.io 博客]([])（教程与指南）  
+- [LinuxServer.io 博客] （教程与指南）  
 - []()（实时支持）  
-- [论坛]([])（社区讨论）  
-- [GitHub]([])（源码仓库）  
-- [Open Collective]([])（支持我们的开发）
+- [论坛] （社区讨论）  
+- [GitHub] （源码仓库）  
+- [Open Collective] （支持我们的开发）

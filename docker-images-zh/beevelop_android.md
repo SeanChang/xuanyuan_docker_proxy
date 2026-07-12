@@ -3,7 +3,7 @@ image: beevelop/android
 description: "提供Android运行环境的Docker镜像，适用于Android应用开发、测试及相关任务的容器化部署。"
 source: https://xuanyuan.cloud/zh/r/beevelop/android
 canonical: https://xuanyuan.cloud/zh/r/beevelop/android
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/beevelop/android" title="beevelop/android Docker 镜像中文简介、标签列表与拉取命令">beevelop/android 中文简介</a>
@@ -50,13 +50,13 @@ exported_at: 2026-06-02T12:26:10.133Z
 通过 Docker Hub 拉取最新或指定版本镜像：
 ```bash
 # 拉取最新标签/版本
-docker pull beevelop/android:v2023.01.2
+docker pull docker.xuanyuan.run/beevelop/android:v2023.01.2
 ```
 
 ### 运行容器
 以交互方式运行容器（用于临时开发或调试）：
 ```bash
-docker run --rm --name beevelop-android -it beevelop/android:v2023.01.2 bash
+docker run --rm --name beevelop-android -it docker.xuanyuan.run/beevelop/android:v2023.01.2 bash
 ```
 > **参数说明**：`--rm` 退出后自动删除容器，`-it` 启用交互终端，`--name` 指定容器名称
 
@@ -69,7 +69,7 @@ docker build -t beevelop/android github.com/beevelop/docker-base
 ### 作为基础镜像使用
 在自定义 Dockerfile 中引用本镜像，扩展开发环境：
 ```Dockerfile
-FROM beevelop/android:v2023.01.2
+FROM docker.xuanyuan.run/beevelop/android:v2023.01.2
 
 # 接受 Android SDK 许可证（使用前请阅读许可证协议）
 RUN yes | sdkmanager --licenses --sdk_root=$ANDROID_SDK_ROOT

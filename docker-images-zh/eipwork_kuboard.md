@@ -3,7 +3,7 @@ image: eipwork/kuboard
 description: "Kuboard是一款用于管理Kubernetes集群的实用仪表盘。"
 source: https://xuanyuan.cloud/zh/r/eipwork/kuboard
 canonical: https://xuanyuan.cloud/zh/r/eipwork/kuboard
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/eipwork/kuboard" title="eipwork/kuboard Docker 镜像中文简介、标签列表与拉取命令">eipwork/kuboard 中文简介</a>
@@ -101,7 +101,7 @@ docker run -d \
 version: '3.8'
 services:
   kuboard:
-    image: eipwork/kuboard:latest
+    image: docker.xuanyuan.run/eipwork/kuboard:latest
     container_name: kuboard
     restart: always
     ports:
@@ -157,7 +157,7 @@ Kuboard配置、用户数据等需持久化存储，推荐通过Docker卷（Volu
 - **镜像标签**：`eipwork/kuboard:latest`（最新稳定版）、`eipwork/kuboard:v3`（v3系列稳定版）  
 - **更新方法**：拉取最新镜像并重建容器：  
   ```bash
-  docker pull eipwork/kuboard:latest && docker restart kuboard
+  docker pull docker.xuanyuan.run/eipwork/kuboard:latest && docker restart kuboard
   ```  
 - **兼容性**：支持Kubernetes 1.16+，若集群版本低于1.16，需使用Kuboard v2版本镜像（`eipwork/kuboard:v2`）。
 

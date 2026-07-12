@@ -3,7 +3,7 @@ image: calico/kube-controllers
 description: "calico/kube-controllers 是 Project Calico 提供的 Kubernetes 控制器镜像，负责监控 Kubernetes API 事件并同步 Calico 网络策略、命名空间、服务账户等资源到数据存储（如 etcd），确保集群状态的一致性。"
 source: https://xuanyuan.cloud/zh/r/calico/kube-controllers
 canonical: https://xuanyuan.cloud/zh/r/calico/kube-controllers
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/calico/kube-controllers" title="calico/kube-controllers Docker 镜像中文简介、标签列表与拉取命令">calico/kube-controllers 中文简介</a>
@@ -52,7 +52,7 @@ amd64（主流架构），部分版本可能支持 arm64（需参考镜像仓库
 ### 启动控制器实例
 
 ```bash
-docker run --name calico-kube-controllers -e ETCD_ENDPOINTS=http://etcd:2379 -d calico/kube-controllers:v3.26.1
+docker run --name calico-kube-controllers -e ETCD_ENDPOINTS=http://etcd:2379 -d docker.xuanyuan.run/calico/kube-controllers:v3.26.1
 ```
 
 通过环境变量配置 etcd 连接信息。
@@ -71,7 +71,7 @@ spec:
     spec:
       containers:
         - name: calico-kube-controllers
-          image: calico/kube-controllers:v3.26.1
+          image: docker.xuanyuan.run/calico/kube-controllers:v3.26.1
           env:
             - name: ETCD_ENDPOINTS
               value: http://etcd-cluster:2379

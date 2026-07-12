@@ -3,7 +3,7 @@ image: centos/nginx-112-centos7
 description: "用于运行nginx 1.12或构建基于nginx的应用程序的平台"
 source: https://xuanyuan.cloud/zh/r/centos/nginx-112-centos7
 canonical: https://xuanyuan.cloud/zh/r/centos/nginx-112-centos7
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/centos/nginx-112-centos7" title="centos/nginx-112-centos7 Docker 镜像中文简介、标签列表与拉取命令">centos/nginx-112-centos7 中文简介</a>
@@ -36,7 +36,7 @@ $ s2i build https://github.com/sclorg/nginx-container.git --context-dir=1.12/tes
 
 **使用Docker运行基础容器示例**：
 ```
-docker run -d --name nginx-112 -p 8080:80 rhscl/nginx-112-rhel7
+docker run -d --name nginx-112 -p 8080:80 docker.xuanyuan.run/rhscl/nginx-112-rhel7
 ```
 
 **访问应用**：

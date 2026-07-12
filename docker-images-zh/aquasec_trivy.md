@@ -3,7 +3,7 @@ image: aquasec/trivy
 description: "Trivy是一款一体化云原生安全扫描器"
 source: https://xuanyuan.cloud/zh/r/aquasec/trivy
 canonical: https://xuanyuan.cloud/zh/r/aquasec/trivy
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/aquasec/trivy" title="aquasec/trivy Docker 镜像中文简介、标签列表与拉取命令">aquasec/trivy 中文简介</a>
@@ -43,20 +43,20 @@ Trivy 是一款一体化云原生安全扫描工具（all-in-one, cloud native s
 #### 1. 扫描容器镜像漏洞
 扫描指定容器镜像（如`python:3.4-alpine`）中的漏洞：
 ```bash
-docker run aquasec/trivy image python:3.4-alpine
+docker run docker.xuanyuan.run/aquasec/trivy image python:3.4-alpine
 ```
 
 #### 2. 扫描本地目录IaC配置错误
 扫描本地目录（需挂载到容器内）的IaC配置文件（如Terraform、Kubernetes YAML）：
 ```bash
 # 将当前目录（$PWD）挂载到容器内的/myapp目录，扫描该目录
-docker run -v $PWD:/myapp aquasec/trivy config /myapp
+docker run -v $PWD:/myapp docker.xuanyuan.run/aquasec/trivy config /myapp
 ```
 
 #### 3. 生成软件物料清单（SBOM）
 为指定镜像（如`alpine:3.15`）生成SBOM：
 ```bash
-docker run aquasec/trivy sbom alpine:3.15
+docker run docker.xuanyuan.run/aquasec/trivy sbom alpine:3.15
 ```
 
 
@@ -66,7 +66,7 @@ docker run aquasec/trivy sbom alpine:3.15
 为避免重复下载漏洞数据库和镜像层，可将主机的缓存目录挂载到容器内的`/root/.cache/`路径，提升扫描效率：
 ```bash
 # 将主机的[本地缓存目录]挂载到容器缓存目录
-docker run -v [本地缓存目录]:/root/.cache/ aquasec/trivy image python:3.4-alpine
+docker run -v [本地缓存目录]:/root/.cache/ docker.xuanyuan.run/aquasec/trivy image python:3.4-alpine
 ```
 > 示例：`-v $HOME/trivy-cache:/root/.cache/`（需确保主机目录存在）
 
@@ -75,7 +75,7 @@ docker run -v [本地缓存目录]:/root/.cache/ aquasec/trivy image python:3.4-
 若需扫描主机本地Docker守护进程中的镜像（而非远程仓库镜像），需挂载Docker socket以访问本地Docker服务：
 ```bash
 # 挂载Docker socket和缓存目录
-docker run -v /var/run/docker.sock:/var/run/docker.sock -v [本地缓存目录]:/root/.cache/ aquasec/trivy image my-local-image:latest
+docker run -v /var/run/docker.sock:/var/run/docker.sock -v [本地缓存目录]:/root/.cache/ docker.xuanyuan.run/aquasec/trivy image my-local-image:latest
 ```
 
 

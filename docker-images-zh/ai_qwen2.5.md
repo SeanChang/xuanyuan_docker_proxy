@@ -3,7 +3,7 @@ image: ai/qwen2.5
 description: "通义千问迎来重要更新，本次升级在语言能力上实现显著提升，涵盖更精准的语义理解、更自然的文本生成及更深入的多轮对话表现，同时大幅拓宽支持范围，包括更长文本处理、多模态交互（如图文结合）及更多行业场景适配，为用户带来更智能、更全面的AI服务体验。"
 source: https://xuanyuan.cloud/zh/r/ai/qwen2.5
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen2.5
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen2.5" title="ai/qwen2.5 Docker 镜像中文简介、标签列表与拉取命令">ai/qwen2.5 中文简介</a>
@@ -13,7 +13,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 # Qwen2.5-7B Instruct
 
 
-![logo]([])
+![logo] 
 
 Qwen2.5-7B-Instruct 是阿里云开发的指令微调大语言模型，属于 Qwen2.5 系列。该系列模型参数规模覆盖 0.5B 至 72B，而本模型在知识储备、代码生成、数学推理能力上有显著提升，同时增强了指令跟随和长文本生成表现。它支持最长 131,072  tokens 的上下文窗口，输出长度可达 8,192 tokens，并提供 29 种以上语言的多语言支持，包括中文、英文、法语、西班牙语、葡萄牙语、德语、意大利语、俄语、日语、韩语、越南语、泰语、阿拉伯语等。
 
@@ -72,7 +72,7 @@ docker model pull ai/qwen2.5
 docker model run ai/qwen2.5
 ```
 
-更多关于 Docker Model Runner 的使用细节，可参考 [官方文档]([])。
+更多关于 Docker Model Runner 的使用细节，可参考 [官方文档] 。
 
 
 ## 使用注意事项
@@ -104,5 +104,5 @@ docker model run ai/qwen2.5
 
 ## 相关链接
 
-- [Qwen2.5：基础模型系列介绍]([])  
-- [Qwen2.5 技术报告]([])
+- [Qwen2.5：基础模型系列介绍]   
+- [Qwen2.5 技术报告]

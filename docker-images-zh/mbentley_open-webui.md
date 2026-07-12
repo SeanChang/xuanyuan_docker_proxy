@@ -3,7 +3,7 @@ image: mbentley/open-webui
 description: "Open WebUI的Docker镜像，作为ghcr.io/open-webui/open-webui的直接镜像，提供每日更新的major.minor标签，便于用户获取最新bugfix版本，无需指定具体补丁版本。"
 source: https://xuanyuan.cloud/zh/r/mbentley/open-webui
 canonical: https://xuanyuan.cloud/zh/r/mbentley/open-webui
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mbentley/open-webui" title="mbentley/open-webui Docker 镜像中文简介、标签列表与拉取命令">mbentley/open-webui 中文简介</a>
@@ -44,7 +44,7 @@ mbentley/open-webui是Open WebUI的Docker镜像，作为`ghcr.io/open-webui/open
 通过指定`major.minor`标签拉取并运行最新bugfix版本：
 
 ```bash
-docker run -d --name open-webui -p 8080:8080 mbentley/open-webui:0.8
+docker run -d --name open-webui -p 8080:8080 docker.xuanyuan.run/mbentley/open-webui:0.8
 ```
 
 ### 标签对应关系示例

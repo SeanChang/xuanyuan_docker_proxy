@@ -3,7 +3,7 @@ image: bitnami/mongodb
 description: "Bitnami MongoDB安全镜像是一款针对MongoDB数据库精心打造的预配置解决方案，集成全面安全加固措施、性能优化组件及跨平台兼容性，旨在帮助用户快速部署稳定可靠的MongoDB环境，其遵循企业级安全标准，包含自动更新机制、访问控制策略及数据加密功能，有效保障数据完整性与系统安全性，同时简化安装配置流程，支持一键部署至各类云平台或本地服务器，适用于从小型项目到大型企业级应用的多样化场景，为开发者和运维人员提供高效、安全、便捷的数据库运行环境。"
 source: https://xuanyuan.cloud/zh/r/bitnami/mongodb
 canonical: https://xuanyuan.cloud/zh/r/bitnami/mongodb
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/mongodb" title="bitnami/mongodb Docker 镜像中文简介、标签列表与拉取命令">bitnami/mongodb 中文简介</a>
@@ -17,39 +17,39 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 MongoDB® 是一款开源的非关系型（NoSQL）数据库，采用类 JSON 文档格式存储数据，使用简便。它具备自动化扩展能力和高性能，非常适合开发云原生应用。
 
-[MongoDB® 概览]([])  
+[MongoDB® 概览]   
 **免责声明**：本产品中提及的商标分属各自公司所有。我们不提供任何商业许可，本列表基于开源许可。MongoDB(R) 由 MongoDB 公司独立运营和维护，与 Bitnami 是完全独立的项目。
 
 
 ## 快速启动
 
 ```console
-docker run --name mongodb bitnami/mongodb:latest
+docker run --name mongodb docker.xuanyuan.run/bitnami/mongodb:latest
 ```
 
-这是由 Bitnami 构建和维护的强化版最小漏洞（CVE）镜像。Bitnami 安全镜像（BSI）基于云优化、安全强化的企业级操作系统 [Photon Linux]([])。选择 BSI 镜像的理由包括：  
+这是由 Bitnami 构建和维护的强化版最小漏洞（CVE）镜像。Bitnami 安全镜像（BSI）基于云优化、安全强化的企业级操作系统 [Photon Linux] 。选择 BSI 镜像的理由包括：  
 - 热门开源软件的强化安全镜像，漏洞数量接近零  
 - 通过 VEX 声明、KEV 和 EPSS 评分进行漏洞分类与优先级排序  
 - 聚焦合规性，支持 FIPS、STIG 和离线部署选项，包含安全物料清单（SBOM）  
 - 通过 in-toto 提供软件供应链来源证明  
 - 原生支持主流 Helm 图表  
 
-每个镜像均附带安全元数据，可在 [公开目录]([]) 中查看（部分数据需 [BSI 商业订阅]([])）。如需基于 Debian Linux 的旧版镜像，请查看 Bitnami Legacy 仓库。
+每个镜像均附带安全元数据，可在 [公开目录]  中查看（部分数据需 [BSI 商业订阅] ）。如需基于 Debian Linux 的旧版镜像，请查看 Bitnami Legacy 仓库。
 
 
 ## 如何在 Kubernetes 中部署 MongoDB®？
 
-通过 Helm Charts 部署 Bitnami 应用是在 Kubernetes 上快速上手的最佳方式。部署详情可参考 [Bitnami MongoDB® Chart GitHub 仓库]([])。
+通过 Helm Charts 部署 Bitnami 应用是在 Kubernetes 上快速上手的最佳方式。部署详情可参考 [Bitnami MongoDB® Chart GitHub 仓库] 。
 
 
 ## 为什么使用非 root 容器？
 
-非 root 容器能增加一层安全防护，建议在生产环境中使用。但由于运行时使用非 root 用户，可能无法执行特权操作。更多信息见 [相关文档]([])。
+非 root 容器能增加一层安全防护，建议在生产环境中使用。但由于运行时使用非 root 用户，可能无法执行特权操作。更多信息见 [相关文档] 。
 
 
 ## 支持的标签及对应 Dockerfile 链接
 
-Bitnami 标签策略（滚动标签与固定标签的区别）详见 [文档]([])。各标签对应关系可查看分支文件夹中的 `tags-info.yaml` 文件（如 `bitnami/APP/VERSION/OPERATING-SYSTEM/tags-info.yaml`）。可通过 [bitnami/containers GitHub 仓库]([]) 订阅项目更新。
+Bitnami 标签策略（滚动标签与固定标签的区别）详见 [文档] 。各标签对应关系可查看分支文件夹中的 `tags-info.yaml` 文件（如 `bitnami/APP/VERSION/OPERATING-SYSTEM/tags-info.yaml`）。可通过 [bitnami/containers GitHub 仓库]  订阅项目更新。
 
 
 ## 获取镜像
@@ -57,13 +57,13 @@ Bitnami 标签策略（滚动标签与固定标签的区别）详见 [文档]([]
 推荐通过 Docker Hub 拉取预构建镜像：
 
 ```console
-docker pull bitnami/mongodb:latest
+docker pull docker.xuanyuan.run/bitnami/mongodb:latest
 ```
 
-如需指定版本，可拉取带版本标签的镜像，版本列表见 [Docker Hub]([])：
+如需指定版本，可拉取带版本标签的镜像，版本列表见 [Docker Hub] ：
 
 ```console
-docker pull bitnami/mongodb:[TAG]
+docker pull docker.xuanyuan.run/bitnami/mongodb:[TAG]
 ```
 
 也可手动构建镜像：
@@ -81,10 +81,10 @@ docker build -t bitnami/APP:latest .
 ```console
 docker run \
     -v /本地路径/mongodb-persistence:/bitnami/mongodb \
-    bitnami/mongodb:latest
+    docker.xuanyuan.run/bitnami/mongodb:latest
 ```
 
-或修改仓库中的 [`docker-compose.yml`]([])：
+或修改仓库中的 [`docker-compose.yml`] ：
 
 ```diff
  ...
@@ -102,7 +102,7 @@ docker run \
 
 ## 容器间通信
 
-利用 [Docker 容器网络]([])，同一网络中的容器可通过容器名互访。
+利用 [Docker 容器网络] ，同一网络中的容器可通过容器名互访。
 
 
 ### 命令行方式
@@ -118,7 +118,7 @@ docker network create app-tier --driver bridge
 ```console
 docker run -d --name mongodb-server \
     --network app-tier \
-    bitnami/mongodb:latest
+    docker.xuanyuan.run/bitnami/mongodb:latest
 ```
 
 #### 步骤 3：启动客户端并连接
@@ -126,7 +126,7 @@ docker run -d --name mongodb-server \
 ```console
 docker run -it --rm \
     --network app-tier \
-    bitnami/mongodb:latest mongo --host mongodb-server
+    docker.xuanyuan.run/bitnami/mongodb:latest mongo --host mongodb-server
 ```
 
 
@@ -143,11 +143,11 @@ networks:
 
 services:
   mongodb:
-    image: bitnami/mongodb:latest
+    image: docker.xuanyuan.run/bitnami/mongodb:latest
     networks:
       - app-tier
   myapp:
-    image: 你的应用镜像  # 替换为实际应用镜像
+    image: docker.xuanyuan.run/你的应用镜像  # 替换为实际应用镜像
     networks:
       - app-tier
 ```
@@ -206,7 +206,7 @@ docker-compose up -d
 通过环境变量传递 `mongod` 启动参数：
 
 ```console
-docker run --name mongodb -e ALLOW_EMPTY_PASSWORD=yes -e MONGODB_EXTRA_FLAGS='--wiredTigerCacheSizeGB=2' bitnami/mongodb:latest
+docker run --name mongodb -e ALLOW_EMPTY_PASSWORD=yes -e MONGODB_EXTRA_FLAGS='--wiredTigerCacheSizeGB=2' docker.xuanyuan.run/bitnami/mongodb:latest
 ```
 
 或在 `docker-compose.yml` 中添加：
@@ -223,18 +223,18 @@ services:
 ### 配置日志 verbosity 级别
 
 - `MONGODB_DISABLE_SYSTEM_LOG`：是否禁用系统日志（默认 `false`）  
-- `MONGODB_SYSTEM_LOG_VERBOSITY`：日志级别（0-5，默认 `0`，详见 [MongoDB 文档]([])）
+- `MONGODB_SYSTEM_LOG_VERBOSITY`：日志级别（0-5，默认 `0`，详见 [MongoDB 文档] ）
 
 示例：
 
 ```console
-docker run --name mongodb -e ALLOW_EMPTY_PASSWORD=yes -e MONGODB_SYSTEM_LOG_VERBOSITY=3 bitnami/mongodb:latest
+docker run --name mongodb -e ALLOW_EMPTY_PASSWORD=yes -e MONGODB_SYSTEM_LOG_VERBOSITY=3 docker.xuanyuan.run/bitnami/mongodb:latest
 ```
 
 
 ### 使用 numactl
 
-设置 `MONGODB_ENABLE_NUMACTL=true` 可通过 numactl 启动命令，详见 [MongoDB 文档]([])。
+设置 `MONGODB_ENABLE_NUMACTL=true` 可通过 numactl 启动命令，详见 [MongoDB 文档] 。
 
 
 ### 启用 IPv6
@@ -242,14 +242,14 @@ docker run --name mongodb -e ALLOW_EMPTY_PASSWORD=yes -e MONGODB_SYSTEM_LOG_VERB
 设置 `MONGODB_ENABLE_IPV6=yes` 启用 IPv6（默认 `false`）：
 
 ```console
-docker run --name mongodb -e ALLOW_EMPTY_PASSWORD=yes -e MONGODB_ENABLE_IPV6=yes bitnami/mongodb:latest
+docker run --name mongodb -e ALLOW_EMPTY_PASSWORD=yes -e MONGODB_ENABLE_IPV6=yes docker.xuanyuan.run/bitnami/mongodb:latest
 ```
 
 
 ### 启用 directoryPerDB
 
-设置 `MONGODB_ENABLE_DIRECTORY_PER_DB=yes` 为每个数据库使用独立目录（默认 `true`，详见 [文档]([])）：
+设置 `MONGODB_ENABLE_DIRECTORY_PER_DB=yes` 为每个数据库使用独立目录（默认 `true`，详见 [文档] ）：
 
 ```console
-docker run --name mongodb -e ALLOW_EMPTY_PASSWORD=yes -e MONGODB_ENABLE_DIRECTORY_PER_DB=yes bitnami/mongodb:latest
+docker run --name mongodb -e ALLOW_EMPTY_PASSWORD=yes -e MONGODB_ENABLE_DIRECTORY_PER_DB=yes docker.xuanyuan.run/bitnami/mongodb:latest
 ```

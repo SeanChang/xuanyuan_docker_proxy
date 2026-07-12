@@ -3,7 +3,7 @@ image: leesonaa/immich
 description: "这是一条用于容器镜像操作的指令，具体是从GitHub容器仓库（ghcr.io）拉取和推送由imagegenius组织提供的immich应用最新版本镜像（标签为latest），是容器化部署流程中获取、更新或分发应用镜像时常用的基础命令，适用于需要通过容器技术管理immich应用版本的场景。"
 source: https://xuanyuan.cloud/zh/r/leesonaa/immich
 canonical: https://xuanyuan.cloud/zh/r/leesonaa/immich
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/leesonaa/immich" title="leesonaa/immich Docker 镜像中文简介、标签列表与拉取命令">leesonaa/immich 中文简介</a>
@@ -30,7 +30,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ##### ① 执行拉取命令  
 打开终端，运行以下命令（以 Docker 为例，Podman 命令相同，仅需将 `docker` 替换为 `podman`）：  
 ```bash  
-docker pull ghcr.io/imagegenius/immich:latest  
+docker pull ***-ghcr.xuanyuan.run/imagegenius/immich:latest  
 ```  
 等待命令执行完成，镜像将自动下载到本地。  
 
@@ -75,8 +75,8 @@ docker push ghcr.io/imagegenius/immich:latest
 
 ##### ③ 验证推送结果  
 推送完成后，可通过以下方式验证：  
-- 登录 [ghcr.io]([])，进入 `imagegenius/immich` 仓库，查看镜像的最新更新时间；  
-- 或在本地重新拉取镜像（`docker pull ghcr.io/imagegenius/immich:latest`），对比本地镜像 ID 与远程是否一致。  
+- 登录 [ghcr.io] ，进入 `imagegenius/immich` 仓库，查看镜像的最新更新时间；  
+- 或在本地重新拉取镜像（`docker pull ***-ghcr.xuanyuan.run/imagegenius/immich:latest`），对比本地镜像 ID 与远程是否一致。  
 
 
 ### 四、注意事项  

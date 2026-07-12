@@ -3,7 +3,7 @@ image: rocker/tidyverse
 description: "版本稳定的R、RStudio及R包构建镜像，提供可靠的数据分析和开发环境。"
 source: https://xuanyuan.cloud/zh/r/rocker/tidyverse
 canonical: https://xuanyuan.cloud/zh/r/rocker/tidyverse
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rocker/tidyverse" title="rocker/tidyverse Docker 镜像中文简介、标签列表与拉取命令">rocker/tidyverse 中文简介</a>
@@ -38,7 +38,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 通过以下命令启动镜像，映射RStudio Server端口（默认8787）并设置访问密码：
 
 ```bash
-docker run -d -p 8787:8787 -e PASSWORD=yourpassword rocker/rstudio:latest
+docker run -d -p 8787:8787 -e PASSWORD=yourpassword docker.xuanyuan.run/rocker/rstudio:latest
 ```
 
 启动后，在浏览器中访问 `http://localhost:8787`，使用默认用户名 `rstudio` 和设置的密码登录。
@@ -48,7 +48,7 @@ docker run -d -p 8787:8787 -e PASSWORD=yourpassword rocker/rstudio:latest
 挂载本地目录至容器，实现数据持久化：
 
 ```bash
-docker run -d -p 8787:8787 -e PASSWORD=yourpassword -v /本地目录:/home/rstudio/project rocker/rstudio:latest
+docker run -d -p 8787:8787 -e PASSWORD=yourpassword -v /本地目录:/home/rstudio/project docker.xuanyuan.run/rocker/rstudio:latest
 ```
 
 ### Docker Compose配置示例
@@ -57,7 +57,7 @@ docker run -d -p 8787:8787 -e PASSWORD=yourpassword -v /本地目录:/home/rstud
 version: '3'
 services:
   rstudio:
-    image: rocker/rstudio:latest
+    image: docker.xuanyuan.run/rocker/rstudio:latest
     ports:
       - "8787:8787"
     environment:
@@ -84,7 +84,7 @@ services:
 镜像支持通过标签指定R版本，例如使用R 4.3.0版本：
 
 ```bash
-docker run -d -p 8787:8787 -e PASSWORD=yourpassword rocker/rstudio:4.3.0
+docker run -d -p 8787:8787 -e PASSWORD=yourpassword docker.xuanyuan.run/rocker/rstudio:4.3.0
 ```
 
 具体版本标签可参考 [rocker-org/rocker-versioned2](https://github.com/rocker-org/rocker-versioned2) 项目的发布页面。

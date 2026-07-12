@@ -3,7 +3,7 @@ image: macrosan/kylin
 description: "银河麒麟高级服务器操作系统V10是一款面向企业级服务器应用的国产操作系统，基于自主研发的Kylin软件源构建，整合了稳定高效的系统组件与安全增强机制，包含Kylin-V10-SP1/SP2/SP3（服务包1/2/3）等多个版本，通过持续迭代优化系统性能、兼容性及安全防护能力，为关键行业服务器环境提供可靠支撑。"
 source: https://xuanyuan.cloud/zh/r/macrosan/kylin
 canonical: https://xuanyuan.cloud/zh/r/macrosan/kylin
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/macrosan/kylin" title="macrosan/kylin Docker 镜像中文简介、标签列表与拉取命令">macrosan/kylin 中文简介</a>
@@ -15,16 +15,16 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 简介  
 本镜像为银河麒麟高级服务器操作系统V10的Docker镜像，基于麒麟官方软件源构建。  
-- **维护者**：[MacroSAN-Tech/sys-docker-image]([])  
-- **构建状态**：[![Publish Docker image]([])]([])  
+- **维护者**：[MacroSAN-Tech/sys-docker-image]   
+- **构建状态**：[![Publish Docker image] ]   
 
 
 ## 支持的标签及对应Dockerfile  
 以下为当前支持的镜像标签，均基于同一份Dockerfile构建：  
-- [`v10-sp1`]([])  
-- [`v10-sp2`]([])  
-- [`v10-sp3`]([])  
-- [`v10-sp3-2403`]([])  
+- [`v10-sp1`]   
+- [`v10-sp2`]   
+- [`v10-sp3`]   
+- [`v10-sp3-2403`]   
 
 
 ## 支持的架构  
@@ -49,7 +49,7 @@ $ docker run -it macrosan/kylin:v10-sp3
 ### 基于镜像构建新镜像  
 如需添加额外软件包，可编写Dockerfile如下：  
 ```dockerfile
-FROM macrosan/kylin:v10-sp3
+FROM docker.xuanyuan.run/macrosan/kylin:v10-sp3
 RUN yum install -y vi  # 示例：安装vi编辑器
 ```
 

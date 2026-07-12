@@ -3,7 +3,7 @@ image: stainless403/mdcx-builtin-gui-base
 description: "MDCx Docker镜像支持通过网页进行使用。"
 source: https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base
 canonical: https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/stainless403/mdcx-builtin-gui-base" title="stainless403/mdcx-builtin-gui-base Docker 镜像中文简介、标签列表与拉取命令">stainless403/mdcx-builtin-gui-base 中文简介</a>
@@ -106,7 +106,7 @@ version: '3'
 
 services:
   mdcx:
-    image: stainless403/mdcx-builtin-gui-base:${MDCX_BUILTIN_IMAGE_TAG}
+    image: docker.xuanyuan.run/stainless403/mdcx-builtin-gui-base:${MDCX_BUILTIN_IMAGE_TAG}
     container_name: ${MDCX_CONTAINER_NAME}
     env_file:
       - .env
@@ -197,7 +197,7 @@ docker-compose up -d
 ```bash
 docker run --rm \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  containrrr/watchtower \
+  docker.xuanyuan.run/containrrr/watchtower \
   --run-once \
   mdcx  # 容器名称（需与启动时--name一致）
 ```
@@ -208,7 +208,7 @@ docker run --rm \
 docker run -d --name watchtower-mdcx \
   --restart unless-stopped \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  containrrr/watchtower \
+  docker.xuanyuan.run/containrrr/watchtower \
   -c --schedule "0 0 2 * * *" mdcx  # 容器名称
 ```
 > **注意**：自动更新可能导致配置或数据异常，建议手动更新。

@@ -3,7 +3,7 @@ image: 0penclaw/openclaw
 description: "基于GitHub仓库https://github.com/openclaw/openclaw的Dockerfile构建的OpenClaw Docker镜像，用于OpenClaw应用的容器化部署。"
 source: https://xuanyuan.cloud/zh/r/0penclaw/openclaw
 canonical: https://xuanyuan.cloud/zh/r/0penclaw/openclaw
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/0penclaw/openclaw" title="0penclaw/openclaw Docker 镜像中文简介、标签列表与拉取命令">0penclaw/openclaw 中文简介</a>
@@ -44,7 +44,7 @@ OpenClaw Docker镜像是基于GitHub仓库[https://github.com/openclaw/openclaw]
 ### 运行容器
 构建完成后，可通过以下命令运行容器（具体参数需参考GitHub仓库中的说明）：
 ```bash
-docker run -d --name openclaw-container openclaw:latest
+docker run -d --name openclaw-container docker.xuanyuan.run/openclaw:latest
 ```
 
 ### 配置说明

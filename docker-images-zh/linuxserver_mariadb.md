@@ -3,7 +3,7 @@ image: linuxserver/mariadb
 description: "LinuxServer.io提供的Mariadb容器，用于部署和运行Mariadb关系型数据库服务。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/mariadb
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/mariadb
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/mariadb" title="linuxserver/mariadb Docker 镜像中文简介、标签列表与拉取命令">linuxserver/mariadb 中文简介</a>
@@ -132,7 +132,7 @@ mariadb-upgrade
 ---
 services:
   mariadb:
-    image: lscr.io/linuxserver/mariadb:latest
+    image: docker.xuanyuan.run/linuxserver/mariadb:latest
     container_name: mariadb
     environment:
       - PUID=1000
@@ -314,7 +314,7 @@ uid=1000(your_user) gid=xxx(your_user) groups=1000(your_user)
 * 更新镜像：
 
     ```bash
-    docker pull lscr.io/linuxserver/mariadb:latest 
+    docker pull docker.xuanyuan.run/linuxserver/mariadb:latest 
     ```
 
 * 停止运行中的容器：
@@ -357,7 +357,7 @@ docker build \
 可以使用`lscr.io/linuxserver/qemu-static`在x86_64硬件上构建ARM变体，反之亦然：
 
 ```bash
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```
 
 注册后，您可以使用`-f Dockerfile.aarch64`定义要使用Dockerfile。

@@ -3,7 +3,7 @@ image: mattermost/mattermost-team-edition
 description: "Mattermost Team Edition的官方Docker镜像，用于便捷部署和运行团队协作平台。"
 source: https://xuanyuan.cloud/zh/r/mattermost/mattermost-team-edition
 canonical: https://xuanyuan.cloud/zh/r/mattermost/mattermost-team-edition
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mattermost/mattermost-team-edition" title="mattermost/mattermost-team-edition Docker 镜像中文简介、标签列表与拉取命令">mattermost/mattermost-team-edition 中文简介</a>
@@ -77,7 +77,7 @@ docker run -d \
   -e MM_SERVICESETTINGS_SITEURL="http://your-domain.com:8065" \
   -v mattermost-data:/app/mattermost/data \
   -v mattermost-logs:/app/mattermost/logs \
-  mattermost/mattermost-team-edition:latest
+  docker.xuanyuan.run/mattermost/mattermost-team-edition:latest
 ```
 
 > 说明：`db-host` 需替换为实际数据库地址，`user/password` 替换为数据库认证信息，首次启动需确保数据库已创建（可手动创建名为`mattermost`的数据库）。
@@ -91,7 +91,7 @@ version: '3.8'
 
 services:
   mattermost:
-    image: mattermost/mattermost-team-edition:latest
+    image: docker.xuanyuan.run/mattermost/mattermost-team-edition:latest
     container_name: mattermost-app
     restart: unless-stopped
     ports:
@@ -113,7 +113,7 @@ services:
       - db
 
   db:
-    image: postgres:14-alpine
+    image: docker.xuanyuan.run/postgres:14-alpine
     container_name: mattermost-db
     restart: unless-stopped
     environment:

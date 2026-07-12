@@ -3,7 +3,7 @@ image: 6053537/portainer-ce
 description: "Portainer-CE 中文版"
 source: https://xuanyuan.cloud/zh/r/6053537/portainer-ce
 canonical: https://xuanyuan.cloud/zh/r/6053537/portainer-ce
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/6053537/portainer-ce" title="6053537/portainer-ce Docker 镜像中文简介、标签列表与拉取命令">6053537/portainer-ce 中文简介</a>
@@ -20,8 +20,8 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ## 支持与反馈  
-- **源码仓库**：[[]]([])  
-- **Star 支持**：若你觉得项目有帮助，可通过 [爱发电]([]) 支持作者更新。  
+- **源码仓库**：[[]]   
+- **Star 支持**：若你觉得项目有帮助，可通过 [爱发电]  支持作者更新。  
 - **Bug 反馈**：使用中遇到问题，可提交至 GitHub Issues。  
 - **项目数据**：镜像 Pull 量已突破 150 万，感谢用户支持（笔者非专业开发者，优化工作离不开社区帮助）。  
 
@@ -31,7 +31,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 通用 Docker 安装  
 适用于 Linux/macOS 等主流 Docker 环境：  
 ```bash
-docker run -d --restart=always --name="portainer" -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock 6053537/portainer-ce
+docker run -d --restart=always --name="portainer" -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock docker.xuanyuan.run/6053537/portainer-ce
 ```
 
 #### 国内镜像（CloudFlare 自建）  
@@ -44,14 +44,14 @@ docker run -d --restart=always --name="portainer" -p 9000:9000 -v /var/run/docke
 ### Windows Docker Desktop 安装  
 适用于 Windows 系统的 Docker Desktop：  
 ```bash
-docker run -d -p 9000:9000 --name portainer --restart always -v \\.\pipe\docker_engine:\\.\pipe\docker_engine -v portainer_data:C:\data 6053537/portainer-ce
+docker run -d -p 9000:9000 --name portainer --restart always -v \\.\pipe\docker_engine:\\.\pipe\docker_engine -v portainer_data:C:\data docker.xuanyuan.run/6053537/portainer-ce
 ```
 
 
 ### 启用 SSL 访问（远程主机建议配置）  
 需自行准备证书（路径 `/certs`）及调整端口（示例用 443）：  
 ```bash
-docker run -d -p 8000:8000 -p 443:9443 --name portainer --restart always -v ~/local-certs:/certs -v portainer_data:/data 6053537/portainer-ce -v /var/run/docker.sock:/var/run/docker.sock --ssl --sslcert /certs/portainer.crt --sslkey /certs/portainer.key
+docker run -d -p 8000:8000 -p 443:9443 --name portainer --restart always -v ~/local-certs:/certs -v portainer_data:/data docker.xuanyuan.run/6053537/portainer-ce -v /var/run/docker.sock:/var/run/docker.sock --ssl --sslcert /certs/portainer.crt --sslkey /certs/portainer.key
 ```
 
 
@@ -91,7 +91,7 @@ services:
   portainer:
       container_name: portainer
       network_mode: bridge
-      image: 6053537/portainer-ce:latest  # 中文镜像；官方原版为 portainer/portainer-ce
+      image: docker.xuanyuan.run/6053537/portainer-ce:latest  # 中文镜像；官方原版为 portainer/portainer-ce
       # image: hub-mirror.c.163.com/6053537/portainer-ce  # 国内服务器可选，需注释上一行
       ports:
         - 9000:9000
@@ -117,4 +117,4 @@ volumes:
 
 
 ## 许可信息  
-Portainer 基于 zlib 许可证开源，详见 [LICENSE]([])。第三方开源组件说明见 [ATTRIBUTIONS.md]([])。
+Portainer 基于 zlib 许可证开源，详见 [LICENSE] 。第三方开源组件说明见 [ATTRIBUTIONS.md] 。

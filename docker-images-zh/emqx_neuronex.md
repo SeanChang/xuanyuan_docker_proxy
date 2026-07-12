@@ -3,7 +3,7 @@ image: emqx/neuronex
 description: "NeuronEX是一款工业边缘数据中心，专注于实时工业数据接入与智能分析，支持丰富协议集成以满足多场景数据采集与统一接入需求，帮助用户快速获取业务洞察并提升运营效率与可持续性。"
 source: https://xuanyuan.cloud/zh/r/emqx/neuronex
 canonical: https://xuanyuan.cloud/zh/r/emqx/neuronex
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/emqx/neuronex" title="emqx/neuronex Docker 镜像中文简介、标签列表与拉取命令">emqx/neuronex 中文简介</a>
@@ -58,7 +58,7 @@ NeuronEX是一款工业边缘数据中心（Industrial Edge Data Hub），专注
 通过以下命令启动最新版本的NeuronEX容器：
 
 ```shell
-docker run -d --name neuronex -p 8085:8085 emqx/neuronex:latest
+docker run -d --name neuronex -p 8085:8085 docker.xuanyuan.run/emqx/neuronex:latest
 ```
 
 **参数说明**：
@@ -93,7 +93,7 @@ docker run -d --name neuronex -p 8085:8085 emqx/neuronex:latest
 若需持久化存储配置数据，可通过挂载主机目录实现（具体数据目录需参考NeuronEX官方文档）：
 
 ```shell
-docker run -d --name neuronex -p 8085:8085 -v /path/to/host/data:/opt/neuronex/data emqx/neuronex:latest
+docker run -d --name neuronex -p 8085:8085 -v /path/to/host/data:/opt/neuronex/data docker.xuanyuan.run/emqx/neuronex:latest
 ```
 
 
@@ -104,7 +104,7 @@ docker run -d --name neuronex -p 8085:8085 -v /path/to/host/data:/opt/neuronex/d
 version: '3'
 services:
   neuronex:
-    image: emqx/neuronex:latest
+    image: docker.xuanyuan.run/emqx/neuronex:latest
     container_name: neuronex
     ports:
       - "8085:8085"  # Web管理界面端口

@@ -3,7 +3,7 @@ image: redroid/redroid
 description: "远程安卓多架构GPU加速安卓云（Android In Cloud）解决方案是一种能够在云端提供高效远程安卓服务的综合性技术方案，该方案支持多种架构并集成先进的GPU加速技术，可显著提升远程安卓应用的运行效率、图形处理能力和整体性能，适用于需要在云端远程访问和运行安卓环境的各类应用场景。"
 source: https://xuanyuan.cloud/zh/r/redroid/redroid
 canonical: https://xuanyuan.cloud/zh/r/redroid/redroid
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/redroid/redroid" title="redroid/redroid Docker 镜像中文简介、标签列表与拉取命令">redroid/redroid 中文简介</a>
@@ -16,7 +16,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ## 概述  
 redroid（Remote Android）是一款支持 GPU 加速的云安卓（AIC, Android In Cloud）解决方案，可在 Linux 主机（如 Docker、podman、k8s 等环境）中启动多个安卓实例，支持 arm64 和 amd64 架构。适用于云游戏、虚拟手机、自动化测试等场景。  
 
-![redroid 11 截图]([])  
+![redroid 11 截图]   
 
 **当前支持的安卓版本**：  
 - Android 16（`redroid/redroid:16.0.0-latest`）  
@@ -36,11 +36,11 @@ redroid（Remote Android）是一款支持 GPU 加速的云安卓（AIC, Android
 
 
 ## 快速开始  
-redroid 可在任何 Linux 系统上运行（需启用部分内核特性）。以下是 Ubuntu 20.04 的快速启动步骤，其他发行版可参考 [部署文档]([])。  
+redroid 可在任何 Linux 系统上运行（需启用部分内核特性）。以下是 Ubuntu 20.04 的快速启动步骤，其他发行版可参考 [部署文档] 。  
 
 
 ### 步骤 1：安装依赖  
-1. 安装 Docker（参考 [Docker 官方文档]([])）。  
+1. 安装 Docker（参考 [Docker 官方文档] ）。  
 2. 安装内核模块：  
    ```bash  
    apt install linux-modules-extra-`uname -r`  
@@ -65,11 +65,11 @@ docker run -itd --rm --privileged \
 
 
 ### 步骤 3：连接与控制  
-1. 安装 ADB（参考 [Android 官方文档]([])），连接设备：  
+1. 安装 ADB（参考 [Android 官方文档] ），连接设备：  
    ```bash  
    adb connect localhost:5555  # 远程运行时替换 localhost 为实际 IP  
    ```  
-2. 查看屏幕（需安装 scrcpy，参考 [scrcpy 文档]([])）：  
+2. 查看屏幕（需安装 scrcpy，参考 [scrcpy 文档] ）：  
    ```bash  
    scrcpy -s localhost:5555  # 远程运行时替换 localhost 为实际 IP（通常在本地 PC 执行）  
    ```  
@@ -134,10 +134,10 @@ curl -fsSL [] | sudo bash -s -- [CONTAINER]
 
 
 ## 许可证  
-- redroid 主体代码采用 [Apache License]([])。  
-- 内核模块采用 [GPL v2 许可证]([])。  
+- redroid 主体代码采用 [Apache License] 。  
+- 内核模块采用 [GPL v2 许可证] 。  
 
 （注：因包含第三方模块，使用前请仔细检查相关组件许可证。）  
 
 
-更多详情可参考 [项目 GitHub]([])。
+更多详情可参考 [项目 GitHub] 。

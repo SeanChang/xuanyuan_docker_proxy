@@ -3,7 +3,7 @@ image: bitnami/redis
 description: "Bitnami Redis安全镜像是基于开源Redis内存数据存储的预配置安全解决方案，集成了自动漏洞修复、合规性检查及加固配置，支持快速部署且易于维护，适用于作为数据库、缓存或消息代理的场景，为用户提供安全可靠的Redis运行环境。"
 source: https://xuanyuan.cloud/zh/r/bitnami/redis
 canonical: https://xuanyuan.cloud/zh/r/bitnami/redis
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/redis" title="bitnami/redis Docker 镜像中文简介、标签列表与拉取命令">bitnami/redis 中文简介</a>
@@ -17,14 +17,14 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 > Redis® 是一款开源的高级键值存储系统，常被称为“数据结构服务器”，因其键可存储字符串、哈希表、列表、集合及有序集合等多种数据类型。
 
-[Redis® 官方概述]([])  
+[Redis® 官方概述]   
 **免责声明**：Redis 是 Redis Ltd. 的注册商标，其相关权利归 Redis Ltd. 所有。Bitnami 对该名称的使用仅为参考，不代表任何赞助、认可或关联关系。
 
 
 ## 快速启动（仅供开发环境）
 
 ```console
-docker run --name redis -e ALLOW_EMPTY_PASSWORD=yes bitnami/redis:latest
+docker run --name redis -e ALLOW_EMPTY_PASSWORD=yes docker.xuanyuan.run/bitnami/redis:latest
 ```
 
 **警告**：上述快速启动命令仅适用于开发环境。生产环境中需修改默认不安全凭据，并参考 [配置](#配置) 部分进行安全部署。
@@ -32,29 +32,29 @@ docker run --name redis -e ALLOW_EMPTY_PASSWORD=yes bitnami/redis:latest
 
 ### 关于 Bitnami 安全镜像（BSI）
 
-本镜像是由 Bitnami 构建和维护的安全加固型低漏洞镜像，基于云优化的企业级安全操作系统 [Photon Linux]([])。选择 BSI 镜像的优势包括：  
+本镜像是由 Bitnami 构建和维护的安全加固型低漏洞镜像，基于云优化的企业级安全操作系统 [Photon Linux] 。选择 BSI 镜像的优势包括：  
 - 热门开源软件的安全加固版本，漏洞数量接近零  
 - 漏洞分级与优先级处理，提供 VEX 声明、KEV 和 EPSS 评分  
 - 合规支持（FIPS、STIG、离线环境）及安全物料清单（SBOM）  
 - 通过 in-toto 实现软件供应链来源验证  
 - 原生支持社区常用 Helm 图表  
 
-每个镜像均附带安全元数据，可在 [公开目录]([]) 查看（部分数据需 [BSI 商业订阅]([])）。如需基于 Debian Linux 的旧版镜像，请参考 Bitnami Legacy 仓库。
+每个镜像均附带安全元数据，可在 [公开目录]  查看（部分数据需 [BSI 商业订阅] ）。如需基于 Debian Linux 的旧版镜像，请参考 Bitnami Legacy 仓库。
 
 
 ## 如何在 Kubernetes 中部署 Redis®？
 
-通过 Helm 图表部署 Bitnami 应用是在 Kubernetes 中快速上手的推荐方式。部署详情参见 [Bitnami Redis® Chart GitHub 仓库]([])。
+通过 Helm 图表部署 Bitnami 应用是在 Kubernetes 中快速上手的推荐方式。部署详情参见 [Bitnami Redis® Chart GitHub 仓库] 。
 
 
 ## 为什么使用非 root 容器？
 
-非 root 容器可增强安全性，适合生产环境，但因运行非 root 用户，无法执行特权操作。更多信息参见 [非 root 容器文档]([])。
+非 root 容器可增强安全性，适合生产环境，但因运行非 root 用户，无法执行特权操作。更多信息参见 [非 root 容器文档] 。
 
 
 ## 支持的标签及对应 Dockerfile 链接
 
-Bitnami 标签策略（滚动标签与不可变标签的区别）详见 [文档]([])。不同标签的对应关系可查看代码库分支目录下的 `tags-info.yaml` 文件（如 `bitnami/APP/VERSION/OPERATING-SYSTEM/tags-info.yaml`）。可通过 [bitnami/containers GitHub 仓库]([]) 订阅项目更新。
+Bitnami 标签策略（滚动标签与不可变标签的区别）详见 [文档] 。不同标签的对应关系可查看代码库分支目录下的 `tags-info.yaml` 文件（如 `bitnami/APP/VERSION/OPERATING-SYSTEM/tags-info.yaml`）。可通过 [bitnami/containers GitHub 仓库]  订阅项目更新。
 
 
 ## 获取镜像
@@ -63,12 +63,12 @@ Bitnami 标签策略（滚动标签与不可变标签的区别）详见 [文档]
 
 直接拉取最新版：  
 ```console
-docker pull bitnami/redis:latest
+docker pull docker.xuanyuan.run/bitnami/redis:latest
 ```
 
-拉取特定版本（版本列表见 [Docker Hub]([])）：  
+拉取特定版本（版本列表见 [Docker Hub] ）：  
 ```console
-docker pull bitnami/redis:[标签]
+docker pull docker.xuanyuan.run/bitnami/redis:[标签]
 ```
 
 ### 从源码构建
@@ -82,7 +82,7 @@ docker build -t bitnami/APP:latest .
 
 ## 数据持久化
 
-Redis® 提供多种 [持久化方案]([])，本容器默认启用 AOF 持久化。如需修改，可在 `docker-compose.yaml` 中通过 `command: /opt/bitnami/scripts/redis/run.sh --appendonly no` 覆盖配置，或使用 `REDIS_AOF_ENABLED` 环境变量（详见 [禁用 AOF 持久化]([])）。
+Redis® 提供多种 [持久化方案] ，本容器默认启用 AOF 持久化。如需修改，可在 `docker-compose.yaml` 中通过 `command: /opt/bitnami/scripts/redis/run.sh --appendonly no` 覆盖配置，或使用 `REDIS_AOF_ENABLED` 环境变量（详见 [禁用 AOF 持久化] ）。
 
 若删除容器，数据会丢失。需通过挂载卷至 `/bitnami` 目录实现持久化（首次运行时会初始化空目录）：
 
@@ -91,11 +91,11 @@ Redis® 提供多种 [持久化方案]([])，本容器默认启用 AOF 持久化
 docker run \
     -e ALLOW_EMPTY_PASSWORD=yes \
     -v /本地路径/redis-persistence:/bitnami/redis/data \
-    bitnami/redis:latest
+    docker.xuanyuan.run/bitnami/redis:latest
 ```
 
 ### Docker Compose 方式  
-修改仓库中的 [`docker-compose.yml`]([])：  
+修改仓库中的 [`docker-compose.yml`] ：  
 ```yaml
 services:
   redis:
@@ -110,7 +110,7 @@ services:
 
 ## 与其他容器通信
 
-借助 [Docker 容器网络]([])，Redis 服务可被其他应用容器访问，同一网络内的容器可通过容器名作为主机名通信。
+借助 [Docker 容器网络] ，Redis 服务可被其他应用容器访问，同一网络内的容器可通过容器名作为主机名通信。
 
 
 ### 命令行方式
@@ -125,14 +125,14 @@ docker network create app-tier --driver bridge
 docker run -d --name redis-server \
     -e ALLOW_EMPTY_PASSWORD=yes \
     --network app-tier \
-    bitnami/redis:latest
+    docker.xuanyuan.run/bitnami/redis:latest
 ```
 
 #### 步骤 3：启动 Redis 客户端  
 ```console
 docker run -it --rm \
     --network app-tier \
-    bitnami/redis:latest redis-cli -h redis-server
+    docker.xuanyuan.run/bitnami/redis:latest redis-cli -h redis-server
 ```
 
 
@@ -149,13 +149,13 @@ networks:
 
 services:
   redis:
-    image: bitnami/redis:latest
+    image: docker.xuanyuan.run/bitnami/redis:latest
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
     networks:
       - app-tier
   myapp:
-    image: 你的应用镜像
+    image: docker.xuanyuan.run/你的应用镜像
     networks:
       - app-tier
 ```
@@ -237,7 +237,7 @@ docker-compose up -d
 
 出于安全考虑，可通过 `REDIS_DISABLE_COMMANDS` 禁用指定命令（首次运行时设置）：  
 ```console
-docker run --name redis -e REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL,CONFIG bitnami/redis:latest
+docker run --name redis -e REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL,CONFIG docker.xuanyuan.run/bitnami/redis:latest
 ```
 
 或修改 `docker-compose.yml`：  
@@ -257,7 +257,7 @@ services:
 
 通过 `run.sh` 脚本传递参数至 `redis-server`：  
 ```console
-docker run --name redis -e ALLOW_EMPTY_PASSWORD=yes bitnami/redis:latest /opt/bitnami/scripts/redis/run.sh --maxmemory 100mb
+docker run --name redis -e ALLOW_EMPTY_PASSWORD=yes docker.xuanyuan.run/bitnami/redis:latest /opt/bitnami/scripts/redis/run.sh --maxmemory 100mb
 ```
 
 或修改 `docker-compose.yml`：  
@@ -271,14 +271,14 @@ services:
   ...
 ```
 
-参数详情参见 [Redis 文档]([])。
+参数详情参见 [Redis 文档] 。
 
 
 ### 设置服务密码
 
 首次运行时通过 `REDIS_PASSWORD` 设置密码（或通过 `REDIS_PASSWORD_FILE` 指定密码文件）：  
 ```console
-docker run --name redis -e REDIS_PASSWORD=password123 bitnami/redis:latest
+docker run --name redis -e REDIS_PASSWORD=password123 docker.xuanyuan.run/bitnami/redis:latest
 ```
 
 或修改 `docker-compose.yml`：  
@@ -299,15 +299,15 @@ services:
 
 默认需设置密码，开发/测试场景可通过 `ALLOW_EMPTY_PASSWORD=yes` 允许空密码：  
 ```console
-docker run --name redis -e ALLOW_EMPTY_PASSWORD=yes bitnami/redis:latest
+docker run --name redis -e ALLOW_EMPTY_PASSWORD=yes docker.xuanyuan.run/bitnami/redis:latest
 ```
 
 
 ### 启用多线程
 
-Redis 6.0+ 支持 [多线程模型]([])，通过 `REDIS_IO_THREADS` 和 `REDIS_IO_THREADS_DO_READS` 配置：  
+Redis 6.0+ 支持 [多线程模型] ，通过 `REDIS_IO_THREADS` 和 `REDIS_IO_THREADS_DO_READS` 配置：  
 ```console
-docker run --name redis -e REDIS_IO_THREADS=4 -e REDIS_IO_THREADS_DO_READS=yes bitnami/redis:latest
+docker run --name redis -e REDIS_IO_THREADS=4 -e REDIS_IO_THREADS_DO_READS=yes docker.xuanyuan.run/bitnami/redis:latest
 ```
 
 
@@ -315,15 +315,15 @@ docker run --name redis -e REDIS_IO_THREADS=4 -e REDIS_IO_THREADS_DO_READS=yes b
 
 通过 `REDIS_AOF_ENABLED=no` 禁用 AOF：  
 ```console
-docker run --name redis -e REDIS_AOF_ENABLED=no bitnami/redis:latest
+docker run --name redis -e REDIS_AOF_ENABLED=no docker.xuanyuan.run/bitnami/redis:latest
 ```
 
 
 ### 启用访问控制列表（ACL）
 
-Redis 6.0+ 支持 [ACL]([])，生产环境建议通过 `REDIS_ACLFILE` 指定 ACL 文件：  
+Redis 6.0+ 支持 [ACL] ，生产环境建议通过 `REDIS_ACLFILE` 指定 ACL 文件：  
 ```console
-docker run --name redis -e REDIS_ACLFILE=/opt/bitnami/redis/mounted-etc/users.acl -v /本地路径/users.acl:/opt/bitnami/redis/mounted-etc/users.acl bitnami/redis:latest
+docker run --name redis -e REDIS_ACLFILE=/opt/bitnami/redis/mounted-etc/users.acl -v /本地路径/users.acl:/opt/bitnami/redis/mounted-etc/users.acl docker.xuanyuan.run/bitnami/redis:latest
 ```
 
 或修改 `docker-compose.yml`：  
@@ -343,7 +343,7 @@ services:
 
 默认独立模式端口为 6379，通过 `REDIS_PORT_NUMBER` 修改：  
 ```console
-docker run --name redis -e REDIS_PORT_NUMBER=7000 -p 7000:7000 bitnami/redis:latest
+docker run --name redis -e REDIS_PORT_NUMBER=7000 -p 7000:7000 docker.xuanyuan.run/bitnami/redis:latest
 ```
 
 或修改 `docker-compose.yml` 中的端口映射。

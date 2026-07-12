@@ -3,7 +3,7 @@ image: lldap/lldap
 description: "轻量级LDAP实现，用于身份认证，简化LDAP使用流程。"
 source: https://xuanyuan.cloud/zh/r/lldap/lldap
 canonical: https://xuanyuan.cloud/zh/r/lldap/lldap
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/lldap/lldap" title="lldap/lldap Docker 镜像中文简介、标签列表与拉取命令">lldap/lldap 中文简介</a>
@@ -76,7 +76,7 @@ docker run -d \
   -e LLDAP_LDAP_PORT=3890 \
   -e LLDAP_BASE_DN=dc=example,dc=com \
   -e LLDAP_ADMIN_PASSWORD=super_secret_password \
-  lldap/lldap:latest-rootless
+  docker.xuanyuan.run/lldap/lldap:latest-rootless
 ```
 
 ### Docker Compose配置
@@ -86,7 +86,7 @@ version: '3.8'
 
 services:
   lldap:
-    image: lldap/lldap:latest
+    image: docker.xuanyuan.run/lldap/lldap:latest
     container_name: lldap
     ports:
       - "3890:3890"  # LDAP端口

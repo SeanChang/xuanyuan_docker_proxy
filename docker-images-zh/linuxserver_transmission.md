@@ -3,7 +3,7 @@ image: linuxserver/transmission
 description: "这是由LinuxServer.io提供的Transmission容器，其中Transmission是一款轻量级开源BitTorrent客户端，支持高效文件传输，兼容BitTorrent、DHT等多种协议；该容器采用Docker技术构建，便于快速部署、轻松管理和灵活扩展，适用于个人用户或服务器环境，LinuxServer.io作为专注于开源容器开发的团队，确保其具备良好的安全性与稳定性。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/transmission
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/transmission
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/transmission" title="linuxserver/transmission Docker 镜像中文简介、标签列表与拉取命令">linuxserver/transmission 中文简介</a>
@@ -23,16 +23,16 @@ LinuxServer.io团队专注于提供高质量Docker容器，其容器具有以下
 - 常规安全更新  
 
 团队社区支持渠道：  
-- [博客]([])：容器使用指南、教程及观点分享  
+- [博客] ：容器使用指南、教程及观点分享  
 - []()：实时社区交流与技术支持  
-- [论坛]([])：社区讨论与问题反馈  
-- [GitHub]([])：源代码仓库  
-- [Open Collective]([])：支持团队的捐赠渠道  
+- [论坛] ：社区讨论与问题反馈  
+- [GitHub] ：源代码仓库  
+- [Open Collective] ：支持团队的捐赠渠道  
 
 
 ## Transmission简介
 
-[Transmission]([]) 是一款简洁高效的BitTorrent客户端，具备以下核心功能：  
+[Transmission]  是一款简洁高效的BitTorrent客户端，具备以下核心功能：  
 - 加密传输、Web管理界面、节点交换  
 - 支持磁力链接、DHT、µTP协议  
 - UPnP/NAT-PMP端口转发、Web种子、监控目录  
@@ -75,8 +75,8 @@ LinuxServer.io团队专注于提供高质量Docker容器，其容器具有以下
 
 
 ### 高级运行模式  
-- **只读文件系统**：支持以只读模式运行，详见 [文档]([])。  
-- **非root用户**：支持非root权限运行，详见 [文档]([])。  
+- **只读文件系统**：支持以只读模式运行，详见 [文档] 。  
+- **非root用户**：支持非root权限运行，详见 [文档] 。  
 
 
 ## 使用方法
@@ -90,7 +90,7 @@ LinuxServer.io团队专注于提供高质量Docker容器，其容器具有以下
 ---
 services:
   transmission:
-    image: lscr.io/linuxserver/transmission:latest
+    image: docker.xuanyuan.run/linuxserver/transmission:latest
     container_name: transmission
     environment:
       - PUID=1000               # 用户ID（详见下方说明）
@@ -183,9 +183,9 @@ id your_user  # 输出示例：uid=1000(your_user) gid=1000(your_user)
 
 
 ## Docker Mods  
-容器支持通过 [Docker Mods]([]) 扩展功能，可查看：  
-- [Transmission专用Mods]([])  
-- [通用Mods]([])  
+容器支持通过 [Docker Mods]  扩展功能，可查看：  
+- [Transmission专用Mods]   
+- [通用Mods]   
 
 
 ## 支持与维护  
@@ -231,7 +231,7 @@ id your_user  # 输出示例：uid=1000(your_user) gid=1000(your_user)
 #### 通过docker run  
 - 更新镜像：  
   ```bash
-  docker pull lscr.io/linuxserver/transmission:latest
+  docker pull docker.xuanyuan.run/linuxserver/transmission:latest
   ```  
 - 重启容器（保留配置）：  
   ```bash
@@ -241,7 +241,7 @@ id your_user  # 输出示例：uid=1000(your_user) gid=1000(your_user)
 
 
 ### 更新通知  
-推荐使用 [Diun]([]) 监控镜像更新，不建议使用自动更新工具。  
+推荐使用 [Diun]  监控镜像更新，不建议使用自动更新工具。  
 
 
 ## 本地构建  
@@ -252,7 +252,7 @@ docker build --no-cache --pull -t lscr.io/linuxserver/transmission:latest .
 ```  
 跨架构构建（如x86_64构建arm64）：  
 ```bash
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset  # 注册qemu
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset # 注册qemu
 docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/transmission:arm64v8-latest .  # 指定架构Dockerfile
 ```  
 
@@ -268,4 +268,4 @@ docker build -f Dockerfile.aarch64 -t lscr.io/linuxserver/transmission:arm64v8-l
 - **08.02.23**：基于Alpine Edge重构，移除第三方UI包  
 - **05.01.23**：重构至Alpine 3.17，恢复GNU findutils包  
 - **02.11.22**：重构至Alpine 3.16，迁移至s6v3  
-- **更早版本**：详见[GitHub历史]([])
+- **更早版本**：详见[GitHub历史]

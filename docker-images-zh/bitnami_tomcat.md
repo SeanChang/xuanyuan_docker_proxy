@@ -3,7 +3,7 @@ image: bitnami/tomcat
 description: "Bitnami Tomcat安全镜像是为Apache Tomcat提供的预配置、安全增强型部署解决方案，集成了安全最佳实践，包括漏洞修复、最小化攻击面、合规性配置及安全更新机制，可简化Java Web应用的部署流程，支持快速搭建安全可靠的Tomcat运行环境，适用于开发、测试及生产环境，有效降低部署复杂度与潜在安全风险，助力用户高效管理Tomcat服务。"
 source: https://xuanyuan.cloud/zh/r/bitnami/tomcat
 canonical: https://xuanyuan.cloud/zh/r/bitnami/tomcat
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/tomcat" title="bitnami/tomcat Docker 镜像中文简介、标签列表与拉取命令">bitnami/tomcat 中文简介</a>
@@ -17,62 +17,62 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 > Apache Tomcat 是一款开源Web服务器，用于托管和运行基于Java的Web应用程序。它是一款轻量级服务器，在生产环境中运行应用时性能表现良好。
 
-[Apache Tomcat 概览]([])  
+[Apache Tomcat 概览]   
 商标说明：本软件包由Bitnami打包。所提及的商标分属各自公司所有，使用此类商标不意味着任何关联或背书。
 
 
 ## 快速启动（TL;DR）
 
 ```console
-docker run --name tomcat bitnami/tomcat:latest
+docker run --name tomcat docker.xuanyuan.run/bitnami/tomcat:latest
 ```
 
 默认凭据和可用配置选项可在[环境变量](#环境变量)部分查看。  
 
-此镜像为Bitnami构建和维护的强化版最小漏洞（CVE）镜像。Bitnami安全镜像（BSI）基于云优化、安全强化的企业级操作系统[Photon Linux]([])构建。选择BSI镜像的理由包括：  
+此镜像为Bitnami构建和维护的强化版最小漏洞（CVE）镜像。Bitnami安全镜像（BSI）基于云优化、安全强化的企业级操作系统[Photon Linux] 构建。选择BSI镜像的理由包括：  
 - 热门开源软件的强化安全镜像，漏洞数量接近零  
 - 漏洞分类与优先级排序，包含VEX声明、KEV和EPSS评分  
 - 合规支持，包括FIPS、STIG和离线部署选项，提供安全物料清单（SBOM）  
 - 通过in-toto实现软件供应链溯源证明  
 - 原生支持主流Helm Chart  
 
-每个镜像均附带安全元数据，可在[公开目录]([])中查看（部分数据需[BSI商业订阅]([])）。  
+每个镜像均附带安全元数据，可在[公开目录] 中查看（部分数据需[BSI商业订阅] ）。  
 
 如需基于Debian Linux的旧版镜像，请查看Bitnami Legacy仓库。
 
 
 ## 如何在Kubernetes中部署Apache Tomcat？
 
-通过Helm Chart部署Bitnami应用是在Kubernetes上快速启动的最简单方式。安装详情参见[Bitnami Apache Tomcat Chart GitHub仓库]([])。
+通过Helm Chart部署Bitnami应用是在Kubernetes上快速启动的最简单方式。安装详情参见[Bitnami Apache Tomcat Chart GitHub仓库] 。
 
 
 ## 为什么使用非root容器？
 
-非root容器增加了额外安全层，通常推荐用于生产环境。但由于容器以非root用户运行，特权任务通常受限。更多信息参见[非root容器文档]([])。
+非root容器增加了额外安全层，通常推荐用于生产环境。但由于容器以非root用户运行，特权任务通常受限。更多信息参见[非root容器文档] 。
 
 
 ## 支持的标签及对应Dockerfile链接
 
-了解Bitnami标签策略（滚动标签与固定标签的区别），参见[文档页面]([])。  
+了解Bitnami标签策略（滚动标签与固定标签的区别），参见[文档页面] 。  
 
 不同标签的对应关系可查看分支文件夹中的`tags-info.yaml`文件（如`bitnami/ASSET/BRANCH/DISTRO/tags-info.yaml`）。  
 
-可通过关注[bitnami/containers GitHub仓库]([])获取项目更新。
+可通过关注[bitnami/containers GitHub仓库] 获取项目更新。
 
 
 ## 获取镜像
 
-获取Bitnami Apache Tomcat Docker镜像的推荐方式是从[Docker Hub仓库]([])拉取预构建镜像。  
+获取Bitnami Apache Tomcat Docker镜像的推荐方式是从[Docker Hub仓库] 拉取预构建镜像。  
 
 ### 拉取最新版
 ```console
-docker pull bitnami/tomcat:latest
+docker pull docker.xuanyuan.run/bitnami/tomcat:latest
 ```
 
 ### 拉取特定版本
-如需指定版本，可拉取带版本标签的镜像。[可用版本列表]([])可在Docker Hub查看。  
+如需指定版本，可拉取带版本标签的镜像。[可用版本列表] 可在Docker Hub查看。  
 ```console
-docker pull bitnami/tomcat:[TAG]
+docker pull docker.xuanyuan.run/bitnami/tomcat:[TAG]
 ```
 
 ### 从源码构建
@@ -91,11 +91,11 @@ docker build -t bitnami/APP:latest .
 
 ### Docker命令方式
 ```console
-docker run -v /path/to/tomcat-persistence:/bitnami bitnami/tomcat:latest
+docker run -v /path/to/tomcat-persistence:/bitnami docker.xuanyuan.run/bitnami/tomcat:latest
 ```
 
 ### Docker Compose方式
-修改仓库中的[`docker-compose.yml`]([])文件：  
+修改仓库中的[`docker-compose.yml`] 文件：  
 ```yaml
 services:
   tomcat:
@@ -120,12 +120,12 @@ docker cp /path/to/app.war tomcat:/app
 ### 创建包含应用的自定义镜像
 如需构建包含WAR文件的自定义镜像，需将WAR文件添加到`/opt/bitnami/tomcat/webapps`目录。示例Dockerfile：  
 ```Dockerfile
-FROM bitnami/tomcat:latest
+FROM docker.xuanyuan.run/bitnami/tomcat:latest
 COPY sample.war /opt/bitnami/tomcat/webapps
 ```
 
 > **补充说明**：也可通过Apache Tomcat管理界面在运行中的实例上部署应用。  
-> 更多详情参见：[Apache Tomcat Web应用部署文档]([])
+> 更多详情参见：[Apache Tomcat Web应用部署文档] 
 
 
 ## 从主机访问Apache Tomcat服务器
@@ -133,7 +133,7 @@ COPY sample.war /opt/bitnami/tomcat/webapps
 ### 随机端口映射
 可让Docker将主机随机端口映射到容器的`8080`端口：  
 ```console
-docker run --name tomcat -P bitnami/tomcat:latest
+docker run --name tomcat -P docker.xuanyuan.run/bitnami/tomcat:latest
 ```
 执行`docker port`命令查看映射的随机端口：  
 ```console
@@ -144,7 +144,7 @@ $ docker port tomcat
 ### 指定端口映射
 手动指定主机到容器的端口转发：  
 ```console
-docker run -p 8080:8080 bitnami/tomcat:latest
+docker run -p 8080:8080 docker.xuanyuan.run/bitnami/tomcat:latest
 ```
 在浏览器中访问 `[] 即可打开服务器。
 
@@ -200,7 +200,7 @@ docker run -p 8080:8080 bitnami/tomcat:latest
 还可通过`TOMCAT_USERNAME`指定管理用户名。若未指定，`TOMCAT_PASSWORD`将应用于默认用户（`manager`）。
 
 #### 通过Docker Compose指定环境变量
-修改仓库中的[`docker-compose.yml`]([])：  
+修改仓库中的[`docker-compose.yml`] ：  
 ```yaml
 services:
   tomcat:
@@ -216,7 +216,7 @@ services:
 docker run --name tomcat \
   -e TOMCAT_USERNAME=my_user \
   -e TOMCAT_PASSWORD=my_password \
-  bitnami/tomcat:latest
+  docker.xuanyuan.run/bitnami/tomcat:latest
 ```
 
 ### 配置文件
@@ -225,7 +225,7 @@ docker run --name tomcat \
 
 #### Docker命令方式
 ```console
-docker run --name tomcat -v /path/to/config/server.xml:/opt/bitnami/tomcat/conf/server.xml bitnami/tomcat:latest
+docker run --name tomcat -v /path/to/config/server.xml:/opt/bitnami/tomcat/conf/server.xml docker.xuanyuan.run/bitnami/tomcat:latest
 ```
 
 #### Docker Compose方式
@@ -238,11 +238,11 @@ services:
   ...
 ```
 
-完整配置选项参见[Apache Tomcat配置手册]([])。
+完整配置选项参见[Apache Tomcat配置手册] 。
 
 ### Bitnami安全镜像中的FIPS配置
 
-[Bitnami安全镜像]([])目录中的Apache Tomcat Docker镜像支持FIPS配置，可通过以下环境变量设置：  
+[Bitnami安全镜像] 目录中的Apache Tomcat Docker镜像支持FIPS配置，可通过以下环境变量设置：  
 - `OPENSSL_FIPS`：是否启用OpenSSL FIPS模式，默认`yes`（启用），可选`no`（禁用）。
 
 
@@ -260,7 +260,7 @@ docker logs tomcat
 docker-compose logs tomcat
 ```
 
-如需自定义日志消费方式，可通过`--log-driver`选项配置[容器日志驱动]([])（默认使用`json-file`驱动）。
+如需自定义日志消费方式，可通过`--log-driver`选项配置[容器日志驱动] （默认使用`json-file`驱动）。
 
 
 ## 维护
@@ -271,7 +271,7 @@ Bitnami会及时提供Apache Tomcat的更新版本（含安全补丁），建议
 
 #### 步骤1：拉取更新的镜像
 ```console
-docker pull bitnami/tomcat:latest
+docker pull docker.xuanyuan.run/bitnami/tomcat:latest
 ```
 （使用Docker Compose时，将`image`属性更新为`bitnami/tomcat:latest`）
 
@@ -295,7 +295,7 @@ docker rm -v tomcat
 
 #### 步骤4：运行新版本镜像
 ```console
-docker run --name tomcat bitnami/tomcat:latest
+docker run --name tomcat docker.xuanyuan.run/bitnami/tomcat:latest
 ```
 （Docker Compose：`docker-compose up tomcat`）
 
@@ -318,23 +318,23 @@ docker run --name tomcat bitnami/tomcat:latest
 
 ## 使用`docker-compose.yaml`
 
-请注意，此文件未经过内部测试，建议仅用于开发或测试环境。生产环境部署强烈推荐使用其关联的[Bitnami Helm Chart]([])。  
+请注意，此文件未经过内部测试，建议仅用于开发或测试环境。生产环境部署强烈推荐使用其关联的[Bitnami Helm Chart] 。  
 
-如发现`docker-compose.yaml`问题，可按[贡献指南]([])报告或修复。
+如发现`docker-compose.yaml`问题，可按[贡献指南] 报告或修复。
 
 
 ## 贡献
 
-欢迎通过[提交issue]([])或[拉取请求]([])参与容器改进（遵循贡献指南）。
+欢迎通过[提交issue] 或[拉取请求] 参与容器改进（遵循贡献指南）。
 
 
 ## 问题反馈
 
-如运行容器时遇到问题，可[提交issue]([])（建议填写issue模板以获得更好支持）。
+如运行容器时遇到问题，可[提交issue] （建议填写issue模板以获得更好支持）。
 
 
 ## 许可协议
 
 Copyright &copy; 2025 Broadcom。"Broadcom"指Broadcom Inc.及其子公司。  
 
-根据Apache License 2.0许可协议授权（详见[LICENSE]([])）。使用本文件需遵守许可协议，除非法律要求或书面同意，软件按"原样"分发，不提供任何明示或暗示担保。
+根据Apache License 2.0许可协议授权（详见[LICENSE] ）。使用本文件需遵守许可协议，除非法律要求或书面同意，软件按"原样"分发，不提供任何明示或暗示担保。

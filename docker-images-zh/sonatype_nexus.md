@@ -3,7 +3,7 @@ image: sonatype/nexus
 description: "Sonatype Nexus是一款企业级软件仓库管理器，支持Maven、npm、Docker等多种包格式，可集中存储、管理开发依赖组件，集成安全扫描功能实时检测漏洞，助力团队在CI/CD流程中高效管控软件资产，确保组件合规性与安全性，是实现开源治理和DevSecOps的核心工具，帮助企业提升开发效率并降低供应链风险。"
 source: https://xuanyuan.cloud/zh/r/sonatype/nexus
 canonical: https://xuanyuan.cloud/zh/r/sonatype/nexus
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/sonatype/nexus" title="sonatype/nexus Docker 镜像中文简介、标签列表与拉取命令">sonatype/nexus 中文简介</a>
@@ -13,7 +13,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 # sonatype/docker-nexus  
 
 
-Sonatype Nexus Repository Manager 2 的 Docker 镜像，基于 Oracle JDK 构建。如需 Nexus Repository Manager 3，请参考：[[]]([])  
+Sonatype Nexus Repository Manager 2 的 Docker 镜像，基于 Oracle JDK 构建。如需 Nexus Repository Manager 3，请参考：[[]]   
 
 
 ## 构建镜像  
@@ -38,7 +38,7 @@ docker build --rm=true --tag=sonatype/nexus .
 
 ### 基本运行（主机 8081 端口开放时）  
 ```bash  
-docker run -d -p 8081:8081 --name nexus sonatype/nexus:oss  
+docker run -d -p 8081:8081 --name nexus docker.xuanyuan.run/sonatype/nexus:oss
 ```  
 
 ### 查看容器监听端口  
@@ -89,21 +89,21 @@ docker logs -f nexus
 
 **示例**：设置最大堆内存为 1G  
 ```bash  
-docker run -d -p 8081:8081 --name nexus -e MAX_HEAP=1g sonatype/nexus  
+docker run -d -p 8081:8081 --name nexus -e MAX_HEAP=1g docker.xuanyuan.run/sonatype/nexus
 ```  
 
 
 ### 持久化数据  
-推荐两种方式管理持久化存储（详见 [Docker 数据管理文档]([])）：  
+推荐两种方式管理持久化存储（详见 [Docker 数据管理文档] ）：  
 
 #### 方法 1：使用数据卷容器（推荐）  
 创建专用数据卷容器，数据卷会一直保留到无容器使用时：  
 ```bash  
 # 创建数据卷容器  
-docker run -d --name nexus-data sonatype/nexus echo "data-only container for Nexus"  
+docker run -d --name nexus-data docker.xuanyuan.run/sonatype/nexus echo "data-only container for Nexus"
 
 # 运行 Nexus 并挂载数据卷  
-docker run -d -p 8081:8081 --name nexus --volumes-from nexus-data sonatype/nexus  
+docker run -d -p 8081:8081 --name nexus --volumes-from nexus-data docker.xuanyuan.run/sonatype/nexus
 ```  
 
 #### 方法 2：挂载主机目录  
@@ -113,7 +113,7 @@ docker run -d -p 8081:8081 --name nexus --volumes-from nexus-data sonatype/nexus
 mkdir /some/dir/nexus-data && chown -R 200 /some/dir/nexus-data  
 
 # 运行容器并挂载目录  
-docker run -d -p 8081:8081 --name nexus -v /some/dir/nexus-data:/sonatype-work sonatype/nexus  
+docker run -d -p 8081:8081 --name nexus -v /some/dir/nexus-data:/sonatype-work docker.xuanyuan.run/sonatype/nexus
 ```  
 
 
@@ -121,13 +121,13 @@ docker run -d -p 8081:8081 --name nexus -v /some/dir/nexus-data:/sonatype-work s
 建议基于 `sonatype/nexus` 镜像创建新镜像，将插件解压到路径：  
 `/opt/sonatype/nexus/nexus/WEB-INF/plugin-repository`  
 
-示例参考：[Nexus P2 插件安装]([])  
+示例参考：[Nexus P2 插件安装]   
 
 
 ## 获取帮助  
 
 如需贡献或寻求帮助，可通过以下途径：  
-- [GitHub Issues]([])（提交公开问题）  
-- [Stack Overflow]([])（`nexus` 标签）  
-- [HipChat 公开房间]([])（实时交流）  
-- [Nexus 用户邮件列表]([])
+- [GitHub Issues] （提交公开问题）  
+- [Stack Overflow] （`nexus` 标签）  
+- [HipChat 公开房间] （实时交流）  
+- [Nexus 用户邮件列表]

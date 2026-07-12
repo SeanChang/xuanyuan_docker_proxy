@@ -3,7 +3,7 @@ image: syntheticdreamlabs/vllm
 description: "vLLM构建镜像用于构建高性能大语言模型服务环境，支持快速部署及推理性能优化。"
 source: https://xuanyuan.cloud/zh/r/syntheticdreamlabs/vllm
 canonical: https://xuanyuan.cloud/zh/r/syntheticdreamlabs/vllm
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/syntheticdreamlabs/vllm" title="syntheticdreamlabs/vllm Docker 镜像中文简介、标签列表与拉取命令">syntheticdreamlabs/vllm 中文简介</a>
@@ -63,12 +63,12 @@ vLLM 是一个高性能的大型语言模型(LLM)服务库，基于 PagedAttenti
 
 #### 拉取镜像
 ```bash
-docker pull vllm/vllm:latest
+docker pull docker.xuanyuan.run/vllm/vllm:latest
 ```
 
 #### 基本启动命令
 ```bash
-docker run --gpus all -p 8000:8000 vllm/vllm:latest \
+docker run --gpus all -p 8000:8000 docker.xuanyuan.run/vllm/vllm:latest \
   --model facebook/opt-13b \
   --port 8000
 ```
@@ -81,7 +81,7 @@ docker run --gpus all -p 8000:8000 vllm/vllm:latest \
 version: '3'
 services:
   vllm:
-    image: vllm/vllm:latest
+    image: docker.xuanyuan.run/vllm/vllm:latest
     runtime: nvidia
     ports:
       - "8000:8000"
@@ -136,7 +136,7 @@ docker-compose up -d
 
 #### 使用量化模型
 ```bash
-docker run --gpus all -p 8000:8000 vllm/vllm:latest \
+docker run --gpus all -p 8000:8000 docker.xuanyuan.run/vllm/vllm:latest \
   --model TheBloke/Llama-2-7B-Chat-AWQ \
   --quantization awq \
   --port 8000
@@ -144,7 +144,7 @@ docker run --gpus all -p 8000:8000 vllm/vllm:latest \
 
 #### 多 GPU 部署
 ```bash
-docker run --gpus all -p 8000:8000 vllm/vllm:latest \
+docker run --gpus all -p 8000:8000 docker.xuanyuan.run/vllm/vllm:latest \
   --model meta-llama/Llama-2-13b-chat-hf \
   --tensor-parallel-size 2 \
   --port 8000
@@ -154,14 +154,14 @@ docker run --gpus all -p 8000:8000 vllm/vllm:latest \
 ```bash
 docker run --gpus all -p 8000:8000 \
   -v /path/to/local/model:/models/local-model \
-  vllm/vllm:latest \
+  docker.xuanyuan.run/vllm/vllm:latest \
   --model /models/local-model \
   --port 8000
 ```
 
 #### 启用 OpenAI 兼容 API
 ```bash
-docker run --gpus all -p 8000:8000 vllm/vllm:latest \
+docker run --gpus all -p 8000:8000 docker.xuanyuan.run/vllm/vllm:latest \
   --model meta-llama/Llama-2-7b-chat-hf \
   --port 8000 \
   --api-key secret-key \

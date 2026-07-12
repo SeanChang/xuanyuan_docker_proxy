@@ -3,7 +3,7 @@ image: mlikiowa/napcat-docker
 description: "NapCat的Docker镜像，提供容器化环境以快速搭建基于NapCat的应用（如QQ机器人），支持环境隔离、配置持久化与便捷扩展，适用于开发和生产环境中NapCat服务的快速部署。"
 source: https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker
 canonical: https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker" title="mlikiowa/napcat-docker Docker 镜像中文简介、标签列表与拉取命令">mlikiowa/napcat-docker 中文简介</a>
@@ -65,7 +65,7 @@ NapCatQQ 是基于 OneBot 标准开发的 QQ 机器人框架，支持 Windows、
 ### Docker 安装  
 1. **拉取镜像**  
    ```bash  
-   docker pull napneko/napcatqq:latest  
+   docker pull docker.xuanyuan.run/napneko/napcatqq:latest  
    ```  
 
 2. **创建配置目录**  
@@ -79,7 +79,7 @@ NapCatQQ 是基于 OneBot 标准开发的 QQ 机器人框架，支持 Windows、
    docker run -d \  
      -v ./napcatqq/config:/app/config \  
      --name napcatqq \  
-     napneko/napcatqq:latest  
+     docker.xuanyuan.run/napneko/napcatqq:latest
    ```  
 
 
@@ -114,4 +114,4 @@ NapCatQQ 是基于 OneBot 标准开发的 QQ 机器人框架，支持 Windows、
 - **问题反馈**：遇到 Bug 或需求可在 GitHub Issues 提交，或加入项目社区（如 、QQ 群，具体见仓库文档）。  
 
 
-更多细节可参考 [项目 GitHub 仓库]([]) 的 README 和文档。
+更多细节可参考 [项目 GitHub 仓库]  的 README 和文档。

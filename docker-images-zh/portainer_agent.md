@@ -3,14 +3,14 @@ image: portainer/agent
 description: "Portainer是一款高效的容器管理平台，您可将Kubernetes容器编排平台、Docker及Podman容器引擎等主流容器环境便捷连接至该平台，实现对各类容器环境的集中化管理、可视化监控与高效运维操作，有效简化复杂容器架构的管理流程，提升容器部署、维护的效率与安全性。"
 source: https://xuanyuan.cloud/zh/r/portainer/agent
 canonical: https://xuanyuan.cloud/zh/r/portainer/agent
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/portainer/agent" title="portainer/agent Docker 镜像中文简介、标签列表与拉取命令">portainer/agent 中文简介</a>
 
 含镜像标签、拉取命令、部署文档与相关推荐。
 
-[![Docker Pulls]([])]([]) 
+[![Docker Pulls] ]  
 
 ## Portainer Agent 介绍
 

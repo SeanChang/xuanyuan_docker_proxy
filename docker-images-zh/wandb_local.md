@@ -3,7 +3,7 @@ image: wandb/local
 description: "在您自己的服务器上运行Weights & Biases（wandb.com），该平台专注于机器学习实验跟踪、模型版本控制、团队协作与结果可视化，能帮助数据科学家和工程师有效管理项目流程、复现实验结果、优化模型性能，进而加速机器学习项目的开发与迭代效率。"
 source: https://xuanyuan.cloud/zh/r/wandb/local
 canonical: https://xuanyuan.cloud/zh/r/wandb/local
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/wandb/local" title="wandb/local Docker 镜像中文简介、标签列表与拉取命令">wandb/local 中文简介</a>
@@ -17,7 +17,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 快速启动  
 
-在已安装[Docker]([])和Python的机器上，运行以下命令启动服务器：  
+在已安装[Docker] 和Python的机器上，运行以下命令启动服务器：  
 
 1. `pip install wandb --upgrade`  
 2. `wandb local`  
@@ -32,7 +32,7 @@ WANDB_API_KEY=XXXX
 
 ## 关于wandb  
 
-Weights & Biases（W&B）是一个面向开发者的MLOps平台。更多信息请查看[官方文档]([])。  
+Weights & Biases（W&B）是一个面向开发者的MLOps平台。更多信息请查看[官方文档] 。  
 
 
 ## 生产环境说明  

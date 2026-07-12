@@ -3,7 +3,7 @@ image: traefik/traefik
 description: "非官方Traefik镜像，Traefik是一款用于反向代理和负载均衡的工具，建议使用官方镜像（https://hub.docker.com/_/traefik）。"
 source: https://xuanyuan.cloud/zh/r/traefik/traefik
 canonical: https://xuanyuan.cloud/zh/r/traefik/traefik
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/traefik/traefik" title="traefik/traefik Docker 镜像中文简介、标签列表与拉取命令">traefik/traefik 中文简介</a>
@@ -62,7 +62,7 @@ api:
 docker run -d -p 8080:8080 -p 80:80 \
   -v $PWD/traefik.yml:/etc/traefik/traefik.yml \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  traefik:v3
+  docker.xuanyuan.run/traefik:v3
 ```
 
 **参数说明**：
@@ -76,7 +76,7 @@ docker run -d -p 8080:8080 -p 80:80 \
 启动一个测试后端服务（使用 `traefik/whoami` 镜像）：
 
 ```bash
-docker run -d --name test traefik/whoami
+docker run -d --name test docker.xuanyuan.run/traefik/whoami
 ```
 
 #### 4. 访问后端服务
@@ -140,7 +140,7 @@ api:
 docker run -d -p 8080:8080 -p 80:80 \
   -v $PWD/traefik.yml:/etc/traefik/traefik.yml \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  traefik:v2.11
+  docker.xuanyuan.run/traefik:v2.11
 ```
 
 #### 3. 部署后端服务及访问验证
@@ -148,7 +148,7 @@ docker run -d -p 8080:8080 -p 80:80 \
 同 v3 步骤 3-4，服务访问命令和预期输出类似：
 
 ```bash
-docker run -d --name test traefik/whoami
+docker run -d --name test docker.xuanyuan.run/traefik/whoami
 curl test.docker.localhost
 ```
 

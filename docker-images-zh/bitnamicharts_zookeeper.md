@@ -3,7 +3,7 @@ image: bitnamicharts/zookeeper
 description: "Bitnami提供的Apache ZooKeeper Helm图表，用于在Kubernetes环境中简化分布式协调服务的部署与管理。"
 source: https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper
 canonical: https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamicharts/zookeeper" title="bitnamicharts/zookeeper Docker 镜像中文简介、标签列表与拉取命令">bitnamicharts/zookeeper 中文简介</a>
@@ -105,7 +105,7 @@ docker run -d \
 version: '3'
 services:
   zookeeper-1:
-    image: bitnami/zookeeper:latest
+    image: docker.xuanyuan.run/bitnami/zookeeper:latest
     container_name: zookeeper-1
     ports:
       - "2181:2181"
@@ -118,7 +118,7 @@ services:
       - zookeeper-data-1:/bitnami/zookeeper
 
   zookeeper-2:
-    image: bitnami/zookeeper:latest
+    image: docker.xuanyuan.run/bitnami/zookeeper:latest
     container_name: zookeeper-2
     ports:
       - "2182:2181"
@@ -131,7 +131,7 @@ services:
       - zookeeper-data-2:/bitnami/zookeeper
 
   zookeeper-3:
-    image: bitnami/zookeeper:latest
+    image: docker.xuanyuan.run/bitnami/zookeeper:latest
     container_name: zookeeper-3
     ports:
       - "2183:2181"

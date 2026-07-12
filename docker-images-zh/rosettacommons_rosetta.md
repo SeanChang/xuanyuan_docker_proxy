@@ -3,7 +3,7 @@ image: rosettacommons/rosetta
 description: "RosettaCommons官方维护的Rosetta/PyRosetta镜像，提供多种构建版本满足不同计算需求，学术和非商业用户可免费使用，商业用途需单独获取许可。"
 source: https://xuanyuan.cloud/zh/r/rosettacommons/rosetta
 canonical: https://xuanyuan.cloud/zh/r/rosettacommons/rosetta
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rosettacommons/rosetta" title="rosettacommons/rosetta Docker 镜像中文简介、标签列表与拉取命令">rosettacommons/rosetta 中文简介</a>
@@ -28,7 +28,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 - **`mpi`**：包含Rosetta和PyRosetta构建，均启用`cxx11thread`和`serialization`扩展；Rosetta以MPI模式构建。
 - **`jupyter`**：基于`jupyter/scipy-notebook`，预装PyRosetta。运行本地Jupyter服务器命令：  
   ```bash
-  docker run -it -p 8888:8888 rosettacommons/rosetta:jupyter
+  docker run -it -p 8888:8888 docker.xuanyuan.run/rosettacommons/rosetta:jupyter
   ```
 - **`ml`**（实验性）：包含Rosetta和PyRosetta构建，启用`libtorch`和`tensorflow`集成。  
   - Rosetta：启用`mpi`、`cxx11thread`、`serialization`、`torch`、`tensorflow`扩展。  

@@ -3,7 +3,7 @@ image: rancher/server
 description: "Rancher 1.x Server容器是用于管理Docker容器集群的服务器组件，提供容器环境的部署、管理与监控功能。"
 source: https://xuanyuan.cloud/zh/r/rancher/server
 canonical: https://xuanyuan.cloud/zh/r/rancher/server
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/rancher/server" title="rancher/server Docker 镜像中文简介、标签列表与拉取命令">rancher/server 中文简介</a>
@@ -62,7 +62,7 @@ docker run -d \
   --restart=unless-stopped \
   -p 8080:8080 \
   -v /opt/rancher-data:/var/lib/rancher \
-  rancher/server:latest
+  docker.xuanyuan.run/rancher/server:latest
 ```
 - **参数说明**：  
   - `-p 8080:8080`：映射 Rancher 管理 UI 端口（默认 8080）；  
@@ -76,7 +76,7 @@ docker run -d \
 version: '2'
 services:
   rancher-server:
-    image: rancher/server:latest
+    image: docker.xuanyuan.run/rancher/server:latest
     container_name: rancher-server
     restart: unless-stopped
     ports:

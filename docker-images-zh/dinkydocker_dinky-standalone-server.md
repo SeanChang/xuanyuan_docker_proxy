@@ -3,7 +3,7 @@ image: dinkydocker/dinky-standalone-server
 description: "Dinky是一款基于Apache Flink构建的实时数据开发平台，致力于为用户提供集数据采集、处理、分析与应用于一体的全流程开发工具，支持可视化任务编排、实时数据监控及高效运维管理，能够显著降低实时数据开发门槛，助力企业快速响应业务需求，构建稳定、高效的实时数据应用系统。"
 source: https://xuanyuan.cloud/zh/r/dinkydocker/dinky-standalone-server
 canonical: https://xuanyuan.cloud/zh/r/dinkydocker/dinky-standalone-server
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dinkydocker/dinky-standalone-server" title="dinkydocker/dinky-standalone-server Docker 镜像中文简介、标签列表与拉取命令">dinkydocker/dinky-standalone-server 中文简介</a>
@@ -12,13 +12,13 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 # Dinky
 
-[![License]([])]([])
-[![Stars]([])]([])
-[![Downloads]([])]([])
-[![中文文档]([])](README_zh_CN.md)
-[![英文文档]([])](README.md)
+[![License] ] 
+[![Stars] ] 
+[![Downloads] ] 
+[![中文文档] ](README_zh_CN.md)
+[![英文文档] ](README.md)
 
-[![Stargazers over time]([])]([])
+[![Stargazers over time] ] 
 
 
 ### 项目介绍  
@@ -66,59 +66,59 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ### 工作原理  
-![dinky_principle]([])  
+![dinky_principle]   
 
 
 ### 功能截图  
 #### 数据开发界面（Data Studio）  
-![datastudio]([])  
+![datastudio]   
 
 #### 数据调试界面（Data Debug）  
-![datadebug]([])  
+![datadebug]   
 
 #### 任务监控面板（Task Monitor）  
-![devops]([])  
+![devops]   
 
 #### 任务指标面板（Task Metrics）  
-![metrics]([])  
+![metrics]   
 
 
 ### 参与贡献  
-[![PRs Welcome]([])]([])  
+[![PRs Welcome] ]   
 
-欢迎加入社区，共建共赢！贡献流程详见：[如何贡献]([])。  
+欢迎加入社区，共建共赢！贡献流程详见：[如何贡献] 。  
 
 感谢所有已为Dinky贡献代码的开发者！  
-[![contrib graph]([])]([])  
+[![contrib graph] ]   
 
 
 ### 部署指南  
-详见[源码编译]([])及[安装部署]([])文档。  
+详见[源码编译] 及[安装部署] 文档。  
 
 
 ### 致谢  
 站在巨人的肩膀上，Dinky得以诞生。在此，我们向所有使用的开源软件及其社区致以衷心感谢！我们希望不仅是开源的受益者，更是贡献者，也期待志同道合的伙伴加入，共同为开源社区贡献力量。  
 
 以下为部分致谢项目：  
-[Apache Flink]([])  
-[Apache FlinkCDC]([])  
-[Apache Paimon]([])  
-[Apache Dolphinscheduler]([])  
-[Apache Doris]([])  
-[Druid]([])  
-[Ant-Design-Pro]([])  
-[Mybatis Plus]([])  
-[Monaco Editor]([])  
-[Sa Token]([])  
+[Apache Flink]   
+[Apache FlinkCDC]   
+[Apache Paimon]   
+[Apache Dolphinscheduler]   
+[Apache Doris]   
+[Druid]   
+[Ant-Design-Pro]   
+[Mybatis Plus]   
+[Monaco Editor]   
+[Sa Token]   
 [SpringBoot]()  
 
-感谢[JetBrains]([])提供免费开源许可证支持。  
-[![JetBrains]([])]([])  
+感谢[JetBrains] 提供免费开源许可证支持。  
+[![JetBrains] ]   
 
 
 ### 获取帮助  
 1. **提交Issue**：在GitHub创建Issue并清晰描述问题。  
-2. **查阅文档**：访问[官方网站]([])获取最新手册。  
+2. **查阅文档**：访问[官方网站] 获取最新手册。  
 3. **加入社区**：  
    - 微信用户群：添加微信`wenmo_ai`邀请入群（备注“Dinky + 公司名 + 职位”）。  
    - QQ用户群：**543709668**。  
@@ -126,4 +126,4 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 
 ### 版权信息  
-详见[LICENSE]([])文档。
+详见[LICENSE] 文档。

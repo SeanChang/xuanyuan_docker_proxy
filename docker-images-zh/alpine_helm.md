@@ -3,7 +3,7 @@ image: alpine/helm
 description: "当Kubernetes Helm有新发布时自动触发Docker构建的镜像"
 source: https://xuanyuan.cloud/zh/r/alpine/helm
 canonical: https://xuanyuan.cloud/zh/r/alpine/helm
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alpine/helm" title="alpine/helm Docker 镜像中文简介、标签列表与拉取命令">alpine/helm 中文简介</a>
@@ -47,7 +47,7 @@ docker run -ti --rm -v $(pwd):/apps -w /apps \
   -v ~/.helm:/root/.helm \
   -v ~/.config/helm:/root/.config/helm \
   -v ~/.cache/helm:/root/.cache/helm \
-  alpine/helm
+  docker.xuanyuan.run/alpine/helm
 ```
 
 **数据卷说明**：
@@ -66,7 +66,7 @@ docker run -ti --rm -v $(pwd):/apps -w /apps \
   -v ~/.helm:/root/.helm \
   -v ~/.config/helm:/root/.config/helm \
   -v ~/.cache/helm:/root/.cache/helm \
-  alpine/helm:3.11.1  # 示例版本，需替换为实际需求版本
+  docker.xuanyuan.run/alpine/helm:3.11.1 # 示例版本，需替换为实际需求版本
 ```
 
 

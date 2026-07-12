@@ -3,7 +3,7 @@ image: dockurr/umbrel
 description: "Docker容器化的umbrelOS，用于便捷运行比特币节点等去中心化应用。"
 source: https://xuanyuan.cloud/zh/r/dockurr/umbrel
 canonical: https://xuanyuan.cloud/zh/r/dockurr/umbrel
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dockurr/umbrel" title="dockurr/umbrel Docker 镜像中文简介、标签列表与拉取命令">dockurr/umbrel 中文简介</a>
@@ -44,7 +44,7 @@ umbrelOS Docker镜像是umbrelOS（一款专注于自托管的操作系统）的
 ```yaml
 services:
   umbrel:
-    image: dockurr/umbrel
+    image: docker.xuanyuan.run/dockurr/umbrel
     container_name: umbrel
     pid: host  # 使用主机PID命名空间，确保容器内进程正常运行
     ports:

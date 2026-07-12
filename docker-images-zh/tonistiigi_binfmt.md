@@ -3,7 +3,7 @@ image: tonistiigi/binfmt
 description: "这是一个通过Docker镜像进行分发的跨平台模拟器集合，它集成了多种不同平台的模拟器工具，能够支持在各类操作系统环境下便捷地运行和测试不同平台的应用程序，借助Docker容器化技术，确保了模拟器运行环境的一致性、部署的简便性以及跨系统使用的灵活性，为开发者和测试人员提供了高效、统一的模拟测试解决方案。"
 source: https://xuanyuan.cloud/zh/r/tonistiigi/binfmt
 canonical: https://xuanyuan.cloud/zh/r/tonistiigi/binfmt
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/tonistiigi/binfmt" title="tonistiigi/binfmt Docker 镜像中文简介、标签列表与拉取命令">tonistiigi/binfmt 中文简介</a>
@@ -18,18 +18,18 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ## 最新发布版本  
 
-- [`latest`]([])、[`qemu-v10.0.4`]([])  
-- [`qemu-v9.2.2`]([])  
-- [`qemu-v8.1.5`]([])  
-- [`qemu-v7.0.0`]([])  
-- [`desktop-v10.0.4`]([])、[`desktop-v9.2.0`]([])（桌面版，包含Docker Desktop附加补丁）  
+- [`latest`] 、[`qemu-v10.0.4`]   
+- [`qemu-v9.2.2`]   
+- [`qemu-v8.1.5`]   
+- [`qemu-v7.0.0`]   
+- [`desktop-v10.0.4`] 、[`desktop-v9.2.0`] （桌面版，包含Docker Desktop附加补丁）  
 
 部署流程：[]  
 
 
 ## 开发版本（master分支）  
 
-- [`master`]([])（基于master分支的开发构建）  
+- [`master`] （基于master分支的开发构建）  
 
 
 ## 使用方法  
@@ -38,18 +38,18 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 #### 安装所有模拟器  
 ```bash
-docker run --privileged --rm tonistiigi/binfmt --install all
+docker run --privileged --rm docker.xuanyuan.run/tonistiigi/binfmt --install all
 ```
 
 #### 安装指定模拟器  
 ```bash
-docker run --privileged --rm tonistiigi/binfmt --install arm64,riscv64,arm
+docker run --privileged --rm docker.xuanyuan.run/tonistiigi/binfmt --install arm64,riscv64,arm
 ```
 
 
 ### 查看当前支持的架构和已安装模拟器  
 ```bash
-docker run --privileged --rm myuser/binfmt
+docker run --privileged --rm docker.xuanyuan.run/myuser/binfmt
 ```
 
 输出示例（JSON格式）：  
@@ -78,13 +78,13 @@ docker run --privileged --rm myuser/binfmt
 
 ### 卸载模拟器  
 ```bash
-docker run --privileged --rm tonistiigi/binfmt --uninstall qemu-aarch64
+docker run --privileged --rm docker.xuanyuan.run/tonistiigi/binfmt --uninstall qemu-aarch64
 ```
 
 
 ## GitHub Action使用  
 
-在GitHub Actions环境中，可通过 [`setup-qemu-action`]([]) 加载此镜像：  
+在GitHub Actions环境中，可通过 [`setup-qemu-action`]  加载此镜像：  
 ```yaml
 - name: Set up QEMU
   uses: docker/setup-qemu-action@v1

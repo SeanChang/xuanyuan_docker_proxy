@@ -3,7 +3,7 @@ image: jlesage/nginx-proxy-manager
 description: "用于简化Nginx反向代理配置、SSL证书管理及虚拟主机管理的Docker容器，提供Web界面以直观操作，适合快速部署和管理代理服务。"
 source: https://xuanyuan.cloud/zh/r/jlesage/nginx-proxy-manager
 canonical: https://xuanyuan.cloud/zh/r/jlesage/nginx-proxy-manager
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/jlesage/nginx-proxy-manager" title="jlesage/nginx-proxy-manager Docker 镜像中文简介、标签列表与拉取命令">jlesage/nginx-proxy-manager 中文简介</a>
@@ -83,7 +83,7 @@ docker run -d \
 version: '3'
 services:
   nginx-proxy-manager:
-    image: jlesage/nginx-proxy-manager
+    image: docker.xuanyuan.run/jlesage/nginx-proxy-manager
     container_name: nginx-proxy-manager
     ports:
       - "8181:8181"    # Web管理界面

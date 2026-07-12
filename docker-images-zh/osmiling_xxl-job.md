@@ -3,7 +3,7 @@ image: osmiling/xxl-job
 description: "xxl-job分布式定时任务调度中心Docker镜像，包含调度中心(admin)，需配合外部MySQL数据库使用，用于分布式环境下的定时任务管理与调度。"
 source: https://xuanyuan.cloud/zh/r/osmiling/xxl-job
 canonical: https://xuanyuan.cloud/zh/r/osmiling/xxl-job
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/osmiling/xxl-job" title="osmiling/xxl-job Docker 镜像中文简介、标签列表与拉取命令">osmiling/xxl-job 中文简介</a>
@@ -33,7 +33,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### Docker 启动
 
 ```bash
-docker run --name xxl-job -e DB_HOST=127.0.0.1 -e DB_PORT=3306 -e DB_USER=root -e DB_NAME=xxl_job -e DB_PASSWORD=root -p 8080:8080 osmiling/xxl-job:tag
+docker run --name xxl-job -e DB_HOST=127.0.0.1 -e DB_PORT=3306 -e DB_USER=root -e DB_NAME=xxl_job -e DB_PASSWORD=root -p 8080:8080 docker.xuanyuan.run/osmiling/xxl-job:tag
 ```
 
 ### Docker Compose 配置
@@ -43,7 +43,7 @@ version: '3.1'
 
 services:
   xxl-job:
-    image: osmiling/xxl-job:3.3.1
+    image: docker.xuanyuan.run/osmiling/xxl-job:3.3.1
     container_name: xxl-job
     logging:
       driver: json-file

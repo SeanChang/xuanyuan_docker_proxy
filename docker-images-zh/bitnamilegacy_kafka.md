@@ -3,7 +3,7 @@ image: bitnamilegacy/kafka
 description: "Bitnami旧版镜像（不再更新），包含所有现有容器镜像的备份，仅用于临时迁移目的"
 source: https://xuanyuan.cloud/zh/r/bitnamilegacy/kafka
 canonical: https://xuanyuan.cloud/zh/r/bitnamilegacy/kafka
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnamilegacy/kafka" title="bitnamilegacy/kafka Docker 镜像中文简介、标签列表与拉取命令">bitnamilegacy/kafka 中文简介</a>
@@ -35,7 +35,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 镜像拉取
 如需使用仓库中的镜像，可通过以下命令拉取：
 ```bash
-docker pull bitnami/[legacy-image-name]:[tag]
+docker pull docker.xuanyuan.run/bitnami/[legacy-image-name]:[tag]
 ```
 > 说明：`[legacy-image-name]` 需替换为具体镜像名称，`[tag]` 需替换为对应版本标签。
 
@@ -43,7 +43,7 @@ docker pull bitnami/[legacy-image-name]:[tag]
 为避免仓库移除导致镜像不可用，建议将依赖的镜像迁移至私有容器 registry：
 1. 拉取目标镜像至本地：
    ```bash
-   docker pull bitnami/[legacy-image-name]:[tag]
+   docker pull docker.xuanyuan.run/bitnami/[legacy-image-name]:[tag]
    ```
 
 2. 标记镜像为私有仓库地址：

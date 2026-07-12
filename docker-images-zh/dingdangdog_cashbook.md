@@ -3,7 +3,7 @@ image: dingdangdog/cashbook
 description: "Cashbook是一款简单易用、自主可控的记账本Docker镜像，支持数据本地存储与清晰美观的统计分析，追求数据记录简单易用、统计分析直观有效，适合个人和家庭财务记录管理。"
 source: https://xuanyuan.cloud/zh/r/dingdangdog/cashbook
 canonical: https://xuanyuan.cloud/zh/r/dingdangdog/cashbook
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dingdangdog/cashbook" title="dingdangdog/cashbook Docker 镜像中文简介、标签列表与拉取命令">dingdangdog/cashbook 中文简介</a>
@@ -59,7 +59,7 @@ services:
     container_name: cashbook4
     depends_on: 
       - "db"
-    image: dingdangdog/cashbook:4.0.1
+    image: docker.xuanyuan.run/dingdangdog/cashbook:4.0.1
     restart: always
     volumes:
       - ./data:/app/data # 数据挂载到本地，不建议修改
@@ -76,7 +76,7 @@ services:
       - 9090:9090 # 账本开放端口 【自行修改！】
   db:
     container_name: cashbook_db
-    image: postgres
+    image: docker.xuanyuan.run/postgres
     restart: always
     shm_size: 128mb
     volumes:
@@ -93,7 +93,7 @@ services:
 services:
   main:
     container_name: cashbook4
-    image: dingdangdog/cashbook:4.0.1
+    image: docker.xuanyuan.run/dingdangdog/cashbook:4.0.1
     restart: always
     network_mode: "host" # 如需连接宿主机数据库，可启用host网络
     volumes:
@@ -226,7 +226,7 @@ services:
     container_name: cashbook4
     depends_on: 
       - "db"
-    image: dingdangdog/cashbook:4.0.1
+    image: docker.xuanyuan.run/dingdangdog/cashbook:4.0.1
     restart: always
     volumes:
       - ./data:/app/data # 数据挂载到本地，不建议修改
@@ -243,7 +243,7 @@ services:
       - 9090:9090 # 服务开放端口 【请自行修改！】
   db:
     container_name: cashbook_db
-    image: postgres
+    image: docker.xuanyuan.run/postgres
     restart: always
     shm_size: 128mb
     volumes:
@@ -260,7 +260,7 @@ services:
 services:
   main:
     container_name: cashbook4
-    image: dingdangdog/cashbook:4.0.1
+    image: docker.xuanyuan.run/dingdangdog/cashbook:4.0.1
     restart: always
     network_mode: "host" # 如需连接宿主机数据库，建议启用host网络
     volumes:

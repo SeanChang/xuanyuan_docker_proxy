@@ -3,7 +3,7 @@ image: okteto/maven
 description: "用于Okteto CLI的Java Maven开发环境镜像，Okteto是面向开发者的Kubernetes工具。"
 source: https://xuanyuan.cloud/zh/r/okteto/maven
 canonical: https://xuanyuan.cloud/zh/r/okteto/maven
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/okteto/maven" title="okteto/maven Docker 镜像中文简介、标签列表与拉取命令">okteto/maven 中文简介</a>
@@ -36,7 +36,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 在Java Maven项目根目录创建或编辑`okteto.yml`文件，指定使用本镜像作为开发环境：
 ```yaml
 name: java-maven-dev
-image: [镜像名称]  # 替换为实际镜像名称
+image: docker.xuanyuan.run/[镜像名称]  # 替换为实际镜像名称
 command: mvn clean install  # 可根据项目需求自定义启动命令
 sync:
   - .:/app  # 同步本地项目文件至容器内

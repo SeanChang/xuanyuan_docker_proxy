@@ -3,7 +3,7 @@ image: vaultwarden/server
 description: "Bitwarden服务器API的Rust替代实现，包含Web Vault，兼容官方客户端，适合资源受限环境的自托管部署。"
 source: https://xuanyuan.cloud/zh/r/vaultwarden/server
 canonical: https://xuanyuan.cloud/zh/r/vaultwarden/server
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/vaultwarden/server" title="vaultwarden/server Docker 镜像中文简介、标签列表与拉取命令">vaultwarden/server 中文简介</a>
@@ -47,8 +47,8 @@ exported_at: 2026-06-02T12:26:10.133Z
 拉取Docker镜像并从主机挂载卷以实现持久化存储：
 
 ```sh
-docker pull vaultwarden/server:latest
-docker run -d --name vaultwarden -v /vw-data/:/data/ -p 80:80 vaultwarden/server:latest
+docker pull docker.xuanyuan.run/vaultwarden/server:latest
+docker run -d --name vaultwarden -v /vw-data/:/data/ -p 80:80 docker.xuanyuan.run/vaultwarden/server:latest
 ```
 
 所有持久化数据将保存在`/vw-data/`目录下，您可根据需要调整主机路径。

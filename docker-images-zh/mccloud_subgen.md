@@ -3,7 +3,7 @@ image: mccloud/subgen
 description: "通过OpenAI和Plex、Bazarr、Emby、Jellyfin或Tautulli的webhooks自动生成字幕的Docker镜像"
 source: https://xuanyuan.cloud/zh/r/mccloud/subgen
 canonical: https://xuanyuan.cloud/zh/r/mccloud/subgen
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mccloud/subgen" title="mccloud/subgen Docker 镜像中文简介、标签列表与拉取命令">mccloud/subgen 中文简介</a>
@@ -52,7 +52,7 @@ docker run -d \
   -e SUPPORTED_SERVICES="plex,bazarr,emby" \
   -e SUBTITLE_LANGUAGES="en,zh-CN" \
   -e LOG_LEVEL="info" \
-  mcclouds/subgen:latest
+  docker.xuanyuan.run/mcclouds/subgen:latest
 ```
 
 #### 2. 使用docker-compose部署
@@ -64,7 +64,7 @@ version: '3.8'
 
 services:
   subgen:
-    image: mcclouds/subgen:latest
+    image: docker.xuanyuan.run/mcclouds/subgen:latest
     container_name: subgen
     restart: unless-stopped
     ports:

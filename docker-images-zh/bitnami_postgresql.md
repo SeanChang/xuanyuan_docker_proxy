@@ -3,7 +3,7 @@ image: bitnami/postgresql
 description: "Bitnami PostgreSQL安全镜像是一款专为PostgreSQL数据库设计的预配置、安全强化型容器镜像，集成自动更新的安全补丁、最小化攻击面架构、合规性验证工具及行业最佳安全实践，旨在简化数据库部署流程，同时保障数据存储与访问的安全性、稳定性及可靠性，适用于企业级应用场景下高效、安全的数据库环境搭建。"
 source: https://xuanyuan.cloud/zh/r/bitnami/postgresql
 canonical: https://xuanyuan.cloud/zh/r/bitnami/postgresql
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/postgresql" title="bitnami/postgresql Docker 镜像中文简介、标签列表与拉取命令">bitnami/postgresql 中文简介</a>
@@ -17,28 +17,28 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 PostgreSQL（简称 Postgres）是一款开源对象关系型数据库，以可靠性和数据完整性著称。它符合 ACID 标准，支持外键、连接、视图、触发器及存储过程。
 
-[PostgreSQL 概述]([])  
+[PostgreSQL 概述]   
 商标说明：本软件列表由 Bitnami 打包。所提及的相关商标分属各自公司所有，使用这些商标不意味着任何关联或背书。
 
 
 ## 快速启动
 
 ```console
-docker run --name postgresql bitnami/postgresql:latest
+docker run --name postgresql docker.xuanyuan.run/bitnami/postgresql:latest
 ```
 
 **警告**：此快速设置仅适用于开发环境。建议修改不安全的默认凭据，并参考 [配置](#配置) 部分了解更多安全部署的可用选项。
 
 
 ### Bitnami 安全镜像说明
-该镜像是由 Bitnami 构建和维护的强化型、最小化 CVE 镜像。Bitnami 安全镜像基于云优化、安全强化的企业级操作系统 [Photon Linux]([])。选择 BSI 镜像的理由包括：  
+该镜像是由 Bitnami 构建和维护的强化型、最小化 CVE 镜像。Bitnami 安全镜像基于云优化、安全强化的企业级操作系统 [Photon Linux] 。选择 BSI 镜像的理由包括：  
 - 提供热门开源软件的强化安全镜像，漏洞数量接近零  
 - 结合 VEX 声明、KEV 和 EPSS 评分，对漏洞进行分类和优先级排序  
 - 注重合规性，支持 FIPS、STIG 和离线部署选项，包括安全物料清单（SBOM）  
 - 通过 in-toto 提供软件供应链来源证明  
 - 原生支持主流 Helm 图表  
 
-每个镜像均附带有价值的安全元数据，可在 [公共目录]([]) 中查看。注：部分数据需 [订阅 BSI 商业版]([]) 方可获取。  
+每个镜像均附带有价值的安全元数据，可在 [公共目录]  中查看。注：部分数据需 [订阅 BSI 商业版]  方可获取。  
 
 如需基于 Debian Linux 的旧版镜像，可查看 Bitnami Legacy 仓库。
 

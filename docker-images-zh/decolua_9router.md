@@ -3,7 +3,7 @@ image: decolua/9router
 description: "9Router AI 路由网关，将多种 AI 编程工具统一接入 40+ 服务商与 100+ 模型，支持本地持久化配置与 20128 端口 Web 管理。"
 source: https://xuanyuan.cloud/zh/r/decolua/9router
 canonical: https://xuanyuan.cloud/zh/r/decolua/9router
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/decolua/9router" title="decolua/9router Docker 镜像中文简介、标签列表与拉取命令">decolua/9router 中文简介</a>
@@ -22,7 +22,7 @@ docker run -d \
   -p 20128:20128 \
   -v "$HOME/.9router:/app/data" \
   -e DATA_DIR=/app/data \
-  decolua/9router
+  docker.xuanyuan.run/decolua/9router
 ```
 
 应用在容器内默认监听 **20128** 端口。

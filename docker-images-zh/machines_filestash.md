@@ -3,7 +3,7 @@ image: machines/filestash
 description: "Filestash 官方 Docker 镜像，用于通过 Web 界面管理 FTP、SFTP、S3、Dropbox 等多种协议与云服务的文件数据。"
 source: https://xuanyuan.cloud/zh/r/machines/filestash
 canonical: https://xuanyuan.cloud/zh/r/machines/filestash
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/machines/filestash" title="machines/filestash Docker 镜像中文简介、标签列表与拉取命令">machines/filestash 中文简介</a>
@@ -36,19 +36,19 @@ Filestash 支持以下协议及服务的文件管理：
 ### 基本启动
 通过以下命令启动容器，默认暴露端口 8334：
 ```bash
-docker run -d -p 8334:8334 --name filestash mickael-kerjean/filestash
+docker run -d -p 8334:8334 --name filestash docker.xuanyuan.run/mickael-kerjean/filestash
 ```
 启动后访问 `http://localhost:8334` 进入 Web 管理界面。
 
 ### 数据持久化
 挂载宿主机目录以保存配置与数据：
 ```bash
-docker run -d -p 8334:8334 -v /宿主机路径:/app/data --name filestash mickael-kerjean/filestash
+docker run -d -p 8334:8334 -v /宿主机路径:/app/data --name filestash docker.xuanyuan.run/mickael-kerjean/filestash
 ```
 （替换 `/宿主机路径` 为实际存储目录）
 
 ### 自定义端口
 如需使用非默认端口（如 8080），调整端口映射：
 ```bash
-docker run -d -p 8080:8334 --name filestash mickael-kerjean/filestash
+docker run -d -p 8080:8334 --name filestash docker.xuanyuan.run/mickael-kerjean/filestash
 ```

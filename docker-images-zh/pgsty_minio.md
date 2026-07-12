@@ -3,7 +3,7 @@ image: pgsty/minio
 description: "社区维护的minio/minio分支，提供S3兼容的高性能对象存储解决方案，适用于AI/ML、数据分析等数据密集型工作负载，恢复了嵌入式管理控制台GUI版本引用并更新了文档链接。"
 source: https://xuanyuan.cloud/zh/r/pgsty/minio
 canonical: https://xuanyuan.cloud/zh/r/pgsty/minio
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/pgsty/minio" title="pgsty/minio Docker 镜像中文简介、标签列表与拉取命令">pgsty/minio 中文简介</a>
@@ -68,7 +68,7 @@ docker build -t myminio:minio .
 使用`docker image ls`确认镜像存在于本地仓库。可使用标准Docker命令运行服务器：
 
 ```sh
-docker run -p 9000:9000 -p 9001:9001 myminio:minio server /tmp/minio --console-address :9001
+docker run -p 9000:9000 -p 9001:9001 docker.xuanyuan.run/myminio:minio server /tmp/minio --console-address :9001
 ```
 
 有关构建Docker容器、管理自定义镜像或将镜像加载到编排平台的完整文档超出本文档范围。可根据具体镜像需求修改`Dockerfile`和`dockerscripts/docker-entrypoint.sh`。

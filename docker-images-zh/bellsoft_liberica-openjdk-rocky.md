@@ -3,7 +3,7 @@ image: bellsoft/liberica-openjdk-rocky
 description: "Liberica JDK是由BellSoft开发的100%开源Java运行时，适用于现代Java部署，支持x86_64和aarch64架构，提供安全、高效的Java运行环境，适用于桌面、服务器、云和嵌入式场景。"
 source: https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-rocky
 canonical: https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-rocky
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bellsoft/liberica-openjdk-rocky" title="bellsoft/liberica-openjdk-rocky Docker 镜像中文简介、标签列表与拉取命令">bellsoft/liberica-openjdk-rocky 中文简介</a>
@@ -75,7 +75,7 @@ Liberica JDK是一款免费且100%开源的渐进式Java运行时，适用于现
 
 ### 1. 基础部署
 ```dockerfile
-FROM bellsoft/liberica-openjdk-rocky:17
+FROM docker.xuanyuan.run/bellsoft/liberica-openjdk-rocky:17
 WORKDIR /app
 COPY target/app.jar /app/
 CMD ["java", "-jar", "app.jar"]
@@ -85,7 +85,7 @@ CMD ["java", "-jar", "app.jar"]
 
 ### 2. 使用环境变量自定义
 ```dockerfile
-FROM bellsoft/liberica-openjdk-rocky:17
+FROM docker.xuanyuan.run/bellsoft/liberica-openjdk-rocky:17
 ENV LIBERICA_IMAGE_VARIANT=standard
 ENV LIBERICA_VM=server
 WORKDIR /app
@@ -95,7 +95,7 @@ CMD ["java", "-XX:+UseContainerSupport", "-jar", "app.jar"]
 
 ### 3. 使用CDS优化启动时间
 ```dockerfile
-FROM bellsoft/liberica-openjdk-rocky:17-cds
+FROM docker.xuanyuan.run/bellsoft/liberica-openjdk-rocky:17-cds
 WORKDIR /app
 COPY target/app.jar /app/
 CMD ["java", "-jar", "app.jar"]
@@ -104,14 +104,14 @@ CMD ["java", "-jar", "app.jar"]
 ### 4. 多阶段构建减小镜像体积
 ```dockerfile
 # 构建阶段
-FROM maven:3.8-openjdk-17 AS builder
+FROM docker.xuanyuan.run/maven:3.8-openjdk-17 AS builder
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 RUN mvn package -DskipTests
 
 # 运行阶段
-FROM bellsoft/liberica-openjdk-rocky:17
+FROM docker.xuanyuan.run/bellsoft/liberica-openjdk-rocky:17
 WORKDIR /app
 COPY --from=builder /app/target/app.jar .
 CMD ["java", "-jar", "app.jar"]

@@ -3,7 +3,7 @@ image: ubuntu/redis
 description: "Redis是开源键值存储，提供由Canonical维护的长期版本。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/redis
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/redis
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/redis" title="ubuntu/redis Docker 镜像中文简介、标签列表与拉取命令">ubuntu/redis 中文简介</a>
@@ -74,7 +74,7 @@ LTS 通道提供最长 5 年免费安全维护
 本地启动镜像：
 
 ```sh
-docker run -d --name redis-container -e TZ=UTC -p 30073:6379 -e REDIS_PASSWORD=mypassword ubuntu/redis:6.2-22.04_beta
+docker run -d --name redis-container -e TZ=UTC -p 30073:6379 -e REDIS_PASSWORD=mypassword docker.xuanyuan.run/ubuntu/redis:6.2-22.04_beta
 ```
 
 通过 `localhost:30073` 访问 Redis 服务。
@@ -111,7 +111,7 @@ docker network create redis-network
 docker network connect redis-network redis-container
 
 # 启动 redis-cli 客户端
-docker run -it --rm --network redis-network ubuntu/redis:6.2-22.04_beta redis-cli -h redis-container
+docker run -it --rm --network redis-network docker.xuanyuan.run/ubuntu/redis:6.2-22.04_beta redis-cli -h redis-container
 ```
 
 连接后操作示例：

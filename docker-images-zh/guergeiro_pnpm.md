@@ -3,7 +3,7 @@ image: guergeiro/pnpm
 description: "提供Node运行时与pnpm包管理器的捆绑镜像，适用于JavaScript/TypeScript项目开发、构建及运行，支持高效包管理与环境快速配置。"
 source: https://xuanyuan.cloud/zh/r/guergeiro/pnpm
 canonical: https://xuanyuan.cloud/zh/r/guergeiro/pnpm
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/guergeiro/pnpm" title="guergeiro/pnpm Docker 镜像中文简介、标签列表与拉取命令">guergeiro/pnpm 中文简介</a>
@@ -61,7 +61,7 @@ guergeiro/pnpm 是将 Node.js 运行时与 pnpm 包管理器捆绑的 Docker 镜
 
 ```dockerfile
 # 指定基础镜像（替换为所需版本）
-FROM guergeiro/pnpm:22-10
+FROM docker.xuanyuan.run/guergeiro/pnpm:22-10
 
 # 复制项目文件
 COPY . .
@@ -94,7 +94,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-    image: my-nodejs-app
+    image: docker.xuanyuan.run/my-nodejs-app
     container_name: node-app
     restart: unless-stopped
     ports:

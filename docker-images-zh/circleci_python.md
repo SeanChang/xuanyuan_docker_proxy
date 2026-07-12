@@ -3,7 +3,7 @@ image: circleci/python
 description: "CircleCI提供的Python扩展镜像，基于官方Python镜像，预装开发和CI常用工具（如git、ssh、docker等），默认使用非root用户，支持浏览器测试等变体，适用于CI/CD流程和开发环境。"
 source: https://xuanyuan.cloud/zh/r/circleci/python
 canonical: https://xuanyuan.cloud/zh/r/circleci/python
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/circleci/python" title="circleci/python Docker 镜像中文简介、标签列表与拉取命令">circleci/python 中文简介</a>
@@ -39,12 +39,12 @@ CircleCI Python镜像是对官方Python镜像的扩展，旨在满足开发和CI
 ## 使用方法示例
 ### 基本使用（默认镜像）
 ```bash
-docker run -it --rm circleci/python:3.9
+docker run -it --rm docker.xuanyuan.run/circleci/python:3.9
 ```
 
 ### 浏览器测试场景（使用浏览器变体）
 ```bash
-docker run -it --rm circleci/python:3.9-browsers python -c "from selenium import webdriver; driver = webdriver.Chrome(); driver.get('https://example.com'); print(driver.title); driver.quit()"
+docker run -it --rm docker.xuanyuan.run/circleci/python:3.9-browsers python -c "from selenium import webdriver; driver = webdriver.Chrome(); driver.get('https://example.com'); print(driver.title); driver.quit()"
 ```
 
 ## 用户反馈

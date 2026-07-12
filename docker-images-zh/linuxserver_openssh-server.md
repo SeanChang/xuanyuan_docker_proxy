@@ -3,7 +3,7 @@ image: linuxserver/openssh-server
 description: "提供OpenSSH服务器服务，支持远程登录与服务器管理，具备易于部署、配置灵活的特点，适用于各类需要安全远程访问的场景。"
 source: https://xuanyuan.cloud/zh/r/linuxserver/openssh-server
 canonical: https://xuanyuan.cloud/zh/r/linuxserver/openssh-server
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/linuxserver/openssh-server" title="linuxserver/openssh-server Docker 镜像中文简介、标签列表与拉取命令">linuxserver/openssh-server 中文简介</a>
@@ -83,7 +83,7 @@ ssh -i /path/to/private/key -p <映射端口> <用户名>@<服务器IP>
 容器提供密钥生成辅助脚本，运行以下命令生成 SSH 公私钥对：
 
 ```bash
-docker run --rm -it --entrypoint /keygen.sh linuxserver/openssh-server
+docker run --rm -it --entrypoint /keygen.sh docker.xuanyuan.run/linuxserver/openssh-server
 ```
 
 按照提示操作，生成的密钥将显示在控制台输出，需自行保存。
@@ -96,7 +96,7 @@ docker run --rm -it --entrypoint /keygen.sh linuxserver/openssh-server
 ---
 services:
   openssh-server:
-    image: lscr.io/linuxserver/openssh-server:latest
+    image: docker.xuanyuan.run/linuxserver/openssh-server:latest
     container_name: openssh-server
     hostname: openssh-server  # 可选
     environment:
@@ -250,7 +250,7 @@ docker inspect -f '{{ index .Config.Labels "build_version" }}' lscr.io/linuxserv
 ### 通过Docker Run更新
 - 更新镜像：
   ```bash
-  docker pull lscr.io/linuxserver/openssh-server:latest
+  docker pull docker.xuanyuan.run/linuxserver/openssh-server:latest
   ```
 - 停止运行中的容器：
   ```bash
@@ -286,7 +286,7 @@ docker build \
 在x86_64硬件上构建ARM变体（反之亦然）：
 
 ```bash
-docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
+docker run --rm --privileged docker.xuanyuan.run/linuxserver/qemu-static --reset
 ```
 
 注册后，使用 `-f Dockerfile.aarch64` 指定架构对应的Dockerfile。

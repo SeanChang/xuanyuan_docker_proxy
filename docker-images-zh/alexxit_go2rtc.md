@@ -3,7 +3,7 @@ image: alexxit/go2rtc
 description: "全能的摄像头流媒体应用，支持RTSP、WebRTC、MJPEG、HomeKit、FFmpeg等协议与工具。"
 source: https://xuanyuan.cloud/zh/r/alexxit/go2rtc
 canonical: https://xuanyuan.cloud/zh/r/alexxit/go2rtc
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/alexxit/go2rtc" title="alexxit/go2rtc Docker 镜像中文简介、标签列表与拉取命令">alexxit/go2rtc 中文简介</a>
@@ -53,7 +53,7 @@ go2rtc 是一款终极摄像头流媒体应用，支持 RTSP、WebRTC、MJPEG、
 ```yaml
 services:
   go2rtc:
-    image: alexxit/go2rtc  # 默认使用 latest 标签
+    image: docker.xuanyuan.run/alexxit/go2rtc  # 默认使用 latest 标签
     network_mode: host       # 必须：WebRTC、HomeKit、UDP 摄像头依赖主机网络
     privileged: true         # 必须：FFmpeg 硬件转码需特权模式
     restart: unless-stopped  # 配置：故障或 WebUI 配置变更后自动重启

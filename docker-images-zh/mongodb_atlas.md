@@ -3,7 +3,7 @@ image: mongodb/atlas
 description: "从命令行创建、管理和自动化MongoDB Atlas资源"
 source: https://xuanyuan.cloud/zh/r/mongodb/atlas
 canonical: https://xuanyuan.cloud/zh/r/mongodb/atlas
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mongodb/atlas" title="mongodb/atlas Docker 镜像中文简介、标签列表与拉取命令">mongodb/atlas 中文简介</a>
@@ -35,14 +35,14 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 拉取最新版本的Docker镜像：
 ```bash
-docker pull mongodb/atlas
+docker pull docker.xuanyuan.run/mongodb/atlas
 ```
 
 若未指定版本标签，Docker会自动拉取`mongodb/atlas:latest`标签的最新镜像。
 
 拉取特定版本的Docker镜像（将`tag`替换为具体版本标签）：
 ```bash
-docker pull mongodb/atlas:tag
+docker pull docker.xuanyuan.run/mongodb/atlas:tag
 ```
 
 #### 2. 运行Atlas CLI命令

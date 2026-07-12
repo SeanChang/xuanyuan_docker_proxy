@@ -3,7 +3,7 @@ image: halohub/halo
 description: "强大易用的开源建站工具。"
 source: https://xuanyuan.cloud/zh/r/halohub/halo
 canonical: https://xuanyuan.cloud/zh/r/halohub/halo
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/halohub/halo" title="halohub/halo Docker 镜像中文简介、标签列表与拉取命令">halohub/halo 中文简介</a>
@@ -45,14 +45,14 @@ Halo 是一款强大易用的开源建站工具，旨在帮助用户快速搭建
 
 ```bash
 # 拉取最新版镜像
-docker pull halohub/halo:latest
+docker pull docker.xuanyuan.run/halohub/halo:latest
 
 # 运行容器（默认配置）
 docker run -d \
   --name halo \
   -p 8090:8090 \
   -v ~/halo/data:/root/.halo/data \
-  halohub/halo:latest
+  docker.xuanyuan.run/halohub/halo:latest
 ```
 
 > 说明：

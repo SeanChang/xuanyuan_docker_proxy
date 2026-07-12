@@ -3,7 +3,7 @@ image: ai/qwen3
 description: "Qwen3是通义千问系列最新推出的大语言模型，作为新一代人工智能技术成果，它专为顶尖级代码编写、数学计算、逻辑推理及语言处理任务打造，凭借先进的算法架构与深度优化的模型性能，能够高效应对多领域复杂场景下的专业需求，为用户提供精准、智能的解决方案，展现出在技术研发与应用落地中的卓越潜力。"
 source: https://xuanyuan.cloud/zh/r/ai/qwen3
 canonical: https://xuanyuan.cloud/zh/r/ai/qwen3
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ai/qwen3" title="ai/qwen3 Docker 镜像中文简介、标签列表与拉取命令">ai/qwen3 中文简介</a>
@@ -12,7 +12,7 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 # Qwen3
 
-![logo]([])
+![logo] 
 
 Qwen3 是 Qwen 大语言模型系列的最新一代产品，专注于在编码、数学、推理及语言任务中提供高性能表现。该模型包含密集型和混合专家（MoE）两种架构，可灵活部署于轻量化应用到大规模研究场景。  
 
@@ -86,7 +86,7 @@ docker model pull ai/qwen3
 docker model run ai/qwen3
 ```
 
-更多细节可参考 [Docker Model Runner 文档]([])。
+更多细节可参考 [Docker Model Runner 文档] 。
 
 
 ## 基准测试结果
@@ -112,4 +112,4 @@ docker model run ai/qwen3
 
 ## 相关链接
 
-- [Qwen3：深入思考，快速响应]([])
+- [Qwen3：深入思考，快速响应]

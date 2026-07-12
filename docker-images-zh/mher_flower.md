@@ -3,7 +3,7 @@ image: mher/flower
 description: "Flower的自动化构建Docker镜像，提供监控和管理Celery集群的Web界面，支持便捷部署与版本更新。"
 source: https://xuanyuan.cloud/zh/r/mher/flower
 canonical: https://xuanyuan.cloud/zh/r/mher/flower
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/mher/flower" title="mher/flower Docker 镜像中文简介、标签列表与拉取命令">mher/flower 中文简介</a>
@@ -57,7 +57,7 @@ Flower 是一款基于 Web 的 Celery 集群监控与管理工具。通过直观
 #### 基础部署
 启动 Flower 服务，默认监听 5555 端口：
 ```bash
-docker run -d -p 5555:5555 --name flower mher/flower
+docker run -d -p 5555:5555 --name flower docker.xuanyuan.run/mher/flower
 ```
 访问 Web 界面：`http://localhost:5555`
 
@@ -65,14 +65,14 @@ docker run -d -p 5555:5555 --name flower mher/flower
 #### 指定端口与地址
 自定义绑定端口（如 5566）和地址（如 0.0.0.0，允许外部访问）：
 ```bash
-docker run -d -p 5566:5566 mher/flower celery flower --port=5566 --address=0.0.0.0
+docker run -d -p 5566:5566 docker.xuanyuan.run/mher/flower celery flower --port=5566 --address=0.0.0.0
 ```
 
 
 #### 传递 Celery 参数
 通过 Celery 参数指定应用路径、Broker URL 等（需放在 `celery` 命令后、`flower` 子命令前）：
 ```bash
-docker run -d -p 5555:5555 mher/flower celery -A proj --broker=amqp://guest:guest@rabbitmq:5672// flower
+docker run -d -p 5555:5555 docker.xuanyuan.run/mher/flower celery -A proj --broker=amqp://guest:guest@rabbitmq:5672// flower
 ```
 - `-A proj`：指定 Celery 应用路径为 `proj`。
 - `--broker`：指定消息代理 URL（此处连接到名为 `rabbitmq` 的容器）。
@@ -81,7 +81,7 @@ docker run -d -p 5555:5555 mher/flower celery -A proj --broker=amqp://guest:gues
 #### 启用基本认证
 通过 `--basic-auth` 参数配置用户名密码认证（格式：`用户名:密码`）：
 ```bash
-docker run -d -p 5555:5555 mher/flower celery flower --basic-auth=admin:secret
+docker run -d -p 5555:5555 docker.xuanyuan.run/mher/flower celery flower --basic-auth=admin:secret
 ```
 
 
@@ -91,7 +91,7 @@ docker run -d -p 5555:5555 mher/flower celery flower --basic-auth=admin:secret
 version: '3'
 services:
   rabbitmq:
-    image: rabbitmq:3-management
+    image: docker.xuanyuan.run/rabbitmq:3-management
     ports:
       - "5672:5672"  # Broker 端口
       - "15672:15672"  # RabbitMQ 管理界面
@@ -103,7 +103,7 @@ services:
     command: celery -A proj worker --loglevel=info
 
   flower:
-    image: mher/flower
+    image: docker.xuanyuan.run/mher/flower
     depends_on:
       - celery-app
       - rabbitmq
@@ -158,14 +158,14 @@ orgs = your-github-org  # 限制指定组织成员访问
 ```
 2. 通过 Docker 启动并挂载配置文件：
 ```bash
-docker run -d -p 5555:5555 -v $(pwd)/oauth.cfg:/oauth.cfg mher/flower celery flower --auth_provider=github --auth_config=/oauth.cfg
+docker run -d -p 5555:5555 -v $(pwd)/oauth.cfg:/oauth.cfg docker.xuanyuan.run/mher/flower celery flower --auth_provider=github --auth_config=/oauth.cfg
 ```
 
 
 #### 集成 Prometheus
 启动时暴露 Prometheus 指标端口，供 Prometheus 采集：
 ```bash
-docker run -d -p 5555:5555 -p 9090:9090 mher/flower celery flower --prometheus-port=9090
+docker run -d -p 5555:5555 -p 9090:9090 docker.xuanyuan.run/mher/flower celery flower --prometheus-port=9090
 ```
 Prometheus 指标地址：`http://localhost:9090/metrics`
 

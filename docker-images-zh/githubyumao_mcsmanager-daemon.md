@@ -3,7 +3,7 @@ image: githubyumao/mcsmanager-daemon
 description: "MCSManager官方守护进程镜像，自动从GitHub仓库构建。"
 source: https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon
 canonical: https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/githubyumao/mcsmanager-daemon" title="githubyumao/mcsmanager-daemon Docker 镜像中文简介、标签列表与拉取命令">githubyumao/mcsmanager-daemon 中文简介</a>
@@ -87,7 +87,7 @@ docker run -d \
 version: '3'
 services:
   panel:
-    image: mcsmanager/panel:latest
+    image: docker.xuanyuan.run/mcsmanager/panel:latest
     container_name: mcs-panel
     restart: always
     ports:
@@ -98,7 +98,7 @@ services:
       - TZ=Asia/Shanghai  # 时区设置
 
   daemon:
-    image: mcsmanager/daemon:latest
+    image: docker.xuanyuan.run/mcsmanager/daemon:latest
     container_name: mcs-daemon
     restart: always
     ports:

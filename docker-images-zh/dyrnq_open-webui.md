@@ -3,7 +3,7 @@ image: dyrnq/open-webui
 description: "ghcr.io/open-webui/open-webui 是 GitHub 容器镜像仓库中托管的一款开源 Web 用户界面应用，主要用于构建和部署 AI 交互平台，支持多种主流大语言模型接入，提供可自定义的界面布局与交互功能，便于开发者和用户通过 Web 浏览器便捷访问、管理和使用 AI 服务，具备轻量化部署特性，适合个人或企业快速搭建专属 AI 交互界面。"
 source: https://xuanyuan.cloud/zh/r/dyrnq/open-webui
 canonical: https://xuanyuan.cloud/zh/r/dyrnq/open-webui
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/dyrnq/open-webui" title="dyrnq/open-webui Docker 镜像中文简介、标签列表与拉取命令">dyrnq/open-webui 中文简介</a>
@@ -26,17 +26,17 @@ exported_at: 2026-06-02T12:26:10.133Z
 
 ### 三、如何用容器镜像快速启动？  
 #### 前提：先装 Docker  
-确保你的电脑或服务器已安装 Docker（[Docker 官方安装指南]([])），安装后启动 Docker 服务。
+确保你的电脑或服务器已安装 Docker（[Docker 官方安装指南] ），安装后启动 Docker 服务。
 
 
 #### 1. 拉取镜像  
 打开终端，运行以下命令拉取最新镜像（默认拉取 `main` 分支，即开发主版本）：  
 ```bash
-docker pull ghcr.io/open-webui/open-webui:main
+docker pull ***-ghcr.xuanyuan.run/open-webui/open-webui:main
 ```  
-如果需要稳定版本，可指定标签（如 `v0.2.3`，具体版本见 [Open WebUI 镜像仓库]([])）：  
+如果需要稳定版本，可指定标签（如 `v0.2.3`，具体版本见 [Open WebUI 镜像仓库] ）：  
 ```bash
-docker pull ghcr.io/open-webui/open-webui:v0.2.3
+docker pull ***-ghcr.xuanyuan.run/open-webui/open-webui:v0.2.3
 ```  
 
 
@@ -60,4 +60,4 @@ docker run -d \
 4. **网络权限**：如果需要连接外部 API（如 OpenAI API），确保容器能访问互联网；如果用本地模型（如 Ollama），需让容器和本地模型在同一网络（可通过 `--network=host` 参数共享主机网络，或配置桥接网络）。  
 
 
-通过以上步骤，你就能快速用容器镜像跑起 Open WebUI，开始和 AI 模型交互了。如果需要更复杂的部署（如用 Docker Compose 配数据库、HTTPS 等），可参考 [Open WebUI 官方文档]([])。
+通过以上步骤，你就能快速用容器镜像跑起 Open WebUI，开始和 AI 模型交互了。如果需要更复杂的部署（如用 Docker Compose 配数据库、HTTPS 等），可参考 [Open WebUI 官方文档] 。

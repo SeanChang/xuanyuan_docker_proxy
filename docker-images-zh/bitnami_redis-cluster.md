@@ -3,7 +3,7 @@ image: bitnami/redis-cluster
 description: "Bitnami安全Redis集群镜像，提供预配置安全特性，用于部署和运行Redis集群环境。"
 source: https://xuanyuan.cloud/zh/r/bitnami/redis-cluster
 canonical: https://xuanyuan.cloud/zh/r/bitnami/redis-cluster
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/bitnami/redis-cluster" title="bitnami/redis-cluster Docker 镜像中文简介、标签列表与拉取命令">bitnami/redis-cluster 中文简介</a>
@@ -51,12 +51,12 @@ Redis® Cluster 是 Redis 的分布式实现，支持数据自动分片、高可
 
 从 Docker Hub 拉取最新版：
 ```console
-docker pull bitnami/redis-cluster:latest
+docker pull docker.xuanyuan.run/bitnami/redis-cluster:latest
 ```
 
 拉取特定版本（替换 `[TAG]` 为版本号，如 `7.2.4`）：
 ```console
-docker pull bitnami/redis-cluster:[TAG]
+docker pull docker.xuanyuan.run/bitnami/redis-cluster:[TAG]
 ```
 
 #### 构建自定义镜像
@@ -72,7 +72,7 @@ docker build -t bitnami/redis-cluster:latest .
 
 快速启动单节点集群（仅开发测试，允许空密码）：
 ```console
-docker run --name redis-cluster -e ALLOW_EMPTY_PASSWORD=yes bitnami/redis-cluster:latest
+docker run --name redis-cluster -e ALLOW_EMPTY_PASSWORD=yes docker.xuanyuan.run/bitnami/redis-cluster:latest
 ```
 
 ### 数据持久化
@@ -101,7 +101,7 @@ docker run \
   --name redis-node-1 \
   --network redis-cluster-network \
   -e ALLOW_EMPTY_PASSWORD=yes \
-  bitnami/redis-cluster:latest
+  docker.xuanyuan.run/bitnami/redis-cluster:latest
 ```
 
 3. 其他容器通过节点名称（如 `redis-node-1`）和端口（默认 6379）访问集群。
@@ -168,14 +168,14 @@ docker run \
 1. 启动 6 个节点：
 ```console
 # 主节点
-docker run -d --name redis-node-1 --network redis-cluster-network -e ALLOW_EMPTY_PASSWORD=yes -e REDIS_CLUSTER_CREATOR=yes bitnami/redis-cluster:latest
-docker run -d --name redis-node-2 --network redis-cluster-network -e ALLOW_EMPTY_PASSWORD=yes bitnami/redis-cluster:latest
-docker run -d --name redis-node-3 --network redis-cluster-network -e ALLOW_EMPTY_PASSWORD=yes bitnami/redis-cluster:latest
+docker run -d --name redis-node-1 --network redis-cluster-network -e ALLOW_EMPTY_PASSWORD=yes -e REDIS_CLUSTER_CREATOR=yes docker.xuanyuan.run/bitnami/redis-cluster:latest
+docker run -d --name redis-node-2 --network redis-cluster-network -e ALLOW_EMPTY_PASSWORD=yes docker.xuanyuan.run/bitnami/redis-cluster:latest
+docker run -d --name redis-node-3 --network redis-cluster-network -e ALLOW_EMPTY_PASSWORD=yes docker.xuanyuan.run/bitnami/redis-cluster:latest
 
 # 从节点
-docker run -d --name redis-node-4 --network redis-cluster-network -e ALLOW_EMPTY_PASSWORD=yes bitnami/redis-cluster:latest
-docker run -d --name redis-node-5 --network redis-cluster-network -e ALLOW_EMPTY_PASSWORD=yes bitnami/redis-cluster:latest
-docker run -d --name redis-node-6 --network redis-cluster-network -e ALLOW_EMPTY_PASSWORD=yes bitnami/redis-cluster:latest
+docker run -d --name redis-node-4 --network redis-cluster-network -e ALLOW_EMPTY_PASSWORD=yes docker.xuanyuan.run/bitnami/redis-cluster:latest
+docker run -d --name redis-node-5 --network redis-cluster-network -e ALLOW_EMPTY_PASSWORD=yes docker.xuanyuan.run/bitnami/redis-cluster:latest
+docker run -d --name redis-node-6 --network redis-cluster-network -e ALLOW_EMPTY_PASSWORD=yes docker.xuanyuan.run/bitnami/redis-cluster:latest
 ```
 
 2. 初始化集群：
@@ -194,7 +194,7 @@ docker exec -it redis-node-1 redis-cli --cluster create \
 version: '3'
 services:
   redis-node-1:
-    image: bitnami/redis-cluster:latest
+    image: docker.xuanyuan.run/bitnami/redis-cluster:latest
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - REDIS_CLUSTER_CREATOR=yes
@@ -206,7 +206,7 @@ services:
       - redis-data-1:/bitnami
 
   redis-node-2:
-    image: bitnami/redis-cluster:latest
+    image: docker.xuanyuan.run/bitnami/redis-cluster:latest
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - REDIS_NODES=redis-node-1,redis-node-2,redis-node-3,redis-node-4,redis-node-5,redis-node-6
@@ -216,7 +216,7 @@ services:
       - redis-data-2:/bitnami
 
   redis-node-3:
-    image: bitnami/redis-cluster:latest
+    image: docker.xuanyuan.run/bitnami/redis-cluster:latest
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - REDIS_NODES=redis-node-1,redis-node-2,redis-node-3,redis-node-4,redis-node-5,redis-node-6
@@ -226,7 +226,7 @@ services:
       - redis-data-3:/bitnami
 
   redis-node-4:
-    image: bitnami/redis-cluster:latest
+    image: docker.xuanyuan.run/bitnami/redis-cluster:latest
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - REDIS_NODES=redis-node-1,redis-node-2,redis-node-3,redis-node-4,redis-node-5,redis-node-6
@@ -236,7 +236,7 @@ services:
       - redis-data-4:/bitnami
 
   redis-node-5:
-    image: bitnami/redis-cluster:latest
+    image: docker.xuanyuan.run/bitnami/redis-cluster:latest
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - REDIS_NODES=redis-node-1,redis-node-2,redis-node-3,redis-node-4,redis-node-5,redis-node-6
@@ -246,7 +246,7 @@ services:
       - redis-data-5:/bitnami
 
   redis-node-6:
-    image: bitnami/redis-cluster:latest
+    image: docker.xuanyuan.run/bitnami/redis-cluster:latest
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - REDIS_NODES=redis-node-1,redis-node-2,redis-node-3,redis-node-4,redis-node-5,redis-node-6
@@ -302,7 +302,7 @@ docker logs redis-cluster
 
 1. 拉取最新镜像：
 ```console
-docker pull bitnami/redis-cluster:latest
+docker pull docker.xuanyuan.run/bitnami/redis-cluster:latest
 ```
 
 2. 停止并删除旧容器：
@@ -312,7 +312,7 @@ docker stop redis-cluster && docker rm -v redis-cluster
 
 3. 启动新容器（需挂载原持久化目录）：
 ```console
-docker run --name redis-cluster -v /path/to/persistence:/bitnami bitnami/redis-cluster:latest
+docker run --name redis-cluster -v /path/to/persistence:/bitnami docker.xuanyuan.run/bitnami/redis-cluster:latest
 ```
 
 ## FIPS 配置（Bitnami Secure Images）

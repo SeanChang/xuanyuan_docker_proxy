@@ -3,7 +3,7 @@ image: seataio/seata-server
 description: "这是一款专为微服务架构打造的分布式事务解决方案，兼具高性能与易用性核心特性。在微服务架构中，跨服务事务的数据一致性管理常面临复杂挑战，该方案通过优化底层处理逻辑实现低延迟、高吞吐量的高性能表现，同时简化集成流程并提供直观操作接口，大幅降低开发者的学习与使用门槛，助力技术团队高效应对分布式环境下的事务协调需求，切实保障业务数据的准确性及系统运行的稳定性。"
 source: https://xuanyuan.cloud/zh/r/seataio/seata-server
 canonical: https://xuanyuan.cloud/zh/r/seataio/seata-server
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/seataio/seata-server" title="seataio/seata-server Docker 镜像中文简介、标签列表与拉取命令">seataio/seata-server 中文简介</a>
@@ -62,7 +62,7 @@ $ docker run --name seata-server \
 version: "3.1"
 services:
   seata-server:
-    image: seataio/seata-server:latest
+    image: docker.xuanyuan.run/seataio/seata-server:latest
     hostname: seata-server
     ports:
       - 8091:8091  # 服务端口
@@ -114,11 +114,11 @@ $ docker logs -f seata-server
 ## 参考与支持  
 
 ### 获取帮助  
-- [Seata GitHub 仓库]([])  
-- [官方文档]([])  
+- [Seata GitHub 仓库]   
+- [官方文档]   
 - []()  
-- 钉钉群：扫码加入（群二维码见 [官方仓库]([])）  
+- 钉钉群：扫码加入（群二维码见 [官方仓库] ）  
 
 
 ### 提交反馈  
-如遇问题，可在 [GitHub Issues]([]) 提交反馈。
+如遇问题，可在 [GitHub Issues]  提交反馈。

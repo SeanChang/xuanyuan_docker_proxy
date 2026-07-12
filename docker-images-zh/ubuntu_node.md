@@ -3,7 +3,7 @@ image: ubuntu/node
 description: "基于Ubuntu的Node.js镜像，适用于服务器端和网络应用程序。"
 source: https://xuanyuan.cloud/zh/r/ubuntu/node
 canonical: https://xuanyuan.cloud/zh/r/ubuntu/node
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/ubuntu/node" title="ubuntu/node Docker 镜像中文简介、标签列表与拉取命令">ubuntu/node 中文简介</a>
@@ -45,7 +45,7 @@ LTS 通道提供长达 5 年的免费安全维护。
 
 ### 本地启动镜像
 ```sh
-docker run -d --name node-container -e TZ=UTC ubuntu/node:18-24.04_edge
+docker run -d --name node-container -e TZ=UTC docker.xuanyuan.run/ubuntu/node:18-24.04_edge
 ```
 
 

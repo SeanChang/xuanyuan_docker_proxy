@@ -3,7 +3,7 @@ image: library/mediawiki
 description: "MediaWiki是一款用PHP编写的免费开源维基软件包。"
 source: https://xuanyuan.cloud/zh/r/library/mediawiki
 canonical: https://xuanyuan.cloud/zh/r/library/mediawiki
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/library/mediawiki" title="library/mediawiki Docker 镜像中文简介、标签列表与拉取命令">library/mediawiki 中文简介</a>
@@ -115,7 +115,7 @@ $ docker run --rm mediawiki tar -cC /var/www/html/sites . | tar -xC /path/on/hos
 # 通过"http://localhost:8080"访问
 services:
   mediawiki:
-    image: mediawiki
+    image: docker.xuanyuan.run/mediawiki
     restart: always
     ports:
       - 8080:80
@@ -126,7 +126,7 @@ services:
       # 初始设置后，将LocalSettings.php下载到与此yaml相同的目录，取消以下行的注释并使用compose重启mediawiki服务
       # - ./LocalSettings.php:/var/www/html/LocalSettings.php
   database: # <- 此键定义设置过程中的数据库名称
-    image: mariadb
+    image: docker.xuanyuan.run/mariadb
     restart: always
     environment:
       # 参见https://phabricator.wikimedia.org/source/mediawiki/browse/master/includes/DefaultSettings.php

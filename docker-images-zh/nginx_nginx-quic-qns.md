@@ -3,7 +3,7 @@ image: nginx/nginx-quic-qns
 description: "用于 NGINX QUIC 协议互操作性测试的 Docker 镜像，集成 QUIC 支持，简化 QUIC 实现的兼容性验证与功能测试流程。"
 source: https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns
 canonical: https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/nginx/nginx-quic-qns" title="nginx/nginx-quic-qns Docker 镜像中文简介、标签列表与拉取命令">nginx/nginx-quic-qns 中文简介</a>
@@ -30,13 +30,13 @@ exported_at: 2026-06-02T12:26:10.133Z
 ### 基础运行
 启动容器并运行默认 QUIC 服务（UDP 443 端口）：
 ```bash
-docker run -d --name nginx-quic-test -p 443:443/udp nginx-quic-interop
+docker run -d --name nginx-quic-test -p 443:443/udp docker.xuanyuan.run/nginx-quic-interop
 ```
 
 ### 自定义配置
 挂载本地配置文件以覆盖默认 NGINX 配置：
 ```bash
-docker run -d --name nginx-quic-test -p 443:443/udp -v $(pwd)/custom-nginx.conf:/etc/nginx/nginx.conf nginx-quic-interop
+docker run -d --name nginx-quic-test -p 443:443/udp -v $(pwd)/custom-nginx.conf:/etc/nginx/nginx.conf docker.xuanyuan.run/nginx-quic-interop
 ```
 *注：自定义配置需包含 QUIC 启用指令，示例片段：`listen 443 quic reuseport; ssl_protocols TLSv1.3;`*
 

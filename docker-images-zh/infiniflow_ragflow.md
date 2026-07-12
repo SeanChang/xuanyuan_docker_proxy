@@ -3,7 +3,7 @@ image: infiniflow/ragflow
 description: "RAGFlow是一款开源检索增强生成（RAG）引擎，它集成高效信息检索与智能内容生成能力，支持文本、文档等多模态数据处理，可灵活对接企业私有知识库，帮助用户快速构建精准问答、智能创作等AI应用，具备轻量化部署特性与友好的开发者接口，为企业及个人提供低成本、高可定制的知识增强解决方案。"
 source: https://xuanyuan.cloud/zh/r/infiniflow/ragflow
 canonical: https://xuanyuan.cloud/zh/r/infiniflow/ragflow
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/infiniflow/ragflow" title="infiniflow/ragflow Docker 镜像中文简介、标签列表与拉取命令">infiniflow/ragflow 中文简介</a>
@@ -23,7 +23,7 @@ RAGFlow 是一款基于检索增强生成（RAG）技术的工具，支持文档
 - 内存 ≥ 16 GB
 - 磁盘空间 ≥ 50 GB
 - Docker 版本 ≥ 24.0.0 且 Docker Compose 版本 ≥ v2.26.1  
-  ⚠️ 若未安装 Docker，可参考 [Docker 官方安装文档]([])。
+  ⚠️ 若未安装 Docker，可参考 [Docker 官方安装文档] 。
 
 
 ## 启动服务器
@@ -91,7 +91,7 @@ $ docker logs -f ragflow-server
 编辑 `docker/service_conf.yaml.template` 文件：  
 - 在 `user_default_llm` 中选择所需的 LLM 厂商；  
 - 在对应厂商的 `API_KEY` 字段填入 API 密钥。  
-详细配置可参考 [LLM API 密钥设置文档]([])。  
+详细配置可参考 [LLM API 密钥设置文档] 。  
 
 至此，RAGFlow 已可正常使用。
 
@@ -120,7 +120,7 @@ $ docker logs -f ragflow-server
 
 
 ## 切换文档引擎（Elasticsearch → Infinity）
-RAGFlow 默认使用 Elasticsearch 存储全文与向量数据，可切换为 [Infinity]([])：  
+RAGFlow 默认使用 Elasticsearch 存储全文与向量数据，可切换为 [Infinity] ：  
 
 ### 切换步骤
 1. 停止现有容器：  

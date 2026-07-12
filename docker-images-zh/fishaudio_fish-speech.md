@@ -3,7 +3,7 @@ image: fishaudio/fish-speech
 description: "Fish Speech官方容器镜像，用于部署和运行Fish Speech语音处理相关应用，提供官方支持的标准化运行环境。"
 source: https://xuanyuan.cloud/zh/r/fishaudio/fish-speech
 canonical: https://xuanyuan.cloud/zh/r/fishaudio/fish-speech
-exported_at: 2026-06-02T12:26:10.133Z
+exported_at: 2026-07-12T16:36:12.930Z
 ---
 
 **轩辕镜像中文简介（在线版）：** <a href="https://xuanyuan.cloud/zh/r/fishaudio/fish-speech" title="fishaudio/fish-speech Docker 镜像中文简介、标签列表与拉取命令">fishaudio/fish-speech 中文简介</a>
@@ -74,7 +74,7 @@ OpenAudio S1模型在Seed TTS评估指标中表现优异，在英文文本上实
 ### 基本使用 (Web UI)
 
 ```bash
-docker run -p 7860:7860 --name fish-speech fishaudio/fish-speech
+docker run -p 7860:7860 --name fish-speech docker.xuanyuan.run/fishaudio/fish-speech
 ```
 
 访问 `http://localhost:7860` 即可使用Web界面。
@@ -82,13 +82,13 @@ docker run -p 7860:7860 --name fish-speech fishaudio/fish-speech
 ### GPU加速
 
 ```bash
-docker run --gpus all -p 7860:7860 --name fish-speech fishaudio/fish-speech
+docker run --gpus all -p 7860:7860 --name fish-speech docker.xuanyuan.run/fishaudio/fish-speech
 ```
 
 ### 后台运行
 
 ```bash
-docker run -d --gpus all -p 7860:7860 --name fish-speech fishaudio/fish-speech
+docker run -d --gpus all -p 7860:7860 --name fish-speech docker.xuanyuan.run/fishaudio/fish-speech
 ```
 
 ## 高级配置
@@ -102,7 +102,7 @@ version: '3.8'
 
 services:
   fish-speech:
-    image: fishaudio/fish-speech
+    image: docker.xuanyuan.run/fishaudio/fish-speech
     container_name: fish-speech
     restart: unless-stopped
     ports:
@@ -151,7 +151,7 @@ docker-compose up -d
 ```bash
 docker run --gpus all -p 7860:7860 \
   -v ./fish-speech-models:/app/models \
-  --name fish-speech fishaudio/fish-speech
+  --name fish-speech docker.xuanyuan.run/fishaudio/fish-speech
 ```
 
 ### API 使用示例
