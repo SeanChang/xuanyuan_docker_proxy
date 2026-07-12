@@ -1,6 +1,17 @@
 # Singularity / Apptainer Docker 镜像源配置教程
 
-适用于 HPC 集群、科学计算环境。推荐专属域名方式（docker://xxx.xuanyuan.run/...，免登录）；亦可使用环境变量登录拉取 docker.io 镜像（不推荐，仅支持 docker.xuanyuan.run）。
+> 在线版：https://xuanyuan.cloud/usage/singularity
+
+适用于 HPC 集群、科学计算环境。推荐专属域名方式（`docker://***.xuanyuan.run/...`，免登录）；亦可使用环境变量登录拉取 docker.io 镜像（不推荐，仅支持 docker.xuanyuan.run）。
+
+## 目录
+
+- [1. 关于 Singularity 和 Apptainer](#1-关于-singularity-和-apptainer)
+- [2. 安装 Singularity/Apptainer](#2-安装-singularityapptainer)
+- [3. 专属域名方式（推荐）](#3-专属域名方式推荐)
+- [4. 环境变量登录方式（不推荐，仅支持 docker.io）](#4-环境变量登录方式不推荐仅支持-dockerio)
+- [5. 验证配置是否生效](#5-验证配置是否生效)
+- [6. 常见问题](#6-常见问题)
 
 ## 1. 关于 Singularity 和 Apptainer
 
@@ -44,7 +55,7 @@ sudo yum install -y singularity
 # 参考官方文档：https://apptainer.org/docs/admin/main/installation.html
 ```
 
-> **注意**：更多安装方法请参考官方文档：[Apptainer 安装文档](https://apptainer.org/docs/admin/main/installation.html) 或 [Singularity 安装文档](https://sylabs.io/guides/latest/user-guide/installation.html)
+> **提示**：更多安装方法请参考官方文档：[Apptainer 安装文档](https://apptainer.org/docs/admin/main/installation.html) 或 [Singularity 安装文档](https://sylabs.io/guides/latest/user-guide/installation.html)
 
 ## 3. 专属域名方式（推荐）
 
@@ -53,37 +64,37 @@ sudo yum install -y singularity
 **基本用法：**
 
 ```bash
-singularity pull myapp.sif docker://xxx.xuanyuan.run/library/nginx:alpine
+singularity pull myapp.sif docker://***.xuanyuan.run/library/nginx:alpine
 ```
 
 或使用 Apptainer 命令：
 
 ```bash
-apptainer pull myapp.sif docker://xxx.xuanyuan.run/library/nginx:alpine
+apptainer pull myapp.sif docker://***.xuanyuan.run/library/nginx:alpine
 ```
 
-> **注意**：**重要提示：**请将命令中的 `xxx` 替换为您的专属域名前缀。例如，如果您的专属域名为 `123abc.xuanyuan.run`，则应将 `xxx` 替换为 `123abc`。
+> **重要提示**：请将命令中的 `***` 替换为您的专属域名前缀。例如，如果您的专属域名为 `123abc.xuanyuan.run`，则应将 `***` 替换为 `123abc`。
 
 **多仓库镜像拉取示例：**
 
 ```bash
 # Docker Hub 镜像
-singularity pull nginx.sif docker://xxx.xuanyuan.run/library/nginx:alpine
+singularity pull nginx.sif docker://***.xuanyuan.run/library/nginx:alpine
 
 # GitHub Container Registry 镜像
-singularity pull ghcr.sif docker://xxx-ghcr.xuanyuan.run/namespace/image:tag
+singularity pull ghcr.sif docker://***-ghcr.xuanyuan.run/namespace/image:tag
 
 # Google Container Registry 镜像
-singularity pull gcr.sif docker://xxx-gcr.xuanyuan.run/project/image:tag
+singularity pull gcr.sif docker://***-gcr.xuanyuan.run/project/image:tag
 
 # Quay.io 镜像
-singularity pull quay.sif docker://xxx-quay.xuanyuan.run/namespace/image:tag
+singularity pull quay.sif docker://***-quay.xuanyuan.run/namespace/image:tag
 
 # Kubernetes Registry 镜像
-singularity pull k8s.sif docker://xxx-k8s.xuanyuan.run/namespace/image:tag
+singularity pull k8s.sif docker://***-k8s.xuanyuan.run/namespace/image:tag
 ```
 
-> **注意**：**优势：**无需设置环境变量或登录凭据，直接在命令中指定专属域名即可。适合无 shell 登录需求、批量脚本、多 registry 后缀（GHCR、GCR 等）场景。
+> **优势**：无需设置环境变量或登录凭据，直接在命令中指定专属域名即可。适合无 shell 登录需求、批量脚本、多 registry 后缀（GHCR、GCR 等）场景。
 
 ## 4. 环境变量登录方式（不推荐，仅支持 docker.io）
 
@@ -118,11 +129,11 @@ export APPTAINER_DOCKER_USERNAME=镜像账户
 export APPTAINER_DOCKER_PASSWORD=镜像密码
 ```
 
-> **注意**：**镜像账户**和**镜像密码**可在[登录](https://xuanyuan.cloud/)后，在左侧菜单栏「个人中心」→「用户信息」→「镜像仓库信息」中查看。
+> **提示**：**镜像账户**和**镜像密码**可在[登录](https://xuanyuan.cloud/)后，在左侧菜单栏「个人中心」→「用户信息」→「镜像仓库信息」中查看。
 
-> **重要**：**不支持 docker login：**Singularity/Apptainer 不会自动读取 `~/.docker/config.json` 中的 Docker 凭据，请勿照搬 Docker CLI 的 `docker login` 流程。
+> **注意**：**不支持 docker login：**Singularity/Apptainer 不会自动读取 `~/.docker/config.json` 中的 Docker 凭据，请勿照搬 Docker CLI 的 `docker login` 流程。
 
-> **注意**：**变量名提示：**若使用 Apptainer 且已设置 `SINGULARITY_DOCKER_*`，可能出现 `SINGULARITY_DOCKER_* is set, but APPTAINER_DOCKER_* is preferred` 提示，Apptainer 仍会使用已设置的凭据，可忽略；若希望消除提示，可改用 `APPTAINER_DOCKER_USERNAME/PASSWORD`。
+> **变量名提示**：若使用 Apptainer 且已设置 `SINGULARITY_DOCKER_*`，可能出现 `SINGULARITY_DOCKER_* is set, but APPTAINER_DOCKER_* is preferred` 提示，Apptainer 仍会使用已设置的凭据，可忽略；若希望消除提示，可改用 `APPTAINER_DOCKER_USERNAME/PASSWORD`。
 
 **安全提示：**环境变量会出现在进程列表中，HPC 共享节点请谨慎使用；脚本场景可在拉取完成后执行 `unset SINGULARITY_DOCKER_USERNAME SINGULARITY_DOCKER_PASSWORD`，或仅在作业脚本内设置。
 
@@ -140,7 +151,7 @@ export APPTAINER_DOCKER_PASSWORD=镜像密码
 **专属域名示例：**
 
 ```bash
-singularity pull test.sif docker://xxx.xuanyuan.run/library/alpine:latest
+singularity pull test.sif docker://***.xuanyuan.run/library/alpine:latest
 ```
 
 **环境变量登录示例（docker.io）：**
@@ -154,10 +165,10 @@ singularity pull test.sif docker://docker.xuanyuan.run/library/nginx:latest
 ## 6. 常见问题
 
 | 问题描述 | 可能原因 | 解决方法 |
-|----------|----------|----------|
-| 镜像拉取失败 | 专属域名拼写错误；专属域名没有流量；镜像账户或密码错误（环境变量登录）；镜像路径不正确；网络连接问题 | 检查命令中的域名是否正确，确保将 xxx 替换为您的专属域名前缀；前往[充值页面](https://xuanyuan.cloud/recharge)充值流量包；确认镜像路径格式正确，例如：docker://xxx.xuanyuan.run/library/nginx:alpine；检查网络连接和防火墙设置 |
-| 拉取速度没有提升 | 仍在使用官方源地址；专属域名配置错误；网络环境限制 | 确认命令中使用的是专属域名（xxx.xuanyuan.run），而不是官方源地址；检查域名配置是否正确；使用网络抓包工具验证实际访问的地址 |
+|---------|---------|---------|
+| 镜像拉取失败 | 专属域名拼写错误；专属域名没有流量；镜像账户或密码错误（环境变量登录）；镜像路径不正确；网络连接问题 | 检查命令中的域名是否正确，确保将 *** 替换为您的专属域名前缀；前往[充值页面](https://xuanyuan.cloud/recharge)充值流量包；确认镜像路径格式正确，例如：`docker://***.xuanyuan.run/library/nginx:alpine`；检查网络连接和防火墙设置 |
+| 拉取速度没有提升 | 仍在使用官方源地址；专属域名配置错误；网络环境限制 | 确认命令中使用的是专属域名（`***.xuanyuan.run`），而不是官方源地址；检查域名配置是否正确；使用网络抓包工具验证实际访问的地址 |
 | 设置了 docker login 仍拉取失败 | Singularity/Apptainer 不读取 Docker 凭据 | 改用 `SINGULARITY_DOCKER_USERNAME/PASSWORD` 环境变量；或使用专属域名方式（步骤 3） |
 | 出现 SINGULARITY_DOCKER_* is set, but APPTAINER_* is preferred | Apptainer 仍识别 SingularityCE 变量名 | 非错误，Apptainer 仍会使用 `SINGULARITY_DOCKER_*` 凭据；可忽略，或改用 `APPTAINER_DOCKER_*` 消除提示 |
-| 环境变量登录后 402 / UNAUTHORIZED | 流量耗尽；镜像账户或密码错误 | 前往[充值页面](https://xuanyuan.cloud/recharge)充值流量包；核对个人中心「镜像仓库信息」中的账户密码 |
+| 环境变量登录后 402 / UNAUTHORIZED | 流量耗尽；镜像账户或密码错误 | 前往[充值页面](https://xuanyuan.cloud/recharge)充值流量包；核对个人中心「镜像仓库信息」中的账户密码；参考 [Docker 登录 UNAUTHORIZED 排查](https://xuanyuan.cloud/usage/login#unauthorized-login) |
 | 命令不存在 | 未安装 Singularity 或 Apptainer | 参考步骤 2 安装 Singularity 或 Apptainer |

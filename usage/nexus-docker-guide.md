@@ -1,6 +1,17 @@
 # Nexus Docker 镜像源配置教程（对接轩辕镜像）
 
+> 在线版：https://xuanyuan.cloud/usage/nexus
+
 在团队开发与内网部署中，反复从公网拉取 Docker 镜像既耗时又占带宽，还容易受网络波动影响。**Nexus 私服 + 轩辕镜像**既能实现内网缓存复用，又能借助稳定镜像源解决拉取慢、失败问题，适合作为内网镜像管理方案。本文从零演示：用 Docker 部署 Nexus3，并将轩辕镜像专属域名配置为 Docker 代理仓库的远程端点，看完即可落地。
+
+## 目录
+
+- [1. 为什么要搭建 Nexus 私服？](#1-为什么要搭建-nexus-私服)
+- [2. 用 Docker 一键部署 Nexus 容器](#2-用-docker-一键部署-nexus-容器)
+- [3. 登录引导、密码位置与仓库类型](#3-登录引导密码位置与仓库类型)
+- [4. 对接轩辕镜像：创建 Docker Proxy 仓库](#4-对接轩辕镜像创建-docker-proxy-仓库)
+- [5. 验证：通过私服拉取镜像](#5-验证通过私服拉取镜像)
+- [6. 总结与拓展](#6-总结与拓展)
 
 ## 1. 为什么要搭建 Nexus 私服？
 
@@ -10,7 +21,7 @@ Nexus 是部署在内网的构件与镜像管理仓库，核心能力是**代理
 - 避免多人重复下载大镜像，节省公网带宽，协作效率更高。
 - 在内网隔离环境中仍能稳定获取镜像，部署流水线更顺畅。
 
-> **注意**：本教程聚焦：在 Nexus 中创建 **Docker Proxy**，将**轩辕镜像专业版专属域名**（如 `https://xxx.xuanyuan.run`）填写为 **Remote storage**，兼顾稳定性与速度。专属域名免登录场景下，通常无需在 Nexus 中配置远端账号密码。
+> **提示**：本教程聚焦：在 Nexus 中创建 **Docker Proxy**，将**轩辕镜像专业版专属域名**（如 `https://***.xuanyuan.run`）填写为 **Remote storage**，兼顾稳定性与速度。专属域名免登录场景下，通常无需在 Nexus 中配置远端账号密码。
 
 ## 2. 用 Docker 一键部署 Nexus 容器
 
@@ -87,13 +98,13 @@ docker exec nexus3 cat /nexus-data/admin.password
 
 ### 初始密码文件位置说明
 
-![Nexus 初始密码文件位置](https://img.xuanyuan.dev/docker/blog/nexus/1-1.png)
+![Nexus 管理后台中关于 admin 初始密码文件位置的官方指引](https://img.xuanyuan.dev/docker/blog/nexus/1-1.png)
 
 图 1：按界面提示在容器内读取 `admin.password`。
 
 ### 首次登录后的密码修改引导
 
-![Nexus 修改密码向导](https://img.xuanyuan.dev/docker/blog/nexus/2-2.png)
+![Nexus 首次登录后修改 admin 密码的向导界面](https://img.xuanyuan.dev/docker/blog/nexus/2-2.png)
 
 图 2：按向导将默认密码改为安全的新密码。
 
@@ -101,7 +112,7 @@ docker exec nexus3 cat /nexus-data/admin.password
 
 通过导航进入仓库（Repositories）配置页，可看到多种仓库类型。配置 Docker 加速时，重点理解以下三类：
 
-![Nexus 仓库类型](https://img.xuanyuan.dev/docker/blog/nexus/4-4.png)
+![Nexus 仓库配置页面，展示 Group、Hosted、Proxy 等仓库类型](https://img.xuanyuan.dev/docker/blog/nexus/4-4.png)
 
 图 3：仓库列表与类型概览。
 
@@ -115,15 +126,15 @@ docker exec nexus3 cat /nexus-data/admin.password
 
 ### 步骤 1：Repository Connectors 勾选 HTTP（端口与容器映射 8082 一致）
 
-![Nexus Docker Proxy HTTP 连接器](https://img.xuanyuan.dev/docker/blog/nexus/5-5.png)
+![创建 Nexus Docker Proxy 仓库时勾选 HTTP 连接器端口 8082](https://img.xuanyuan.dev/docker/blog/nexus/5-5.png)
 
 图 4：Docker Proxy 连接器与 HTTP 端口配置。
 
-### 步骤 2：Remote storage 填写轩辕镜像专属域名
+### 步骤 2：Remote storage 填写轩辕镜像专属域名（并在同一画面完成代理模式选型）
 
-在 **Proxy** 区域，将 **Remote storage** 设为您的专属域名根地址，例如 `https://xxx.xuanyuan.run`（请替换为控制台「专属域名」中的实际主域名，对应 docker.io 加速）。
+在 **Proxy** 区域，将 **Remote storage** 设为您的专属域名根地址，例如 `https://***.xuanyuan.run`（请替换为控制台「专属域名」中的实际主域名，对应 docker.io 加速）。
 
-![Nexus Remote storage 配置](https://img.xuanyuan.dev/docker/blog/nexus/6-6.png)
+![Nexus Docker Proxy 中配置 Remote storage 为轩辕镜像专属域名](https://img.xuanyuan.dev/docker/blog/nexus/6-6.png)
 
 图 5：远程存储 URL 指向轩辕镜像，并在代理模式中选择 **Use proxy registry (specified above)**（务必选第一项）。
 
@@ -135,13 +146,13 @@ docker exec nexus3 cat /nexus-data/admin.password
 - **不推荐**：Use Docker Hub — 针对官方 Hub 的 token 逻辑，代理轩辕镜像易报错。
 - **不推荐**：Custom index — 老旧方案，一般无需使用。
 
-![Nexus 代理模式选择](https://img.xuanyuan.dev/docker/blog/nexus/7-7.png)
+![Nexus Docker Proxy 代理模式应选择 Use proxy registry](https://img.xuanyuan.dev/docker/blog/nexus/7-7.png)
 
 图 6：完成选项后，点击页面底部 **Create repository**。
 
 ### 步骤 3：其余保持默认，创建仓库
 
-![Nexus Docker Proxy 创建完成](https://img.xuanyuan.dev/docker/blog/nexus/8-8.png)
+![Nexus Docker Proxy 仓库创建完成后的界面](https://img.xuanyuan.dev/docker/blog/nexus/8-8.png)
 
 图 7：Docker Proxy 仓库创建完成后的界面示意。
 
@@ -195,12 +206,13 @@ docker images
 ```
 
 ```
+docker images
                                                                                                     i Info →   U  In Use
 IMAGE                                        ID             DISK USAGE   CONTENT SIZE   EXTRA
 localhost:8082/tomcat:latest                   d10cfd9141f2        417MB             0B
 ```
 
-> **注意**：与 Harbor、Portainer 等场景一致：请先在轩辕镜像控制台确认专属域名可用；若拉取失败，可在 Nexus 服务器上对专属域名执行 `curl -v https://xxx.xuanyuan.run/v2/` 做连通性自检（返回 200 或 401 通常表示服务可达）。
+> **提示**：与 Harbor、Portainer 等场景一致：请先在轩辕镜像控制台确认专属域名可用；若拉取失败，可在 Nexus 服务器上对专属域名执行 `curl -v https://***.xuanyuan.run/v2/` 做连通性自检（返回 200 或 401 通常表示服务可达）。
 
 ## 6. 总结与拓展
 
@@ -210,4 +222,4 @@ localhost:8082/tomcat:latest                   d10cfd9141f2        417MB        
 - 可使用 **Group** 仓库将多个 Proxy / Hosted 组合，满足多源与自有镜像并存的需求。
 - Nexus 会在首次拉取后缓存镜像层，重复拉取主要走内网，显著降低公网依赖与等待时间。
 
-同类方案还可对照阅读本站 Harbor 镜像源配置教程与 Portainer 镜像源配置教程。
+同类方案还可对照阅读本站 [Harbor 镜像源配置教程](https://xuanyuan.cloud/usage/harbor) 与 [Portainer 镜像源配置教程](https://xuanyuan.cloud/usage/portainer)。
