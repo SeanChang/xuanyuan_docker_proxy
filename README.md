@@ -11,33 +11,51 @@
 ### 📦 Docker 镜像中文简介库
 - [Docker 镜像中文简介库（950+ 镜像索引）](./docker-images-zh/README.md)
 
-### 🖥️ 操作系统平台
-- [Linux Docker 加速 - 轩辕镜像配置手册](#linux-配置轩辕镜像源)
-- [Windows/Mac Docker 加速 - 轩辕镜像配置手册](./windows-mac-docker-guide.md)
+### 📘 平台与设备使用手册
+- [轩辕镜像平台配置手册总览](./usage/README.md)
+
+#### Docker / 桌面
+- [登录仓库拉取](./usage/login-docker-guide.md)
+- [专属域名拉取](./usage/nologin-docker-guide.md)
+- [Linux Docker 加速](./usage/linux-docker-guide.md)
+- [Windows / Mac Docker 加速](./usage/desktop-docker-guide.md)
+- [MacOS OrbStack](./usage/orbstack-docker-guide.md)
+- [Apple Container](./usage/apple-container-docker-guide.md)
+- [Docker Compose 镜像加速](./usage/docker-compose-docker-guide.md)
 - [超全 Docker 轩辕镜像源配置（Windows/Mac/Linux）](./blog/docker-windows-mac-linux.md)
 - [Docker 镜像源配置踩坑指南](./blog/docker.md)
 - [2026 国内 Docker 镜像拉取指南](./blog/2026-docker-daemonjson-10.md)
 
-### 🏠 NAS 设备平台
-- [群晖 NAS Docker 加速 - 轩辕镜像配置手册](./synology-docker-guide.md)
+#### NAS 设备
+- [群晖 NAS](./usage/synology-docker-guide.md)
+- [威联通 NAS](./usage/weiliantong-docker-guide.md)
+- [绿联 NAS](./usage/lvlian-docker-guide.md)
+- [极空间 NAS](./usage/jikongjian-docker-guide.md)
+- [飞牛 fnOS](./usage/feiniu-docker-guide.md)
+- [Unraid NAS](./usage/unraid-docker-guide.md)
 - [群晖 MT Photos Docker 部署教程](./blog/nas-mt-photos-docker.md)
-- [威联通 NAS Docker 加速 - 轩辕镜像配置手册](./qnap-docker-guide.md)
-- [绿联 NAS Docker 加速 - 轩辕镜像配置手册](./lvlian-docker-guide.md)
-- [极空间 NAS Docker 加速 - 轩辕镜像配置手册](./jikongjian-docker-guide.md)
-- [飞牛fnOS Docker 加速 - 轩辕镜像配置手册](./feiniu-docker-guide.md)
 
-### 🛠️ 管理面板与路由
-- [宝塔面板 Docker 加速 - 轩辕镜像配置手册](./baota-docker-guide.md)
+#### 面板 / 网络
+- [宝塔面板](./usage/baota-docker-guide.md)
+- [爱快路由 ikuai](./usage/ikuai-docker-guide.md)
 - [1Panel Linux Docker 部署教程](./blog/1panel-docker-linux.md)
-- [爱快路由 ikuai Docker 加速 - 轩辕镜像配置手册](./ikuai-docker-guide.md)
 
-### ☸️ 容器编排与云原生
+#### 企业仓库
+- [多仓库加速总览（GHCR / Quay / NVCR 等）](./usage/mirror-tutorial-docker-guide.md)
+- [Harbor 镜像源](./usage/harbor-docker-guide.md)
+- [Portainer 镜像源](./usage/portainer-docker-guide.md)
+- [Nexus 镜像源](./usage/nexus-docker-guide.md)
+
+#### 开发工具
+- [Dev Containers](./usage/devcontainer-docker-guide.md)
+- [Podman](./usage/podman-docker-guide.md)
+- [Singularity / Apptainer](./usage/singularity-docker-guide.md)
+
+#### Kubernetes
+- [K8s Containerd](./usage/containerd-docker-guide.md)
+- [K3s](./usage/k3s-docker-guide.md)
 - [从零开始学构建 Docker 镜像](./blog/docker-build-tutorial.md)
 - [Docker Registry 部署教程](./blog/docker-registry.md)
-- [Docker Compose Docker 镜像加速 - 轩辕镜像配置手册](./docker-compose-docker-guide.md)
-- [K8s containerd 下载加速 - 轩辕镜像配置手册](./containerd-guide.md)
-- [ghcr、Quay、nvcr、k8s、gcr 仓库下载加速 - 轩辕镜像配置手册](./docker-acceleration-guide.md)
-- [Podman Docker 镜像下载加速 - 轩辕镜像配置手册](./podman-docker-guide.md)
 
 ### 📖 Docker 部署教程
 
@@ -391,114 +409,8 @@ bash <(curl -sSL https://raw.githubusercontent.com/SeanChang/xuanyuan_docker_pro
 
 ## Linux Docker 加速 - 轩辕镜像配置手册
 
-<a href="https://xuanyuan.cloud/" target="_blank">轩辕镜像</a> 提供高速稳定的 Docker 镜像加速服务，让您的 Docker 操作享受极速体验。
-
-## Linux 配置轩辕镜像源
-
-在 Linux 系统上配置<a href="https://xuanyuan.cloud/" target="_blank">轩辕镜像</a>源，让所有 Docker 操作都享受高速加速体验。
-
-### 1. 获取专属免登录地址
-
-在<a href="https://xuanyuan.cloud/" target="_blank">轩辕镜像</a>个人中心获取您的专属免登录加速地址，格式为：`xxx.xuanyuan.run`
-
-> **注意**：`xxx.xuanyuan.run` 请替换为您的专属免登录加速地址，请登录网站后在个人中心获取。
-
-### 2. 配置 Docker daemon
-
-使用以下命令配置 Docker daemon 文件：
-
-```bash
-echo '{"insecure-registries":["xxx.xuanyuan.run"],"registry-mirrors":["https://xxx.xuanyuan.run"]}' | sudo tee /etc/docker/daemon.json > /dev/null
-```
-
-此命令会将镜像源配置写入 `/etc/docker/daemon.json` 文件
-
-> **注意**：`xxx.xuanyuan.run` 请替换为您的专属免登录加速地址，请登录网站后在个人中心获取。
-
-### 3. 重新加载 daemon
-
-重新加载 systemd daemon 配置：
-
-```bash
-systemctl daemon-reload
-```
-
-### 4. 重启 Docker 服务
-
-重启 Docker 服务使配置生效：
-
-```bash
-systemctl restart docker
-```
-
-重启后，Docker 将使用新的镜像源配置
-
-### 5. 验证配置
-
-验证配置是否生效：
-
-```bash
-docker info | grep -A 10 "Registry Mirrors"
-```
-
-如果配置成功，您应该能看到您的<a href="https://xuanyuan.cloud/" target="_blank">轩辕镜像</a>地址
-
-### 6. 镜像搜索步骤
-
-配置完成后，您可以直接使用标准的 Docker 命令搜索镜像：
-
-```bash
-docker search nginx
-```
-
-### 7. 镜像下载步骤
-
-配置完成后，您可以直接使用标准的 Docker 命令拉取镜像：
-
-```bash
-docker pull mysql:latest
-```
-
-> **PS**: 不加 TAG 默认为 latest，建议指定具体的 TAG 版本进行下载。
-
-## 配置说明
-
-### 🐳 为什么配置了 Docker Registry Mirrors 仍然走官方源？
-
-很多用户反馈，已经在 Docker 中配置了镜像加速器（registry-mirrors），但拉取镜像时仍然访问官方源（docker.io）。
-
-拉取报错如下：
-
-```
-Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client. Timeout exceeded while awaiting headers)
-```
-
-这是因为 Docker 的镜像拉取机制是优先尝试使用镜像加速器，而不是强制始终使用。部分镜像的 tag 或 namespace 特殊（如 docker-library），可能仍绕过加速器。
-
-### 常见原因
-
-#### 免登录地址没有可用流量
-
-如果你使用免登录地址，但该地址没有购买流量，当 Docker 客户端请求加速器时，服务端会返回 402 Payment Required 错误，Docker 就会直接回退到官方仓库 docker.io 拉取镜像。
-
-**解决方案**: 请前往<a href="https://xuanyuan.cloud/recharge" target="_blank">轩辕镜像</a>充值页面购买相应的流量包，确保您的免登录地址有足够的流量支持镜像加速服务。
-
-### 如何确认免登录地址可用
-
-建议先用下列方式测试：
-
-```bash
-docker pull abc123def456.xuanyuan.run/mysql
-```
-
-如果能正常拉取，说明免登录地址可用且有流量。
-
-### 解决方法
-
-如果配置后仍然不生效，建议参考下列文档拉取镜像：
-
-- <a href="https://xuanyuan.cloud/" target="_blank">免登录配置教程</a> 或 <a href="https://xuanyuan.cloud/" target="_blank">登录方式配置教程</a>
+<a href="https://xuanyuan.cloud/" target="_blank">轩辕镜像</a> 提供高速稳定的 Docker 镜像加速服务。Linux 系统下的完整配置步骤、验证方法与常见问题排查，请参阅 **[Linux Docker 加速配置手册](./usage/linux-docker-guide.md)**。
 
 ## 更多信息
 
-访问 <a href="https://xuanyuan.cloud/" target="_blank">轩辕镜像官网</a> 获取更多配置教程和技术支持。
+访问 <a href="https://xuanyuan.cloud/" target="_blank">轩辕镜像官网</a> 获取更多配置教程和技术支持。全部平台与设备手册见 **[usage/ 目录](./usage/README.md)**。
