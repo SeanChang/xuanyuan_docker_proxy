@@ -31,6 +31,9 @@ RANCHER 容器化部署对操作系统有以下基本要求：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 安装完成后，建议将当前用户添加到 docker 用户组，以避免每次执行 Docker 命令都需要使用 sudo：

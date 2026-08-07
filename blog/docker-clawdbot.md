@@ -38,6 +38,9 @@ Clawdbot 是一款开源的运行在您自己的设备上的个人 AI 助手。�
 ### 方式一：一键安装 Docker 环境（推荐国内服务器使用）
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 #### 该脚本特性说明：

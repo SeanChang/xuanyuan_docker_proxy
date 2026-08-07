@@ -28,6 +28,9 @@ LinuxServer.io提供的 Transmission 容器具有以下特点：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 脚本将自动完成Docker Engine、Docker Compose等组件的安装与配置，并启动Docker服务。安装完成后，可通过`docker --version`命令验证安装是否成功。

@@ -20,6 +20,9 @@ TRAEFIK的核心优势在于其自动发现能力，只需将TRAEFIK指向您的
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 该脚本将自动安装Docker Engine、Docker CLI、Docker Compose等必要组件，并配置好基础环境。安装完成后，建议启动Docker服务并设置开机自启：

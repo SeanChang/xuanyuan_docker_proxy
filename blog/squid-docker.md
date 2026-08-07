@@ -20,6 +20,9 @@ SQUID是一款功能强大的Web缓存代理服务器，支持HTTP、HTTPS、FTP
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 该脚本会自动安装最新稳定版Docker Engine并配置必要的系统参数。

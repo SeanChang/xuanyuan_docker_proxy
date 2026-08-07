@@ -19,6 +19,9 @@ DIFY-PLUGIN-DAEMON（镜像名称：`langgenius/dify-plugin-daemon`）是Dify平
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 > 脚本将自动完成Docker Engine、Docker Compose的安装与配置，并适配主流Linux发行版（Ubuntu/Debian/CentOS等）。安装完成后可通过`docker --version`验证是否成功。

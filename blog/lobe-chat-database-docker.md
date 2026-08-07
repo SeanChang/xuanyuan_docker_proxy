@@ -21,6 +21,9 @@ Lobe数据库采用Docker容器化部署，需先在目标服务器配置Docker�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 > 脚本执行过程中需管理员权限（sudo），请根据提示输入密码。安装完成后，脚本会自动启动Docker服务并配置开机自启。

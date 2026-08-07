@@ -19,6 +19,9 @@ LibreOffice 是一款免费且功能强大的办公套件，作为 OpenOffice.or
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 该脚本将自动完成 Docker 及 Docker Compose 的安装与配置，适用于主流 Linux 发行版。安装完成后，可通过 `docker --version` 命令验证安装是否成功。

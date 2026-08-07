@@ -57,6 +57,9 @@ CentOS 曾是基于红帽企业 Linux（RHEL）源代码构建的社区级发行
 脚本支持主流 Linux 发行版，自动配置轩辕镜像访问支持源，简化安装流程：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 验证安装成功：

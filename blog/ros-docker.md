@@ -21,6 +21,9 @@ Robot Operating System (ROS) 是一套用于构建机器人应用的开源软件
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 该脚本将自动安装Docker Engine、Docker CLI、Docker Compose等必要组件，并配置好基础环境。安装完成后，可通过`docker --version`命令验证安装是否成功。
@@ -348,7 +351,7 @@ result:
 
 
 ### 关键要点
-- 使用一键脚本`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`快速部署Docker环境
+- 使用一键脚本`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`（备用地址：`bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)`）快速部署Docker环境
 - 通过轩辕镜像访问支持地址`xxx.xuanyuan.run`拉取ROS镜像，提升下载访问表现
 - 容器部署需注意数据持久化（挂载`/root/.ros`目录）和网络配置（主从节点通信）
 - 功能测试可通过ROS内置示例节点（talker/listener、服务调用）验证通信功能

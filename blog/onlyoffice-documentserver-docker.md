@@ -37,6 +37,9 @@
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 验证：
@@ -582,5 +585,5 @@ docker stop onlyoffice-documentserver && docker rm onlyoffice-documentserver
 - [ONLYOFFICE Docker-DocumentServer](https://github.com/ONLYOFFICE/Docker-DocumentServer)  
 - [onlyoffice/documentserver 镜像页](https://xuanyuan.cloud/zh/r/onlyoffice/documentserver)  
 - [轩辕镜像首页](https://xuanyuan.cloud)  
-- [Docker 一键安装脚本](https://xuanyuan.cloud/docker.sh)  
+- [Docker 一键安装脚本](https://xuanyuan.cloud/docker.sh)（[备用地址](https://get.xuanyuan.dev/docker.sh)）  
 

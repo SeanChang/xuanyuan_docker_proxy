@@ -21,6 +21,9 @@ REDIS-STACK-SERVER 是 Redis 官方推出的一站式数据平台，整合了 Re
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 脚本将自动完成 Docker 引擎、Docker Compose 工具的安装及配置，并启动 Docker 服务。安装完成后，可通过以下命令验证 Docker 是否正常运行：

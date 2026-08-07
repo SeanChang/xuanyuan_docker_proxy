@@ -29,6 +29,9 @@ Postgres-Meta是Supabase团队开发的**PostgreSQL数据库RESTful管理工具*
 若未安装Docker及Docker Compose，可通过轩辕镜像平台提供的一键脚本完成安装（支持主流Linux发行版，并自动配置镜像访问支持）：  
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 验证安装成功：  

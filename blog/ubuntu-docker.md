@@ -23,6 +23,9 @@
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 脚本执行完成后，可通过以下命令验证 Docker 是否安装成功：

@@ -19,6 +19,9 @@ UPTIME-KUMA是一款功能强大的自托管监控工具，旨在为用户提供
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 > 脚本执行过程中可能需要sudo权限，请根据提示输入密码。安装完成后，可通过`docker --version`验证安装是否成功。

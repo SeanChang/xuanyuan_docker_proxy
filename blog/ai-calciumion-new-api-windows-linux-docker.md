@@ -22,6 +22,9 @@ calciumion/new-api 是一款**基于One API二次开发的轻量AI大模型统�
 Ubuntu、CentOS、Debian，以及**银河麒麟、统信UOS、欧拉**等国产Linux系统通用，无需手动换源、装依赖，复制以下一键脚本到终端执行，自动安装Docker、Docker Compose，同时配置国内镜像加速，从根源解决镜像下载慢问题：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 执行后等待几分钟，全程自动安装配置，无需任何手动干预。
 

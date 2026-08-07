@@ -18,6 +18,9 @@ GitLab Community Edition（GitLab CE）是开源一站式 DevOps 平台，集成
 ### 1.1 安装 Docker（一键脚本，支持 Ubuntu/CentOS）
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 安装完成验证：

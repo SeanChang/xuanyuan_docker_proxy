@@ -21,6 +21,9 @@ PORTAINER-CE基于Docker容器运行，需先部署Docker环境。推荐使用�
 ```bash
 # 一键安装Docker环境（包含Docker Engine、Docker CLI、Docker Compose）
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 脚本执行过程中需保持网络连接，根据系统提示完成安装。安装完成后，可通过以下命令验证Docker是否正常运行：

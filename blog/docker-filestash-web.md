@@ -37,6 +37,9 @@ Filestash 是个现代化的 Web 文件管理器，核心就是一句话：**用
 直接一条命令，自动安装 Docker、Docker Compose，还配置好轩辕镜像加速：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 #### 🏭 生产环境（推荐，安全优先）
@@ -44,6 +47,7 @@ bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 ```bash
 # 1. 下载脚本到本地
 wget https://xuanyuan.cloud/docker.sh -O docker-install.sh
+# 备用地址：wget https://get.xuanyuan.dev/docker.sh -O docker-install.sh
 
 # 2. （可选但推荐）脚本源码，确认脚本安全
 less docker-install.sh  # 也可以用vim、cat查看内容

@@ -34,6 +34,9 @@ SGLANG作为LLM推理引擎，核心依赖GPU算力完成模型推理，无GPU�
 ```bash
 # 轩辕镜像一键安装Docker环境（全Linux系统兼容）
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 脚本执行完成后，通过以下命令验证Docker环境是否正常：

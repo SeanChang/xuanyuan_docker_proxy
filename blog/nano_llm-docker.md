@@ -29,6 +29,9 @@ NANO_LLM的核心优势包括：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 > 注意：执行脚本可能需要管理员权限(sudo)，安装过程中请根据提示完成操作。安装完成后，建议注销并重新登录系统，以确保Docker用户组配置生效。

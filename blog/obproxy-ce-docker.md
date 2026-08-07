@@ -21,6 +21,9 @@ OBPROXY-CE容器化部署依赖Docker引擎，以下是基于Linux系统的一�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 执行上述命令后，脚本将自动完成Docker引擎的安装、启动及开机自启配置。安装完成后，可通过以下命令验证Docker是否正常运行：

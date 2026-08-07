@@ -22,6 +22,9 @@ Red Hat UBI8（Universal Base Image 8，通用基础镜像）是 Red Hat 官方�
 如果你的 Linux 服务器还没装 Docker 和 Docker Compose，直接用下面的一键脚本——支持 CentOS、Ubuntu、Debian 等绝大多数发行版，还能自动配置轩辕镜像访问支持源（拉取 UBI8 更快），不用手动改配置，新手也能一步到位：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 执行完脚本后，输入 `docker --version` 和 `docker compose --version`，能看到版本号就说明装好了。
 

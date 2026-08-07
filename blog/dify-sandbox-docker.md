@@ -19,6 +19,9 @@ DIFY-SANDBOX是一款专注于提供安全、轻量级且高效的代码执行�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 > 注意：执行脚本需要root权限，安装过程可能需要2-5分钟，具体取决于服务器网络状况和性能。

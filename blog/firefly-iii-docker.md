@@ -21,6 +21,9 @@ Firefly III采用开源协议（GNU Affero General Public License v3），代码
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 执行脚本后，按照提示完成Docker安装。安装完成后，可通过以下命令验证Docker是否正常运行：

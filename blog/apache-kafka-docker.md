@@ -21,6 +21,9 @@ Kafka容器化部署依赖Docker环境，推荐使用以下一键安装脚本完
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 该脚本将自动安装Docker Engine、Docker Compose及相关依赖，并配置系统环境以优化Docker运行性能。

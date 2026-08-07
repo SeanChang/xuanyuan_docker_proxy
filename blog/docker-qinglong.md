@@ -22,6 +22,9 @@ QINGLONG采用Docker容器化部署，需先确保服务器已安装Docker环境
 ```bash
 # 一键安装Docker环境（支持主流Linux发行版）
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 脚本执行过程中需根据提示完成权限配置，安装完成后可通过以下命令验证Docker状态：

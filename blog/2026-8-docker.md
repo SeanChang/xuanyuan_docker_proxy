@@ -192,12 +192,16 @@ docker pull docker.xuanyuan.me/nginx:latest
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 #### 生产环境（先审阅）
 
 ```bash
 wget https://xuanyuan.cloud/docker.sh -O docker-install.sh
+# 备用地址：wget https://get.xuanyuan.dev/docker.sh -O docker-install.sh
 less docker-install.sh
 bash docker-install.sh
 ```

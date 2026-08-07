@@ -33,6 +33,9 @@ SERVER（vaultwarden/server）是一个基于Rust实现的Bitwarden API替代方
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 > 脚本将自动完成Docker Engine、Docker Compose的安装及系统配置，适用于Ubuntu、Debian、CentOS等主流Linux发行版。
@@ -427,7 +430,7 @@ swaks --server smtp.example.com:587 \
 
 - **Vaultwarden镜像文档（轩辕）**：[https://xuanyuan.cloud/r/vaultwarden/server](https://xuanyuan.cloud/r/vaultwarden/server)
 - **Vaultwarden镜像标签列表（轩辕）**：[https://xuanyuan.cloud/r/vaultwarden/server/tags](https://xuanyuan.cloud/r/vaultwarden/server/tags)
-- **轩辕Docker一键安装脚本**：[https://xuanyuan.cloud/docker.sh](https://xuanyuan.cloud/docker.sh)
+- **轩辕Docker一键安装脚本**：[https://xuanyuan.cloud/docker.sh](https://xuanyuan.cloud/docker.sh)（[备用地址](https://get.xuanyuan.dev/docker.sh)）
 
 ### 相关工具
 

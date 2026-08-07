@@ -41,6 +41,9 @@ QWEN3容器化部署支持以下操作系统：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 安装完成后，验证Docker版本：

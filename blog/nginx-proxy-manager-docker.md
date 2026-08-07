@@ -26,6 +26,9 @@ NGINX-PROXY-MANAGER（简称NPM）是一款基于Docker容器的Nginx代理主�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 > 脚本适用系统：Ubuntu 18.04+/Debian 10+/CentOS 7+/Fedora 30+。执行过程中需输入sudo密码，脚本将自动完成Docker引擎、Docker Compose的安装，并配置开机自启。

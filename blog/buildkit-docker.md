@@ -19,6 +19,9 @@ BUILDKIT是一款高性能的容器构建工具，具备并发构建、高效缓
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 该脚本将自动完成Docker的安装、配置及启动，适用于主流Linux发行版。安装完成后，可通过`docker --version`命令验证Docker是否正常安装。

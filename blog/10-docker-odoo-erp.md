@@ -36,6 +36,9 @@ Ubuntu、CentOS、欧拉、银河麒麟、统信UOS 等主流 Linux 及国产操
 打开终端，执行以下命令：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 ### Windows / Mac 用户

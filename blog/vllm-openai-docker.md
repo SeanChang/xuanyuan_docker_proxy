@@ -39,6 +39,9 @@ vllm-openai 依赖 Docker 和 NVIDIA 容器运行时（GPU 加速必需），若
 ```bash
 # 一键安装脚本（复制到 Linux 终端执行，无需手动修改）
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 #### 验证安装成功

@@ -20,6 +20,9 @@ Neo4j是世界领先的图数据库，采用原生图存储和处理技术，专
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 执行完成后，可通过以下命令验证Docker是否安装成功：

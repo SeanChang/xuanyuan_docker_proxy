@@ -23,6 +23,9 @@ SiYuan（思源笔记）是一款以"本地优先"为核心的个人知识管理
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 > 脚本支持13种主流Linux发行版（Ubuntu、CentOS、Debian、openEuler等），执行过程需要root权限。

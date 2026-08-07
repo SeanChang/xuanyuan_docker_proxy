@@ -20,6 +20,9 @@ JDK（Java Development Kit）是Java开发的核心工具包，包含Java编译�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 安装完成后，通过以下命令验证Docker是否正常运行：

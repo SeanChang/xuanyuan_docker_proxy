@@ -33,6 +33,9 @@ Oracle Linux 不只是普通的 RHEL 兼容发行版，更是经过 Oracle 每�
 ```bash
 # 一键安装 Docker + Docker Compose，全程无需手动干预
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 ### 验证安装结果

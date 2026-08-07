@@ -33,6 +33,9 @@ WordPress 是全球最流行的开源内容管理系统（CMS），基于 PHP + 
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 #### 验证安装成功

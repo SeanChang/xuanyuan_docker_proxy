@@ -22,6 +22,9 @@ Visual Studio Code基于Docker容器运行，首先需要在目标服务器上�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 安装完成后，可以通过以下命令验证Docker是否正常运行：

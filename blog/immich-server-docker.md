@@ -19,6 +19,9 @@ IMMICH-SERVER 是一款基于Nest.js构建的容器化应用，主要定位为�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 安装完成后，可通过以下命令验证Docker是否正常运行：
@@ -190,7 +193,7 @@ curl http://<服务器IP>:<官方文档指定端口>  # 替换为实际服务器
 
 
 ### 关键要点
-- 使用轩辕提供的一键脚本（`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`）可快速完成Docker环境安装；  
+- 使用轩辕提供的一键脚本（`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`（备用地址：`bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)`））可快速完成Docker环境安装；  
 - 通过轩辕镜像访问支持地址（xxx.xuanyuan.run）拉取指定标签（`commit-edbdc14178b244e75d0c01c2d808b407d5547541`）的镜像，确保部署版本一致性；  
 - 基础部署需关注端口映射、数据持久化和环境变量配置，具体参数参考官方文档；  
 - 生产环境中需重点做好数据备份、权限控制、服务监控和版本管理，保障服务稳定运行。

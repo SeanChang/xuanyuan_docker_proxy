@@ -17,6 +17,9 @@
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 ---
@@ -116,6 +119,9 @@ MoviePilot在docker境像中同时还内置了`虚拟显示`、`浏览器仿真`
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 ### 5.2 Docker Run 命令（分版本）

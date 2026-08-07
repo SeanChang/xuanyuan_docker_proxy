@@ -21,6 +21,9 @@ DIFY-WEB是Dify.AI的前端应用Docker镜像，Dify是一款LLM应用开发平�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 脚本将自动完成Docker及Docker Compose的安装与配置，适用于主流Linux发行版（Ubuntu、Debian、CentOS等）。

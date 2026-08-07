@@ -23,6 +23,9 @@ MONGO-EXPRESS是一个基于Web的MongoDB管理界面，采用Node.js、Express.
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 脚本执行过程中需根据提示完成权限确认，默认安装Docker Engine、Docker CLI、Docker Compose等核心组件，并配置开机自启动。安装完成后，可通过以下命令验证：

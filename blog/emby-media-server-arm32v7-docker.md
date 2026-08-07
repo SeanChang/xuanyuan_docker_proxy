@@ -20,6 +20,9 @@ EMBYSERVER_ARM32V7是Emby Media Server针对arm32v7架构的官方Docker镜像�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 该脚本将自动安装Docker Engine、Docker CLI、Docker Compose等必要组件，并配置好基础环境参数。

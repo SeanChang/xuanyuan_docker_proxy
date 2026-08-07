@@ -21,6 +21,9 @@ NGINX WEBUI是一款基于Web的图形化Nginx配置管理工具，旨在简化N
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 > 说明：该脚本适用于Ubuntu、CentOS等主流Linux发行版，执行过程中需root权限，建议在全新环境中运行。

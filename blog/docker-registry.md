@@ -34,6 +34,9 @@ REGISTRY的核心功能包括镜像存储、元数据管理、访问控制和镜
 推荐使用以下一键安装脚本（适用于Linux系统）：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 > ⚠️ 风险提示：`curl | bash`/`wget | bash` 方式存在脚本内容不可审计、版本不可控的风险，**仅适合个人/测试环境**；企业生产环境建议通过官方软件仓库、Ansible自动化脚本或离线安装包部署Docker，并锁定版本。
 

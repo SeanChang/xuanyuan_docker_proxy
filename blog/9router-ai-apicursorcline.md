@@ -55,6 +55,9 @@ https://xuanyuan.cloud/r/decolua/9router
 不管是 Ubuntu、CentOS，还是银河麒麟、统信 UOS、欧拉这些国产系统，直接复制下面这行命令，就能一键安装 Docker、Docker Compose，还自动配置了国内镜像加速，解决下载慢的问题：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 ### Windows/Mac 用户

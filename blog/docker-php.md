@@ -70,6 +70,9 @@ PHP 是最流行的后端脚本语言之一，广泛应用于网站与 Web 应�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 ---

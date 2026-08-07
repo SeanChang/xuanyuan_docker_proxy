@@ -34,6 +34,9 @@ Linux 系统（包括银河麒麟、欧拉等国产系统）直接用下面的�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 

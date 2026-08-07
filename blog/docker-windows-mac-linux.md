@@ -38,6 +38,9 @@ Linux服务器配置Docker镜像源，支持一键脚本全自动配置和手动
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 方式二：手动命令配置（自定义可控）

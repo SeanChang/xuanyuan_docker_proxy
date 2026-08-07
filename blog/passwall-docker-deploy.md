@@ -111,6 +111,9 @@ Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 更多见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
@@ -686,7 +689,7 @@ docker compose down
 - 上游：[passwall-server](https://github.com/passwall/passwall-server) · [Docker 说明](https://github.com/passwall/passwall-server/tree/main/build/docker)  
 - 客户端：[passwall-desktop](https://github.com/passwall/passwall-desktop) · [passwall-extension](https://github.com/passwall/passwall-extension)  
 - API：[Postman 文档](https://documenter.getpostman.com/view/3658426/SzYbyHXj)  
-- 轩辕镜像：[使用手册](https://xuanyuan.cloud/usage) · [Docker 一键安装](https://xuanyuan.cloud/docker.sh)
+- 轩辕镜像：[使用手册](https://xuanyuan.cloud/usage) · [Docker 一键安装](https://xuanyuan.cloud/docker.sh)（[备用地址](https://get.xuanyuan.dev/docker.sh)）
 
 ---
 

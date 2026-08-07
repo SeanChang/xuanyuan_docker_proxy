@@ -25,6 +25,9 @@
 ```bash
 # 直接复制到终端执行，Linux/Mac/WSL2通用
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 安装完成后，一定要验证一下环境是否可用，输入两个命令：
 ```bash
@@ -545,6 +548,9 @@ docker compose -f docker-compose.service.yml up
 登录服务器后，执行和本地相同的安装命令，一键安装Docker和Docker Compose，自动配置轩辕镜像访问支持：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 安装完成后，执行以下命令验证，确保环境可用：
 ```bash

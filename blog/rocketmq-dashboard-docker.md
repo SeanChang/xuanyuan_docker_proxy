@@ -19,6 +19,9 @@ RocketMQ Dashboard 是 Apache RocketMQ 的官方管理控制台，提供了对Ro
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 安装完成后，执行`docker --version`验证Docker是否正常安装。

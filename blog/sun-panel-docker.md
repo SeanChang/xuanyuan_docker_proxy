@@ -18,6 +18,9 @@ SUN-PANEL是一款多功能的服务器与NAS导航面板，同时也可作为Ho
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 安装完成后，可通过以下命令验证Docker是否正常运行：

@@ -31,6 +31,9 @@ Vault是HashiCorp推出的**企业级秘密管理工具**，专为集中保护�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 验证安装成功：

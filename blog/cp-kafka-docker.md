@@ -20,6 +20,9 @@ CP-KAFKA是Confluent官方提供的Apache Kafka容器化解决方案，属于Con
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 执行脚本后，按照提示完成Docker的安装和启动。安装完成后，可以通过以下命令验证Docker是否正常运行：

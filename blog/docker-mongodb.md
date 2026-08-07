@@ -58,6 +58,9 @@ MongoDB 是**面向文档的 NoSQL 数据库**，以 BSON（类 JSON 格式）�
 该脚本支持多种 Linux 发行版，支持一键安装 Docker、Docker Compose 并自动配置轩辕镜像访问支持源。
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 ### 2.3 网络与安全基础

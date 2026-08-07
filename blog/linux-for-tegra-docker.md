@@ -21,6 +21,9 @@ L4T-ML容器化方案支持在Jetson系列设备上快速部署机器学习应�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 安装完成后，建议启动Docker服务并设置开机自启：

@@ -64,6 +64,9 @@ MinIO 是一个**轻量级、高性能、开源的对象存储服务**，专为�
 登录 Linux 服务器，直接复制粘贴下面的命令，回车执行：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 ---

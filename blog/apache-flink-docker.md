@@ -30,6 +30,9 @@ Docker 方式更适合开发测试、POC 及轻量生产环境；
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 安装完成后，执行以下命令验证：

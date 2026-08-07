@@ -35,6 +35,9 @@ Elasticsearch（简称 ES）是一款基于 Lucene 构建的分布式、高扩�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 ---

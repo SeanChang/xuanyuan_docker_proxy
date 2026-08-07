@@ -19,6 +19,9 @@ PGVECTOR是PostgreSQL的一个开源向量相似性搜索扩展，提供高效�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 脚本将自动完成Docker Engine、Docker Compose的安装及配置，并启动Docker服务。安装完成后，可通过以下命令验证Docker是否正常运行：

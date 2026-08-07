@@ -21,6 +21,9 @@ CNI插件的容器化部署依赖Docker环境，推荐使用以下一键安装�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 脚本将自动完成Docker的安装、启动及开机自启配置。安装完成后，可通过`docker --version`命令验证安装是否成功。

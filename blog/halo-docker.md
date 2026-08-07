@@ -19,6 +19,9 @@ HALO 是一款强大易用的开源建站工具，旨在帮助用户快速搭建
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 > 执行脚本后，系统会自动完成 Docker 引擎、Docker CLI 及相关组件的安装，并启动 Docker 服务。安装完成后，可通过 `docker --version` 验证安装是否成功。

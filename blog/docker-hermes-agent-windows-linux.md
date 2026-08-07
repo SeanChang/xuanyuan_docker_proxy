@@ -20,6 +20,9 @@ Hermes Agent 是 Nous Research 推出的 AI 自主智能体（AI Autonomous Agen
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 ### 🏭 生产环境（推荐，安全优先）
@@ -27,6 +30,7 @@ bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 ```bash
 # 1. 下载脚本到本地
 wget https://xuanyuan.cloud/docker.sh -O docker-install.sh
+# 备用地址：wget https://get.xuanyuan.dev/docker.sh -O docker-install.sh
 
 # 2. （可选）审计脚本源码（建议企业环境必做）
 less docker-install.sh  # 或使用vim、cat查看脚本内容

@@ -81,6 +81,9 @@ docker compose version
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 更多说明见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。

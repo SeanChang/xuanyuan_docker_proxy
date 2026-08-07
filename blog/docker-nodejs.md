@@ -22,6 +22,9 @@ Docker 轻量级容器化技术为 Node.js 应用部署带来核心优势，尤�
 若未安装 Docker，推荐使用轩辕镜像适配的一键安装脚本（支持多 Linux 发行版，自动配置镜像加速）：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 ## 1、查看 Node.js 镜像详情

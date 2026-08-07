@@ -20,6 +20,9 @@ Kubernetes Dashboard是Kubernetes集群的通用Web用户界面，提供直观�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 > 注意：执行脚本需要root权限，安装过程可能需要几分钟时间，具体取决于网络环境和服务器配置。

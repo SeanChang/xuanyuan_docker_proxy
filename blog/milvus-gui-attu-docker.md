@@ -19,6 +19,9 @@ ATTU基于Docker容器化部署，首先需要确保目标服务器已安装Dock
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 脚本执行完成后，可通过以下命令验证Docker是否安装成功：

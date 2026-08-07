@@ -26,6 +26,9 @@ REFLY-API基于Docker容器化部署，首先需要在目标服务器上安装Do
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 > 提示：执行脚本需要root权限，安装过程中会自动处理依赖关系和系统配置，全程无需人工干预。安装完成后，建议通过`docker --version`和`docker compose version`命令验证安装结果。

@@ -27,6 +27,9 @@ MINIOB基于Docker容器运行，需先安装Docker环境。推荐使用以下�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 > 注意：执行脚本需要root权限，建议在CentOS 8+/Ubuntu 18.04+系统上运行。脚本会自动安装Docker Engine、Docker CLI、containerd等必要组件，并配置开机自启动。
@@ -476,7 +479,7 @@ docker run -d \
 本文详细介绍了MINIOB的Docker容器化部署方案，从环境准备到功能验证，完整覆盖了容器化部署的全流程。通过Docker技术，学习者可快速搭建标准化的MINIOB开发环境，专注于数据库内核知识的学习与实践，无需关注复杂的环境配置问题。
 
 ### 关键要点
-- **环境准备**：使用一键脚本`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`快速安装Docker并配置轩辕镜像访问支持，解决国内网络下载慢问题
+- **环境准备**：使用一键脚本`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`（备用地址：`bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)`）快速安装Docker并配置轩辕镜像访问支持，解决国内网络下载慢问题
 - **镜像拉取**：MINIOB镜像（oceanbase/miniob）为多段名称，拉取命令格式为`docker pull xxx.xuanyuan.run/oceanbase/miniob:latest`
 - **容器部署**：需使用`--privileged`参数授予特权模式，推荐配置`--restart=unless-stopped`确保服务稳定性
 - **功能验证**：v1.1+版本需手动克隆GitHub源码并编译，通过`make`构建及测试用例验证环境可用性

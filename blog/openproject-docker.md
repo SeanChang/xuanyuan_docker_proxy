@@ -22,6 +22,9 @@ OpenProject Docker镜像提供两种核心版本，适配不同使用场景：
 部署OpenProject容器前，需确保目标服务器已安装Docker环境（推荐Docker 20.10及以上版本）。推荐使用轩辕镜像提供的一键安装脚本，自动配置Docker及相关依赖（兼容CentOS、Ubuntu等主流发行版）：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 #### 安全说明（重要）

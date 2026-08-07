@@ -35,6 +35,9 @@ Debian 是一款完全由自由及开源软件构成的 Linux 发行版，由全
 ```bash
 # 轩辕镜像专属安装脚本（含加速配置）
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 #### 安装验证
@@ -275,6 +278,9 @@ curl https://baidu.com  # 测试网络访问（验证 DNS 与外网连通）
 3. **重新执行安装脚本**：若已安装 Docker 但拉取慢，可能是加速源未配置成功，重新执行轩辕一键安装脚本：
    ```bash
    bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+   # 备用地址
+   bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
    ```
 
 ### 5.2 容器启动后立即退出？

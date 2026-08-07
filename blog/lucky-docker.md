@@ -17,6 +17,9 @@
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 ---
@@ -135,6 +138,9 @@ services:
 - **执行命令**：
   ```bash
   bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+  # 备用地址
+  bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
   ```
 
 

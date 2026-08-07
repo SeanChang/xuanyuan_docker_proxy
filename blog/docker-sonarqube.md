@@ -30,6 +30,9 @@ SonarQube支持Java、Python、JavaScript、Go、C++等30多种主流编程语�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 这个脚本经过了大量测试，支持x86_64和ARM64架构，能自动处理各种依赖冲突和系统兼容性问题，比官方脚本更适合国内用户。

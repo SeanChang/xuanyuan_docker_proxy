@@ -19,6 +19,9 @@ PostgreSQL 是一款开源免费的高级关系型数据库管理系统，始于
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 ---

@@ -28,6 +28,9 @@ GITEA 容器化部署需依赖 Docker 环境，推荐使用以下一键安装脚
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 > 脚本支持主流 Linux 发行版（Ubuntu、Debian、CentOS、Rocky Linux 等），会自动处理系统依赖、添加官方源、安装最新稳定版 Docker 并配置服务自启动。

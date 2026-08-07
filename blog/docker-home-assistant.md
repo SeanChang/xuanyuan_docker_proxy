@@ -81,6 +81,9 @@ docker compose version
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 ### 2.2 群晖 NAS（推荐 SSH 部署）

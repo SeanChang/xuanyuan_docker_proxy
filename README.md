@@ -353,8 +353,8 @@ https://xuanyuan.cloud/agents.md
 # 下载并执行一键安装脚本
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 也可以使用 GitHub 上的脚本
-bash <(curl -sSL https://raw.githubusercontent.com/SeanChang/xuanyuan_docker_proxy/refs/heads/main/docker.sh)
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 **脚本已开源：** [GitHub 源码](https://github.com/SeanChang/xuanyuan_docker_proxy)

@@ -33,6 +33,9 @@
 #### 一键安装 Docker 环境（推荐国内服务器使用）
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 ##### 该脚本特性说明

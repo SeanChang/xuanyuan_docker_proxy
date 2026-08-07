@@ -72,6 +72,9 @@ verl 的能力覆盖“训练”和“推理”两大核心场景，且支持灵
 部署前需先安装 Docker 及相关组件（含 Docker Engine、Docker Compose），使用以下一键脚本快速部署，适配主流 Linux 发行版：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 脚本执行完成后，通过以下命令验证安装是否成功：
 ```bash

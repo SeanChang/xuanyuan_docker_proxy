@@ -849,6 +849,8 @@ if [[ "$DETECTED_OS" == MINGW* ]] || [[ "$DETECTED_OS" == MSYS* ]] || [[ "$DETEC
   echo ""
   echo "  3. 在 WSL 2 中运行本安装脚本："
   echo "     bash <(curl -fsSL https://xuanyuan.cloud/docker.sh)"
+  echo "     # 备用地址"
+  echo "     bash <(curl -fsSL https://get.xuanyuan.dev/docker.sh)"
   echo ""
   echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
   echo "🚀 配置轩辕镜像"

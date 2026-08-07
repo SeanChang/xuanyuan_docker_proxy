@@ -20,6 +20,9 @@ REDIS-STACK是一个集成了Redis核心服务器与多种高级数据库功能�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 执行完成后，可通过以下命令验证Docker是否安装成功：

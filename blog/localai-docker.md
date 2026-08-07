@@ -23,6 +23,9 @@ LocalAI 采用容器化部署方式，需先确保系统已安装Docker环境。
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 > 该脚本将自动安装Docker Engine、Docker CLI、Docker Compose等必要组件，并配置国内镜像访问支持，适用于主流Linux发行版（Ubuntu、CentOS、Debian等）。

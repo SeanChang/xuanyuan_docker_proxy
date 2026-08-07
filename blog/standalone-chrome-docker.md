@@ -20,6 +20,9 @@ Selenium Grid允许将测试用例分发到多台机器或多个浏览器实例�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 执行上述命令后，系统会自动完成Docker的安装和基础配置。安装完成后，可以通过以下命令验证Docker是否正常运行：

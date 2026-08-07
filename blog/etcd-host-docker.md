@@ -19,6 +19,9 @@ ETCD-HOST是一款基于ETCD的容器化部署方案，旨在简化ETCD服务的
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
 > 说明：该脚本适用于主流Linux发行版（Ubuntu 20.04+/CentOS 8+/Debian 10+），执行过程需root权限，建议在全新环境中运行以避免冲突。

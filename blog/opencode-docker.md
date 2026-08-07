@@ -20,6 +20,9 @@ OpenCode 是一个开源的 AI 编程助手与代码代理（coding agent），�
 ### 方式一：一键安装 Docker 环境（推荐国内服务器）
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+
+# 备用地址
+bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 **脚本特性**：
 1. 基于 Docker 官方安装流程，行为与官方一致；
