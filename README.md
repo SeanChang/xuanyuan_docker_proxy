@@ -1,4 +1,4 @@
-# 最新 Docker 镜像源加速列表与使用指南（2026年7月12日更新）
+# 最新 Docker 镜像源加速列表与使用指南（2026年8月7日更新）
 
 ## 📚 目录
 
@@ -34,6 +34,7 @@
 - [飞牛 fnOS](./usage/feiniu-docker-guide.md)
 - [Unraid NAS](./usage/unraid-docker-guide.md)
 - [群晖 MT Photos Docker 部署教程](./blog/nas-mt-photos-docker.md)
+- [群晖 NAS 部署 qBittorrent](./blog/qbittorrent-docker-deploy.md)
 
 #### 面板 / 网络
 - [宝塔面板](./usage/baota-docker-guide.md)
@@ -72,6 +73,10 @@
 - [Neo4j Docker 部署教程](./blog/neo4j-docker.md)
 - [TDengine Docker 部署教程](./blog/tdengine-docker.md)
 - [Doris Docker 部署教程](./blog/doris-docker.md)
+- [Apache Doris Docker 完整部署教程](./blog/doris-docker-deploy.md)
+- [ClickHouse Docker Compose 部署教程](./blog/clickhouse-docker-deploy.md)
+- [openGauss Docker 部署教程](./blog/opengauss-docker-deploy.md)
+- [FalkorDB Docker 部署教程](./blog/falkordb-docker-deploy.md)
 - [OceanBase CE Docker 部署教程](./blog/oceanbase-ce-docker.md)
 - [OBProxy CE Docker 部署教程](./blog/obproxy-ce-docker.md)
 - [MiniOB Docker 部署教程](./blog/miniob-docker.md)
@@ -112,7 +117,9 @@
 #### 📨 消息队列
 - [RabbitMQ Docker 部署教程](./blog/docker-rabbitmq.md)
 - [Apache Kafka Docker 部署教程](./blog/apache-kafka-docker.md)
+- [Apache Kafka 快速部署教程](./blog/kafka-docker-deploy.md)
 - [Confluent Kafka Docker 部署教程](./blog/cp-kafka-docker.md)
+- [EMQX MQTT Docker 部署教程](./blog/emqx-mqtt-docker-deploy.md)
 - [Apache RocketMQ Docker 部署教程](./blog/apache-rocketmq-docker.md)
 - [RocketMQ Dashboard Docker 部署教程](./blog/rocketmq-dashboard-docker.md)
 - [Apache ZooKeeper Docker 部署教程](./blog/apache-zookeeper-docker.md)
@@ -195,6 +202,8 @@
 #### 📊 监控/日志
 - [Prometheus Docker 部署教程](./blog/prometheus-docker.md)
 - [Grafana Docker 部署教程](./blog/grafana-docker.md)
+- [Grafana 可视化平台部署教程](./blog/grafana-docker-deploy.md)
+- [ELK Docker Compose 部署教程](./blog/docker-compose-deploy-elk.md)
 - [Uptime Kuma Docker 部署教程](./blog/uptime-kuma-docker.md)
 - [Kibana Docker 部署教程](./blog/kibana-docker.md)
 - [Falco Docker 部署教程](./blog/falco-docker.md)
@@ -295,14 +304,33 @@
 - [Open WebUI + Ollama Docker 部署教程](./blog/docker-open-webui-ollama-windows-linux-openai.md)
 - [Odoo ERP Docker 部署教程](./blog/10-docker-odoo-erp.md)
 - [CUPS Docker 部署教程](./blog/5-docker-cups.md)
+- [CUPS Web Docker 部署教程](./blog/cups-web-docker-deploy.md)
 - [GLPI Docker 部署教程](./blog/docker-glpi.md)
 - [Memos Docker 部署教程](./blog/docker-memos.md)
 - [Redmine Docker 部署教程](./blog/saasdocker-redmine.md)
 - [File Browser Docker 部署教程](./blog/sftp-docker-file-browser.md)
 - [Tiki Wiki Docker 部署教程](./blog/wiki-docker-tiki-wiki.md)
+- [CloudDrive2 Docker 部署教程](./blog/clouddrive2-docker-deploy.md)
+- [DbGate Docker 部署教程](./blog/dbgate-docker-deploy.md)
+- [Apache Superset Docker Compose 部署教程](./blog/docker-compose-apache-superset-bi-deploy.md)
+- [kkFileView Docker 部署教程](./blog/docker-deploy-kkfileview.md)
+- [SamWaf Docker 部署教程](./blog/docker-samwaf-waf.md)
+- [ERPNext Docker 部署教程](./blog/erpnext-docker-deploy.md)
+- [IT Tools Docker 部署教程](./blog/it-tools-docker-deploy.md)
+- [Kasm Desktop Docker 部署教程](./blog/kasm-desktop-docker-deploy.md)
+- [MkDocs Docker 部署教程](./blog/mkdocs-docker-deploy.md)
+- [NetBox Docker 部署教程](./blog/netbox-docker-deploy.md)
+- [PassWall Docker 部署教程](./blog/passwall-docker-deploy.md)
+- [phpMyAdmin 快速部署教程](./blog/phpmyadmin-docker-deploy.md)
+- [Rocket.Chat Docker 部署教程](./blog/rocket-chat-docker-deploy.md)
+- [雷池 SafeLine WAF Docker Compose 部署教程](./blog/safeline-waf-docker-compose-deploy.md)
+- [Trilium Notes Docker 部署教程](./blog/trilium-notes-docker-deploy.md)
+- [WPS Office Docker 部署教程](./blog/wps-office-docker-deploy.md)
+- [ZLMediaKit Docker 部署教程](./blog/zlmediakit-docker-deploy.md)
 
 #### 📅 Docker 月度更新与资讯
 
+- [2026年8月 Docker 更新](./blog/2026-8-docker.md)
 - [2026年7月 Docker 更新](./blog/2026-7-docker.md)
 - [2026年6月 Docker 更新](./blog/2026-6-docker.md)
 - [2026年5月 Docker 更新](./blog/2026-5-docker.md)
@@ -314,8 +342,11 @@
 - [2025年11月 Docker 更新](./blog/2025-11-docker.md)
 - [Linux Kernel CVE-2026-31431 安全通告](./blog/linux-kernel-copy-fail-cve-2026-31431.md)
 - [Linux 内核 CVE-2026-46242 安全通告](./blog/linux-cve-2026-46242.md)
+- [Linux 内核 CVE-2026-43499 安全通告](./blog/linux-cve-2026-43499.md)
 - [containerd CVE-2026-53488 安全通告](./blog/containerd-cve-2026-53488.md)
 - [NGINX CVE-2026-42945 安全通告](./blog/nginx-http-cve-2026-42945.md)
+- [NGINX regex map CVE-2026-42533 安全通告](./blog/nginx-regex-map-cve-2026-42533.md)
+- [Fastjson 远程代码执行漏洞预警](./blog/fastjson-1-2-83-security-bug.md)
 - [Claude Code 安全后门隐患通告](./blog/ai-claude-code.md)
 
 ## 让 AI 帮你使用轩辕镜像？
