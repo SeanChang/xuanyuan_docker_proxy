@@ -12,7 +12,7 @@ Hermes Agent 是 Nous Research 推出的 AI 自主智能体（AI Autonomous Agen
 
 # 一、Docker 一键安装与镜像加速（推荐方案）
 
-本方案支持 🧪 测试环境和 🏭 生产环境（需提前审计），提供的 Linux Docker \&amp; Docker Compose 一键安装配置脚本，可适配 13 种主流 Linux 发行版（含国产系统），能一键完成 Docker、Docker Compose 的安装，以及轩辕镜像加速配置，全程无需手动操作，极大提升部署效率。
+本方案支持 🧪 测试环境和 🏭 生产环境（需提前审计），提供的 Linux Docker \&amp; Docker Compose 一键安装配置脚本，可适配 16 种主流 Linux 发行版（含 openEuler、Huawei Cloud EulerOS (HCE) 等国产与信创系统），能一键完成 Docker、Docker Compose 的安装，以及轩辕镜像加速配置，全程无需手动操作，极大提升部署效率。
 
 ## 1\. 执行命令
 

@@ -165,14 +165,25 @@ restore_docker_daemon_config() {
 }
 
 # daemon.json 安全写入：备份、检测敏感项、用户确认、合并写入、重启 Docker
+# 默认只维护 registry-mirrors（HTTPS 无需 insecure-registries）；不写 dns；保留 runtime 等其它字段
 DAEMON_DATA_ROOT=""
 DAEMON_STORAGE_DRIVER=""
 DAEMON_OTHER_KEYS=""
 DAEMON_HAS_CUSTOM_CONFIG=false
-DAEMON_ADD_SCRIPT_DNS=false
+DAEMON_PARSE_ERROR=false
 
 _daemon_merge_tools_available() {
   command -v jq &>/dev/null || command -v python3 &>/dev/null
+}
+
+_daemon_append_other_key() {
+  local key="$1"
+  [[ -z "$key" ]] && return 0
+  if [[ -n "$DAEMON_OTHER_KEYS" ]]; then
+    DAEMON_OTHER_KEYS="${DAEMON_OTHER_KEYS}, ${key}"
+  else
+    DAEMON_OTHER_KEYS="$key"
+  fi
 }
 
 backup_daemon_json() {
@@ -185,11 +196,14 @@ backup_daemon_json() {
   fi
 }
 
+# 无工具可安全覆盖：顶层键 ⊆ {registry-mirrors, insecure-registries}
+# dns / runtimes 等均视为自定义，禁止无工具整文件写入
 read_daemon_sensitive_keys() {
   DAEMON_DATA_ROOT=""
   DAEMON_STORAGE_DRIVER=""
   DAEMON_OTHER_KEYS=""
   DAEMON_HAS_CUSTOM_CONFIG=false
+  DAEMON_PARSE_ERROR=false
 
   if [[ ! -f /etc/docker/daemon.json ]]; then
     return 0
@@ -202,34 +216,37 @@ read_daemon_sensitive_keys() {
   fi
 
   if command -v jq &>/dev/null; then
+    if ! echo "$content" | jq -e 'type == "object"' >/dev/null 2>&1; then
+      DAEMON_PARSE_ERROR=true
+      DAEMON_HAS_CUSTOM_CONFIG=true
+      return 0
+    fi
     DAEMON_DATA_ROOT=$(echo "$content" | jq -r '."data-root" // empty' 2>/dev/null)
     DAEMON_STORAGE_DRIVER=$(echo "$content" | jq -r '."storage-driver" // empty' 2>/dev/null)
     local key
     while IFS= read -r key; do
       [[ -z "$key" ]] && continue
       case "$key" in
-        registry-mirrors|insecure-registries|dns) ;;
+        registry-mirrors|insecure-registries) ;;
         data-root|storage-driver) ;;
         *)
-          if [[ -n "$DAEMON_OTHER_KEYS" ]]; then
-            DAEMON_OTHER_KEYS="${DAEMON_OTHER_KEYS}, ${key}"
-          else
-            DAEMON_OTHER_KEYS="$key"
-          fi
+          _daemon_append_other_key "$key"
           ;;
       esac
     done < <(echo "$content" | jq -r 'keys[]?' 2>/dev/null)
   elif command -v python3 &>/dev/null; then
-    local py_out
+    local py_out py_rc=0
     py_out=$(echo "$content" | python3 -c "
 import json, sys
 try:
     d = json.load(sys.stdin)
 except Exception:
+    print('PARSE_ERROR')
     sys.exit(0)
 if not isinstance(d, dict):
+    print('PARSE_ERROR')
     sys.exit(0)
-skip = {'registry-mirrors', 'insecure-registries', 'dns'}
+skip = {'registry-mirrors', 'insecure-registries'}
 for k, v in d.items():
     if k == 'data-root':
         print('DATA_ROOT:' + str(v))
@@ -237,48 +254,63 @@ for k, v in d.items():
         print('STORAGE_DRIVER:' + str(v))
     elif k not in skip:
         print('OTHER:' + k)
-" 2>/dev/null)
+" 2>/dev/null) || py_rc=$?
+    if [[ $py_rc -ne 0 ]]; then
+      DAEMON_PARSE_ERROR=true
+      DAEMON_HAS_CUSTOM_CONFIG=true
+      return 0
+    fi
     while IFS= read -r line; do
       case "$line" in
+        PARSE_ERROR)
+          DAEMON_PARSE_ERROR=true
+          ;;
         DATA_ROOT:*) DAEMON_DATA_ROOT="${line#DATA_ROOT:}" ;;
         STORAGE_DRIVER:*) DAEMON_STORAGE_DRIVER="${line#STORAGE_DRIVER:}" ;;
         OTHER:*)
-          local ok="${line#OTHER:}"
-          if [[ -n "$DAEMON_OTHER_KEYS" ]]; then
-            DAEMON_OTHER_KEYS="${DAEMON_OTHER_KEYS}, ${ok}"
-          else
-            DAEMON_OTHER_KEYS="$ok"
-          fi
+          _daemon_append_other_key "${line#OTHER:}"
           ;;
       esac
     done <<< "$py_out"
   else
-    if echo "$content" | grep -q '"data-root"'; then
-      DAEMON_DATA_ROOT=$(echo "$content" | grep -oE '"data-root"[[:space:]]*:[[:space:]]*"[^"]*"' | head -1 | sed -E 's/.*:[[:space:]]*"([^"]*)".*/\1/')
-    fi
-    if echo "$content" | grep -q '"storage-driver"'; then
-      DAEMON_STORAGE_DRIVER=$(echo "$content" | grep -oE '"storage-driver"[[:space:]]*:[[:space:]]*"[^"]*"' | head -1 | sed -E 's/.*:[[:space:]]*"([^"]*)".*/\1/')
-    fi
-    if echo "$content" | grep -qE '"(log-driver|live-restore|bip|graph|exec-opts|storage-opts|default-address-pools)"'; then
-      DAEMON_OTHER_KEYS="(检测到其它自定义项，请安装 jq 以查看详情)"
-    fi
+    # 无 jq/python3：凡出现非白名单键名特征即视为自定义（偏安全，避免漏检 runtimes 等）
+    local key_token
+    while IFS= read -r key_token; do
+      [[ -z "$key_token" ]] && continue
+      case "$key_token" in
+        registry-mirrors|insecure-registries) ;;
+        data-root)
+          DAEMON_DATA_ROOT=$(echo "$content" | grep -oE '"data-root"[[:space:]]*:[[:space:]]*"[^"]*"' | head -1 | sed -E 's/.*:[[:space:]]*"([^"]*)".*/\1/')
+          ;;
+        storage-driver)
+          DAEMON_STORAGE_DRIVER=$(echo "$content" | grep -oE '"storage-driver"[[:space:]]*:[[:space:]]*"[^"]*"' | head -1 | sed -E 's/.*:[[:space:]]*"([^"]*)".*/\1/')
+          ;;
+        *)
+          _daemon_append_other_key "$key_token"
+          ;;
+      esac
+    done < <(echo "$content" | grep -oE '"[a-zA-Z0-9_-]+"[[:space:]]*:' | sed -E 's/^"([^"]+)".*/\1/' | sort -u)
   fi
 
-  if [[ -n "$DAEMON_DATA_ROOT" || -n "$DAEMON_STORAGE_DRIVER" || -n "$DAEMON_OTHER_KEYS" ]]; then
+  if [[ "$DAEMON_PARSE_ERROR" == "true" || -n "$DAEMON_DATA_ROOT" || -n "$DAEMON_STORAGE_DRIVER" || -n "$DAEMON_OTHER_KEYS" ]]; then
     DAEMON_HAS_CUSTOM_CONFIG=true
   fi
   return 0
 }
 
-prepare_script_dns_flag() {
-  DAEMON_ADD_SCRIPT_DNS=false
-  if [[ "$SKIP_DNS" != "true" ]]; then
-    if ! grep -q "nameserver" /etc/resolv.conf; then
-      DAEMON_ADD_SCRIPT_DNS=true
-    else
-      echo "ℹ️  检测到系统已配置 DNS，跳过 Docker DNS 配置以避免冲突"
-    fi
+_validate_json_object_file() {
+  local file="$1"
+  if command -v jq &>/dev/null; then
+    jq -e 'type == "object"' "$file" >/dev/null 2>&1
+    return $?
   fi
+  if command -v python3 &>/dev/null; then
+    python3 -c "import json,sys; d=json.load(open(sys.argv[1],encoding='utf-8'));
+assert isinstance(d, dict)" "$file" >/dev/null 2>&1
+    return $?
+  fi
+  # 无工具路径仅写入极简固定结构，跳过二次解析
+  return 0
 }
 
 confirm_apply_daemon_config() {
@@ -288,15 +320,21 @@ confirm_apply_daemon_config() {
   echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
   echo " 即将修改 /etc/docker/daemon.json"
   echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-  echo " 将更新：registry-mirrors、insecure-registries"
-  if [[ "$DAEMON_ADD_SCRIPT_DNS" == "true" ]]; then
-    echo " 将添加：dns（119.29.29.29 / 114.114.114.114）"
-  fi
+  echo " 将更新：registry-mirrors（整表替换为本次选择）"
+  echo " 不会写入 insecure-registries（默认 HTTPS，一般无需配置）"
+  echo " 不会修改 dns；其它自定义项（如 runtime）将保留"
+  echo " 若存在历史轩辕 insecure-registries 条目，有合并工具时会清理，并保留您的其它 insecure 项"
   echo ""
   echo " ⚠️  应用配置后将重启 Docker 服务"
   echo "     运行中的容器会停止，但不会删除镜像和容器数据"
   echo "     可用 docker start 或 docker compose 重新拉起"
   echo ""
+
+  if [[ "$DAEMON_PARSE_ERROR" == "true" ]]; then
+    echo "❌ 现有 /etc/docker/daemon.json 不是合法 JSON 对象，已中止，未修改文件。"
+    echo "💡 请先修复或备份后删除该文件，再重新运行本脚本。"
+    return 1
+  fi
 
   if [[ "$DAEMON_HAS_CUSTOM_CONFIG" == "true" ]]; then
     echo " 检测到现有 Docker 自定义配置，以下项将被保留："
@@ -304,17 +342,17 @@ confirm_apply_daemon_config() {
     [[ -n "$DAEMON_STORAGE_DRIVER" ]] && echo "   storage-driver: $DAEMON_STORAGE_DRIVER"
     [[ -n "$DAEMON_OTHER_KEYS" ]] && echo "   其它: $DAEMON_OTHER_KEYS"
     echo ""
-    echo " 本脚本仅更新镜像加速相关项，不会改动 data-root 等存储路径。"
+    echo " 本脚本仅更新 registry-mirrors，不会改动 data-root / runtime 等。"
     echo ""
   fi
 
   if ! _daemon_merge_tools_available; then
     if [[ "$DAEMON_HAS_CUSTOM_CONFIG" == "true" ]]; then
-      echo "❌ 检测到自定义 Docker 配置，但系统缺少 jq / python3，无法安全合并。"
+      echo "❌ 检测到自定义 Docker 配置（或含 dns 等非镜像字段），但系统缺少 jq / python3，无法安全合并。"
       echo "💡 请安装 jq 后重试（如: sudo apt-get install -y jq），或手动编辑 /etc/docker/daemon.json"
       return 1
     fi
-    echo " ⚠️  系统缺少 jq / python3，将写入最小镜像配置（无其它自定义项时安全）。"
+    echo " ⚠️  系统缺少 jq / python3，将写入最小镜像配置（仅 registry-mirrors，当前可安全覆盖）。"
     echo ""
   fi
 
@@ -328,13 +366,13 @@ confirm_apply_daemon_config() {
 
 write_merged_daemon_json() {
   local mirror_list="$1"
-  local insecure_registries="$2"
-  local add_dns="$3"
-
-  backup_daemon_json
 
   if ! _daemon_merge_tools_available && [[ "$DAEMON_HAS_CUSTOM_CONFIG" == "true" ]]; then
     echo "❌ 无法安全写入：存在自定义配置但缺少 jq / python3。"
+    return 1
+  fi
+  if [[ "$DAEMON_PARSE_ERROR" == "true" ]]; then
+    echo "❌ 无法写入：现有 daemon.json 解析失败。"
     return 1
   fi
 
@@ -346,14 +384,26 @@ write_merged_daemon_json() {
     if [[ -f /etc/docker/daemon.json ]]; then
       base_json=$(sudo cat /etc/docker/daemon.json 2>/dev/null || echo "{}")
     fi
-    if [[ "$add_dns" == "true" ]]; then
-      echo "$base_json" | jq --argjson mirrors "$mirror_list" --argjson insecure "$insecure_registries" \
-        '. + {"registry-mirrors": $mirrors, "insecure-registries": $insecure, "dns": ["119.29.29.29", "114.114.114.114"]}' \
-        > "$tmp_json" 2>/dev/null || { rm -f "$tmp_json"; echo "❌ jq 合并配置失败"; return 1; }
-    else
-      echo "$base_json" | jq --argjson mirrors "$mirror_list" --argjson insecure "$insecure_registries" \
-        '. + {"registry-mirrors": $mirrors, "insecure-registries": $insecure}' \
-        > "$tmp_json" 2>/dev/null || { rm -f "$tmp_json"; echo "❌ jq 合并配置失败"; return 1; }
+    if ! echo "$base_json" | jq -e 'type == "object"' >/dev/null 2>&1; then
+      rm -f "$tmp_json"
+      echo "❌ 现有 daemon.json 不是合法 JSON 对象，已中止"
+      return 1
+    fi
+    if ! echo "$base_json" | jq --argjson mirrors "$mirror_list" '
+      ."registry-mirrors" = $mirrors
+      | ."insecure-registries" = (
+          (."insecure-registries" // [])
+          | map(select(
+              (. | tostring | sub("^https?://"; "") | split("/")[0] | split(":")[0]) as $h
+              | ($h != "docker.xuanyuan.me")
+                and ($h | test("\\.xuanyuan\\.(run|dev)$") | not)
+            ))
+        )
+      | if (."insecure-registries" | length) == 0 then del(."insecure-registries") else . end
+    ' > "$tmp_json" 2>/dev/null; then
+      rm -f "$tmp_json"
+      echo "❌ jq 合并配置失败"
+      return 1
     fi
   elif command -v python3 &>/dev/null; then
     local existing_for_py="{}"
@@ -361,52 +411,73 @@ write_merged_daemon_json() {
       existing_for_py=$(sudo cat /etc/docker/daemon.json 2>/dev/null || echo "{}")
     fi
     local py_status
-    py_status=$(python3 - "$mirror_list" "$insecure_registries" "$add_dns" "$existing_for_py" <<'PYEOF'
+    if ! py_status=$(python3 - "$mirror_list" "$existing_for_py" <<'PYEOF'
 import json, sys
+
+def is_xuanyuan_insecure(entry):
+    h = str(entry)
+    if h.startswith("http://") or h.startswith("https://"):
+        h = h.split("://", 1)[1]
+    h = h.split("/", 1)[0]
+    host = h.split(":", 1)[0]
+    if host == "docker.xuanyuan.me":
+        return True
+    if host.endswith(".xuanyuan.run") or host.endswith(".xuanyuan.dev"):
+        return True
+    return False
+
 mirrors = json.loads(sys.argv[1])
-insecure = json.loads(sys.argv[2])
-add_dns = sys.argv[3] == "true"
+raw = sys.argv[2].strip() if len(sys.argv) > 2 else ""
 try:
-    data = json.loads(sys.argv[4]) if sys.argv[4].strip() else {}
-except Exception:
-    data = {}
+    data = json.loads(raw) if raw else {}
+except Exception as e:
+    print("parse_error: " + str(e), file=sys.stderr)
+    sys.exit(1)
 if not isinstance(data, dict):
-    data = {}
+    print("parse_error: root is not object", file=sys.stderr)
+    sys.exit(1)
+
 data["registry-mirrors"] = mirrors
-data["insecure-registries"] = insecure
-if add_dns:
-    data["dns"] = ["119.29.29.29", "114.114.114.114"]
+existing_insecure = data.get("insecure-registries")
+if isinstance(existing_insecure, list):
+    kept = [x for x in existing_insecure if not is_xuanyuan_insecure(x)]
+    if kept:
+        data["insecure-registries"] = kept
+    else:
+        data.pop("insecure-registries", None)
+elif "insecure-registries" in data:
+    data.pop("insecure-registries", None)
+
 print(json.dumps(data, indent=2, ensure_ascii=False))
 PYEOF
-)
-    if [[ $? -ne 0 ]]; then
+    ); then
       rm -f "$tmp_json"
-      echo "❌ python3 合并配置失败"
+      echo "❌ python3 合并配置失败（请检查 daemon.json 是否为合法 JSON）"
       return 1
     fi
-    echo "$py_status" > "$tmp_json"
+    printf '%s\n' "$py_status" > "$tmp_json"
   else
-    if [[ "$add_dns" == "true" ]]; then
-      cat > "$tmp_json" <<EOF
+    cat > "$tmp_json" <<EOF
 {
-  "registry-mirrors": $mirror_list,
-  "insecure-registries": $insecure_registries,
-  "dns": ["119.29.29.29", "114.114.114.114"]
+  "registry-mirrors": $mirror_list
 }
 EOF
-    else
-      cat > "$tmp_json" <<EOF
-{
-  "registry-mirrors": $mirror_list,
-  "insecure-registries": $insecure_registries
-}
-EOF
-    fi
   fi
 
+  if ! _validate_json_object_file "$tmp_json"; then
+    rm -f "$tmp_json"
+    echo "❌ 生成的配置不是合法 JSON 对象，已中止，未修改原文件"
+    return 1
+  fi
+
+  backup_daemon_json
   sudo cp "$tmp_json" /etc/docker/daemon.json
   rm -f "$tmp_json"
-  echo "✅ 镜像配置已写入 /etc/docker/daemon.json（已合并保留现有自定义项）"
+  if _daemon_merge_tools_available; then
+    echo "✅ 镜像配置已写入 /etc/docker/daemon.json（已合并保留现有自定义项）"
+  else
+    echo "✅ 镜像配置已写入 /etc/docker/daemon.json（仅 registry-mirrors）"
+  fi
   return 0
 }
 
@@ -445,10 +516,8 @@ restart_docker_for_config() {
 
 apply_docker_mirror_config() {
   local mirror_list="$1"
-  local insecure_registries="$2"
-  local confirm_rc write_rc
+  local confirm_rc
 
-  prepare_script_dns_flag
   confirm_apply_daemon_config
   confirm_rc=$?
   if [[ $confirm_rc -eq 2 ]]; then
@@ -458,7 +527,7 @@ apply_docker_mirror_config() {
     return 1
   fi
 
-  if ! write_merged_daemon_json "$mirror_list" "$insecure_registries" "$DAEMON_ADD_SCRIPT_DNS"; then
+  if ! write_merged_daemon_json "$mirror_list"; then
     return 1
   fi
 
@@ -668,51 +737,7 @@ EOF
         # 创建 Docker 配置目录
         sudo mkdir -p /etc/docker
         
-        # 根据用户选择设置 insecure-registries
-        if [[ "$choice" == "2" ]]; then
-          # 清理用户输入的域名，移除协议前缀
-          custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-          
-          # 清理用户输入的域名，移除协议前缀
-  custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-  
-  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
-          if [[ "$custom_domain" == *.xuanyuan.run ]]; then
-            custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
-            insecure_registries=$(cat <<EOF
-[
-  "$custom_domain",
-  "$custom_domain_dev"
-]
-EOF
-)
-          elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
-            custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
-            insecure_registries=$(cat <<EOF
-[
-  "$custom_domain",
-  "$custom_domain_run"
-]
-EOF
-)
-          else
-            insecure_registries=$(cat <<EOF
-[
-  "$custom_domain"
-]
-EOF
-)
-          fi
-        else
-          insecure_registries=$(cat <<EOF
-[
-  "docker.xuanyuan.me"
-]
-EOF
-)
-        fi
-
-        apply_docker_mirror_config "$mirror_list" "$insecure_registries"
+        apply_docker_mirror_config "$mirror_list"
         apply_rc=$?
         if [[ $apply_rc -eq 2 ]]; then
             exit 0
@@ -794,12 +819,10 @@ if [[ "$DETECTED_OS" == "Darwin" ]]; then
   echo '  {'
   echo '    "registry-mirrors": ['
   echo '      "https://docker.xuanyuan.me"'
-  echo '    ],'
-  echo '    "insecure-registries": ['
-  echo '      "docker.xuanyuan.me"'
   echo '    ]'
   echo '  }'
   echo ""
+  echo "  （默认 HTTPS，一般无需配置 insecure-registries）"
   echo "  5. 点击 Apply & Restart（应用并重启）"
   echo ""
   echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
@@ -849,8 +872,7 @@ if [[ "$DETECTED_OS" == MINGW* ]] || [[ "$DETECTED_OS" == MSYS* ]] || [[ "$DETEC
   echo ""
   echo "  3. 在 WSL 2 中运行本安装脚本："
   echo "     bash <(curl -fsSL https://xuanyuan.cloud/docker.sh)"
-  echo "     # 备用地址"
-  echo "     bash <(curl -fsSL https://get.xuanyuan.dev/docker.sh)"
+  echo "     备用地址：bash <(curl -fsSL https://get.xuanyuan.dev/docker.sh)"
   echo ""
   echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
   echo "🚀 配置轩辕镜像"
@@ -863,12 +885,10 @@ if [[ "$DETECTED_OS" == MINGW* ]] || [[ "$DETECTED_OS" == MSYS* ]] || [[ "$DETEC
   echo '  {'
   echo '    "registry-mirrors": ['
   echo '      "https://docker.xuanyuan.me"'
-  echo '    ],'
-  echo '    "insecure-registries": ['
-  echo '      "docker.xuanyuan.me"'
   echo '    ]'
   echo '  }'
   echo ""
+  echo "  （默认 HTTPS，一般无需配置 insecure-registries）"
   echo "  5. 点击 Apply & Restart（应用并重启）"
   echo ""
   echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
@@ -1122,51 +1142,7 @@ EOF
         
         sudo mkdir -p /etc/docker
 
-        # 根据用户选择设置 insecure-registries
-        if [[ "$choice" == "2" ]]; then
-          # 清理用户输入的域名，移除协议前缀
-          custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-          
-          # 清理用户输入的域名，移除协议前缀
-  custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-  
-  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
-          if [[ "$custom_domain" == *.xuanyuan.run ]]; then
-            custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
-            insecure_registries=$(cat <<EOF
-[
-  "$custom_domain",
-  "$custom_domain_dev"
-]
-EOF
-)
-          elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
-            custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
-            insecure_registries=$(cat <<EOF
-[
-  "$custom_domain",
-  "$custom_domain_run"
-]
-EOF
-)
-          else
-            insecure_registries=$(cat <<EOF
-[
-  "$custom_domain"
-]
-EOF
-)
-          fi
-        else
-          insecure_registries=$(cat <<EOF
-[
-  "docker.xuanyuan.me"
-]
-EOF
-)
-        fi
-
-        apply_docker_mirror_config "$mirror_list" "$insecure_registries"
+        apply_docker_mirror_config "$mirror_list"
         apply_rc=$?
         if [[ $apply_rc -eq 2 ]]; then
             exit 0
@@ -1275,51 +1251,7 @@ EOF
         
         sudo mkdir -p /etc/docker
 
-        # 根据用户选择设置 insecure-registries
-        if [[ "$choice" == "2" ]]; then
-          # 清理用户输入的域名，移除协议前缀
-          custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-          
-          # 清理用户输入的域名，移除协议前缀
-  custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-  
-  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
-          if [[ "$custom_domain" == *.xuanyuan.run ]]; then
-            custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
-            insecure_registries=$(cat <<EOF
-[
-  "$custom_domain",
-  "$custom_domain_dev"
-]
-EOF
-)
-          elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
-            custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
-            insecure_registries=$(cat <<EOF
-[
-  "$custom_domain",
-  "$custom_domain_run"
-]
-EOF
-)
-          else
-            insecure_registries=$(cat <<EOF
-[
-  "$custom_domain"
-]
-EOF
-)
-          fi
-        else
-          insecure_registries=$(cat <<EOF
-[
-  "docker.xuanyuan.me"
-]
-EOF
-)
-        fi
-
-        apply_docker_mirror_config "$mirror_list" "$insecure_registries"
+        apply_docker_mirror_config "$mirror_list"
         apply_rc=$?
         if [[ $apply_rc -eq 2 ]]; then
             exit 0
@@ -1338,28 +1270,48 @@ else
 fi
 
 echo ">>> [2/8] 配置国内 Docker 源..."
-# 将 OS 转换为小写进行比较（支持 openEuler、openeuler 等大小写形式）
+# 将 OS 转换为小写进行比较（支持 openEuler、openeuler、HCE 等大小写形式）
 OS_LOWER=$(echo "$OS" | tr '[:upper:]' '[:lower:]')
-if [[ "$OS_LOWER" == "openeuler" ]]; then
-  # openEuler (欧拉操作系统) 支持
-  echo "检测到 openEuler (欧拉操作系统) $VERSION_ID"
-  
-  # 判断使用 dnf 还是 yum
-  if [[ "${VERSION_ID%%.*}" -ge 22 ]]; then
-    # openEuler 22+ 使用 dnf
-    PKG_MANAGER="dnf"
-    CENTOS_VERSION="9"
-    echo "使用 dnf 包管理器 (openEuler $VERSION_ID 使用 CentOS 9 兼容源)"
-  elif [[ "${VERSION_ID%%.*}" -ge 20 ]]; then
-    # openEuler 20-21 使用 dnf，基于 CentOS 8
-    PKG_MANAGER="dnf"
-    CENTOS_VERSION="8"
-    echo "使用 dnf 包管理器 (openEuler $VERSION_ID 使用 CentOS 8 兼容源)"
+if [[ "$OS_LOWER" == "openeuler" || "$OS_LOWER" == "hce" ]]; then
+  # openEuler / Huawei Cloud EulerOS (HCE)：yum/dnf + CentOS 兼容 Docker CE 源
+  # 注意：HCE 的 VERSION_ID 为 2.0/1.1，不能套用 openEuler 的年份式映射（否则 2.0 会误判为 CentOS 7）
+  if [[ "$OS_LOWER" == "hce" ]]; then
+    echo "检测到 Huawei Cloud EulerOS (HCE) $VERSION_ID"
+    HCE_MAJOR="${VERSION_ID%%.*}"
+    if [[ "$HCE_MAJOR" =~ ^[0-9]+$ ]] && [[ "$HCE_MAJOR" -ge 2 ]]; then
+      # HCE 2.x：社区验证使用 CentOS 8 Docker CE 源；优先 dnf
+      CENTOS_VERSION="8"
+      if command -v dnf &> /dev/null; then
+        PKG_MANAGER="dnf"
+      else
+        PKG_MANAGER="yum"
+      fi
+      echo "使用 $PKG_MANAGER 包管理器 (HCE $VERSION_ID 使用 CentOS ${CENTOS_VERSION} 兼容源)"
+    else
+      # HCE 1.x：仅 yum；使用 CentOS 7 兼容源
+      PKG_MANAGER="yum"
+      CENTOS_VERSION="7"
+      echo "使用 yum 包管理器 (HCE $VERSION_ID 使用 CentOS ${CENTOS_VERSION} 兼容源)"
+    fi
   else
-    # openEuler 旧版本使用 yum，基于 CentOS 7
-    PKG_MANAGER="yum"
-    CENTOS_VERSION="7"
-    echo "使用 yum 包管理器 (openEuler $VERSION_ID 使用 CentOS 7 兼容源)"
+    echo "检测到 openEuler (欧拉操作系统) $VERSION_ID"
+    # 判断使用 dnf 还是 yum（openEuler VERSION_ID 为年份，如 22.03）
+    if [[ "${VERSION_ID%%.*}" -ge 22 ]]; then
+      # openEuler 22+ 使用 dnf
+      PKG_MANAGER="dnf"
+      CENTOS_VERSION="9"
+      echo "使用 dnf 包管理器 (openEuler $VERSION_ID 使用 CentOS 9 兼容源)"
+    elif [[ "${VERSION_ID%%.*}" -ge 20 ]]; then
+      # openEuler 20-21 使用 dnf，基于 CentOS 8
+      PKG_MANAGER="dnf"
+      CENTOS_VERSION="8"
+      echo "使用 dnf 包管理器 (openEuler $VERSION_ID 使用 CentOS 8 兼容源)"
+    else
+      # openEuler 旧版本使用 yum，基于 CentOS 7
+      PKG_MANAGER="yum"
+      CENTOS_VERSION="7"
+      echo "使用 yum 包管理器 (openEuler $VERSION_ID 使用 CentOS 7 兼容源)"
+    fi
   fi
   
   sudo $PKG_MANAGER install -y ${PKG_MANAGER}-utils
@@ -1589,6 +1541,23 @@ EOF
       echo "✅ iSulad 卸载成功"
     else
       echo "⚠️  iSulad 卸载失败，将使用 --allowerasing 参数处理冲突"
+    fi
+  fi
+
+  # HCE / openEuler 自带 docker 多为 18.09（包名 docker / docker-engine），与 docker-ce 冲突；升级前先卸载
+  HCE_STOCK_DOCKER_PKGS=()
+  for _pkg in docker docker-engine docker-common docker-client docker-client-common; do
+    if rpm -q "$_pkg" &>/dev/null; then
+      HCE_STOCK_DOCKER_PKGS+=("$_pkg")
+    fi
+  done
+  if [[ ${#HCE_STOCK_DOCKER_PKGS[@]} -gt 0 ]]; then
+    echo "⚠️  检测到系统自带旧版 Docker 包: ${HCE_STOCK_DOCKER_PKGS[*]}"
+    echo "⚠️  安装 Docker CE 前将卸载这些冲突包（数据目录 /var/lib/docker 默认保留）"
+    if sudo $PKG_MANAGER remove -y "${HCE_STOCK_DOCKER_PKGS[@]}" 2>/dev/null; then
+      echo "✅ 旧版 Docker 包卸载成功"
+    else
+      echo "⚠️  旧版 Docker 包卸载失败，将使用 --allowerasing 参数处理冲突"
     fi
   fi
   
@@ -6003,51 +5972,7 @@ EOF
 
         mkdir -p /etc/docker
 
-        # 根据用户选择设置 insecure-registries
-        if [[ "$choice" == "2" ]]; then
-          # 清理用户输入的域名，移除协议前缀
-          custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-          
-          # 清理用户输入的域名，移除协议前缀
-  custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-  
-  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
-          if [[ "$custom_domain" == *.xuanyuan.run ]]; then
-            custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
-            insecure_registries=$(cat <<EOF
-[
-  "$custom_domain",
-  "$custom_domain_dev"
-]
-EOF
-)
-          elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
-            custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
-            insecure_registries=$(cat <<EOF
-[
-  "$custom_domain",
-  "$custom_domain_run"
-]
-EOF
-)
-          else
-            insecure_registries=$(cat <<EOF
-[
-  "$custom_domain"
-]
-EOF
-)
-          fi
-        else
-          insecure_registries=$(cat <<EOF
-[
-  "docker.xuanyuan.me"
-]
-EOF
-)
-        fi
-
-        apply_docker_mirror_config "$mirror_list" "$insecure_registries"
+        apply_docker_mirror_config "$mirror_list"
         apply_rc=$?
         if [[ $apply_rc -eq 2 ]]; then
             exit 0
@@ -6522,36 +6447,38 @@ EOF
       VERSION_CODENAME=$(awk -F= '/^VERSION_CODENAME=/{print $2}' /etc/os-release | tr -d '"' 2>/dev/null || echo "")
       ORIGINAL_CODENAME="$DEBIAN_CODENAME"
       
-      # Ubuntu LTS 版本（Docker 官方支持）：bionic (18.04), focal (20.04), jammy (22.04), noble (24.04)
-      # Ubuntu 非 LTS 版本：plucky (25.04) 等，Docker 官方可能支持也可能不支持
+      # Ubuntu LTS：bionic/focal/jammy/noble；较新版本先试自身，失败回退 noble
       case "$DEBIAN_CODENAME" in
         bionic|focal|jammy|noble)
-          # 这些是支持的 LTS 版本，保持原样
           ;;
         plucky)
-          # Ubuntu 25.04 (Plucky Puffin) - 2025年4月发布的非LTS版本
-          # Docker 官方可能尚未完全支持，先尝试使用 plucky，失败后会自动回退到 noble
           echo "ℹ️  检测到 Ubuntu 25.04 (Plucky Puffin)"
           echo "ℹ️  将首先尝试使用 Ubuntu 25.04 仓库，如果失败将回退到 Ubuntu 24.04 LTS (noble)"
-          # 先保持 plucky，让脚本尝试，失败时会自动回退
           ;;
-        warty|hoary|breezy|dapper|edgy|feisty|gutsy|hardy|intrepid|jaunty|karmic|lucid|maverick|natty|oneiric|precise|quantal|raring|saucy|trusty|utopic|vivid|wily|xenial|yakkety|zesty|artful|cosmic|disco|eoan|groovy|hirsute|impish|kinetic|lunar|mantic)
-          # 这些都是很旧的版本或过期的版本，直接映射到最新的 LTS 版本 noble (24.04)
+        questing)
+          echo "ℹ️  检测到 Ubuntu 25.10 (Questing Quokka)"
+          echo "ℹ️  将首先尝试使用此版本仓库，如果失败将回退到 Ubuntu 24.04 LTS (noble)"
+          ;;
+        resolute)
+          echo "ℹ️  检测到 Ubuntu 26.04 (Resolute Raccoon)"
+          echo "ℹ️  将首先尝试使用此版本仓库，如果失败将回退到 Ubuntu 24.04 LTS (noble)"
+          ;;
+        warty|hoary|breezy|dapper|edgy|feisty|gutsy|hardy|intrepid|jaunty|karmic|lucid|maverick|natty|oneiric|precise|quantal|raring|saucy|trusty|utopic|vivid|wily|xenial|yakkety|zesty|artful|cosmic|disco|eoan|groovy|hirsute|impish|kinetic|lunar|mantic|oracular)
           echo "⚠️  检测到 Ubuntu 旧版本 (codename: $DEBIAN_CODENAME)"
           echo "⚠️  Docker 官方仓库不支持此版本，将使用 Ubuntu 24.04 LTS (noble) 仓库"
           DEBIAN_CODENAME="noble"
           ;;
         "")
-          # 无法检测到版本代号，使用最新的 LTS
           echo "⚠️  无法检测 Ubuntu 版本代号，将使用 Ubuntu 24.04 LTS (noble)"
           DEBIAN_CODENAME="noble"
           ;;
         *)
-          # 未知的新版本，先尝试使用自身，失败后会回退
           echo "ℹ️  检测到 Ubuntu 新版本 (codename: $DEBIAN_CODENAME)"
           echo "ℹ️  将首先尝试使用此版本的仓库，如果失败将回退到 Ubuntu 24.04 LTS (noble)"
           ;;
       esac
+    else
+      ORIGINAL_CODENAME="${DEBIAN_CODENAME:-}"
     fi
 
     sudo install -m 0755 -d /etc/apt/keyrings
@@ -6565,11 +6492,8 @@ EOF
       local key_file="/etc/apt/keyrings/docker.gpg"
       local error_output="/tmp/docker_gpg_error.log"
       
-      # 下载并处理 GPG 密钥
       if curl -fsSL "$gpg_url" 2>"$error_output" | sudo gpg --dearmor -o "$key_file" 2>"$error_output"; then
-        # 验证密钥文件是否存在且大小合理（应该大于 1000 字节）
         if [[ -f "$key_file" ]] && [[ $(stat -f%z "$key_file" 2>/dev/null || stat -c%s "$key_file" 2>/dev/null || echo 0) -gt 1000 ]]; then
-          # 设置正确的权限
           sudo chmod 644 "$key_file" 2>/dev/null || true
           rm -f "$error_output" 2>/dev/null
           return 0
@@ -6587,290 +6511,164 @@ EOF
         return 1
       fi
     }
-    
-    # 尝试多个国内镜像源配置 Docker 仓库
+
+    # 探测 URL 是否可下载：优先 HEAD，失败再用 Range GET（兼容禁用 HEAD 的环境）
+    # 注意：不要用 `curl ... || echo 000`，否则失败时会把 "404" 与 "000" 拼成 "404000"
+    probe_package_url_reachable() {
+      local url=$1
+      local http_code
+      http_code=$(curl -sI -o /dev/null -w "%{http_code}" --connect-timeout 10 --max-time 20 "$url" 2>/dev/null || true)
+      [[ "$http_code" =~ ^[0-9]+$ ]] || http_code="000"
+      if [[ "$http_code" == "200" || "$http_code" == "301" || "$http_code" == "302" || "$http_code" == "307" || "$http_code" == "308" ]]; then
+        return 0
+      fi
+      # 部分镜像对 HEAD 返回 403/405，改用只取首字节的 GET 验证文件存在
+      http_code=$(curl -sL -o /dev/null -w "%{http_code}" -r 0-0 --connect-timeout 10 --max-time 20 "$url" 2>/dev/null || true)
+      [[ "$http_code" =~ ^[0-9]+$ ]] || http_code="000"
+      if [[ "$http_code" == "200" || "$http_code" == "206" ]]; then
+        return 0
+      fi
+      printf '%s' "$http_code"
+      return 1
+    }
+
+    # 校验当前 apt 源中「候选版本」docker-ce / docker-ce-cli 的 pool 是否可下载
+    # 必须用 Candidate，避免 apt-cache show 取到旧 Filename 导致误判部分同步镜像可用
+    verify_docker_ce_pool_packages() {
+      local base_url pkg candidate filename full_url probe_out
+      base_url=$(awk '/^deb /{for(i=1;i<=NF;i++) if($i ~ /^https?:\/\//){print $i; exit}}' /etc/apt/sources.list.d/docker.list 2>/dev/null)
+      if [[ -z "$base_url" ]]; then
+        return 1
+      fi
+      for pkg in docker-ce docker-ce-cli; do
+        candidate=$(apt-cache policy "$pkg" 2>/dev/null | awk '/Candidate:/{print $2; exit}')
+        if [[ -z "$candidate" || "$candidate" == "(none)" ]]; then
+          echo "⚠️  无法获取 ${pkg} 的候选版本"
+          return 1
+        fi
+        filename=$(apt-cache show "${pkg}=${candidate}" 2>/dev/null | awk '/^Filename:/{print $2; exit}')
+        if [[ -z "$filename" ]]; then
+          # 兼容部分 apt 对 =version 支持不佳：在 show 输出中匹配该 Version 块的 Filename
+          filename=$(apt-cache show "$pkg" 2>/dev/null | awk -v ver="$candidate" '
+            /^Package:/ { in_pkg=0; ver_ok=0 }
+            /^Package: / { in_pkg=1 }
+            in_pkg && $1=="Version:" && $2==ver { ver_ok=1 }
+            in_pkg && ver_ok && /^Filename:/ { print $2; exit }
+          ')
+        fi
+        if [[ -z "$filename" ]]; then
+          echo "⚠️  无法从索引获取 ${pkg}=${candidate} 的 Filename"
+          return 1
+        fi
+        full_url="${base_url%/}/${filename}"
+        if ! probe_out=$(probe_package_url_reachable "$full_url"); then
+          echo "⚠️  索引可用但候选软件包不可下载: ${pkg}=${candidate} (HTTP ${probe_out:-000})"
+          echo "   镜像可能未同步完整，尝试下一个源..."
+          return 1
+        fi
+      done
+      return 0
+    }
+
+    # 配置单个 Docker apt 镜像；成功返回 0
+    try_configure_docker_apt_mirror() {
+      local name=$1
+      local mirror_root=$2
+      local repo_base="${mirror_root}/linux/${DOCKER_OS}"
+      local update_output="/tmp/docker_apt_update.log"
+
+      echo "尝试配置${name} Docker 源..."
+      sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
+      if ! download_and_verify_gpg_key "${repo_base}/gpg"; then
+        echo "❌ ${name} Docker GPG 密钥下载失败，尝试下一个源..."
+        return 1
+      fi
+
+      echo \
+        "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] ${repo_base} \
+        ${DEBIAN_CODENAME} stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+      if ! sudo apt-get update >"$update_output" 2>&1; then
+        echo "❌ ${name} Docker 源配置失败"
+        if [[ -f "$update_output" ]] && grep -q "NO_PUBKEY\|GPG error" "$update_output" 2>/dev/null; then
+          echo "   错误详情: $(grep -i "NO_PUBKEY\|GPG error" "$update_output" | head -1)"
+        fi
+        rm -f "$update_output" 2>/dev/null
+        echo "   尝试下一个源..."
+        return 1
+      fi
+      rm -f "$update_output" 2>/dev/null
+
+      if ! verify_docker_ce_pool_packages; then
+        sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
+        return 1
+      fi
+
+      echo "✅ ${name} Docker 源配置成功"
+      return 0
+    }
+
+    DOCKER_APT_MIRROR_ENTRIES=(
+      "阿里云|https://mirrors.aliyun.com/docker-ce"
+      "腾讯云|https://mirrors.cloud.tencent.com/docker-ce"
+      "华为云|https://mirrors.huaweicloud.com/docker-ce"
+      "中科大|https://mirrors.ustc.edu.cn/docker-ce"
+      "清华大学|https://mirrors.tuna.tsinghua.edu.cn/docker-ce"
+      "网易|https://mirrors.163.com/docker-ce"
+      "官方|https://download.docker.com"
+    )
+
+    configure_docker_apt_from_mirrors() {
+      local entry name mirror_root
+      DOCKER_REPO_ADDED=false
+      DOCKER_MIRROR_NAME=""
+      for entry in "${DOCKER_APT_MIRROR_ENTRIES[@]}"; do
+        name="${entry%%|*}"
+        mirror_root="${entry#*|}"
+        if try_configure_docker_apt_mirror "$name" "$mirror_root"; then
+          DOCKER_REPO_ADDED=true
+          DOCKER_MIRROR_NAME="$name"
+          return 0
+        fi
+      done
+      return 1
+    }
+
+    # 较新/未知 Ubuntu 代号在自身仓库不可用时应回退到 noble
+    ubuntu_should_fallback_to_noble() {
+      [[ "$OS" != "ubuntu" ]] && return 1
+      [[ "$DEBIAN_CODENAME" == "noble" ]] && return 1
+      case "${ORIGINAL_CODENAME}" in
+        plucky|questing|resolute|oracular)
+          return 0
+          ;;
+        bionic|focal|jammy|noble|"")
+          return 1
+          ;;
+        *)
+          # 未知新版本且仍使用自身代号
+          [[ "$DEBIAN_CODENAME" == "$ORIGINAL_CODENAME" ]] && return 0
+          return 1
+          ;;
+      esac
+    }
+
     echo "正在配置 Docker 源..."
     DOCKER_REPO_ADDED=false
-    
-    # 源1: 阿里云镜像
-    echo "尝试配置阿里云 Docker 源..."
-    sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-    if download_and_verify_gpg_key "https://mirrors.aliyun.com/docker-ce/linux/$DOCKER_OS/gpg"; then
-      echo \
-        "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.aliyun.com/docker-ce/linux/$DOCKER_OS \
-        $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-      
-      # 捕获 apt-get update 的详细错误信息
-      update_output="/tmp/docker_apt_update.log"
-      if sudo apt-get update >"$update_output" 2>&1; then
-        DOCKER_REPO_ADDED=true
-        echo "✅ 阿里云 Docker 源配置成功"
-        rm -f "$update_output" 2>/dev/null
-      else
-        echo "❌ 阿里云 Docker 源配置失败"
-        if [[ -f "$update_output" ]]; then
-          # 显示关键错误信息
-          if grep -q "NO_PUBKEY\|GPG error\|NO_PUBKEY" "$update_output" 2>/dev/null; then
-            echo "   错误详情: $(grep -i "NO_PUBKEY\|GPG error" "$update_output" | head -1)"
-          fi
-          rm -f "$update_output" 2>/dev/null
-        fi
-        echo "   尝试下一个源..."
-      fi
-    else
-      echo "❌ 阿里云 Docker GPG 密钥下载失败，尝试下一个源..."
-    fi
-    
-    # 源2: 腾讯云镜像（使用正确的域名）
-    if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
-      echo "尝试配置腾讯云 Docker 源..."
-      sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-      if download_and_verify_gpg_key "https://mirrors.cloud.tencent.com/docker-ce/linux/$DOCKER_OS/gpg"; then
-        echo \
-          "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.cloud.tencent.com/docker-ce/linux/$DOCKER_OS \
-          $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-        
-        update_output="/tmp/docker_apt_update.log"
-        if sudo apt-get update >"$update_output" 2>&1; then
-          DOCKER_REPO_ADDED=true
-          echo "✅ 腾讯云 Docker 源配置成功"
-          rm -f "$update_output" 2>/dev/null
-        else
-          echo "❌ 腾讯云 Docker 源配置失败"
-          if [[ -f "$update_output" ]]; then
-            if grep -q "NO_PUBKEY\|GPG error" "$update_output" 2>/dev/null; then
-              echo "   错误详情: $(grep -i "NO_PUBKEY\|GPG error" "$update_output" | head -1)"
-            fi
-            rm -f "$update_output" 2>/dev/null
-          fi
-          echo "   尝试下一个源..."
-        fi
-      else
-        echo "❌ 腾讯云 Docker GPG 密钥下载失败，尝试下一个源..."
-      fi
-    fi
-    
-    # 源3: 华为云镜像
-    if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
-      echo "尝试配置华为云 Docker 源..."
-      sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-      if download_and_verify_gpg_key "https://mirrors.huaweicloud.com/docker-ce/linux/$DOCKER_OS/gpg"; then
-        echo \
-          "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.huaweicloud.com/docker-ce/linux/$DOCKER_OS \
-          $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-        
-        update_output="/tmp/docker_apt_update.log"
-        if sudo apt-get update >"$update_output" 2>&1; then
-          DOCKER_REPO_ADDED=true
-          echo "✅ 华为云 Docker 源配置成功"
-          rm -f "$update_output" 2>/dev/null
-        else
-          echo "❌ 华为云 Docker 源配置失败"
-          if [[ -f "$update_output" ]]; then
-            if grep -q "NO_PUBKEY\|GPG error" "$update_output" 2>/dev/null; then
-              echo "   错误详情: $(grep -i "NO_PUBKEY\|GPG error" "$update_output" | head -1)"
-            fi
-            rm -f "$update_output" 2>/dev/null
-          fi
-          echo "   尝试下一个源..."
-        fi
-      else
-        echo "❌ 华为云 Docker GPG 密钥下载失败，尝试下一个源..."
-      fi
-    fi
-    
-    # 源4: 中科大镜像
-    if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
-      echo "尝试配置中科大 Docker 源..."
-      sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-      if download_and_verify_gpg_key "https://mirrors.ustc.edu.cn/docker-ce/linux/$DOCKER_OS/gpg"; then
-        echo \
-          "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.ustc.edu.cn/docker-ce/linux/$DOCKER_OS \
-          $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-        
-        update_output="/tmp/docker_apt_update.log"
-        if sudo apt-get update >"$update_output" 2>&1; then
-          DOCKER_REPO_ADDED=true
-          echo "✅ 中科大 Docker 源配置成功"
-          rm -f "$update_output" 2>/dev/null
-        else
-          echo "❌ 中科大 Docker 源配置失败"
-          if [[ -f "$update_output" ]]; then
-            if grep -q "NO_PUBKEY\|GPG error" "$update_output" 2>/dev/null; then
-              echo "   错误详情: $(grep -i "NO_PUBKEY\|GPG error" "$update_output" | head -1)"
-              # 如果是 NO_PUBKEY 错误，显示缺失的密钥 ID
-              if grep -q "NO_PUBKEY" "$update_output" 2>/dev/null; then
-                missing_key=$(grep -oP "NO_PUBKEY \K[0-9A-F]{16}" "$update_output" | head -1)
-                if [[ -n "$missing_key" ]]; then
-                  echo "   缺失的 GPG 密钥 ID: $missing_key"
-                  echo "   尝试手动添加密钥..."
-                  # 尝试从 keyserver 获取密钥
-                  if command -v gpg &>/dev/null && command -v apt-key &>/dev/null 2>/dev/null; then
-                    sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "$missing_key" 2>/dev/null || \
-                    sudo apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys "$missing_key" 2>/dev/null || true
-                  fi
-                fi
-              fi
-            fi
-            rm -f "$update_output" 2>/dev/null
-          fi
-          echo "   尝试下一个源..."
-        fi
-      else
-        echo "❌ 中科大 Docker GPG 密钥下载失败，尝试下一个源..."
-      fi
-    fi
-    
-    # 源5: 清华大学镜像
-    if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
-      echo "尝试配置清华大学 Docker 源..."
-      sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-      if download_and_verify_gpg_key "https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/$DOCKER_OS/gpg"; then
-        echo \
-          "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/$DOCKER_OS \
-          $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-        
-        update_output="/tmp/docker_apt_update.log"
-        if sudo apt-get update >"$update_output" 2>&1; then
-          DOCKER_REPO_ADDED=true
-          echo "✅ 清华大学 Docker 源配置成功"
-          rm -f "$update_output" 2>/dev/null
-        else
-          echo "❌ 清华大学 Docker 源配置失败"
-          if [[ -f "$update_output" ]]; then
-            if grep -q "NO_PUBKEY\|GPG error" "$update_output" 2>/dev/null; then
-              echo "   错误详情: $(grep -i "NO_PUBKEY\|GPG error" "$update_output" | head -1)"
-            fi
-            rm -f "$update_output" 2>/dev/null
-          fi
-          echo "   尝试下一个源..."
-        fi
-      else
-        echo "❌ 清华大学 Docker GPG 密钥下载失败，尝试下一个源..."
-      fi
-    fi
-    
-    # 源6: 网易镜像
-    if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
-      echo "尝试配置网易 Docker 源..."
-      sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-      if download_and_verify_gpg_key "https://mirrors.163.com/docker-ce/linux/$DOCKER_OS/gpg"; then
-        echo \
-          "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.163.com/docker-ce/linux/$DOCKER_OS \
-          $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-        
-        update_output="/tmp/docker_apt_update.log"
-        if sudo apt-get update >"$update_output" 2>&1; then
-          DOCKER_REPO_ADDED=true
-          echo "✅ 网易 Docker 源配置成功"
-          rm -f "$update_output" 2>/dev/null
-        else
-          echo "❌ 网易 Docker 源配置失败"
-          if [[ -f "$update_output" ]]; then
-            if grep -q "NO_PUBKEY\|GPG error" "$update_output" 2>/dev/null; then
-              echo "   错误详情: $(grep -i "NO_PUBKEY\|GPG error" "$update_output" | head -1)"
-            fi
-            rm -f "$update_output" 2>/dev/null
-          fi
-          echo "   尝试下一个源..."
-        fi
-      else
-        echo "❌ 网易 Docker GPG 密钥下载失败，尝试下一个源..."
-      fi
-    fi
-    
-    # 如果所有国内源都失败，尝试官方源
-    if [[ "$DOCKER_REPO_ADDED" == "false" ]]; then
-      echo "所有国内源都失败，尝试官方源..."
-      sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-      if download_and_verify_gpg_key "https://download.docker.com/linux/$DOCKER_OS/gpg"; then
-        echo \
-          "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/$DOCKER_OS \
-          $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-        
-        update_output="/tmp/docker_apt_update.log"
-        if sudo apt-get update >"$update_output" 2>&1; then
-          DOCKER_REPO_ADDED=true
-          echo "✅ 官方 Docker 源配置成功"
-          rm -f "$update_output" 2>/dev/null
-        else
-          echo "❌ 官方 Docker 源也配置失败"
-          if [[ -f "$update_output" ]]; then
-            echo "   最后尝试的错误信息:"
-            grep -i "NO_PUBKEY\|GPG error\|404\|Not Found" "$update_output" 2>/dev/null | head -3
-            rm -f "$update_output" 2>/dev/null
-          fi
-        fi
-      else
-        echo "❌ 官方 Docker GPG 密钥下载失败"
-      fi
-    fi
-    
-    # 如果所有源都失败，且使用的是 Ubuntu 新版本（如 plucky），尝试回退到 LTS 版本
+    DOCKER_MIRROR_NAME=""
+    configure_docker_apt_from_mirrors || true
+
+    # 源配置失败时，对新 Ubuntu 版本回退到 noble / jammy
     if [[ "$DOCKER_REPO_ADDED" == "false" ]] && [[ "$OS" == "ubuntu" ]]; then
-      # 检查原始版本代号，判断是否需要回退
-      if [[ "$ORIGINAL_CODENAME" == "plucky" ]] || [[ "$DEBIAN_CODENAME" == "plucky" ]]; then
-        # Ubuntu 25.04 (Plucky Puffin) 配置失败，回退到 Ubuntu 24.04 LTS (noble)
-        echo "⚠️  Ubuntu 25.04 (Plucky Puffin) 源配置失败，回退到 Ubuntu 24.04 LTS (noble)..."
+      if ubuntu_should_fallback_to_noble; then
+        echo "⚠️  Ubuntu ${ORIGINAL_CODENAME} 源配置失败，回退到 Ubuntu 24.04 LTS (noble)..."
         DEBIAN_CODENAME="noble"
-        sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-        
-        # 再次尝试官方源（最可靠）
-        if download_and_verify_gpg_key "https://download.docker.com/linux/$DOCKER_OS/gpg"; then
-          echo \
-            "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/$DOCKER_OS \
-            $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-          
-          update_output="/tmp/docker_apt_update.log"
-          if sudo apt-get update >"$update_output" 2>&1; then
-            DOCKER_REPO_ADDED=true
-            echo "✅ 使用 Ubuntu 24.04 LTS (noble) 源配置成功"
-            rm -f "$update_output" 2>/dev/null
-          else
-            rm -f "$update_output" 2>/dev/null
-          fi
-        fi
-      elif [[ "$DEBIAN_CODENAME" == "noble" ]] && [[ "$ORIGINAL_CODENAME" != "noble" ]]; then
-        # 如果已经是 noble 但原始不是 noble，说明已经回退过了，再回退到 jammy
+        configure_docker_apt_from_mirrors || true
+      fi
+      if [[ "$DOCKER_REPO_ADDED" == "false" ]] && [[ "$DEBIAN_CODENAME" == "noble" ]] && [[ "$ORIGINAL_CODENAME" != "noble" ]]; then
         echo "⚠️  Ubuntu 24.04 LTS (noble) 源配置失败，尝试回退到 Ubuntu 22.04 LTS (jammy)..."
         DEBIAN_CODENAME="jammy"
-        sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-        
-        # 再次尝试官方源（最可靠）
-        if download_and_verify_gpg_key "https://download.docker.com/linux/$DOCKER_OS/gpg"; then
-          echo \
-            "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/$DOCKER_OS \
-            $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-          
-          update_output="/tmp/docker_apt_update.log"
-          if sudo apt-get update >"$update_output" 2>&1; then
-            DOCKER_REPO_ADDED=true
-            echo "✅ 使用 Ubuntu 22.04 LTS (jammy) 源配置成功"
-            rm -f "$update_output" 2>/dev/null
-          else
-            rm -f "$update_output" 2>/dev/null
-          fi
-        fi
-      elif [[ -n "$ORIGINAL_CODENAME" ]] && [[ "$DEBIAN_CODENAME" != "$ORIGINAL_CODENAME" ]]; then
-        # 其他新版本，尝试回退到 noble
-        echo "⚠️  Ubuntu $ORIGINAL_CODENAME 源配置失败，尝试回退到 Ubuntu 24.04 LTS (noble)..."
-        DEBIAN_CODENAME="noble"
-        sudo rm -f /etc/apt/keyrings/docker.gpg /etc/apt/sources.list.d/docker.list 2>/dev/null
-        
-        if download_and_verify_gpg_key "https://download.docker.com/linux/$DOCKER_OS/gpg"; then
-          echo \
-            "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/$DOCKER_OS \
-            $DEBIAN_CODENAME stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-          
-          update_output="/tmp/docker_apt_update.log"
-          if sudo apt-get update >"$update_output" 2>&1; then
-            DOCKER_REPO_ADDED=true
-            echo "✅ 使用 Ubuntu 24.04 LTS (noble) 源配置成功"
-            rm -f "$update_output" 2>/dev/null
-          else
-            rm -f "$update_output" 2>/dev/null
-          fi
-        fi
+        configure_docker_apt_from_mirrors || true
       fi
     fi
     
@@ -6879,140 +6677,154 @@ EOF
       echo ""
       echo "可能的原因："
       echo "  1. 网络连接问题"
-      echo "  2. Ubuntu 版本太新，Docker 官方仓库暂不支持"
-      echo "  3. GPG 密钥验证失败"
+      echo "  2. 发行版代号与 Docker 仓库不匹配，或镜像暂不支持该代号"
+      echo "  3. GPG 密钥验证失败或镜像 pool 未同步完整"
+      if [[ "$OS" == "kali" ]]; then
+        echo "  4. Kali 须使用 Debian Docker 源（debian/${DEBIAN_CODENAME}），勿使用 kali-rolling"
+      fi
       echo ""
       echo "建议解决方案："
       echo "  1. 检查网络连接"
       echo "  2. 手动添加 Docker GPG 密钥："
-      echo "     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg"
+      echo "     curl -fsSL https://download.docker.com/linux/${DOCKER_OS}/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg"
       echo "  3. 手动配置 Docker 源："
-      echo "     echo \"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable\" | sudo tee /etc/apt/sources.list.d/docker.list"
+      echo "     echo \"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/${DOCKER_OS} ${DEBIAN_CODENAME} stable\" | sudo tee /etc/apt/sources.list.d/docker.list"
       echo "  4. 更新软件包列表："
       echo "     sudo apt-get update"
       exit 1
     fi
 
-    echo ">>> [3/8] 安装 Docker CE 最新版..."
-    sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin
+    install_docker_ce_packages() {
+      sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    }
 
-    echo ">>> [3.5/8] 安装 Docker Compose..."
-    # 安装最新版本的 docker-compose，使用多个备用下载源
-    echo "正在下载 Docker Compose..."
-    
-    # 尝试多个下载源
-    DOCKER_COMPOSE_DOWNLOADED=false
-    
-    # 源1: 阿里云镜像
-    echo "尝试从阿里云镜像下载..."
-    if sudo curl -L "https://mirrors.aliyun.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
-      DOCKER_COMPOSE_DOWNLOADED=true
-      echo "✅ 从阿里云镜像下载成功"
+    echo ">>> [3/8] 安装 Docker CE 最新版（含 Compose 插件）..."
+    DOCKER_CE_INSTALLED=false
+    if install_docker_ce_packages; then
+      DOCKER_CE_INSTALLED=true
     else
-      echo "❌ 阿里云镜像下载失败，尝试下一个源..."
-    fi
-    
-    # 源2: 腾讯云镜像
-    if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
-      echo "尝试从腾讯云镜像下载..."
-      if sudo curl -L "https://mirrors.cloud.tencent.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
-        DOCKER_COMPOSE_DOWNLOADED=true
-        echo "✅ 从腾讯云镜像下载成功"
-      else
-        echo "❌ 腾讯云镜像下载失败，尝试下一个源..."
-      fi
-    fi
-    
-    # 源3: 华为云镜像
-    if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
-      echo "尝试从华为云镜像下载..."
-      if sudo curl -L "https://mirrors.huaweicloud.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
-        DOCKER_COMPOSE_DOWNLOADED=true
-        echo "✅ 从华为云镜像下载成功"
-      else
-        echo "❌ 华为云镜像下载失败，尝试下一个源..."
-      fi
-    fi
-    
-    # 源4: 中科大镜像
-    if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
-      echo "尝试从中科大镜像下载..."
-      if sudo curl -L "https://mirrors.ustc.edu.cn/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
-        DOCKER_COMPOSE_DOWNLOADED=true
-        echo "✅ 从中科大镜像下载成功"
-      else
-        echo "❌ 中科大镜像下载失败，尝试下一个源..."
-      fi
-    fi
-    
-    # 源5: 清华大学镜像
-    if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
-      echo "尝试从清华大学镜像下载..."
-      if sudo curl -L "https://mirrors.tuna.tsinghua.edu.cn/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
-        DOCKER_COMPOSE_DOWNLOADED=true
-        echo "✅ 从清华大学镜像下载成功"
-      else
-        echo "❌ 清华大学镜像下载失败，尝试下一个源..."
-      fi
-    fi
-    
-  # 源6: 网易镜像
-  if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
-    echo "尝试从网易镜像下载..."
-    if sudo curl -L "https://mirrors.163.com/docker-toolbox/linux/compose/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
-      DOCKER_COMPOSE_DOWNLOADED=true
-      echo "✅ 从网易镜像下载成功"
-    else
-      echo "❌ 网易镜像下载失败，尝试下一个源..."
-    fi
-  fi
-  
-  # 源7: 最后尝试 GitHub (如果网络允许)
-    # 源7: 最后尝试 GitHub (如果网络允许)
-    if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
-      echo "尝试从 GitHub 下载..."
-      if sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose --connect-timeout 10 --max-time 30; then
-        DOCKER_COMPOSE_DOWNLOADED=true
-        echo "✅ 从 GitHub 下载成功"
-      else
-        echo "❌ GitHub 下载失败"
-      fi
-    fi
-    
-    # 检查是否下载成功
-    if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "false" ]]; then
-      echo "❌ 所有下载源都失败了，尝试使用包管理器安装..."
-      
-      # 使用包管理器作为备选方案
-      if [[ "$OS" == "ubuntu" || "$OS" == "debian" || "$OS" == "kali" || "$OS" == "deepin" ]]; then
-        if sudo apt-get install -y docker-compose-plugin; then
-          echo "✅ 通过包管理器安装 docker-compose-plugin 成功"
-          DOCKER_COMPOSE_DOWNLOADED=true
-        else
-          echo "❌ 包管理器安装也失败了"
+      echo "❌ 当前源 (${DOCKER_MIRROR_NAME:-unknown}) 安装失败，尝试切换其他镜像源重试..."
+      for local_entry in "${DOCKER_APT_MIRROR_ENTRIES[@]}"; do
+        name="${local_entry%%|*}"
+        mirror_root="${local_entry#*|}"
+        if [[ -n "$DOCKER_MIRROR_NAME" && "$name" == "$DOCKER_MIRROR_NAME" ]]; then
+          continue
         fi
-      elif [[ "$OS" == "centos" || "$OS" == "rhel" || "$OS" == "rocky" || "$OS" == "ol" || "$OS" == "kylin" || "$OS" == "uos" || "$OS" == "uniontechos" ]]; then
-        if sudo yum install -y docker-compose-plugin; then
-          echo "✅ 通过包管理器安装 docker-compose-plugin 成功"
-          DOCKER_COMPOSE_DOWNLOADED=true
+        if try_configure_docker_apt_mirror "$name" "$mirror_root"; then
+          DOCKER_MIRROR_NAME="$name"
+          if install_docker_ce_packages; then
+            DOCKER_CE_INSTALLED=true
+            break
+          fi
+        fi
+      done
+    fi
+
+    # 安装仍失败且代号较新时，回退 noble 再装一轮
+    if [[ "$DOCKER_CE_INSTALLED" == "false" ]] && ubuntu_should_fallback_to_noble; then
+      echo "⚠️  使用 ${DEBIAN_CODENAME} 安装失败，回退到 Ubuntu 24.04 LTS (noble) 重试安装..."
+      DEBIAN_CODENAME="noble"
+      if configure_docker_apt_from_mirrors; then
+        if install_docker_ce_packages; then
+          DOCKER_CE_INSTALLED=true
         else
-          echo "❌ 包管理器安装也失败了"
+          echo "❌ noble 源安装失败，继续尝试切换镜像..."
+          for local_entry in "${DOCKER_APT_MIRROR_ENTRIES[@]}"; do
+            name="${local_entry%%|*}"
+            mirror_root="${local_entry#*|}"
+            if [[ -n "$DOCKER_MIRROR_NAME" && "$name" == "$DOCKER_MIRROR_NAME" ]]; then
+              continue
+            fi
+            if try_configure_docker_apt_mirror "$name" "$mirror_root"; then
+              DOCKER_MIRROR_NAME="$name"
+              if install_docker_ce_packages; then
+                DOCKER_CE_INSTALLED=true
+                break
+              fi
+            fi
+          done
         fi
       fi
     fi
-    
-    if [[ "$DOCKER_COMPOSE_DOWNLOADED" == "true" ]]; then
-      # 设置执行权限
-      sudo chmod +x /usr/local/bin/docker-compose
-      
-      # 创建软链接到 PATH 目录
-      sudo ln -sf /usr/local/bin/docker-compose /usr/bin/docker-compose
-      
-      echo "✅ Docker Compose 安装完成"
-    else
-      echo "❌ Docker Compose 安装失败，请手动安装"
-      echo "建议访问: https://docs.docker.com/compose/install/ 查看手动安装方法"
+
+    if [[ "$DOCKER_CE_INSTALLED" == "false" ]]; then
+      echo "❌ Docker CE 安装失败，所有镜像源均无法完成安装"
+      exit 1
     fi
+
+    echo ">>> [3.5/8] 配置 Docker Compose..."
+    # 优先使用 apt 的 docker-compose-plugin；不再使用未校验的 docker-toolbox HTML 下载
+    DOCKER_COMPOSE_READY=false
+    if docker compose version >/dev/null 2>&1; then
+      DOCKER_COMPOSE_READY=true
+      echo "✅ docker-compose-plugin 可用: $(docker compose version 2>/dev/null | head -1)"
+    elif sudo apt-get install -y docker-compose-plugin && docker compose version >/dev/null 2>&1; then
+      DOCKER_COMPOSE_READY=true
+      echo "✅ 通过包管理器安装 docker-compose-plugin 成功"
+    else
+      echo "⚠️  docker-compose-plugin 不可用，尝试下载经校验的 Compose 二进制..."
+      download_compose_binary_validated() {
+        local url=$1
+        local dest="/usr/local/bin/docker-compose"
+        local tmp="/tmp/docker-compose.download.$$"
+        rm -f "$tmp"
+        if ! curl -fsSL "$url" -o "$tmp" --connect-timeout 10 --max-time 120; then
+          rm -f "$tmp"
+          return 1
+        fi
+        local size
+        size=$(stat -c%s "$tmp" 2>/dev/null || stat -f%z "$tmp" 2>/dev/null || echo 0)
+        if [[ "$size" -lt 1000000 ]]; then
+          echo "⚠️  下载文件过小 (${size} bytes)，已丢弃"
+          rm -f "$tmp"
+          return 1
+        fi
+        if head -c 256 "$tmp" 2>/dev/null | grep -qiE '<html|Ali-OSM|DOCTYPE'; then
+          echo "⚠️  下载内容为 HTML 页面，已丢弃"
+          rm -f "$tmp"
+          return 1
+        fi
+        # ELF 魔数：\x7fELF
+        if ! head -c 4 "$tmp" 2>/dev/null | od -An -tx1 | grep -qi '7f 45 4c 46'; then
+          echo "⚠️  下载文件不是 ELF 二进制，已丢弃"
+          rm -f "$tmp"
+          return 1
+        fi
+        sudo mv "$tmp" "$dest"
+        sudo chmod +x "$dest"
+        return 0
+      }
+
+      compose_url="https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)"
+      echo "尝试下载: $compose_url"
+      if download_compose_binary_validated "$compose_url"; then
+        DOCKER_COMPOSE_READY=true
+        echo "✅ Compose 二进制下载并校验成功"
+      fi
+    fi
+
+    if [[ "$DOCKER_COMPOSE_READY" == "true" ]]; then
+      # 兼容旧命令 docker-compose：若已是真实二进制则保留，否则写入包装脚本
+      if [[ -x /usr/local/bin/docker-compose ]] && head -c 4 /usr/local/bin/docker-compose 2>/dev/null | od -An -tx1 | grep -qi '7f 45 4c 46'; then
+        sudo ln -sf /usr/local/bin/docker-compose /usr/bin/docker-compose
+      else
+        # 清理可能被旧脚本写入的 HTML 伪二进制
+        sudo rm -f /usr/local/bin/docker-compose /usr/bin/docker-compose 2>/dev/null
+        sudo tee /usr/local/bin/docker-compose >/dev/null <<'COMPOSE_WRAPPER'
+#!/bin/sh
+exec docker compose "$@"
+COMPOSE_WRAPPER
+        sudo chmod +x /usr/local/bin/docker-compose
+        sudo ln -sf /usr/local/bin/docker-compose /usr/bin/docker-compose
+      fi
+      echo "✅ Docker Compose 安装完成（docker compose / docker-compose）"
+    else
+      echo "❌ Docker Compose 安装失败，无法继续"
+      echo "建议: sudo apt-get install -y docker-compose-plugin"
+      echo "或访问: https://docs.docker.com/compose/install/"
+      exit 1
+    fi
+
   fi
 
 elif [[ "$OS" == "centos" || "$OS" == "rhel" || "$OS" == "rocky" || "$OS" == "ol" ]]; then
@@ -7425,7 +7237,7 @@ EOF
       else
         echo "❌ 包管理器安装也失败了"
       fi
-    elif [[ "$OS" == "centos" || "$OS" == "rhel" || "$OS" == "rocky" || "$OS" == "ol" || "$OS" == "kylin" || "$OS" == "uos" || "$OS" == "uniontechos" ]]; then
+    elif [[ "$OS" == "centos" || "$OS" == "rhel" || "$OS" == "rocky" || "$OS" == "ol" || "$OS" == "kylin" || "$OS" == "uos" || "$OS" == "uniontechos" || "$OS_LOWER" == "hce" || "$OS_LOWER" == "openeuler" ]]; then
       if sudo yum install -y docker-compose-plugin; then
         echo "✅ 通过包管理器安装 docker-compose-plugin 成功"
         DOCKER_COMPOSE_DOWNLOADED=true
@@ -7521,49 +7333,7 @@ fi
 
 sudo mkdir -p /etc/docker
 
-# 根据用户选择设置 insecure-registries
-if [[ "$choice" == "2" ]]; then
-  # 清理用户输入的域名，移除协议前缀
-  custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-  
-  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
-  if [[ "$custom_domain" == *.xuanyuan.run ]]; then
-    custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
-    insecure_registries=$(cat <<EOF
-[
-  "$custom_domain",
-  "$custom_domain_dev"
-]
-EOF
-)
-  elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
-    custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
-    insecure_registries=$(cat <<EOF
-[
-  "$custom_domain",
-  "$custom_domain_run"
-]
-EOF
-)
-  else
-    insecure_registries=$(cat <<EOF
-[
-  "$custom_domain"
-]
-EOF
-)
-  fi
-else
-  # 免费版：仅配置 docker.xuanyuan.me
-  insecure_registries=$(cat <<EOF
-[
-  "docker.xuanyuan.me"
-]
-EOF
-)
-fi
-
-apply_docker_mirror_config "$mirror_list" "$insecure_registries"
+apply_docker_mirror_config "$mirror_list"
 apply_rc=$?
 if [[ $apply_rc -eq 2 ]]; then
   echo "已取消安装配置"

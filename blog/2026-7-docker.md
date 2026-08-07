@@ -84,7 +84,7 @@
 
 ## 四、一键安装 Docker + 加速（Linux 推荐）
 
-脚本支持 **15 种** Linux 发行版（含统信 UOS、深度 Deepin、openEuler 等信创系统），自动完成 Docker、Docker Compose 安装，并引导写入轩辕加速地址。
+脚本支持 **16 种** Linux 发行版（含统信 UOS、深度 Deepin、openEuler、Huawei Cloud EulerOS (HCE) 等信创系统），自动完成 Docker、Docker Compose 安装，并引导写入轩辕加速地址。
 
 ### 执行命令
 
@@ -108,7 +108,7 @@ bash docker-install.sh
 
 ### 脚本亮点（7 月版摘要）
 
-- **15 种发行版**：openEuler、OpenCloudOS、Anolis OS、Alinux、Kylin、统信 UOS、Deepin、Rocky、AlmaLinux、Fedora、Ubuntu、Debian、CentOS Stream、RHEL、Oracle Linux
+- **16 种发行版**：openEuler、Huawei Cloud EulerOS (HCE)、OpenCloudOS、Anolis OS、Alinux、Kylin、统信 UOS、Deepin、Rocky、AlmaLinux、Fedora、Ubuntu、Debian、CentOS Stream、RHEL、Oracle Linux
 - **ARM64 全支持**：鲲鹏 920、飞腾等国产 CPU 自动匹配二进制包
 - **多源智能切换**：内置阿里云、腾讯云、华为云、中科大、清华等节点，安装阶段自动选最快源
 - **双重安装保障**：包管理器失败时自动切换二进制安装

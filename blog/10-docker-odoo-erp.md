@@ -32,7 +32,7 @@ Odoo是全球主流的开源企业管理系统，前身是OpenERP，基于Python
 本次采用 Docker 容器化方式部署 Odoo，隔离环境、部署简单、迁移方便，下面分系统完成 Docker 安装配置。
 
 ### Linux系统（含国产系统）一键安装
-Ubuntu、CentOS、欧拉、银河麒麟、统信UOS 等主流 Linux 及国产操作系统，可直接执行一键脚本，自动安装 Docker、Docker Compose，并配置国内镜像加速，彻底解决拉取镜像慢的问题。
+Ubuntu、CentOS、欧拉、Huawei Cloud EulerOS (HCE)、银河麒麟、统信UOS 等主流 Linux 及国产操作系统，可直接执行一键脚本，自动安装 Docker、Docker Compose，并配置国内镜像加速，彻底解决拉取镜像慢的问题。
 打开终端，执行以下命令：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)

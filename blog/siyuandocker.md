@@ -28,7 +28,7 @@ bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
 ```
 
-> 脚本支持13种主流Linux发行版（Ubuntu、CentOS、Debian、openEuler等），执行过程需要root权限。
+> 脚本支持16种主流Linux发行版（含 openEuler、Huawei Cloud EulerOS (HCE)、Ubuntu、CentOS、Debian 等），执行过程需要root权限。
 
 ### Windows系统Docker环境安装
 
