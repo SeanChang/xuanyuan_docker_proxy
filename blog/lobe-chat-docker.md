@@ -20,8 +20,11 @@ LOBE-CHAT 是一款开源、可扩展、高性能的聊天机器人框架，专�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 ### 轩辕镜像访问支持说明
@@ -299,8 +302,11 @@ docker rm lobe-chat-old
    ```bash
    bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-   # 备用地址
+   # 备用地址1
    bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+   # 备用地址2
+   bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
    ```
 
 

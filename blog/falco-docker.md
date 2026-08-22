@@ -23,8 +23,11 @@ Falco 作为容器化应用，需要在Docker环境中运行。推荐使用以�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 执行此脚本将自动安装Docker引擎、Docker CLI及相关依赖组件，并配置好基础环境参数。安装完成后，建议运行以下命令验证Docker是否正常工作：

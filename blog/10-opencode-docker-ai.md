@@ -21,8 +21,11 @@
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 安装完成后，执行以下命令验证：
@@ -328,7 +331,7 @@ docker compose down   # 停止容器，volume 数据不会丢失
 - [OpenCode 中文文档](https://opencode.ai/docs/zh-cn)
 - [OpenCode Web 模式](https://opencode.ai/docs/web)
 - [openeuler/opencode 镜像页](https://xuanyuan.cloud/zh/r/openeuler/opencode)
-- [Docker 一键安装脚本](https://xuanyuan.cloud/docker.sh)（[备用地址](https://get.xuanyuan.dev/docker.sh)）
+- [Docker 一键安装脚本](https://xuanyuan.cloud/docker.sh)（[备用地址1](https://get.xuanyuan.dev/docker.sh)、[备用地址2](https://get.xuanyuan.me/docker.sh)）
 
 如果你在拉取 Docker 镜像时遇到速度慢、超时等问题，可以试试 [轩辕镜像](https://xuanyuan.cloud) 的加速服务；镜像页支持一键复制拉取命令，也提供镜像助手等工具方便排查。欢迎收藏 [openeuler/opencode](https://xuanyuan.cloud/zh/r/openeuler/opencode) 镜像页，获取最新标签与更新说明。
 

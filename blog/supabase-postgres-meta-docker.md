@@ -30,8 +30,11 @@ Postgres-Meta是Supabase团队开发的**PostgreSQL数据库RESTful管理工具*
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 验证安装成功：  

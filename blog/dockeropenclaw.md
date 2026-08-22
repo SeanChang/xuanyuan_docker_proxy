@@ -27,8 +27,11 @@ Linux 系统（包括银河麒麟、欧拉、统信 UOS 等国产系统）直接
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 该脚本支持多种架构（x86_64、ARM64 等）和众多 Linux 发行版，包括但不限于：

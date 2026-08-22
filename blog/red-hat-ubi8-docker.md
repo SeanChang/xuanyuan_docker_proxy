@@ -23,8 +23,11 @@ Red Hat UBI8（Universal Base Image 8，通用基础镜像）是 Red Hat 官方�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 执行完脚本后，输入 `docker --version` 和 `docker compose --version`，能看到版本号就说明装好了。
 

@@ -22,8 +22,11 @@ S-PDF（Stirling PDF）是一款本地部署的基于网页的PDF编辑器，支
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 执行完成后，可通过`docker --version`命令验证安装是否成功，输出类似`Docker version 20.10.xx, build xxxxxxx`即表示安装完成。

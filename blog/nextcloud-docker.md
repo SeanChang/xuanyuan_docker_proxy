@@ -22,8 +22,11 @@ Nextcloud 是一款开源的容器化应用，为用户提供安全的数据存�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 脚本执行过程中需根据提示完成必要配置，安装完成后可通过`docker --version`命令验证Docker是否正常安装。

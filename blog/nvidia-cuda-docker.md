@@ -39,8 +39,11 @@ CUDA 全称为 **Compute Unified Device Architecture**（统一计算设备架�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 执行后按提示选择“1) 一键安装配置”，脚本会自动完成 Docker、Docker Compose 安装，并配置轩辕镜像访问支持（后续拉取 CUDA 镜像会更快）。
 

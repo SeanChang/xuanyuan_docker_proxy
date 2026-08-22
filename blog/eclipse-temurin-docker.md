@@ -22,8 +22,11 @@ Eclipse Temurin是由Eclipse Adoptium项目维护的开源Java开发工具包（
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 脚本执行完成后，可通过以下命令验证安装结果：

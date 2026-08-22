@@ -40,13 +40,16 @@ MySQL是一款开源的关系型数据库管理系统（RDBMS），基于SQL（�
 一键安装配置脚本（推荐方案）：
 该脚本支持多种 Linux 发行版，支持一键安装 Docker、Docker Compose 并自动配置轩辕镜像访问支持源。
 
-企业生产环境建议先审计脚本内容，再在受控环境执行，避免供应链风险。可通过 `wget https://xuanyuan.cloud/docker.sh && less docker.sh`（备用地址：`wget https://get.xuanyuan.dev/docker.sh && less docker.sh`） 查看脚本逻辑，确认无异常后再运行。
+企业生产环境建议先审计脚本内容，再在受控环境执行，避免供应链风险。可通过 `wget https://xuanyuan.cloud/docker.sh && less docker.sh`（备用地址1：`wget https://get.xuanyuan.dev/docker.sh && less docker.sh`，备用地址2：`wget https://get.xuanyuan.me/docker.sh && less docker.sh`） 查看脚本逻辑，确认无异常后再运行。
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 ## 1、查看 MySQL 镜像详情

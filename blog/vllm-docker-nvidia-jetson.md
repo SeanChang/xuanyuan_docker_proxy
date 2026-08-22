@@ -29,8 +29,11 @@ VLLM是一个高效的开源大语言模型（LLM）推理服务框架，通过�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > **脚本说明**：该脚本适用于Ubuntu/Debian系统，会自动安装最新稳定版Docker Engine、配置NVIDIA容器运行时，并优化系统参数以提升容器性能。安装完成后需重启终端或执行`source ~/.bashrc`使环境变量生效。
@@ -363,8 +366,11 @@ dpkg -l | grep nvidia-container-toolkit
 # 若未安装，重新执行一键安装脚本
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 
 # 验证Docker是否支持NVIDIA运行时
 docker run --rm --runtime nvidia nvidia/cuda:12.6.0-base-ubuntu22.04 nvidia-smi

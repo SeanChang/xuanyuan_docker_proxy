@@ -27,8 +27,11 @@ MC提供了丰富的命令集，涵盖了从基本的文件操作到高级的存
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > 注意：执行此脚本需要管理员权限。脚本运行过程中可能需要根据提示输入sudo密码或确认操作。

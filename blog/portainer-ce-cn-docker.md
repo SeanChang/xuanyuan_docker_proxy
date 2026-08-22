@@ -21,8 +21,11 @@ Portainer-CE 中文版主要功能包括容器生命周期管理、镜像管理�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 该脚本会自动安装Docker Engine、Docker CLI、Docker Compose等必要组件，并配置好基础环境参数。安装完成后，建议将当前用户添加到docker用户组以避免每次使用Docker命令都需要sudo权限：

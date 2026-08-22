@@ -21,8 +21,11 @@ Caddy是一款功能强大的企业级开源Web服务器，以其内置的自动
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 执行上述命令后，脚本将自动完成Docker引擎、Docker CLI、Docker Compose等组件的安装与配置。安装完成后，可以通过以下命令验证Docker是否正常运行：

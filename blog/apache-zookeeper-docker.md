@@ -21,8 +21,11 @@ Apache ZooKeeper是Apache软件基金会的一个开源项目，提供分布式�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 脚本执行过程中可能需要输入sudo密码以获取必要的安装权限。安装完成后，建议将当前用户添加到docker用户组，避免每次执行docker命令都需要sudo：

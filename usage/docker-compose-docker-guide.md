@@ -73,8 +73,11 @@ Docker 默认使用官方镜像仓库，在国内大陆访问时速度较慢，�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 或者手动编辑（或创建）Docker 的配置文件 /etc/docker/daemon.json：

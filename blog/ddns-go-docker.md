@@ -28,8 +28,11 @@ DDNS-GO的核心特性包括：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 脚本将自动完成Docker Engine、Docker Compose的安装及配置，适用于主流Linux发行版（Ubuntu、Debian、CentOS等）。安装完成后，可通过以下命令验证Docker是否正常运行：

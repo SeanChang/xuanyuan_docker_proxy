@@ -32,8 +32,11 @@ Rocky Linux 作为 CentOS 停更后的最优替代方案，与 RHEL 完全兼容
 # 一键安装 Docker 及 Docker Compose
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 ### 验证安装结果

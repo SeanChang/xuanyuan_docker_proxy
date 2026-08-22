@@ -21,8 +21,11 @@ INFLUXDB是一个专为实时分析工作负载设计的开源时序数据库平
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 执行完成后，可以通过以下命令验证Docker是否安装成功：

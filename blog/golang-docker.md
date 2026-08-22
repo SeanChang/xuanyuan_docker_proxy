@@ -35,8 +35,11 @@ Golang（简称 Go）是 Google 开发的静态类型编程语言，语法上借
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 脚本支持 CentOS、Ubuntu、Debian 等主流 Linux 发行版，执行后等几分钟，出现“Docker installed successfully”就说明装好了。

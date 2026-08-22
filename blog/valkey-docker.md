@@ -22,8 +22,11 @@ VALKEY容器化部署依赖Docker引擎，建议使用以下一键脚本快速�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 脚本执行完成后，可通过`docker --version`命令验证安装是否成功：

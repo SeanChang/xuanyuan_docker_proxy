@@ -31,8 +31,11 @@ Dify 是由 LangGenius 开发的**开源 LLM 应用开发平台**，可帮助开
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 ⚠️ 安全提示（生产环境强制要求）

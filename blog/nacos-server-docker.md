@@ -100,7 +100,8 @@ sudo systemctl restart docker
 ```bash
 # 1. 下载脚本到本地
 wget -O docker.sh https://xuanyuan.cloud/docker.sh
-# 备用地址：wget -O docker.sh https://get.xuanyuan.dev/docker.sh
+# 备用地址1：wget -O docker.sh https://get.xuanyuan.dev/docker.sh
+# 备用地址2：wget -O docker.sh https://get.xuanyuan.me/docker.sh
 # 2. 查看脚本内容（关键步骤，不可省略）
 less docker.sh
 # 3. 确认无风险后执行

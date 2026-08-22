@@ -34,8 +34,11 @@ AlmaLinux 作为 RHEL 二进制兼容的免费企业级发行版，由 CloudLinu
 # 一键安装 Docker + Docker Compose，全程无需手动干预
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 ### 验证安装结果

@@ -35,8 +35,11 @@ MinerU 是一款面向开发者与科研用户的 PDF 结构化解析工具，�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 安装完成后，建议将当前用户添加到 docker 用户组以避免每次使用 Docker 命令都需要 sudo 权限：

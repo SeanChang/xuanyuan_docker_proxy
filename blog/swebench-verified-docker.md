@@ -23,8 +23,11 @@ SWEBENCH-VERIFIED（镜像名称：`slimshetty/swebench-verified`）是由R2E-Gy
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 安装完成后，通过`docker --version`命令验证安装是否成功。

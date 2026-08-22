@@ -22,8 +22,11 @@ QUARTZUI 是一款基于 Quartz.NET 3.0 的 Web 管理界面，专为简化定�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 脚本执行完成后，可通过以下命令验证 Docker 是否安装成功：
@@ -299,7 +302,7 @@ docker run -d --name quartzui --restart=unless-stopped --memory=1g -p 5088:80 -v
 
 
 ### 关键要点
-- **环境准备**：使用一键脚本 `bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`（备用地址：`bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)`） 快速部署 Docker 环境，自动配置轩辕镜像访问支持。
+- **环境准备**：使用一键脚本 `bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`（备用地址1：`bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)`，备用地址2：`bash <(wget -qO- https://get.xuanyuan.me/docker.sh)`） 快速部署 Docker 环境，自动配置轩辕镜像访问支持。
 - **镜像拉取**：采用命令 `docker pull xxx.xuanyuan.run/bennyzhao/quartzui:latest` 拉取。
 - **容器部署**：核心命令为 `docker run -d --name quartzui --restart=unless-stopped -p 5088:80 -v /fileData/quartzuifile:/app/File xxx.xuanyuan.run/bennyzhao/quartzui:latest`，需注意数据卷挂载以保证数据持久化。
 - **功能验证**：通过访问 `http://<服务器IP>:5088` 验证 Web 界面加载、任务管理及数据持久化功能。

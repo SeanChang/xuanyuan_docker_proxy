@@ -153,8 +153,11 @@ Linux 一键安装 Docker + 配置加速：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 我的建议：**免费版太拥挤，直接上专业版，省时省力**。

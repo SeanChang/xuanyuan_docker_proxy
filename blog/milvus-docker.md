@@ -22,8 +22,11 @@ MILVUS容器化部署依赖Docker引擎，以下是在Linux系统中一键安装
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > 说明：上述脚本适用于Ubuntu、Debian、CentOS等主流Linux发行版，会自动安装Docker Engine、Docker CLI、Containerd等组件，并配置开机自启动。安装过程需要root权限，建议在全新环境中执行。

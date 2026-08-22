@@ -29,8 +29,11 @@ Prometheus是由Cloud Native Computing Foundation（CNCF）托管的开源系统
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > 脚本支持CentOS 7+/Ubuntu 18.04+/Debian 10+系统，执行过程需root权限，会自动安装必要的系统依赖并配置Docker服务自启动。
@@ -406,7 +409,7 @@ process_resident_memory_bytes{job="prometheus"}
 ### 轩辕镜像资源
 - [轩辕镜像 - Prometheus文档](https://xuanyuan.cloud/r/prom/prometheus)
 - [Prometheus镜像标签列表](https://xuanyuan.cloud/r/prom/prometheus/tags)
-- [轩辕Docker一键安装脚本](https://xuanyuan.cloud/docker.sh)（[备用地址](https://get.xuanyuan.dev/docker.sh)）
+- [轩辕Docker一键安装脚本](https://xuanyuan.cloud/docker.sh)（[备用地址1](https://get.xuanyuan.dev/docker.sh)、[备用地址2](https://get.xuanyuan.me/docker.sh)）
 
 
 ### 相关工具与集成方案

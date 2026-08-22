@@ -21,8 +21,11 @@ Apache Tomcat（简称Tomcat）是由Apache软件基金会开发的开源Web服�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 脚本执行完成后，可通过以下命令验证Docker是否安装成功：

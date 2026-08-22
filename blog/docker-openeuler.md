@@ -34,8 +34,11 @@ openEuler 作为华为主导的开源 Linux 发行版，以“多架构适配、
 # 一键安装 Docker + Docker Compose，全程无需手动干预
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 ### 验证安装结果

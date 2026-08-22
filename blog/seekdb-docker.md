@@ -22,8 +22,11 @@ OceanBase seekdb 是 OceanBase 打造的一款开发者友好的 AI 原生数据
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 脚本将自动完成Docker引擎、Docker Compose的安装，并配置开机自启。安装完成后，可通过以下命令验证Docker状态：

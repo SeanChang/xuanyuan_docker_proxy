@@ -44,8 +44,11 @@ OPENLIST是一款基于Gin后端和SolidJS前端开发的多存储文件列表�
 
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 执行脚本后，系统将自动完成Docker Engine、Docker Compose的安装及配置，无需手动干预。安装完成后，可通过以下命令验证Docker是否正常运行：

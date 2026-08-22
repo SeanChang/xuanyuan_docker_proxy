@@ -31,8 +31,11 @@ iic-osic-tools 是 Docker 容器，所以必须先装 Docker 和 Docker Compose�
 # 一键安装 Docker、Docker Compose 并配置轩辕镜像访问支持
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 执行完脚本后，关闭当前终端再重新打开，输入 `docker --version` 和 `docker compose --version`，能看到版本号就说明装好了（比如 `Docker version 26.0.0, build 2ae903e`）。

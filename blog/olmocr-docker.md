@@ -56,8 +56,11 @@ OLMOCR基于GPU加速，因此对系统有以下最低要求：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > 注意：此脚本需要root权限运行，执行过程中可能会提示您输入密码。

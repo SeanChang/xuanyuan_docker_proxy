@@ -23,8 +23,11 @@ Ubuntu、CentOS、Debian，以及**银河麒麟、统信UOS、欧拉**等国产L
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 执行后等待几分钟，全程自动安装配置，无需任何手动干预。
 

@@ -22,8 +22,11 @@ PANDAS_FINAL基于Docker容器技术构建，需先在目标主机安装Docker�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 脚本将自动完成Docker引擎、Docker Compose及相关依赖的安装与配置，并启动Docker服务。安装完成后，可通过`docker --version`验证安装结果。

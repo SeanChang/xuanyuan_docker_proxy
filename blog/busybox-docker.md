@@ -28,8 +28,11 @@ BusyBox是一款集成了众多UNIX工具的嵌入式Linux实用程序集合，�
 # 一键安装Docker环境（包含Docker Engine、Docker Compose）
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > 注意：执行该脚本需要root权限，建议在全新的Linux系统上运行以避免环境冲突。支持的操作系统包括Ubuntu 18.04+/Debian 9+/CentOS 7+/Fedora 30+。
@@ -289,7 +292,7 @@ journalctl -u docker -f
 ```
 **解决方法**：
 - 确保网络通畅，防火墙未阻止Docker相关端口
-- 重新执行一键安装脚本修复加速配置：`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`（备用地址：`bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)`）
+- 重新执行一键安装脚本修复加速配置：`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`（备用地址1：`bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)`，备用地址2：`bash <(wget -qO- https://get.xuanyuan.me/docker.sh)`）
 - 手动检查daemon.json配置：`cat /etc/docker/daemon.json`
 
 #### 2. 容器启动后立即退出

@@ -21,8 +21,11 @@ PADDLEDETECTION是百度飞桨(PaddlePaddle)推出的目标检测与识别工具
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > 注意：脚本需要root权限执行，安装过程中会自动处理依赖关系并完成Docker引擎的配置。
@@ -293,7 +296,7 @@ docker run \
 
 #### 解决方案
 1. 检查网络连接是否正常，尝试访问`https://xxx.xuanyuan.run`验证访问支持能力可用性
-2. 重新执行Docker安装脚本以修复加速配置：`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`（备用地址：`bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)`）
+2. 重新执行Docker安装脚本以修复加速配置：`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`（备用地址1：`bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)`，备用地址2：`bash <(wget -qO- https://get.xuanyuan.me/docker.sh)`）
 3. 手动重启Docker服务：`systemctl restart docker`
 
 ### 容器启动失败

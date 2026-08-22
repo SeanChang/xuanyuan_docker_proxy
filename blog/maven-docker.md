@@ -29,8 +29,11 @@ Apache Maven（简称MAVEN）是一款由Apache软件基金会开发的项目管
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > 注意：执行脚本需要root权限，支持主流Linux发行版（Ubuntu 18.04+、CentOS 7+、Debian 10+等）。安装过程通常需要2-5分钟，具体时间取决于网络状况和服务器配置。
@@ -571,8 +574,11 @@ cat /etc/docker/daemon.json
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh) --reset
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh) --reset
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh) --reset
 ```
 
 
@@ -721,7 +727,7 @@ docker run -it --rm \
 ### 轩辕镜像资源
 - [MAVEN镜像文档（轩辕）](https://xuanyuan.cloud/r/library/maven)
 - [MAVEN镜像标签列表](https://xuanyuan.cloud/r/library/maven/tags)
-- [轩辕Docker一键安装脚本](https://xuanyuan.cloud/docker.sh)（[备用地址](https://get.xuanyuan.dev/docker.sh)）
+- [轩辕Docker一键安装脚本](https://xuanyuan.cloud/docker.sh)（[备用地址1](https://get.xuanyuan.dev/docker.sh)、[备用地址2](https://get.xuanyuan.me/docker.sh)）
 
 
 ### 相关工具
@@ -735,7 +741,7 @@ docker run -it --rm \
 本文详细介绍了MAVEN的Docker容器化部署方案，从环境准备、镜像拉取、容器配置到功能测试，提供了完整的操作指南。通过Docker部署MAVEN可以有效解决环境一致性问题，加速项目构建流程，并简化依赖管理。
 
 ### 关键要点
-- 使用轩辕一键脚本`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`（备用地址：`bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)`）快速部署Docker环境，自动配置镜像访问支持
+- 使用轩辕一键脚本`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`（备用地址1：`bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)`，备用地址2：`bash <(wget -qO- https://get.xuanyuan.me/docker.sh)`）快速部署Docker环境，自动配置镜像访问支持
 - 镜像拉取命令格式：`docker pull xxx.xuanyuan.run/library/maven:{TAG}`，推荐使用具体版本标签而非`latest`
 - 通过挂载目录或Docker卷持久化Maven仓库，避免重复下载依赖
 - 生产环境中应限制容器资源、使用非root用户、定期扫描镜像漏洞，确保构建安全稳定

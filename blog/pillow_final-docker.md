@@ -21,8 +21,11 @@ PILLOW_FINAL支持多种图像处理操作，包括图像格式转换、裁剪�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > 执行脚本前请确保服务器已安装wget工具，若未安装，可通过系统包管理器先进行安装（如Ubuntu系统使用`apt install wget -y`，CentOS系统使用`yum install wget -y`）。

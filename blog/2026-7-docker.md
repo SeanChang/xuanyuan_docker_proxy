@@ -93,15 +93,19 @@
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 #### 生产环境（推荐：先审计再执行）
 
 ```bash
 wget https://xuanyuan.cloud/docker.sh -O docker-install.sh
-# 备用地址：wget https://get.xuanyuan.dev/docker.sh -O docker-install.sh
+# 备用地址1：wget https://get.xuanyuan.dev/docker.sh -O docker-install.sh
+# 备用地址2：wget https://get.xuanyuan.me/docker.sh -O docker-install.sh
 less docker-install.sh          # 企业环境建议完整审阅
 bash docker-install.sh
 ```

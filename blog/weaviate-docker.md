@@ -26,8 +26,11 @@ Weaviate 广泛应用于AI驱动的搜索系统、聊天机器人、推荐引擎
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > 说明：脚本将自动适配Linux发行版（Ubuntu、CentOS、Debian等），安装完成后会启动Docker服务并配置开机自启。

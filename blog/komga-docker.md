@@ -22,8 +22,11 @@ Komga 基于Docker容器化部署，首先需要在目标服务器上安装Docke
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 安装完成后，可通过以下命令验证Docker是否正常运行：

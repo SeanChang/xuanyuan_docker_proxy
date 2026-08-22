@@ -59,8 +59,11 @@ MongoDB 是**面向文档的 NoSQL 数据库**，以 BSON（类 JSON 格式）�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 ### 2.3 网络与安全基础

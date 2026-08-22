@@ -22,8 +22,11 @@ TRENDRADAR基于Docker容器化部署，需先确保服务器已安装Docker环�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > 脚本执行过程中可能需要sudo权限，请确保当前用户具备相应权限。安装完成后，可通过`docker --version`验证Docker是否成功安装。

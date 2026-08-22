@@ -26,8 +26,11 @@
 # 直接复制到终端执行，Linux/Mac/WSL2通用
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 安装完成后，一定要验证一下环境是否可用，输入两个命令：
 ```bash
@@ -549,8 +552,11 @@ docker compose -f docker-compose.service.yml up
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 安装完成后，执行以下命令验证，确保环境可用：
 ```bash

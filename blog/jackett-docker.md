@@ -28,8 +28,11 @@ LinuxServer.io团队提供的JACKETT容器具有以下特点：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 脚本执行完成后，可以通过以下命令验证Docker是否安装成功：

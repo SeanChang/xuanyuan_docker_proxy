@@ -22,8 +22,11 @@ SEAFILE-MC是基于Docker容器化的Seafile应用部署方案。Seafile是一�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 脚本将自动完成Docker引擎、Docker Compose等依赖的安装与配置，适用于主流Linux发行版（如Ubuntu、CentOS、Debian等）。安装完成后，可通过`docker --version`命令验证Docker是否安装成功。

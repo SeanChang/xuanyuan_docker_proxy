@@ -24,8 +24,11 @@ STANDALONE-CHROMIUM是一个基于Docker的容器化应用，提供了Selenium G
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 # 验证安装

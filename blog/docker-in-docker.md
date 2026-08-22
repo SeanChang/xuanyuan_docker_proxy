@@ -21,8 +21,11 @@ DOCKER（Docker in Docker，简称DinD）是一种特殊的容器化方案，允
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 脚本将自动完成以下操作：

@@ -23,8 +23,11 @@ Docker 轻量级容器化技术为 Node.js 应用部署带来核心优势，尤�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 ## 1、查看 Node.js 镜像详情

@@ -21,8 +21,11 @@ POSTGIS是PostgreSQL数据库的空间数据库扩展，它为PostgreSQL提供�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 脚本执行完成后，可通过以下命令验证Docker是否安装成功：

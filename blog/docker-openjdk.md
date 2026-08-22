@@ -22,8 +22,11 @@ OpenJDK 作为 Java SE 的开源实现，是企业级 Java 应用的核心运行
 # 一键安装脚本（自动适配系统，无需修改参数）
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 **验证环境**：脚本执行完成后，运行以下命令确认 Docker 正常启动：

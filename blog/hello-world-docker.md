@@ -23,8 +23,11 @@ HELLO-WORLD镜像的核心功能是提供一个最小化的容器示例，其镜
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 该脚本会自动安装Docker Engine、Docker CLI、Docker Compose等必要组件，并配置开机自启。安装完成后，可通过以下命令验证Docker是否安装成功：
@@ -217,7 +220,7 @@ HELLO-WORLD镜像由于其极简特性，可安全地以任意用户身份运行
 
 ### 4. Docker服务无法启动
 
-**症状**：执行`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`（备用地址：`bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)`）安装后，`docker --version`无输出。
+**症状**：执行`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`（备用地址1：`bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)`，备用地址2：`bash <(wget -qO- https://get.xuanyuan.me/docker.sh)`）安装后，`docker --version`无输出。
 
 **排查步骤**：
 - 检查安装日志：`cat /var/log/docker-install.log`（一键脚本可能生成此日志，具体路径以实际安装为准）。

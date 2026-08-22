@@ -24,12 +24,16 @@
 # 测试环境快速执行（仅推荐非生产场景）
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 
 # 生产环境安全执行流程（企业级推荐）
 wget https://xuanyuan.cloud/docker.sh  # 下载脚本到本地
-# 备用地址：wget https://get.xuanyuan.dev/docker.sh  # 下载脚本到本地
+# 备用地址1：wget https://get.xuanyuan.dev/docker.sh  # 下载脚本到本地
+# 备用地址2：wget https://get.xuanyuan.me/docker.sh  # 下载脚本到本地
 less docker.sh                        # 人工审阅脚本内容（关键！）
 bash docker.sh                        # 确认无风险后执行
 ```

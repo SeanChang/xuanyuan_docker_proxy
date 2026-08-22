@@ -21,8 +21,11 @@ CVAT SERVER是Computer Vision Annotation Tool (CVAT)的后端服务组件，为�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > 注意：执行此脚本可能需要管理员权限（sudo），具体取决于系统配置。安装过程中请根据提示完成操作。
@@ -461,8 +464,11 @@ SERVER是Computer Vision Annotation Tool (CVAT)的后端服务组件，为计算
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > 注意：执行此脚本可能需要管理员权限（sudo），具体取决于系统配置。安装过程中请根据提示完成操作。

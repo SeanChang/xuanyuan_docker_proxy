@@ -84,8 +84,11 @@ Linux 未装 Docker：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 ARM 主机若误拉 amd64 会走模拟变慢，可在 compose 各服务加 `platform: linux/arm64`。

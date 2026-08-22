@@ -22,8 +22,11 @@ Supabase Postgres 是一款基于PostgreSQL官方镜像构建的容器化应用�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 脚本执行完成后，可通过`docker --version`命令验证安装是否成功，出现类似`Docker version 20.10.xx, build xxxxxxx`的输出即表示Docker环境就绪。

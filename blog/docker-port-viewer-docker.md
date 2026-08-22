@@ -20,8 +20,11 @@ DOCKER-PORT-VIEWER是一款基于TypeScript开发的简单应用程序，主要�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 执行完成后，可通过`docker --version`命令验证安装是否成功。

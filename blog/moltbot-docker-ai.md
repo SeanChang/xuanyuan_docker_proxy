@@ -34,8 +34,11 @@ Moltbot 的核心架构围绕"Gateway"控制平面构建，整合了多渠道消
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 ##### 该脚本特性说明

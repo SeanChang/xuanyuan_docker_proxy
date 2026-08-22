@@ -22,8 +22,11 @@ phpMyAdmin是一款用PHP编写的免费开源工具，旨在通过Web界面管�
 # 一键安装Docker及相关组件（支持Ubuntu/Debian/CentOS等主流发行版）
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 验证Docker安装及加速配置是否成功：

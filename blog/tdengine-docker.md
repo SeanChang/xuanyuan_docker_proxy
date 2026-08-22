@@ -29,8 +29,11 @@ TDengine 是一款开源、高性能、云原生的时序数据库，专为物�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 脚本将自动完成Docker引擎、Docker Compose的安装与配置，并启动Docker服务。安装完成后，可通过`docker --version`命令验证安装是否成功。

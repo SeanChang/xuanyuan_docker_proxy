@@ -70,8 +70,11 @@ Docker的核心设计理念是“单进程/单职责”，与虚拟机存在本�
 # 一键安装Docker及Docker Compose（支持银河麒麟、CentOS等系统）
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 安装完成后验证：

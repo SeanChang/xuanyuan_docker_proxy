@@ -24,8 +24,11 @@ POWERRAG采用Docker容器化部署方式，需先确保服务器已安装Docker
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 执行完毕后，可通过以下命令验证Docker是否安装成功：

@@ -30,8 +30,11 @@
 # 一键安装Docker、Docker Compose并配置轩辕加速
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 执行完脚本后，用下面的命令验证是否安装成功：

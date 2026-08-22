@@ -32,8 +32,11 @@ EZBOOKKEEPING的核心优势包括：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > 注意：执行上述命令可能需要管理员权限（sudo）。安装过程中会自动配置Docker所需的依赖环境和服务。

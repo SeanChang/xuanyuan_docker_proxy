@@ -22,8 +22,11 @@ DORIS官方提供了完整的Docker镜像支持，包含构建环境镜像和运
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 执行上述命令后，脚本将自动完成Docker Engine、Docker Compose等组件的安装与配置，并启动Docker服务。安装完成后，可通过以下命令验证Docker是否正常运行：

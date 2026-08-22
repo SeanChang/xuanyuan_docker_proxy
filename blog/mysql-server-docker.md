@@ -27,8 +27,11 @@ MySQL是世界上最流行的开源关系型数据库管理系统，由Oracle公
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > 注意：执行脚本可能需要root权限，请确保当前用户具备sudo权限或直接以root用户操作。脚本运行过程中会自动处理依赖项安装、Docker服务启动及开机自启配置。
@@ -490,7 +493,7 @@ docker exec -i mysql-server mysql -uroot -p"YourStrongPassword123!" < /data/mysq
 本文详细介绍了MYSQL-SERVER的Docker容器化部署方案，从环境准备、镜像拉取、容器配置到功能测试和生产环境优化，提供了一套完整的实施指南。通过Docker部署MySQL Server，可大幅简化环境配置流程，确保部署一致性，并通过轩辕镜像访问支持服务显著提升国内环境下的部署效率。
 
 **关键要点**：
-- 使用一键脚本`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`（备用地址：`bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)`）可快速完成Docker环境与轩辕加速配置
+- 使用一键脚本`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`（备用地址1：`bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)`，备用地址2：`bash <(wget -qO- https://get.xuanyuan.me/docker.sh)`）可快速完成Docker环境与轩辕加速配置
 - 镜像拉取需遵循多段镜像名规则，正确命令为`docker pull xxx.xuanyuan.run/mysql/mysql-server:latest`
 - 生产环境必须配置数据持久化（`-v /data/mysql/data:/var/lib/mysql`）和定期备份
 - 安全加固措施包括网络隔离、权限控制和密码管理，是生产部署的必备环节

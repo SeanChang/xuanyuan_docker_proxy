@@ -23,8 +23,11 @@ PAPERMERGE作为容器化应用，需要运行在Docker环境中。推荐使用�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > 注意：执行此脚本需要root权限，安装过程可能需要几分钟时间，请耐心等待。安装完成后，系统会自动启动Docker服务并配置开机自启。

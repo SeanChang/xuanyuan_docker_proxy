@@ -31,8 +31,11 @@ Webtop 作为Docker容器运行，需要先在主机上安装Docker引擎。推�
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址
+# 备用地址1
 bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
+
+# 备用地址2
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 > 注：此脚本适用于主流Linux发行版（Ubuntu、Debian、CentOS等），执行过程中可能需要sudo权限。安装完成后，建议将当前用户添加到docker用户组以避免每次执行docker命令都需要root权限：`sudo usermod -aG docker $USER`，此操作需要注销并重新登录才能生效。
