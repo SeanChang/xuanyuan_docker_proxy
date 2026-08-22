@@ -1,6 +1,6 @@
 # Emby Media Server ARM32V7 Docker 容器化部署指南
 
-![Emby Media Server ARM32V7 Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-emby-media-server.png)
+![Emby Media Server ARM32V7 Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-emby-media-server.png)
 
 *分类: Docker部署教程 | 标签: emby-media-server,docker,部署教程 | 发布时间: 2025-12-14 12:55:52*
 
@@ -20,14 +20,14 @@ EMBYSERVER_ARM32V7是Emby Media Server针对arm32v7架构的官方Docker镜像�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 该脚本将自动安装Docker Engine、Docker CLI、Docker Compose等必要组件，并配置好基础环境参数。
 
 安装完成后，可以通过以下命令验证Docker是否正常运行：

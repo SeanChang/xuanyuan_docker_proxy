@@ -1,6 +1,6 @@
 # 超全 Docker 轩辕镜像源配置指南｜Windows/Mac/Linux一键搞定，拉镜像再也不卡顿
 
-![超全 Docker 轩辕镜像源配置指南｜Windows/Mac/Linux一键搞定，拉镜像再也不卡顿](https://img.xuanyuan.dev/docker/blog/docker-win-mac-linux.png)
+![超全 Docker 轩辕镜像源配置指南｜Windows/Mac/Linux一键搞定，拉镜像再也不卡顿](https://assets.xuanyuan.me/docker/blog/docker-win-mac-linux.png)
 
 *分类: Docker部署教程 | 标签: 轩辕镜像,教程 | 发布时间: 2026-03-18 13:21:04*
 
@@ -38,14 +38,14 @@ Linux服务器配置Docker镜像源，支持一键脚本全自动配置和手动
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 方式二：手动命令配置（自定义可控）
 
 如果想手动管控配置文件，执行以下命令直接写入Docker守护进程配置：

@@ -1,6 +1,6 @@
 # Obsidian Docker 部署｜Windows+Linux 通用，新手也能10分钟上手
 
-![Obsidian Docker 部署｜Windows+Linux 通用，新手也能10分钟上手](https://img.xuanyuan.dev/docker/blog/docker-obsidian-2.png)
+![Obsidian Docker 部署｜Windows+Linux 通用，新手也能10分钟上手](https://assets.xuanyuan.me/docker/blog/docker-obsidian-2.png)
 
 *分类: Docker部署教程 | 标签: Obsidian,部署教程,笔记软件 | 发布时间: 2026-04-21 07:33:20*
 
@@ -36,7 +36,7 @@
 
 官方镜像说明：[LinuxServer · obsidian](https://docs.linuxserver.io/images/docker-obsidian/)。源码：[linuxserver/docker-obsidian](https://github.com/linuxserver/docker-obsidian)。
 
-![Obsidian 中文主界面：欢迎笔记与关系图谱](https://img.xuanyuan.dev/docker/blog/obsidian-3.webp)
+![Obsidian 中文主界面：欢迎笔记与关系图谱](https://assets.xuanyuan.me/docker/blog/obsidian-3.webp)
 
 *图 1：部署成功后，浏览器中的 Obsidian（简体中文欢迎笔记与关系图谱）*
 
@@ -84,14 +84,14 @@ Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 ```bash
@@ -240,7 +240,7 @@ obsidian  | [svc-de] /config/.XDG/wayland-1 found launching de
 
 首次打开会提示连接不安全——容器自带自签名证书，内网体验属正常。Chrome / Edge 选「高级」→「继续访问」。之后可点地址栏锁 / 感叹号，建议打开**剪贴板**权限，方便与本机复制粘贴：
 
-![浏览器提示 192.168.1.10:3001 连接不安全并显示剪贴板权限](https://img.xuanyuan.dev/docker/blog/obsidian-9.webp)
+![浏览器提示 192.168.1.10:3001 连接不安全并显示剪贴板权限](https://assets.xuanyuan.me/docker/blog/obsidian-9.webp)
 
 *图 2：HTTPS 自签名证书提示（可继续访问；建议开启剪贴板）*
 
@@ -262,17 +262,17 @@ Error: This application requires a secure connection
 2. 点 **创建**（创建新仓库）；也可点 **Quick start** 快速开始  
 3. 按向导选路径并完成建库  
 
-![Obsidian 欢迎页英文：Version 1.13.4 与 Quick start](https://img.xuanyuan.dev/docker/blog/obsidian-1.webp)
+![Obsidian 欢迎页英文：Version 1.13.4 与 Quick start](https://assets.xuanyuan.me/docker/blog/obsidian-1.webp)
 
 *图 3：首次欢迎页（英文），版本 1.13.4*
 
-![Obsidian 欢迎页已切换简体中文](https://img.xuanyuan.dev/docker/blog/obsidian-2.webp)
+![Obsidian 欢迎页已切换简体中文](https://assets.xuanyuan.me/docker/blog/obsidian-2.webp)
 
 *图 4：切换为「简体中文」后的欢迎页*
 
 建库完成后：左侧文件列表、中间「欢迎」笔记、右侧「关系图谱」：
 
-![Obsidian 欢迎笔记与关系图谱中文主界面](https://img.xuanyuan.dev/docker/blog/obsidian-3.webp)
+![Obsidian 欢迎笔记与关系图谱中文主界面](https://assets.xuanyuan.me/docker/blog/obsidian-3.webp)
 
 *图 5：中文主界面（欢迎笔记 + 关系图谱）*
 
@@ -286,7 +286,7 @@ Error: This application requires a secure connection
 
 左侧点**关系图谱**图标，或把图谱拖到另一栏。有链接的笔记会连成节点；新建画布、日记后节点会增加：
 
-![Obsidian 双栏关系图谱视图](https://img.xuanyuan.dev/docker/blog/obsidian-4.webp)
+![Obsidian 双栏关系图谱视图](https://assets.xuanyuan.me/docker/blog/obsidian-4.webp)
 
 *图 6：关系图谱（可分栏）*
 
@@ -294,7 +294,7 @@ Error: This application requires a secure connection
 
 左侧点 **Canvas**（或命令面板搜索「画布」）新建。按界面提示：从下方拖入卡片、空格 + 拖动平移、Ctrl + 滚轮缩放：
 
-![Obsidian Canvas 画布与右侧关系图谱](https://img.xuanyuan.dev/docker/blog/obsidian-5.webp)
+![Obsidian Canvas 画布与右侧关系图谱](https://assets.xuanyuan.me/docker/blog/obsidian-5.webp)
 
 *图 7：Canvas 与关系图谱同屏*
 
@@ -302,7 +302,7 @@ Error: This application requires a secure connection
 
 左侧点**日记**相关入口，新建当日笔记（本文示例 `2026-08-07`）。图谱中对应节点会高亮：
 
-![Obsidian 日记笔记 2026-08-07 与关系图谱](https://img.xuanyuan.dev/docker/blog/obsidian-6.webp)
+![Obsidian 日记笔记 2026-08-07 与关系图谱](https://assets.xuanyuan.me/docker/blog/obsidian-6.webp)
 
 *图 8：日记笔记与图谱节点*
 
@@ -310,7 +310,7 @@ Error: This application requires a secure connection
 
 `Ctrl+P` 打开「选择命令…」，可搜索拆分、书签、保存等：
 
-![Obsidian 命令面板选择命令](https://img.xuanyuan.dev/docker/blog/obsidian-7.webp)
+![Obsidian 命令面板选择命令](https://assets.xuanyuan.me/docker/blog/obsidian-7.webp)
 
 *图 9：命令面板*
 
@@ -318,7 +318,7 @@ Error: This application requires a secure connection
 
 新建 Base / 表格视图后，可列出库内文件并做排序、筛选：
 
-![Obsidian 表格列出仓库文件并与图谱对照](https://img.xuanyuan.dev/docker/blog/obsidian-8.webp)
+![Obsidian 表格列出仓库文件并与图谱对照](https://assets.xuanyuan.me/docker/blog/obsidian-8.webp)
 
 *图 10：表格视图*
 
@@ -326,7 +326,7 @@ Error: This application requires a secure connection
 
 左侧点搜索图标，支持 `path:`、`file:`、`tag:` 等语法：
 
-![Obsidian 搜索选项语法说明](https://img.xuanyuan.dev/docker/blog/obsidian-10.webp)
+![Obsidian 搜索选项语法说明](https://assets.xuanyuan.me/docker/blog/obsidian-10.webp)
 
 *图 11：搜索选项*
 
@@ -340,7 +340,7 @@ Error: This application requires a secure connection
 
 CPU、内存、FPS、带宽、延迟：
 
-![Selkies 侧边栏统计信息 CPU 内存 FPS](https://img.xuanyuan.dev/docker/blog/obsidian-11.webp)
+![Selkies 侧边栏统计信息 CPU 内存 FPS](https://assets.xuanyuan.me/docker/blog/obsidian-11.webp)
 
 *图 12：统计信息*
 
@@ -348,7 +348,7 @@ CPU、内存、FPS、带宽、延迟：
 
 可开 **HiDPI**、抗锯齿，界面缩放调到 **150%**（高分屏更易读）：
 
-![Selkies 屏幕设置 HiDPI 与 150% 缩放](https://img.xuanyuan.dev/docker/blog/obsidian-12.webp)
+![Selkies 屏幕设置 HiDPI 与 150% 缩放](https://assets.xuanyuan.me/docker/blog/obsidian-12.webp)
 
 *图 13：屏幕设置*
 
@@ -356,7 +356,7 @@ CPU、内存、FPS、带宽、延迟：
 
 默认 **x264enc**、帧率 **60**、Video CRF **25**（与日志 `Initial Encoder: x264enc, Framerate: 60` 一致）。文字发糊可尝试 **Full Color 4:4:4**（更吃资源）：
 
-![Selkies 视频设置 x264enc 与帧率](https://img.xuanyuan.dev/docker/blog/obsidian-13.webp)
+![Selkies 视频设置 x264enc 与帧率](https://assets.xuanyuan.me/docker/blog/obsidian-13.webp)
 
 *图 14：视频设置*
 
@@ -364,7 +364,7 @@ CPU、内存、FPS、带宽、延迟：
 
 侧边栏提供服务器剪贴板、**上传 / 下载**，以及只读共享链接（本文示例 `https://192.168.1.10:3001/#shared`）：
 
-![Selkies 剪贴板文件传输与共享链接](https://img.xuanyuan.dev/docker/blog/obsidian-14.webp)
+![Selkies 剪贴板文件传输与共享链接](https://assets.xuanyuan.me/docker/blog/obsidian-14.webp)
 
 *图 15：剪贴板、文件互传与共享（HTTPS:3001）*
 

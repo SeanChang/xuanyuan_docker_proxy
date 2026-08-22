@@ -1,6 +1,6 @@
 # Milvus GUI ATTU Docker 容器化部署指南
 
-![Milvus GUI ATTU Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-attu.png)
+![Milvus GUI ATTU Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-attu.png)
 
 *分类: Docker部署教程 | 标签: attu,docker,部署教程 | 发布时间: 2025-12-06 16:05:23*
 
@@ -19,14 +19,14 @@ ATTU基于Docker容器化部署，首先需要确保目标服务器已安装Dock
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本执行完成后，可通过以下命令验证Docker是否安装成功：
 
 ```bash

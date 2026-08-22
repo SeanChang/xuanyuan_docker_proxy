@@ -1,6 +1,6 @@
 # BUILDKIT Docker 容器化部署指南
 
-![BUILDKIT Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-buildkit.png)
+![BUILDKIT Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-buildkit.png)
 
 *分类: Docker部署教程 | 标签: buildkit,docker,部署教程 | 发布时间: 2025-12-10 07:25:59*
 
@@ -19,14 +19,14 @@ BUILDKIT是一款高性能的容器构建工具，具备并发构建、高效缓
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 该脚本将自动完成Docker的安装、配置及启动，适用于主流Linux发行版。安装完成后，可通过`docker --version`命令验证Docker是否正常安装。
 
 

@@ -1,6 +1,6 @@
 # PERL Docker 容器化部署指南
 
-![PERL Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-perl.png)
+![PERL Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-perl.png)
 
 *分类: Docker部署教程 | 标签: perl,docker,部署教程 | 发布时间: 2025-11-08 12:26:11*
 
@@ -22,14 +22,14 @@ PERL（Practical Extraction and Reporting Language）是一种高级、通用、
 ```bash
 # 一键安装Docker环境（支持Ubuntu/Debian/CentOS等主流Linux发行版）
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 安装完成后，通过以下命令验证Docker是否正常运行：
 
 ```bash

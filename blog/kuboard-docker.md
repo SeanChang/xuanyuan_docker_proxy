@@ -1,6 +1,6 @@
 # KUBOARD Docker 容器化部署指南
 
-![KUBOARD Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-kuboard.png)
+![KUBOARD Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-kuboard.png)
 
 *分类: Docker部署教程 | 标签: kuboard,docker,部署教程 | 发布时间: 2025-11-16 05:32:07*
 
@@ -28,14 +28,14 @@ KUBOARD基于Docker容器运行，首先需要在目标服务器上安装Docker�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 注意：执行脚本需要root权限，安装过程中可能需要确认操作系统密码。脚本会自动处理Docker的安装、启动及开机自启配置。
 
 安装完成后，可通过以下命令验证Docker是否安装成功：
@@ -419,7 +419,7 @@ KUBOARD监控页面显示"无数据"或数据不更新。
 本文详细介绍了KUBOARD的Docker容器化部署方案，从环境准备、镜像拉取、容器部署到功能测试，提供了完整的实施步骤。通过轩辕镜像访问支持服务解决了国内网络环境下的镜像拉取问题，同时针对生产环境给出了安全加固、资源优化和故障排查建议，确保KUBOARD服务稳定可靠运行。
 
 **关键要点**：
-- 使用一键脚本`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`（备用地址1：`bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)`，备用地址2：`bash <(wget -qO- https://get.xuanyuan.me/docker.sh)`）快速部署Docker环境，自动配置轩辕镜像访问支持
+- 使用一键脚本`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`快速部署Docker环境，自动配置轩辕镜像访问支持
 - KUBOARD镜像（eipwork/kuboard）属于多段镜像名，通过命令`docker pull xxx.xuanyuan.run/eipwork/kuboard:latest`拉取
 - 容器部署需注意数据持久化（`-v /opt/kuboard/data:/data`）和自动重启配置（`--restart=always`）
 - 生产环境必须修改默认密码，建议启用HTTPS并限制访问来源

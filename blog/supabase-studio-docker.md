@@ -1,6 +1,6 @@
 # Supabase Studio 镜像拉取与 Docker 部署全指南
 
-![Supabase Studio 镜像拉取与 Docker 部署全指南](https://img.xuanyuan.dev/docker/blog/docker-supabase-studio.png)
+![Supabase Studio 镜像拉取与 Docker 部署全指南](https://assets.xuanyuan.me/docker/blog/docker-supabase-studio.png)
 
 *分类: Docker部署教程 | 标签: supabase,docker,部署教程 | 发布时间: 2025-10-15 08:00:52*
 
@@ -29,14 +29,14 @@ Supabase Studio是开源后端即服务平台Supabase的**图形化管理界面*
 若未安装Docker及Docker Compose，可通过轩辕镜像平台提供的一键脚本完成安装（支持主流Linux发行版，并自动配置镜像访问支持）：  
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 验证安装成功：  
 ```bash
 docker --version       # 显示Docker版本

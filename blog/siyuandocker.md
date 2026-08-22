@@ -1,6 +1,6 @@
 # SiYuan 思源笔记 Docker 部署终极指南：Windows+Linux 双平台
 
-![SiYuan 思源笔记 Docker 部署终极指南：Windows+Linux 双平台](https://img.xuanyuan.dev/docker/blog/docker-siyuan.png)
+![SiYuan 思源笔记 Docker 部署终极指南：Windows+Linux 双平台](https://assets.xuanyuan.me/docker/blog/docker-siyuan.png)
 
 *分类: Docker部署教程 | 标签: siyuan,docker,部署教程 | 发布时间: 2025-12-03 06:17:39*
 
@@ -23,15 +23,15 @@ SiYuan（思源笔记）是一款以"本地优先"为核心的个人知识管理
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
-> 脚本支持16种主流Linux发行版（含 openEuler、Huawei Cloud EulerOS (HCE)、Ubuntu、CentOS、Debian 等），执行过程需要root权限。
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
+> 脚本支持13种主流Linux发行版（Ubuntu、CentOS、Debian、openEuler等），执行过程需要root权限。
 
 ### Windows系统Docker环境安装
 
@@ -146,14 +146,14 @@ I 2026/04/26 16:23:24 serve.go:231: kernel [pid=1] http server [0.0.0.0:6806] is
 
 ## 访问与初始化
 
-![思源笔记授权码页面](https://img.xuanyuan.dev/docker/blog/docker-siyuan-1.png)
+![思源笔记授权码页面](https://assets.xuanyuan.me/docker/blog/docker-siyuan-1.png)
 
 1. 打开浏览器，访问：`http://你的服务器IP:8080`（Windows本地访问：`http://localhost:8080`）
 2. 输入你设置的**访问授权码**（这是第一层防护，不是登录密码）
 3. 首次进入后，在"设置 > 账号"中设置管理员账号和密码
 4. 开始使用思源笔记！
 
-![思源笔记首页](https://img.xuanyuan.dev/docker/blog/docker-siyuan-2.png)
+![思源笔记首页](https://assets.xuanyuan.me/docker/blog/docker-siyuan-2.png)
 
 ## 常见问题排查（99%的坑都在这里）
 

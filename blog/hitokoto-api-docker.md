@@ -1,6 +1,6 @@
 # Hitokoto API Docker 容器化部署指南
 
-![Hitokoto API Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-hitokoto.png)
+![Hitokoto API Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-hitokoto.png)
 
 *分类: Docker部署教程 | 标签: hitokoto,docker,部署教程 | 发布时间: 2025-12-02 03:23:34*
 
@@ -28,14 +28,14 @@ Hitokoto API 主要功能特性包括：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本将自动完成 Docker Engine、Docker Compose 的安装与配置，并启动 Docker 服务。安装完成后，可通过以下命令验证：
 
 ```bash

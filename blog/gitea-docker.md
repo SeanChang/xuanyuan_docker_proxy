@@ -1,6 +1,6 @@
 # gitea Docker 容器化部署指南
 
-![gitea Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-gitea.png)
+![gitea Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-gitea.png)
 
 *分类: Docker部署教程 | 标签: gitea,docker,部署教程 | 发布时间: 2025-12-02 08:00:17*
 
@@ -28,14 +28,14 @@ GITEA 容器化部署需依赖 Docker 环境，推荐使用以下一键安装脚
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 脚本支持主流 Linux 发行版（Ubuntu、Debian、CentOS、Rocky Linux 等），会自动处理系统依赖、添加官方源、安装最新稳定版 Docker 并配置服务自启动。
 
 

@@ -1,6 +1,6 @@
 # InfluxDB Docker 容器化部署指南
 
-![InfluxDB Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-influxdb.png)
+![InfluxDB Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-influxdb.png)
 
 *分类: Docker部署教程 | 标签: influxdb,docker,部署教程 | 发布时间: 2025-12-13 09:18:18*
 
@@ -20,14 +20,14 @@ INFLUXDB是一个专为实时分析工作负载设计的开源时序数据库平
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 执行完成后，可以通过以下命令验证Docker是否安装成功：
 
 ```bash

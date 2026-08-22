@@ -1,6 +1,6 @@
 # Transmission Docker 容器化部署指南
 
-![Transmission Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-transmission.png)
+![Transmission Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-transmission.png)
 
 *分类: Docker部署教程 | 标签: transmission,docker,部署教程 | 发布时间: 2025-12-14 12:25:46*
 
@@ -28,14 +28,14 @@ LinuxServer.io提供的 Transmission 容器具有以下特点：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本将自动完成Docker Engine、Docker Compose等组件的安装与配置，并启动Docker服务。安装完成后，可通过`docker --version`命令验证安装是否成功。
 
 

@@ -1,6 +1,6 @@
 # 一键部署私有笔记：Docker 跑 Memos，浏览器随手记
 
-![一键部署私有笔记：Docker 跑 Memos，浏览器随手记](https://img.xuanyuan.dev/docker/blog/memos.png)
+![一键部署私有笔记：Docker 跑 Memos，浏览器随手记](https://assets.xuanyuan.me/docker/blog/memos.png)
 
 *分类: Docker部署教程 | 标签: Memos,Docker,轩辕镜像,笔记,Markdown,私有化部署,部署教程 | 发布时间: 2026-06-28 05:31:45*
 
@@ -61,14 +61,14 @@ docker compose version
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多安装说明见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 ---
@@ -164,7 +164,7 @@ http://你的服务器IP:5230
 
 首次访问会进入 **创建账户** 页面。**第一个注册的用户自动成为站点管理员**（Memos 无固定默认账号密码）。
 
-![Memos 首次访问：创建账户页面，首个注册用户即为站点管理员](https://img.xuanyuan.dev/docker/blog/memos-1.png)
+![Memos 首次访问：创建账户页面，首个注册用户即为站点管理员](https://assets.xuanyuan.me/docker/blog/memos-1.png)
 
 填写用户名与密码，点击 **注册** 即可登录。
 
@@ -174,7 +174,7 @@ http://你的服务器IP:5230
 
 注册成功后会进入 Memos 主界面：左侧为日历、标签与导航；中间上方为 **「Any thoughts...」** 输入框，下方为时间线 feed。
 
-![Memos 登录后主界面：空时间线与「Any thoughts...」输入框](https://img.xuanyuan.dev/docker/blog/memos-2.png)
+![Memos 登录后主界面：空时间线与「Any thoughts...」输入框](https://assets.xuanyuan.me/docker/blog/memos-2.png)
 
 此时还没有任何 memo，会显示 **「No data found.」**，属正常状态。
 
@@ -182,7 +182,7 @@ http://你的服务器IP:5230
 
 默认界面为英文。点击左下角 **用户头像** → **Language** → 选择 **简体中文**，界面即可切换为中文。
 
-![Memos 切换语言：左下角用户菜单中的 Language 选项](https://img.xuanyuan.dev/docker/blog/memos-3.png)
+![Memos 切换语言：左下角用户菜单中的 Language 选项](https://assets.xuanyuan.me/docker/blog/memos-3.png)
 
 切换后，搜索框变为 **「搜索备忘录...」**，输入框提示变为 **「此刻的想法...」**，标签区提示 **「您可以通过输入 '#标签' 创建标签」**。
 
@@ -196,7 +196,7 @@ http://你的服务器IP:5230
 
 点击 **保存**。memo 会按时间线展示在下方，支持 **私有 / 公开** 可见性切换。
 
-![Memos 写第一条 memo：中文界面与时间线展示](https://img.xuanyuan.dev/docker/blog/memos-4.png)
+![Memos 写第一条 memo：中文界面与时间线展示](https://assets.xuanyuan.me/docker/blog/memos-4.png)
 
 **日常用法速记**：
 
@@ -217,7 +217,7 @@ http://你的服务器IP:5230
 | 添加位置 | 为 memo 附加地理位置 |
 | 更多 | 展开其他扩展项 |
 
-![Memos 输入框「+」菜单：Media、录制音频、文件、链接备忘录与添加位置](https://img.xuanyuan.dev/docker/blog/memos-6.png)
+![Memos 输入框「+」菜单：Media、录制音频、文件、链接备忘录与添加位置](https://assets.xuanyuan.me/docker/blog/memos-6.png)
 
 ### 3.9 捷径过滤器（可选）
 
@@ -229,7 +229,7 @@ Memos 支持用表达式创建 **捷径（Shortcut）**，快速筛选 pinned、
 | 近 1 小时 | `created_ts >= now() - 60 * 60` | 最近一小时内创建 |
 | 工作标签 | `tag in ["work"]` | 含指定标签 |
 
-![Memos 捷径过滤器：创建自定义筛选表达式](https://img.xuanyuan.dev/docker/blog/memos-5.png)
+![Memos 捷径过滤器：创建自定义筛选表达式](https://assets.xuanyuan.me/docker/blog/memos-5.png)
 
 ---
 

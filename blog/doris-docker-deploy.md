@@ -1,6 +1,6 @@
 # Docker 部署 Apache Doris 完整教程：快速搭建 OLAP 数据库
 
-![Docker 部署 Apache Doris 完整教程：快速搭建 OLAP 数据库](https://img.xuanyuan.dev/docker/blog/doris.webp)
+![Docker 部署 Apache Doris 完整教程：快速搭建 OLAP 数据库](https://assets.xuanyuan.me/docker/blog/doris.webp)
 
 *分类: Docker部署教程 | 标签: Apache Doris,Doris,Docker,轩辕镜像,OLAP,MPP,实时分析,私有化部署,部署教程 | 发布时间: 2026-07-22 02:43:06*
 
@@ -96,14 +96,14 @@ docker compose version
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 ### 2.1 部署前自检 AVX2（强烈建议）
@@ -389,25 +389,25 @@ http://<服务器IP>:8030/login
 
 用户名 `root`，密码初始为空（若已改密则填新密码），点 **Login**。
 
-![Doris Web 登录页 Username Password Login](https://img.xuanyuan.dev/docker/blog/doris-1.webp)
+![Doris Web 登录页 Username Password Login](https://assets.xuanyuan.me/docker/blog/doris-1.webp)
 
 *图 1：FE Web 登录页（`http://服务器IP:8030/login`），默认 `root` / 空密码*
 
 登录后可在 **System** 查看版本与硬件信息（版本类似 `doris-4.1.3-rc02`）：
 
-![Doris System 页显示版本 doris-4.1.3-rc02 与主机信息](https://img.xuanyuan.dev/docker/blog/doris-2.webp)
+![Doris System 页显示版本 doris-4.1.3-rc02 与主机信息](https://assets.xuanyuan.me/docker/blog/doris-2.webp)
 
 *图 2：System — 版本、主机名、内存与磁盘等环境信息*
 
 **System** 下还有类似 `/proc` 的 **System Info** 索引（`frontends`、`backends`、`dbs` 等），便于点选查看集群状态：
 
-![Doris System Info 列出 backends frontends dbs 等入口](https://img.xuanyuan.dev/docker/blog/doris-5.webp)
+![Doris System Info 列出 backends frontends dbs 等入口](https://assets.xuanyuan.me/docker/blog/doris-5.webp)
 
 *图 3：System Info — 集群诊断入口列表*
 
 打开 **Playground**，可在浏览器里写 SQL（左侧为库表树，中间为编辑器）：
 
-![Doris Playground 空白 SQL 编辑器](https://img.xuanyuan.dev/docker/blog/doris-3.webp)
+![Doris Playground 空白 SQL 编辑器](https://assets.xuanyuan.me/docker/blog/doris-3.webp)
 
 *图 4：Playground — 内置 SQL 编辑器*
 
@@ -419,31 +419,31 @@ SELECT host, join, alive FROM frontends()
 
 执行成功后可见 `Alive = true`：
 
-![Playground 执行 frontends 查询 Join Alive 均为 true](https://img.xuanyuan.dev/docker/blog/doris-4.webp)
+![Playground 执行 frontends 查询 Join Alive 均为 true](https://assets.xuanyuan.me/docker/blog/doris-4.webp)
 
 *图 5：Playground 查询 `frontends()`，Join / Alive 为 true*
 
 **Log** 页可在线查看 FE 日志（路径类似 `/opt/apache-doris/fe/log/fe.warn.log`）：
 
-![Doris Log 页查看 fe.warn.log](https://img.xuanyuan.dev/docker/blog/doris-6.webp)
+![Doris Log 页查看 fe.warn.log](https://assets.xuanyuan.me/docker/blog/doris-6.webp)
 
 *图 6：Log — 浏览器查看 FE 告警 / 错误日志*
 
 **QueryProfile** 可查看已完成查询画像（刚部署时常为空）：
 
-![Doris QueryProfile Finished Queries 暂无数据](https://img.xuanyuan.dev/docker/blog/doris-7.webp)
+![Doris QueryProfile Finished Queries 暂无数据](https://assets.xuanyuan.me/docker/blog/doris-7.webp)
 
 *图 7：QueryProfile — 已完成查询列表（初期可为空）*
 
 **Session** 查看当前会话：
 
-![Doris Session Info 当前无活跃会话](https://img.xuanyuan.dev/docker/blog/doris-8.webp)
+![Doris Session Info 当前无活跃会话](https://assets.xuanyuan.me/docker/blog/doris-8.webp)
 
 *图 8：Session — 会话列表*
 
 **Configuration** 可浏览 FE 配置项（条目很多，便于核对参数）：
 
-![Doris Configuration 配置项列表](https://img.xuanyuan.dev/docker/blog/doris-9.webp)
+![Doris Configuration 配置项列表](https://assets.xuanyuan.me/docker/blog/doris-9.webp)
 
 *图 9：Configuration — FE 配置一览*
 

@@ -1,6 +1,6 @@
 # 基于 Docker 部署 Alpine Linux：从入门到实践
 
-![基于 Docker 部署 Alpine Linux：从入门到实践](https://img.xuanyuan.dev/docker/blog/docker-alpine-linux.png)
+![基于 Docker 部署 Alpine Linux：从入门到实践](https://assets.xuanyuan.me/docker/blog/docker-alpine-linux.png)
 
 *分类: Docker部署教程 | 标签: alpine-linux,docker,部署教程 | 发布时间: 2025-10-10 03:04:36*
 
@@ -29,14 +29,14 @@
 ```bash
 # 一键安装Docker、Docker Compose并配置轩辕加速
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 执行完脚本后，用下面的命令验证是否安装成功：
 ```bash
 # 查看Docker版本，有输出则说明安装成功

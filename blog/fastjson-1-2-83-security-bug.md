@@ -1,6 +1,6 @@
 # 【漏洞预警】Fastjson 远程代码执行
 
-![【漏洞预警】Fastjson 远程代码执行](https://img.xuanyuan.dev/docker/blog/docker-security-advisory.png)
+![【漏洞预警】Fastjson 远程代码执行](https://assets.xuanyuan.me/docker/blog/docker-security-advisory.png)
 
 *分类: 安全公告 | 标签: Fastjson,Java,RCE,安全公告,漏洞预警 | 发布时间: 2026-07-23 11:23:09*
 

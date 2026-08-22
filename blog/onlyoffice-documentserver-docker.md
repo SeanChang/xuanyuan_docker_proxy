@@ -1,6 +1,6 @@
 # onlyoffice Ubuntu Docker 容器化部署指南
 
-![onlyoffice Ubuntu Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/onlyoffice.png)
+![onlyoffice Ubuntu Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/onlyoffice.png)
 
 *分类: Docker部署教程 | 标签: onlyoffice-documentserver,docker,部署教程 | 发布时间: 2025-12-10 06:46:38*
 
@@ -37,14 +37,14 @@
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 验证：
 
 ```bash
@@ -141,7 +141,7 @@ http://YOUR_SERVER_IP:8080/welcome/
 
 若看到 **ONLYOFFICE Docs Community Edition installed** 欢迎页，说明 Document Server 主体已部署成功：
 
-![ONLYOFFICE 欢迎页：Community Edition 安装成功，含 JWT 说明](https://img.xuanyuan.dev/docker/blog/onlyoffice-1.png)
+![ONLYOFFICE 欢迎页：Community Edition 安装成功，含 JWT 说明](https://assets.xuanyuan.me/docker/blog/onlyoffice-1.png)
 
 从 7.2 版本起 **JWT 默认开启**。对接 Nextcloud 等应用时需要 JWT Secret，可在容器内执行：
 
@@ -192,7 +192,7 @@ docker exec onlyoffice-documentserver supervisorctl start ds:example
 
 欢迎页下方会出现 **GO TO TEST EXAMPLE** 按钮，或直接访问 `http://YOUR_SERVER_IP:8080/example/`：
 
-![欢迎页 Testing before integration 与 GO TO TEST EXAMPLE](https://img.xuanyuan.dev/docker/blog/onlyoffice-2.png)
+![欢迎页 Testing before integration 与 GO TO TEST EXAMPLE](https://assets.xuanyuan.me/docker/blog/onlyoffice-2.png)
 
 > **安全提示**：example 仅供测试，**生产环境请勿开启**。正式上线前应关闭 `EXAMPLE_ENABLED` 并禁用 example 服务。
 
@@ -249,7 +249,7 @@ docker exec onlyoffice-documentserver curl -s http://127.0.0.1:8000/info/info.js
 
 **现象**：打开 `/example/` 出现模板错误页，`languages.forEach is not a function`；example 日志大量 `Request to meta/config timed out`。
 
-![languages.forEach is not a function 报错页](https://img.xuanyuan.dev/docker/blog/onlyoffice-3.png)
+![languages.forEach is not a function 报错页](https://assets.xuanyuan.me/docker/blog/onlyoffice-3.png)
 
 **因果链**：
 
@@ -351,7 +351,7 @@ http://YOUR_SERVER_IP:8080/example/
 
 应看到 **Welcome to ONLYOFFICE Docs!** 测试首页，可新建 Document / Spreadsheet / Presentation，或上传文件：
 
-![example 列表页 Welcome to ONLYOFFICE Docs](https://img.xuanyuan.dev/docker/blog/onlyoffice-4.png)
+![example 列表页 Welcome to ONLYOFFICE Docs](https://assets.xuanyuan.me/docker/blog/onlyoffice-4.png)
 
 若仍报错，请再次检查 example 日志：
 
@@ -487,25 +487,25 @@ http://YOUR_SERVER_IP:88/example/
 
 上传 docx 或新建文档，应出现 **Loading the file**、**Conversion** 均成功，可点击 **EDIT** / **VIEW**：
 
-![上传 docx 转换成功，可 EDIT / VIEW](https://img.xuanyuan.dev/docker/blog/onlyoffice-5.png)
+![上传 docx 转换成功，可 EDIT / VIEW](https://assets.xuanyuan.me/docker/blog/onlyoffice-5.png)
 
 上传成功后，example 首页会切换到 **Your documents** 文档列表，已传文件出现在表格中，可对每个文件进行编辑、预览或删除：
 
-![example Your documents 文档列表](https://img.xuanyuan.dev/docker/blog/onlyoffice-7.png)
+![example Your documents 文档列表](https://assets.xuanyuan.me/docker/blog/onlyoffice-7.png)
 
 点击 **EDIT** 进入 Word 在线编辑器，文档内容正常加载，可修改文字、使用左侧评论/聊天等协作功能（界面为深色主题）：
 
-![Word 在线编辑：测试报告 docx 正常打开](https://img.xuanyuan.dev/docker/blog/onlyoffice-6.png)
+![Word 在线编辑：测试报告 docx 正常打开](https://assets.xuanyuan.me/docker/blog/onlyoffice-6.png)
 
 除 docx 外，**Presentation** 同样可在线编辑。新建或上传 `.pptx` 后，幻灯片、表格等内容在浏览器中正常渲染：
 
-![Presentation 在线编辑：工作汇报 pptx](https://img.xuanyuan.dev/docker/blog/onlyoffice-8.png)
+![Presentation 在线编辑：工作汇报 pptx](https://assets.xuanyuan.me/docker/blog/onlyoffice-8.png)
 
 命令行验证编辑器页是否已替换 api.js 地址（反代 + sub_filter 生效后）：
 
 在 **Your documents** 列表中，还可对已有文档**一键转换格式**。点击文件行的转换按钮，在 **Converting file** 对话框中选择目标格式（如 PDF、TXT、EPUB、MD、ODT、RTF、PNG 等），转换完成后可 **DOWNLOAD** 下载、**VIEW** 预览或 **EDIT** 继续编辑：
 
-![一键转换文档格式：docx 转 TXT / PDF 等](https://img.xuanyuan.dev/docker/blog/onlyoffice-9.png)
+![一键转换文档格式：docx 转 TXT / PDF 等](https://assets.xuanyuan.me/docker/blog/onlyoffice-9.png)
 
 ```bash
 curl -s "http://YOUR_SERVER_IP:88/example/editor?mode=view&fileName=test.docx&userid=uid-1" \
@@ -588,5 +588,5 @@ docker stop onlyoffice-documentserver && docker rm onlyoffice-documentserver
 - [ONLYOFFICE Docker-DocumentServer](https://github.com/ONLYOFFICE/Docker-DocumentServer)  
 - [onlyoffice/documentserver 镜像页](https://xuanyuan.cloud/zh/r/onlyoffice/documentserver)  
 - [轩辕镜像首页](https://xuanyuan.cloud)  
-- [Docker 一键安装脚本](https://xuanyuan.cloud/docker.sh)（[备用地址1](https://get.xuanyuan.dev/docker.sh)、[备用地址2](https://get.xuanyuan.me/docker.sh)）  
+- [Docker 一键安装脚本](https://xuanyuan.cloud/docker.sh)  
 

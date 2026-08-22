@@ -1,6 +1,6 @@
 # Docker in Docker 容器化部署指南
 
-![Docker in Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-docker.png)
+![Docker in Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-docker.png)
 
 *分类: Docker部署教程 | 标签: docker,部署教程 | 发布时间: 2025-12-03 06:59:33*
 
@@ -20,14 +20,14 @@ DOCKER（Docker in Docker，简称DinD）是一种特殊的容器化方案，允
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本将自动完成以下操作：
 - 安装最新稳定版Docker Engine
 - 配置Docker服务自启动

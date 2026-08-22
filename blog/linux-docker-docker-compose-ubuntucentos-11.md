@@ -1,27 +1,27 @@
 # 手把手教你在 Linux 上安装 Docker 与 Docker Compose（支持 Ubuntu、CentOS 等 11 个发行版） 
 
-![手把手教你在 Linux 上安装 Docker 与 Docker Compose（支持 Ubuntu、CentOS 等 11 个发行版） ](https://img.xuanyuan.dev/docker/blog/docker-linux.png)
+![手把手教你在 Linux 上安装 Docker 与 Docker Compose（支持 Ubuntu、CentOS 等 11 个发行版） ](https://assets.xuanyuan.me/docker/blog/docker-linux.png)
 
 *分类: Docker部署教程 | 标签: docker Compose,docker,安装教程 | 发布时间: 2025-10-26 03:17:40*
 
-> 该脚本支持 16 种 Linux 发行版，包括国产与信创环境（openEuler、Huawei Cloud EulerOS (HCE)、Anolis OS、OpenCloudOS、Alinux、统信 UOS、深度 Deepin 等），一键安装 docker、docker-compose 并自动配置国内镜像访问支持源。
+> 该脚本支持 11 种 Linux 发行版，包括国产操作系统（Anolis OS、OpenCloudOS、Alinux），一键安装 docker、docker-compose 并自动配置国内镜像访问支持源。
 
 # 推荐方案：一键安装配置脚本
-该脚本支持 16 种 Linux 发行版，包括国产与信创环境（openEuler、Huawei Cloud EulerOS (HCE)、Anolis OS、OpenCloudOS、Alinux、统信 UOS、深度 Deepin 等），一键安装 docker、docker-compose 并自动配置国内镜像访问支持源。
+该脚本支持 11 种 Linux 发行版，包括国产操作系统（Anolis OS、OpenCloudOS、Alinux），一键安装 docker、docker-compose 并自动配置国内镜像访问支持源。
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ## 脚本特性与优势
-- ✅ 支持 16 种主流发行版：统信 UOS、深度 Deepin、openEuler、Huawei Cloud EulerOS (HCE)、OpenCloudOS、Anolis OS (龙蜥)、Alinux (阿里云)、Kylin Linux、Fedora、Rocky Linux、AlmaLinux、Ubuntu、Debian、CentOS（8+ / Stream）、RHEL、Oracle Linux
-- ✅ 国产与信创环境完整支持：深度适配 openEuler、Huawei Cloud EulerOS (HCE)、Anolis OS、OpenCloudOS、Alinux、统信 UOS、深度 Deepin 等，支持版本自动识别和最优配置
+- ✅ 支持 11 种主流发行版：OpenCloudOS、Anolis OS (龙蜥)、Alinux (阿里云)、Fedora、Rocky Linux、AlmaLinux、Ubuntu、Debian、CentOS、RHEL、Oracle Linux
+- ✅ 国产操作系统完整支持：深度适配国产操作系统（Anolis OS、OpenCloudOS、Alinux），支持版本自动识别和最优配置
 - ✅ 多镜像源智能切换：内置阿里云、腾讯云、华为云、中科大、清华等 6+ 国内镜像源，自动检测并选择最快源
 - ✅ 老版本系统特殊处理：支持 Ubuntu 16.04、Debian 9/10 等已过期系统，自动配置兼容的安装方案
 - ✅ 双重安装保障：包管理器安装失败时自动切换到二进制安装，确保安装成功率
@@ -30,18 +30,13 @@ bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 脚本已开源：[GitHub 源码](https://github.com/)
 
 ## 支持的操作系统
-该一键安装脚本支持 16 种主流 Linux 发行版，包括国产与信创环境、CentOS 替代品和传统发行版：
+该一键安装脚本支持 11 种主流 Linux 发行版，包括国产操作系统、CentOS 替代品和传统发行版：
 
 | 操作系统分类       | 操作系统名称               | 版本          | 支持状态 | 说明                                  |
 |--------------------|----------------------------|---------------|----------|---------------------------------------|
-| 🇨🇳 国产操作系统    | openEuler (欧拉)           | 20.03+, 22.03+, 24.03+ | ✅ | 华为开源，CentOS 兼容 |
-|                    | Huawei Cloud EulerOS (HCE) | 1.1、2.0+     | ✅        | 华为云欧拉，ID=hce；2.x→CentOS 8 源，1.x→CentOS 7 |
-|                    | OpenCloudOS                | 9.x           | ✅        | 腾讯开源，CentOS 9 兼容               |
+| 🇨🇳 国产操作系统    | OpenCloudOS                | 9.x           | ✅        | 腾讯开源，CentOS 9 兼容               |
 |                    | Anolis OS (龙蜥)           | 7.x, 8.x      | ✅        | 阿里云支持，RHEL 兼容                 |
 |                    | Alinux (阿里云)            | 2.x, 3.x      | ✅        | 阿里云 ECS 默认系统                   |
-|                    | Kylin Linux (银河麒麟)     | V10           | ✅        | 国产操作系统，RHEL 兼容               |
-|                    | 统信 UOS                   | V20+          | ✅        | 与麒麟系同源兼容路径                  |
-|                    | Deepin (深度)              | 20+           | ✅        | 基于 Debian，按发行代号映射仓库       |
 | 🌍 CentOS 替代品（企业级） | Rocky Linux                | 8.x, 9.x      | ✅        | 10年支持，RHEL 兼容                   |
 |                    | AlmaLinux                  | 8.x, 9.x      | ✅        | 10年支持，RHEL 兼容                   |
 | 🔄 创新发行版      | Fedora                     | 34+           | ✅        | Red Hat 上游，最新特性                |
@@ -90,9 +85,9 @@ sudo journalctl -u docker.service
 
 ### 常见问题解答
 #### 这个安装脚本支持哪些 Linux 发行版？
-该脚本支持 16 种主流 Linux 发行版，会自动检测系统类型并选择最优安装方案：
+该脚本支持 11 种主流 Linux 发行版，会自动检测系统类型并选择最优安装方案：
 
-🇨🇳 国产与信创环境（含 openEuler、HCE、UOS、Deepin 等）：
+🇨🇳 国产操作系统（3种）：
 - OpenCloudOS（腾讯开源）
 - Anolis OS（龙蜥操作系统，阿里云支持）
 - Alinux（Alibaba Cloud Linux，阿里云官方）
@@ -124,12 +119,12 @@ sudo journalctl -u docker.service
 - 多镜像源智能切换：内置阿里云、腾讯云、华为云、中科大、清华、网易等国内镜像源，自动检测并选择最快源
 - 双重安装保障：包管理器失败时自动切换到二进制安装，确保安装成功
 - 老系统兼容处理：对 Ubuntu 16.04、Debian 9/10 等已过期系统提供特殊兼容方案
-- 国产与信创深度适配：完整支持 openEuler、Huawei Cloud EulerOS (HCE)、Anolis OS、OpenCloudOS、Alinux、统信 UOS、深度 Deepin 等
+- 国产系统深度适配：完整支持 Anolis OS、OpenCloudOS、Alinux 等国产操作系统
 - 自动配置加速：安装完成后自动配置轩辕镜像访问支持，无需手动设置
 - 跨平台友好：检测到 macOS/Windows 时提供适合的 Docker Desktop 安装指引
 
 #### 支持国产操作系统吗？
-完整支持！深度适配 openEuler、Huawei Cloud EulerOS (HCE)、Anolis OS、OpenCloudOS、Alinux、统信 UOS、深度 Deepin、Kylin 等国产与信创环境：
+完整支持！深度适配了 3 种主流国产操作系统：
 - Anolis OS（龙蜥操作系统）：支持 7.x 和 8.x 版本，自动识别并使用对应的 CentOS 仓库
 - OpenCloudOS（腾讯开源）：支持 9.x 版本，使用优化的 CentOS 9 兼容源
 - Alinux（阿里云 Linux）：支持 2.x 和 3.x 版本，基于 Anolis OS 的商业版，阿里云 ECS 默认系统

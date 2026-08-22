@@ -1,6 +1,6 @@
 # 手把手教你用 Docker 部署 Python
 
-![手把手教你用 Docker 部署 Python](https://img.xuanyuan.dev/docker/blog/docker-python.png)
+![手把手教你用 Docker 部署 Python](https://assets.xuanyuan.me/docker/blog/docker-python.png)
 
 *分类: Docker部署教程 | 标签: python,docker,部署教程 | 发布时间: 2025-10-03 07:06:23*
 
@@ -17,14 +17,14 @@
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ---
 
 ### 手把手教你用 Docker 部署 Python

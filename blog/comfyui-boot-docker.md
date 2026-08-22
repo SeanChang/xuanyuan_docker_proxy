@@ -1,6 +1,6 @@
 # ComfyUI Docker 镜像部署指南
 
-![ComfyUI Docker 镜像部署指南](https://img.xuanyuan.dev/docker/blog/docker-comfyui.png)
+![ComfyUI Docker 镜像部署指南](https://assets.xuanyuan.me/docker/blog/docker-comfyui.png)
 
 *分类: Docker部署教程 | 标签: comfyui,人工智能,部署教程,Stable Diffusion | 发布时间: 2025-12-31 06:41:21*
 
@@ -43,14 +43,14 @@
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本执行完成后，通过以下命令验证 Docker 是否安装成功：
 
 ```bash

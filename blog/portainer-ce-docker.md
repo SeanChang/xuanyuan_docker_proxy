@@ -1,6 +1,6 @@
 # PORTAINER-CE Docker 容器化部署指南
 
-![PORTAINER-CE Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-portainer-ce.png)
+![PORTAINER-CE Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-portainer-ce.png)
 
 *分类: Docker部署教程 | 标签: portainer,docker,部署教程 | 发布时间: 2025-11-09 17:21:36*
 
@@ -21,14 +21,14 @@ PORTAINER-CE基于Docker容器运行，需先部署Docker环境。推荐使用�
 ```bash
 # 一键安装Docker环境（包含Docker Engine、Docker CLI、Docker Compose）
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本执行过程中需保持网络连接，根据系统提示完成安装。安装完成后，可通过以下命令验证Docker是否正常运行：
 
 ```bash

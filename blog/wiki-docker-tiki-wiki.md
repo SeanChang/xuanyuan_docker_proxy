@@ -1,6 +1,6 @@
 # 想自建 Wiki 与知识库？Docker 部署 Tiki Wiki，浏览器就能协作
 
-![想自建 Wiki 与知识库？Docker 部署 Tiki Wiki，浏览器就能协作](https://img.xuanyuan.dev/docker/blog/tikiwiki.png)
+![想自建 Wiki 与知识库？Docker 部署 Tiki Wiki，浏览器就能协作](https://assets.xuanyuan.me/docker/blog/tikiwiki.png)
 
 *分类: Docker部署教程 | 标签: Tiki Wiki,Docker,轩辕镜像,CMS, Wiki,知识库,私有化部署,部署教程 | 发布时间: 2026-07-08 04:09:44*
 
@@ -65,14 +65,14 @@ docker compose version
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多安装说明见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。若 `docker compose` 不可用，见文末 **FAQ Q1**。
 
 **镜像版本对照**：
@@ -244,7 +244,7 @@ http://192.168.1.18:8080
 
 首次进入安装页，会先出现 **Security Precaution** 页，要求输入**数据库用户名和密码**以验证你是站点管理员。
 
-![Tiki 安装向导 Security Precaution 页：填写数据库用户名 tiki 与密码](https://img.xuanyuan.dev/docker/blog/tikiwiki-1.png)
+![Tiki 安装向导 Security Precaution 页：填写数据库用户名 tiki 与密码](https://assets.xuanyuan.me/docker/blog/tikiwiki-1.png)
 
 *图 1：Security Precaution 页——此处只填数据库凭据，不是站点管理员账号*
 
@@ -261,13 +261,13 @@ http://192.168.1.18:8080
 
 进入正式安装向导 **Tiki Installer 27.5**，第一步为 Welcome。
 
-![Tiki Installer 27.5 Welcome 页，默认语言 English](https://img.xuanyuan.dev/docker/blog/tikiwiki-2.png)
+![Tiki Installer 27.5 Welcome 页，默认语言 English](https://assets.xuanyuan.me/docker/blog/tikiwiki-2.png)
 
 *图 2：Welcome 页，可选择安装语言*
 
 在 **Select your language** 下拉框中选择 **Simplified Chinese（简体中文, cn）**：
 
-![选择简体中文作为安装语言](https://img.xuanyuan.dev/docker/blog/tikiwiki-3.png)
+![选择简体中文作为安装语言](https://assets.xuanyuan.me/docker/blog/tikiwiki-3.png)
 
 *图 3：语言选择为简体中文*
 
@@ -277,7 +277,7 @@ http://192.168.1.18:8080
 
 阅读 LGPL 许可协议，点击 **Continue** 接受。
 
-![License 许可协议页](https://img.xuanyuan.dev/docker/blog/tikiwiki-4.png)
+![License 许可协议页](https://assets.xuanyuan.me/docker/blog/tikiwiki-4.png)
 
 *图 4：License 页，Tiki 基于 LGPL 许可发布*
 
@@ -285,7 +285,7 @@ http://192.168.1.18:8080
 
 Tiki 自动检测 PHP 内存等环境。本文实测 **Memory** 检测通过（PHP `memory_limit` 128 MB）。
 
-![系统要求检测：Memory 128 MB 通过](https://img.xuanyuan.dev/docker/blog/tikiwiki-5.png)
+![系统要求检测：Memory 128 MB 通过](https://assets.xuanyuan.me/docker/blog/tikiwiki-5.png)
 
 *图 5：系统要求检测通过；Mail 测试可选，不影响安装*
 
@@ -295,7 +295,7 @@ Tiki 自动检测 PHP 内存等环境。本文实测 **Memory** 检测通过（P
 
 因 Compose 中已配置 `TIKI_DB_*` 环境变量，Tiki 会自动写入 `db/local.php`，此步通常显示 **Success**：
 
-![数据库连接成功：Tiki found an existing database connection，Database name tikiwiki](https://img.xuanyuan.dev/docker/blog/tikiwiki-6.png)
+![数据库连接成功：Tiki found an existing database connection，Database name tikiwiki](https://assets.xuanyuan.me/docker/blog/tikiwiki-6.png)
 
 *图 6：检测到已有数据库连接，库名 tikiwiki*
 
@@ -305,13 +305,13 @@ Tiki 自动检测 PHP 内存等环境。本文实测 **Memory** 检测通过（P
 
 选择数据库引擎 **InnoDB**（默认），点击黄色 **安装** 按钮。
 
-![选择 InnoDB 引擎并点击安装](https://img.xuanyuan.dev/docker/blog/tikiwiki-7.png)
+![选择 InnoDB 引擎并点击安装](https://assets.xuanyuan.me/docker/blog/tikiwiki-7.png)
 
 *图 7：确认 InnoDB 后点击「安装」*
 
 安装过程会创建数据表，进度条从 0% 逐步增加（约 945 条 SQL，需等待 1～3 分钟）：
 
-![Database Installation 进度：Table creation status 10%](https://img.xuanyuan.dev/docker/blog/tikiwiki-8.png)
+![Database Installation 进度：Table creation status 10%](https://assets.xuanyuan.me/docker/blog/tikiwiki-8.png)
 
 *图 8：数据库表创建进行中，请耐心等待*
 
@@ -319,7 +319,7 @@ Tiki 自动检测 PHP 内存等环境。本文实测 **Memory** 检测通过（P
 
 出现绿色 **Installation complete** 表示数据库安装成功。安装程序提示：**首次安装的管理员账号为 `admin`，临时密码为 `admin`**。
 
-![Installation complete：admin 用户临时密码 admin，945 SQL queries 成功](https://img.xuanyuan.dev/docker/blog/tikiwiki-9.png)
+![Installation complete：admin 用户临时密码 admin，945 SQL queries 成功](https://assets.xuanyuan.me/docker/blog/tikiwiki-9.png)
 
 *图 9：安装完成，临时管理员 admin / admin（首次登录须改密）*
 
@@ -329,7 +329,7 @@ Tiki 自动检测 PHP 内存等环境。本文实测 **Memory** 检测通过（P
 
 配置站点基本信息。**Server domain name** 不确定时**留空**（填错可能导致无法访问）。**浏览器标题** 可改为 `My Tiki` 或你的站点名。
 
-![一般设置：Server domain 留空，浏览器标题 My Tiki](https://img.xuanyuan.dev/docker/blog/tikiwiki-10.png)
+![一般设置：Server domain 留空，浏览器标题 My Tiki](https://assets.xuanyuan.me/docker/blog/tikiwiki-10.png)
 
 *图 10：一般设置——域名不确定时留空*
 
@@ -339,7 +339,7 @@ Tiki 自动检测 PHP 内存等环境。本文实测 **Memory** 检测通过（P
 
 阅读安全更新订阅、向导使用等提示，点击 **Continue**。
 
-![Last Notes 最后说明页](https://img.xuanyuan.dev/docker/blog/tikiwiki-11.png)
+![Last Notes 最后说明页](https://assets.xuanyuan.me/docker/blog/tikiwiki-11.png)
 
 *图 11：Last Notes，建议订阅安全更新通知*
 
@@ -347,7 +347,7 @@ Tiki 自动检测 PHP 内存等环境。本文实测 **Memory** 检测通过（P
 
 显示 **Ready to run**，安装完成。点击蓝色 **Enter Tiki and Lock Installer（Recommended）** 进入站点并锁定安装程序（**推荐**；橙色按钮不锁定安装程序，有安全风险）。
 
-![Enter Your Tiki：Ready to run，推荐 Enter Tiki and Lock Installer](https://img.xuanyuan.dev/docker/blog/tikiwiki-12.png)
+![Enter Your Tiki：Ready to run，推荐 Enter Tiki and Lock Installer](https://assets.xuanyuan.me/docker/blog/tikiwiki-12.png)
 
 *图 12：进入 Tiki 并锁定安装程序（推荐）*
 
@@ -357,13 +357,13 @@ Tiki 自动检测 PHP 内存等环境。本文实测 **Memory** 检测通过（P
 
 点击「Enter Tiki and Lock Installer」后，系统要求为 `admin` 设置新密码（安装时的临时密码 `admin` 不能长期使用）。
 
-![Set password：admin 用户须设置新密码与邮箱](https://img.xuanyuan.dev/docker/blog/tikiwiki-13.png)
+![Set password：admin 用户须设置新密码与邮箱](https://assets.xuanyuan.me/docker/blog/tikiwiki-13.png)
 
 *图 13：首次登录强制改密——填写新密码、重复密码与邮箱后点 Apply*
 
 改密成功后进入 **Tiki Setup** 引导页，显示 **Congratulations! You now have a working instance of Tiki 27.5**。
 
-![Tiki Setup 引导页：Congratulations，working instance of Tiki 27.5](https://img.xuanyuan.dev/docker/blog/tikiwiki-14.png)
+![Tiki Setup 引导页：Congratulations，working instance of Tiki 27.5](https://assets.xuanyuan.me/docker/blog/tikiwiki-14.png)
 
 *图 14：Tiki Setup 引导页，可立即使用或运行配置向导*
 
@@ -379,7 +379,7 @@ Tiki 提供 **Configuration Profiles Wizard**，可一键应用预设场景（�
 
 在 Tiki Setup 页点击 **Start the Wizardry**，或从 **Featured Site Configurations** 选择模板。本文实测选择 **Company Intranet（公司内网）**：
 
-![Featured Site Configurations：Collaborative Community 与 Company Intranet](https://img.xuanyuan.dev/docker/blog/tikiwiki-15.png)
+![Featured Site Configurations：Collaborative Community 与 Company Intranet](https://assets.xuanyuan.me/docker/blog/tikiwiki-15.png)
 
 *图 15：Featured Site Configurations，选择公司内网等预设场景*
 
@@ -387,7 +387,7 @@ Tiki 提供 **Configuration Profiles Wizard**，可一键应用预设场景（�
 
 也可从管理后台进入 **Profiles** 页面浏览并应用配置模板：
 
-![管理后台 Profiles 页：Preference Filters 与模块图标网格](https://img.xuanyuan.dev/docker/blog/tikiwiki-16.png)
+![管理后台 Profiles 页：Preference Filters 与模块图标网格](https://assets.xuanyuan.me/docker/blog/tikiwiki-16.png)
 
 *图 16：管理后台 Profiles 页；顶部可能提示发件邮箱未设置、版本升级建议*
 
@@ -395,7 +395,7 @@ Tiki 提供 **Configuration Profiles Wizard**，可一键应用预设场景（�
 
 选择 **Company_Intranet_21** Profile，点击 **Apply Now**，在确认框点 **OK**：
 
-![Apply the profile Company_Intranet_21 确认对话框](https://img.xuanyuan.dev/docker/blog/tikiwiki-17.png)
+![Apply the profile Company_Intranet_21 确认对话框](https://assets.xuanyuan.me/docker/blog/tikiwiki-17.png)
 
 *图 17：确认应用 Company_Intranet_21 Profile*
 
@@ -403,7 +403,7 @@ Tiki 提供 **Configuration Profiles Wizard**，可一键应用预设场景（�
 
 Profile 应用成功后，首页标题变为 **Our Intranet**，顶部出现成功提示，左侧 **System Menu** 已启用 Wiki、博客、论坛、Tracker、文件库等模块：
 
-![公司内网首页 Our Intranet：Profile applied successfully](https://img.xuanyuan.dev/docker/blog/tikiwiki-18.png)
+![公司内网首页 Our Intranet：Profile applied successfully](https://assets.xuanyuan.me/docker/blog/tikiwiki-18.png)
 
 *图 18：公司内网 Profile 应用成功，Wiki / 论坛 / Tracker 等模块已就绪*
 

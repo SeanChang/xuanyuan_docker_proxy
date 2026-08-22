@@ -1,6 +1,6 @@
 # 2026 年 8 月 Docker 国内镜像加速配置指南：稳定拉取与部署落地
 
-![2026 年 8 月 Docker 国内镜像加速配置指南：稳定拉取与部署落地](https://img.xuanyuan.dev/docker/blog/docker-2026-8.webp)
+![2026 年 8 月 Docker 国内镜像加速配置指南：稳定拉取与部署落地](https://assets.xuanyuan.me/docker/blog/docker-2026-8.webp)
 
 *分类: Docker部署教程 | 标签: Docker,镜像加速,轩辕镜像,containerd,Kubernetes,Podman,Docker部署教程 | 发布时间: 2026-08-01 04:40:34*
 
@@ -192,24 +192,22 @@ docker pull docker.xuanyuan.me/nginx:latest
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 #### 生产环境（先审阅）
 
 ```bash
 wget https://xuanyuan.cloud/docker.sh -O docker-install.sh
-# 备用地址1：wget https://get.xuanyuan.dev/docker.sh -O docker-install.sh
-# 备用地址2：wget https://get.xuanyuan.me/docker.sh -O docker-install.sh
 less docker-install.sh
 bash docker-install.sh
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 装好后仍建议按第三节用**显式域名**拉取，并完成专业版登录或专属域配置。脚本源码参考：[xuanyuan_docker_proxy](https://github.com/SeanChang/xuanyuan_docker_proxy)。
 
 ---

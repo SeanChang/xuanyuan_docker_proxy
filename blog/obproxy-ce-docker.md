@@ -1,6 +1,6 @@
 # OBPROXY-CE Docker 容器化部署指南
 
-![OBPROXY-CE Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-oceanbase-obproxy-ce.png)
+![OBPROXY-CE Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-oceanbase-obproxy-ce.png)
 
 *分类: Docker部署教程 | 标签: obproxy-ce,docker,部署教程 | 发布时间: 2025-11-26 05:50:11*
 
@@ -21,14 +21,14 @@ OBPROXY-CE容器化部署依赖Docker引擎，以下是基于Linux系统的一�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 执行上述命令后，脚本将自动完成Docker引擎的安装、启动及开机自启配置。安装完成后，可通过以下命令验证Docker是否正常运行：
 
 ```bash

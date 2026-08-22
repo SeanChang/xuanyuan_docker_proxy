@@ -1,6 +1,6 @@
 # 用Docker部署RabbitMQ的踩坑实录：从折腾2小时到10分钟搞定
 
-![用Docker部署RabbitMQ的踩坑实录：从折腾2小时到10分钟搞定](https://img.xuanyuan.dev/docker/blog/docker-RabbitMQ.png)
+![用Docker部署RabbitMQ的踩坑实录：从折腾2小时到10分钟搞定](https://assets.xuanyuan.me/docker/blog/docker-RabbitMQ.png)
 
 *分类: Docker部署教程 | 标签: rabbitmq,docker,部署教程 | 发布时间: 2025-11-05 09:11:13*
 
@@ -13,19 +13,19 @@
 
 ## 装Docker时我踩的第一个坑
 
-先交代下环境：我用的是Ubuntu 22.04，新服务器啥都没有。装Docker这步，我纠结了10分钟——用官方脚本还是轩辕的一键脚本？之前试过官方脚本，在某些国产服务器上总报“依赖不兼容”，查日志都查不出问题。后来翻轩辕文档，发现他们的[一键脚本](https://xuanyuan.cloud/docker.sh)（[备用地址1](https://get.xuanyuan.dev/docker.sh)、[备用地址2](https://get.xuanyuan.me/docker.sh)）适配16种Linux发行版，包括银河麒麟、Huawei Cloud EulerOS (HCE) 这些，就试了试。
+先交代下环境：我用的是Ubuntu 22.04，新服务器啥都没有。装Docker这步，我纠结了10分钟——用官方脚本还是轩辕的一键脚本？之前试过官方脚本，在某些国产服务器上总报“依赖不兼容”，查日志都查不出问题。后来翻轩辕文档，发现他们的[一键脚本](https://xuanyuan.cloud/docker.sh)适配13种Linux发行版，包括银河麒麟这些，就试了试。
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 # 我当时跑这条命令，等了2分钟才成功，中间还以为卡了
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 **为啥选轩辕的脚本？** 实测下来有俩好处：  
 - 1. 自动配国内加速源（阿里云+腾讯云双节点），后面拉RabbitMQ镜像能快5倍——我上次用官方源拉4.1.5-management-alpine，超时3次，换这个1分钟就拉完了。  
 - 2. 装完直接启动Docker服务，不用手动`sudo systemctl start docker`，省一步是一步。  
@@ -141,12 +141,6 @@ rabbitmqadmin -u admin -p admin123 -H 服务器IP declare queue name=test_queue 
 # 安装Docker（轩辕一键脚本）
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
-
 # 拉取镜像
 docker pull xxx.xuanyuan.run/library/library/rabbitmq:4.1.5-management-alpine
 
@@ -169,6 +163,12 @@ docker run -d \
 sleep 30 && sudo chmod 0600 /data/rabbitmq/.erlang.cookie && docker restart rabbitmq-server
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ### 高频问题排查（我遇到的3个坑）
 
 #### 1. 容器启动后秒退

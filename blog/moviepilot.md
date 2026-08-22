@@ -1,6 +1,6 @@
 # MoviePilot 配置与安装指南
 
-![MoviePilot 配置与安装指南](https://img.xuanyuan.dev/docker/blog/docker-movepilot.png)
+![MoviePilot 配置与安装指南](https://assets.xuanyuan.me/docker/blog/docker-movepilot.png)
 
 *分类: Docker部署教程 | 标签: MoviePilot,docker,部署教程 | 发布时间: 2025-10-07 12:54:27*
 
@@ -17,14 +17,14 @@
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ---
 
 ## 1. 网络
@@ -108,7 +108,7 @@ docker run -d --restart=always --name="portainer" -p 9000:9000 -v /var/run/docke
 ### 4.5 Overseerr/Jellyseerr
 如果你希望将MoviePilot的自动化媒体管理能力开放给多个人使用，同时具有用户提交订阅申请与集中审批的功能，可以安装 `Overseerr`/`Jellyseerr`来配合实现更好的选片和申请审批使用体验。MoviePilot通过模拟`Radarr`和`Sonarr`的Api实现无缝集成，`Overseerr`/`Jellyseerr`负责选片和用户权限管理，MoviePilot负责订阅、下载和整理。参考下图：
 
-![seerr.png](https://img.xuanyuan.dev/docker/blog/seerr.png)
+![seerr.png](https://assets.xuanyuan.me/docker/blog/seerr.png)
 
 
 ## 5. Docker
@@ -122,14 +122,14 @@ MoviePilot在docker境像中同时还内置了`虚拟显示`、`浏览器仿真`
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ### 5.2 Docker Run 命令（分版本）
 #### 5.2.1 V2版本
 ```shell

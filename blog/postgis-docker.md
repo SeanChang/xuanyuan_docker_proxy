@@ -1,6 +1,6 @@
 # PostGIS Docker 容器化部署指南
 
-![PostGIS Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-postgis.png)
+![PostGIS Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-postgis.png)
 
 *分类: Docker部署教程 | 标签: postgis,Postgre,部署教程 | 发布时间: 2025-12-17 07:22:52*
 
@@ -20,14 +20,14 @@ POSTGIS是PostgreSQL数据库的空间数据库扩展，它为PostgreSQL提供�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本执行完成后，可通过以下命令验证Docker是否安装成功：
 
 ```bash

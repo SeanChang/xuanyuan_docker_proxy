@@ -1,6 +1,6 @@
 # 10 分钟上手 OpenCode：Docker 一键部署，浏览器里用 AI 写代码
 
-![10 分钟上手 OpenCode：Docker 一键部署，浏览器里用 AI 写代码](https://img.xuanyuan.dev/docker/blog/opencode.png)
+![10 分钟上手 OpenCode：Docker 一键部署，浏览器里用 AI 写代码](https://assets.xuanyuan.me/docker/blog/opencode.png)
 
 *分类: Docker部署教程 | 标签: OpenCode,Docker,轩辕镜像,AI编程,openEuler,WSL | 发布时间: 2026-06-21 16:38:36*
 
@@ -20,14 +20,14 @@
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 安装完成后，执行以下命令验证：
 
 ```bash
@@ -137,13 +137,13 @@ docker ps | grep opencode
 
 首次访问会弹出 HTTP 基础认证对话框，输入环境变量中配置的用户名（默认 `opencode`）和密码。
 
-![OpenCode 登录认证](https://img.xuanyuan.dev/docker/blog/opencode-1.png)
+![OpenCode 登录认证](https://assets.xuanyuan.me/docker/blog/opencode-1.png)
 
 *图 1：首次访问需输入 HTTP 基础认证的用户名与密码*
 
 登录成功后进入 OpenCode 控制台。若首页显示「未找到会话」，说明尚未打开项目或创建会话，属于正常现象。
 
-![OpenCode 控制台首页](https://img.xuanyuan.dev/docker/blog/opencode-2.png)
+![OpenCode 控制台首页](https://assets.xuanyuan.me/docker/blog/opencode-2.png)
 
 *图 2：登录后首页显示「未找到会话」，表示尚未创建项目或会话*
 
@@ -165,7 +165,7 @@ docker ps | grep opencode
 docker exec opencode ls -la /workspace/my-testapp
 ```
 
-![打开项目对话框](https://img.xuanyuan.dev/docker/blog/opencode-3.png)
+![打开项目对话框](https://assets.xuanyuan.me/docker/blog/opencode-3.png)
 
 *图 3：在搜索框输入 `/workspace/my-testapp` 并选择对应目录*
 
@@ -180,11 +180,11 @@ docker exec opencode ls -la /workspace/my-testapp
 3. 若有付费 API Key，可在设置中通过 `/connect` 接入 [OpenCode Zen](https://opencode.ai/docs/zh-cn) 等提供商
 4. 点击 **「+」** 新建会话，确认底部显示当前项目为 `my-testapp`
 
-![选择 AI 模型](https://img.xuanyuan.dev/docker/blog/opencode-7.png)
+![选择 AI 模型](https://assets.xuanyuan.me/docker/blog/opencode-7.png)
 
 *图 4：OpenCode 内置多款免费模型，新手可先选 Big Pickle 或 MiMo V2.5*
 
-![新建会话界面](https://img.xuanyuan.dev/docker/blog/opencode-5.png)
+![新建会话界面](https://assets.xuanyuan.me/docker/blog/opencode-5.png)
 
 *图 5：新建会话后，底部显示当前工作项目 my-testapp*
 
@@ -200,17 +200,17 @@ docker exec opencode ls -la /workspace/my-testapp
 
 发送后，OpenCode 会显示「写入 index.html」「思考中」等状态，右侧「审查」面板可实时查看文件变更。你也可以选择「创建 Git 仓库」来跟踪后续修改。
 
-![输入 AI 需求](https://img.xuanyuan.dev/docker/blog/opencode-6.png)
+![输入 AI 需求](https://assets.xuanyuan.me/docker/blog/opencode-6.png)
 
 *图 6：用自然语言描述需求，OpenCode 自动创建并写入文件*
 
-![AI 写入代码](https://img.xuanyuan.dev/docker/blog/opencode-8.png)
+![AI 写入代码](https://assets.xuanyuan.me/docker/blog/opencode-8.png)
 
 *图 7：AI 执行「写入 index.html」，右侧审查面板展示变更*
 
 稍等片刻，AI 会提示生成完成：`index.html 是一个全屏居中展示 "hello-world" 大字效果的简单个人主页。`
 
-![生成完成](https://img.xuanyuan.dev/docker/blog/opencode-9.png)
+![生成完成](https://assets.xuanyuan.me/docker/blog/opencode-9.png)
 
 *图 8：生成完成，会话中确认 index.html 已创建*
 
@@ -240,7 +240,7 @@ python3 -m http.server 8080 --bind 0.0.0.0
 
 通过 `http://服务器IP:8080` 访问（需在防火墙中放行 8080 端口）。
 
-![hello-world 预览效果](https://img.xuanyuan.dev/docker/blog/opencode-10.png)
+![hello-world 预览效果](https://assets.xuanyuan.me/docker/blog/opencode-10.png)
 
 *图 9：浏览器中全屏居中显示的 hello-world 个人主页*
 
@@ -331,7 +331,7 @@ docker compose down   # 停止容器，volume 数据不会丢失
 - [OpenCode 中文文档](https://opencode.ai/docs/zh-cn)
 - [OpenCode Web 模式](https://opencode.ai/docs/web)
 - [openeuler/opencode 镜像页](https://xuanyuan.cloud/zh/r/openeuler/opencode)
-- [Docker 一键安装脚本](https://xuanyuan.cloud/docker.sh)（[备用地址1](https://get.xuanyuan.dev/docker.sh)、[备用地址2](https://get.xuanyuan.me/docker.sh)）
+- [Docker 一键安装脚本](https://xuanyuan.cloud/docker.sh)
 
 如果你在拉取 Docker 镜像时遇到速度慢、超时等问题，可以试试 [轩辕镜像](https://xuanyuan.cloud) 的加速服务；镜像页支持一键复制拉取命令，也提供镜像助手等工具方便排查。欢迎收藏 [openeuler/opencode](https://xuanyuan.cloud/zh/r/openeuler/opencode) 镜像页，获取最新标签与更新说明。
 

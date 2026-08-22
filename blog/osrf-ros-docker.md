@@ -1,6 +1,6 @@
 # OSRF ROS Docker 容器化部署指南：高效构建机器人操作系统环境
 
-![OSRF ROS Docker 容器化部署指南：高效构建机器人操作系统环境](https://img.xuanyuan.dev/docker/blog/docker-osrf-ros.png)
+![OSRF ROS Docker 容器化部署指南：高效构建机器人操作系统环境](https://assets.xuanyuan.me/docker/blog/docker-osrf-ros.png)
 
 *分类: Docker部署教程 | 标签: osrf-ros,docker,部署教程 | 发布时间: 2025-12-11 04:05:41*
 
@@ -26,14 +26,14 @@
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 执行完成后，可以通过以下命令验证 Docker 是否安装成功：
 
 ```bash

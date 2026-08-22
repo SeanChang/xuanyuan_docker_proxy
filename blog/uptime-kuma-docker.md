@@ -1,6 +1,6 @@
 # UPTIME-KUMA Docker 容器化部署指南
 
-![UPTIME-KUMA Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-uptime-kuma.png)
+![UPTIME-KUMA Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-uptime-kuma.png)
 
 *分类: Docker部署教程 | 标签: uptime-kuma,docker,部署教程 | 发布时间: 2025-12-03 06:22:58*
 
@@ -19,14 +19,14 @@ UPTIME-KUMA是一款功能强大的自托管监控工具，旨在为用户提供
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 脚本执行过程中可能需要sudo权限，请根据提示输入密码。安装完成后，可通过`docker --version`验证安装是否成功。
 
 

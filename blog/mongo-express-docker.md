@@ -1,6 +1,6 @@
 # MONGO-EXPRESS Docker 容器化部署指南
 
-![MONGO-EXPRESS Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-mongo-express.png)
+![MONGO-EXPRESS Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-mongo-express.png)
 
 *分类: Docker部署教程 | 标签: mongo-express,docker,部署教程 | 发布时间: 2025-11-11 08:46:04*
 
@@ -23,14 +23,14 @@ MONGO-EXPRESS是一个基于Web的MongoDB管理界面，采用Node.js、Express.
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本执行过程中需根据提示完成权限确认，默认安装Docker Engine、Docker CLI、Docker Compose等核心组件，并配置开机自启动。安装完成后，可通过以下命令验证：
 
 ```bash

@@ -1,6 +1,6 @@
 # Docker 容器化部署 Node.js 全指南
 
-![Docker 容器化部署 Node.js 全指南](https://img.xuanyuan.dev/docker/blog/docker-node.png)
+![Docker 容器化部署 Node.js 全指南](https://assets.xuanyuan.me/docker/blog/docker-node.png)
 
 *分类: Docker部署教程 | 标签: nodejs,docker,部署教程 | 发布时间: 2025-10-03 07:43:00*
 
@@ -22,14 +22,14 @@ Docker 轻量级容器化技术为 Node.js 应用部署带来核心优势，尤�
 若未安装 Docker，推荐使用轩辕镜像适配的一键安装脚本（支持多 Linux 发行版，自动配置镜像加速）：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ## 1、查看 Node.js 镜像详情
 轩辕镜像 Node.js 官方页面：[https://xuanyuan.cloud/r/library/node](https://xuanyuan.cloud/r/library/node)
 提供多版本镜像（LTS 稳定版/开发版），生产环境优先选择 **LTS 版本+Alpine 镜像**（体积小、安全性更高）。

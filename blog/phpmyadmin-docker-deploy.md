@@ -1,6 +1,6 @@
 # 告别命令行！Docker 部署 phpMyAdmin，轻松管理 MySQL
 
-![告别命令行！Docker 部署 phpMyAdmin，轻松管理 MySQL](https://img.xuanyuan.dev/docker/blog/phpmyadmin.webp)
+![告别命令行！Docker 部署 phpMyAdmin，轻松管理 MySQL](https://assets.xuanyuan.me/docker/blog/phpmyadmin.webp)
 
 *分类: Docker部署教程 | 标签: phpMyAdmin,Docker,轩辕镜像,MySQL,MariaDB,数据库管理,私有化部署,部署教程 | 发布时间: 2026-07-29 08:02:04*
 
@@ -78,14 +78,14 @@ Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 ---
@@ -316,7 +316,7 @@ docker run -d \
 
 （本文 Compose 已设 `PMA_HOST=db`，登录页通常**不再单独填服务器**；若你用了 `PMA_ARBITRARY=1`，才会出现服务器输入框。）
 
-![phpMyAdmin 登录页：语言选中文简体，用户名 root，输入密码后点登录](https://img.xuanyuan.dev/docker/blog/phpmyadmin-1.webp)
+![phpMyAdmin 登录页：语言选中文简体，用户名 root，输入密码后点登录](https://assets.xuanyuan.me/docker/blog/phpmyadmin-1.webp)
 
 ### 7.2 首页：确认已连上 MariaDB
 
@@ -333,7 +333,7 @@ docker run -d \
 
 页底若提示「高级功能尚未完全设置」：全新部署常见提示，**不影响**浏览库表、执行 SQL、导入导出；需要配置存储库时再查官方文档即可。
 
-![phpMyAdmin 首页：左侧库列表，右侧显示 MariaDB 与 Apache/PHP 信息](https://img.xuanyuan.dev/docker/blog/phpmyadmin-2.webp)
+![phpMyAdmin 首页：左侧库列表，右侧显示 MariaDB 与 Apache/PHP 信息](https://assets.xuanyuan.me/docker/blog/phpmyadmin-2.webp)
 
 ### 7.3 浏览库表与新建表
 
@@ -347,7 +347,7 @@ docker run -d \
 2. 点进该库 →「结构」→「新建数据表」  
 3. 顶部「SQL」粘贴语句执行；「导入」上传 `.sql`（大文件见 FAQ）
 
-![phpMyAdmin 结构页：展开 mysql 库表列表，底部可新建数据表](https://img.xuanyuan.dev/docker/blog/phpmyadmin-3.webp)
+![phpMyAdmin 结构页：展开 mysql 库表列表，底部可新建数据表](https://assets.xuanyuan.me/docker/blog/phpmyadmin-3.webp)
 
 ---
 
@@ -373,7 +373,7 @@ SSL 连库时可设 `PMA_SSL=1`（多主机用 `PMA_SSLS`）。细节见 [官方
 
 未改属主时，浏览器会看到红色 **phpMyAdmin - Error** 页，关键句为 `Permission denied (13)` 与 `path: /sessions`：
 
-![phpMyAdmin 会话错误：Permission denied，session 路径 /sessions](https://img.xuanyuan.dev/docker/blog/phpmyadmin-error-1.webp)
+![phpMyAdmin 会话错误：Permission denied，session 路径 /sessions](https://assets.xuanyuan.me/docker/blog/phpmyadmin-error-1.webp)
 
 挂载了宿主机 `./sessions`，但目录属主是 root，容器内 PHP（uid **33**）无法读写。**Ubuntu 24.04** 实测修复：
 

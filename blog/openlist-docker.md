@@ -1,6 +1,6 @@
 # OPENLIST Docker 容器化部署指南
 
-![OPENLIST Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-openlist.png)
+![OPENLIST Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-openlist.png)
 
 *分类: Docker部署教程 | 标签: openlist,docker,部署教程 | 发布时间: 2025-12-03 03:01:29*
 
@@ -43,14 +43,14 @@ OPENLIST是一款基于Gin后端和SolidJS前端开发的多存储文件列表�
 ```bash
 
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 执行脚本后，系统将自动完成Docker Engine、Docker Compose的安装及配置，无需手动干预。安装完成后，可通过以下命令验证Docker是否正常运行：
 
 ```bash

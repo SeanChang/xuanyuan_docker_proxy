@@ -1,6 +1,6 @@
 # Docker 部署 MinerU 全指南
 
-![Docker 部署 MinerU 全指南](https://img.xuanyuan.dev/docker/blog/docker-mineru.png)
+![Docker 部署 MinerU 全指南](https://assets.xuanyuan.me/docker/blog/docker-mineru.png)
 
 *分类: Docker部署教程 | 标签: mineru,docker,部署教程 | 发布时间: 2025-10-21 13:16:51*
 
@@ -37,14 +37,14 @@ MinerU 是一款专注于PDF格式转化的工具，尤其擅长将科技文献�
 一键安装脚本（支持Ubuntu/Debian/CentOS，自动配置镜像访问支持）：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 #### Windows 系统
 - 安装 [Docker Desktop](https://www.docker.com/products/docker-desktop)（需启用WSL2）；  
 - 进入`设置 > Resources > WSL Integration`，开启目标WSL2发行版的集成。

@@ -1,6 +1,6 @@
 # Home Assistant Docker 部署教程：打造本地智能家居平台，手把手教你实战搭建
 
-![Home Assistant Docker 部署教程：打造本地智能家居平台，手把手教你实战搭建](https://img.xuanyuan.dev/docker/blog/docker-home-assistant.png)
+![Home Assistant Docker 部署教程：打造本地智能家居平台，手把手教你实战搭建](https://assets.xuanyuan.me/docker/blog/docker-home-assistant.png)
 
 *分类: Docker部署教程 | 标签: Home Assistant,Docker,轩辕镜像,群晖,NAS,智能家居,私有化部署,部署教程 | 发布时间: 2025-10-03 07:50:22*
 
@@ -81,14 +81,14 @@ docker compose version
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ### 2.2 群晖 NAS（推荐 SSH 部署）
 
 | 项目 | 建议 |
@@ -450,7 +450,7 @@ http://你的群晖IP:8123           # 群晖 NAS
 
 首次进入显示欢迎界面，点击 **「创建我的智能家居」** 开始全新配置（亦可上传备份还原）：
 
-![Home Assistant 欢迎页：创建我的智能家居、上传备份、Home Assistant Cloud 还原选项](https://img.xuanyuan.dev/docker/blog/homeassistant-1.png)
+![Home Assistant 欢迎页：创建我的智能家居、上传备份、Home Assistant Cloud 还原选项](https://assets.xuanyuan.me/docker/blog/homeassistant-1.png)
 
 *图 1：欢迎页；左下角语言已切换为简体中文*
 
@@ -458,7 +458,7 @@ http://你的群晖IP:8123           # 群晖 NAS
 
 填写姓名、用户名、密码，点击 **「创建账户」**：
 
-![创建用户：填写姓名、用户名、密码与确认密码](https://img.xuanyuan.dev/docker/blog/homeassistant-2.png)
+![创建用户：填写姓名、用户名、密码与确认密码](https://assets.xuanyuan.me/docker/blog/homeassistant-2.png)
 
 *图 2：创建首个管理员账户（本文用户 Sean Chang）*
 
@@ -468,7 +468,7 @@ http://你的群晖IP:8123           # 群晖 NAS
 
 搜索并选择家庭所在城市（本文选择 **杭州市**），地图会定位到对应坐标——影响日出日落、天气等集成：
 
-![家的位置：搜索杭州并在地图上确认坐标](https://img.xuanyuan.dev/docker/blog/homeassistant-3.png)
+![家的位置：搜索杭州并在地图上确认坐标](https://assets.xuanyuan.me/docker/blog/homeassistant-3.png)
 
 *图 3：设置家庭地理位置*
 
@@ -476,7 +476,7 @@ http://你的群晖IP:8123           # 群晖 NAS
 
 Home Assistant 询问是否分享匿名使用数据，可按需开关各项，点击 **「下一步」**：
 
-![帮助我们帮助你：基础分析、使用情况、统计数据、诊断信息开关](https://img.xuanyuan.dev/docker/blog/homeassistant-4.png)
+![帮助我们帮助你：基础分析、使用情况、统计数据、诊断信息开关](https://assets.xuanyuan.me/docker/blog/homeassistant-4.png)
 
 *图 4：分析与隐私设置（可全部关闭）*
 
@@ -484,7 +484,7 @@ Home Assistant 询问是否分享匿名使用数据，可按需开关各项，�
 
 向导扫描局域网，本文自动发现 **Internet Printing Protocol (IPP)** 打印机集成，点击 **「完成」**：
 
-![我们发现了兼容的设备：Internet Printing Protocol IPP 集成](https://img.xuanyuan.dev/docker/blog/homeassistant-5.png)
+![我们发现了兼容的设备：Internet Printing Protocol IPP 集成](https://assets.xuanyuan.me/docker/blog/homeassistant-5.png)
 
 *图 5：局域网设备自动发现*
 
@@ -498,7 +498,7 @@ Home Assistant 询问是否分享匿名使用数据，可按需开关各项，�
 
 默认 **概览** 页显示欢迎语、区域卡片（客厅 / 厨房 / 卧室 / 设备）与右侧摘要（已发现设备、天气）：
 
-![概览仪表盘：欢迎 Sean Chang、区域卡片、天气 33.5°C 阴](https://img.xuanyuan.dev/docker/blog/homeassistant-6.png)
+![概览仪表盘：欢迎 Sean Chang、区域卡片、天气 33.5°C 阴](https://assets.xuanyuan.me/docker/blog/homeassistant-6.png)
 
 *图 6：概览页；右侧显示 1 个设备可添加、杭州天气*
 
@@ -506,7 +506,7 @@ Home Assistant 询问是否分享匿名使用数据，可按需开关各项，�
 
 **地图** 页在 OpenStreetMap 上显示家庭位置标记（杭州市）：
 
-![地图页：杭州市位置标记与 OpenStreetMap 底图](https://img.xuanyuan.dev/docker/blog/homeassistant-7.png)
+![地图页：杭州市位置标记与 OpenStreetMap 底图](https://assets.xuanyuan.me/docker/blog/homeassistant-7.png)
 
 *图 7：地图模块*
 
@@ -514,7 +514,7 @@ Home Assistant 询问是否分享匿名使用数据，可按需开关各项，�
 
 **能源** 模块引导配置电网、太阳能等能源监控（6 步向导，可按需跳过）：
 
-![能源配置向导第 1 步：电力公司与电网连接](https://img.xuanyuan.dev/docker/blog/homeassistant-8.png)
+![能源配置向导第 1 步：电力公司与电网连接](https://assets.xuanyuan.me/docker/blog/homeassistant-8.png)
 
 *图 8：能源模块初始化（第 1 步，共 6 步）*
 
@@ -522,7 +522,7 @@ Home Assistant 询问是否分享匿名使用数据，可按需开关各项，�
 
 **活动** 页记录系统事件。本文可见 `Home Assistant started` 及 Sun 实体日出日落变更：
 
-![活动日志：Home Assistant started、Sun 白天/夜间切换事件](https://img.xuanyuan.dev/docker/blog/homeassistant-9.png)
+![活动日志：Home Assistant started、Sun 白天/夜间切换事件](https://assets.xuanyuan.me/docker/blog/homeassistant-9.png)
 
 *图 9：活动日志；启动时间 13:51:49 与容器日志一致*
 
@@ -530,7 +530,7 @@ Home Assistant 询问是否分享匿名使用数据，可按需开关各项，�
 
 **媒体** 页提供 AI 生成图片、摄像头、Radio Browser、文字转语音等媒体源：
 
-![媒体源：AI 图片、Camera、Radio Browser、Text-to-speech 等](https://img.xuanyuan.dev/docker/blog/homeassistant-10.png)
+![媒体源：AI 图片、Camera、Radio Browser、Text-to-speech 等](https://assets.xuanyuan.me/docker/blog/homeassistant-10.png)
 
 *图 10：媒体浏览器*
 
@@ -538,7 +538,7 @@ Home Assistant 询问是否分享匿名使用数据，可按需开关各项，�
 
 内置 **购物清单** 待办列表，可新建其他清单：
 
-![待办事项清单：购物清单为空，可添加项目](https://img.xuanyuan.dev/docker/blog/homeassistant-11.png)
+![待办事项清单：购物清单为空，可添加项目](https://assets.xuanyuan.me/docker/blog/homeassistant-11.png)
 
 *图 11：待办事项 / 购物清单*
 
@@ -546,7 +546,7 @@ Home Assistant 询问是否分享匿名使用数据，可按需开关各项，�
 
 **设置** 页集中管理集成、自动化、区域、人员、系统备份与重启：
 
-![设置页：Home Assistant Cloud、设备与服务、自动化与场景、系统等](https://img.xuanyuan.dev/docker/blog/homeassistant-12.png)
+![设置页：Home Assistant Cloud、设备与服务、自动化与场景、系统等](https://assets.xuanyuan.me/docker/blog/homeassistant-12.png)
 
 *图 12：设置主页*
 
@@ -560,7 +560,7 @@ Home Assistant 在局域网自动发现了 **HP Smart Tank 210-220 series** 网�
 
 概览页弹出 **「您想要添加什么？」**，已发现列表中显示 HP Smart Tank：
 
-![您想要添加什么：已发现 HP Smart Tank 210-220 series IPP 打印机](https://img.xuanyuan.dev/docker/blog/homeassistant-13.png)
+![您想要添加什么：已发现 HP Smart Tank 210-220 series IPP 打印机](https://assets.xuanyuan.me/docker/blog/homeassistant-13.png)
 
 *图 13：概览页设备发现弹窗*
 
@@ -568,7 +568,7 @@ Home Assistant 在局域网自动发现了 **HP Smart Tank 210-220 series** 网�
 
 点击 HP Smart Tank 条目，确认 **「您想设置 HP Smart Tank 210-220 series [DAD28A] 吗？」**，点击 **「提交」**：
 
-![已发现的打印机：确认设置 HP Smart Tank 210-220 series](https://img.xuanyuan.dev/docker/blog/homeassistant-14.png)
+![已发现的打印机：确认设置 HP Smart Tank 210-220 series](https://assets.xuanyuan.me/docker/blog/homeassistant-14.png)
 
 *图 14：确认添加打印机*
 
@@ -576,7 +576,7 @@ Home Assistant 在局域网自动发现了 **HP Smart Tank 210-220 series** 网�
 
 为设备命名（默认 **HP Smart Tank 210-220 series**），分配到 **客厅** 区域，点击 **「完成」**：
 
-![命名和分配：设备名称与区域选择客厅](https://img.xuanyuan.dev/docker/blog/homeassistant-15.png)
+![命名和分配：设备名称与区域选择客厅](https://assets.xuanyuan.me/docker/blog/homeassistant-15.png)
 
 *图 15：命名设备并分配区域*
 
@@ -584,7 +584,7 @@ Home Assistant 在局域网自动发现了 **HP Smart Tank 210-220 series** 网�
 
 集成成功后，**客厅** 区域卡片显示打印机状态：四色墨盒余量 **100%**，打印机状态 **空闲**：
 
-![客厅区域：HP Smart Tank 墨盒余量与空闲状态](https://img.xuanyuan.dev/docker/blog/homeassistant-16.png)
+![客厅区域：HP Smart Tank 墨盒余量与空闲状态](https://assets.xuanyuan.me/docker/blog/homeassistant-16.png)
 
 *图 16：打印机集成后的客厅仪表盘*
 
@@ -592,7 +592,7 @@ Home Assistant 在局域网自动发现了 **HP Smart Tank 210-220 series** 网�
 
 进入设备页查看制造商 HP、固件版本、序列号及 IPP 集成信息；传感器显示墨盒余量与状态：
 
-![设备信息：HP Smart Tank 固件、序列号、IPP 集成与传感器](https://img.xuanyuan.dev/docker/blog/homeassistant-17.png)
+![设备信息：HP Smart Tank 固件、序列号、IPP 集成与传感器](https://assets.xuanyuan.me/docker/blog/homeassistant-17.png)
 
 *图 17：HP Smart Tank 设备详情与传感器*
 
@@ -600,7 +600,7 @@ Home Assistant 在局域网自动发现了 **HP Smart Tank 210-220 series** 网�
 
 设备页可将打印机作为触发器 / 条件 / 动作，快速创建自动化或脚本：
 
-![添加 HP Smart Tank 至自动化或脚本：创建触发器、条件、动作](https://img.xuanyuan.dev/docker/blog/homeassistant-18.png)
+![添加 HP Smart Tank 至自动化或脚本：创建触发器、条件、动作](https://assets.xuanyuan.me/docker/blog/homeassistant-18.png)
 
 *图 18：基于打印机创建自动化或脚本*
 

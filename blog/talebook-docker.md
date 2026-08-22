@@ -1,6 +1,6 @@
 # TaleBook Docker 容器化部署指南
 
-![TaleBook Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-talebook.png)
+![TaleBook Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-talebook.png)
 
 *分类: Docker部署教程 | 标签: talebook,Calibre,部署教程 | 发布时间: 2025-12-15 16:08:09*
 
@@ -29,14 +29,14 @@ TALEBOOK基于Docker容器化部署，首先需要在目标服务器上安装Doc
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 执行完毕后，可通过以下命令验证Docker是否安装成功：
 
 ```bash

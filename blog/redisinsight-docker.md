@@ -1,6 +1,6 @@
 # REDISINSIGHT Docker 容器化部署指南
 
-![REDISINSIGHT Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-redisinsight.png)
+![REDISINSIGHT Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-redisinsight.png)
 
 *分类: Docker部署教程 | 标签: redisinsight,docker,部署教程 | 发布时间: 2025-11-26 06:21:26*
 
@@ -26,14 +26,14 @@ Redis Insight 是 Redis 官方推出的图形化管理工具，为开发人员�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 注意：执行脚本可能需要 root 权限，请根据系统提示输入密码。安装过程中会自动处理依赖项并配置 Docker 服务。
 
 安装完成后，可以通过以下命令验证 Docker 是否正确安装：

@@ -1,6 +1,6 @@
 # LOBE-CHAT Docker 容器化部署指南
 
-![LOBE-CHAT Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-lobe-chat.png)
+![LOBE-CHAT Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-lobe-chat.png)
 
 *分类: Docker部署教程 | 标签: lobe-chat,docker,部署教程 | 发布时间: 2025-11-16 06:42:42*
 
@@ -19,14 +19,14 @@ LOBE-CHAT 是一款开源、可扩展、高性能的聊天机器人框架，专�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ### 轩辕镜像访问支持说明
 
 上述一键脚本已集成轩辕镜像访问支持配置，其核心作用与原理如下：
@@ -301,14 +301,14 @@ docker rm lobe-chat-old
 3. **Docker 配置问题**：重新执行 Docker 安装脚本修复配置
    ```bash
    bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-   # 备用地址1
-   bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-   # 备用地址2
-   bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
    ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 
 ## 参考资源
 

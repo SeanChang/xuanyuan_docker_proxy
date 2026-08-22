@@ -1,6 +1,6 @@
 # DDNS-GO Docker 容器化部署指南
 
-![DDNS-GO Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-ddnsgo.png)
+![DDNS-GO Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-ddnsgo.png)
 
 *分类: Docker部署教程 | 标签: ddns-go,docker,部署教程 | 发布时间: 2025-12-02 04:04:18*
 
@@ -27,14 +27,14 @@ DDNS-GO的核心特性包括：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本将自动完成Docker Engine、Docker Compose的安装及配置，适用于主流Linux发行版（Ubuntu、Debian、CentOS等）。安装完成后，可通过以下命令验证Docker是否正常运行：
 
 ```bash

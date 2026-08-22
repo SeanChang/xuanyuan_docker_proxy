@@ -1,6 +1,6 @@
 # MILVUS Docker 容器化部署指南
 
-![MILVUS Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-milvusdb.png)
+![MILVUS Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-milvusdb.png)
 
 *分类: Docker部署教程 | 标签: milvus,docker,部署教程 | 发布时间: 2025-12-03 06:03:40*
 
@@ -21,14 +21,14 @@ MILVUS容器化部署依赖Docker引擎，以下是在Linux系统中一键安装
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 说明：上述脚本适用于Ubuntu、Debian、CentOS等主流Linux发行版，会自动安装Docker Engine、Docker CLI、Containerd等组件，并配置开机自启动。安装过程需要root权限，建议在全新环境中执行。
 
 安装完成后，可通过以下命令验证Docker是否正常运行：

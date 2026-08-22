@@ -1,6 +1,6 @@
 # Grafana Docker 部署全流程
 
-![Grafana Docker 部署全流程](https://img.xuanyuan.dev/docker/blog/docker-grafana.png)
+![Grafana Docker 部署全流程](https://assets.xuanyuan.me/docker/blog/docker-grafana.png)
 
 *分类: Docker部署教程 | 标签: grafana,docker,部署教程 | 发布时间: 2025-10-08 06:43:54*
 
@@ -33,14 +33,14 @@ Grafana 提供 Web 界面访问，默认端口为 **3000**，默认账户密码�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ---
 
 ## 1、查看 Grafana 镜像详情

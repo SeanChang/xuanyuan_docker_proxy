@@ -1,6 +1,6 @@
 # DrawIO Docker 容器化部署指南
 
-![DrawIO Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-drawio.png)
+![DrawIO Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-drawio.png)
 
 *分类: Docker部署教程 | 标签: drawio,docker,部署教程 | 发布时间: 2025-12-13 06:52:54*
 
@@ -20,14 +20,14 @@ DRAWIO（jgraph/drawio）是一款功能强大的容器化图表绘制应用，�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 注意：执行上述脚本需要root权限。安装完成后，建议将当前用户添加到docker用户组以避免每次执行docker命令都需要sudo权限：
 > 
 > ```bash

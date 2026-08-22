@@ -1,6 +1,6 @@
 # 个人财务管理工具 (Firefly III) Docker容器化部署指南
 
-![个人财务管理工具 (Firefly III) Docker容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-firefly.png)
+![个人财务管理工具 (Firefly III) Docker容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-firefly.png)
 
 *分类: Docker部署教程 | 标签: firefly,docker,部署教程 | 发布时间: 2025-12-15 06:15:31*
 
@@ -21,14 +21,14 @@ Firefly III采用开源协议（GNU Affero General Public License v3），代码
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 执行脚本后，按照提示完成Docker安装。安装完成后，可通过以下命令验证Docker是否正常运行：
 
 ```bash

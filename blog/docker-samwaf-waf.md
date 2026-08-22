@@ -1,6 +1,6 @@
 # 网站被扫、被刷？Docker 部署 SamWaf 开源 WAF，一条命令护站
 
-![网站被扫、被刷？Docker 部署 SamWaf 开源 WAF，一条命令护站](https://img.xuanyuan.dev/docker/blog/samwaf.png)
+![网站被扫、被刷？Docker 部署 SamWaf 开源 WAF，一条命令护站](https://assets.xuanyuan.me/docker/blog/samwaf.png)
 
 *分类: Docker部署教程 | 标签: SamWaf,WAF,Docker,轩辕镜像,网站防火墙,反向代理,私有化部署,部署教程 | 发布时间: 2026-07-12 13:43:12*
 
@@ -70,14 +70,14 @@ docker compose version
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多安装说明见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 **镜像标签对照**：
@@ -278,13 +278,13 @@ http://你的服务器IP:26666
 
 默认账号：**admin**，密码填入上一步读取的随机口令。
 
-![SamWaf 登录页：输入 admin 与初始随机口令](https://img.xuanyuan.dev/docker/blog/samwaf-1.png)
+![SamWaf 登录页：输入 admin 与初始随机口令](https://assets.xuanyuan.me/docker/blog/samwaf-1.png)
 
 ### 6.3 首次登录强制改密
 
 使用初始口令登录后，会弹出 **修改密码** 对话框，提示「首次登录或密码已被重置，请立即修改密码」。设置新密码并确认后点击 **确认**。
 
-![SamWaf 首次登录：强制修改管理员密码](https://img.xuanyuan.dev/docker/blog/samwaf-2.png)
+![SamWaf 首次登录：强制修改管理员密码](https://assets.xuanyuan.me/docker/blog/samwaf-2.png)
 
 建议随后在个人设置中开启 **OTP 双因素认证**，并限制管理端口 `26666` 的访问来源（防火墙 / 安全组 / 反代 + HTTPS）。
 
@@ -294,7 +294,7 @@ http://你的服务器IP:26666
 
 登录成功后进入 **概览仪表盘**。首次安装会提示尚未添加受保护网站，今日攻击数、访问量、QPS 等均为 0；顶部可查看 CPU、内存、磁盘占用及数据库类型（默认 SQLite）。
 
-![SamWaf 概览仪表盘：首次安装欢迎提示与零数据状态](https://img.xuanyuan.dev/docker/blog/samwaf-3.png)
+![SamWaf 概览仪表盘：首次安装欢迎提示与零数据状态](https://assets.xuanyuan.me/docker/blog/samwaf-3.png)
 
 左侧菜单主要模块：
 
@@ -331,11 +331,11 @@ http://你的服务器IP:26666
 
 下图以演示环境填写为例；生产环境请将后端指向你的实际应用（如 `http://127.0.0.1:8080` 的 Trilium）。
 
-![SamWaf 新建防护站点：基础内容与反向代理后端配置](https://img.xuanyuan.dev/docker/blog/samwaf-4.png)
+![SamWaf 新建防护站点：基础内容与反向代理后端配置](https://assets.xuanyuan.me/docker/blog/samwaf-4.png)
 
 保存后可在列表中看到站点记录。首次安装还会自动创建 **全局网站** 占位项，可按需配置或忽略。
 
-![SamWaf 网站防护列表：全局网站与新建站点记录](https://img.xuanyuan.dev/docker/blog/samwaf-5.png)
+![SamWaf 网站防护列表：全局网站与新建站点记录](https://assets.xuanyuan.me/docker/blog/samwaf-5.png)
 
 ### 8.2 试用模式下的访问路径
 
@@ -362,25 +362,25 @@ http://你的服务器IP:26666
 
 **防护日志 → 访问日志** 可按网站、来源 IP、响应码、日期筛选请求记录。新部署无流量时显示「暂无数据」，有访问后此处可审计正常流量。
 
-![SamWaf 访问日志：按条件筛选 Web 请求记录](https://img.xuanyuan.dev/docker/blog/samwaf-6.png)
+![SamWaf 访问日志：按条件筛选 Web 请求记录](https://assets.xuanyuan.me/docker/blog/samwaf-6.png)
 
 ### 9.2 数据分析
 
 **数据分析** 提供周期攻击对比、世界地图来源分布等可视化。选好日期范围后点击 **查询** 查看统计。
 
-![SamWaf 数据分析：攻击与正常流量世界地图分布](https://img.xuanyuan.dev/docker/blog/samwaf-7.png)
+![SamWaf 数据分析：攻击与正常流量世界地图分布](https://assets.xuanyuan.me/docker/blog/samwaf-7.png)
 
 ### 9.3 隧道防护（可选）
 
 **隧道防护 → 隧道管理** 支持 TCP/UDP 四层转发（实验特性），可用于保护远程数据库、Redis 等。点击 **新建隧道** 按向导配置。
 
-![SamWaf 隧道管理：TCP/UDP 四层隧道配置页](https://img.xuanyuan.dev/docker/blog/samwaf-8.png)
+![SamWaf 隧道管理：TCP/UDP 四层隧道配置页](https://assets.xuanyuan.me/docker/blog/samwaf-8.png)
 
 ### 9.4 通知渠道（可选）
 
 **通知管理 → 通知渠道** 可接入钉钉、飞书、邮件、Webhook 等，在遭受攻击或系统异常时推送告警。
 
-![SamWaf 通知渠道：钉钉飞书邮件等告警接入](https://img.xuanyuan.dev/docker/blog/samwaf-9.png)
+![SamWaf 通知渠道：钉钉飞书邮件等告警接入](https://assets.xuanyuan.me/docker/blog/samwaf-9.png)
 
 ---
 

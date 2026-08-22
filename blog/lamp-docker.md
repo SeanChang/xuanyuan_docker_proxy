@@ -1,6 +1,6 @@
 # LAMP Docker 容器化部署指南
 
-![LAMP Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-lamp.png)
+![LAMP Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-lamp.png)
 
 *分类: Docker部署教程 | 标签: lamp,docker,部署教程 | 发布时间: 2025-12-11 07:03:20*
 
@@ -18,14 +18,14 @@ LAMP是一种成熟的开源Web应用程序架构，由Linux操作系统、Apach
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ## 镜像准备
 
 ### 拉取LAMP镜像

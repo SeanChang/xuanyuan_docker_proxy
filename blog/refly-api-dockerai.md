@@ -1,6 +1,6 @@
 # REFLY-API Docker容器化部署指南：面向非技术创作者的AI工作流平台
 
-![REFLY-API Docker容器化部署指南：面向非技术创作者的AI工作流平台](https://img.xuanyuan.dev/docker/blog/docker-refly-api.png)
+![REFLY-API Docker容器化部署指南：面向非技术创作者的AI工作流平台](https://assets.xuanyuan.me/docker/blog/docker-refly-api.png)
 
 *分类: Docker部署教程 | 标签: refly-api,docker,部署教程 | 发布时间: 2025-12-10 08:20:30*
 
@@ -26,14 +26,14 @@ REFLY-API基于Docker容器化部署，首先需要在目标服务器上安装Do
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 提示：执行脚本需要root权限，安装过程中会自动处理依赖关系和系统配置，全程无需人工干预。安装完成后，建议通过`docker --version`和`docker compose version`命令验证安装结果。
 
 

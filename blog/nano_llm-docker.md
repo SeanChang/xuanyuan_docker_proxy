@@ -1,6 +1,6 @@
 # NANO_LLM Docker 容器化部署指南
 
-![NANO_LLM Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-nano_llm.png)
+![NANO_LLM Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-nano_llm.png)
 
 *分类: Docker部署教程 | 标签: nano_llm,docker,部署教程 | 发布时间: 2025-11-17 03:21:03*
 
@@ -29,14 +29,14 @@ NANO_LLM的核心优势包括：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 注意：执行脚本可能需要管理员权限(sudo)，安装过程中请根据提示完成操作。安装完成后，建议注销并重新登录系统，以确保Docker用户组配置生效。
 
 

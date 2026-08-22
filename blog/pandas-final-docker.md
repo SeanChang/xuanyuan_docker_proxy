@@ -1,6 +1,6 @@
 # PANDAS FINAL Docker 镜像部署指南
 
-![PANDAS FINAL Docker 镜像部署指南](https://img.xuanyuan.dev/docker/blog/docker-pandas_final.png)
+![PANDAS FINAL Docker 镜像部署指南](https://assets.xuanyuan.me/docker/blog/docker-pandas_final.png)
 
 *分类: Docker部署教程 | 标签: pandas-final,docker,部署教程 | 发布时间: 2025-12-06 06:02:58*
 
@@ -21,14 +21,14 @@ PANDAS_FINAL基于Docker容器技术构建，需先在目标主机安装Docker�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本将自动完成Docker引擎、Docker Compose及相关依赖的安装与配置，并启动Docker服务。安装完成后，可通过`docker --version`验证安装结果。
 
 轩辕镜像访问支持可提升Docker镜像下载访问表现，后续步骤将使用轩辕访问支持地址拉取PANDAS_FINAL镜像。

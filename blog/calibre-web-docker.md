@@ -1,6 +1,6 @@
 # CALIBRE-WEB Docker 容器化部署指南
 
-![CALIBRE-WEB Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-calibre-web.png)
+![CALIBRE-WEB Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-calibre-web.png)
 
 *分类: Docker部署教程 | 标签: calibre-web,docker,部署教程 | 发布时间: 2025-12-11 08:26:02*
 
@@ -24,14 +24,14 @@ CALIBRE-WEB还支持集成Google Drive，并允许通过应用本身编辑元数
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 该脚本将自动安装Docker和Docker Compose，并配置必要的系统参数。安装完成后，建议启用并启动Docker服务：
 
 ```bash

@@ -1,6 +1,6 @@
 # Docker 部署 ZLMediaKit：轻松搭建高性能流媒体服务平台
 
-![Docker 部署 ZLMediaKit：轻松搭建高性能流媒体服务平台](https://img.xuanyuan.dev/docker/blog/zlmediakit.webp)
+![Docker 部署 ZLMediaKit：轻松搭建高性能流媒体服务平台](https://assets.xuanyuan.me/docker/blog/zlmediakit.webp)
 
 *分类: Docker部署教程 | 标签: ZLMediaKit,Docker,轩辕镜像,流媒体,RTSP,RTMP,WebRTC,HLS,GB28181,私有化部署,部署教程 | 发布时间: 2026-08-07 07:31:26*
 
@@ -89,14 +89,14 @@ Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 > 宿主机 **8080** 占用时改为 `"18080:80"`，文中访问地址同步改端口。**1935** 冲突则改 `"11935:1935"`，推流 URL 一并修改。
@@ -256,7 +256,7 @@ grep '^secret=' /www/wwwroot/zlmediakit/conf/config.ini
 
 浏览器打开 `http://服务器IP:8080/`，看到 **Index of /**：
 
-![ZLMediaKit 首页 Index of /：readme、swagger、webassist、webrtc 等目录](https://img.xuanyuan.dev/docker/blog/zlmediakit-1.webp)
+![ZLMediaKit 首页 Index of /：readme、swagger、webassist、webrtc 等目录](https://assets.xuanyuan.me/docker/blog/zlmediakit-1.webp)
 
 | 目录 | 作用 |
 |------|------|
@@ -267,7 +267,7 @@ grep '^secret=' /www/wwwroot/zlmediakit/conf/config.ini
 
 打开 `http://服务器IP:8080/webrtc/` 时，在纯 HTTP 下可能弹出「浏览器推流需 HTTPS」——点确定即可。用 FFmpeg 推流 + 页面 **play** 播放，不依赖该提示。
 
-![ZLMediaKit WebRTC 演示：HTTP 下提示浏览器推流需 HTTPS](https://img.xuanyuan.dev/docker/blog/zlmediakit-2.webp)
+![ZLMediaKit WebRTC 演示：HTTP 下提示浏览器推流需 HTTPS](https://assets.xuanyuan.me/docker/blog/zlmediakit-2.webp)
 
 ---
 
@@ -305,11 +305,11 @@ http://服务器IP:8080/index/api/webrtc?app=live&stream=test&type=play
 
 点 **开始(start)**。
 
-![ZLMediaKit /webrtc/：method 选 play，url 指向 live/test](https://img.xuanyuan.dev/docker/blog/zlmediakit-3.webp)
+![ZLMediaKit /webrtc/：method 选 play，url 指向 live/test](https://assets.xuanyuan.me/docker/blog/zlmediakit-3.webp)
 
 若勾选了 `useCamera`，左侧多为**本地摄像头 / 预览**（彩条或实景）；右侧才是 WebRTC **播放**窗口。验证 FFmpeg 推流是否在线时，以右侧播放、以及下一节的 `getMediaList` 为准。
 
-![ZLMediaKit /webrtc/：左侧本地预览，右侧 WebRTC 播放区](https://img.xuanyuan.dev/docker/blog/zlmediakit-4.webp)
+![ZLMediaKit /webrtc/：左侧本地预览，右侧 WebRTC 播放区](https://assets.xuanyuan.me/docker/blog/zlmediakit-4.webp)
 
 其它播放地址（推流保持时可用 VLC 等试）：
 
@@ -332,7 +332,7 @@ curl -s "http://127.0.0.1:8080/index/api/getMediaList?secret=${SECRET}"
 
 有推流时应能看到 `live` / `test`。也可用 Swagger：`http://服务器IP:8080/swagger/`，展开 `getMediaList`，填入 secret 后执行。
 
-![ZLMediaKit Swagger UI：HTTP API 列表含 getMediaList、addStreamProxy 等](https://img.xuanyuan.dev/docker/blog/zlmediakit-5.webp)
+![ZLMediaKit Swagger UI：HTTP API 列表含 getMediaList、addStreamProxy 等](https://assets.xuanyuan.me/docker/blog/zlmediakit-5.webp)
 
 接口说明：[MediaServer 支持的 HTTP API](https://github.com/ZLMediaKit/ZLMediaKit/wiki/MediaServer支持的HTTP-API)。
 
@@ -348,7 +348,7 @@ http://服务器IP:8080/webassist/?secret=你的secret
 
 首页（无推流时「暂无数据」正常）：
 
-![ZLMediaKit webassist 首页：流信息与连接信息表](https://img.xuanyuan.dev/docker/blog/zlmediakit-7.webp)
+![ZLMediaKit webassist 首页：流信息与连接信息表](https://assets.xuanyuan.me/docker/blog/zlmediakit-7.webp)
 
 | 菜单 | 用途 |
 |------|------|
@@ -359,15 +359,15 @@ http://服务器IP:8080/webassist/?secret=你的secret
 | Rtp服务 | 开 RTP 收流口（国标等） |
 | 服务器配置 | 读 / 改部分配置（谨慎） |
 
-![ZLMediaKit webassist · WebRTC测试：url 指向 live/test，method 选 play](https://img.xuanyuan.dev/docker/blog/zlmediakit-6.webp)
+![ZLMediaKit webassist · WebRTC测试：url 指向 live/test，method 选 play](https://assets.xuanyuan.me/docker/blog/zlmediakit-6.webp)
 
-![ZLMediaKit webassist · 拉流代理：应用名 live、流 id test](https://img.xuanyuan.dev/docker/blog/zlmediakit-8.webp)
+![ZLMediaKit webassist · 拉流代理：应用名 live、流 id test](https://assets.xuanyuan.me/docker/blog/zlmediakit-8.webp)
 
-![ZLMediaKit webassist · 推流代理：填写转推地址后点增加](https://img.xuanyuan.dev/docker/blog/zlmediakit-9.webp)
+![ZLMediaKit webassist · 推流代理：填写转推地址后点增加](https://assets.xuanyuan.me/docker/blog/zlmediakit-9.webp)
 
-![ZLMediaKit webassist · FFmpeg推拉流：源地址与目的地址](https://img.xuanyuan.dev/docker/blog/zlmediakit-10.webp)
+![ZLMediaKit webassist · FFmpeg推拉流：源地址与目的地址](https://assets.xuanyuan.me/docker/blog/zlmediakit-10.webp)
 
-![ZLMediaKit webassist · Rtp服务：应用名 rtp、被动模式](https://img.xuanyuan.dev/docker/blog/zlmediakit-11.webp)
+![ZLMediaKit webassist · Rtp服务：应用名 rtp、被动模式](https://assets.xuanyuan.me/docker/blog/zlmediakit-11.webp)
 
 官方仓库里 `www/webassist` 是 **git 子模块**，镜像 `docker cp` 出来常是空目录。若只有 Index、没有管理界面：
 

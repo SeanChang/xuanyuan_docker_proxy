@@ -1,6 +1,6 @@
 # FastSurfer Docker容器化部署指南
 
-![FastSurfer Docker容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-fastsurfer.png)
+![FastSurfer Docker容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-fastsurfer.png)
 
 *分类: Docker部署教程 | 标签: fastsurfer,docker,部署教程 | 发布时间: 2025-12-14 10:41:52*
 
@@ -26,14 +26,14 @@ FastSurfer作为Docker容器化应用，需先在目标服务器上安装Docker�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 安装完成后，可通过以下命令验证Docker是否正常运行：
 
 ```bash

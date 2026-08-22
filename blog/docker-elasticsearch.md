@@ -1,6 +1,6 @@
 # Docker 部署 Elasticsearch 全流程手册
 
-![Docker 部署 Elasticsearch 全流程手册](https://img.xuanyuan.dev/docker/blog/docker-elasticserch.png)
+![Docker 部署 Elasticsearch 全流程手册](https://assets.xuanyuan.me/docker/blog/docker-elasticserch.png)
 
 *分类: Docker部署教程 | 标签: elasticsearch,docker,部署教程 | 发布时间: 2025-10-22 06:19:02*
 
@@ -35,14 +35,14 @@ Elasticsearch（简称 ES）是一款基于 Lucene 构建的分布式、高扩�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ---
 
 ## 1、查看 Elasticsearch 镜像

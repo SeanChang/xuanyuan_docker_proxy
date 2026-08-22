@@ -1,6 +1,6 @@
 # Docker 部署 Open WebUI + Ollama 完整教程（Windows / Linux 通用）—— 打造自己的本地OpenAI
 
-![Docker 部署 Open WebUI + Ollama 完整教程（Windows / Linux 通用）—— 打造自己的本地OpenAI](https://img.xuanyuan.dev/docker/blog/docker-open-webui-ollama-1.png)
+![Docker 部署 Open WebUI + Ollama 完整教程（Windows / Linux 通用）—— 打造自己的本地OpenAI](https://assets.xuanyuan.me/docker/blog/docker-open-webui-ollama-1.png)
 
 *分类: Docker部署教程 | 标签: OpenWebUI,Ollama,部署教程,部署方案,一键部署 | 发布时间: 2026-04-23 15:06:47*
 
@@ -16,7 +16,7 @@
 
 **Open WebUI**：一款美观、易用的大模型 Web 可视化界面，相当于给 Ollama 套了一个“可视化外壳”。它支持聊天对话、模型切换、历史记录管理等功能，让我们不用敲命令行，通过浏览器就能和本地大模型交互，体验和云端 AI 聊天工具几乎一致。
 
-![Ollama 与 Open WebUI 是什么](https://img.xuanyuan.dev/docker/blog/docker-open-webui-ollama.png)
+![Ollama 与 Open WebUI 是什么](https://assets.xuanyuan.me/docker/blog/docker-open-webui-ollama.png)
 
 两者搭配使用，就能实现“本地模型运行 \+ 网页可视化操作”的完整本地 AI 平台。这里给大家提供两个工具的中文镜像地址，下载速度更快，适配国内网络：
 
@@ -34,14 +34,14 @@ Linux 系统（包括银河麒麟、欧拉等国产系统）直接用下面的�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 
 ### 2\. Windows / Mac 用户
 
@@ -193,15 +193,15 @@ docker run -d --name open-webui --network ai-network -p 3002:8080 -e OLLAMA_BASE
 http://localhost:3002
 ```
 
-![创建一个管理员账号](https://img.xuanyuan.dev/docker/blog/docker-open-webui-ollama-2.png)
+![创建一个管理员账号](https://assets.xuanyuan.me/docker/blog/docker-open-webui-ollama-2.png)
 
 首次访问时，需要创建一个管理员账号（设置用户名、密码），创建完成后登录，就能进入 Open WebUI 的主界面。
 
-![Qwen 0\.5B 模型](https://img.xuanyuan.dev/docker/blog/docker-open-webui-ollama-5.png)
+![Qwen 0\.5B 模型](https://assets.xuanyuan.me/docker/blog/docker-open-webui-ollama-5.png)
 
 登录后，点击界面中的“模型”选项，就能看到我们刚才下载的 Qwen 0\.5B 模型，选择模型后，就可以开始聊天交互了，和使用 ChatGPT 等工具的体验完全一致。
 
-![始聊天交互](https://img.xuanyuan.dev/docker/blog/docker-open-webui-ollama-6.png)
+![始聊天交互](https://assets.xuanyuan.me/docker/blog/docker-open-webui-ollama-6.png)
 
 ## 关键验证：确认 Open WebUI 与 Ollama 正常连接
 

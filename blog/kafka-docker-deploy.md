@@ -1,6 +1,6 @@
 # Docker 部署 Apache Kafka：轻松搭建分布式消息队列
 
-![Docker 部署 Apache Kafka：轻松搭建分布式消息队列](https://img.xuanyuan.dev/docker/blog/docker-kafka.png)
+![Docker 部署 Apache Kafka：轻松搭建分布式消息队列](https://assets.xuanyuan.me/docker/blog/docker-kafka.png)
 
 *分类: Docker部署教程 | 标签: Apache Kafka,Kafka,Docker,轩辕镜像,消息队列,事件流,私有化部署,部署教程 | 发布时间: 2026-07-28 09:36:31*
 
@@ -82,14 +82,14 @@ Linux 未装 Docker 请使用轩辕镜像一键安装脚本：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 ---

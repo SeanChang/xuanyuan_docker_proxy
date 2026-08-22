@@ -1,6 +1,6 @@
 # Docker 部署 Rocket.Chat：轻松搭建私有化团队聊天与协作平台
 
-![Docker 部署 Rocket.Chat：轻松搭建私有化团队聊天与协作平台](https://img.xuanyuan.dev/docker/blog/rocketchat.webp)
+![Docker 部署 Rocket.Chat：轻松搭建私有化团队聊天与协作平台](https://assets.xuanyuan.me/docker/blog/rocketchat.webp)
 
 *分类: Docker部署教程 | 标签: Rocket.Chat,Docker,轩辕镜像,即时通讯,团队协作,私有化部署,部署教程 | 发布时间: 2026-07-26 14:43:13*
 
@@ -18,7 +18,7 @@
 
 国内从 Docker Hub 直拉常较慢，本文统一走轩辕加速。镜像说明见 [rocketchat/rocket.chat 镜像页](https://xuanyuan.cloud/zh/r/rocketchat/rocket.chat)，标签列表见 [tags](https://xuanyuan.cloud/r/rocketchat/rocket.chat/tags)。官方部署文档：[Deploy with Docker Compose](https://docs.rocket.chat/docs/deploy-with-docker-docker-compose)；离线注册说明：[Air-gapped Workspace Registration](https://docs.rocket.chat/docs/air-gapped-workspace-registration)。
 
-![Rocket.Chat 首次安装：管理员信息](https://img.xuanyuan.dev/docker/blog/rocketchat-1.webp)
+![Rocket.Chat 首次安装：管理员信息](https://assets.xuanyuan.me/docker/blog/rocketchat-1.webp)
 
 *图 1：安装向导第 1 步——创建管理员资料*
 
@@ -74,14 +74,14 @@ Linux 未装 Docker：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 x86 Linux 自检 AVX：
 
 ```bash
@@ -287,7 +287,7 @@ Mongo 正常会出现 `Listening on` / `Waiting for connections`，随后 init �
 
 填写姓名、用户名、邮箱、密码。密码规则较严（长度、大小写、数字、符号等），按页面提示设置。
 
-![Rocket.Chat 向导：填写管理员姓名用户名邮箱密码](https://img.xuanyuan.dev/docker/blog/rocketchat-1.webp)
+![Rocket.Chat 向导：填写管理员姓名用户名邮箱密码](https://assets.xuanyuan.me/docker/blog/rocketchat-1.webp)
 
 *图 1：第 1 步「管理员信息」*
 
@@ -295,7 +295,7 @@ Mongo 正常会出现 `Listening on` / `Waiting for connections`，随后 init �
 
 填写组织名称、行业、规模、国家。
 
-![Rocket.Chat 向导：组织信息](https://img.xuanyuan.dev/docker/blog/rocketchat-2.webp)
+![Rocket.Chat 向导：组织信息](https://assets.xuanyuan.me/docker/blog/rocketchat-2.webp)
 
 *图 2：第 2 步「组织信息」*
 
@@ -305,13 +305,13 @@ Mongo 正常会出现 `Listening on` / `Waiting for connections`，随后 init �
 
 **在线路径**会出现「等待确认 / 安全码」页：
 
-![Rocket.Chat 向导：等待邮件确认安全码](https://img.xuanyuan.dev/docker/blog/rocketchat-3.webp)
+![Rocket.Chat 向导：等待邮件确认安全码](https://assets.xuanyuan.me/docker/blog/rocketchat-3.webp)
 
 *图 3：在线注册「等待确认」*
 
 **离线路径**（内网或 Cloud 邮件不畅时）：本地生成 Token A，到 Cloud 换 Token B，再贴回本地。
 
-![Rocket.Chat 离线注册：复制本地 Token](https://img.xuanyuan.dev/docker/blog/rocketchat-4.webp)
+![Rocket.Chat 离线注册：复制本地 Token](https://assets.xuanyuan.me/docker/blog/rocketchat-4.webp)
 
 *图 4：离线注册——复制本地 Token 并同意条款*
 
@@ -333,13 +333,13 @@ Mongo 正常会出现 `Listening on` / `Waiting for connections`，随后 init �
 3. 用**可正常收信的邮箱**（优先自有域名企业邮；Gmail / QQ 等免费邮容易失败）
 4. 注册完成后再用同一邮箱登录
 
-![Rocket.Chat Cloud 登录页：需先 Create account](https://img.xuanyuan.dev/docker/blog/rocketchat-5.webp)
+![Rocket.Chat Cloud 登录页：需先 Create account](https://assets.xuanyuan.me/docker/blog/rocketchat-5.webp)
 
 *图 5：Cloud Login——新用户点 Create account*
 
 登录成功后若走 magic-link，会看到已发信提示：
 
-![Cloud 提示已发送登录链接](https://img.xuanyuan.dev/docker/blog/rocketchat-6.webp)
+![Cloud 提示已发送登录链接](https://assets.xuanyuan.me/docker/blog/rocketchat-6.webp)
 
 *图 6：We emailed you a login link*
 
@@ -349,25 +349,25 @@ Mongo 正常会出现 `Listening on` / `Waiting for connections`，随后 init �
 
 **Step 1**：把本地 Token A 贴进 Cloud：
 
-![Cloud：粘贴本地 Token 后 Continue](https://img.xuanyuan.dev/docker/blog/rocketchat-7.webp)
+![Cloud：粘贴本地 Token 后 Continue](https://assets.xuanyuan.me/docker/blog/rocketchat-7.webp)
 
 *图 7：Register Offline Workspace Step 1*
 
 **Step 2**：复制 Cloud 生成的 Token B（**务必立刻复制**，离开后无法再看）：
 
-![Cloud：复制 response code](https://img.xuanyuan.dev/docker/blog/rocketchat-8.webp)
+![Cloud：复制 response code](https://assets.xuanyuan.me/docker/blog/rocketchat-8.webp)
 
 *图 8：Step 2——Copy generated code（只显示一次）*
 
 回到本地向导，粘贴 Token B，点 **完成注册**：
 
-![本地粘贴 Cloud Token 并完成注册](https://img.xuanyuan.dev/docker/blog/rocketchat-9.webp)
+![本地粘贴 Cloud Token 并完成注册](https://assets.xuanyuan.me/docker/blog/rocketchat-9.webp)
 
 *图 9：本地「完成注册」*
 
 若按钮一直灰色：清空后完整重贴、点输入框外失焦、换浏览器；Token 极长，粘贴不全最常见。敏感操作可能要求再输一次管理员密码：
 
-![敏感操作再次验证密码](https://img.xuanyuan.dev/docker/blog/rocketchat-10.webp)
+![敏感操作再次验证密码](https://assets.xuanyuan.me/docker/blog/rocketchat-10.webp)
 
 *图 10：请输入您的密码*
 
@@ -381,7 +381,7 @@ Mongo 正常会出现 `Listening on` / `Waiting for connections`，随后 init �
 
 注册完成后进入 Home，可见欢迎语与入门卡片（添加用户、创建频道、移动 / 桌面客户端、文档等）。
 
-![Rocket.Chat Home 首页入门建议](https://img.xuanyuan.dev/docker/blog/rocketchat-11.webp)
+![Rocket.Chat Home 首页入门建议](https://assets.xuanyuan.me/docker/blog/rocketchat-11.webp)
 
 *图 11：Home——欢迎与入门建议*
 
@@ -389,7 +389,7 @@ Mongo 正常会出现 `Listening on` / `Waiting for connections`，随后 init �
 
 打开 **管理 → 用户**：邀请、新建用户，查看角色与座位占用。
 
-![管理面板：用户列表](https://img.xuanyuan.dev/docker/blog/rocketchat-12.webp)
+![管理面板：用户列表](https://assets.xuanyuan.me/docker/blog/rocketchat-12.webp)
 
 *图 12：管理 → 用户*
 
@@ -397,7 +397,7 @@ Mongo 正常会出现 `Listening on` / `Waiting for connections`，随后 init �
 
 在界面中创建频道：名称勿含空格或特殊字符；可设话题、成员，「私人」开关控制是否仅邀请加入。
 
-![创建频道对话框](https://img.xuanyuan.dev/docker/blog/rocketchat-13.webp)
+![创建频道对话框](https://assets.xuanyuan.me/docker/blog/rocketchat-13.webp)
 
 *图 13：创建频道*
 
@@ -405,7 +405,7 @@ Mongo 正常会出现 `Listening on` / `Waiting for connections`，随后 init �
 
 **目录 → 频道** 可浏览公开频道；新工作区通常自带 `#general`。
 
-![目录：频道列表与 general](https://img.xuanyuan.dev/docker/blog/rocketchat-14.webp)
+![目录：频道列表与 general](https://assets.xuanyuan.me/docker/blog/rocketchat-14.webp)
 
 *图 14：目录中的 #general*
 
@@ -413,7 +413,7 @@ Mongo 正常会出现 `Listening on` / `Waiting for connections`，随后 init �
 
 Home 入门卡片可跳转应用商店；Android 可在 Google Play 搜索 **Rocket.Chat** 安装，登录时填写你的工作区 URL（与 `ROOT_URL` 一致）。
 
-![Google Play：Rocket.Chat 移动应用](https://img.xuanyuan.dev/docker/blog/rocketchat-15.webp)
+![Google Play：Rocket.Chat 移动应用](https://assets.xuanyuan.me/docker/blog/rocketchat-15.webp)
 
 *图 15：Google Play 上的 Rocket.Chat*
 
@@ -421,7 +421,7 @@ Home 入门卡片可跳转应用商店；Android 可在 Google Play 搜索 **Roc
 
 **管理 → 布局** 可自定义主页内容、登录页、自定义 CSS / 脚本等。
 
-![管理：布局设置](https://img.xuanyuan.dev/docker/blog/rocketchat-16.webp)
+![管理：布局设置](https://assets.xuanyuan.me/docker/blog/rocketchat-16.webp)
 
 *图 16：管理 → 布局*
 

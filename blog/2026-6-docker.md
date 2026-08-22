@@ -1,6 +1,6 @@
 # 2026 年 6 月最新 Docker 镜像源加速列表与使用指南
 
-![2026 年 6 月最新 Docker 镜像源加速列表与使用指南](https://img.xuanyuan.dev/docker/blog/docker-2026-6.png)
+![2026 年 6 月最新 Docker 镜像源加速列表与使用指南](https://assets.xuanyuan.me/docker/blog/docker-2026-6.png)
 
 *分类: Docker部署教程 | 标签: Docker,镜像源,轩辕镜像 | 发布时间: 2026-06-01 03:08:58*
 
@@ -39,26 +39,18 @@
 ## 一键安装与配置镜像加速（推荐方案）
 🧪 测试环境 / 🏭 生产环境
 Linux Docker & Docker Compose 一键安装配置脚本  
-脚本支持16种主流Linux发行版（含统信 UOS、深度 Deepin、openEuler、Huawei Cloud EulerOS (HCE) 等国产与信创系统），可一键完成Docker、Docker Compose安装及轩辕镜像加速配置，无需手动操作。
+脚本支持13种主流Linux发行版（含国产系统），可一键完成Docker、Docker Compose安装及轩辕镜像加速配置，无需手动操作。
 
 ### 执行命令
 #### 🧪 测试环境（快速体验，仅限非生产场景）
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 #### 🏭 生产环境（推荐，安全优先）
 ```bash
 # 1. 下载脚本到本地
 wget https://xuanyuan.cloud/docker.sh -O docker-install.sh
-# 备用地址1：wget https://get.xuanyuan.dev/docker.sh -O docker-install.sh
-# 备用地址2：wget https://get.xuanyuan.me/docker.sh -O docker-install.sh
 
 # 2. （可选）审计脚本源码（建议企业环境必做）
 less docker-install.sh  # 或使用vim、cat查看脚本内容
@@ -67,8 +59,14 @@ less docker-install.sh  # 或使用vim、cat查看脚本内容
 bash docker-install.sh
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ### 脚本特性与优势
-- 支持16种发行版：覆盖openEuler、Huawei Cloud EulerOS (HCE)、OpenCloudOS、Anolis OS、Alinux、Kylin Linux、统信 UOS、Deepin等国产与信创系统，以及Fedora、Rocky Linux、Ubuntu、Debian、CentOS等主流发行版  
+- 支持13种发行版：覆盖openEuler、OpenCloudOS、Anolis OS、Alinux、Kylin Linux等国产系统，以及Fedora、Rocky Linux、Ubuntu、Debian、CentOS等主流发行版  
 - 国产系统深度适配：自动识别国产操作系统版本，提供最优配置方案  
 - 多源智能切换：内置阿里云、腾讯云、华为云、中科大、清华等6+国内镜像源，自动选择最快节点  
 - 老版本兼容：支持Ubuntu 16.04、Debian 9/10等过期系统，自动适配兼容安装方案  
@@ -77,12 +75,11 @@ bash docker-install.sh
 - 开源透明：脚本已在GitHub开源: `https://github.com/SeanChang/xuanyuan_docker_proxy`
 
 ### 支持的操作系统详情
-轩辕镜像的一键安装脚本支持 **16种主流Linux发行版**，包含统信 UOS、深度 Deepin、Huawei Cloud EulerOS (HCE) 等国产桌面&服务器环境，全覆盖国产信创系统、CentOS替代生态、主流传统发行版；同时完整兼容 **x86_64 与 ARM架构**（适配鲲鹏920、飞腾等国产处理器）。
+轩辕镜像的一键安装脚本支持 **15种主流Linux发行版**，包含统信 UOS、深度 Deepin 等国产桌面&服务器环境，全覆盖国产信创系统、CentOS替代生态、主流传统发行版；同时完整兼容 **x86_64 与 ARM架构**（适配鲲鹏920、飞腾等国产处理器）。
 
 | 分类 | 操作系统 | 版本 | 支持状态 | 说明 |
 |------|----------|------|----------|------|
 | 🇨🇳 国产操作系统 | openEuler (欧拉) | 20.03+, 22.03+, 24.03+ | ✅ | 华为开源，CentOS 兼容 |
-| | Huawei Cloud EulerOS (HCE) | 1.1、2.0+ | ✅ | 华为云欧拉，ID=hce；2.x→CentOS 8 源，1.x→CentOS 7 |
 | | OpenCloudOS | 9.x | ✅ | 腾讯开源，CentOS 9 兼容 |
 | | Anolis OS (龙蜥) | 7.x, 8.x | ✅ | 阿里云支持，RHEL 兼容 |
 | | Alinux (阿里云) | 2.x, 3.x | ✅ | 阿里云 ECS 默认系统 |
@@ -94,7 +91,7 @@ bash docker-install.sh
 | 🔄 创新发行版 | Fedora | 34+ | ✅ | Red Hat上游版本，内置最新内核&软件特性 |
 | 📦 传统发行版 | Ubuntu | 16.04+ | ✅ | 老旧版本自动做特殊兼容适配处理 |
 | | Debian | 9+ | ✅ | 老旧版本自动做特殊兼容适配处理 |
-| | CentOS | 8、9（含 Stream） | ✅ | 不含 CentOS 7（已 EOL，脚本不支持） |
+| | CentOS | 7, 8, 9 | ✅ | 包含 CentOS Stream 全系列版本 |
 | | RHEL | 7, 8, 9 | ✅ | Red Hat 官方企业级稳定发行版 |
 | | Oracle Linux | 7, 8, 9 | ✅ | Oracle 商用企业级Linux发行版 |
 

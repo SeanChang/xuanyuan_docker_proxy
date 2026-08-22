@@ -1,6 +1,6 @@
 # 3 分钟用 Docker 部署 CoPaw！你的专属AI个人助理
 
-![3 分钟用 Docker 部署 CoPaw！你的专属AI个人助理](https://img.xuanyuan.dev/docker/blog/docker-copaw.png)
+![3 分钟用 Docker 部署 CoPaw！你的专属AI个人助理](https://assets.xuanyuan.me/docker/blog/docker-copaw.png)
 
 *分类: Docker部署教程 | 标签: CoPaw,openclaw,Ai,人工智能 | 发布时间: 2026-03-03 13:50:17*
 
@@ -21,19 +21,19 @@ Docker 部署的核心优势：
 ---
 
 ## 环境准备：一键安装 Docker（含国产系统/架构）
-首先确保服务器/本地机器安装了 Docker。这里推荐官方适配的**一键安装配置脚本**，支持 16 种 Linux 发行版（含 openEuler、Huawei Cloud EulerOS (HCE)、Anolis OS、麒麟等国产与信创系统），x86_64/ARM（鲲鹏 920、飞腾等）架构全兼容，还自动配置轩辕镜像源，省心到极致！
+首先确保服务器/本地机器安装了 Docker。这里推荐官方适配的**一键安装配置脚本**，支持 13 种 Linux 发行版（含 openEuler、Anolis OS、麒麟等国产系统），x86_64/ARM（鲲鹏 920、飞腾等）架构全兼容，还自动配置轩辕镜像源，省心到极致！
 
 ### 执行一键安装命令：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 执行完成后，输入以下命令验证安装：
 ```bash
 docker -v

@@ -1,6 +1,6 @@
 # Dify 开源 LLM 应用开发平台企业级 Docker Compose 部署手册
 
-![Dify 开源 LLM 应用开发平台企业级 Docker Compose 部署手册](https://img.xuanyuan.dev/docker/blog/docker-dify.png)
+![Dify 开源 LLM 应用开发平台企业级 Docker Compose 部署手册](https://assets.xuanyuan.me/docker/blog/docker-dify.png)
 
 *分类: Docker部署教程 | 标签: dify,部署教程 | 发布时间: 2025-10-07 02:41:29*
 
@@ -30,14 +30,14 @@ Dify 是由 LangGenius 开发的**开源 LLM 应用开发平台**，可帮助开
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ⚠️ 安全提示（生产环境强制要求）
 该脚本将以 `root` 权限执行，涉及系统配置修改、软件安装等操作：
 - 企业/生产环境：**必须先下载脚本本地审计**（`wget https://xuanyuan.cloud/docker.sh`），确认无风险后再执行；或直接使用 [Docker 官方安装文档](https://docs.docker.com/engine/install/)

@@ -1,6 +1,6 @@
 # Docker 部署 CUPS Web：浏览器即可管理打印机与打印任务
 
-![Docker 部署 CUPS Web：浏览器即可管理打印机与打印任务](https://img.xuanyuan.dev/docker/blog/cups-web.webp)
+![Docker 部署 CUPS Web：浏览器即可管理打印机与打印任务](https://assets.xuanyuan.me/docker/blog/cups-web.webp)
 
 *分类: Docker部署教程 | 标签: CUPS Web,CUPS,Docker,轩辕镜像,网络打印,远程打印,HP Smart Tank,私有化部署,部署教程 | 发布时间: 2026-07-31 04:22:28*
 
@@ -87,14 +87,14 @@ Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 > **无 USB 的环境**：可删掉 Compose 里 `/dev/bus/usb`、`/run/udev` 与 `device_cgroup_rules`，仅用网络打印机（本文即此场景）。
@@ -270,17 +270,17 @@ listening on :8080
 
 ## 六、浏览器首次使用
 
-> 配图线上地址统一为 `![cups web {N}](https://img.xuanyuan.dev/docker/blog/cups-web-{N}.webp)`（共 **21** 张）。
+> 配图线上地址统一为 `![cups web {N}](https://assets.xuanyuan.me/docker/blog/cups-web-{N}.webp)`（共 **21** 张）。
 
 ### 6.1 登录 Web 门户
 
 打开 `http://192.168.1.10:1180`，使用默认账号 **`admin` / `admin`** 登录（页脚可见 **v0.2.3**）。**首次登录后请立刻修改默认密码。**
 
-![CUPS Web 登录页：用户名 admin，页脚 v0.2.3](https://img.xuanyuan.dev/docker/blog/cups-web-1.webp)
+![CUPS Web 登录页：用户名 admin，页脚 v0.2.3](https://assets.xuanyuan.me/docker/blog/cups-web-1.webp)
 
 登录后进入「打印」主界面：可选打印机、标准/发票/身份证三种模式；左侧上传文件与打印参数，右侧预览与记录。此时若尚未添加打印机，「选择打印机」为空属正常。
 
-![CUPS Web 主界面：标准打印，尚未选择打印机](https://img.xuanyuan.dev/docker/blog/cups-web-3.webp)
+![CUPS Web 主界面：标准打印，尚未选择打印机](https://assets.xuanyuan.me/docker/blog/cups-web-3.webp)
 
 ---
 
@@ -305,21 +305,21 @@ ping -c 3 192.168.1.29
 
 浏览器打开 `http://192.168.1.10:631`，可见 **OpenPrinting CUPS 2.4.19** 首页。点顶部 **Administration**，或「CUPS for Administrators」里的 Adding Printers。
 
-![CUPS 首页：OpenPrinting CUPS 2.4.19](https://img.xuanyuan.dev/docker/blog/cups-web-2.webp)
+![CUPS 首页：OpenPrinting CUPS 2.4.19](https://assets.xuanyuan.me/docker/blog/cups-web-2.webp)
 
 访问管理功能时浏览器会弹出登录框：用户名填 **`print`**（即 `.env` 的 `CUPSADMIN`），密码填你设置的 `CUPSPASSWORD`（本文为 `123456`）。
 
-![CUPS 管理登录框：地址 192.168.1.10:631，用户名 print](https://img.xuanyuan.dev/docker/blog/cups-web-4.webp)
+![CUPS 管理登录框：地址 192.168.1.10:631，用户名 print](https://assets.xuanyuan.me/docker/blog/cups-web-4.webp)
 
 进入 Administration 后，在 Printers 区域点 **Add Printer**。建议勾选 **Share printers connected to this system**、**Allow remote administration**（按需），再 **Change Settings**。
 
-![CUPS Administration：Add Printer 与服务器共享选项](https://img.xuanyuan.dev/docker/blog/cups-web-5.webp)
+![CUPS Administration：Add Printer 与服务器共享选项](https://assets.xuanyuan.me/docker/blog/cups-web-5.webp)
 
 #### 6.2.3 选择 IPP 并填写 Connection
 
 **Discovered Network Printers 为空可忽略。** 滚到 **Other Network Printers**，选中 **Internet Printing Protocol (ipp)**，点 **Continue**。
 
-![添加打印机：选中 Internet Printing Protocol (ipp)，发现列表为空](https://img.xuanyuan.dev/docker/blog/cups-web-6.webp)
+![添加打印机：选中 Internet Printing Protocol (ipp)，发现列表为空](https://assets.xuanyuan.me/docker/blog/cups-web-6.webp)
 
 Connection 填入（本文实测）：
 
@@ -329,37 +329,37 @@ ipp://192.168.1.29/ipp/print
 
 也可尝试：`ipp://192.168.1.29:631/ipp/print`、`ipp://192.168.1.29/ipp/printer`；若 IPP 不通而 9100 通，改选 AppSocket，填 `socket://192.168.1.29:9100`。
 
-![添加打印机：Connection 填写 ipp://192.168.1.29/ipp/print](https://img.xuanyuan.dev/docker/blog/cups-web-7.webp)
+![添加打印机：Connection 填写 ipp://192.168.1.29/ipp/print](https://assets.xuanyuan.me/docker/blog/cups-web-7.webp)
 
 #### 6.2.4 命名并勾选共享
 
 Name 例如 **`HP-Home`**，Description 随意；务必勾选 **Share This Printer**，否则 Web 门户列表看不到。点 **Continue**。
 
-![添加打印机：名称 HP-Home，已勾选 Share This Printer](https://img.xuanyuan.dev/docker/blog/cups-web-8.webp)
+![添加打印机：名称 HP-Home，已勾选 Share This Printer](https://assets.xuanyuan.me/docker/blog/cups-web-8.webp)
 
 #### 6.2.5 选择厂商与型号
 
 Make 选 **HP** → Continue。
 
-![添加打印机：Make 选择 HP](https://img.xuanyuan.dev/docker/blog/cups-web-9.webp)
+![添加打印机：Make 选择 HP](https://assets.xuanyuan.me/docker/blog/cups-web-9.webp)
 
 Model 优先选列表顶部的 **IPP Everywhere™**（现代网络机通用），再点 **Add Printer**。若列表有具体型号亦可。
 
-![添加打印机：Model 选择 IPP Everywhere](https://img.xuanyuan.dev/docker/blog/cups-web-10.webp)
+![添加打印机：Model 选择 IPP Everywhere](https://assets.xuanyuan.me/docker/blog/cups-web-10.webp)
 
 #### 6.2.6 默认选项与确认
 
 进入 Set Default Options：Media Size 建议 **A4**，按需设置纸型与质量，点 **Set Default Options**。
 
-![设置默认选项：Media Size 为 A4](https://img.xuanyuan.dev/docker/blog/cups-web-11.webp)
+![设置默认选项：Media Size 为 A4](https://assets.xuanyuan.me/docker/blog/cups-web-11.webp)
 
 成功提示：**Printer HP-Home default options have been set successfully.**
 
-![CUPS 提示：HP-Home 默认选项设置成功](https://img.xuanyuan.dev/docker/blog/cups-web-12.webp)
+![CUPS 提示：HP-Home 默认选项设置成功](https://assets.xuanyuan.me/docker/blog/cups-web-12.webp)
 
 打开 **Printers** → **HP-Home**，状态应为 **Idle, Accepting Jobs, Shared**；Connection 为 `ipp://192.168.1.29/ipp/print`。本文驱动显示为 **Smart Tank 210-220 series - IPP Everywhere (color)**。
 
-![打印机 HP-Home 详情：Idle Accepting Jobs Shared，IPP 地址 192.168.1.29](https://img.xuanyuan.dev/docker/blog/cups-web-13.webp)
+![打印机 HP-Home 详情：Idle Accepting Jobs Shared，IPP 地址 192.168.1.29](https://assets.xuanyuan.me/docker/blog/cups-web-13.webp)
 
 ---
 
@@ -367,35 +367,35 @@ Model 优先选列表顶部的 **IPP Everywhere™**（现代网络机通用）�
 
 返回 `http://192.168.1.10:1180`，在「选择打印机」下拉选中 **HP-Home**，点刷新；右侧「打印机状态」应显示 **空闲**。
 
-![CUPS Web：已选中 HP-Home，标准打印界面](https://img.xuanyuan.dev/docker/blog/cups-web-14.webp)
+![CUPS Web：已选中 HP-Home，标准打印界面](https://assets.xuanyuan.me/docker/blog/cups-web-14.webp)
 
 除标准打印外，还可切换：
 
 - **发票打印**：适合票据类多文件上传，可强制黑白等
 
-![CUPS Web：发票打印模式](https://img.xuanyuan.dev/docker/blog/cups-web-15.webp)
+![CUPS Web：发票打印模式](https://assets.xuanyuan.me/docker/blog/cups-web-15.webp)
 
 - **身份证打印**：分别上传正反面，可选 A4 / A5 排版
 
-![CUPS Web：身份证打印，正反面上传区](https://img.xuanyuan.dev/docker/blog/cups-web-16.webp)
+![CUPS Web：身份证打印，正反面上传区](https://assets.xuanyuan.me/docker/blog/cups-web-16.webp)
 
 **标准打印实测**：上传 `开户确认书.docx`（约 11 KB），系统提示 **已转换为 PDF，可以打印**；右侧出现 A4 预览。调好彩色/双面/份数后，点 **开始打印**。
 
-![标准打印：Word 已转 PDF，右侧显示预览](https://img.xuanyuan.dev/docker/blog/cups-web-17.webp)
+![标准打印：Word 已转 PDF，右侧显示预览](https://assets.xuanyuan.me/docker/blog/cups-web-17.webp)
 
 提交成功会弹出 **打印任务已提交**（含任务 ID，如 `ipp://localhost:631/jobs/2`）。
 
-![打印任务已提交：任务 ID 与页数提示](https://img.xuanyuan.dev/docker/blog/cups-web-18.webp)
+![打印任务已提交：任务 ID 与页数提示](https://assets.xuanyuan.me/docker/blog/cups-web-18.webp)
 
 「打印记录」出现 **已打印** 条目；「打印机状态」可看到墨盒余量、纸盒信息等（取决于打印机上报能力）。
 
-![打印记录显示已打印，墨盒信息 100%](https://img.xuanyuan.dev/docker/blog/cups-web-19.webp)
+![打印记录显示已打印，墨盒信息 100%](https://assets.xuanyuan.me/docker/blog/cups-web-19.webp)
 
-![打印记录与打印机状态特写：空闲、队列 0、墨盒满](https://img.xuanyuan.dev/docker/blog/cups-web-20.webp)
+![打印记录与打印机状态特写：空闲、队列 0、墨盒满](https://assets.xuanyuan.me/docker/blog/cups-web-20.webp)
 
 打印机吐出的纸件与预览一致，即整条链路跑通。
 
-![实测出纸：开户确认书纸质件](https://img.xuanyuan.dev/docker/blog/cups-web-21.webp)
+![实测出纸：开户确认书纸质件](https://assets.xuanyuan.me/docker/blog/cups-web-21.webp)
 
 支持格式摘要：PDF；图片 jpg/png/gif/heic（可多图合并）；Office doc(x)/xls(x)/ppt(x)；OFD；txt/md/html。
 

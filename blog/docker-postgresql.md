@@ -1,6 +1,6 @@
 # Docker 部署 PostgreSQL 数据库教程
 
-![Docker 部署 PostgreSQL 数据库教程](https://img.xuanyuan.dev/docker/blog/docker-postgresql.png)
+![Docker 部署 PostgreSQL 数据库教程](https://assets.xuanyuan.me/docker/blog/docker-postgresql.png)
 
 *分类: Docker部署教程 | 标签: PostgreSQL,docker,部署教程 | 发布时间: 2025-10-03 06:56:04*
 
@@ -19,14 +19,14 @@ PostgreSQL 是一款开源免费的高级关系型数据库管理系统，始于
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ---
 
 ## 1、查看 PostgreSQL 镜像详情

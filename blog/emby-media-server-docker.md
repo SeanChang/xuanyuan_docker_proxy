@@ -1,6 +1,6 @@
 # Emby Media Server Docker 容器化部署指南
 
-![Emby Media Server Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-emby-media-server.png)
+![Emby Media Server Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-emby-media-server.png)
 
 *分类: Docker部署教程 | 标签: emby-media-server,docker,部署教程 | 发布时间: 2025-12-14 12:44:03*
 
@@ -21,14 +21,14 @@ Emby Media Server 基于Docker容器运行，需先确保服务器已安装Docke
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本将自动完成Docker引擎、Docker Compose等组件的安装与配置，并启动Docker服务。安装完成后，可通过`docker --version`命令验证安装结果。
 
 

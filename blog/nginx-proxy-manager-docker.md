@@ -1,6 +1,6 @@
 # NGINX-PROXY-MANAGER Docker 容器化部署指南
 
-![NGINX-PROXY-MANAGER Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-nginx-proxy-manager.png)
+![NGINX-PROXY-MANAGER Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-nginx-proxy-manager.png)
 
 *分类: Docker部署教程 | 标签: nginx-proxy-manager,docker,部署教程 | 发布时间: 2025-12-03 05:41:32*
 
@@ -26,14 +26,14 @@ NGINX-PROXY-MANAGER（简称NPM）是一款基于Docker容器的Nginx代理主�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 脚本适用系统：Ubuntu 18.04+/Debian 10+/CentOS 7+/Fedora 30+。执行过程中需输入sudo密码，脚本将自动完成Docker引擎、Docker Compose的安装，并配置开机自启。
 
 

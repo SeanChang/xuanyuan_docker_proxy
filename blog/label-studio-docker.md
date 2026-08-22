@@ -1,6 +1,6 @@
 # LABEL-STUDIO Docker 容器化部署指南
 
-![LABEL-STUDIO Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-label-studio.png)
+![LABEL-STUDIO Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-label-studio.png)
 
 *分类: Docker部署教程 | 标签: label-studio,docker,部署教程 | 发布时间: 2025-12-10 07:15:54*
 
@@ -20,14 +20,14 @@ LABEL-STUDIO是一款开源的数据标注工具，支持对音频、文本、�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 安装完成后，可通过以下命令验证Docker是否正常运行：
 
 ```bash

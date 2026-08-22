@@ -1,6 +1,6 @@
 # LANGFUSE Docker 容器化部署指南
 
-![LANGFUSE Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-langfuse.png)
+![LANGFUSE Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-langfuse.png)
 
 *分类: Docker部署教程 | 标签: langfuse,docker,部署教程 | 发布时间: 2025-12-03 08:13:32*
 
@@ -23,14 +23,14 @@ LANGFUSE 是一款开源的 LLM 工程平台，旨在为大型语言模型（LLM
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > **安装说明**：
 > - 脚本将自动检测操作系统类型并适配安装流程
 > - 过程中需要 sudo 权限，请确保当前用户具有 sudo 执行权限

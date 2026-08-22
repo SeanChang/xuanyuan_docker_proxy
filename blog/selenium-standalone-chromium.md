@@ -1,6 +1,6 @@
 # Selenium Standalone Chromium 容器化部署全指南：从测试环境到企业级安全实践
 
-![Selenium Standalone Chromium 容器化部署全指南：从测试环境到企业级安全实践](https://img.xuanyuan.dev/docker/blog/docker-selenium-standalone-chromium.png)
+![Selenium Standalone Chromium 容器化部署全指南：从测试环境到企业级安全实践](https://assets.xuanyuan.me/docker/blog/docker-selenium-standalone-chromium.png)
 
 *分类: Docker部署教程 | 标签: selenium,部署教程 | 发布时间: 2026-01-18 09:25:40*
 
@@ -23,14 +23,14 @@ STANDALONE-CHROMIUM是一个基于Docker的容器化应用，提供了Selenium G
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 # 验证安装
 sudo docker run hello-world
 ```

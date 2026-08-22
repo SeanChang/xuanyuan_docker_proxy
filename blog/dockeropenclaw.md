@@ -1,6 +1,6 @@
 # 从零开始Docker部署OpenClaw：踩坑全记录+新手保姆级教程
 
-![从零开始Docker部署OpenClaw：踩坑全记录+新手保姆级教程](https://img.xuanyuan.dev/docker/blog/docker-openclaw.png)
+![从零开始Docker部署OpenClaw：踩坑全记录+新手保姆级教程](https://assets.xuanyuan.me/docker/blog/docker-openclaw.png)
 
 *分类: Docker部署教程 | 标签: OpenClaw,AI,部署教程 | 发布时间: 2026-04-25 09:00:29*
 
@@ -26,14 +26,14 @@ Linux 系统（包括银河麒麟、欧拉、统信 UOS 等国产系统）直接
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 该脚本支持多种架构（x86_64、ARM64 等）和众多 Linux 发行版，包括但不限于：
 - Ubuntu / Debian / Kali / Deepin
 - CentOS / RHEL / Rocky Linux / AlmaLinux
@@ -121,7 +121,7 @@ Dashboard URL: http://127.0.0.1:18789/#token=a3feb6fd93afaefa072f8d47891eaa20a70
 ### 6. 浏览器访问验证
 **忽略任何工具的报错信息**，直接在你的Chrome/Edge浏览器中复制粘贴上面的链接。
 
-![OpenClaw的仪表盘界面](https://img.xuanyuan.dev/docker/blog/docker-openclaw-1.png)
+![OpenClaw的仪表盘界面](https://assets.xuanyuan.me/docker/blog/docker-openclaw-1.png)
 
 如果一切顺利，你会看到OpenClaw的仪表盘界面，恭喜你部署成功了！
 

@@ -1,6 +1,6 @@
 # Docker 部署 GitLab CE 完整版教程
 
-![Docker 部署 GitLab CE 完整版教程](https://img.xuanyuan.dev/docker/blog/docker-gitlab.png)
+![Docker 部署 GitLab CE 完整版教程](https://assets.xuanyuan.me/docker/blog/docker-gitlab.png)
 
 *分类: Docker部署教程 | 标签: gitlab,docker,部署教程 | 发布时间: 2025-12-03 07:44:58*
 
@@ -18,14 +18,14 @@ GitLab Community Edition（GitLab CE）是开源一站式 DevOps 平台，集成
 ### 1.1 安装 Docker（一键脚本，支持 Ubuntu/CentOS）
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 安装完成验证：
 ```bash
 docker --version
@@ -126,7 +126,7 @@ docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 - 用户名：`root`
 - 密码：上面命令输出的字符串
 
-![gitlab 登录页](https://img.xuanyuan.dev/docker/blog/docker-gitlab-1.png)
+![gitlab 登录页](https://assets.xuanyuan.me/docker/blog/docker-gitlab-1.png)
 
 ### 5.4 登录后必须做
 1. 修改 root 密码
@@ -134,7 +134,7 @@ docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 3. 配置外部访问 URL
 4. 配置邮件服务
 
-![gitlab 主页](https://img.xuanyuan.dev/docker/blog/docker-gitlab-2.png)
+![gitlab 主页](https://assets.xuanyuan.me/docker/blog/docker-gitlab-2.png)
 
 ---
 

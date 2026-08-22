@@ -1,6 +1,6 @@
 # Docker 部署万能文件预览神器 kkFileView：浏览器即可在线预览 Office、PDF
 
-![Docker 部署万能文件预览神器 kkFileView：浏览器即可在线预览 Office、PDF](https://img.xuanyuan.dev/docker/blog/kkfileview.webp)
+![Docker 部署万能文件预览神器 kkFileView：浏览器即可在线预览 Office、PDF](https://assets.xuanyuan.me/docker/blog/kkfileview.webp)
 
 *分类: Docker部署教程 | 标签: kkFileView,Docker,轩辕镜像,文件预览,Office,PDF,私有化部署,部署教程 | 发布时间: 2026-07-23 07:32:05*
 
@@ -62,14 +62,14 @@ docker compose version
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多说明见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 ---
@@ -207,61 +207,61 @@ sudo ufw allow 8012/tcp comment 'kkfileview'
 
 打开首页即可看到「开源的万能文件预览系统」与六大能力块（Office / CAD·3D / 图片 / 压缩·文本 / 音视频·邮件 / 接入能力），以及「文件链接预览」「上传文件预览」两个试玩区。
 
-![kkFileView 首页展示开源万能文件预览系统与格式能力地图](https://img.xuanyuan.dev/docker/blog/kkfileview-1.webp)
+![kkFileView 首页展示开源万能文件预览系统与格式能力地图](https://assets.xuanyuan.me/docker/blog/kkfileview-1.webp)
 
 ### 5.2 上传前的安全提示
 
 选择本地文件上传时，页面会弹出提示：勿上传机密/个人敏感文件，或用完即删。内网演示请自行评估风险。
 
-![kkFileView 上传文件时弹出勿上传机密文档的安全提示对话框](https://img.xuanyuan.dev/docker/blog/kkfileview-2.webp)
+![kkFileView 上传文件时弹出勿上传机密文档的安全提示对话框](https://assets.xuanyuan.me/docker/blog/kkfileview-2.webp)
 
 ### 5.3 上传成功：列表出现 docx
 
 开启 `file.upload.disable = false` 后，可上传例如「开户确认书.docx」，列表出现「预览 / 删除」。
 
-![kkFileView 本地源列表显示已上传的开户确认书 docx](https://img.xuanyuan.dev/docker/blog/kkfileview-3.webp)
+![kkFileView 本地源列表显示已上传的开户确认书 docx](https://assets.xuanyuan.me/docker/blog/kkfileview-3.webp)
 
 ### 5.4 Office 预览：docx → PDF 阅读器
 
 点击「预览」，LibreOffice 转换后进入 PDF.js 风格阅读器（侧栏缩略图、缩放、页码等）。
 
-![kkFileView 在线预览开户确认书 docx 成功显示文档内容](https://img.xuanyuan.dev/docker/blog/kkfileview-4.webp)
+![kkFileView 在线预览开户确认书 docx 成功显示文档内容](https://assets.xuanyuan.me/docker/blog/kkfileview-4.webp)
 
 ### 5.5 多文件列表：docx + 大体积 PDF
 
 可继续上传扫描件 PDF 等，列表同时管理多种格式。
 
-![kkFileView 文件列表同时包含金刚经 PDF 与开户确认书 docx](https://img.xuanyuan.dev/docker/blog/kkfileview-5.webp)
+![kkFileView 文件列表同时包含金刚经 PDF 与开户确认书 docx](https://assets.xuanyuan.me/docker/blog/kkfileview-5.webp)
 
 ### 5.6 大图 PDF：高清缩放
 
 百页级扫描 PDF（如摩崖石刻图录）可侧栏翻页、放大查看细节。
 
-![kkFileView PDF 阅读器高清预览金刚经摩崖石刻扫描件](https://img.xuanyuan.dev/docker/blog/kkfileview-6.webp)
+![kkFileView PDF 阅读器高清预览金刚经摩崖石刻扫描件](https://assets.xuanyuan.me/docker/blog/kkfileview-6.webp)
 
 ### 5.7 再增一本图书 PDF
 
 列表可继续堆积业务文档与图书 PDF，方便对比预览效果。
 
-![kkFileView 本地源列表显示怎样解题 PDF、金刚经 PDF 与 docx](https://img.xuanyuan.dev/docker/blog/kkfileview-7.webp)
+![kkFileView 本地源列表显示怎样解题 PDF、金刚经 PDF 与 docx](https://assets.xuanyuan.me/docker/blog/kkfileview-7.webp)
 
 ### 5.8 图书封面预览
 
 多页图书 PDF（如《怎样解题》）封面与目录页可在阅读器中正常翻阅。
 
-![kkFileView 预览怎样解题数学思维新方法 PDF 封面](https://img.xuanyuan.dev/docker/blog/kkfileview-8.webp)
+![kkFileView 预览怎样解题数学思维新方法 PDF 封面](https://assets.xuanyuan.me/docker/blog/kkfileview-8.webp)
 
 ### 5.9 压缩包上架
 
 上传 `.7z` 等压缩包后，与 PDF、docx 并列显示在本地源列表。
 
-![kkFileView 文件列表增加泰山金刚经 7z 压缩包](https://img.xuanyuan.dev/docker/blog/kkfileview-9.webp)
+![kkFileView 文件列表增加泰山金刚经 7z 压缩包](https://assets.xuanyuan.me/docker/blog/kkfileview-9.webp)
 
 ### 5.10 压缩包内预览
 
 进入压缩包目录，可直接点内部 PDF 预览，无需先解压到本机——这是「万能预览」里很实用的能力。
 
-![kkFileView 浏览 7z 压缩包目录并预览包内金刚经 PDF](https://img.xuanyuan.dev/docker/blog/kkfileview-10.webp)
+![kkFileView 浏览 7z 压缩包目录并预览包内金刚经 PDF](https://assets.xuanyuan.me/docker/blog/kkfileview-10.webp)
 
 ---
 

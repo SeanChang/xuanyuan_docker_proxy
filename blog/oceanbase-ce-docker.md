@@ -1,6 +1,6 @@
 # OCEANBASE-CE Docker 容器化部署指南
 
-![OCEANBASE-CE Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-oceanbase-oceanbase-ce.png)
+![OCEANBASE-CE Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-oceanbase-oceanbase-ce.png)
 
 *分类: Docker部署教程 | 标签: oceanbase-ce,docker,部署教程 | 发布时间: 2025-11-26 05:55:55*
 
@@ -19,14 +19,14 @@ OceanBase CE（Community Edition）是一款开源的分布式HTAP（Hybrid Tran
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 该脚本会自动安装Docker引擎、配置服务自启动，并完成基础环境优化。安装完成后，可通过`docker --version`命令验证安装结果，示例输出：`Docker version 26.1.4, build 5650f9b`。
 
 

@@ -1,6 +1,6 @@
 # MariaDB 在 Docker 中的部署
 
-![MariaDB 在 Docker 中的部署](https://img.xuanyuan.dev/docker/blog/docker-mariadb.png)
+![MariaDB 在 Docker 中的部署](https://assets.xuanyuan.me/docker/blog/docker-mariadb.png)
 
 *分类: Docker部署教程 | 标签: MariaDB,docker,部署教程 | 发布时间: 2025-10-08 06:36:39*
 
@@ -17,14 +17,14 @@
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ---
 
 ##  一、什么是 MariaDB？为什么用它？

@@ -1,6 +1,6 @@
 # VLLM Docker 容器化部署指南：在 NVIDIA Jetson 平台高效运行大语言模型推理服务
 
-![VLLM Docker 容器化部署指南：在 NVIDIA Jetson 平台高效运行大语言模型推理服务](https://img.xuanyuan.dev/docker/blog/docker-dustynv-vllm.png)
+![VLLM Docker 容器化部署指南：在 NVIDIA Jetson 平台高效运行大语言模型推理服务](https://assets.xuanyuan.me/docker/blog/docker-dustynv-vllm.png)
 
 *分类: Docker部署教程 | 标签: vllm-docker-nvidia,docker,部署教程 | 发布时间: 2025-12-02 06:05:50*
 
@@ -28,14 +28,14 @@ VLLM是一个高效的开源大语言模型（LLM）推理服务框架，通过�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > **脚本说明**：该脚本适用于Ubuntu/Debian系统，会自动安装最新稳定版Docker Engine、配置NVIDIA容器运行时，并优化系统参数以提升容器性能。安装完成后需重启终端或执行`source ~/.bashrc`使环境变量生效。
 
 
@@ -366,16 +366,16 @@ dpkg -l | grep nvidia-container-toolkit
 # 若未安装，重新执行一键安装脚本
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
-
 # 验证Docker是否支持NVIDIA运行时
 docker run --rm --runtime nvidia nvidia/cuda:12.6.0-base-ubuntu22.04 nvidia-smi
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 
 #### 2. 模型加载失败，提示"out of memory"
 

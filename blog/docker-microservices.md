@@ -1,6 +1,6 @@
 # Docker 部署微服务项目保姆级教程
 
-![Docker 部署微服务项目保姆级教程](https://img.xuanyuan.dev/docker/blog/docker-mico.png)
+![Docker 部署微服务项目保姆级教程](https://assets.xuanyuan.me/docker/blog/docker-mico.png)
 
 *分类: Docker部署教程 | 标签: microservices,docker,部署教程 | 发布时间: 2025-10-20 05:08:47*
 
@@ -25,14 +25,14 @@
 ```bash
 # 直接复制到终端执行，Linux/Mac/WSL2通用
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
-安装完成后，一定要验证一下环境是否可用，输入两个命令：
+
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```安装完成后，一定要验证一下环境是否可用，输入两个命令：
 ```bash
 docker --version  # 能看到版本号（比如Docker version 27.0.3）就对了
 docker compose --version  # 输出类似Docker Compose version v2.27.0即可
@@ -551,14 +551,14 @@ docker compose -f docker-compose.service.yml up
 登录服务器后，执行和本地相同的安装命令，一键安装Docker和Docker Compose，自动配置轩辕镜像访问支持：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
-安装完成后，执行以下命令验证，确保环境可用：
+
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```安装完成后，执行以下命令验证，确保环境可用：
 ```bash
 docker --version  # 输出Docker版本（如Docker version 27.0.3）
 docker compose --version  # 输出Compose版本（如Docker Compose version v2.27.0）

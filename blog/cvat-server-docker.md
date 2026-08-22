@@ -1,6 +1,6 @@
 # CVAT SERVER Docker 容器化部署指南：从环境准备到生产实践
 
-![CVAT SERVER Docker 容器化部署指南：从环境准备到生产实践](https://img.xuanyuan.dev/docker/blog/docker-cvat-server.png)
+![CVAT SERVER Docker 容器化部署指南：从环境准备到生产实践](https://assets.xuanyuan.me/docker/blog/docker-cvat-server.png)
 
 *分类: Docker部署教程 | 标签: cvat-server,docker,部署教程 | 发布时间: 2025-12-11 03:50:52*
 
@@ -20,14 +20,14 @@ CVAT SERVER是Computer Vision Annotation Tool (CVAT)的后端服务组件，为�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 注意：执行此脚本可能需要管理员权限（sudo），具体取决于系统配置。安装过程中请根据提示完成操作。
 
 安装完成后，建议运行以下命令验证Docker是否正常工作：
@@ -463,14 +463,14 @@ SERVER是Computer Vision Annotation Tool (CVAT)的后端服务组件，为计算
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 注意：执行此脚本可能需要管理员权限（sudo），具体取决于系统配置。安装过程中请根据提示完成操作。
 
 安装完成后，建议运行以下命令验证Docker是否正常工作：

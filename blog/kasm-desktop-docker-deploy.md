@@ -1,6 +1,6 @@
 # Docker 一键部署 Kasm Desktop：快速搭建容器化 Ubuntu 桌面
 
-![Docker 一键部署 Kasm Desktop：快速搭建容器化 Ubuntu 桌面](https://img.xuanyuan.dev/docker/blog/kasmweb-desktop.webp)
+![Docker 一键部署 Kasm Desktop：快速搭建容器化 Ubuntu 桌面](https://assets.xuanyuan.me/docker/blog/kasmweb-desktop.webp)
 
 *分类: Docker部署教程 | 标签: Kasm Desktop,KasmVNC,Docker,轩辕镜像,远程桌面,浏览器桌面,私有化部署,部署教程 | 发布时间: 2026-08-07 08:24:26*
 
@@ -98,14 +98,14 @@ Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 > **6901** 已被占用时，Compose 改为 `"16901:6901"`，访问 `https://IP:16901`。
@@ -269,7 +269,7 @@ Kasm User () started container id b5e456028ee1 with local IP address 192.168.96.
 
 首次会提示「您的连接不是私密连接」（`NET::ERR_CERT_AUTHORITY_INVALID`）：点 **高级** → **继续前往 …（不安全）**。
 
-![Kasm Desktop：Chrome 提示连接不是私密连接，ERR_CERT_AUTHORITY_INVALID](https://img.xuanyuan.dev/docker/blog/kasmweb-desktop-1.webp)
+![Kasm Desktop：Chrome 提示连接不是私密连接，ERR_CERT_AUTHORITY_INVALID](https://assets.xuanyuan.me/docker/blog/kasmweb-desktop-1.webp)
 
 ### 6.2 登录
 
@@ -278,33 +278,33 @@ Kasm User () started container id b5e456028ee1 with local IP address 192.168.96.
 | 用户名 | **`kasm_user`** |
 | 密码 | Compose 里的 **`VNC_PW`** |
 
-![Kasm Desktop 登录框：https://IP:6901，用户名与密码](https://img.xuanyuan.dev/docker/blog/kasmweb-desktop-2.webp)
+![Kasm Desktop 登录框：https://IP:6901，用户名与密码](https://assets.xuanyuan.me/docker/blog/kasmweb-desktop-2.webp)
 
 登录后进入 **XFCE**：左侧为 **Downloads**、**Uploads**、**Google Chrome**、**Firefox**；屏幕左缘小箭头为 Kasm 控制条（剪贴板、画质等）。
 
-![Kasm Desktop：XFCE 桌面，Downloads、Uploads、Chrome、Firefox 图标](https://img.xuanyuan.dev/docker/blog/kasmweb-desktop-3.webp)
+![Kasm Desktop：XFCE 桌面，Downloads、Uploads、Chrome、Firefox 图标](https://assets.xuanyuan.me/docker/blog/kasmweb-desktop-3.webp)
 
 ### 6.3 桌面里能做什么
 
 双击 **Google Chrome**，可正常上网（本文打开轩辕镜像首页）：
 
-![Kasm Desktop 内 Chrome 打开 xuanyuan.cloud 轩辕镜像首页](https://img.xuanyuan.dev/docker/blog/kasmweb-desktop-4.webp)
+![Kasm Desktop 内 Chrome 打开 xuanyuan.cloud 轩辕镜像首页](https://assets.xuanyuan.me/docker/blog/kasmweb-desktop-4.webp)
 
 打开桌面 **Downloads**，文件管理器路径一般为 `/home/kasm-user/Desktop/Downloads/`：
 
-![Kasm Desktop：Thunar 打开 Desktop/Downloads，用户 kasm-user](https://img.xuanyuan.dev/docker/blog/kasmweb-desktop-5.webp)
+![Kasm Desktop：Thunar 打开 Desktop/Downloads，用户 kasm-user](https://assets.xuanyuan.me/docker/blog/kasmweb-desktop-5.webp)
 
 顶栏 **Applications** 可进 Terminal、File Manager、Settings 等：
 
-![Kasm Desktop：Applications 菜单展开 Settings 子项](https://img.xuanyuan.dev/docker/blog/kasmweb-desktop-6.webp)
+![Kasm Desktop：Applications 菜单展开 Settings 子项](https://assets.xuanyuan.me/docker/blog/kasmweb-desktop-6.webp)
 
 打开 **Terminal Emulator**，执行 `uname -a`：主机名与容器 ID 一致（实测 `b5e456028ee1`）：
 
-![Kasm Desktop 终端：uname -a 显示容器主机名与内核](https://img.xuanyuan.dev/docker/blog/kasmweb-desktop-7.webp)
+![Kasm Desktop 终端：uname -a 显示容器主机名与内核](https://assets.xuanyuan.me/docker/blog/kasmweb-desktop-7.webp)
 
 再执行 `top`，可看到 `Xvnc`、`ffmpeg` 及 `kasm_*` 相关进程：
 
-![Kasm Desktop 终端：top 显示 Xvnc 与 kasm 相关进程](https://img.xuanyuan.dev/docker/blog/kasmweb-desktop-8.webp)
+![Kasm Desktop 终端：top 显示 Xvnc 与 kasm 相关进程](https://assets.xuanyuan.me/docker/blog/kasmweb-desktop-8.webp)
 
 > **独立部署限制**：官方说明音频、上传/下载、麦克风直通等在 stand-alone 下可能不完整，完整能力通常需要 [Kasm Workspaces](https://www.kasmweb.com/docs/latest/install.html)。桌面上的 Uploads / Downloads 是否可用，以你实测为准。
 

@@ -1,6 +1,6 @@
 # JACKETT Docker 容器化部署指南
 
-![JACKETT Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-jackett.png)
+![JACKETT Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-jackett.png)
 
 *分类: Docker部署教程 | 标签: jackett,docker,部署教程 | 发布时间: 2025-12-14 03:23:08*
 
@@ -27,14 +27,14 @@ LinuxServer.io团队提供的JACKETT容器具有以下特点：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本执行完成后，可以通过以下命令验证Docker是否安装成功：
 
 ```bash

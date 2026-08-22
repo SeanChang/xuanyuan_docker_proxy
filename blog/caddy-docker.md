@@ -1,6 +1,6 @@
 # Caddy Docker 容器化部署指南
 
-![Caddy Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-caddy.png)
+![Caddy Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-caddy.png)
 
 *分类: Docker部署教程 | 标签: caddy,docker,部署教程 | 发布时间: 2025-12-18 12:52:31*
 
@@ -20,14 +20,14 @@ Caddy是一款功能强大的企业级开源Web服务器，以其内置的自动
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 执行上述命令后，脚本将自动完成Docker引擎、Docker CLI、Docker Compose等组件的安装与配置。安装完成后，可以通过以下命令验证Docker是否正常运行：
 
 ```bash

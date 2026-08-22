@@ -1,6 +1,6 @@
 # Docker OpenClaw 生产环境部署指南（单机架构版）
 
-![Docker OpenClaw 生产环境部署指南（单机架构版）](https://img.xuanyuan.dev/docker/blog/docker-openclaw.png)
+![Docker OpenClaw 生产环境部署指南（单机架构版）](https://assets.xuanyuan.me/docker/blog/docker-openclaw.png)
 
 *分类: Docker部署教程 | 标签: OpenClaw,AI,部署教程,Moltbot,Clawdbot,人工智能 | 发布时间: 2026-02-24 09:04:51*
 
@@ -33,14 +33,14 @@
 #### 一键安装 Docker 环境（推荐国内服务器使用）
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ##### 该脚本特性说明
 1. 完全基于 Docker 官方安装流程整理，行为与官方安装一致
 2. 内置国内可访问的 Docker 镜像源与软件仓库，解决网络访问问题

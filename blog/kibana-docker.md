@@ -1,6 +1,6 @@
 # KIBANA Docker 容器化部署指南
 
-![KIBANA Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-kibana.png)
+![KIBANA Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-kibana.png)
 
 *分类: Docker部署教程 | 标签: kibana,docker,部署教程 | 发布时间: 2025-12-13 06:02:47*
 
@@ -21,14 +21,14 @@ Kibana容器化部署依赖Docker引擎，建议使用以下一键脚本快速�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 安装完成后，可通过`docker --version`命令验证Docker是否安装成功，输出类似`Docker version 20.10.xx, build xxxxxxx`即表示安装成功。
 
 

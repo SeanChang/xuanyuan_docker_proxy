@@ -1,6 +1,6 @@
 # 宝塔 Linux 面板 Docker 容器化部署指南
 
-![宝塔 Linux 面板 Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-baota-linux.png)
+![宝塔 Linux 面板 Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-baota-linux.png)
 
 *分类: Docker部署教程 | 标签: baota,宝塔,部署教程,面板,运维工具 | 发布时间: 2025-12-15 06:33:41*
 
@@ -21,14 +21,14 @@ BAOTA（宝塔Linux面板）是一款提升运维效率的服务器管理软件�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 安装完成后，可通过以下命令验证Docker是否正常运行：
 
 ```bash

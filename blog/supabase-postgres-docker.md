@@ -1,6 +1,6 @@
 # Supabase Postgres Docker 容器化部署指南
 
-![Supabase Postgres Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-postgres.png)
+![Supabase Postgres Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-postgres.png)
 
 *分类: Docker部署教程 | 标签: supabase,postgres,数据库 | 发布时间: 2025-12-18 09:32:25*
 
@@ -21,14 +21,14 @@ Supabase Postgres 是一款基于PostgreSQL官方镜像构建的容器化应用�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本执行完成后，可通过`docker --version`命令验证安装是否成功，出现类似`Docker version 20.10.xx, build xxxxxxx`的输出即表示Docker环境就绪。
 
 轩辕镜像访问支持可改善镜像访问体验；镜像来源于官方公共仓库，平台不存储不修改镜像内容。

@@ -1,6 +1,6 @@
 # QDRANT 向量搜索引擎 Docker 容器化部署指南
 
-![QDRANT 向量搜索引擎 Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-qdrant.png)
+![QDRANT 向量搜索引擎 Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-qdrant.png)
 
 *分类: Docker部署教程 | 标签: qdrant,docker,部署教程 | 发布时间: 2025-12-09 07:45:13*
 
@@ -28,14 +28,14 @@ QDRANT支持通过Docker容器部署，首先需要在目标服务器上安装Do
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 安装完成后，可通过以下命令验证Docker是否正常运行：
 
 ```bash

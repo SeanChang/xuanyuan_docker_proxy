@@ -1,6 +1,6 @@
 # 告别广告和追踪！5 分钟用 Docker searxng 搭建你的私人搜索引擎
 
-![告别广告和追踪！5 分钟用 Docker searxng 搭建你的私人搜索引擎](https://img.xuanyuan.dev/docker/blog/docker-searxng.png)
+![告别广告和追踪！5 分钟用 Docker searxng 搭建你的私人搜索引擎](https://assets.xuanyuan.me/docker/blog/docker-searxng.png)
 
 *分类: Docker部署教程 | 标签: searxng,部署教程 | 发布时间: 2026-04-27 02:29:35*
 
@@ -38,14 +38,14 @@ SearXNG是一个开源的**元搜索引擎（Metasearch Engine）**。
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ### Windows/Mac用户
 Windows和Mac用户直接下载Docker Desktop即可，图形化界面操作简单：
 👉 [Docker Desktop官方下载](https://www.docker.com/get-started/)
@@ -86,15 +86,15 @@ docker run -d --name searxng -p 18080:8080 docker.xuanyuan.run/searxng/searxng:l
 ```
 http://localhost:18080
 ```
-![searxng 首页](https://img.xuanyuan.dev/docker/blog/docker-searxng-1.png)
+![searxng 首页](https://assets.xuanyuan.me/docker/blog/docker-searxng-1.png)
 
 🎉 恭喜！你已经拥有一个属于自己的私人搜索引擎了！
 
-![searxng 搜索结果页](https://img.xuanyuan.dev/docker/blog/docker-searxng-3.png)
+![searxng 搜索结果页](https://assets.xuanyuan.me/docker/blog/docker-searxng-3.png)
 
 界面非常简洁，没有任何广告，搜索结果干净清爽。你可以试试搜索任何内容，对比一下和你平时用的搜索引擎有什么不同。
 
-![searxng 搜索设置页](https://img.xuanyuan.dev/docker/blog/docker-searxng-2.png)
+![searxng 搜索设置页](https://assets.xuanyuan.me/docker/blog/docker-searxng-2.png)
 
 ## 常见问题：端口占用
 

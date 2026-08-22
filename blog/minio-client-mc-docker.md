@@ -1,6 +1,6 @@
 # MinIO Client (MC) Docker 容器化部署指南
 
-![MinIO Client (MC) Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-minio-client.png)
+![MinIO Client (MC) Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-minio-client.png)
 
 *分类: Docker部署教程 | 标签: minio-client,docker,部署教程 | 发布时间: 2025-12-10 07:21:56*
 
@@ -26,14 +26,14 @@ MC提供了丰富的命令集，涵盖了从基本的文件操作到高级的存
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 注意：执行此脚本需要管理员权限。脚本运行过程中可能需要根据提示输入sudo密码或确认操作。
 
 安装完成后，可以通过以下命令验证Docker是否正常运行：

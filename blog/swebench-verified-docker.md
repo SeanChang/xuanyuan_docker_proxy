@@ -1,6 +1,6 @@
 # SWEBENCH-VERIFIED Docker 容器化部署指南
 
-![SWEBENCH-VERIFIED Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-swebench-verified.png)
+![SWEBENCH-VERIFIED Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-swebench-verified.png)
 
 *分类: Docker部署教程 | 标签: swebench-verified,人工智能 | 发布时间: 2026-01-21 16:05:44*
 
@@ -22,14 +22,14 @@ SWEBENCH-VERIFIED（镜像名称：`slimshetty/swebench-verified`）是由R2E-Gy
 ### Docker环境安装
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 安装完成后，通过`docker --version`命令验证安装是否成功。
 
 ## 镜像准备

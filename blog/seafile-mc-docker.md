@@ -1,6 +1,6 @@
 # SEAFILE-MC Docker 容器化部署指南
 
-![SEAFILE-MC Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-seafile-mc.png)
+![SEAFILE-MC Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-seafile-mc.png)
 
 *分类: Docker部署教程 | 标签: seafile-mc,docker,部署教程 | 发布时间: 2025-12-06 16:00:05*
 
@@ -21,14 +21,14 @@ SEAFILE-MC是基于Docker容器化的Seafile应用部署方案。Seafile是一�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本将自动完成Docker引擎、Docker Compose等依赖的安装与配置，适用于主流Linux发行版（如Ubuntu、CentOS、Debian等）。安装完成后，可通过`docker --version`命令验证Docker是否安装成功。
 
 

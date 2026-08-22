@@ -1,6 +1,6 @@
 # 群晖 NAS 自建照片库？群晖 MT Photos Docker 部署实测记录
 
-![群晖 NAS 自建照片库？群晖 MT Photos Docker 部署实测记录](https://img.xuanyuan.dev/docker/blog/mt-photos.png)
+![群晖 NAS 自建照片库？群晖 MT Photos Docker 部署实测记录](https://assets.xuanyuan.me/docker/blog/mt-photos.png)
 
 *分类: Docker部署教程 | 标签: MT Photos, Docker,轩辕镜像,群晖,NAS,照片管理,私有化部署,部署教程 | 发布时间: 2026-07-08 05:14:46*
 
@@ -207,7 +207,7 @@ CREATE INDEX idx_people_descriptor_v2_vec success
 
 在 **Container Manager → 容器** 中也能看到 `mt-photos` 状态为绿色运行中：
 
-![Container Manager 容器列表：mt-photos 状态为运行中，映像 docker.xuanyuan.run/mtphotos/mt-photos](https://img.xuanyuan.dev/docker/blog/mt-photos-1.png)
+![Container Manager 容器列表：mt-photos 状态为运行中，映像 docker.xuanyuan.run/mtphotos/mt-photos](https://assets.xuanyuan.me/docker/blog/mt-photos-1.png)
 
 ---
 
@@ -223,23 +223,23 @@ http://你的群晖IP:8063
 
 安装向导首页，选择 **简体中文**，点击 **下一步**。
 
-![MT Photos 安装向导：选择显示语言为简体中文](https://img.xuanyuan.dev/docker/blog/mt-photos-2.png)
+![MT Photos 安装向导：选择显示语言为简体中文](https://assets.xuanyuan.me/docker/blog/mt-photos-2.png)
 
 ### 6.2 创建管理员账户
 
 填写管理员用户名与密码。管理员账号用于管理 MT Photos 的所有资源和用户，请妥善保管。
 
-![创建管理员账户：填写用户名与密码，点击下一步](https://img.xuanyuan.dev/docker/blog/mt-photos-3.png)
+![创建管理员账户：填写用户名与密码，点击下一步](https://assets.xuanyuan.me/docker/blog/mt-photos-3.png)
 
 ### 6.3 设置图库
 
 点击 **添加图库**，在弹出的文件夹选择器中选择容器内路径 **`/photos`**（对应宿主机 `/volume1/homes/你的用户名/Photos`）。
 
-![添加图库：选择文件夹弹窗，选中容器内 /photos 目录](https://img.xuanyuan.dev/docker/blog/mt-photos-4.png)
+![添加图库：选择文件夹弹窗，选中容器内 /photos 目录](https://assets.xuanyuan.me/docker/blog/mt-photos-4.png)
 
 为图库命名（实测创建 **「太湖」** 图库），确认后可在列表中看到已添加的图库卡片，点击 **完成** 结束向导。
 
-![设置图库：已添加太湖图库，路径 /photos/2023年7月1日，点击完成](https://img.xuanyuan.dev/docker/blog/mt-photos-5.png)
+![设置图库：已添加太湖图库，路径 /photos/2023年7月1日，点击完成](https://assets.xuanyuan.me/docker/blog/mt-photos-5.png)
 
 ---
 
@@ -247,15 +247,15 @@ http://你的群晖IP:8063
 
 向导完成后进入登录页，使用刚创建的管理员账号登录。
 
-![MT Photos 登录页：输入用户名与密码，点击登录](https://img.xuanyuan.dev/docker/blog/mt-photos-6.png)
+![MT Photos 登录页：输入用户名与密码，点击登录](https://assets.xuanyuan.me/docker/blog/mt-photos-6.png)
 
 登录后进入 **照片** 主界面。系统会按日期分组展示图库中的照片，首次加载时缩略图可能显示为加载中，等待后台索引完成即可。
 
-![MT Photos 照片主界面：按日期 2023-07-01 分组，缩略图索引中](https://img.xuanyuan.dev/docker/blog/mt-photos-7.png)
+![MT Photos 照片主界面：按日期 2023-07-01 分组，缩略图索引中](https://assets.xuanyuan.me/docker/blog/mt-photos-7.png)
 
 点击任意照片可进入大图预览，支持旋转、分享、收藏、查看元数据等操作。
 
-![MT Photos 照片预览：大图浏览与顶部工具栏](https://img.xuanyuan.dev/docker/blog/mt-photos-8.png)
+![MT Photos 照片预览：大图浏览与顶部工具栏](https://assets.xuanyuan.me/docker/blog/mt-photos-8.png)
 
 ---
 
@@ -263,15 +263,15 @@ http://你的群晖IP:8063
 
 进入左侧 **管理 → 图库管理**，可查看已添加的图库、触发扫描。实测「太湖」图库显示 **「更新上传文件信息中」**，表示正在索引 `/photos` 下的照片。
 
-![图库管理：太湖图库扫描中，可点击扫描所有图库](https://img.xuanyuan.dev/docker/blog/mt-photos-9.png)
+![图库管理：太湖图库扫描中，可点击扫描所有图库](https://assets.xuanyuan.me/docker/blog/mt-photos-9.png)
 
 **管理工具** 页面提供重复文件检查、文件夹整理、人脸识别整理、系统维护任务等高级功能。
 
-![管理工具：图库相关、人脸识别相关与系统维护工具卡片](https://img.xuanyuan.dev/docker/blog/mt-photos-10.png)
+![管理工具：图库相关、人脸识别相关与系统维护工具卡片](https://assets.xuanyuan.me/docker/blog/mt-photos-10.png)
 
 索引完成后，**探索** 页面会按人物、地点、场景等维度聚合照片（需照片含 GPS / 人脸等元数据，或部署 AI 配套容器）。
 
-![探索页面：人物、地点、场景分类浏览](https://img.xuanyuan.dev/docker/blog/mt-photos-11.png)
+![探索页面：人物、地点、场景分类浏览](https://assets.xuanyuan.me/docker/blog/mt-photos-11.png)
 
 ---
 

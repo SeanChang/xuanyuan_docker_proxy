@@ -1,6 +1,6 @@
 # Stirling PDF Docker 容器化部署指南：本地PDF编辑解决方案
 
-![Stirling PDF Docker 容器化部署指南：本地PDF编辑解决方案](https://img.xuanyuan.dev/docker/blog/docker-s-pdf.png)
+![Stirling PDF Docker 容器化部署指南：本地PDF编辑解决方案](https://assets.xuanyuan.me/docker/blog/docker-s-pdf.png)
 
 *分类: Docker部署教程 | 标签: s-pdf,docker,部署教程 | 发布时间: 2025-12-14 12:30:37*
 
@@ -21,14 +21,14 @@ S-PDF（Stirling PDF）是一款本地部署的基于网页的PDF编辑器，支
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 执行完成后，可通过`docker --version`命令验证安装是否成功，输出类似`Docker version 20.10.xx, build xxxxxxx`即表示安装完成。
 
 

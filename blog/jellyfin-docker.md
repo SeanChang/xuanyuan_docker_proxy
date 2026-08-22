@@ -1,6 +1,6 @@
 # jellyfin Docker容器化部署指南
 
-![jellyfin Docker容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-jellyfin.png)
+![jellyfin Docker容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-jellyfin.png)
 
 *分类: Docker部署教程 | 标签: jellyfin,docker,部署教程 | 发布时间: 2025-12-11 04:14:39*
 
@@ -20,14 +20,14 @@ JELLYFIN的容器化部署依赖Docker引擎，建议使用以下一键脚本安
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 执行脚本后，按照提示完成Docker的安装和启动。安装完成后，可通过以下命令验证Docker是否正常运行：
 
 ```bash

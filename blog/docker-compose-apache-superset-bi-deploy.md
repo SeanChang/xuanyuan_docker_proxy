@@ -1,6 +1,6 @@
 # Docker Compose 部署 Apache Superset：轻松搭建数据可视化 BI 平台
 
-![Docker Compose 部署 Apache Superset：轻松搭建数据可视化 BI 平台](https://img.xuanyuan.dev/docker/blog/superset.webp)
+![Docker Compose 部署 Apache Superset：轻松搭建数据可视化 BI 平台](https://assets.xuanyuan.me/docker/blog/superset.webp)
 
 *分类: Docker部署教程 | 标签: Apache Superset,Superset,Docker,轩辕镜像,BI,数据可视化,私有化部署,部署教程 | 发布时间: 2026-07-22 14:09:54*
 
@@ -85,14 +85,14 @@ docker compose version
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 ---
@@ -361,49 +361,49 @@ Content-Type: text/html; charset=utf-8
 
 打开 `http://IP:8088`，输入 **admin / admin**，点击 **Sign in**。
 
-![Apache Superset 登录页，输入默认账号 admin](https://img.xuanyuan.dev/docker/blog/superset-1.webp)
+![Apache Superset 登录页，输入默认账号 admin](https://assets.xuanyuan.me/docker/blog/superset-1.webp)
 
 ### 6.2 登录后首页
 
 登录成功进入 **Home**。全新实例下 Dashboards / Charts 为空（No results），可点 **+ Dashboard** / **+ Chart** 开始创建。顶部导航：**Dashboards**、**Charts**、**Datasets**、**SQL**。
 
-![Superset 首页 Home，仪表盘与图表为空可新建](https://img.xuanyuan.dev/docker/blog/superset-2.webp)
+![Superset 首页 Home，仪表盘与图表为空可新建](https://assets.xuanyuan.me/docker/blog/superset-2.webp)
 
 ### 6.3 Dashboards（仪表盘）
 
 顶部点 **Dashboards**，进入仪表盘列表。空实例显示 No Data，点右上角 **+ Dashboard** 新建看板，之后把图表拖进去即可。
 
-![Superset Dashboards 列表为空，点击 + Dashboard 新建](https://img.xuanyuan.dev/docker/blog/superset-3.webp)
+![Superset Dashboards 列表为空，点击 + Dashboard 新建](https://assets.xuanyuan.me/docker/blog/superset-3.webp)
 
 ### 6.4 Charts（图表）
 
 **Charts** 页管理所有可视化。点 **+ Chart**，选择数据集与图表类型后保存；保存的图可挂到仪表盘上。
 
-![Superset Charts 列表为空，点击 + Chart 创建图表](https://img.xuanyuan.dev/docker/blog/superset-4.webp)
+![Superset Charts 列表为空，点击 + Chart 创建图表](https://assets.xuanyuan.me/docker/blog/superset-4.webp)
 
 ### 6.5 Datasets（数据集）
 
 **Datasets** 是「表 / SQL 结果」到图表之间的语义层。连上数据库后，在这里用 **+ Dataset** 选表或写自定义 SQL，再去出图。
 
-![Superset Datasets 列表为空，点击 + Dataset 添加数据集](https://img.xuanyuan.dev/docker/blog/superset-5.webp)
+![Superset Datasets 列表为空，点击 + Dataset 添加数据集](https://assets.xuanyuan.me/docker/blog/superset-5.webp)
 
 ### 6.6 SQL Lab（写 SQL 探数）
 
 顶部 **SQL** → **SQL Lab**。左侧选数据库与 schema，点 **Add** 开新标签页写 SQL。适合先探数，再把结果沉淀为 Dataset / Chart。
 
-![Superset SQL Lab 界面，从 SQL 菜单进入](https://img.xuanyuan.dev/docker/blog/superset-6.webp)
+![Superset SQL Lab 界面，从 SQL 菜单进入](https://assets.xuanyuan.me/docker/blog/superset-6.webp)
 
 ### 6.7 连接业务数据库（STEP 1）
 
 在 SQL Lab 或 Settings 中发起连接时，会出现 **Connect a database** 向导（STEP 1 OF 3）。可快速选 **PostgreSQL / Presto / MySQL / SQLite**，或从下方列表选更多引擎。
 
-![Connect a database 第一步：选择数据库类型如 PostgreSQL MySQL](https://img.xuanyuan.dev/docker/blog/superset-7.webp)
+![Connect a database 第一步：选择数据库类型如 PostgreSQL MySQL](https://assets.xuanyuan.me/docker/blog/superset-7.webp)
 
 ### 6.8 填写连接信息（STEP 2，以 PostgreSQL 为例）
 
 填写 Host、Port（默认 5432）、Database name、Username、Password、Display Name，再点 **Connect**。
 
-![Connect a database 第二步：填写 PostgreSQL 主机端口与账号](https://img.xuanyuan.dev/docker/blog/superset-8.webp)
+![Connect a database 第二步：填写 PostgreSQL 主机端口与账号](https://assets.xuanyuan.me/docker/blog/superset-8.webp)
 
 **连库主机怎么填（易踩坑）：**
 

@@ -1,6 +1,6 @@
 # Linux 服务器没桌面？Docker 跑个 Webtop，浏览器里就是图形桌面
 
-![Linux 服务器没桌面？Docker 跑个 Webtop，浏览器里就是图形桌面](https://img.xuanyuan.dev/docker/blog/webtop.png)
+![Linux 服务器没桌面？Docker 跑个 Webtop，浏览器里就是图形桌面](https://assets.xuanyuan.me/docker/blog/webtop.png)
 
 *分类: Docker部署教程 | 标签: Webtop,Docker,轩辕镜像,远程桌面,图形化管理,私有化部署,部署教程 | 发布时间: 2026-07-03 02:35:18*
 
@@ -18,7 +18,7 @@
 
 国内用户从 Docker Hub 拉取 `linuxserver/webtop` 可能较慢，本文使用 [轩辕镜像](https://xuanyuan.cloud) 加速域 `docker.xuanyuan.run`。官方文档见 [LinuxServer Webtop](https://docs.linuxserver.io/images/docker-webtop/)，源码仓库 [linuxserver/docker-webtop](https://github.com/linuxserver/docker-webtop)。
 
-![浏览器中的 XFCE 桌面](https://img.xuanyuan.dev/docker/blog/webtop-3.png)
+![浏览器中的 XFCE 桌面](https://assets.xuanyuan.me/docker/blog/webtop-3.png)
 
 *图 1：部署成功后，浏览器里就是完整 Linux 桌面——宿主机无需安装图形界面*
 
@@ -81,14 +81,14 @@ docker compose version
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多安装说明见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 检查 CPU 是否支持 AVX2（可选，老机器建议先查）：
@@ -191,7 +191,7 @@ INFO:main:SelkiesStreamingApp initialized: encoder=x264enc, display=1024x768
 
 浏览器会弹出登录框，输入 `docker-compose.yml` 中的 `CUSTOM_USER` 与 `PASSWORD`：
 
-![HTTPS 登录框](https://img.xuanyuan.dev/docker/blog/webtop-1.png)
+![HTTPS 登录框](https://assets.xuanyuan.me/docker/blog/webtop-1.png)
 
 *图 3：设置 CUSTOM_USER / PASSWORD 后的浏览器登录界面*
 
@@ -207,7 +207,7 @@ INFO:main:SelkiesStreamingApp initialized: encoder=x264enc, display=1024x768
 
 打开 **文件管理器（Thunar）**，可图形化浏览容器内目录、查看磁盘占用：
 
-![文件管理器与磁盘属性](https://img.xuanyuan.dev/docker/blog/webtop-4.png)
+![文件管理器与磁盘属性](https://assets.xuanyuan.me/docker/blog/webtop-4.png)
 
 *图 4：图形化浏览文件系统，查看磁盘使用情况*
 
@@ -219,7 +219,7 @@ INFO:main:SelkiesStreamingApp initialized: encoder=x264enc, display=1024x768
 
 底部坞站或菜单打开 **终端模拟器**，可跑 `apt`、`docker`（若挂载 socket）、脚本等：
 
-![终端执行 uname -a](https://img.xuanyuan.dev/docker/blog/webtop-5.png)
+![终端执行 uname -a](https://assets.xuanyuan.me/docker/blog/webtop-5.png)
 
 *图 5：容器内终端——`uname -a` 显示 Ubuntu x86_64*
 
@@ -229,7 +229,7 @@ INFO:main:SelkiesStreamingApp initialized: encoder=x264enc, display=1024x768
 
 左上角 **所有应用程序** 可打开设置、终端、文件管理器等：
 
-![应用程序菜单与设置子菜单](https://img.xuanyuan.dev/docker/blog/webtop-6.png)
+![应用程序菜单与设置子菜单](https://assets.xuanyuan.me/docker/blog/webtop-6.png)
 
 *图 6：完整应用程序菜单，含显示、键盘、外观等设置*
 
@@ -237,7 +237,7 @@ INFO:main:SelkiesStreamingApp initialized: encoder=x264enc, display=1024x768
 
 桌面自带 **Firefox / Chromium**，可直接在远程桌面里上网、查文档：
 
-![桌面内浏览器访问轩辕镜像](https://img.xuanyuan.dev/docker/blog/webtop-7.png)
+![桌面内浏览器访问轩辕镜像](https://assets.xuanyuan.me/docker/blog/webtop-7.png)
 
 *图 7：容器内浏览器访问 xuanyuan.cloud——拉镜像、查文档不用切回本机*
 
@@ -245,7 +245,7 @@ INFO:main:SelkiesStreamingApp initialized: encoder=x264enc, display=1024x768
 
 **应用程序查找器** 列出预装软件：Chromium、Foot 终端、Mousepad 文本编辑器等：
 
-![应用程序查找器](https://img.xuanyuan.dev/docker/blog/webtop-8.png)
+![应用程序查找器](https://assets.xuanyuan.me/docker/blog/webtop-8.png)
 
 *图 8：预装 Chromium、终端、文本编辑器等常用工具*
 
@@ -321,7 +321,7 @@ ss -tlnp | grep :3000
 
 若使用 `ubuntu-kde` 且 CPU 无 AVX2，浏览器访问可能出现：
 
-![AVX2 不支持报错](https://img.xuanyuan.dev/docker/blog/webtop-2.png)
+![AVX2 不支持报错](https://assets.xuanyuan.me/docker/blog/webtop-2.png)
 
 *图 2：`ubuntu-kde` 在无 AVX2 CPU 上可能直接报错（Wayland Only）*
 

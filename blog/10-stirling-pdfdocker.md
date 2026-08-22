@@ -1,6 +1,6 @@
 # 10 分钟上手 Stirling PDF：Docker 一键部署，浏览器里合并压缩加水印
 
-![10 分钟上手 Stirling PDF：Docker 一键部署，浏览器里合并压缩加水印](https://img.xuanyuan.dev/docker/blog/stirling-pdf.png)
+![10 分钟上手 Stirling PDF：Docker 一键部署，浏览器里合并压缩加水印](https://assets.xuanyuan.me/docker/blog/stirling-pdf.png)
 
 *分类: Docker部署教程 | 标签: Stirling PDF,Docker,轩辕镜像,PDF工具,ultra-lite,部署教程 | 发布时间: 2026-06-24 14:55:12*
 
@@ -44,14 +44,14 @@
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 验证：
 
 ```bash
@@ -173,7 +173,7 @@ http://YOUR_SERVER_IP:8080
 
 首次进入会出现 **Stirling V2** 欢迎引导，介绍新布局、管理工具与 PDF 文本编辑等功能：
 
-![Stirling PDF V2 欢迎页：欢迎使用 Stirling V2 引导弹窗](https://img.xuanyuan.dev/docker/blog/stirling-pdf-1.png)
+![Stirling PDF V2 欢迎页：欢迎使用 Stirling V2 引导弹窗](https://assets.xuanyuan.me/docker/blog/stirling-pdf-1.png)
 
 *图 1：部署成功后首次访问的 V2 欢迎页，点击「下一步」完成引导*
 
@@ -190,7 +190,7 @@ http://YOUR_SERVER_IP:8080
 1. 点击左侧 **「从电脑打开」**，选择任意 PDF（本文示例为打印机说明书）
 2. 文件出现在左侧 **「文件」** 列表后，中间区域进入 **查看器**，可翻页、缩放
 
-![打开 PDF 后的 Stirling PDF 主界面：查看器与右侧工具栏](https://img.xuanyuan.dev/docker/blog/stirling-pdf-2.png)
+![打开 PDF 后的 Stirling PDF 主界面：查看器与右侧工具栏](https://assets.xuanyuan.me/docker/blog/stirling-pdf-2.png)
 
 *图 2：PDF 已加载，中间为预览区，右侧为推荐工具与文档安全类工具*
 
@@ -198,13 +198,13 @@ http://YOUR_SERVER_IP:8080
 
 在右侧 **「推荐」** 中选择 **「PDF 文本编辑器」**（ALPHA）。首次使用会弹出说明：适合简单版式文档，复杂表格、多栏排版可能效果有限。
 
-![PDF 文本编辑器欢迎说明：抢先体验与适用场景](https://img.xuanyuan.dev/docker/blog/stirling-pdf-3.png)
+![PDF 文本编辑器欢迎说明：抢先体验与适用场景](https://assets.xuanyuan.me/docker/blog/stirling-pdf-3.png)
 
 *图 3：文本编辑器说明弹窗，建议先阅读适用场景与限制*
 
 点击 **「知道了」** 进入编辑模式，可直接选中页面文字并修改：
 
-![PDF 文本编辑器修改文字：在页面上直接编辑正文](https://img.xuanyuan.dev/docker/blog/stirling-pdf-4.png)
+![PDF 文本编辑器修改文字：在页面上直接编辑正文](https://assets.xuanyuan.me/docker/blog/stirling-pdf-4.png)
 
 *图 4：在 PDF 页面上直接修改文字，右侧可调整字体与分组模式，点击「应用更改」保存*
 
@@ -217,13 +217,13 @@ http://YOUR_SERVER_IP:8080
 3. 按需展开 **样式**、**格式** 调整透明度、角度等
 4. 点击 **「添加水印」** 生成预览
 
-![添加水印配置界面：措辞填入 URL 或文字](https://img.xuanyuan.dev/docker/blog/stirling-pdf-5.png)
+![添加水印配置界面：措辞填入 URL 或文字](https://assets.xuanyuan.me/docker/blog/stirling-pdf-5.png)
 
 *图 5：水印配置步骤，措辞中可填文字或链接*
 
 预览满意后，在 **「审核」** 步骤点击 **「下载」**，保存带水印的 PDF：
 
-![水印效果预览与下载：页面铺满水印并可下载](https://img.xuanyuan.dev/docker/blog/stirling-pdf-6.png)
+![水印效果预览与下载：页面铺满水印并可下载](https://assets.xuanyuan.me/docker/blog/stirling-pdf-6.png)
 
 *图 6：水印已应用到全文预览，点击「下载」保存文件*
 

@@ -1,6 +1,6 @@
 # Visual Studio Code Docker 容器化部署指南
 
-![Visual Studio Code Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-vs-code-server.png)
+![Visual Studio Code Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-vs-code-server.png)
 
 *分类: Docker部署教程 | 标签: vs-code-server,Java,部署教程,code | 发布时间: 2025-12-15 13:08:42*
 
@@ -22,14 +22,14 @@ Visual Studio Code基于Docker容器运行，首先需要在目标服务器上�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 安装完成后，可以通过以下命令验证Docker是否正常运行：
 
 ```bash

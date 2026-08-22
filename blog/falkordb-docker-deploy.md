@@ -1,6 +1,6 @@
 # Docker 部署 FalkorDB：轻松搭建属性图数据库与知识图谱平台
 
-![Docker 部署 FalkorDB：轻松搭建属性图数据库与知识图谱平台](https://img.xuanyuan.dev/docker/blog/falkordb.webp)
+![Docker 部署 FalkorDB：轻松搭建属性图数据库与知识图谱平台](https://assets.xuanyuan.me/docker/blog/falkordb.webp)
 
 *分类: Docker部署教程 | 标签: FalkorDB,Docker,轩辕镜像,图数据库,知识图谱,OpenCypher,KG-RAG,私有化部署,部署教程 | 发布时间: 2026-08-05 03:37:24*
 
@@ -83,14 +83,14 @@ Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 > 宿主机 6379 已被占用时，Compose 改为 `"6380:6379"`，客户端用 `-p 6380`。Browser 宿主机口可改，保持 `宿主机端口:3000` 即可。
@@ -291,19 +291,19 @@ docker compose exec falkordb redis-cli -a "$FALKORDB_PASSWORD" PING
 
 点 **Log in**。已设 `--requirepass` 时只填 Password。
 
-![FalkorDB Browser 登录页：Manual Configuration，Host 为 localhost、Port 6379](https://img.xuanyuan.dev/docker/blog/falkordb-1.webp)
+![FalkorDB Browser 登录页：Manual Configuration，Host 为 localhost、Port 6379](https://assets.xuanyuan.me/docker/blog/falkordb-1.webp)
 
 ### 6.2 欢迎向导
 
 顶栏应显示 **FalkorDB: v4.20.1**（或相近）与 **`localhost:6379`**。首次可弹出 Welcome 教程，**Next** 跟做或 **Skip Tutorial** 跳过。
 
-![FalkorDB Browser 欢迎向导：可 Skip Tutorial 或 Next](https://img.xuanyuan.dev/docker/blog/falkordb-2.webp)
+![FalkorDB Browser 欢迎向导：可 Skip Tutorial 或 Next](https://assets.xuanyuan.me/docker/blog/falkordb-2.webp)
 
 ### 6.3 创建图
 
 左侧 **Select Graph** 旁点 **+**，图名填 **`MotoGP`**，点 **Create your Graph**。
 
-![FalkorDB Browser 创建新图：图名为 MotoGP](https://img.xuanyuan.dev/docker/blog/falkordb-3.webp)
+![FalkorDB Browser 创建新图：图名为 MotoGP](https://assets.xuanyuan.me/docker/blog/falkordb-3.webp)
 
 打不开页面时：检查防火墙是否放行 **13300**，以及 `docker compose ps` 是否含 `13300->3000`。
 
@@ -321,7 +321,7 @@ CREATE (:Rider {name:'Valentino Rossi'})-[:rides]->(:Team {name:'Yamaha'}),
        (:Rider {name:'Andrea Dovizioso'})-[:rides]->(:Team {name:'Ducati'})
 ```
 
-![FalkorDB Browser：CREATE 写入骑手与车队关系](https://img.xuanyuan.dev/docker/blog/falkordb-4.webp)
+![FalkorDB Browser：CREATE 写入骑手与车队关系](https://assets.xuanyuan.me/docker/blog/falkordb-4.webp)
 
 左侧统计约为 **NODES 6**、**EDGES 3**，标签 `Rider` / `Team`，关系 `rides`。
 
@@ -331,7 +331,7 @@ CREATE (:Rider {name:'Valentino Rossi'})-[:rides]->(:Team {name:'Yamaha'}),
 MATCH (n:Rider) RETURN n
 ```
 
-![FalkorDB Browser：MATCH Rider 显示三个骑手节点](https://img.xuanyuan.dev/docker/blog/falkordb-5.webp)
+![FalkorDB Browser：MATCH Rider 显示三个骑手节点](https://assets.xuanyuan.me/docker/blog/falkordb-5.webp)
 
 ### 7.3 查车队
 
@@ -339,7 +339,7 @@ MATCH (n:Rider) RETURN n
 MATCH (n:Team) RETURN n
 ```
 
-![FalkorDB Browser：MATCH Team 显示 Yamaha、Honda、Ducati](https://img.xuanyuan.dev/docker/blog/falkordb-6.webp)
+![FalkorDB Browser：MATCH Team 显示 Yamaha、Honda、Ducati](https://assets.xuanyuan.me/docker/blog/falkordb-6.webp)
 
 ### 7.4 查 rides 关系
 
@@ -347,7 +347,7 @@ MATCH (n:Team) RETURN n
 MATCH p=()-[:rides]->() RETURN p
 ```
 
-![FalkorDB Browser：MATCH rides 路径展示骑手到车队](https://img.xuanyuan.dev/docker/blog/falkordb-7.webp)
+![FalkorDB Browser：MATCH rides 路径展示骑手到车队](https://assets.xuanyuan.me/docker/blog/falkordb-7.webp)
 
 可选：用更宽查询拉出带 `name` 的实体（画布如下）。
 
@@ -357,7 +357,7 @@ UNION
 MATCH ()-[e]-() WHERE e.name IS NOT NULL RETURN e
 ```
 
-![FalkorDB Browser：UNION 查询返回带 name 的节点与关系](https://img.xuanyuan.dev/docker/blog/falkordb-8.webp)
+![FalkorDB Browser：UNION 查询返回带 name 的节点与关系](https://assets.xuanyuan.me/docker/blog/falkordb-8.webp)
 
 更多示例：[FalkorDB/demo](https://github.com/FalkorDB/FalkorDB/tree/master/demo)。
 
@@ -371,11 +371,11 @@ MATCH ()-[e]-() WHERE e.name IS NOT NULL RETURN e
 - **Browser Settings**：Chat、Graph Info、Query Execution、User Experience；可 **Replay Tutorial**。  
 - **Users**：默认用户 **`default`**（Admin）。生产按需 **Add User**，ACL 持久化见 FAQ。
 
-![FalkorDB Browser：UDF Libraries](https://img.xuanyuan.dev/docker/blog/falkordb-9.webp)
+![FalkorDB Browser：UDF Libraries](https://assets.xuanyuan.me/docker/blog/falkordb-9.webp)
 
-![FalkorDB Browser Settings 页](https://img.xuanyuan.dev/docker/blog/falkordb-10.webp)
+![FalkorDB Browser Settings 页](https://assets.xuanyuan.me/docker/blog/falkordb-10.webp)
 
-![FalkorDB Browser Users：default 为 Admin](https://img.xuanyuan.dev/docker/blog/falkordb-11.webp)
+![FalkorDB Browser Users：default 为 Admin](https://assets.xuanyuan.me/docker/blog/falkordb-11.webp)
 
 ---
 

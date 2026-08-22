@@ -1,6 +1,6 @@
 # TRADINGAGENTS-BACKEND Docker 容器化部署指南
 
-![TRADINGAGENTS-BACKEND Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-tradingagents-cn.png)
+![TRADINGAGENTS-BACKEND Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-tradingagents-cn.png)
 
 *分类: Docker部署教程 | 标签: tradingagents-backend,docker,部署教程 | 发布时间: 2025-12-02 06:18:59*
 
@@ -21,14 +21,14 @@ TRADINGAGENTS-BACKEND（中文名称：交易智能体后端服务）是基于�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 脚本将自动安装Docker Engine、Docker Compose及相关依赖，并配置系统服务自启动。安装过程需root权限，建议在全新环境中执行。
 
 

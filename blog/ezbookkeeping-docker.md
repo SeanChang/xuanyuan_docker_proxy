@@ -1,6 +1,6 @@
 # EZBOOKKEEPING Docker 容器化部署指南
 
-![EZBOOKKEEPING Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-ezbookkeeping.png)
+![EZBOOKKEEPING Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-ezbookkeeping.png)
 
 *分类: Docker部署教程 | 标签: ezbookkeeping,docker,部署教程 | 发布时间: 2025-12-06 15:55:37*
 
@@ -31,14 +31,14 @@ EZBOOKKEEPING的核心优势包括：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 注意：执行上述命令可能需要管理员权限（sudo）。安装过程中会自动配置Docker所需的依赖环境和服务。
 
 安装完成后，可以通过以下命令验证Docker是否正常运行：

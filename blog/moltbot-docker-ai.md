@@ -1,6 +1,6 @@
 # Clawdbot/Moltbot Docker容器化部署指南：打造个人AI助手的完整方案
 
-![Clawdbot/Moltbot Docker容器化部署指南：打造个人AI助手的完整方案](https://img.xuanyuan.dev/docker/blog/docker-moltbot.png)
+![Clawdbot/Moltbot Docker容器化部署指南：打造个人AI助手的完整方案](https://assets.xuanyuan.me/docker/blog/docker-moltbot.png)
 
 *分类: Docker部署教程 | 标签: moltbot,Clawdbot,人工智能 | 发布时间: 2026-01-29 12:58:46*
 
@@ -33,14 +33,14 @@ Moltbot 的核心架构围绕"Gateway"控制平面构建，整合了多渠道消
 #### 方式一：一键安装 Docker 环境（推荐国内服务器使用）
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ##### 该脚本特性说明
 1. 完全基于 Docker 官方安装流程整理，行为与官方安装一致
 2. 内置国内可访问的 Docker 镜像源与软件仓库，解决网络访问问题

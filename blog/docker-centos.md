@@ -1,6 +1,6 @@
 # Docker 部署 CentOS：全流程指南
 
-![Docker 部署 CentOS：全流程指南](https://img.xuanyuan.dev/docker/blog/docker-centos.png)
+![Docker 部署 CentOS：全流程指南](https://assets.xuanyuan.me/docker/blog/docker-centos.png)
 
 *分类: Docker部署教程 | 标签: centos,docker,部署教程 | 发布时间: 2025-10-26 06:03:00*
 
@@ -57,14 +57,14 @@ CentOS 曾是基于红帽企业 Linux（RHEL）源代码构建的社区级发行
 脚本支持主流 Linux 发行版，自动配置轩辕镜像访问支持源，简化安装流程：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 验证安装成功：
 ```bash
 docker --version && docker compose --version

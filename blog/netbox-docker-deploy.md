@@ -1,6 +1,6 @@
 # Docker 部署 NetBox：轻松搭建 IPAM / DCIM 网络资产管理平台
 
-![Docker 部署 NetBox：轻松搭建 IPAM / DCIM 网络资产管理平台](https://img.xuanyuan.dev/docker/blog/nextbox.webp)
+![Docker 部署 NetBox：轻松搭建 IPAM / DCIM 网络资产管理平台](https://assets.xuanyuan.me/docker/blog/nextbox.webp)
 
 *分类: Docker部署教程 | 标签: NetBox,Docker,轩辕镜像,IPAM,DCIM,网络自动化,私有化部署,部署教程 | 发布时间: 2026-08-02 14:34:50*
 
@@ -76,14 +76,14 @@ Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 ---
@@ -427,7 +427,7 @@ http://服务器IP:8000/
 
 未登录会进入中文界面的 **登录** 页（深色主题）：输入刚才创建的用户名与密码，点击青色 **登录** 按钮。
 
-![NetBox 登录页：中文「登录」表单，含用户名与密码输入框](https://img.xuanyuan.dev/docker/blog/nextbox-1.webp)
+![NetBox 登录页：中文「登录」表单，含用户名与密码输入框](https://assets.xuanyuan.me/docker/blog/nextbox-1.webp)
 
 ### 6.1 可选：自动创建超级用户（适合反复重建实验环境）
 
@@ -460,7 +460,7 @@ docker compose up -d
 
 登录成功后进入 **仪表盘（Dashboard）**。左侧是按业务拆好的模块导航，中间是可定制的统计小部件；全新安装时各计数多为 **0**，右下角可见版本号（实测：**NetBox Community v4.6.7-Docker-5.0.2**）。右上角显示当前用户（如 `admin 管理员`），顶部搜索框可按对象名快速跳转。
 
-![NetBox 仪表盘：左侧组织机构/机柜/设备/IPAM 等导航，中间各模块对象计数与欢迎部件](https://img.xuanyuan.dev/docker/blog/nextbox-2.webp)
+![NetBox 仪表盘：左侧组织机构/机柜/设备/IPAM 等导航，中间各模块对象计数与欢迎部件](https://assets.xuanyuan.me/docker/blog/nextbox-2.webp)
 
 ### 7.1 左侧菜单在管什么
 

@@ -1,6 +1,6 @@
 # Linux for Tegra Docker 容器化部署指南
 
-![Linux for Tegra Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-linux-for-Tegra.png)
+![Linux for Tegra Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-linux-for-Tegra.png)
 
 *分类: Docker部署教程 | 标签: linux-for-tegra,docker,部署教程 | 发布时间: 2025-12-10 06:54:52*
 
@@ -21,14 +21,14 @@ L4T-ML容器化方案支持在Jetson系列设备上快速部署机器学习应�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 安装完成后，建议启动Docker服务并设置开机自启：
 
 ```bash

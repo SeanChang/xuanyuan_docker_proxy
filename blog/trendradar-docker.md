@@ -1,6 +1,6 @@
 # TRENDRADAR Docker 容器化部署指南
 
-![TRENDRADAR Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-trendradar.png)
+![TRENDRADAR Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-trendradar.png)
 
 *分类: Docker部署教程 | 标签: trendradar,docker,部署教程 | 发布时间: 2025-11-16 04:55:03*
 
@@ -21,14 +21,14 @@ TRENDRADAR基于Docker容器化部署，需先确保服务器已安装Docker环�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 脚本执行过程中可能需要sudo权限，请确保当前用户具备相应权限。安装完成后，可通过`docker --version`验证Docker是否成功安装。
 
 

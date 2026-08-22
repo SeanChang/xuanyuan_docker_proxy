@@ -1,6 +1,6 @@
 # Docker 部署 PHP 全手册
 
-![Docker 部署 PHP 全手册](https://img.xuanyuan.dev/docker/blog/docker-php.png)
+![Docker 部署 PHP 全手册](https://assets.xuanyuan.me/docker/blog/docker-php.png)
 
 *分类: Docker部署教程 | 标签: php,docker,部署教程 | 发布时间: 2025-10-07 03:10:31*
 
@@ -70,14 +70,14 @@ PHP 是最流行的后端脚本语言之一，广泛应用于网站与 Web 应�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ---
 
 ### 2.4 网络与安全

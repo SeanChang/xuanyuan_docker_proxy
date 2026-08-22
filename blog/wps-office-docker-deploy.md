@@ -1,6 +1,6 @@
 # 不用安装 Office：Docker 部署 WPS，浏览器即可编辑 Word、Excel、PPT
 
-![不用安装 Office：Docker 部署 WPS，浏览器即可编辑 Word、Excel、PPT](https://img.xuanyuan.dev/docker/blog/wps-office.png)
+![不用安装 Office：Docker 部署 WPS，浏览器即可编辑 Word、Excel、PPT](https://assets.xuanyuan.me/docker/blog/wps-office.png)
 
 *分类: Docker部署教程 | 标签: WPS Office,Docker,轩辕镜像,在线办公,远程桌面,私有化部署,部署教程 | 发布时间: 2026-07-13 03:49:15*
 
@@ -14,7 +14,7 @@
 
 国内用户从 Docker Hub 拉取 `linuxserver/wps-office` 可能较慢，本文使用 [轩辕镜像](https://xuanyuan.cloud) 加速。官方文档见 [linuxserver/docker-wps-office](https://github.com/linuxserver/docker-wps-office)，镜像页 [轩辕镜像 WPS Office](https://xuanyuan.cloud/zh/r/linuxserver/wps-office)。
 
-![浏览器中的 WPS Office 中文主界面](https://img.xuanyuan.dev/docker/blog/wps-office-4.png)
+![浏览器中的 WPS Office 中文主界面](https://assets.xuanyuan.me/docker/blog/wps-office-4.png)
 
 *图 1：部署成功后，浏览器里就是完整 WPS Office 中文界面*
 
@@ -65,14 +65,14 @@ docker compose version
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多安装说明见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 ---
@@ -230,7 +230,7 @@ INFO:main:SelkiesStreamingApp initialized: encoder=x264enc, display=1024x768
 
 浏览器会弹出登录框，输入 `docker-compose.yml` 中的 `CUSTOM_USER` 与 `PASSWORD`：
 
-![HTTP 基本认证登录框](https://img.xuanyuan.dev/docker/blog/wps-office-1.png)
+![HTTP 基本认证登录框](https://assets.xuanyuan.me/docker/blog/wps-office-1.png)
 
 *图 2：访问 `http://192.168.1.10:13000` 时的 HTTP 基本认证界面*
 
@@ -238,13 +238,13 @@ INFO:main:SelkiesStreamingApp initialized: encoder=x264enc, display=1024x768
 
 若通过 HTTP 进入后看到以下报错，说明 **WPS 强制要求 HTTPS**（WebCodecs 等现代浏览器特性仅在安全连接下可用）：
 
-![HTTPS 强制要求报错](https://img.xuanyuan.dev/docker/blog/wps-office-2.png)
+![HTTPS 强制要求报错](https://assets.xuanyuan.me/docker/blog/wps-office-2.png)
 
 *图 3：HTTP 访问时提示 "This application requires a secure connection (HTTPS)"*
 
 **处理**：改用 `https://服务器IP:3001` 访问。HTTPS 登录框如下：
 
-![HTTPS 基本认证登录框](https://img.xuanyuan.dev/docker/blog/wps-office-3.png)
+![HTTPS 基本认证登录框](https://assets.xuanyuan.me/docker/blog/wps-office-3.png)
 
 *图 4：访问 `https://192.168.1.10:3001` 时的 HTTPS 登录界面*
 
@@ -262,7 +262,7 @@ INFO:main:SelkiesStreamingApp initialized: encoder=x264enc, display=1024x768
 
 点击 **打开**，可按类型筛选文字、表格、演示、PDF：
 
-![打开文件对话框](https://img.xuanyuan.dev/docker/blog/wps-office-5.png)
+![打开文件对话框](https://assets.xuanyuan.me/docker/blog/wps-office-5.png)
 
 *图 5：打开文件对话框，支持按文档类型筛选*
 
@@ -270,7 +270,7 @@ INFO:main:SelkiesStreamingApp initialized: encoder=x264enc, display=1024x768
 
 点击 **新建**，可选择文字、表格、演示、PDF 及在线文档类型；左侧 **本地 → 桌面** 可浏览容器内桌面目录：
 
-![新建文档界面](https://img.xuanyuan.dev/docker/blog/wps-office-6.png)
+![新建文档界面](https://assets.xuanyuan.me/docker/blog/wps-office-6.png)
 
 *图 6：新建界面——支持文字、表格、演示、PDF 及思维导图等*
 
@@ -278,7 +278,7 @@ INFO:main:SelkiesStreamingApp initialized: encoder=x264enc, display=1024x768
 
 选择 **文字 → 空白文档** 或从模板创建：
 
-![WPS Writer 新建文档模板](https://img.xuanyuan.dev/docker/blog/wps-office-7.png)
+![WPS Writer 新建文档模板](https://assets.xuanyuan.me/docker/blog/wps-office-7.png)
 
 *图 7：WPS 文字新建页——空白文档与商业计划书等模板*
 
@@ -293,7 +293,7 @@ INFO:data_websocket:Upload finished: /config/Desktop/开户确认书.docx
 
 上传后在 **本地 → 桌面** 可见该文件：
 
-![桌面上的已上传文档](https://img.xuanyuan.dev/docker/blog/wps-office-8.png)
+![桌面上的已上传文档](https://assets.xuanyuan.me/docker/blog/wps-office-8.png)
 
 *图 8：侧边栏上传后，桌面目录出现「开户确认书.docx」*
 
@@ -301,7 +301,7 @@ INFO:data_websocket:Upload finished: /config/Desktop/开户确认书.docx
 
 双击打开文档，即可在浏览器中完整编辑 Word 内容：
 
-![编辑 Word 文档](https://img.xuanyuan.dev/docker/blog/wps-office-9.png)
+![编辑 Word 文档](https://assets.xuanyuan.me/docker/blog/wps-office-9.png)
 
 *图 9：在 WPS Writer 中编辑「开户确认书.docx」*
 

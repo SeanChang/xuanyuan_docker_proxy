@@ -1,6 +1,6 @@
 # 手把手教你用 Docker 部署 Redis
 
-![手把手教你用 Docker 部署 Redis](https://img.xuanyuan.dev/docker/blog/docker-redis.png)
+![手把手教你用 Docker 部署 Redis](https://assets.xuanyuan.me/docker/blog/docker-redis.png)
 
 *分类: Docker部署教程 | 标签: redis,docker,部署教程 | 发布时间: 2025-10-03 06:24:12*
 
@@ -18,14 +18,14 @@ Redis是一款开源的高性能内存数据存储系统，常用作数据库、
 该脚本支持多种 Linux 发行版，支持一键安装 Docker、Docker Compose 并自动配置轩辕镜像访问支持源。
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ---
 
 ## 1、Redis 镜像拉取（整合版，避免重复）

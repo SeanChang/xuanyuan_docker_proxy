@@ -1,6 +1,6 @@
 # LinuxServer.io LibreOffice 容器化部署指南
 
-![LinuxServer.io LibreOffice 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-libreoffice.png)
+![LinuxServer.io LibreOffice 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-libreoffice.png)
 
 *分类: Docker部署教程 | 标签: libreoffice,docker,部署教程 | 发布时间: 2025-12-13 06:58:06*
 
@@ -19,14 +19,14 @@ LibreOffice 是一款免费且功能强大的办公套件，作为 OpenOffice.or
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 该脚本将自动完成 Docker 及 Docker Compose 的安装与配置，适用于主流 Linux 发行版。安装完成后，可通过 `docker --version` 命令验证安装是否成功。
 
 

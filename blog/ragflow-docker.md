@@ -1,6 +1,6 @@
 # 🚀 RAGFlow Docker 部署全流程教程
 
-![🚀 RAGFlow Docker 部署全流程教程](https://img.xuanyuan.dev/docker/blog/docker-ragflow.png)
+![🚀 RAGFlow Docker 部署全流程教程](https://assets.xuanyuan.me/docker/blog/docker-ragflow.png)
 
 *分类: Docker部署教程 | 标签: RAGFlow,docker,部署教程 | 发布时间: 2025-10-04 02:51:33*
 
@@ -17,14 +17,14 @@
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ---
 
 ## 0、RAGFlow 简介

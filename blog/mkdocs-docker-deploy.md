@@ -1,6 +1,6 @@
 # Docker 一键部署 MkDocs：快速搭建项目文档静态站点
 
-![Docker 一键部署 MkDocs：快速搭建项目文档静态站点](https://img.xuanyuan.dev/docker/blog/mkdocs.webp)
+![Docker 一键部署 MkDocs：快速搭建项目文档静态站点](https://assets.xuanyuan.me/docker/blog/mkdocs.webp)
 
 *分类: Docker部署教程 | 标签: MkDocs,Docker,轩辕镜像,Markdown,静态站点,项目文档,部署教程 | 发布时间: 2026-08-03 09:02:02*
 
@@ -99,14 +99,14 @@ Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 ---
@@ -307,11 +307,11 @@ EOF
 
 保存后浏览器访问 `http://服务器IP:8000/`，Material 主题下可见站点名「我的项目文档」、侧栏「首页 / 快速开始」与欢迎正文：
 
-![MkDocs Material 首页：站点「我的项目文档」，侧栏首页高亮，正文标题「欢迎」](https://img.xuanyuan.dev/docker/blog/mkdocs-1.webp)
+![MkDocs Material 首页：站点「我的项目文档」，侧栏首页高亮，正文标题「欢迎」](https://assets.xuanyuan.me/docker/blog/mkdocs-1.webp)
 
 进入「快速开始」页（路径形如 `/getting-started/`）：
 
-![MkDocs「快速开始」页：侧栏「快速开始」高亮，说明修改 Markdown 会自动刷新](https://img.xuanyuan.dev/docker/blog/mkdocs-2.webp)
+![MkDocs「快速开始」页：侧栏「快速开始」高亮，说明修改 Markdown 会自动刷新](https://assets.xuanyuan.me/docker/blog/mkdocs-2.webp)
 
 ### 7.3 日常怎么用（部署后）
 
@@ -359,7 +359,7 @@ nav:
 
 保存后刷新，侧栏应出现第三个菜单「安装说明」：
 
-![MkDocs「安装说明」页：侧栏含首页/快速开始/安装说明，正文为三步列表](https://img.xuanyuan.dev/docker/blog/mkdocs-3.webp)
+![MkDocs「安装说明」页：侧栏含首页/快速开始/安装说明，正文为三步列表](https://assets.xuanyuan.me/docker/blog/mkdocs-3.webp)
 
 目录约定：
 

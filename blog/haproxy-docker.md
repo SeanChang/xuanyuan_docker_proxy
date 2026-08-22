@@ -1,6 +1,6 @@
 # HAPROXY Docker 容器化部署指南：从入门到生产环境实践
 
-![HAPROXY Docker 容器化部署指南：从入门到生产环境实践](https://img.xuanyuan.dev/docker/blog/docker-haproxy.png)
+![HAPROXY Docker 容器化部署指南：从入门到生产环境实践](https://assets.xuanyuan.me/docker/blog/docker-haproxy.png)
 
 *分类: Docker部署教程 | 标签: haproxy,docker,部署教程 | 发布时间: 2025-12-13 06:23:01*
 
@@ -21,14 +21,14 @@ HAPROXY（High Availability Proxy）是一款免费开源的高可用性解决�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 执行完成后，可通过以下命令验证Docker是否安装成功：
 
 ```bash

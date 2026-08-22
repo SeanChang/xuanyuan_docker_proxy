@@ -1,6 +1,6 @@
 # 服务器没有桌面？Docker 跑个 Chrome，浏览器就能远程用
 
-![服务器没有桌面？Docker 跑个 Chrome，浏览器就能远程用](https://img.xuanyuan.dev/docker/blog/docker-linuxserver-chrome.png)
+![服务器没有桌面？Docker 跑个 Chrome，浏览器就能远程用](https://assets.xuanyuan.me/docker/blog/docker-linuxserver-chrome.png)
 
 *分类: Docker部署教程 | 标签: linuxserver,chrome,远程浏览器,Docker部署,端口冲突 | 发布时间: 2026-06-16 03:02:27*
 
@@ -24,7 +24,7 @@ docker pull docker.xuanyuan.run/linuxserver/chrome:latest
 
 拉取成功后，终端会显示各 Layer 下载完成，并输出镜像摘要（Digest）：
 
-![通过轩辕镜像拉取chrome镜像](https://img.xuanyuan.dev/docker/blog/docker-linuxserver-chrome-4.png)
+![通过轩辕镜像拉取chrome镜像](https://assets.xuanyuan.me/docker/blog/docker-linuxserver-chrome-4.png)
 
 想提前了解环境变量、端口说明、GPU 加速等配置？可以打开 [linuxserver/chrome 中文镜像页](https://xuanyuan.cloud/zh/r/linuxserver/chrome)，里面有完整的中文文档和一键拉取命令。
 
@@ -97,11 +97,11 @@ https://你的服务器IP:3001/
 
 首次访问浏览器可能提示「连接不安全」（自签名证书），选择「继续访问」即可。若设置了 `CUSTOM_USER` 和 `PASSWORD`，会弹出登录框——输入后即可看到 Chrome 桌面。
 
-![浏览器访问远程 Chrome 桌面，登录界面](https://img.xuanyuan.dev/docker/blog/docker-linuxserver-chrome-1.png)
+![浏览器访问远程 Chrome 桌面，登录界面](https://assets.xuanyuan.me/docker/blog/docker-linuxserver-chrome-1.png)
 
-![浏览器访问远程 Chrome 桌面，浏览器打开界面](https://img.xuanyuan.dev/docker/blog/docker-linuxserver-chrome-2.png)
+![浏览器访问远程 Chrome 桌面，浏览器打开界面](https://assets.xuanyuan.me/docker/blog/docker-linuxserver-chrome-2.png)
 
-![浏览器访问远程 Chrome 桌面，搜索结果界面](https://img.xuanyuan.dev/docker/blog/docker-linuxserver-chrome-3.png)
+![浏览器访问远程 Chrome 桌面，搜索结果界面](https://assets.xuanyuan.me/docker/blog/docker-linuxserver-chrome-3.png)
 
 **常用运维命令：**
 

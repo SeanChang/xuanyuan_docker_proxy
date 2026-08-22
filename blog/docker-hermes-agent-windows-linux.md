@@ -1,6 +1,6 @@
 # Docker 部署 Hermes Agent 完整指南（Windows / Linux 通用）
 
-![Docker 部署 Hermes Agent 完整指南（Windows / Linux 通用）](https://img.xuanyuan.dev/docker/blog/docker-hermes-agent.png)
+![Docker 部署 Hermes Agent 完整指南（Windows / Linux 通用）](https://assets.xuanyuan.me/docker/blog/docker-hermes-agent.png)
 
 *分类: Docker部署教程 | 标签: OpenClaw,AI,Hermes,hermes-agent,部署教程 | 发布时间: 2026-04-20 07:46:03*
 
@@ -12,7 +12,7 @@ Hermes Agent 是 Nous Research 推出的 AI 自主智能体（AI Autonomous Agen
 
 # 一、Docker 一键安装与镜像加速（推荐方案）
 
-本方案支持 🧪 测试环境和 🏭 生产环境（需提前审计），提供的 Linux Docker \&amp; Docker Compose 一键安装配置脚本，可适配 16 种主流 Linux 发行版（含 openEuler、Huawei Cloud EulerOS (HCE) 等国产与信创系统），能一键完成 Docker、Docker Compose 的安装，以及轩辕镜像加速配置，全程无需手动操作，极大提升部署效率。
+本方案支持 🧪 测试环境和 🏭 生产环境（需提前审计），提供的 Linux Docker \&amp; Docker Compose 一键安装配置脚本，可适配 13 种主流 Linux 发行版（含国产系统），能一键完成 Docker、Docker Compose 的安装，以及轩辕镜像加速配置，全程无需手动操作，极大提升部署效率。
 
 ## 1\. 执行命令
 
@@ -20,12 +20,6 @@ Hermes Agent 是 Nous Research 推出的 AI 自主智能体（AI Autonomous Agen
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 ### 🏭 生产环境（推荐，安全优先）
@@ -33,8 +27,6 @@ bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```bash
 # 1. 下载脚本到本地
 wget https://xuanyuan.cloud/docker.sh -O docker-install.sh
-# 备用地址1：wget https://get.xuanyuan.dev/docker.sh -O docker-install.sh
-# 备用地址2：wget https://get.xuanyuan.me/docker.sh -O docker-install.sh
 
 # 2. （可选）审计脚本源码（建议企业环境必做）
 less docker-install.sh  # 或使用vim、cat查看脚本内容
@@ -43,6 +35,12 @@ less docker-install.sh  # 或使用vim、cat查看脚本内容
 bash docker-install.sh
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ## 2\. 安全强制提示
 
 ⚠️ 请注意：curl \| bash / wget \| bash 这种直接执行远程脚本的方式，仅建议用于测试、个人学习或非核心环境，生产环境严禁直接使用；
@@ -207,7 +205,7 @@ Type your message or /help for commands
 
 此时输入任意指令，即可与 Hermes Agent 交互，比如输入“hello”测试对话，或输入任务指令让 Agent 执行。
 
-![Docker 部署 Hermes Agent](https://img.xuanyuan.dev/docker/blog/docker-hermes-agent.png)
+![Docker 部署 Hermes Agent](https://assets.xuanyuan.me/docker/blog/docker-hermes-agent.png)
 
 # 九、常用命令
 

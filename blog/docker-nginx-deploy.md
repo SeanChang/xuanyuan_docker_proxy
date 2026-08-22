@@ -1,6 +1,6 @@
 # 手把手教你使用 Docker 部署 Nginx 教程
 
-![手把手教你使用 Docker 部署 Nginx 教程](https://img.xuanyuan.dev/docker/blog/docker-nginx.png)
+![手把手教你使用 Docker 部署 Nginx 教程](https://assets.xuanyuan.me/docker/blog/docker-nginx.png)
 
 *分类: Docker部署教程 | 标签: nginx,docker,部署教程,library | 发布时间: 2025-10-02 12:22:54*
 
@@ -65,14 +65,14 @@ Nginx 是一款轻量级、高性能的 HTTP 服务器与反向代理服务器�
 ```bash
 
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ---
 
 ## 1、查看 Nginx 镜像

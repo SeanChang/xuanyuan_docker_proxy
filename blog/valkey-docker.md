@@ -1,6 +1,6 @@
 # VALKEY Docker 容器化部署指南
 
-![VALKEY Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-valkey.png)
+![VALKEY Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-valkey.png)
 
 *分类: Docker部署教程 | 标签: valkey,docker,部署教程 | 发布时间: 2025-12-09 07:00:59*
 
@@ -21,14 +21,14 @@ VALKEY容器化部署依赖Docker引擎，建议使用以下一键脚本快速�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本执行完成后，可通过`docker --version`命令验证安装是否成功：
 
 ```bash

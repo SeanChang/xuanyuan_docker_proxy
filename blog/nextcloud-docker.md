@@ -1,6 +1,6 @@
 # Nextcloud Docker 容器化部署指南
 
-![Nextcloud Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-nextcloud.png)
+![Nextcloud Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-nextcloud.png)
 
 *分类: Docker部署教程 | 标签: nextcloud,docker,部署教程 | 发布时间: 2025-12-15 05:48:16*
 
@@ -21,14 +21,14 @@ Nextcloud 是一款开源的容器化应用，为用户提供安全的数据存�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本执行过程中需根据提示完成必要配置，安装完成后可通过`docker --version`命令验证Docker是否正常安装。
 
 

@@ -1,6 +1,6 @@
 # 团队工单不想上 SaaS？Docker 跑个 Redmine，浏览器就能管项目
 
-![团队工单不想上 SaaS？Docker 跑个 Redmine，浏览器就能管项目](https://img.xuanyuan.dev/docker/blog/redmine.png)
+![团队工单不想上 SaaS？Docker 跑个 Redmine，浏览器就能管项目](https://assets.xuanyuan.me/docker/blog/redmine.png)
 
 *分类: Docker部署教程 | 标签: Redmine,Docker,轩辕镜像,项目管理,工单,私有化部署,部署教程 | 发布时间: 2026-06-30 11:54:15*
 
@@ -60,14 +60,14 @@ docker compose version
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多安装说明见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 ---
@@ -248,7 +248,7 @@ http://YOUR_SERVER_IP:8080
 
 首次访问会看到 Redmine 默认欢迎页，右上角有 **「登录」** 与 **「注册」** 链接：
 
-![Redmine 首页：Welcome to Redmine 欢迎语，右上角登录与注册入口](https://img.xuanyuan.dev/docker/blog/redmine-1.png)
+![Redmine 首页：Welcome to Redmine 欢迎语，右上角登录与注册入口](https://assets.xuanyuan.me/docker/blog/redmine-1.png)
 
 *图 1：部署成功后的 Redmine 首页，确认 Web 服务已就绪*
 
@@ -261,7 +261,7 @@ http://YOUR_SERVER_IP:8080
 | 登录名 | `admin` |
 | 密码 | `admin` |
 
-![Redmine 登录页：登录名 admin，输入默认密码后点击登录](https://img.xuanyuan.dev/docker/blog/redmine-2.png)
+![Redmine 登录页：登录名 admin，输入默认密码后点击登录](https://assets.xuanyuan.me/docker/blog/redmine-2.png)
 
 *图 2：Redmine 默认管理员账号为 admin / admin*
 
@@ -271,7 +271,7 @@ http://YOUR_SERVER_IP:8080
 
 首次登录后，页面顶部出现红色提示：**「您的密码已经过期或是管理员要求您修改密码。」** 填写当前密码 `admin` 与新密码（**至少 8 个字符**），点击 **「应用」**：
 
-![Redmine 修改密码页：当前密码、新密码与确认，至少 8 个字符](https://img.xuanyuan.dev/docker/blog/redmine-3.png)
+![Redmine 修改密码页：当前密码、新密码与确认，至少 8 个字符](https://assets.xuanyuan.me/docker/blog/redmine-3.png)
 
 *图 3：首次登录强制改密，新密码至少 8 位*
 
@@ -279,7 +279,7 @@ http://YOUR_SERVER_IP:8080
 
 改密成功后进入 **「我的帐号」** 页面，顶部绿色提示 **「密码更新成功」**。可在此修改 **语言**（选 **简体中文**）、邮件通知、时区等：
 
-![Redmine 我的帐号：密码更新成功提示，语言与通知偏好设置](https://img.xuanyuan.dev/docker/blog/redmine-4.png)
+![Redmine 我的帐号：密码更新成功提示，语言与通知偏好设置](https://assets.xuanyuan.me/docker/blog/redmine-4.png)
 
 *图 4：改密成功后的个人账号设置页*
 
@@ -293,7 +293,7 @@ http://YOUR_SERVER_IP:8080
 
 顶部导航点击 **「管理」**，页面提示角色、跟踪标签、问题状态与工作流尚未配置。语言选 **「Chinese/Simplified (简体中文)」**，点击 **「载入默认设置」**：
 
-![Redmine 管理页：载入默认配置提示，语言选简体中文](https://img.xuanyuan.dev/docker/blog/redmine-7.png)
+![Redmine 管理页：载入默认配置提示，语言选简体中文](https://assets.xuanyuan.me/docker/blog/redmine-7.png)
 
 *图 7：管理后台载入默认配置，一键初始化角色与工作流*
 
@@ -311,7 +311,7 @@ http://YOUR_SERVER_IP:8080
 
 下方 **模块** 可勾选问题跟踪、Wiki、甘特图、版本库等，点击 **「创建」**：
 
-![Redmine 新建项目：名称、标识 app、模块勾选问题跟踪与甘特图等](https://img.xuanyuan.dev/docker/blog/redmine-5.png)
+![Redmine 新建项目：名称、标识 app、模块勾选问题跟踪与甘特图等](https://assets.xuanyuan.me/docker/blog/redmine-5.png)
 
 *图 5：创建第一个项目，启用所需功能模块*
 
@@ -319,7 +319,7 @@ http://YOUR_SERVER_IP:8080
 
 顶部 **「我的工作台」** 进入个人仪表盘，可查看 **指派给我的问题**、**已报告的问题** 等区块。右侧 **「新增:」** 下拉可添加更多面板（更新的问题、日历、活动等）：
 
-![Redmine 我的工作台：指派与已报告问题面板，新增区块下拉菜单](https://img.xuanyuan.dev/docker/blog/redmine-6.png)
+![Redmine 我的工作台：指派与已报告问题面板，新增区块下拉菜单](https://assets.xuanyuan.me/docker/blog/redmine-6.png)
 
 *图 6：登录后的个人工作台，可自定义仪表盘区块*
 

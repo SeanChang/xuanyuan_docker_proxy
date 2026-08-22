@@ -1,6 +1,6 @@
 # PAPERMERGE Docker 容器化部署指南
 
-![PAPERMERGE Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-papermerge.png)
+![PAPERMERGE Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-papermerge.png)
 
 *分类: Docker部署教程 | 标签: papermerge,docker,部署教程 | 发布时间: 2025-12-07 15:03:01*
 
@@ -22,14 +22,14 @@ PAPERMERGE作为容器化应用，需要运行在Docker环境中。推荐使用�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 注意：执行此脚本需要root权限，安装过程可能需要几分钟时间，请耐心等待。安装完成后，系统会自动启动Docker服务并配置开机自启。
 
 安装完成后，可以通过以下命令验证Docker是否安装成功：

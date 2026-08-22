@@ -1,6 +1,6 @@
 # REDIS-STACK-SERVER Docker 容器化部署指南
 
-![REDIS-STACK-SERVER Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-redis-stack-server.png)
+![REDIS-STACK-SERVER Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-redis-stack-server.png)
 
 *分类: Docker部署教程 | 标签: redis-stack-server,docker,部署教程 | 发布时间: 2025-11-26 06:09:51*
 
@@ -21,14 +21,14 @@ REDIS-STACK-SERVER 是 Redis 官方推出的一站式数据平台，整合了 Re
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本将自动完成 Docker 引擎、Docker Compose 工具的安装及配置，并启动 Docker 服务。安装完成后，可通过以下命令验证 Docker 是否正常运行：
 
 ```bash

@@ -1,6 +1,6 @@
 # DIFY-SANDBOX Docker 容器化部署指南
 
-![DIFY-SANDBOX Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-dify-sandbox.png)
+![DIFY-SANDBOX Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-dify-sandbox.png)
 
 *分类: Docker部署教程 | 标签: dify-sandbox,docker,部署教程 | 发布时间: 2025-12-03 03:13:17*
 
@@ -19,14 +19,14 @@ DIFY-SANDBOX是一款专注于提供安全、轻量级且高效的代码执行�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 > 注意：执行脚本需要root权限，安装过程可能需要2-5分钟，具体取决于服务器网络状况和性能。
 
 

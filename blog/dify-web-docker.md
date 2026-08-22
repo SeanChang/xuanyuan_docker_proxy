@@ -1,6 +1,6 @@
 # DIFY-WEB Docker 容器化部署指南
 
-![DIFY-WEB Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-dify-web.png)
+![DIFY-WEB Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-dify-web.png)
 
 *分类: Docker部署教程 | 标签: dify-web,docker,部署教程 | 发布时间: 2025-11-18 02:17:54*
 
@@ -21,14 +21,14 @@ DIFY-WEB是Dify.AI的前端应用Docker镜像，Dify是一款LLM应用开发平�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本将自动完成Docker及Docker Compose的安装与配置，适用于主流Linux发行版（Ubuntu、Debian、CentOS等）。
 
 ## 镜像准备

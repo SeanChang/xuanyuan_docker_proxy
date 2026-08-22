@@ -1,6 +1,6 @@
 # Red Hat UBI8 镜像详解与 Docker 部署全流程
 
-![Red Hat UBI8 镜像详解与 Docker 部署全流程](https://img.xuanyuan.dev/docker/blog/docker-ubi8.png)
+![Red Hat UBI8 镜像详解与 Docker 部署全流程](https://assets.xuanyuan.me/docker/blog/docker-ubi8.png)
 
 *分类: Docker部署教程 | 标签: red-hat-ubi8,docker,部署教程 | 发布时间: 2025-10-10 03:10:57*
 
@@ -22,14 +22,14 @@ Red Hat UBI8（Universal Base Image 8，通用基础镜像）是 Red Hat 官方�
 如果你的 Linux 服务器还没装 Docker 和 Docker Compose，直接用下面的一键脚本——支持 CentOS、Ubuntu、Debian 等绝大多数发行版，还能自动配置轩辕镜像访问支持源（拉取 UBI8 更快），不用手动改配置，新手也能一步到位：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
-执行完脚本后，输入 `docker --version` 和 `docker compose --version`，能看到版本号就说明装好了。
+
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```执行完脚本后，输入 `docker --version` 和 `docker compose --version`，能看到版本号就说明装好了。
 
 
 ## 三、第一步：找到并拉取 Red Hat UBI8 镜像

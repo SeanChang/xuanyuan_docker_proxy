@@ -1,6 +1,6 @@
 # CP-KAFKA Docker 容器化部署指南
 
-![CP-KAFKA Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-cp-kafka.png)
+![CP-KAFKA Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-cp-kafka.png)
 
 *分类: Docker部署教程 | 标签: cp-kafka,docker,部署教程 | 发布时间: 2025-12-09 06:48:10*
 
@@ -20,14 +20,14 @@ CP-KAFKA是Confluent官方提供的Apache Kafka容器化解决方案，属于Con
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 执行脚本后，按照提示完成Docker的安装和启动。安装完成后，可以通过以下命令验证Docker是否正常运行：
 
 ```bash

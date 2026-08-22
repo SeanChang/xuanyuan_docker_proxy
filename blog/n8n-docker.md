@@ -1,6 +1,6 @@
 # n8n Docker 部署不踩雷！国内环境适配+生产级权限配置全流程
 
-![n8n Docker 部署不踩雷！国内环境适配+生产级权限配置全流程](https://img.xuanyuan.dev/docker/blog/docker-n8n.png)
+![n8n Docker 部署不踩雷！国内环境适配+生产级权限配置全流程](https://assets.xuanyuan.me/docker/blog/docker-n8n.png)
 
 *分类: Docker部署教程 | 标签: n8n,docker,部署教程 | 发布时间: 2025-10-08 06:26:59*
 
@@ -54,14 +54,14 @@ n8n 当前为单实例工作流引擎，**不支持多副本并行运行**，同
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ---
 
 ## n8n Docker 镜像来源

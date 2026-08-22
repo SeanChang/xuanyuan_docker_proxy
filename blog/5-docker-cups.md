@@ -1,6 +1,6 @@
 # 一台打印机全办公室共用：5 分钟 Docker 一键部署 CUPS
 
-![一台打印机全办公室共用：5 分钟 Docker 一键部署 CUPS](https://img.xuanyuan.dev/docker/blog/cups.png)
+![一台打印机全办公室共用：5 分钟 Docker 一键部署 CUPS](https://assets.xuanyuan.me/docker/blog/cups.png)
 
 *分类: Docker部署教程 | 标签: CUPS,Docker,轩辕镜像,网络打印机,IPP,HP,部署教程 | 发布时间: 2026-07-06 04:05:23*
 
@@ -60,14 +60,14 @@ docker compose version
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 更多安装说明见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 ---
@@ -252,17 +252,17 @@ http://你的服务器IP:631
 
 实测地址为 `http://192.168.1.18:631`。首页显示 **OpenPrinting CUPS 2.4.10**，说明服务已就绪。
 
-![OpenPrinting CUPS 2.4.10 首页：导航含 Home / Administration / Printers](https://img.xuanyuan.dev/docker/blog/cups-1.png)
+![OpenPrinting CUPS 2.4.10 首页：导航含 Home / Administration / Printers](https://assets.xuanyuan.me/docker/blog/cups-1.png)
 
 点顶部 **Administration**，浏览器会弹出登录框：
 
-![CUPS 登录框：地址 192.168.1.18:631，用户名 admin](https://img.xuanyuan.dev/docker/blog/cups-2.png)
+![CUPS 登录框：地址 192.168.1.18:631，用户名 admin](https://assets.xuanyuan.me/docker/blog/cups-2.png)
 
 输入启动容器时设置的账号密码（实测 `admin` / `123456`），点 **登录**。
 
 进入管理页后，左侧 **Printers** 区域有 **Add Printer**；右侧 **Server Settings** 可勾选 **Share printers connected to this system**、**Allow remote administration**（远程管理本机界面时需要），保存后点 **Change Settings**。
 
-![Administration 管理页：Add Printer 与服务器共享选项](https://img.xuanyuan.dev/docker/blog/cups-3.png)
+![Administration 管理页：Add Printer 与服务器共享选项](https://assets.xuanyuan.me/docker/blog/cups-3.png)
 
 ---
 
@@ -274,7 +274,7 @@ http://你的服务器IP:631
 
 **Discovered Network Printers** 可能为空（不会自动发现所有打印机，属正常）。向下找到 **Other Network Printers**，选中 **互联网打印协议 (ipp) / Internet Printing Protocol (ipp)**，点 **Continue**。
 
-![添加打印机：选择 Internet Printing Protocol (ipp)](https://img.xuanyuan.dev/docker/blog/cups-4.png)
+![添加打印机：选择 Internet Printing Protocol (ipp)](https://assets.xuanyuan.me/docker/blog/cups-4.png)
 
 > 若 IPP 失败，可改选 **AppSocket/HP JetDirect**，连接串为 `socket://192.168.1.20:9100`。HP Smart Tank 系列优先 IPP。
 
@@ -295,7 +295,7 @@ ipp://192.168.1.20/ipp/printer
 
 点 **Continue**。
 
-![添加打印机：Connection 填入 ipp://192.168.1.20/ipp/print](https://img.xuanyuan.dev/docker/blog/cups-5.png)
+![添加打印机：Connection 填入 ipp://192.168.1.20/ipp/print](https://assets.xuanyuan.me/docker/blog/cups-5.png)
 
 ### 9.3 命名并共享
 
@@ -308,17 +308,17 @@ ipp://192.168.1.20/ipp/printer
 
 点 **Continue**。
 
-![命名打印机 HP-Home 并勾选 Share This Printer](https://img.xuanyuan.dev/docker/blog/cups-6.png)
+![命名打印机 HP-Home 并勾选 Share This Printer](https://assets.xuanyuan.me/docker/blog/cups-6.png)
 
 ### 9.4 选择厂商与驱动
 
 **Make** 列表中选择 **HP**，点 **Continue**。
 
-![选择厂商 Make：HP](https://img.xuanyuan.dev/docker/blog/cups-7.png)
+![选择厂商 Make：HP](https://assets.xuanyuan.me/docker/blog/cups-7.png)
 
 **Model** 列表中选择 **IPP Everywhere™**（列表顶部），然后点 **Add Printer**。
 
-![选择驱动 Model：IPP Everywhere™](https://img.xuanyuan.dev/docker/blog/cups-8.png)
+![选择驱动 Model：IPP Everywhere™](https://assets.xuanyuan.me/docker/blog/cups-8.png)
 
 > HP Smart Tank 210-220 原生支持 IPP Everywhere，无需精确到具体 hpcups 型号驱动。若列表中有 **HP Smart Tank 210-220 series**，亦可选用。
 
@@ -326,13 +326,13 @@ ipp://192.168.1.20/ipp/printer
 
 进入「设置打印机选项」。实测将 **Media Size** 设为 **A4**，其余如 Media Type=`Stationery`、cupsPrintQuality=`Normal`、Output Mode=`RGB`，点 **Set Default Options**。
 
-![设置默认选项：Media Size 为 A4](https://img.xuanyuan.dev/docker/blog/cups-9.png)
+![设置默认选项：Media Size 为 A4](https://assets.xuanyuan.me/docker/blog/cups-9.png)
 
 ### 9.6 确认添加成功
 
 顶部点 **Printers**，进入打印机详情。状态应为：**Idle, Accepting Jobs, Shared**；驱动为 **IPP Everywhere (color)**；连接为 `ipp://192.168.1.20/ipp/print`。
 
-![打印机 HP-Home 状态 Idle，连接 ipp://192.168.1.20/ipp/print](https://img.xuanyuan.dev/docker/blog/cups-10.png)
+![打印机 HP-Home 状态 Idle，连接 ipp://192.168.1.20/ipp/print](https://assets.xuanyuan.me/docker/blog/cups-10.png)
 
 ---
 
@@ -340,7 +340,7 @@ ipp://192.168.1.20/ipp/printer
 
 在打印机详情页打开 **Maintenance** 下拉菜单，选择 **Print Test Page**。
 
-![Maintenance 菜单：选择 Print Test Page](https://img.xuanyuan.dev/docker/blog/cups-11.png)
+![Maintenance 菜单：选择 Print Test Page](https://assets.xuanyuan.me/docker/blog/cups-11.png)
 
 页面提示测试页已提交：
 
@@ -348,15 +348,15 @@ ipp://192.168.1.20/ipp/printer
 Test page sent; job ID is HP-Home-1.
 ```
 
-![打印测试页成功：job ID 为 HP-Home-1](https://img.xuanyuan.dev/docker/blog/cups-12.png)
+![打印测试页成功：job ID 为 HP-Home-1](https://assets.xuanyuan.me/docker/blog/cups-12.png)
 
 返回打印机页可见任务状态变为 **Processing**，Jobs 列表中 `HP-Home-1` 显示 `Rendering completed`：
 
-![作业 HP-Home-1 处理中，Rendering completed](https://img.xuanyuan.dev/docker/blog/cups-13.png)
+![作业 HP-Home-1 处理中，Rendering completed](https://assets.xuanyuan.me/docker/blog/cups-13.png)
 
 打印机吐出 CUPS 测试页（含 CMYK / RGB 色块、Job ID、`ippeve.ppd` 驱动信息等），则部署路径闭环成功。
 
-![物理测试页：Printer test page，Job ID HP-Home-1，Driver ippeve.ppd](https://img.xuanyuan.dev/docker/blog/cups-14.png)
+![物理测试页：Printer test page，Job ID HP-Home-1，Driver ippeve.ppd](https://assets.xuanyuan.me/docker/blog/cups-14.png)
 
 ---
 

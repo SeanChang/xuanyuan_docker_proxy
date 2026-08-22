@@ -1,6 +1,6 @@
 # 1Panel Docker 容器化部署指南：轻松管理你的 Linux 服务器
 
-![1Panel Docker 容器化部署指南：轻松管理你的 Linux 服务器](https://img.xuanyuan.dev/docker/blog/docker-1panel.png)
+![1Panel Docker 容器化部署指南：轻松管理你的 Linux 服务器](https://assets.xuanyuan.me/docker/blog/docker-1panel.png)
 
 *分类: Docker部署教程 | 标签: linux,部署教程 | 发布时间: 2026-03-11 13:05:57*
 
@@ -47,14 +47,14 @@
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 脚本运行后，耐心等待几分钟即可完成 Docker 环境部署。
 
 ---

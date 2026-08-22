@@ -1,6 +1,6 @@
 # SUN-PANEL Docker 容器化部署指南
 
-![SUN-PANEL Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-sun-panel.png)
+![SUN-PANEL Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-sun-panel.png)
 
 *分类: Docker部署教程 | 标签: sun-panel,docker,部署教程 | 发布时间: 2025-11-11 08:42:03*
 
@@ -18,14 +18,14 @@ SUN-PANEL是一款多功能的服务器与NAS导航面板，同时也可作为Ho
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 安装完成后，可通过以下命令验证Docker是否正常运行：
 
 ```bash

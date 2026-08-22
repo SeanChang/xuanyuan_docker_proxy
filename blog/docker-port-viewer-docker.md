@@ -1,6 +1,6 @@
 # DOCKER-PORT-VIEWER Docker 容器化部署指南
 
-![DOCKER-PORT-VIEWER Docker 容器化部署指南](https://img.xuanyuan.dev/docker/blog/docker-docker-port-viewer.png)
+![DOCKER-PORT-VIEWER Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-docker-port-viewer.png)
 
 *分类: Docker部署教程 | 标签: docker-port-viewer,docker,部署教程 | 发布时间: 2025-12-14 12:36:10*
 
@@ -19,14 +19,14 @@ DOCKER-PORT-VIEWER是一款基于TypeScript开发的简单应用程序，主要�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 执行完成后，可通过`docker --version`命令验证安装是否成功。
 
 

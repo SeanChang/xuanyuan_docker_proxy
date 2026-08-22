@@ -1,6 +1,6 @@
 # 2026 年 7 月最新 Docker 国内镜像源加速配置指南
 
-![2026 年 7 月最新 Docker 国内镜像源加速配置指南](https://img.xuanyuan.dev/docker/blog/docker-2026-7.png)
+![2026 年 7 月最新 Docker 国内镜像源加速配置指南](https://assets.xuanyuan.me/docker/blog/docker-2026-7.png)
 
 *分类: Docker镜像源 | 标签: Docker,镜像加速,轩辕镜像,K8s,containerd | 发布时间: 2026-07-06 09:07:07*
 
@@ -84,7 +84,7 @@
 
 ## 四、一键安装 Docker + 加速（Linux 推荐）
 
-脚本支持 **16 种** Linux 发行版（含统信 UOS、深度 Deepin、openEuler、Huawei Cloud EulerOS (HCE) 等信创系统），自动完成 Docker、Docker Compose 安装，并引导写入轩辕加速地址。
+脚本支持 **15 种** Linux 发行版（含统信 UOS、深度 Deepin、openEuler 等信创系统），自动完成 Docker、Docker Compose 安装，并引导写入轩辕加速地址。
 
 ### 执行命令
 
@@ -92,27 +92,25 @@
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
 #### 生产环境（推荐：先审计再执行）
 
 ```bash
 wget https://xuanyuan.cloud/docker.sh -O docker-install.sh
-# 备用地址1：wget https://get.xuanyuan.dev/docker.sh -O docker-install.sh
-# 备用地址2：wget https://get.xuanyuan.me/docker.sh -O docker-install.sh
 less docker-install.sh          # 企业环境建议完整审阅
 bash docker-install.sh
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 ### 脚本亮点（7 月版摘要）
 
-- **16 种发行版**：openEuler、Huawei Cloud EulerOS (HCE)、OpenCloudOS、Anolis OS、Alinux、Kylin、统信 UOS、Deepin、Rocky、AlmaLinux、Fedora、Ubuntu、Debian、CentOS Stream、RHEL、Oracle Linux
+- **15 种发行版**：openEuler、OpenCloudOS、Anolis OS、Alinux、Kylin、统信 UOS、Deepin、Rocky、AlmaLinux、Fedora、Ubuntu、Debian、CentOS Stream、RHEL、Oracle Linux
 - **ARM64 全支持**：鲲鹏 920、飞腾等国产 CPU 自动匹配二进制包
 - **多源智能切换**：内置阿里云、腾讯云、华为云、中科大、清华等节点，安装阶段自动选最快源
 - **双重安装保障**：包管理器失败时自动切换二进制安装

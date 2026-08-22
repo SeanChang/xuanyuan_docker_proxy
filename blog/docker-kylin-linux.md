@@ -1,6 +1,6 @@
 # Docker 部署银河麒麟高级服务器操作系统（Kylin Linux）生产级全流程
 
-![Docker 部署银河麒麟高级服务器操作系统（Kylin Linux）生产级全流程](https://img.xuanyuan.dev/docker/blog/docker-kylin-linux.png)
+![Docker 部署银河麒麟高级服务器操作系统（Kylin Linux）生产级全流程](https://assets.xuanyuan.me/docker/blog/docker-kylin-linux.png)
 
 *分类: Docker部署教程 | 标签: kylin,docker,部署教程 | 发布时间: 2025-10-27 03:51:37*
 
@@ -69,14 +69,14 @@ Docker的核心设计理念是“单进程/单职责”，与虚拟机存在本�
 ```bash
 # 一键安装Docker及Docker Compose（支持银河麒麟、CentOS等系统）
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 安装完成后验证：
 ```bash
 docker --version && docker compose --version

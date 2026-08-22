@@ -1,6 +1,6 @@
 # 轻量AI接口网关一键部署｜calciumion/new-api Windows/Linux Docker 部署全教程
 
-![轻量AI接口网关一键部署｜calciumion/new-api Windows/Linux Docker 部署全教程](https://img.xuanyuan.dev/docker/blog/docker-newapi.png)
+![轻量AI接口网关一键部署｜calciumion/new-api Windows/Linux Docker 部署全教程](https://assets.xuanyuan.me/docker/blog/docker-newapi.png)
 
 *分类: Docker部署教程 | 标签: new-api,AI,部署教程,one-api | 发布时间: 2026-05-11 07:22:59*
 
@@ -22,14 +22,14 @@ calciumion/new-api 是一款**基于One API二次开发的轻量AI大模型统�
 Ubuntu、CentOS、Debian，以及**银河麒麟、统信UOS、欧拉**等国产Linux系统通用，无需手动换源、装依赖，复制以下一键脚本到终端执行，自动安装Docker、Docker Compose，同时配置国内镜像加速，从根源解决镜像下载慢问题：
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
-执行后等待几分钟，全程自动安装配置，无需任何手动干预。
+
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```执行后等待几分钟，全程自动安装配置，无需任何手动干预。
 
 ### Windows/Mac用户
 Windows和Mac用户不用输复杂命令，直接下载Docker Desktop即可，图形化界面操作简单，小白也能轻松搞定：
@@ -107,22 +107,22 @@ mkdir -p /data/new-api; docker run -d --name new-api --restart always -p 3001:30
 默认端口：`http://127.0.0.1:3000`
 改端口后：`http://127.0.0.1:自定义端口`
 
-![new-api 设置](https://img.xuanyuan.dev/docker/blog/docker-newapi-1.png)
+![new-api 设置](https://assets.xuanyuan.me/docker/blog/docker-newapi-1.png)
 
 能正常打开项目首页，即代表部署完成。
 
 ### 2. 后台初始登录账号密码
 首次进入管理后台设置账号密码：
 
-![new-api 设置密码](https://img.xuanyuan.dev/docker/blog/docker-newapi-2.png)
+![new-api 设置密码](https://assets.xuanyuan.me/docker/blog/docker-newapi-2.png)
 
 建议第一时间修改密码，提升服务安全性。
 
-![new-api 选择模式](https://img.xuanyuan.dev/docker/blog/docker-newapi-3.png)
+![new-api 选择模式](https://assets.xuanyuan.me/docker/blog/docker-newapi-3.png)
 
-![new-api 完成设置](https://img.xuanyuan.dev/docker/blog/docker-newapi-4.png)
+![new-api 完成设置](https://assets.xuanyuan.me/docker/blog/docker-newapi-4.png)
 
-![new-api 首页](https://img.xuanyuan.dev/docker/blog/docker-newapi-5.png)
+![new-api 首页](https://assets.xuanyuan.me/docker/blog/docker-newapi-5.png)
 
 部署后，其他更多内容建议参考 new-api 官方文档进行配置 https://docs.newapi.pro/zh ，本文不做过多介绍。
 

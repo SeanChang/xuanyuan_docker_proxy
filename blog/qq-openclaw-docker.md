@@ -1,6 +1,6 @@
 # 飞书/钉钉/QQ 机器人一站式搞定！OpenClaw Docker 部署教程
 
-![飞书/钉钉/QQ 机器人一站式搞定！OpenClaw Docker 部署教程](https://img.xuanyuan.dev/docker/blog/docker-openclaw-im.png)
+![飞书/钉钉/QQ 机器人一站式搞定！OpenClaw Docker 部署教程](https://assets.xuanyuan.me/docker/blog/docker-openclaw-im.png)
 
 *分类: Docker部署教程 | 标签: OpenClaw,AI,部署教程,飞书,钉钉,QQ | 发布时间: 2026-03-06 02:54:25*
 
@@ -66,14 +66,14 @@ OpenClaw 中国 IM 插件整合版 Docker 镜像，预装并配置了飞书、�
 
 ```bash
 bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
-
-# 备用地址1
-bash <(wget -qO- https://get.xuanyuan.dev/docker.sh)
-
-# 备用地址2
-bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 
+
+备用地址：
+
+```bash
+bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
+```
 安装完成后，可通过以下命令验证Docker是否正常运行：
 
 ```bash
