@@ -1,6 +1,6 @@
 # ROS Docker 容器化部署指南
 
-![ROS Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-ros.png)
+![ROS Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-ros.png)
 
 *分类: Docker部署教程 | 标签: ros,docker,部署教程 | 发布时间: 2025-12-11 07:14:24*
 
@@ -20,7 +20,7 @@ Robot Operating System (ROS) 是一套用于构建机器人应用的开源软件
 在开始部署前，需确保服务器已安装Docker环境。推荐使用以下一键安装脚本快速部署Docker：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -354,7 +354,7 @@ result:
 
 
 ### 关键要点
-- 使用一键脚本`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`快速部署Docker环境
+- 使用一键脚本`bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)`快速部署Docker环境
 - 通过轩辕镜像访问支持地址`xxx.xuanyuan.run`拉取ROS镜像，提升下载访问表现
 - 容器部署需注意数据持久化（挂载`/root/.ros`目录）和网络配置（主从节点通信）
 - 功能测试可通过ROS内置示例节点（talker/listener、服务调用）验证通信功能

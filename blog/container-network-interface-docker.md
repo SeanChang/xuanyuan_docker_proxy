@@ -1,6 +1,6 @@
 # Container Network Interface Docker 容器化部署指南
 
-![Container Network Interface Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-container-network-interface.png)
+![Container Network Interface Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-container-network-interface.png)
 
 *分类: Docker部署教程 | 标签: container-network-interface,docker,部署教程 | 发布时间: 2025-12-15 06:10:34*
 
@@ -20,7 +20,7 @@ CNI（Container Network Interface）是容器网络接口的标准化规范，�
 CNI插件的容器化部署依赖Docker环境，推荐使用以下一键安装脚本部署Docker：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

@@ -1,6 +1,6 @@
 # LocalAI Docker 容器化部署指南
 
-![LocalAI Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-localai.png)
+![LocalAI Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-localai.png)
 
 *分类: Docker部署教程 | 标签: localai,docker,部署教程 | 发布时间: 2025-12-15 06:22:14*
 
@@ -22,7 +22,7 @@ LocalAI 的核心优势在于其兼容性和部署灵活性：作为OpenAI API�
 LocalAI 采用容器化部署方式，需先确保系统已安装Docker环境。推荐使用以下一键安装脚本完成Docker及相关组件的部署：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

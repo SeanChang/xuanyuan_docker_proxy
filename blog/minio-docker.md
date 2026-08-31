@@ -1,6 +1,6 @@
 # 🚀 MinIO Docker 部署全指南
 
-![🚀 MinIO Docker 部署全指南](https://assets.xuanyuan.me/docker/blog/docker-minio.png)
+![🚀 MinIO Docker 部署全指南](https://imgs.xuanyuan.cloud/docker/blog/docker-minio.png)
 
 *分类: Docker部署教程 | 标签: MinIO,docker,部署教程 | 发布时间: 2025-10-07 02:58:22*
 
@@ -63,7 +63,7 @@ MinIO 是一个**轻量级、高性能、开源的对象存储服务**，专为�
 ### 执行一键安装命令
 登录 Linux 服务器，直接复制粘贴下面的命令，回车执行：
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

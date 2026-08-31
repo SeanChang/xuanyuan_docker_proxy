@@ -1,6 +1,6 @@
 # PyTorch Docker 容器化部署与生产运行实践
 
-![PyTorch Docker 容器化部署与生产运行实践](https://assets.xuanyuan.me/docker/blog/docker-pytorch.png)
+![PyTorch Docker 容器化部署与生产运行实践](https://imgs.xuanyuan.cloud/docker/blog/docker-pytorch.png)
 
 *分类: Docker部署教程 | 标签: PyTorch,人工智能 | 发布时间: 2026-01-12 14:24:26*
 
@@ -20,7 +20,7 @@ PyTorch是一款以Python为首要设计理念的深度学习框架，凭借简�
 
 ```bash
 
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

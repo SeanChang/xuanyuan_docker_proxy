@@ -1,6 +1,6 @@
 # Docker Compose 部署 ClickHouse 列式数据库实测
 
-![Docker Compose 部署 ClickHouse 列式数据库实测](https://assets.xuanyuan.me/docker/blog/clickhouse.webp)
+![Docker Compose 部署 ClickHouse 列式数据库实测](https://imgs.xuanyuan.cloud/docker/blog/clickhouse.webp)
 
 *分类: Docker部署教程 | 标签: ClickHouse,Docker,轩辕镜像,OLAP,列式数据库,私有化部署,部署教程 | 发布时间: 2026-07-20 14:45:41*
 
@@ -66,7 +66,7 @@ docker compose version
 若尚未安装 Docker，可使用轩辕镜像一键脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -259,13 +259,13 @@ http://<服务器IP>:8123/play
 
 首次进入为深色 SQL 编辑器：右上角填写 **user** / **password**，中间空白处写 SQL，点黄色 **Run**（或 `Ctrl/Cmd+Enter`）。
 
-![ClickHouse Play 初始页：空白查询框与 user、password 输入](https://assets.xuanyuan.me/docker/blog/clickhouse-1.webp)
+![ClickHouse Play 初始页：空白查询框与 user、password 输入](https://imgs.xuanyuan.cloud/docker/blog/clickhouse-1.webp)
 
 *图 1：Play 初始页（`http://服务器IP:8123/play`），右上角填写账号密码*
 
 **务必**使用与 Compose 中 `CLICKHOUSE_PASSWORD` **完全一致**的密码。密码错误或未填时会出现 `Code: 516` / `AUTHENTICATION_FAILED`：
 
-![ClickHouse Play 认证失败 Code 516 Authentication failed](https://assets.xuanyuan.me/docker/blog/clickhouse-2.webp)
+![ClickHouse Play 认证失败 Code 516 Authentication failed](https://imgs.xuanyuan.cloud/docker/blog/clickhouse-2.webp)
 
 *图 2：密码不正确时的 Code 516 报错；核对 `docker-compose.yml` 中的 `CLICKHOUSE_PASSWORD` 后重试*
 
@@ -275,7 +275,7 @@ http://<服务器IP>:8123/play
 SELECT version(), currentDatabase();
 ```
 
-![Play 执行 SELECT version 与 currentDatabase 成功返回 26.5.5.8](https://assets.xuanyuan.me/docker/blog/clickhouse-3.webp)
+![Play 执行 SELECT version 与 currentDatabase 成功返回 26.5.5.8](https://imgs.xuanyuan.cloud/docker/blog/clickhouse-3.webp)
 
 *图 3：认证成功后查询版本与当前库，结果为 `26.5.5.8` / `default`*
 
@@ -287,7 +287,7 @@ SHOW DATABASES;
 
 列表中应能看到 **`analytics`**（以及 `default`、`system` 等）：
 
-![Play 执行 SHOW DATABASES 列出 analytics 等库](https://assets.xuanyuan.me/docker/blog/clickhouse-4.webp)
+![Play 执行 SHOW DATABASES 列出 analytics 等库](https://imgs.xuanyuan.cloud/docker/blog/clickhouse-4.webp)
 
 *图 4：`SHOW DATABASES` 可见 `analytics`（与 `CLICKHOUSE_DB` 对应）*
 
@@ -359,7 +359,7 @@ SELECT * FROM analytics.events ORDER BY ts DESC LIMIT 10;
 
 查询成功时可见写入的行，例如 `msg = hello from play`：
 
-![Play 查询 analytics.events 返回 hello from play](https://assets.xuanyuan.me/docker/blog/clickhouse-5.webp)
+![Play 查询 analytics.events 返回 hello from play](https://imgs.xuanyuan.cloud/docker/blog/clickhouse-5.webp)
 
 *图 5：查询 `analytics.events`，确认建表与插入成功*
 

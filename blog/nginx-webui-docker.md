@@ -1,6 +1,6 @@
 # NGINX WEBUI Docker容器化部署指南
 
-![NGINX WEBUI Docker容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-nginxwebui.png)
+![NGINX WEBUI Docker容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-nginxwebui.png)
 
 *分类: Docker部署教程 | 标签: nginx,docker,部署教程 | 发布时间: 2025-11-09 17:10:03*
 
@@ -20,7 +20,7 @@ NGINX WEBUI是一款基于Web的图形化Nginx配置管理工具，旨在简化N
 部署NGINX WEBUI前需确保服务器已安装Docker环境。推荐使用以下一键安装脚本，自动完成Docker及相关组件的部署与配置：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

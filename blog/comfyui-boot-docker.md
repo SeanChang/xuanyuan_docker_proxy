@@ -1,6 +1,6 @@
 # ComfyUI Docker 镜像部署指南
 
-![ComfyUI Docker 镜像部署指南](https://assets.xuanyuan.me/docker/blog/docker-comfyui.png)
+![ComfyUI Docker 镜像部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-comfyui.png)
 
 *分类: Docker部署教程 | 标签: comfyui,人工智能,部署教程,Stable Diffusion | 发布时间: 2025-12-31 06:41:21*
 
@@ -42,7 +42,7 @@
 使用以下一键脚本快速部署 Docker 及相关组件（包含 Docker Engine、Docker Compose 等）：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

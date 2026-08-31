@@ -1,6 +1,6 @@
 # HELLO-WORLD Docker 容器化部署指南
 
-![HELLO-WORLD Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-hello-world.png)
+![HELLO-WORLD Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-hello-world.png)
 
 *分类: Docker部署教程 | 标签: hello-world,library,部署教程 | 发布时间: 2025-12-17 07:28:54*
 
@@ -21,7 +21,7 @@ HELLO-WORLD镜像的核心功能是提供一个最小化的容器示例，其镜
 在开始部署HELLO-WORLD容器前，需要确保服务器已安装Docker环境。推荐使用以下一键安装脚本快速部署Docker：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -220,7 +220,7 @@ HELLO-WORLD镜像由于其极简特性，可安全地以任意用户身份运行
 
 ### 4. Docker服务无法启动
 
-**症状**：执行`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`安装后，`docker --version`无输出。
+**症状**：执行`bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)`安装后，`docker --version`无输出。
 
 **排查步骤**：
 - 检查安装日志：`cat /var/log/docker-install.log`（一键脚本可能生成此日志，具体路径以实际安装为准）。

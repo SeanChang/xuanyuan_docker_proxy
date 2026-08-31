@@ -1,6 +1,6 @@
 # RocketMQ Dashboard Docker 容器化部署指南
 
-![RocketMQ Dashboard Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-rocketmq-dashboard.png)
+![RocketMQ Dashboard Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-rocketmq-dashboard.png)
 
 *分类: Docker部署教程 | 标签: rocketmq-dashboard,docker,部署教程 | 发布时间: 2025-12-14 06:31:58*
 
@@ -18,7 +18,7 @@ RocketMQ Dashboard 是 Apache RocketMQ 的官方管理控制台，提供了对Ro
 使用以下一键脚本快速安装Docker环境（支持主流Linux发行版）：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

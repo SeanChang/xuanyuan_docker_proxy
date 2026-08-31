@@ -1,6 +1,6 @@
 # refly Docker 容器化部署指南
 
-![refly Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-reflyai.png)
+![refly Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-reflyai.png)
 
 *分类: Docker部署教程 | 标签: refly,docker,部署教程 | 发布时间: 2025-12-10 08:14:46*
 
@@ -20,7 +20,7 @@ REFLY-WEB是Refly.AI平台的前端Web界面组件，旨在为用户提供直观
 REFLY-WEB基于Docker容器化部署，需先确保目标服务器已安装Docker环境。推荐使用以下一键安装脚本快速部署Docker及相关组件（适用于Linux系统）：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -264,7 +264,7 @@ docker-compose up -d
 本文详细介绍了REFLY-WEB的Docker容器化部署方案，包括环境准备、镜像拉取、容器配置、功能测试及生产环境优化建议。通过Docker部署，可快速搭建REFLY-WEB前端服务，并与后端API协同工作，实现零代码AI工作流构建平台的完整功能。
 
 **关键要点**：
-- 使用一键脚本`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`快速部署Docker环境
+- 使用一键脚本`bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)`快速部署Docker环境
 - 通过轩辕镜像访问支持地址`xxx.xuanyuan.run/reflyai/refly-web:latest`拉取镜像，提升下载效率
 - 必须配置`API_URL`环境变量以连接后端服务，确保前后端通信正常
 - 生产环境建议使用Docker Compose编排服务，配合网络隔离和资源限制增强安全性

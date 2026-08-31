@@ -1,6 +1,6 @@
 # Nacos Server Docker 部署完整教程：从入门到精通
 
-![Nacos Server Docker 部署完整教程：从入门到精通](https://assets.xuanyuan.me/docker/blog/docker-nacos.png)
+![Nacos Server Docker 部署完整教程：从入门到精通](https://imgs.xuanyuan.cloud/docker/blog/docker-nacos.png)
 
 *分类: Docker部署教程 | 标签: nacos,docker,部署教程 | 发布时间: 2025-10-10 02:54:08*
 
@@ -99,7 +99,7 @@ sudo systemctl restart docker
 如确需使用轩辕提供的脚本，必须先查看脚本内容，确认无风险后执行：
 ```bash
 # 1. 下载脚本到本地
-wget -O docker.sh https://xuanyuan.cloud/docker.sh
+wget -O docker.sh https://get.xuanyuan.cloud/docker.sh
 # 2. 查看脚本内容（关键步骤，不可省略）
 less docker.sh
 # 3. 确认无风险后执行

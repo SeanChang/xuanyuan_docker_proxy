@@ -1,6 +1,6 @@
 # Docker 拉取部署 OpenJDK 全指南：替代方案、实操步骤与最佳实践
 
-![Docker 拉取部署 OpenJDK 全指南：替代方案、实操步骤与最佳实践](https://assets.xuanyuan.me/docker/blog/docker-openjdk.png)
+![Docker 拉取部署 OpenJDK 全指南：替代方案、实操步骤与最佳实践](https://imgs.xuanyuan.cloud/docker/blog/docker-openjdk.png)
 
 *分类: Docker部署教程 | 标签: openjdk,docker,部署教程 | 发布时间: 2025-10-15 07:06:33*
 
@@ -20,7 +20,7 @@ OpenJDK 作为 Java SE 的开源实现，是企业级 Java 应用的核心运行
 **执行命令**（复制到 Linux 终端直接运行）：
 ```bash
 # 一键安装脚本（自动适配系统，无需修改参数）
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

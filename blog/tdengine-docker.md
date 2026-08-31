@@ -1,6 +1,6 @@
 # TDengine Docker 容器化部署指南
 
-![TDengine Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-tdengine.png)
+![TDengine Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-tdengine.png)
 
 *分类: Docker部署教程 | 标签: tdengine,部署教程,Java,IoT,Kubernetes | 发布时间: 2025-12-17 08:23:01*
 
@@ -27,7 +27,7 @@ TDengine 是一款开源、高性能、云原生的时序数据库，专为物�
 部署TDengine容器前，需先确保服务器已安装Docker环境。推荐使用以下一键安装脚本，适用于主流Linux发行版：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

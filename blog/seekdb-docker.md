@@ -1,6 +1,6 @@
 # SEEKDB Docker 容器化部署指南
 
-![SEEKDB Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-seekdb.png)
+![SEEKDB Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-seekdb.png)
 
 *分类: Docker部署教程 | 标签: seekdb,docker,部署教程 | 发布时间: 2025-12-03 15:10:26*
 
@@ -20,7 +20,7 @@ OceanBase seekdb 是 OceanBase 打造的一款开发者友好的 AI 原生数据
 部署SEEKDB容器前需确保主机已安装Docker环境。推荐使用以下一键安装脚本，适用于主流Linux发行版（Ubuntu、Debian、CentOS、Fedora等）：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

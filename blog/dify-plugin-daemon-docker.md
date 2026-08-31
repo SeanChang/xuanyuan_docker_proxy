@@ -1,6 +1,6 @@
 # DIFY-PLUGIN-DAEMON Docker 容器化部署指南
 
-![DIFY-PLUGIN-DAEMON Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-dify-plugin-daemon.png)
+![DIFY-PLUGIN-DAEMON Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-dify-plugin-daemon.png)
 
 *分类: Docker部署教程 | 标签: dify-plugin-daemon,docker,部署教程 | 发布时间: 2025-12-03 05:32:37*
 
@@ -18,7 +18,7 @@ DIFY-PLUGIN-DAEMON（镜像名称：`langgenius/dify-plugin-daemon`）是Dify平
 部署DIFY-PLUGIN-DAEMON前需先安装Docker环境，推荐使用一键安装脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

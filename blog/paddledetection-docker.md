@@ -1,6 +1,6 @@
 # PADDLEDETECTION Docker 容器化部署指南
 
-![PADDLEDETECTION Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-paddlepaddle.png)
+![PADDLEDETECTION Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-paddlepaddle.png)
 
 *分类: Docker部署教程 | 标签: paddledetection,docker,部署教程 | 发布时间: 2025-12-03 05:49:55*
 
@@ -19,7 +19,7 @@ PADDLEDETECTION是百度飞桨(PaddlePaddle)推出的目标检测与识别工具
 部署PADDLEDETECTION容器前，需先安装Docker环境。推荐使用以下一键安装脚本，适用于Ubuntu、Debian、CentOS等主流Linux发行版：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -296,7 +296,7 @@ docker run \
 
 #### 解决方案
 1. 检查网络连接是否正常，尝试访问`https://xxx.xuanyuan.run`验证访问支持能力可用性
-2. 重新执行Docker安装脚本以修复加速配置：`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`
+2. 重新执行Docker安装脚本以修复加速配置：`bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)`
 3. 手动重启Docker服务：`systemctl restart docker`
 
 ### 容器启动失败

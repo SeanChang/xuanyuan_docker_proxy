@@ -1,6 +1,6 @@
 # Docker 部署 AlmaLinux 全流程教程
 
-![Docker 部署 AlmaLinux 全流程教程](https://assets.xuanyuan.me/docker/blog/docker-almalinux.png)
+![Docker 部署 AlmaLinux 全流程教程](https://imgs.xuanyuan.cloud/docker/blog/docker-almalinux.png)
 
 *分类: Docker部署教程 | 标签: almalinux,docker,部署教程 | 发布时间: 2025-10-26 06:27:05*
 
@@ -32,7 +32,7 @@ AlmaLinux 作为 RHEL 二进制兼容的免费企业级发行版，由 CloudLinu
 脚本支持 CentOS、Ubuntu、Debian 等主流发行版，自动配置镜像访问支持源，避免拉取镜像慢的问题：
 ```bash
 # 一键安装 Docker + Docker Compose，全程无需手动干预
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

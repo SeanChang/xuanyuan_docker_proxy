@@ -1,6 +1,6 @@
 # CVAT SERVER Docker 容器化部署指南：从环境准备到生产实践
 
-![CVAT SERVER Docker 容器化部署指南：从环境准备到生产实践](https://assets.xuanyuan.me/docker/blog/docker-cvat-server.png)
+![CVAT SERVER Docker 容器化部署指南：从环境准备到生产实践](https://imgs.xuanyuan.cloud/docker/blog/docker-cvat-server.png)
 
 *分类: Docker部署教程 | 标签: cvat-server,docker,部署教程 | 发布时间: 2025-12-11 03:50:52*
 
@@ -19,7 +19,7 @@ CVAT SERVER是Computer Vision Annotation Tool (CVAT)的后端服务组件，为�
 部署CVAT SERVER前需要确保目标服务器已安装Docker环境。推荐使用以下一键安装脚本，该脚本会自动配置Docker最新稳定版本及相关依赖：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -462,7 +462,7 @@ SERVER是Computer Vision Annotation Tool (CVAT)的后端服务组件，为计算
 部署SERVER前需要确保目标服务器已安装Docker环境。推荐使用以下一键安装脚本，该脚本会自动配置Docker最新稳定版本及相关依赖：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

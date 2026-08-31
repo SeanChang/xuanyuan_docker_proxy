@@ -1,6 +1,6 @@
 # Prometheus Docker 容器化部署指南
 
-![Prometheus Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-prometheus.png)
+![Prometheus Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-prometheus.png)
 
 *分类: Docker部署教程 | 标签: prometheus,docker,部署教程 | 发布时间: 2025-11-29 02:16:54*
 
@@ -27,7 +27,7 @@ Prometheus是由Cloud Native Computing Foundation（CNCF）托管的开源系统
 部署Prometheus容器前需确保Docker环境已正确安装。推荐使用轩辕云提供的一键安装脚本，自动完成Docker Engine、Docker Compose及相关依赖的配置：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -409,7 +409,7 @@ process_resident_memory_bytes{job="prometheus"}
 ### 轩辕镜像资源
 - [轩辕镜像 - Prometheus文档](https://xuanyuan.cloud/r/prom/prometheus)
 - [Prometheus镜像标签列表](https://xuanyuan.cloud/r/prom/prometheus/tags)
-- [轩辕Docker一键安装脚本](https://xuanyuan.cloud/docker.sh)
+- [轩辕Docker一键安装脚本](https://get.xuanyuan.cloud/docker.sh)
 
 
 ### 相关工具与集成方案

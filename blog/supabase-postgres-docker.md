@@ -1,6 +1,6 @@
 # Supabase Postgres Docker 容器化部署指南
 
-![Supabase Postgres Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-postgres.png)
+![Supabase Postgres Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-postgres.png)
 
 *分类: Docker部署教程 | 标签: supabase,postgres,数据库 | 发布时间: 2025-12-18 09:32:25*
 
@@ -20,7 +20,7 @@ Supabase Postgres 是一款基于PostgreSQL官方镜像构建的容器化应用�
 部署Supabase Postgres容器前，需先确保服务器已安装Docker环境。推荐使用以下一键安装脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

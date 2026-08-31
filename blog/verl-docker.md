@@ -1,6 +1,6 @@
 # verl Docker 容器化部署手册
 
-![verl Docker 容器化部署手册](https://assets.xuanyuan.me/docker/blog/docker-verl.png)
+![verl Docker 容器化部署手册](https://imgs.xuanyuan.cloud/docker/blog/docker-verl.png)
 
 *分类: Docker部署教程 | 标签: verl,docker,部署教程 | 发布时间: 2025-10-08 14:26:55*
 
@@ -71,7 +71,7 @@ verl 的能力覆盖“训练”和“推理”两大核心场景，且支持灵
 ### 2.0 前置：安装 Docker 环境
 部署前需先安装 Docker 及相关组件（含 Docker Engine、Docker Compose），使用以下一键脚本快速部署，适配主流 Linux 发行版：
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

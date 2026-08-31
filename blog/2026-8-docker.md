@@ -1,6 +1,6 @@
 # 2026 年 8 月 Docker 国内镜像加速配置指南：稳定拉取与部署落地
 
-![2026 年 8 月 Docker 国内镜像加速配置指南：稳定拉取与部署落地](https://assets.xuanyuan.me/docker/blog/docker-2026-8.webp)
+![2026 年 8 月 Docker 国内镜像加速配置指南：稳定拉取与部署落地](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-8.webp)
 
 *分类: Docker部署教程 | 标签: Docker,镜像加速,轩辕镜像,containerd,Kubernetes,Podman,Docker部署教程 | 发布时间: 2026-08-01 04:40:34*
 
@@ -191,13 +191,13 @@ docker pull docker.xuanyuan.me/nginx:latest
 #### 测试环境
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 #### 生产环境（先审阅）
 
 ```bash
-wget https://xuanyuan.cloud/docker.sh -O docker-install.sh
+wget https://get.xuanyuan.cloud/docker.sh -O docker-install.sh
 less docker-install.sh
 bash docker-install.sh
 ```

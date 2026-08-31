@@ -1,6 +1,6 @@
 # Apache Kafka Docker 容器化部署指南
 
-![Apache Kafka Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-kafka.png)
+![Apache Kafka Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-kafka.png)
 
 *分类: Docker部署教程 | 标签: kafka,docker,部署教程 | 发布时间: 2025-12-03 08:04:30*
 
@@ -20,7 +20,7 @@ Apache Kafka是一个开源的分布式事件流平台，旨在高吞吐量、�
 Kafka容器化部署依赖Docker环境，推荐使用以下一键安装脚本完成Docker及相关组件的安装：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

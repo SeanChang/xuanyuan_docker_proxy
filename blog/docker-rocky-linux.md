@@ -1,6 +1,6 @@
 # Docker 部署 Rocky Linux 全流程教程
 
-![Docker 部署 Rocky Linux 全流程教程](https://assets.xuanyuan.me/docker/blog/docker-rocky-linux.png)
+![Docker 部署 Rocky Linux 全流程教程](https://imgs.xuanyuan.cloud/docker/blog/docker-rocky-linux.png)
 
 *分类: Docker部署教程 | 标签: rocky-linux,docker,部署教程 | 发布时间: 2025-10-26 06:20:35*
 
@@ -30,7 +30,7 @@ Rocky Linux 作为 CentOS 停更后的最优替代方案，与 RHEL 完全兼容
 推荐使用轩辕镜像提供的一键安装脚本，支持 CentOS、Ubuntu、Debian 等主流发行版，自动配置镜像访问支持源：
 ```bash
 # 一键安装 Docker 及 Docker Compose
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

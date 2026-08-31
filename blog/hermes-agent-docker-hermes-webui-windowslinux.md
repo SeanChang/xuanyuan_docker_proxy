@@ -1,6 +1,6 @@
 # 给 Hermes Agent 装个可视化面板！Docker 一键部署 Hermes WebUI 完整教程（Windows\+Linux 双环境）
 
-![给 Hermes Agent 装个可视化面板！Docker 一键部署 Hermes WebUI 完整教程（Windows\+Linux 双环境）](https://assets.xuanyuan.me/docker/blog/docker-hermes-webui-1.png)
+![给 Hermes Agent 装个可视化面板！Docker 一键部署 Hermes WebUI 完整教程（Windows\+Linux 双环境）](https://imgs.xuanyuan.cloud/docker/blog/docker-hermes-webui-1.png)
 
 *分类: Docker部署教程 | 标签: Hermes-Agent,部署教程,部署文档 | 发布时间: 2026-04-23 06:16:28*
 
@@ -21,7 +21,7 @@
 直接执行一条命令，就能自动安装 Docker、Docker Compose，还会配置好轩辕镜像加速，省去手动配置的麻烦：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 #### 🏭 生产环境（推荐，安全优先）
@@ -30,7 +30,7 @@ bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 
 ```bash
 # 1. 下载脚本到本地
-wget https://xuanyuan.cloud/docker.sh -O docker-install.sh
+wget https://get.xuanyuan.cloud/docker.sh -O docker-install.sh
 
 # 2. （可选但推荐）查看脚本源码，确认脚本安全
 less docker-install.sh  # 也可以用vim、cat命令查看
@@ -143,13 +143,13 @@ docker run -d --name hermes-webui -p 3001:8787 \
 
 http://localhost:3001
 
-![Hermes WebUI 设置界面](https://assets.xuanyuan.me/docker/blog/docker-hermes-webui.png)
+![Hermes WebUI 设置界面](https://imgs.xuanyuan.cloud/docker/blog/docker-hermes-webui.png)
 
 若在远程服务器部署（Linux 服务器），则访问：http://服务器IP:3001（需确保服务器 3001 端口已开放）。
 
 访问成功后，即可看到 Hermes WebUI 的可视化界面，后续操作都可以在界面上完成，比命令行简单太多。
 
-![Hermes WebUI 对话界面](https://assets.xuanyuan.me/docker/blog/docker-hermes-webui-2.png)
+![Hermes WebUI 对话界面](https://imgs.xuanyuan.cloud/docker/blog/docker-hermes-webui-2.png)
 
 ## 六、运行架构说明
 

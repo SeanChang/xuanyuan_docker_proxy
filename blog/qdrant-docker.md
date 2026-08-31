@@ -1,6 +1,6 @@
 # QDRANT 向量搜索引擎 Docker 容器化部署指南
 
-![QDRANT 向量搜索引擎 Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-qdrant.png)
+![QDRANT 向量搜索引擎 Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-qdrant.png)
 
 *分类: Docker部署教程 | 标签: qdrant,docker,部署教程 | 发布时间: 2025-12-09 07:45:13*
 
@@ -27,7 +27,7 @@ QDRANT的核心优势包括：
 QDRANT支持通过Docker容器部署，首先需要在目标服务器上安装Docker环境。推荐使用轩辕云提供的一键安装脚本，该脚本会自动配置Docker及相关依赖：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

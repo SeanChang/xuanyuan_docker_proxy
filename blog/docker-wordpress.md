@@ -1,6 +1,6 @@
 # Docker 部署 WordPress 全流程教程
 
-![Docker 部署 WordPress 全流程教程](https://assets.xuanyuan.me/docker/blog/docker-wordpress.png)
+![Docker 部署 WordPress 全流程教程](https://imgs.xuanyuan.cloud/docker/blog/docker-wordpress.png)
 
 *分类: Docker部署教程 | 标签: wordPress,docker,部署教程 | 发布时间: 2025-10-23 13:43:41*
 
@@ -32,7 +32,7 @@ WordPress 是全球最流行的开源内容管理系统（CMS），基于 PHP + 
 该脚本会自动安装最新稳定版 Docker、Docker Compose，并配置轩辕镜像访问支持源（解决官方镜像拉取慢的问题），无需手动修改配置文件。
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

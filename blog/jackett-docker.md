@@ -1,6 +1,6 @@
 # JACKETT Docker 容器化部署指南
 
-![JACKETT Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-jackett.png)
+![JACKETT Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-jackett.png)
 
 *分类: Docker部署教程 | 标签: jackett,docker,部署教程 | 发布时间: 2025-12-14 03:23:08*
 
@@ -26,7 +26,7 @@ LinuxServer.io团队提供的JACKETT容器具有以下特点：
 在开始部署JACKETT之前，需要先在目标服务器上安装Docker环境。推荐使用以下一键安装脚本，该脚本会自动配置Docker及相关依赖：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

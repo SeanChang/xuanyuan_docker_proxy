@@ -1,6 +1,6 @@
 # Lucky Docker 部署文档
 
-![Lucky Docker 部署文档](https://assets.xuanyuan.me/docker/blog/docker-lucky.png)
+![Lucky Docker 部署文档](https://imgs.xuanyuan.cloud/docker/blog/docker-lucky.png)
 
 *分类: Docker部署教程 | 标签: lucky,docker,部署教程 | 发布时间: 2025-10-07 14:07:06*
 
@@ -16,7 +16,7 @@
 该脚本支持多种 Linux 发行版，支持一键安装 Docker、Docker Compose 并自动配置轩辕镜像访问支持源。
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -140,7 +140,7 @@ services:
 - **脚本功能**：支持多种 Linux 发行版，一键安装 Docker、Docker Compose，且一键配置轩辕镜像访问支持源。
 - **执行命令**：
   ```bash
-  bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+  bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
   ```
 
 

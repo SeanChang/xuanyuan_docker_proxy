@@ -1,6 +1,6 @@
 # XCP-Derivatives Docker容器化部署指南
 
-![XCP-Derivatives Docker容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-xcp-derivatives.png)
+![XCP-Derivatives Docker容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-xcp-derivatives.png)
 
 *分类: Docker部署教程 | 标签: xcp-derivatives,docker,部署教程 | 发布时间: 2025-12-15 06:05:39*
 
@@ -20,7 +20,7 @@ XCP_D（XCP-Derivatives）是一款基于BIDS（Brain Imaging Data Structure）�
 XCP_D的容器化部署依赖Docker引擎，推荐使用以下一键脚本快速安装Docker环境（支持主流Linux发行版）：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

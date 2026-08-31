@@ -1,6 +1,6 @@
 # 2026 年 7 月最新 Docker 国内镜像源加速配置指南
 
-![2026 年 7 月最新 Docker 国内镜像源加速配置指南](https://assets.xuanyuan.me/docker/blog/docker-2026-7.png)
+![2026 年 7 月最新 Docker 国内镜像源加速配置指南](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-7.png)
 
 *分类: Docker镜像源 | 标签: Docker,镜像加速,轩辕镜像,K8s,containerd | 发布时间: 2026-07-06 09:07:07*
 
@@ -91,13 +91,13 @@
 #### 测试环境（快速体验，非生产）
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 #### 生产环境（推荐：先审计再执行）
 
 ```bash
-wget https://xuanyuan.cloud/docker.sh -O docker-install.sh
+wget https://get.xuanyuan.cloud/docker.sh -O docker-install.sh
 less docker-install.sh          # 企业环境建议完整审阅
 bash docker-install.sh
 ```

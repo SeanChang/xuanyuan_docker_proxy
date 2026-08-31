@@ -1,6 +1,6 @@
 # Docker 部署 CloudDrive2：轻松搭建多云盘本地挂载平台
 
-![Docker 部署 CloudDrive2：轻松搭建多云盘本地挂载平台](https://assets.xuanyuan.me/docker/blog/clouddrive.webp)
+![Docker 部署 CloudDrive2：轻松搭建多云盘本地挂载平台](https://imgs.xuanyuan.cloud/docker/blog/clouddrive.webp)
 
 *分类: Docker部署教程 | 标签: CloudDrive2,Docker,轩辕镜像,多云盘,FUSE,网盘挂载,私有化部署,部署教程 | 发布时间: 2026-08-02 15:21:10*
 
@@ -84,7 +84,7 @@ ls -l /dev/fuse
 Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -314,15 +314,15 @@ docker stop clouddrive2 && docker rm clouddrive2
 
 打开 `http://<主机IP>:19798`，进入登录页。全新实例没有默认管理员，先点 **注册**。
 
-![CloudDrive2 登录页：用户名、密码，可勾选同步数据到云端与记住我](https://assets.xuanyuan.me/docker/blog/clouddrive-1.webp)
+![CloudDrive2 登录页：用户名、密码，可勾选同步数据到云端与记住我](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-1.webp)
 
 填写邮箱、密码、确认密码后点 **创建账户**。
 
-![CloudDrive2 创建新账户：邮箱与密码，创建账户按钮](https://assets.xuanyuan.me/docker/blog/clouddrive-2.webp)
+![CloudDrive2 创建新账户：邮箱与密码，创建账户按钮](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-2.webp)
 
 创建成功后回到登录页，会出现绿色提示「账户创建成功！请使用您的凭据登录」。填入账号密码，按需勾选 **同步数据到云端** / **记住我**，点 **登录**。
 
-![账户创建成功后的登录页，绿色横幅提示可使用凭据登录](https://assets.xuanyuan.me/docker/blog/clouddrive-3.webp)
+![账户创建成功后的登录页，绿色横幅提示可使用凭据登录](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-3.webp)
 
 > **同步数据到云端**：便于多端 / 换机恢复账号侧配置；若你只想数据留在本机，可取消勾选（以产品当前策略为准）。密码请用密码管理器保存，不要用弱口令。
 
@@ -334,7 +334,7 @@ docker stop clouddrive2 && docker rm clouddrive2
 
 首次未添加任何云盘时，卡片计数多为 0：文件浏览器、挂载、云存储、备份、API 令牌等；WebDAV 可能已显示默认用户数。底部有系统任务与性能监控占位。
 
-![CloudDrive2 仪表盘：欢迎语与文件/挂载/云存储等概览卡片](https://assets.xuanyuan.me/docker/blog/clouddrive-4.webp)
+![CloudDrive2 仪表盘：欢迎语与文件/挂载/云存储等概览卡片](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-4.webp)
 
 | 侧栏入口 | 用途 |
 |----------|------|
@@ -356,23 +356,23 @@ docker stop clouddrive2 && docker rm clouddrive2
 - **云存储**：OneDrive、Google Drive、百度网盘、阿里云盘 Open、115open、天翼云盘、迅雷云盘、123云盘、光鸭（PikPak）等  
 - **本地 / 协议**：WebDAV、CloudDrive、S3、SFTP、FTP、SMB、本地文件夹  
 
-![添加云存储弹窗：可选多家公有云盘与 WebDAV/S3/SMB 等协议](https://assets.xuanyuan.me/docker/blog/clouddrive-5.webp)
+![添加云存储弹窗：可选多家公有云盘与 WebDAV/S3/SMB 等协议](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-5.webp)
 
 本文实测选择 **迅雷云盘**。进入授权页后点 **授权 Xunlei**，会打开身份验证窗口。
 
-![添加迅雷云盘：点击授权 Xunlei，可展开代理设置](https://assets.xuanyuan.me/docker/blog/clouddrive-6.webp)
+![添加迅雷云盘：点击授权 Xunlei，可展开代理设置](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-6.webp)
 
 在授权登录页核对权限说明（用户管理、获取头像昵称与会员状态等），点 **同意**。
 
-![迅雷授权登录：CloudDrive 请求权限，同意或取消](https://assets.xuanyuan.me/docker/blog/clouddrive-7.webp)
+![迅雷授权登录：CloudDrive 请求权限，同意或取消](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-7.webp)
 
 授权成功后，**云存储** 列表会出现卡片，展示已用 / 总量与进度条；可 **打开** 浏览、**配置** 或 **移除**。
 
-![云存储列表：已添加迅雷云盘，显示容量与打开/配置/移除](https://assets.xuanyuan.me/docker/blog/clouddrive-8.webp)
+![云存储列表：已添加迅雷云盘，显示容量与打开/配置/移除](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-8.webp)
 
 点 **打开**，或侧栏 **浏览 → 文件**，即可像资源管理器一样进入「迅雷云盘」目录，查看名称、大小、修改时间。
 
-![文件浏览：进入迅雷云盘目录，列表显示文件夹与修改时间](https://assets.xuanyuan.me/docker/blog/clouddrive-9.webp)
+![文件浏览：进入迅雷云盘目录，列表显示文件夹与修改时间](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-9.webp)
 
 > 其他网盘流程类似：选提供商 → OAuth / 扫码 / 账号授权 → 回到云存储列表。注意各家 API 与会员策略不同，限速与权限以网盘方为准。
 
@@ -392,11 +392,11 @@ Web 里能浏览还不够——要把云端目录挂到 Docker 映射的 **`/Clo
 | **只读** | 仅读取时勾选，更安全 |
 | **启动时自动挂载** | 建议勾选，容器重启后自动恢复 |
 
-![添加挂载点：挂载名称、源目录、挂载点、只读与启动时自动挂载](https://assets.xuanyuan.me/docker/blog/clouddrive-10.webp)
+![添加挂载点：挂载名称、源目录、挂载点、只读与启动时自动挂载](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-10.webp)
 
 点挂载点旁的文件夹图标，在 **选择挂载点** 对话框里选中 `CloudNAS`（列表中还有 `Config`、`media` 等），再点 **选择**。
 
-![选择挂载点对话框：容器内目录列表含 CloudNAS、Config、media](https://assets.xuanyuan.me/docker/blog/clouddrive-11.webp)
+![选择挂载点对话框：容器内目录列表含 CloudNAS、Config、media](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-11.webp)
 
 保存后，在宿主机验证：
 
@@ -420,7 +420,7 @@ http://192.168.1.10:19798/dav
 
 可开启 **CloudDrive 账户** 认证（根路径 `/`），**匿名访问** 默认关闭（公网务必保持关闭）。也可按需添加独立 WebDAV 用户。
 
-![WebDAV 服务器：已启用，地址 http://IP:19798/dav，CloudDrive 账户认证开关](https://assets.xuanyuan.me/docker/blog/clouddrive-12.webp)
+![WebDAV 服务器：已启用，地址 http://IP:19798/dav，CloudDrive 账户认证开关](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-12.webp)
 
 适合：把聚合后的存储挂进支持 WebDAV 的同步盘、播放器或办公软件。生产环境建议前面加 HTTPS 反向代理，不要长期明文暴露。
 
@@ -432,19 +432,19 @@ http://192.168.1.10:19798/dav
 
 **系统管理 → 设备** 显示当前运行主机（实测设备名 `ubuntu2404`、版本 **1.0.13**、平台 LINUX），用于确认实例身份与多端绑定情况。
 
-![设备页：ubuntu2404，版本 1.0.13，属性与移除按钮](https://assets.xuanyuan.me/docker/blog/clouddrive-13.webp)
+![设备页：ubuntu2404，版本 1.0.13，属性与移除按钮](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-13.webp)
 
 ### 13.2 设置 · WebUI / 媒体
 
 **系统 → 设置 → WebUI**：启动页、最近文件、视频缩略图、每页文件数、语言与主题等。右侧 **媒体** 可设幻灯片间隔、默认字幕编码（中文环境常见 **gb18030**）。
 
-![设置 WebUI：启动页面、最近文件、视频缩略图与字幕编码](https://assets.xuanyuan.me/docker/blog/clouddrive-14.webp)
+![设置 WebUI：启动页面、最近文件、视频缩略图与字幕编码](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-14.webp)
 
 ### 13.3 设置 · 系统 / 缓存
 
 **设置 → 系统**：设备名称、启动延迟、目录缓存时间、临时文件路径（默认 `/Config/temp`）、文件缓冲磁盘缓存（默认 `/Config/file_buffer_cache`，实测上限 512MB、LRU）、更新通道（正式版）等。
 
-![设置系统：目录缓存、临时文件、磁盘缓存路径与更新通道](https://assets.xuanyuan.me/docker/blog/clouddrive-15.webp)
+![设置系统：目录缓存、临时文件、磁盘缓存路径与更新通道](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-15.webp)
 
 这些路径都在已映射的 `/Config` 下，备份 `Config/` 即可带走大部分本地状态。
 
@@ -452,7 +452,7 @@ http://192.168.1.10:19798/dav
 
 **系统 → 性能**：实时 CPU / 内存 / 上下行，以及近 60 秒曲线与句柄、缓存等详情，便于排查卡顿或异常流量。
 
-![性能监控：CPU 内存与网络实时指标及历史曲线](https://assets.xuanyuan.me/docker/blog/clouddrive-16.webp)
+![性能监控：CPU 内存与网络实时指标及历史曲线](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-16.webp)
 
 ---
 
@@ -462,13 +462,13 @@ http://192.168.1.10:19798/dav
 
 **系统 → 个人资料**：查看邮箱与套餐、验证邮箱、启用双因素认证、修改密码 / 邮箱、退出登录。建议至少设置强密码；对外可访问时务必开 **双因素认证**。
 
-![个人资料：账户详情、双因素认证入口、修改密码与邮箱](https://assets.xuanyuan.me/docker/blog/clouddrive-17.webp)
+![个人资料：账户详情、双因素认证入口、修改密码与邮箱](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-17.webp)
 
 ### 14.2 会员与功能边界
 
 **系统 → 会员** 展示当前套餐（实测 **Basic**）及功能开关：例如云盘账号数、挂载点数、多云备份、跨云秒传、加密、WebDAV 多用户、直链等。部分高级能力在 Basic 下为「已禁用」，需按官方会员说明开通；底部可输入激活码。
 
-![会员页：Basic 套餐与核心/高级功能启用状态列表](https://assets.xuanyuan.me/docker/blog/clouddrive-18.webp)
+![会员页：Basic 套餐与核心/高级功能启用状态列表](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-18.webp)
 
 跟做部署与基础挂载一般在 Basic 即可完成；是否升级取决于你是否需要高级传输 / 加密等能力。
 
@@ -476,7 +476,7 @@ http://192.168.1.10:19798/dav
 
 **系统 → 关于** 可核对产品名、版本（实测 **1.0.13** Build `26-07-23 20:58:43`）、CLOUDAPI / WEBUI 版本、检查更新、重启服务或清除缓存重载，并链到官网与许可协议。
 
-![关于页：CloudDrive2 v1.0.13、检查更新与重启服务](https://assets.xuanyuan.me/docker/blog/clouddrive-19.webp)
+![关于页：CloudDrive2 v1.0.13、检查更新与重启服务](https://imgs.xuanyuan.cloud/docker/blog/clouddrive-19.webp)
 
 ---
 

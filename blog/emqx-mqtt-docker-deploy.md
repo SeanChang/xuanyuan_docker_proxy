@@ -1,6 +1,6 @@
 # Docker 部署 EMQX：轻松搭建物联网 MQTT 消息平台
 
-![Docker 部署 EMQX：轻松搭建物联网 MQTT 消息平台](https://assets.xuanyuan.me/docker/blog/emqx.webp)
+![Docker 部署 EMQX：轻松搭建物联网 MQTT 消息平台](https://imgs.xuanyuan.cloud/docker/blog/emqx.webp)
 
 *分类: Docker部署教程 | 标签: EMQX,MQTT,Docker,轩辕镜像,IoT,消息代理,私有化部署,部署教程 | 发布时间: 2026-07-30 07:12:52*
 
@@ -94,7 +94,7 @@ docker compose version
 Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -249,7 +249,7 @@ http://192.168.1.10:18083
 **默认用户名**：`admin`  
 **默认密码**：`public`
 
-![EMQX Dashboard 登录页：用户名填 admin，点击登录](https://assets.xuanyuan.me/docker/blog/emqx-1.webp)
+![EMQX Dashboard 登录页：用户名填 admin，点击登录](https://imgs.xuanyuan.cloud/docker/blog/emqx-1.webp)
 
 输入后点「登录」。若打不开页面，先确认 `docker ps` 中 18083 已映射、防火墙已放行。
 
@@ -262,7 +262,7 @@ http://192.168.1.10:18083
 
 建议直接设强密码并点「确定」。演示环境可点「跳过」，但**生产务必改密**。
 
-![EMQX 首次登录强制修改默认密码：长度与复杂度要求](https://assets.xuanyuan.me/docker/blog/emqx-2.webp)
+![EMQX 首次登录强制修改默认密码：长度与复杂度要求](https://imgs.xuanyuan.cloud/docker/blog/emqx-2.webp)
 
 忘记密码时可在容器内重置：
 
@@ -274,7 +274,7 @@ docker exec emqx emqx ctl admins passwd admin 'NewPass'
 
 进入控制台后，常会弹出许可证说明：当前为 **EMQX 社区版许可证（单节点）**。弹窗会概括：非生产活动、符合条款的单节点生产等可免费使用；**集群（≥2 节点）**、商业托管转售、嵌入商业产品等需商业许可证。可勾选「不再提示」，再点「知道了」进入概览。
 
-![EMQX 社区版单节点许可证提示：知道了后进入集群概览](https://assets.xuanyuan.me/docker/blog/emqx-3.webp)
+![EMQX 社区版单节点许可证提示：知道了后进入集群概览](https://imgs.xuanyuan.cloud/docker/blog/emqx-3.webp)
 
 这与本文「单节点跟做、集群需许可证」一致，不必紧张——**单节点 Docker 试用不需要先去申请商业 License**。
 
@@ -291,7 +291,7 @@ docker exec emqx emqx ctl admins passwd admin 'NewPass'
 | 节点图「emqxcl - 1 节点」 | 确认是单节点 |
 | 节点信息 | **节点名称**（如 `emqx@172.17.0.2`）、角色 core、版本 **6.2.2 (Enterprise)**、连接数等 |
 
-![EMQX 集群概览：单节点 6.2.2，节点名 emqx@172.17.0.2，已有 1 个在线会话](https://assets.xuanyuan.me/docker/blog/emqx-4.webp)
+![EMQX 集群概览：单节点 6.2.2，节点名 emqx@172.17.0.2，已有 1 个在线会话](https://imgs.xuanyuan.cloud/docker/blog/emqx-4.webp)
 
 左侧图标栏可进入监控、客户端、订阅、集成、访问控制、工具等——后文 MQTT 验证后，重点用「客户端」核对连接。
 
@@ -344,7 +344,7 @@ demo/hello world
 
 浏览器打开左侧 **客户端**（或监控相关入口下的客户端列表）。有订阅进程连着时，应出现一条 **已连接** 记录：随机 Client ID、来源 IP（Docker 场景常见为网桥网关如 `172.17.0.1`）、心跳 60 等。可按客户端 ID / 用户名 / IP 筛选，也可导出。
 
-![EMQX 客户端列表：已连接的 MQTT 客户端及 IP、心跳信息](https://assets.xuanyuan.me/docker/blog/emqx-5.webp)
+![EMQX 客户端列表：已连接的 MQTT 客户端及 IP、心跳信息](https://imgs.xuanyuan.cloud/docker/blog/emqx-5.webp)
 
 **用途**：设备「连不上」时，先看这里有没有对应 Client ID；异常连接可在此排查或踢下线。
 
@@ -352,7 +352,7 @@ demo/hello world
 
 点击蓝色客户端 ID，进入详情 **「客户端信息」**：协议版本（如 MQTT v3.1.1）、所在节点、清除会话、订阅数、消息队列 / 飞行窗口等。
 
-![EMQX 客户端详情：连接信息与会话信息（协议 MQTT v3.1.1）](https://assets.xuanyuan.me/docker/blog/emqx-6.webp)
+![EMQX 客户端详情：连接信息与会话信息（协议 MQTT v3.1.1）](https://imgs.xuanyuan.cloud/docker/blog/emqx-6.webp)
 
 **用途**：确认设备到底连到了哪台节点、会话是否 Clean Start、队列是否堆积（排障「收得到连得上但消息堵」时很有用）。
 
@@ -360,7 +360,7 @@ demo/hello world
 
 同一详情页切到 **「当前订阅」**。若按上文用 `demo/#` 订阅，此处应看到主题 **`demo/#`**、QoS **0**。也可在此「添加订阅」或「取消订阅」（运维代操作客户端订阅时可用）。
 
-![EMQX 当前订阅：主题 demo/#，QoS 0](https://assets.xuanyuan.me/docker/blog/emqx-7.webp)
+![EMQX 当前订阅：主题 demo/#，QoS 0](https://imgs.xuanyuan.cloud/docker/blog/emqx-7.webp)
 
 **用途**：发布了消息但业务收不到时，先核对订阅主题是否写错、通配符是否匹配。
 
@@ -368,7 +368,7 @@ demo/hello world
 
 再切到 **「指标」**：接收 / 发送字节、TCP / MQTT 报文数、按 QoS 统计的消息收发与丢弃原因等。做完一次 `pub` 后，通常能看到接收消息计数增加。
 
-![EMQX 客户端指标：流量字节、报文与消息收发统计](https://assets.xuanyuan.me/docker/blog/emqx-8.webp)
+![EMQX 客户端指标：流量字节、报文与消息收发统计](https://imgs.xuanyuan.cloud/docker/blog/emqx-8.webp)
 
 **用途**：区分「完全没连上」和「连上了但 QoS / 队列导致丢消息」；对接真实设备前，用这一页确认联调流量符合预期。
 

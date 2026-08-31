@@ -1,6 +1,6 @@
 # PANDAS FINAL Docker 镜像部署指南
 
-![PANDAS FINAL Docker 镜像部署指南](https://assets.xuanyuan.me/docker/blog/docker-pandas_final.png)
+![PANDAS FINAL Docker 镜像部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-pandas_final.png)
 
 *分类: Docker部署教程 | 标签: pandas-final,docker,部署教程 | 发布时间: 2025-12-06 06:02:58*
 
@@ -20,7 +20,7 @@ PANDAS_FINAL是一款基于Python数据分析库pandas构建的容器化应用�
 PANDAS_FINAL基于Docker容器技术构建，需先在目标主机安装Docker环境。推荐使用以下一键安装脚本（支持主流Linux发行版）：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

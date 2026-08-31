@@ -1,6 +1,6 @@
 # AdguardHome Docker 容器化部署指南
 
-![AdguardHome Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-adguardhome.png)
+![AdguardHome Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-adguardhome.png)
 
 *分类: Docker部署教程 | 标签: adguardhome,docker,部署教程 | 发布时间: 2025-12-11 13:30:30*
 
@@ -20,7 +20,7 @@ ADGUARDHOME是一款网络级广告和跟踪器拦截DNS服务器，作为一款
 ADGUARDHOME基于Docker容器运行，首先需要在目标服务器上安装Docker环境。推荐使用以下一键安装脚本，该脚本会自动配置Docker环境并优化相关参数：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

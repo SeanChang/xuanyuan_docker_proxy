@@ -1,6 +1,6 @@
 # KIBANA Docker 容器化部署指南
 
-![KIBANA Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-kibana.png)
+![KIBANA Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-kibana.png)
 
 *分类: Docker部署教程 | 标签: kibana,docker,部署教程 | 发布时间: 2025-12-13 06:02:47*
 
@@ -20,7 +20,7 @@ Kibana是一个开源的分析与可视化平台，专为与Elasticsearch协作�
 Kibana容器化部署依赖Docker引擎，建议使用以下一键脚本快速安装Docker环境（支持主流Linux发行版）：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

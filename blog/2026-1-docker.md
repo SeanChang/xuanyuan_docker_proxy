@@ -1,6 +1,6 @@
 # 2026 年 1 月最新 Docker 镜像源加速列表与使用指南
 
-![2026 年 1 月最新 Docker 镜像源加速列表与使用指南](https://assets.xuanyuan.me/docker/blog/docker-202601.png)
+![2026 年 1 月最新 Docker 镜像源加速列表与使用指南](https://imgs.xuanyuan.cloud/docker/blog/docker-202601.png)
 
 *分类: Docker部署教程 | 标签: docker | 发布时间: 2026-01-02 16:05:03*
 
@@ -45,13 +45,13 @@ Linux Docker & Docker Compose 一键安装配置脚本
 ### 执行命令
 #### 🧪 测试环境（快速体验，仅限非生产场景）
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 #### 🏭 生产环境（推荐，安全优先）
 ```bash
 # 1. 下载脚本到本地
-wget https://xuanyuan.cloud/docker.sh -O docker-install.sh
+wget https://get.xuanyuan.cloud/docker.sh -O docker-install.sh
 
 # 2. （可选）审计脚本源码（建议企业环境必做）
 less docker-install.sh  # 或使用vim、cat查看脚本内容

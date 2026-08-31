@@ -1,6 +1,6 @@
 # COMFYUI Docker 容器化部署指南
 
-![COMFYUI Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-comfyui.png)
+![COMFYUI Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-comfyui.png)
 
 *分类: Docker部署教程 | 标签: comfyui,docker,部署教程 | 发布时间: 2025-12-09 06:50:45*
 
@@ -18,7 +18,7 @@ COMFYUI是一款功能强大的AI模型可视化操作界面，主要用于 Stab
 COMFYUI的容器化部署依赖Docker引擎，建议使用以下一键脚本在Linux系统中快速安装Docker环境（支持Ubuntu、CentOS、Debian等主流发行版）：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

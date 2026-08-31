@@ -1,6 +1,6 @@
 # 基于 Docker 部署 xprobe/xinference：从环境准备到实战操作
 
-![基于 Docker 部署 xprobe/xinference：从环境准备到实战操作](https://assets.xuanyuan.me/docker/blog/docker-xinference.png)
+![基于 Docker 部署 xprobe/xinference：从环境准备到实战操作](https://imgs.xuanyuan.cloud/docker/blog/docker-xinference.png)
 
 *分类: Docker部署教程 | 标签: xinference,docker,部署教程 | 发布时间: 2025-10-10 03:17:48*
 
@@ -23,7 +23,7 @@ xprobe/xinference（简称Xinference）是一款开源的**AI模型推理服务�
 ### 1. 安装Docker与Docker Compose（必做）
 如果你的Linux服务器还没装Docker，直接用下面的一键脚本——它会自动安装Docker、Docker Compose，还会配置轩辕镜像访问支持源，避免拉取镜像慢的问题（国内用户强烈推荐）：
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -329,7 +329,7 @@ xinference model list
 - 原因：网络波动或节点问题；
 - 解决：
   1. 检查服务器能否访问国内网络（如`ping baidu.com`）；
-  2. 执行轩辕一键脚本配置全局加速：`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`，选择“2) 修改轩辕镜像专属访问支持地址”；
+  2. 执行轩辕一键脚本配置全局加速：`bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)`，选择“2) 修改轩辕镜像专属访问支持地址”；
   3. 换一个轩辕镜像标签尝试（如先拉取体积小的`nightly-main-cpu`测试网络）。
 
 

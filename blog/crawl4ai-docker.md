@@ -1,6 +1,6 @@
 # Crawl4AI Docker 容器化部署指南
 
-![Crawl4AI Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-crawl4ai.png)
+![Crawl4AI Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-crawl4ai.png)
 
 *分类: Docker部署教程 | 标签: crawl4ai,部署教程 | 发布时间: 2025-12-17 07:35:13*
 
@@ -23,7 +23,7 @@ Crawl4AI 是一款开源的LLM友好型网络爬虫和抓取工具，专为LLMs�
 Crawl4AI 基于Docker容器化部署，首先需要在目标服务器上安装Docker环境。推荐使用以下一键安装脚本，适用于主流Linux发行版：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

@@ -1,6 +1,6 @@
 # Docker 部署 Oracle Linux 实操全流程
 
-![Docker 部署 Oracle Linux 实操全流程](https://assets.xuanyuan.me/docker/blog/docker-oracle-linux.png)
+![Docker 部署 Oracle Linux 实操全流程](https://imgs.xuanyuan.cloud/docker/blog/docker-oracle-linux.png)
 
 *分类: Docker部署教程 | 标签: oracle-linux,docker,部署教程 | 发布时间: 2025-10-26 06:32:24*
 
@@ -32,7 +32,7 @@ Oracle Linux 不只是普通的 RHEL 兼容发行版，更是经过 Oracle 每�
 脚本支持 CentOS、Ubuntu、Debian 等主流发行版，自动配置轩辕镜像访问支持源，避免拉取 Oracle Linux 镜像时访问表现慢：
 ```bash
 # 一键安装 Docker + Docker Compose，全程无需手动干预
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

@@ -1,6 +1,6 @@
 # Kubernetes Dashboard Docker 容器化部署指南
 
-![Kubernetes Dashboard Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-kubernetes-dashboard.png)
+![Kubernetes Dashboard Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-kubernetes-dashboard.png)
 
 *分类: Docker部署教程 | 标签: kubernetes-dashboard,docker,部署教程 | 发布时间: 2025-11-16 05:45:14*
 
@@ -19,7 +19,7 @@ Kubernetes Dashboard是Kubernetes集群的通用Web用户界面，提供直观�
 部署Kubernetes Dashboard容器前，需先确保Docker环境已正确安装。推荐使用以下一键安装脚本，适用于Ubuntu、Debian、CentOS等主流Linux发行版：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

@@ -1,6 +1,6 @@
 # QUARTZUI Docker 容器化部署指南
 
-![QUARTZUI Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-quartzui.png)
+![QUARTZUI Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-quartzui.png)
 
 *分类: Docker部署教程 | 标签: quartzui,docker,部署教程 | 发布时间: 2025-12-02 03:31:15*
 
@@ -20,7 +20,7 @@ QUARTZUI 是一款基于 Quartz.NET 3.0 的 Web 管理界面，专为简化定�
 部署 QUARTZUI 前需确保服务器已安装 Docker 环境。推荐使用以下一键安装脚本，自动完成 Docker 及相关组件的安装与配置：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -302,7 +302,7 @@ docker run -d --name quartzui --restart=unless-stopped --memory=1g -p 5088:80 -v
 
 
 ### 关键要点
-- **环境准备**：使用一键脚本 `bash <(wget -qO- https://xuanyuan.cloud/docker.sh)` 快速部署 Docker 环境，自动配置轩辕镜像访问支持。
+- **环境准备**：使用一键脚本 `bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)` 快速部署 Docker 环境，自动配置轩辕镜像访问支持。
 - **镜像拉取**：采用命令 `docker pull xxx.xuanyuan.run/bennyzhao/quartzui:latest` 拉取。
 - **容器部署**：核心命令为 `docker run -d --name quartzui --restart=unless-stopped -p 5088:80 -v /fileData/quartzuifile:/app/File xxx.xuanyuan.run/bennyzhao/quartzui:latest`，需注意数据卷挂载以保证数据持久化。
 - **功能验证**：通过访问 `http://<服务器IP>:5088` 验证 Web 界面加载、任务管理及数据持久化功能。

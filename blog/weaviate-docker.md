@@ -24,7 +24,7 @@ Weaviate 广泛应用于AI驱动的搜索系统、聊天机器人、推荐引擎
 部署WEAVIATE容器前需确保Docker环境已正确安装。推荐使用轩辕提供的一键安装脚本，自动完成Docker及相关组件（Docker Engine、Docker Compose）的配置：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

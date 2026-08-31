@@ -1,6 +1,6 @@
 # 指标日志一屏看清：Docker 部署 Grafana 可视化平台
 
-![指标日志一屏看清：Docker 部署 Grafana 可视化平台](https://assets.xuanyuan.me/docker/blog/grafana.png)
+![指标日志一屏看清：Docker 部署 Grafana 可视化平台](https://imgs.xuanyuan.cloud/docker/blog/grafana.png)
 
 *分类: Docker部署教程 | 标签: Grafana,Docker,轩辕镜像,监控可视化,可观测性,私有化部署,部署教程 | 发布时间: 2026-07-14 08:24:08*
 
@@ -14,7 +14,7 @@ Prometheus、Loki、InfluxDB 装了不少，可看着命令行和原始指标发
 
 国内用户从 Docker Hub 拉取可能较慢，本文使用 [轩辕镜像](https://xuanyuan.cloud) 加速。镜像说明见 [grafana/grafana 镜像页](https://xuanyuan.cloud/zh/r/grafana/grafana)，官方 Docker 文档见 [Run Grafana Docker image](https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/)，总文档见 [Grafana Docs](https://grafana.com/docs/)。
 
-![Docker 部署 Grafana 界面](https://assets.xuanyuan.me/docker/blog/grafana-5.png)
+![Docker 部署 Grafana 界面](https://imgs.xuanyuan.cloud/docker/blog/grafana-5.png)
 
 *图 0：Docker 部署 Grafana 封面*
 
@@ -70,7 +70,7 @@ docker compose version
 若尚未安装 Docker，可使用轩辕镜像一键脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -220,7 +220,7 @@ logger=settings ... msg="App mode production"
 
 首次看到登录页，版本号与镜像一致：**Grafana v11.6.16**：
 
-![Grafana 登录页](https://assets.xuanyuan.me/docker/blog/grafana-1.png)
+![Grafana 登录页](https://imgs.xuanyuan.cloud/docker/blog/grafana-1.png)
 
 *图 1：访问 `http://192.168.1.10:3002` 的登录页（Welcome to Grafana）*
 
@@ -231,7 +231,7 @@ logger=settings ... msg="App mode production"
 
 登录后进入英文欢迎页（若尚未改语言）：
 
-![Grafana 英文首页](https://assets.xuanyuan.me/docker/blog/grafana-2.png)
+![Grafana 英文首页](https://imgs.xuanyuan.cloud/docker/blog/grafana-2.png)
 
 *图 2：登录成功后的 Welcome 首页（可添加数据源、创建仪表盘）*
 
@@ -248,7 +248,7 @@ Grafana **自带**简体中文，无需额外插件。注意：左侧 **管理 �
 2. **Language** 选择 **中文 (简体)**（代码 `zh-Hans`）
 3. 点击 **Save**，刷新页面
 
-![在 Profile 中选择简体中文](https://assets.xuanyuan.me/docker/blog/grafana-3.png)
+![在 Profile 中选择简体中文](https://imgs.xuanyuan.cloud/docker/blog/grafana-3.png)
 
 *图 3：Profile → Preferences → Language 选择「中文 (简体)」*
 
@@ -279,7 +279,7 @@ docker compose up -d
 
 侧栏 **仪表板** → 导入。可上传 JSON、填 grafana.com 仪表盘 ID，或粘贴 JSON 模型：
 
-![导入仪表盘（中文界面）](https://assets.xuanyuan.me/docker/blog/grafana-4.png)
+![导入仪表盘（中文界面）](https://imgs.xuanyuan.cloud/docker/blog/grafana-4.png)
 
 *图 4：Import dashboard——上传 JSON 或加载社区大盘 ID*
 
@@ -287,7 +287,7 @@ docker compose up -d
 
 未接外部数据源时，可用内置 **`-- Grafana --`** 数据源的 **Random Walk** 验证出图：
 
-![探索查询 Random Walk](https://assets.xuanyuan.me/docker/blog/grafana-5.png)
+![探索查询 Random Walk](https://imgs.xuanyuan.cloud/docker/blog/grafana-5.png)
 
 *图 5：探索页用 Random Walk 画出折线，确认可视化正常*
 
@@ -295,11 +295,11 @@ docker compose up -d
 
 Grafana 11.x 侧栏提供 Drilldown（Metrics / Logs / 个人资料）等入口，便于后续接齐 Metrics、Logs、Profiles：
 
-![Drilldown 入口](https://assets.xuanyuan.me/docker/blog/grafana-6.png)
+![Drilldown 入口](https://imgs.xuanyuan.cloud/docker/blog/grafana-6.png)
 
 *图 6：Drilldown——Metrics / Logs / 个人资料入口*
 
-![Profiles Drilldown 欢迎页](https://assets.xuanyuan.me/docker/blog/grafana-7.png)
+![Profiles Drilldown 欢迎页](https://imgs.xuanyuan.cloud/docker/blog/grafana-7.png)
 
 *图 7：Grafana Profiles Drilldown 入门引导（中文）*
 
@@ -307,7 +307,7 @@ Grafana 11.x 侧栏提供 Drilldown（Metrics / Logs / 个人资料）等入口�
 
 侧栏 **警报**：规则、联络点、通知策略三大块：
 
-![警报入门页](https://assets.xuanyuan.me/docker/blog/grafana-8.png)
+![警报入门页](https://imgs.xuanyuan.cloud/docker/blog/grafana-8.png)
 
 *图 8：警报——Alert rules / Contact points / Notification policies*
 
@@ -315,7 +315,7 @@ Grafana 11.x 侧栏提供 Drilldown（Metrics / Logs / 个人资料）等入口�
 
 侧栏 **连接 → 添加新连接**，可见 Prometheus、Loki、MySQL、InfluxDB 等（已预装）：
 
-![添加新连接 / 数据源列表](https://assets.xuanyuan.me/docker/blog/grafana-9.png)
+![添加新连接 / 数据源列表](https://imgs.xuanyuan.cloud/docker/blog/grafana-9.png)
 
 *图 9：添加新连接——选择并配置数据源*
 
@@ -323,7 +323,7 @@ Grafana 11.x 侧栏提供 Drilldown（Metrics / Logs / 个人资料）等入口�
 
 侧栏 **管理**：概况、插件和数据、用户和访问权限、身份验证等：
 
-![管理页面](https://assets.xuanyuan.me/docker/blog/grafana-10.png)
+![管理页面](https://imgs.xuanyuan.cloud/docker/blog/grafana-10.png)
 
 *图 10：管理——组织级偏好、插件、用户与认证*
 

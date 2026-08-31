@@ -1,6 +1,6 @@
 # FastSurfer Docker容器化部署指南
 
-![FastSurfer Docker容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-fastsurfer.png)
+![FastSurfer Docker容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-fastsurfer.png)
 
 *分类: Docker部署教程 | 标签: fastsurfer,docker,部署教程 | 发布时间: 2025-12-14 10:41:52*
 
@@ -25,7 +25,7 @@ FastSurfer的核心优势包括：
 FastSurfer作为Docker容器化应用，需先在目标服务器上安装Docker环境。推荐使用轩辕提供的一键安装脚本，该脚本会自动配置Docker环境并优化设置：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

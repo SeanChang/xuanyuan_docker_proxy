@@ -1,6 +1,6 @@
 # Milvus GUI ATTU Docker 容器化部署指南
 
-![Milvus GUI ATTU Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-attu.png)
+![Milvus GUI ATTU Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-attu.png)
 
 *分类: Docker部署教程 | 标签: attu,docker,部署教程 | 发布时间: 2025-12-06 16:05:23*
 
@@ -18,7 +18,7 @@ ATTU是一款全方位的Milvus管理工具（Milvus GUI），旨在简化Milvus
 ATTU基于Docker容器化部署，首先需要确保目标服务器已安装Docker环境。推荐使用以下一键安装脚本快速部署Docker：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

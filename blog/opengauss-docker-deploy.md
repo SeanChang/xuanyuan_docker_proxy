@@ -1,6 +1,6 @@
 # Docker 部署 openGauss：轻松搭建企业级开源关系型数据库平台
 
-![Docker 部署 openGauss：轻松搭建企业级开源关系型数据库平台](https://assets.xuanyuan.me/docker/blog/opengauss.webp)
+![Docker 部署 openGauss：轻松搭建企业级开源关系型数据库平台](https://imgs.xuanyuan.cloud/docker/blog/opengauss.webp)
 
 *分类: Docker部署教程 | 标签: openGauss,Docker,轩辕镜像,关系型数据库,私有化部署,部署教程 | 发布时间: 2026-08-06 14:51:45*
 
@@ -111,7 +111,7 @@ sysctl -a | grep -i leaf7_features
 Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -423,7 +423,7 @@ http://服务器IP:8081
 
 首次进入 **SQL操作** 时编辑器为空；左侧可能先看到 **`dbe_perf`**（性能相关视图很多，Tables 为 0 很正常）：
 
-![openGauss webclient：SQL操作页签，库名 postgres，左侧 dbe_perf 与对象过滤](https://assets.xuanyuan.me/docker/blog/opengauss-1.webp)
+![openGauss webclient：SQL操作页签，库名 postgres，左侧 dbe_perf 与对象过滤](https://imgs.xuanyuan.cloud/docker/blog/opengauss-1.webp)
 
 **建议先跑一条确认连接**——在 SQL 框输入后点紫色 **执行**：
 
@@ -433,7 +433,7 @@ SELECT version();
 
 实测结果为 **openGauss 3.1.0**（与主库容器的 **5.0.0** 不同，进一步证明是两套库）：
 
-![openGauss webclient：执行 SELECT version()，结果为 openGauss 3.1.0](https://assets.xuanyuan.me/docker/blog/opengauss-2.webp)
+![openGauss webclient：执行 SELECT version()，结果为 openGauss 3.1.0](https://imgs.xuanyuan.cloud/docker/blog/opengauss-2.webp)
 
 再建表示例（数据落在 **webclient 内置库**，不会写入主库 `./data`）：
 
@@ -448,35 +448,35 @@ SELECT * FROM demo_ui;
 
 执行后下方结果区可见 `alice` / `bob`；左侧切到 **`public` → Tables`** 会出现 **`demo_ui`**：
 
-![openGauss webclient：SQL 建表插入并 SELECT demo_ui，结果两行 alice/bob](https://assets.xuanyuan.me/docker/blog/opengauss-3.webp)
+![openGauss webclient：SQL 建表插入并 SELECT demo_ui，结果两行 alice/bob](https://imgs.xuanyuan.cloud/docker/blog/opengauss-3.webp)
 
 点选表后切到 **数据** 页签，可浏览行数据（带筛选与导出）：
 
-![openGauss webclient：数据页签浏览 demo_ui 表，显示 id 与 name](https://assets.xuanyuan.me/docker/blog/opengauss-4.webp)
+![openGauss webclient：数据页签浏览 demo_ui 表，显示 id 与 name](https://imgs.xuanyuan.cloud/docker/blog/opengauss-4.webp)
 
 **表结构** 页签查看列定义（如 `id` integer、`name` varchar(64)）：
 
-![openGauss webclient：表结构页签显示 demo_ui 列定义](https://assets.xuanyuan.me/docker/blog/opengauss-5.webp)
+![openGauss webclient：表结构页签显示 demo_ui 列定义](https://imgs.xuanyuan.cloud/docker/blog/opengauss-5.webp)
 
 **索引** 页签可见主键索引 `demo_ui_pkey`：
 
-![openGauss webclient：索引页签显示 demo_ui_pkey](https://assets.xuanyuan.me/docker/blog/opengauss-6.webp)
+![openGauss webclient：索引页签显示 demo_ui_pkey](https://imgs.xuanyuan.cloud/docker/blog/opengauss-6.webp)
 
 **约束** 页签可见 `PRIMARY KEY (id)`：
 
-![openGauss webclient：约束页签显示 PRIMARY KEY](https://assets.xuanyuan.me/docker/blog/opengauss-7.webp)
+![openGauss webclient：约束页签显示 PRIMARY KEY](https://imgs.xuanyuan.cloud/docker/blog/opengauss-7.webp)
 
 **操作历史** 可回看已执行的 SQL：
 
-![openGauss webclient：操作历史列出 SELECT version 与 CREATE TABLE](https://assets.xuanyuan.me/docker/blog/opengauss-8.webp)
+![openGauss webclient：操作历史列出 SELECT version 与 CREATE TABLE](https://imgs.xuanyuan.cloud/docker/blog/opengauss-8.webp)
 
 **会话** 页签可查看当前连接与后台线程（含 `openGauss-webclient` 应用名）：
 
-![openGauss webclient：会话页签列出 postgres 库中的活动会话](https://assets.xuanyuan.me/docker/blog/opengauss-9.webp)
+![openGauss webclient：会话页签列出 postgres 库中的活动会话](https://imgs.xuanyuan.cloud/docker/blog/opengauss-9.webp)
 
 **链接信息** 可确认当前用户、服务端地址等。实测：`current_user` / `session_user` 为 **`opengauss`**，容器内服务端口为 **`5433`**，版本串为 **3.1.0**：
 
-![openGauss webclient：链接信息页签显示用户 opengauss、端口 5433、版本 3.1.0](https://assets.xuanyuan.me/docker/blog/opengauss-10.webp)
+![openGauss webclient：链接信息页签显示用户 opengauss、端口 5433、版本 3.1.0](https://imgs.xuanyuan.cloud/docker/blog/opengauss-10.webp)
 
 | 区域 / 操作 | 说明 |
 |-------------|------|

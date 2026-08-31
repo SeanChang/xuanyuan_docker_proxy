@@ -1,6 +1,6 @@
 # gitea Docker 容器化部署指南
 
-![gitea Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-gitea.png)
+![gitea Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-gitea.png)
 
 *分类: Docker部署教程 | 标签: gitea,docker,部署教程 | 发布时间: 2025-12-02 08:00:17*
 
@@ -27,7 +27,7 @@ GITEA 是一款开源、轻量级的自托管 Git 服务，提供类似于 GitHu
 GITEA 容器化部署需依赖 Docker 环境，推荐使用以下一键安装脚本完成 Docker 及相关组件（Docker Engine、Docker Compose）的安装与配置：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

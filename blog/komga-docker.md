@@ -1,6 +1,6 @@
 # Komga Docker 容器化部署指南
 
-![Komga Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-komga.png)
+![Komga Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-komga.png)
 
 *分类: Docker部署教程 | 标签: komga,docker,部署教程 | 发布时间: 2025-12-14 11:09:53*
 
@@ -20,7 +20,7 @@ Komga 基于Docker容器化部署，首先需要在目标服务器上安装Docke
 执行以下命令安装Docker：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

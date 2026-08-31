@@ -1,6 +1,6 @@
 # LOBE-CHAT-DATABASE Docker 容器化部署指南
 
-![LOBE-CHAT-DATABASE Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-lobe-chat-database.png)
+![LOBE-CHAT-DATABASE Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-lobe-chat-database.png)
 
 *分类: Docker部署教程 | 标签: lobe-chat-database,docker,部署教程 | 发布时间: 2025-11-16 06:18:34*
 
@@ -20,7 +20,7 @@ LOBE-CHAT-DATABASE（以下简称Lobe数据库）是Lobe Chat生态的核心组�
 Lobe数据库采用Docker容器化部署，需先在目标服务器配置Docker环境。推荐使用轩辕云提供的一键安装脚本，自动完成Docker引擎、Docker Compose及相关依赖的配置：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

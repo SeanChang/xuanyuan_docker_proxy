@@ -1,6 +1,6 @@
 # Docker 部署 Trilium Notes：打造属于自己的大型知识库
 
-![Docker 部署 Trilium Notes：打造属于自己的大型知识库](https://assets.xuanyuan.me/docker/blog/trilium.png)
+![Docker 部署 Trilium Notes：打造属于自己的大型知识库](https://imgs.xuanyuan.cloud/docker/blog/trilium.png)
 
 *分类: Docker部署教程 | 标签: Trilium,TriliumNext,Docker,轩辕镜像,笔记,知识库,私有化部署,部署教程 | 发布时间: 2026-07-12 12:35:36*
 
@@ -76,7 +76,7 @@ docker compose version
 若尚未安装 Docker，可使用轩辕镜像一键脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -216,7 +216,7 @@ http://你的服务器IP:8080
 
 首次进入会弹出 **语言** 选择，推荐选 **简体中文**，点击 **继续**。
 
-![Trilium 首次访问：语言选择，推荐简体中文](https://assets.xuanyuan.me/docker/blog/trilium-1.png)
+![Trilium 首次访问：语言选择，推荐简体中文](https://imgs.xuanyuan.cloud/docker/blog/trilium-1.png)
 
 ### 5.2 新建知识库
 
@@ -224,25 +224,25 @@ http://你的服务器IP:8080
 
 若你已在其他设备运行 Trilium 服务器或桌面版，也可选 **连接到现有服务器** / **连接桌面应用** 进行同步；本文演示全新部署。
 
-![Trilium 初始化：选择新建知识库](https://assets.xuanyuan.me/docker/blog/trilium-2.png)
+![Trilium 初始化：选择新建知识库](https://imgs.xuanyuan.cloud/docker/blog/trilium-2.png)
 
 ### 5.3 演示内容 or 空白
 
 推荐首次体验选 **包含演示内容**，可快速了解 Trilium 的笔记类型、格式化、脚本等能力；熟悉后可删演示笔记。若希望从零开始，选 **空白**。
 
-![Trilium 初始化：包含演示内容或空白知识库](https://assets.xuanyuan.me/docker/blog/trilium-3.png)
+![Trilium 初始化：包含演示内容或空白知识库](https://imgs.xuanyuan.cloud/docker/blog/trilium-3.png)
 
 ### 5.4 等待知识库准备
 
 选择后会出现 **正在准备你的知识库** 加载页，稍等片刻即可。
 
-![Trilium 初始化：正在准备知识库](https://assets.xuanyuan.me/docker/blog/trilium-4.png)
+![Trilium 初始化：正在准备知识库](https://imgs.xuanyuan.cloud/docker/blog/trilium-4.png)
 
 ### 5.5 设置密码
 
 Trilium 网页版需设置 **登录密码**（非多用户账号体系，单实例一个密码）。填写密码与确认密码，点击 **设置密码**。
 
-![Trilium 初始化：设置登录密码](https://assets.xuanyuan.me/docker/blog/trilium-5.png)
+![Trilium 初始化：设置登录密码](https://imgs.xuanyuan.cloud/docker/blog/trilium-5.png)
 
 > **安全提示**：请使用强密码并妥善保存。若对公网开放 8080，务必尽快完成初始化。生产环境建议关闭公网直连，改用 **第九节反向代理 HTTPS**。
 
@@ -250,7 +250,7 @@ Trilium 网页版需设置 **登录密码**（非多用户账号体系，单实�
 
 设置完成后进入 **登录 Trilium Notes** 页面，输入刚才设置的密码，可勾选 **记住我**，点击 **登录**。
 
-![Trilium 登录页：输入密码登录](https://assets.xuanyuan.me/docker/blog/trilium-6.png)
+![Trilium 登录页：输入密码登录](https://imgs.xuanyuan.cloud/docker/blog/trilium-6.png)
 
 ---
 
@@ -262,37 +262,37 @@ Trilium 网页版需设置 **登录密码**（非多用户账号体系，单实�
 
 **Journal** 按年 / 月 / 日自动组织笔记，中央可切换 **日 / 周 / 月 / 年 / 列表** 视图，适合每日记录与回顾。
 
-![Trilium 主界面：Journal 日记与月历视图](https://assets.xuanyuan.me/docker/blog/trilium-7.png)
+![Trilium 主界面：Journal 日记与月历视图](https://imgs.xuanyuan.cloud/docker/blog/trilium-7.png)
 
 ### 6.2 创建笔记
 
 在日记或任意节点下 **新建笔记**，中央为富文本编辑器，支持 **文本 / 画布 / 代码 / Markdown / 集合 / 模板** 等笔记类型，顶部工具栏提供格式化、链接、表格、代码块等能力。
 
-![Trilium 新建笔记：富文本编辑器与笔记类型切换](https://assets.xuanyuan.me/docker/blog/trilium-8.png)
+![Trilium 新建笔记：富文本编辑器与笔记类型切换](https://imgs.xuanyuan.cloud/docker/blog/trilium-8.png)
 
 ### 6.3 全文搜索
 
 点击左侧 **搜索** 图标，可输入关键词或标签（如 `#calendarRoot`）进行 **全文搜索**，结果按路径与属性展示，支持分页浏览。
 
-![Trilium 全文搜索：关键词与标签检索结果](https://assets.xuanyuan.me/docker/blog/trilium-9.png)
+![Trilium 全文搜索：关键词与标签检索结果](https://imgs.xuanyuan.cloud/docker/blog/trilium-9.png)
 
 ### 6.4 快速搜索（Quick Search）
 
 按快捷键或点击搜索栏，弹出 **快速搜索**  overlay：可按名称或类型搜索笔记，查看最近访问，或 **Ctrl + Enter** 触发全文搜索。
 
-![Trilium 快速搜索：按名称搜索与最近访问](https://assets.xuanyuan.me/docker/blog/trilium-10.png)
+![Trilium 快速搜索：按名称搜索与最近访问](https://imgs.xuanyuan.cloud/docker/blog/trilium-10.png)
 
 ### 6.5 笔记地图（Note Map）
 
 **笔记地图** 以节点与箭头可视化笔记间的链接关系，适合梳理知识结构与发现关联。演示内容中 **Trilium Demo** 与各子笔记的链接一目了然。
 
-![Trilium 笔记地图：知识图谱可视化](https://assets.xuanyuan.me/docker/blog/trilium-11.png)
+![Trilium 笔记地图：知识图谱可视化](https://imgs.xuanyuan.cloud/docker/blog/trilium-11.png)
 
 ### 6.6 最近修改
 
 点击 **最近修改** 可查看按时间排序的编辑历史，快速回到刚改过的笔记。
 
-![Trilium 最近修改：按时间线查看编辑历史](https://assets.xuanyuan.me/docker/blog/trilium-12.png)
+![Trilium 最近修改：按时间线查看编辑历史](https://imgs.xuanyuan.cloud/docker/blog/trilium-12.png)
 
 ---
 
@@ -302,31 +302,31 @@ Trilium 网页版需设置 **登录密码**（非多用户账号体系，单实�
 
 Trilium 支持 **笔记级加密**。访问受保护笔记时，需输入密码进入 **保护会话**。点击左侧盾牌图标，在弹窗中输入密码后点击 **开始保护会话**。
 
-![Trilium 保护会话：输入密码访问加密笔记](https://assets.xuanyuan.me/docker/blog/trilium-13.png)
+![Trilium 保护会话：输入密码访问加密笔记](https://imgs.xuanyuan.cloud/docker/blog/trilium-13.png)
 
 ### 7.2 外观设置
 
 左下角 **选项（Options）** → **外观**：可切换 **应用主题**（如「现代」）、**配色方案**（跟随系统 / 浅色 / 深色）、**版面样式**（旧布局 / 新布局）等。
 
-![Trilium 选项：外观主题与深色模式](https://assets.xuanyuan.me/docker/blog/trilium-14.png)
+![Trilium 选项：外观主题与深色模式](https://imgs.xuanyuan.cloud/docker/blog/trilium-14.png)
 
 ### 7.3 AI / LLM 与 MCP
 
 **选项 → AI / LLM**：可添加 LLM 提供商，启用右侧 **AI 对话** 面板；还可开启 **MCP 服务器**，供 Claude Code、GitHub Copilot 等 AI 助手读写笔记（默认仅本地访问）。
 
-![Trilium 选项：AI 提供商与 MCP 配置](https://assets.xuanyuan.me/docker/blog/trilium-15.png)
+![Trilium 选项：AI 提供商与 MCP 配置](https://imgs.xuanyuan.cloud/docker/blog/trilium-15.png)
 
 ### 7.4 同步设置
 
 **选项 → 同步**：填写 **服务器地址**（如 `https://notes.example.com`），桌面版与移动版可与此 Docker 实例同步。部署在本机时可填 `http://服务器IP:8080` 进行内网测试。
 
-![Trilium 选项：同步服务器地址配置](https://assets.xuanyuan.me/docker/blog/trilium-16.png)
+![Trilium 选项：同步服务器地址配置](https://imgs.xuanyuan.cloud/docker/blog/trilium-16.png)
 
 ### 7.5 代码笔记设置
 
 **选项 → 代码笔记**：配置 **自动换行**、**制表符宽度**、**Vim 快捷键**、**CodeMirror 主题**（如 VS Code Dark）等，适合开发者维护代码片段库。
 
-![Trilium 选项：代码笔记编辑器与 Vim 配置](https://assets.xuanyuan.me/docker/blog/trilium-17.png)
+![Trilium 选项：代码笔记编辑器与 Vim 配置](https://imgs.xuanyuan.cloud/docker/blog/trilium-17.png)
 
 ---
 

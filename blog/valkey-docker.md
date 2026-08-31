@@ -1,6 +1,6 @@
 # VALKEY Docker 容器化部署指南
 
-![VALKEY Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-valkey.png)
+![VALKEY Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-valkey.png)
 
 *分类: Docker部署教程 | 标签: valkey,docker,部署教程 | 发布时间: 2025-12-09 07:00:59*
 
@@ -20,7 +20,7 @@ VALKEY是一款高性能的数据结构服务器，主要用于处理键值（ke
 VALKEY容器化部署依赖Docker引擎，建议使用以下一键脚本快速安装Docker环境（支持主流Linux发行版）：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

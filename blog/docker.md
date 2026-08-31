@@ -1,6 +1,6 @@
 # 踩坑必看！配置了 Docker 镜像源，为啥还在疯狂访问官方仓库？
 
-![踩坑必看！配置了 Docker 镜像源，为啥还在疯狂访问官方仓库？](https://assets.xuanyuan.me/docker/blog/docker-faq.png)
+![踩坑必看！配置了 Docker 镜像源，为啥还在疯狂访问官方仓库？](https://imgs.xuanyuan.cloud/docker/blog/docker-faq.png)
 
 *分类: Docker部署教程 | 标签: faq,部署教程,常见问题 | 发布时间: 2026-03-16 12:12:17*
 

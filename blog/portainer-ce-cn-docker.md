@@ -1,6 +1,6 @@
 # Portainer-CE 中文版 Docker 容器化部署指南
 
-![Portainer-CE 中文版 Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-portainer-ce-cn.png)
+![Portainer-CE 中文版 Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-portainer-ce-cn.png)
 
 *分类: Docker部署教程 | 标签: portainer-ce,docker,部署教程 | 发布时间: 2025-12-14 13:03:16*
 
@@ -19,7 +19,7 @@ Portainer-CE 中文版主要功能包括容器生命周期管理、镜像管理�
 在开始部署Portainer-CE 中文版之前，需要先安装Docker环境。推荐使用以下一键安装脚本，适用于主流Linux发行版：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

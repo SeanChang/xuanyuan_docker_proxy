@@ -1,6 +1,6 @@
 # Docker 部署 Debian 全流程教程
 
-![Docker 部署 Debian 全流程教程](https://assets.xuanyuan.me/docker/blog/docker-debian.png)
+![Docker 部署 Debian 全流程教程](https://imgs.xuanyuan.cloud/docker/blog/docker-debian.png)
 
 *分类: Docker部署教程 | 标签: debian,docker,部署教程 | 发布时间: 2025-10-24 05:33:49*
 
@@ -34,7 +34,7 @@ Debian 是一款完全由自由及开源软件构成的 Linux 发行版，由全
 
 ```bash
 # 轩辕镜像专属安装脚本（含加速配置）
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -280,7 +280,7 @@ curl https://baidu.com  # 测试网络访问（验证 DNS 与外网连通）
 2. **检查网络连通性**：执行 `ping xxx.xuanyuan.run`，若无法 ping 通，需检查服务器网络是否允许访问该域名；
 3. **重新执行安装脚本**：若已安装 Docker 但拉取慢，可能是加速源未配置成功，重新执行轩辕一键安装脚本：
    ```bash
-   bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+   bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
    ```
 
 

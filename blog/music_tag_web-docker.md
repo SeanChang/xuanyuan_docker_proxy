@@ -1,6 +1,6 @@
 # MUSIC_TAG_WEB Docker 容器化部署指南
 
-![MUSIC_TAG_WEB Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-music-tag-web.png)
+![MUSIC_TAG_WEB Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-music-tag-web.png)
 
 *分类: Docker部署教程 | 标签: music_tag_web,docker,部署教程 | 发布时间: 2025-12-14 03:04:41*
 
@@ -39,7 +39,7 @@ MUSIC_TAG_WEB基于Docker容器化部署，首先需要在目标服务器上安�
 执行以下命令安装Docker：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

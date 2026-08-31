@@ -1,6 +1,6 @@
 # ETCD-HOST Docker 容器化部署指南
 
-![ETCD-HOST Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-etcd-host.png)
+![ETCD-HOST Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-etcd-host.png)
 
 *分类: Docker部署教程 | 标签: etcd-host,docker,部署教程 | 发布时间: 2025-11-17 09:21:30*
 
@@ -18,7 +18,7 @@ ETCD-HOST是一款基于ETCD的容器化部署方案，旨在简化ETCD服务的
 部署ETCD-HOST容器前，需确保目标服务器已安装Docker环境。推荐使用以下一键安装脚本，自动完成Docker及相关组件（Docker Engine、Docker CLI、Docker Compose）的安装与配置：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

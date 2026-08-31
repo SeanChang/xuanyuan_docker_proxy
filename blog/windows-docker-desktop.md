@@ -1,6 +1,6 @@
 # 手把手教你在 Windows 安装 Docker Desktop
 
-![手把手教你在 Windows 安装 Docker Desktop](https://assets.xuanyuan.me/docker/blog/docker-desktop.png)
+![手把手教你在 Windows 安装 Docker Desktop](https://imgs.xuanyuan.cloud/docker/blog/docker-desktop.png)
 
 *分类: Docker部署教程 | 标签: Docker Desktop,docker,部署教程 | 发布时间: 2025-10-04 12:53:41*
 

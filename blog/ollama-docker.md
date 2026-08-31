@@ -1,6 +1,6 @@
 # OLLAMA Docker 容器化部署指南
 
-![OLLAMA Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-ollama.png)
+![OLLAMA Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-ollama.png)
 
 *分类: Docker部署教程 | 标签: ollama,docker,部署教程 | 发布时间: 2025-12-03 02:44:14*
 
@@ -20,7 +20,7 @@ OLLAMA是一款旨在简化本地大型语言模型（LLM）部署与运行的�
 OLLAMA容器化部署依赖Docker引擎，推荐使用以下一键安装脚本完成Docker环境配置（支持Ubuntu/Debian/CentOS等主流Linux发行版）：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

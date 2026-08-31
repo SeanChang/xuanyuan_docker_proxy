@@ -1,6 +1,6 @@
 # JDK Docker 容器化部署指南
 
-![JDK Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-jdk.png)
+![JDK Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-jdk.png)
 
 *分类: Docker部署教程 | 标签: jdk,java,openjdk | 发布时间: 2025-12-18 08:59:25*
 
@@ -19,7 +19,7 @@ JDK（Java Development Kit）是Java开发的核心工具包，包含Java编译�
 部署JDK容器前需确保Docker环境已正确安装。推荐使用以下一键安装脚本，该脚本会自动配置Docker环境并优化相关参数：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

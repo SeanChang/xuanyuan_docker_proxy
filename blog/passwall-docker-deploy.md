@@ -1,6 +1,6 @@
 # Docker 部署 PassWall：轻松搭建私有密码管理平台
 
-![Docker 部署 PassWall：轻松搭建私有密码管理平台](https://assets.xuanyuan.me/docker/blog/passwall.webp)
+![Docker 部署 PassWall：轻松搭建私有密码管理平台](https://imgs.xuanyuan.cloud/docker/blog/passwall.webp)
 
 *分类: Docker部署教程 | 标签: PassWall,Docker,轩辕镜像,密码管理,私有化部署,部署教程 | 发布时间: 2026-08-04 05:32:38*
 
@@ -110,7 +110,7 @@ docker compose version
 Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -383,7 +383,7 @@ docker compose down
 
 登录页长这样（点底部 **Server** 可展开 Server URL）：
 
-![PassWall Desktop 登录页：左侧品牌区与右侧邮箱/主密码表单，底部有 Server、Sign Up、Export logs](https://assets.xuanyuan.me/docker/blog/passwall-1.webp)
+![PassWall Desktop 登录页：左侧品牌区与右侧邮箱/主密码表单，底部有 Server、Sign Up、Export logs](https://imgs.xuanyuan.cloud/docker/blog/passwall-1.webp)
 
 登录页的 **Sign Up / 注册** 并不是向你填写的自建地址注册，源码里写死为打开官网：
 
@@ -432,11 +432,11 @@ docker compose exec postgres psql -U postgres -d passwall \
 
 正确填写示意（本机或经 SSH `-L` 转发后的地址）：
 
-![PassWall Desktop：已填邮箱与 Server URL http://127.0.0.1:3625，准备 Login](https://assets.xuanyuan.me/docker/blog/passwall-2.webp)
+![PassWall Desktop：已填邮箱与 Server URL http://127.0.0.1:3625，准备 Login](https://imgs.xuanyuan.cloud/docker/blog/passwall-2.webp)
 
 登录成功后进入空保险库（侧栏 Passwords / Secure Notes 等，中间「0 all items」）：
 
-![PassWall Desktop 登录成功：Admin FREE 空保险库，中间提示 There is nothing here yet](https://assets.xuanyuan.me/docker/blog/passwall-6.webp)
+![PassWall Desktop 登录成功：Admin FREE 空保险库，中间提示 There is nothing here yet](https://imgs.xuanyuan.cloud/docker/blog/passwall-6.webp)
 
 生产环境应配置真实 SMTP，走邮件验证，而不是 SQL 改 `is_verified`。
 
@@ -462,45 +462,45 @@ docker compose exec postgres psql -U postgres -d passwall \
 
 侧栏选 **Passwords**，点中间栏 **+**，填写名称、用户名、密码、URL、备注后 **Save**：
 
-![PassWall Desktop 新建密码：NAME 服务器密码、USERNAME root、URL 内网 IP、NOTE 本地服务器密码](https://assets.xuanyuan.me/docker/blog/passwall-8.webp)
+![PassWall Desktop 新建密码：NAME 服务器密码、USERNAME root、URL 内网 IP、NOTE 本地服务器密码](https://imgs.xuanyuan.cloud/docker/blog/passwall-8.webp)
 
 保存后列表出现条目，右侧可查看详情并一键复制（右下角会提示 Copied!）：
 
-![PassWall Desktop 密码详情：条目「服务器密码」、用户名 root、URL 与 NOTE 已保存，右下角 Copied 提示](https://assets.xuanyuan.me/docker/blog/passwall-9.webp)
+![PassWall Desktop 密码详情：条目「服务器密码」、用户名 root、URL 与 NOTE 已保存，右下角 Copied 提示](https://imgs.xuanyuan.cloud/docker/blog/passwall-9.webp)
 
 ### 7.2 安全笔记 / 地址 / 卡片 / 银行账户
 
 侧栏其它分类同样点 **+** 新建。实测可正常写入中文：
 
-![PassWall Desktop 新建安全笔记：TITLE 秘密记事本，NOTE 为中文测试内容](https://assets.xuanyuan.me/docker/blog/passwall-10.webp)
+![PassWall Desktop 新建安全笔记：TITLE 秘密记事本，NOTE 为中文测试内容](https://imgs.xuanyuan.cloud/docker/blog/passwall-10.webp)
 
-![PassWall Desktop 新建地址：Addresses 分类，TITLE 填写「添加地址测试」](https://assets.xuanyuan.me/docker/blog/passwall-11.webp)
+![PassWall Desktop 新建地址：Addresses 分类，TITLE 填写「添加地址测试」](https://imgs.xuanyuan.cloud/docker/blog/passwall-11.webp)
 
-![PassWall Desktop 新建支付卡：Payment Cards，CARD NAME 填写「信用卡测试」](https://assets.xuanyuan.me/docker/blog/passwall-12.webp)
+![PassWall Desktop 新建支付卡：Payment Cards，CARD NAME 填写「信用卡测试」](https://imgs.xuanyuan.cloud/docker/blog/passwall-12.webp)
 
-![PassWall Desktop 新建银行账户：Bank Accounts，BANK NAME 填写「银行账户测试」](https://assets.xuanyuan.me/docker/blog/passwall-13.webp)
+![PassWall Desktop 新建银行账户：Bank Accounts，BANK NAME 填写「银行账户测试」](https://imgs.xuanyuan.cloud/docker/blog/passwall-13.webp)
 
 ### 7.3 密码生成器
 
 侧栏 **Password Generator** 可按长度与字符集生成口令（强度条会显示熵）：
 
-![PassWall Desktop 密码生成器：长度 20、含大小写数字符号，强度 Very Strong](https://assets.xuanyuan.me/docker/blog/passwall-14.webp)
+![PassWall Desktop 密码生成器：长度 20、含大小写数字符号，强度 Very Strong](https://imgs.xuanyuan.cloud/docker/blog/passwall-14.webp)
 
 ### 7.4 设置与解锁
 
 **Settings** 可改语言、主题、保险库超时、导入导出与导出诊断日志：
 
-![PassWall Desktop Settings：General / Security / Import Export / Diagnostics，含日志路径](https://assets.xuanyuan.me/docker/blog/passwall-7.webp)
+![PassWall Desktop Settings：General / Security / Import Export / Diagnostics，含日志路径](https://imgs.xuanyuan.cloud/docker/blog/passwall-7.webp)
 
 会话锁定后进入 **Unlock** 页，只需再输主密码（不必重新填 Server URL）：
 
-![PassWall Desktop 解锁页：显示已登录邮箱，MASTER PASSWORD 与 Unlock 按钮](https://assets.xuanyuan.me/docker/blog/passwall-16.webp)
+![PassWall Desktop 解锁页：显示已登录邮箱，MASTER PASSWORD 与 Unlock 按钮](https://imgs.xuanyuan.cloud/docker/blog/passwall-16.webp)
 
 ### 7.5 浏览器扩展（可选）
 
 [passwall-extension](https://github.com/passwall/passwall-extension) 可在浏览网页时配合 Desktop / Server 使用。Desktop 侧栏 **Connected Browsers** 会显示是否已连上扩展：
 
-![PassWall Desktop Connected Browsers：No Browsers Connected，说明扩展需在 Desktop 登录时自动连接](https://assets.xuanyuan.me/docker/blog/passwall-15.webp)
+![PassWall Desktop Connected Browsers：No Browsers Connected，说明扩展需在 Desktop 登录时自动连接](https://imgs.xuanyuan.cloud/docker/blog/passwall-15.webp)
 
 安装扩展后保持 Desktop 已登录运行，扩展会自动连接；密钥由系统钥匙串保管。
 
@@ -580,7 +580,7 @@ docker compose logs --tail=50 passwall-server
 **Q4：Desktop 填 `http://192.168.x.x:3625` 提示 Please provide a valid server URL？**  
 Desktop 客户端校验（`normalizeServerUrl`）：**非开发模式只接受 `https://`，或 `http://` 且主机为 `localhost` / `127.0.0.1`**。局域网 IP 的明文 HTTP 会被直接拒绝，连请求都不会发出：
 
-![PassWall Desktop：Server URL 填局域网 IP 后提示 Please provide a valid server URL](https://assets.xuanyuan.me/docker/blog/passwall-4.webp)
+![PassWall Desktop：Server URL 填局域网 IP 后提示 Please provide a valid server URL](https://imgs.xuanyuan.cloud/docker/blog/passwall-4.webp)
 
 实验室最快绕过（Windows 开到 Ubuntu 的本地转发，再填 localhost）：
 
@@ -609,7 +609,7 @@ curl.exe -sS "https://你的域名/auth/prelogin?email=你的邮箱"
 **Q4c：SSH 隧道已通、账号也能用脚本登录，Desktop 仍 unexpected error？**  
 对照本机日志（Windows：`%LOCALAPPDATA%\io.passwall.desktop\logs\passwall.ndjson`）若 `base_origin` 已是 `http://127.0.0.1:3625`，但 `http.request_failed` 为 `error sending request...` 且 `duration_ms` 约十余秒，多半是 **系统代理劫持了 localhost 请求**。界面上常见表现是 **Login 按钮长时间转圈**，最后只弹出通用 unexpected error：
 
-![PassWall Desktop：Server URL 为 127.0.0.1:3625 时 Login 按钮转圈加载中](https://assets.xuanyuan.me/docker/blog/passwall-3.webp)
+![PassWall Desktop：Server URL 为 127.0.0.1:3625 时 Login 按钮转圈加载中](https://imgs.xuanyuan.cloud/docker/blog/passwall-3.webp)
 
 复现检测（PowerShell；把代理端口改成你本机实际端口）：
 
@@ -692,7 +692,7 @@ docker compose down
 - 上游：[passwall-server](https://github.com/passwall/passwall-server) · [Docker 说明](https://github.com/passwall/passwall-server/tree/main/build/docker)  
 - 客户端：[passwall-desktop](https://github.com/passwall/passwall-desktop) · [passwall-extension](https://github.com/passwall/passwall-extension)  
 - API：[Postman 文档](https://documenter.getpostman.com/view/3658426/SzYbyHXj)  
-- 轩辕镜像：[使用手册](https://xuanyuan.cloud/usage) · [Docker 一键安装](https://xuanyuan.cloud/docker.sh)
+- 轩辕镜像：[使用手册](https://xuanyuan.cloud/usage) · [Docker 一键安装](https://get.xuanyuan.cloud/docker.sh)
 
 ---
 

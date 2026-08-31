@@ -1,6 +1,6 @@
 # phpMyAdmin Docker 容器化部署指南
 
-![phpMyAdmin Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-phpmyadmin.png)
+![phpMyAdmin Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-phpmyadmin.png)
 
 *分类: Docker部署教程 | 标签: phpmyadmin,docker,部署教程 | 发布时间: 2025-11-11 07:52:48*
 
@@ -20,7 +20,7 @@ phpMyAdmin是一款用PHP编写的免费开源工具，旨在通过Web界面管�
 
 ```bash
 # 一键安装Docker及相关组件（支持Ubuntu/Debian/CentOS等主流发行版）
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

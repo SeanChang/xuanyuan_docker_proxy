@@ -1,6 +1,6 @@
 # Rancher 容器化部署指南：基于 Docker 的生产环境实践
 
-![Rancher 容器化部署指南：基于 Docker 的生产环境实践](https://assets.xuanyuan.me/docker/blog/docker-rancher.png)
+![Rancher 容器化部署指南：基于 Docker 的生产环境实践](https://imgs.xuanyuan.cloud/docker/blog/docker-rancher.png)
 
 *分类: Docker部署教程 | 标签: rancher,docker,部署教程 | 发布时间: 2025-12-14 02:58:07*
 
@@ -30,7 +30,7 @@ RANCHER 容器化部署对操作系统有以下基本要求：
 在部署 RANCHER 之前，需要先安装 Docker 环境。推荐使用轩辕提供的一键安装脚本，该脚本会自动安装并配置 Docker 最新稳定版本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

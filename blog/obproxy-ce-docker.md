@@ -1,6 +1,6 @@
 # OBPROXY-CE Docker 容器化部署指南
 
-![OBPROXY-CE Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-oceanbase-obproxy-ce.png)
+![OBPROXY-CE Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-oceanbase-obproxy-ce.png)
 
 *分类: Docker部署教程 | 标签: obproxy-ce,docker,部署教程 | 发布时间: 2025-11-26 05:50:11*
 
@@ -20,7 +20,7 @@ OceanBase Database Proxy（简称OBPROXY-CE）是OceanBase数据库生态中的�
 OBPROXY-CE容器化部署依赖Docker引擎，以下是基于Linux系统的一键安装脚本，支持主流发行版（Ubuntu、CentOS、Debian等）：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

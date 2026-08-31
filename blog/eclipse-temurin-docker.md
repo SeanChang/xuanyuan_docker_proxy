@@ -1,6 +1,6 @@
 # Eclipse Temurin OpenJDK Docker 容器化部署指南
 
-![Eclipse Temurin OpenJDK Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-openjdk.png)
+![Eclipse Temurin OpenJDK Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-openjdk.png)
 
 *分类: Docker部署教程 | 标签: openjdk,eclipse-temurin,nginx,docker,部署教程 | 发布时间: 2025-11-26 05:32:17*
 
@@ -20,7 +20,7 @@ Eclipse Temurin是由Eclipse Adoptium项目维护的开源Java开发工具包（
 部署Eclipse Temurin容器前需确保服务器已安装Docker环境。推荐使用轩辕云提供的一键安装脚本，自动完成Docker引擎、Docker Compose及相关依赖的配置：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

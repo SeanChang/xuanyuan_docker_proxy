@@ -1,6 +1,6 @@
 # 服务器文件不想 SFTP 传？Docker 跑个 File Browser，浏览器就能管理文件
 
-![服务器文件不想 SFTP 传？Docker 跑个 File Browser，浏览器就能管理文件](https://assets.xuanyuan.me/docker/blog/filebrowser.png)
+![服务器文件不想 SFTP 传？Docker 跑个 File Browser，浏览器就能管理文件](https://imgs.xuanyuan.cloud/docker/blog/filebrowser.png)
 
 *分类: Docker部署教程 | 标签: File Browser,Docker,轩辕镜像,文件管理,私有化部署,部署教程 | 发布时间: 2026-06-29 13:33:15*
 
@@ -60,7 +60,7 @@ docker compose version
 若尚未安装 Docker，可使用轩辕镜像一键脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -190,7 +190,7 @@ http://你的服务器IP:8080
 
 进入 File Browser 登录页。用户名固定为 **`admin`**，密码使用 **3.3 节日志中的随机字符串**。
 
-![File Browser 登录页：用户名 admin，点击蓝色「登录」按钮进入](https://assets.xuanyuan.me/docker/blog/filebrowser-1.png)
+![File Browser 登录页：用户名 admin，点击蓝色「登录」按钮进入](https://imgs.xuanyuan.cloud/docker/blog/filebrowser-1.png)
 
 > **安全提示**：初始密码只出现在 **首次启动的 `docker logs` 输出** 中，请立即登录并在 **Settings → Profile** 中修改密码。若对公网开放 8080，务必尽快改密；生产环境建议关闭公网直连，改用 **第四节 Compose + 反向代理 HTTPS**。
 
@@ -198,7 +198,7 @@ http://你的服务器IP:8080
 
 登录成功后进入文件管理主界面。左侧为导航（My files、New folder、Settings 等），顶部为搜索与工具栏；若 `/srv` 为空，中间会显示 **「It feels lonely here...」**。
 
-![File Browser 登录后主界面：空目录与左侧导航，版本 2.63.17](https://assets.xuanyuan.me/docker/blog/filebrowser-2.png)
+![File Browser 登录后主界面：空目录与左侧导航，版本 2.63.17](https://imgs.xuanyuan.cloud/docker/blog/filebrowser-2.png)
 
 左下角可看到 **磁盘用量**（如 `14.9 GiB of 108 GiB used`）与版本号 **File Browser 2.63.17**。
 
@@ -206,11 +206,11 @@ http://你的服务器IP:8080
 
 点击左侧 **New folder**，在弹窗中输入文件夹名（实测创建 **`testuploadfile`**），点击 **CREATE**。
 
-![File Browser 新建文件夹：输入 testuploadfile，路径预览为根目录下子文件夹](https://assets.xuanyuan.me/docker/blog/filebrowser-3.png)
+![File Browser 新建文件夹：输入 testuploadfile，路径预览为根目录下子文件夹](https://imgs.xuanyuan.cloud/docker/blog/filebrowser-3.png)
 
 创建成功后，根目录下会出现该文件夹（与宿主机 `srv/testuploadfile/` 对应）。
 
-![File Browser 根目录：Folders 区域显示 testuploadfile 文件夹](https://assets.xuanyuan.me/docker/blog/filebrowser-4.png)
+![File Browser 根目录：Folders 区域显示 testuploadfile 文件夹](https://imgs.xuanyuan.cloud/docker/blog/filebrowser-4.png)
 
 宿主机验证：
 
@@ -222,11 +222,11 @@ ls srv/testuploadfile/
 
 进入 `testuploadfile` 文件夹，点击顶部 **Upload** 图标，选择 **File** 或 **Folder** 上传。
 
-![File Browser 上传弹窗：选择 File 上传单个文件或 Folder 上传整个目录](https://assets.xuanyuan.me/docker/blog/filebrowser-5.png)
+![File Browser 上传弹窗：选择 File 上传单个文件或 Folder 上传整个目录](https://imgs.xuanyuan.cloud/docker/blog/filebrowser-5.png)
 
 实测上传 **`验收测试报告模板.docx`**（约 27.46 KiB），上传完成后文件卡片出现在 **Files** 区域。
 
-![File Browser 文件列表：testuploadfile 目录下的 docx 文件与大小信息](https://assets.xuanyuan.me/docker/blog/filebrowser-6.png)
+![File Browser 文件列表：testuploadfile 目录下的 docx 文件与大小信息](https://imgs.xuanyuan.cloud/docker/blog/filebrowser-6.png)
 
 宿主机同步可见：
 
@@ -246,7 +246,7 @@ ls srv/testuploadfile/
 
 点击文件名可进入预览页。Office 文档（如 `.docx`）在浏览器内 **无法内嵌预览**，会提示 **「Preview is not available for this file.」**，可点击 **DOWNLOAD** 下载或 **OPEN FILE** 在新标签打开。
 
-![File Browser 文件预览：docx 不支持内嵌预览，提供下载与打开选项](https://assets.xuanyuan.me/docker/blog/filebrowser-7.png)
+![File Browser 文件预览：docx 不支持内嵌预览，提供下载与打开选项](https://imgs.xuanyuan.cloud/docker/blog/filebrowser-7.png)
 
 图片、PDF、文本等格式通常可直接在浏览器内预览。
 

@@ -1,6 +1,6 @@
 # BUSYBOX Docker 容器化部署指南
 
-![BUSYBOX Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-busybox.png)
+![BUSYBOX Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-busybox.png)
 
 *分类: Docker部署教程 | 标签: busybox,docker,部署教程 | 发布时间: 2025-11-10 02:48:30*
 
@@ -26,7 +26,7 @@ BusyBox是一款集成了众多UNIX工具的嵌入式Linux实用程序集合，�
 
 ```bash
 # 一键安装Docker环境（包含Docker Engine、Docker Compose）
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -292,7 +292,7 @@ journalctl -u docker -f
 ```
 **解决方法**：
 - 确保网络通畅，防火墙未阻止Docker相关端口
-- 重新执行一键安装脚本修复加速配置：`bash <(wget -qO- https://xuanyuan.cloud/docker.sh)`
+- 重新执行一键安装脚本修复加速配置：`bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)`
 - 手动检查daemon.json配置：`cat /etc/docker/daemon.json`
 
 #### 2. 容器启动后立即退出

@@ -1,6 +1,6 @@
 # 手把手教你 Nexus 配置 Docker 镜像源｜对接轩辕镜像，内网提速超简单
 
-![手把手教你 Nexus 配置 Docker 镜像源｜对接轩辕镜像，内网提速超简单](https://assets.xuanyuan.me/docker/blog/nexus/nexus-docker.png)
+![手把手教你 Nexus 配置 Docker 镜像源｜对接轩辕镜像，内网提速超简单](https://imgs.xuanyuan.cloud/docker/blog/nexus/nexus-docker.png)
 
 *分类: Docker部署教程 | 标签: Nexus,镜像源,配置教程 | 发布时间: 2026-03-21 05:08:56*
 
@@ -130,7 +130,7 @@ CONTAINER ID   IMAGE                                        COMMAND             
 
 打开后可参考官方指引图找到密码文件位置：
 
-![Nexus后台密码指引](https://assets.xuanyuan.me/docker/blog/nexus/1-1.png)
+![Nexus后台密码指引](https://imgs.xuanyuan.cloud/docker/blog/nexus/1-1.png)
 
 默认管理员账号为**admin**，密码存储在容器内，执行命令获取初始密码，完整输出：
 
@@ -141,13 +141,13 @@ fa28e8e4-457b-4e82-8425-0505c0d308d1
 
 登录成功后，Nexus会弹出引导步骤，按提示修改admin密码即可：
 
-![Nexus登录引导改密码](https://assets.xuanyuan.me/docker/blog/nexus/2-2.png)
+![Nexus登录引导改密码](https://imgs.xuanyuan.cloud/docker/blog/nexus/2-2.png)
 
 ## 1.3 Nexus仓库核心类型解析
 
 通过导航菜单栏的配置按钮，进入仓库配置页面，界面参考下图：
 
-![Nexus仓库配置页面](https://assets.xuanyuan.me/docker/blog/nexus/4-4.png)
+![Nexus仓库配置页面](https://imgs.xuanyuan.cloud/docker/blog/nexus/4-4.png)
 
 页面内可看到三类核心仓库，理解分工才能正确配置Docker代理：
 
@@ -173,13 +173,13 @@ fa28e8e4-457b-4e82-8425-0505c0d308d1
 
 3. 在**Repository Connectors**模块，勾选**HTTP**协议，端口默认8082（与容器映射端口一致）
 
-![创建Docker Proxy仓库界面](https://assets.xuanyuan.me/docker/blog/nexus/5-5.png)
+![创建Docker Proxy仓库界面](https://imgs.xuanyuan.cloud/docker/blog/nexus/5-5.png)
 
 ### 步骤2：配置轩辕镜像远程地址（核心）
 
 在**Proxy**配置模块，**Remote storage**填写您的轩辕镜像**专属域名**，这是代理加速的关键，配置界面参考：
 
-![Proxy远程存储配置](https://assets.xuanyuan.me/docker/blog/nexus/6-6.png)
+![Proxy远程存储配置](https://imgs.xuanyuan.cloud/docker/blog/nexus/6-6.png)
 
 **避坑必看：代理模式选型**
 
@@ -193,13 +193,13 @@ fa28e8e4-457b-4e82-8425-0505c0d308d1
 
 - ❌ Custom index：老旧Registry适配方案，现已基本弃用
 
-![代理模式选型界面](https://assets.xuanyuan.me/docker/blog/nexus/7-7.png)
+![代理模式选型界面](https://imgs.xuanyuan.cloud/docker/blog/nexus/7-7.png)
 
 ### 步骤3：完成仓库创建
 
 其余配置保持默认，拉到页面底部点击**Create repository**，即可完成Docker代理仓库搭建：
 
-![Docker Proxy仓库创建完成](https://assets.xuanyuan.me/docker/blog/nexus/8-8.png)
+![Docker Proxy仓库创建完成](https://imgs.xuanyuan.cloud/docker/blog/nexus/8-8.png)
 
 ## 2.2 验证私服拉取镜像
 

@@ -1,6 +1,6 @@
 # Docker Registry 企业级容器化部署与运维规范
 
-![Docker Registry 企业级容器化部署与运维规范](https://assets.xuanyuan.me/docker/blog/docker-registry.png)
+![Docker Registry 企业级容器化部署与运维规范](https://imgs.xuanyuan.cloud/docker/blog/docker-registry.png)
 
 *分类: Docker部署教程 | 标签: registry,docker,部署教程 | 发布时间: 2026-01-11 03:24:55*
 
@@ -33,7 +33,7 @@ REGISTRY的核心功能包括镜像存储、元数据管理、访问控制和镜
 #### 快速安装（仅测试/个人环境）
 推荐使用以下一键安装脚本（适用于Linux系统）：
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

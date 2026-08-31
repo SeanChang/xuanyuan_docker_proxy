@@ -1,6 +1,6 @@
 # Apache Flink Docker 容器化部署指南
 
-![Apache Flink Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-apache-flink.png)
+![Apache Flink Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-apache-flink.png)
 
 *分类: Docker部署教程 | 标签: apache-flink,docker,部署教程 | 发布时间: 2025-12-14 14:14:37*
 
@@ -29,7 +29,7 @@ Docker 方式更适合开发测试、POC 及轻量生产环境；
 可使用以下一键脚本快速完成 Docker 安装与配置：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

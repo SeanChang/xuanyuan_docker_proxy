@@ -1,6 +1,6 @@
 # PGVECTOR Docker 容器化部署指南
 
-![PGVECTOR Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-pgvector.png)
+![PGVECTOR Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-pgvector.png)
 
 *分类: Docker部署教程 | 标签: pgvector,docker,部署教程 | 发布时间: 2025-11-11 07:55:58*
 
@@ -18,7 +18,7 @@ PGVECTOR是PostgreSQL的一个开源向量相似性搜索扩展，提供高效�
 部署PGVECTOR容器前需确保Docker环境已正确安装。推荐使用以下一键安装脚本，适用于主流Linux发行版（Ubuntu、Debian、CentOS等）：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

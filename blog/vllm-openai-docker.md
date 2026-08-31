@@ -1,6 +1,6 @@
 # vllm-openai Docker 部署全手册
 
-![vllm-openai Docker 部署全手册](https://assets.xuanyuan.me/docker/blog/docker-vllm.png)
+![vllm-openai Docker 部署全手册](https://imgs.xuanyuan.cloud/docker/blog/docker-vllm.png)
 
 *分类: Docker部署教程 | 标签: vllm-openai,docker,部署教程 | 发布时间: 2025-10-09 03:15:24*
 
@@ -38,7 +38,7 @@ vllm-openai 依赖 Docker 和 NVIDIA 容器运行时（GPU 加速必需），若
 执行命令：
 ```bash
 # 一键安装脚本（复制到 Linux 终端执行，无需手动修改）
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

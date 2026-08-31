@@ -1,6 +1,6 @@
 # 10 分钟用 Docker 跑起 Odoo！中小企业免费 ERP 部署实战
 
-![10 分钟用 Docker 跑起 Odoo！中小企业免费 ERP 部署实战](https://assets.xuanyuan.me/docker/blog/docker-odoo.png)
+![10 分钟用 Docker 跑起 Odoo！中小企业免费 ERP 部署实战](https://imgs.xuanyuan.cloud/docker/blog/docker-odoo.png)
 
 *分类: Docker部署教程 | 标签: Docker,Odoo,ERP,PostgreSQL | 发布时间: 2026-06-08 03:47:21*
 
@@ -35,7 +35,7 @@ Odoo是全球主流的开源企业管理系统，前身是OpenERP，基于Python
 Ubuntu、CentOS、欧拉、银河麒麟、统信UOS 等主流 Linux 及国产操作系统，可直接执行一键脚本，自动安装 Docker、Docker Compose，并配置国内镜像加速，彻底解决拉取镜像慢的问题。
 打开终端，执行以下命令：
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -114,7 +114,7 @@ docker rm odoo19
 页面会自动生成**数据库管理主密码（Master Password）**，该密码用于后续数据库创建、备份、删除、恢复，请务必妥善保存。
 本次示例生成密码：`hs49-y5aj-qr7t`（你本地会随机生成，以页面显示为准）。
 
-![odoo登录页](https://assets.xuanyuan.me/docker/blog/docker-odoo-1.png)
+![odoo登录页](https://imgs.xuanyuan.cloud/docker/blog/docker-odoo-1.png)
 
 各参数填写参考：
 1. **Master Password**：使用页面自动生成的密码（后期可修改）
@@ -127,7 +127,7 @@ docker rm odoo19
 8. **Demo Data**：测试体验可勾选，正式生产环境建议取消勾选
 
 填写完成后点击 **Create database**，首次初始化耗时 1~5 分钟，耐心等待即可。
-![odoo提示](https://assets.xuanyuan.me/docker/blog/docker-odoo-2.png)
+![odoo提示](https://imgs.xuanyuan.cloud/docker/blog/docker-odoo-2.png)
 > 小提示：重复点击创建按钮会提示数据库已存在，属于正常现象，点击蓝色 odoo19 继续进入页面即可。
 
 ### 2. 登录后台
@@ -136,7 +136,7 @@ docker rm odoo19
 http://服务器IP:8069/web
 ```
 
-![odoo登录](https://assets.xuanyuan.me/docker/blog/docker-odoo-3.png)
+![odoo登录](https://imgs.xuanyuan.cloud/docker/blog/docker-odoo-3.png)
 登录注意区分两个密码：
 - **管理员登录**：使用刚才设置的 `Email + 自定义密码`
 - **数据库管理**（建库/删库/备份）：使用页面生成的 `Master Password`
@@ -148,11 +148,11 @@ docker exec -it odoo-db psql -U odoo -l
 ```
 列表中能看到你创建的数据库名（如 `odoo19`），代表整个部署流程全部完成。
 
-![odoo应用列表](https://assets.xuanyuan.me/docker/blog/docker-odoo-4.png)
+![odoo应用列表](https://imgs.xuanyuan.cloud/docker/blog/docker-odoo-4.png)
 
 此时，Odoo 就正常运行进入了，你可以根据需要添加相关系统模块。
 
-![odoo反馈](https://assets.xuanyuan.me/docker/blog/docker-odoo-5.png)
+![odoo反馈](https://imgs.xuanyuan.cloud/docker/blog/docker-odoo-5.png)
 
 ## 五、总结
 1. Odoo 采用 Docker 容器部署是最高效的方式，依托轩辕镜像可快速拉取、稳定运行；

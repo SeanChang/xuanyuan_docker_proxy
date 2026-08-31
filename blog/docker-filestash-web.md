@@ -1,6 +1,6 @@
 # 用 Docker 一键部署 Filestash：打造你的全能 Web 文件管理器
 
-![用 Docker 一键部署 Filestash：打造你的全能 Web 文件管理器](https://assets.xuanyuan.me/docker/blog/docker-filestash.png)
+![用 Docker 一键部署 Filestash：打造你的全能 Web 文件管理器](https://imgs.xuanyuan.cloud/docker/blog/docker-filestash.png)
 
 *分类: Docker部署教程 | 标签: Filestash,部署教程,文件管理 | 发布时间: 2026-04-23 02:15:44*
 
@@ -36,14 +36,14 @@ Filestash 是个现代化的 Web 文件管理器，核心就是一句话：**用
 #### 🧪 测试环境（快速体验，仅限非生产）
 直接一条命令，自动安装 Docker、Docker Compose，还配置好轩辕镜像加速：
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 #### 🏭 生产环境（推荐，安全优先）
 企业/正式环境建议先审计脚本再执行，更稳妥：
 ```bash
 # 1. 下载脚本到本地
-wget https://xuanyuan.cloud/docker.sh -O docker-install.sh
+wget https://get.xuanyuan.cloud/docker.sh -O docker-install.sh
 
 # 2. （可选但推荐）脚本源码，确认脚本安全
 less docker-install.sh  # 也可以用vim、cat查看内容
@@ -110,7 +110,7 @@ docker compose up -d
 
 首次进入会先让你设置一个管理员密码，设置完成就能进入主界面了。
 
-![设置一个管理员密码](https://assets.xuanyuan.me/docker/blog/docker-filestash-1.png)
+![设置一个管理员密码](https://imgs.xuanyuan.cloud/docker/blog/docker-filestash-1.png)
 
 ---
 
@@ -124,11 +124,11 @@ Filestash 本身不存文件，只是个“文件管理前端”，核心就是�
 - Password：服务器登录密码
 - Port：默认 22，如果你改了 SSH 端口就填对应的
 
-![连接 Linux 服务器（SFTP）](https://assets.xuanyuan.me/docker/blog/docker-filestash-4.png)
+![连接 Linux 服务器（SFTP）](https://imgs.xuanyuan.cloud/docker/blog/docker-filestash-4.png)
 
 填完点“连接”，直接就能在浏览器里管理服务器文件了，上传、下载、编辑、解压都支持。
 
-![浏览器里管理服务器文件](https://assets.xuanyuan.me/docker/blog/docker-filestash-5.png)
+![浏览器里管理服务器文件](https://imgs.xuanyuan.cloud/docker/blog/docker-filestash-5.png)
 
 ### 场景 2：连接 WebDAV 服务（Nextcloud/Alist/坚果云）
 WebDAV 支持很多自建和公共服务，比如 Alist、Nextcloud、坚果云，配置也很简单：

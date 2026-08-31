@@ -1,6 +1,6 @@
 # Docker 部署 MinerU 全指南
 
-![Docker 部署 MinerU 全指南](https://assets.xuanyuan.me/docker/blog/docker-mineru.png)
+![Docker 部署 MinerU 全指南](https://imgs.xuanyuan.cloud/docker/blog/docker-mineru.png)
 
 *分类: Docker部署教程 | 标签: mineru,docker,部署教程 | 发布时间: 2025-10-21 13:16:51*
 
@@ -36,7 +36,7 @@ MinerU 是一款专注于PDF格式转化的工具，尤其擅长将科技文献�
 #### Linux 系统
 一键安装脚本（支持Ubuntu/Debian/CentOS，自动配置镜像访问支持）：
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

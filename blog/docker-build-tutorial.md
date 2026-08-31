@@ -1,6 +1,6 @@
 # 从零开始学构建Docker镜像：4种实用方法+生产级实践规范
 
-![从零开始学构建Docker镜像：4种实用方法+生产级实践规范](https://assets.xuanyuan.me/docker/blog/docker-build.png)
+![从零开始学构建Docker镜像：4种实用方法+生产级实践规范](https://imgs.xuanyuan.cloud/docker/blog/docker-build.png)
 
 *分类: Docker部署教程 | 标签: Docker,tutorial,部署教程 | 发布时间: 2026-01-20 03:26:03*
 
@@ -18,7 +18,7 @@
 
 ```bash
 
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

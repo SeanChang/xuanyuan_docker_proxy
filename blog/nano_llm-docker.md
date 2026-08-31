@@ -1,6 +1,6 @@
 # NANO_LLM Docker 容器化部署指南
 
-![NANO_LLM Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-nano_llm.png)
+![NANO_LLM Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-nano_llm.png)
 
 *分类: Docker部署教程 | 标签: nano_llm,docker,部署教程 | 发布时间: 2025-11-17 03:21:03*
 
@@ -28,7 +28,7 @@ NANO_LLM的核心优势包括：
 部署NANO_LLM容器前，需先确保系统已安装Docker环境。推荐使用以下一键安装脚本，该脚本会自动安装Docker Engine、Docker CLI及相关依赖，并配置好必要的系统参数：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

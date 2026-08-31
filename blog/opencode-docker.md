@@ -1,6 +1,6 @@
 # OpenCode 企业级 Docker 部署完整指南
 
-![OpenCode 企业级 Docker 部署完整指南](https://assets.xuanyuan.me/docker/blog/docker-opencode.png)
+![OpenCode 企业级 Docker 部署完整指南](https://imgs.xuanyuan.cloud/docker/blog/docker-opencode.png)
 
 *分类: Docker部署教程 | 标签: opencode,人工智能,moltbot | 发布时间: 2026-01-25 10:30:44*
 
@@ -19,7 +19,7 @@ OpenCode 是一个开源的 AI 编程助手与代码代理（coding agent），�
 
 ### 方式一：一键安装 Docker 环境（推荐国内服务器）
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

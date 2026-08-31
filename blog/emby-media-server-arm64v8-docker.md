@@ -1,6 +1,6 @@
 # Emby Media Server ARM64V8 Docker 容器化部署指南
 
-![Emby Media Server ARM64V8 Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-emby-media-server.png)
+![Emby Media Server ARM64V8 Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-emby-media-server.png)
 
 *分类: Docker部署教程 | 标签: emby-media-server-arm64v8,docker,部署教程 | 发布时间: 2025-12-14 12:50:48*
 
@@ -20,7 +20,7 @@ Emby Media Server ARM64V8 是基于arm64v8架构的官方Emby Media Server容器
 Emby Media Server ARM64V8 基于Docker容器运行，需先在目标服务器安装Docker环境。推荐使用轩辕提供的一键安装脚本，该脚本会自动配置Docker及相关依赖：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

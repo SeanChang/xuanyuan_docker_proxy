@@ -1,6 +1,6 @@
 # 5 分钟私有化部署 GLPI：IT 资产与服务台一键上线，免费开源资产管理
 
-![5 分钟私有化部署 GLPI：IT 资产与服务台一键上线，免费开源资产管理](https://assets.xuanyuan.me/docker/blog/glpi.png)
+![5 分钟私有化部署 GLPI：IT 资产与服务台一键上线，免费开源资产管理](https://imgs.xuanyuan.cloud/docker/blog/glpi.png)
 
 *分类: Docker部署教程 | 标签: GLPI,Docker,轩辕镜像,ITSM,资产管理,服务台,私有化部署,部署教程 | 发布时间: 2026-06-25 08:21:41*
 
@@ -66,7 +66,7 @@ GLPI **不能单容器运行**，需要配套 **MySQL** 数据库。本文带你
 若尚未安装 Docker，可使用轩辕镜像一键脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -286,7 +286,7 @@ http://YOUR_SERVER_IP:8080
 
 登录源选择 **「GLPI 内部数据库」**，点击 **「登录」**：
 
-![GLPI 登录页：用户名与密码均为 glpi，登录源选 GLPI 内部数据库](https://assets.xuanyuan.me/docker/blog/glpi-1.png)
+![GLPI 登录页：用户名与密码均为 glpi，登录源选 GLPI 内部数据库](https://imgs.xuanyuan.cloud/docker/blog/glpi-1.png)
 
 *图 1：部署成功后的 GLPI 登录页，超级管理员用户名与密码默认均为 `glpi`*
 
@@ -304,13 +304,13 @@ http://YOUR_SERVER_IP:8080
 
 登录成功后进入 **主页** 仪表盘。首次访问会加载演示数据，顶部蓝色横幅可点击 **「禁用演示」** 清空示例数据：
 
-![GLPI 主页仪表盘：资产统计卡片、工单趋势图与默认密码安全提示](https://assets.xuanyuan.me/docker/blog/glpi-2.png)
+![GLPI 主页仪表盘：资产统计卡片、工单趋势图与默认密码安全提示](https://imgs.xuanyuan.cloud/docker/blog/glpi-2.png)
 
 *图 2：登录后的 GLPI 主页，含软件/电脑/工单等统计卡片与安全提示横幅*
 
 界面默认可能为英文。点击右上角用户头像，在 **「语言」** 下拉中选择 **「简体中文」** 即可切换：
 
-![GLPI 切换简体中文：右上角用户菜单中的语言选项](https://assets.xuanyuan.me/docker/blog/glpi-3.png)
+![GLPI 切换简体中文：右上角用户菜单中的语言选项](https://imgs.xuanyuan.cloud/docker/blog/glpi-3.png)
 
 *图 3：通过用户菜单将界面语言切换为简体中文*
 
@@ -324,7 +324,7 @@ http://YOUR_SERVER_IP:8080
 
 左侧导航 **「资产」→「电脑」**，点击 **「+ 添加」**，填写名称、状态、制造商等字段后保存：
 
-![GLPI 新增电脑：资产模块下的电脑登记表单](https://assets.xuanyuan.me/docker/blog/glpi-4.png)
+![GLPI 新增电脑：资产模块下的电脑登记表单](https://imgs.xuanyuan.cloud/docker/blog/glpi-4.png)
 
 *图 4：在资产模块中新增一台电脑，验证 IT 资产管理功能可用*
 
@@ -332,7 +332,7 @@ http://YOUR_SERVER_IP:8080
 
 左侧 **「管理」→「合同」**，点击 **「+ 添加」**，填写合同名称、起止日期、续约周期等信息：
 
-![GLPI 新增合同：管理模块下的合同登记表单](https://assets.xuanyuan.me/docker/blog/glpi-5.png)
+![GLPI 新增合同：管理模块下的合同登记表单](https://imgs.xuanyuan.cloud/docker/blog/glpi-5.png)
 
 *图 5：在管理模块中登记合同，验证供应商与合同管理能力*
 
@@ -340,7 +340,7 @@ http://YOUR_SERVER_IP:8080
 
 左侧 **「支持协助」** 进入服务台看板，可查看工单、故障、变更等统计与趋势图：
 
-![GLPI 服务台看板：工单、故障、变更统计与近一年趋势图](https://assets.xuanyuan.me/docker/blog/glpi-6.png)
+![GLPI 服务台看板：工单、故障、变更统计与近一年趋势图](https://imgs.xuanyuan.cloud/docker/blog/glpi-6.png)
 
 *图 6：服务台模块看板，展示工单处理概况与分类统计*
 
@@ -518,7 +518,7 @@ docker-compose up -d
 - [glpi-project/glpi](https://github.com/glpi-project/glpi)
 - [glpi/glpi 轩辕镜像页](https://xuanyuan.cloud/zh/r/glpi/glpi)
 - [轩辕镜像使用手册](https://xuanyuan.cloud/usage)
-- [Docker 一键安装脚本](https://xuanyuan.cloud/docker.sh)
+- [Docker 一键安装脚本](https://get.xuanyuan.cloud/docker.sh)
 
 如果你在拉取 Docker 镜像时遇到速度慢、超时等问题，可以试试 [轩辕镜像](https://xuanyuan.cloud) 的加速服务；镜像页支持一键复制拉取命令。欢迎收藏 [glpi/glpi](https://xuanyuan.cloud/zh/r/glpi/glpi) 镜像页，获取最新标签与更新说明。
 

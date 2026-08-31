@@ -1,6 +1,6 @@
 # Docker 部署 Hermes Agent 完整指南（Windows / Linux 通用）
 
-![Docker 部署 Hermes Agent 完整指南（Windows / Linux 通用）](https://assets.xuanyuan.me/docker/blog/docker-hermes-agent.png)
+![Docker 部署 Hermes Agent 完整指南（Windows / Linux 通用）](https://imgs.xuanyuan.cloud/docker/blog/docker-hermes-agent.png)
 
 *分类: Docker部署教程 | 标签: OpenClaw,AI,Hermes,hermes-agent,部署教程 | 发布时间: 2026-04-20 07:46:03*
 
@@ -19,14 +19,14 @@ Hermes Agent 是 Nous Research 推出的 AI 自主智能体（AI Autonomous Agen
 ### 🧪 测试环境（快速体验，仅限非生产场景）
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 ### 🏭 生产环境（推荐，安全优先）
 
 ```bash
 # 1. 下载脚本到本地
-wget https://xuanyuan.cloud/docker.sh -O docker-install.sh
+wget https://get.xuanyuan.cloud/docker.sh -O docker-install.sh
 
 # 2. （可选）审计脚本源码（建议企业环境必做）
 less docker-install.sh  # 或使用vim、cat查看脚本内容
@@ -205,7 +205,7 @@ Type your message or /help for commands
 
 此时输入任意指令，即可与 Hermes Agent 交互，比如输入“hello”测试对话，或输入任务指令让 Agent 执行。
 
-![Docker 部署 Hermes Agent](https://assets.xuanyuan.me/docker/blog/docker-hermes-agent.png)
+![Docker 部署 Hermes Agent](https://imgs.xuanyuan.cloud/docker/blog/docker-hermes-agent.png)
 
 # 九、常用命令
 

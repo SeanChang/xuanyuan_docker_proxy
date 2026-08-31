@@ -1,6 +1,6 @@
 # NETSHOOT Docker 容器化部署与网络故障排查指南
 
-![NETSHOOT Docker 容器化部署与网络故障排查指南](https://assets.xuanyuan.me/docker/blog/docker-netshoot.png)
+![NETSHOOT Docker 容器化部署与网络故障排查指南](https://imgs.xuanyuan.cloud/docker/blog/docker-netshoot.png)
 
 *分类: Docker部署教程 | 标签: netshoot,docker,部署教程 | 发布时间: 2025-12-14 03:15:07*
 
@@ -19,7 +19,7 @@ NETSHOOT是一款专为Docker和Kubernetes环境设计的网络故障排查"瑞�
 在开始部署前，需确保目标主机已安装Docker环境。推荐使用以下一键安装脚本快速部署Docker（支持Ubuntu、Debian、CentOS等主流Linux发行版）：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

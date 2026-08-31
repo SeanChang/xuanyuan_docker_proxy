@@ -1,6 +1,6 @@
 # LOBE-CHAT Docker 容器化部署指南
 
-![LOBE-CHAT Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-lobe-chat.png)
+![LOBE-CHAT Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-lobe-chat.png)
 
 *分类: Docker部署教程 | 标签: lobe-chat,docker,部署教程 | 发布时间: 2025-11-16 06:42:42*
 
@@ -18,7 +18,7 @@ LOBE-CHAT 是一款开源、可扩展、高性能的聊天机器人框架，专�
 部署 LOBE-CHAT 前需确保服务器已安装 Docker 环境。推荐使用以下一键安装脚本，自动完成 Docker 及相关组件的配置：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -300,7 +300,7 @@ docker rm lobe-chat-old
 
 3. **Docker 配置问题**：重新执行 Docker 安装脚本修复配置
    ```bash
-   bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+   bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
    ```
 
 

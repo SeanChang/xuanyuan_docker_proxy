@@ -1,6 +1,6 @@
 # DDNS-GO Docker 容器化部署指南
 
-![DDNS-GO Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-ddnsgo.png)
+![DDNS-GO Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-ddnsgo.png)
 
 *分类: Docker部署教程 | 标签: ddns-go,docker,部署教程 | 发布时间: 2025-12-02 04:04:18*
 
@@ -26,7 +26,7 @@ DDNS-GO的核心特性包括：
 部署DDNS-GO前需先安装Docker环境，推荐使用以下一键安装脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

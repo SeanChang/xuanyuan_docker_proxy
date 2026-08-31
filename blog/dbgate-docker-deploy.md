@@ -1,6 +1,6 @@
 # Docker 部署 DbGate：一站式管理 MySQL、PostgreSQL、SQLite 等数据库
 
-![Docker 部署 DbGate：一站式管理 MySQL、PostgreSQL、SQLite 等数据库](https://assets.xuanyuan.me/docker/blog/dbgate.webp)
+![Docker 部署 DbGate：一站式管理 MySQL、PostgreSQL、SQLite 等数据库](https://imgs.xuanyuan.cloud/docker/blog/dbgate.webp)
 
 *分类: Docker部署教程 | 标签: DbGate,Docker,轩辕镜像, 数据库客户端,MySQL,PostgreSQL,MongoDB,私有化部署,部署教程 | 发布时间: 2026-07-29 06:54:22*
 
@@ -75,7 +75,7 @@ docker compose version
 Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -218,7 +218,7 @@ http://你的服务器IP:3080
 
 在 **Connection Type** 下拉里选择目标库类型。社区版可见 MySQL、MariaDB、PostgreSQL、Microsoft SQL Server、OracleDB、SQLite、MongoDB、Redis、ClickHouse、DuckDB、Cassandra、Firebird、CockroachDB 等。
 
-![DbGate 新建连接：展开 Connection Type，选择 MySQL / PostgreSQL / MongoDB 等引擎](https://assets.xuanyuan.me/docker/blog/dbgate-1.webp)
+![DbGate 新建连接：展开 Connection Type，选择 MySQL / PostgreSQL / MongoDB 等引擎](https://imgs.xuanyuan.cloud/docker/blog/dbgate-1.webp)
 
 选好类型后，按库填写主机、端口、用户名与密码（或 URL / 文件路径）。
 
@@ -230,7 +230,7 @@ http://你的服务器IP:3080
 
 也就是说：数据库若跑在**宿主机**或其他容器，在 DbGate 容器里填 `127.0.0.1` / `localhost` 只会指向 **DbGate 自己**，连不上宿主机上的库。官方提供的占位主机名是 **`dockerhost`**（也可按环境改用宿主机局域网 IP、Compose 服务名，或 `extra_hosts` 映射）。
 
-![DbGate 配置 MySQL：Server 填 dockerhost、端口 3306，界面提示 Docker 下勿用 localhost](https://assets.xuanyuan.me/docker/blog/dbgate-2.webp)
+![DbGate 配置 MySQL：Server 填 dockerhost、端口 3306，界面提示 Docker 下勿用 localhost](https://imgs.xuanyuan.cloud/docker/blog/dbgate-2.webp)
 
 填写 User / Password，可选 Default database、Display name、颜色标签，然后测试连接并保存。保存后的连接会出现在左侧 **CONNECTIONS**；配置落在挂载的 `/root/.dbgate`，重启容器不丢。
 

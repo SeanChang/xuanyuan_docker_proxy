@@ -1,6 +1,6 @@
 # SQUID Docker 容器化部署指南
 
-![SQUID Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-ubuntu-squid.png)
+![SQUID Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-ubuntu-squid.png)
 
 *分类: Docker部署教程 | 标签: squid,docker,部署教程 | 发布时间: 2025-12-05 04:05:57*
 
@@ -19,7 +19,7 @@ SQUID是一款功能强大的Web缓存代理服务器，支持HTTP、HTTPS、FTP
 部署SQUID容器前，需先确保服务器已安装Docker环境。推荐使用以下一键安装脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

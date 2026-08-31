@@ -1,6 +1,6 @@
 # 告别多账号切换！用 9Router 一键把所有 AI 模型变成一个 API，Cursor/Cline 直接起飞
 
-![告别多账号切换！用 9Router 一键把所有 AI 模型变成一个 API，Cursor/Cline 直接起飞](https://assets.xuanyuan.me/docker/blog/docker-9router.png)
+![告别多账号切换！用 9Router 一键把所有 AI 模型变成一个 API，Cursor/Cline 直接起飞](https://imgs.xuanyuan.cloud/docker/blog/docker-9router.png)
 
 *分类: Docker部署教程 | 标签: OpenClaw,AI,9Router,部署教程 | 发布时间: 2026-05-20 06:30:30*
 
@@ -54,7 +54,7 @@ https://xuanyuan.cloud/r/decolua/9router
 ### Linux系统（含国产系统）一键安装
 不管是 Ubuntu、CentOS，还是银河麒麟、统信 UOS、欧拉这些国产系统，直接复制下面这行命令，就能一键安装 Docker、Docker Compose，还自动配置了国内镜像加速，解决下载慢的问题：
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -106,7 +106,7 @@ docker run -d \
 ### 3. 访问 Web 管理后台
 容器启动后，直接在浏览器打开：
 `http://你的服务器IP:20128`
-![9router 登录页](https://assets.xuanyuan.me/docker/blog/docker-9router-1.png)
+![9router 登录页](https://imgs.xuanyuan.cloud/docker/blog/docker-9router-1.png)
 默认密码是 `123456`，登录后就能看到管理后台，核心模块包括：
 - **Endpoint**：统一 API 地址配置、Token 压缩开关
 - **Providers**：添加/管理所有 AI 模型供应商
@@ -119,7 +119,7 @@ docker run -d \
 
 ## 五、关键步骤：添加你的 AI 模型供应商
 部署完成后很多人会发现不能聊天，核心原因就是**没添加模型供应商**，下面教你快速添加常用的几个：
-![9router 模型供应商](https://assets.xuanyuan.me/docker/blog/docker-9router-3.png)
+![9router 模型供应商](https://imgs.xuanyuan.cloud/docker/blog/docker-9router-3.png)
 ### 1. 添加 OpenAI 官方接口
 进入 `Providers` 页面，点击右上角 `Add OpenAI Compatible`：
 | 项目 | 填写内容 |
@@ -145,7 +145,7 @@ docker run -d \
 | Name | Ollama（自定义名称） |
 | Base URL | `http://127.0.0.1:11434/v1` |
 | API Key | 留空即可（Ollama 不需要 Key） |
-![9router Endpoint](https://assets.xuanyuan.me/docker/blog/docker-9router-2.png)
+![9router Endpoint](https://imgs.xuanyuan.cloud/docker/blog/docker-9router-2.png)
 添加完成后，回到 `Endpoint` 页面，就能看到统一的 API 地址：`http://你的服务器IP:20128/v1`
 
 ---

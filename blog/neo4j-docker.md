@@ -1,6 +1,6 @@
 # NEO4J Docker 容器化部署指南
 
-![NEO4J Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-neo4j.png)
+![NEO4J Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-neo4j.png)
 
 *分类: Docker部署教程 | 标签: neo4j,docker,部署教程 | 发布时间: 2025-12-09 06:56:18*
 
@@ -19,7 +19,7 @@ Neo4j是世界领先的图数据库，采用原生图存储和处理技术，专
 在开始部署前，需要确保目标服务器已安装Docker环境。推荐使用以下一键安装脚本，该脚本将自动配置Docker环境并优化相关参数：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

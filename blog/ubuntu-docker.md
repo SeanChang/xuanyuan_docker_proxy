@@ -1,6 +1,6 @@
 # Ubuntu Docker 容器化部署教程
 
-![Ubuntu Docker 容器化部署教程](https://assets.xuanyuan.me/docker/blog/docker-ubuntu.png)
+![Ubuntu Docker 容器化部署教程](https://imgs.xuanyuan.cloud/docker/blog/docker-ubuntu.png)
 
 *分类: Docker部署教程 | 标签: ubuntu,docker,部署教程 | 发布时间: 2025-10-10 02:33:47*
 
@@ -22,7 +22,7 @@
 若你的 Linux 系统尚未安装 Docker，直接使用以下**一键安装脚本**（推荐方案）——该脚本支持 CentOS、Ubuntu、Debian 等主流发行版，可自动安装 Docker、Docker Compose，并配置轩辕镜像访问支持源（解决国内拉取镜像慢的问题）。
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

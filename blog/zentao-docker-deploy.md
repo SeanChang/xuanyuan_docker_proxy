@@ -1,6 +1,6 @@
 # Docker 部署 ZenTao：轻松搭建研发项目管理平台
 
-![Docker 部署 ZenTao：轻松搭建研发项目管理平台](https://assets.xuanyuan.me/docker/blog/zentao.webp)
+![Docker 部署 ZenTao：轻松搭建研发项目管理平台](https://imgs.xuanyuan.cloud/docker/blog/zentao.webp)
 
 *分类: Docker部署教程 | 标签: ZenTao,禅道,Docker,轩辕镜像,项目管理,敏捷,Scrum,缺陷跟踪,私有化部署,部署教程 | 发布时间: 2026-08-18 07:44:33*
 
@@ -92,7 +92,7 @@ docker compose version
 Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 备用地址：
@@ -334,17 +334,17 @@ http://服务器IP:8080
 
 首页是 **欢迎使用禅道项目管理软件**，页脚写明版本 **22.4**。右上角可切换语言（默认简体）。点 **开始安装**。
 
-![ZenTao 安装向导：欢迎使用禅道 22.4，点击开始安装](https://assets.xuanyuan.me/docker/blog/zentao-1.webp)
+![ZenTao 安装向导：欢迎使用禅道 22.4，点击开始安装](https://imgs.xuanyuan.cloud/docker/blog/zentao-1.webp)
 
 阅读授权协议（ZPL / AGPL），勾选 **已阅读并同意**，点 **下一步**。
 
-![ZenTao 安装向导：授权协议页，勾选已阅读并同意](https://assets.xuanyuan.me/docker/blog/zentao-2.webp)
+![ZenTao 安装向导：授权协议页，勾选已阅读并同意](https://imgs.xuanyuan.cloud/docker/blog/zentao-2.webp)
 
 ### 6.2 系统检查
 
 **系统检查** 会核对 PHP 版本、扩展（PDO、JSON、MBSTRING 等）与 `/data` 下目录是否可写。本文实测为 **PHP 8.1.31**，Docker 镜像里通常全部通过，直接 **下一步**。
 
-![ZenTao 安装向导：系统检查全部通过，PHP 8.1 与扩展已加载](https://assets.xuanyuan.me/docker/blog/zentao-3.webp)
+![ZenTao 安装向导：系统检查全部通过，PHP 8.1 与扩展已加载](https://imgs.xuanyuan.cloud/docker/blog/zentao-3.webp)
 
 ### 6.3 数据库配置
 
@@ -361,15 +361,15 @@ http://服务器IP:8080
 | 数据库密码 | 与 Compose 中 **`MYSQL_ROOT_PASSWORD`** 相同（示例 `ChangeMe_Zentao_Db`） |
 | 数据库名称 | **`zentao`** |
 
-![ZenTao 安装向导：生成配置文件，数据库主机 zentao-db、库名 zentao](https://assets.xuanyuan.me/docker/blog/zentao-4.webp)
+![ZenTao 安装向导：生成配置文件，数据库主机 zentao-db、库名 zentao](https://imgs.xuanyuan.cloud/docker/blog/zentao-4.webp)
 
 点 **下一步** 后进入 **正在安装数据库表**。进度条会显示 `x / 845` 一类计数，列表里逐条出现「新增」表与索引；**不要刷新页面**，等 **下一步** 按钮可点（实测约一两分钟）。
 
-![ZenTao 安装向导：正在安装数据库表，进度 10/845](https://assets.xuanyuan.me/docker/blog/zentao-5.webp)
+![ZenTao 安装向导：正在安装数据库表，进度 10/845](https://imgs.xuanyuan.cloud/docker/blog/zentao-5.webp)
 
 完成后会提示配置已写入 **`/apps/zentao/config/my.php`**（容器内路径），点 **下一步**。
 
-![ZenTao 安装向导：配置已保存到 my.php](https://assets.xuanyuan.me/docker/blog/zentao-6.webp)
+![ZenTao 安装向导：配置已保存到 my.php](https://imgs.xuanyuan.cloud/docker/blog/zentao-6.webp)
 
 ### 6.4 使用模式与管理员账号
 
@@ -382,11 +382,11 @@ http://服务器IP:8080
 
 本文选 **全生命周期管理模式**。
 
-![ZenTao 安装向导：选择轻量级或全生命周期管理模式](https://assets.xuanyuan.me/docker/blog/zentao-7.webp)
+![ZenTao 安装向导：选择轻量级或全生命周期管理模式](https://imgs.xuanyuan.cloud/docker/blog/zentao-7.webp)
 
 在 **设置帐号** 页填写公司名称与管理员账号密码（6 位及以上，含大小写字母与数字）。可勾选 **导入 demo 数据** 便于体验（本文勾选，第七节截图里的示例产品 / 项目都来自这里）。点 **保存**。
 
-![ZenTao 安装向导：设置公司名称与管理员账号密码，可导入 demo 数据](https://assets.xuanyuan.me/docker/blog/zentao-8.webp)
+![ZenTao 安装向导：设置公司名称与管理员账号密码，可导入 demo 数据](https://imgs.xuanyuan.cloud/docker/blog/zentao-8.webp)
 
 ### 6.5 step5 报 `Unexpected end of JSON input`（已知问题）
 
@@ -415,7 +415,7 @@ http://服务器IP:8080/
 
 本文实测为 `http://192.168.1.251:8080/`。应进入 **登录页**，标题会带上你填的公司名称（本文为「轩辕镜像项目管理系统」）。用向导里刚设的管理员登录（本文用户名为 `sean`）。
 
-![ZenTao 登录页：轩辕镜像项目管理系统，用户名与密码](https://assets.xuanyuan.me/docker/blog/zentao-9.webp)
+![ZenTao 登录页：轩辕镜像项目管理系统，用户名与密码](https://imgs.xuanyuan.cloud/docker/blog/zentao-9.webp)
 
 若首页仍卡在向导、或提示未生成配置文件，再按 FAQ Q5 处理。
 
@@ -425,9 +425,9 @@ http://服务器IP:8080/
 
 登录后可能弹出 **22.4 新版本介绍**，点 **下一页** 或关闭即可。随后进入 **地盘**：左侧是全局导航，中间是待办、使用帮助和禅道动态，右下角写着 **开源版 22.4**。地盘是个人工作台，业务数据要从侧栏的产品、项目、测试进。
 
-![ZenTao 首次登录：22.4 新版本介绍弹窗](https://assets.xuanyuan.me/docker/blog/zentao-10.webp)
+![ZenTao 首次登录：22.4 新版本介绍弹窗](https://imgs.xuanyuan.cloud/docker/blog/zentao-10.webp)
 
-![ZenTao 地盘仪表盘：待办统计、使用帮助与禅道动态，用户 sean](https://assets.xuanyuan.me/docker/blog/zentao-11.webp)
+![ZenTao 地盘仪表盘：待办统计、使用帮助与禅道动态，用户 sean](https://imgs.xuanyuan.cloud/docker/blog/zentao-11.webp)
 
 本文勾选了 **导入 demo 数据**，所以后面截图里的「企业管理」「公司企业网站建设」都是示例，用来确认页面能打开，不是空库新建。正式环境建议安装时不勾选；已经导入的，到 **组织** 里停用或删除 demo 账号，并删掉不需要的示例产品 / 项目。
 
@@ -437,27 +437,27 @@ http://服务器IP:8080/
 
 **项目集 → 项目视角**：demo 里有「企业管理」项目集，下面挂了若干子项目和进度。没有项目集时，产品仍然可以单独建。
 
-![ZenTao 项目集列表：企业管理项目集与进行中状态](https://assets.xuanyuan.me/docker/blog/zentao-12.webp)
+![ZenTao 项目集列表：企业管理项目集与进行中状态](https://imgs.xuanyuan.cloud/docker/blog/zentao-12.webp)
 
 **产品 → 产品列表**：需求从产品进来。demo 里有「公司企业网站建设」「企业内部工时管理系统」两条产品线，列表会显示需求、计划、发布等统计。
 
-![ZenTao 产品列表：两条示例产品与需求统计列](https://assets.xuanyuan.me/docker/blog/zentao-13.webp)
+![ZenTao 产品列表：两条示例产品与需求统计列](https://imgs.xuanyuan.cloud/docker/blog/zentao-13.webp)
 
 ### 7.2 项目、执行与任务
 
 **项目 → 项目列表**：把产品需求放进具体项目里推进。demo 项目「企业管理系统」的负责人是项目经理。
 
-![ZenTao 项目列表：企业管理系统项目](https://assets.xuanyuan.me/docker/blog/zentao-14.webp)
+![ZenTao 项目列表：企业管理系统项目](https://imgs.xuanyuan.cloud/docker/blog/zentao-14.webp)
 
 进入某一 **执行 → 任务**：执行相当于一次迭代 / 冲刺。任务可按模块树查看状态（未开始 / 进行中 / 已完成）和工时。
 
-![ZenTao 执行任务页：公司企业网站建设任务列表与工时统计](https://assets.xuanyuan.me/docker/blog/zentao-15.webp)
+![ZenTao 执行任务页：公司企业网站建设任务列表与工时统计](https://imgs.xuanyuan.cloud/docker/blog/zentao-15.webp)
 
 ### 7.3 测试
 
 **测试 → 仪表盘**：按产品看 Bug 修复率、待测测试单。demo 数据下已有示例 Bug 与测试任务；空库时这里是空的，提第一条缺陷即可验证流程。
 
-![ZenTao 测试仪表盘：Bug 修复率与待测测试单](https://assets.xuanyuan.me/docker/blog/zentao-16.webp)
+![ZenTao 测试仪表盘：Bug 修复率与待测测试单](https://imgs.xuanyuan.cloud/docker/blog/zentao-16.webp)
 
 ### 7.4 其它模块
 
@@ -465,29 +465,29 @@ http://服务器IP:8080/
 
 **DevOps**：模块能打开；启用完整 DevOps 4.0 需按提示在宿主机执行 GitFox 安装脚本（可选，本文未跟做）。
 
-![ZenTao DevOps：安装 GitFox 引擎说明页](https://assets.xuanyuan.me/docker/blog/zentao-17.webp)
+![ZenTao DevOps：安装 GitFox 引擎说明页](https://imgs.xuanyuan.cloud/docker/blog/zentao-17.webp)
 
 **BI → 大屏**：预置宏观数据、年度总结、燃尽图等模板。
 
-![ZenTao BI 大屏：预置数据可视化模板列表](https://assets.xuanyuan.me/docker/blog/zentao-18.webp)
+![ZenTao BI 大屏：预置数据可视化模板列表](https://imgs.xuanyuan.cloud/docker/blog/zentao-18.webp)
 
 **看板**：分协作 / 公共 / 私人空间。新装未建空间时显示「暂时没有空间」，即使导入了 demo 也可能是空的，正常。
 
-![ZenTao 看板：空间列表为空时的初始页](https://assets.xuanyuan.me/docker/blog/zentao-19.webp)
+![ZenTao 看板：空间列表为空时的初始页](https://imgs.xuanyuan.cloud/docker/blog/zentao-19.webp)
 
 **文档 → 我的空间**：可创建文档库与团队空间。
 
-![ZenTao 文档：我的空间与默认空间](https://assets.xuanyuan.me/docker/blog/zentao-20.webp)
+![ZenTao 文档：我的空间与默认空间](https://imgs.xuanyuan.cloud/docker/blog/zentao-20.webp)
 
 ### 7.5 组织与后台
 
 **组织 → 团队**：用户列表。导入 demo 后会多出一批示例账号，和你自己创建的管理员（本文为 `sean`）在一起。正式使用前应停用或删除 demo 用户。
 
-![ZenTao 组织团队：用户列表含 demo 账号与管理员](https://assets.xuanyuan.me/docker/blog/zentao-21.webp)
+![ZenTao 组织团队：用户列表含 demo 账号与管理员](https://imgs.xuanyuan.cloud/docker/blog/zentao-21.webp)
 
 **后台**：系统设置、成员管理、插件、数据导入。登录后尽快改掉管理员密码，并确认只有自己能进后台。
 
-![ZenTao 后台：系统设置、成员管理与插件推荐](https://assets.xuanyuan.me/docker/blog/zentao-22.webp)
+![ZenTao 后台：系统设置、成员管理与插件推荐](https://imgs.xuanyuan.cloud/docker/blog/zentao-22.webp)
 
 企业版 / 旗舰版 / IPD 的模块更多，需要对应许可证，不能靠改开源版标签「升级成商业版」。
 

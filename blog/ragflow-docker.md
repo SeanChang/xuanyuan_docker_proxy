@@ -1,6 +1,6 @@
 # 🚀 RAGFlow Docker 部署全流程教程
 
-![🚀 RAGFlow Docker 部署全流程教程](https://assets.xuanyuan.me/docker/blog/docker-ragflow.png)
+![🚀 RAGFlow Docker 部署全流程教程](https://imgs.xuanyuan.cloud/docker/blog/docker-ragflow.png)
 
 *分类: Docker部署教程 | 标签: RAGFlow,docker,部署教程 | 发布时间: 2025-10-04 02:51:33*
 
@@ -16,7 +16,7 @@
 该脚本支持多种 Linux 发行版，支持一键安装 Docker、Docker Compose 并自动配置轩辕镜像访问支持源。
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

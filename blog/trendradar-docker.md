@@ -1,6 +1,6 @@
 # TRENDRADAR Docker 容器化部署指南
 
-![TRENDRADAR Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-trendradar.png)
+![TRENDRADAR Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-trendradar.png)
 
 *分类: Docker部署教程 | 标签: trendradar,docker,部署教程 | 发布时间: 2025-11-16 04:55:03*
 
@@ -20,7 +20,7 @@ TRENDRADAR（中文名称：趋势雷达）是一款专注于多平台热点聚�
 TRENDRADAR基于Docker容器化部署，需先确保服务器已安装Docker环境。推荐使用轩辕云提供的一键安装脚本，可自动完成Docker及相关组件的安装与配置：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

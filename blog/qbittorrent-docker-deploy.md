@@ -1,6 +1,6 @@
 # 群晖 NAS 部署 qBittorrent：图形界面全程跟做，浏览器管理下载
 
-![群晖 NAS 部署 qBittorrent：图形界面全程跟做，浏览器管理下载](https://assets.xuanyuan.me/docker/blog/qbittorrent.png)
+![群晖 NAS 部署 qBittorrent：图形界面全程跟做，浏览器管理下载](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent.png)
 
 *分类: Docker部署教程 | 标签: qBittorrent,Docker,轩辕镜像,群晖,NAS,BT下载,私有化部署,部署教程 | 发布时间: 2026-07-13 08:45:30*
 
@@ -14,7 +14,7 @@
 
 国内用户从 Docker Hub 拉取 `linuxserver/qbittorrent` 可能较慢，本文使用 [轩辕镜像](https://xuanyuan.cloud) 加速。官方文档见 [linuxserver/docker-qbittorrent](https://github.com/linuxserver/docker-qbittorrent)，镜像页 [轩辕镜像 qBittorrent](https://xuanyuan.cloud/zh/r/linuxserver/qbittorrent)。
 
-![群晖 NAS 部署 qBittorrent](https://assets.xuanyuan.me/docker/blog/qbittorrent-17.png)
+![群晖 NAS 部署 qBittorrent](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-17.png)
 
 *图 0：群晖 NAS + Docker 部署完成 qBittorrent 界面*
 
@@ -100,7 +100,7 @@ qBittorrent 容器 ──挂载卷──▶ /config（配置）+ /downloads（�
 | 信任的 SSL 自我签署证书 | 若测试连接报证书错误，可勾选此项 |
 | 用户名 / 密码 | 轩辕镜像镜像账户与镜像密码 |
 
-![编辑镜像仓库：配置轩辕镜像](https://assets.xuanyuan.me/docker/blog/qbittorrent-1.png)
+![编辑镜像仓库：配置轩辕镜像](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-1.png)
 
 *图 1：在 Container Manager 中添加轩辕镜像仓库（通用域名方式）*
 
@@ -126,7 +126,7 @@ qBittorrent 容器 ──挂载卷──▶ /config（配置）+ /downloads（�
 3. 在结果列表中找到 **linuxserver/qbittorrent**（LinuxServer.io 官方描述）
 4. 右键选择 **下载此映像**（或点击条目旁的下载按钮）
 
-![镜像仓库搜索 linuxserver/qbittorrent](https://assets.xuanyuan.me/docker/blog/qbittorrent-2.png)
+![镜像仓库搜索 linuxserver/qbittorrent](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-2.png)
 
 *图 2：搜索并选择 linuxserver/qbittorrent 镜像*
 
@@ -134,13 +134,13 @@ qBittorrent 容器 ──挂载卷──▶ /config（配置）+ /downloads（�
 
 生产环境建议锁定具体版本，而非 `latest`。可在 [轩辕镜像标签页](https://xuanyuan.cloud/zh/r/linuxserver/qbittorrent) 查看可用标签，本文使用 **`version-5.2.3_v2.0.13`**：
 
-![轩辕镜像标签列表 version-5.2.3_v2.0.13](https://assets.xuanyuan.me/docker/blog/qbittorrent-3.png)
+![轩辕镜像标签列表 version-5.2.3_v2.0.13](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-3.png)
 
 *图 3：轩辕镜像站查看 qBittorrent 可用版本标签*
 
 回到 Container Manager，在 **选择标签** 对话框中手动输入标签名（部分自定义仓库无法自动列出标签）：
 
-![选择标签 version-5.2.3_v2.0.13](https://assets.xuanyuan.me/docker/blog/qbittorrent-4.png)
+![选择标签 version-5.2.3_v2.0.13](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-4.png)
 
 *图 4：手动输入镜像标签并点击下载*
 
@@ -148,13 +148,13 @@ qBittorrent 容器 ──挂载卷──▶ /config（配置）+ /downloads（�
 
 切换到 **映像** 页签，可看到镜像正在从 `docker.xuanyuan.run` 拉取：
 
-![镜像正在下载](https://assets.xuanyuan.me/docker/blog/qbittorrent-5.png)
+![镜像正在下载](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-5.png)
 
 *图 5：镜像下载进行中*
 
 下载完成后，映像列表显示约 **185 MB**，状态为可用：
 
-![镜像下载完成](https://assets.xuanyuan.me/docker/blog/qbittorrent-6.png)
+![镜像下载完成](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-6.png)
 
 *图 6：镜像拉取完成，可点击「运行」创建容器*
 
@@ -177,7 +177,7 @@ qBittorrent 容器 ──挂载卷──▶ /config（配置）+ /downloads（�
 
 端口设置中，确保映射 **8080**（Web UI）与 **6881**（BT）：
 
-![创建容器：常规设置与端口](https://assets.xuanyuan.me/docker/blog/qbittorrent-7.png)
+![创建容器：常规设置与端口](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-7.png)
 
 *图 7：容器名称、资源限制与端口预填*
 
@@ -199,7 +199,7 @@ qBittorrent 容器 ──挂载卷──▶ /config（配置）+ /downloads（�
 | 8080 | 8080 | TCP（Web UI） |
 | 6881 | 6881 | TCP（BT，建议同时在路由器映射 UDP） |
 
-![存储空间与端口映射](https://assets.xuanyuan.me/docker/blog/qbittorrent-8.png)
+![存储空间与端口映射](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-8.png)
 
 *图 8：`/config` 与 `/downloads` 卷挂载，8080 / 6881 端口映射*
 
@@ -217,7 +217,7 @@ qBittorrent 容器 ──挂载卷──▶ /config（配置）+ /downloads（�
 | `WEBUI_PORT` | `8080` | Web 界面端口，需与端口映射一致 |
 | `TORRENTING_PORT` | `6881` | BT 连接端口，需与端口映射一致 |
 
-![环境变量 PUID PGID TZ WEBUI_PORT TORRENTING_PORT](https://assets.xuanyuan.me/docker/blog/qbittorrent-9.png)
+![环境变量 PUID PGID TZ WEBUI_PORT TORRENTING_PORT](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-9.png)
 
 *图 9：关键环境变量配置*
 
@@ -227,7 +227,7 @@ qBittorrent 容器 ──挂载卷──▶ /config（配置）+ /downloads（�
 
 网络模式保持默认 **bridge** 即可，点击 **下一步**：
 
-![网络 bridge 模式](https://assets.xuanyuan.me/docker/blog/qbittorrent-10.png)
+![网络 bridge 模式](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-10.png)
 
 *图 10：网络选择 bridge，保持默认*
 
@@ -235,13 +235,13 @@ qBittorrent 容器 ──挂载卷──▶ /config（配置）+ /downloads（�
 
 在 **摘要** 页核对配置，勾选 **向导完成后运行此容器**，点击 **完成**：
 
-![创建容器摘要确认](https://assets.xuanyuan.me/docker/blog/qbittorrent-11.png)
+![创建容器摘要确认](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-11.png)
 
 *图 11：摘要页核对卷、端口、环境变量后点击完成*
 
 弹出提示 **已创建 linuxserver-qbittorrent**，若启用了 Web Station 集成，会提示进入 Web Station 配置网页门户：
 
-![容器创建成功](https://assets.xuanyuan.me/docker/blog/qbittorrent-12.png)
+![容器创建成功](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-12.png)
 
 *图 12：容器创建成功提示*
 
@@ -257,13 +257,13 @@ qBittorrent 容器 ──挂载卷──▶ /config（配置）+ /downloads（�
 | 门户类型 | 基于端口 |
 | 端口 | HTTP **8080** |
 
-![Web Station 配置网页门户 8080](https://assets.xuanyuan.me/docker/blog/qbittorrent-13.png)
+![Web Station 配置网页门户 8080](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-13.png)
 
 *图 13：Web Station 为 qBittorrent 配置 8080 端口门户*
 
 配置完成后，在 **用户定义的门户** 列表中可看到状态为 **正常**，点击 **链接** 图标即可在浏览器打开 Web UI：
 
-![Web Station 门户列表与访问链接](https://assets.xuanyuan.me/docker/blog/qbittorrent-14.png)
+![Web Station 门户列表与访问链接](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-14.png)
 
 *图 14：门户配置完成，点击链接图标访问 Web UI*
 
@@ -284,7 +284,7 @@ The WebUI administrator username is: admin
 The WebUI administrator password was not set. A temporary password is provided for this session: xxxxxxxx
 ```
 
-![容器日志中的临时用户名与密码](https://assets.xuanyuan.me/docker/blog/qbittorrent-15.png)
+![容器日志中的临时用户名与密码](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-15.png)
 
 *图 15：从容器日志复制 admin 临时密码*
 
@@ -292,13 +292,13 @@ The WebUI administrator password was not set. A temporary password is provided f
 
 浏览器打开 `http://你的群晖IP:8080`，输入用户名 **admin** 与日志中的临时密码：
 
-![qBittorrent WebUI 登录页](https://assets.xuanyuan.me/docker/blog/qbittorrent-16.png)
+![qBittorrent WebUI 登录页](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-16.png)
 
 *图 16：WebUI 登录界面*
 
 登录成功后进入主界面。建议立即进入 **设置（齿轮图标）→ Web UI**，修改用户名与密码，避免容器重启后密码失效：
 
-![qBittorrent 主界面](https://assets.xuanyuan.me/docker/blog/qbittorrent-17.png)
+![qBittorrent 主界面](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-17.png)
 
 *图 17：登录成功，进入 qBittorrent 主界面*
 
@@ -308,13 +308,13 @@ The WebUI administrator password was not set. A temporary password is provided f
 
 点击工具栏 **添加链接** 图标，粘贴磁力链或种子 URL，点击 **Download**：
 
-![添加磁力链接](https://assets.xuanyuan.me/docker/blog/qbittorrent-18.png)
+![添加磁力链接](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-18.png)
 
 *图 18：通过 Web UI 添加磁力链接*
 
 添加后可在列表中看到任务状态。底部 **Save Path** 显示 `/downloads`，对应挂载的 `/Download` 共享文件夹；**Free space** 反映 NAS 可用空间，说明卷挂载生效：
 
-![下载任务与保存路径 /downloads](https://assets.xuanyuan.me/docker/blog/qbittorrent-19.png)
+![下载任务与保存路径 /downloads](https://imgs.xuanyuan.cloud/docker/blog/qbittorrent-19.png)
 
 *图 19：种子添加成功，保存路径为 /downloads*
 

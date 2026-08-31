@@ -1,6 +1,6 @@
 # 从零开始Docker部署OpenClaw：踩坑全记录+新手保姆级教程
 
-![从零开始Docker部署OpenClaw：踩坑全记录+新手保姆级教程](https://assets.xuanyuan.me/docker/blog/docker-openclaw.png)
+![从零开始Docker部署OpenClaw：踩坑全记录+新手保姆级教程](https://imgs.xuanyuan.cloud/docker/blog/docker-openclaw.png)
 
 *分类: Docker部署教程 | 标签: OpenClaw,AI,部署教程 | 发布时间: 2026-04-25 09:00:29*
 
@@ -25,7 +25,7 @@ OpenClaw是一个开源的AI网关和智能体运行平台，它就像一个"龙
 Linux 系统（包括银河麒麟、欧拉、统信 UOS 等国产系统）直接用下面的脚本，一键安装 Docker、Docker Compose，还会自动配置轩辕镜像加速，省去手动配置的麻烦。[1]
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -121,7 +121,7 @@ Dashboard URL: http://127.0.0.1:18789/#token=a3feb6fd93afaefa072f8d47891eaa20a70
 ### 6. 浏览器访问验证
 **忽略任何工具的报错信息**，直接在你的Chrome/Edge浏览器中复制粘贴上面的链接。
 
-![OpenClaw的仪表盘界面](https://assets.xuanyuan.me/docker/blog/docker-openclaw-1.png)
+![OpenClaw的仪表盘界面](https://imgs.xuanyuan.cloud/docker/blog/docker-openclaw-1.png)
 
 如果一切顺利，你会看到OpenClaw的仪表盘界面，恭喜你部署成功了！
 

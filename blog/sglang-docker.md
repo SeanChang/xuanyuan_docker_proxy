@@ -1,6 +1,6 @@
 # SGLANG Docker容器化部署指南
 
-![SGLANG Docker容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-sglang.png)
+![SGLANG Docker容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-sglang.png)
 
 *分类: Docker部署教程 | 标签: sglang,docker,部署教程 | 发布时间: 2025-11-08 11:35:29*
 
@@ -33,7 +33,7 @@ SGLANG作为LLM推理引擎，核心依赖GPU算力完成模型推理，无GPU�
 推荐使用轩辕镜像提供的一键安装脚本，自动完成Docker、Docker Compose的安装与国内镜像源配置，解决官方源网络访问慢、安装失败的问题，支持几乎所有主流Linux发行版：
 ```bash
 # 轩辕镜像一键安装Docker环境（全Linux系统兼容）
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

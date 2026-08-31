@@ -1,6 +1,6 @@
 # DORIS Docker 容器化部署指南
 
-![DORIS Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-doris.png)
+![DORIS Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-doris.png)
 
 *分类: Docker部署教程 | 标签: doris,docker,部署教程 | 发布时间: 2025-12-11 07:07:35*
 
@@ -20,7 +20,7 @@ DORIS官方提供了完整的Docker镜像支持，包含构建环境镜像和运
 容器化部署DORIS的前提是确保目标服务器已安装Docker环境。推荐使用以下一键安装脚本快速部署Docker及相关组件：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

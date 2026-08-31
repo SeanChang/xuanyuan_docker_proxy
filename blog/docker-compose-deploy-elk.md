@@ -1,6 +1,6 @@
 # Docker Compose 部署 ELK 完整教程：搭建企业级日志中心
 
-![Docker Compose 部署 ELK 完整教程：搭建企业级日志中心](https://assets.xuanyuan.me/docker/blog/elk.webp)
+![Docker Compose 部署 ELK 完整教程：搭建企业级日志中心](https://imgs.xuanyuan.cloud/docker/blog/elk.webp)
 
 *分类: Docker部署教程 | 标签: ELK,Elasticsearch,Logstash,Kibana,Docker,Compose,轩辕镜像,日志分析,私有化部署,部署教程 | 发布时间: 2026-07-17 09:53:10*
 
@@ -18,7 +18,7 @@
 - [logstash](https://xuanyuan.cloud/docker.elastic.co/logstash/logstash?tag=7.17.2)
 - [kibana](https://xuanyuan.cloud/docker.elastic.co/kibana/kibana?tag=7.17.2)
 
-![Kibana 欢迎页 Welcome to Elastic](https://assets.xuanyuan.me/docker/blog/elk-1.webp)
+![Kibana 欢迎页 Welcome to Elastic](https://imgs.xuanyuan.cloud/docker/blog/elk-1.webp)
 
 *图 1：Kibana 就绪后的 Welcome 页（可选 Explore on my own）*
 
@@ -77,7 +77,7 @@ sudo sysctl -w vm.max_map_count=262144
 未装 Docker 可用轩辕一键脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -327,23 +327,23 @@ http://192.168.1.10:5601/
 
 进入主页后可见 Enterprise Search / Observability / Security / Analytics 等入口：
 
-![Kibana Welcome home 主页四入口](https://assets.xuanyuan.me/docker/blog/elk-2.webp)
+![Kibana Welcome home 主页四入口](https://imgs.xuanyuan.cloud/docker/blog/elk-2.webp)
 
 *图 2：Welcome home — Enterprise Search / Observability / Security / Analytics*
 
-![Enterprise Search 产品选择](https://assets.xuanyuan.me/docker/blog/elk-3.webp)
+![Enterprise Search 产品选择](https://imgs.xuanyuan.cloud/docker/blog/elk-3.webp)
 
 *图 3：Enterprise Search 欢迎页*
 
-![Elastic Security Overview](https://assets.xuanyuan.me/docker/blog/elk-4.webp)
+![Elastic Security Overview](https://imgs.xuanyuan.cloud/docker/blog/elk-4.webp)
 
 *图 4：Security Overview*
 
-![Analytics 欢迎页](https://assets.xuanyuan.me/docker/blog/elk-5.webp)
+![Analytics 欢迎页](https://imgs.xuanyuan.cloud/docker/blog/elk-5.webp)
 
 *图 5：Analytics 欢迎页*
 
-![Observability 欢迎页](https://assets.xuanyuan.me/docker/blog/elk-6.webp)
+![Observability 欢迎页](https://imgs.xuanyuan.cloud/docker/blog/elk-6.webp)
 
 *图 6：Observability 欢迎页*
 
@@ -355,53 +355,53 @@ http://192.168.1.10:5601/
 
 路径：**Integrations → Sample data**（或主页 **Try sample data**），可添加 eCommerce / Flights / Web logs。
 
-![Sample data：eCommerce / Flights / Web logs](https://assets.xuanyuan.me/docker/blog/elk-7.webp)
+![Sample data：eCommerce / Flights / Web logs](https://imgs.xuanyuan.cloud/docker/blog/elk-7.webp)
 
 *图 7：More ways to add data — Sample data*
 
 ### 6.1 eCommerce 样例
 
-![eCommerce Revenue Dashboard](https://assets.xuanyuan.me/docker/blog/elk-18.webp)
+![eCommerce Revenue Dashboard](https://imgs.xuanyuan.cloud/docker/blog/elk-18.webp)
 
 *图 8：[eCommerce] Revenue Dashboard*
 
-![eCommerce Canvas Revenue Tracking](https://assets.xuanyuan.me/docker/blog/elk-9.webp)
+![eCommerce Canvas Revenue Tracking](https://imgs.xuanyuan.cloud/docker/blog/elk-9.webp)
 
 *图 9：Canvas — [eCommerce] Revenue Tracking*
 
-![eCommerce Orders by Country 地图](https://assets.xuanyuan.me/docker/blog/elk-10.webp)
+![eCommerce Orders by Country 地图](https://imgs.xuanyuan.cloud/docker/blog/elk-10.webp)
 
 *图 10：Maps — [eCommerce] Orders by Country*
 
 ### 6.2 Flights 样例
 
-![Flights Global Flight Dashboard](https://assets.xuanyuan.me/docker/blog/elk-11.webp)
+![Flights Global Flight Dashboard](https://imgs.xuanyuan.cloud/docker/blog/elk-11.webp)
 
 *图 11：[Flights] Global Flight Dashboard*
 
-![Flights Canvas Overview](https://assets.xuanyuan.me/docker/blog/elk-12.webp)
+![Flights Canvas Overview](https://imgs.xuanyuan.cloud/docker/blog/elk-12.webp)
 
 *图 12：Canvas — [Flights] Overview*
 
-![Flights Origin Time Delayed 地图](https://assets.xuanyuan.me/docker/blog/elk-13.webp)
+![Flights Origin Time Delayed 地图](https://imgs.xuanyuan.cloud/docker/blog/elk-13.webp)
 
 *图 13：Maps — [Flights] Origin Time Delayed*
 
 ### 6.3 Web logs 样例
 
-![Logs Web Traffic 仪表盘](https://assets.xuanyuan.me/docker/blog/elk-20.webp)
+![Logs Web Traffic 仪表盘](https://imgs.xuanyuan.cloud/docker/blog/elk-20.webp)
 
 *图 14：[Logs] Web Traffic Dashboard*
 
-![Logs Canvas Web Traffic](https://assets.xuanyuan.me/docker/blog/elk-15.webp)
+![Logs Canvas Web Traffic](https://imgs.xuanyuan.cloud/docker/blog/elk-15.webp)
 
 *图 15：Canvas — [Logs] Web Traffic*
 
-![Logs Total Requests and Bytes 地图](https://assets.xuanyuan.me/docker/blog/elk-16.webp)
+![Logs Total Requests and Bytes 地图](https://imgs.xuanyuan.cloud/docker/blog/elk-16.webp)
 
 *图 16：Maps — [Logs] Total Requests and Bytes*
 
-![Observability Logs Stream](https://assets.xuanyuan.me/docker/blog/elk-17.webp)
+![Observability Logs Stream](https://imgs.xuanyuan.cloud/docker/blog/elk-17.webp)
 
 *图 17：Observability → Logs → Stream（样例 web logs 流）*
 

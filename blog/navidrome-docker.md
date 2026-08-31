@@ -1,6 +1,6 @@
 # NAVIDROME Docker 容器化部署指南
 
-![NAVIDROME Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-navidrome.png)
+![NAVIDROME Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-navidrome.png)
 
 *分类: Docker部署教程 | 标签: navidrome,docker,部署教程 | 发布时间: 2025-12-10 06:57:35*
 
@@ -36,7 +36,7 @@ NAVIDROME是一款开源的基于Web的音乐收藏服务器和流媒体服务�
 在开始部署NAVIDROME之前，需要先确保系统中已安装Docker环境。对于Linux系统，推荐使用以下一键安装脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

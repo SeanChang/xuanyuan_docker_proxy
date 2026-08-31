@@ -1,6 +1,6 @@
 # Docker 部署 Harness Open Source：轻松搭建代码托管与 CI/CD 平台
 
-![Docker 部署 Harness Open Source：轻松搭建代码托管与 CI/CD 平台](https://assets.xuanyuan.me/docker/blog/harness.webp)
+![Docker 部署 Harness Open Source：轻松搭建代码托管与 CI/CD 平台](https://imgs.xuanyuan.cloud/docker/blog/harness.webp)
 
 *分类: Docker部署教程 | 标签: Harness Open Source,Gitness,Docker,轩辕镜像,Git,CI/CD,代码托管,私有化部署,部署教程 | 发布时间: 2026-08-18 12:14:10*
 
@@ -78,7 +78,7 @@ docker compose version
 Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 备用地址：
@@ -259,7 +259,7 @@ curl -sI http://127.0.0.1:13300 | head -n 5
 
 首次会落到 **Sign In**（`/signin`）。没有内置账号，右侧是 **Email / User ID** 和 **Password**。点标题旁 **No Account? Sign Up**，不要在登录框试 `admin`。
 
-![Harness Open Source 登录页 Sign In：左侧 Open Source DevOps 介绍，右侧 Email / User ID 与 Password](https://assets.xuanyuan.me/docker/blog/harness-1.webp)
+![Harness Open Source 登录页 Sign In：左侧 Open Source DevOps 介绍，右侧 Email / User ID 与 Password](https://imgs.xuanyuan.cloud/docker/blog/harness-1.webp)
 
 ### 6.2 注册
 
@@ -267,17 +267,17 @@ curl -sI http://127.0.0.1:13300 | head -n 5
 
 公开注册由 `GITNESS_USER_SIGNUP_ENABLED=true` 打开。上线后如何关掉并预置管理员，见第八节。
 
-![Harness Open Source 注册页 Sign Up：填写 User ID、Email、Password 与 Confirm Password](https://assets.xuanyuan.me/docker/blog/harness-2.webp)
+![Harness Open Source 注册页 Sign Up：填写 User ID、Email、Password 与 Confirm Password](https://imgs.xuanyuan.cloud/docker/blog/harness-2.webp)
 
 ### 6.3 新建项目
 
 注册后进入欢迎页。文案仍是 **get you started with Gitness**。侧栏底部是当前用户（实测 **xuanyuan**），中间点 **+ New Project**。
 
-![Harness Open Source 欢迎页：Welcome xuanyuan、提示创建 Project、蓝色 + New Project](https://assets.xuanyuan.me/docker/blog/harness-3.webp)
+![Harness Open Source 欢迎页：Welcome xuanyuan、提示创建 Project、蓝色 + New Project](https://imgs.xuanyuan.cloud/docker/blog/harness-3.webp)
 
 **Create a project** 填 **Name**（实测 `xuanyuan-cloud`）和可选 **Description**（实测「轩辕镜像」），再点 **Create Project**。
 
-![Harness Open Source 创建项目对话框：Name xuanyuan-cloud、Description 轩辕镜像、Create Project](https://assets.xuanyuan.me/docker/blog/harness-4.webp)
+![Harness Open Source 创建项目对话框：Name xuanyuan-cloud、Description 轩辕镜像、Create Project](https://imgs.xuanyuan.cloud/docker/blog/harness-4.webp)
 
 侧栏会出现项目名，以及 Repositories、Artifact Registries、Gitspaces 等菜单。
 
@@ -291,7 +291,7 @@ curl -sI http://127.0.0.1:13300 | head -n 5
 
 默认打开 **Repositories**。空项目提示 *There are no repositories in this project*。点 **+ New Repository** 新建；按钮下拉可导入已有 Git 仓库。页面给出的 HTTP / SSH 地址应带你的 IP 或域名和 **13300** / **3022**，而不是 `localhost:3000`。
 
-![Harness Open Source 项目 xuanyuan-cloud 的 Repositories 空状态：+ New Repository](https://assets.xuanyuan.me/docker/blog/harness-5.webp)
+![Harness Open Source 项目 xuanyuan-cloud 的 Repositories 空状态：+ New Repository](https://imgs.xuanyuan.cloud/docker/blog/harness-5.webp)
 
 ### 7.2 Artifact Registries / Gitspaces / Secrets
 
@@ -301,21 +301,21 @@ curl -sI http://127.0.0.1:13300 | head -n 5
 - **Gitspaces**：介绍页说明从 Git 克隆、在环境里构建调试，并可连 VS Code；点 **Get Started Now**。能否真正起开发环境还取决于本机 Docker 与出网，本文只确认页面可访问。  
 - **Secrets**：空状态 *There are no secrets*，**+ New Secret**。流水线要用的 Token 放这里。加密依赖 `GITNESS_ENCRYPTER_SECRET`。
 
-![Harness Open Source Artifact Registries 空状态：+ New Artifact Registry](https://assets.xuanyuan.me/docker/blog/harness-6.webp)
+![Harness Open Source Artifact Registries 空状态：+ New Artifact Registry](https://imgs.xuanyuan.cloud/docker/blog/harness-6.webp)
 
-![Harness Open Source Gitspaces 介绍页：克隆代码、Build Test Debug、连接 VS Code](https://assets.xuanyuan.me/docker/blog/harness-7.webp)
+![Harness Open Source Gitspaces 介绍页：克隆代码、Build Test Debug、连接 VS Code](https://imgs.xuanyuan.cloud/docker/blog/harness-7.webp)
 
-![Harness Open Source Secrets 空状态：There are no secrets、+ New Secret](https://assets.xuanyuan.me/docker/blog/harness-8.webp)
+![Harness Open Source Secrets 空状态：There are no secrets、+ New Secret](https://imgs.xuanyuan.cloud/docker/blog/harness-8.webp)
 
 ### 7.3 Members 与 Settings
 
 **Members** 列出项目角色。实测首个用户 **xuanyuan** 为 **Owner**。协作点 **+ Add Member**。实例级账号在侧栏底部 **User Management**。
 
-![Harness Open Source Members：用户 xuanyuan 角色 Owner](https://assets.xuanyuan.me/docker/blog/harness-9.webp)
+![Harness Open Source Members：用户 xuanyuan 角色 Owner](https://imgs.xuanyuan.cloud/docker/blog/harness-9.webp)
 
 **Settings → General** 可改 Name / Description。**Upgrade to Harness** 指向商业软件交付平台，不是再装一遍本文镜像。底部 **Delete Project** 会删掉项目及其中全部仓库。另有 **Labels**、**Rules** 两个标签页。
 
-![Harness Open Source 项目 Settings General：xuanyuan-cloud、轩辕镜像、Upgrade to Harness 与 Delete Project](https://assets.xuanyuan.me/docker/blog/harness-10.webp)
+![Harness Open Source 项目 Settings General：xuanyuan-cloud、轩辕镜像、Upgrade to Harness 与 Delete Project](https://imgs.xuanyuan.cloud/docker/blog/harness-10.webp)
 
 ---
 

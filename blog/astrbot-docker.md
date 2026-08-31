@@ -1,6 +1,6 @@
 # AstrBot Docker 容器化部署指南
 
-![AstrBot Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-astrbot.png)
+![AstrBot Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-astrbot.png)
 
 *分类: Docker部署教程 | 标签: astrbot,部署教程 | 发布时间: 2025-12-17 07:40:30*
 
@@ -18,7 +18,7 @@ AstrBot 是一款基于容器化架构设计的应用程序，提供高效、灵
 AstrBot基于Docker容器运行，需先确保目标服务器已安装Docker环境。推荐使用轩辕云提供的一键安装脚本，可自动完成Docker及相关组件的配置：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

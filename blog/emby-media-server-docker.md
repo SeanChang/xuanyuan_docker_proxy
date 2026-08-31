@@ -1,6 +1,6 @@
 # Emby Media Server Docker 容器化部署指南
 
-![Emby Media Server Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-emby-media-server.png)
+![Emby Media Server Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-emby-media-server.png)
 
 *分类: Docker部署教程 | 标签: emby-media-server,docker,部署教程 | 发布时间: 2025-12-14 12:44:03*
 
@@ -20,7 +20,7 @@ Emby Media Server 是一款基于Docker容器化的媒体服务器应用，旨�
 Emby Media Server 基于Docker容器运行，需先确保服务器已安装Docker环境。推荐使用以下一键安装脚本快速部署Docker：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

@@ -1,6 +1,6 @@
 # Docker 部署 redroid：轻松搭建云安卓与远程 Android 实例平台
 
-![Docker 部署 redroid：轻松搭建云安卓与远程 Android 实例平台](https://assets.xuanyuan.me/docker/blog/redroid.webp)
+![Docker 部署 redroid：轻松搭建云安卓与远程 Android 实例平台](https://imgs.xuanyuan.cloud/docker/blog/redroid.webp)
 
 *分类: Docker部署教程 | 标签: redroid,Docker,轩辕镜像,云安卓,Android In Cloud,ADB,scrcpy,自动化测试,私有化部署,部署教程 | 发布时间: 2026-08-18 11:03:42*
 
@@ -97,7 +97,7 @@ uname -r
 Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 备用地址：
@@ -375,7 +375,7 @@ INFO: Texture: 720x1280
 
 窗口标题为 **`redroid15_x86_64_only`**，分辨率与 Compose 中的 720×1280 一致：
 
-![redroid Android 15 主屏幕：scrcpy 窗口 redroid15_x86_64_only，Google 搜索框与 Gallery / Contacts / Camera](https://assets.xuanyuan.me/docker/blog/redroid-1.webp)
+![redroid Android 15 主屏幕：scrcpy 窗口 redroid15_x86_64_only，Google 搜索框与 Gallery / Contacts / Camera](https://imgs.xuanyuan.cloud/docker/blog/redroid-1.webp)
 
 连不上时，在 Linux 上确认 `ss -lntp | grep 15555`，防火墙只放行内网。
 
@@ -383,15 +383,15 @@ INFO: Texture: 720x1280
 
 这是接近 AOSP 的桌面：预装 Gallery、Contacts、Camera，**没有 Google 套件**（GMS 需自行改镜像，见第八节）。点 **Contacts** 会先问通知权限：
 
-![redroid Contacts：允许发送通知的系统权限对话框 ALLOW / DON'T ALLOW](https://assets.xuanyuan.me/docker/blog/redroid-2.webp)
+![redroid Contacts：允许发送通知的系统权限对话框 ALLOW / DON'T ALLOW](https://imgs.xuanyuan.cloud/docker/blog/redroid-2.webp)
 
 进入后是空列表，可用右下角加号或 IMPORT：
 
-![redroid Contacts 空列表：Your contacts list is empty，右下角粉色加号按钮](https://assets.xuanyuan.me/docker/blog/redroid-3.webp)
+![redroid Contacts 空列表：Your contacts list is empty，右下角粉色加号按钮](https://imgs.xuanyuan.cloud/docker/blog/redroid-3.webp)
 
 多任务里打开 WebView，实测能访问公网（如 [xuanyuan.cloud](https://xuanyuan.cloud)）：
 
-![redroid 最近任务：WebView 打开 xuanyuan.cloud，屏幕键盘与 Screenshot 按钮](https://assets.xuanyuan.me/docker/blog/redroid-4.webp)
+![redroid 最近任务：WebView 打开 xuanyuan.cloud，屏幕键盘与 Screenshot 按钮](https://imgs.xuanyuan.cloud/docker/blog/redroid-4.webp)
 
 ### 7.5 常用 ADB
 

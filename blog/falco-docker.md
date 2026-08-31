@@ -1,6 +1,6 @@
 # Falco Docker 容器化部署指南
 
-![Falco Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-falco.png)
+![Falco Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-falco.png)
 
 *分类: Docker部署教程 | 标签: falco,docker,部署教程 | 发布时间: 2025-12-14 06:37:53*
 
@@ -21,7 +21,7 @@ Falco 的核心功能是作为内核监控和检测代理，基于自定义规�
 Falco 作为容器化应用，需要在Docker环境中运行。推荐使用以下一键安装脚本部署Docker环境：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

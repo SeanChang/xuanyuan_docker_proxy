@@ -1,6 +1,6 @@
 # Docker 部署 openEuler 教程及常见问题解决
 
-![Docker 部署 openEuler 教程及常见问题解决](https://assets.xuanyuan.me/docker/blog/docker-openeuler.png)
+![Docker 部署 openEuler 教程及常见问题解决](https://imgs.xuanyuan.cloud/docker/blog/docker-openeuler.png)
 
 *分类: Docker部署教程 | 标签: openeuler,docker,部署教程 | 发布时间: 2025-10-31 06:30:06*
 
@@ -32,7 +32,7 @@ openEuler 作为华为主导的开源 Linux 发行版，以“多架构适配、
 脚本支持 openEuler、CentOS、Ubuntu 等主流发行版，自动配置轩辕镜像访问支持源，避免拉取镜像时访问表现慢：
 ```bash
 # 一键安装 Docker + Docker Compose，全程无需手动干预
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

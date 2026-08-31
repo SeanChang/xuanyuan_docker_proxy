@@ -1,6 +1,6 @@
 # 重要公告：Bitnami 部分镜像 Docker Hub 免费获取通道变更，替代拉取方案看这篇就够了
 
-![重要公告：Bitnami 部分镜像 Docker Hub 免费获取通道变更，替代拉取方案看这篇就够了](https://assets.xuanyuan.me/docker/blog/docker-bitnami.png)
+![重要公告：Bitnami 部分镜像 Docker Hub 免费获取通道变更，替代拉取方案看这篇就够了](https://imgs.xuanyuan.cloud/docker/blog/docker-bitnami.png)
 
 *分类: Docker部署教程 | 标签: Bitnami,公告,Docker | 发布时间: 2026-02-23 04:37:37*
 

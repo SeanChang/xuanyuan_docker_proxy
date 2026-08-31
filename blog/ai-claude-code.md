@@ -1,6 +1,6 @@
 # 【安全公告】AI 编程工具 Claude Code 安全后门隐患
 
-![【安全公告】AI 编程工具 Claude Code 安全后门隐患](https://assets.xuanyuan.me/docker/blog/docker-security-advisory.png)
+![【安全公告】AI 编程工具 Claude Code 安全后门隐患](https://imgs.xuanyuan.cloud/docker/blog/docker-security-advisory.png)
 
 *分类: 安全公告 | 标签: Claude Code,AI,安全公告,风险提示,数据泄露,Anthropic | 发布时间: 2026-07-09 01:43:50*
 

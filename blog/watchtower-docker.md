@@ -1,6 +1,6 @@
 # WATCHTOWER Docker 容器化部署指南
 
-![WATCHTOWER Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-watchtower.png)
+![WATCHTOWER Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-watchtower.png)
 
 *分类: Docker部署教程 | 标签: watchtower,docker,部署教程 | 发布时间: 2025-12-02 03:39:23*
 
@@ -31,7 +31,7 @@ WATCHTOWER作为Docker容器运行，首先需要在目标主机上安装Docker�
 执行以下命令安装Docker环境：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

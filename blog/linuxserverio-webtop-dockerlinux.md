@@ -1,6 +1,6 @@
 # LinuxServer.io Webtop Docker容器化部署指南：基于浏览器的Linux桌面环境
 
-![LinuxServer.io Webtop Docker容器化部署指南：基于浏览器的Linux桌面环境](https://assets.xuanyuan.me/docker/blog/docker-webtop.png)
+![LinuxServer.io Webtop Docker容器化部署指南：基于浏览器的Linux桌面环境](https://imgs.xuanyuan.cloud/docker/blog/docker-webtop.png)
 
 *分类: Docker部署教程 | 标签: webtop,docker,部署教程 | 发布时间: 2025-12-15 05:55:37*
 
@@ -29,7 +29,7 @@ LinuxServer团队作为容器化领域的专家，确保了 Webtop 容器的高�
 Webtop 作为Docker容器运行，需要先在主机上安装Docker引擎。推荐使用以下一键安装脚本，该脚本会自动配置Docker环境并优化相关参数：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

@@ -1,6 +1,6 @@
 # VLLM Docker 容器化部署指南：在 NVIDIA Jetson 平台高效运行大语言模型推理服务
 
-![VLLM Docker 容器化部署指南：在 NVIDIA Jetson 平台高效运行大语言模型推理服务](https://assets.xuanyuan.me/docker/blog/docker-dustynv-vllm.png)
+![VLLM Docker 容器化部署指南：在 NVIDIA Jetson 平台高效运行大语言模型推理服务](https://imgs.xuanyuan.cloud/docker/blog/docker-dustynv-vllm.png)
 
 *分类: Docker部署教程 | 标签: vllm-docker-nvidia,docker,部署教程 | 发布时间: 2025-12-02 06:05:50*
 
@@ -27,7 +27,7 @@ VLLM是一个高效的开源大语言模型（LLM）推理服务框架，通过�
 在开始部署前，需确保目标设备已安装Docker及NVIDIA容器运行时。推荐使用以下一键安装脚本，自动完成Docker、nvidia-container-toolkit及相关依赖的配置：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -364,7 +364,7 @@ python -m vllm.entrypoints.benchmark \
 dpkg -l | grep nvidia-container-toolkit
 
 # 若未安装，重新执行一键安装脚本
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 
 # 验证Docker是否支持NVIDIA运行时
 docker run --rm --runtime nvidia nvidia/cuda:12.6.0-base-ubuntu22.04 nvidia-smi

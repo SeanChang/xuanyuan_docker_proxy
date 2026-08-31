@@ -1,6 +1,6 @@
 # Jenkins Docker 部署教程：搭建属于自己的 CI/CD 持续集成平台
 
-![Jenkins Docker 部署教程：搭建属于自己的 CI/CD 持续集成平台](https://assets.xuanyuan.me/docker/blog/docker-jenkins.png)
+![Jenkins Docker 部署教程：搭建属于自己的 CI/CD 持续集成平台](https://imgs.xuanyuan.cloud/docker/blog/docker-jenkins.png)
 
 *分类: Docker部署教程 | 标签: Jenkins,Docker,轩辕镜像,CI/CD,持续集成,私有化部署,部署教程 | 发布时间: 2025-12-02 03:45:05*
 
@@ -69,7 +69,7 @@ docker compose version
 若尚未安装 Docker，可使用轩辕镜像一键脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -300,7 +300,7 @@ http://192.168.1.18:8080
 
 将上节读取的 **32 位初始密码** 粘贴到「管理员密码」框，点击 **继续**：
 
-![解锁 Jenkins：粘贴 initialAdminPassword 中的管理员密码](https://assets.xuanyuan.me/docker/blog/jenkins-1.png)
+![解锁 Jenkins：粘贴 initialAdminPassword 中的管理员密码](https://imgs.xuanyuan.cloud/docker/blog/jenkins-1.png)
 
 *图 1：解锁 Jenkins 页面*
 
@@ -308,13 +308,13 @@ http://192.168.1.18:8080
 
 选择 **安装推荐的插件**（Install suggested plugins），自动安装 Pipeline、Git、Credentials 等常用插件：
 
-![自定义 Jenkins：选择安装推荐的插件](https://assets.xuanyuan.me/docker/blog/jenkins-2.png)
+![自定义 Jenkins：选择安装推荐的插件](https://imgs.xuanyuan.cloud/docker/blog/jenkins-2.png)
 
 *图 2：插件安装方式选择*
 
 插件下载与安装需 **3～10 分钟**（视网络而定），进度条与右侧依赖列表实时更新：
 
-![新手入门：推荐插件安装进度，Folders、Git、Pipeline 等](https://assets.xuanyuan.me/docker/blog/jenkins-3.png)
+![新手入门：推荐插件安装进度，Folders、Git、Pipeline 等](https://imgs.xuanyuan.cloud/docker/blog/jenkins-3.png)
 
 *图 3：推荐插件安装中*
 
@@ -324,7 +324,7 @@ http://192.168.1.18:8080
 
 插件装完后，创建 **持久管理员账号**（替代仅用于解锁的初始密码）：
 
-![创建第一个管理员用户：填写用户名 admin、全名与邮箱](https://assets.xuanyuan.me/docker/blog/jenkins-4.png)
+![创建第一个管理员用户：填写用户名 admin、全名与邮箱](https://imgs.xuanyuan.cloud/docker/blog/jenkins-4.png)
 
 *图 4：创建管理员用户*
 
@@ -340,7 +340,7 @@ http://192.168.1.18:8080
 
 确认 **Jenkins URL** 为浏览器实际访问地址（影响邮件通知、构建日志中的链接）：
 
-![实例配置：Jenkins URL 设为 http://192.168.1.18:8080/](https://assets.xuanyuan.me/docker/blog/jenkins-5.png)
+![实例配置：Jenkins URL 设为 http://192.168.1.18:8080/](https://imgs.xuanyuan.cloud/docker/blog/jenkins-5.png)
 
 *图 5：实例 URL 配置*
 
@@ -350,7 +350,7 @@ http://192.168.1.18:8080
 
 点击 **保存并完成**，进入就绪页：
 
-![Jenkins 已就绪：点击开始使用 Jenkins](https://assets.xuanyuan.me/docker/blog/jenkins-6.png)
+![Jenkins 已就绪：点击开始使用 Jenkins](https://imgs.xuanyuan.cloud/docker/blog/jenkins-6.png)
 
 *图 6：初始化完成*
 
@@ -364,7 +364,7 @@ http://192.168.1.18:8080
 
 主控台显示 **欢迎来到 Jenkins!**，可点击 **Create a job** 创建第一个流水线或自由风格项目：
 
-![Jenkins 主控台：Welcome to Jenkins，Create a job 与 Set up an agent](https://assets.xuanyuan.me/docker/blog/jenkins-7.png)
+![Jenkins 主控台：Welcome to Jenkins，Create a job 与 Set up an agent](https://imgs.xuanyuan.cloud/docker/blog/jenkins-7.png)
 
 *图 7：Jenkins 主控台欢迎页*
 
@@ -372,7 +372,7 @@ http://192.168.1.18:8080
 
 点击左侧 **+ 新建 Item**，输入任务名称并选择类型（**Freestyle project** 或 **流水线 Pipeline**）：
 
-![新建 Item：输入任务名称，选择 Freestyle project 或 Pipeline](https://assets.xuanyuan.me/docker/blog/jenkins-8.png)
+![新建 Item：输入任务名称，选择 Freestyle project 或 Pipeline](https://imgs.xuanyuan.cloud/docker/blog/jenkins-8.png)
 
 *图 8：新建任务类型选择*
 
@@ -386,7 +386,7 @@ http://192.168.1.18:8080
 
 点击左侧 **Manage Jenkins**（或右上角齿轮）进入系统配置、插件管理、节点与凭据：
 
-![Manage Jenkins：系统配置、插件管理、节点和云、Security 与凭据](https://assets.xuanyuan.me/docker/blog/jenkins-9.png)
+![Manage Jenkins：系统配置、插件管理、节点和云、Security 与凭据](https://imgs.xuanyuan.cloud/docker/blog/jenkins-9.png)
 
 *图 9：Manage Jenkins 概览*
 
@@ -396,7 +396,7 @@ http://192.168.1.18:8080
 
 **Manage Jenkins → Nodes** 可查看 **Built-In Node**（Controller 自身）的磁盘、内存与执行器：
 
-![节点和云管理：Built-In Node Linux amd64，空闲磁盘 86.78 GiB](https://assets.xuanyuan.me/docker/blog/jenkins-10.png)
+![节点和云管理：Built-In Node Linux amd64，空闲磁盘 86.78 GiB](https://imgs.xuanyuan.cloud/docker/blog/jenkins-10.png)
 
 *图 10：内置节点资源状态*
 
@@ -406,7 +406,7 @@ http://192.168.1.18:8080
 
 点击右上角用户菜单 → **Theme**，可切换 **Light / Dark / Dark (System)**：
 
-![用户菜单 Theme：切换 Dark 深色主题](https://assets.xuanyuan.me/docker/blog/jenkins-11.png)
+![用户菜单 Theme：切换 Dark 深色主题](https://imgs.xuanyuan.cloud/docker/blog/jenkins-11.png)
 
 *图 11：深色主题切换*
 

@@ -1,6 +1,6 @@
 # Docker 部署 IT Tools：轻松搭建开发者在线工具箱平台
 
-![Docker 部署 IT Tools：轻松搭建开发者在线工具箱平台](https://assets.xuanyuan.me/docker/blog/it-tools.webp)
+![Docker 部署 IT Tools：轻松搭建开发者在线工具箱平台](https://imgs.xuanyuan.cloud/docker/blog/it-tools.webp)
 
 *分类: Docker部署教程 | 标签: IT Tools,Docker,轩辕镜像,开发者工具,在线工具箱,私有化部署,部署教程 | 发布时间: 2026-08-05 04:23:35*
 
@@ -75,7 +75,7 @@ docker compose version
 Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -232,19 +232,19 @@ http://YOUR_SERVER_IP:8080
 
 首次多为英文界面：顶栏搜索（`Ctrl + K`）、左侧分类、中间工具卡片。页面能打开即说明端口映射正常。
 
-![IT Tools 首次访问：英文首页，搜索框与工具卡片网格](https://assets.xuanyuan.me/docker/blog/it-tools-1.webp)
+![IT Tools 首次访问：英文首页，搜索框与工具卡片网格](https://imgs.xuanyuan.cloud/docker/blog/it-tools-1.webp)
 
 ### 6.2 切换简体中文
 
 右上角语言从 **English** 改为 **中文**。首页变为「全部工具」，侧栏出现「加密」「转换器」等分类。
 
-![IT Tools 切换简体中文：全部工具与加密分类侧栏](https://assets.xuanyuan.me/docker/blog/it-tools-2.webp)
+![IT Tools 切换简体中文：全部工具与加密分类侧栏](https://imgs.xuanyuan.cloud/docker/blog/it-tools-2.webp)
 
 ### 6.3 搜索进入工具
 
 顶栏搜索输入 `hash`，下拉匹配 **Hash text** 等（工具内部名可能仍为英文）；点选进入，或直接点侧栏 / 首页卡片。
 
-![IT Tools 搜索 hash：下拉匹配 Hash text 等工具](https://assets.xuanyuan.me/docker/blog/it-tools-3.webp)
+![IT Tools 搜索 hash：下拉匹配 Hash text 等工具](https://imgs.xuanyuan.cloud/docker/blog/it-tools-3.webp)
 
 ---
 
@@ -256,25 +256,25 @@ http://YOUR_SERVER_IP:8080
 
 **加密 → Hash 文本**。输入例如 `https://xuanyuan.cloud/`，Digest encoding 选 Hexadecimal，下方即时给出 MD5、SHA1、SHA256 等摘要，可复制。
 
-![IT Tools Hash 文本：输入 URL 后输出 MD5/SHA 等摘要](https://assets.xuanyuan.me/docker/blog/it-tools-4.webp)
+![IT Tools Hash 文本：输入 URL 后输出 MD5/SHA 等摘要](https://imgs.xuanyuan.cloud/docker/blog/it-tools-4.webp)
 
 ### 7.2 加密 / 解密文本
 
 **加密 → 加密/解密文本**。左侧选 AES（或其它算法）与密钥加密，右侧用同一密钥解密，确认还原一致。
 
-![IT Tools 加密解密文本：AES 左右对照加解密](https://assets.xuanyuan.me/docker/blog/it-tools-5.webp)
+![IT Tools 加密解密文本：AES 左右对照加解密](https://imgs.xuanyuan.cloud/docker/blog/it-tools-5.webp)
 
 ### 7.3 RSA 密钥对生成器
 
 **加密 → RSA 密钥对生成器**。位数选 **2048**，Refresh 后复制 PEM 公钥 / 私钥。测试密钥勿提交到公共仓库。
 
-![IT Tools RSA 密钥对生成器：2048 位 PEM 公钥与私钥](https://assets.xuanyuan.me/docker/blog/it-tools-6.webp)
+![IT Tools RSA 密钥对生成器：2048 位 PEM 公钥与私钥](https://imgs.xuanyuan.cloud/docker/blog/it-tools-6.webp)
 
 ### 7.4 密码强度分析仪
 
 **加密 → 密码强度分析仪**。输入口令后查看估时、熵与分数；弱口令会提示 **Instantly**。结果侧重暴力估算，不含字典攻击。
 
-![IT Tools 密码强度分析仪：弱口令评分与熵信息](https://assets.xuanyuan.me/docker/blog/it-tools-7.webp)
+![IT Tools 密码强度分析仪：弱口令评分与熵信息](https://imgs.xuanyuan.cloud/docker/blog/it-tools-7.webp)
 
 ### 7.5 SQL / YAML / JSON 美化
 
@@ -282,31 +282,31 @@ http://YOUR_SERVER_IP:8080
 
 - **SQL 美化和格式化**：单行 SQL 可按方言与关键字大小写展开。
 
-![IT Tools SQL 美化：单行查询格式化为多行](https://assets.xuanyuan.me/docker/blog/it-tools-8.webp)
+![IT Tools SQL 美化：单行查询格式化为多行](https://imgs.xuanyuan.cloud/docker/blog/it-tools-8.webp)
 
 - **YAML美化和格式化**：可粘贴第五节的 `docker-compose.yml`。开启 **Sort keys** 时键会按字母重排，仅便于阅读，不必原样写回生产文件。
 
-![IT Tools YAML 美化：格式化 it-tools 的 docker-compose.yml](https://assets.xuanyuan.me/docker/blog/it-tools-9.webp)
+![IT Tools YAML 美化：格式化 it-tools 的 docker-compose.yml](https://imgs.xuanyuan.cloud/docker/blog/it-tools-9.webp)
 
 - **JSON美化和格式化**：压缩 JSON 展开；Sort keys 同样会重排键名。
 
-![IT Tools JSON 美化：压缩 JSON 格式化并按键排序](https://assets.xuanyuan.me/docker/blog/it-tools-12.webp)
+![IT Tools JSON 美化：压缩 JSON 格式化并按键排序](https://imgs.xuanyuan.cloud/docker/blog/it-tools-12.webp)
 
 ### 7.6 文本比较
 
 **文本 → 文本比较**。左右粘贴两段文本，差异红绿高亮（示例：`https://` 与 `http://`）。
 
-![IT Tools 文本比较：https 与 http 差异高亮](https://assets.xuanyuan.me/docker/blog/it-tools-11.webp)
+![IT Tools 文本比较：https 与 http 差异高亮](https://imgs.xuanyuan.cloud/docker/blog/it-tools-11.webp)
 
 ### 7.7 Emoji 与二维码
 
 - **文本 → Emoji 选择器**：按分类浏览，复制 Unicode / code points。
 
-![IT Tools Emoji 选择器：Smileys 分类与 code points](https://assets.xuanyuan.me/docker/blog/it-tools-10.webp)
+![IT Tools Emoji 选择器：Smileys 分类与 code points](https://imgs.xuanyuan.cloud/docker/blog/it-tools-10.webp)
 
 - **图片和视频 → 二维码生成器**：输入 URL 或文本，调颜色与容错后下载。
 
-![IT Tools 二维码生成器：为轩辕镜像站点生成 QR 码](https://assets.xuanyuan.me/docker/blog/it-tools-13.webp)
+![IT Tools 二维码生成器：为轩辕镜像站点生成 QR 码](https://imgs.xuanyuan.cloud/docker/blog/it-tools-13.webp)
 
 JWT 解析、UUID、Crontab、正则等路径相同：**侧栏选工具 → 输入 → 复制结果**。
 

@@ -1,6 +1,6 @@
 # 基于 Docker 的 MongoDB 部署与使用指南
 
-![基于 Docker 的 MongoDB 部署与使用指南](https://assets.xuanyuan.me/docker/blog/docker-mangodb.png)
+![基于 Docker 的 MongoDB 部署与使用指南](https://imgs.xuanyuan.cloud/docker/blog/docker-mangodb.png)
 
 *分类: Docker部署教程 | 标签: MongoDB,docker,部署教程 | 发布时间: 2025-10-04 08:28:06*
 
@@ -57,7 +57,7 @@ MongoDB 是**面向文档的 NoSQL 数据库**，以 BSON（类 JSON 格式）�
 - 一键安装配置脚本（推荐方案）：
 该脚本支持多种 Linux 发行版，支持一键安装 Docker、Docker Compose 并自动配置轩辕镜像访问支持源。
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

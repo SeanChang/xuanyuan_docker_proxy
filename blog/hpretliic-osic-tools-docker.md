@@ -1,6 +1,6 @@
 # hpretl/iic-osic-tools  Docker 部署完整教程
 
-![hpretl/iic-osic-tools  Docker 部署完整教程](https://assets.xuanyuan.me/docker/blog/docker-iic-osic-tools.png)
+![hpretl/iic-osic-tools  Docker 部署完整教程](https://imgs.xuanyuan.cloud/docker/blog/docker-iic-osic-tools.png)
 
 *分类: Docker部署教程 | 标签: hpretliic-osic-tools,docker,部署教程 | 发布时间: 2025-10-10 03:33:09*
 
@@ -29,7 +29,7 @@ iic-osic-tools 是 Docker 容器，所以必须先装 Docker 和 Docker Compose�
 
 ```bash
 # 一键安装 Docker、Docker Compose 并配置轩辕镜像访问支持
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

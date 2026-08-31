@@ -1,6 +1,6 @@
 # Golang 镜像拉取与 Docker 部署全教程
 
-![Golang 镜像拉取与 Docker 部署全教程](https://assets.xuanyuan.me/docker/blog/docker-golang.png)
+![Golang 镜像拉取与 Docker 部署全教程](https://imgs.xuanyuan.cloud/docker/blog/docker-golang.png)
 
 *分类: Docker部署教程 | 标签: Golang,docker,部署教程 | 发布时间: 2025-10-10 02:27:25*
 
@@ -33,7 +33,7 @@ Golang（简称 Go）是 Google 开发的静态类型编程语言，语法上借
 如果你的 Linux 服务器还没装 Docker，直接用下面的**一键安装脚本**（推荐新手用），能自动装 Docker、Docker Compose，还会配置轩辕镜像访问支持（拉取 Golang 镜像更快）：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

@@ -1,6 +1,6 @@
 # PILLOW_FINAL Docker 镜像部署指南：高效图像处理环境配置
 
-![PILLOW_FINAL Docker 镜像部署指南：高效图像处理环境配置](https://assets.xuanyuan.me/docker/blog/docker-pillow_final.png)
+![PILLOW_FINAL Docker 镜像部署指南：高效图像处理环境配置](https://imgs.xuanyuan.cloud/docker/blog/docker-pillow_final.png)
 
 *分类: Docker部署教程 | 标签: pillow_final,docker,部署教程 | 发布时间: 2025-12-06 06:19:52*
 
@@ -19,7 +19,7 @@ PILLOW_FINAL支持多种图像处理操作，包括图像格式转换、裁剪�
 在开始部署前，需确保目标服务器已安装Docker环境。推荐使用以下一键安装脚本，该脚本会自动配置Docker及相关依赖：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

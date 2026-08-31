@@ -1,6 +1,6 @@
 # Emby Media Server ARM32V7 Docker 容器化部署指南
 
-![Emby Media Server ARM32V7 Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-emby-media-server.png)
+![Emby Media Server ARM32V7 Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-emby-media-server.png)
 
 *分类: Docker部署教程 | 标签: emby-media-server,docker,部署教程 | 发布时间: 2025-12-14 12:55:52*
 
@@ -19,7 +19,7 @@ EMBYSERVER_ARM32V7是Emby Media Server针对arm32v7架构的官方Docker镜像�
 在开始部署前，需要确保目标设备已安装Docker环境。推荐使用以下一键安装脚本快速部署Docker：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

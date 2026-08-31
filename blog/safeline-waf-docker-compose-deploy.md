@@ -1,6 +1,6 @@
 # Docker Compose 部署雷池 SafeLine WAF：浏览器即可完成网站安全管理
 
-![Docker Compose 部署雷池 SafeLine WAF：浏览器即可完成网站安全管理](https://assets.xuanyuan.me/docker/blog/safeline.png)
+![Docker Compose 部署雷池 SafeLine WAF：浏览器即可完成网站安全管理](https://imgs.xuanyuan.cloud/docker/blog/safeline.png)
 
 *分类: Docker部署教程 | 标签: SafeLine,雷池,WAF,Docker,Docker Compose,轩辕镜像,网站防火墙,私有化部署,部署教程 | 发布时间: 2026-07-17 02:20:44*
 
@@ -80,7 +80,7 @@ docker compose version
 若尚未安装，可用轩辕一键脚本：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -286,11 +286,11 @@ https://你的服务器IP:9443
 
 首次进入会看到软件许可协议，点击同意后进入登录页：
 
-![雷池 SafeLine 软件许可协议：同意并开始使用](https://assets.xuanyuan.me/docker/blog/safeline-1.png)
+![雷池 SafeLine 软件许可协议：同意并开始使用](https://imgs.xuanyuan.cloud/docker/blog/safeline-1.png)
 
 使用 `admin` 与上一步口令登录：
 
-![雷池登录页：用户名 admin 与密码登录](https://assets.xuanyuan.me/docker/blog/safeline-2.png)
+![雷池登录页：用户名 admin 与密码登录](https://imgs.xuanyuan.cloud/docker/blog/safeline-2.png)
 
 ---
 
@@ -298,7 +298,7 @@ https://你的服务器IP:9443
 
 登录后进入**统计报表**。左下角版本 **9.3.10** 与本文镜像标签一致。顶栏常驻 **升级授权**，中央水印有「个人版禁止商业用途使用」一类提示——这是个人版产品策略，不是部署失败。
 
-![雷池中文版统计报表：流量分析与 0 数据空状态，版本 9.3.10](https://assets.xuanyuan.me/docker/blog/safeline-4.png)
+![雷池中文版统计报表：流量分析与 0 数据空状态，版本 9.3.10](https://imgs.xuanyuan.cloud/docker/blog/safeline-4.png)
 
 左侧主要模块：
 
@@ -315,43 +315,43 @@ https://你的服务器IP:9443
 
 攻击防护（新部署暂无数据属正常）：
 
-![雷池攻击防护：攻击事件列表暂无数据](https://assets.xuanyuan.me/docker/blog/safeline-5.png)
+![雷池攻击防护：攻击事件列表暂无数据](https://imgs.xuanyuan.cloud/docker/blog/safeline-5.png)
 
 黑白名单：
 
-![雷池黑白名单：检测事件与自定义规则](https://assets.xuanyuan.me/docker/blog/safeline-6.png)
+![雷池黑白名单：检测事件与自定义规则](https://imgs.xuanyuan.cloud/docker/blog/safeline-6.png)
 
 CC 防护 · 频率限制：
 
-![雷池 CC 防护频率限制：限流说明与拦截列表](https://assets.xuanyuan.me/docker/blog/safeline-7.png)
+![雷池 CC 防护频率限制：限流说明与拦截列表](https://imgs.xuanyuan.cloud/docker/blog/safeline-7.png)
 
 CC 防护 · 等候室：
 
-![雷池等候室：高峰排队能力说明页](https://assets.xuanyuan.me/docker/blog/safeline-8.png)
+![雷池等候室：高峰排队能力说明页](https://imgs.xuanyuan.cloud/docker/blog/safeline-8.png)
 
 人机验证：
 
-![雷池人机验证：防自动化攻击说明与配置入口](https://assets.xuanyuan.me/docker/blog/safeline-9.png)
+![雷池人机验证：防自动化攻击说明与配置入口](https://imgs.xuanyuan.cloud/docker/blog/safeline-9.png)
 
 身份认证：
 
-![雷池身份认证：访问应用前认证配置页](https://assets.xuanyuan.me/docker/blog/safeline-10.png)
+![雷池身份认证：访问应用前认证配置页](https://imgs.xuanyuan.cloud/docker/blog/safeline-10.png)
 
 ### 个人版付费墙（实测）
 
 通用设置中，部分配置会直接提示升级：
 
-![雷池通用设置：提示请升级到专业版后再配置，含 IP 组与证书管理](https://assets.xuanyuan.me/docker/blog/safeline-11.png)
+![雷池通用设置：提示请升级到专业版后再配置，含 IP 组与证书管理](https://imgs.xuanyuan.cloud/docker/blog/safeline-11.png)
 
 统计报表里打开「防护大屏」配置时，会提示升级到商业版：
 
-![雷池防护大屏配置弹窗：请升级到商业版后再配置](https://assets.xuanyuan.me/docker/blog/safeline-20.png)
+![雷池防护大屏配置弹窗：请升级到商业版后再配置](https://imgs.xuanyuan.cloud/docker/blog/safeline-20.png)
 
 **结论**：个人版适合学习、个人站点与功能体验；若依赖大屏、加强情报、部分专业防护配置，需评估商业授权。若你更在意「开源、无付费墙、单容器」，可优先看 [SamWaf 教程](../samwaf_samwaf/samwaf-docker-deploy.md)。
 
 > 若误装了国际英文版，界面类似下图；把 `.env` 的 `REGION=-g` 改为 `REGION=` 后 `docker compose pull && docker compose up -d`，再强制刷新即可切中文。
 
-![雷池国际英文版统计页（REGION=-g）对照](https://assets.xuanyuan.me/docker/blog/safeline-3.png)
+![雷池国际英文版统计页（REGION=-g）对照](https://imgs.xuanyuan.cloud/docker/blog/safeline-3.png)
 
 ---
 
@@ -368,7 +368,7 @@ CC 防护 · 等候室：
 | 上游服务器 | 真实后端地址，**不支持路径** | `http://192.168.1.10:8080` |
 | 应用名称 | 便于列表识别 | 自定义 |
 
-![雷池添加应用弹窗：域名、80/443 监听端口、代理到已有应用与上游服务器配置](https://assets.xuanyuan.me/docker/blog/safeline-12.png)
+![雷池添加应用弹窗：域名、80/443 监听端口、代理到已有应用与上游服务器配置](https://imgs.xuanyuan.cloud/docker/blog/safeline-12.png)
 
 保存后流量路径：
 

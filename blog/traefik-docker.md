@@ -1,6 +1,6 @@
 # TRAEFIK Docker 容器化部署指南
 
-![TRAEFIK Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-traefik.png)
+![TRAEFIK Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-traefik.png)
 
 *分类: Docker部署教程 | 标签: traefik,docker,部署教程 | 发布时间: 2025-12-06 15:49:29*
 
@@ -19,7 +19,7 @@ TRAEFIK的核心优势在于其自动发现能力，只需将TRAEFIK指向您的
 在开始部署TRAEFIK之前，需要确保目标服务器已安装Docker环境。推荐使用以下一键安装脚本快速部署Docker：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

@@ -1,6 +1,6 @@
 # 超全 Docker 轩辕镜像源配置指南｜Windows/Mac/Linux一键搞定，拉镜像再也不卡顿
 
-![超全 Docker 轩辕镜像源配置指南｜Windows/Mac/Linux一键搞定，拉镜像再也不卡顿](https://assets.xuanyuan.me/docker/blog/docker-win-mac-linux.png)
+![超全 Docker 轩辕镜像源配置指南｜Windows/Mac/Linux一键搞定，拉镜像再也不卡顿](https://imgs.xuanyuan.cloud/docker/blog/docker-win-mac-linux.png)
 
 *分类: Docker部署教程 | 标签: 轩辕镜像,教程 | 发布时间: 2026-03-18 13:21:04*
 
@@ -37,7 +37,7 @@ Linux服务器配置Docker镜像源，支持一键脚本全自动配置和手动
 脚本支持绝大多数Linux发行版，不仅能一键配置轩辕镜像源，还能顺带安装Docker、docker-compose，一行命令搞定所有：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

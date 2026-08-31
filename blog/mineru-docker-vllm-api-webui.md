@@ -1,6 +1,6 @@
 # MinerU Docker 部署指南：PDF 结构化解析服务实践
 
-![MinerU Docker 部署指南：PDF 结构化解析服务实践](https://assets.xuanyuan.me/docker/blog/docker-mineru.png)
+![MinerU Docker 部署指南：PDF 结构化解析服务实践](https://imgs.xuanyuan.cloud/docker/blog/docker-mineru.png)
 
 *分类: Docker部署教程 | 标签: mineru,部署教程,人工智能,vLLM | 发布时间: 2025-12-30 07:27:09*
 
@@ -33,7 +33,7 @@ MinerU 是一款面向开发者与科研用户的 PDF 结构化解析工具，�
 推荐使用以下一键脚本安装 Docker 环境，该脚本会自动安装 Docker Engine、Docker CLI、Docker Compose 等必要组件：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

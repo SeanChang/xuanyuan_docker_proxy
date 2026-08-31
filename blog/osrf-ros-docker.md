@@ -1,6 +1,6 @@
 # OSRF ROS Docker 容器化部署指南：高效构建机器人操作系统环境
 
-![OSRF ROS Docker 容器化部署指南：高效构建机器人操作系统环境](https://assets.xuanyuan.me/docker/blog/docker-osrf-ros.png)
+![OSRF ROS Docker 容器化部署指南：高效构建机器人操作系统环境](https://imgs.xuanyuan.cloud/docker/blog/docker-osrf-ros.png)
 
 *分类: Docker部署教程 | 标签: osrf-ros,docker,部署教程 | 发布时间: 2025-12-11 04:05:41*
 
@@ -25,7 +25,7 @@
 在开始部署前，需要先安装 Docker 环境。推荐使用轩辕提供的一键安装脚本，该脚本会自动配置 Docker 环境并优化相关参数：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

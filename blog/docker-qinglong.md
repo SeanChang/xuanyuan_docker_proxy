@@ -1,6 +1,6 @@
 # Docker 容器化部署 QINGLONG 面板指南
 
-![Docker 容器化部署 QINGLONG 面板指南](https://assets.xuanyuan.me/docker/blog/docker-qinglong.png)
+![Docker 容器化部署 QINGLONG 面板指南](https://imgs.xuanyuan.cloud/docker/blog/docker-qinglong.png)
 
 *分类: Docker部署教程 | 标签: qinglong,docker,部署教程 | 发布时间: 2025-11-09 11:02:10*
 
@@ -21,7 +21,7 @@ QINGLONG采用Docker容器化部署，需先确保服务器已安装Docker环境
 
 ```bash
 # 一键安装Docker环境（支持主流Linux发行版）
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

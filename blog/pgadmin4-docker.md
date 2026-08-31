@@ -1,6 +1,6 @@
 # PGADMIN4 Docker 容器化部署指南
 
-![PGADMIN4 Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-pgadmin4.png)
+![PGADMIN4 Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-pgadmin4.png)
 
 *分类: Docker部署教程 | 标签: pgadmin4,docker,部署教程 | 发布时间: 2025-11-30 02:39:38*
 
@@ -18,7 +18,7 @@ PGADMIN4是一款功能强大的开源Web管理工具，专为PostgreSQL数据�
 部署PGADMIN4容器前，需先配置Docker运行环境。推荐使用以下一键安装脚本，自动完成Docker Engine、Docker Compose及相关依赖的配置：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

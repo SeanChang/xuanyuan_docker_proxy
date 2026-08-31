@@ -1,6 +1,6 @@
 # TRADINGAGENTS-BACKEND Docker 容器化部署指南
 
-![TRADINGAGENTS-BACKEND Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-tradingagents-cn.png)
+![TRADINGAGENTS-BACKEND Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-tradingagents-cn.png)
 
 *分类: Docker部署教程 | 标签: tradingagents-backend,docker,部署教程 | 发布时间: 2025-12-02 06:18:59*
 
@@ -20,7 +20,7 @@ TRADINGAGENTS-BACKEND（中文名称：交易智能体后端服务）是基于�
 部署TRADINGAGENTS-BACKEND前需确保Docker环境已正确安装。推荐使用以下一键安装脚本，适用于Ubuntu、Debian、CentOS等主流Linux发行版：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

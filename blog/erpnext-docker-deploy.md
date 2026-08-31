@@ -1,6 +1,6 @@
 # Docker 部署 ERPNext：轻松搭建开源 ERP 企业管理平台
 
-![Docker 部署 ERPNext：轻松搭建开源 ERP 企业管理平台](https://assets.xuanyuan.me/docker/blog/erpnext.webp)
+![Docker 部署 ERPNext：轻松搭建开源 ERP 企业管理平台](https://imgs.xuanyuan.cloud/docker/blog/erpnext.webp)
 
 *分类: Docker部署教程 | 标签: ERPNext,Frappe,Docker,轩辕镜像,ERP,进销存,私有化部署,部署教程 | 发布时间: 2026-07-28 03:02:49*
 
@@ -18,7 +18,7 @@
 
 镜像说明见 [frappe/erpnext 镜像页](https://xuanyuan.cloud/zh/r/frappe/erpnext)，标签列表见 [tags](https://xuanyuan.cloud/r/frappe/erpnext/tags)。上游项目：[ERPNext](https://github.com/frappe/erpnext)；用户文档：[docs.erpnext.com](https://docs.erpnext.com)。
 
-![ERPNext 登录页 Sign In](https://assets.xuanyuan.me/docker/blog/erpnext-1.webp)
+![ERPNext 登录页 Sign In](https://imgs.xuanyuan.cloud/docker/blog/erpnext-1.webp)
 
 *图 1：浏览器打开 8080 后的登录页*
 
@@ -82,7 +82,7 @@ docker compose version
 Linux 未装 Docker：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -461,7 +461,7 @@ create-site-1 exited with code 0
 
 打开 `http://<IP>:8080`，进入 **Sign In**。邮箱可填 `Administrator`，密码 `admin`，点 **Continue**。
 
-![ERPNext 登录页 Email 与 Password](https://assets.xuanyuan.me/docker/blog/erpnext-1.webp)
+![ERPNext 登录页 Email 与 Password](https://imgs.xuanyuan.cloud/docker/blog/erpnext-1.webp)
 
 *图 1：登录页*
 
@@ -470,7 +470,7 @@ create-site-1 exited with code 0
 首次会进入 **Welcome**。国家选 **China** 后，时区常见为 **Asia/Chongqing**，货币 **CNY**。  
 语言默认常为 **English**——**不会**因选了 China 自动变中文。若此处下拉不好用，可先英文走完向导，登录后再改（见第七节）。
 
-![ERPNext Welcome：语言国家时区货币](https://assets.xuanyuan.me/docker/blog/erpnext-2.webp)
+![ERPNext Welcome：语言国家时区货币](https://imgs.xuanyuan.cloud/docker/blog/erpnext-2.webp)
 
 *图 2：Welcome——语言、国家、时区、货币*
 
@@ -478,7 +478,7 @@ create-site-1 exited with code 0
 
 填写 **Full Name**、**Email Address**（登录 ID）、**Password**，点 **Next**。
 
-![ERPNext 向导：设置姓名邮箱密码](https://assets.xuanyuan.me/docker/blog/erpnext-3.webp)
+![ERPNext 向导：设置姓名邮箱密码](https://imgs.xuanyuan.cloud/docker/blog/erpnext-3.webp)
 
 *图 3：Let's set up your account*
 
@@ -486,7 +486,7 @@ create-site-1 exited with code 0
 
 按提示选择团队规模、工作类型等，并可勾选计划启用的模块（如 Accounting、Manufacturing、Stock、Project Management）。
 
-![ERPNext 向导：业务画像与模块勾选](https://assets.xuanyuan.me/docker/blog/erpnext-4.webp)
+![ERPNext 向导：业务画像与模块勾选](https://imgs.xuanyuan.cloud/docker/blog/erpnext-4.webp)
 
 *图 4：A little about you——模块勾选*
 
@@ -494,7 +494,7 @@ create-site-1 exited with code 0
 
 出现 **Setting up your system** / **Starting Frappe ...** 时耐心等待，完成后进入 Desk。
 
-![ERPNext 向导：Setting up your system 进度](https://assets.xuanyuan.me/docker/blog/erpnext-5.webp)
+![ERPNext 向导：Setting up your system 进度](https://imgs.xuanyuan.cloud/docker/blog/erpnext-5.webp)
 
 *图 5：系统初始化进度*
 
@@ -513,11 +513,11 @@ create-site-1 exited with code 0
 3. 选中结果（如 `zh` / 中文）→ **Save**
 4. 等待 **Refreshing...**，再 **Ctrl+Shift+R** 强刷
 
-![ERPNext Select Language：输入中文匹配到 zh](https://assets.xuanyuan.me/docker/blog/erpnext-7.webp)
+![ERPNext Select Language：输入中文匹配到 zh](https://imgs.xuanyuan.cloud/docker/blog/erpnext-7.webp)
 
 *图 7：搜索「中文」即可匹配到 zh*
 
-![ERPNext 用户语言已改为中文并 Refreshing](https://assets.xuanyuan.me/docker/blog/erpnext-8.webp)
+![ERPNext 用户语言已改为中文并 Refreshing](https://imgs.xuanyuan.cloud/docker/blog/erpnext-8.webp)
 
 *图 8：Language 保存为中文，页面刷新中*
 
@@ -532,7 +532,7 @@ docker compose exec backend bench --site frontend clear-cache
 
 切换成功后，主页图标为中文模块名：组织、会计、资产、采购、生产、项目、质量、销售、库存、委外、ERPNext 设置等。
 
-![ERPNext 中文 Desk 模块图标首页](https://assets.xuanyuan.me/docker/blog/erpnext-6.webp)
+![ERPNext 中文 Desk 模块图标首页](https://imgs.xuanyuan.cloud/docker/blog/erpnext-6.webp)
 
 *图 6：简体中文 Desk 首页*
 
@@ -548,7 +548,7 @@ docker compose exec backend bench --site frontend clear-cache
 
 进入 **组织**，可见公司主数据（国家中国、货币 CNY）。右下角 **Getting Started** 会提示完成公司、用户、邮箱、权限等引导步骤。
 
-![ERPNext 组织模块：公司列表与 Getting Started](https://assets.xuanyuan.me/docker/blog/erpnext-9.webp)
+![ERPNext 组织模块：公司列表与 Getting Started](https://imgs.xuanyuan.cloud/docker/blog/erpnext-9.webp)
 
 *图 9：组织——公司列表*
 
@@ -556,11 +556,11 @@ docker compose exec backend bench --site frontend clear-cache
 
 点击 **会计** 可看到开票、付款、报表、税、银行等快捷入口；进入 **开票管理** 可见损益相关图表与应收应付入口。
 
-![ERPNext 会计模块快捷入口](https://assets.xuanyuan.me/docker/blog/erpnext-10.webp)
+![ERPNext 会计模块快捷入口](https://imgs.xuanyuan.cloud/docker/blog/erpnext-10.webp)
 
 *图 10：会计——功能快捷入口*
 
-![ERPNext 开票管理工作区与损益图](https://assets.xuanyuan.me/docker/blog/erpnext-11.webp)
+![ERPNext 开票管理工作区与损益图](https://imgs.xuanyuan.cloud/docker/blog/erpnext-11.webp)
 
 *图 11：开票管理工作区*
 
@@ -568,7 +568,7 @@ docker compose exec backend bench --site frontend clear-cache
 
 **资产** 模块提供固定资产价值分析、折旧、维护等入口；新站点图表可能为空，按 Getting Started 逐步建分类与资产即可。
 
-![ERPNext 资产模块工作区](https://assets.xuanyuan.me/docker/blog/erpnext-12.webp)
+![ERPNext 资产模块工作区](https://imgs.xuanyuan.cloud/docker/blog/erpnext-12.webp)
 
 *图 12：资产工作区*
 
@@ -576,11 +576,11 @@ docker compose exec backend bench --site frontend clear-cache
 
 继续点开 **库存**、**生产** 等工作区：左侧为单据与报表导航，中间为趋势图与 KPI（新站多为 0），右下角有模块向导。
 
-![ERPNext 库存相关工作区](https://assets.xuanyuan.me/docker/blog/erpnext-13.webp)
+![ERPNext 库存相关工作区](https://imgs.xuanyuan.cloud/docker/blog/erpnext-13.webp)
 
 *图 13：库存等工作区*
 
-![ERPNext 生产模块：工单与产量图](https://assets.xuanyuan.me/docker/blog/erpnext-14.webp)
+![ERPNext 生产模块：工单与产量图](https://imgs.xuanyuan.cloud/docker/blog/erpnext-14.webp)
 
 *图 14：生产工作区*
 
@@ -588,7 +588,7 @@ docker compose exec backend bench --site frontend clear-cache
 
 在 **ERPNext 设置 → 全局默认值** 可核对默认公司、国家、默认货币（CNY）等，改完点 **Save**。
 
-![ERPNext 全局默认值：公司国家货币 CNY](https://assets.xuanyuan.me/docker/blog/erpnext-15.webp)
+![ERPNext 全局默认值：公司国家货币 CNY](https://imgs.xuanyuan.cloud/docker/blog/erpnext-15.webp)
 
 *图 15：全局默认值*
 

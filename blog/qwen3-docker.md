@@ -1,6 +1,6 @@
 # QWEN3 企业级 Docker 容器化部署指南
 
-![QWEN3 企业级 Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-qwen3.png)
+![QWEN3 企业级 Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-qwen3.png)
 
 *分类: Docker部署教程 | 标签: qwen3,人工智能,Ai,大模型 | 发布时间: 2026-01-10 16:06:23*
 
@@ -40,7 +40,7 @@ QWEN3容器化部署支持以下操作系统：
 使用以下一键脚本安装Docker及相关组件（适用于Linux系统）：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

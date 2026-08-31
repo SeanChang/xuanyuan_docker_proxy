@@ -1,6 +1,6 @@
 # LobeHub Docker 容器化部署指南
 
-![LobeHub Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-lobehub.png)
+![LobeHub Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-lobehub.png)
 
 *分类: Docker部署教程 | 标签: lobehub,docker,部署教程 | 发布时间: 2025-11-23 12:54:34*
 

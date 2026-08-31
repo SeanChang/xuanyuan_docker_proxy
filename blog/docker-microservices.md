@@ -1,6 +1,6 @@
 # Docker 部署微服务项目保姆级教程
 
-![Docker 部署微服务项目保姆级教程](https://assets.xuanyuan.me/docker/blog/docker-mico.png)
+![Docker 部署微服务项目保姆级教程](https://imgs.xuanyuan.cloud/docker/blog/docker-mico.png)
 
 *分类: Docker部署教程 | 标签: microservices,docker,部署教程 | 发布时间: 2025-10-20 05:08:47*
 
@@ -24,7 +24,7 @@
 不管你用的是Linux、Mac还是Windows（需开启WSL2），复制下面的命令到终端，回车就能自动安装，还会配置好轩辕镜像访问支持，不用手动调配置：
 ```bash
 # 直接复制到终端执行，Linux/Mac/WSL2通用
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -550,7 +550,7 @@ docker compose -f docker-compose.service.yml up
 ### 2. 服务器安装Docker环境：和本地一样一键搞定
 登录服务器后，执行和本地相同的安装命令，一键安装Docker和Docker Compose，自动配置轩辕镜像访问支持：
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

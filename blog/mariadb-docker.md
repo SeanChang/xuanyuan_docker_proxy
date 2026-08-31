@@ -1,6 +1,6 @@
 # MariaDB 在 Docker 中的部署
 
-![MariaDB 在 Docker 中的部署](https://assets.xuanyuan.me/docker/blog/docker-mariadb.png)
+![MariaDB 在 Docker 中的部署](https://imgs.xuanyuan.cloud/docker/blog/docker-mariadb.png)
 
 *分类: Docker部署教程 | 标签: MariaDB,docker,部署教程 | 发布时间: 2025-10-08 06:36:39*
 
@@ -16,7 +16,7 @@
 该脚本支持多种 Linux 发行版，支持一键安装 Docker、Docker Compose 并自动配置轩辕镜像访问支持源。
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

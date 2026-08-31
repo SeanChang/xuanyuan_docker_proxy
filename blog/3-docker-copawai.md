@@ -1,6 +1,6 @@
 # 3 分钟用 Docker 部署 CoPaw！你的专属AI个人助理
 
-![3 分钟用 Docker 部署 CoPaw！你的专属AI个人助理](https://assets.xuanyuan.me/docker/blog/docker-copaw.png)
+![3 分钟用 Docker 部署 CoPaw！你的专属AI个人助理](https://imgs.xuanyuan.cloud/docker/blog/docker-copaw.png)
 
 *分类: Docker部署教程 | 标签: CoPaw,openclaw,Ai,人工智能 | 发布时间: 2026-03-03 13:50:17*
 
@@ -25,7 +25,7 @@ Docker 部署的核心优势：
 
 ### 执行一键安装命令：
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

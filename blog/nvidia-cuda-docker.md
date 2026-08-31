@@ -1,6 +1,6 @@
 # NVIDIA CUDA 镜像 Docker 容器化部署全流程
 
-![NVIDIA CUDA 镜像 Docker 容器化部署全流程](https://assets.xuanyuan.me/docker/blog/docker-cuda.png)
+![NVIDIA CUDA 镜像 Docker 容器化部署全流程](https://imgs.xuanyuan.cloud/docker/blog/docker-cuda.png)
 
 *分类: Docker部署教程 | 标签: nvidia,cuda,docker,部署教程 | 发布时间: 2025-10-10 02:44:12*
 
@@ -37,7 +37,7 @@ CUDA 全称为 **Compute Unified Device Architecture**（统一计算设备架�
 ### 1. 第一步：安装 Docker 与 Docker Compose（Linux 系统）
 如果你的 Linux 机器未安装 Docker，直接用轩辕镜像的一键安装脚本（支持 Ubuntu、CentOS、Rocky Linux 等主流发行版，自动配置加速源）：
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

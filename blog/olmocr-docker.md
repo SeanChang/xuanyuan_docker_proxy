@@ -1,6 +1,6 @@
 # OLMOCR Docker 容器化部署指南：高效文档识别工具的容器化实践
 
-![OLMOCR Docker 容器化部署指南：高效文档识别工具的容器化实践](https://assets.xuanyuan.me/docker/blog/docker-olmocr.png)
+![OLMOCR Docker 容器化部署指南：高效文档识别工具的容器化实践](https://imgs.xuanyuan.cloud/docker/blog/docker-olmocr.png)
 
 *分类: Docker部署教程 | 标签: olmocr,docker,部署教程 | 发布时间: 2025-12-11 03:41:12*
 
@@ -54,7 +54,7 @@ OLMOCR基于GPU加速，因此对系统有以下最低要求：
 推荐使用轩辕提供的一键安装脚本，快速部署Docker环境：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

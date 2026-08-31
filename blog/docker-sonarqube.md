@@ -1,6 +1,6 @@
 # 别让烂代码拖垮项目！Docker一键部署SonarQube，10分钟搞定代码质量检测
 
-![别让烂代码拖垮项目！Docker一键部署SonarQube，10分钟搞定代码质量检测](https://assets.xuanyuan.me/docker/blog/docker-sonarqube-1.png)
+![别让烂代码拖垮项目！Docker一键部署SonarQube，10分钟搞定代码质量检测](https://imgs.xuanyuan.cloud/docker/blog/docker-sonarqube-1.png)
 
 *分类: Docker部署教程 | 标签: SonarQube,部署教程 | 发布时间: 2026-04-26 05:24:59*
 
@@ -29,7 +29,7 @@ SonarQube支持Java、Python、JavaScript、Go、C++等30多种主流编程语�
 不管是Ubuntu、CentOS，还是银河麒麟、统信UOS、欧拉这些国产系统，直接复制下面这行命令，就能一键安装Docker、Docker Compose，解决下载慢的问题：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -87,11 +87,11 @@ http://localhost:9000
 - 用户名：`admin`
 - 密码：`admin`
 
-![SonarQube的登录界面](https://assets.xuanyuan.me/docker/blog/docker-sonarqube.png)
+![SonarQube的登录界面](https://imgs.xuanyuan.cloud/docker/blog/docker-sonarqube.png)
 
 首次登录会强制要求修改密码，建议设置一个强密码。
 
-![SonarQube的修改密码界面](https://assets.xuanyuan.me/docker/blog/docker-sonarqube-2.png)
+![SonarQube的修改密码界面](https://imgs.xuanyuan.cloud/docker/blog/docker-sonarqube-2.png)
 
 ## 五、常见启动问题解决
 ### 1. Elasticsearch报错：vm.max_map_count is too low
@@ -124,7 +124,7 @@ ulimit -u 8192
 ## 六、创建第一个项目并扫描代码
 现在我们来创建第一个项目，体验一下SonarQube的代码扫描功能。
 
-![SonarQube的创建项目界面](https://assets.xuanyuan.me/docker/blog/docker-sonarqube-3.png)
+![SonarQube的创建项目界面](https://imgs.xuanyuan.cloud/docker/blog/docker-sonarqube-3.png)
 
 ### 步骤1：创建本地项目
 登录SonarQube后，点击右上角的"Create Project"，选择"Create a local project"。

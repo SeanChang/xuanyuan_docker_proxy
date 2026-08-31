@@ -1,6 +1,6 @@
 # PAPERMERGE Docker 容器化部署指南
 
-![PAPERMERGE Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-papermerge.png)
+![PAPERMERGE Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-papermerge.png)
 
 *分类: Docker部署教程 | 标签: papermerge,docker,部署教程 | 发布时间: 2025-12-07 15:03:01*
 
@@ -21,7 +21,7 @@ PAPERMERGE提供REST API接口，允许开发者与其集成，实现更灵活�
 PAPERMERGE作为容器化应用，需要运行在Docker环境中。推荐使用以下一键安装脚本部署Docker环境，该脚本会自动安装Docker Engine、Docker CLI、Docker Compose等必要组件，并配置好相关依赖：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

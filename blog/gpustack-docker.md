@@ -1,6 +1,6 @@
 # GPUSTACK Docker 容器化部署指南（生产级规范与最佳实践）
 
-![GPUSTACK Docker 容器化部署指南（生产级规范与最佳实践）](https://assets.xuanyuan.me/docker/blog/docker-gpustack.png)
+![GPUSTACK Docker 容器化部署指南（生产级规范与最佳实践）](https://imgs.xuanyuan.cloud/docker/blog/docker-gpustack.png)
 
 *分类: Docker部署教程 | 标签: gpustack,docker,部署教程 | 发布时间: 2025-11-19 08:48:46*
 
@@ -30,7 +30,7 @@ GPUSTACK 是一款专注于 GPU 集群管理的中间件，旨在简化大语言
 
 **执行以下命令安装 Docker**：
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

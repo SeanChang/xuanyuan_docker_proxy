@@ -1,6 +1,6 @@
 # 2026 国内 Docker 镜像拉取指南：不只会配 daemon.json，这个站还给了 10 万个镜像的中文说明书
 
-![2026 国内 Docker 镜像拉取指南：不只会配 daemon.json，这个站还给了 10 万个镜像的中文说明书](https://assets.xuanyuan.me/docker/blog/docker-2026-l.png)
+![2026 国内 Docker 镜像拉取指南：不只会配 daemon.json，这个站还给了 10 万个镜像的中文说明书](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-l.png)
 
 *分类: Docker部署教程 | 标签: Docker,容器,DevOps,群晖,NAS,镜像加速 | 发布时间: 2026-06-15 15:05:19*
 
@@ -48,7 +48,7 @@ GitHub Actions 的 workflow 要拉 `ghcr.io/xxx` 的镜像，Runner 在国内，
 
 ## 三、10 万+ 镜像中文文档：搜完就能看懂
 
-![图1 图注：轩辕镜像首页，顶部搜索框 + 平台介绍](https://assets.xuanyuan.me/docker/blog/docker-2026-a.png)
+![图1 图注：轩辕镜像首页，顶部搜索框 + 平台介绍](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-a.png)
 
 Docker Hub 上镜像的英文描述，对非英语母语开发者并不友好。很多镜像名本身也不直观——`bitnami/postgresql` 和 `postgres` 有什么区别？某个 Tag 是 Alpine 还是 Debian 底？
 
@@ -57,12 +57,12 @@ Docker Hub 上镜像的英文描述，对非英语母语开发者并不友好。
 1. 打开搜索页，输入镜像名，比如 `nginx`  
    → https://xuanyuan.cloud/search?q=nginx&utm_source=zhihu&utm_medium=article&utm_campaign=docker-guide-2026
 
-![图2 图注：搜索结果页，列表中可见中文描述摘要](https://assets.xuanyuan.me/docker/blog/docker-2026-b.png)
+![图2 图注：搜索结果页，列表中可见中文描述摘要](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-b.png)
 
 2. 点进镜像详情页  
    → https://xuanyuan.cloud/r/library/nginx?utm_source=zhihu&utm_medium=article&utm_campaign=docker-guide-2026
 
-![图3 图注：nginx 镜像详情页——中文简介 Tab、Tag 列表、一键拉取命令](https://assets.xuanyuan.me/docker/blog/docker-2026-c.png)
+![图3 图注：nginx 镜像详情页——中文简介 Tab、Tag 列表、一键拉取命令](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-c.png)
 
 3. 看 **中文简介** 了解用途，在 Tag 列表里选版本，复制 **一键拉取命令**，回终端执行
 
@@ -85,9 +85,9 @@ Docker Hub 上镜像的英文描述，对非英语母语开发者并不友好。
 
 每种环境的配置入口、配置文件路径、重启命令都不一样。轩辕镜像的 **[使用教程总览](https://xuanyuan.cloud/usage?utm_source=zhihu&utm_medium=article&utm_campaign=docker-guide-2026)** 按场景分了 20+ 篇独立文档：
 
-![图4 图注：/usage 教程总览——Docker、NAS、企业仓库、K8s 等分类](https://assets.xuanyuan.me/docker/blog/docker-2026-d.png)
+![图4 图注：/usage 教程总览——Docker、NAS、企业仓库、K8s 等分类](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-d.png)
 
-![图4 图注：/usage 教程总览——Docker、NAS、企业仓库、K8s 等分类](https://assets.xuanyuan.me/docker/blog/docker-2026-e.png)
+![图4 图注：/usage 教程总览——Docker、NAS、企业仓库、K8s 等分类](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-e.png)
 
 | 你的场景 | 直达教程 |
 |----------|----------|
@@ -100,13 +100,13 @@ Docker Hub 上镜像的英文描述，对非英语母语开发者并不友好。
 | Harbor 对接 | https://xuanyuan.cloud/usage/harbor |
 | 让 AI 帮你写配置 | https://xuanyuan.cloud/usage/agents |
 
-![图5 图注：群晖 NAS 镜像配置教程页面](https://assets.xuanyuan.me/docker/blog/docker-2026-h.png)
+![图5 图注：群晖 NAS 镜像配置教程页面](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-h.png)
 
 **NAS 玩家** 可以重点看群晖教程——Container Manager 里怎么填镜像源、怎么验证生效，步骤都写好了，不用在论坛帖子里翻几十楼。
 
 **CI/CD 工程师** 如果拉 GHCR 镜像，看 [多仓库教程](https://xuanyuan.cloud/usage/mirror-tutorial?utm_source=zhihu&utm_medium=article&utm_campaign=docker-guide-2026) 里的 GHCR 专项页即可，不用自己摸索域名替换规则。
 
-![图6 图注：多仓库镜像教程——GHCR、GCR、Quay 等列表](https://assets.xuanyuan.me/docker/blog/docker-2026-i.png)
+![图6 图注：多仓库镜像教程——GHCR、GCR、Quay 等列表](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-i.png)
 
 另外还有一个细节：站点提供 `agents.md` 机器可读规则，你可以把它丢给 DeepSeek、Cursor 等 AI，让它按规范帮你生成 `daemon.json` 或 K8s 配置——对「不想手抄配置」的人很省事。
 
@@ -114,7 +114,7 @@ Docker Hub 上镜像的英文描述，对非英语母语开发者并不友好。
 
 ## 五、Docker 工具集：写命令不用从零拼
 
-![图8 图注：Docker 工具集入口页](https://assets.xuanyuan.me/docker/blog/docker-2026-j.png)
+![图8 图注：Docker 工具集入口页](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-j.png)
 
 除了加速和文档，站点还有一套 **[Docker 在线工具](https://xuanyuan.cloud/docker?utm_source=zhihu&utm_medium=article&utm_campaign=docker-guide-2026)**：
 
@@ -125,7 +125,7 @@ Docker Hub 上镜像的英文描述，对非英语母语开发者并不友好。
 | [Dockerfile 助手](https://xuanyuan.cloud/docker/dockerfile) | 10 种语言的基础 Dockerfile 模板 |
 | NPM / Pip / Homebrew 源 | 前端、Python、Mac 开发依赖的国内源配置 |
 
-![图7 图注：Run 助手——选择 nginx 镜像并生成完整 run 命令](https://assets.xuanyuan.me/docker/blog/docker-2026-k.png)
+![图7 图注：Run 助手——选择 nginx 镜像并生成完整 run 命令](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-k.png)
 
 我常用 Run 助手：选好 `nginx`，端口映射、挂载目录填好，一键复制命令。工具生成的拉取命令可以对接轩辕专属域名，加速直接嵌进日常开发流程，不用每次手动改 registry 前缀。
 
@@ -151,7 +151,7 @@ Docker Hub 上镜像的英文描述，对非英语母语开发者并不友好。
 Linux 一键安装 Docker + 配置加速：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

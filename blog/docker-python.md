@@ -1,6 +1,6 @@
 # 手把手教你用 Docker 部署 Python
 
-![手把手教你用 Docker 部署 Python](https://assets.xuanyuan.me/docker/blog/docker-python.png)
+![手把手教你用 Docker 部署 Python](https://imgs.xuanyuan.cloud/docker/blog/docker-python.png)
 
 *分类: Docker部署教程 | 标签: python,docker,部署教程 | 发布时间: 2025-10-03 07:06:23*
 
@@ -16,7 +16,7 @@
 该脚本支持多种 Linux 发行版，支持一键安装 Docker、Docker Compose 并自动配置轩辕镜像访问支持源。
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

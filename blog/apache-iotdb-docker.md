@@ -1,6 +1,6 @@
 # Apache IoTDB Docker 容器化部署指南：从入门到生产环境实践
 
-![Apache IoTDB Docker 容器化部署指南：从入门到生产环境实践](https://assets.xuanyuan.me/docker/blog/docker-apache-iotdb.png)
+![Apache IoTDB Docker 容器化部署指南：从入门到生产环境实践](https://imgs.xuanyuan.cloud/docker/blog/docker-apache-iotdb.png)
 
 *分类: Docker部署教程 | 标签: apache-iotdb,apache,部署教程 | 发布时间: 2025-12-18 12:44:40*
 
@@ -28,7 +28,7 @@ Apache IoTDB（Database for the Internet of Things）是一款专为物联网场
 使用以下一键脚本快速安装Docker及Docker Compose（适用于Linux系统）：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

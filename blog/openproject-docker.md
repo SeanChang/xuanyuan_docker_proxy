@@ -1,6 +1,6 @@
 # OpenProject Docker 容器化部署指南：从快速启动到生产环境配置
 
-![OpenProject Docker 容器化部署指南：从快速启动到生产环境配置](https://assets.xuanyuan.me/docker/blog/docker-openproject.png)
+![OpenProject Docker 容器化部署指南：从快速启动到生产环境配置](https://imgs.xuanyuan.cloud/docker/blog/docker-openproject.png)
 
 *分类: Docker部署教程 | 标签: OpenProject,部署教程,项目管理 | 发布时间: 2026-02-03 03:10:05*
 
@@ -21,7 +21,7 @@ OpenProject Docker镜像提供两种核心版本，适配不同使用场景：
 ### Docker环境安装
 部署OpenProject容器前，需确保目标服务器已安装Docker环境（推荐Docker 20.10及以上版本）。推荐使用轩辕镜像提供的一键安装脚本，自动配置Docker及相关依赖（兼容CentOS、Ubuntu等主流发行版）：
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
@@ -31,7 +31,7 @@ bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
 bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
 #### 安全说明（重要）
-1.  一键执行远程脚本存在潜在安全风险，建议先查看脚本内容确认无恶意代码：`wget -O docker.sh https://xuanyuan.cloud/docker.sh && cat docker.sh`。
+1.  一键执行远程脚本存在潜在安全风险，建议先查看脚本内容确认无恶意代码：`wget -O docker.sh https://get.xuanyuan.cloud/docker.sh && cat docker.sh`。
 2.  若需更高安全性，可通过官方文档手动安装Docker，避免执行未知来源的远程脚本。
 3.  该脚本仅用于快速部署测试，生产环境建议通过系统包管理器（yum/apt）安装并验证Docker包的SHA校验值。
 

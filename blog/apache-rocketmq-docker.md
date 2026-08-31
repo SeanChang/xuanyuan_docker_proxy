@@ -1,6 +1,6 @@
 # Apache RocketMQ Docker 容器化部署指南
 
-![Apache RocketMQ Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-rocketmq.png)
+![Apache RocketMQ Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-rocketmq.png)
 
 *分类: Docker部署教程 | 标签: apache-rocketmq,docker,部署教程 | 发布时间: 2025-12-09 07:04:06*
 
@@ -20,7 +20,7 @@ Apache RocketMQ是一款分布式消息中间件，由Apache软件基金会开�
 部署RocketMQ容器前，需先确保目标服务器已安装Docker环境。推荐使用以下一键安装脚本快速部署Docker及相关组件：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

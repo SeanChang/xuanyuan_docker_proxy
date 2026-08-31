@@ -1,6 +1,6 @@
 # MILVUS Docker 容器化部署指南
 
-![MILVUS Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-milvusdb.png)
+![MILVUS Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-milvusdb.png)
 
 *分类: Docker部署教程 | 标签: milvus,docker,部署教程 | 发布时间: 2025-12-03 06:03:40*
 
@@ -20,7 +20,7 @@ MILVUS（中文名称：向量数据库）是一款开源的高性能向量数�
 MILVUS容器化部署依赖Docker引擎，以下是在Linux系统中一键安装Docker的步骤：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 

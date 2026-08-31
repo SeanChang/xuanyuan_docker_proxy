@@ -1,6 +1,6 @@
 # HALO 开源建站工具 Docker 容器化部署指南
 
-![HALO 开源建站工具 Docker 容器化部署指南](https://assets.xuanyuan.me/docker/blog/docker-halo.png)
+![HALO 开源建站工具 Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-halo.png)
 
 *分类: Docker部署教程 | 标签: halo,docker,部署教程 | 发布时间: 2025-12-14 14:09:04*
 
@@ -18,7 +18,7 @@ HALO 是一款强大易用的开源建站工具，旨在帮助用户快速搭建
 部署 HALO 容器前，需确保目标服务器已安装 Docker 环境。推荐使用以下一键安装脚本，该脚本会自动配置 Docker 及相关依赖：
 
 ```bash
-bash <(wget -qO- https://xuanyuan.cloud/docker.sh)
+bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
 
 
