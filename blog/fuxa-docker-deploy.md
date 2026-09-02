@@ -1,6 +1,6 @@
 # Docker 部署 FUXA：轻松搭建 Web SCADA / HMI 过程可视化平台
 
-![Docker 部署 FUXA：轻松搭建 Web SCADA / HMI 过程可视化平台](https://imgs.xuanyuan.cloud/docker/blog/fuxa.png)
+![Docker 部署 FUXA：轻松搭建 Web SCADA / HMI 过程可视化平台](https://imgs.xuanyuan.cloud/docker/blog/fuxa.webp)
 
 *分类: Docker部署教程 | 标签: FUXA,Docker,轩辕镜像,SCADA,HMI,过程可视化,私有化部署,部署教程 | 发布时间: 2026-08-31 15:20:13*
 
