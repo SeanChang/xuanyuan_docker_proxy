@@ -49,6 +49,24 @@ else
     echo "✅ 检测到 sudo 命令"
 fi
 
+# 专业版：去掉协议与尾斜杠，只接受 *.xuanyuan.run。成功把域名打到 stdout，失败写 stderr 并 return 1。
+accept_xuanyuan_pro_domain() {
+  local domain="$1"
+  domain=$(printf '%s' "$domain" | sed 's|^[[:space:]]*||; s|[[:space:]]*$||; s|^https\?://||; s|/*$||')
+  local intl_tld
+  intl_tld=$(printf '%b' '\x64\x65\x76')
+  if [[ "$domain" == *.xuanyuan.run ]]; then
+    printf '%s\n' "$domain"
+    return 0
+  fi
+  if [[ "$domain" == *.xuanyuan."$intl_tld" ]]; then
+    echo "请使用控制台显示的 *.xuanyuan.run 专属域名" >&2
+    return 1
+  fi
+  echo "请输入控制台显示的 *.xuanyuan.run 专属域名" >&2
+  return 1
+}
+
 # 恢复 /etc/docker/daemon.json 中与轩辕镜像相关的配置（需交互确认）
 restore_docker_daemon_config() {
   local DETECTED_RESTORE_OS
@@ -422,7 +440,8 @@ def is_xuanyuan_insecure(entry):
     host = h.split(":", 1)[0]
     if host == "docker.xuanyuan.me":
         return True
-    if host.endswith(".xuanyuan.run") or host.endswith(".xuanyuan.dev"):
+    intl = bytes([0x64, 0x65, 0x76]).decode()
+    if host.endswith(".xuanyuan.run") or host.endswith(".xuanyuan." + intl):
         return True
     return False
 
@@ -668,7 +687,7 @@ while true; do
         echo ""
         echo "请选择版本："
         echo "1) 轩辕镜像免费版 (域名: docker.xuanyuan.me)"
-        echo "2) 轩辕镜像专业版 (专属域名 *.xuanyuan.run / *.xuanyuan.dev ，不含免费版域名)"
+        echo "2) 轩辕镜像专业版 (专属域名 *.xuanyuan.run ，不含免费版域名)"
         echo "3) 恢复/重置镜像相关配置"
         # 循环等待用户输入有效选择
         while true; do
@@ -688,43 +707,13 @@ while true; do
         
         if [[ "$choice" == "2" ]]; then
             read -p "请输入您的轩辕镜像专属域名 (访问官网获取：https://xuanyuan.cloud): " custom_domain
-            
-            # 清理用户输入的域名，移除协议前缀
-            custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-            
-            # 清理用户输入的域名，移除协议前缀
-          custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-          
-          # 清理用户输入的域名，移除协议前缀
-  custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-  
-  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
-            if [[ "$custom_domain" == *.xuanyuan.run ]]; then
-                custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
-                mirror_list=$(cat <<EOF
-[
-  "https://$custom_domain",
-  "https://$custom_domain_dev"
-]
-EOF
-)
-            elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
-                custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
-                mirror_list=$(cat <<EOF
-[
-  "https://$custom_domain",
-  "https://$custom_domain_run"
-]
-EOF
-)
-            else
-                mirror_list=$(cat <<EOF
+            custom_domain=$(accept_xuanyuan_pro_domain "$custom_domain") || exit 1
+            mirror_list=$(cat <<EOF
 [
   "https://$custom_domain"
 ]
 EOF
 )
-            fi
         else
             mirror_list=$(cat <<EOF
 [
@@ -748,17 +737,7 @@ EOF
         echo ""
         echo "当前配置的镜像源："
         if [[ "$choice" == "2" ]]; then
-            if [[ "$custom_domain" == *.xuanyuan.run ]]; then
-                custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
-                echo "  - https://$custom_domain (优先)"
-                echo "  - https://$custom_domain_dev (备用)"
-            elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
-                custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
-                echo "  - https://$custom_domain (优先)"
-                echo "  - https://$custom_domain_run (备用)"
-            else
-                echo "  - https://$custom_domain"
-            fi
+            echo "  - https://$custom_domain"
         else
             echo "  - https://docker.xuanyuan.me"
         fi
@@ -871,9 +850,8 @@ if [[ "$DETECTED_OS" == MINGW* ]] || [[ "$DETECTED_OS" == MSYS* ]] || [[ "$DETEC
   echo "  2. 安装 Ubuntu 或其他 Linux 发行版"
   echo ""
   echo "  3. 在 WSL 2 中运行本安装脚本："
-  echo "     bash <(curl -fsSL https://xuanyuan.cloud/docker.sh)"
-  echo "     备用地址1：bash <(curl -fsSL https://get.xuanyuan.dev/docker.sh)"
-  echo "     备用地址2：bash <(curl -fsSL https://get.xuanyuan.me/docker.sh)"
+  echo "     bash <(curl -fsSL https://get.xuanyuan.cloud/docker.sh)"
+  echo "     备用地址：bash <(curl -fsSL https://get.xuanyuan.me/docker.sh)"
   echo ""
   echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
   echo "🚀 配置轩辕镜像"
@@ -1076,7 +1054,7 @@ if command -v docker &> /dev/null; then
         while true; do
             echo "请选择版本:"
             echo "1) 轩辕镜像免费版 (域名: docker.xuanyuan.me)"
-            echo "2) 轩辕镜像专业版 (专属域名: *.xuanyuan.run / *.xuanyuan.dev 不含免费版域名)"
+            echo "2) 轩辕镜像专业版 (专属域名: *.xuanyuan.run 不含免费版域名)"
             echo "3) 恢复/重置镜像相关配置"
             read -p "请输入选择 [1/2/3]: " choice
             
@@ -1095,43 +1073,13 @@ if command -v docker &> /dev/null; then
         
         if [[ "$choice" == "2" ]]; then
           read -p "请输入您的轩辕镜像专属域名 (访问官网获取：https://xuanyuan.cloud): " custom_domain
-          
-          # 清理用户输入的域名，移除协议前缀
-          custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-          
-          # 清理用户输入的域名，移除协议前缀
-          custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-          
-          # 清理用户输入的域名，移除协议前缀
-  custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-  
-  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
-          if [[ "$custom_domain" == *.xuanyuan.run ]]; then
-            custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
-            mirror_list=$(cat <<EOF
-[
-  "https://$custom_domain",
-  "https://$custom_domain_dev"
-]
-EOF
-)
-          elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
-            custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
-            mirror_list=$(cat <<EOF
-[
-  "https://$custom_domain",
-  "https://$custom_domain_run"
-]
-EOF
-)
-          else
-            mirror_list=$(cat <<EOF
+          custom_domain=$(accept_xuanyuan_pro_domain "$custom_domain") || exit 1
+          mirror_list=$(cat <<EOF
 [
   "https://$custom_domain"
 ]
 EOF
 )
-          fi
         else
           mirror_list=$(cat <<EOF
 [
@@ -1160,17 +1108,7 @@ EOF
         echo ""
         echo "当前配置的镜像源："
         if [[ "$choice" == "2" ]]; then
-            if [[ "$custom_domain" == *.xuanyuan.run ]]; then
-                custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
-                echo "  - https://$custom_domain (优先)"
-                echo "  - https://$custom_domain_dev (备用)"
-            elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
-                custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
-                echo "  - https://$custom_domain (优先)"
-                echo "  - https://$custom_domain_run (备用)"
-            else
-                echo "  - https://$custom_domain"
-            fi
+            echo "  - https://$custom_domain"
         else
             echo "  - https://docker.xuanyuan.me"
         fi
@@ -1188,7 +1126,7 @@ EOF
         while true; do
             echo "请选择版本:"
             echo "1) 轩辕镜像免费版 (域名: docker.xuanyuan.me)"
-            echo "2) 轩辕镜像专业版 (专属域名 *.xuanyuan.run / *.xuanyuan.dev 不含免费版域名)"
+            echo "2) 轩辕镜像专业版 (专属域名 *.xuanyuan.run 不含免费版域名)"
             echo "3) 恢复/重置镜像相关配置"
             read -p "请输入选择 [1/2/3]: " choice
             
@@ -1207,40 +1145,13 @@ EOF
         
         if [[ "$choice" == "2" ]]; then
           read -p "请输入您的轩辕镜像专属域名 (访问官网获取：https://xuanyuan.cloud): " custom_domain
-
-          # 清理用户输入的域名，移除协议前缀
-          custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-          
-          # 清理用户输入的域名，移除协议前缀
-          custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-  
-  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
-          if [[ "$custom_domain" == *.xuanyuan.run ]]; then
-            custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
-            mirror_list=$(cat <<EOF
-[
-  "https://$custom_domain",
-  "https://$custom_domain_dev"
-]
-EOF
-)
-          elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
-            custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
-            mirror_list=$(cat <<EOF
-[
-  "https://$custom_domain",
-  "https://$custom_domain_run"
-]
-EOF
-)
-          else
-            mirror_list=$(cat <<EOF
+          custom_domain=$(accept_xuanyuan_pro_domain "$custom_domain") || exit 1
+          mirror_list=$(cat <<EOF
 [
   "https://$custom_domain"
 ]
 EOF
 )
-          fi
         else
           mirror_list=$(cat <<EOF
 [
@@ -5909,7 +5820,7 @@ EOF
         while true; do
             echo "请选择版本:"
             echo "1) 轩辕镜像免费版 (域名: docker.xuanyuan.me)"
-            echo "2) 轩辕镜像专业版 (专属域名 *.xuanyuan.run / *.xuanyuan.dev 不含免费版域名)"
+            echo "2) 轩辕镜像专业版 (专属域名 *.xuanyuan.run 不含免费版域名)"
             echo "3) 恢复/重置镜像相关配置"
             read -p "请输入选择 [1/2/3]: " choice
             
@@ -5928,40 +5839,13 @@ EOF
         
         if [[ "$choice" == "2" ]]; then
           read -p "请输入您的轩辕镜像专属域名 (访问官网获取：https://xuanyuan.cloud): " custom_domain
-
-          # 清理用户输入的域名，移除协议前缀
-          custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-          
-          # 清理用户输入的域名，移除协议前缀
-  custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-  
-  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
-          if [[ "$custom_domain" == *.xuanyuan.run ]]; then
-            custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
-            mirror_list=$(cat <<EOF
-[
-  "https://$custom_domain",
-  "https://$custom_domain_dev"
-]
-EOF
-)
-          elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
-            custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
-            mirror_list=$(cat <<EOF
-[
-  "https://$custom_domain",
-  "https://$custom_domain_run"
-]
-EOF
-)
-          else
-            mirror_list=$(cat <<EOF
+          custom_domain=$(accept_xuanyuan_pro_domain "$custom_domain") || exit 1
+          mirror_list=$(cat <<EOF
 [
   "https://$custom_domain"
 ]
 EOF
 )
-          fi
         else
           mirror_list=$(cat <<EOF
 [
@@ -5990,17 +5874,7 @@ EOF
         echo ""
         echo "当前配置的镜像源："
         if [[ "$choice" == "2" ]]; then
-            if [[ "$custom_domain" == *.xuanyuan.run ]]; then
-                custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
-                echo "  - https://$custom_domain (优先)"
-                echo "  - https://$custom_domain_dev (备用)"
-            elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
-                custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
-                echo "  - https://$custom_domain (优先)"
-                echo "  - https://$custom_domain_run (备用)"
-            else
-                echo "  - https://$custom_domain"
-            fi
+            echo "  - https://$custom_domain"
         else
             echo "  - https://docker.xuanyuan.me"
         fi
@@ -6535,6 +6409,7 @@ EOF
 
     # 校验当前 apt 源中「候选版本」docker-ce / docker-ce-cli 的 pool 是否可下载
     # 必须用 Candidate，避免 apt-cache show 取到旧 Filename 导致误判部分同步镜像可用
+    # apt-cache 使用 LC_ALL=C：中文 Locale 下 policy 输出为「候选：」而非 Candidate:，会导致误判无候选版本
     verify_docker_ce_pool_packages() {
       local base_url pkg candidate filename full_url probe_out
       base_url=$(awk '/^deb /{for(i=1;i<=NF;i++) if($i ~ /^https?:\/\//){print $i; exit}}' /etc/apt/sources.list.d/docker.list 2>/dev/null)
@@ -6542,15 +6417,15 @@ EOF
         return 1
       fi
       for pkg in docker-ce docker-ce-cli; do
-        candidate=$(apt-cache policy "$pkg" 2>/dev/null | awk '/Candidate:/{print $2; exit}')
+        candidate=$(LC_ALL=C apt-cache policy "$pkg" 2>/dev/null | awk '/Candidate:/{print $2; exit}')
         if [[ -z "$candidate" || "$candidate" == "(none)" ]]; then
           echo "⚠️  无法获取 ${pkg} 的候选版本"
           return 1
         fi
-        filename=$(apt-cache show "${pkg}=${candidate}" 2>/dev/null | awk '/^Filename:/{print $2; exit}')
+        filename=$(LC_ALL=C apt-cache show "${pkg}=${candidate}" 2>/dev/null | awk '/^Filename:/{print $2; exit}')
         if [[ -z "$filename" ]]; then
           # 兼容部分 apt 对 =version 支持不佳：在 show 输出中匹配该 Version 块的 Filename
-          filename=$(apt-cache show "$pkg" 2>/dev/null | awk -v ver="$candidate" '
+          filename=$(LC_ALL=C apt-cache show "$pkg" 2>/dev/null | awk -v ver="$candidate" '
             /^Package:/ { in_pkg=0; ver_ok=0 }
             /^Package: / { in_pkg=1 }
             in_pkg && $1=="Version:" && $2==ver { ver_ok=1 }
@@ -7273,7 +7148,7 @@ echo ">>> [5/8] 配置国内镜像..."
 while true; do
     echo "请选择版本:"
     echo "1) 轩辕镜像免费版 (域名: docker.xuanyuan.me)"
-    echo "2) 轩辕镜像专业版 (专属域名 *.xuanyuan.run / *.xuanyuan.dev 不含免费版域名)"
+    echo "2) 轩辕镜像专业版 (专属域名 *.xuanyuan.run 不含免费版域名)"
     echo "3) 恢复/重置镜像相关配置"
     read -p "请输入选择 [1/2/3]: " choice
     
@@ -7292,37 +7167,13 @@ mirror_list=""
 
 if [[ "$choice" == "2" ]]; then
   read -p "请输入您的轩辕镜像专属域名 (访问官网获取：https://xuanyuan.cloud): " custom_domain
-
-  # 清理用户输入的域名，移除协议前缀
-  custom_domain=$(echo "$custom_domain" | sed 's|^https\?://||')
-  
-  # 专业版：*.xuanyuan.run / *.xuanyuan.dev 成对配置（不含 docker.xuanyuan.me）
-  if [[ "$custom_domain" == *.xuanyuan.run ]]; then
-    custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
-    mirror_list=$(cat <<EOF
-[
-  "https://$custom_domain",
-  "https://$custom_domain_dev"
-]
-EOF
-)
-  elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
-    custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
-    mirror_list=$(cat <<EOF
-[
-  "https://$custom_domain",
-  "https://$custom_domain_run"
-]
-EOF
-)
-  else
-    mirror_list=$(cat <<EOF
+  custom_domain=$(accept_xuanyuan_pro_domain "$custom_domain") || exit 1
+  mirror_list=$(cat <<EOF
 [
   "https://$custom_domain"
 ]
 EOF
 )
-  fi
 else
   mirror_list=$(cat <<EOF
 [
@@ -7378,17 +7229,7 @@ if [[ "$DOCKER_VERIFIED" == "true" ]]; then
     # 显示当前配置的镜像源
     echo "当前配置的镜像源:"
     if [[ "$choice" == "2" ]]; then
-        if [[ "$custom_domain" == *.xuanyuan.run ]]; then
-            custom_domain_dev="${custom_domain%.xuanyuan.run}.xuanyuan.dev"
-            echo "  - https://$custom_domain (优先)"
-            echo "  - https://$custom_domain_dev (备用)"
-        elif [[ "$custom_domain" == *.xuanyuan.dev ]]; then
-            custom_domain_run="${custom_domain%.xuanyuan.dev}.xuanyuan.run"
-            echo "  - https://$custom_domain (优先)"
-            echo "  - https://$custom_domain_run (备用)"
-        else
             echo "  - https://$custom_domain"
-        fi
     else
         echo "  - https://docker.xuanyuan.me"
     fi
