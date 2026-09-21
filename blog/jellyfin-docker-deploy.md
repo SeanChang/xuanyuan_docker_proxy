@@ -1,6 +1,6 @@
-# 片库一堆 4K 却卡成幻灯片？Docker 部署 Jellyfin，浏览器就能播
+# Docker 一键部署 Jellyfin：快速搭建私有化媒体服务器
 
-![片库一堆 4K 却卡成幻灯片？Docker 部署 Jellyfin，浏览器就能播](https://imgs.xuanyuan.cloud/docker/blog/jellyfin.webp)
+![Docker 一键部署 Jellyfin：快速搭建私有化媒体服务器](https://imgs.xuanyuan.cloud/docker/blog/jellyfin.webp)
 
 *分类: Docker部署教程 | 标签: Jellyfin,nyanmisaka/jellyfin,Docker,轩辕镜像,媒体服务器,硬件加速,影音库,私有化部署,部署教程 | 发布时间: 2026-09-19 08:04:54*
 
