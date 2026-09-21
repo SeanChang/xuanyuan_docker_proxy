@@ -6262,35 +6262,32 @@ EOF
       echo "⚠️  使用 /etc/os-release 检测到系统代号: $DEBIAN_CODENAME"
     fi
     
-    # 检测 Debian Testing/Unstable 并映射到稳定版本
+    # 检测 Debian Testing/Unstable 并映射到当前 stable
+    # stable = trixie（Debian 13）、oldstable = bookworm（Debian 12）
+    # Testing = forky；Unstable = sid
+    # trixie 已是 stable，Docker 官方仓库有 linux/debian trixie，直接使用，不再降级到 bookworm
     if [[ "$OS" == "debian" ]]; then
-      # 检查是否为 Debian Testing/Unstable（代号可能是 forky、trixie、sid 等）
       VERSION_CODENAME=$(awk -F= '/^VERSION_CODENAME=/{print $2}' /etc/os-release | tr -d '"' 2>/dev/null || echo "")
-      
-      # Debian Testing 的常见代号：forky（当前）、trixie（未来）
-      # Debian Unstable 的代号：sid（固定）
-      # Docker 官方仓库不支持 Testing/Unstable 版本，需要映射到对应的稳定版本
+
+      # Docker 官方仓库不发布 Testing/Unstable suite，映射到当前 stable（trixie）
       if [[ "$DEBIAN_CODENAME" == "forky" ]] || [[ "$VERSION_CODENAME" == "forky" ]] || \
-         [[ "$DEBIAN_CODENAME" == "trixie" ]] || [[ "$VERSION_CODENAME" == "trixie" ]] || \
          [[ "$DEBIAN_CODENAME" == "sid" ]] || [[ "$VERSION_CODENAME" == "sid" ]] || \
          [[ -n "$VERSION_CODENAME" && ("$VERSION_CODENAME" == "testing" || "$VERSION_CODENAME" == "unstable") ]]; then
         echo "⚠️  检测到 Debian Testing/Unstable (codename: $DEBIAN_CODENAME)"
-        echo "⚠️  Docker 官方仓库不支持 Testing/Unstable 版本，将使用 Debian 12 (bookworm) 仓库"
-        DEBIAN_CODENAME="bookworm"
+        echo "⚠️  Docker 官方仓库不支持 Testing/Unstable 版本，将使用 Debian 13 (trixie) 仓库"
+        DEBIAN_CODENAME="trixie"
       fi
     fi
     
     if [[ "$OS" == "kali" ]]; then
       DOCKER_OS="debian"
-      # Kali Rolling 基于 Debian Testing，使用 bookworm 作为稳定版本
-      # 根据 Kali 版本映射到对应的 Debian 代号
+      # Kali Rolling 跟踪 Debian Testing；Docker 无 kali suite，使用当前 Debian stable（trixie）
       case "$DEBIAN_CODENAME" in
         kali-rolling|kali-dev)
-          DEBIAN_CODENAME="bookworm"
+          DEBIAN_CODENAME="trixie"
           ;;
         *)
-          # 其他情况默认使用 bookworm
-          DEBIAN_CODENAME="bookworm"
+          DEBIAN_CODENAME="trixie"
           ;;
       esac
       echo "⚠️  Kali Linux 将使用 Debian Docker 仓库 (codename: $DEBIAN_CODENAME)"
