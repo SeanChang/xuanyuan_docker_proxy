@@ -1,6 +1,6 @@
-# Docker 部署 Trilium Notes：打造属于自己的大型知识库
+# Docker 部署  rilium N
 
-![Docker 部署 Trilium Notes：打造属于自己的大型知识库](https://imgs.xuanyuan.cloud/docker/blog/trilium.png)
+![Docker 部署  rilium N](https://imgs.xuanyuan.cloud/docker/blog/trilium.png)
 
 *分类: Docker部署教程 | 标签: Trilium,TriliumNext,Docker,轩辕镜像,笔记,知识库,私有化部署,部署教程 | 发布时间: 2026-07-12 12:35:36*
 

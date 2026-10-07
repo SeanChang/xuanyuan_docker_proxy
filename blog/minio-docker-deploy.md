@@ -6,15 +6,15 @@
 
 > 数据库备份还在往 /backup 里 cp：目录越堆越乱，想给开发一条限时下载链接，只能开 Samba 或再拷 U 盘。业务代码已经按 Amazon S3 写好了 SDK——Access Key、Bucket、预签名 URL 都现成——却没有一台对内的对象存储。CI 产物留在 runner 本地，换机器就丢；监控录像和照片混在 NAS 共享目录里，没法按桶授权，也开不出「只给这一个文件、十分钟有效」的地址。
 
-*本文基于 [minio/minio:RELEASE.2025-09-07T16-13-09Z](https://xuanyuan.cloud/zh/r/minio/minio)，实测引擎 **RELEASE.2025-09-07T16-13-09Z**，测试平台 **Ubuntu 24.04** Linux。*
+*本文基于 [quay.io/minio/minio:RELEASE.2025-09-07T16-13-09Z](https://xuanyuan.cloud/quay.io/minio/minio)，实测引擎 **RELEASE.2025-09-07T16-13-09Z**，测试平台 **Ubuntu 24.04** Linux。*
 
 数据库备份还在往 `/backup` 里 `cp`：目录越堆越乱，想给开发一条限时下载链接，只能开 Samba 或再拷 U 盘。业务代码已经按 **Amazon S3** 写好了 SDK——Access Key、Bucket、预签名 URL 都现成——却没有一台对内的对象存储。CI 产物留在 runner 本地，换机器就丢；监控录像和照片混在 NAS 共享目录里，没法按桶授权，也开不出「只给这一个文件、十分钟有效」的地址。
 
 买公有云对象存储能立刻通，账单按流量走，客户附件、财务导出、内网日志却不宜出域。自己从源码编译、再上纠删码集群，对只要先有一个内网 `IP:9001` 的人成本太高。机房或家里已经有一台跑 Docker 的 Ubuntu，缺的是：镜像拉起来、浏览器能进控制台、应用继续用熟悉的 S3 API。
 
-**MinIO**（[GitHub · minio/minio](https://github.com/minio/minio)）提供兼容 Amazon S3 的对象存储，许可证 **GNU AGPLv3**。镜像 **`minio/minio`**（[镜像页](https://xuanyuan.cloud/zh/r/minio/minio)）里，**9000** 是 S3 API，**9001** 是 Web Console。本文跟做 **单节点单盘 Standalone**，适合评估、开发和内网备份；版本控制、对象锁定、桶复制需要纠删码（至少 4 块盘），不在本文范围。
+**MinIO**（[GitHub · minio/minio](https://github.com/minio/minio)）提供兼容 Amazon S3 的对象存储，许可证 **GNU AGPLv3**。社区版现以源码分发为主；历史官方容器仍在 **Quay** 的 **`quay.io/minio/minio`**（[轩辕镜像页](https://xuanyuan.cloud/quay.io/minio/minio)）。容器里 **9000** 是 S3 API，**9001** 是 Web Console。本文跟做 **单节点单盘 Standalone**，适合评估、开发和内网备份；版本控制、对象锁定、桶复制需要纠删码（至少 4 块盘），不在本文范围。
 
-> **跟做前先看**：Docker Hub 上 `minio/minio` 已 **Archived**，约 **11 个月**未推新。跟做钉死 **`RELEASE.2025-09-07T16-13-09Z`**。GitHub 仓库于 **2026-04-25** 归档后社区版只发源码；更晚的源码标签（如 `RELEASE.2025-10-15T17-29-55Z`）**不一定**在 Hub 上有镜像，不要写进命令。同站其它发行见 **§1.1**，**不要和本文混用 `./data`**。
+> **2026-09 重要变更**：约 **2026-09-11**，官方从 Docker Hub **删除**了 `minio/minio` 与 `minio/mc` 仓库，页面与拉取均返回 **404**（不是限流）。旧命令 `docker pull minio/minio:…`、`docker.xuanyuan.run/minio/minio:…` 会失败。历史官方镜像仍在 Quay；本文跟做改为轩辕 **Quay 专属域**拉取同一标签 **`RELEASE.2025-09-07T16-13-09Z`**。GitHub 仓库已于 **2026-04-25** 归档。同站其它发行见 **§1.1**，**不要和本文混用 `./data`**。
 
 **部署跑通之后，你实际能做这些事：**
 
@@ -23,19 +23,9 @@
 | 浏览器管桶 | 打开 `http://192.168.1.35:9001`，建桶、上传、下载 |
 | 应用对接 S3 | Endpoint 填 `http://IP:9000`，用 Access Key / Secret Key |
 | 备份与归档 | 备份脚本、日志采集的目标改成 S3 兼容接口 |
-| 命令行列对象 | 另拉 `minio/mc`，`ls local/桶名` 核对网页上传的结果 |
+| 命令行列对象 | 另拉 `quay.io/minio/mc`，`ls local/桶名` 核对网页上传的结果 |
 
-本文用 [轩辕镜像](https://xuanyuan.cloud) 加速拉取 **`minio/minio:RELEASE.2025-09-07T16-13-09Z`**，**Docker Compose** 映射 **9000→9000**、**9001→9001**，登录后确认 License、建桶 **`testbuckets`**、上传，再用 **`minio/mc`** 列对象。无 Compose 时见第九节 **`docker run`**。局域网以 **`192.168.1.35`** 为例，请换成你的 IP。文内附 **6** 张实测截图。
-
-> **上手要点**
-> - **部署**：第五节 Compose；临时试玩见第九节
-> - **访问**：宿主机 **9001** → Console；**9000** → S3 API（实测 `http://192.168.1.35:9001`）
-> - **数据**：`./data` → `/data`；`command` 必须含 `--console-address ":9001"`
-> - **账号**：**`minioadmin` / `ChangeMe_minio8`**（用户名 3～20 位，密码 ≥ 8 位）；上线立刻改掉
-> - **首次**：登录后点 License 的 **Acknowledge**
-> - **标签**：服务端 **`RELEASE.2025-09-07T16-13-09Z`**；客户端 **`minio/mc:RELEASE.2025-08-13T08-35-41Z`**（§7.4）。勿写 `latest`
-> - **mc 路径**：`local/桶名`，不要只写桶名
-> - **模式**：Standalone；单盘不要指望对象锁定 / 桶复制
+本文用 [轩辕镜像](https://xuanyuan.cloud) 加速拉取 **`quay.io/minio/minio:RELEASE.2025-09-07T16-13-09Z`**。命令里写 `***-quay.xuanyuan.run/...`，请把 `***` 换成个人中心「专属域名」里的 Quay 前缀（见 [Quay 加速教程](https://xuanyuan.cloud/usage/mirror-tutorial/quay)）。**Docker Compose** 映射 **9000→9000**、**9001→9001**，登录后确认 License、建桶 **`testbuckets`**、上传，再用 **`quay.io/minio/mc`** 列对象。无 Compose 时见第九节 **`docker run`**。局域网以 **`192.168.1.35`** 为例，请换成你的 IP。
 
 官方容器说明：[docs/docker](https://github.com/minio/minio/blob/master/docs/docker/README.md)。项目：[GitHub · minio/minio](https://github.com/minio/minio)（已归档）。
 
@@ -51,32 +41,32 @@
 | 数据 | 自己的 `/data` | 厂商机房 | 本机或 NAS |
 | 接口 | Amazon S3 兼容 | 各家 S3 / 专有 | 无对象 API |
 | 适合 | 内网备份、联调、自托管附件 | 已上云、要全球加速 | 直接拷文件 |
-| 注意 | Hub 镜像已停更；Standalone 功能子集 | 出域、账单 | 难做限时链接与按桶授权 |
+| 注意 | Hub 仓库已删除；走 Quay 历史镜像；Standalone 功能子集 | 出域、账单 | 难做限时链接与按桶授权 |
 
 ```text
 浏览器 Console          应用 / aws-cli / SDK / mc
    │  :9001                   │  :9000
    ▼                          ▼
-          minio/minio
+     quay.io/minio/minio
                └── /data  ← 宿主机 ./data
 ```
 
 ### 1.1 同站常见 MinIO 镜像怎么选
 
-本文只跟做 **`minio/minio`**。名字里带 MinIO 的镜像维护方、标签线不同，**不要混用同一份 Compose / `./data`**（「最近更新」以撰写时轩辕页为准，选库前再打开页面核对）：
+本文只跟做 **`quay.io/minio/minio`**（官方历史容器在 Quay）。名字里带 MinIO 的镜像维护方、标签线不同，**不要混用同一份 Compose / `./data`**：
 
 | 镜像 | 定位 | 更新（撰写时） | 适合谁 | 轩辕镜像页 |
 |------|------|----------------|--------|------------|
-| **`minio/minio`（本文）** | 官方历史 Hub 镜像 | Archived，约 11 个月未推新；钉 **`RELEASE.2025-09-07T16-13-09Z`** | 旧文档写死官方坐标；评估 Standalone | [minio/minio](https://xuanyuan.cloud/zh/r/minio/minio) |
+| **`quay.io/minio/minio`（本文）** | 官方历史容器（Quay） | Hub 仓库已删除；Quay 仍有 **`RELEASE.2025-09-07T16-13-09Z`** 等历史标签 | 跟做官方历史坐标；评估 Standalone | [quay.io/minio/minio](https://xuanyuan.cloud/quay.io/minio/minio) |
+| **`alpine/minio`** | 官方停发后社区自动构建（仍在 Hub） | 可跟到更晚 RELEASE（如 `RELEASE.2025-10-15T17-29-55Z`）；勿用 `latest-release` 进生产 | 只有 Hub 加速域、要较新社区容器 | [alpine/minio](https://xuanyuan.cloud/zh/r/alpine/minio) |
 | **`elestio/minio`** | Elestio 打包 | 约 10 个月级；示例常按 Elestio 平台习惯写 | 跟 Elestio Compose 样例 | [elestio/minio](https://xuanyuan.cloud/zh/r/elestio/minio) |
-| **`alpine/minio`** | 官方停发后社区自动构建 | 可跟到更晚 RELEASE（如 `RELEASE.2025-10-15T17-29-55Z`）；勿用 `latest-release` 进生产 | 要较新社区容器、多架构 | [alpine/minio](https://xuanyuan.cloud/zh/r/alpine/minio) |
 | **`bitnami/minio`** | Bitnami Secure Images | 约 11 个月级；Hub 免费通道已收紧 | Bitnami 栈 / 商业订阅 | [bitnami/minio](https://xuanyuan.cloud/zh/r/bitnami/minio) |
 | **`bitnamilegacy/minio`** | Bitnami 旧版备份 | 约 1 年未更新；**勿长期生产** | 临时迁出旧目录 | [bitnamilegacy/minio](https://xuanyuan.cloud/zh/r/bitnamilegacy/minio) |
 | **`bitnamicharts/minio`** | Helm Chart 相关 | 偏 Kubernetes | 已在用 Bitnami Charts | [bitnamicharts/minio](https://xuanyuan.cloud/zh/r/bitnamicharts/minio) |
 | **`rook/minio`** | Rook 编排 | 约 6 年级 | Rook 场景，非家用单机首选 | [rook/minio](https://xuanyuan.cloud/zh/r/rook/minio) |
 | **`cleanstart/minio`** | CleanStart 加固小镜像 | 站点可见较新更新 | 小 footprint / 加固评估 | [cleanstart/minio](https://xuanyuan.cloud/zh/r/cleanstart/minio) |
 
-仍要较新社区容器时优先看 [alpine/minio](https://xuanyuan.cloud/zh/r/alpine/minio)（钉死具体 `RELEASE.…`）。Elestio 示例里的 `172.17.0.1:9000` 不要抄到普通家用 Docker。`/r/` 与 `/zh/r/` 是同一镜像的不同页面，例如 [概览](https://xuanyuan.cloud/r/minio/minio)。
+没有 Quay 专属域、只想走 `docker.xuanyuan.run` 时，可改看 [alpine/minio](https://xuanyuan.cloud/zh/r/alpine/minio)（跟做写具体 `RELEASE.…`，勿与本文 `./data` 混用）。Elestio 示例里的 `172.17.0.1:9000` 不要抄到普通家用 Docker。
 
 ---
 
@@ -124,39 +114,33 @@ ss -tlnp | grep -E '9000|9001'
 
 | 标签 | 含义 | 推荐 |
 |------|------|------|
-| **`RELEASE.2025-09-07T16-13-09Z`** | Hub 上可拉到的较新稳定版 | **本文跟做** |
+| **`RELEASE.2025-09-07T16-13-09Z`** | Quay 上仍可拉到的较新历史稳定版 | **本文跟做** |
 | `RELEASE.2025-09-07T16-13-09Z-cpuv1` | 同一版本，面向较老 CPU | 旧硬件报非法指令时 |
 | `RELEASE.2025-07-23T15-54-02Z` 等 | 更早 RELEASE | 回滚 |
 | `latest` / `latest-cicd` | 浮动 / CI | **不要写入跟做命令** |
 
-完整列表：[tags](https://xuanyuan.cloud/r/minio/minio/tags)。GitHub 上更晚的标签，先确认 Hub **真有**再改 compose。升级时 pull、Compose、`docker run` 三处一起改。
+标签以 [轩辕 Quay 页](https://xuanyuan.cloud/quay.io/minio/minio) 为准。更晚的源码标签（如 `RELEASE.2025-10-15T17-29-55Z`）在 Quay 上不一定有对应镜像；要较新社区构建可看 `alpine/minio`。升级时 pull、Compose、`docker run` 三处一起改。
 
 ---
 
 ## 四、拉取镜像
 
-用 [轩辕镜像](https://xuanyuan.cloud) 加速拉取：
+用 [轩辕镜像](https://xuanyuan.cloud) 加速拉取（把 `***` 换成个人中心的 Quay 专属前缀）：
 
 ```bash
-docker pull docker.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z
+docker pull ***-quay.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z
 ```
 
-Ubuntu 24.04 实测（`ikuai-ubuntu2404`）：
+同一 RELEASE 的 Digest 与早前 Hub 镜像一致（`sha256:14cea493…`）。Ubuntu 24.04 实测体积：
 
 ```text
-RELEASE.2025-09-07T16-13-09Z: Pulling from minio/minio
 Digest: sha256:14cea493d9a34af32f524e538b8346cf79f3321eff8e708c1e2960462bd8936e
-Status: Downloaded newer image for docker.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z
-docker.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z
+IMAGE                                                            ID             DISK USAGE   CONTENT SIZE
+***-quay.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z   14cea493d9a3        241MB         62.2MB
 ```
 
 ```bash
-docker images docker.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z
-```
-
-```text
-IMAGE                                                          ID             DISK USAGE   CONTENT SIZE
-docker.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z   14cea493d9a3        241MB         62.2MB
+docker images ***-quay.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z
 ```
 
 401 / 402 见 [常见问题](https://xuanyuan.cloud/faq)。
@@ -191,7 +175,7 @@ cd /www/wwwroot/minio
 cat > docker-compose.yml <<'EOF'
 services:
   minio:
-    image: docker.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z
+    image: ***-quay.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z
     container_name: minio
     restart: unless-stopped
     ports:
@@ -209,7 +193,7 @@ EOF
 
 | 项 | 说明 |
 |----|------|
-| `image` | 钉死 **`RELEASE.2025-09-07T16-13-09Z`** |
+| `image` | 固定为 **`RELEASE.2025-09-07T16-13-09Z`** |
 | `ports` | **9000→9000**（S3）、**9001→9001**（Console） |
 | `MINIO_ROOT_USER` / `PASSWORD` | 用户名 3～20 位；密码 ≥ 8 位 |
 | `volumes` | `./data` → `/data` |
@@ -235,7 +219,7 @@ Ubuntu 24.04 实测：
 
 ```text
 NAME      IMAGE                                                          COMMAND                  SERVICE   CREATED          STATUS          PORTS
-minio     docker.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z   "/usr/bin/docker-ent…"   minio     41 seconds ago   Up 39 seconds   0.0.0.0:9000-9001->9000-9001/tcp, [::]:9000-9001->9000-9001/tcp
+minio     ***-quay.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z   "/usr/bin/docker-ent…"   minio     41 seconds ago   Up 39 seconds   0.0.0.0:9000-9001->9000-9001/tcp, [::]:9000-9001->9000-9001/tcp
 ```
 
 ```text
@@ -279,19 +263,19 @@ http://192.168.1.35:9001
 
 点 **Login**。
 
-![MinIO Console 登录页：Username Password 与 Login](https://imgs.xuanyuan.cloud/docker/blog/minio-1.webp)
+![MinIO Console 登录页：Username Password 与 Login](https://assets.xuanyuan.me/docker/blog/minio-1.webp)
 
 ### 6.2 确认 License
 
 首次登录可能弹出 **License**（GNU AGPL v3）。点 **Acknowledge** 后再用 Object Browser。
 
-![MinIO 首次登录：License 对话框点 Acknowledge](https://imgs.xuanyuan.cloud/docker/blog/minio-2.webp)
+![MinIO 首次登录：License 对话框点 Acknowledge](https://assets.xuanyuan.me/docker/blog/minio-2.webp)
 
 ### 6.3 进入 Object Browser
 
 尚无桶时，中间卡片或左侧 **+ Create Bucket** 都可新建。
 
-![MinIO Object Browser：尚无桶，提示 Create a Bucket](https://imgs.xuanyuan.cloud/docker/blog/minio-3.webp)
+![MinIO Object Browser：尚无桶，提示 Create a Bucket](https://assets.xuanyuan.me/docker/blog/minio-3.webp)
 
 ---
 
@@ -301,11 +285,11 @@ http://192.168.1.35:9001
 
 桶名用小写 DNS 风格，约 3～63 字符，不要空格和大写。实测填 **`testbuckets`**，点 **Create Bucket**。
 
-![MinIO Create Bucket：桶名填写 testbuckets](https://imgs.xuanyuan.cloud/docker/blog/minio-4.webp)
+![MinIO Create Bucket：桶名填写 testbuckets](https://assets.xuanyuan.me/docker/blog/minio-4.webp)
 
 左侧出现 **testbuckets**；进入后对象列表为空，右上有 **Upload**。实测创建时间约 **2026-08-26 11:42**（GMT+8），Access 为 **PRIVATE**。
 
-![MinIO testbuckets 桶：尚无对象，可点 Upload](https://imgs.xuanyuan.cloud/docker/blog/minio-5.webp)
+![MinIO testbuckets 桶：尚无对象，可点 Upload](https://assets.xuanyuan.me/docker/blog/minio-5.webp)
 
 Standalone 单盘不要指望对象锁定、合规保留、桶复制；那些能力要纠删码多盘部署。
 
@@ -313,7 +297,7 @@ Standalone 单盘不要指望对象锁定、合规保留、桶复制；那些能
 
 点 **Upload**，选一个小文件。实测上传 **`minio-5.png`**（约 141KiB）：列表出现文件名，右侧上传面板显示 100%。
 
-![MinIO testbuckets：已上传 minio-5.png 且进度 100%](https://imgs.xuanyuan.cloud/docker/blog/minio-6.webp)
+![MinIO testbuckets：已上传 minio-5.png 且进度 100%](https://assets.xuanyuan.me/docker/blog/minio-6.webp)
 
 对象键可带前缀（如 `2026/08/demo.png`），界面按前缀展示，宿主机上并不是真多层目录。点开对象可下载；分享 / 预签名请设过期时间，公网须 HTTPS。
 
@@ -329,22 +313,22 @@ Standalone 单盘不要指望对象锁定、合规保留、桶复制；那些能
 | Region | 可填 `us-east-1`（有的 SDK 必填） |
 | Path style | 自建 S3 常需开启 |
 
-### 7.4 命令行：minio/mc
+### 7.4 命令行：quay.io/minio/mc
 
-批量操作用客户端镜像 [minio/mc](https://xuanyuan.cloud/zh/r/minio/mc)，连 **9000**。跟做钉 **`RELEASE.2025-08-13T08-35-41Z`**（[tags](https://xuanyuan.cloud/r/minio/mc/tags)），勿写 `latest` / `edge`。
+批量操作用客户端镜像 [quay.io/minio/mc](https://xuanyuan.cloud/quay.io/minio/mc)，连 **9000**。跟做使用 **`RELEASE.2025-08-13T08-35-41Z`**，勿写 `latest` / `edge`。Hub 上的 `minio/mc` 已随服务端一并删除。
 
 ```bash
-docker pull docker.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z
+docker pull ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z
 ```
 
 ```text
 Digest: sha256:a7fe349ef4bd8521fb8497f55c6042871b2ae640607cf99d9bede5e9bdf11727
-Status: Downloaded newer image for docker.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z
+Status: Downloaded newer image for ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z
 ```
 
 ```text
 IMAGE                                                       ID             DISK USAGE   CONTENT SIZE
-docker.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z   a7fe349ef4bd        117MB         29.8MB
+***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z   a7fe349ef4bd        117MB         29.8MB
 ```
 
 用 `MC_HOST_local` 指定 Endpoint 与凭据（别名 `local` → 路径写 `local/...`）：
@@ -353,7 +337,7 @@ docker.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z   a7fe349ef4bd        
 # 列所有桶
 docker run --rm --network host \
   -e MC_HOST_local='http://minioadmin:ChangeMe_minio8@127.0.0.1:9000' \
-  docker.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z \
+  ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z \
   ls local
 ```
 
@@ -365,7 +349,7 @@ docker run --rm --network host \
 # 列桶内对象（必须带 local/）
 docker run --rm --network host \
   -e MC_HOST_local='http://minioadmin:ChangeMe_minio8@127.0.0.1:9000' \
-  docker.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z \
+  ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z \
   ls local/testbuckets
 ```
 
@@ -381,12 +365,12 @@ echo 'hello minio' > /tmp/demo.txt
 docker run --rm --network host \
   -v /tmp:/work -w /work \
   -e MC_HOST_local='http://minioadmin:ChangeMe_minio8@127.0.0.1:9000' \
-  docker.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z \
+  ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z \
   cp ./demo.txt local/testbuckets/
 
 docker run --rm --network host \
   -e MC_HOST_local='http://minioadmin:ChangeMe_minio8@127.0.0.1:9000' \
-  docker.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z \
+  ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z \
   admin info local
 ```
 
@@ -423,7 +407,7 @@ aws --endpoint-url http://127.0.0.1:9000 s3 ls s3://testbuckets/
 
 | 项 | 建议 |
 |----|------|
-| 版本 | 保持具体 RELEASE；Hub 已停更，`latest` 不会变新 |
+| 版本 | 保持具体 RELEASE；Hub 已删库，Quay 历史标签也不再推新社区版 |
 | 密码 / 钥匙 | 改掉跟做串；业务用 Access Key |
 | 暴露 | 优先内网或 VPN；上网则 9000 / 9001 都走 HTTPS |
 | 反代 | API 与 Console 分域名或分路由，分别转到 9000 / 9001 |
@@ -445,7 +429,7 @@ docker compose pull
 docker compose up -d
 ```
 
-Hub 不再发新版时，`pull` 不会出现更新 RELEASE；要新修复需自建镜像或换其它仍在维护的发行（与本文数据目录不通用，先备份）。
+Quay 上的社区历史标签不会再推新 RELEASE；要较新修复可自建，或改用仍在维护的发行如 `alpine/minio`（与本文数据目录不通用，先备份）。
 
 ---
 
@@ -466,7 +450,7 @@ docker run -d \
   -e MINIO_ROOT_USER=minioadmin \
   -e MINIO_ROOT_PASSWORD=ChangeMe_minio8 \
   -v /www/wwwroot/minio/data:/data \
-  docker.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z \
+  ***-quay.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z \
   server /data --console-address ":9001"
 ```
 
@@ -495,21 +479,24 @@ docker run -d \
 不能按生产预期开启；需要纠删码（每节点至少 4 块盘）。见官方说明。
 
 **Q7：和 elestio / alpine / bitnami 的区别？**  
-见 **§1.1**。本文只跟做 `minio/minio:RELEASE.2025-09-07T16-13-09Z`。
+见 **§1.1**。本文只跟做 `quay.io/minio/minio:RELEASE.2025-09-07T16-13-09Z`。
 
-**Q8：为什么标签停在 2025-09？**  
-Hub 仓库已归档。跟做钉死 Hub 上仍存在的 RELEASE，不要编造没有的 tag。
+**Q8：`docker pull minio/minio` / `docker.xuanyuan.run/minio/minio` 报 404？**  
+约 **2026-09-11** 官方删除了 Docker Hub 上的 `minio/minio` 与 `minio/mc`。请改用本文的 Quay 坐标 `***-quay.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z`（`***` 见个人中心），或改用 Hub 上仍在的 [alpine/minio](https://xuanyuan.cloud/zh/r/alpine/minio)。
 
-**Q9：写不进 `/data`？**  
+**Q9：为什么标签停在 2025-09？**  
+社区版改为源码分发后，预构建镜像停更；Hub 仓库随后被删除。跟做使用 Quay 上仍存在的 RELEASE，不要编造没有的 tag。
+
+**Q10：写不进 `/data`？**  
 `chown -R 1000:1000 /www/wwwroot/minio/data` 后再起。
 
-**Q10：改了密码网页还是旧的？**  
+**Q11：改了密码网页还是旧的？**  
 需要 `docker compose up -d` 重建容器。
 
-**Q11：`mc ls testbuckets/` 报 path not found？**  
+**Q12：`mc ls testbuckets/` 报 path not found？**  
 写成 **`ls local/testbuckets`**。
 
-**Q12：拉取 401 / 402？**  
+**Q13：拉取 401 / 402？**  
 401：[登录认证](https://xuanyuan.cloud/usage/login)。402：[充值](https://xuanyuan.cloud/recharge)。其它：[常见问题](https://xuanyuan.cloud/faq)。
 
 ---
@@ -517,7 +504,7 @@ Hub 仓库已归档。跟做钉死 Hub 上仍存在的 RELEASE，不要编造没
 ## 十一、命令速查
 
 ```bash
-docker pull docker.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z
+docker pull ***-quay.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z
 
 cd /www/wwwroot/minio
 # macOS：cd ~/docker/minio
@@ -530,10 +517,10 @@ curl -s -o /dev/null -w "%{http_code}\n" http://127.0.0.1:9000/minio/health/live
 # S3     http://192.168.1.35:9000
 # 登录 minioadmin / ChangeMe_minio8
 
-docker pull docker.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z
+docker pull ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z
 docker run --rm --network host \
   -e MC_HOST_local='http://minioadmin:ChangeMe_minio8@127.0.0.1:9000' \
-  docker.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z \
+  ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z \
   ls local/testbuckets
 
 docker compose down
@@ -548,7 +535,7 @@ docker run -d --name minio --restart unless-stopped \
   -e MINIO_ROOT_USER=minioadmin \
   -e MINIO_ROOT_PASSWORD=ChangeMe_minio8 \
   -v /www/wwwroot/minio/data:/data \
-  docker.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z \
+  ***-quay.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z \
   server /data --console-address ":9001"
 ```
 
@@ -558,37 +545,25 @@ docker run -d --name minio --restart unless-stopped \
 
 | 资源 | 链接 |
 |------|------|
-| [minio/minio 镜像页](https://xuanyuan.cloud/zh/r/minio/minio) | [https://xuanyuan.cloud/zh/r/minio/minio](https://xuanyuan.cloud/zh/r/minio/minio) |
-| [minio/minio 概览](https://xuanyuan.cloud/r/minio/minio) | [https://xuanyuan.cloud/r/minio/minio](https://xuanyuan.cloud/r/minio/minio) |
-| [minio/minio 标签列表](https://xuanyuan.cloud/r/minio/minio/tags) | [https://xuanyuan.cloud/r/minio/minio/tags](https://xuanyuan.cloud/r/minio/minio/tags) |
+| [quay.io/minio/minio 镜像页](https://xuanyuan.cloud/quay.io/minio/minio) | [https://xuanyuan.cloud/quay.io/minio/minio](https://xuanyuan.cloud/quay.io/minio/minio) |
+| [quay.io/minio/mc 镜像页](https://xuanyuan.cloud/quay.io/minio/mc) | [https://xuanyuan.cloud/quay.io/minio/mc](https://xuanyuan.cloud/quay.io/minio/mc) |
+| [Quay 加速教程](https://xuanyuan.cloud/usage/mirror-tutorial/quay) | [https://xuanyuan.cloud/usage/mirror-tutorial/quay](https://xuanyuan.cloud/usage/mirror-tutorial/quay) |
 | [GitHub · minio/minio（已归档）](https://github.com/minio/minio) | [https://github.com/minio/minio](https://github.com/minio/minio) |
 | [GitHub · Docker Quickstart](https://github.com/minio/minio/blob/master/docs/docker/README.md) | [https://github.com/minio/minio/blob/master/docs/docker/README.md](https://github.com/minio/minio/blob/master/docs/docker/README.md) |
-| [Docker Hub · minio/minio](https://hub.docker.com/r/minio/minio) | [https://hub.docker.com/r/minio/minio](https://hub.docker.com/r/minio/minio) |
-| [elestio/minio 镜像页](https://xuanyuan.cloud/zh/r/elestio/minio) | [https://xuanyuan.cloud/zh/r/elestio/minio](https://xuanyuan.cloud/zh/r/elestio/minio) |
 | [alpine/minio 镜像页](https://xuanyuan.cloud/zh/r/alpine/minio) | [https://xuanyuan.cloud/zh/r/alpine/minio](https://xuanyuan.cloud/zh/r/alpine/minio) |
+| [elestio/minio 镜像页](https://xuanyuan.cloud/zh/r/elestio/minio) | [https://xuanyuan.cloud/zh/r/elestio/minio](https://xuanyuan.cloud/zh/r/elestio/minio) |
 | [bitnami/minio 镜像页](https://xuanyuan.cloud/zh/r/bitnami/minio) | [https://xuanyuan.cloud/zh/r/bitnami/minio](https://xuanyuan.cloud/zh/r/bitnami/minio) |
 | [bitnamilegacy/minio 镜像页](https://xuanyuan.cloud/zh/r/bitnamilegacy/minio) | [https://xuanyuan.cloud/zh/r/bitnamilegacy/minio](https://xuanyuan.cloud/zh/r/bitnamilegacy/minio) |
 | [bitnamicharts/minio 镜像页](https://xuanyuan.cloud/zh/r/bitnamicharts/minio) | [https://xuanyuan.cloud/zh/r/bitnamicharts/minio](https://xuanyuan.cloud/zh/r/bitnamicharts/minio) |
 | [rook/minio 镜像页](https://xuanyuan.cloud/zh/r/rook/minio) | [https://xuanyuan.cloud/zh/r/rook/minio](https://xuanyuan.cloud/zh/r/rook/minio) |
 | [cleanstart/minio 镜像页](https://xuanyuan.cloud/zh/r/cleanstart/minio) | [https://xuanyuan.cloud/zh/r/cleanstart/minio](https://xuanyuan.cloud/zh/r/cleanstart/minio) |
-| [minio/mc 镜像页](https://xuanyuan.cloud/zh/r/minio/mc) | [https://xuanyuan.cloud/zh/r/minio/mc](https://xuanyuan.cloud/zh/r/minio/mc) |
-| [minio/mc 标签列表](https://xuanyuan.cloud/r/minio/mc/tags) | [https://xuanyuan.cloud/r/minio/mc/tags](https://xuanyuan.cloud/r/minio/mc/tags) |
-| [Docker Hub · minio/mc](https://hub.docker.com/r/minio/mc) | [https://hub.docker.com/r/minio/mc](https://hub.docker.com/r/minio/mc) |
 | [轩辕镜像使用手册](https://xuanyuan.cloud/usage) | [https://xuanyuan.cloud/usage](https://xuanyuan.cloud/usage) |
 
 > 同站相关镜像对照见 **§1.1**，勿与本文 Compose / 数据目录混用。
 
 ---
 
-## 总结
-
-- Compose 拉起 `minio/minio:RELEASE.2025-09-07T16-13-09Z`：**9000** S3、**9001** Console；health **200**。
-- `server /data --console-address ":9001"` + `./data` → `/data`。
-- 登录 → Acknowledge → 建 **`testbuckets`** → 上传；`mc ls local/testbuckets` 可见 **`minio-5.png`**（141KiB）。
-- 客户端钉 `minio/mc:RELEASE.2025-08-13T08-35-41Z`；路径带 **`local/`**。Hub 已停更，勿写 `latest`。
-
 ## 阅读原文
 
 - 轩辕镜像官方博客：https://xuanyuan.cloud/blog/minio-docker-deploy
-
 

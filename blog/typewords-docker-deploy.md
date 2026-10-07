@@ -1,6 +1,6 @@
-# Docker 部署 TypeWords：轻松搭建英语单词与文章练习平台
+# Docker 部署  ypeWords
 
-![Docker 部署 TypeWords：轻松搭建英语单词与文章练习平台](https://imgs.xuanyuan.cloud/docker/blog/typewords.webp)
+![Docker 部署  ypeWords](https://imgs.xuanyuan.cloud/docker/blog/typewords.webp)
 
 *分类: Docker部署教程 | 标签: TypeWords,Docker,轩辕镜像,英语学习,背单词,打字练习,私有化部署,部署教程 | 发布时间: 2026-08-25 03:48:49*
 

@@ -1,6 +1,6 @@
-# Linux for Tegra Docker 容器化部署指南
+# Linux for  egra Doc
 
-![Linux for Tegra Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-linux-for-Tegra.png)
+![Linux for  egra Doc](https://imgs.xuanyuan.cloud/docker/blog/docker-linux-for-Tegra.png)
 
 *分类: Docker部署教程 | 标签: linux-for-tegra,docker,部署教程 | 发布时间: 2025-12-10 06:54:52*
 

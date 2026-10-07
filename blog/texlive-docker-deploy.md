@@ -1,6 +1,6 @@
-# Docker 部署 TeX Live：轻松搭建 LaTeX 论文排版编译平台
+# Docker 部署  eX Live：
 
-![Docker 部署 TeX Live：轻松搭建 LaTeX 论文排版编译平台](https://imgs.xuanyuan.cloud/docker/blog/texlive.webp)
+![Docker 部署  eX Live：](https://imgs.xuanyuan.cloud/docker/blog/texlive.webp)
 
 *分类: Docker部署教程 | 标签: TeX Live,texlive/texlive,LaTeX,Docker,轩辕镜像,论文排版,PDF,私有化部署,部署教程 | 发布时间: 2026-09-07 05:19:19*
 

@@ -1,6 +1,6 @@
-# 服务器文件不想 SFTP 传？Docker 跑个 File Browser，浏览器就能管理文件
+# 服务器文件不想 SF P 传？Dock
 
-![服务器文件不想 SFTP 传？Docker 跑个 File Browser，浏览器就能管理文件](https://imgs.xuanyuan.cloud/docker/blog/filebrowser.png)
+![服务器文件不想 SF P 传？Dock](https://imgs.xuanyuan.cloud/docker/blog/filebrowser.png)
 
 *分类: Docker部署教程 | 标签: File Browser,Docker,轩辕镜像,文件管理,私有化部署,部署教程 | 发布时间: 2026-06-29 13:33:15*
 

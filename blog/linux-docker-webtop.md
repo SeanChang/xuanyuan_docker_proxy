@@ -421,5 +421,3 @@ rm -rf /www/wwwroot/webtop
 
 ---
 
-**总结**：Webtop = **不给宿主机装桌面，浏览器里就是 Linux 图形环境**。`docker compose up -d` → `https://服务器IP:13001` 登录 → 文件管理、终端、内置浏览器一应俱全。踩坑记住两点：**3000 改映射**、**老 CPU 用 ubuntu-xfce + PIXELFLUX_WAYLAND=false**。按需启停，用完 `docker compose down` 释放内存，生产服务器照样保持纯命令行。
-
