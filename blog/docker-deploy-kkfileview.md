@@ -1,86 +1,66 @@
-# Docker 部署万能文件预览神器 kkFileView：浏览器即可在线预览 Office、PDF
+# Docker 部署 kkFileView：轻松搭建在线万能文件预览平台
 
-![Docker 部署万能文件预览神器 kkFileView：浏览器即可在线预览 Office、PDF](https://imgs.xuanyuan.cloud/docker/blog/kkfileview.webp)
+![Docker 部署 kkFileView：轻松搭建在线万能文件预览平台](https://imgs.xuanyuan.cloud/docker/blog/kkfileview1.webp)
 
 *分类: Docker部署教程 | 标签: kkFileView,Docker,轩辕镜像,文件预览,Office,PDF,私有化部署,部署教程 | 发布时间: 2026-07-23 07:32:05*
 
-> OA、网盘、教培、合同系统都要「点一下就能看 Word / Excel / PDF」，自建一套在线预览往往比接商业 SaaS 更省心。kkFileView 号称开源的万能文件预览系统：统一入口覆盖 Office / CAD / 图片 / 压缩包 / 音视频等 70+ 常见类型，提供 REST 接入，适合嵌进现有业务。
+> kkFileView 是开源的文件在线预览服务，浏览器里可以查看 Office、PDF、图片和压缩包。本文用 Docker Compose 部署 wangbowen/kkfileview 之后，可以在内网打开预览页，并把业务系统里的文件 URL 接进预览接口。适合 OA 附件、合同与课件在线查看，以及对象存储旁路预览。
 
-*本文基于 [wangbowen/kkfileview:5.1.0](https://xuanyuan.cloud/zh/r/wangbowen/kkfileview) 镜像（社区维护构建，同步上游 5.x），Ubuntu 24.04 服务器实测。不推荐继续使用已约两年未更新的官方 [keking/kkfileview](https://xuanyuan.cloud/zh/r/keking/kkfileview)。*
+*本文基于 [wangbowen/kkfileview:5.1.0](https://xuanyuan.cloud/zh/r/wangbowen/kkfileview)，以 **5.1.0** 版本实测，测试平台 **Ubuntu 24.04** Linux。*
 
-OA、网盘、教培、合同系统都要「点一下就能看 Word / Excel / PDF」，自建一套在线预览往往比接商业 SaaS 更省心。**kkFileView** 号称开源的**万能文件预览系统**：统一入口覆盖 Office / CAD / 图片 / 压缩包 / 音视频等 **70+** 常见类型，提供 REST 接入，适合嵌进现有业务。
+合同 PDF 躺在 OA 附件里，点「预览」，浏览器只弹出下载。财务把 Excel 报价单放进网盘，同事还得先装 WPS，才能看单元格里的公式。教培课件是一叠 pptx，手机上没有 Office，课前只能转到微信再打开。压缩包里的图纸更绕：先下到电脑，解压，再找能打开 dwg 的软件。采购问过商业预览 SDK，按页或按坐席计费，文件还要先传到对方的云。
 
-官方 Docker 镜像 `keking/kkfileview` 已久未维护；本文改用持续更新的第三方镜像 **`wangbowen/kkfileview:5.1.0`**，用 [轩辕镜像](https://xuanyuan.cloud) 加速拉取，Compose 单容器拉起，浏览器打开即可试预览，全程零基础可跟做。
+内网里的合同、学籍和标书，不适合先出域再预览。给每台电脑装一套 Office，版本还不齐，没有桌面的服务器和手机照样打不开。自己从源码编译转换服务，LibreOffice、字体和 Java 都要自己装。更想要的是浏览器能打开的预览服务：文件留在自己的机器或对象存储上，业务系统只交出一个 URL。
 
-上游项目见 [Gitee kekingcn/file-online-preview](https://gitee.com/kekingcn/file-online-preview)、[官网 kkview.cn](https://kkview.cn)；本镜像维护仓库见 [iwangbowen/kkFileView](https://github.com/iwangbowen/kkFileView)。镜像页：[wangbowen/kkfileview](https://xuanyuan.cloud/zh/r/wangbowen/kkfileview)，标签列表：[tags](https://xuanyuan.cloud/r/wangbowen/kkfileview/tags)。
+**kkFileView**（上游 [kekingcn/file-online-preview](https://gitee.com/kekingcn/file-online-preview)，官网 [kkview.cn](https://kkview.cn)）是基于 Spring Boot 的在线预览服务。首页可以上传文件，或粘贴链接，在浏览器里看 Word、Excel、PDF、图片，以及压缩包里的文件。业务系统把文件地址做成 Base64，请求 `/onlinePreview` 就能嵌进现有页面。本文使用 **`wangbowen/kkfileview:5.1.0`** 版本实测（[镜像页](https://xuanyuan.cloud/zh/r/wangbowen/kkfileview)，维护仓库 [iwangbowen/kkFileView](https://github.com/iwangbowen/kkFileView)）。
 
----
-
-## 一、kkFileView 是什么？
-
-**kkFileView** 是基于 Spring Boot 的 **文件文档在线预览** 开源方案：独立部署后通过 HTTP / REST 接入，不必和业务系统强耦合。首页自称「开源的万能文件预览系统」，能力覆盖如下几大类：
-
-| 类别 | 说明 | 常见格式 |
-|------|------|----------|
-| Office 办公文档 | 日常业务流里最常见的 Office、WPS、LibreOffice | doc/docx、xls/xlsx、ppt/pptx、csv/tsv、wps/dps/et、odt/ods/odp… |
-| CAD 与 3D | 设计、制造、工程协同图纸与模型 | dwg/dxf/dwf、obj/3ds/stl/gltf/glb/fbx、ifc/step/iges… |
-| 图片与图像 | 位图、多页图、矢量、较新移动端格式 | jpg/png/gif/webp/heic、tif/tga/svg；支持翻转、缩放、镜像 |
-| 压缩与文本 | 压缩包目录浏览、纯文本与源码高亮 | zip/rar/7z/tar、txt/md/xml/java/js/py… |
-| 音视频与邮件等 | 媒体、邮件归档与其它业务格式 | mp3/wav/mp4、eml/msg、epub/ofd/xmind/bpmn/drawio/dcm… |
-| 接入能力 | 首页即可验证常用控制项 | AES、Basic Auth、FTP 参数、页码/高亮/水印、上传与目录浏览 |
-
-典型场景：企业文档 / OA、在线教育课件、协同办公、CMS、对象存储旁路预览。
-
-### 1.1 为什么不用官方 keking 镜像？
-
-| 镜像 | 状态 | 本文 |
-|------|------|------|
-| [keking/kkfileview](https://xuanyuan.cloud/zh/r/keking/kkfileview) | 社区官方坐标，**约两年未更新** | **不推荐** |
-| [wangbowen/kkfileview](https://xuanyuan.cloud/zh/r/wangbowen/kkfileview) | 社区构建，含 bug 修复与功能优化；`5.1.0` 同步上游近期改动 | **采用** |
-
-> 容器内安装根目录仍为 `/opt/kkFileView-5.0.0`（与镜像标签 `5.1.0` 无关，以 Dockerfile 为准）。
+跑通之后，浏览器里可以直接翻合同 Word 和扫描 PDF。压缩包不必先解到本机，也能点开里面的文件。
 
 ---
 
-## 二、环境要求
+## 一、环境要求
 
 | 项目 | 建议 |
 |------|------|
-| 操作系统 | Linux x86_64（本文 Ubuntu 24.04） |
-| Docker | Docker Engine + Compose V2（`docker compose`） |
-| 内存 | 建议 ≥ **2～4 GB** 可用（内置 LibreOffice，转换吃内存） |
-| 磁盘 | ≥ 3 GB（镜像约 1.3 GB 级压缩体积 + 预览缓存） |
-| 端口 | **8012** |
-| 工作目录 | `/data/kkfileview`（示例） |
+| 系统 | Linux，建议 **Ubuntu 24.04** |
+| Docker | Engine + **Compose V2**（`docker compose`） |
+| 内存 | 建议 ≥ **2～4 GB** 可用。镜像内置 LibreOffice，转换时占用较高 |
+| 磁盘 | ≥ **3 GB**。镜像压缩体积约 **1.3 GB** 这一量级，再加上预览缓存 |
+| 端口 | 宿主机 **8012** → 容器 **8012** |
+| 工作目录 | `/www/wwwroot/kkfileview`。macOS 上改为 `~/docker/kkfileview` |
 
 ```bash
 docker --version
 docker compose version
 ```
 
-未装 Docker 可用轩辕一键脚本：
+Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
 bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
-
 
 备用地址：
 
 ```bash
 bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
-更多说明见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
+
+更多见[轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
 ---
 
-## 三、拉取镜像
+## 二、拉取镜像
+
+用 [轩辕镜像](https://xuanyuan.cloud) 加速拉取：
 
 ```bash
 docker pull docker.xuanyuan.run/wangbowen/kkfileview:5.1.0
 ```
 
-实测输出（节选）：
+官方镜像 `keking/kkfileview` 约两年未更新。镜像页「基本使用」示例写成过 `iwangbowen/kkfileview:latest`，拉取坐标是 **`wangbowen/kkfileview:5.1.0`**。
+
+Ubuntu 24.04 实测（节选）：
 
 ```text
 5.1.0: Pulling from wangbowen/kkfileview
@@ -91,23 +71,37 @@ Status: Downloaded newer image for docker.xuanyuan.run/wangbowen/kkfileview:5.1.
 docker.xuanyuan.run/wangbowen/kkfileview:5.1.0
 ```
 
-| Docker Hub | 轩辕加速 |
+| Docker Hub | 轩辕镜像 |
 |------------|----------|
 | `wangbowen/kkfileview:5.1.0` | `docker.xuanyuan.run/wangbowen/kkfileview:5.1.0` |
 
-> 镜像页个别示例曾误写成 `iwangbowen/...`，以 **`wangbowen/kkfileview`** 为准。
-
 ---
 
-## 四、Compose 部署
+## 三、Docker Compose 部署
 
-本镜像默认 **关闭首页上传**（`file.upload.disable = true` 为字面量，环境变量盖不住），内网试玩还需配置 **信任主机**。建议：先起一次拷配置 → 改两项 → 用最终 Compose 挂载配置重启。
+本镜像把 `file.upload.disable` 写成字面量 `true`，配置里没有 `${KK_FILE_UPLOAD_DISABLE:...}`。`-e KK_FILE_UPLOAD_DISABLE=false` 不会打开上传。演示页要能上传，得先改 `application.properties`，再只读挂进容器。
 
-### 4.1 目录与临时启动
+内网试「文件链接预览」时，源地址的主机还要写进 `trust.host`。实验室可以暂时写成 `*`。生产环境保持 `file.upload.disable = true`，并把 `trust.host` 收成业务域名或 IP，不要长期使用 `*`。
+
+容器里的安装目录是 `/opt/kkFileView-5.0.0`。目录名带 **5.0.0**，和镜像标签 **5.1.0** 不是同一套编号，挂载路径按容器内目录写。
+
+### 3.1 准备目录
+
+工作目录用 `/www/wwwroot/kkfileview`。macOS 上改为 `~/docker/kkfileview`。
 
 ```bash
-sudo mkdir -p /data/kkfileview/file /data/kkfileview/config
-cd /data/kkfileview
+sudo mkdir -p /www/wwwroot/kkfileview/file /www/wwwroot/kkfileview/config
+cd /www/wwwroot/kkfileview
+
+# macOS：mkdir -p ~/docker/kkfileview/file ~/docker/kkfileview/config && cd ~/docker/kkfileview
+```
+
+### 3.2 先启动一次，拷出配置
+
+配置文件在镜像里面。先只挂预览缓存目录，把默认 `application.properties` 拷到宿主机。
+
+```bash
+cd /www/wwwroot/kkfileview
 
 cat > docker-compose.yml <<'EOF'
 services:
@@ -129,29 +123,34 @@ docker compose ps
 curl -sI http://127.0.0.1:8012/ | head -n 5
 ```
 
-成功时日志可见 Java 21 / Spring Boot 3.x、Tomcat 监听 **8012**，以及 LibreOffice 进程连接成功；`curl` 返回 `HTTP/1.1 200`。
-
-拷出配置并修改（内网实测）：
+成功时日志里能看到 Java 21、Spring Boot 3.x，Tomcat 监听 **8012**，以及 LibreOffice 进程连接成功。`curl` 返回 `HTTP/1.1 200`。
 
 ```bash
 docker cp kkfileview:/opt/kkFileView-5.0.0/config/application.properties ./config/application.properties
-
-# 开启演示页上传（生产建议保持 true）
-sed -i 's/^file\.upload\.disable.*/file.upload.disable = false/' ./config/application.properties
-
-# 信任预览源主机：实验室可用 *；生产请改为业务域名/IP 白名单
-sed -i 's/^trust\.host.*/trust.host = */' ./config/application.properties
-sed -i 's/^not\.trust\.host.*/not.trust.host = default/' ./config/application.properties
-
-grep -E '^(file\.upload\.disable|trust\.host|not\.trust\.host)' ./config/application.properties
 ```
 
-### 4.2 最终 Compose（bridge + 配置挂载 + hairpin）
+### 3.3 打开演示上传，并信任预览源主机
 
-演示页生成的文件 URL 常带 **宿主机局域网 IP**（如 `http://192.168.1.10:8012/demo/...`）。容器在 bridge 网络里回连该 IP 可能 **Connect timed out**。用 `extra_hosts` 把该 IP 指到宿主机网关即可；把下面的 IP 换成你的实际地址。
+演示页要上传本地文件时，把 `file.upload.disable` 改成 `false`。生产环境请改回 `true`。
+
+实验室把 `trust.host` 设为 `*`，让内网链接能预览。生产环境改成业务域名或 IP 白名单。同时把 `not.trust.host` 设为 `default`。若内网地址仍被拒绝，再看这一项有没有写上 `192.168.*`。
 
 ```bash
-cd /data/kkfileview
+cd /www/wwwroot/kkfileview
+
+sed -i 's/^file.upload.disable.*/file.upload.disable = false/' ./config/application.properties
+sed -i 's/^trust.host.*/trust.host = */' ./config/application.properties
+sed -i 's/^not.trust.host.*/not.trust.host = default/' ./config/application.properties
+
+grep -E '^(file.upload.disable|trust.host|not.trust.host)' ./config/application.properties
+```
+
+### 3.4 挂载配置，并让容器回连本机演示地址
+
+演示页生成的文件 URL 常带宿主机局域网 IP，例如 `http://192.168.1.10:8012/demo/...`。容器走 bridge 网络回连这个 IP 时，会出现 `Connect timed out`。用 `extra_hosts` 把该 IP 指到 `host-gateway`。下面的 `192.168.1.10` 换成你的局域网地址。
+
+```bash
+cd /www/wwwroot/kkfileview
 
 cat > docker-compose.yml <<'EOF'
 services:
@@ -173,178 +172,203 @@ EOF
 
 docker compose up -d --force-recreate
 
-docker exec kkfileview grep -E '^(file\.upload\.disable|trust\.host)' \
+docker exec kkfileview grep -E '^(file.upload.disable|trust.host)' 
   /opt/kkFileView-5.0.0/config/application.properties
 ```
-
-参数说明：
 
 | 配置 | 说明 |
 |------|------|
-| `8012:8012` | Web 端口 |
-| `./file` → `/opt/kkFileView-5.0.0/file` | 预览缓存 / 演示上传目录 |
-| 配置只读挂载 | 持久化上传开关与 trust.host |
-| `extra_hosts` | 修复容器下载「本机 IP」演示文件超时 |
+| `8012:8012` | 宿主机 **8012** → 容器 **8012** |
+| `./file` → `/opt/kkFileView-5.0.0/file` | 预览缓存和演示上传目录 |
+| 配置只读挂载 | 保留上传开关和 `trust.host` |
+| `extra_hosts` | 让容器能下载「本机 IP」上的演示文件 |
 | `mem_limit: 2g` | 限制内存，可按机器调大 |
 
-浏览器访问：`http://<服务器IP>:8012/`。
+浏览器访问 `http://<服务器 IP>:8012/`。
 
-### 4.3 备选：host 网络
+### 3.5 备选：host 网络
 
-若改用 `network_mode: host`，**不要写** `ports:`。host 模式下 Docker 不会自动替你开防火墙，启用了 UFW 时需手动放行：
+改用 `network_mode: host` 时，不要写 `ports:`。host 模式下 Docker 不会替你放行防火墙。启用了 UFW 时，先放行 **8012**，再启动容器。
 
 ```bash
 sudo ufw allow 8012/tcp comment 'kkfileview'
 ```
 
-实测中：本机 `curl 127.0.0.1:8012` 正常、Windows 超时，正是因为 UFW 默认 deny、规则里没有 8012。
+实测里，本机 `curl 127.0.0.1:8012` 正常，从 Windows 访问超时。原因是 UFW 默认拒绝，规则里没有 **8012**。
 
 ---
 
-## 五、浏览器体验（10 张实测截图）
+## 四、在浏览器里预览
 
-### 5.1 首页：万能预览能力地图
+打开 `http://<服务器 IP>:8012/`。首页分成「文件链接预览」和「上传文件预览」。
 
-打开首页即可看到「开源的万能文件预览系统」与六大能力块（Office / CAD·3D / 图片 / 压缩·文本 / 音视频·邮件 / 接入能力），以及「文件链接预览」「上传文件预览」两个试玩区。
+| 类别 | 说明 | 常见格式 |
+|------|------|----------|
+| Office 办公文档 | 日常业务里的 Office、WPS、LibreOffice | doc/docx、xls/xlsx、ppt/pptx、csv/tsv、wps/dps/et、odt/ods/odp |
+| CAD 与 3D | 图纸与模型 | dwg/dxf/dwf、obj/3ds/stl/gltf/glb/fbx、ifc/step/iges |
+| 图片与图像 | 位图、多页图、矢量 | jpg/png/gif/webp/heic、tif/tga/svg；支持翻转、缩放、镜像 |
+| 压缩与文本 | 压缩包目录、纯文本与源码高亮 | zip/rar/7z/tar、txt/md/xml/java/js/py |
+| 音视频与邮件等 | 媒体、邮件归档和其它业务格式 | mp3/wav/mp4、eml/msg、epub/ofd/xmind/bpmn/drawio/dcm |
+| 接入能力 | 首页即可试的控制项 | AES、Basic Auth、FTP 参数、页码/高亮/水印、上传与目录浏览 |
 
-![kkFileView 首页展示开源万能文件预览系统与格式能力地图](https://imgs.xuanyuan.cloud/docker/blog/kkfileview-1.webp)
+### 4.1 首页
 
-### 5.2 上传前的安全提示
+首页标题是「开源的万能文件预览系统」，下面是 Office、CAD 与 3D、图片、压缩与文本、音视频与邮件、接入能力这几块。
 
-选择本地文件上传时，页面会弹出提示：勿上传机密/个人敏感文件，或用完即删。内网演示请自行评估风险。
+![kkFileView 首页展示开源万能文件预览系统与格式能力地图](https://img.xuanyuan.dev/docker/blog/kkfileview-1.webp)
 
-![kkFileView 上传文件时弹出勿上传机密文档的安全提示对话框](https://imgs.xuanyuan.cloud/docker/blog/kkfileview-2.webp)
+### 4.2 上传前的安全提示
 
-### 5.3 上传成功：列表出现 docx
+选择本地文件时，页面会弹出提示：不要上传机密或个人敏感文件，用完可以删除。内网演示请自行评估风险。
 
-开启 `file.upload.disable = false` 后，可上传例如「开户确认书.docx」，列表出现「预览 / 删除」。
+![kkFileView 上传文件时弹出勿上传机密文档的安全提示对话框](https://img.xuanyuan.dev/docker/blog/kkfileview-2.webp)
 
-![kkFileView 本地源列表显示已上传的开户确认书 docx](https://imgs.xuanyuan.cloud/docker/blog/kkfileview-3.webp)
+### 4.3 上传成功：列表出现 docx
 
-### 5.4 Office 预览：docx → PDF 阅读器
+`file.upload.disable = false` 生效后，可以上传例如「开户确认书.docx」。列表里会出现「预览」和「删除」。
 
-点击「预览」，LibreOffice 转换后进入 PDF.js 风格阅读器（侧栏缩略图、缩放、页码等）。
+![kkFileView 本地源列表显示已上传的开户确认书 docx](https://img.xuanyuan.dev/docker/blog/kkfileview-3.webp)
 
-![kkFileView 在线预览开户确认书 docx 成功显示文档内容](https://imgs.xuanyuan.cloud/docker/blog/kkfileview-4.webp)
+### 4.4 Office 预览：docx 转成 PDF 阅读器
 
-### 5.5 多文件列表：docx + 大体积 PDF
+点「预览」后，LibreOffice 转换完成，进入 PDF.js 风格的阅读器，侧栏有缩略图、缩放和页码。
 
-可继续上传扫描件 PDF 等，列表同时管理多种格式。
+![kkFileView 在线预览开户确认书 docx 成功显示文档内容](https://img.xuanyuan.dev/docker/blog/kkfileview-4.webp)
 
-![kkFileView 文件列表同时包含金刚经 PDF 与开户确认书 docx](https://imgs.xuanyuan.cloud/docker/blog/kkfileview-5.webp)
+### 4.5 多文件列表：docx 与大体积 PDF
 
-### 5.6 大图 PDF：高清缩放
+可以继续上传扫描件 PDF。列表里同时放着多种格式。
 
-百页级扫描 PDF（如摩崖石刻图录）可侧栏翻页、放大查看细节。
+![kkFileView 文件列表同时包含金刚经 PDF 与开户确认书 docx](https://img.xuanyuan.dev/docker/blog/kkfileview-5.webp)
 
-![kkFileView PDF 阅读器高清预览金刚经摩崖石刻扫描件](https://imgs.xuanyuan.cloud/docker/blog/kkfileview-6.webp)
+### 4.6 大图 PDF：高清缩放
 
-### 5.7 再增一本图书 PDF
+百页级扫描 PDF（如摩崖石刻图录）可以在侧栏翻页，并放大看细节。
 
-列表可继续堆积业务文档与图书 PDF，方便对比预览效果。
+![kkFileView PDF 阅读器高清预览金刚经摩崖石刻扫描件](https://img.xuanyuan.dev/docker/blog/kkfileview-6.webp)
 
-![kkFileView 本地源列表显示怎样解题 PDF、金刚经 PDF 与 docx](https://imgs.xuanyuan.cloud/docker/blog/kkfileview-7.webp)
+### 4.7 再增加一本图书 PDF
 
-### 5.8 图书封面预览
+列表可以继续放业务文档和图书 PDF，方便对比预览效果。
 
-多页图书 PDF（如《怎样解题》）封面与目录页可在阅读器中正常翻阅。
+![kkFileView 本地源列表显示怎样解题 PDF、金刚经 PDF 与 docx](https://img.xuanyuan.dev/docker/blog/kkfileview-7.webp)
 
-![kkFileView 预览怎样解题数学思维新方法 PDF 封面](https://imgs.xuanyuan.cloud/docker/blog/kkfileview-8.webp)
+### 4.8 图书封面预览
 
-### 5.9 压缩包上架
+多页图书 PDF（如《怎样解题》）的封面和目录页可以在阅读器里翻阅。
 
-上传 `.7z` 等压缩包后，与 PDF、docx 并列显示在本地源列表。
+![kkFileView 预览怎样解题数学思维新方法 PDF 封面](https://img.xuanyuan.dev/docker/blog/kkfileview-8.webp)
 
-![kkFileView 文件列表增加泰山金刚经 7z 压缩包](https://imgs.xuanyuan.cloud/docker/blog/kkfileview-9.webp)
+### 4.9 压缩包上架
 
-### 5.10 压缩包内预览
+上传 `.7z` 之后，压缩包和 PDF、docx 并列显示在本地源列表。
 
-进入压缩包目录，可直接点内部 PDF 预览，无需先解压到本机——这是「万能预览」里很实用的能力。
+![kkFileView 文件列表增加泰山金刚经 7z 压缩包](https://img.xuanyuan.dev/docker/blog/kkfileview-9.webp)
 
-![kkFileView 浏览 7z 压缩包目录并预览包内金刚经 PDF](https://imgs.xuanyuan.cloud/docker/blog/kkfileview-10.webp)
+### 4.10 压缩包内预览
 
----
+进入压缩包目录后，可以直接点里面的 PDF 预览，不必先解压到本机。
 
-## 六、业务接入提示（简述）
-
-生产环境更常见的是：**业务系统持有文件 URL**，调用预览接口，而不是长期开放演示首页上传。
-
-- 预览入口形态类似：`/onlinePreview?url=<Base64 编码后的文件 URL>`
-- 务必配置合理的 `trust.host`（白名单），生产勿长期 `trust.host = *`
-- 反向代理时配置 `base.url` / `context-path`（见官方文档与 `application.properties` 注释）
-- 建议关闭演示上传：`file.upload.disable = true`
-
-官方能力与配置说明见 [kkview.cn](https://kkview.cn)。
+![kkFileView 浏览 7z 压缩包目录并预览包内金刚经 PDF](https://img.xuanyuan.dev/docker/blog/kkfileview-10.webp)
 
 ---
 
-## 七、常见问题 FAQ
+## 五、接到业务系统
 
-### 7.1 提示「文件上传功能已禁用」？
+生产环境更常见的接法是：业务系统自己持有文件 URL，再调用预览接口，而不是长期打开演示首页的上传。
 
-`wangbowen/kkfileview:5.1.0` 配置里是字面量 `file.upload.disable = true`，**没有** `${KK_FILE_UPLOAD_DISABLE:...}`，因此 `-e KK_FILE_UPLOAD_DISABLE=false` **无效**。必须改 `application.properties` 并挂载进容器（见第四节）。
+- 预览入口类似 `/onlinePreview?url=<Base64 编码后的文件 URL>`
+- `trust.host` 写成业务域名或 IP。生产环境不要长期使用 `trust.host = *`
+- 服务放在反向代理后面时，按 `application.properties` 里的注释设置 `base.url` 与 `context-path`
+- 演示上传保持关闭：`file.upload.disable = true`
 
-### 7.2 「预览源文件来自不受信任的站点」？
-
-源文件 URL 的主机不在 `trust.host` 白名单。内网实测可临时 `trust.host = *`，或写成具体 IP/域名；同时检查 `not.trust.host` 是否误伤 `192.168.*`。
-
-### 7.3 「下载失败… Connect timed out」且 URL 是本机 IP？
-
-容器在 bridge 下访问 `http://<宿主机局域网IP>:8012/...` 失败（hairpin）。处理：
-
-1. Compose 加 `extra_hosts: ["<该IP>:host-gateway"]`；或  
-2. `network_mode: host`（并放行 UFW 8012）。
-
-业务文件应尽量放在容器**能直接访问**的对象存储 / 内网 HTTP，而不是依赖「容器下载自己」。
-
-### 7.4 本机 curl 通、其它电脑打不开？
-
-`network_mode: host` + UFW active 时，需 `ufw allow 8012/tcp`。bridge + `ports` 时 Docker 通常会插入发布规则，表现不同。
-
-### 7.5 LibreOffice 日志出现 exit code 81？
-
-启动阶段可能短暂重启 Office 进程；若随后出现 `Connected: 'socket,...port=2001'` 且预览正常，可忽略。长期失败再加大内存或检查镜像完整性。
-
-### 7.6 生产要不要开上传？
-
-**不建议**。演示上传历史上出过安全问题；生产用 URL/API 接入，保持 `file.upload.disable = true`，收紧 `trust.host`。
+能力与配置说明见 [kkview.cn](https://kkview.cn)。
 
 ---
 
-## 八、命令速查
+## 六、常见问题
+
+**Q1：页面提示「文件上传功能已禁用」？**
+
+首页不能上传。`wangbowen/kkfileview:5.1.0` 里 `file.upload.disable = true` 是字面量，没有 `${KK_FILE_UPLOAD_DISABLE:...}`。`-e KK_FILE_UPLOAD_DISABLE=false` 不会生效。按第三节改 `application.properties`，再挂进容器。
+
+**Q2：提示「预览源文件来自不受信任的站点」？**
+
+源文件 URL 的主机不在 `trust.host` 白名单里。先看配置里的 `trust.host` 和 `not.trust.host`。内网可以临时写成 `trust.host = *`，或写成具体 IP、域名。`not.trust.host` 如果拦了 `192.168.*`，内网地址也会被拒绝。
+
+**Q3：预览报下载失败，且 URL 是本机局域网 IP？**
+
+报错里带 `Connect timed out`，地址形如 `http://<宿主机局域网 IP>:8012/...`。容器在 bridge 网络里回连这个 IP 会超时。可以二选一：
+
+1. 在 Compose 里加上 `extra_hosts: ["<该 IP>:host-gateway"]`。
+2. 改用 `network_mode: host`，并执行 `ufw allow 8012/tcp`。
+
+业务文件尽量放在容器能直接访问的对象存储或内网 HTTP 上，不要依赖容器去下载自己对外发布的地址。
+
+**Q4：本机 curl 正常，别的电脑打不开？**
+
+先确认是不是 `network_mode: host`。host 模式加上 UFW 处于开启时，需要 `ufw allow 8012/tcp`。bridge 配合 `ports` 时，Docker 通常会自己插入发布规则，表现不一样。
+
+**Q5：LibreOffice 日志出现 exit code 81？**
+
+启动阶段 Office 进程可能短暂退出再拉起。若随后出现 `Connected: 'socket,...port=2001'`，并且预览正常，可以忽略。若一直失败，再加大内存，或重新拉取镜像核对是否完整。
+
+**Q6：生产环境要不要打开上传？**
+
+不建议。演示上传历史上出过安全问题。生产用 URL 接入，保持 `file.upload.disable = true`，并收紧 `trust.host`。
+
+**Q7：为什么不用 keking/kkfileview？**
+
+[keking/kkfileview](https://xuanyuan.cloud/zh/r/keking/kkfileview) 是官方坐标，约两年未更新。本文使用 [wangbowen/kkfileview](https://xuanyuan.cloud/zh/r/wangbowen/kkfileview)。`5.1.0` 同步上游近期改动，镜像说明里写了缺陷修复和功能优化。
+
+**Q8：镜像页示例写成了 iwangbowen/kkfileview？**
+
+镜像页「基本使用」里的示例坐标是 `iwangbowen/kkfileview:latest`。拉取和 Compose 使用 `wangbowen/kkfileview:5.1.0`。不要把 `latest` 写进命令。
+
+---
+
+## 七、命令速查
 
 ```bash
-# 拉取
 docker pull docker.xuanyuan.run/wangbowen/kkfileview:5.1.0
 
-# 启动 / 重建
-cd /data/kkfileview && docker compose up -d --force-recreate
-
-# 状态与日志
+cd /www/wwwroot/kkfileview
+# macOS：cd ~/docker/kkfileview
+docker compose up -d --force-recreate
 docker compose ps
 docker logs --tail 80 kkfileview
 
-# 探测
 curl -sI http://127.0.0.1:8012/ | head -n 5
 
-# 核对接配置
-docker exec kkfileview grep -E '^(file\.upload\.disable|trust\.host)' \
+docker exec kkfileview grep -E '^(file.upload.disable|trust.host)' 
   /opt/kkFileView-5.0.0/config/application.properties
 
-# host 网络时放行防火墙
+# host 网络且启用了 UFW 时
 sudo ufw allow 8012/tcp comment 'kkfileview'
 ```
 
 ---
 
-## 九、延伸阅读
+## 八、延伸阅读
 
-- 轩辕镜像页：[wangbowen/kkfileview](https://xuanyuan.cloud/zh/r/wangbowen/kkfileview)（本文采用）
-- 官方旧镜像页（不推荐）：[keking/kkfileview](https://xuanyuan.cloud/zh/r/keking/kkfileview)
-- 标签列表：https://xuanyuan.cloud/r/wangbowen/kkfileview/tags
-- 上游 Gitee：https://gitee.com/kekingcn/file-online-preview
-- 镜像维护仓库：https://github.com/iwangbowen/kkFileView
-- 官网：https://kkview.cn
-- 轩辕使用手册：https://xuanyuan.cloud/usage
+| 资源 | 链接 |
+|------|------|
+| [wangbowen/kkfileview 镜像页](https://xuanyuan.cloud/zh/r/wangbowen/kkfileview) | [https://xuanyuan.cloud/zh/r/wangbowen/kkfileview](https://xuanyuan.cloud/zh/r/wangbowen/kkfileview) |
+| [wangbowen/kkfileview 概览](https://xuanyuan.cloud/r/wangbowen/kkfileview) | [https://xuanyuan.cloud/r/wangbowen/kkfileview](https://xuanyuan.cloud/r/wangbowen/kkfileview) |
+| [wangbowen/kkfileview 标签列表](https://xuanyuan.cloud/r/wangbowen/kkfileview/tags) | [https://xuanyuan.cloud/r/wangbowen/kkfileview/tags](https://xuanyuan.cloud/r/wangbowen/kkfileview/tags) |
+| [Docker Hub · wangbowen/kkfileview](https://hub.docker.com/r/wangbowen/kkfileview) | [https://hub.docker.com/r/wangbowen/kkfileview](https://hub.docker.com/r/wangbowen/kkfileview) |
+| [GitHub · iwangbowen/kkFileView](https://github.com/iwangbowen/kkFileView) | [https://github.com/iwangbowen/kkFileView](https://github.com/iwangbowen/kkFileView) |
+| [Gitee · kekingcn/file-online-preview](https://gitee.com/kekingcn/file-online-preview) | [https://gitee.com/kekingcn/file-online-preview](https://gitee.com/kekingcn/file-online-preview) |
+| [官网 kkview.cn](https://kkview.cn) | [https://kkview.cn](https://kkview.cn) |
+| [keking/kkfileview 镜像页](https://xuanyuan.cloud/zh/r/keking/kkfileview) | [https://xuanyuan.cloud/zh/r/keking/kkfileview](https://xuanyuan.cloud/zh/r/keking/kkfileview) |
+| [轩辕镜像使用手册](https://xuanyuan.cloud/usage) | [https://xuanyuan.cloud/usage](https://xuanyuan.cloud/usage) |
+
+官方坐标 `keking/kkfileview` 约两年未更新，本文使用 `wangbowen/kkfileview:5.1.0`。
+
+---
+
+## 阅读原文
+
+- 轩辕镜像官方博客：https://xuanyuan.cloud/blog/kkfileview-docker-deploy
 
 
