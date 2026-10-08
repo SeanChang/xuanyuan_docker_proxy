@@ -30,6 +30,16 @@
 | 教程 | 说明 |
 |------|------|
 | [其他仓库](./mirror-tutorial-docker-guide.md) | ghcr · Quay · nvcr 等多仓库加速 |
+| [Docker Hub](./mirror-tutorial/docker-hub.md) | docker.io · registry-mirrors 与专属域名 |
+| [GHCR](./mirror-tutorial/ghcr.md) | ghcr.io · `***-ghcr.xuanyuan.run` |
+| [GCR](./mirror-tutorial/gcr.md) | gcr.io · `***-gcr.xuanyuan.run` |
+| [Quay](./mirror-tutorial/quay.md) | quay.io · `***-quay.xuanyuan.run` |
+| [NVCR](./mirror-tutorial/nvcr.md) | nvcr.io · `***-nvcr.xuanyuan.run` |
+| [Kubernetes Registry](./mirror-tutorial/k8s.md) | registry.k8s.io · `***-k8s.xuanyuan.run` |
+| [MCR](./mirror-tutorial/mcr.md) | mcr.microsoft.com · `***-mcr.xuanyuan.run` |
+| [Elastic](./mirror-tutorial/elastic.md) | docker.elastic.co · `***-elastic.xuanyuan.run` |
+| [Oracle](./mirror-tutorial/oracle.md) | Oracle Container Registry · `***-oracle.xuanyuan.run` |
+| [GitLab](./mirror-tutorial/gitlab.md) | registry.gitlab.com · `***-gitlab.xuanyuan.run` |
 | [Harbor 镜像源](./harbor-docker-guide.md) | Proxy Repository 对接 |
 | [Portainer 镜像源](./portainer-docker-guide.md) | Registries 配置 |
 | [Nexus 镜像源](./nexus-docker-guide.md) | Docker Proxy 缓存 |

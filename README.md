@@ -1,4 +1,4 @@
-# 最新 Docker 镜像源加速列表与使用指南（2026年10月8日更新）
+# 最新 Docker 镜像源加速列表与使用指南（2026年10月9日更新）
 
 ## 📚 目录
 
@@ -25,6 +25,8 @@
 - [超全 Docker 轩辕镜像源配置（Windows/Mac/Linux）](./blog/docker-windows-mac-linux.md)
 - [Docker 镜像源配置踩坑指南](./blog/docker.md)
 - [2026 国内 Docker 镜像拉取指南](./blog/2026-docker-daemonjson-10.md)
+- [2026 年 10 月最新国内 Docker 镜像源加速列表](./blog/2026-10-docker.md)
+- [2026 最新国内 Docker 镜像源加速列表（10 月 8 日更新）](./blog/2026-docker-9.md)
 
 #### NAS 设备
 - [群晖 NAS](./usage/synology-docker-guide.md)
@@ -66,6 +68,7 @@
 - [MySQL Docker 容器化部署全指南](./blog/docker-mysql-deploy.md)
 - [PostgreSQL Docker 部署教程](./blog/docker-postgresql.md)
 - [MongoDB Docker 部署教程](./blog/docker-mongodb.md)
+- [MongoDB Community Server Docker 部署教程](./blog/mongodb-community-server-docker-deploy.md)
 - [Redis Docker 部署教程](./blog/docker-redis.md)
 - [MariaDB Docker 部署教程](./blog/mariadb-docker.md)
 - [Elasticsearch Docker 部署教程](./blog/docker-elasticsearch.md)
@@ -75,6 +78,7 @@
 - [Doris Docker 部署教程](./blog/doris-docker.md)
 - [Apache Doris Docker 完整部署教程](./blog/doris-docker-deploy.md)
 - [ClickHouse Docker Compose 部署教程](./blog/clickhouse-docker-deploy.md)
+- [ClickHouse Server Docker 部署教程](./blog/clickhouse-server-docker-deploy.md)
 - [openGauss Docker 部署教程](./blog/opengauss-docker-deploy.md)
 - [FalkorDB Docker 部署教程](./blog/falkordb-docker-deploy.md)
 - [OceanBase CE Docker 部署教程](./blog/oceanbase-ce-docker.md)
@@ -85,6 +89,7 @@
 - [Qdrant Docker 部署教程](./blog/qdrant-docker.md)
 - [Weaviate Docker 部署教程](./blog/weaviate-docker.md)
 - [Milvus Docker 部署教程](./blog/milvus-docker.md)
+- [Milvus 高性能向量数据库 Docker 部署教程](./blog/milvus-docker-deploy.md)
 - [pgvector Docker 部署教程](./blog/pgvector-docker.md)
 - [PostGIS Docker 部署教程](./blog/postgis-docker.md)
 - [Supabase Studio Docker 部署教程](./blog/supabase-studio-docker.md)
@@ -175,15 +180,23 @@
 - [OpenClaw + Qwen + DashScope 认证部署](./blog/openclaw-323qwen-dashscope-auth-40.md)
 - [9Router AI 统一 API 网关 Docker 部署教程](./blog/9router-ai-apicursorcline.md)
 - [calciumion/new-api AI 接口网关 Docker 部署教程](./blog/ai-calciumion-new-api-windows-linux-docker.md)
+- [DeepSeek Harness Docker 部署教程](./blog/deepseek-harness-docker-deploy.md)
+- [DeepSeek Harness（smanx）Docker 部署教程](./blog/deepseek-harness-smanx-docker-deploy.md)
+- [nanobot 个人 AI 助手 Docker 部署教程](./blog/docker-nanobot-ai-deploy.md)
+- [Piper TTS Docker 部署教程](./blog/piper-docker-deploy.md)
 
 #### 🎬 媒体服务器
 - [Jellyfin Docker 部署教程](./blog/jellyfin-docker.md)
+- [Jellyfin 一键部署教程](./blog/jellyfin-docker-deploy.md)
 - [Emby Media Server Docker 部署教程](./blog/emby-media-server-docker.md)
+- [Emby 家庭影音 Docker 部署教程](./blog/embyserver-docker-deploy.md)
 - [Emby Media Server ARM32v7 Docker 部署教程](./blog/emby-media-server-arm32v7-docker.md)
 - [Emby Media Server ARM64v8 Docker 部署教程](./blog/emby-media-server-arm64v8-docker.md)
 - [Navidrome Docker 部署教程](./blog/navidrome-docker.md)
 - [Komga Docker 部署教程](./blog/komga-docker.md)
 - [Immich Server Docker 部署教程](./blog/immich-server-docker.md)
+- [go2rtc Docker 部署教程](./blog/go2rtc-docker-deploy.md)
+- [SRS Docker 部署教程](./blog/srs-docker-deploy.md)
 
 #### 🛠️ 开发工具
 - [Jenkins Docker 部署教程](./blog/jenkins-docker.md)
@@ -198,6 +211,9 @@
 - [Lobe Chat Docker 部署教程](./blog/lobe-chat-docker.md)
 - [Lobe Chat Database Docker 部署教程](./blog/lobe-chat-database-docker.md)
 - [LobeHub Docker 部署教程](./blog/lobehub-docker.md)
+- [Harness Open Source Docker 部署教程](./blog/harness-docker-deploy.md)
+- [ZenTao Docker 部署教程](./blog/zentao-docker-deploy.md)
+- [XXL-JOB Docker 部署教程](./blog/xxl-job-admin-docker-deploy.md)
 
 #### 📊 监控/日志
 - [Prometheus Docker 部署教程](./blog/prometheus-docker.md)
@@ -207,12 +223,18 @@
 - [Uptime Kuma Docker 部署教程](./blog/uptime-kuma-docker.md)
 - [Kibana Docker 部署教程](./blog/kibana-docker.md)
 - [Falco Docker 部署教程](./blog/falco-docker.md)
+- [HertzBeat Docker 部署教程](./blog/hertzbeat-docker-deploy.md)
+- [Zabbix Docker 部署教程](./blog/zabbix-docker-deploy.md)
 
 #### 🐧 操作系统基础镜像
 - [Ubuntu Docker 部署教程](./blog/ubuntu-docker.md)
 - [Debian Docker 部署教程](./blog/docker-debian.md)
 - [CentOS Docker 部署教程](./blog/docker-centos.md)
 - [Rocky Linux Docker 部署教程](./blog/docker-rocky-linux.md)
+- [Rocky Linux 企业级基础镜像 Docker 部署教程](./blog/rockylinux-docker-deploy.md)
+- [dockurr/windows Docker 部署教程](./blog/windows-docker-deploy.md)
+- [QEMU Docker 部署教程](./blog/qemu-docker-deploy.md)
+- [redroid Docker 部署教程](./blog/redroid-docker-deploy.md)
 - [AlmaLinux Docker 部署教程](./blog/docker-almalinux.md)
 - [Alpine Linux Docker 部署教程](./blog/docker-alpine-linux.md)
 - [openEuler Docker 部署教程](./blog/docker-openeuler.md)
@@ -224,6 +246,7 @@
 #### 🎯 其他应用
 - [WordPress Docker 部署教程](./blog/docker-wordpress.md)
 - [Nextcloud Docker 部署教程](./blog/nextcloud-docker.md)
+- [Nextcloud AIO Docker 部署教程](./blog/docker-nextcloud-aio.md)
 - [Halo Docker 部署教程](./blog/halo-docker.md)
 - [OnlyOffice DocumentServer Docker 部署教程](./blog/onlyoffice-documentserver-docker.md)
 - [Home Assistant Docker 部署教程](./blog/docker-home-assistant.md)
@@ -234,6 +257,7 @@
 - [Lucky Docker 部署教程](./blog/lucky-docker.md)
 - [n8n Docker 部署教程](./blog/n8n-docker.md)
 - [MinIO Docker 部署教程](./blog/minio-docker.md)
+- [MinIO 对象存储 Docker 部署教程](./blog/minio-docker-deploy.md)
 - [MinIO Client MC Docker 部署教程](./blog/minio-client-mc-docker.md)
 - [phpMyAdmin Docker 部署教程](./blog/phpmyadmin-docker.md)
 - [pgAdmin4 Docker 部署教程](./blog/pgadmin4-docker.md)
@@ -244,10 +268,12 @@
 - [DDNS-Go Docker 部署教程](./blog/ddns-go-docker.md)
 - [AdGuardHome Docker 部署教程](./blog/adguardhome-docker.md)
 - [Calibre Web Docker 部署教程](./blog/calibre-web-docker.md)
+- [Calibre-Web 网页版电子书 Docker 部署教程](./blog/calibre-web-docker-deploy.md)
 - [Talebook Docker 部署教程](./blog/talebook-docker.md)
 - [Papermerge Docker 部署教程](./blog/papermerge-docker.md)
 - [Stirling PDF Docker 部署教程](./blog/stirling-pdf-docker-pdf.md)
 - [Stirling PDF 快速上手 Docker 部署教程](./blog/10-stirling-pdfdocker.md)
+- [Stirling PDF 本地处理 Docker 部署教程](./blog/stirlingpdf-docker-deploy.md)
 - [Draw.io Docker 部署教程](./blog/drawio-docker.md)
 - [Sun Panel Docker 部署教程](./blog/sun-panel-docker.md)
 - [TrendRadar Docker 部署教程](./blog/trendradar-docker.md)
@@ -255,6 +281,7 @@
 - [Hitokoto API Docker 部署教程](./blog/hitokoto-api-docker.md)
 - [OpenList Docker 部署教程](./blog/openlist-docker.md)
 - [SiYuan Docker 部署教程](./blog/siyuandocker.md)
+- [思源笔记本地知识库 Docker 部署教程](./blog/siyuan-docker-deploy.md)
 - [EzBookkeeping Docker 部署教程](./blog/ezbookkeeping-docker.md)
 - [Firefly III Docker 部署教程](./blog/firefly-iii-docker.md)
 - [Music Tag Web Docker 部署教程](./blog/music_tag_web-docker.md)
@@ -327,9 +354,23 @@
 - [Trilium Notes Docker 部署教程](./blog/trilium-notes-docker-deploy.md)
 - [WPS Office Docker 部署教程](./blog/wps-office-docker-deploy.md)
 - [ZLMediaKit Docker 部署教程](./blog/zlmediakit-docker-deploy.md)
+- [ArchivesSpace Docker 部署教程](./blog/archivesspace-docker-deploy.md)
+- [Dolibarr ERP/CRM Docker 部署教程](./blog/docker-dolibarr-erpcrm.md)
+- [NapCat QQ Bot Docker 部署教程](./blog/docker-napcat-qq-bot-deploy.md)
+- [FUXA Web SCADA Docker 部署教程](./blog/fuxa-docker-deploy.md)
+- [Gotenberg 文档转 PDF Docker 部署教程](./blog/gotenberg-docker-deploy.md)
+- [iVentoy PXE 网络装机 Docker 部署教程](./blog/iventoy-docker-deploy.md)
+- [JumpServer Docker 部署教程](./blog/jms-all-docker-deploy.md)
+- [觅思文档 Docker 部署教程](./blog/mrdoc-docker-deploy.md)
+- [MyBooks Docker 部署教程](./blog/mybooks-docker-deploy.md)
+- [填鸭表单 Docker 部署教程](./blog/tduck-platform-docker-deploy.md)
+- [TeslaMate Docker 部署教程](./blog/teslamate-docker-deploy.md)
+- [Docker 部署 TeX Live](./blog/texlive-docker-deploy.md)
+- [Docker 部署 TypeWords](./blog/typewords-docker-deploy.md)
 
 #### 📅 Docker 月度更新与资讯
 
+- [Claude 蒸馏产业观察](./blog/claude-distillation-war.md)
 - [2026年8月 Docker 更新](./blog/2026-8-docker.md)
 - [2026年7月 Docker 更新](./blog/2026-7-docker.md)
 - [2026年6月 Docker 更新](./blog/2026-6-docker.md)
@@ -348,6 +389,28 @@
 - [NGINX regex map CVE-2026-42533 安全通告](./blog/nginx-regex-map-cve-2026-42533.md)
 - [Fastjson 远程代码执行漏洞预警](./blog/fastjson-1-2-83-security-bug.md)
 - [Claude Code 安全后门隐患通告](./blog/ai-claude-code.md)
+- [BuildKit 缓存被篡改与 --cdi-disabled 崩溃安全通告](./blog/buildkit-cdi-disabled-cve-2026-93318-93316.md)
+- [containerd CRI ExecSync 协程泄漏安全通告](./blog/containerd-cri-execsync-doscve-2026-53495.md)
+- [CRI-O checkpoint 恢复元数据校验不足安全通告](./blog/cri-o-checkpoint-cve-2026-15801.md)
+- [CRI-O checkpoint 恢复绕过安全上下文安全通告](./blog/cri-o-checkpoint-cve-2026-92574.md)
+- [Dell Container Storage Modules 安全通告](./blog/dell-container-storage-modules-dsa-2026-448.md)
+- [Docker Engine insecure registry 安全通告](./blog/docker-engine-insecure-registrycve-2026-92543.md)
+- [Gitea 容器镜像仓库 XSS 安全通告](./blog/gitea-xss-cve-2026-103667.md)
+- [Harbor 扫描仪凭据泄露与沙箱隔离绕过安全通告](./blog/harbor-docker-sandboxes-mcp-gateway-cve-2026-92770.md)
+- [Harbor 系统机器人账户越权安全通告](./blog/harbor-ghsa-w5fq-xrhj-j7g2-ghsa-xq2m-cj8w-56v5.md)
+- [Harbor webhook SSRF 安全通告](./blog/harbor-webhook-ssrf.md)
+- [LMCache 未认证远程代码执行安全通告](./blog/lmcache-cve-2026-105192.md)
+- [Mailu 代理认证绕过安全通告](./blog/mailu-cve-2026-85751.md)
+- [OpenShift oc-mirror 缓存仓库无认证暴露安全通告](./blog/openshift-oc-mirror-cve-2026-96577.md)
+- [P4 Search 未认证调试接口安全通告](./blog/p4-search-cve-2026-100102-100103.md)
+- [Plane AIO / CLI 写死生产密钥安全通告](./blog/plane-aio-cli-cve-2026-105641.md)
+- [Podman 镜像注解关闭沙箱安全通告](./blog/podman-podman-run-cve-2026-94603.md)
+- [Renovate 凭据泄露与命令注入安全通告](./blog/renovate-cve-2026-88887-88885-88886.md)
+- [Tinyauth forward-auth ACL 越权安全通告](./blog/tinyauth-forward-auth-acl-cve-2026-77560.md)
+- [ToolHive MCP 可达 host.docker.internal 安全通告](./blog/toolhive-mcp-hostdockerinternalcve-2026-58197.md)
+- [Traefik 认证绕过与身份串用安全通告](./blog/traefik-cve.md)
+- [vLLM LlavaOnevision2 trust_remote_code 绕过安全通告](./blog/vllm-llavaonevision2-trust_remote_codecve-2026-90553.md)
+- [zot Bearer 鉴权 DELETE 越权安全通告](./blog/zot-bearer-delete-push-blobcve-2026-61833.md)
 
 ## 让 AI 帮你使用轩辕镜像？
 
@@ -426,20 +489,21 @@ bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 | **📦 传统发行版** | | | |
 | Ubuntu | 16.04+ | ✅ | 含老版本特殊处理 |
 | Debian | 9+ | ✅ | 含老版本特殊处理 |
-| CentOS | 8、9（含 Stream） | ✅ | 不含 CentOS 7（已 EOL，脚本不支持） |
+| CentOS | 8、9（含 Stream） | ✅ | 正式支持 8、9（含 Stream）；CentOS 7 已 EOL，不作为推荐环境 |
 | RHEL | 7, 8, 9 | ✅ | Red Hat Enterprise Linux |
 | Oracle Linux | 7, 8, 9 | ✅ | Oracle 企业级发行版 |
 
-> **关于 CentOS 7：**CentOS 7 已结束官方生命周期，官方与大量第三方 yum 源已下线或不可用。**本一键安装脚本不提供对 CentOS 7 的支持。**请迁移至 Rocky Linux、AlmaLinux、CentOS Stream 8+ 或与 RHEL 8/9 同源的环境后再使用脚本。
+> **关于 CentOS 7：**CentOS 7 已结束官方生命周期，官方与大量第三方 yum 源已下线或不可用。脚本检测到 CentOS 7 时会警告，并尝试用归档源继续安装，但系统已 EOL，不作为推荐环境。请迁移至 Rocky Linux、AlmaLinux、CentOS Stream 8+ 或与 RHEL 8/9 同源的环境。
 
 > 💡 **提示**：脚本会自动检测您的操作系统类型和版本，并选择最优的安装方案。统信 UOS 与银河麒麟等走同源兼容逻辑；深度 Deepin 按 Debian 系仓库配置。对于老版本系统（如 Ubuntu 16.04、Debian 9/10），脚本会自动使用兼容的安装方式。Kali Linux 等衍生环境可按 Debian 兼容路径识别（详见仓库内 `docker.sh`）。
 
 ### 📖 使用说明
 
 1. 复制上述命令到您的 Linux 终端
-2. 按提示选择版本（免费版或专业版）
-3. 如选择专业版，输入您的专属免登录地址
-4. 脚本将自动完成所有配置
+2. 按提示选择操作模式：`1) 一键安装配置`、`2) 修改轩辕镜像专属域名`、`3) 恢复 Docker 镜像相关配置`
+3. 若选择一键安装或修改域名，再选择免费版（`docker.xuanyuan.me`）或专业版（专属域名 `*.xuanyuan.run`）
+4. 如选择专业版，输入您的专属免登录地址
+5. 脚本将自动完成安装或配置；选择恢复时，可从备份还原或重置为 Docker 默认配置
 
 ---
 
