@@ -73,12 +73,12 @@ Portainer-CE 中文版提供多种部署方式，可根据实际需求选择适�
 这是最常用的部署方式，适用于大多数服务器环境：
 
 ```bash
-docker run -d \
-  --name portainer \
-  --restart always \
-  -p 9000:9000 \
-  -v /var/run/docker.sock:/var/run/docker.sock \
-  -v portainer_data:/data \
+docker run -d 
+  --name portainer 
+  --restart always 
+  -p 9000:9000 
+  -v /var/run/docker.sock:/var/run/docker.sock 
+  -v portainer_data:/data 
   xxx.xuanyuan.run/6053537/portainer-ce:latest
 ```
 
@@ -95,17 +95,17 @@ docker run -d \
 对于需要通过公网访问的场景，建议启用SSL加密以提高安全性：
 
 ```bash
-docker run -d \
-  --name portainer \
-  --restart always \
-  -p 8000:8000 \
-  -p 443:9443 \
-  -v ~/local-certs:/certs \
-  -v portainer_data:/data \
-  -v /var/run/docker.sock:/var/run/docker.sock \
-  xxx.xuanyuan.run/6053537/portainer-ce:latest \
-  --ssl \
-  --sslcert /certs/portainer.crt \
+docker run -d 
+  --name portainer 
+  --restart always 
+  -p 8000:8000 
+  -p 443:9443 
+  -v ~/local-certs:/certs 
+  -v portainer_data:/data 
+  -v /var/run/docker.sock:/var/run/docker.sock 
+  xxx.xuanyuan.run/6053537/portainer-ce:latest 
+  --ssl 
+  --sslcert /certs/portainer.crt 
   --sslkey /certs/portainer.key
 ```
 
@@ -116,12 +116,12 @@ docker run -d \
 在Windows系统上使用Docker Desktop时，部署命令略有不同：
 
 ```bash
-docker run -d \
-  -p 9000:9000 \
-  --name portainer \
-  --restart always \
-  -v \\.\pipe\docker_engine:\\.\pipe\docker_engine \
-  -v portainer_data:C:\data \
+docker run -d 
+  -p 9000:9000 
+  --name portainer 
+  --restart always 
+  -v \.pipedocker_engine:\.pipedocker_engine 
+  -v portainer_data:C:data 
   xxx.xuanyuan.run/6053537/portainer-ce:latest
 ```
 
@@ -228,15 +228,15 @@ docker run -d --name portainer ...
 1. **资源限制**：为容器设置适当的资源限制，避免过度占用系统资源：
 
 ```bash
-docker run -d \
-  --name portainer \
-  --restart always \
-  --memory=1G \
-  --memory-swap=1G \
-  --cpus=0.5 \
-  -p 9000:9000 \
-  -v /var/run/docker.sock:/var/run/docker.sock \
-  -v portainer_data:/data \
+docker run -d 
+  --name portainer 
+  --restart always 
+  --memory=1G 
+  --memory-swap=1G 
+  --cpus=0.5 
+  -p 9000:9000 
+  -v /var/run/docker.sock:/var/run/docker.sock 
+  -v portainer_data:/data 
   xxx.xuanyuan.run/6053537/portainer-ce:latest
 ```
 

@@ -1,131 +1,143 @@
-# 一键部署私有笔记：Docker 跑 Memos，浏览器随手记
+# Docker 部署 Memos：轻松搭建私有化轻量笔记平台
 
-![一键部署私有笔记：Docker 跑 Memos，浏览器随手记](https://imgs.xuanyuan.cloud/docker/blog/memos.png)
+![Docker 部署 Memos：轻松搭建私有化轻量笔记平台](https://imgs.xuanyuan.cloud/docker/blog/memos1.webp)
 
-*分类: Docker部署教程 | 标签: Memos,Docker,轩辕镜像,笔记,Markdown,私有化部署,部署教程 | 发布时间: 2026-06-28 05:31:45*
+*分类: Docker部署教程 | 标签: Memos,neosmemo/memos,Docker,轩辕镜像,笔记,Markdown,私有化部署,部署教程 | 发布时间: 2026-06-28 05:31:45*
 
-> 怕笔记放 Notion、飞书、语雀，数据不在自己手里？Memos 是一款开源、可自托管的轻量笔记服务——镜像约 20MB，默认 SQLite，一条 docker run 就能跑。打开浏览器写 Markdown、打 #标签、按时间线翻旧笔记，手机电脑同步访问，数据全在你自己的服务器上。
-> 
-> 本文带你完成一次 Memos 一条命令 Docker 部署：从轩辕镜像拉取、docker run 一键启动、读懂启动日志，到浏览器注册管理员、切换中文界面、写下第一条 memo——全程零基础可跟做，文末附 5 张实测截图。
+> Memos 是一款面向个人和小团队的开源笔记服务，旨在用时间线记下灵感和待办，并通过 Markdown、标签和附件把内容留在自己的服务器上。本文将介绍如何通过 Docker 快速部署 Memos，搭建私有化轻量笔记平台，帮助你更高效地记录碎片想法，适合替代云笔记随手记及内网知识备忘等场景。
 
-*本文基于 [neosmemo/memos:stable](https://xuanyuan.cloud/zh/r/neosmemo/memos) 镜像（实测版本 **0.29.1**），Ubuntu 24.04 服务器实测*
+*本文基于 [neosmemo/memos:0.29.1](https://xuanyuan.cloud/zh/r/neosmemo/memos)，以 **0.29.1** 版本实测，测试平台 **Ubuntu 24.04** Linux。*
 
-怕笔记放 Notion、飞书、语雀，数据不在自己手里？**Memos** 是一款开源、可自托管的轻量笔记服务——镜像约 **20MB**，默认 **SQLite**，**一条 `docker run` 就能跑**。打开浏览器写 Markdown、打 `#标签`、按时间线翻旧笔记，手机电脑同步访问，数据全在你自己的服务器上。
+## Memos 是什么
 
-本文带你完成一次 **Memos 一条命令 Docker 部署**：从轩辕镜像拉取、`docker run` 一键启动、读懂启动日志，到浏览器注册管理员、切换中文界面、写下第一条 memo——全程零基础可跟做，文末附 **6 张实测截图**。
+Memos 是开源的自托管笔记服务，用一条时间线记下想法。写一条 memo 只要几秒，可以打标签、加附件，也可以只把其中一条分享出去。笔记默认不公开，放在你自己指定的机器上。
 
-国内用户从 Docker Hub 拉取 `neosmemo/memos` 可能较慢，本文使用 [轩辕镜像](https://xuanyuan.cloud) 加速域 `docker.xuanyuan.run`。官方文档见 [usememos.com/docs](https://usememos.com/docs)，源码仓库 [usememos/memos](https://github.com/usememos/memos)。
+和 Notion、飞书、语雀相比，它不做多人协作和模板市场，内容留在你部署的实例里。和一堆本地 Markdown 文件相比，它有浏览器里的时间线、搜索和账号。
 
----
+## Memos 能做什么
 
-## 一、Memos 是什么？
+- **打开就写**：用时间线记一条想法，不必先建文件夹。
+- **用 Markdown 组织**：正文可以写标签、待办和常见 Markdown。
+- **附上文件**：可以插入图片、音频、附件和位置。
+- **按条件找回**：用搜索、标签和筛选条件找回旧笔记。
+- **控制谁能看到**：每条笔记默认私有，需要时再改为公开或分享。
 
-**Memos** 是一款 **开源、自托管的轻量笔记服务**，主打「打开就写、数据在自己手里」。核心能力：
+## 为什么要使用 Memos
 
-| 能力 | 说明 |
-|------|------|
-| 快速记录 | 时间线 UI，打开即写，无需文件夹层级 |
-| 数据自主 | 自托管部署，笔记以 Markdown 存储，**零遥测** |
-| 极轻量 | 单 Go 二进制，Docker 镜像约 **20MB**；默认 **SQLite**，无需 MySQL / Redis |
-| 可扩展 | MIT 许可，提供 REST 与 gRPC API，便于二次集成 |
+把灵感和待办放在 Notion、飞书或语雀上，数据在对方的服务里。只想随手记几句时，也不一定需要一整套协作文档。
 
-典型使用场景：
+Memos 把时间线放在你自己的服务器上。个人记摘抄、碎片待办，或者小团队放一份轻量记录，都可以用它。它适合在意笔记放在哪里的人。复杂协作和知识图谱要另选工具。
 
-- 个人 **灵感库**、碎片待办、读书摘抄
-- 小团队 **轻量知识库**，数据不经过第三方 SaaS
-- 替代部分 Notion / 飞书文档的「随手记」场景，强调 **隐私与简单**
+## 使用 Docker 部署 Memos
 
-> **与云笔记的区别**：Memos 没有复杂协作与模板市场，胜在 **部署简单、资源占用极低、数据完全可控**。若需要块级编辑与知识图谱，可考虑 SiYuan 等更重型的方案。
+Memos 可以用 Docker 启动，本机不必先安装它的二进制。开始之前，先准备好 Docker。
 
----
+下面用 Docker Compose 写好数据目录，启动服务，并在浏览器里注册第一个用户、写下一条笔记。
 
-## 二、环境要求
+## 环境要求
+
+官方使用文档目前按 0.31.0 来写。本文命令和界面步骤停在已实测的 **0.29.1**，没有改测更新版本。
 
 | 项目 | 建议 |
 |------|------|
-| 操作系统 | Linux（本文 Ubuntu 24.04） |
-| Docker | 已安装 Docker 与 Docker Compose V2 |
+| 系统 | Linux（本文命令按 Ubuntu 目录书写）；macOS 把 `/www/wwwroot/memos` 换成 `~/docker/memos` |
+| Docker | 已安装 Docker Engine 与 **Compose V2**（`docker compose`） |
 | 内存 | ≥ 512 MB（空闲约 50～80 MB） |
-| CPU | 单核即可；双核更从容 |
-| 磁盘 | ≥ 1 GB（镜像 + SQLite + 附件） |
-| 端口 | **5230**（Memos 默认 Web 端口） |
-
-验证 Docker：
+| CPU | 单核即可 |
+| 磁盘 | ≥ 1 GB（镜像、SQLite 和附件） |
+| 端口 | 宿主机 **5230** → 容器 **5230** |
+| 工作目录 | `/www/wwwroot/memos` |
 
 ```bash
 docker --version
 docker compose version
 ```
 
-若尚未安装 Docker，可使用轩辕镜像一键脚本：
+Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
 bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
-
 
 备用地址：
 
 ```bash
 bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
-更多安装说明见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
----
+更多见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage)。
 
-## 三、快速体验：单容器部署
+## 标签怎么选
 
-适合：个人试用、内网随手记、资源有限的 VPS。
+这次实测拉取的是 `stable`，启动日志写明 `Memos 0.29.1`。`stable` 会跟着当前稳定版移动，官方文档里的当前稳定版已经不是 0.29.1。下面的命令使用 `0.29.1`。
 
-### 3.1 创建数据目录
+| 标签 | 说明 | 是否写入本文命令 |
+|------|------|------------------|
+| **`0.29.1`** | 本文实测版本，日志与界面都是这个版本 | **是** |
+| `stable` | 跟随当前稳定版，之后 pull 可能变成别的版本 | 否 |
+| `0.29` | 这一条小版本上的滚动补丁 | 否 |
+| `latest` | 浮动标签 | 否 |
+
+完整标签见[标签列表](https://xuanyuan.cloud/r/neosmemo/memos/tags)。要离开 0.29.1，先看文末 FAQ 里的升级说明。
+
+## 拉取镜像
+
+用 [轩辕镜像](https://xuanyuan.cloud) **加速拉取**：
+
+```bash
+docker pull docker.xuanyuan.run/neosmemo/memos:0.29.1
+```
+
+## Docker Compose 部署
+
+笔记和附件在容器内 `/var/opt/memos`。删除容器不会删除宿主机上的 `data/`。删掉 `data/` 会丢掉全部笔记。
+
+这次启动没有设置 `MEMOS_INSTANCE_URL`。只用服务器 IP 在内网访问时，保持不设置。已经有公网域名时，再在下面文件里写成那个 `https://` 地址，分享链接和登录 Cookie 才会对着这个域名。
+
+1. 创建目录，并把所有权交给当前用户：
 
 ```bash
 sudo mkdir -p /www/wwwroot/memos/data
-sudo chown -R $USER:$USER /www/wwwroot/memos
+sudo chown -R "$USER":"$USER" /www/wwwroot/memos
 cd /www/wwwroot/memos
 ```
 
-### 3.2 拉取并启动容器
-
-拉取镜像（若已拉取可跳过）：
+2. 写入 `compose.yaml`。`5230:5230` 表示宿主机 5230 对应容器内 5230。
 
 ```bash
-docker pull docker.xuanyuan.run/neosmemo/memos:stable
+cat > compose.yaml <<'EOF'
+services:
+  memos:
+    image: docker.xuanyuan.run/neosmemo/memos:0.29.1
+    container_name: memos
+    restart: unless-stopped
+    ports:
+      - "5230:5230"
+    volumes:
+      - ./data:/var/opt/memos
+    environment:
+      MEMOS_PORT: 5230
+      MEMOS_DRIVER: sqlite
+EOF
 ```
-
-启动 Memos：
-
-```bash
-docker run -d \
-  --name memos \
-  --restart unless-stopped \
-  -p 5230:5230 \
-  -v /www/wwwroot/memos/data:/var/opt/memos \
-  docker.xuanyuan.run/neosmemo/memos:stable
-```
-
-各参数说明：
 
 | 配置 | 说明 |
 |------|------|
-| `-p 5230:5230` | 对外暴露 Web 访问端口 |
-| `-v ...:/var/opt/memos` | 持久化 SQLite 数据库与本地附件 |
-| `stable` | 生产推荐标签（实测对应 **0.29.1**） |
-| `--restart unless-stopped` | 宿主机重启后自动拉起 |
+| `5230:5230` | 宿主机 **5230** → 容器 **5230** |
+| `./data` | SQLite 数据库和上传的附件 |
+| `MEMOS_PORT` | 容器内 HTTP 端口，与上面的映射一致 |
+| `MEMOS_DRIVER` | 本文使用 `sqlite` |
+| `0.29.1` | 本文实测版本 |
 
-| 官方镜像 | 轩辕镜像加速拉取 |
-|----------|------------------|
-| `neosmemo/memos:stable` | `docker pull docker.xuanyuan.run/neosmemo/memos:stable` |
-
-### 3.3 验证启动
-
-查看日志：
+3. 启动，并查看日志：
 
 ```bash
-docker logs -f memos
+docker compose up -d
+docker compose ps
+docker compose logs memos
 ```
 
-成功时终端类似输出（**Ubuntu 24.04 实测**）：
+Ubuntu 24.04 上这次启动的日志类似：
 
 ```text
 time=2026-06-28T05:11:44.804Z level=INFO msg="initializing new database with latest schema"
@@ -138,23 +150,21 @@ Access your memos at: http://localhost:5230
 Happy note-taking!
 ```
 
-看到 **`Memos 0.29.1 started successfully!`** 与 **`Server running on port 5230`** 即表示启动成功。另开终端快速探测：
+看到 `Memos 0.29.1 started successfully!` 和 `Server running on port 5230`，服务已经起来。日志里的 `schemaVersion=0.28.1` 是这次初始化打出来的，旁边的程序版本仍是 0.29.1。
+
+4. 在服务器本机探测页面：
 
 ```bash
 curl -I http://127.0.0.1:5230
 ```
 
-应返回 HTTP `200` 或 `302`（重定向到登录/注册页）。
+应返回 HTTP `200` 或 `302`。
 
-> **日志提示**：首次打开浏览器时可能出现 `refresh token not found` 的 `client error`，属于 **未登录时的正常请求**，不影响使用。
+首次打开浏览器、尚未登录时，日志里可能出现 `refresh token not found` 的 `client error`。这是未登录请求，不阻止后面的注册。
 
-确认容器状态：
+## 注册并切换中文
 
-```bash
-docker ps | grep memos
-```
-
-### 3.4 首次注册：创建管理员账户
+如果 5230 能从公网直接访问，先完成注册，再去做别的事。第一个注册成功的用户会成为站点管理员，Memos 没有预置的账号密码。
 
 浏览器打开：
 
@@ -162,236 +172,127 @@ docker ps | grep memos
 http://你的服务器IP:5230
 ```
 
-首次访问会进入 **创建账户** 页面。**第一个注册的用户自动成为站点管理员**（Memos 无固定默认账号密码）。
+页面是创建账户。填写用户名和密码，点击「注册」。
 
-![Memos 首次访问：创建账户页面，首个注册用户即为站点管理员](https://imgs.xuanyuan.cloud/docker/blog/memos-1.png)
+![Memos 首次访问：创建账户页面，首个注册用户即为站点管理员](https://img.xuanyuan.dev/docker/blog/memos-1.png)
 
-填写用户名与密码，点击 **注册** 即可登录。
+注册后进入主界面。左侧是日历、标签和导航，中间上方是输入框，下方是时间线。还没有笔记时，会显示「No data found.」。
 
-> **安全提示**：若对公网开放 5230，请尽快完成注册，避免他人抢先注册成为管理员。生产环境建议关闭公网直连，改用 **第五节 Compose + 反向代理 HTTPS**。
+![Memos 登录后主界面：空时间线与「Any thoughts...」输入框](https://img.xuanyuan.dev/docker/blog/memos-2.png)
 
-### 3.5 登录后主界面
+默认界面是英文。点击左下角用户头像，打开「Language」，选择「简体中文」。
 
-注册成功后会进入 Memos 主界面：左侧为日历、标签与导航；中间上方为 **「Any thoughts...」** 输入框，下方为时间线 feed。
+![Memos 切换语言：左下角用户菜单中的 Language 选项](https://img.xuanyuan.dev/docker/blog/memos-3.png)
 
-![Memos 登录后主界面：空时间线与「Any thoughts...」输入框](https://imgs.xuanyuan.cloud/docker/blog/memos-2.png)
+切换后，搜索框是「搜索备忘录...」，输入框提示是「此刻的想法...」，标签区提示是「您可以通过输入 '#标签' 创建标签」。最后这句按界面原文保留。
 
-此时还没有任何 memo，会显示 **「No data found.」**，属正常状态。
+## 写下第一条笔记
 
-### 3.6 切换简体中文
-
-默认界面为英文。点击左下角 **用户头像** → **Language** → 选择 **简体中文**，界面即可切换为中文。
-
-![Memos 切换语言：左下角用户菜单中的 Language 选项](https://imgs.xuanyuan.cloud/docker/blog/memos-3.png)
-
-切换后，搜索框变为 **「搜索备忘录...」**，输入框提示变为 **「此刻的想法...」**，标签区提示 **「您可以通过输入 '#标签' 创建标签」**。
-
-### 3.7 写第一条 memo
-
-在输入框中写下内容，例如：
+1. 在输入框写入内容，例如：
 
 ```markdown
 记录我此时此刻的想法。
 ```
 
-点击 **保存**。memo 会按时间线展示在下方，支持 **私有 / 公开** 可见性切换。
+2. 点击「保存」。笔记按时间线出现在下方，可以在私有和公开之间切换。
 
-![Memos 写第一条 memo：中文界面与时间线展示](https://imgs.xuanyuan.cloud/docker/blog/memos-4.png)
+![Memos 写第一条 memo：中文界面与时间线展示](https://img.xuanyuan.dev/docker/blog/memos-4.png)
 
-**日常用法速记**：
+正文里写 `#工作`、`#灵感` 会生成标签，点标签可以筛选。顶部搜索框按关键词查标题和正文。手机浏览器打开同一地址，也可以看这些笔记。
 
-- 正文中写 `#工作`、`#灵感` 会自动生成 **标签**，点标签可筛选
-- 顶部 **搜索框** 按关键词检索标题与正文
-- 手机浏览器访问同一地址即可 **跨设备同步**（数据在自建服务器上）
-
-### 3.8 附件与多媒体（可选）
-
-输入框左侧 **「+」** 可插入更多内容，不限于纯文字：
+输入框左侧的「+」还可以插入别的内容：
 
 | 菜单项 | 用途 |
 |--------|------|
 | Media | 插入图片、视频 |
-| 录制音频 | 浏览器内录音，适合语音备忘 |
+| 录制音频 | 在浏览器里录音 |
 | 文件 | 上传附件 |
-| 链接备忘录 | 关联另一条 memo |
-| 添加位置 | 为 memo 附加地理位置 |
-| 更多 | 展开其他扩展项 |
+| 链接备忘录 | 关联另一条笔记 |
+| 添加位置 | 给这条笔记加上位置 |
+| 更多 | 展开其余项 |
 
-![Memos 输入框「+」菜单：Media、录制音频、文件、链接备忘录与添加位置](https://imgs.xuanyuan.cloud/docker/blog/memos-6.png)
+![Memos 输入框「+」菜单：Media、录制音频、文件、链接备忘录与添加位置](https://img.xuanyuan.dev/docker/blog/memos-6.png)
 
-### 3.9 捷径过滤器（可选）
+## 捷径过滤器
 
-Memos 支持用表达式创建 **捷径（Shortcut）**，快速筛选 pinned、特定标签、未完成待办等。点击左侧 **捷径** 图标 → **创建捷径**，可参考右侧示例：
+0.29.1 的界面里，左侧有「捷径」。点击「捷径」图标，再点「创建捷径」，可以用表达式筛选。下面三行是这次界面给出的示例：
 
 | 示例 | 表达式 | 含义 |
 |------|--------|------|
-| 置顶 | `pinned` | 仅显示置顶 memo |
-| 近 1 小时 | `created_ts >= now() - 60 * 60` | 最近一小时内创建 |
-| 工作标签 | `tag in ["work"]` | 含指定标签 |
+| 置顶 | `pinned` | 只显示置顶笔记 |
+| 近 1 小时 | `created_ts >= now() - 60 * 60` | 最近一小时内创建的 |
+| 工作标签 | `tag in ["work"]` | 含有这个标签 |
 
-![Memos 捷径过滤器：创建自定义筛选表达式](https://imgs.xuanyuan.cloud/docker/blog/memos-5.png)
+![Memos 捷径过滤器：创建自定义筛选表达式](https://img.xuanyuan.dev/docker/blog/memos-5.png)
 
----
+更新版本把 Shortcut 迁到了 Views。本文没有在那些版本上重做这一屏。
 
-## 四、生产推荐：Docker Compose
+## 备份与访问范围
 
-适合：长期运行、需要可复现配置、便于 `git` 管理部署文件的场景。
+定期备份 `/www/wwwroot/memos/data`。里面有 SQLite 数据库（例如 `memos_prod.db`）和上传的文件。升级前先备份这一份。
 
-### 4.1 目录结构
+要对公网提供访问，把 Memos 放在 Nginx、Caddy 或 Traefik 后面，由代理终止 TLS，并转发 `Host`、`X-Forwarded-Proto`、`X-Forwarded-For`。同时把 `MEMOS_INSTANCE_URL` 设成对外的 `https://` 地址。步骤见[反向代理文档](https://usememos.com/docs/deploy/reverse-proxy)。本文这次启动没有加反向代理。
 
-```bash
-cd /www/wwwroot/memos
-```
-
-将包含：
-
-```text
-/www/wwwroot/memos/
-├── docker-compose.yml
-└── data/          # SQLite 与附件（自动创建）
-```
-
-### 4.2 编写 `docker-compose.yml`
-
-```yaml
-services:
-  memos:
-    image: docker.xuanyuan.run/neosmemo/memos:stable
-    container_name: memos
-    restart: unless-stopped
-    ports:
-      - "5230:5230"
-    volumes:
-      - ./data:/var/opt/memos
-    environment:
-      MEMOS_PORT: 5230
-      MEMOS_DRIVER: sqlite
-      # 生产环境填公网 URL，便于链接、Cookie 与分享正确
-      # MEMOS_INSTANCE_URL: https://memos.example.com
-```
-
-### 4.3 启动与运维
+只有确定要让 5230 从外网直接访问时，才放行端口：
 
 ```bash
-docker compose up -d
-docker compose ps
-docker compose logs -f memos
+sudo ufw allow 5230/tcp
 ```
 
-常用运维命令：
+云服务器还要在安全组放行。更稳妥的做法是 5230 只留在内网，公网走反向代理。
+
+## 常用环境变量
+
+这次 Compose 只写了端口和 SQLite。其余变量保持镜像默认。
+
+| 变量 | 本文情况 | 用途 |
+|------|----------|------|
+| `MEMOS_PORT` | 设为 `5230`，与日志一致 | 容器内 HTTP 端口 |
+| `MEMOS_ADDR` | 未设置 | 绑定地址。空着表示所有网卡 |
+| `MEMOS_DATA` | 未设置；日志为 `/var/opt/memos` | 数据目录 |
+| `MEMOS_DRIVER` | 设为 `sqlite` | 也可改为 `postgres` 或 `mysql` |
+| `MEMOS_DSN` | 使用 SQLite 时不用填 | 外部数据库连接串 |
+| `MEMOS_INSTANCE_URL` | 未设置 | 对外使用的 https 地址 |
+| `MEMOS_LOG_LEVEL` | 未设置 | `debug`、`info`、`warn`、`error` |
+
+官方文档里，0.31 起实例地址和「是否允许匿名访问」要分开设置。本文实测的是 0.29.1，没有覆盖这项。
+
+## 备选：docker run
+
+机器上没有 Docker Compose，或只想临时起一个容器时，用下面的命令。目录、端口和镜像与「Docker Compose 部署」相同。容器名已经是 `memos` 时不要再执行，否则名称冲突。
+
+目录还没建好时，先执行「Docker Compose 部署」里创建目录的命令。
 
 ```bash
-# 查看日志
-docker compose logs -f memos
-
-# 停止（保留 data 目录）
-docker compose down
-
-# 升级：拉新镜像后重建
-docker compose pull
-docker compose up -d
+docker run -d 
+  --name memos 
+  --restart unless-stopped 
+  -p 5230:5230 
+  -v /www/wwwroot/memos/data:/var/opt/memos 
+  docker.xuanyuan.run/neosmemo/memos:0.29.1
 ```
 
-### 4.4 可选：PostgreSQL 后端
+然后用 `docker logs memos` 确认 `Memos 0.29.1 started successfully!`，再用 `curl -I http://127.0.0.1:5230` 探测。
 
-默认 **SQLite** 对个人与小团队足够。若用户较多或需独立数据库备份，可改用 PostgreSQL：
+## 常见问题
 
-```yaml
-services:
-  memos:
-    image: docker.xuanyuan.run/neosmemo/memos:stable
-    container_name: memos
-    restart: unless-stopped
-    ports:
-      - "5230:5230"
-    volumes:
-      - ./data:/var/opt/memos
-    environment:
-      MEMOS_DRIVER: postgres
-      MEMOS_DSN: "postgresql://memos:请改为强密码@memos-db:5432/memos?sslmode=disable"
-      MEMOS_INSTANCE_URL: https://memos.example.com
-    depends_on:
-      - memos-db
+**Q1：5230 端口被占用怎么办？**
 
-  memos-db:
-    image: docker.xuanyuan.run/library/postgres:16-alpine
-    container_name: memos-db
-    restart: unless-stopped
-    environment:
-      POSTGRES_USER: memos
-      POSTGRES_PASSWORD: 请改为强密码
-      POSTGRES_DB: memos
-    volumes:
-      - memos_pgdata:/var/lib/postgresql/data
+把宿主机端口改成别的，容器内仍是 5230。例如改成 8080 时，Compose 里写成 `"8080:5230"`，再执行 `docker compose up -d`。浏览器访问 `http://服务器IP:8080`。
 
-volumes:
-  memos_pgdata:
-```
-
-> 使用外部数据库时，`./data` 卷仍用于本地附件等实例数据，请一并备份。
-
-### 4.5 生产环境注意
-
-- **HTTPS**：将 Memos 放在 Nginx、Caddy 或 Traefik **反向代理** 之后，对外只暴露 443。详见 [官方反向代理文档](https://usememos.com/docs/deploy/reverse-proxy)。
-- **`MEMOS_INSTANCE_URL`**：设为公网 URL（如 `https://memos.example.com`），确保分享链接与登录 Cookie 正确。
-- **备份**：定期备份 `./data` 目录（含 `memos_prod.db` 与上传文件）；使用 PostgreSQL 时另备份数据库卷。
-- **防火墙**：若必须直连端口，可 `sudo ufw allow 5230/tcp`；云服务器需在 **安全组** 放行。更推荐仅反代对外、5230 仅内网访问。
-
-### 4.6 镜像标签说明
-
-| 标签 | 适用场景 |
-|------|----------|
-| `stable` | **生产推荐**，跟随稳定发布线（实测 **0.29.1**） |
-| `0.29.1` 等版本号 | 完全固定版本，便于审计与回滚 |
-| `latest` | 偏开发向，**不建议生产使用** |
-
----
-
-## 五、常用环境变量速查
-
-摘自 [官方 Docker 文档](https://usememos.com/docs/deploy/docker)：
-
-| 变量 | 默认 | 用途 |
-|------|------|------|
-| `MEMOS_PORT` | `5230` | HTTP 监听端口 |
-| `MEMOS_ADDR` | 空 | 绑定地址（空 = 所有网卡） |
-| `MEMOS_DATA` | `/var/opt/memos` | 数据目录 |
-| `MEMOS_DRIVER` | `sqlite` | 数据库类型（`sqlite` / `postgres` / `mysql`） |
-| `MEMOS_DSN` | 自动 | postgres / mysql 连接串 |
-| `MEMOS_INSTANCE_URL` | 空 | 实例公网访问地址 |
-| `MEMOS_MODE` | `prod` | 运行模式（`prod` / `dev` / `demo`） |
-| `MEMOS_LOG_LEVEL` | `info` | 日志级别（`debug` / `info` / `warn` / `error`） |
-
----
-
-## 六、常见问题 FAQ
-
-**Q1：`5230` 端口被占用怎么办？**
-
-单容器启动时改映射，例如宿主机用 8080：
-
-```bash
-docker run -d --name memos --restart unless-stopped \
-  -p 8080:5230 \
-  -v /www/wwwroot/memos/data:/var/opt/memos \
-  docker.xuanyuan.run/neosmemo/memos:stable
-```
-
-浏览器访问 `http://服务器IP:8080`。Compose 中把 `ports` 改为 `"8080:5230"` 即可。
+用 `docker run` 启动时，把 `-p 5230:5230` 改成 `-p 8080:5230`。
 
 **Q2：数据存在哪里？**
 
-宿主机挂载目录（上例为 `/www/wwwroot/memos/data`），容器内路径为 `/var/opt/memos`。其中包含 SQLite 数据库（如 `memos_prod.db`）与用户上传的附件。**删除该目录会丢失全部笔记**，升级镜像时请勿删除此目录。
+在宿主机 `/www/wwwroot/memos/data`，对应容器内 `/var/opt/memos`。这里有 SQLite 数据库和上传的附件。升级时不要删除这个目录。
 
-**Q3：如何升级 Memos？**
+**Q3：如何升级？**
+
+先备份 `/www/wwwroot/memos/data`。本文命令固定为 `0.29.1`。官方说明，0.22 到 0.30 不能直接装到最新月度版本，需要先升到 `0.31.0` 并成功启动。新版本一旦跑过数据库迁移，旧版本不能再打开这个库，回退只能靠这份备份。
+
+本文没有做这次升级，也没有重走注册和写笔记。要升的话，先读[升级文档](https://usememos.com/docs/operations/upgrade)，再改 `compose.yaml` 里的标签，然后执行：
 
 ```bash
-# 单容器
-docker pull docker.xuanyuan.run/neosmemo/memos:stable
-docker stop memos && docker rm memos
-# 再执行第三节 docker run（data 卷不变）
-
-# Compose
 cd /www/wwwroot/memos
 docker compose pull
 docker compose up -d
@@ -399,75 +300,88 @@ docker compose up -d
 
 **Q4：日志里出现 `refresh token not found` 正常吗？**
 
-正常。首次打开页面、尚未登录时，浏览器会尝试刷新 token，服务端返回 `Unauthenticated` 并记一条 `client error`，**不影响注册与使用**。注册登录后该日志一般不再出现。
+本文在首次打开页面、尚未登录时见过这条 `client error`。它不阻止注册和登录。
 
 **Q5：忘记密码怎么办？**
 
-Memos 无内置「忘记密码邮件」的默认流程，需参考官方文档或通过数据库重置。请参阅：
+注册页没有「忘记密码」邮件。本文不另给数据库重置步骤。注册时用强密码，并另行保存。5230 若能从公网访问，注册完成前不要长时间敞开。
 
-```
-https://usememos.com/docs
-```
+**Q6：和 Docker Hub 上的镜像是什么关系？**
 
-建议在注册时使用强密码，并妥善保存；生产环境可限制注册或仅内网访问。
+本文使用的 `neosmemo/memos:0.29.1` 与 Docker Hub 上的同名标签是同一份镜像，通过轩辕镜像加速拉取。数据目录和端口见[官方 Docker 文档](https://usememos.com/docs/deploy/docker)。
 
-**Q6：与 Docker Hub 官方镜像 `neosmemo/memos` 的关系？**
+**Q7：可以多人使用，或者换成 PostgreSQL 吗？**
 
-功能相同。`docker.xuanyuan.run/neosmemo/memos:stable` 为轩辕镜像加速的 Docker Hub 同步版，便于国内拉取。配置中将镜像名替换为轩辕域即可，其余命令与官方文档一致。
-
-**Q7：可以多人同时使用吗？**
-
-可以。管理员可在设置中管理用户与权限。小团队用 SQLite 通常足够；用户量较大时建议 **第四节 PostgreSQL 方案**。
+可以有多个用户，管理员在设置里管理。本文用 SQLite 完成了注册和写笔记。用户变多、要单独备份数据库时，官方 Docker 文档支持把 `MEMOS_DRIVER` 改成 `postgres` 或 `mysql`，并填写 `MEMOS_DSN`。`./data` 仍要保留，里面有本地附件。本文没有部署这两类数据库。
 
 **Q8：如何停止与卸载？**
 
+确认不再需要这些笔记之前，不要删除数据目录。
+
+Compose 停止并保留 `data/`：
+
 ```bash
-# 单容器（保留 data 目录）
+cd /www/wwwroot/memos
+docker compose down
+```
+
+用 `docker run` 启动的：
+
+```bash
 docker stop memos && docker rm memos
+```
 
-# Compose（保留 data 目录）
-cd /www/wwwroot/memos && docker compose down
+笔记都不再需要时，再删除数据目录：
 
-# 删除数据目录（慎用，笔记将全部丢失）
+```bash
 rm -rf /www/wwwroot/memos/data
 ```
 
-**Q9：容器启动后浏览器无法访问？**
+**Q9：容器起来了，浏览器打不开？**
 
-依次检查：`docker ps` 确认容器为 `Up`；`docker logs memos` 看报错；本机 `curl -I http://127.0.0.1:5230` 是否通；云服务器 **安全组 / 防火墙** 是否放行 5230；若仅绑定了内网 IP，需用正确地址访问。
+按这个顺序看：
 
----
+1. `docker ps` 里容器是否为 Up。
+2. `docker logs memos` 里是否有 `Server running on port 5230`，以及有没有报错。
+3. 在服务器上执行 `curl -I http://127.0.0.1:5230`，看本机是否通。
+4. 本机通、外网不通时，再检查云服务器安全组和本机防火墙是否放行了你映射的端口。
 
-## 七、命令速查
+## 命令速查
 
-| 操作 | 命令 |
+```bash
+docker pull docker.xuanyuan.run/neosmemo/memos:0.29.1
+
+cd /www/wwwroot/memos
+docker compose up -d
+docker compose ps
+docker compose logs memos
+curl -I http://127.0.0.1:5230
+
+docker compose down
+```
+
+没有 Compose 时用「备选：docker run」里的命令。浏览器打开 `http://服务器IP:5230`。第一个注册的用户是管理员。
+
+## 延伸阅读
+
+| 资源 | 链接 |
 |------|------|
-| 拉取镜像 | `docker pull docker.xuanyuan.run/neosmemo/memos:stable` |
-| 快速启动 | `docker run -d --name memos --restart unless-stopped -p 5230:5230 -v /www/wwwroot/memos/data:/var/opt/memos docker.xuanyuan.run/neosmemo/memos:stable` |
-| Compose 启动 | `cd /www/wwwroot/memos && docker compose up -d` |
-| 查看日志 | `docker logs -f memos` 或 `docker compose logs -f memos` |
-| 健康检查 | `curl -I http://127.0.0.1:5230` |
-| Web 访问 | `http://服务器IP:5230` |
-| 停止服务 | `docker stop memos && docker rm memos` |
+| [neosmemo/memos 镜像页](https://xuanyuan.cloud/zh/r/neosmemo/memos) | [https://xuanyuan.cloud/zh/r/neosmemo/memos](https://xuanyuan.cloud/zh/r/neosmemo/memos) |
+| [neosmemo/memos 概览](https://xuanyuan.cloud/r/neosmemo/memos) | [https://xuanyuan.cloud/r/neosmemo/memos](https://xuanyuan.cloud/r/neosmemo/memos) |
+| [neosmemo/memos 标签列表](https://xuanyuan.cloud/r/neosmemo/memos/tags) | [https://xuanyuan.cloud/r/neosmemo/memos/tags](https://xuanyuan.cloud/r/neosmemo/memos/tags) |
+| [Docker Hub · neosmemo/memos](https://hub.docker.com/r/neosmemo/memos) | [https://hub.docker.com/r/neosmemo/memos](https://hub.docker.com/r/neosmemo/memos) |
+| [GitHub · usememos/memos](https://github.com/usememos/memos) | [https://github.com/usememos/memos](https://github.com/usememos/memos) |
+| [Release v0.29.1](https://github.com/usememos/memos/releases/tag/v0.29.1) | [https://github.com/usememos/memos/releases/tag/v0.29.1](https://github.com/usememos/memos/releases/tag/v0.29.1) |
+| [v0.29.1 更新说明](https://usememos.com/changelog/0-29-1) | [https://usememos.com/changelog/0-29-1](https://usememos.com/changelog/0-29-1) |
+| [Memos 文档](https://usememos.com/docs) | [https://usememos.com/docs](https://usememos.com/docs) |
+| [Docker 部署](https://usememos.com/docs/deploy/docker) | [https://usememos.com/docs/deploy/docker](https://usememos.com/docs/deploy/docker) |
+| [Docker Compose](https://usememos.com/docs/deploy/docker-compose) | [https://usememos.com/docs/deploy/docker-compose](https://usememos.com/docs/deploy/docker-compose) |
+| [反向代理](https://usememos.com/docs/deploy/reverse-proxy) | [https://usememos.com/docs/deploy/reverse-proxy](https://usememos.com/docs/deploy/reverse-proxy) |
+| [升级说明](https://usememos.com/docs/operations/upgrade) | [https://usememos.com/docs/operations/upgrade](https://usememos.com/docs/operations/upgrade) |
+| [轩辕镜像使用手册](https://xuanyuan.cloud/usage) | [https://xuanyuan.cloud/usage](https://xuanyuan.cloud/usage) |
 
----
+## 阅读原文
 
-## 八、延伸阅读
-
-| 主题 | 链接 |
-|------|------|
-| 项目首页 | https://usememos.com |
-| 官方文档 | https://usememos.com/docs |
-| Docker 部署 | https://usememos.com/docs/deploy/docker |
-| Docker Compose | https://usememos.com/docs/deploy/docker-compose |
-| 反向代理 / HTTPS | https://usememos.com/docs/deploy/reverse-proxy |
-| 在线 Demo | https://demo.usememos.com/ |
-| GitHub 源码 | https://github.com/usememos/memos |
-| 轩辕镜像页 | https://xuanyuan.cloud/zh/r/neosmemo/memos |
-| 轩辕镜像 | https://xuanyuan.cloud |
-
----
-
-**总结**：Memos = **私有化轻量 Markdown 笔记**，镜像 20MB、一条命令就能跑。个人试用选 **第三节单容器**，浏览器注册管理员 → 切换中文 → 写 memo；长期运行选 **第四节 Compose**，配合 **数据备份** 与 **反向代理 HTTPS**，笔记数据完全在自己服务器上。
+- 轩辕镜像官方博客：https://xuanyuan.cloud/blog/docker-memos
 
 
