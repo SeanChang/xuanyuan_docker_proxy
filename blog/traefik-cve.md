@@ -2,11 +2,13 @@
 
 ![【漏洞预警】Traefik 七条高危公告：认证绕过与身份串用（暂无 CVE 编号）](https://imgs.xuanyuan.cloud/docker/blog/docker-security-1.webp)
 
-*分类: Docker漏洞预警 | 标签: Traefik, GHSA, 安全公告, 漏洞预警, 认证绕过, Ingress, Docker | 发布时间: 2026-10-08 12:40:43*
+*分类: Docker漏洞预警 | 标签: Traefik,GHSA,安全公告,漏洞预警,认证绕过,Ingress,Docker | 发布时间: 2026-10-08 12:40:43*
 
 > Traefik 于 2026 年 10 月 7 日公开 7 条高危公告（CVSS 4.0 均为 7.0，暂无 CVE 编号），涉及 SNI 检查被跳过、NTLM/Negotiate 身份串用，以及 Ingress-NGINX provider 的认证与 mTLS 问题。请把官方镜像升到 v2.11.58 或 v3.7.14。官方二进制和官方镜像不受其中的 SNI 那一条影响。
 
 **发布日期：** 2026 年 10 月 7 日  
+**更新日期：** 2026 年 10 月 17 日  
+**更新内容：** v3.7.14 仍受另外两条高危影响。v3 请继续升到 **v3.7.15**。v2 不受这两条影响。  
 **风险等级：** 高危（High）  
 **漏洞编号：** 暂无 CVE 编号 · 见下文七条 GHSA  
 **涉及镜像：** library/traefik — [轩辕镜像](https://xuanyuan.cloud/r/library/traefik) · [Docker Hub](https://hub.docker.com/_/traefik)  
