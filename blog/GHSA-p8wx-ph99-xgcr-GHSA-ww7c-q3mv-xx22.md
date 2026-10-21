@@ -7,6 +7,8 @@
 > Traefik 有两条尚无 CVE 的高危。Kubernetes Ingress NGINX provider 下，同一 host 上未对齐的 Ingress 会让 auth-tls-secret 配置的客户端证书认证被静默关闭（GHSA-p8wx-ph99-xgcr，CVSS 4.0 为 7.0）。实验特性 FastProxy 在 HTTP/1 协议升级后存在数据竞争，未认证客户端可让进程 panic（GHSA-ww7c-q3mv-xx22，CVSS 4.0 为 8.2）。请把 library/traefik 的 v3 升到 v3.7.15 或更高。v2 不受这两条影响。
 
 **发布日期：** 2026 年 10 月 17 日  
+**更新日期：** 2026 年 10 月 21 日  
+**更新内容：** v3.7.15 仍受 ForwardAuth 连接池身份复用影响。v3 请继续升到 **v3.7.16**。启用 ForwardAuth 且鉴权为 NTLM 或 Negotiate 的 v2，升到 **v2.11.60**。  
 **风险等级：** 高危（High）  
 **漏洞编号：** GHSA-p8wx-ph99-xgcr · GHSA-ww7c-q3mv-xx22（暂无 CVE）  
 **涉及镜像：** library/traefik — [轩辕镜像](https://xuanyuan.cloud/r/library/traefik) · [Docker Hub](https://hub.docker.com/_/traefik)  
