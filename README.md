@@ -1,4 +1,4 @@
-# 最新 Docker 镜像源加速列表与使用指南（2026年10月21日更新）
+# 最新 Docker 镜像源加速列表与使用指南（2026年10月22日更新）
 
 ## 📚 目录
 
@@ -36,6 +36,7 @@
 - [飞牛 fnOS](./usage/feiniu-docker-guide.md)
 - [Unraid NAS](./usage/unraid-docker-guide.md)
 - [群晖 MT Photos Docker 部署教程](./blog/nas-mt-photos-docker.md)
+- [MT Photos NAS 私有相册 Docker 部署教程](./blog/nas-mt-photos-docker-deploy.md)
 - [群晖 NAS 部署 qBittorrent](./blog/qbittorrent-docker-deploy.md)
 
 #### 面板 / 网络
@@ -71,6 +72,7 @@
 - [MongoDB Community Server Docker 部署教程](./blog/mongodb-community-server-docker-deploy.md)
 - [Redis Docker 部署教程](./blog/docker-redis.md)
 - [MariaDB Docker 部署教程](./blog/mariadb-docker.md)
+- [MariaDB 关系型数据库 Docker 部署教程](./blog/mariadb-docker-deploy.md)
 - [Elasticsearch Docker 部署教程](./blog/docker-elasticsearch.md)
 - [InfluxDB Docker 部署教程](./blog/influxdb-docker.md)
 - [Neo4j Docker 部署教程](./blog/neo4j-docker.md)
@@ -99,6 +101,7 @@
 - [Redis Stack Docker 部署教程](./blog/redis-stack-docker.md)
 - [RedisInsight Docker 部署教程](./blog/redisinsight-docker.md)
 - [MySQL Server Docker 部署教程](./blog/mysql-server-docker.md)
+- [Hue SQL 查询平台 Docker 部署教程](./blog/hue-docker-deploy.md)
 
 #### 💻 编程语言类
 - [Python Docker 部署教程](./blog/docker-python.md)
@@ -134,7 +137,9 @@
 - [Kuboard Docker 部署教程](./blog/kuboard-docker.md)
 - [Rancher Docker 部署教程](./blog/rancher-docker.md)
 - [Portainer CE Docker 部署教程](./blog/portainer-ce-docker.md)
+- [Portainer CE 容器管理 Docker 部署教程](./blog/portainer-ce-docker-deploy.md)
 - [Portainer CE CN Docker 部署教程](./blog/portainer-ce-cn-docker.md)
+- [Portainer CE 中文版 Docker 部署教程](./blog/portainer-ce-zh-docker-deploy.md)
 - [Watchtower Docker 部署教程](./blog/watchtower-docker.md)
 - [Docker in Docker 部署教程](./blog/docker-in-docker.md)
 - [BuildKit Docker 部署教程](./blog/buildkit-docker.md)
@@ -184,6 +189,10 @@
 - [DeepSeek Harness（smanx）Docker 部署教程](./blog/deepseek-harness-smanx-docker-deploy.md)
 - [nanobot 个人 AI 助手 Docker 部署教程](./blog/docker-nanobot-ai-deploy.md)
 - [Piper TTS Docker 部署教程](./blog/piper-docker-deploy.md)
+- [MaxKB 企业级智能体 Docker 部署教程](./blog/maxkb-docker-deploy.md)
+- [Open WebUI 本地大模型对话 Docker 部署教程](./blog/open-webui-docker-deploy.md)
+- [OpenClaw 自托管个人 AI 助手 Docker 部署教程](./blog/openclaw-docker-deploy.md)
+- [OpenViking AI Agent 上下文数据库 Docker 部署教程](./blog/openviking-docker-deploy.md)
 
 #### 🎬 媒体服务器
 - [Jellyfin Docker 部署教程](./blog/jellyfin-docker.md)
@@ -197,12 +206,15 @@
 - [Immich Server Docker 部署教程](./blog/immich-server-docker.md)
 - [go2rtc Docker 部署教程](./blog/go2rtc-docker-deploy.md)
 - [SRS Docker 部署教程](./blog/srs-docker-deploy.md)
+- [Bililive-go 直播录制 Docker 部署教程](./blog/bililive-go-docker-deploy.md)
 
 #### 🛠️ 开发工具
 - [Jenkins Docker 部署教程](./blog/jenkins-docker.md)
 - [Gitea Docker 部署教程](./blog/gitea-docker.md)
 - [GitLab Docker 部署教程](./blog/gitlab-docker.md)
 - [SonarQube Docker 部署教程](./blog/docker-sonarqube.md)
+- [SonarQube 代码质量与安全分析 Docker 部署教程](./blog/docker-deploy-sonarqube.md)
+- [SonarQube 代码质量平台 Docker 部署教程](./blog/sonarqube-docker-deploy.md)
 - [Nexus Repository Docker 部署教程](./blog/nexus-docker.md)
 - [OpenProject Docker 部署教程](./blog/openproject-docker.md)
 - [VS Code Server Docker 部署教程](./blog/vs-code-server-docker.md)
@@ -220,6 +232,7 @@
 - [Grafana Docker 部署教程](./blog/grafana-docker.md)
 - [Grafana 可视化平台部署教程](./blog/grafana-docker-deploy.md)
 - [ELK Docker Compose 部署教程](./blog/docker-compose-deploy-elk.md)
+- [ELK 日志检索 Docker 部署教程](./blog/docker-elk-deploy.md)
 - [Uptime Kuma Docker 部署教程](./blog/uptime-kuma-docker.md)
 - [Kibana Docker 部署教程](./blog/kibana-docker.md)
 - [Falco Docker 部署教程](./blog/falco-docker.md)
@@ -245,9 +258,11 @@
 
 #### 🎯 其他应用
 - [WordPress Docker 部署教程](./blog/docker-wordpress.md)
+- [WordPress 内容管理 Docker 部署教程](./blog/wordpress-docker-deploy.md)
 - [Nextcloud Docker 部署教程](./blog/nextcloud-docker.md)
 - [Nextcloud AIO Docker 部署教程](./blog/docker-nextcloud-aio.md)
 - [Halo Docker 部署教程](./blog/halo-docker.md)
+- [Halo 开源博客 Docker 部署教程](./blog/halo-docker-deploy.md)
 - [OnlyOffice DocumentServer Docker 部署教程](./blog/onlyoffice-documentserver-docker.md)
 - [Home Assistant Docker 部署教程](./blog/docker-home-assistant.md)
 - [qBittorrent Docker 部署教程](./blog/docker-qbittorrent.md)
@@ -321,11 +336,13 @@
 - [AstrBot Docker 部署教程](./blog/astrbot-docker.md)
 - [Baota Linux Docker 部署教程](./blog/baota-linux-docker.md)
 - [QingLong Docker 部署教程](./blog/docker-qinglong.md)
+- [青龙面板定时任务 Docker 部署教程](./blog/docker-whyour-qinglong.md)
 - [Windows Docker Desktop 部署教程](./blog/windows-docker-desktop.md)
 - [Linux Docker Docker Compose Ubuntu/CentOS 部署教程](./blog/linux-docker-docker-compose-ubuntucentos-11.md)
 - [SearXNG Docker 部署教程](./blog/5-docker-searxng.md)
 - [Bitnami 镜像 Docker Hub 变更与替代拉取说明](./blog/bitnami-docker-hub.md)
 - [Filestash Web Docker 部署教程](./blog/docker-filestash-web.md)
+- [Filestash 浏览器文件管理 Docker 部署教程](./blog/filestash-docker-deploy.md)
 - [Docker Hardened Images（DHI）部署教程](./blog/docker-hardened-imagesdhi.md)
 - [Obsidian Docker 部署教程](./blog/obsidian-docker-windowslinux-10.md)
 - [Open WebUI + Ollama Docker 部署教程](./blog/docker-open-webui-ollama-windows-linux-openai.md)
@@ -335,6 +352,7 @@
 - [GLPI Docker 部署教程](./blog/docker-glpi.md)
 - [Memos Docker 部署教程](./blog/docker-memos.md)
 - [Redmine Docker 部署教程](./blog/saasdocker-redmine.md)
+- [Redmine 私有化项目管理 Docker 部署教程](./blog/docker-redmine.md)
 - [File Browser Docker 部署教程](./blog/sftp-docker-file-browser.md)
 - [Tiki Wiki Docker 部署教程](./blog/wiki-docker-tiki-wiki.md)
 - [CloudDrive2 Docker 部署教程](./blog/clouddrive2-docker-deploy.md)
@@ -357,6 +375,7 @@
 - [ArchivesSpace Docker 部署教程](./blog/archivesspace-docker-deploy.md)
 - [Dolibarr ERP/CRM Docker 部署教程](./blog/docker-dolibarr-erpcrm.md)
 - [NapCat QQ Bot Docker 部署教程](./blog/docker-napcat-qq-bot-deploy.md)
+- [NapCat QQ Bot 协议端 Docker 部署教程](./blog/napcat-docker-deploy.md)
 - [FUXA Web SCADA Docker 部署教程](./blog/fuxa-docker-deploy.md)
 - [Gotenberg 文档转 PDF Docker 部署教程](./blog/gotenberg-docker-deploy.md)
 - [iVentoy PXE 网络装机 Docker 部署教程](./blog/iventoy-docker-deploy.md)
@@ -367,6 +386,10 @@
 - [TeslaMate Docker 部署教程](./blog/teslamate-docker-deploy.md)
 - [Docker 部署 TeX Live](./blog/texlive-docker-deploy.md)
 - [Docker 部署 TypeWords](./blog/typewords-docker-deploy.md)
+- [Excalidraw 手绘白板 Docker 部署教程](./blog/excalidraw-docker-deploy.md)
+- [O2OA 企业协同办公 Docker 部署教程](./blog/o2server-docker-deploy.md)
+- [Wiki.js Docker 部署教程](./blog/wikijs-docker-deploy.md)
+- [XWiki Docker 部署教程](./blog/xwiki-docker-deploy.md)
 
 #### 📅 Docker 月度更新与资讯
 
@@ -411,6 +434,40 @@
 - [Traefik 认证绕过与身份串用安全通告](./blog/traefik-cve.md)
 - [vLLM LlavaOnevision2 trust_remote_code 绕过安全通告](./blog/vllm-llavaonevision2-trust_remote_codecve-2026-90553.md)
 - [zot Bearer 鉴权 DELETE 越权安全通告](./blog/zot-bearer-delete-push-blobcve-2026-61833.md)
+- [Traefik 同 host Ingress 关闭 mTLS 与 FastProxy 进程退出安全通告](./blog/GHSA-p8wx-ph99-xgcr-GHSA-ww7c-q3mv-xx22.md)
+- [Agnaistic 默认口令与 JWT 密钥安全通告](./blog/agnaistic-cve-2026-108753-security-advisory.md)
+- [Arcane 注册表凭据外泄与 OIDC 账户合并安全通告](./blog/arcane-cve-2026-96626-96627-security-advisory.md)
+- [BentoML 遗留 Dockerfile 模板任意 RUN 安全通告](./blog/bentoml-cve-2026-112264-security-advisory.md)
+- [Blinko 插件安装路径穿越安全通告](./blog/blinko-cve-2026-108980-security-advisory.md)
+- [containerd 检查点恢复绕过安全上下文安全通告](./blog/containerd-cve-2026-95837-security-advisory.md)
+- [Contrast 对等恢复跨 manifest 与 containerd 配置可写安全通告](./blog/contrast-cve-2026-109359-109358-security-advisory.md)
+- [DB-GPT 未认证容器内执行代码安全通告](./blog/db-cve-2026-77932-77933-security-advisory.md)
+- [Docker Hub 个人账户转组织 PAT 改挂安全通告](./blog/docker-cve-2026-105445-security-advisory.md)
+- [Docker Desktop Windows 安装包不校验签名安全通告](./blog/docker-cve-2026-106581-security-advisory.md)
+- [Docker Buildx rawjson 跳过文件系统授权安全通告](./blog/docker-cve-2026-93325-security-advisory.md)
+- [Docker Engine 29.9.2 eMudhra/emSign 私钥泄露安全通告](./blog/docker-engine-2992emudhraemsign-cve-2026-111943.md)
+- [Dockhand 认证绕过与 Compose SSRF 安全通告](./blog/dockhand-cve-2026-110130-110112-110255-security-advisory.md)
+- [Dockhand 容器 exec WebSocket 未鉴权安全通告](./blog/dockhand-cve-2026-57169-security-advisory.md)
+- [Dokku docker-options 宿主机命令执行安全通告](./blog/dokku-cve-2026-86002-security-advisory.md)
+- [Gitea Runner 未开 privileged 仍可进入宿主机命名空间安全通告](./blog/gitea-cve-2026-73802-security-advisory.md)
+- [gVisor sandbox overlay 释放后使用安全通告](./blog/gvisor-cve-2026-95702-security-advisory.md)
+- [gvproxy 未认证接口删除宿主机文件安全通告](./blog/gvproxy-cve-2026-107935-security-advisory.md)
+- [Harbor 扫描仪凭据与 Sandboxes 隔离绕过安全通告](./blog/harbor-cve-2026-92770-77179-79994-55887-security-advisory.md)
+- [Langchain-Chatchat 未认证命令执行安全通告](./blog/langchain-cve-2026-75128-security-advisory.md)
+- [Letta 默认 Compose 不启用鉴权安全通告](./blog/letta-cve-2026-77936-77937-security-advisory.md)
+- [LMCache HTTP 管理面未认证远程代码执行安全通告](./blog/lmcache-cve-2026-107204-107205-107206-security-advisory.md)
+- [Mailu 域管理员重置更高权限账户安全通告](./blog/mailu-cve-2026-86008-86009-security-advisory.md)
+- [Nexus Repository 符号包缺少鉴权安全通告](./blog/nexus-cve-2026-97665-97712-security-advisory.md)
+- [Nginx UI 会话加固缺失与 MCP 配置校验绕过安全通告](./blog/nginx-cve-2026-84312-84313-84314-84315-84316-84317-84318-84319-84360-security-advisory.md)
+- [Ollama /api/pull 路径穿越远程代码执行安全通告](./blog/ollama-cve-2026-103663-security-advisory.md)
+- [Ollama Pull API 重定向 SSRF 安全通告](./blog/ollama-cve-2026-108836-security-advisory.md)
+- [openPDC 镜像固定管理员凭据与远程代码执行安全通告](./blog/openpdc-cve-2026-105278-100730-104629-105281-security-advisory.md)
+- [P4 Search 日志配置路径穿越安全通告](./blog/p4-cve-2026-103508-103509-security-advisory.md)
+- [PHP 远程请求执行服务器命令安全通告](./blog/php-cve-2026-109618-109619.md)
+- [Renovate 共享预设绕过白名单安全通告](./blog/renovate-cve-2026-110865-110867-110868-security-advisory.md)
+- [runwasi 镜像层 Wasmtime 预编译产物安全通告](./blog/runwasi-cve-2026-47218-security-advisory.md)
+- [Traefik ForwardAuth 连接池串用 NTLM 身份安全通告](./blog/traefik-ghsa-hrpp-p4fc-wwf8-security-advisory.md)
+- [Trigger.dev 自托管 Compose 默认密钥安全通告](./blog/trigger-cve-2026-114087-security-advisory.md)
 
 ## 让 AI 帮你使用轩辕镜像？
 
