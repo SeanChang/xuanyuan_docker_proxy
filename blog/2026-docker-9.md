@@ -1,6 +1,6 @@
-# 2026 最新国内 Docker 镜像源加速列表（10 月 21 日更新）
+# 2026 最新国内 Docker 镜像源加速列表（10 月 23 日更新）
 
-![2026 最新国内 Docker 镜像源加速列表（10 月 21 日更新）](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-10.webp)
+![2026 最新国内 Docker 镜像源加速列表（10 月 23 日更新）](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-10.webp)
 
 *分类: Docker部署教程 | 标签: Docker,镜像加速,国内镜像源,轩辕镜像,registry-mirrors,containerd,Kubernetes,Podman | 发布时间: 2026-09-02 12:16:33*
 
@@ -18,7 +18,7 @@
 
 ---
 
-## 🔍 10 月 21 日最新可用镜像源加速
+## 🔍 10 月 23 日最新可用镜像源加速
 
 ### 云厂商内网源，以及别再用的旧公共源
 
