@@ -1,4 +1,4 @@
-# 最新 Docker 镜像源加速列表与使用指南（2026年10月22日更新）
+# 最新 Docker 镜像源加速列表与使用指南（2026年10月24日更新）
 
 ## 📚 目录
 
@@ -41,6 +41,7 @@
 
 #### 面板 / 网络
 - [宝塔面板](./usage/baota-docker-guide.md)
+- [宝塔面板 Docker 部署教程](./blog/baota-docker-deploy.md)
 - [爱快路由 ikuai](./usage/ikuai-docker-guide.md)
 - [1Panel Linux Docker 部署教程](./blog/1panel-docker-linux.md)
 
@@ -140,6 +141,7 @@
 - [Portainer CE 容器管理 Docker 部署教程](./blog/portainer-ce-docker-deploy.md)
 - [Portainer CE CN Docker 部署教程](./blog/portainer-ce-cn-docker.md)
 - [Portainer CE 中文版 Docker 部署教程](./blog/portainer-ce-zh-docker-deploy.md)
+- [DPanel 轻量容器管理 Docker 部署教程](./blog/dpanel-docker-deploy.md)
 - [Watchtower Docker 部署教程](./blog/watchtower-docker.md)
 - [Docker in Docker 部署教程](./blog/docker-in-docker.md)
 - [BuildKit Docker 部署教程](./blog/buildkit-docker.md)
@@ -274,6 +276,7 @@
 - [MinIO Docker 部署教程](./blog/minio-docker.md)
 - [MinIO 对象存储 Docker 部署教程](./blog/minio-docker-deploy.md)
 - [MinIO Client MC Docker 部署教程](./blog/minio-client-mc-docker.md)
+- [minio/minio 已从 Docker Hub 下架说明](./blog/minio-docker-hub-image-removed.md)
 - [phpMyAdmin Docker 部署教程](./blog/phpmyadmin-docker.md)
 - [pgAdmin4 Docker 部署教程](./blog/pgadmin4-docker.md)
 - [Mongo Express Docker 部署教程](./blog/mongo-express-docker.md)
@@ -321,6 +324,7 @@
 - [Pillow Final Docker 部署教程](./blog/pillow_final-docker.md)
 - [Standalone Chrome Docker 部署教程](./blog/standalone-chrome-docker.md)
 - [Chrome 远程桌面 Docker 部署教程](./blog/docker-chrome.md)
+- [Alpine Chrome 无头浏览器 Docker 部署教程](./blog/alpine-chrome-docker-deploy.md)
 - [Selenium Standalone Chromium Docker 部署教程](./blog/selenium-standalone-chromium.md)
 - [Squid Docker 部署教程](./blog/squid-docker.md)
 - [Netshoot Docker 部署教程](./blog/netshoot-docker.md)
@@ -468,6 +472,11 @@
 - [runwasi 镜像层 Wasmtime 预编译产物安全通告](./blog/runwasi-cve-2026-47218-security-advisory.md)
 - [Traefik ForwardAuth 连接池串用 NTLM 身份安全通告](./blog/traefik-ghsa-hrpp-p4fc-wwf8-security-advisory.md)
 - [Trigger.dev 自托管 Compose 默认密钥安全通告](./blog/trigger-cve-2026-114087-security-advisory.md)
+- [Incus 建实例可拿下宿主机安全通告](./blog/incus-cve-2026-115375-115377-115372-115376-115371-115374-security-advisory.md)
+- [Node.js 解压不可信数据执行代码安全通告](./blog/node-cve-2026-111497-105482-105483-106069-security-advisory.md)
+- [Oracle Java 未登录改关键数据安全通告](./blog/oracle-cve-2026-91403-security-advisory.md)
+- [Traefik 客户端证书校验绕过安全通告](./blog/traefik-cve-2026-114656-security-advisory.md)
+- [Wasmtime 不可信 Wasm 逃出沙箱安全通告](./blog/wasmtime-cve-2026-115384-115392-security-advisory.md)
 
 ## 让 AI 帮你使用轩辕镜像？
 
