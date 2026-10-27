@@ -103,6 +103,8 @@
 - [RedisInsight Docker 部署教程](./blog/redisinsight-docker.md)
 - [MySQL Server Docker 部署教程](./blog/mysql-server-docker.md)
 - [Hue SQL 查询平台 Docker 部署教程](./blog/hue-docker-deploy.md)
+- [Liquibase 数据库变更管理 Docker 部署教程](./blog/liquibase-docker-deploy.md)
+- [NocoDB 在线数据表格 Docker 部署教程](./blog/nocodb-docker-deploy.md)
 
 #### 💻 编程语言类
 - [Python Docker 部署教程](./blog/docker-python.md)
@@ -183,6 +185,7 @@
 - [Moltbot AI Docker 部署教程](./blog/moltbot-docker-ai.md)
 - [OpenCode Docker 部署教程](./blog/opencode-docker.md)
 - [OpenCode 快速上手 Docker 部署教程](./blog/10-opencode-docker-ai.md)
+- [Codex CLI 终端 AI 编程 Docker 部署教程](./blog/codex-docker-deploy.md)
 - [QQ OpenClaw Docker 部署教程](./blog/qq-openclaw-docker.md)
 - [OpenClaw + Qwen + DashScope 认证部署](./blog/openclaw-323qwen-dashscope-auth-40.md)
 - [9Router AI 统一 API 网关 Docker 部署教程](./blog/9router-ai-apicursorcline.md)
@@ -279,6 +282,7 @@
 - [minio/minio 已从 Docker Hub 下架说明](./blog/minio-docker-hub-image-removed.md)
 - [phpMyAdmin Docker 部署教程](./blog/phpmyadmin-docker.md)
 - [pgAdmin4 Docker 部署教程](./blog/pgadmin4-docker.md)
+- [CloudBeaver 网页数据库管理 Docker 部署教程](./blog/cloudbeaver-docker-deploy.md)
 - [Mongo Express Docker 部署教程](./blog/mongo-express-docker.md)
 - [SeekDB Docker 部署教程](./blog/seekdb-docker.md)
 - [Hashicorp Vault Docker 部署教程](./blog/hashicorp-vault-docker.md)
@@ -358,6 +362,7 @@
 - [Redmine Docker 部署教程](./blog/saasdocker-redmine.md)
 - [Redmine 私有化项目管理 Docker 部署教程](./blog/docker-redmine.md)
 - [File Browser Docker 部署教程](./blog/sftp-docker-file-browser.md)
+- [Samba 局域网文件共享 Docker 部署教程](./blog/samba-docker-deploy.md)
 - [Tiki Wiki Docker 部署教程](./blog/wiki-docker-tiki-wiki.md)
 - [CloudDrive2 Docker 部署教程](./blog/clouddrive2-docker-deploy.md)
 - [DbGate Docker 部署教程](./blog/dbgate-docker-deploy.md)
@@ -477,6 +482,11 @@
 - [Oracle Java 未登录改关键数据安全通告](./blog/oracle-cve-2026-91403-security-advisory.md)
 - [Traefik 客户端证书校验绕过安全通告](./blog/traefik-cve-2026-114656-security-advisory.md)
 - [Wasmtime 不可信 Wasm 逃出沙箱安全通告](./blog/wasmtime-cve-2026-115384-115392-security-advisory.md)
+- [BlueSpice 只读用户可变成管理员安全通告](./blog/bluespice-cve-2026-25784-security-advisory.md)
+- [Dokploy 组织管理员可改其他租户应用安全通告](./blog/dokploy-cve-2026-116068-security-advisory.md)
+- [Python 拒绝已泄露中间证书安全通告](./blog/python-cve-2026-115557-security-advisory.md)
+- [vLLM 多模态服务远程代码执行安全通告](./blog/vllm-cve-2026-115912-115915-security-advisory.md)
+- [vLLM 推理接口可连外部主机安全通告](./blog/vllm-cve-2026-116176-116177-116179-116180-security-advisory.md)
 
 ## 让 AI 帮你使用轩辕镜像？
 
