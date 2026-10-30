@@ -1,4 +1,4 @@
-# 最新 Docker 镜像源加速列表与使用指南（2026年10月30日更新）
+# 最新 Docker 镜像源加速列表与使用指南（2026年10月31日更新）
 
 ## 📚 目录
 
@@ -151,6 +151,7 @@
 
 #### 🤖 AI/ML 相关
 - [Dify Docker 部署教程](./blog/dify-docker.md)
+- [Dify LLM 应用开发平台 Docker 部署教程](./blog/dify-docker-deploy.md)
 - [Dify Web Docker 部署教程](./blog/dify-web-docker.md)
 - [Dify Sandbox Docker 部署教程](./blog/dify-sandbox-docker.md)
 - [Dify Plugin Daemon Docker 部署教程](./blog/dify-plugin-daemon-docker.md)
@@ -212,6 +213,7 @@
 - [go2rtc Docker 部署教程](./blog/go2rtc-docker-deploy.md)
 - [SRS Docker 部署教程](./blog/srs-docker-deploy.md)
 - [Bililive-go 直播录制 Docker 部署教程](./blog/bililive-go-docker-deploy.md)
+- [EmulatorJS 浏览器复古游戏 Docker 部署教程](./blog/emulatorjs-docker-deploy.md)
 
 #### 🛠️ 开发工具
 - [Jenkins Docker 部署教程](./blog/jenkins-docker.md)
@@ -231,6 +233,7 @@
 - [Harness Open Source Docker 部署教程](./blog/harness-docker-deploy.md)
 - [ZenTao Docker 部署教程](./blog/zentao-docker-deploy.md)
 - [XXL-JOB Docker 部署教程](./blog/xxl-job-admin-docker-deploy.md)
+- [devkitARM 掌机自制程序编译 Docker 部署教程](./blog/devkitarm-docker-deploy.md)
 
 #### 📊 监控/日志
 - [Prometheus Docker 部署教程](./blog/prometheus-docker.md)
@@ -342,6 +345,7 @@
 - [Milvus GUI Attu Docker 部署教程](./blog/milvus-gui-attu-docker.md)
 - [Seafile MC Docker 部署教程](./blog/seafile-mc-docker.md)
 - [AstrBot Docker 部署教程](./blog/astrbot-docker.md)
+- [AstrBot 多平台聊天机器人 Docker 部署教程](./blog/astrbot-docker-deploy.md)
 - [Baota Linux Docker 部署教程](./blog/baota-linux-docker.md)
 - [QingLong Docker 部署教程](./blog/docker-qinglong.md)
 - [青龙面板定时任务 Docker 部署教程](./blog/docker-whyour-qinglong.md)
@@ -487,6 +491,23 @@
 - [Python 拒绝已泄露中间证书安全通告](./blog/python-cve-2026-115557-security-advisory.md)
 - [vLLM 多模态服务远程代码执行安全通告](./blog/vllm-cve-2026-115912-115915-security-advisory.md)
 - [vLLM 推理接口可连外部主机安全通告](./blog/vllm-cve-2026-116176-116177-116179-116180-security-advisory.md)
+- [Cloud Foundry 只读权限可改已构建应用安全通告](./blog/cloudfoundry-cve-2026-59387-security-advisory.md)
+- [Crawl4AI 爬取接口可被拖垮或加载未审核模型安全通告](./blog/crawl4ai-cve-2026-119119-119120-security-advisory.md)
+- [GitLab 未登录远程代码执行安全通告](./blog/gitlab-cve-2026-110264-97229-security-advisory.md)
+- [Langflow 消息通道可执行代码安全通告](./blog/langflow-cve-2026-104317-103092-security-advisory.md)
+- [Langflow 低权限账号可执行代码安全通告](./blog/langflow-cve-2026-107328-110245-security-advisory.md)
+- [n8n 旧函数节点主进程代码执行安全通告](./blog/n8n-cve-2026-119408-119557-security-advisory.md)
+- [n8n 表达式主机命令执行安全通告](./blog/n8n-cve-2026-85165-72765-65590-security-advisory.md)
+- [OpenShift 安装器远程脚本执行安全通告](./blog/openshift-ansible-cve-2026-92092-security-advisory.md)
+- [OpenShift 控制台 Helm 地址内网访问安全通告](./blog/openshift-console-cve-2026-75888-security-advisory.md)
+- [OpenShift Insights 采集账号可读全集群密钥安全通告](./blog/openshift-insights-operator-cve-2026-93017-security-advisory.md)
+- [OpenShift Insights 扫描器容器可拿节点 root 安全通告](./blog/openshift-insights-runtime-extractor-cve-2026-104795-security-advisory.md)
+- [OpenShift 登录服务请求头可拖垮认证安全通告](./blog/openshift-oauth-server-cve-2026-49329-security-advisory.md)
+- [群晖 NAS 未打补丁文件被加密安全通告](./blog/synology-dsm-cve-2026-13684-13639-security-advisory.md)
+- [vLLM 推理引擎可被打挂或泄漏请求内容安全通告](./blog/vllm-cve-2026-114051-114054-116172-116181-security-advisory.md)
+- [vLLM 远程代码信任可执行模型仓库代码安全通告](./blog/vllm-cve-2026-114053-security-advisory.md)
+- [Wasmtime macOS 访客可搬入宿主机目录安全通告](./blog/wasmtime-cve-2026-118688-security-advisory.md)
+- [ZITADEL 未设登录方式账号可被抢走安全通告](./blog/zitadel-cve-2026-119128-119127-119129-security-advisory.md)
 
 ## 让 AI 帮你使用轩辕镜像？
 
