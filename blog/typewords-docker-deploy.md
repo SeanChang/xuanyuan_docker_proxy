@@ -1,6 +1,6 @@
-# Docker 部署  ypeWords
+# Docker 部署 TypeWords：轻松搭建英语单词与文章练习平台
 
-![Docker 部署  ypeWords](https://imgs.xuanyuan.cloud/docker/blog/typewords.webp)
+![Docker 部署 TypeWords：轻松搭建英语单词与文章练习平台](https://imgs.xuanyuan.cloud/docker/blog/typewords.webp)
 
 *分类: Docker部署教程 | 标签: TypeWords,Docker,轩辕镜像,英语学习,背单词,打字练习,私有化部署,部署教程 | 发布时间: 2026-08-25 03:48:49*
 
@@ -157,7 +157,7 @@ docker.xuanyuan.run/zyronon/typewords:3.0.4   f2585590e1db        107MB         
 |------|----------|
 | **Linux**（正文默认） | `/www/wwwroot/typewords` |
 | **macOS** | **`~/docker/typewords`** |
-| **Windows（Docker Desktop）** | 如 `C:\docker\typewords` |
+| **Windows（Docker Desktop）** | 如 `C:docker	ypewords` |
 
 ### 5.1 创建目录
 
@@ -225,7 +225,8 @@ typewords  | 2026/08/25 11:05:37 [notice] 1#1: start worker processes
 ```
 
 ```bash
-curl -s -o /dev/null -w "%{http_code}\n" http://127.0.0.1:8080/
+curl -s -o /dev/null -w "%{http_code}
+" http://127.0.0.1:8080/
 ```
 
 ```text
@@ -313,11 +314,11 @@ CET-4 介绍为大学英语四级词库，实测 **2607** 条。右上角点 **�
 仅临时试玩或没有 Compose 时使用。
 
 ```bash
-docker run -d \
-  --name typewords \
-  --restart unless-stopped \
-  -p 8080:80 \
-  -e TZ=Asia/Shanghai \
+docker run -d 
+  --name typewords 
+  --restart unless-stopped 
+  -p 8080:80 
+  -e TZ=Asia/Shanghai 
   docker.xuanyuan.run/zyronon/typewords:3.0.4
 ```
 
@@ -325,7 +326,8 @@ docker run -d \
 
 ```bash
 docker ps | grep typewords
-curl -s -o /dev/null -w "%{http_code}\n" http://127.0.0.1:8080/
+curl -s -o /dev/null -w "%{http_code}
+" http://127.0.0.1:8080/
 ```
 
 ---
@@ -399,7 +401,8 @@ cd /www/wwwroot/typewords
 docker compose up -d
 docker compose ps
 docker compose logs -f --tail 100
-curl -s -o /dev/null -w "%{http_code}\n" http://127.0.0.1:8080/
+curl -s -o /dev/null -w "%{http_code}
+" http://127.0.0.1:8080/
 # 浏览器 http://服务器IP:8080
 
 docker compose down
@@ -408,8 +411,8 @@ docker compose down
 备选：
 
 ```bash
-docker run -d --name typewords --restart unless-stopped -p 8080:80 \
-  -e TZ=Asia/Shanghai \
+docker run -d --name typewords --restart unless-stopped -p 8080:80 
+  -e TZ=Asia/Shanghai 
   docker.xuanyuan.run/zyronon/typewords:3.0.4
 ```
 
