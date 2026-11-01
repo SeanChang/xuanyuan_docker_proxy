@@ -1,4 +1,4 @@
-# 最新 Docker 镜像源加速列表与使用指南（2026年10月31日更新）
+# 最新 Docker 镜像源加速列表与使用指南（2026年11月1日更新）
 
 ## 📚 目录
 
@@ -26,6 +26,7 @@
 - [Docker 镜像源配置踩坑指南](./blog/docker.md)
 - [2026 国内 Docker 镜像拉取指南](./blog/2026-docker-daemonjson-10.md)
 - [2026 年 10 月最新国内 Docker 镜像源加速列表](./blog/2026-10-docker.md)
+- [2026 年 11 月最新国内 Docker 镜像源加速列表](./blog/2026-11-docker.md)
 - [2026 最新国内 Docker 镜像源加速列表（10 月 8 日更新）](./blog/2026-docker-9.md)
 
 #### NAS 设备
@@ -187,6 +188,7 @@
 - [OpenCode Docker 部署教程](./blog/opencode-docker.md)
 - [OpenCode 快速上手 Docker 部署教程](./blog/10-opencode-docker-ai.md)
 - [Codex CLI 终端 AI 编程 Docker 部署教程](./blog/codex-docker-deploy.md)
+- [ReMe AI Agent 记忆管理 Docker 部署教程](./blog/reme-docker-deploy.md)
 - [QQ OpenClaw Docker 部署教程](./blog/qq-openclaw-docker.md)
 - [OpenClaw + Qwen + DashScope 认证部署](./blog/openclaw-323qwen-dashscope-auth-40.md)
 - [9Router AI 统一 API 网关 Docker 部署教程](./blog/9router-ai-apicursorcline.md)
@@ -508,6 +510,29 @@
 - [vLLM 远程代码信任可执行模型仓库代码安全通告](./blog/vllm-cve-2026-114053-security-advisory.md)
 - [Wasmtime macOS 访客可搬入宿主机目录安全通告](./blog/wasmtime-cve-2026-118688-security-advisory.md)
 - [ZITADEL 未设登录方式账号可被抢走安全通告](./blog/zitadel-cve-2026-119128-119127-119129-security-advisory.md)
+- [AdminNeo 已登录用户可执行代码或删除文件安全通告](./blog/adminneo-cve-2026-96630-security-advisory.md)
+- [AJ-Report 伪造分享令牌可执行代码安全通告](./blog/aj-report-cve-2026-120209-security-advisory.md)
+- [ArcadeDB 改密后旧连接仍可读写安全通告](./blog/arcadedb-cve-2026-119575-119577-security-advisory.md)
+- [Beta9 租户构建和文件接口可逃出沙箱安全通告](./blog/beta9-cve-2026-120306-120307-120308-security-advisory.md)
+- [Burrito 空 webhook 密钥放行未授权 Terraform 安全通告](./blog/burrito-cve-2026-102649-security-advisory.md)
+- [imgproxy 恶意图标可执行代码安全通告](./blog/imgproxy-ghsa-hff9-5pqw-6w9f-security-advisory.md)
+- [imgproxy 恶意图标可打垮工作进程安全通告](./blog/imgproxy-ghsa-mmq5-494m-security-advisory.md)
+- [Jpom 未登录可拿到超级管理员安全通告](./blog/jpom-cve-2026-120201-security-advisory.md)
+- [Kata 机密容器宿主机可改写客户机敏感位置安全通告](./blog/kata-containers-cve-2026-77176-security-advisory.md)
+- [Kubeflow Pipelines 压缩包打满内存与日志旁路读取安全通告](./blog/kubeflow-pipelines-cve-2026-118761-118759-security-advisory.md)
+- [LXD 伪造证书可拿到整集群管理权安全通告](./blog/lxd-cve-2026-112816-security-advisory.md)
+- [OpenPanel 项目成员可在 worker 执行代码安全通告](./blog/openpanel-cve-2026-116811-security-advisory.md)
+- [pgAdmin 4 导入导出可在主机执行命令安全通告](./blog/pgadmin4-cve-2026-116241-security-advisory.md)
+- [Pi-hole 容器用户可提权到 root 安全通告](./blog/pihole-cve-2026-119335-119336-security-advisory.md)
+- [praktor Telegram 文件名可写到上传目录以外安全通告](./blog/praktor-cve-2026-62331-security-advisory.md)
+- [Presenton 未登录可调用本地接口安全通告](./blog/presenton-cve-2026-120191-security-advisory.md)
+- [Rembg 去背景接口可读取服务器文件安全通告](./blog/rembg-cve-2026-115924-security-advisory.md)
+- [RHACS 已用 SAML 登录响应可再次换取令牌安全通告](./blog/rhacs-cve-2026-103314-security-advisory.md)
+- [ShowDoc Mock 模板可在容器执行命令安全通告](./blog/showdoc-cve-2026-120203-security-advisory.md)
+- [Signal K 路径穿越可伪造管理员并执行命令安全通告](./blog/signalk-ghsa-4xm8-rg9h-jhq2-security-advisory.md)
+- [TAKO Okta 代理未登录可创建管理员安全通告](./blog/tako-okta-ai-agent-cve-2026-63377-security-advisory.md)
+- [Transmission 任意网页可操作下载器安全通告](./blog/transmission-cve-2026-116748-security-advisory.md)
+- [WordPress 核心升级窗口可被执行代码安全通告](./blog/wordpress-cve-2026-119977-security-advisory.md)
 
 ## 让 AI 帮你使用轩辕镜像？
 
