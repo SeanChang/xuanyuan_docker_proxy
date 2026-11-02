@@ -1473,283 +1473,98 @@ EOF
     fi
   fi
   
-  # 在安装 docker-ce 之前，先检查并安装 libnftables 依赖
-  echo ">>> [3.1/8] 检查 libnftables 依赖..."
-  if ! rpm -q libnftables >/dev/null 2>&1; then
-    echo "⚠️  未检测到 libnftables，正在安装..."
-    if sudo $PKG_MANAGER install -y libnftables 2>&1; then
-      echo "✅ libnftables 安装成功"
+  # openEuler/HCE：以 LIBNFTABLES_1 Provides 做真检（勿用 rpm -q libnftables，易与 libnftnl 误报）
+  has_libnftables_abi() {
+    rpm -q --whatprovides 'libnftables.so.1(LIBNFTABLES_1)(64bit)' >/dev/null 2>&1
+  }
+
+  ensure_tar_for_binary_install() {
+    if command -v tar >/dev/null 2>&1; then
+      return 0
+    fi
+    echo "⚠️  未检测到 tar，正在自动安装（解压 Docker 二进制包需要）..."
+    if sudo $PKG_MANAGER install -y tar gzip 2>&1; then
+      if command -v tar >/dev/null 2>&1; then
+        echo "✅ tar 安装成功"
+        return 0
+      fi
+    fi
+    echo "❌ 解压 Docker 二进制包需要 tar，自动安装失败"
+    echo "💡 请先执行: sudo $PKG_MANAGER install -y tar"
+    echo "💡 然后重新运行本安装脚本"
+    exit 1
+  }
+
+  install_docker_static_binary_openeuler() {
+    echo "正在下载 Docker 二进制包..."
+    DOCKER_BINARY_DOWNLOADED=false
+
+    echo "尝试从华为云镜像下载 Docker 二进制包..."
+    if curl -fsSL "https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz" -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+      DOCKER_BINARY_DOWNLOADED=true
+      echo "✅ 从华为云镜像下载成功"
     else
-      echo "⚠️  libnftables 安装失败，将在安装 docker-ce 时重试"
-    fi
-  else
-    echo "✅ libnftables 已安装"
-  fi
-  
-  # 尝试安装 Docker，使用 --allowerasing 参数处理 runc 冲突
-  # containerd.io 会替代系统的 runc，需要使用 --allowerasing 允许替换
-  if sudo $PKG_MANAGER install -y --allowerasing docker-ce docker-ce-cli containerd.io docker-buildx-plugin; then
-    echo "✅ Docker CE 安装成功"
-  else
-    echo "❌ 批量安装失败，尝试逐个安装组件（使用 --allowerasing）..."
-    
-    # 再次检查 libnftables（批量安装失败后）
-    echo "再次检查 libnftables 依赖..."
-    if ! rpm -q libnftables >/dev/null 2>&1; then
-      echo "⚠️  未检测到 libnftables，正在安装..."
-      if sudo $PKG_MANAGER install -y libnftables 2>&1; then
-        echo "✅ libnftables 安装成功"
-      else
-        echo "⚠️  libnftables 安装失败"
-      fi
-    else
-      echo "✅ libnftables 已安装"
-    fi
-    
-    # 逐个安装组件，都使用 --allowerasing 处理冲突
-    CONTAINERD_INSTALLED=false
-    CONTAINERD_OUTPUT=""
-    if sudo $PKG_MANAGER install -y --allowerasing containerd.io 2>&1; then
-      echo "✅ containerd.io 安装成功"
-      CONTAINERD_INSTALLED=true
-    else
-      CONTAINERD_OUTPUT=$(sudo $PKG_MANAGER install -y --allowerasing containerd.io 2>&1 || true)
-      echo "❌ containerd.io 安装失败"
-      
-      # 检测是否是校验和错误，如果是则尝试切换镜像源
-      if echo "$CONTAINERD_OUTPUT" | grep -qiE "(checksum doesn't match|校验和不匹配|Cannot download|all mirrors were already tried)"; then
-        echo "⚠️  检测到下载失败或校验和不匹配，尝试切换 Docker 镜像源..."
-        
-        # 尝试切换其他镜像源（从阿里云开始，因为华为云已经失败）
-        for mirror_idx in 1 2 3 4 5; do
-          if switch_docker_mirror $mirror_idx; then
-            CURRENT_MIRROR_INDEX=$mirror_idx
-            echo "  - 重新尝试安装 containerd.io..."
-            if sudo $PKG_MANAGER install -y --allowerasing containerd.io 2>&1; then
-              echo "✅ containerd.io 安装成功（切换镜像源后）"
-              CONTAINERD_INSTALLED=true
-              break
-            else
-              echo "  ❌ 切换镜像源后仍然失败，尝试下一个镜像源..."
-            fi
-          fi
-        done
-        
-        if [[ "$CONTAINERD_INSTALLED" == "false" ]]; then
-          echo "❌ 所有镜像源都尝试失败，containerd.io 无法安装"
-        fi
-      fi
-    fi
-    
-    if sudo $PKG_MANAGER install -y --allowerasing docker-ce-cli; then
-      echo "✅ docker-ce-cli 安装成功"
-    else
-      echo "❌ docker-ce-cli 安装失败"
-    fi
-    
-    DOCKER_CE_INSTALLED=false
-    DOCKER_CE_OUTPUT=""
-    # 使用临时变量捕获退出码，因为 tee 会改变退出码
-    DOCKER_CE_INSTALL_LOG=$(sudo $PKG_MANAGER install -y --allowerasing docker-ce 2>&1 | tee /tmp/docker-ce-install.log)
-    DOCKER_CE_INSTALL_STATUS=${PIPESTATUS[0]}
-    
-    if [[ $DOCKER_CE_INSTALL_STATUS -eq 0 ]]; then
-      # 再次验证 docker-ce 是否真的安装成功
-      if rpm -q docker-ce >/dev/null 2>&1; then
-        echo "✅ docker-ce 安装成功"
-        DOCKER_CE_INSTALLED=true
-      else
-        echo "⚠️  安装命令成功但 docker-ce 包未找到，可能安装失败"
-        DOCKER_CE_OUTPUT="$DOCKER_CE_INSTALL_LOG"
-        echo "❌ docker-ce 安装失败"
-      fi
-    else
-      DOCKER_CE_OUTPUT="$DOCKER_CE_INSTALL_LOG"
-      echo "❌ docker-ce 安装失败"
-      
-      # 检测是否是 libnftables 依赖问题
-      if echo "$DOCKER_CE_OUTPUT" | grep -qiE "libnftables|LIBNFTABLES"; then
-        echo "⚠️  检测到 libnftables 依赖问题"
-        
-        # 先检查 libnftables 是否已安装
-        if rpm -q libnftables >/dev/null 2>&1; then
-          echo "⚠️  libnftables 已安装，但版本可能不兼容，尝试升级..."
-          sudo $PKG_MANAGER update -y libnftables 2>&1 || true
-        else
-          echo "正在尝试安装 libnftables 依赖..."
-        fi
-        
-        # 尝试安装 libnftables（显示详细信息，不要隐藏错误）
-        if sudo $PKG_MANAGER install -y libnftables 2>&1; then
-          echo "✅ libnftables 安装成功，重新尝试安装 docker-ce..."
-          if sudo $PKG_MANAGER install -y --allowerasing docker-ce 2>&1 | tee /tmp/docker-ce-install-retry.log; then
-            echo "✅ docker-ce 安装成功（安装 libnftables 后）"
-            DOCKER_CE_INSTALLED=true
-          else
-            echo "❌ docker-ce 安装仍然失败"
-            DOCKER_CE_OUTPUT=$(cat /tmp/docker-ce-install-retry.log 2>/dev/null || echo "")
-            
-            # 如果仍然失败，尝试切换镜像源（不同镜像源可能有不同版本的 docker-ce）
-            if echo "$DOCKER_CE_OUTPUT" | grep -qiE "libnftables|LIBNFTABLES"; then
-              echo "⚠️  当前镜像源的 docker-ce 版本可能不兼容，尝试切换镜像源..."
-              
-              # 尝试切换其他镜像源（从阿里云开始，因为华为云已经失败）
-              for mirror_idx in 1 2 3 4 5; do
-                if switch_docker_mirror $mirror_idx; then
-                  CURRENT_MIRROR_INDEX=$mirror_idx
-                  echo "  - 重新尝试安装 docker-ce..."
-                  
-                  # 再次检查并安装 libnftables（某些镜像源可能提供不同版本）
-                  if ! rpm -q libnftables >/dev/null 2>&1; then
-                    echo "  - 安装 libnftables..."
-                    sudo $PKG_MANAGER install -y libnftables 2>&1 || echo "  ⚠️  libnftables 安装失败，继续尝试安装 docker-ce..."
-                  else
-                    echo "  ✅ libnftables 已安装"
-                  fi
-                  
-                  if sudo $PKG_MANAGER install -y --allowerasing docker-ce 2>&1 | tee /tmp/docker-ce-install-mirror.log; then
-                    echo "✅ docker-ce 安装成功（切换镜像源后）"
-                    DOCKER_CE_INSTALLED=true
-                    break
-                  else
-                    echo "  ❌ 切换镜像源后仍然失败，尝试下一个镜像源..."
-                  fi
-                fi
-              done
-            fi
-          fi
-        else
-          echo "⚠️  libnftables 安装失败，尝试切换镜像源后重试..."
-          
-          # 尝试切换其他镜像源
-          for mirror_idx in 1 2 3 4 5; do
-            if switch_docker_mirror $mirror_idx; then
-              CURRENT_MIRROR_INDEX=$mirror_idx
-              echo "  - 检查并安装 libnftables..."
-              
-              # 先检查是否已安装
-              if rpm -q libnftables >/dev/null 2>&1; then
-                echo "  ✅ libnftables 已安装"
-              else
-                # 尝试安装 libnftables（显示详细信息）
-                if sudo $PKG_MANAGER install -y libnftables 2>&1; then
-                  echo "  ✅ libnftables 安装成功"
-                else
-                  echo "  ⚠️  libnftables 安装失败，继续尝试安装 docker-ce..."
-                fi
-              fi
-              
-              # 无论 libnftables 是否安装成功，都尝试安装 docker-ce
-              echo "  - 尝试安装 docker-ce..."
-              if sudo $PKG_MANAGER install -y --allowerasing docker-ce 2>&1 | tee /tmp/docker-ce-install-mirror.log; then
-                echo "✅ docker-ce 安装成功（切换镜像源后）"
-                DOCKER_CE_INSTALLED=true
-                break
-              else
-                echo "  ❌ docker-ce 安装仍然失败，尝试下一个镜像源..."
-              fi
-            fi
-          done
-          
-          if [[ "$DOCKER_CE_INSTALLED" == "false" ]]; then
-            echo "⚠️  所有镜像源都尝试失败，将使用二进制安装方式绕过依赖问题"
-          fi
-        fi
-      fi
-    fi
-    
-    if sudo $PKG_MANAGER install -y --allowerasing docker-buildx-plugin; then
-      echo "✅ docker-buildx-plugin 安装成功"
-    else
-      echo "❌ docker-buildx-plugin 安装失败"
-    fi
-    
-    # 检查 docker.service 文件是否存在
-    DOCKER_SERVICE_EXISTS=false
-    if [ -f /etc/systemd/system/docker.service ] || [ -f /usr/lib/systemd/system/docker.service ]; then
-      DOCKER_SERVICE_EXISTS=true
-    fi
-    
-    # 检查是否至少安装了核心组件
-    # 不仅要检查 docker 命令是否存在，还要检查 docker.service 是否存在
-    if ! command -v docker &> /dev/null || [ "$DOCKER_CE_INSTALLED" == "false" ] || [ "$DOCKER_SERVICE_EXISTS" == "false" ]; then
-      if [ "$DOCKER_CE_INSTALLED" == "false" ] || [ "$DOCKER_SERVICE_EXISTS" == "false" ]; then
-        if command -v docker &> /dev/null; then
-          echo "⚠️  检测到 docker 命令存在，但 docker-ce 包或 docker.service 文件缺失"
-          echo "⚠️  这通常是由于依赖问题导致 docker-ce 安装不完整"
-        fi
-        echo "❌ docker-ce 安装不完整，尝试二进制安装..."
-      else
-        echo "❌ 包管理器安装完全失败，尝试二进制安装..."
-      fi
-      
-      # 二进制安装备选方案
-      echo "正在下载 Docker 二进制包..."
-      
-      # 尝试多个下载源
-      DOCKER_BINARY_DOWNLOADED=false
-      
-      # 源1: 华为云镜像（优先）
-      echo "尝试从华为云镜像下载 Docker 二进制包..."
-      if curl -fsSL https://mirrors.huaweicloud.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
-        DOCKER_BINARY_DOWNLOADED=true
-        echo "✅ 从华为云镜像下载成功"
-      else
-        echo "❌ 华为云镜像下载失败，尝试下一个源..."
-      fi
-      
-      # 源2: 阿里云镜像
-      if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
-        echo "尝试从阿里云镜像下载..."
-        if curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
-          DOCKER_BINARY_DOWNLOADED=true
-          echo "✅ 从阿里云镜像下载成功"
-        else
-          echo "❌ 阿里云镜像下载失败，尝试下一个源..."
-        fi
-      fi
-      
-      # 源3: 腾讯云镜像
-      if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
-        echo "尝试从腾讯云镜像下载..."
-        if curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
-          DOCKER_BINARY_DOWNLOADED=true
-          echo "✅ 从腾讯云镜像下载成功"
-        else
-          echo "❌ 腾讯云镜像下载失败，尝试下一个源..."
-        fi
-      fi
-      
-      # 源4: 官方源
-      if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
-        echo "尝试从官方源下载..."
-        if curl -fsSL https://download.docker.com/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
-          DOCKER_BINARY_DOWNLOADED=true
-          echo "✅ 从官方源下载成功"
-        else
-          echo "❌ 官方源下载失败"
-        fi
-      fi
-      
-      if [[ "$DOCKER_BINARY_DOWNLOADED" == "true" ]]; then
-    echo "正在解压并安装 Docker 二进制包..."
-    sudo tar -xzf /tmp/docker.tgz -C /usr/bin --strip-components=1
-    sudo chmod +x /usr/bin/docker*
-    
-    # SELinux 友好提示
-    if command -v getenforce &> /dev/null && [ "$(getenforce)" != "Disabled" ]; then
-        echo ""
-        echo "⚠️  检测到 SELinux 处于开启状态 ($(getenforce))"
-        echo "⚠️  二进制安装方式可能会遇到 SELinux 上下文问题"
-        echo "⚠️  如果启动失败，请尝试临时关闭 SELinux (setenforce 0) 或手动配置 SELinux 策略"
-        echo "💡 推荐操作：尝试安装 container-selinux >= 2.74"
-        echo ""
-        echo "正在等待 3 秒以确认切换到二进制安装模式..."
-        sleep 3
+      echo "❌ 华为云镜像下载失败，尝试下一个源..."
     fi
 
-    # 创建 systemd 服务文件
-        sudo tee /etc/systemd/system/docker.service > /dev/null <<EOF
+    if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
+      echo "尝试从阿里云镜像下载..."
+      if curl -fsSL "https://mirrors.aliyun.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz" -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        DOCKER_BINARY_DOWNLOADED=true
+        echo "✅ 从阿里云镜像下载成功"
+      else
+        echo "❌ 阿里云镜像下载失败，尝试下一个源..."
+      fi
+    fi
+
+    if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
+      echo "尝试从腾讯云镜像下载..."
+      if curl -fsSL "https://mirrors.cloud.tencent.com/docker-ce/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz" -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        DOCKER_BINARY_DOWNLOADED=true
+        echo "✅ 从腾讯云镜像下载成功"
+      else
+        echo "❌ 腾讯云镜像下载失败，尝试下一个源..."
+      fi
+    fi
+
+    if [[ "$DOCKER_BINARY_DOWNLOADED" == "false" ]]; then
+      echo "尝试从官方源下载..."
+      if curl -fsSL "https://download.docker.com/linux/static/stable/${DOCKER_ARCH}/docker-20.10.24.tgz" -o /tmp/docker.tgz --connect-timeout 10 --max-time 60; then
+        DOCKER_BINARY_DOWNLOADED=true
+        echo "✅ 从官方源下载成功"
+      else
+        echo "❌ 官方源下载失败"
+      fi
+    fi
+
+    if [[ "$DOCKER_BINARY_DOWNLOADED" != "true" ]]; then
+      echo "❌ 所有下载源都失败，无法安装 Docker"
+      echo "请检查网络连接或手动安装 Docker"
+      exit 1
+    fi
+
+    ensure_tar_for_binary_install
+
+    echo "正在解压并安装 Docker 二进制包..."
+    if ! sudo tar -xzf /tmp/docker.tgz -C /usr/bin --strip-components=1; then
+      echo "❌ 解压 Docker 二进制包失败"
+      echo "💡 请确认已安装 tar：sudo $PKG_MANAGER install -y tar"
+      exit 1
+    fi
+    sudo chmod +x /usr/bin/docker* 2>/dev/null || true
+
+    if command -v getenforce &> /dev/null && [ "$(getenforce)" != "Disabled" ]; then
+      echo ""
+      echo "⚠️  检测到 SELinux 处于开启状态 ($(getenforce))"
+      echo "⚠️  二进制安装方式可能会遇到 SELinux 上下文问题"
+      echo "⚠️  如果启动失败，请尝试临时关闭 SELinux (setenforce 0) 或手动配置 SELinux 策略"
+      echo "💡 推荐操作：尝试安装 container-selinux >= 2.74"
+      echo ""
+      echo "正在等待 3 秒以确认切换到二进制安装模式..."
+      sleep 3
+    fi
+
+    sudo tee /etc/systemd/system/docker.service > /dev/null <<EOF
 [Unit]
 Description=Docker Application Container Engine
 Documentation=https://docs.docker.com
@@ -1778,8 +1593,7 @@ OOMScoreAdjust=-500
 WantedBy=multi-user.target
 EOF
 
-        # 创建 docker.socket 文件
-        sudo tee /etc/systemd/system/docker.socket > /dev/null <<EOF
+    sudo tee /etc/systemd/system/docker.socket > /dev/null <<EOF
 [Unit]
 Description=Docker Socket for the API
 
@@ -1793,27 +1607,139 @@ SocketGroup=docker
 WantedBy=sockets.target
 EOF
 
-        # 创建 docker 用户组
-        sudo groupadd docker 2>/dev/null || true
-        
-        echo "✅ Docker 二进制安装成功"
+    sudo groupadd docker 2>/dev/null || true
+    sudo systemctl daemon-reload 2>/dev/null || true
+    echo "✅ Docker 二进制安装成功"
+  }
+
+  echo ">>> [3.1/8] 检查 libnftables ABI（docker-ce el9 需要 LIBNFTABLES_1）..."
+  HAS_LIBNFTABLES_ABI=false
+  if has_libnftables_abi; then
+    HAS_LIBNFTABLES_ABI=true
+    echo "✅ 系统提供 libnftables.so.1(LIBNFTABLES_1)，可尝试 RPM 安装 docker-ce"
+  else
+    echo "⚠️  系统未提供 libnftables.so.1(LIBNFTABLES_1)（常见于 openEuler 22.x）"
+    echo "⚠️  CentOS 9 源中的 docker-ce 无法通过 RPM 完整安装；将改用官方静态二进制安装引擎"
+    echo "💡 系统中的 libnftnl 不能替代该符号，无需再手动安装 libnftables"
+  fi
+
+  DOCKER_CE_INSTALLED=false
+
+  if [[ "$HAS_LIBNFTABLES_ABI" == "true" ]]; then
+    # 有 ABI 时再尝试包管理器安装；使用 --allowerasing 处理 runc 冲突
+    if sudo $PKG_MANAGER install -y --allowerasing docker-ce docker-ce-cli containerd.io docker-buildx-plugin; then
+      if rpm -q docker-ce >/dev/null 2>&1; then
+        echo "✅ Docker CE 安装成功"
+        DOCKER_CE_INSTALLED=true
       else
-        echo "❌ 所有下载源都失败，无法安装 Docker"
-        echo "请检查网络连接或手动安装 Docker"
-        exit 1
+        echo "⚠️  安装命令成功但 docker-ce 包未找到，将尝试逐个安装..."
+      fi
+    else
+      echo "❌ 批量安装失败，尝试逐个安装组件（使用 --allowerasing）..."
+    fi
+
+    if [[ "$DOCKER_CE_INSTALLED" != "true" ]]; then
+      CONTAINERD_INSTALLED=false
+      set +e
+      CONTAINERD_OUTPUT=$(sudo $PKG_MANAGER install -y --allowerasing containerd.io 2>&1)
+      CONTAINERD_STATUS=$?
+      set -e
+      echo "$CONTAINERD_OUTPUT"
+      if [[ $CONTAINERD_STATUS -eq 0 ]]; then
+        echo "✅ containerd.io 安装成功"
+        CONTAINERD_INSTALLED=true
+      else
+        echo "❌ containerd.io 安装失败"
+        if echo "$CONTAINERD_OUTPUT" | grep -qiE "(checksum doesn't match|校验和不匹配|Cannot download|all mirrors were already tried)"; then
+          echo "⚠️  检测到下载失败或校验和不匹配，尝试切换 Docker 镜像源..."
+          for mirror_idx in 1 2 3 4 5; do
+            if switch_docker_mirror $mirror_idx; then
+              CURRENT_MIRROR_INDEX=$mirror_idx
+              echo "  - 重新尝试安装 containerd.io..."
+              if sudo $PKG_MANAGER install -y --allowerasing containerd.io 2>&1; then
+                echo "✅ containerd.io 安装成功（切换镜像源后）"
+                CONTAINERD_INSTALLED=true
+                break
+              else
+                echo "  ❌ 切换镜像源后仍然失败，尝试下一个镜像源..."
+              fi
+            fi
+          done
+          if [[ "$CONTAINERD_INSTALLED" == "false" ]]; then
+            echo "❌ 所有镜像源都尝试失败，containerd.io 无法安装"
+          fi
+        fi
+      fi
+
+      if sudo $PKG_MANAGER install -y --allowerasing docker-ce-cli; then
+        echo "✅ docker-ce-cli 安装成功"
+      else
+        echo "❌ docker-ce-cli 安装失败"
+      fi
+
+      # 勿用 $(cmd | tee)；command substitution 下 PIPESTATUS 不可靠
+      set +e
+      sudo $PKG_MANAGER install -y --allowerasing docker-ce 2>&1 | tee /tmp/docker-ce-install.log
+      DOCKER_CE_INSTALL_STATUS=${PIPESTATUS[0]}
+      set -e
+      DOCKER_CE_OUTPUT=$(cat /tmp/docker-ce-install.log 2>/dev/null || true)
+
+      if [[ $DOCKER_CE_INSTALL_STATUS -eq 0 ]] && rpm -q docker-ce >/dev/null 2>&1; then
+        echo "✅ docker-ce 安装成功"
+        DOCKER_CE_INSTALLED=true
+      else
+        echo "❌ docker-ce 安装失败"
+        if echo "$DOCKER_CE_OUTPUT" | grep -qiE "libnftables|LIBNFTABLES"; then
+          echo "⚠️  检测到 libnftables 依赖问题，尝试安装/升级提供 LIBNFTABLES_1 的包后重试..."
+          sudo $PKG_MANAGER install -y nftables libnftables 2>&1 || true
+          if has_libnftables_abi; then
+            set +e
+            sudo $PKG_MANAGER install -y --allowerasing docker-ce 2>&1 | tee /tmp/docker-ce-install-retry.log
+            DOCKER_CE_RETRY_STATUS=${PIPESTATUS[0]}
+            set -e
+            if [[ $DOCKER_CE_RETRY_STATUS -eq 0 ]] && rpm -q docker-ce >/dev/null 2>&1; then
+              echo "✅ docker-ce 安装成功（补齐 LIBNFTABLES_1 后）"
+              DOCKER_CE_INSTALLED=true
+            fi
+          else
+            echo "⚠️  仍无法提供 LIBNFTABLES_1，将改用静态二进制安装（换镜像源也无法满足该 ABI）"
+          fi
+        fi
+      fi
+
+      if sudo $PKG_MANAGER install -y --allowerasing docker-buildx-plugin; then
+        echo "✅ docker-buildx-plugin 安装成功"
+      else
+        echo "❌ docker-buildx-plugin 安装失败"
       fi
     fi
   fi
-  
+
+  DOCKER_SERVICE_EXISTS=false
+  if [ -f /etc/systemd/system/docker.service ] || [ -f /usr/lib/systemd/system/docker.service ]; then
+    DOCKER_SERVICE_EXISTS=true
+  fi
+
+  if [[ "$DOCKER_CE_INSTALLED" != "true" ]] || [[ "$DOCKER_SERVICE_EXISTS" != "true" ]] || ! command -v dockerd >/dev/null 2>&1; then
+    if [[ "$HAS_LIBNFTABLES_ABI" != "true" ]]; then
+      echo ">>> 使用静态二进制安装 Docker 引擎（绕过 libnftables ABI 不兼容）..."
+    else
+      if command -v docker &> /dev/null && [[ "$DOCKER_CE_INSTALLED" != "true" || "$DOCKER_SERVICE_EXISTS" != "true" ]]; then
+        echo "⚠️  检测到 docker 命令存在，但 docker-ce 包或 docker.service 文件缺失"
+        echo "⚠️  这通常是由于依赖问题导致 docker-ce 安装不完整"
+      fi
+      echo "❌ docker-ce 安装不完整，尝试二进制安装..."
+    fi
+    install_docker_static_binary_openeuler
+  fi
+
   # 检查 docker.service 文件是否存在
   if [ ! -f /etc/systemd/system/docker.service ] && [ ! -f /usr/lib/systemd/system/docker.service ]; then
     echo "❌ docker.service 文件不存在，Docker 服务无法启动"
-    echo "⚠️  这通常是由于 docker-ce 包安装失败导致的"
+    echo "⚠️  这通常是由于 docker-ce 包安装失败或二进制安装未完成导致的"
     echo "💡 建议："
-    echo "   1. 检查依赖问题（如 libnftables）"
-    echo "   2. 尝试手动安装依赖：sudo $PKG_MANAGER install -y libnftables"
-    echo "   3. 重新运行安装脚本"
-    echo "   4. 或使用二进制安装方式"
+    echo "   1. 确认已安装 tar：sudo $PKG_MANAGER install -y tar"
+    echo "   2. 重新运行本安装脚本（将自动走静态二进制安装）"
     exit 1
   fi
   
