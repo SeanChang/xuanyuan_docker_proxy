@@ -1,4 +1,4 @@
-# 最新 Docker 镜像源加速列表与使用指南（2026年11月3日更新）
+# 最新 Docker 镜像源加速列表与使用指南（2026年11月4日更新）
 
 ## 📚 目录
 
@@ -112,6 +112,7 @@
 - [Node.js Docker 部署教程](./blog/docker-nodejs.md)
 - [PHP Docker 部署教程](./blog/docker-php.md)
 - [Golang Docker 部署教程](./blog/golang-docker.md)
+- [TinyGo 嵌入式与 WebAssembly 编译 Docker 部署教程](./blog/tinygo-docker-deploy.md)
 - [OpenJDK Docker 部署教程](./blog/docker-openjdk.md)
 - [OpenJDK 镜像弃用迁移说明](./blog/openjdk.md)
 - [Eclipse Temurin Docker 部署教程](./blog/eclipse-temurin-docker.md)
@@ -195,6 +196,7 @@
 - [calciumion/new-api AI 接口网关 Docker 部署教程](./blog/ai-calciumion-new-api-windows-linux-docker.md)
 - [DeepSeek Harness Docker 部署教程](./blog/deepseek-harness-docker-deploy.md)
 - [DeepSeek Harness（smanx）Docker 部署教程](./blog/deepseek-harness-smanx-docker-deploy.md)
+- [DeepSeek Harness（moelin）Docker 部署教程](./blog/deepseek-harness-moelin-docker-deploy.md)
 - [nanobot 个人 AI 助手 Docker 部署教程](./blog/docker-nanobot-ai-deploy.md)
 - [Piper TTS Docker 部署教程](./blog/piper-docker-deploy.md)
 - [MaxKB 企业级智能体 Docker 部署教程](./blog/maxkb-docker-deploy.md)
@@ -246,6 +248,7 @@
 - [Uptime Kuma Docker 部署教程](./blog/uptime-kuma-docker.md)
 - [Kibana Docker 部署教程](./blog/kibana-docker.md)
 - [Falco Docker 部署教程](./blog/falco-docker.md)
+- [Trivy 漏洞库 Docker 部署教程](./blog/trivy-db-docker-deploy.md)
 - [HertzBeat Docker 部署教程](./blog/hertzbeat-docker-deploy.md)
 - [Zabbix Docker 部署教程](./blog/zabbix-docker-deploy.md)
 
@@ -292,6 +295,7 @@
 - [SeekDB Docker 部署教程](./blog/seekdb-docker.md)
 - [Hashicorp Vault Docker 部署教程](./blog/hashicorp-vault-docker.md)
 - [Server Vaultwarden Docker 部署教程](./blog/server-vaultwardenserver-docker.md)
+- [Vaultwarden 私有化密码管理 Docker 部署教程](./blog/vaultwarden-docker-deploy.md)
 - [DDNS-Go Docker 部署教程](./blog/ddns-go-docker.md)
 - [AdGuardHome Docker 部署教程](./blog/adguardhome-docker.md)
 - [Calibre Web Docker 部署教程](./blog/calibre-web-docker.md)
@@ -303,6 +307,7 @@
 - [Stirling PDF 本地处理 Docker 部署教程](./blog/stirlingpdf-docker-deploy.md)
 - [Draw.io Docker 部署教程](./blog/drawio-docker.md)
 - [Sun Panel Docker 部署教程](./blog/sun-panel-docker.md)
+- [FlatNas 个人导航与仪表盘 Docker 部署教程](./blog/flatnas-docker-deploy.md)
 - [TrendRadar Docker 部署教程](./blog/trendradar-docker.md)
 - [QuartzUI Docker 部署教程](./blog/quartzui-docker.md)
 - [Hitokoto API Docker 部署教程](./blog/hitokoto-api-docker.md)
@@ -310,6 +315,7 @@
 - [SiYuan Docker 部署教程](./blog/siyuandocker.md)
 - [思源笔记本地知识库 Docker 部署教程](./blog/siyuan-docker-deploy.md)
 - [EzBookkeeping Docker 部署教程](./blog/ezbookkeeping-docker.md)
+- [ezBookkeeping 自托管记账 Docker 部署教程](./blog/ezbookkeeping-docker-deploy.md)
 - [Firefly III Docker 部署教程](./blog/firefly-iii-docker.md)
 - [Music Tag Web Docker 部署教程](./blog/music_tag_web-docker.md)
 - [Label Studio Docker 部署教程](./blog/label-studio-docker.md)
@@ -337,6 +343,7 @@
 - [Selenium Standalone Chromium Docker 部署教程](./blog/selenium-standalone-chromium.md)
 - [Squid Docker 部署教程](./blog/squid-docker.md)
 - [Netshoot Docker 部署教程](./blog/netshoot-docker.md)
+- [Netdisco 网络设备发现 Docker 部署教程](./blog/netdisco-docker-deploy.md)
 - [BusyBox Docker 部署教程](./blog/busybox-docker.md)
 - [Hello World Docker 部署教程](./blog/hello-world-docker.md)
 - [Docker Port Viewer Docker 部署教程](./blog/docker-port-viewer-docker.md)
@@ -533,6 +540,22 @@
 - [TAKO Okta 代理未登录可创建管理员安全通告](./blog/tako-okta-ai-agent-cve-2026-63377-security-advisory.md)
 - [Transmission 任意网页可操作下载器安全通告](./blog/transmission-cve-2026-116748-security-advisory.md)
 - [WordPress 核心升级窗口可被执行代码安全通告](./blog/wordpress-cve-2026-119977-security-advisory.md)
+- [Apache Airflow DAG 作者可在 Scheduler/API 执行代码安全通告](./blog/apache-airflow-cve-2026-58076-40961-security-advisory.md)
+- [Apache Fineract 搜索接口 SQL 注入安全通告](./blog/apache-fineract-cve-2026-64618-65874-security-advisory.md)
+- [CSGHub 未登录可读私有仓文件安全通告](./blog/csghub-cve-2026-120426-security-advisory.md)
+- [Instatic 有编辑权限可改系统表行安全通告](./blog/instatic-ghsa-m425-wmrc-4v4v-security-advisory.md)
+- [Jenkins 反序列化可在控制器执行代码安全通告](./blog/jenkins-cve-2026-117612-security-advisory.md)
+- [Jpom Docker 权限可管其他工作空间主机安全通告](./blog/jpom-cve-2026-120460-security-advisory.md)
+- [kaniko 仿冒 ACR 主机名可骗走 Azure 令牌安全通告](./blog/kaniko-cve-2026-105769-security-advisory.md)
+- [LobeHub 登录后可写任意文件并执行代码安全通告](./blog/lobehub-cve-2026-120315-security-advisory.md)
+- [Plex 未登录链路可拼出远程代码执行安全通告](./blog/plex-cve-2026-96652-96654-96655-96656-security-advisory.md)
+- [Temporal 命名空间读权限可在 Worker 执行命令安全通告](./blog/temporal-cve-2026-120091-security-advisory.md)
+- [Termix 文件管理插件可写服务器任意文件安全通告](./blog/termix-cve-2026-120322-security-advisory.md)
+- [Traefik 未登录 NTLM 头可耗尽连接安全通告](./blog/traefik-ghsa-xv5x-242w-7hf7-security-advisory.md)
+- [WSO2 低权限可做管理操作安全通告](./blog/wso2-cve-2025-11969-security-advisory.md)
+- [WSO2 管理员接口 SQL 注入安全通告](./blog/wso2-cve-2026-2613-security-advisory.md)
+- [WSO2 自注册用户可打到 System REST 安全通告](./blog/wso2-cve-2026-4052-security-advisory.md)
+- [Zilla 文件绑定可把请求指到任意路径安全通告](./blog/zilla-cve-2026-120324-security-advisory.md)
 
 ## 让 AI 帮你使用轩辕镜像？
 
