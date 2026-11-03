@@ -4,17 +4,19 @@
 
 *分类: Docker部署教程 | 标签: MinIO,Docker,轩辕镜像,对象存储,S3,私有化部署,部署教程 | 发布时间: 2026-08-26 04:15:39*
 
-> 数据库备份还在往 /backup 里 cp：目录越堆越乱，想给开发一条限时下载链接，只能开 Samba 或再拷 U 盘。业务代码已经按 Amazon S3 写好了 SDK——Access Key、Bucket、预签名 URL 都现成——却没有一台对内的对象存储。CI 产物留在 runner 本地，换机器就丢；监控录像和照片混在 NAS 共享目录里，没法按桶授权，也开不出「只给这一个文件、十分钟有效」的地址。
+> 镜像已下架，本文已过期。 社区镜像 minio/minio 与 minio/mc 已从 Docker Hub 删除，短名拉取和 docker.xuanyuan.run/minio/minio 都会失败。本文使用的 quay.io/minio/minio:RELEASE.2025-09-07T16-13-09Z 也无法再拉取：2026 年 11 月 1 日复核时，Quay 对该仓库的匿名访问返回 401。该标签是 GitHub 仓库归档前的旧构建，不含 CVE-2025-62506 的修复，上游不再为社区版提供安全更新。后面的 Compose、端口和 Console 步骤只保留当时的实测记录。
 
-*本文基于 [quay.io/minio/minio:RELEASE.2025-09-07T16-13-09Z](https://xuanyuan.cloud/quay.io/minio/minio)，实测引擎 **RELEASE.2025-09-07T16-13-09Z**，测试平台 **Ubuntu 24.04** Linux。*
+> **镜像已下架，本文已过期。** 社区镜像 `minio/minio` 与 `minio/mc` 已从 Docker Hub 删除，短名拉取和 `docker.xuanyuan.run/minio/minio` 都会失败。本文使用的 `quay.io/minio/minio:RELEASE.2025-09-07T16-13-09Z` 也无法再拉取：2026 年 11 月 1 日复核时，Quay 对该仓库的匿名访问返回 **401**。该标签是 GitHub 仓库归档前的旧构建，不含 [CVE-2025-62506](https://nvd.nist.gov/vuln/detail/CVE-2025-62506) 的修复，上游不再为社区版提供安全更新。后面的 Compose、端口和 Console 步骤只保留当时的实测记录。新部署请先看 [minio/minio 已从 Docker Hub 下架](https://xuanyuan.cloud/blog/minio-docker-hub-image-removed?xy_from=minio-docker-deploy)。
+
+*本文基于 [quay.io/minio/minio:RELEASE.2025-09-07T16-13-09Z](https://xuanyuan.cloud/quay.io/minio/minio?xy_from=minio-docker-deploy)，实测引擎 **RELEASE.2025-09-07T16-13-09Z**，测试平台 **Ubuntu 24.04** Linux。该镜像现已下架，此行只说明当时的实测版本。*
 
 数据库备份还在往 `/backup` 里 `cp`：目录越堆越乱，想给开发一条限时下载链接，只能开 Samba 或再拷 U 盘。业务代码已经按 **Amazon S3** 写好了 SDK——Access Key、Bucket、预签名 URL 都现成——却没有一台对内的对象存储。CI 产物留在 runner 本地，换机器就丢；监控录像和照片混在 NAS 共享目录里，没法按桶授权，也开不出「只给这一个文件、十分钟有效」的地址。
 
 买公有云对象存储能立刻通，账单按流量走，客户附件、财务导出、内网日志却不宜出域。自己从源码编译、再上纠删码集群，对只要先有一个内网 `IP:9001` 的人成本太高。机房或家里已经有一台跑 Docker 的 Ubuntu，缺的是：镜像拉起来、浏览器能进控制台、应用继续用熟悉的 S3 API。
 
-**MinIO**（[GitHub · minio/minio](https://github.com/minio/minio)）提供兼容 Amazon S3 的对象存储，许可证 **GNU AGPLv3**。社区版现以源码分发为主；历史官方容器仍在 **Quay** 的 **`quay.io/minio/minio`**（[轩辕镜像页](https://xuanyuan.cloud/quay.io/minio/minio)）。容器里 **9000** 是 S3 API，**9001** 是 Web Console。本文跟做 **单节点单盘 Standalone**，适合评估、开发和内网备份；版本控制、对象锁定、桶复制需要纠删码（至少 4 块盘），不在本文范围。
+**MinIO**（[GitHub · minio/minio](https://github.com/minio/minio)）提供兼容 Amazon S3 的对象存储，许可证 **GNU AGPLv3**。社区版现以源码分发为主，官方容器已经下架。容器里 **9000** 是 S3 API，**9001** 是 Web Console。本文当时按 **单节点单盘 Standalone** 实测，适合评估、开发和内网备份；版本控制、对象锁定、桶复制需要纠删码（至少 4 块盘），不在本文范围。
 
-> **2026-09 重要变更**：约 **2026-09-11**，官方从 Docker Hub **删除**了 `minio/minio` 与 `minio/mc` 仓库，页面与拉取均返回 **404**（不是限流）。旧命令 `docker pull minio/minio:…`、`docker.xuanyuan.run/minio/minio:…` 会失败。历史官方镜像仍在 Quay；本文跟做改为轩辕 **Quay 专属域**拉取同一标签 **`RELEASE.2025-09-07T16-13-09Z`**。GitHub 仓库已于 **2026-04-25** 归档。同站其它发行见 **§1.1**，**不要和本文混用 `./data`**。
+> **2026-09 起的变化**：约 **2026-09-11**，官方从 Docker Hub **删除**了 `minio/minio` 与 `minio/mc` 仓库，页面与拉取均返回 **404**。旧命令 `docker pull minio/minio:…`、`docker.xuanyuan.run/minio/minio:…` 会失败。Quay 上的历史仓库匿名访问返回 **401**，后文的 Quay 坐标不能再用于新部署。GitHub 仓库已于 **2026-04-25** 归档。同站其它发行见 **§1.1**，**不要和本文混用 `./data`**。
 
 **部署跑通之后，你实际能做这些事：**
 
@@ -25,7 +27,7 @@
 | 备份与归档 | 备份脚本、日志采集的目标改成 S3 兼容接口 |
 | 命令行列对象 | 另拉 `quay.io/minio/mc`，`ls local/桶名` 核对网页上传的结果 |
 
-本文用 [轩辕镜像](https://xuanyuan.cloud) 加速拉取 **`quay.io/minio/minio:RELEASE.2025-09-07T16-13-09Z`**。命令里写 `***-quay.xuanyuan.run/...`，请把 `***` 换成个人中心「专属域名」里的 Quay 前缀（见 [Quay 加速教程](https://xuanyuan.cloud/usage/mirror-tutorial/quay)）。**Docker Compose** 映射 **9000→9000**、**9001→9001**，登录后确认 License、建桶 **`testbuckets`**、上传，再用 **`quay.io/minio/mc`** 列对象。无 Compose 时见第九节 **`docker run`**。局域网以 **`192.168.1.35`** 为例，请换成你的 IP。
+下文命令是当时用 [轩辕镜像](https://xuanyuan.cloud/?xy_from=minio-docker-deploy) 加速拉取 **`quay.io/minio/minio:RELEASE.2025-09-07T16-13-09Z`** 的记录。镜像下架之后，这些拉取命令已经不能用于新部署。当时的 **Docker Compose** 映射 **9000→9000**、**9001→9001**。局域网示例地址是 **`192.168.1.35`**。
 
 官方容器说明：[docs/docker](https://github.com/minio/minio/blob/master/docs/docker/README.md)。项目：[GitHub · minio/minio](https://github.com/minio/minio)（已归档）。
 
@@ -153,7 +155,7 @@ docker images ***-quay.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z
 |------|----------|
 | **Linux**（正文默认） | `/www/wwwroot/minio` |
 | **macOS** | **`~/docker/minio`** |
-| **Windows（Docker Desktop）** | 如 `C:\docker\minio` |
+| **Windows（Docker Desktop）** | 如 `C:dockerminio` |
 
 ### 5.1 准备目录
 
@@ -233,7 +235,8 @@ minio  | WebUI: http://172.24.0.2:9001 http://127.0.0.1:9001
 单盘 WARNING 表示主机故障时数据不可用，评估环境可先忽略。浏览器用宿主机 IP 的 **9001**（如 `http://192.168.1.35:9001`），不要用日志里的 `172.24.0.2`。
 
 ```bash
-curl -s -o /dev/null -w "%{http_code}\n" http://127.0.0.1:9000/minio/health/live
+curl -s -o /dev/null -w "%{http_code}
+" http://127.0.0.1:9000/minio/health/live
 ```
 
 ```text
@@ -335,9 +338,9 @@ IMAGE                                                       ID             DISK 
 
 ```bash
 # 列所有桶
-docker run --rm --network host \
-  -e MC_HOST_local='http://minioadmin:ChangeMe_minio8@127.0.0.1:9000' \
-  ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z \
+docker run --rm --network host 
+  -e MC_HOST_local='http://minioadmin:ChangeMe_minio8@127.0.0.1:9000' 
+  ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z 
   ls local
 ```
 
@@ -347,9 +350,9 @@ docker run --rm --network host \
 
 ```bash
 # 列桶内对象（必须带 local/）
-docker run --rm --network host \
-  -e MC_HOST_local='http://minioadmin:ChangeMe_minio8@127.0.0.1:9000' \
-  ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z \
+docker run --rm --network host 
+  -e MC_HOST_local='http://minioadmin:ChangeMe_minio8@127.0.0.1:9000' 
+  ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z 
   ls local/testbuckets
 ```
 
@@ -362,15 +365,15 @@ docker run --rm --network host \
 ```bash
 # 上传 / 下载需挂卷
 echo 'hello minio' > /tmp/demo.txt
-docker run --rm --network host \
-  -v /tmp:/work -w /work \
-  -e MC_HOST_local='http://minioadmin:ChangeMe_minio8@127.0.0.1:9000' \
-  ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z \
+docker run --rm --network host 
+  -v /tmp:/work -w /work 
+  -e MC_HOST_local='http://minioadmin:ChangeMe_minio8@127.0.0.1:9000' 
+  ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z 
   cp ./demo.txt local/testbuckets/
 
-docker run --rm --network host \
-  -e MC_HOST_local='http://minioadmin:ChangeMe_minio8@127.0.0.1:9000' \
-  ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z \
+docker run --rm --network host 
+  -e MC_HOST_local='http://minioadmin:ChangeMe_minio8@127.0.0.1:9000' 
+  ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z 
   admin info local
 ```
 
@@ -441,16 +444,16 @@ Quay 上的社区历史标签不会再推新 RELEASE；要较新修复可自建�
 mkdir -p /www/wwwroot/minio/data
 chown -R 1000:1000 /www/wwwroot/minio
 
-docker run -d \
-  --name minio \
-  --restart unless-stopped \
-  -p 9000:9000 \
-  -p 9001:9001 \
-  -e TZ=Asia/Shanghai \
-  -e MINIO_ROOT_USER=minioadmin \
-  -e MINIO_ROOT_PASSWORD=ChangeMe_minio8 \
-  -v /www/wwwroot/minio/data:/data \
-  ***-quay.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z \
+docker run -d 
+  --name minio 
+  --restart unless-stopped 
+  -p 9000:9000 
+  -p 9001:9001 
+  -e TZ=Asia/Shanghai 
+  -e MINIO_ROOT_USER=minioadmin 
+  -e MINIO_ROOT_PASSWORD=ChangeMe_minio8 
+  -v /www/wwwroot/minio/data:/data 
+  ***-quay.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z 
   server /data --console-address ":9001"
 ```
 
@@ -511,16 +514,17 @@ cd /www/wwwroot/minio
 docker compose up -d
 docker compose ps
 docker compose logs -f --tail 100
-curl -s -o /dev/null -w "%{http_code}\n" http://127.0.0.1:9000/minio/health/live
+curl -s -o /dev/null -w "%{http_code}
+" http://127.0.0.1:9000/minio/health/live
 
 # Console http://192.168.1.35:9001
 # S3     http://192.168.1.35:9000
 # 登录 minioadmin / ChangeMe_minio8
 
 docker pull ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z
-docker run --rm --network host \
-  -e MC_HOST_local='http://minioadmin:ChangeMe_minio8@127.0.0.1:9000' \
-  ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z \
+docker run --rm --network host 
+  -e MC_HOST_local='http://minioadmin:ChangeMe_minio8@127.0.0.1:9000' 
+  ***-quay.xuanyuan.run/minio/mc:RELEASE.2025-08-13T08-35-41Z 
   ls local/testbuckets
 
 docker compose down
@@ -529,13 +533,13 @@ docker compose down
 备选：
 
 ```bash
-docker run -d --name minio --restart unless-stopped \
-  -p 9000:9000 -p 9001:9001 \
-  -e TZ=Asia/Shanghai \
-  -e MINIO_ROOT_USER=minioadmin \
-  -e MINIO_ROOT_PASSWORD=ChangeMe_minio8 \
-  -v /www/wwwroot/minio/data:/data \
-  ***-quay.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z \
+docker run -d --name minio --restart unless-stopped 
+  -p 9000:9000 -p 9001:9001 
+  -e TZ=Asia/Shanghai 
+  -e MINIO_ROOT_USER=minioadmin 
+  -e MINIO_ROOT_PASSWORD=ChangeMe_minio8 
+  -v /www/wwwroot/minio/data:/data 
+  ***-quay.xuanyuan.run/minio/minio:RELEASE.2025-09-07T16-13-09Z 
   server /data --console-address ":9001"
 ```
 
@@ -566,4 +570,5 @@ docker run -d --name minio --restart unless-stopped \
 ## 阅读原文
 
 - 轩辕镜像官方博客：https://xuanyuan.cloud/blog/minio-docker-deploy
+
 

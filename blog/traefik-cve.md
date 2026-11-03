@@ -7,6 +7,8 @@
 > Traefik 于 2026 年 10 月 7 日公开 7 条高危公告（CVSS 4.0 均为 7.0，暂无 CVE 编号），涉及 SNI 检查被跳过、NTLM/Negotiate 身份串用，以及 Ingress-NGINX provider 的认证与 mTLS 问题。请把官方镜像升到 v2.11.58 或 v3.7.14。官方二进制和官方镜像不受其中的 SNI 那一条影响。
 
 **发布日期：** 2026 年 10 月 7 日  
+**更新日期：** 2026 年 11 月 2 日  
+**更新内容：** v2.11.58–v2.11.60 与 v3.7.14–v3.7.16 仍受未认证 NTLM/Negotiate 专用传输未释放影响（GHSA-xv5x-242w-7hf7）。v2 请升到 **v2.11.61**，v3 请升到 **v3.7.17**。详见 [Traefik NTLM 传输耗尽预警](https://xuanyuan.cloud/blog/traefik-ghsa-xv5x-242w-7hf7-security-advisory)。  
 **更新日期：** 2026 年 10 月 21 日  
 **更新内容：** v3.7.15 与 v2.11.59 及更低仍受 ForwardAuth 连接池身份复用影响。v3 升到 **v3.7.16**，v2 升到 **v2.11.60**。  
 **更新日期：** 2026 年 10 月 17 日  
@@ -152,6 +154,10 @@ docker pull docker.xuanyuan.run/library/traefik:v2.11.58
 - Docker Hub：[traefik](https://hub.docker.com/_/traefik)
 - 轩辕站内镜像页：[library/traefik](https://xuanyuan.cloud/r/library/traefik)
 - 项目主页：<https://github.com/traefik/traefik>
+
+## 阅读原文
+
+- [轩辕镜像官方博客](https://xuanyuan.cloud/blog/traefik-ghsa-2026-10-security-advisory)
 
 ---
 

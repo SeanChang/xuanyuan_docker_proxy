@@ -6,6 +6,8 @@
 
 > MinIO Client (简称MC) 是MinIO提供的命令行工具，为UNIX命令（如ls、cat、cp、mirror、diff等）提供了现代化的替代方案。它支持文件系统和兼容Amazon S3的云存储服务（AWS Signature v2和v4），是管理对象存储的强大工具。
 
+> **镜像已下架，本文已过期。** 社区镜像 `minio/minio` 与 `minio/mc` 已从 Docker Hub 删除，短名拉取和 `docker.xuanyuan.run/minio/minio` 都会失败。该镜像现已下架，本文只说明当时的实测版本。
+
 ## 概述
 
 MinIO Client (简称MC) 是MinIO提供的命令行工具，为UNIX命令（如ls、cat、cp、mirror、diff等）提供了现代化的替代方案。它支持文件系统和兼容Amazon S3的云存储服务（AWS Signature v2和v4），是管理对象存储的强大工具。
@@ -86,9 +88,9 @@ MC的配置信息默认存储在容器内的`~/.mc/config.json`文件中。为�
 mkdir -p ~/.mc
 
 # 挂载配置目录运行容器
-docker run -it --rm \
-  -v ~/.mc:/root/.mc \
-  --entrypoint=/bin/sh \
+docker run -it --rm 
+  -v ~/.mc:/root/.mc 
+  --entrypoint=/bin/sh 
   xxx.xuanyuan.run/minio/mc:latest
 ```
 
@@ -98,9 +100,9 @@ docker run -it --rm \
 
 ```bash
 # 1. 创建并进入交互式容器，同时挂载配置目录
-docker run -it --name mc-client \
-  -v ~/.mc:/root/.mc \
-  --entrypoint=/bin/sh \
+docker run -it --name mc-client 
+  -v ~/.mc:/root/.mc 
+  --entrypoint=/bin/sh 
   xxx.xuanyuan.run/minio/mc:latest
 
 # 2. 在容器内部，使用以下命令添加存储服务别名（示例）
@@ -154,10 +156,10 @@ docker run --rm xxx.xuanyuan.run/minio/mc:latest --help
 echo "test content" > testfile.txt
 
 # 启动交互式容器并挂载当前目录
-docker run -it --rm \
-  -v ~/.mc:/root/.mc \
-  -v $(pwd):/data \
-  --entrypoint=/bin/sh \
+docker run -it --rm 
+  -v ~/.mc:/root/.mc 
+  -v $(pwd):/data 
+  --entrypoint=/bin/sh 
   xxx.xuanyuan.run/minio/mc:latest
 
 # 在容器内部执行以下命令
@@ -199,9 +201,9 @@ docker logs $(docker ps -lq)
 1. **资源限制**：
    - 根据实际需求为容器配置CPU和内存限制，避免资源滥用
    ```bash
-   docker run --rm --name mc-client \
-     --memory=512m \
-     --cpus=0.5 \
+   docker run --rm --name mc-client 
+     --memory=512m 
+     --cpus=0.5 
      xxx.xuanyuan.run/minio/mc:latest ls play
    ```
 

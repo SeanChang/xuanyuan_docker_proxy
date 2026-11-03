@@ -7,6 +7,8 @@
 > Traefik 有两条尚无 CVE 的高危。Kubernetes Ingress NGINX provider 下，同一 host 上未对齐的 Ingress 会让 auth-tls-secret 配置的客户端证书认证被静默关闭（GHSA-p8wx-ph99-xgcr，CVSS 4.0 为 7.0）。实验特性 FastProxy 在 HTTP/1 协议升级后存在数据竞争，未认证客户端可让进程 panic（GHSA-ww7c-q3mv-xx22，CVSS 4.0 为 8.2）。请把 library/traefik 的 v3 升到 v3.7.15 或更高。v2 不受这两条影响。
 
 **发布日期：** 2026 年 10 月 17 日  
+**更新日期：** 2026 年 11 月 2 日  
+**更新内容：** v2.11.58–v2.11.60 与 v3.7.14–v3.7.16 仍受未认证 NTLM/Negotiate 专用传输未释放影响（GHSA-xv5x-242w-7hf7）。v2 请升到 **v2.11.61**，v3 请升到 **v3.7.17**。详见 [Traefik NTLM 传输耗尽预警](https://xuanyuan.cloud/blog/traefik-ghsa-xv5x-242w-7hf7-security-advisory)。  
 **更新日期：** 2026 年 10 月 21 日  
 **更新内容：** v3.7.15 仍受 ForwardAuth 连接池身份复用影响。v3 请继续升到 **v3.7.16**。启用 ForwardAuth 且鉴权为 NTLM 或 Negotiate 的 v2，升到 **v2.11.60**。  
 **风险等级：** 高危（High）  
@@ -127,6 +129,10 @@ docker pull docker.xuanyuan.run/library/traefik:v3.7.15
 - 发行说明：[v3.7.15](https://github.com/traefik/traefik/releases/tag/v3.7.15)
 - Docker Hub：[traefik](https://hub.docker.com/_/traefik)
 - 轩辕站内镜像页：[library/traefik](https://xuanyuan.cloud/r/library/traefik)
+
+## 阅读原文
+
+- [轩辕镜像官方博客](https://xuanyuan.cloud/blog/traefik-ghsa-2026-10-17-security-advisory)
 
 ---
 

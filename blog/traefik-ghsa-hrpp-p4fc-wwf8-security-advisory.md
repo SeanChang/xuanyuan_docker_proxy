@@ -7,6 +7,8 @@
 > Traefik 的 ForwardAuth，以及 v3.7 Ingress-NGINX 的 auth-url，对鉴权服务器共用连接池。鉴权端使用 NTLM 或 Negotiate 时，已为用户 A 完成的连接可能被复用到用户 B 的请求上（GHSA-hrpp-p4fc-wwf8，CVSS 4.0 为 7.0，暂无 CVE）。v2 请升到 v2.11.60 或更高，v3 请升到 v3.7.16 或更高。v3.7.15 与 v2.11.59 仍受影响。
 
 **发布日期：** 2026 年 10 月 21 日  
+**更新日期：** 2026 年 11 月 2 日  
+**更新内容：** v2.11.60 与 v3.7.16 仍受未认证 NTLM/Negotiate 专用传输未释放影响（GHSA-xv5x-242w-7hf7）。v2 请继续升到 **v2.11.61**，v3 请继续升到 **v3.7.17**。详见 [Traefik NTLM 传输耗尽预警](https://xuanyuan.cloud/blog/traefik-ghsa-xv5x-242w-7hf7-security-advisory)。  
 **风险等级：** 高危（High）  
 **漏洞编号：** GHSA-hrpp-p4fc-wwf8（暂无 CVE）  
 **涉及镜像：** library/traefik — [轩辕镜像](https://xuanyuan.cloud/r/library/traefik) · [Docker Hub](https://hub.docker.com/_/traefik)  
@@ -130,6 +132,10 @@ docker pull docker.xuanyuan.run/library/traefik:v2.11.60
 - 发布说明：[v2.11.60](https://github.com/traefik/traefik/releases/tag/v2.11.60) · [v3.7.16](https://github.com/traefik/traefik/releases/tag/v3.7.16)
 - Docker Hub：[library/traefik](https://hub.docker.com/_/traefik)
 - 轩辕站内镜像页：[library/traefik](https://xuanyuan.cloud/r/library/traefik)
+
+## 阅读原文
+
+- [轩辕镜像官方博客](https://xuanyuan.cloud/blog/traefik-ghsa-2026-10-21-security-advisory)
 
 ---
 

@@ -43,6 +43,8 @@
 
 `openeuler/milvus` 是 **一体 Standalone**：容器内自带 `etcd`、`minio`、`milvus`。**9091** 提供 `/healthz` 与 WebUI（`/webui/`）；业务写入与检索走 **19530**（gRPC）+ SDK。
 
+> 这里的 `minio` 是该镜像里自带的进程，随 `openeuler/milvus` 一起启动。官方社区镜像 `minio/minio`、`minio/mc` 已从 Docker Hub 下架，Quay 上的历史标签匿名访问返回 **401**。本文不拉取这两个仓库。背景见 [minio/minio 已从 Docker Hub 下架](https://xuanyuan.cloud/blog/minio-docker-hub-image-removed?xy_from=milvus-docker-deploy)。
+
 | | openeuler/milvus（本文） | milvusdb/milvus | Qdrant / Weaviate 等 |
 |--|--------------------------|----------------|----------------------|
 | 定位 | openEuler 一体包 | 上游官方镜像 / Compose | 其他向量库 |
@@ -215,7 +217,8 @@ Ubuntu 24.04 实测：
 
 ```text
 NAME      IMAGE                                                  COMMAND                   SERVICE   CREATED         STATUS         PORTS
-milvus    docker.xuanyuan.run/openeuler/milvus:2.6.0-oe2403sp2   "bash -c 'set -e\nmkd…"   milvus    5 minutes ago   Up 5 minutes   0.0.0.0:9091->9091/tcp, [::]:9091->9091/tcp, 0.0.0.0:19530->19530/tcp, [::]:19530->19530/tcp
+milvus    docker.xuanyuan.run/openeuler/milvus:2.6.0-oe2403sp2   "bash -c 'set -e
+mkd…"   milvus    5 minutes ago   Up 5 minutes   0.0.0.0:9091->9091/tcp, [::]:9091->9091/tcp, 0.0.0.0:19530->19530/tcp, [::]:19530->19530/tcp
 ```
 
 `STATUS` 为 **Up** 且已映射两端口即可。首次就绪可能要等十几秒到一两分钟。
@@ -422,15 +425,15 @@ Configurations 实测：`TZ=Asia/Shanghai`，`common.security.authorizationenabl
 
 ```bash
 mkdir -p /www/wwwroot/milvus/data
-docker run -d \
-  --name milvus \
-  --restart unless-stopped \
-  --shm-size=2g \
-  -p 19530:19530 \
-  -p 9091:9091 \
-  -v /www/wwwroot/milvus/data:/data/milvus/data \
-  -e TZ=Asia/Shanghai \
-  docker.xuanyuan.run/openeuler/milvus:2.6.0-oe2403sp2 \
+docker run -d 
+  --name milvus 
+  --restart unless-stopped 
+  --shm-size=2g 
+  -p 19530:19530 
+  -p 9091:9091 
+  -v /www/wwwroot/milvus/data:/data/milvus/data 
+  -e TZ=Asia/Shanghai 
+  docker.xuanyuan.run/openeuler/milvus:2.6.0-oe2403sp2 
   bash -c 'mkdir -p /data/milvus/data/etcd-data /data/milvus/data/minio-data && etcd --data-dir=/data/milvus/data/etcd-data/ & sleep 2 && minio server /data/milvus/data/minio-data/ & sleep 3 && exec milvus run standalone'
 ```
 

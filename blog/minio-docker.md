@@ -6,6 +6,8 @@
 
 > MinIO 是一款**高性能对象存储系统**，完全兼容 Amazon S3 协议。你可以把它理解为「自建版的私有云存储」——可存放图片、视频、备份文件、日志等。官方镜像：`minio/minio`，国内加速镜像：[https://xuanyuan.cloud/r/minio/minio](https://xuanyuan.cloud/r/minio/minio)
 
+> **镜像已下架，本文已过期。** 社区镜像 `minio/minio` 与 `minio/mc` 已从 Docker Hub 删除，短名拉取和 `docker.xuanyuan.run/minio/minio` 都会失败。该镜像现已下架，本文只说明当时的实测版本。
+
 ## 1. MinIO 简介
 
 ### 💡 什么是 MinIO？
@@ -128,14 +130,14 @@ MinIO 单节点非常适合开发测试或小型项目。
 ### 4.1 `docker run` 一键启动
 
 ```bash
-docker run -d \
-  --name minio-server \                # 容器名称
-  -p 9000:9000 \                       # API 端口
-  -p 9001:9001 \                       # 控制台端口
-  -e MINIO_ROOT_USER=admin \           # 管理员用户名
-  -e MINIO_ROOT_PASSWORD=YourStrongPwd2024! \  # 管理员密码（务必强密码）
-  -v minio-data:/data \                # 数据持久化卷
-  --restart unless-stopped \           # 自动重启
+docker run -d 
+  --name minio-server                 # 容器名称
+  -p 9000:9000                        # API 端口
+  -p 9001:9001                        # 控制台端口
+  -e MINIO_ROOT_USER=admin            # 管理员用户名
+  -e MINIO_ROOT_PASSWORD=YourStrongPwd2024!   # 管理员密码（务必强密码）
+  -v minio-data:/data                 # 数据持久化卷
+  --restart unless-stopped            # 自动重启
   minio/minio server /data --console-address ":9001"
 ```
 
@@ -278,12 +280,12 @@ node1:/data1 node2:/data2 node3:/data3 node4:/data4
 ### 8.2 启动命令示例（单机模拟4节点）
 
 ```bash
-docker run -d --name minio-distributed \
-  -p 9000:9000 -p 9001:9001 \
-  -v /mnt/data1:/data1 -v /mnt/data2:/data2 \
-  -v /mnt/data3:/data3 -v /mnt/data4:/data4 \
-  -e MINIO_ROOT_USER=admin \
-  -e MINIO_ROOT_PASSWORD=YourStrongPwd2024! \
+docker run -d --name minio-distributed 
+  -p 9000:9000 -p 9001:9001 
+  -v /mnt/data1:/data1 -v /mnt/data2:/data2 
+  -v /mnt/data3:/data3 -v /mnt/data4:/data4 
+  -e MINIO_ROOT_USER=admin 
+  -e MINIO_ROOT_PASSWORD=YourStrongPwd2024! 
   minio/minio server /data{1...4} --console-address ":9001"
 ```
 
