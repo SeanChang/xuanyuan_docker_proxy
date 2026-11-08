@@ -1,4 +1,4 @@
-# 国内最新 Docker 镜像源加速列表与使用指南（2026年11月7日更新）
+# 国内最新 Docker 镜像源加速列表与使用指南（2026年11月8日更新）
 
 ## 📚 目录
 
@@ -27,6 +27,7 @@
 - [2026 国内 Docker 镜像拉取指南](./blog/2026-docker-daemonjson-10.md)
 - [2026 年 10 月最新国内 Docker 镜像源加速列表](./blog/2026-10-docker.md)
 - [2026 年 11 月最新国内 Docker 镜像源加速列表](./blog/2026-11-docker.md)
+- [2026 年 11 月国内 Docker 镜像源加速列表](./blog/docker-china-mirror-2026-november.md)
 - [2026 最新国内 Docker 镜像源加速列表（10 月 8 日更新）](./blog/2026-docker-9.md)
 
 #### NAS 设备
@@ -202,6 +203,7 @@
 - [MaxKB 企业级智能体 Docker 部署教程](./blog/maxkb-docker-deploy.md)
 - [Open WebUI 本地大模型对话 Docker 部署教程](./blog/open-webui-docker-deploy.md)
 - [OpenClaw 自托管个人 AI 助手 Docker 部署教程](./blog/openclaw-docker-deploy.md)
+- [Octop 自托管多用户 AI 助手 Docker 部署教程](./blog/octop-docker-deploy.md)
 - [OpenViking AI Agent 上下文数据库 Docker 部署教程](./blog/openviking-docker-deploy.md)
 
 #### 🎬 媒体服务器
@@ -556,6 +558,42 @@
 - [WSO2 管理员接口 SQL 注入安全通告](./blog/wso2-cve-2026-2613-security-advisory.md)
 - [WSO2 自注册用户可打到 System REST 安全通告](./blog/wso2-cve-2026-4052-security-advisory.md)
 - [Zilla 文件绑定可把请求指到任意路径安全通告](./blog/zilla-cve-2026-120324-security-advisory.md)
+- [融光 ai-fusion-video 登录后可横向读写他人项目安全通告](./blog/ai-fusion-video-cve-2026-121940-security-advisory.md)
+- [Amazon EKS Network Policy eBPF conntrack 可绕过入站策略安全通告](./blog/amazon-eks-network-policy-cve-2026-122266-security-advisory.md)
+- [Apache Camel Hazelcast 反序列化可达 RCE 安全通告](./blog/apache-camel-cve-2026-79983-79986-security-advisory.md)
+- [Apache OFBiz 未认证代码注入与会话接管安全通告](./blog/apache-ofbiz-cve-2026-83542-82907-security-advisory.md)
+- [Argo CD Image Updater SSH proxy 可注入 GIT_SSH_COMMAND 安全通告](./blog/argocd-image-updater-cve-2026-121621-security-advisory.md)
+- [Atlassian Data Center 未授权可读 Web 根指定文件安全通告](./blog/atlassian-cve-2026-21589-security-advisory.md)
+- [Authorizer 未认证可篡改重置邮件主机安全通告](./blog/authorizer-cve-2026-123196-security-advisory.md)
+- [AzuraCast 仅 profile 权限可改写 Shoutcast 配置安全通告](./blog/azuracast-cve-2026-121427-security-advisory.md)
+- [Databasement OIDC 未校验邮箱验证可接管账号安全通告](./blog/databasement-cve-2026-121939-security-advisory.md)
+- [DataGerry DocAPI 模板 SSTI 可执行命令安全通告](./blog/datagerry-cve-2026-57853-security-advisory.md)
+- [DB-GPT CodeAction 与 HuggingFace Adapter 未认证执行代码安全通告](./blog/dbgpt-cve-2026-123018-123019-security-advisory.md)
+- [Docker Desktop WSL2 容器可摸到宿主文件安全通告](./blog/docker-desktop-cve-2026-112917-98432-security-advisory.md)
+- [Docker Engine 不可信 JWK/zstd 可拖垮进程安全通告](./blog/docker-engine-cve-2026-116587-116591-security-advisory.md)
+- [Docker Engine 29.9.3 JWK/zstd DoS 与 Swarm 风险安全通告](./blog/docker-engine-cve-2026-116587-116591-security-advisory-29-9-3.md)
+- [Docker Sandboxes sbx cp 符号链接与 Git 配置可逃到宿主安全通告](./blog/docker-sandboxes-cve-2026-103916-121614-security-advisory.md)
+- [Elastic 官方镜像仍信已泄露 eMudhra 中间 CA 安全通告](./blog/elastic-cve-2026-115714-114406-security-advisory.md)
+- [Gitea OCI 跨仓挂载与 Actions 安全批次通告](./blog/gitea-cve-2026-117685-security-advisory.md)
+- [GPUStack 未认证可拿管理员与 SAML 回调不验签安全通告](./blog/gpustack-cve-2026-103002-102895-security-advisory.md)
+- [GPUStack 非管理员可借 K8s API 代理操集群安全通告](./blog/gpustack-cve-2026-103002-security-advisory.md)
+- [Grafana 任意角色可操作 dashboard snapshot 安全通告](./blog/grafana-cve-2026-33379-security-advisory.md)
+- [Keycloak SAML 编码绕过可接管联邦账户安全通告](./blog/keycloak-cve-2026-117691-security-advisory.md)
+- [Keycloak JWT Authorization Grant 可绕过签名校验安全通告](./blog/keycloak-cve-2026-11800-security-advisory.md)
+- [Kore 超长请求体可拖垮 worker 内存安全通告](./blog/kore-cve-2026-121727-security-advisory.md)
+- [Kyverno 命名空间管理员可提权与镜像验签可被绕过安全通告](./blog/kyverno-cve-2026-122302-122323-security-advisory.md)
+- [Label Studio 导出带图格式可读内网并泄露 Owner Token 安全通告](./blog/label-studio-cve-2026-121561-security-advisory.md)
+- [Metabase 未认证 SQL 注入可接管管理员安全通告](./blog/metabase-cve-2026-72898-security-advisory.md)
+- [Nexus Repository 3 禁用账号可复活与 capability 可冒充管理员安全通告](./blog/nexus3-cve-2026-113370-113374-security-advisory.md)
+- [OpenShift 裸机置备无认证可下载含 pull secret 镜像安全通告](./blog/openshift-image-customization-controller-cve-2026-82976-security-advisory.md)
+- [OpenSSH + musl 一次连接可无密码登录安全通告](./blog/openssh-cve-2026-123158-security-advisory.md)
+- [ProxySQL 压缩包解压可读出堆上他人 SQL 安全通告](./blog/proxysql-cve-2026-102664-security-advisory.md)
+- [Rancher meta proxy 会把登录凭据转给第三方安全通告](./blog/rancher-cve-2026-88811-88809-security-advisory.md)
+- [RosarioSIS Attendance 报告 period_id SQL 注入安全通告](./blog/rosariosis-cve-2026-121731-security-advisory.md)
+- [SurrealDB MCP 会话可被劫持与 deny-funcs 可被绕过安全通告](./blog/surrealdb-cve-2026-121419-121416-121417-security-advisory.md)
+- [Telepresence 隧道可被劫持与命名空间拦截无需认证安全通告](./blog/telepresence-cve-2026-102339-102340-security-advisory.md)
+- [tsParticles mcp-server 未认证 POST 可打爆内存安全通告](./blog/tsparticles-mcp-server-cve-2026-63655-security-advisory.md)
+- [Vikunja 删号提权与 Kanban 读任务安全通告](./blog/vikunja-cve-2026-123520-123522-123531-security-advisory.md)
 
 ## 让 AI 帮你使用轩辕镜像？
 
