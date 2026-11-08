@@ -1,10 +1,10 @@
-# 2026 最新国内 Docker 镜像源加速列表（11 月 3 日更新）
+# 2026 最新国内 Docker 镜像源加速列表（11 月 7 日更新）
 
-![2026 最新国内 Docker 镜像源加速列表（11 月 3 日更新）](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-10.webp)
+![2026 最新国内 Docker 镜像源加速列表（11 月 7 日更新）](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-10.webp)
 
 *分类: Docker部署教程 | 标签: Docker,镜像加速,国内镜像源,轩辕镜像,registry-mirrors,containerd,Kubernetes,Podman | 发布时间: 2026-09-02 12:16:33*
 
-> docker pull 超时、镜像拉取失败时，先别急着换一堆来路不明的地址。这篇整理的是 2026 年 10 月还能用的国内 Docker 镜像加速写法，高校、实验室、公司研发机都可以照着配。拉 Docker Hub、ghcr.io、GCR、registry.k8s.io 时，常见是慢、超时，或者碰上 401 / 429 / manifest unknown。很多时候不是「源挂了」，而是配错了地方：daemon.json 里的 registry-mirrors 主要管 docker.io；Kubernetes 节点用的是 containerd，不会读你笔记本 Docker Desktop 里的加速配置。
+> docker pull 超时、镜像拉取失败时，先别急着换一堆来路不明的地址。这篇整理的是 2026 年 11 月 7 日仍可用的国内 Docker 镜像加速写法：哪些只在云内网生效，哪些公共源已经停服。高校、实验室、公司研发机都可以照着配。拉 Docker Hub、ghcr.io、GCR、registry.k8s.io 时，常见是慢、超时，或者碰上 401 / 429 / manifest unknown。很多时候不是「源挂了」，而是配错了地方：daemon.json 里的 registry-mirrors 主要管 docker.io；Kubernetes 节点用的是 containerd，不会读你笔记本 Docker Desktop 里的加速配置。
 
 ## 前言
 
@@ -18,7 +18,7 @@
 
 ---
 
-## 🔍 11 月 3 日最新可用镜像源加速
+## 🔍 11 月 7 日最新可用镜像源加速
 
 ### 云厂商内网源，以及别再用的旧公共源
 

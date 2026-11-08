@@ -1,10 +1,10 @@
-# Docker 部署 AstrBot：轻松搭建多平台 AI 聊天机器人平台
+# AstrBot 接入 QQ/微信：Docker 部署与 WebUI 配置
 
-![Docker 部署 AstrBot：轻松搭建多平台 AI 聊天机器人平台](https://imgs.xuanyuan.cloud/docker/blog/astrbot/astrbot.webp)
+![AstrBot 接入 QQ/微信：Docker 部署与 WebUI 配置](https://imgs.xuanyuan.cloud/docker/blog/astrbot/astrbot.webp)
 
 *分类: Docker部署教程 | 标签: AstrBot,soulter/astrbot,Docker,轩辕镜像,聊天机器人,Agent,私有化部署,部署教程 | 发布时间: 2026-10-29 14:47:01*
 
-> AstrBot 是一款面向想在自己的聊天软件里使用大模型的人的开源 Agent 聊天机器人平台，旨在把模型、插件和多个即时通讯平台收在同一个管理面板里，并通过 WebUI 完成配置。本文将介绍如何通过 Docker Compose 部署 AstrBot，搭建自托管聊天机器人平台，帮助在自己的服务器上打开管理面板并接入聊天软件，适合个人助手及团队客服等场景。
+> Docker Compose 起 AstrBot：WebUI 初始化、模型 API 与插件安装，再用 OneBot 接入 QQ/微信，附端口说明。
 
 ## AstrBot 是什么
 

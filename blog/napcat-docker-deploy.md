@@ -1,12 +1,26 @@
-# Docker 部署 NapCat：轻松搭建 QQ Bot 协议端平台
+# NapCat 部署 QQ 机器人：扫码登录 + WebUI + OneBot
 
-![Docker 部署 NapCat：轻松搭建 QQ Bot 协议端平台](https://imgs.xuanyuan.cloud/docker/blog/napcat1.webp)
+![NapCat 部署 QQ 机器人：扫码登录 + WebUI + OneBot](https://imgs.xuanyuan.cloud/docker/blog/napcat1.webp)
 
 *分类: Docker部署教程 | 标签: NapCat,NapCatQQ,mlikiowa/napcat-docker,Docker,轩辕镜像,OneBot,QQ Bot,协议端,私有化部署,部署教程 | 发布时间: 2026-10-16 11:09:41*
 
-> NapCat 是一款面向要在自己机器上收发 QQ 消息的人的开源 Bot 协议端，旨在把登录态和 OneBot 接口留在本机，并通过 WebUI 管理网络配置。本文将介绍如何通过 Docker Compose 部署 NapCat，搭建自托管 QQ 协议端，帮助把机器人协议层留在自己的服务器上，适合内网联调及常驻网关等场景。
+> 容器内 3000、WebUI 6099、OneBot WS 3001：一份 compose 起 NapCat，扫码登录后收发私聊与群消息，附 12 条常见问题。
 
 *本文基于 [mlikiowa/napcat-docker:v4.18.28](https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker)，以 **v4.18.28** 版本实测，测试平台 **Ubuntu 24.04** Linux。*
+
+## 先看结论
+
+NapCat 是 NapNeko 维护的开源 QQ 协议端：扫码登录一个 QQ 号，再用 OneBot 把消息交给后面的框架。官方仓库是 [NapCatQQ](https://github.com/NapNeko/NapCatQQ)，Docker 镜像名是 `mlikiowa/napcat-docker`。
+
+本文实测标签是 `v4.18.28`。`latest` 会变，不要写进长期运行的命令：
+
+```bash
+docker pull docker.xuanyuan.run/mlikiowa/napcat-docker:v4.18.28
+```
+
+安装包和版本说明在 [GitHub Releases](https://github.com/NapNeko/NapCatQQ/releases)。用 Docker 跑从下一节开始：WebUI 是 `http://127.0.0.1:6099/webui`，OneBot HTTP 在宿主机 `13300`（容器内仍是 3000）。登录态在挂载目录 `QQ/`，备份这个目录即可。
+
+接入框架见 [NapCat 接入 AstrBot](https://xuanyuan.cloud/blog/docker-napcat-qq-bot-deploy)，框架部署见 [AstrBot 接入 QQ/微信](https://xuanyuan.cloud/blog/astrbot-docker-deploy)。
 
 ## NapCat 是什么
 
@@ -16,17 +30,13 @@ NapCat（NapCatQQ）是 NapNeko 维护的开源 Bot 协议端，基于 NTQQ 实�
 
 ## NapCat 能做什么
 
-- **扫码登录**：在日志或 WebUI 里完成 QQ 登录，登录态保存在本机。
-- **主动发消息**：通过 OneBot HTTP 接口发送私聊和群聊。
-- **接收事件**：把群消息和私聊上报到你指定的地址。
-- **对接框架**：按 OneBot 接入 AstrBot、Koishi、NoneBot 等。
-- **常驻运行**：面向低内存环境长时间运行协议端。
+- **扫码登录**：在 WebUI 或日志里登录 QQ，登录态留在本机 `QQ/`。
+- **收发消息**：用 OneBot HTTP 发私聊和群聊，也可以把事件上报到你自己的地址。
+- **对接框架**：按 OneBot 接入 AstrBot、Koishi、NoneBot。协议端和应用分开跑。
 
 ## 为什么要使用 NapCat
 
-在 Windows 上解压 Shell，还要跟着 QQ 的版本走，升级一次就要重来。协议端和应用放在同一台开发机上时，登录态、日志和插件目录会混在一起。把账号交给第三方托管，群聊内容也会离开自己的机器。
-
-NapCat 把协议端留在自己的服务器或 NAS 上。适合要自己收发 QQ 消息的人，也适合把机器人接口留在内网的团队。
+Windows 上解压 Shell 要跟着 QQ 的版本走。协议端和应用放在同一台机器上时，登录态和插件目录会混在一起。NapCat 只把协议端留在自己的服务器或 NAS 上。
 
 ## 使用 Docker 部署 NapCat
 
@@ -390,6 +400,18 @@ docker logs -f --tail=80 napcat
 ```
 
 ## 常见问题
+
+**后台地址是什么？**
+
+本机打开 `http://127.0.0.1:6099/webui`。这是面板，不是发消息的接口。发消息用宿主机 `http://127.0.0.1:13300`。
+
+**端口怎么改？**
+
+Compose 里三行映射：`13300:3000`（OneBot HTTP）、`3001:3001`（WebSocket）、`6099:6099`（WebUI）。只改冒号左边的宿主机端口。容器内 HTTP 保持 3000。
+
+**登录态怎么备份？**
+
+登录态在 `QQ/`，网络配置在 `config/`。先 `docker compose stop`，再把这两个目录拷走。步骤见「升级与备份」。
 
 **Q1：该用哪个版本？**
 

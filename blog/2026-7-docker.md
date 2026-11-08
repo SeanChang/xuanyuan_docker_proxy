@@ -8,6 +8,8 @@
 
 > 本文面向国内开发者、运维与科研用户，汇总 2026 年 7 月可用的 Docker 镜像加速方案，并按「报错 → 原因 → 配置 → 验证」给出排错路径，覆盖 Docker、K8s containerd、Podman、nerdctl、NAS 等场景。
 
+仍可用的源以 [2026 最新国内 Docker 镜像源加速列表（11 月 7 日更新）](https://xuanyuan.cloud/blog/2026-docker-9) 为准。这篇保留 2026 年 7 月的配置步骤，并补充拉取报错的处理。
+
 在国内执行 `docker pull`、`kubectl apply` 或 NAS 拉镜像时，最常见的问题不是「没有镜像源」，而是**配错了层级**：Docker 的 `registry-mirrors` 只管 `docker.io`，K8s 节点读的是 containerd 配置，GHCR / `registry.k8s.io` 还要单独配 mirror。本文按场景给出 7 月最新可用方案，零基础也能按步骤完成。
 
 ⚠️ 说明：本文内容仅限学习研究，请勿违规使用。建议收藏，每月更新可用性与配置细节。
@@ -273,6 +275,27 @@ grep -A2 'mirrors."docker.io"' /etc/containerd/config.toml 2>/dev/null || echo "
 
 ---
 
+## 429 too many requests 怎么处理
+
+Docker Hub 对 `docker.io` 的匿名拉取有频率限制。没有 `docker login` 时更容易看到 `429 Too Many Requests`；登录后配额更高，短时间大量拉取仍会触发。次数以 Docker Hub 当前说明和报错正文为准。下面是常见的公开配额，用来判断下一步是登录还是换源：
+
+| 身份 | 常见公开配额（会调整） | 下一步 |
+|------|------------------------|--------|
+| 未登录 | 大约 100 次 / 6 小时 | `docker login` 后再拉 |
+| 已登录 | 大约 200 次 / 6 小时 | 仍是 429 就换 registry mirror |
+
+三条处理：
+
+1. `docker login`，用已登录的账号再拉一次。
+2. 还是 429，就把 `/etc/docker/daemon.json` 的 `registry-mirrors` 指到你的加速地址，然后 `sudo systemctl restart docker`。
+3. 只拉某一个镜像时，直接换注册表，不要对着 `docker.io` 空转：
+
+```bash
+docker pull xxx.xuanyuan.run/library/nginx:alpine
+```
+
+`xxx.xuanyuan.run` 换成你在轩辕镜像拿到的专属域名。云厂商内网源只在对应云的机器上生效。
+
 ## 七、镜像拉取与 Compose 实战示例
 
 ### 7.1 常用拉取命令
@@ -395,6 +418,18 @@ docker compose logs -f db
 ### Q3：`docker pull` 报 429 或极慢？
 
 免费公共源存在限流。团队开发或 CI 流水线请升级 [轩辕专业版](https://xuanyuan.cloud)，获取专属带宽与登录凭据。
+
+### Q：`401 unauthorized` 怎么处理？
+
+镜像仓库要求登录，或登录的账号没有这个仓库的权限。先 `docker login` 对应域名，确认用户名和令牌没过期，再拉。不要把 WebUI 或别的服务的口令填到这里。
+
+### Q：`manifest unknown` 怎么处理？
+
+标签不存在，或当前机器的架构没有对应清单。核对镜像名和 tag，必要时换 amd64 / arm64 变体，或用 `docker manifest inspect` 看这个标签有哪些平台。
+
+### Q：`no such host` 怎么处理？
+
+域名解析失败。检查加速地址有没有写错、机器能不能解析这个域名，以及是不是把只在云内网生效的地址填到了家里的电脑上。
 
 ### Q4：拉取成功但 `docker images` 显示带一长串域名前缀？
 

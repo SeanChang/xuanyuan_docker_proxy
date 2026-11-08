@@ -1,10 +1,10 @@
-# 手把手教你用 Docker 部署 Redis
+# Docker 部署 Redis：持久化、密码、远程访问与 compose
 
-![手把手教你用 Docker 部署 Redis](https://imgs.xuanyuan.cloud/docker/blog/docker-redis.png)
+![Docker 部署 Redis：持久化、密码、远程访问与 compose](https://imgs.xuanyuan.cloud/docker/blog/docker-redis.png)
 
 *分类: Docker部署教程 | 标签: redis,docker,部署教程 | 发布时间: 2025-10-03 06:24:12*
 
-> 本文详细介绍从轩辕镜像拉取Redis镜像的多种方式（登录验证、免登录、官方直连等），提供快速部署、持久化部署（推荐）、docker-compose部署（企业级）三种方案，还包含结果验证方法及无法远程连接、设置密码等常见问题的解决办法，助力用户掌握Redis的Docker部署全流程。
+> redis.conf 持久化（RDB/AOF）、requirepass 密码、bind 与 protected-mode 远程访问，附 compose 与验证命令。
 
 Redis是一款开源的高性能内存数据存储系统，常用作数据库、缓存和消息代理。它支持字符串、哈希、列表等多种数据结构，凭借内存存储特性提供毫秒级响应访问表现，广泛应用于高并发场景下的数据快速访问。
 

@@ -1,10 +1,10 @@
-# Docker 部署 NapCat：轻松搭建 QQ Bot 协议端平台
+# NapCat 接入 AstrBot：QQ 机器人 WS 对接与扫码登录
 
-![Docker 部署 NapCat：轻松搭建 QQ Bot 协议端平台](https://imgs.xuanyuan.cloud/docker/blog/napcat.webp)
+![NapCat 接入 AstrBot：QQ 机器人 WS 对接与扫码登录](https://imgs.xuanyuan.cloud/docker/blog/napcat.webp)
 
 *分类: Docker部署教程 | 标签: NapCat,NapCatQQ,mlikiowa/napcat-docker,Docker,轩辕镜像,OneBot,QQ Bot,协议端,私有化部署,部署教程 | 发布时间: 2026-09-20 15:59:27*
 
-> NapCat 是基于 NTQQ 的现代化 Bot 协议端，兼容 OneBot 接口，可对接 AstrBot、Koishi 等应用框架。本文将介绍如何通过 Docker Compose 部署社区镜像 mlikiowa/napcat-docker，用轩辕镜像加速拉取，适合自托管 QQ 机器人协议层、内网联调与常驻网关等场景。
+> 协议端与框架分开跑：NapCat 开 WebUI 与 OneBot HTTP/WS，AstrBot 侧对接 3001 的 WS，扫码登录保活，附 11 条常见问题。
 
 *本文基于 [mlikiowa/napcat-docker:v4.18.28](https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker)，跟做引擎 **NapCat v4.18.28**，测试平台 **Ubuntu 24.04** Linux。*
 
