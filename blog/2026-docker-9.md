@@ -80,7 +80,7 @@ bash docker-install.sh
 
 ### 脚本特性
 
-- **发行版覆盖**：openEuler、OpenCloudOS、Anolis OS、Alinux、Kylin Linux、统信 UOS、深度 Deepin、Fedora、Rocky Linux、AlmaLinux、Ubuntu、Debian、CentOS（8+ / Stream）、RHEL、Oracle Linux
+- **发行版覆盖**：openEuler、OpenCloudOS、TencentOS Server、Anolis OS、Alinux、Kylin Linux、统信 UOS、深度 Deepin、Fedora、openSUSE Leap、Rocky Linux、AlmaLinux、Ubuntu、Debian、CentOS（8+ / Stream）、RHEL、Oracle Linux
 - **多源安装包**：内置阿里云、腾讯云、华为云、中科大、清华等国内软件源，便于装 Docker 本体
 - **老系统兼容**：Ubuntu 16.04、Debian 9/10 等有兼容分支
 - **失败回退**：包管理器失败时可切二进制安装
@@ -117,12 +117,14 @@ docker compose version
 |------|----------|------|----------|------|
 | 国产操作系统 | openEuler (欧拉) | 20.03+, 22.03+, 24.03+ | 支持 | 华为开源，兼容 CentOS |
 | | OpenCloudOS | 9.x | 支持 | 腾讯开源，兼容 CentOS 9 |
+| | TencentOS Server | 3.x, 4.x | 支持 | 腾讯云；4.x→CentOS 9 / 3.x→CentOS 8 |
 | | Anolis OS (龙蜥) | 7.x, 8.x | 支持 | 阿里云支持，兼容 RHEL |
 | | Alinux (阿里云) | 2.x, 3.x | 支持 | 阿里云 ECS 默认系统 |
 | | Kylin Linux (银河麒麟) | V10 | 支持 | 国产系统，兼容 RHEL |
 | | 统信 UOS、深度 Deepin | 主流版本 | 支持 | 信创桌面与服务器 |
 | CentOS 替代 | Rocky Linux / AlmaLinux | 8.x, 9.x | 支持 | 长周期，兼容 RHEL |
 | 创新发行版 | Fedora | 34+ | 支持 | Red Hat 上游 |
+| | openSUSE Leap | 15.x | 支持 | zypper；OBS 容器源或静态二进制 |
 | 传统发行版 | Ubuntu | 16.04+ | 支持 | 含老版本兼容 |
 | | Debian | 9+ | 支持 | 含老版本兼容 |
 | | CentOS | 8, 9, Stream | 支持 | **不含 CentOS 7** |

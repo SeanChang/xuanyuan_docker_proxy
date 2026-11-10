@@ -81,6 +81,7 @@ bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 |------|----------|------|----------|------|
 | 🇨🇳 国产操作系统 | openEuler (欧拉) | 20.03+, 22.03+, 24.03+ | ✅ | 华为开源，CentOS 兼容 |
 | | OpenCloudOS | 9.x | ✅ | 腾讯开源，CentOS 9 兼容 |
+| | TencentOS Server | 3.x, 4.x | ✅ | 腾讯云；4.x→CentOS 9 / 3.x→CentOS 8 |
 | | Anolis OS (龙蜥) | 7.x, 8.x | ✅ | 阿里云支持，RHEL 兼容 |
 | | Alinux (阿里云) | 2.x, 3.x | ✅ | 阿里云 ECS 默认系统 |
 | | Kylin Linux (银河麒麟) | V10 | ✅ | 国产操作系统，RHEL 兼容 |
