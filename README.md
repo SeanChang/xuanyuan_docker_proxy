@@ -23,6 +23,7 @@
 - [Apple Container](./usage/apple-container-docker-guide.md)
 - [Docker Compose 镜像加速](./usage/docker-compose-docker-guide.md)
 - [超全 Docker 轩辕镜像源配置（Windows/Mac/Linux）](./blog/docker-windows-mac-linux.md)
+- [Docker 官网下载与安装：Windows / Mac / Linux](./blog/docker-install-windows-macos-linux.md)
 - [Docker 镜像源配置踩坑指南](./blog/docker.md)
 - [2026 国内 Docker 镜像拉取指南](./blog/2026-docker-daemonjson-10.md)
 - [2026 年 10 月最新国内 Docker 镜像源加速列表](./blog/2026-10-docker.md)
@@ -32,6 +33,7 @@
 
 #### NAS 设备
 - [群晖 NAS](./usage/synology-docker-guide.md)
+- [群晖拉不到第三方镜像与 ghcr.io 说明](./blog/nas-ghcr-io.md)
 - [威联通 NAS](./usage/weiliantong-docker-guide.md)
 - [绿联 NAS](./usage/lvlian-docker-guide.md)
 - [极空间 NAS](./usage/jikongjian-docker-guide.md)
@@ -159,6 +161,7 @@
 - [Dify Sandbox Docker 部署教程](./blog/dify-sandbox-docker.md)
 - [Dify Plugin Daemon Docker 部署教程](./blog/dify-plugin-daemon-docker.md)
 - [Ollama Docker 部署教程](./blog/ollama-docker.md)
+- [Ollama pulling manifest 卡住加速说明](./blog/ollama-pulling-manifest.md)
 - [vLLM OpenAI Docker 部署教程](./blog/vllm-openai-docker.md)
 - [vLLM Docker NVIDIA Jetson 部署教程](./blog/vllm-docker-nvidia-jetson.md)
 - [SGLang Docker 部署教程](./blog/sglang-docker.md)
@@ -284,6 +287,7 @@
 - [Transmission Docker 部署教程](./blog/transmission-docker.md)
 - [Jackett Docker 部署教程](./blog/jackett-docker.md)
 - [MoviePilot Docker 部署教程](./blog/moviepilot.md)
+- [MoviePilot NAS 影视自动化 Docker 部署教程](./blog/moviepilot-docker-nas.md)
 - [Lucky Docker 部署教程](./blog/lucky-docker.md)
 - [n8n Docker 部署教程](./blog/n8n-docker.md)
 - [MinIO Docker 部署教程](./blog/minio-docker.md)
@@ -310,6 +314,7 @@
 - [Draw.io Docker 部署教程](./blog/drawio-docker.md)
 - [Sun Panel Docker 部署教程](./blog/sun-panel-docker.md)
 - [FlatNas 个人导航与仪表盘 Docker 部署教程](./blog/flatnas-docker-deploy.md)
+- [Heimdall 应用导航仪表盘 Docker 部署教程](./blog/heimdall-docker-deploy.md)
 - [TrendRadar Docker 部署教程](./blog/trendradar-docker.md)
 - [QuartzUI Docker 部署教程](./blog/quartzui-docker.md)
 - [Hitokoto API Docker 部署教程](./blog/hitokoto-api-docker.md)
@@ -400,6 +405,7 @@
 - [Dolibarr ERP/CRM Docker 部署教程](./blog/docker-dolibarr-erpcrm.md)
 - [NapCat QQ Bot Docker 部署教程](./blog/docker-napcat-qq-bot-deploy.md)
 - [NapCat QQ Bot 协议端 Docker 部署教程](./blog/napcat-docker-deploy.md)
+- [mlikiowa/napcat-docker 已从 Docker Hub 下架说明](./blog/napcat-docker-hub-image-removed.md)
 - [FUXA Web SCADA Docker 部署教程](./blog/fuxa-docker-deploy.md)
 - [Gotenberg 文档转 PDF Docker 部署教程](./blog/gotenberg-docker-deploy.md)
 - [iVentoy PXE 网络装机 Docker 部署教程](./blog/iventoy-docker-deploy.md)
@@ -594,6 +600,7 @@
 - [Telepresence 隧道可被劫持与命名空间拦截无需认证安全通告](./blog/telepresence-cve-2026-102339-102340-security-advisory.md)
 - [tsParticles mcp-server 未认证 POST 可打爆内存安全通告](./blog/tsparticles-mcp-server-cve-2026-63655-security-advisory.md)
 - [Vikunja 删号提权与 Kanban 读任务安全通告](./blog/vikunja-cve-2026-123520-123522-123531-security-advisory.md)
+- [容器镜像漏洞周报（2026.11.08–11.15）](./blog/container-security-weekly-2026-11-15-security-advisory.md)
 
 ## 让 AI 帮你使用轩辕镜像？
 
