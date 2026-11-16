@@ -1,40 +1,31 @@
-# Docker 部署 Octop：轻松搭建自托管多用户 AI 助手平台
+# Octop 部署教程：Docker Compose 安装腾讯云开源 AI 助手（实测 1.0.2）
 
-![Docker 部署 Octop：轻松搭建自托管多用户 AI 助手平台](https://imgs.xuanyuan.cloud/docker/blog/octop/octop.webp)
+![Octop 部署教程：Docker Compose 安装腾讯云开源 AI 助手（实测 1.0.2）](https://imgs.xuanyuan.cloud/docker/blog/octop/octop.webp)
 
 *分类: Docker部署教程 | 标签: Octop,tencentcloud/octop,Docker,轩辕镜像,AI 助手,多 Agent,自托管,私有化部署,部署教程 | 发布时间: 2026-11-05 16:42:14*
 
 > Octop 是腾讯云开源的自托管 AI 助手，单进程提供 Web 控制台、CLI、IM 通道与多 Agent 协作，数据留在本机。本文将介绍如何通过 Docker Compose 部署 ghcr.io/tencentcloud/octop，搭建可私有化的多用户智能助手环境，适合家庭共用、小团队协作，以及需要对接飞书、钉钉等通道的场景。
 
-## Octop 是什么
+## 先给结论
 
-Octop 是腾讯云开源的自托管 AI 助手。单进程同时提供 Web 控制台、CLI、IM 通道和定时任务，支持多用户、多 Agent。对话、工作区与凭证默认写在本机数据目录。
+Octop 是腾讯云开源的自托管 AI 助手：单进程同时提供 Web 控制台、CLI、IM 通道（飞书、钉钉、QQ、微信、企业微信）和定时任务，支持多用户与多 Agent，对话与密钥留在本机数据目录。
 
-与只提供聊天窗口、或把会话全部留在第三方云端的助手不同，它把专家、通道、知识库和连接器收在同一套本地控制台里。每位用户可以有一组按场景切换的专家，也可以通过 Connector、知识库和 ACP 与外部服务、IDE 协作。
+一条命令拉取（`***` 换成你在个人中心拿到的 GHCR 专属前缀）：
 
-## Octop 能做什么
+```bash
+docker pull ***-ghcr.xuanyuan.run/tencentcloud/octop:1.0.2
+```
 
-- **在浏览器里管理助手**：用 Web 控制台对话、创建专家、配置供应商、通道、定时任务、知识库和插件。
-- **多人共用一台实例**：多用户隔离，管理员可分配专家与权限，家庭或小团队共用同一套服务。
-- **对接常用 IM**：把飞书、钉钉、QQ、微信、企业微信等接到同一实例。
-- **扩展外部能力**：用 Connector（OAuth / MCP）接入腾讯文档、会议等服务，用 ACP 与 IDE / 终端 AI 双向协作。
-- **把状态留在本机**：控制面数据库、密钥、Agent 工作区默认落在数据目录，可按目录备份与迁移。
+- **版本**：`1.0.2`（2026-10-18 发布，当前最新无 `b` 后缀发行版）
+- **端口**：容器与宿主机均为 **8088**
+- **体积**：镜像约 **4.48 GB**（Ubuntu 24.04 实测），拉取前确认磁盘
+- **登录**：默认用户 `admin`，浏览器打开 `http://服务器IP:8088`，完成滑块验证后进入控制台
 
-## 为什么要使用 Octop
-
-本机临时跑 CLI，会话和配置容易散落。把能执行工具的服务直接挂到局域网，又缺少统一的多用户入口。云端助手上手快，但对话、工作区和通道凭证不在自己机器上。
-
-用固定版本的容器跑 Octop，数据进宿主机目录，浏览器打开控制台即可配置模型和专家。适合家庭共用、小团队协作，以及需要把 IM 通道和私有知识库留在自建环境里的人。
-
-## 使用 Docker 部署 Octop
-
-Docker 可以把 Octop 的控制台与运行时一起拉起来，本机不必先装 Python 虚拟环境。部署前准备好 Docker，并想好管理员密码，或准备走网页设置向导。
-
-接下来用 Docker Compose 写好数据目录、环境变量和端口，启动服务，再用浏览器完成登录与模型配置。
+镜像发布在 GHCR，没有 Docker Hub 官方仓；国内直拉 GHCR 容易超时，下文给出加速拉取与完整 Compose 配置。
 
 ## 环境要求
 
-本文使用 **`ghcr.io/tencentcloud/octop:1.0.2`** 版本实测。测试平台是 Ubuntu 24.04（主机名 `ikuai-ubuntu2404`）。镜像提供 **linux/amd64** 与 **linux/arm64**。完整版含桌面相关依赖与本地向量等组件（默认不自动启动桌面），体积较大。实测 Digest 为 `sha256:c15e792f405a5b5aca8f3625adcc11f3421e13f6d01da7217ea18e6f0b98553f`；`docker images` 显示 DISK USAGE 约 **4.48 GB**，CONTENT SIZE 约 **1.09 GB**。拉取前确认磁盘有富余。
+本文使用 **`ghcr.io/tencentcloud/octop:1.0.2`** 版本实测。测试平台是 Ubuntu 24.04（主机名 `ubuntu2404`）。镜像提供 **linux/amd64** 与 **linux/arm64**。完整版含桌面相关依赖与本地向量等组件（默认不自动启动桌面），体积较大。实测 Digest 为 `sha256:c15e792f405a5b5aca8f3625adcc11f3421e13f6d01da7217ea18e6f0b98553f`；`docker images` 显示 DISK USAGE 约 **4.48 GB**，CONTENT SIZE 约 **1.09 GB**。拉取前确认磁盘有富余。
 
 容器内默认监听 **8088**。数据目录挂到容器 `/data/.octop`，并设置 `HOME=/data`。启用远程桌面时需要更大的 `/dev/shm`，Compose 里写 `shm_size: 1gb`。
 
@@ -457,6 +448,16 @@ curl -sS http://127.0.0.1:8088/api/health
 
 ## 常见问题
 
+### Octop 镜像有多大？在哪拉？
+
+Ubuntu 24.04 实测：`docker images` 显示 DISK USAGE 约 **4.48 GB**，CONTENT SIZE 约 **1.09 GB**。镜像只在 GHCR（`ghcr.io/tencentcloud/octop`），没有 Docker Hub 官方仓。国内直拉容易超时，用轩辕镜像 GHCR 专属域加速：
+
+```bash
+docker pull ***-ghcr.xuanyuan.run/tencentcloud/octop:1.0.2
+```
+
+把 `***` 换成个人中心的 GHCR 专属前缀。详见 [GHCR 拉取教程](https://xuanyuan.cloud/usage/mirror-tutorial/ghcr?xy_from=octop-docker-deploy)。
+
 ### Compose 报 `unknown anchor '**-ghcr…'`
 
 `image` 未加引号，且仍带着占位符 `***` 时，YAML 会把 `*` 当成锚点。把整段镜像坐标写成双引号，并把 `***` 换成个人中心的专属前缀，再执行 `docker compose up -d`。
@@ -535,6 +536,10 @@ docker run -d --name octop
 docker logs --tail 80 octop
 docker stop octop && docker rm octop
 ```
+
+## 附录：Octop 是什么
+
+Octop 把专家、通道、知识库和连接器收在同一套本地控制台：每位用户可有一组按场景切换的专家；Web 控制台可配置供应商、通道、定时任务、知识库与插件（内置插件市场约 27 个）；Connector（OAuth / MCP）可接腾讯文档、会议等服务，ACP 与 IDE / 终端 AI 双向协作。控制面数据库、密钥、Agent 工作区默认落在数据目录，按目录备份即可迁移。适合家庭共用、小团队协作，以及需要把 IM 通道和私有知识库留在自建环境里的人。
 
 ## 延伸阅读
 

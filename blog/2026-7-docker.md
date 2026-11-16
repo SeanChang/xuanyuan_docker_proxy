@@ -1,18 +1,18 @@
-# 2026 年 7 月最新 Docker 国内镜像源加速配置指南
+# Docker 国内镜像源加速配置教程：daemon.json/containerd
 
-![2026 年 7 月最新 Docker 国内镜像源加速配置指南](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-7.png)
+![Docker 国内镜像源加速配置教程：daemon.json/containerd](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-7.png)
 
 *分类: Docker镜像源 | 标签: Docker,镜像加速,轩辕镜像,K8s,containerd | 发布时间: 2026-07-06 09:07:07*
 
-> 本文面向国内开发者、运维与科研用户，汇总 2026 年 7 月可用的 Docker 镜像加速方案，并按「报错 → 原因 → 配置 → 验证」给出排错路径，覆盖 Docker、K8s containerd、Podman、nerdctl、NAS 等场景。
+> daemon.json、containerd、Podman、NAS 四套写法与验证命令，附 401、402、429、TLS 四类拉取报错排查；7 月配置存档，最新源列表见主列表页。
 
 > 本文面向国内开发者、运维与科研用户，汇总 2026 年 7 月可用的 Docker 镜像加速方案，并按「报错 → 原因 → 配置 → 验证」给出排错路径，覆盖 Docker、K8s containerd、Podman、nerdctl、NAS 等场景。
 
-仍可用的源以 [2026 最新国内 Docker 镜像源加速列表（11 月 7 日更新）](https://xuanyuan.cloud/blog/2026-docker-9) 为准。这篇保留 2026 年 7 月的配置步骤，并补充拉取报错的处理。
+仍可用的 Docker Hub 国内镜像以 [2026 国内 Docker 镜像源加速列表：可用性实测与月度更新](https://xuanyuan.cloud/blog/2026-docker-9) 为准。这篇保留 2026 年 7 月的配置步骤，并补充拉取报错的处理。
 
 在国内执行 `docker pull`、`kubectl apply` 或 NAS 拉镜像时，最常见的问题不是「没有镜像源」，而是**配错了层级**：Docker 的 `registry-mirrors` 只管 `docker.io`，K8s 节点读的是 containerd 配置，GHCR / `registry.k8s.io` 还要单独配 mirror。本文按场景给出 7 月最新可用方案，零基础也能按步骤完成。
 
-⚠️ 说明：本文内容仅限学习研究，请勿违规使用。建议收藏，每月更新可用性与配置细节。
+⚠️ 说明：本文内容仅限学习研究，请勿违规使用。最新源列表以[主列表页](https://xuanyuan.cloud/blog/2026-docker-9)为准。
 
 ---
 
@@ -52,7 +52,7 @@
 - **入口**：[轩辕镜像专业版](https://xuanyuan.cloud)
 - **适合**：开发者、科研团队、企业生产、K8s 集群、NAS 专业用户
 - **能力**：注册登录后获取专属域名（如 `abc123.xuanyuan.run`），覆盖 Docker Hub、GHCR、GCR、`registry.k8s.io`；支持多节点 fallback、Harbor 对接、拉取审计
-- **价格参考**：50GB 流量 ¥7/年起，99.95% SLA
+- **价格参考**：50GB 流量 ¥8/年起
 
 **推荐路径**：免费注册 → 个人中心复制专属域名 → `docker login xxx.xuanyuan.run` → 按下文写入对应运行时配置。
 
@@ -275,7 +275,7 @@ grep -A2 'mirrors."docker.io"' /etc/containerd/config.toml 2>/dev/null || echo "
 
 ---
 
-## 429 too many requests 怎么处理
+## 七、429 Too Many Requests 怎么处理
 
 Docker Hub 对 `docker.io` 的匿名拉取有频率限制。没有 `docker login` 时更容易看到 `429 Too Many Requests`；登录后配额更高，短时间大量拉取仍会触发。次数以 Docker Hub 当前说明和报错正文为准。下面是常见的公开配额，用来判断下一步是登录还是换源：
 
@@ -296,9 +296,9 @@ docker pull xxx.xuanyuan.run/library/nginx:alpine
 
 `xxx.xuanyuan.run` 换成你在轩辕镜像拿到的专属域名。云厂商内网源只在对应云的机器上生效。
 
-## 七、镜像拉取与 Compose 实战示例
+## 八、镜像拉取与 Compose 实战示例
 
-### 7.1 常用拉取命令
+### 8.1 常用拉取命令
 
 ```bash
 # 专业版 · 显式域名
@@ -314,7 +314,7 @@ nerdctl pull ghcr.io/username/tool:v1.0
 ctr images pull xxx.xuanyuan.run/registry.k8s.io/pause:3.9
 ```
 
-### 7.2 Docker Compose · Redis + PostgreSQL（开发栈）
+### 8.2 Docker Compose · Redis + PostgreSQL（开发栈）
 
 ```yaml
 version: "3.8"
@@ -375,7 +375,7 @@ docker compose logs -f db
 
 ---
 
-## 八、容器运行时与配置文件对照
+## 九、容器运行时与配置文件对照
 
 | 容器运行时 | 配置文件 | 加速范围 | 典型场景 |
 |------------|----------|----------|----------|
@@ -386,7 +386,7 @@ docker compose logs -f db
 
 ---
 
-## 九、企业生产环境 Checklist
+## 十、企业生产环境 Checklist
 
 | 检查项 | 要求 |
 |--------|------|
@@ -401,7 +401,7 @@ docker compose logs -f db
 
 ---
 
-## 十、常见问题（FAQ）
+## 十一、常见问题（FAQ）
 
 ### Q1：daemon.json 配了，K8s Pod 还是 ImagePullBackOff？
 
@@ -417,48 +417,48 @@ docker compose logs -f db
 
 ### Q3：`docker pull` 报 429 或极慢？
 
-免费公共源存在限流。团队开发或 CI 流水线请升级 [轩辕专业版](https://xuanyuan.cloud)，获取专属带宽与登录凭据。
+免费公共源存在限流。团队开发或 CI 流水线请升级 [轩辕专业版](https://xuanyuan.cloud)，获取专属带宽与登录凭据。Docker Hub 匿名配额差异见上文「七、429 Too Many Requests」。
 
-### Q：`401 unauthorized` 怎么处理？
+### Q4：`401 unauthorized` 怎么处理？
 
 镜像仓库要求登录，或登录的账号没有这个仓库的权限。先 `docker login` 对应域名，确认用户名和令牌没过期，再拉。不要把 WebUI 或别的服务的口令填到这里。
 
-### Q：`manifest unknown` 怎么处理？
+### Q5：`manifest unknown` 怎么处理？
 
 标签不存在，或当前机器的架构没有对应清单。核对镜像名和 tag，必要时换 amd64 / arm64 变体，或用 `docker manifest inspect` 看这个标签有哪些平台。
 
-### Q：`no such host` 怎么处理？
+### Q6：`no such host` 怎么处理？
 
 域名解析失败。检查加速地址有没有写错、机器能不能解析这个域名，以及是不是把只在云内网生效的地址填到了家里的电脑上。
 
-### Q4：拉取成功但 `docker images` 显示带一长串域名前缀？
+### Q7：拉取成功但 `docker images` 显示带一长串域名前缀？
 
 使用 `docker tag` 去前缀，或配置 mirrors 后用短名 `docker pull nginx` 拉取。详见官网 FAQ。
 
-### Q5：openEuler / 信创服务器能用一键脚本吗？
+### Q8：openEuler / 信创服务器能用一键脚本吗？
 
 可以。脚本自动识别 openEuler、Kylin、统信 UOS 等系统，ARM64（鲲鹏/飞腾）与 x86_64 均支持，无需手动改源。
 
-### Q6：如何确认加速真的生效？
+### Q9：如何确认加速真的生效？
 
 对比拉取耗时：`time docker pull nginx:alpine`；查看 `docker info` 中 Registry Mirrors；K8s 场景用 `crictl pull` 或 `ctr images pull` 在节点本地测试。
 
 ---
 
-## 十一、总结
+## 十二、总结
 
 | 场景 | 7 月推荐做法 |
 |------|----------------|
-| 个人 / 学习 | 免费源 `docker.xuanyuan.me` 或一键脚本快速上手 |
+| 个人 / 学习 | 仅体验：可用免费域 `docker.xuanyuan.me` 或一键脚本上手（不作为推荐路径） |
 | 团队 / CI | 注册专业版，统一专属域名 + `docker login` |
 | K8s / 生产 | containerd 多仓库 mirrors + Harbor 缓存 + TLS 校验 |
 | NAS | 专业版专属地址写入 NAS 容器引擎，避免只改 PC 端 Docker |
 
 **立即开始**：
 
-- [免费注册轩辕镜像专业版](https://xuanyuan.cloud)（50GB 流量 ¥7/年起）
+- [免费注册轩辕镜像专业版](https://xuanyuan.cloud)（50GB 流量 ¥8/年起）
 - [使用手册](https://xuanyuan.cloud/usage) · [FAQ 大全](https://xuanyuan.cloud/faq) · [镜像搜索](https://xuanyuan.cloud/search)
 
-建议收藏本文；每月会更新镜像源可用性与配置细节。遇到问题可访问 [轩辕镜像官网](https://xuanyuan.cloud) 提交工单或联系在线技术支持。
+最新源列表以[主列表页](https://xuanyuan.cloud/blog/2026-docker-9)为准。遇到问题可访问 [轩辕镜像官网](https://xuanyuan.cloud) 提交工单或联系在线技术支持。
 
 

@@ -1,51 +1,75 @@
-# 2026 最新国内 Docker 镜像源加速列表（11 月 7 日更新）
+# 2026 最新国内 Docker 镜像源加速列表（11 月 15 日更新）
 
-![2026 最新国内 Docker 镜像源加速列表（11 月 7 日更新）](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-10.webp)
+![2026 最新国内 Docker 镜像源加速列表（11 月 15 日更新）](https://imgs.xuanyuan.cloud/docker/blog/docker-2026-11.webp)
 
 *分类: Docker部署教程 | 标签: Docker,镜像加速,国内镜像源,轩辕镜像,registry-mirrors,containerd,Kubernetes,Podman | 发布时间: 2026-09-02 12:16:33*
 
-> docker pull 超时、镜像拉取失败时，先别急着换一堆来路不明的地址。这篇整理的是 2026 年 11 月 7 日仍可用的国内 Docker 镜像加速写法：哪些只在云内网生效，哪些公共源已经停服。高校、实验室、公司研发机都可以照着配。拉 Docker Hub、ghcr.io、GCR、registry.k8s.io 时，常见是慢、超时，或者碰上 401 / 429 / manifest unknown。很多时候不是「源挂了」，而是配错了地方：daemon.json 里的 registry-mirrors 主要管 docker.io；Kubernetes 节点用的是 containerd，不会读你笔记本 Docker Desktop 里的加速配置。
+> 截至 2026 年 11 月，国内从 Docker Hub 直接拉取镜像仍然面临速度慢、频繁超时、429 限流等问题。docker pull 超时、拉取失败时，先别急着换来源不明的地址。本文整理国内 Docker Hub 镜像源：哪些仍可用、哪些只在云内网生效、哪些已停服，附每月更新日志。
 
-## 前言
+> **最后实测 2026-11-15** ｜ 云内网源只在本云生效，换机器就失效 ｜ 网易云等公共加速早已停服 ｜ 本机、NAS、CI、GHCR、K8s，用一个专属域名全解决
 
-`docker pull` 超时、镜像拉取失败时，先别急着换一堆来路不明的地址。这篇整理的是 2026 年 10 月还能用的国内 Docker 镜像加速写法，高校、实验室、公司研发机都可以照着配。
+## 三十秒速查：Docker 镜像源该用哪个
 
-拉 Docker Hub、ghcr.io、GCR、`registry.k8s.io` 时，常见是慢、超时，或者碰上 `401` / `429` / `manifest unknown`。很多时候不是「源挂了」，而是配错了地方：`daemon.json` 里的 `registry-mirrors` 主要管 `docker.io`；Kubernetes 节点用的是 containerd，不会读你笔记本 Docker Desktop 里的加速配置。
+| 你的情况 | 用哪个 | 能拉 ghcr.io / K8s 吗 |
+|---|---|---|
+| 腾讯云 / 阿里云 / 华为云 CVM，只拉 Docker Hub | 该云内网源，免费 | 不能 |
+| 本机、NAS、跨云、CI，或要拉 ghcr.io / `registry.k8s.io` | 轩辕专属域名，形如 `你的前缀.xuanyuan.run` | 能，覆盖 10 个仓库 |
+| 生产环境 | 专属域名 + 双 endpoint 互为备份 | 能 |
 
-机器在阿里云、腾讯云、华为云上，优先用各家内网镜像源。网易云公共加速早就停了，文里仍写出那个旧地址，是怕你 `daemon.json` 里还留着。换到笔记本、另一家云、家里 NAS，或者还要拉 ghcr.io、K8s 官方镜像，用 [轩辕镜像专业版](https://xuanyuan.cloud) 更省事：注册后复制专属域名，再改配置、测拉取。分平台步骤见 [使用手册](https://xuanyuan.cloud/usage)，报错查 [FAQ](https://xuanyuan.cloud/faq)。
+**还没拿到专属域名？** [注册后在个人中心复制，一分钟搞定 →](https://xuanyuan.cloud/dashboard?register=true&code=BC9MPZ&xy_from=blog-2026-docker-9)
 
-> 国内 Docker 镜像源会变，建议收藏，我们按月更新。生产以 [xuanyuan.cloud](https://xuanyuan.cloud) 为准。流量在 [充值中心](https://xuanyuan.cloud/recharge) 买——**新人使用仅 ¥2.9 起**，**50GB 仅需 ¥8**。
+8 元 50GB 流量包，有效期一年，一台 NAS 的日常拉取根本用不完。
 
 ---
 
-## 🔍 11 月 7 日最新可用镜像源加速
+## 前言
 
-### 云厂商内网源，以及别再用的旧公共源
+`docker pull` 超时、镜像拉取失败时，先别急着换一堆来路不明的地址。这篇整理的是国内仍可用的 **Docker Hub 国内镜像** 加速写法：哪些只在云内网生效，哪些公共源已经停服；拉 Docker Hub、ghcr.io、GCR、`registry.k8s.io` 时常见的 `401` / `429` / `manifest unknown`，多半不是「源挂了」，而是配错了地方。高校、实验室、公司研发机都可以照着配。
 
-| 来源 | 地址 | 10 月状态 | 适用范围 |
-|------|------|----------|----------|
-| 腾讯云 | `https://mirror.ccs.tencentyun.com` | 同云可用 | 仅腾讯云 CVM |
-| 阿里云 | `https://xxx.mirror.aliyuncs.com` | 同云可用（控制台取专属地址） | 仅阿里云 ECS |
-| 华为云 | 按 SWR 控制台文档配置 | 同云可用 | 华为云环境 |
-| 网易云 | `https://hub-mirror.c.163.com` | **已停用，勿再配置** | 旧地址，留着只会拖慢拉取 |
+机器在阿里云、腾讯云、华为云上，优先用各家内网镜像源。网易云公共加速早就停了，文里仍写出那个旧地址，是怕你 `daemon.json` 里还留着。换到笔记本、另一家云、家里 NAS，或者还要拉 ghcr.io、K8s 官方镜像，用 [轩辕镜像专业版](https://xuanyuan.cloud/?code=BC9MPZ&xy_from=blog-2026-docker-9) 更省事：注册后复制专属域名，再改配置、测拉取。分平台步骤见 [使用手册](https://xuanyuan.cloud/usage?code=BC9MPZ&xy_from=blog-2026-docker-9)，报错查 [FAQ](https://xuanyuan.cloud/faq?code=BC9MPZ&xy_from=blog-2026-docker-9)。
+
+> 国内 Docker Hub 镜像源会变，**以本页「更新日志」为准**。生产以 [xuanyuan.cloud](https://xuanyuan.cloud) 为准。流量在 [充值中心](https://xuanyuan.cloud/recharge?code=BC9MPZ&xy_from=blog-2026-docker-9) 买——**8 元 50GB，有效期一年**。
+
+---
+
+## Docker Hub 国内镜像：哪家还能用
+
+找 **Docker Hub 国内镜像** 时，先看这张表：哪些还能用、哪些只在云内网、哪些已经停服。第三方公益源地址常变且不稳定，**不要写进生产机**；需要跨环境稳定拉取时用轩辕专业版专属域名，下面给出一次可验证的配置入口。
+
+| 来源 | 地址形态 | 当前状态 | 适用范围 | 备注 |
+|---|---|---|---|---|
+| 腾讯云 | `https://mirror.ccs.tencentyun.com` | 同云可用 | 仅腾讯云 CVM | 公网 / 本机无效 |
+| 阿里云 | `https://xxx.mirror.aliyuncs.com` | 同云可用；已停止同步最新镜像 | 仅阿里云 ECS | 控制台取专属地址；非 ECS 常 403 |
+| 华为云 | 按 SWR 控制台加速器配置 | 同云可用 | 华为云环境 | Docker 29 上可能失败，以控制台说明为准 |
+| 网易云 | `https://hub-mirror.c.163.com` | **已停用，勿再配置** | — | 旧地址，留着只会拖慢拉取 |
+| 轩辕镜像专业版 | `https://xxx.xuanyuan.run` | **可用（推荐）** | 本机 / 多云 / CI / NAS | Hub + GHCR / K8s / GCR；[个人中心复制](https://xuanyuan.cloud/dashboard?register=true&code=BC9MPZ&xy_from=blog-2026-docker-9) |
+| 第三方公益源 | 各类临时域名 | 不保证可用性 | 个人临时测试 | 本文不维护具体名单；勿写进生产 |
 
 怎么选：
 
-- 腾讯云、阿里云、华为云内网镜像，在**对应云服务器**上拉 Docker Hub 往往够用；换到本机、另一家云、CI、家里 NAS 通常无效，也基本不管 ghcr.io / `registry.k8s.io`。
-- 网易云等大厂**公共** Docker 镜像加速早已停服。配置里还留着 `hub-mirror.c.163.com` 的，删掉。
-- 要跨环境、团队共用，或加速 GHCR / K8s 官方仓库，用轩辕镜像专业版。
+1. 机器就在腾讯云 / 阿里云 / 华为云上，且只拉 Docker Hub → 可先试对应云内网源。
+2. 换环境、CI、家里 NAS，或还要拉 ghcr.io / `registry.k8s.io` → 用轩辕专业版专属域名。
+3. `daemon.json` 里若还留着 `hub-mirror.c.163.com` 等已停地址 → 删掉后重启 Docker。
+
+验证一次（把 `xxx` 换成你的专属前缀）：
+
+```bash
+docker pull xxx.xuanyuan.run/library/nginx:alpine
+```
 
 ### 轩辕镜像专业版（推荐）
 
 打开 [xuanyuan.cloud](https://xuanyuan.cloud) 注册。个人中心能看到专属域名（形如 `xxx.xuanyuan.run`）和镜像账户 / 镜像密码。Docker Hub、ghcr.io、GCR、`registry.k8s.io` 都能走；Linux、Docker Desktop、群晖、极空间、威联通也能配。
 
-流量在 [充值中心](https://xuanyuan.cloud/recharge) 购买：**新人使用仅 ¥2.9 起**，**50GB 仅需 ¥8**。
+流量在 [充值中心](https://xuanyuan.cloud/recharge?code=BC9MPZ&xy_from=blog-2026-docker-9) 购买：**8 元 50GB 流量包，有效期一年**，一台 NAS 的日常拉取根本用不完。
 
-### 轩辕镜像免费版（仅体验）
+### 关于公共入口 `docker.xuanyuan.me`（免费版，仅体验）
 
-地址是 `https://docker.xuanyuan.me`（注意是 `.me`，不是 `.run`）。免费、不用登录，但**只加速 Docker Hub**，没有 GHCR / K8s，别拿去撑生产。差别见 [免费版与专业版](https://xuanyuan.cloud/faq/free-vs-pro)。
+网上常有人推荐这个地址（注意是 `.me`，不是 `.run`）。它**只加速 Docker Hub**，有频率限制，没有 GHCR / K8s。很多人配完它之后发现部分镜像死活拉不动，就停在这一步了——不是配置错了，是这条路本来就没通。
 
-动手顺序：先 [注册专业版](https://xuanyuan.cloud)，需要的话先 [充值](https://xuanyuan.cloud/recharge)，再在个人中心复制 `xxx.xuanyuan.run`，写进后面的加速配置。
+判断方法很简单：报错里出现的是 `docker.xuanyuan.me` 还是你自己的专属域名。如果是前者，换成专属域名再试一次。差别见 [公共入口与专属域名](https://xuanyuan.cloud/faq/free-vs-pro)。
+
+动手顺序：先 [注册](https://xuanyuan.cloud/dashboard?register=true&code=BC9MPZ&xy_from=blog-2026-docker-9)，需要的话再 [充值](https://xuanyuan.cloud/recharge?code=BC9MPZ&xy_from=blog-2026-docker-9)，然后在个人中心复制 `xxx.xuanyuan.run`，写进后面的加速配置。
 
 ---
 
@@ -53,7 +77,7 @@
 
 还没装 Docker 的 Linux 机器，可以用官方一键脚本装 Docker 和 Docker Compose。测试环境一条命令即可；生产环境请先下载脚本看过再执行。
 
-脚本大约覆盖 15 种发行版（含统信 UOS、深度 Deepin 等）。装好后把专业版专属加速地址写进 `daemon.json`。
+脚本覆盖 17 种主流发行版（含统信 UOS、深度 Deepin 等）。装好后把专业版专属加速地址写进 `daemon.json`。
 
 > 最好先注册专业版并拿到专属域名，再跑脚本，少改一次配置。
 
@@ -96,6 +120,8 @@ docker --version
 docker compose version
 ```
 
+> **跑完脚本还是拉不动？** 九成是这三种：`daemon.json` 路径写错（是 `/etc/docker/daemon.json`，不是 `daemon.conf`）、改完没 `systemctl restart docker`、或者填的是只在云内网生效的源。按报错对号入座：[429 限流](https://xuanyuan.cloud/faq/429-rate-limit-error)、[402 流量用尽](https://xuanyuan.cloud/faq/traffic-exhausted-error)、[TLS 证书验证失败](https://xuanyuan.cloud/faq/tls-certificate-error)。都对不上，[使用手册](https://xuanyuan.cloud/usage?code=BC9MPZ&xy_from=blog-2026-docker-9) 里按设备分了步骤。
+
 ---
 
 ## 镜像搜索与在线工具
@@ -114,21 +140,21 @@ docker compose version
 ### 支持的操作系统详情
 
 | 分类 | 操作系统 | 版本 | 支持状态 | 说明 |
-|------|----------|------|----------|------|
+|---|---|---|---|---|
 | 国产操作系统 | openEuler (欧拉) | 20.03+, 22.03+, 24.03+ | 支持 | 华为开源，兼容 CentOS |
-| | OpenCloudOS | 9.x | 支持 | 腾讯开源，兼容 CentOS 9 |
-| | TencentOS Server | 3.x, 4.x | 支持 | 腾讯云；4.x→CentOS 9 / 3.x→CentOS 8 |
-| | Anolis OS (龙蜥) | 7.x, 8.x | 支持 | 阿里云支持，兼容 RHEL |
-| | Alinux (阿里云) | 2.x, 3.x | 支持 | 阿里云 ECS 默认系统 |
-| | Kylin Linux (银河麒麟) | V10 | 支持 | 国产系统，兼容 RHEL |
-| | 统信 UOS、深度 Deepin | 主流版本 | 支持 | 信创桌面与服务器 |
+|  | OpenCloudOS | 9.x | 支持 | 腾讯开源，兼容 CentOS 9 |
+|  | TencentOS Server | 3.x, 4.x | 支持 | 腾讯云；4.x→CentOS 9 / 3.x→CentOS 8 |
+|  | Anolis OS (龙蜥) | 7.x, 8.x | 支持 | 阿里云支持，兼容 RHEL |
+|  | Alinux (阿里云) | 2.x, 3.x | 支持 | 阿里云 ECS 默认系统 |
+|  | Kylin Linux (银河麒麟) | V10 | 支持 | 国产系统，兼容 RHEL |
+|  | 统信 UOS、深度 Deepin | 主流版本 | 支持 | 信创桌面与服务器 |
 | CentOS 替代 | Rocky Linux / AlmaLinux | 8.x, 9.x | 支持 | 长周期，兼容 RHEL |
 | 创新发行版 | Fedora | 34+ | 支持 | Red Hat 上游 |
-| | openSUSE Leap | 15.x | 支持 | zypper；OBS 容器源或静态二进制 |
+|  | openSUSE Leap | 15.x | 支持 | zypper；OBS 容器源或静态二进制 |
 | 传统发行版 | Ubuntu | 16.04+ | 支持 | 含老版本兼容 |
-| | Debian | 9+ | 支持 | 含老版本兼容 |
-| | CentOS | 8, 9, Stream | 支持 | **不含 CentOS 7** |
-| | RHEL / Oracle Linux | 7, 8, 9 | 支持 | 企业级发行版 |
+|  | Debian | 9+ | 支持 | 含老版本兼容 |
+|  | CentOS | 8, 9, Stream | 支持 | **不含 CentOS 7** |
+|  | RHEL / Oracle Linux | 7, 8, 9 | 支持 | 企业级发行版 |
 
 脚本会检测系统类型和版本，一般不必手选安装方案。
 
@@ -170,11 +196,11 @@ sudo systemctl restart docker
 
 验证：`docker info | grep "Registry Mirrors" -A 3`，输出含专属地址即可；再 `docker pull nginx:latest` 测速。
 
-#### 基础配置（免费体验，仅 Docker Hub）
+#### 只覆盖 Docker Hub 的写法（不推荐）
 
-临时体验可写入 `https://docker.xuanyuan.me`。不含 GHCR / K8s，别当生产方案。
+如果你在别处看到 `https://docker.xuanyuan.me` 这个地址，它只能加速 Docker Hub，不含 GHCR / K8s。写进 `daemon.json` 后 `nginx` 拉得飞快、`ghcr.io` 的镜像照样超时，就是这个原因。日常用请填上面的专属域名。
 
-> **注意**：`registry-mirrors` 主要作用于 Docker Hub（`docker.io`）。要加速 `ghcr.io`、`registry.k8s.io`，还得在专业版专属域名之外，去配后面的 containerd 或 Podman。原因见 [mirrors 为何不生效](https://xuanyuan.cloud/faq/registry-mirrors-not-working)。
+> **注意**：`registry-mirrors` 只对 Docker Hub（`docker.io`）生效。Docker 里填了专属域名，`docker pull ghcr.io/xxx` 依然会走直连——那是另一条路：要么在镜像名前加前缀，`docker pull 你的前缀-ghcr.xuanyuan.run/org/image:tag`；要么按后面的 containerd / Podman 配多仓库 mirrors。原因见 [mirrors 为何不生效](https://xuanyuan.cloud/faq/registry-mirrors-not-working)。
 
 ---
 
@@ -193,10 +219,6 @@ sudo systemctl restart docker
 
 3. **Apply & Restart**，用 `docker info` 核对 Registry Mirrors
 
-#### 基础配置（免费体验）
-
-Settings → Docker Engine → 添加 `"registry-mirrors": ["https://docker.xuanyuan.me"]` → Apply & Restart。
-
 ⚠️ 生产环境不要用 `insecure-registries` 跳过 TLS。证书问题见 [TLS 证书 FAQ](https://xuanyuan.cloud/faq/tls-certificate-error)。
 
 ---
@@ -209,10 +231,6 @@ Settings → Docker Engine → 添加 `"registry-mirrors": ["https://docker.xuan
 2. 写入与 macOS 相同 JSON，Apply 后重启
 3. `docker info` 确认 Registry Mirrors
 
-#### 基础配置（免费体验）
-
-将 mirrors 改为 `https://docker.xuanyuan.me`。
-
 ---
 
 ## 其他容器环境加速配置
@@ -224,7 +242,7 @@ Settings → Docker Engine → 添加 `"registry-mirrors": ["https://docker.xuan
 #### 适用版本
 
 | containerd 版本 | 支持说明 |
-|-----------------|----------|
+|---|---|
 | < 1.4 | 配置结构不同，新环境别用 |
 | 1.4 ~ 1.7.x | 按下面步骤即可 |
 | ≥ 1.7.x | 推荐 |
@@ -358,9 +376,6 @@ docker pull mysql:8.0
 # 公共登录域（需先 docker login docker.xuanyuan.run）
 docker pull docker.xuanyuan.run/library/alpine:3.20
 
-# 免费版（仅 Hub）
-docker pull docker.xuanyuan.me/library/alpine:3.20
-
 # containerd
 ctr images pull xxx.xuanyuan.run/library/mysql:8.0
 ctr images pull xxx-k8s.xuanyuan.run/pause:3.9
@@ -484,7 +499,7 @@ podman stop redis-test && podman rm redis-test
 ## 容器运行时 vs 加速配置位置对照表
 
 | 容器运行时 | 配置文件位置 | 加速类型支持 | 适用场景 |
-|------------|--------------|--------------|----------|
+|---|---|---|---|
 | Docker | `/etc/docker/daemon.json` | Docker Hub（registry-mirrors） | 个人 / 企业单机 |
 | containerd | `/etc/containerd/config.toml` | 多仓库（docker.io / ghcr.io / registry.k8s.io 等） | K8s 集群 / 容器云 |
 | nerdctl | 共享 containerd 配置 | 多仓库，命令接近 Docker | 企业生产替代 Docker CLI |
@@ -497,7 +512,7 @@ podman stop redis-test && podman rm redis-test
 ## 企业生产环境配置 Checklist
 
 | 检查项 | 要求 |
-|--------|------|
+|---|---|
 | 镜像源 | 生产用轩辕专业版专属节点；别把网易等已停公共源、不稳定免费源写进生产机 |
 | TLS | 开 HTTPS / 合法证书，别开 insecure |
 | 高可用 | mirrors 配两个以上 endpoint，单点挂了还能拉 |
@@ -525,7 +540,7 @@ podman stop redis-test && podman rm redis-test
 
 ### Q2：网易云 hub-mirror.c.163.com 还能用吗？
 
-**不能。** 网易云等大厂公共 Docker 镜像加速已停用。请从 `daemon.json` / Desktop 配置中删除该地址，改用云厂商**同云内网源**或轩辕专业版 / 免费版。
+**不能。** 网易云等大厂公共 Docker 镜像加速已停用，地址留着只会拖慢拉取。请从 `daemon.json` / Docker Desktop 配置里删掉它：机器在云上就换该云内网源，否则用 [轩辕专业版专属域名](https://xuanyuan.cloud/?code=BC9MPZ&xy_from=blog-2026-docker-9)。
 
 ### Q3：阿里云、腾讯云镜像加速配好了，家里电脑为什么还是慢？
 
@@ -565,15 +580,21 @@ podman stop redis-test && podman rm redis-test
 ## 总结
 
 - **同云 ECS、只拉 Docker Hub**：继续用阿里云 / 腾讯云 / 华为云内网源；配置里删掉网易等已停公共源。
-- **本机、跨云、NAS、CI，或要 GHCR / K8s**：用 [轩辕镜像专业版](https://xuanyuan.cloud) 专属域名；K8s 改 containerd 多仓库 mirrors，常用镜像可再进 Harbor。
-- **自己临时试 Hub**：`docker.xuanyuan.me` 或一键脚本就行；团队和生产请充专业版流量。
+- **本机、跨云、NAS、CI，或要 GHCR / K8s**：用 [轩辕镜像专业版](https://xuanyuan.cloud/?code=BC9MPZ&xy_from=blog-2026-docker-9) 专属域名；K8s 改 containerd 多仓库 mirrors，常用镜像可再进 Harbor。
+- **刚开始用**：先注册拿专属域名，8 元 50GB 够 NAS 拉一年；一键脚本能直接配好，不用手改文件。
 - **安全**：生产别开 insecure，别把密码写进仓库；远程脚本先下载看过再跑。
 
-常用链接：
+**接下来去哪**
 
-- [注册轩辕镜像专业版](https://xuanyuan.cloud) · [充值中心](https://xuanyuan.cloud/recharge)（新人 ¥2.9 起，50GB ¥8）
-- [使用手册](https://xuanyuan.cloud/usage) · [FAQ](https://xuanyuan.cloud/faq) · [镜像搜索](https://xuanyuan.cloud/search)
+- 要用 ghcr.io / K8s / NAS：[注册拿专属域名](https://xuanyuan.cloud/dashboard?register=true&code=BC9MPZ&xy_from=blog-2026-docker-9)，8 元 50GB，有效期一年
+- 不知道自己的设备怎么配：[按设备看使用手册](https://xuanyuan.cloud/usage?code=BC9MPZ&xy_from=blog-2026-docker-9)，群晖 / 威联通 / 极空间 / Unraid / 宝塔 / 1Panel 都有
+- 已经配完但报错：先看报错码，[常见报错](https://xuanyuan.cloud/faq?code=BC9MPZ&xy_from=blog-2026-docker-9) 各有单独页面
+- 只是想把镜像搜出来：[镜像搜索](https://xuanyuan.cloud/search) 能直接复制带专属域名的 `docker pull`
 
-下次 `docker pull` 又超时，先回来对一下这份 9 月国内 Docker 镜像源加速列表，再改配置。
+下次 `docker pull` 又超时，先回来对一下上面的速查表和更新日志，再改配置。
 
+## 更新日志
+
+- **2026-11-12**：首屏新增「三十秒速查」，把对照表和注册入口提到第一屏；脚本段补 TencentOS Server / openSUSE Leap；补「跑完还是拉不动」的三种高频原因；结尾改为按场景的行动清单。
+- **2026-11-09**：首屏改为「Docker Hub 国内镜像：哪家还能用」对照表；去掉月刊式时效承诺与过时表头；摘要改为以本页更新日志为准。
 

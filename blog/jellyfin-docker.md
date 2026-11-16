@@ -1,364 +1,482 @@
-# jellyfin Docker容器化部署指南
+# jellyfin Docker 容器化部署指南
 
-![jellyfin Docker容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-jellyfin.png)
+![jellyfin Docker 容器化部署指南](https://imgs.xuanyuan.cloud/docker/blog/docker-jellyfin.png)
 
 *分类: Docker部署教程 | 标签: jellyfin,docker,部署教程 | 发布时间: 2025-12-11 04:14:39*
 
-> JELLYFIN是一款开源的媒体系统（The Free Software Media System），旨在让用户完全掌控自己的媒体管理和流媒体体验。作为Emby和Plex的免费替代方案，JELLYFIN允许用户从专用服务器向各种终端设备提供媒体内容，支持跨平台部署。该项目源自Emby 3.5.2版本，后迁移至.NET Core框架以实现全面的跨平台支持。JELLYFIN坚持无附加条件、无高级许可或功能限制的理念，由社区驱动开发，欢迎所有感兴趣的开发者参与。
+> Jellyfin 是开源免费的媒体服务器，用来集中管理电影、剧集、音乐与相册，并在浏览器、手机与电视客户端上流式播放。本文将介绍如何通过 Docker Compose 部署官方镜像 jellyfin/jellyfin，把片库留在本机目录，适合家庭影音库、NAS 自托管与内网观影。
 
-## 概述
+## Jellyfin 是什么
 
-JELLYFIN是一款开源的媒体系统（The Free Software Media System），旨在让用户完全掌控自己的媒体管理和流媒体体验。作为Emby和Plex的免费替代方案，JELLYFIN允许用户从专用服务器向各种终端设备提供媒体内容，支持跨平台部署。该项目源自Emby 3.5.2版本，后迁移至.NET Core框架以实现全面的跨平台支持。JELLYFIN坚持无附加条件、无高级许可或功能限制的理念，由社区驱动开发，欢迎所有感兴趣的开发者参与。
+Jellyfin 是开源、无订阅费用的媒体服务器。它把本机或 NAS 上的电影、剧集、音乐与图片整理成媒体库，再通过浏览器、手机 App 与智能电视客户端串流播放；客户端无法直通时，可由服务端转码。
 
-本文档提供了基于Docker容器化技术的JELLYFIN部署方案，包括环境准备、镜像拉取、容器部署、功能测试及生产环境建议等内容，旨在帮助用户快速、可靠地搭建JELLYFIN服务。
+和按文件夹用播放器硬翻不同，它统一管理海报、简介与观看进度，多设备可接着看。和商业流媒体或带会员档位的私有影院方案不同，服务与片库都留在你自己的机器上。官方容器镜像是 **`jellyfin/jellyfin`**。
 
-## 环境准备
+## Jellyfin 能做什么
 
-### Docker环境安装
+- **媒体库管理**：按电影、剧集、音乐、相册等类型组织本地文件，并拉取海报与简介。
+- **多端串流**：在浏览器、手机与电视客户端播放，并同步观看进度。
+- **按需转码**：客户端不便直通时，由服务端转码或烧录字幕后再送出。
+- **用户与权限**：自建管理员与普通用户，按库控制可见范围。
+- **插件扩展**：安装元数据、字幕等插件，并配合官方与社区客户端使用。
 
-JELLYFIN的容器化部署依赖Docker引擎，建议使用以下一键脚本安装Docker环境（适用于主流Linux发行版）：
+## 为什么要使用 Jellyfin
+
+硬盘和 NAS 里影片越堆越多，文件夹硬翻效率低，各设备进度也对不上。商业流媒体要订阅，片源不在自己手里；家庭录像、已购碟片也不适合再上传到第三方云。
+
+如果家里已有一台常开的 Linux 主机或 NAS，用 Jellyfin 可以把片库留在本地，浏览器完成建库与播放。适合家庭影音中心、内网观影，以及希望数据不出域的自托管场景。
+
+## 使用 Docker 部署 Jellyfin
+
+Jellyfin 可以用 Docker 启动，不必在宿主机单独安装 .NET 运行时。部署前准备好 Docker，并规划配置目录、缓存目录与真实片库路径。
+
+接下来用 Docker Compose 写好镜像、端口与卷，启动服务，再在浏览器完成首次向导、添加媒体库并确认能打开首页。
+
+## 环境要求
+
+本文使用 **`jellyfin/jellyfin:12.4`** 版本实测。测试平台是 Ubuntu 24.04（主机名 `ikuai-ubuntu2404`）。容器日志中的版本为 **12.4.0**，基础系统为 Debian GNU/Linux 13（trixie）。`12.4` 是当前稳定发行版；`latest`、`12` 会随发版改指向，本文命令固定 **`12.4`**。镜像提供 **linux/amd64**、**linux/arm64** 等架构。
+
+容器内 Web 听 **8096/tcp**；可选 **7359/udp** 供部分客户端局域网发现。无预置账号，首次向导里自建管理员。官方容器文档以 **Linux** 为主路径；在 Windows / macOS 上用容器跑 Jellyfin 不被官方支持，硬解与扫库等能力可能异常。
+
+| 项目 | 建议 |
+|------|------|
+| 系统 | Linux（正文按 Ubuntu 目录书写）；macOS 把 `/www/wwwroot/jellyfin-official` 换成 `~/docker/jellyfin-official` |
+| Docker | 已安装 Docker Engine 与 **Compose V2**（`docker compose`） |
+| 架构 | **linux/amd64** 或 **linux/arm64** |
+| 内存 | 建议可用 ≥ **2 GB**（转码时宜更宽裕） |
+| 磁盘 | 镜像数百 MB 量级，另加 `config`、`cache` 与片库空间 |
+| 端口 | 宿主机 **8096** → 容器 **8096**；可选 **7359/udp** |
+| 工作目录 | `/www/wwwroot/jellyfin-official` |
+| 账号 | 无默认密码；首次向导创建管理员 |
+| 硬解（可选） | Intel / AMD：`/dev/dri`；NVIDIA：主机驱动 + 容器 GPU |
+
+```bash
+docker --version
+docker compose version
+```
+
+Linux 未装 Docker 可使用轩辕镜像一键安装脚本：
 
 ```bash
 bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
 ```
-
 
 备用地址：
 
 ```bash
 bash <(wget -qO- https://get.xuanyuan.me/docker.sh)
 ```
-执行脚本后，按照提示完成Docker的安装和启动。安装完成后，可通过以下命令验证Docker是否正常运行：
+
+更多见 [轩辕镜像使用手册](https://xuanyuan.cloud/usage?xy_from=jellyfin-official-docker-deploy)。
+
+## 标签怎么选
+
+新安装使用 **`12.4`**。不要把 `latest`、`unstable` 或纯日期戳预览标签写进 Compose。
+
+| 标签 | 说明 | 是否写入本文命令 |
+|------|------|------------------|
+| **`12.4`** | 当前稳定发行版，本文采用 | **是** |
+| `12.3`、`12.2` 等 | 更早稳定版，便于回滚 | 否 |
+| `12` | 主版本滚动线 | 否 |
+| `latest` | 浮动稳定线，发版后会变 | 否 |
+| `unstable` / `YYYYMMDDHH` | 预览 / 日构建 | 否 |
+| `12.4.YYYYMMDD-HHMMSS` | 某一包构建快照 | 否 |
+
+完整列表见 [标签列表](https://xuanyuan.cloud/r/jellyfin/jellyfin/tags?xy_from=jellyfin-official-docker-deploy)。发布说明见 [v12.4](https://github.com/jellyfin/jellyfin/releases/tag/v12.4)。升级时改 Compose 中的标签，并先备份 `config`。
+
+## 拉取镜像
+
+用 [轩辕镜像](https://xuanyuan.cloud/?xy_from=jellyfin-official-docker-deploy) **加速拉取**：
 
 ```bash
-docker --version
-docker info
+docker pull docker.xuanyuan.run/jellyfin/jellyfin:12.4
 ```
 
-## 镜像准备
+Ubuntu 24.04 上拉取完成：
 
-### 拉取JELLYFIN镜像
-
-使用以下命令通过轩辕镜像访问支持地址拉取最新版本的JELLYFIN镜像：
-
-```bash
-docker pull xxx.xuanyuan.run/jellyfin/jellyfin:latest
+```text
+12.4: Pulling from jellyfin/jellyfin
+2ad4c3afb22d: Pull complete
+526fffcbc249: Pull complete
+e4f64296b96e: Pull complete
+4f4fb700ef54: Pull complete
+5ec2bdefc613: Pull complete
+00d1feae788f: Pull complete
+f2be67225471: Pull complete
+eb04fc9266f4: Pull complete
+da8ad6b41798: Pull complete
+0a41bce6ef14: Pull complete
+Digest: sha256:fea863d0cd9ec445985d9c75fc6ed64e38a1d2766cf0c250a33d553f4fc1b771
+Status: Downloaded newer image for docker.xuanyuan.run/jellyfin/jellyfin:12.4
+docker.xuanyuan.run/jellyfin/jellyfin:12.4
 ```
 
-如需指定其他版本，可参考[JELLYFIN镜像标签列表](https://xuanyuan.cloud/r/jellyfin/jellyfin/tags)选择合适的标签，替换上述命令中的`latest`即可。
+401 / 402 见 [常见问题](https://xuanyuan.cloud/faq?xy_from=jellyfin-official-docker-deploy)。
 
-拉取完成后，可通过以下命令验证镜像是否成功下载：
+## Docker Compose 部署
+
+工作目录：Linux **`/www/wwwroot/jellyfin-official`**。macOS 用 **`~/docker/jellyfin-official`**。
+
+| 宿主机目录 | 容器内路径 | 用途 |
+|------------|------------|------|
+| `config/` | `/config` | **必挂**：数据库、用户、插件、库元数据（务必备份） |
+| `cache/` | `/cache` | **必挂**：转码临时文件与图片缓存（可清空重建） |
+| `media/` 或真实盘符 | `/media` | 片库；生产请改成 NAS / 磁盘路径，建议 `:ro` |
+
+向导里选的是**容器内**路径 `/media`，不是宿主机路径。把影片放进宿主机片库目录，或把 Compose 里的 `./media` 改成例如 `/mnt/nas/movies`。
+
+### 1. 创建目录
 
 ```bash
-docker images | grep jellyfin/jellyfin
+sudo mkdir -p /www/wwwroot/jellyfin-official/{config,cache,media}
+sudo chown -R "$(id -u):$(id -g)" /www/wwwroot/jellyfin-official
+cd /www/wwwroot/jellyfin-official
 ```
 
-若输出包含`xxx.xuanyuan.run/jellyfin/jellyfin:latest`信息，则表示镜像拉取成功。
-
-## 容器部署
-
-### 基础部署命令
-
-以下是JELLYFIN容器的基础部署命令，包含必要的端口映射、数据持久化及基本配置：
+macOS：
 
 ```bash
-docker run -d \
-  --name jellyfin \
-  --restart unless-stopped \
-  -p 8096:8096 \
-  -p 8920:8920 \
-  -v /opt/jellyfin/config:/config \
-  -v /opt/jellyfin/cache:/cache \
-  -v /opt/jellyfin/media:/media \
-  xxx.xuanyuan.run/jellyfin/jellyfin:latest
+mkdir -p ~/docker/jellyfin-official/{config,cache,media}
+cd ~/docker/jellyfin-official
 ```
 
-#### 参数说明：
-
-- `-d`：后台运行容器
-- `--name jellyfin`：指定容器名称为jellyfin
-- `--restart unless-stopped`：容器退出时除非手动停止，否则自动重启
-- `-p 8096:8096`：映射HTTP端口（默认Web管理端口）
-- `-p 8920:8920`：映射HTTPS端口（加密连接端口）
-- `-v /opt/jellyfin/config:/config`：挂载配置文件目录，持久化JELLYFIN配置
-- `-v /opt/jellyfin/cache:/cache`：挂载缓存目录，存储临时文件
-- `-v /opt/jellyfin/media:/media`：挂载媒体文件目录，存放用户媒体内容
-
-> **注意**：上述端口为JELLYFIN常用端口，具体端口配置可能因版本不同而有所差异，建议参考[JELLYFIN镜像文档（轩辕）](https://xuanyuan.cloud/r/jellyfin/jellyfin)获取最新端口信息。
-
-### 自定义配置部署
-
-根据实际需求，可添加环境变量和额外参数来自定义JELLYFIN服务：
+### 2. 写入 compose.yaml
 
 ```bash
-docker run -d \
-  --name jellyfin \
-  --restart unless-stopped \
-  --user 1000:1000 \
-  -p 8096:8096 \
-  -p 8920:8920 \
-  -e TZ=Asia/Shanghai \
-  -e JELLYFIN_CACHE_SIZE=10G \
-  -v /opt/jellyfin/config:/config \
-  -v /opt/jellyfin/cache:/cache \
-  -v /opt/jellyfin/media:/media \
-  -v /opt/jellyfin/transcode:/transcode \
-  xxx.xuanyuan.run/jellyfin/jellyfin:latest
+cd /www/wwwroot/jellyfin-official
+
+cat > compose.yaml <<'EOF'
+services:
+  jellyfin:
+    image: docker.xuanyuan.run/jellyfin/jellyfin:12.4
+    container_name: jellyfin
+    # 可选：与宿主机用户一致，避免 /config 权限问题
+    # user: "1000:1000"
+    ports:
+      - "8096:8096/tcp"
+      - "7359:7359/udp"
+    volumes:
+      - ./config:/config
+      - ./cache:/cache
+      # 生产示例：- /mnt/nas/movies:/media:ro
+      - ./media:/media:ro
+    environment:
+      - TZ=Asia/Shanghai
+      # 可选：- JELLYFIN_PublishedServerUrl=http://192.168.1.10:8096
+    restart: unless-stopped
+    # 硬解见「硬件加速」；默认注释
+    # group_add:
+    #   - "44"   # getent group render
+    # devices:
+    #   - /dev/dri:/dev/dri
+EOF
 ```
 
-新增参数说明：
+| 项 | 说明 |
+|----|------|
+| `image` | `docker.xuanyuan.run/jellyfin/jellyfin:12.4` |
+| `ports` | **8096** Web；**7359/udp** 局域网发现（不需要可删） |
+| `volumes` | `/config`、`/cache` 必挂；片库按实际路径改左边 |
+| `:ro` | 片库只读，降低误写；需要就地改文件名，或写回封面 / 字幕时去掉 |
+| `user` | 非 root 运行时，先保证宿主机目录属主匹配 |
 
-- `--user 1000:1000`：指定容器运行用户ID和组ID，避免权限问题
-- `-e TZ=Asia/Shanghai`：设置时区为亚洲/上海
-- `-e JELLYFIN_CACHE_SIZE=10G`：设置缓存大小限制（示例值，根据实际需求调整）
-- `-v /opt/jellyfin/transcode:/transcode`：挂载转码目录，用于媒体文件转码
-
-## 功能测试
-
-### 服务可用性验证
-
-容器部署完成后，等待约30秒（首次启动可能需要更长时间），可通过以下方法验证服务是否正常运行：
-
-#### 1. 容器状态检查
+### 3. 启动并验证
 
 ```bash
-docker ps | grep jellyfin
+docker compose up -d
+docker compose ps
+docker compose logs -f jellyfin
 ```
 
-若输出中STATUS列显示为`Up`状态，则表示容器正在运行。
+Ubuntu 24.04 实测：
 
-#### 2. 日志检查
+```text
+[+] up 2/2
+ ✔ Network jellyfin-official_default Created
+ ✔ Container jellyfin                Started
+
+NAME       IMAGE                                        COMMAND                SERVICE    CREATED         STATUS                            PORTS
+jellyfin   docker.xuanyuan.run/jellyfin/jellyfin:12.4   "/jellyfin/jellyfin"   jellyfin   7 seconds ago   Up 4 seconds (health: starting)   0.0.0.0:7359->7359/udp, [::]:7359->7359/udp, 0.0.0.0:8096->8096/tcp, [::]:8096->8096/tcp
+```
+
+首次启动会初始化数据库，日志很长。可先看到：
+
+```text
+[INF] Jellyfin.Server.ServerSetupApp.SetupServer: Kestrel is listening on 0.0.0.0
+[INF] Main: Jellyfin version: 12.4.0
+[INF] Main: Operating system: Debian GNU/Linux 13 (trixie)
+[INF] Main: Architecture: X64
+```
+
+迁移未结束时，本机探测可能失败（例如 `Connection reset by peer`）。稍等再试：
 
 ```bash
+curl -I http://127.0.0.1:8096
+```
+
+就绪后常见响应：
+
+```text
+HTTP/1.1 302 Found
+Date: Tue, 10 Nov 2026 02:49:28 GMT
+Server: Kestrel
+Location: web/
+```
+
+浏览器打开：
+
+```text
+http://服务器IP:8096
+```
+
+把 `服务器IP` 换成你的主机地址。
+
+## 浏览器初始化
+
+向导里添加文件夹时，只选容器内的 **`/media`**，不要选容器根 `/`。选错会扫到 `/dev`、`/proc` 一类路径。生产环境请把真实影片挂进宿主机片库目录；截图里的库是空的，用来演示路径是否选对。
+
+### 1. 欢迎页与语言
+
+打开地址进入首次向导。可修改「服务器名称」（默认常是容器主机名），「首选的显示语言」选「中文 (中国)」，再点「下一个」。
+
+![Jellyfin 欢迎向导：服务器名称与首选显示语言「中文 (中国)」](https://imgs.xuanyuan.cloud/docker/blog/Jellyfin-official/Jellyfin-1.webp)
+
+### 2. 创建管理员
+
+填写管理员用户名与密码。没有默认账号。实测示例用户名为 `root`；生产环境请使用强密码。
+
+![Jellyfin 创建管理员：用户名 root，密码与确认密码](https://imgs.xuanyuan.cloud/docker/blog/Jellyfin-official/Jellyfin-2.webp)
+
+### 3. 添加媒体库
+
+进入「设置你的媒体库」，点「添加媒体库」。
+
+![Jellyfin 设置媒体库：蓝色加号卡片「添加媒体库」](https://imgs.xuanyuan.cloud/docker/blog/Jellyfin-official/Jellyfin-3.webp)
+
+在弹窗中把「内容类型」选为「电影」（或剧集、音乐等），显示名称可保持默认。点「文件夹」旁的「+」，进入目录树中的 **`media`** 后确认，不要停在 `/`。
+
+本文 Compose 把片库挂成 `:ro`。若勾选「将图像保存到媒体文件夹」或「将字幕保存到媒体文件夹」，写入会失败。截图里「将字幕保存到媒体文件夹」仍为勾选状态，按本文挂载时请取消，或去掉 `:ro`。
+
+![Jellyfin 添加媒体库：内容类型「电影」，文件夹尚未添加](https://imgs.xuanyuan.cloud/docker/blog/Jellyfin-official/Jellyfin-4.webp)
+
+保存后，库卡片应显示路径 **`/media`**。若显示为 `/`，删掉该库后重新添加。
+
+![Jellyfin 媒体库列表：电影库路径为 /media](https://imgs.xuanyuan.cloud/docker/blog/Jellyfin-official/Jellyfin-5.webp)
+
+### 4. 元数据语言与远程访问
+
+「首选的元数据语言」里选择语言与国家/地区。截图示例为 English / United States；需要中文元数据时改成对应选项即可，之后仍可在单个媒体库里覆盖。
+
+![Jellyfin 首选元数据语言：English，United States](https://imgs.xuanyuan.cloud/docker/blog/Jellyfin-official/Jellyfin-6.webp)
+
+「允许远程连接」默认勾选。取消后，来自非本地网络的连接会被拒绝。局域网试用可保持勾选；需要从公网访问时，更稳妥的是反代或 VPN，而不是直接裸暴露。
+
+![Jellyfin 设置远程访问：允许远程连接已勾选](https://imgs.xuanyuan.cloud/docker/blog/Jellyfin-official/Jellyfin-7.webp)
+
+### 5. 完成并向导后登录
+
+点「完成」。界面会提示 Jellyfin 已开始收集媒体库信息。
+
+![Jellyfin 向导完成页：完成按钮](https://imgs.xuanyuan.cloud/docker/blog/Jellyfin-official/Jellyfin-8.webp)
+
+用刚才创建的管理员账号登录。可勾选「记住我」。
+
+![Jellyfin 登录页：用户 root、记住我与登录按钮](https://imgs.xuanyuan.cloud/docker/blog/Jellyfin-official/Jellyfin-9.webp)
+
+### 6. 首页与空库
+
+登录后进入首页。「我的媒体」下会出现库卡片。截图里服务器名显示为 `myjellyfin`，以你在向导或控制台里设置的名称为准。
+
+![Jellyfin 首页：我的媒体下「电影」库卡片](https://imgs.xuanyuan.cloud/docker/blog/Jellyfin-official/Jellyfin-10.webp)
+
+进入「电影」库时，若宿主机 `media/` 还没有影片，会显示「这里没有可显示的内容。」把真实影片放进挂载目录后，到控制台执行扫描即可。
+
+![Jellyfin 电影库为空：没有可用的项](https://imgs.xuanyuan.cloud/docker/blog/Jellyfin-official/Jellyfin-11.webp)
+
+### 7. 控制台
+
+点右上角用户头像，打开「控制台」。应能看到服务器、Web、构建版本均为 **12.4**，以及 `/config`、`/cache` 等路径。可点「扫描所有媒体库」查看进度。
+
+![Jellyfin 控制台：版本 12.4，路径映射与活动](https://imgs.xuanyuan.cloud/docker/blog/Jellyfin-official/Jellyfin-12.webp)
+
+左侧「插件」可查看已安装的元数据插件。实测内置插件版本为 **12.4.0.0**。
+
+![Jellyfin 插件页：已安装 TMDb、OMDb 等，版本 12.4.0.0](https://imgs.xuanyuan.cloud/docker/blog/Jellyfin-official/Jellyfin-13.webp)
+
+客户端见 [Jellyfin 下载页](https://jellyfin.org/downloads/)。局域网内也可用浏览器播放。
+
+## 硬件加速（可选）
+
+默认 Compose **不**挂 GPU。客户端能直通播放时，不必开硬解。弱网降码率、多路同时转码、字幕烧录，或封装不被客户端支持时，再考虑硬件加速。
+
+### Intel / AMD（VA-API / QSV）
+
+1. 确认设备：`ls -l /dev/dri`
+2. 查 render 组 GID：`getent group render`
+3. 在 Compose 中取消注释 `group_add` 与 `devices`，把 GID 换成你的
+4. 执行 `docker compose up -d`
+5. 打开「控制台」→「播放」→「转码」，启用对应硬件加速并保存
+
+### NVIDIA
+
+宿主机需安装专有驱动，并按 [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) 配置。Compose 可按 Docker / Compose 版本增加类似配置：
+
+```yaml
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+```
+
+在播放设置里选 NVIDIA 相关选项。未挂设备前，即使在控制台勾选硬解，也不会真正走 GPU。
+
+## 备选：docker run
+
+没有 Compose 时，可用下面的命令临时试玩。长期运行请改回 Compose。
+
+```bash
+sudo mkdir -p /www/wwwroot/jellyfin-official/{config,cache,media}
+sudo chown -R "$(id -u):$(id -g)" /www/wwwroot/jellyfin-official
+cd /www/wwwroot/jellyfin-official
+
+docker run -d 
+  --name jellyfin 
+  -p 8096:8096/tcp 
+  -p 7359:7359/udp 
+  -e TZ=Asia/Shanghai 
+  -v /www/wwwroot/jellyfin-official/config:/config 
+  -v /www/wwwroot/jellyfin-official/cache:/cache 
+  -v /www/wwwroot/jellyfin-official/media:/media:ro 
+  --restart unless-stopped 
+  docker.xuanyuan.run/jellyfin/jellyfin:12.4
+```
+
+Intel / AMD 硬解可按需追加：
+
+```bash
+  --group-add 44 
+  --device /dev/dri:/dev/dri 
+```
+
+查看状态：
+
+```bash
+docker ps --filter name=jellyfin
 docker logs -f jellyfin
 ```
 
-查看日志中是否有错误信息，正常启动时会显示类似以下内容：
+## 备份与升级
 
-```
-[INF] Jellyfin version: 10.8.13
-[INF] Environment Variables: ["[JELLYFIN_CACHE_SIZE=10G]", "[TZ=Asia/Shanghai]"]
-[INF] Arguments: ["/config", "/cache"]
-[INF] Operating system: Linux
-[INF] Architecture: X64
-[INF] Startup complete
-```
-
-#### 3. 访问Web界面
-
-打开浏览器，访问服务器IP或域名的8096端口：`http://<服务器IP>:8096`
-
-首次访问将进入JELLYFIN初始化向导，按照提示完成管理员账户创建、媒体库设置等步骤。完成后，可登录系统并开始使用媒体管理功能。
-
-#### 4. 基础功能测试
-
-- **媒体库添加**：在管理界面中添加媒体库，指向挂载的/media目录
-- **文件扫描**：验证系统是否能正常扫描媒体文件
-- **播放测试**：选择一个媒体文件进行播放，验证流媒体功能是否正常
-
-## 生产环境建议
-
-### 持久化存储优化
-
-1. **数据卷管理**：
-   - 建议为配置文件（/config）、媒体文件（/media）使用独立的存储卷，避免单点故障
-   - 媒体文件目录推荐使用高性能存储（如SSD）以提升流媒体体验
-   - 定期备份/config目录，防止配置丢失
-
-2. **存储权限设置**：
-   ```bash
-   # 创建目录并设置权限
-   mkdir -p /opt/jellyfin/{config,cache,media,transcode}
-   chown -R 1000:1000 /opt/jellyfin/
-   chmod -R 755 /opt/jellyfin/
-   ```
-
-### 资源限制配置
-
-为避免JELLYFIN过度占用系统资源，建议设置资源限制：
+备份前先停容器，再打包配置目录：
 
 ```bash
-docker run -d \
-  --name jellyfin \
-  --restart unless-stopped \
-  --memory=4g \
-  --memory-swap=4g \
-  --cpus=2 \
-  -p 8096:8096 \
-  -p 8920:8920 \
-  -v /opt/jellyfin/config:/config \
-  -v /opt/jellyfin/cache:/cache \
-  -v /opt/jellyfin/media:/media \
-  xxx.xuanyuan.run/jellyfin/jellyfin:latest
+cd /www/wwwroot/jellyfin-official
+docker compose stop
+tar -czf jellyfin-config-backup.tar.gz config
+docker compose start
 ```
 
-- `--memory=4g`：限制内存使用为4GB
-- `--memory-swap=4g`：限制交换空间为4GB
-- `--cpus=2`：限制CPU使用为2核
+| 目录 | 备份策略 |
+|------|----------|
+| `./config` | **必备份**（用户、库元数据、插件） |
+| `./cache` | 可不备份，可删后重建 |
+| 片库宿主机路径 | 按磁盘 / NAS 策略备份，与容器无关 |
 
-> **注意**：资源限制值应根据服务器实际配置和业务需求调整。
+升级时只改 `compose.yaml` 里的镜像标签，保留上述目录后执行：
 
-### 网络安全配置
-
-1. **HTTPS配置**：
-   - 建议通过反向代理（如Nginx）配置HTTPS，而非直接暴露8920端口
-   - 示例Nginx反向代理配置：
-   ```nginx
-   server {
-       listen 443 ssl;
-       server_name jellyfin.example.com;
-       
-       ssl_certificate /path/to/cert.pem;
-       ssl_certificate_key /path/to/key.pem;
-       
-       location / {
-           proxy_pass http://localhost:8096;
-           proxy_set_header Host $host;
-           proxy_set_header X-Real-IP $remote_addr;
-           proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-           proxy_set_header X-Forwarded-Proto $scheme;
-       }
-   }
-   ```
-
-2. **端口安全**：
-   - 生产环境中建议仅开放必要端口，通过防火墙限制访问来源
-   - 使用`ufw`或`firewalld`配置端口访问控制：
-   ```bash
-   # 仅允许特定IP访问8096端口
-   ufw allow from 192.168.1.0/24 to any port 8096
-   ```
-
-### 容器编排建议
-
-对于规模化部署或需要高可用性的场景，建议使用Docker Compose或Kubernetes进行容器编排：
-
-#### Docker Compose示例（docker-compose.yml）：
-
-```yaml
-version: '3.8'
-
-services:
-  jellyfin:
-    image: xxx.xuanyuan.run/jellyfin/jellyfin:latest
-    container_name: jellyfin
-    restart: unless-stopped
-    user: 1000:1000
-    ports:
-      - "8096:8096"
-      - "8920:8920"
-    environment:
-      - TZ=Asia/Shanghai
-      - JELLYFIN_CACHE_SIZE=10G
-    volumes:
-      - /opt/jellyfin/config:/config
-      - /opt/jellyfin/cache:/cache
-      - /opt/jellyfin/media:/media
-      - /opt/jellyfin/transcode:/transcode
-    deploy:
-      resources:
-        limits:
-          cpus: '2'
-          memory: 4G
+```bash
+docker compose pull
+docker compose up -d
 ```
 
-启动命令：`docker-compose up -d`
+大版本升级前先阅读官方发布说明，并确认已备份 `config`。需要公网访问时，建议反代 HTTPS，并设置 `JELLYFIN_PublishedServerUrl` 与防火墙。
 
-## 故障排查
+## 常见问题
 
-### 常见问题及解决方法
+### 默认用户名和密码是什么
 
-#### 1. 容器启动后立即退出
+没有默认账号。首次启动后进入向导，自行创建管理员。
 
-**排查步骤**：
-- 查看容器日志：`docker logs jellyfin`
-- 检查目录权限：确保宿主机/opt/jellyfin目录权限正确
-- 验证端口是否冲突：`netstat -tulpn | grep 8096`
+### 可以用 latest 吗
 
-**解决方法**：
-- 若权限问题：`chown -R 1000:1000 /opt/jellyfin/`
-- 若端口冲突：修改映射端口，如`-p 8097:8096`
+`latest` 是浮动标签，发版后会改指向。本文命令使用 **`12.4`**。说明见「标签怎么选」。
 
-#### 2. Web界面无法访问
+### 和 nyanmisaka/jellyfin、linuxserver/jellyfin 怎么选
 
-**排查步骤**：
-- 检查容器状态：`docker inspect -f '{{.State.Status}}' jellyfin`
-- 验证网络连接：`curl http://localhost:8096/health`
-- 检查防火墙规则：`ufw status`或`firewall-cmd --list-ports`
+要官方发版节奏与官方构建 → **`jellyfin/jellyfin`**（本文）。习惯 LinuxServer 的 `PUID` / `PGID` → `linuxserver/jellyfin`。更侧重社区硬解与较新 FFmpeg 管线 → 可看同站 `nyanmisaka/jellyfin` 教程。同一台机器不要用相同容器名和相同宿主机端口同时开两套。
 
-**解决方法**：
-- 若容器未运行：`docker start jellyfin`
-- 若防火墙阻止：`ufw allow 8096/tcp`
+### 刚启动时 curl 报 Connection reset by peer
 
-#### 3. 媒体文件无法扫描或播放
+首次安装会跑较长时间的数据库初始化。`8096` 尚未就绪时会出现连接被重置。稍后再执行 `curl -I`；成功时常见为 `302`，且 `Location: web/`。
 
-**排查步骤**：
-- 检查媒体目录挂载：`docker inspect -f '{{ .Mounts }}' jellyfin`
-- 验证文件权限：`docker exec -it jellyfin ls -la /media`
-- 查看媒体扫描日志：`docker logs jellyfin | grep "Media scan"`
+### 日志狂刷 `/dev` `/proc`，或库路径显示为 `/`
 
-**解决方法**：
-- 确保宿主机媒体文件可读：`chmod -R 644 /opt/jellyfin/media/*`
-- 检查文件格式是否受支持：参考JELLYFIN支持的媒体格式列表
+向导里误选了容器根。删掉该媒体库，只加 **`/media`**，并把宿主机真实视频目录挂上去。
 
-#### 4. 转码功能异常
+### 首页没有电影海报
 
-**排查步骤**：
-- 检查转码目录空间：`df -h /opt/jellyfin/transcode`
-- 查看转码日志：`docker logs jellyfin | grep "Transcode"`
-- 验证CPU/内存资源：`docker stats jellyfin`
+片库目录是空的，或内容类型选错。放入真实影片并选对类型后，到控制台扫描所有媒体库。空库时页面会显示「这里没有可显示的内容。」
 
-**解决方法**：
-- 增加转码目录空间或清理旧文件
-- 调整资源限制，增加可用内存
-- 降低转码质量设置，减轻资源压力
+### `/config` 权限报错怎么办
 
-### 高级排查工具
+用 `user: "UID:GID"` 对齐属主，或先对数据目录执行 `chown`。
 
-1. **容器内部检查**：
-   ```bash
-   docker exec -it jellyfin /bin/bash
-   ```
+### 直通流畅，一转码就卡
 
-2. **详细系统信息**：
-   ```bash
-   docker inspect jellyfin
-   ```
+直通几乎不吃 CPU；转码要软解或硬解。检查是否挂了设备、是否在控制台启用了对应加速、客户端是否强制转码。
 
-3. **资源使用监控**：
-   ```bash
-   docker stats jellyfin
-   ```
+### 必须映射 7359 吗
 
-4. **日志级别调整**：
-   通过添加环境变量`-e LOG_LEVEL=Debug`启用详细日志
+不必。只影响部分客户端的局域网自动发现；可手动填写 `http://IP:8096`。
 
-## 参考资源
+### 宿主机 8096 被占用怎么办
 
-1. [JELLYFIN镜像文档（轩辕）](https://xuanyuan.cloud/r/jellyfin/jellyfin)
-2. [JELLYFIN镜像标签列表](https://xuanyuan.cloud/r/jellyfin/jellyfin/tags)
-3. Docker官方文档：[https://docs.docker.com/](https://docs.docker.com/)
-4. JELLYFIN项目官方文档：[https://docs.jellyfin.org/](https://docs.jellyfin.org/)（源自官方描述中提供的链接）
+把 Compose 里的 `"8096:8096"` 改成例如 `"18096:8096"`，访问 `http://IP:18096`，并视需要设置 `JELLYFIN_PublishedServerUrl`。然后执行 `docker compose up -d`。
 
-## 总结
+### 片库挂了 `:ro`，还能把图像或字幕保存到媒体文件夹吗
 
-本文详细介绍了JELLYFIN的Docker容器化部署方案，从环境准备、镜像拉取、容器部署到功能测试和故障排查，提供了一套完整的实施指南。通过容器化部署，用户可以快速搭建JELLYFIN媒体服务，实现媒体内容的集中管理和跨设备流媒体播放。
+不能。只读挂载下无法往片库写 NFO、封面或字幕。需要就地写回时去掉 `:ro`；否则关掉这两项，让元数据只进 `/config`。
 
-### 关键要点
+### 删容器会丢片吗
 
-- 使用一键脚本快速部署Docker环境，简化前期准备工作
-- 通过轩辕镜像访问支持服务提升JELLYFIN镜像下载访问表现
-- 容器部署时需注意数据持久化配置，确保媒体文件和配置不丢失
-- 生产环境中应合理配置资源限制、网络安全和备份策略
-- 故障排查优先通过日志分析和容器状态检查定位问题
+用户与库元数据在 `./config`；片文件在宿主机挂载目录。`docker compose down` 不删这些目录则都在。
 
-### 后续建议
+## 命令速查
 
-- 深入学习JELLYFIN高级特性，如用户权限管理、插件系统和API集成
-- 根据实际使用场景调整媒体库组织方式，优化扫描和检索性能
-- 考虑实现自动化部署流程，结合CI/CD工具实现版本更新和回滚
-- 定期关注[JELLYFIN镜像标签列表](https://xuanyuan.cloud/r/jellyfin/jellyfin/tags)，及时更新到稳定版本
-- 对于大规模部署，可研究JELLYFIN集群方案或与其他媒体服务集成
+```bash
+docker pull docker.xuanyuan.run/jellyfin/jellyfin:12.4
 
-通过合理配置和持续优化，JELLYFIN可以为个人或家庭用户提供稳定、高效的媒体中心解决方案，满足多样化的流媒体需求。
+cd /www/wwwroot/jellyfin-official
+docker compose up -d
+docker compose ps
+docker compose logs -f jellyfin
+
+# 本机打开 http://127.0.0.1:8096 完成向导；片库文件夹选 /media
+
+docker compose down
+```
+
+没有 Compose 时用「备选：docker run」里的命令。
+
+## 延伸阅读
+
+| 资源 | 链接 |
+|------|------|
+| [jellyfin/jellyfin 镜像页](https://xuanyuan.cloud/r/jellyfin/jellyfin?xy_from=jellyfin-official-docker-deploy) | [https://xuanyuan.cloud/r/jellyfin/jellyfin](https://xuanyuan.cloud/r/jellyfin/jellyfin?xy_from=jellyfin-official-docker-deploy) |
+| [jellyfin/jellyfin 标签列表](https://xuanyuan.cloud/r/jellyfin/jellyfin/tags?xy_from=jellyfin-official-docker-deploy) | [https://xuanyuan.cloud/r/jellyfin/jellyfin/tags](https://xuanyuan.cloud/r/jellyfin/jellyfin/tags?xy_from=jellyfin-official-docker-deploy) |
+| [Docker Hub · jellyfin/jellyfin](https://hub.docker.com/r/jellyfin/jellyfin) | [https://hub.docker.com/r/jellyfin/jellyfin](https://hub.docker.com/r/jellyfin/jellyfin) |
+| [Jellyfin 官网](https://jellyfin.org/) | [https://jellyfin.org/](https://jellyfin.org/) |
+| [Jellyfin 容器安装文档](https://jellyfin.org/docs/general/installation/container/) | [https://jellyfin.org/docs/general/installation/container/](https://jellyfin.org/docs/general/installation/container/) |
+| [GitHub Releases · v12.4](https://github.com/jellyfin/jellyfin/releases/tag/v12.4) | [https://github.com/jellyfin/jellyfin/releases/tag/v12.4](https://github.com/jellyfin/jellyfin/releases/tag/v12.4) |
+| [Jellyfin 客户端下载](https://jellyfin.org/downloads/) | [https://jellyfin.org/downloads/](https://jellyfin.org/downloads/) |
+| [轩辕镜像使用手册](https://xuanyuan.cloud/usage?xy_from=jellyfin-official-docker-deploy) | [https://xuanyuan.cloud/usage](https://xuanyuan.cloud/usage?xy_from=jellyfin-official-docker-deploy) |
+
+## 阅读原文
+
+- [轩辕镜像官方博客](https://xuanyuan.cloud/blog/jellyfin-official-docker-deploy?xy_from=jellyfin-official-docker-deploy)
+
+*本文基于 [jellyfin/jellyfin:12.4](https://xuanyuan.cloud/r/jellyfin/jellyfin?xy_from=jellyfin-official-docker-deploy)，以 **12.4** 版本实测（引擎 **12.4.0**），测试平台 **Ubuntu 24.04** Linux（`ikuai-ubuntu2404`）。*
 

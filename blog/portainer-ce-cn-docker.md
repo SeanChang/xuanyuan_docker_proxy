@@ -4,13 +4,52 @@
 
 *分类: Docker部署教程 | 标签: portainer-ce,docker,部署教程 | 发布时间: 2025-12-14 13:03:16*
 
-> Portainer-CE 中文版是一款容器化应用管理工具，提供了直观的Web界面用于管理Docker环境。本版本为中文汉化版，已去除原版中的企业版升级广告及英文提示公告，提供更友好的中文用户体验。该镜像已在arm64和amd64架构上进行测试，适合各类服务器和NAS设备部署。截至目前，该项目的Docker镜像拉取量已突破150万次，反映了其在容器管理领域的广泛应用。
+> Portainer CE 中文版 Docker 部署：Compose 一条命令起容器，9443 进中文面板管容器、镜像、卷和网络；镜像为去广告汉化版，另附官方 CE 对照与拉取报错排查。适合 Linux/NAS 自托管，按文内标签经轩辕镜像加速拉取后即可开箱管理；含版本选型、对照表与排错步骤全详解。
 
 ## 概述
 
 Portainer-CE 中文版是一款容器化应用管理工具，提供了直观的Web界面用于管理Docker环境。本版本为中文汉化版，已去除原版中的企业版升级广告及英文提示公告，提供更友好的中文用户体验。该镜像已在arm64和amd64架构上进行测试，适合各类服务器和NAS设备部署。截至目前，该项目的Docker镜像拉取量已突破150万次，反映了其在容器管理领域的广泛应用。
 
 Portainer-CE 中文版主要功能包括容器生命周期管理、镜像管理、网络配置、存储卷管理等，通过Web界面简化了Docker命令行操作的复杂性，适合Docker初学者和需要高效管理多个容器的管理员使用。
+
+## Portainer CE 中文版和官方版有什么区别
+
+搜 **Portainer CE** 或 **portainer 中文** 时，先选对镜像再部署。两套都能在浏览器里管 Docker，差别在界面语言与维护方。旧版「中文版 / CE 版」分篇说明已合并到本页。
+
+| 方案 | 镜像 | 界面 | 适用 |
+|------|------|------|------|
+| **中文汉化版（推荐）** | `6053537/portainer-ce` | 中文；去企业版升级广告 | 国内自托管、NAS、要全中文面板 |
+| 官方 Portainer CE | `portainer/portainer-ce` | 英文官方界面 | 跟上游同步、不需要汉化 |
+
+中文版加速拉取（标签以仓库为准，示例 `2.45.2`）：
+
+```bash
+docker pull docker.xuanyuan.run/6053537/portainer-ce:2.45.2
+```
+
+浏览器打开 `https://服务器IP:9443` 进入中文面板（HTTPS）。官方 CE 对照拉取：
+
+```bash
+docker pull docker.xuanyuan.run/portainer/portainer-ce:2.45.2
+```
+
+下文默认按**中文版**写部署步骤；要官方版时把镜像名换成 `portainer/portainer-ce`，数据卷与 9443 端口习惯保持一致即可。
+
+### 标签怎么选
+
+新装优先写死版本号 **`2.45.2`**，不要把已停更的 `latest` 当长期标签。中文版标签见 [6053537/portainer-ce](https://xuanyuan.cloud/r/6053537/portainer-ce/tags)；官方 CE 见 [portainer/portainer-ce](https://xuanyuan.cloud/r/portainer/portainer-ce/tags)。
+
+### 补充 FAQ（合并页）
+
+**打开网页直接是登录、没有创建管理员？**  
+多半是 `data/` 里留着旧库（含以前装过的英文版）。要全新安装时，先停容器，再换一个空目录挂到 `/data`，不要误删还要用的数据。
+
+**设置令牌（Setup token）填错？**  
+从日志重新复制 `setup_token=` 后面的值；约 5 分钟内未创建成功就重开。详见上游 Setup token 说明。
+
+**官方 CE 与中文版能共用同一 data 目录吗？**  
+不建议。换镜像前先备份数据卷，按全新实例挂空目录，避免语言包与数据库状态混用。
+
 
 ## 环境准备
 
@@ -120,7 +159,7 @@ docker run -d
   -p 9000:9000 
   --name portainer 
   --restart always 
-  -v \.pipedocker_engine:\.pipedocker_engine 
+  -v .pipedocker_engine:.pipedocker_engine 
   -v portainer_data:C:data 
   xxx.xuanyuan.run/6053537/portainer-ce:latest
 ```

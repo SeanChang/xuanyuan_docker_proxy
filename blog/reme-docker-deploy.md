@@ -10,6 +10,8 @@
 
 ReMe 是 AgentScope 开源的智能体记忆工具，全称 Remember Me, Refine Me。对话、资料和长期知识放在同一份本地工作区里，供智能体检索，并在后面的任务里继续使用。
 
+这个名字有两个出处，容易混。一篇论文叫《Remember Me, Refine Me: A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution》，2026 年被 ACL Findings 收录，讲的是经验驱动的程序记忆怎么组织；ReMe 是同一套思路的工程实现，也就是本文要部署的这个服务。中文资料里说的「ReMe 记忆框架」，多数指的是前一篇，要落到能跑的部署，看的是后一个。
+
 与只靠当次提示词，或把文档切块后做向量检索不同，ReMe 把要长期留下的内容写成普通 Markdown。人和智能体都能打开这些文件查看、修改和备份。查找时按相关段落和笔记之间的链接取回内容。
 
 ## ReMe 能做什么
@@ -384,6 +386,141 @@ Reindexed scope=all: bm25=1, embedding=0, tag=0
 
 ![ReMe 设置的索引页：重建索引结果 bm25=1，embedding=0，tag=0](https://imgs.xuanyuan.cloud/docker/blog/remo/remo-4.webp)
 
+## 接入 Agent：MCP 与 DeepSeek Harness 插件
+
+Studio 是给人看的。要让智能体自己检索、自己记录，就得接一个入口。ReMe 把这层能力做在同一个进程里，不需要另起服务。
+
+### 三种接入方式
+
+三种方式读的都是这份 `data/`，区别在谁发起调用、谁负责写入。
+
+| 方式 | 入口 | 适合 |
+|------|------|------|
+| 只开 Studio | 浏览器打开 `http://服务器IP:2333` | 人自己浏览、编辑、手动写一条记忆 |
+| HTTP / MCP | `http://服务器IP:2333/mcp` | 支持 MCP 的宿主，或自己的脚本、后端 |
+| DeepSeek Harness 插件 | 在 DSH 里装 `@agentscope-ai/reme-dsh-plugin` | 想让 Agent 每轮自动检索、自动把对话记进日记 |
+
+还没有起 DeepSeek Harness 的，先看同系列的三篇部署文：[moelin 镜像](https://xuanyuan.cloud/blog/deepseek-harness-moelin-docker-deploy?xy_from=reme-docker-deploy)、[smanx 镜像](https://xuanyuan.cloud/blog/deepseek-harness-smanx-docker-deploy?xy_from=reme-docker-deploy)、[runzhliu 镜像](https://xuanyuan.cloud/blog/deepseek-harness-docker-deploy?xy_from=reme-docker-deploy)。三套跑的都是上游 `@deepseek-ai/dsh`，选哪套只看登录方式和端口习惯。
+
+### MCP 地址与工具
+
+MCP 走 streamable HTTP，路径固定 `/mcp`，和 Studio 共用一个 **2333**。
+
+```text
+http://127.0.0.1:2333/mcp
+```
+
+常用工具有 `search`、`read`、`traverse`、`list`、`auto_memory`、`proactive_read`。宿主如果只需要读，可以用 `service.jobs` 白名单只放只读工具，把写入动作单独配置。这个白名单里要保留 `health_check`，否则 Docker 探针会失败，容器一直显示 unhealthy。
+
+### 在 DeepSeek Harness 里装记忆插件
+
+DeepSeek Harness（下文写 DSH）是 DeepSeek 开源的 AI Agent 运行时。ReMe 在 DSH 的插件目录里以「精选」收录，维护者是 agentscope-ai，许可证 Apache-2.0。
+
+装好之后有三件事发生变化：新会话会带上一条「怎么用长期记忆」的指引；多出一个只读工具 `reme_search`；完成的对话按批次交给 `auto_memory`，隔天由 `auto_dream` 整理进 `digest/`。
+
+有一点要先说清：插件不会把历史记忆预先塞进上下文。它注入的是使用指引，真正取回内容仍要 Agent 主动调 `reme_search`。这也是它能接一个大工作区却不把上下文撑爆的原因。
+
+本节按 ReMe 官方接入文档和 DSH 插件目录页整理，命令与默认值以官方为准；本文的实测范围只到 ReMe 服务本身，不含插件界面。
+
+装之前先确认三件事：
+
+1. ReMe 服务已经起来，`/health_check` 返回 `success: true`，见「确认服务可用」。
+2. DSH 版本在支持范围内：`0.1.7-rc.2`、`0.2.0-rc.2`、`0.2.1-alpha.2`、`0.2.1-alpha.4`、`0.2.1-rc.2`、`0.2.2-alpha.2`。peer 范围还覆盖兼容的 `0.1.x`、`0.2.x` 正式版，**不包含 `0.3.x`**。
+3. Node.js 是 `^22.19.0` 或 `>=24.0.0`。DSH `0.2.2` 需要 Node 24.9 以上。
+
+还有一项容易漏：ReMe 配置里要保留 `search`、`auto_memory`、`auto_dream` 三个 Job。镜像默认配置带这三个；如果按官方 Docker 文档用 `REM_CONFIG` 改过 `service.jobs` 白名单，别把它们删掉。
+
+在 DSH 终端里装。用 Web 界面时带 `--profile web`：
+
+```bash
+dsh plugin --profile web add @agentscope-ai/reme-dsh-plugin
+```
+
+DSH 插件目录页给的是另一条，从 GitHub 仓库解析：
+
+```bash
+dsh plugin add github:agentscope-ai/ReMe
+```
+
+两条指向同一个插件，区别只在来源：一条走 npm 上的发布版本，一条从 GitHub 仓库解析。目录页这条适合想按源码过一遍的人，也能按官方提示固定 commit，写成 `dsh plugin add github:agentscope-ai/ReMe#<commit>`。想跟着发布版本走，用第一条。
+
+新版 `@agentscope-ai/reme-dsh-plugin` 取代旧的 `@agentscope-ai/reme/dsh` 组合包。装新的之前先移除旧的。同一份 DSH patch 里重复挂同一个包，会报 `remeMemory` 服务冲突。
+
+插件以当前 `dsh` 进程的权限运行，安装过程可能执行代码。装之前看一眼仓库和许可证，内网环境里按需固定 commit。
+
+### 把插件指到这台 ReMe
+
+日常只需要改一处：插件设置里的「服务地址」，配置键 `endpoint`，默认 `http://127.0.0.1:2333`。
+
+这个默认值和本文 Compose 发布的端口一致。DSH 和 ReMe 跑在同一台机器、共享同一套网络时，什么都不用改。
+
+两种情况要改：
+
+| 情况 | `endpoint` 怎么写 |
+|------|-------------------|
+| DSH 在容器里，ReMe 在宿主机 | 用宿主机在容器网络里的地址，例如 `http://host.docker.internal:2333`。Linux 上要给 DSH 容器加 `extra_hosts: ["host.docker.internal:host-gateway"]` |
+| DSH 和 ReMe 在两台机器 | 用浏览器能打开的地址，例如 `http://192.168.1.35:2333`。写 `127.0.0.1` 只会指向 DSH 自己那台 |
+
+`endpoint` 只接受绝对 HTTP(S) 地址，凭据、查询参数和片段都不能拼进 URL。要给自建网关加 Bearer 令牌，用 `authToken`，它只在 profile 配置里生效，表单里不显示。ReMe 的 HTTP 接口本身没有认证，`authToken` 是给前面那层网关用的，不是 ReMe 的用户体系。
+
+跨机器接入时，官方接入文档还要求 ReMe 允许 DSH 页面所在浏览器的 Origin。这一步在局域网里通常不需要动，改成公网域名时先检查。不要把 **2333** 直接暴露到公网。
+
+### 插件设置项
+
+装完通常只动两项：服务地址和指引语言。其余保持默认。
+
+| 设置 | 配置键 | 默认值 | 说明 |
+|------|--------|--------|------|
+| 服务地址 | `endpoint` | `http://127.0.0.1:2333` | 见上一小节 |
+| 指引语言 | `language` | `en` | 中文环境改成 `zh`。改动只影响之后新建的会话 |
+| 搜索条数 | `searchLimit` | `5` | `reme_search` 没传 `limit` 时的上限，1–50 |
+| 搜索超时 | `requestTimeoutMs` | `10000` | 单位毫秒，1,000–120,000 |
+| 自动记录对话 | `autoMemoryEnabled` | `true` | 关掉就不再捕获完成的回合 |
+| 提交间隔 | `autoMemoryInterval` | `5` | 每完成几轮提交一次，1–1,000 |
+| 只看根 Agent | `rootAgentsOnly` | `true` | 子 Agent 不注入指引，也不记录 |
+| 自动整理 | `autoDreamEnabled` | `true` | 是否按计划调 `auto_dream` |
+| 整理计划 | `dreamCron` | `0 23 * * *` | 五段 cron，按 `timezone` 解释 |
+| 时区 | `timezone` | `Asia/Shanghai` | 每日批次和 cron 都按它算 |
+| 后台超时 | `backgroundTimeoutMs` | `3600000` | `auto_memory` 与 `auto_dream` 的等待上限，单位毫秒 |
+
+`language` 默认是 `en`，中文界面里也一样。新会话注入的指引因此是英文，想让它用中文就把这项改成 `zh`。
+
+### ReMe Status 六个视图
+
+设置里的「ReMe Status」是排查入口。页面可见时每 **5** 秒只刷新插件侧的运行时计数，服务诊断要手动刷新一次。
+
+| 视图 | 看什么 |
+|------|--------|
+| 总览 | 连接状态、ReMe 版本、`endpoint`、进程内存、健康组件 |
+| 自动记忆 | 活跃会话、待处理回合、运行中任务、排队任务 |
+| 记忆整理 | 下次整理时间、cron、时区，以及「立即整理」按钮 |
+| 组件 | 文件图谱、文件存储、关键词索引、向量存储 |
+| 日记 | 工作区 `daily/` 下的文件 |
+| 个人知识库 | `digest/` 里整理后的长期知识 |
+
+绿色的「已连接」只说明健康检查通过，不代表每个组件都配好了。向量存储显示「未配置」时，关键词检索照旧能用，这和本文默认关闭 embedding 是同一件事。「需要处理」「未启动」才要去查 ReMe 日志，而且不要为了修索引去删源 Markdown。
+
+### 自动整理只留一个调度方
+
+`auto_dream` 把 `daily/` 整理成 `digest/`。这件事有两个地方能发起：
+
+- 插件侧：`dreamCron`，默认每天 23:00。
+- ReMe 侧：服务自己的 `jobs.dream_cron`。
+
+两边只开一个。用插件调度，就在 ReMe 的 jobs 配置里关掉 `dream_cron`；用 ReMe 调度，就把插件的 `autoDreamEnabled` 设为 `false`。多个宿主共用一台 ReMe 时尤其要注意，否则同一天会被整理两遍。
+
+插件和 Docker 部署的边界也要划清：**一个工作区只能有一个 ReMe 写入进程**。插件自带「环境管理」页，能在里面 `pip install reme-ai[core]` 再 `reme start` 起一个本地 ReMe。已经用 Docker 跑着这份 `data/` 时，别在插件里再起一个指向同一目录，两个进程会同时写。要么让插件连 Docker 这份，要么把插件的工作区换到别处。
+
+### 确认它真的在记
+
+1. 打开「ReMe Status → 总览」，确认是「已连接」。
+2. 新建一个会话，在消息详情里展开 `reme-memory`，看指引有没有注入。同一会话只注入一次。
+3. 让它查历史事实时，明确要求调用 `reme_search` 并列出 `daily/`、`digest/` 里的来源路径。
+4. 聊几轮后到「自动记忆」看批次是否完成，再到「日记」确认文件落盘。
+5. 想立刻验证整理结果，在「记忆整理」点「立即整理」，不必等到 23:00。
+
+`reme_search` 查不到内容时返回 `No relevant memory found.`，服务出错时返回 `ReMe search failed: ...`。前者是确实没有相关记忆，后者是没连上，排查方向不同。
+
 ## 备选：docker run
 
 没有 Compose 时，用一条 `docker run` 启动。数据目录与 Compose 相同。若 Compose 已经占用容器名 `reme`、端口 **2333** 或这份 `data/`，先在 `/www/wwwroot/reme` 执行 `docker compose down`。`down` 会删掉 Compose 创建的容器，不会删除 `data/`。
@@ -443,6 +580,8 @@ docker compose exec reme reme health_check
 
 `restart: unless-stopped` 只在进程退出后重启。健康检查未通过本身不会触发这一种重启。
 
+接了 DSH 插件时，停服的这段时间里，插件提交不出去的回合会留在自己的队列里重试，服务恢复后继续排空，不用手工补。队列默认在 `$DSH_HOME/reme-memory/outbox`，没设 `DSH_HOME` 时是 `~/.dsh/reme-memory/outbox`。`.lock` 和排队文件都不要删。
+
 索引异常时，不要为了修复索引去删除记忆文件。源文件仍在 `data/` 里。搜索索引可以从已收录的片段重建。
 
 ## 常见问题
@@ -487,6 +626,48 @@ ERR_CONNECTION_REFUSED
 
 「工作区」「日记」「知识库」不需要模型。「对话」需要 `.env` 里的 `LLM_API_KEY`、`LLM_BASE_URL` 和 `LLM_MODEL_NAME`。改完 `.env` 后执行 `docker compose up -d`，让容器读到新的环境变量。密钥不要写进页面或镜像层。本次实测没有填写密钥，所以没有进入「对话」。
 
+### 插件显示已连接，Agent 却不查记忆
+
+绿色「已连接」只说明健康检查通过，没连上时这一项不会是已连接。Agent 不查，通常是两种情况：它没有调 `reme_search`，或者工作区里确实没有相关记忆。
+
+在会话里直接要求它检索，并让它列出命中的 `daily/`、`digest/` 路径。查不到时会返回 `No relevant memory found.`，那是工作区里确实没有相关内容，不是插件坏了。
+
+### 注入的指引是英文
+
+`language` 默认 `en`，中文界面也不会自动改成中文。把它改成 `zh` 后，只有新建的会话才生效，已经在跑的老会话不会重写。
+
+### 聊完了，「日记」里没有新文件
+
+按顺序看三处：
+
+1. 插件设置里 `autoMemoryEnabled` 是否为 `true`。
+2. 已经完成的回合够不够 `autoMemoryInterval`（默认 **5** 轮）。
+3. 「ReMe Status → 自动记忆」里，批次是「空闲」「运行中」还是「失败」。失败会显示最近的错误。
+
+`auto_memory` 和 Studio 的「对话」一样要模型凭证。`.env` 里没填 `LLM_*` 时，文件操作和检索能用，自动记忆写不进去。
+
+### 插件里也装了一个 ReMe，会和 Docker 这份冲突吗
+
+会。插件「环境管理」页能一键装 `reme-ai[core]` 并 `reme start`，起的是第二个写入进程。同一份工作区只能有一个。已经用 Docker 跑着，就把 `endpoint` 指向 Docker 那份，别在插件里再起一个；真要用插件自带的服务，就换一个工作区目录。
+
+### 改了服务地址还是连不上
+
+先确认 `endpoint` 是浏览器能打开的地址，不是 `127.0.0.1`。确认 ReMe 的 **2333** 对 DSH 所在网络可达，容器间用服务名或 `host.docker.internal`。跨机器时再检查 ReMe 是否允许 DSH 页面的 Origin。
+
+地址改过之后，之前积压的批次仍然发往**捕获时**记录的地址，不会跟着新地址走。排空旧队列前不要反复改地址。
+
+### ReMe 和 Mem0 是一类东西吗
+
+定位不同，不好换着用。Mem0 走的是「自动抽取成记忆条目，再按向量取回」，记忆存在库里，一般通过 SDK/API 读写；ReMe 把记忆写成本地 Markdown 文件，人和 Agent 都能直接打开、改、备份，检索默认走 BM25 加笔记链接，向量是可选开关。
+
+要「改一行的功夫就能改记忆」、要能整目录拷走或进 `git`，选 ReMe；要接进已有应用、只想要一次 SDK 调用，Mem0 那条路更短。本文没有把两者放到同一份语料上做对比，不给性能结论。
+
+### 记忆内容会被发到外部模型吗
+
+会，但只在需要模型的那几步。`auto_memory`、`auto_resource`、`auto_dream` 和 Studio 里的「对话」都要用 `.env` 中 `LLM_*` 指向的模型服务，对话内容随请求发出去。文件读写、BM25 检索、Studio 的文件浏览不经过模型。
+
+要求内容不出内网，就把 `LLM_BASE_URL` 指向内网模型服务；或者在 `.env` 里不填 `LLM_*`，代价是自动整理用不了，记忆只能手动写。
+
 ### 向量检索
 
 默认关闭 embedding。Ubuntu 24.04 实测日志写着 `embedding backfill skipped: reason=embedding_disabled`，检索结果里 `counts.vector` 为 **0**。文件操作和 BM25 检索不需要嵌入模型。本文不修改这项默认值。
@@ -524,6 +705,14 @@ docker logs --tail 50 reme
 docker stop reme && docker rm reme
 ```
 
+接 DeepSeek Harness 时，在 DSH 终端执行：
+
+```bash
+dsh plugin --profile web add @agentscope-ai/reme-dsh-plugin
+```
+
+装完后，同机部署把插件设置里的服务地址保留为 `http://127.0.0.1:2333`；跨机器改成 DSH 能访问到的 `http://服务器IP:2333`。
+
 ## 延伸阅读
 
 | 资源 | 链接 |
@@ -538,6 +727,13 @@ docker stop reme && docker rm reme
 | [ReMe 文档](https://reme.agentscope.io/) | [https://reme.agentscope.io/](https://reme.agentscope.io/) |
 | [Docker 部署（官方）](https://reme.agentscope.io/zh/docker) | [https://reme.agentscope.io/zh/docker](https://reme.agentscope.io/zh/docker) |
 | [ReMe Studio（官方）](https://reme.agentscope.io/zh/workspace/studio) | [https://reme.agentscope.io/zh/workspace/studio](https://reme.agentscope.io/zh/workspace/studio) |
+| [Agent 集成（官方）](https://reme.agentscope.io/zh/integrations) | [https://reme.agentscope.io/zh/integrations](https://reme.agentscope.io/zh/integrations) |
+| [ReMe 的 DeepSeek Harness 接入（官方）](https://reme.agentscope.io/zh/integrations/dsh) | [https://reme.agentscope.io/zh/integrations/dsh](https://reme.agentscope.io/zh/integrations/dsh) |
+| [DSH 插件目录页 · ReMe](https://deepseek-harness-plugin.com/zh-CN/plugins/reme/) | [https://deepseek-harness-plugin.com/zh-CN/plugins/reme/](https://deepseek-harness-plugin.com/zh-CN/plugins/reme/) |
+| [npm · @agentscope-ai/reme-dsh-plugin](https://www.npmjs.com/package/@agentscope-ai/reme-dsh-plugin) | [https://www.npmjs.com/package/@agentscope-ai/reme-dsh-plugin](https://www.npmjs.com/package/@agentscope-ai/reme-dsh-plugin) |
+| [DeepSeek Harness 部署文（moelin 镜像）](https://xuanyuan.cloud/blog/deepseek-harness-moelin-docker-deploy?xy_from=reme-docker-deploy) | [https://xuanyuan.cloud/blog/deepseek-harness-moelin-docker-deploy](https://xuanyuan.cloud/blog/deepseek-harness-moelin-docker-deploy?xy_from=reme-docker-deploy) |
+| [DeepSeek Harness 部署文（smanx 镜像）](https://xuanyuan.cloud/blog/deepseek-harness-smanx-docker-deploy?xy_from=reme-docker-deploy) | [https://xuanyuan.cloud/blog/deepseek-harness-smanx-docker-deploy](https://xuanyuan.cloud/blog/deepseek-harness-smanx-docker-deploy?xy_from=reme-docker-deploy) |
+| [DeepSeek Harness 部署文（runzhliu 镜像）](https://xuanyuan.cloud/blog/deepseek-harness-docker-deploy?xy_from=reme-docker-deploy) | [https://xuanyuan.cloud/blog/deepseek-harness-docker-deploy](https://xuanyuan.cloud/blog/deepseek-harness-docker-deploy?xy_from=reme-docker-deploy) |
 
 ## 阅读原文
 

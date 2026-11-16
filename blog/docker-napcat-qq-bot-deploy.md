@@ -6,6 +6,8 @@
 
 > 协议端与框架分开跑：NapCat 开 WebUI 与 OneBot HTTP/WS，AstrBot 侧对接 3001 的 WS，扫码登录保活，附 11 条常见问题。
 
+> **镜像已下架，本文已过期。** `mlikiowa/napcat-docker` 已从 Docker Hub 删除，短名拉取和 `docker.xuanyuan.run/mlikiowa/napcat-docker` 都会失败。同作者名下的 `napcat-framework-docker`、`napcat-appimage`、`napcat-node` 仓库也不存在。后面的 Compose、端口和扫码步骤只保留当时的实测记录。新部署请先看 [mlikiowa/napcat-docker 已从 Docker Hub 下架](https://xuanyuan.cloud/blog/napcat-docker-hub-image-removed)。
+
 *本文基于 [mlikiowa/napcat-docker:v4.18.28](https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker)，跟做引擎 **NapCat v4.18.28**，测试平台 **Ubuntu 24.04** Linux。*
 
 群里要挂一个能收发消息的机器人：有人在 Windows 上解压 Shell 包、对齐 QQ 版本，升级一次就重来；有人把协议端和应用层糊在同一台开发机，调试日志、登录态、插件目录搅在一起。换 Linux 服务器后，无头环境、依赖和权限又要重踩一遍。
@@ -315,15 +317,15 @@ Compose 已映射 **13300→3000**，仍须在 WebUI **新建并启用** HTTP �
 
 ```bash
 # 私聊
-curl -sS -X POST 'http://127.0.0.1:13300/send_private_msg' \
-  -H 'Content-Type: application/json' \
-  -H 'Authorization: Bearer 你的HTTP鉴权token' \
+curl -sS -X POST 'http://127.0.0.1:13300/send_private_msg' 
+  -H 'Content-Type: application/json' 
+  -H 'Authorization: Bearer 你的HTTP鉴权token' 
   -d '{"user_id":好友QQ号,"message":"你好，来自 NapCat"}'
 
 # 群聊
-curl -sS -X POST 'http://127.0.0.1:13300/send_group_msg' \
-  -H 'Content-Type: application/json' \
-  -H 'Authorization: Bearer 你的HTTP鉴权token' \
+curl -sS -X POST 'http://127.0.0.1:13300/send_group_msg' 
+  -H 'Content-Type: application/json' 
+  -H 'Authorization: Bearer 你的HTTP鉴权token' 
   -d '{"group_id":群号,"message":"大家好，来自 NapCat"}'
 ```
 
@@ -380,19 +382,19 @@ curl -sS -X POST 'http://127.0.0.1:13300/send_group_msg' \
 ```bash
 mkdir -p /www/wwwroot/napcat/{config,QQ,plugins}
 
-docker run -d \
-  --name napcat \
-  --restart unless-stopped \
-  -e NAPCAT_UID=$(id -u) \
-  -e NAPCAT_GID=$(id -g) \
-  -e WEBUI_TOKEN=ChangeMeStrongToken \
-  -e TZ=Asia/Shanghai \
-  -p 13300:3000 \
-  -p 3001:3001 \
-  -p 6099:6099 \
-  -v /www/wwwroot/napcat/config:/app/napcat/config \
-  -v /www/wwwroot/napcat/QQ:/app/.config/QQ \
-  -v /www/wwwroot/napcat/plugins:/app/napcat/plugins \
+docker run -d 
+  --name napcat 
+  --restart unless-stopped 
+  -e NAPCAT_UID=$(id -u) 
+  -e NAPCAT_GID=$(id -g) 
+  -e WEBUI_TOKEN=ChangeMeStrongToken 
+  -e TZ=Asia/Shanghai 
+  -p 13300:3000 
+  -p 3001:3001 
+  -p 6099:6099 
+  -v /www/wwwroot/napcat/config:/app/napcat/config 
+  -v /www/wwwroot/napcat/QQ:/app/.config/QQ 
+  -v /www/wwwroot/napcat/plugins:/app/napcat/plugins 
   docker.xuanyuan.run/mlikiowa/napcat-docker:v4.18.28
 ```
 
@@ -454,13 +456,13 @@ docker compose up -d
 docker compose ps
 docker compose logs -f napcat
 
-curl -sS -X POST 'http://127.0.0.1:13300/send_private_msg' \
-  -H 'Content-Type: application/json' \
-  -H 'Authorization: Bearer 你的HTTP鉴权token' \
+curl -sS -X POST 'http://127.0.0.1:13300/send_private_msg' 
+  -H 'Content-Type: application/json' 
+  -H 'Authorization: Bearer 你的HTTP鉴权token' 
   -d '{"user_id":好友QQ号,"message":"你好"}'
-curl -sS -X POST 'http://127.0.0.1:13300/send_group_msg' \
-  -H 'Content-Type: application/json' \
-  -H 'Authorization: Bearer 你的HTTP鉴权token' \
+curl -sS -X POST 'http://127.0.0.1:13300/send_group_msg' 
+  -H 'Content-Type: application/json' 
+  -H 'Authorization: Bearer 你的HTTP鉴权token' 
   -d '{"group_id":群号,"message":"大家好"}'
 
 docker compose down

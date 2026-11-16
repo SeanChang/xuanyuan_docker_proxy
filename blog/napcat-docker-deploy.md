@@ -6,6 +6,8 @@
 
 > 容器内 3000、WebUI 6099、OneBot WS 3001：一份 compose 起 NapCat，扫码登录后收发私聊与群消息，附 12 条常见问题。
 
+> **镜像已下架，本文已过期。** `mlikiowa/napcat-docker` 已从 Docker Hub 删除，短名拉取和 `docker.xuanyuan.run/mlikiowa/napcat-docker` 都会失败。同作者名下的 `napcat-framework-docker`、`napcat-appimage`、`napcat-node` 仓库也不存在。后面的 Compose、端口和扫码步骤只保留当时的实测记录。新部署请先看 [mlikiowa/napcat-docker 已从 Docker Hub 下架](https://xuanyuan.cloud/blog/napcat-docker-hub-image-removed)。
+
 *本文基于 [mlikiowa/napcat-docker:v4.18.28](https://xuanyuan.cloud/zh/r/mlikiowa/napcat-docker)，以 **v4.18.28** 版本实测，测试平台 **Ubuntu 24.04** Linux。*
 
 ## 先看结论
