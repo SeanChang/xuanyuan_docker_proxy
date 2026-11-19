@@ -1070,6 +1070,56 @@ elif [[ "$OS" == "deepin" ]]; then
   echo "   - Docker CE 使用官方 linux/debian 源（Deepin 代号将映射为 Debian suite）"
   echo "   - 支持国内镜像"
   echo ""
+elif [[ "$OS" == "linuxmint" ]]; then
+  echo ""
+  MINT_UBUNTU_CODENAME=$(awk -F= '/^UBUNTU_CODENAME=/{print $2}' /etc/os-release | tr -d '"' 2>/dev/null || echo "")
+  MINT_VERSION_CODENAME=$(awk -F= '/^VERSION_CODENAME=/{print $2}' /etc/os-release | tr -d '"' 2>/dev/null || echo "")
+  MINT_MAJOR="${VERSION_ID%%.*}"
+  case "$MINT_MAJOR" in
+    22) MINT_EXPECTED_SUITE="noble" ;;
+    21) MINT_EXPECTED_SUITE="jammy" ;;
+    20) MINT_EXPECTED_SUITE="focal" ;;
+    19) MINT_EXPECTED_SUITE="bionic" ;;
+    *)
+      echo "❌ 暂不支持 Linux Mint ${VERSION_ID:-未知版本}"
+      echo "   本次适配 Linux Mint 19.x（bionic）、20.x（focal）、21.x（jammy）、22.x（noble）"
+      echo "   LMDE 等无法映射到上述 Ubuntu suite 的版本不在本次范围内"
+      exit 1
+      ;;
+  esac
+  if [[ -n "$MINT_UBUNTU_CODENAME" && "$MINT_UBUNTU_CODENAME" != "$MINT_EXPECTED_SUITE" ]]; then
+    echo "❌ Linux Mint $VERSION_ID 的 UBUNTU_CODENAME 为 ${MINT_UBUNTU_CODENAME}，不是 ${MINT_EXPECTED_SUITE}"
+    echo "   为避免写入错误的 Docker 源，已停止安装"
+    exit 1
+  fi
+  if [[ "$ARCH" != "x86_64" ]]; then
+    echo "❌ Linux Mint ${MINT_MAJOR}.x 本次仅适配 x86_64，当前架构为 ${ARCH}"
+    exit 1
+  fi
+  if [[ -n "$MINT_UBUNTU_CODENAME" ]]; then
+    MINT_DOCKER_SUITE="$MINT_UBUNTU_CODENAME"
+  else
+    MINT_DOCKER_SUITE="$MINT_EXPECTED_SUITE"
+  fi
+  echo "✅ 检测到 Linux Mint $VERSION_ID"
+  echo "📋 系统信息："
+  echo "   - Linux Mint ${MINT_MAJOR}.x 使用 apt 包管理器"
+  echo "   - Docker CE 使用官方 linux/ubuntu 源（suite: ${MINT_DOCKER_SUITE}）"
+  echo "   - 不使用 Mint 代号（如 zena、vanessa、vera、victoria、virginia、ulyana、tara）或 linuxmint 仓库路径"
+  echo "   - 支持国内镜像"
+  if [[ "$MINT_MAJOR" == "19" || "$MINT_MAJOR" == "20" ]]; then
+    echo "ℹ️  Linux Mint ${MINT_MAJOR}.x 已结束支持，Docker 不再发布新的 ${MINT_DOCKER_SUITE} 包"
+    echo "   将安装镜像上残留的最后一版，不是当前最新引擎"
+  fi
+  if [[ -z "$MINT_UBUNTU_CODENAME" ]]; then
+    echo "ℹ️  未读到 UBUNTU_CODENAME，将回落到 ubuntu/${MINT_DOCKER_SUITE}"
+  fi
+  if [[ -n "$MINT_VERSION_CODENAME" ]]; then
+    echo "ℹ️  Linux Mint ${VERSION_ID}（${MINT_VERSION_CODENAME}）→ ubuntu/${MINT_DOCKER_SUITE}"
+  else
+    echo "ℹ️  Linux Mint ${VERSION_ID} → ubuntu/${MINT_DOCKER_SUITE}"
+  fi
+  echo ""
 elif [[ "$OS" == "tencentos" ]]; then
   echo ""
   echo "✅ 检测到腾讯云操作系统 (TencentOS Server) $VERSION_ID"
@@ -5996,8 +6046,8 @@ EOF
     echo "建议访问: https://docs.docker.com/compose/install/ 查看手动安装方法"
   fi
 
-elif [[ "$OS" == "ubuntu" || "$OS" == "debian" || "$OS" == "kali" || "$OS" == "deepin" ]]; then
-  # 检查 Debian/Ubuntu/Kali/Deepin 版本，为老版本提供兼容性支持
+elif [[ "$OS" == "ubuntu" || "$OS" == "debian" || "$OS" == "kali" || "$OS" == "deepin" || "$OS" == "linuxmint" ]]; then
+  # 检查 Debian/Ubuntu/Kali/Deepin/Linux Mint 版本，为老版本提供兼容性支持
   if [[ ("$OS" == "debian" && ("$VERSION_ID" == "9" || "$VERSION_ID" == "10")) || ("$OS" == "ubuntu" && "$VERSION_ID" == "16.04") ]]; then
     if [[ "$OS" == "debian" && "$VERSION_ID" == "9" ]]; then
       echo "⚠️  检测到 Debian 9 (Stretch)，使用兼容的安装方法..."
@@ -6946,6 +6996,33 @@ EOF
       esac
       echo "ℹ️  Deepin $VERSION_ID（${DEEPIN_ORIG_CODENAME:-unknown}）→ Docker 使用 debian/$DEBIAN_CODENAME"
     fi
+
+    # Linux Mint 的 lsb_release -cs / VERSION_CODENAME 是 zena、vanessa、ulyana、tara 等 Mint 代号，Docker 无此 suite
+    # 必须改写为 ubuntu + UBUNTU_CODENAME（22→noble、21→jammy、20→focal、19→bionic）
+    # 21 的 jammy 是自身基线，不是从 22 降级；22 不回退 jammy，19/20 不升到 noble
+    if [[ "$OS" == "linuxmint" ]]; then
+      DOCKER_OS="ubuntu"
+      MINT_ORIG_CODENAME="$DEBIAN_CODENAME"
+      MINT_UBUNTU_CODENAME=$(awk -F= '/^UBUNTU_CODENAME=/{print $2}' /etc/os-release | tr -d '"' 2>/dev/null || echo "")
+      MINT_MAJOR="${VERSION_ID%%.*}"
+      case "$MINT_MAJOR" in
+        22) MINT_EXPECTED_SUITE="noble" ;;
+        21) MINT_EXPECTED_SUITE="jammy" ;;
+        20) MINT_EXPECTED_SUITE="focal" ;;
+        19) MINT_EXPECTED_SUITE="bionic" ;;
+        *)
+          echo "❌ 暂不支持 Linux Mint ${VERSION_ID:-未知版本}"
+          exit 1
+          ;;
+      esac
+      if [[ -n "$MINT_UBUNTU_CODENAME" ]]; then
+        DEBIAN_CODENAME="$MINT_UBUNTU_CODENAME"
+      else
+        DEBIAN_CODENAME="$MINT_EXPECTED_SUITE"
+        echo "ℹ️  未读到 UBUNTU_CODENAME，Linux Mint $VERSION_ID 回落到 ubuntu/$DEBIAN_CODENAME"
+      fi
+      echo "ℹ️  Linux Mint $VERSION_ID（${MINT_ORIG_CODENAME:-unknown}）→ Docker 使用 ubuntu/$DEBIAN_CODENAME"
+    fi
     
     # 检测 Ubuntu 版本并处理
     if [[ "$OS" == "ubuntu" ]]; then
@@ -7187,6 +7264,9 @@ EOF
       echo "  3. GPG 密钥验证失败或镜像 pool 未同步完整"
       if [[ "$OS" == "kali" ]]; then
         echo "  4. Kali 须使用 Debian Docker 源（debian/${DEBIAN_CODENAME}），勿使用 kali-rolling"
+      fi
+      if [[ "$OS" == "linuxmint" ]]; then
+        echo "  4. Linux Mint 须使用 Ubuntu Docker 源（ubuntu/${DEBIAN_CODENAME}），勿使用 vanessa、vera、victoria、virginia、ulyana、tara、zena 或 linuxmint"
       fi
       echo ""
       echo "建议解决方案："
