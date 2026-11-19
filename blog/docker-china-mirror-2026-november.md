@@ -116,7 +116,7 @@
 
 还没装 Docker 的 Linux 机器，可以用官方一键脚本装 Docker 和 Docker Compose。测试环境一条命令即可。生产环境请先下载脚本看过，再执行。
 
-脚本大约覆盖 15 种发行版（含统信 UOS、深度 Deepin 等）。装好后把专业版专属加速地址写进 `daemon.json`。
+脚本覆盖 19 种发行版（含统信 UOS、深度 Deepin、Linux Mint 等）。装好后把专业版专属加速地址写进 `daemon.json`。Linux Mint 仅 x86_64。
 
 > 最好先注册专业版并拿到专属域名，再跑脚本，少改一次配置。
 
@@ -151,7 +151,7 @@ bash docker-install.sh
 
 ### 脚本特性
 
-- **发行版覆盖**：openEuler、OpenCloudOS、Anolis OS、Alinux、Kylin Linux、统信 UOS、深度 Deepin、Fedora、Rocky Linux、AlmaLinux、Ubuntu、Debian、CentOS（8+ / Stream）、RHEL、Oracle Linux
+- **发行版覆盖**：openEuler、OpenCloudOS、Anolis OS、Alinux、Kylin Linux、统信 UOS、深度 Deepin、Fedora、Rocky Linux、AlmaLinux、Ubuntu、Debian、CentOS（8+ / Stream）、RHEL、Oracle Linux、Linux Mint
 - **多源安装包**：内置阿里云、腾讯云、华为云、中科大、清华等国内软件源，便于装 Docker 本体
 - **老系统兼容**：Ubuntu 16.04、Debian 9/10 等有兼容分支
 - **失败回退**：包管理器失败时可切二进制安装
@@ -209,6 +209,7 @@ docker compose version
 | | Debian | 9+ | 支持 | 含老版本兼容 |
 | | CentOS | 8, 9, Stream | 支持 | **不含 CentOS 7** |
 | | RHEL / Oracle Linux | 7, 8, 9 | 支持 | 企业级发行版 |
+| | Linux Mint | 19.x、20.x、21.x、22.x | 支持 | 仅 x86_64；按 Ubuntu 基线映射（19→bionic、20→focal、21→jammy、22→noble）。不含 LMDE |
 
 脚本会检测系统类型和版本，一般不必手选安装方案。
 

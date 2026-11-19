@@ -82,7 +82,7 @@ wsl --update
 
 ### 路子一：一键脚本（最省事）
 
-官方维护的脚本支持 18 种发行版，包括统信 UOS、银河麒麟、openEuler、HCE 这些国产与信创环境，也支持鲲鹏 920、飞腾这类 ARM 处理器：
+官方维护的脚本支持 19 种发行版，包括统信 UOS、银河麒麟、openEuler、HCE、Linux Mint 这些环境，也支持鲲鹏 920、飞腾这类 ARM 处理器。Linux Mint 仅 x86_64，版本为 19.x、20.x、21.x、22.x，Docker 源按对应 Ubuntu 基线安装，不含 LMDE：
 
 ```bash
 bash <(wget -qO- https://get.xuanyuan.cloud/docker.sh)
